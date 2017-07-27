@@ -1,5 +1,4 @@
 const config = {
-  targetDir: 'dist',
   manifest: false,
   bundles: [{
     entryPoint: './components/index.js',
@@ -11,7 +10,7 @@ const config = {
         'pragma': 'createElement'
       }
     },
-    target: './bundle.js'
+    target: './dist/bundle.js'
   }]
 }
 
