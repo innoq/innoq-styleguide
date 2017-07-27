@@ -18,7 +18,7 @@
   "dependencies": {},
   "devDependencies": {
     "@frctl/fractal": "^1.1.5",
-    "complate-fractal": "git+https://github.com/complate/complate-fractal.git",
+    "complate-fractal": "^0.1.2",
     "complate-jsx": "^0.8.0",
     "complate-stream": "^0.9.7",
     "eslint-config-standard": "^10.2.1",
