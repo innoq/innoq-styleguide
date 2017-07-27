@@ -1,12 +1,9 @@
 import { registerMacro, createElement } from 'complate-stream'
 
-registerMacro('my-button', (params, ...children) => {
-  return <button>{children}</button>
-})
-
-registerMacro('my-content', (params, ...children) => {
-  return <div>
-    <strong>{children}</strong>
+registerMacro('button-group', ({ title }, ...children) => {
+  return <div class="button-group">
+    <strong>{title}</strong>
+    {children}
   </div>
 })
 
