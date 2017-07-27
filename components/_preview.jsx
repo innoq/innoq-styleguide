@@ -1,1 +1,3 @@
-<preview-layout></preview-layout>
+<preview-layout>
+###yield###
+</preview-layout>
