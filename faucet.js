@@ -1,7 +1,7 @@
 const config = {
   manifest: false,
   bundles: [{
-    entryPoint: './components/index.js',
+    entryPoint: './components/index.cjs',
     format: 'cjs',
     moduleName: 'createElement',
     transpiler: {
@@ -10,7 +10,7 @@ const config = {
         'pragma': 'createElement'
       }
     },
-    target: './dist/bundle.js'
+    target: './components/index.js'
   }]
 }
 
