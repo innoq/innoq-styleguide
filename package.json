@@ -11,7 +11,8 @@
     "server-watch": "nodemon -w dist/bundle.js -w components/ -w docs/ -e js,jsx,md,yml,css,scss -x 'npm run server'",
     "compile": "faucet --no-fingerprint",
     "compile-watch": "npm run compile -- --watch",
-    "test": "eslint --cache ."
+    "test": "eslint --cache .",
+    "dist": "npm run compile && fractal build"
   },
   "license": "Copyright 2017 innoQ Deutschland GmbH",
   "version": "0.0.0",

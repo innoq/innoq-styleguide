@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "8"
+script:
+  - npm test
+  - npm run dist
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: dist
+  github_token:
+    secure: "ID7CNbzpYpgPiJuFgMVmAPreJCUBqIicMsBpfia6OIzIIhGiywkOUkQqU9P7LC/+53tlXl4C0QERu5tsvaKTBhuADXctIrphr0o7TzK+3Yc3t+wixpa3u0WOkCO66uEJTWRXw3R4idZI3kOdq0ug38ixETWpQhFVMpSi2J1X7qvz6YCWGaPru7qjcOM3LcjLlTYm5vHMD3rxW7gsNyHPwwYpLMC1ZqqEfMax6jtdy1rNKq5ltQQyZkoLd53PhTOGxjAk9sNedVEEEgHaIEswH0Wq1qNIVHFCmTUMHlIqifkiPAlg1yOHSoT0GhZ1MH3c3re2ldh0U80ysI66yBu1WBGYt2a/Oo6jic2odyfLj/Re0y+A7I4XhIvdPDcFPXOqAiR2+9myzHruGp1paM9NEamYEANDDzLPrxsP2ZbvtXRwdsSvmXPoD8Z7SoSbrtywq0x1uSyN/mhoCqFq9auOGGjmG6h1Z4OZUgDjHUEniJU3tOj9Aq3CYWFi/vU6GO4gElFtpObHlkkzQQtKSslwUpqdqJWdGkX6R4HzlFpg9hiEGTtlplM4tlXPT9fVLpEki71z2KYMLfGhk3ZsP9wfIJQFsCLDDqI+fJXDpDGhAi2oD0o/A7urNEK6ma9EMRHTN9sD0BiD/H1ku6fSxBxXWGEfqOPbGzTBwdY77npwCJo="
+  on:
+    branch: master
