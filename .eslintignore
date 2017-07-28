@@ -1,2 +1,3 @@
+components/index.js
 dist/
 **/*.jsx
