@@ -1,1 +1,3 @@
-<button class="btn btn--ghost">{context.label}</button>
+<button class="btn btn--ghost">
+    {context.label}
+</button>
