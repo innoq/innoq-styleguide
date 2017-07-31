@@ -1,6 +1,8 @@
 {
   "name": "innoq-styleguide",
+  "version": "0.0.0",
   "description": "innoQ's Style Guide and Component Library",
+  "license": "Copyright 2017 innoQ Deutschland GmbH",
   "repository": {
     "type": "git",
     "url": "https://github.com/innoq/innoq-styleguide.git"
@@ -14,8 +16,6 @@
     "test": "eslint --cache .",
     "dist": "npm run compile && fractal build"
   },
-  "license": "Copyright 2017 innoQ Deutschland GmbH",
-  "version": "0.0.0",
   "dependencies": {},
   "devDependencies": {
     "complate-fractal": "^0.1.3",
