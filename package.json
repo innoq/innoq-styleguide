@@ -1,6 +1,8 @@
 {
   "name": "innoq-styleguide",
+  "version": "0.0.0",
   "description": "innoQ's Style Guide and Component Library",
+  "license": "Copyright 2017 innoQ Deutschland GmbH",
   "repository": {
     "type": "git",
     "url": "https://github.com/innoq/innoq-styleguide.git"
@@ -14,21 +16,16 @@
     "test": "eslint --cache .",
     "dist": "npm run compile && fractal build"
   },
-  "license": "Copyright 2017 innoQ Deutschland GmbH",
-  "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "faucet-pipeline-sass": "^0.4.0"
+  },
   "devDependencies": {
-    "@frctl/fractal": "^1.1.5",
-    "complate-fractal": "^0.1.2",
-    "complate-jsx": "^0.8.0",
-    "complate-stream": "^0.9.7",
+    "complate-fractal": "^0.1.3",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
-    "faucet-pipeline-js": "^0.12.3",
-    "faucet-pipeline-sass": "^0.4.0",
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2"
   }
