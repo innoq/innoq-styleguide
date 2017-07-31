@@ -7,11 +7,11 @@ registerMacro('button-group', ({ title }, ...children) => {
   </div>
 })
 
-registerMacro('preview-layout', (params, ...children) => {
+registerMacro('preview-layout', ({ stylesheetPath }, ...children) => {
   return <html>
     <head>
       <meta charset="utf-8" />
-      <link media="all" rel="stylesheet" href="/css/bundle.css" />
+      <link media="all" rel="stylesheet" href={stylesheetPath} />
       <title>Preview Layout</title>
     </head>
     <body>

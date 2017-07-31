@@ -16,13 +16,13 @@ const config = {
   },
   sass: {
     manifest: {
-      file: './dist/public/css.json',
+      file: './public/css.json',
       baseURI: '/'
     },
     assets: [],
     bundles: [{
       entryPoint: './sass/bundle.scss',
-      target: './dist/public/css/bundle.css'
+      target: './public/css/bundle.css'
     }]
   }
 }

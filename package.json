@@ -14,19 +14,20 @@
     "compile": "faucet --no-fingerprint",
     "compile-watch": "npm run compile -- --watch",
     "test": "eslint --cache .",
-    "dist": "npm run compile && fractal build"
+    "dist": "fractal build && mkdir -p dist/public/css && npm run compile"
   },
-  "dependencies": {
-    "faucet-pipeline-sass": "^0.4.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "complate-fractal": "^0.1.3",
+    "complate-fractal": "^0.1.4",
+    "complate-stream": "^0.9.7",
     "eslint": "^4.3.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
+    "faucet-pipeline-jsx": "^0.9.0",
+    "faucet-pipeline-sass": "^0.4.0",
     "nodemon": "^1.11.0",
     "npm-run-all": "^4.0.2"
   }
