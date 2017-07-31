@@ -1,0 +1,70 @@
+// This Framework is constructed by the principles of ITCSS.
+// More information about it can be read here:
+// https://medium.com/@pistenprinz/css-at-trivago-part-1-structure-and-itcss-52f63ed557ca
+
+//
+// Settings
+//
+// The settings-layer contains all our global Design System variables, so it
+// defines colors, spacings, font-sizes, breakpoints settings and many more.
+// Important: This layer does not produce any code.
+
+@import "../styles/settings/colors";
+
+
+//
+// Tools
+//
+// The tools layer defines all the mixins and functions we utilise in our
+// SCSS base.
+// Important: This layer does not produce any code.
+
+@import "../styles/tools/functions";
+@import "../styles/tools/mixins";
+
+
+//
+// Generic
+//
+// ...
+
+@import "../styles/tools/normalize";
+@import "../styles/tools/animations";
+@import "../styles/tools/fontfaces";
+
+
+//
+// Elements
+//
+// ...
+
+@import "../styles/elements/texts";
+@import "../styles/elements/lists";
+
+
+//
+// Objects
+//
+// ...
+
+@import "../styles/objects/media";
+
+
+//
+// Components
+//
+// ...
+
+// Components / Atoms
+@import "./01-atoms/button/button";
+
+// Components / Molecules
+@import "./02-molecules/button-group/button-group";
+
+
+//
+// Trumps
+//
+// ...
+
+@import "../styles/trumps/hacks";

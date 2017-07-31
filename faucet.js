@@ -21,7 +21,7 @@ const config = {
     },
     assets: [],
     bundles: [{
-      entryPoint: './sass/bundle.scss',
+      entryPoint: './components/index.scss',
       target: './public/css/bundle.css'
     }]
   }
