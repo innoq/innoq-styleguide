@@ -14,7 +14,7 @@
     "compile": "faucet --no-fingerprint",
     "compile-watch": "npm run compile -- --watch",
     "test": "eslint --cache .",
-    "dist": "fractal build && npm run compile"
+    "dist": "npm run compile && fractal build"
   },
   "dependencies": {},
   "devDependencies": {
