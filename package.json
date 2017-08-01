@@ -19,7 +19,7 @@
   "dependencies": {},
   "devDependencies": {
     "@frctl/fractal": "^1.1.5",
-    "complate-fractal": "^0.1.4",
+    "complate-fractal": "^0.1.5",
     "complate-stream": "^0.9.7",
     "eslint": "^4.3.0",
     "eslint-config-standard": "^10.2.1",
