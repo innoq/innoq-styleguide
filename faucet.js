@@ -2,7 +2,7 @@ const config = {
   js: {
     manifest: false,
     bundles: [{
-      entryPoint: './components/index.cjs',
+      entryPoint: './components/views.jsx',
       format: 'cjs',
       moduleName: 'createElement',
       transpiler: {
@@ -11,7 +11,7 @@ const config = {
           'pragma': 'createElement'
         }
       },
-      target: './components/index.js'
+      target: './dist/views.js'
     }]
   },
   sass: {
