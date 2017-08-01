@@ -46,4 +46,4 @@ fractal.web.set('static.path', path.join(__dirname, 'public'))
 /*
  * Tell Fractal where to export the static site to.
  */
-fractal.web.set('builder.dest', path.join(__dirname, 'dist'))
+fractal.web.set('builder.dest', path.join(__dirname, 'dist', 'site'))
