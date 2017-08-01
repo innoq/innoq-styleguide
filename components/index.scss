@@ -16,8 +16,7 @@
 // Tools
 //
 // The tools layer defines all the mixins and functions we utilise in our
-// SCSS base.
-// Important: This layer does not produce any code.
+// SCSS base. Important: This layer does not produce any code.
 
 @import "../styles/tools/functions";
 @import "../styles/tools/mixins";
@@ -26,7 +25,8 @@
 //
 // Generic
 //
-// ...
+// The third layer Generic contains amongst other things a normalize or
+// reset.
 
 @import "normalize-scss/sass/normalize";
 @import "../styles/tools/animations";
@@ -36,7 +36,8 @@
 //
 // Elements
 //
-// ...
+// The Elements layer contains styles for global element styles, e.g. all
+// headlines h1-h5 on this page should have a certain font-family.
 
 @import "../styles/elements/texts";
 @import "../styles/elements/lists";
@@ -45,7 +46,10 @@
 //
 // Objects
 //
-// ...
+// The fifth layer — the objects layer — starts to become more specific and
+// provides more or less unstyled patterns as reusable objects like wrappers
+// and containers. An example of such a pattern is the well known media
+// object (an image with headline and paragraph next to it).
 
 @import "../styles/objects/media";
 
@@ -53,7 +57,13 @@
 //
 // Components
 //
-// ...
+// The sixth layer — the components — itself is the first layer which is
+// using the BEM naming convention. All components are very encapsulated and of
+// course we try to limit any dependencies between components. So here we have
+// e.g. one component which has all the CSS needed for our search result list
+// item which we call item element. All components are classified into the
+// the categories of Atomic Design. So they are either atoms or molecules
+// (composed atoms).
 
 // Components / Atoms
 @import "./01-atoms/button/button";
@@ -65,6 +75,8 @@
 //
 // Trumps
 //
-// ...
+// Last but not least the trumps layer, where hacks, debugging and utilities
+// can be stored. This place should be used when selectors need to be as high
+// as possible. It is intended as the last resort.
 
 @import "../styles/trumps/hacks";
