@@ -18,8 +18,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "complate-fractal": "^0.1.5",
-    "eslint": "^4.3.0",
+    "complate-fractal": "^0.1.6",
+    "eslint": "^4.4.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.1.1",
