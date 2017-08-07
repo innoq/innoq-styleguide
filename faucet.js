@@ -2,7 +2,7 @@ const config = {
   js: {
     manifest: false,
     bundles: [{
-      entryPoint: './components/views.jsx',
+      entryPoint: './lib/views.jsx',
       format: 'cjs',
       moduleName: 'createElement',
       transpiler: {
