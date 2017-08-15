@@ -9,7 +9,7 @@
 // defines colors, spacings, font-sizes, breakpoints settings and many more.
 // Important: This layer does not produce any code.
 
-@import "../styles/settings/colors";
+@import "settings/colors";
 
 
 //
@@ -18,8 +18,8 @@
 // The tools layer defines all the mixins and functions we utilise in our
 // SCSS base. Important: This layer does not produce any code.
 
-@import "../styles/tools/functions";
-@import "../styles/tools/mixins";
+@import "tools/functions";
+@import "tools/mixins";
 
 
 //
@@ -29,8 +29,8 @@
 // reset.
 
 @import "normalize-scss/sass/normalize";
-@import "../styles/tools/animations";
-@import "../styles/tools/fontfaces";
+@import "tools/animations";
+@import "tools/fontfaces";
 
 
 //
@@ -39,8 +39,8 @@
 // The Elements layer contains styles for global element styles, e.g. all
 // headlines h1-h5 on this page should have a certain font-family.
 
-@import "../styles/elements/texts";
-@import "../styles/elements/lists";
+@import "elements/texts";
+@import "elements/lists";
 
 
 //
@@ -51,7 +51,7 @@
 // and containers. An example of such a pattern is the well known media
 // object (an image with headline and paragraph next to it).
 
-@import "../styles/objects/media";
+@import "objects/media";
 
 
 //
@@ -66,10 +66,10 @@
 // (composed atoms).
 
 // Components / Atoms
-@import "./01-atoms/button/button";
+@import "../components/01-atoms/button/button";
 
 // Components / Molecules
-@import "./02-molecules/button-group/button-group";
+@import "../components/02-molecules/button-group/button-group";
 
 
 //
@@ -79,4 +79,4 @@
 // can be stored. This place should be used when selectors need to be as high
 // as possible. It is intended as the last resort.
 
-@import "../styles/trumps/hacks";
+@import "trumps/hacks";

@@ -14,7 +14,7 @@ const fractal = module.exports = require('@frctl/fractal').create()
  * Require the complate adapter for Fractal and configure it
  */
 const complateAdapter = require('complate-fractal')({
-  bundlePath: path.join(__dirname, 'dist', 'views.js')
+  bundlePath: path.join(__dirname, 'dist', 'index.js')
 })
 
 /*
