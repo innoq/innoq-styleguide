@@ -31,7 +31,7 @@ fractal.components.set('path', path.join(__dirname, 'components'))
  * Register complate adapter.
  */
 fractal.components.engine(complateAdapter)
-fractal.components.set('ext', '.jsx')
+fractal.components.set('ext', '.html')
 
 /*
  * Tell Fractal where to look for documentation pages.
