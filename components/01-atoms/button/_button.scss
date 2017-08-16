@@ -1,3 +1,9 @@
 .btn {
-  background-color: red;
+  background-color: $brand-primary;
+  border: 2px solid $brand-primary;
+
+
+  &--ghost {
+    background-color: transparent;
+  }
 }
