@@ -16,7 +16,9 @@
     "test": "eslint --cache .",
     "site": "npm run compile && fractal build"
   },
-  "dependencies": {},
+  "dependencies": {
+    "normalize-scss": "^7.0.0"
+  },
   "devDependencies": {
     "complate-fractal": "^0.1.6",
     "eslint": "^4.4.0",
@@ -27,7 +29,6 @@
     "eslint-plugin-standard": "^3.0.1",
     "faucet-pipeline-sass": "^0.6.1",
     "nodemon": "^1.11.0",
-    "normalize-scss": "^7.0.0",
     "npm-run-all": "^4.0.2"
   }
 }
