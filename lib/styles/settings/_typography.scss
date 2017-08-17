@@ -3,3 +3,44 @@ $font-family-serif: FreightTextPro, Georgia, Times, 'Times New Roman', serif;
 $font-family-sans-serif: FFMarkWebProBook, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-sans-serif-bold: FFMarkWebProHeavy, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-sans-serif-black: FFMarkWebProBlack, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+// The font size set on the root html element.
+$base-font-size: 21px;
+
+// The base line height determines the basic unit of vertical rhythm.
+$base-line-height: 32px;
+
+// The length unit in which to output vertical rhythm values.
+$base-unit: 'rem';
+
+// The default font family.
+$base-font-family: $font-family-serif;
+
+//
+// Headlines
+//
+//
+
+// H1
+$h1-font-size: 2.380952381 * $base-font-size; // ~50px
+$h1-line-height: 2.7619047619rem;             // ~58px
+
+// H2
+$h2-font-size: 1.666666666 * $base-font-size; // ~35px
+$h2-line-height: 2.8571428571rem;             // ~60px
+
+// H3
+$h3-font-size: 1.428571428 * $base-font-size; // ~30px
+$h3-line-height: 2.8571428571rem;             // ~60px
+
+// H4
+$h4-font-size: 1.190476190 * $base-font-size; // ~25px
+$h4-line-height: 1.2380952381rem;             // ~26px
+
+// H5
+$h5-font-size: 0.952380952 * $base-font-size; // ~20px
+$h5-line-height: 1.0476190476rem;             // ~22px
+
+// H6
+$h6-font-size: 0.857142857 * $base-font-size; // ~18px
+$h6-line-height: 1rem;                        // ~21px
