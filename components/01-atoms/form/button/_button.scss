@@ -1,9 +1,36 @@
 .btn {
-  background-color: $brand-primary;
-  border: 2px solid $brand-primary;
+  @extend %heading-font-bold;
+  background-color: $button-background;
+  border: 2px solid $button-border-color;
+  color: $button-color;
+  cursor: pointer;
+  padding: 24px 27px;
+  font-size: $button-medium-font-size;
+  line-height: $button-medium-line-height;
 
-
-  &--ghost {
-    background-color: transparent;
+  &:hover,
+  &:focus {
+    background-color: $button-hover-background;
+    color: $button-hover-color;
   }
+
+  &--cta {
+    background-color: $button-cta-background;
+    border-color: $button-cta-border-color;
+    color: $button-cta-color;
+
+    &:hover,
+    &:focus {
+      background-color: $button-cta-hover-background;
+      border-color: $button-cta-hover-border-color;
+    }
+  }
+
+  &--light {
+    background-color: transparent;
+    border-width: 0 0 2px;
+    padding: 11.5px 1.5px;
+  }
+
+
 }

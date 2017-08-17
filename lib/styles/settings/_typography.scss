@@ -44,3 +44,9 @@ $h5-line-height: 1.0476190476rem;             // ~22px
 // H6
 $h6-font-size: 0.857142857 * $base-font-size; // ~18px
 $h6-line-height: 1rem;                        // ~21px
+
+$button-medium-font-size: 0.952380952 * $base-font-size; // ~20px
+$button-medium-line-height: 1.2380952381rem;             // ~26px
+
+$paragraph-font-size: $base-font-size; // ~21px
+$paragraph-line-height: $base-line-height; // ~21px
