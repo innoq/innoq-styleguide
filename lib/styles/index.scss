@@ -66,7 +66,11 @@
 // (composed atoms).
 
 // Components / Atoms
-@import "../components/01-atoms/button/button";
+@import "../components/01-atoms/form/button/button";
+@import "../components/01-atoms/media/image/image";
+@import "../components/01-atoms/text/block/heading/heading";
+@import "../components/01-atoms/text/block/paragraph/paragraph";
+@import "../components/01-atoms/text/inline/inline";
 
 // Components / Molecules
 @import "../components/02-molecules/button-group/button-group";
