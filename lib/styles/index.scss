@@ -10,6 +10,7 @@
 // Important: This layer does not produce any code.
 
 @import "settings/colors";
+@import "settings/typography";
 
 
 //
@@ -18,8 +19,7 @@
 // The tools layer defines all the mixins and functions we utilise in our
 // SCSS base. Important: This layer does not produce any code.
 
-@import "tools/functions";
-@import "tools/mixins";
+@import "tools/fonts";
 
 
 //
@@ -28,9 +28,8 @@
 // The third layer Generic contains amongst other things a normalize or
 // reset.
 
-@import "normalize-scss/sass/normalize";
-@import "tools/animations";
-@import "tools/fontfaces";
+@import "generic/normalize";
+@import "generic/animations";
 
 
 //
