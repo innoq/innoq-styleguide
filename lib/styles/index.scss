@@ -12,6 +12,7 @@
 @import "settings/colors";
 @import "settings/theme-matthew";
 @import "settings/typography";
+@import "settings/spacings";
 
 
 //
@@ -39,8 +40,7 @@
 // The Elements layer contains styles for global element styles, e.g. all
 // headlines h1-h5 on this page should have a certain font-family.
 
-@import "elements/texts";
-@import "elements/lists";
+@import "elements/base";
 
 
 //
