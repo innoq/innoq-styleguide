@@ -1,1 +1,6 @@
 * { margin-top: 0; }
+
+body {
+  width: 60%;
+  margin: (4 * $spacer-x) auto;
+}
