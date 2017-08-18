@@ -1,8 +1,16 @@
-// Font stack definitions
+//
+// Font stacks
+//
+
 $font-family-serif: FreightTextPro, Georgia, Times, 'Times New Roman', serif;
 $font-family-sans-serif: FFMarkWebProBook, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-sans-serif-bold: FFMarkWebProHeavy, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-sans-serif-black: FFMarkWebProBlack, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans-serif-bold: FFMarkWebProBold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-sans-serif-heavy: FFMarkWebProHeavy, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+//
+// Base values
+//
 
 // The font size set on the root html element.
 $base-font-size: 21px;
@@ -16,9 +24,9 @@ $base-unit: 'rem';
 // The default font family.
 $base-font-family: $font-family-serif;
 
+
 //
 // Headlines
-//
 //
 
 // H1
@@ -43,10 +51,20 @@ $h5-line-height: 1.0476190476rem;             // ~22px
 
 // H6
 $h6-font-size: 0.857142857 * $base-font-size; // ~18px
-$h6-line-height: 1rem;                        // ~21px
+$h6-line-height: 0.857142857rem;              // ~21px
+
+
+//
+// Buttons
+//
 
 $button-medium-font-size: 0.952380952 * $base-font-size; // ~20px
 $button-medium-line-height: 1.2380952381rem;             // ~26px
 
-$paragraph-font-size: $base-font-size; // ~21px
-$paragraph-line-height: $base-line-height; // ~21px
+
+//
+// Paragraph Text
+//
+
+$paragraph-font-size: $base-font-size;        // ~21px
+$paragraph-line-height: $base-line-height;    // ~32px
