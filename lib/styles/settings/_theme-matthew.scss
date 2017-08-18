@@ -1,13 +1,16 @@
-// Components
+//
+// Theme colors
+//
 
 $brand-primary: $brand-green;
 $brand-interaction: $brand-green;
 $brand-text: $brand-blue;
 
-$component1-heading: $brand-primary;
 
+//
+// Buttons
+//
 
-//Buttons
 $button-border-color: $brand-text;
 $button-background: transparent;
 $button-color: $brand-text;
@@ -21,3 +24,15 @@ $button-cta-color: $brand-white;
 $button-cta-hover-background: $brand-text;
 $button-cta-hover-color: $brand-white;
 $button-cta-hover-border-color: $brand-text;
+
+
+//
+// Headlines
+//
+
+$h1-color: $brand-primary;
+$h2-color: $brand-text;
+$h3-color: $brand-text;
+$h4-color: $brand-text;
+$h5-color: $brand-text;
+$h6-color: $brand-text;
