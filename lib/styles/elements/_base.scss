@@ -1,4 +1,7 @@
-* { margin-top: 0; }
+* {
+  margin-top: 0;
+  hyphens: auto;
+}
 
 body {
   color: $base-color;

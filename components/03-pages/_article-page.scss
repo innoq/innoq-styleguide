@@ -11,6 +11,14 @@ $article-margin: 3 * $spacer-y;
   margin-bottom: $article-margin;
 }
 
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .article-page {
+    grid-template-columns: 1fr 800px 1fr;
+  }
+
+  .article { grid-column: 2; }
+}
+
 @media screen and (min-width: $grid-breakpoint-xl) {
   .article-page {
     grid-template-columns: 1fr 1200px 1fr;
