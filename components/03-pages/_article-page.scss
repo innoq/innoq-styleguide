@@ -1,0 +1,24 @@
+.article-page {
+  display: grid;
+	width: 100%;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+	.article-page {
+		grid-template-columns: 1fr 800px 1fr;
+	}
+
+  .article {
+    grid-column: 2;
+  }
+
+  .article-toc {
+
+  }
+}
+
+// We need to set the widths used on floated items back to auto, and remove
+// the bottom margin as when we have grid we have gaps.
+@supports (display: grid) {
+
+}

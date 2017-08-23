@@ -9,11 +9,11 @@
 // defines colors, spacings, font-sizes, breakpoints settings and many more.
 // Important: This layer does not produce any code.
 
+@import "settings/breakpoints";
 @import "settings/colors";
 @import "settings/theme-matthew";
 @import "settings/typography";
 @import "settings/spacings";
-
 
 //
 // Tools
@@ -65,7 +65,7 @@
 // the categories of Atomic Design. So they are either atoms or molecules
 // (composed atoms).
 
-// Components / Atoms
+// Atoms
 @import "../components/01-atoms/form/button/button";
 @import "../components/01-atoms/media/avatar/avatar";
 @import "../components/01-atoms/media/figure/figure";
@@ -80,12 +80,17 @@
 
 @import "../components/01-atoms/text/inline/inline";
 
-// Components / Molecules
+// Molecules
 @import "../components/02-molecules/author-bio/author-bio";
 @import "../components/02-molecules/button-group/button-group";
 @import "../components/02-molecules/content-separator/content-separator";
 @import "../components/02-molecules/table-of-contents/table-of-contents";
 
+// Organisms
+// TODO
+
+// Pages
+@import "../components/03-pages/article-page";
 
 //
 // Trumps
