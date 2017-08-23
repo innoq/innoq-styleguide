@@ -67,16 +67,24 @@
 
 // Components / Atoms
 @import "../components/01-atoms/form/button/button";
+@import "../components/01-atoms/media/avatar/avatar";
+@import "../components/01-atoms/media/figure/figure";
 @import "../components/01-atoms/media/image/image";
+
+@import "../components/01-atoms/text/block/blockquote/blockquote";
+@import "../components/01-atoms/text/block/date/date";
+@import "../components/01-atoms/text/block/duration/duration";
 @import "../components/01-atoms/text/block/heading/heading";
 @import "../components/01-atoms/text/block/paragraph/paragraph";
-@import "../components/01-atoms/text/block/blockquote/blockquote";
 @import "../components/01-atoms/text/block/pull-quote/pull-quote";
-@import "../components/01-atoms/text/block/date/date";
+
 @import "../components/01-atoms/text/inline/inline";
 
 // Components / Molecules
+@import "../components/02-molecules/author-bio/author-bio";
 @import "../components/02-molecules/button-group/button-group";
+@import "../components/02-molecules/content-seperator/content-seperator";
+@import "../components/02-molecules/table-of-contents/table-of-contents";
 
 
 //
