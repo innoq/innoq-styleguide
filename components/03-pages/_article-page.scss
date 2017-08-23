@@ -1,7 +1,14 @@
+$article-margin: 3 * $spacer-y;
+
 .article,
 .article-page {
   display: grid;
   width: 100%;
+}
+
+.article-page {
+  margin-top: $article-margin;
+  margin-bottom: $article-margin;
 }
 
 @media screen and (min-width: $grid-breakpoint-xl) {

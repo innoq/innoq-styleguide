@@ -15,6 +15,9 @@ $font-family-sans-serif-heavy: FFMarkWebProHeavy, 'Helvetica Neue', Helvetica, A
 // The font size set on the root html element.
 $base-font-size: 21px;
 
+// Color set on the root html element.
+$base-color: $brand-text;
+
 // The base line height determines the basic unit of vertical rhythm.
 $base-line-height: 1.6;
 
@@ -57,7 +60,6 @@ $h6-line-height: 1.375;                       // ~22px
 //
 // Buttons
 //
-
 $button-medium-font-size: .952380952 * $base-font-size; // ~20px
 $button-medium-line-height: 1.2380952381rem;             // ~26px
 
@@ -65,8 +67,9 @@ $button-medium-line-height: 1.2380952381rem;             // ~26px
 //
 // Paragraph Text
 //
-$paragraph-font-size: $base-font-size;        // ~21px
-$paragraph-line-height: $base-line-height;    // ~32px
+$paragraph-font-size:       $base-font-size;                // ~21px
+$paragraph-lead-font-size:  1.1904761905 * $base-font-size; // ~25px
+$paragraph-line-height:     $base-line-height;              // ~32px
 
 //
 // Date
