@@ -2,8 +2,10 @@
   @extend %heading-font-bold;
   border: 2px solid $button-border-color;
   background-color: $button-background;
-  cursor: pointer;
+
   padding: 24px 27px;
+  cursor: pointer;
+
   line-height: $button-medium-line-height;
   color: $button-color;
   font-size: $button-medium-font-size;
