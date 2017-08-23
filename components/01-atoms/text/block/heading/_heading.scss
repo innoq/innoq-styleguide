@@ -6,58 +6,58 @@
 %h1,
 h1 {
   @extend %heading-font-heavy;
+  margin-bottom: 2 * $spacer-x;
+  line-height: $h1-line-height;
   color: $h1-color;
   font-size: $h1-font-size;
-  line-height: $h1-line-height;
-  margin-bottom: 2 * $spacer-x;
 }
 
 // H2
 %h2,
 h2 {
   @extend %heading-font-heavy;
+  margin-bottom: $spacer-x;
+  line-height: $h2-line-height;
   color: $h2-color;
   font-size: $h2-font-size;
-  line-height: $h2-line-height;
-  margin-bottom: $spacer-x;
 }
 
 // H3
 %h3,
 h3 {
   @extend %heading-font-heavy;
+  margin-bottom: $spacer-x / 2;
+  line-height: $h3-line-height;
   color: $h3-color;
   font-size: $h3-font-size;
-  line-height: $h3-line-height;
-  margin-bottom: $spacer-x / 2;
 }
 
 // H4
 %h4,
 h4 {
   @extend %heading-font-bold;
+  margin-bottom: 0;
+  line-height: $h4-line-height;
   color: $h4-color;
   font-size: $h4-font-size;
-  line-height: $h4-line-height;
-  margin-bottom: 0;
 }
 
 // H5
 %h5,
 h5 {
   @extend %heading-font-bold;
+  margin-bottom: $spacer-x / 4;
+  line-height: $h5-line-height;
   color: $h5-color;
   font-size: $h5-font-size;
-  line-height: $h5-line-height;
-  margin-bottom: $spacer-x / 4;
 }
 
 // H6
 %h6,
 h6 {
   @extend %heading-font-heavy;
+  margin-bottom: $spacer-x / 4;
+  line-height: $h6-line-height;
   color: $h6-color;
   font-size: $h6-font-size;
-  line-height: $h6-line-height;
-  margin-bottom: $spacer-x / 4;
 }

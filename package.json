@@ -30,6 +30,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "faucet-pipeline-sass": "^0.7.0",
     "nodemon": "^1.11.0",
-    "npm-run-all": "^4.0.2"
+    "npm-run-all": "^4.0.2",
+    "sass-lint": "^1.10.2"
   }
 }

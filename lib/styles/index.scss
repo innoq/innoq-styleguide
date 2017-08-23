@@ -9,11 +9,11 @@
 // defines colors, spacings, font-sizes, breakpoints settings and many more.
 // Important: This layer does not produce any code.
 
-@import "settings/breakpoints";
-@import "settings/colors";
-@import "settings/theme-matthew";
-@import "settings/typography";
-@import "settings/spacings";
+@import 'settings/breakpoints';
+@import 'settings/colors';
+@import 'settings/theme-matthew';
+@import 'settings/typography';
+@import 'settings/spacings';
 
 //
 // Tools
@@ -21,7 +21,7 @@
 // The tools layer defines all the mixins and functions we utilise in our
 // SCSS base. Important: This layer does not produce any code.
 
-@import "tools/fonts";
+@import 'tools/fonts';
 
 
 //
@@ -30,8 +30,8 @@
 // The third layer Generic contains amongst other things a normalize or
 // reset.
 
-@import "generic/normalize";
-@import "generic/animations";
+@import 'generic/normalize';
+@import 'generic/animations';
 
 
 //
@@ -40,7 +40,7 @@
 // The Elements layer contains styles for global element styles, e.g. all
 // headlines h1-h5 on this page should have a certain font-family.
 
-@import "elements/base";
+@import 'elements/base';
 
 
 //
@@ -51,7 +51,7 @@
 // and containers. An example of such a pattern is the well known media
 // object (an image with headline and paragraph next to it).
 
-@import "objects/media";
+@import 'objects/media';
 
 
 //
@@ -66,31 +66,31 @@
 // (composed atoms).
 
 // Atoms
-@import "../components/01-atoms/form/button/button";
-@import "../components/01-atoms/media/avatar/avatar";
-@import "../components/01-atoms/media/figure/figure";
-@import "../components/01-atoms/media/image/image";
+@import '../components/01-atoms/form/button/button';
+@import '../components/01-atoms/media/avatar/avatar';
+@import '../components/01-atoms/media/figure/figure';
+@import '../components/01-atoms/media/image/image';
 
-@import "../components/01-atoms/text/block/blockquote/blockquote";
-@import "../components/01-atoms/text/block/date/date";
-@import "../components/01-atoms/text/block/duration/duration";
-@import "../components/01-atoms/text/block/heading/heading";
-@import "../components/01-atoms/text/block/paragraph/paragraph";
-@import "../components/01-atoms/text/block/pull-quote/pull-quote";
+@import '../components/01-atoms/text/block/blockquote/blockquote';
+@import '../components/01-atoms/text/block/date/date';
+@import '../components/01-atoms/text/block/duration/duration';
+@import '../components/01-atoms/text/block/heading/heading';
+@import '../components/01-atoms/text/block/paragraph/paragraph';
+@import '../components/01-atoms/text/block/pull-quote/pull-quote';
 
-@import "../components/01-atoms/text/inline/inline";
+@import '../components/01-atoms/text/inline/inline';
 
 // Molecules
-@import "../components/02-molecules/author-bio/author-bio";
-@import "../components/02-molecules/button-group/button-group";
-@import "../components/02-molecules/content-separator/content-separator";
-@import "../components/02-molecules/table-of-contents/table-of-contents";
+@import '../components/02-molecules/author-bio/author-bio';
+@import '../components/02-molecules/button-group/button-group';
+@import '../components/02-molecules/content-separator/content-separator';
+@import '../components/02-molecules/table-of-contents/table-of-contents';
 
 // Organisms
 // TODO
 
 // Pages
-@import "../components/03-pages/article-page";
+@import '../components/03-pages/article-page';
 
 //
 // Trumps
@@ -99,4 +99,4 @@
 // can be stored. This place should be used when selectors need to be as high
 // as possible. It is intended as the last resort.
 
-@import "trumps/hacks";
+@import 'trumps/hacks';
