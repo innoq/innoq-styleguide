@@ -1,0 +1,30 @@
+.author-bio {
+  &.author-bio--short {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+.author-bio__name {
+  @extend %heading-font-heavy;
+  margin-bottom: $spacer-y / 4;
+  text-transform: uppercase;
+  line-height: $author-bio-line-height;
+  font-size: $author-bio-name-font-size;
+}
+
+.author-bio__link {
+  @extend %link-unstyled;
+}
+
+.author-bio__info {
+  @extend %body-font-italic;
+  line-height: $author-bio-line-height;
+  font-size: $author-bio-position-font-size;
+}
+
+.author-bio__image {
+  margin-right: $spacer-x;
+}

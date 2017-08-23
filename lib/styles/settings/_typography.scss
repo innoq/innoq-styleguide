@@ -6,6 +6,7 @@ $font-family-serif: FreightTextPro, Georgia, Times, 'Times New Roman', serif;
 $font-family-sans-serif: FFMarkWebProBook, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-sans-serif-bold: FFMarkWebProBold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-sans-serif-heavy: FFMarkWebProHeavy, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$font-family-icons: FFMarkWebProHeavy, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 
 //
@@ -71,9 +72,18 @@ $paragraph-font-size:       $base-font-size;                // ~21px
 $paragraph-lead-font-size:  1.1904761905 * $base-font-size; // ~25px
 $paragraph-line-height:     $base-line-height;              // ~32px
 
+
 //
 // Date
 //
 $date-font-size: .761904761904762 * $base-font-size;     // ~16px
 $duration-font-size: .8095238095 * $base-font-size;      // ~17px
-$date-line-height: 1.0476190476rem;                      // ~22px
+$date-line-height: 1.0476190476;                         // ~22px
+
+
+//
+// Author Bio
+//
+$author-bio-name-font-size: .761904761904762 * $base-font-size;         // ~16px
+$author-bio-position-font-size: .8095238095 * $base-font-size;          // ~17px
+$author-bio-line-height: 1.0476190476;                                  // ~22px
