@@ -2,6 +2,11 @@ options:
   formatter: stylish
 files:
   include: '**/*.s+(a|c)ss'
+  ignore:
+    - 'node_modules/**/*.scss'
+    - 'node_modules/**/*.sass'
+    - 'dist/**/*.scss'
+    - 'dist/**/*.sass'
 rules:
   # Extends
   extends-before-mixins: 1
