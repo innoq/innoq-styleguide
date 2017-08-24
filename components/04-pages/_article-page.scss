@@ -12,13 +12,19 @@
   margin-bottom: $article-margin;
 }
 
-@media screen and (min-width: $grid-breakpoint-lg) {
+@media screen and (min-width: $grid-breakpoint-md) {
   .article-page {
-    grid-template-columns: 1fr $article-main-column-width 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
   }
 
   .article {
     grid-column: 2;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .article-page {
+    grid-template-columns: 1fr $article-main-column-width 1fr;
   }
 }
 
@@ -28,7 +34,6 @@
   }
 
   .article {
-    grid-column: 2;
     grid-template-columns: 1fr $article-main-column-width 1fr;
 
     > * {
