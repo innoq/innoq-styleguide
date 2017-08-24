@@ -1,0 +1,11 @@
+// sass-lint:disable property-sort-order
+@font-face {
+  font-family: 'icons';
+  src:  url('#{$icomoon-font-path}/innoq-icons.eot?adk7u5');
+  src:  url('#{$icomoon-font-path}/innoq-icons.eot?adk7u5#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/innoq-icons.ttf?adk7u5') format('truetype'),
+  url('#{$icomoon-font-path}/innoq-icons.woff?adk7u5') format('woff'),
+  url('#{$icomoon-font-path}/innoq-icons.svg?adk7u5#icons') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}

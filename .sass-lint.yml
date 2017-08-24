@@ -30,7 +30,12 @@ rules:
   no-css-comments: 2
   no-debug: 2
   no-disallowed-properties: 0
-  no-duplicate-properties: 2
+  no-duplicate-properties:
+  - 2
+  -
+    exclude:
+      - display
+      - src
   no-empty-rulesets: 2
   no-extends: 0
   no-ids: 2

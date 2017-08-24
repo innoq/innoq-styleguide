@@ -12,6 +12,7 @@
 @import 'settings/breakpoints';
 @import 'settings/colors';
 @import 'settings/theme-matthew';
+@import 'settings/icons';
 @import 'settings/typography';
 @import 'settings/spacings';
 
@@ -31,8 +32,9 @@
 // The third layer Generic contains amongst other things a normalize or
 // reset.
 
-@import 'generic/normalize';
 @import 'generic/animations';
+@import 'generic/fontfaces';
+@import 'generic/normalize';
 
 
 //
@@ -70,6 +72,7 @@
 @import '../components/01-atoms/form/button/button';
 @import '../components/01-atoms/media/avatar/avatar';
 @import '../components/01-atoms/media/figure/figure';
+@import '../components/01-atoms/media/icon/icon';
 @import '../components/01-atoms/media/image/image';
 
 @import '../components/01-atoms/text/block/blockquote/blockquote';
