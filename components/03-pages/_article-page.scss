@@ -1,0 +1,45 @@
+$article-margin: 3 * $spacer-y;
+
+.article,
+.article-page {
+  display: grid;
+  width: 100%;
+}
+
+.article-page {
+  margin-top: $article-margin;
+  margin-bottom: $article-margin;
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .article-page {
+    grid-template-columns: 1fr 800px 1fr;
+  }
+
+  .article { grid-column: 2; }
+}
+
+@media screen and (min-width: $grid-breakpoint-xl) {
+  .article-page {
+    grid-template-columns: 1fr 1200px 1fr;
+  }
+
+  .article {
+    grid-column: 2;
+    grid-template-columns: 1fr 4fr 1fr;
+
+    > * {
+      grid-column: 2;
+    }
+
+    > .article__toc {
+      grid-column: 1;
+    }
+  }
+}
+
+// We need to set the widths used on floated items back to auto, and remove
+// the bottom margin as when we have grid we have gaps.
+@supports (display: grid) {
+  // TODO
+}

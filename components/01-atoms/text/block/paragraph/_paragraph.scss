@@ -1,6 +1,11 @@
 p {
   @extend %body-font-regular;
-  font-size: $paragraph-font-size;
-  line-height: $paragraph-line-height;
   margin-bottom: $spacer-x;
+  line-height: $paragraph-line-height;
+  font-size: $paragraph-font-size;
+
+  &.lead {
+    @extend %body-font-italic;
+    font-size: $paragraph-lead-font-size;
+  }
 }

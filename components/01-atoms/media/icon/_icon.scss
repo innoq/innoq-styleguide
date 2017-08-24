@@ -1,0 +1,39 @@
+.icon {
+  text-transform: none;
+  line-height: 1;
+  font-family: 'icons';
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  speak: none;
+
+
+  // Better Font Rendering
+  // sass-lint:disable no-vendor-prefixes
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down {
+  &::before {
+    content: $icon-arrow-down;
+  }
+}
+
+.icon-check {
+  &::before {
+    content: $icon-check;
+  }
+}
+
+.icon-close {
+  &::before {
+    content: $icon-close;
+  }
+}
+
+.icon-download {
+  &::before {
+    content: $icon-download;
+  }
+}

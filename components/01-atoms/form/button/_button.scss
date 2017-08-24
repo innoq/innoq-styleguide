@@ -1,13 +1,12 @@
 .btn {
   @extend %heading-font-bold;
-
-  background-color: $button-background;
   border: 2px solid $button-border-color;
-  color: $button-color;
+  background-color: $button-background;
   cursor: pointer;
   padding: 24px 27px;
-  font-size: $button-medium-font-size;
   line-height: $button-medium-line-height;
+  color: $button-color;
+  font-size: $button-medium-font-size;
 
   &:hover,
   &:focus {
@@ -16,22 +15,21 @@
   }
 
   &--cta {
-    background-color: $button-cta-background;
     border-color: $button-cta-border-color;
+    background-color: $button-cta-background;
     color: $button-cta-color;
 
     &:hover,
     &:focus {
-      background-color: $button-cta-hover-background;
       border-color: $button-cta-hover-border-color;
+      background-color: $button-cta-hover-background;
     }
   }
 
   &--light {
-    background-color: transparent;
     border-width: 0 0 2px;
+    background-color: transparent;
     padding: 11.5px 1.5px;
   }
-
 
 }

@@ -1,0 +1,24 @@
+$border-position: $base-font-size / 2;
+$content-padding: $spacer-x / 2;
+
+.content-separator {
+  display: flex;
+  align-content: center;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: $spacer-x;
+  box-shadow: $brand-white 0 $border-position 0 0 inset, $brand-text 0 ($border-position + 1px) 0 0 inset;
+  min-height: $base-font-size;
+}
+
+.content-separator__date,
+.content-separator__duration {
+  background-color: $brand-white;
+  padding-right: $content-padding;
+  padding-left: $content-padding;
+  line-height: 1;
+}
+
+.content-separator__date {
+  margin-right: $spacer-x;
+}
