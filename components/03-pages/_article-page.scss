@@ -1,3 +1,5 @@
+$article-width: 90.25rem; // ~1444px, full-width, including table of contents
+$article-text-width: 50rem; // ~800px, main column, just for the text
 $article-margin: 3 * $spacer-y;
 
 .article,
@@ -13,7 +15,7 @@ $article-margin: 3 * $spacer-y;
 
 @media screen and (min-width: $grid-breakpoint-lg) {
   .article-page {
-    grid-template-columns: 1fr 800px 1fr;
+    grid-template-columns: 1fr $article-text-width 1fr;
   }
 
   .article { grid-column: 2; }
@@ -21,12 +23,12 @@ $article-margin: 3 * $spacer-y;
 
 @media screen and (min-width: $grid-breakpoint-xl) {
   .article-page {
-    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-columns: 1fr $article-width 1fr;
   }
 
   .article {
     grid-column: 2;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr $article-text-width 1fr;
 
     > * {
       grid-column: 2;
