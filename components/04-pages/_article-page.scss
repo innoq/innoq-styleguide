@@ -1,7 +1,6 @@
-$article-width: 90.25rem; // ~1444px, full-width, including table of contents
-$article-text-width: 50rem; // ~800px, main column, just for the text
-$article-margin: 3 * $spacer-y;
-
+//
+// Article page layout
+//
 .article,
 .article-page {
   display: grid;
@@ -15,20 +14,22 @@ $article-margin: 3 * $spacer-y;
 
 @media screen and (min-width: $grid-breakpoint-lg) {
   .article-page {
-    grid-template-columns: 1fr $article-text-width 1fr;
-  }
-
-  .article { grid-column: 2; }
-}
-
-@media screen and (min-width: $grid-breakpoint-xl) {
-  .article-page {
-    grid-template-columns: 1fr $article-width 1fr;
+    grid-template-columns: 1fr $article-main-column-width 1fr;
   }
 
   .article {
     grid-column: 2;
-    grid-template-columns: 1fr $article-text-width 1fr;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-xl) {
+  .article-page {
+    grid-template-columns: 1fr $article-grid-width 1fr;
+  }
+
+  .article {
+    grid-column: 2;
+    grid-template-columns: 1fr $article-main-column-width 1fr;
 
     > * {
       grid-column: 2;
