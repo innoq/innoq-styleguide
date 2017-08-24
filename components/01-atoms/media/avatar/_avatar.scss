@@ -1,6 +1,5 @@
 .avatar {
   display: inline-block;
-  position: relative;
 }
 
 .avatar__image {
@@ -14,12 +13,4 @@
 
 .avatar__link {
   @extend %link-unstyled;
-
-  &::before {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    color: $brand-text;
-    content: '⬇️';
-  }
 }

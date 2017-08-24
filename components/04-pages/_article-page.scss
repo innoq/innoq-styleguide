@@ -1,5 +1,6 @@
-$article-margin: 3 * $spacer-y;
-
+//
+// Article page layout
+//
 .article,
 .article-page {
   display: grid;
@@ -11,22 +12,29 @@ $article-margin: 3 * $spacer-y;
   margin-bottom: $article-margin;
 }
 
-@media screen and (min-width: $grid-breakpoint-lg) {
+@media screen and (min-width: $grid-breakpoint-md) {
   .article-page {
-    grid-template-columns: 1fr 800px 1fr;
-  }
-
-  .article { grid-column: 2; }
-}
-
-@media screen and (min-width: $grid-breakpoint-xl) {
-  .article-page {
-    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-columns: 1fr 5fr 1fr;
   }
 
   .article {
     grid-column: 2;
-    grid-template-columns: 1fr 4fr 1fr;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .article-page {
+    grid-template-columns: 1fr $article-main-column-width 1fr;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-xl) {
+  .article-page {
+    grid-template-columns: 1fr $article-grid-width 1fr;
+  }
+
+  .article {
+    grid-template-columns: 1fr $article-main-column-width 1fr;
 
     > * {
       grid-column: 2;

@@ -1,3 +1,5 @@
+$bubble-size: $spacer-x * 1.5;
+
 .author-bio {
   &.author-bio--short {
     display: flex;
@@ -23,6 +25,25 @@
   @extend %body-font-italic;
   line-height: $author-bio-line-height;
   font-size: $author-bio-position-font-size;
+}
+
+.author-bio__anchor {
+  position: relative;
+
+  &::before {
+    @extend %icon;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 100%;
+    background-color: $brand-interaction;
+    width: $bubble-size;
+    height: $bubble-size;
+    text-align: center;
+    line-height: $bubble-size;
+    color: $brand-white;
+    content: $icon-arrow-down;
+  }
 }
 
 .author-bio__image {
