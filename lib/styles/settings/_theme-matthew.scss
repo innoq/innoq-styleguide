@@ -4,7 +4,7 @@
 
 $brand-primary: $brand-green;
 $brand-interaction: $brand-green;
-$brand-text: $brand-blue;
+$brand-text: $brand-black;
 
 
 //
@@ -36,3 +36,8 @@ $h3-color: $brand-text;
 $h4-color: $brand-text;
 $h5-color: $brand-text;
 $h6-color: $brand-text;
+
+//
+// Pull Quote
+//
+$pull-quote-color: $brand-interaction;

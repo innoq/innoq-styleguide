@@ -1,0 +1,14 @@
+$pull-quote-padding: $spacer-x * .75;
+
+aside blockquote {
+  @extend %heading-font-bold;
+  border: 1px solid $brand-text;
+  border-width: 1px 0;
+  color: $pull-quote-color;
+  font-size: $pull-quote-font-size;
+  line-height: $pull-quote-line-height;
+  padding: $pull-quote-padding;
+  text-align: center;
+  width: 80%;
+
+}
