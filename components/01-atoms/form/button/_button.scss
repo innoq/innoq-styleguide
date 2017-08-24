@@ -1,5 +1,6 @@
 .btn {
   @extend %heading-font-bold;
+
   background-color: $button-background;
   border: 2px solid $button-border-color;
   color: $button-color;
