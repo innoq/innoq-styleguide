@@ -1,3 +1,13 @@
 a {
   color: $brand-text;
+  transition: $standard-transition;
+
+  &:hover {
+    color: $brand-interaction;
+  }
+}
+
+mark {
+  background-color: rgba($brand-interaction, .2);
+  display: inline-block;
 }

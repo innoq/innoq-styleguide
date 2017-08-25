@@ -6,3 +6,7 @@
 body {
   color: $base-color;
 }
+
+::selection {
+  background-color: rgba($brand-interaction, .2);
+}
