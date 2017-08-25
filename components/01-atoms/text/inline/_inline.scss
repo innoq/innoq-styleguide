@@ -1,6 +1,6 @@
 a {
-  color: $brand-text;
   transition: $standard-transition;
+  color: $brand-text;
 
   &:hover {
     color: $brand-interaction;
@@ -8,6 +8,6 @@ a {
 }
 
 mark {
-  background-color: rgba($brand-interaction, .2);
   display: inline-block;
+  background-color: $brand-transparent-green;
 }

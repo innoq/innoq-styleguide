@@ -6,37 +6,37 @@ $zzbgc: $brand-white;
 $zzlinecolor: $brand-text;
 
 .zigzag {
-  background: $zzbgc;
   display: block;
-  height: $zzheight;
-  margin: 0;
   position: relative;
   z-index: 1;
+  margin: 0;
+  background: $zzbgc;
+  height: $zzheight;
 
   &::after,
   &::before {
-    content: '';
     display: block;
-    left: 0;
     position: absolute;
     right: 0;
+    left: 0;
+    content: '';
   }
 
   &::before {
+    top: $zzthickness;
     background: linear-gradient(-135deg, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight, linear-gradient(135deg, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight;
-    background-position: top left;
     background-repeat: repeat-x;
+    background-position: top left;
     background-size: $zzheight $zzheight;
     height: ($zzheight - $zzoffset);
-    top: $zzthickness;
   }
 
   &::after {
+    top: 100%;
     background: linear-gradient(-135deg, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight, linear-gradient(135deg, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight;
-    background-position: top left;
     background-repeat: repeat-x;
+    background-position: top left;
     background-size: $zzheight $zzheight;
     height: $zzheight;
-    top: 100%;
   }
 }
