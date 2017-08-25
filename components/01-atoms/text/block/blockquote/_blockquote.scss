@@ -1,3 +1,35 @@
+$zigzag-bottom: $spacer-y * 1.5;
+
 blockquote {
   text-align: center;
+
+  .zigzag {
+    display: block;
+    margin: 0 auto $zigzag-bottom;
+    width: 300px;
+  }
+
+  p {
+    @extend %heading-font-heavy;
+    line-height: $blockquote-line-height;
+    color: $brand-interaction;
+    font-size: $blockquote-font-size;
+
+    &::before {
+      content: '„';
+    }
+
+    &::after {
+      content: '“';
+    }
+  }
+
+  cite {
+    @extend %author-name;
+    display: block;
+  }
+
+  .role {
+    @extend %author-role;
+  }
 }
