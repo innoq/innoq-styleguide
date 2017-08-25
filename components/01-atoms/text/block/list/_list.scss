@@ -25,3 +25,34 @@ ul {
     }
   }
 }
+
+$number-space: 25px;
+
+// ---- Ordered Lists ------------------------------------------------------
+// Generated numbers from default ordered lists can't be styled directly
+// yet. Therefore we disable auto-numbering and use a counter to increment
+// a number and insert it via :before content.
+ol {
+  @extend %body-font-regular;
+  @include list-unstyled;
+  margin-bottom: $spacer-y * 1.238095238;
+  line-height: $ordered-list-line-height;
+  font-size: $ordered-list-font-size;
+  counter-reset: number;
+
+  li {
+    position: relative;
+    margin-bottom: $spacer-y * .857142857;
+
+    &::before {
+      @extend %heading-font-bold;
+      position: absolute;
+      left: -$number-space;
+      width: $number-space;
+      line-height: $ordered-list-counter-line-height;
+      font-size: $ordered-list-counter-font-size;
+      content: counter(number);
+      counter-increment: number;
+    }
+  }
+}

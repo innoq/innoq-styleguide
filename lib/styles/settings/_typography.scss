@@ -75,8 +75,12 @@ $button-medium-line-height: 1.2380952381rem;             // ~26px
 //
 // The amount lists and blockquotes are indented.
 $indent-amount: $base-font-size !default;
-$bullet-list-font-size: .952380952 * $base-font-size; // ~20px
-$bullet-list-line-height: 1.3;                        // ~26px
+$bullet-list-font-size: .952380952 * $base-font-size;         // ~20px
+$bullet-list-line-height: 1.3;                                // ~26px
+$ordered-list-font-size: $base-font-size;                     // ~21px
+$ordered-list-line-height: $base-line-height-computed;        // ~32px
+$ordered-list-counter-font-size:  $bullet-list-font-size;     // ~20px
+$ordered-list-counter-line-height: $bullet-list-line-height;  // ~26px
 
 
 //
