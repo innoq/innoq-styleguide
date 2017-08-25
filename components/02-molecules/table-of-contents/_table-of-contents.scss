@@ -27,6 +27,29 @@ $toc-border-color: $brand-silver;
   }
 }
 
+.toc__anchor {
+  @extend %link-unstyled;
+  position: relative;
+  margin-left: $spacer-x;
+  padding: ($spacer-y / 4) ($spacer-x / 4);
+
+  &::before {
+    @extend %icon; // inline-block
+    position: absolute;
+    top: $spacer-y / 4;
+    left: -$spacer-x;
+    width: $spacer-x;
+    color: $brand-interaction;
+    content: $icon-arrow-down;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $brand-interaction;
+    color: $brand-white;
+  }
+}
+
 @media screen and (min-width: $grid-breakpoint-xl) {
   .toc {
     margin-right: $spacer-x * 2;
