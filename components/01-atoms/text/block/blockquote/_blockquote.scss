@@ -1,7 +1,10 @@
 $zigzag-bottom: $spacer-y * 1.5;
+$blockquote-bottom: $spacer-y * 2;
 
 blockquote {
+  margin-bottom: $blockquote-bottom;
   text-align: center;
+
 
   .zigzag {
     display: block;
