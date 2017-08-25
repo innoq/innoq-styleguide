@@ -5,6 +5,7 @@
 %h1,
 h1 {
   @extend %heading-font-heavy;
+  margin-top: 0;
   margin-bottom: 2 * $spacer-x;
   line-height: $h1-line-height;
   color: $h1-color;
@@ -15,6 +16,7 @@ h1 {
 %h2,
 h2 {
   @extend %heading-font-heavy;
+  margin-top: 0;
   margin-bottom: $spacer-x;
   line-height: $h2-line-height;
   color: $h2-color;
@@ -25,6 +27,7 @@ h2 {
 %h3,
 h3 {
   @extend %heading-font-heavy;
+  margin-top: 0;
   margin-bottom: $spacer-x / 2;
   line-height: $h3-line-height;
   color: $h3-color;
@@ -35,6 +38,7 @@ h3 {
 %h4,
 h4 {
   @extend %heading-font-bold;
+  margin-top: 0;
   margin-bottom: 0;
   line-height: $h4-line-height;
   color: $h4-color;
@@ -45,6 +49,7 @@ h4 {
 %h5,
 h5 {
   @extend %heading-font-bold;
+  margin-top: 0;
   margin-bottom: $spacer-x / 4;
   line-height: $h5-line-height;
   color: $h5-color;
@@ -55,6 +60,7 @@ h5 {
 %h6,
 h6 {
   @extend %heading-font-heavy;
+  margin-top: 0;
   margin-bottom: $spacer-x / 4;
   line-height: $h6-line-height;
   color: $h6-color;
