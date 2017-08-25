@@ -1,14 +1,20 @@
+//
+// Table of contents
+//
+
+// Component specific variables
 $toc-border-color: $brand-silver;
+$toc-top-margin: $spacer-x * 3.5; // to match the content paragraph
 
 .toc {
-  margin-top: $spacer-x;
+  margin-top: $toc-top-margin;
 }
 
 .toc__heading {
   @extend %heading-font-heavy;
   text-transform: uppercase;
-  line-height: $h5-line-height;
-  font-size: $h5-font-size;
+  line-height: $toc-heading-line-height;
+  font-size: $toc-heading-font-size;
 }
 
 .toc__list {
@@ -18,8 +24,8 @@ $toc-border-color: $brand-silver;
     @extend %body-font-italic;
     padding-top: $spacer-y / 2;
     padding-bottom: $spacer-y / 2;
-    line-height: $date-line-height;
-    font-size: $duration-font-size;
+    line-height: $toc-anchor-line-height;
+    font-size: $toc-anchor-font-size;
   }
 
   > li + li {
