@@ -1,3 +1,64 @@
+//
+// Table of contents
+//
+
+// Component specific variables
+$toc-border-color: $brand-silver;
+$toc-top-margin: $spacer-x * 3.5; // to match the content paragraph
+
+.toc {
+  margin-top: $toc-top-margin;
+}
+
+.toc__heading {
+  @extend %heading-font-heavy;
+  text-transform: uppercase;
+  line-height: $toc-heading-line-height;
+  font-size: $toc-heading-font-size;
+}
+
 .toc__list {
   @extend %list-unstyled;
+
+  > li {
+    @extend %body-font-italic;
+    padding-top: $spacer-y / 2;
+    padding-right: $spacer-x;
+    padding-bottom: $spacer-y / 2;
+    line-height: $toc-anchor-line-height;
+    font-size: $toc-anchor-font-size;
+  }
+
+  > li + li {
+    border-top: 1px solid $toc-border-color;
+  }
+}
+
+.toc__anchor {
+  @extend %link-unstyled;
+  position: relative;
+  margin-left: $spacer-x;
+  padding: ($spacer-y / 4) ($spacer-x / 4);
+
+  &::before {
+    @extend %icon; // inline-block
+    position: absolute;
+    top: $spacer-y / 4;
+    left: -$spacer-x;
+    width: $spacer-x;
+    color: $brand-interaction;
+    content: $icon-arrow-down;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $brand-interaction;
+    color: $brand-text;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-xl) {
+  .toc {
+    margin-right: $spacer-x * 2;
+  }
 }

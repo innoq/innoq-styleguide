@@ -78,7 +78,10 @@ rules:
   attribute-quotes: 2
   bem-depth: 0
   border-zero: 2
-  brace-style: 2
+  brace-style:
+    - 2
+    -
+      allow-single-line: false
   clean-import-paths: 2
   empty-args: 2
   hex-length: 2

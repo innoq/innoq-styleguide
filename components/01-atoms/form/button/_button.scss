@@ -1,67 +1,64 @@
 .btn {
   @extend %heading-font-bold;
-  background-color: $button-background;
-  border: 2px solid $button-border-color;
-  color: $button-color;
-  cursor: pointer;
-  font-size: $button-medium-font-size;
-  line-height: $button-medium-line-height;
-  padding: 24px 27px;
   position: relative;
   transition: $standard-transition;
+  border: 2px solid $button-border-color;
+  background-color: $button-background;
+  cursor: pointer;
+  padding: 24px 27px;
+  line-height: $button-medium-line-height;
+  color: $button-color;
+  font-size: $button-medium-font-size;
 
-  &::after{
-      background-color: $button-hover-background;
-      content: '';
-      height: 100%;
-      left: 0;
-      position: absolute;
-      top: 0;
-      transition: $standard-transition;
-      width: 0%;
-      z-index: -1;
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: $standard-transition;
+    z-index: -1;
+    background-color: $button-hover-background;
+    width: 0%;
+    height: 100%;
+    content: '';
   }
 
   &:hover,
   &:focus {
 
-    &::after{
-        width: 100%;
+    &::after {
+      width: 100%;
     }
   }
 
   &--cta {
-    background-color: $button-cta-background;
     border-color: $button-cta-border-color;
+    background-color: $button-cta-background;
     color: $button-cta-color;
 
-    &::before{
-      content: attr(data-label);
+    &::before {
       position: absolute;
       z-index: 1;
+      content: attr(data-label);
     }
 
-    &::after{
-        background-color: $button-cta-hover-background;
-        z-index: 0;
+    &::after {
+      z-index: 0;
+      background-color: $button-cta-hover-background;
     }
-
 
     &:hover,
     &:focus {
       border-color: $button-cta-hover-border-color;
-    }
 
-    &:hover:after,
-    &:focus::after{
+      &::after {
         width: 100%;
+      }
     }
   }
 
   &--light {
-    background-color: transparent;
     border-width: 0 0 2px;
+    background-color: transparent;
     padding: 11.5px 1.5px;
   }
-
 }

@@ -1,53 +1,78 @@
 //
 // Article page layout
 //
-.article,
-.article-page {
+
+// The article-page layout is setup as two nested grids that consits of
+// three columns each.
+.article-page,
+.article-page__content {
   display: grid;
   width: 100%;
 }
 
+// If the browser does not support grid, we use a simple layout:
+// One column, 80% width centered in the middle of the page.
 .article-page {
   margin-top: $article-margin;
+  margin-right: auto;
   margin-bottom: $article-margin;
+  margin-left: auto;
+  width: 80%;
 }
 
+// On medium sized screens, only the outer grid is set up with
+// two columns on the outside and one big column in the center.
 @media screen and (min-width: $grid-breakpoint-md) {
   .article-page {
     grid-template-columns: 1fr 5fr 1fr;
   }
 
-  .article {
-    grid-column: 2;
+  // The content is placed on the second (big) column in the center.
+  .article-page__content {
+    grid-column: 2; // center column
   }
 }
 
+// On large screens, the outer grid is slightly changed. The center
+// column gets a fixed width (~800px), only the outer columns grow
+// fluently.
 @media screen and (min-width: $grid-breakpoint-lg) {
   .article-page {
     grid-template-columns: 1fr $article-main-column-width 1fr;
   }
 }
 
+// On very large screens, the inner, nested grid is introduced. It gets placed
+// inside the content area and consists of three columns as well.
 @media screen and (min-width: $grid-breakpoint-xl) {
   .article-page {
     grid-template-columns: 1fr $article-grid-width 1fr;
   }
 
-  .article {
+  // The nested grid inside the content has a fixed center column (~800px).
+  // The outer columns can be used to break out arbitrary content parts.
+  .article-page__content {
     grid-template-columns: 1fr $article-main-column-width 1fr;
 
+    // All content elements are placed on the center column.
     > * {
-      grid-column: 2;
+      grid-column: 2; // center column
     }
 
-    > .article__toc {
-      grid-column: 1;
+    // Except for special content elements like this table of contents
+    // component.
+    > .article-page__toc {
+      grid-column: 1; // left column
     }
   }
 }
 
-// We need to set the widths used on floated items back to auto, and remove
-// the bottom margin as when we have grid we have gaps.
+// We need to set the widths and margins back to the intended values for the
+// grid.
 @supports (display: grid) {
-  // TODO
+  .article-page {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+  }
 }

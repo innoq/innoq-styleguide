@@ -1,0 +1,26 @@
+$bullet-size: $base-font-size * .476190476; // ~10px
+$bullet-offset: $base-font-size * .80952381; // ~17px
+
+ul {
+  @extend %heading-font-bold;
+  @extend %list-unstyled;
+  line-height: $bullet-list-line-height;
+  font-size: $bullet-list-font-size;
+
+  li {
+    position: relative;
+    margin-bottom: $spacer-y * .857142857;
+
+    &::before  {
+      position: absolute;
+      top: ($bullet-list-line-height * $bullet-list-font-size) / 2;
+      left: -($bullet-offset + $bullet-size);
+      margin-top: -($bullet-size / 2);
+      border-radius: 50%;
+      background: $bullet-list-color;
+      width: $bullet-size;
+      height: $bullet-size;
+      content: '';
+    }
+  }
+}
