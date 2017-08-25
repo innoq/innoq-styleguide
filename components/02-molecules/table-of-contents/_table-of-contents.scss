@@ -23,6 +23,7 @@ $toc-top-margin: $spacer-x * 3.5; // to match the content paragraph
   > li {
     @extend %body-font-italic;
     padding-top: $spacer-y / 2;
+    padding-right: $spacer-x;
     padding-bottom: $spacer-y / 2;
     line-height: $toc-anchor-line-height;
     font-size: $toc-anchor-font-size;
@@ -52,7 +53,7 @@ $toc-top-margin: $spacer-x * 3.5; // to match the content paragraph
   &:hover,
   &:focus {
     background-color: $brand-interaction;
-    color: $brand-white;
+    color: $brand-text;
   }
 }
 
