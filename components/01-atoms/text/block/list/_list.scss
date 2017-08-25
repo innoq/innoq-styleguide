@@ -3,7 +3,8 @@ $bullet-offset: $base-font-size * .80952381; // ~17px
 
 ul {
   @extend %heading-font-bold;
-  @extend %list-unstyled;
+  @include list-unstyled;
+  margin-bottom: $spacer-y * 1.238095238;
   line-height: $bullet-list-line-height;
   font-size: $bullet-list-font-size;
 
