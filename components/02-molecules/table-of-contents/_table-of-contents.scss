@@ -1,3 +1,34 @@
+$toc-border-color: $brand-silver;
+
+.toc {
+  margin-top: $spacer-x;
+}
+
+.toc__heading {
+  @extend %heading-font-heavy;
+  text-transform: uppercase;
+  line-height: $h5-line-height;
+  font-size: $h5-font-size;
+}
+
 .toc__list {
   @extend %list-unstyled;
+
+  > li {
+    @extend %body-font-italic;
+    padding-top: $spacer-y / 2;
+    padding-bottom: $spacer-y / 2;
+    line-height: $date-line-height;
+    font-size: $duration-font-size;
+  }
+
+  > li + li {
+    border-top: 1px solid $toc-border-color;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-xl) {
+  .toc {
+    margin-right: $spacer-x * 2;
+  }
 }
