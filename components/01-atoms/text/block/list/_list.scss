@@ -1,7 +1,10 @@
 $bullet-size: $base-font-size * .476190476; // ~10px
 $bullet-offset: $base-font-size * .80952381; // ~17px
 
-ul {
+// sass-lint:disable force-pseudo-nesting
+// Scope element based selector to elements, that do not carry a
+// class attribute, to prevent reverting styles for all non-default lists.
+ul:not([class]) {
   @extend %heading-font-bold;
   @include list-unstyled;
   margin-bottom: $spacer-y * 1.238095238;
@@ -32,7 +35,11 @@ $number-space: 25px;
 // Generated numbers from default ordered lists can't be styled directly
 // yet. Therefore we disable auto-numbering and use a counter to increment
 // a number and insert it via :before content.
-ol {
+
+// sass-lint:disable force-pseudo-nesting
+// Scope element based selector to elements, that do not carry a
+// class attribute, to prevent reverting styles for all non-default lists.
+ol:not([class]) {
   @extend %body-font-regular;
   @include list-unstyled;
   margin-bottom: $spacer-y * 1.238095238;
