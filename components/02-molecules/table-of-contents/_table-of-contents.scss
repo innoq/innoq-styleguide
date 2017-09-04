@@ -23,8 +23,8 @@ $toc-top-margin: $spacer-x * 3.5; // to match the content paragraph
   > li {
     @extend %body-font-italic;
     padding-top: $spacer-y / 2;
-    padding-right: $spacer-x;
     padding-bottom: $spacer-y / 2;
+    padding-left: $spacer-x;
     line-height: $toc-anchor-line-height;
     font-size: $toc-anchor-font-size;
   }
@@ -36,14 +36,14 @@ $toc-top-margin: $spacer-x * 3.5; // to match the content paragraph
 
 .toc__anchor {
   @extend %link-unstyled;
+  display: inline-block;
   position: relative;
-  margin-left: $spacer-x;
-  padding: ($spacer-y / 4) ($spacer-x / 4);
+  padding: 0 ($spacer-x / 4);
 
   &::before {
     @extend %icon; // inline-block
     position: absolute;
-    top: $spacer-y / 4;
+    top: 0;
     left: -$spacer-x;
     width: $spacer-x;
     color: $brand-interaction;
