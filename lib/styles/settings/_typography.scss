@@ -1,3 +1,5 @@
+@import 'modularscale-sass/stylesheets/modularscale';
+
 //
 // Font stacks
 //
@@ -14,7 +16,26 @@ $font-family-icons: FFMarkWebProHeavy, 'Helvetica Neue', Helvetica, Arial, sans-
 //
 
 // The font size set on the root html element.
-$base-font-size: 21px;
+$base-font-size: 16px;
+
+// $base-font-size without unit for calculations
+$base-size: 16;
+
+// The companion font size to create a modular scale.
+$companion-font-size: 21px;
+
+// $companion-font-size without unit for calculations
+$companion-size: 21;
+
+// Setting up a modular scale. You can see its values here:
+// http://www.modularscale.com/?16,21&px&1.2
+$modularscale: (
+  base: $base-font-size $companion-font-size,
+  ratio: $minor-third
+);
+
+// Show a baseline grid for vertical rythm debugging
+$baseline-grid: false;
 
 // Color set on the root html element.
 $base-color: $brand-text;
@@ -24,8 +45,11 @@ $base-color: $brand-text;
 // the relative value.
 $base-line-height: 32px;
 
+// $base-line-height without unit for calculations
+$base-height: 32;
+
 // The computed base line height value can be used in components.
-$base-line-height-computed: 1.5238095238; // = $base-line-height / $base-font-size
+$base-line-height-computed: $base-height / $companion-size;
 
 // The length unit in which to output vertical rhythm values.
 $base-unit: 'rem';
@@ -39,35 +63,35 @@ $base-font-family: $font-family-serif;
 //
 
 // H1
-$h1-font-size: 2.380952381 * $base-font-size; // ~50px
-$h1-line-height: 1.16;                        // ~58px
+$h1-font-size: ms(12); // 48px (~50px)
+$h1-line-height: 1.2;
 
 // H2
-$h2-font-size: 1.666666666 * $base-font-size; // ~35px
-$h2-line-height: 1.2;                         // ~42px
+$h2-font-size: ms(9); // 36px (~35px)
+$h2-line-height: 1.2;
 
 // H3
-$h3-font-size: 1.428571428 * $base-font-size; // ~30px
-$h3-line-height: 2;                           // ~60px
+$h3-font-size: ms(7); // ~30px
+$h3-line-height: 1.2;
 
 // H4
-$h4-font-size: 1.19047619 * $base-font-size;  // ~25px
-$h4-line-height: 2.4;                         // ~60px
+$h4-font-size: ms(5);  // ~25px
+$h4-line-height: 2.4;
 
 // H5
-$h5-font-size: .952380952 * $base-font-size;  // ~20px
-$h5-line-height: 1.3;                         // ~26px
+$h5-font-size: ms(3);  // ~20px
+$h5-line-height: 1.2;
 
 // H6
-$h6-font-size: .761904762 * $base-font-size;  // ~16px
-$h6-line-height: 1.375;                       // ~22px
+$h6-font-size: ms(0);  // ~16px
+$h6-line-height: 1.2;
 
 
 //
 // Buttons
 //
-$button-medium-font-size: .952380952 * $base-font-size;  // ~20px
-$button-medium-line-height: 1.2380952381rem;             // ~26px
+$button-medium-font-size: ms(3);
+$button-medium-line-height: 1.2;
 
 
 //
@@ -75,8 +99,8 @@ $button-medium-line-height: 1.2380952381rem;             // ~26px
 //
 // The amount lists and blockquotes are indented.
 $indent-amount: $base-font-size !default;
-$bullet-list-font-size: .952380952 * $base-font-size;         // ~20px
-$bullet-list-line-height: 1.3;                                // ~26px
+$bullet-list-font-size: ms(3);                                // ~20px
+$bullet-list-line-height: 1.2;                                // ~26px
 $ordered-list-font-size: $base-font-size;                     // ~21px
 $ordered-list-line-height: $base-line-height-computed;        // ~32px
 $ordered-list-counter-font-size:  $bullet-list-font-size;     // ~20px
@@ -86,32 +110,36 @@ $ordered-list-counter-line-height: $bullet-list-line-height;  // ~26px
 //
 // Paragraph Text
 //
-$paragraph-font-size:       $base-font-size;                // ~21px
-$paragraph-lead-font-size:  1.1904761905 * $base-font-size; // ~25px
-$paragraph-line-height:     $base-line-height-computed;     // ~32px
+$paragraph-font-size:        $companion-font-size;           // ~21px
+$paragraph-line-height:      $base-line-height-computed;     // ~32px
+$paragraph-lead-font-size:   ms(5);                          // ~25px
+$paragraph-lead-line-height: 1.52;                           // ~38px
 
 
 //
 // Date & Duration
 //
-$date-font-size: .761904761904762 * $base-font-size;     // ~16px
-$duration-font-size: .8095238095 * $base-font-size;      // ~17px
-$date-line-height: 1.0476190476;                         // ~22px
+$date-font-size: ms(0);     // ~16px
+$duration-font-size: ms(1); // ~17px
+$date-line-height: 1.3;     // ~22px
+
+
 
 //
 // Table of contents
 //
-$toc-anchor-font-size: .8095238095 * $base-font-size;      // ~17px
-$toc-anchor-line-height: 1.3;                              // ~22px
-$toc-heading-font-size: .9047619048 * $base-font-size;     // ~19px
-$toc-heading-line-height: 1.3;                             // ~26px
+$toc-anchor-font-size: ms(1);      // ~17px
+$toc-anchor-line-height: 1.3;      // ~22px
+$toc-heading-font-size: ms(2);     // ~19px
+$toc-heading-line-height: 1.3;     // ~26px
+
 
 //
 // Author Bio
 //
-$author-bio-name-font-size: .761904761904762 * $base-font-size; // ~16px
-$author-bio-position-font-size: .8095238095 * $base-font-size;  // ~17px
-$author-bio-line-height: 1.0476190476;                          // ~22px
+$author-bio-name-font-size: ms(0);      // ~16px
+$author-bio-position-font-size: ms(1);  // ~17px
+$author-bio-line-height: 1.3;           // ~22px
 
 
 //
@@ -120,8 +148,9 @@ $author-bio-line-height: 1.0476190476;                          // ~22px
 $blockquote-font-size: $h2-font-size;
 $blockquote-line-height: $h2-line-height;
 
+
 //
 // Pull Quote
 //
-$pull-quote-font-size: .904761904761905 * $base-font-size;  // ~19px
-$pull-quote-line-height: 1.238095238095238;                 // ~26px
+$pull-quote-font-size: ms(2);  // ~19px
+$pull-quote-line-height: 1.3;  // ~26px

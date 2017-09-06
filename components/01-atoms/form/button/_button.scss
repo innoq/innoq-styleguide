@@ -1,5 +1,10 @@
+//
+// Button
+//
+
 .btn {
   @extend %heading-font-bold;
+  display: inline-block;
   position: relative;
   transition: $standard-transition;
   border: 2px solid $button-border-color;
@@ -7,8 +12,10 @@
   cursor: pointer;
   padding: 24px 27px;
   line-height: $button-medium-line-height;
+  white-space: nowrap;
   color: $button-color;
   font-size: $button-medium-font-size;
+  user-select: none;
 
   &::after {
     position: absolute;
@@ -22,8 +29,13 @@
     content: '';
   }
 
+  &:focus {
+    outline: none;
+  }
+
   &:hover,
   &:focus {
+    text-decoration: none;
 
     &::after {
       width: 100%;

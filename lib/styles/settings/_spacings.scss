@@ -1,12 +1,45 @@
 //
-// General purpose
+// Basic spacers
 //
-$spacer-x: $base-font-size; // ~21px
-$spacer-y: $base-font-size; // ~21px
+
+$spacer-xs: $base-line-height / 4;     // ~8px;
+$spacer-sm: $base-line-height / 2;     // ~16px
+$spacer-md: $base-line-height / 1.333; // ~24px
+$spacer-base: $base-line-height;       // ~32px
+$spacer-lg: $base-line-height * 1.5;   // ~48px
+$spacer-xl: $base-line-height * 2;     // ~64px
+
+// TODO: refactor references to these variables
+$spacer-x: $spacer-base;
+$spacer-y: $spacer-base;
+
+
+//
+// Spacing system according to the rule of 3Cs
+// see https://blog.prototypr.io/a-framework-for-creating-a-predictable-and-harmonious-spacing-system-8eee8aaf773c
+//
+
+// TODO: create sensible variables and values for each category.
+// Maybe we should switch the naming from x/y to horizontal/vertical.
+
+// Container spacers
+$container-spacer-x: $spacer-base;
+$container-spacer-y: $spacer-base;
+
+
+// Content spacers
+$content-spacer-x: $spacer-sm;
+$content-spacer-y: $spacer-sm;
+
+
+// Component spacers
+$component-spacer-x: $spacer-base;
+$component-spacer-y: $spacer-base;
+
 
 //
 // Article
 //
-$article-grid-width: 68.7619047619rem;        // ~1444px, full-width, including table of contents
-$article-main-column-width: 38.0952380952rem; // ~800px, main column, just for the text
-$article-margin: 3 * $spacer-y;
+$article-grid-width: 90.25rem;     // ~1444px, full-width, including table of contents
+$article-main-column-width: 50rem; // ~800px, main column, just for the text
+$article-margin: $spacer-xl;
