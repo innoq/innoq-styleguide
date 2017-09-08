@@ -16,13 +16,13 @@ $font-family-icons: FFMarkWebProHeavy, 'Helvetica Neue', Helvetica, Arial, sans-
 //
 
 // The font size set on the root html element.
-$base-font-size: 16px;
+$base-font-size: 1rem;
 
 // $base-font-size without unit for calculations
 $base-size: 16;
 
 // The companion font size to create a modular scale.
-$companion-font-size: 21px;
+$companion-font-size: 1.3125rem;
 
 // $companion-font-size without unit for calculations
 $companion-size: 21;
@@ -79,7 +79,7 @@ $h4-font-size: ms(5);  // ~25px
 $h4-line-height: 2.4;
 
 // H5
-$h5-font-size: ms(3);  // ~20px
+$h5-font-size: ms(3);  // ~21px
 $h5-line-height: 1.2;
 
 // H6

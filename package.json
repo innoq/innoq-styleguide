@@ -17,7 +17,7 @@
     "site": "npm run compile && fractal build"
   },
   "dependencies": {
-    "normalize-scss": "^7.0.0",
+    "normalize.css": "^7.0.0",
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
