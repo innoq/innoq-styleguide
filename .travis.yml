@@ -13,6 +13,7 @@ deploy:
     on:
       branch: master
   - provider: npm
+    skip_cleanup: true
     email: mail@robert-glaser.de
     api_key:
       secure: rU1W4ZTxjH73GZhCzdTGFSDnZEEgUTlhzLzHbV+kXdfL8ogUDFKG7GS3FTTgQ7TKjj4ip6vXoBa1fp3oOaOzcu7cgQXhisx1uIrnV1LYfVCYKBmjs/e5pSE0yTqmJFB3ixrwmAhiTYC61JM6jCTkzGejOOQWU6dx/161ZFSZyEv3M8DoUM57T/aoGcwYrqYbA3axhNpcxiLv39SitbN/OBNHYbocUUiocShLdGVA+g12eOscGCIHxbz/TgMEjLHd4dQlnnjklIbEc56Yspn0dDUVfbG7N4p0eTa0u2Q5K2UGDqs/ltTGBsUmInkQQqte/A4qE70kQYVtcHtqFVTJ1Ereh3MFNSnB6pooFkd5zz3lpBtnvQxLQrLT2r8pzq41Nw2l5RnD90heefZNn5clj0zwcN3Ax1D02eOPh0dhKAe4iSvwZrzCV6PjhoYYTxAb1j2Jz875hm8IGKeFSswEwK9/o/uQpmyiNX0Cl+VpXOkvt/UAe3qkE9MQ/pCEoy57STd0VANOebrEhBiHntPZ8Mr4kIT+LAuZAe0AIniH2QBn10rXM5m5hiKAqpJosCqLdjpC8iwRE/juO85oXGkriqOxRGmdT5/Gp6t/3Y0BCLURKtLr0RNcmJ66NxzGtWoM1yW87Kdqn8BQLW5/5kDpFEssSipUAmjDPrMbM/QYP40=
