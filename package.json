@@ -17,10 +17,7 @@
     "site": "npm run compile && fractal build",
     "dist": "npm run site && cp -r dist/site/css dist/"
   },
-  "dependencies": {
-    "normalize-scss": "^7.0.0",
-    "webfontloader": "^1.6.28"
-  },
+  "dependencies": {},
   "devDependencies": {
     "complate-fractal": "^0.2.0",
     "eslint": "^4.6.1",
@@ -31,7 +28,9 @@
     "eslint-plugin-standard": "^3.0.1",
     "faucet-pipeline-sass": "^0.7.0",
     "nodemon": "^1.11.0",
+    "normalize-scss": "^7.0.0",
     "npm-run-all": "^4.1.1",
-    "sass-lint": "^1.11.1"
+    "sass-lint": "^1.11.1",
+    "webfontloader": "^1.6.28"
   }
 }
