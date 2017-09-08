@@ -15,7 +15,7 @@
     "compile-watch": "npm run compile -- --watch",
     "test": "eslint --cache . && sass-lint -v -q",
     "site": "npm run compile && fractal build",
-    "dist": "npm run site && ls -la . && ls -la dist &&  cp -r dist/site/css dist/ && cp -r dist/site/js dist/"
+    "dist": "npm run site && ls -la . && ls -la dist/site &&  cp -r dist/site/css dist/ && cp -r dist/site/js dist/"
   },
   "dependencies": {
     "normalize-scss": "^7.0.0",
