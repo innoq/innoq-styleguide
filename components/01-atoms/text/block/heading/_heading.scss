@@ -6,7 +6,7 @@
 h1 {
   @extend %heading-font-heavy;
   margin-top: 0;
-  margin-bottom: 2 * $spacer-x;
+  margin-bottom: $spacer-lg;
   line-height: $h1-line-height;
   color: $h1-color;
   font-size: $h1-font-size;
@@ -17,7 +17,7 @@ h1 {
 h2 {
   @extend %heading-font-heavy;
   margin-top: 0;
-  margin-bottom: $spacer-x;
+  margin-bottom: $content-spacer-y;
   line-height: $h2-line-height;
   color: $h2-color;
   font-size: $h2-font-size;
@@ -28,7 +28,7 @@ h2 {
 h3 {
   @extend %heading-font-heavy;
   margin-top: 0;
-  margin-bottom: $spacer-x / 2;
+  margin-bottom: $spacer-md;
   line-height: $h3-line-height;
   color: $h3-color;
   font-size: $h3-font-size;
@@ -50,7 +50,7 @@ h4 {
 h5 {
   @extend %heading-font-bold;
   margin-top: 0;
-  margin-bottom: $spacer-x / 4;
+  margin-bottom: $spacer-xs;
   line-height: $h5-line-height;
   color: $h5-color;
   font-size: $h5-font-size;
@@ -61,7 +61,7 @@ h5 {
 h6 {
   @extend %heading-font-heavy;
   margin-top: 0;
-  margin-bottom: $spacer-x / 4;
+  margin-bottom: $spacer-xs;
   line-height: $h6-line-height;
   color: $h6-color;
   font-size: $h6-font-size;
