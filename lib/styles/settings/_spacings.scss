@@ -9,7 +9,7 @@ $spacer-base: ms(8); // ~33px
 $spacer-lg: ms(12);  // ~48px
 $spacer-xl: ms(15);  // ~62px
 
-// TODO: refactor references to these variables
+// TODO: refactor references to these variables, delete them after all of them are refactored.
 $spacer-x: $spacer-base;
 $spacer-y: $spacer-base;
 
@@ -27,9 +27,11 @@ $container-spacer-x: $spacer-base;
 $container-spacer-y: $spacer-base;
 
 
+
 // Content spacers
 $content-spacer-x: $spacer-sm;
 $content-spacer-y: $spacer-sm;
+$content-spacer-paragraph-vertical: $spacer-base;
 
 
 // Component spacers

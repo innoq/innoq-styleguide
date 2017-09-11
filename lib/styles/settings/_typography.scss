@@ -92,10 +92,10 @@ $ordered-list-counter-line-height: $bullet-list-line-height;  // ~26px
 //
 // Paragraph Text
 //
-$paragraph-font-size:        $companion-font-size;           // ~21px
-$paragraph-line-height:      ms(8);                          // ~32px
-$paragraph-lead-font-size:   ms(5);                          // ~25px
-$paragraph-lead-line-height: 1.52;                           // ~38px
+$paragraph-font-size: ms(3);                  // ~21px
+$paragraph-line-height: $ratio * $ratio;      // ~30px
+$paragraph-lead-font-size: ms(5);             // ~25px
+$paragraph-lead-line-height: $ratio * $ratio; // ~38px
 
 
 //
