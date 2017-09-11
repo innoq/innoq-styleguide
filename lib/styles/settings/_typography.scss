@@ -18,38 +18,21 @@ $font-family-icons: FFMarkWebProHeavy, 'Helvetica Neue', Helvetica, Arial, sans-
 // The font size set on the root html element.
 $base-font-size: 1rem;
 
-// $base-font-size without unit for calculations
-$base-size: 16;
-
 // The companion font size to create a modular scale.
 $companion-font-size: 1.3125rem;
 
-// $companion-font-size without unit for calculations
-$companion-size: 21;
+// Ratio
+$ratio: $minor-third;
 
 // Setting up a modular scale. You can see its values here:
 // http://www.modularscale.com/?16,21&px&1.2
 $modularscale: (
   base: $base-font-size $companion-font-size,
-  ratio: $minor-third
+  ratio: $ratio
 );
-
-// Show a baseline grid for vertical rythm debugging
-$baseline-grid: false;
 
 // Color set on the root html element.
 $base-color: $brand-text;
-
-// The base line height determines the basic unit of vertical rhythm.
-// Line-height is set in PX because normalize.scss uses it to calculate
-// the relative value.
-$base-line-height: 32px;
-
-// $base-line-height without unit for calculations
-$base-height: 32;
-
-// The computed base line height value can be used in components.
-$base-line-height-computed: $base-height / $companion-size;
 
 // The length unit in which to output vertical rhythm values.
 $base-unit: 'rem';
@@ -57,34 +40,33 @@ $base-unit: 'rem';
 // The default font family.
 $base-font-family: $font-family-serif;
 
-
 //
 // Headlines
 //
 
 // H1
 $h1-font-size: ms(12); // 48px (~50px)
-$h1-line-height: 1.2;
+$h1-line-height: $ratio;
 
 // H2
 $h2-font-size: ms(9); // 36px (~35px)
-$h2-line-height: 1.2;
+$h2-line-height: $ratio;
 
 // H3
 $h3-font-size: ms(7); // ~30px
-$h3-line-height: 1.2;
+$h3-line-height: $ratio;
 
 // H4
 $h4-font-size: ms(5);  // ~25px
-$h4-line-height: 2.4;
+$h4-line-height: $ratio * $ratio * $ratio;
 
 // H5
 $h5-font-size: ms(3);  // ~21px
-$h5-line-height: 1.2;
+$h5-line-height: $ratio;
 
 // H6
 $h6-font-size: ms(0);  // ~16px
-$h6-line-height: 1.2;
+$h6-line-height: $ratio;
 
 
 //
@@ -102,7 +84,7 @@ $indent-amount: $base-font-size !default;
 $bullet-list-font-size: ms(3);                                // ~20px
 $bullet-list-line-height: 1.2;                                // ~26px
 $ordered-list-font-size: $base-font-size;                     // ~21px
-$ordered-list-line-height: $base-line-height-computed;        // ~32px
+$ordered-list-line-height: ms(8);                             // ~32px
 $ordered-list-counter-font-size:  $bullet-list-font-size;     // ~20px
 $ordered-list-counter-line-height: $bullet-list-line-height;  // ~26px
 
@@ -111,7 +93,7 @@ $ordered-list-counter-line-height: $bullet-list-line-height;  // ~26px
 // Paragraph Text
 //
 $paragraph-font-size:        $companion-font-size;           // ~21px
-$paragraph-line-height:      $base-line-height-computed;     // ~32px
+$paragraph-line-height:      ms(8);                          // ~32px
 $paragraph-lead-font-size:   ms(5);                          // ~25px
 $paragraph-lead-line-height: 1.52;                           // ~38px
 

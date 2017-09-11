@@ -3,13 +3,6 @@
   hyphens: auto;
 }
 
-html {
-  @if ($baseline-grid) {
-    // sass-lint:disable no-url-domains no-url-protocols
-    background-image: url('//basehold.it/i/32');
-  };
-}
-
 body {
   color: $base-color;
 }

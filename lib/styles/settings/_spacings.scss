@@ -2,12 +2,12 @@
 // Basic spacers
 //
 
-$spacer-xs: $base-line-height / 4;     // ~8px;
-$spacer-sm: $base-line-height / 2;     // ~16px
-$spacer-md: $base-line-height / 1.333; // ~24px
-$spacer-base: $base-line-height;       // ~32px
-$spacer-lg: $base-line-height * 1.5;   // ~48px
-$spacer-xl: $base-line-height * 2;     // ~64px
+$spacer-xs: ms(-6);  // ~9px;
+$spacer-sm: ms(0);   // ~16px
+$spacer-md: ms(4);   // ~23px
+$spacer-base: ms(8); // ~33px
+$spacer-lg: ms(12);  // ~48px
+$spacer-xl: ms(15);  // ~62px
 
 // TODO: refactor references to these variables
 $spacer-x: $spacer-base;
