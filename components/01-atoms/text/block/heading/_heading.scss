@@ -17,7 +17,7 @@ h1 {
 h2 {
   @extend %heading-font-heavy;
   margin-top: 0;
-  margin-bottom: $content-spacer-y;
+  margin-bottom: $spacer-base;
   line-height: $h2-line-height;
   color: $h2-color;
   font-size: $h2-font-size;
