@@ -4,7 +4,7 @@
 
 $spacer-xs: ms(-6);  // ~9px;
 $spacer-sm: ms(0);   // ~16px
-$spacer-md: ms(4);   // ~23px
+$spacer-md: ms(4);   // ~24px
 $spacer-base: ms(8); // ~33px
 $spacer-lg: ms(12);  // ~48px
 $spacer-xl: ms(15);  // ~62px
@@ -37,6 +37,9 @@ $content-spacer-paragraph-vertical: $spacer-base;
 // Component spacers
 $component-spacer-x: $spacer-base;
 $component-spacer-y: $spacer-base;
+$component-spacer-button-medium-vertical: $spacer-md;
+$component-spacer-button-medium-horizontal: $spacer-md;
+$component-spacer-button-light-vertical: $spacer-xs;
 
 
 //
