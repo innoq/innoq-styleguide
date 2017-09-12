@@ -1,14 +1,11 @@
-$zigzag-bottom: $spacer-y * 1.5;
-$blockquote-bottom: $spacer-y * 2;
-
 blockquote {
-  margin-bottom: $blockquote-bottom;
+  margin-bottom: $component-spacer-blockquote-vertical;
   text-align: center;
 
 
   .zigzag {
     display: block;
-    margin: 0 auto $zigzag-bottom;
+    margin: 0 auto $component-spacer-zigzag-horizontal;
     width: 300px;
   }
 

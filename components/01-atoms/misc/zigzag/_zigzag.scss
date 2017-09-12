@@ -1,9 +1,10 @@
-$zzheight: 12px;
+$zzheight: 10px;
 $zzhalfheight: ($zzheight / 2);
 $zzthickness: 130%; // increase to make the line thicker
 $zzoffset: 4px;
 $zzbgc: $brand-white;
 $zzlinecolor: $brand-text;
+$zzdegree: 135deg;
 
 .zigzag {
   display: block;
@@ -24,7 +25,7 @@ $zzlinecolor: $brand-text;
 
   &::before {
     top: $zzthickness;
-    background: linear-gradient(-135deg, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight, linear-gradient(135deg, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight;
+    background: linear-gradient(-$zzdegree, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight, linear-gradient($zzdegree, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight;
     background-repeat: repeat-x;
     background-position: top left;
     background-size: $zzheight $zzheight;
@@ -33,7 +34,7 @@ $zzlinecolor: $brand-text;
 
   &::after {
     top: 100%;
-    background: linear-gradient(-135deg, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight, linear-gradient(135deg, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight;
+    background: linear-gradient(-$zzdegree, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight, linear-gradient($zzdegree, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight;
     background-repeat: repeat-x;
     background-position: top left;
     background-size: $zzheight $zzheight;

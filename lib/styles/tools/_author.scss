@@ -1,6 +1,6 @@
 %author-name {
   @extend %heading-font-heavy;
-  margin-bottom: $spacer-y / 4;
+  margin-bottom: $component-spacer-author-name-vertical;
   text-transform: uppercase;
   line-height: $author-bio-line-height;
   font-size: $author-bio-name-font-size;
