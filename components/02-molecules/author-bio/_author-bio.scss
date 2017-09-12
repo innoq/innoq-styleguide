@@ -1,5 +1,3 @@
-$bubble-size: $spacer-x * 1.5;
-
 .author-bio {
   &.author-bio--short {
     display: flex;
@@ -31,15 +29,15 @@ $bubble-size: $spacer-x * 1.5;
     bottom: 0;
     border-radius: 100%;
     background-color: $brand-interaction;
-    width: $bubble-size;
-    height: $bubble-size;
+    width: $spacer-md;
+    height: $spacer-md;
     text-align: center;
-    line-height: $bubble-size;
+    line-height: $spacer-md;
     color: $brand-white;
     content: $icon-arrow-down;
   }
 }
 
 .author-bio__image {
-  margin-right: $spacer-x;
+  margin-right: $component-spacer-author-bio-horizontal;
 }
