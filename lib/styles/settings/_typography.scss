@@ -103,14 +103,14 @@ $paragraph-lead-line-height: $ratio * $ratio; // ~38px
 //
 $date-font-size: ms(0);     // ~16px
 $duration-font-size: ms(1); // ~17px
-$date-line-height: 1.3;     // ~22px
+$date-line-height: $ratio;  // ~22px
 
 
 //
 // Table of contents
 //
 $toc-anchor-font-size: ms(1);      // ~17px
-$toc-anchor-line-height: 1.3;      // ~22px
+$toc-anchor-line-height: $ratio;   // ~22px
 $toc-heading-font-size: ms(2);     // ~19px
 $toc-heading-line-height: 1.3;     // ~26px
 

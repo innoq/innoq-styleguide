@@ -4,7 +4,6 @@
 
 // Component specific variables
 $border-position: $base-font-size / 2;
-$content-padding: $spacer-x / 2;
 
 // Component definition
 .content-separator {
@@ -12,7 +11,7 @@ $content-padding: $spacer-x / 2;
   align-content: center;
   align-items: baseline;
   justify-content: center;
-  margin-bottom: $spacer-x;
+  margin-bottom: $component-spacer-content-seperator-vertical;
 
   // The border in the middle of the component is realized with
   // a stack of two inset box-shadows the first one is white
@@ -20,7 +19,7 @@ $content-padding: $spacer-x / 2;
   // The second box-shadow is 1px taller than the first one,
   // resulting in a single line.
   box-shadow: $brand-white 0 $border-position 0 0 inset,
-  $brand-text 0 $border-position 0 0 inset;
+  $brand-text 0 calc(#{$border-position} + 1px) 0 0 inset;
   min-height: $base-font-size;
 }
 
@@ -29,11 +28,11 @@ $content-padding: $spacer-x / 2;
 .content-separator__date,
 .content-separator__duration {
   background-color: $brand-white;
-  padding-right: $content-padding;
-  padding-left: $content-padding;
+  padding-right: $component-spacer-content-seperator-horizontal;
+  padding-left: $component-spacer-content-seperator-horizontal;
   line-height: 1;
 }
 
 .content-separator__date {
-  margin-right: $spacer-x;
+  margin-right: $component-spacer-content-seperator-vertical;
 }
