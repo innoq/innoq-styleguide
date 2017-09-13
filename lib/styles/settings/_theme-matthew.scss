@@ -1,16 +1,11 @@
 //
 // Theme colors
 //
-
 $brand-primary: $brand-green;
 $brand-interaction: $brand-green;
 $brand-text: $brand-black;
 
-
-//
 // Buttons
-//
-
 $button-border-color: $brand-text;
 $button-background: transparent;
 $button-color: $brand-text;
@@ -25,11 +20,7 @@ $button-cta-hover-background: $brand-text;
 $button-cta-hover-color: $brand-white;
 $button-cta-hover-border-color: $brand-text;
 
-
-//
 // Headlines
-//
-
 $h1-color: $brand-primary;
 $h2-color: $brand-text;
 $h3-color: $brand-text;
@@ -37,15 +28,32 @@ $h4-color: $brand-text;
 $h5-color: $brand-text;
 $h6-color: $brand-text;
 
+// Inline
+$link-color: $brand-text;
+$hover-color: $brand-interaction;
+$mark-color: $brand-transparent-green;
 
-//
 // Pull Quote
-//
-
+$pull-quote-border-color: $brand-text;
 $pull-quote-color: $brand-interaction;
 
+// Block Quote
+$block-quote-color: $brand-interaction;
 
-//
+// ZigZag
+$zzbgc: $brand-white;
+$zzlinecolor: $brand-text;
+
 // Lists
-//
 $bullet-list-color: $brand-primary;
+
+//author
+$author-bio-link-color: $brand-white;
+$author-bio-link-background-color: $brand-interaction;
+
+// Content Seperator
+$box-shadow-color-light: $brand-white;
+$box-shadow-color-dark: $brand-text;
+
+// Table of Content
+$toc-border-color: $brand-silver;

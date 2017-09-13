@@ -28,12 +28,12 @@
     right: 0;
     bottom: 0;
     border-radius: 100%;
-    background-color: $brand-interaction;
+    background-color: $author-bio-link-background-color;
     width: $spacer-md;
     height: $spacer-md;
     text-align: center;
     line-height: $spacer-md;
-    color: $brand-white;
+    color: $author-bio-link-color;
     content: $icon-arrow-down;
   }
 }

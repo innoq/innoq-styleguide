@@ -18,8 +18,8 @@ $border-position: $base-font-size / 2;
   // and reaches from the top to the middle of the baseline.
   // The second box-shadow is 1px taller than the first one,
   // resulting in a single line.
-  box-shadow: $brand-white 0 $border-position 0 0 inset,
-  $brand-text 0 calc(#{$border-position} + 1px) 0 0 inset;
+  box-shadow: $box-shadow-color-light 0 $border-position 0 0 inset,
+  $box-shadow-color-dark 0 calc(#{$border-position} + 1px) 0 0 inset;
   min-height: $base-font-size;
 }
 
@@ -27,7 +27,7 @@ $border-position: $base-font-size / 2;
 // having a small padding and a white background color.
 .content-separator__date,
 .content-separator__duration {
-  background-color: $brand-white;
+  background-color: $box-shadow-color-light;
   padding-right: $component-spacer-content-seperator-horizontal;
   padding-left: $component-spacer-content-seperator-horizontal;
   line-height: 1;

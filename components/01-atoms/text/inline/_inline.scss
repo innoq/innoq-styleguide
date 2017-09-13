@@ -1,13 +1,13 @@
 a {
   transition: $standard-transition;
-  color: $brand-text;
+  color: $link-color;
 
   &:hover {
-    color: $brand-interaction;
+    color: $hover-color;
   }
 }
 
 mark {
   display: inline-block;
-  background-color: $brand-transparent-green;
+  background-color: $mark-color;
 }
