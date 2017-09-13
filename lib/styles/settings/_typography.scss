@@ -133,5 +133,5 @@ $blockquote-line-height: $h2-line-height;
 //
 // Pull Quote
 //
-$pull-quote-font-size: ms(2);  // ~19px
-$pull-quote-line-height: 1.3;  // ~26px
+$pull-quote-font-size: ms(2);               // ~19px
+$pull-quote-line-height: $ratio * $ratio;   // ~26px

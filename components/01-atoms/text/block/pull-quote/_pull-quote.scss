@@ -1,11 +1,9 @@
-$pull-quote-padding: $spacer-x * .75;
-
 aside {
   blockquote {
     @extend %heading-font-bold;
     border: 1px solid $brand-text;
     border-width: 1px 0;
-    padding: $pull-quote-padding;
+    padding: $spacer-sm;
     width: 80%;
     text-align: center;
     line-height: $pull-quote-line-height;
