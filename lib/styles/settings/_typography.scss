@@ -109,10 +109,10 @@ $date-line-height: $ratio;  // ~22px
 //
 // Table of contents
 //
-$toc-anchor-font-size: ms(1);      // ~17px
-$toc-anchor-line-height: $ratio;   // ~22px
-$toc-heading-font-size: ms(2);     // ~19px
-$toc-heading-line-height: 1.3;     // ~26px
+$toc-anchor-font-size: ms(1);               // ~17px
+$toc-anchor-line-height: $ratio;            // ~22px
+$toc-heading-font-size: ms(2);              // ~19px
+$toc-heading-line-height: $ratio * $ratio;  // ~26px
 
 
 //
