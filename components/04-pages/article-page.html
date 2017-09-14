@@ -70,14 +70,28 @@
             <p>Nein, denn wir wollen die Anzahl der gleichzeitig eingeführten Neuerungen auf diejenigen begrenzen, von denen wir uns den größten Mehrwert für unsere Produkte oder unseren Business Value-Versprechen. Wir können drei wesentliche Punkte festhalten, die die Notwendigkeit unterstreichen, die Anzahl gleichzeitig neu eingeführter Technologien zu begrenzen:</p>
 
             <ul>
-                <li><p>Die unbekannten Unbekannten reduzieren</p></li>
-                <li><p>Den kognitiven Ballast reduzieren</p></li>
+                <li>Die unbekannten Unbekannten reduzieren</li>
+                <li>Den kognitiven Ballast reduzieren</li>
                 <li>
-                    <p>Unsere Zeit auf die Wertschöpfung verwenden, anstatt auf „Nebenkriegsschauplätze“</p>
-                    <p>„The nice thing about boringness (so constrained) is that the capabilities of these things are well understood. But more importantly, their failure modes are well understood.“
-                        –Dan McKinley</p>
+                    Unsere Zeit auf die Wertschöpfung verwenden, anstatt auf „Nebenkriegsschauplätze“
+                    <q>„The nice thing about boringness (so constrained) is that the capabilities of these things are well understood. But more importantly, their failure modes are well understood.“
+                        –Dan McKinley</q>
                 </li>
             </ul>
+
+            <ul>
+                <li>Die unbekannten Unbekannten reduzieren</li>
+                <li>Den kognitiven Ballast reduzieren</li>
+                <li>
+                    Unsere Zeit auf die Wertschöpfung verwenden, anstatt auf „Nebenkriegsschauplätze“
+                </li>
+            </ul>
+
+            <ol>
+                <li>Welches unserer Probleme wird diese Technologie lösen?</li>
+                <li>Welche Veränderungen erfordert diese Technologie gegenüber dem Status quo?</li>
+                <li>Wie könnten wir diese Probleme lösen, wenn wir die Technologie nicht einsetzen können?</li>
+            </ol>
 
             <h3 id="unbekannt">An die unbekannten Unbekannten denken</h3>
 
@@ -93,14 +107,14 @@
 
             <p>Wertschöpfung findet statt, wenn unsere Änderung oder das neue Feature in unserem Produktionssystem genutzt wird. Dementsprechend sollte es unser Anliegen sein, die Projektziele an dieser Wertschöpfung und den fachlichen Zielen zu orientieren, damit das Projektteam diese in technische Detailentscheidungen immer einbezieht – wie der Einführung neuer Technologien. Wenn bei der Definition der Projektziele die fachlichen Ziele nicht transparent sind und nicht klar ist, wie der Mehrwert am Ende gemessen wird, kann dies dazu führen, dass unbewusst Entscheidungen getroffen werden, die gegen unsere fachlichen Ziele laufen.</p>
 
-            {/* start blockquote component @see atoms/text/block/blockquote */}
-            <blockquote itemscope itemtype="http://schema.org/Person">
-                <span class="zigzag"></span>
+            {/* start superquote molecule @see molecules/super-quote */}
+            <blockquote class="superquote" itemscope itemtype="http://schema.org/Person">
+                <span class="superquote__zigzag"></span>
                 <p>Wertschöpfung findet statt, wenn unsere Änderung oder das neue Feature in unserem Produktionssystem genutzt wird.</p>
-                <cite itemprop="name" >Alexander Heusingfeld</cite>
-                <span class="role" itemprop="jobTitle">Senior Consultant</span>
+                <cite class="superquote__author" itemprop="name">Alexander Heusingfeld</cite>
+                <span class="superquote__role" itemprop="jobTitle">Senior Consultant</span>
             </blockquote>
-            {/* end blockquote component */}
+            {/* end super-uote component */}
 
             <p>Der Endkunde zahlt nicht mehr Geld für unsere Produkte, nur weil unsere Protokollevents per TCP in eine zentrale ElasticSearch-Datenbank geschrieben werden, anstatt in eine Datei auf der Festplatte. Wie hilft das dem Kunden? Wo trägt diese Änderung zur Wertschöpfung bei? Wird das System dadurch stabiler? Sinken die Wartungskosten? Können potenzielle Fehlerszenarien früher entdeckt und behoben werden, bevor der Kunde davon betroffen ist? Die Aufgabe des Entwicklungsteams ist es, mit ihrer Arbeit zur Wertschöpfung ihres Unternehmens beizutragen. Und unter diesem Gesichtspunkt sollten wir auch unsere Innovation Tokens einsetzen.</p>
 
@@ -112,20 +126,6 @@
 
             <p>Wichtig ist hierbei, dass die Einführung dieser neuen Technologie eine Mehrheitsentscheidung des Teams ist und dass diese Entwurfsentscheidung sowie die Gründe und Alternativen dieser Entscheidung schriftlich festgehalten werden(<a href="http://www.arc42.de/template/struktur.html">arc42 Kapitel 9</a> ). Auf diese Weise ist nicht nur für Außenstehende, beispielsweise andere Teams oder Auditoren, sondern auch für das Team selbst nach ein paar Monaten noch klar ersichtlich, warum die Entscheidung so getroffen wurde. So kann das Team zu einem späteren Zeitpunkt die Kriterien ansehen und gegebenenfalls feststellen, dass sich die Rahmenbedingungen geändert haben und die Entscheidung zu Gunsten einer Alternative revidiert werden sollte.</p>
 
-            <ul>
-                <li><p>Die unbekannten Unbekannten reduzieren</p></li>
-                <li><p>Den kognitiven Ballast reduzieren</p></li>
-                <li>
-                    <p>Unsere Zeit auf die Wertschöpfung verwenden, anstatt auf „Nebenkriegsschauplätze“</p>
-                </li>
-            </ul>
-
-            <ol>
-                <li>Welches unserer Probleme wird diese Technologie lösen?</li>
-                <li>Welche Veränderungen erfordert diese Technologie gegenüber dem Status quo?</li>
-                <li>Wie könnten wir diese Probleme lösen, wenn wir die Technologie nicht einsetzen können?</li>
-            </ol>
-
             <p>In dem Moment, in dem eine Entwurfsentscheidung über die Teamgrenzen hinaus geht, also beispielsweise auch Auswirkungen auf den Betrieb der Anwendung hat, muss das Team hierfür zwei Innovation Tokens ausgeben. Dies wäre bei der Einführung einer neuen Datenbanktechnologie der Fall, die noch nicht im Unternehmen vorhanden ist. Der Grund hierfür ist, dass dies nicht nur Aufwände und Risiken in unserem Team erzeugt, sondern eben auch in mindestens einem anderen Team. Unser Operationsteam muss sich bei der Einführung beispielsweise von Cassandra mit Themen wie Clusterbetrieb, Datensicherung und -wiederherstellung, dem Monitoring und dem Verhalten der Datenbank bei <a href="https://en.m.wikipedia.org/wiki/Network_partition">Network Partitions beschäftigen</a>, damit das Entwicklungsteam die Datenbank überhaupt benutzen kann.</p>
 
             <h3>Ein konkretes Beispielprojekt</h3>
@@ -133,12 +133,6 @@
             <p>Letztlich steht und fällt die Idee der Innovation Tokens mit der Akzeptanz bei den Teammitgliedern. Was, wenn die Teams die Gründe für diese Einschränkung nicht verstehen? Oder schlimmer noch, sie vermuten als Ursache die vermeintliche Inkompetenz eines anderen Teams mit den neuen Technologien umzugehen und beschuldigen das andere Team, sie auszubremsen, anstatt dieses Team bei der Aufgabe zu unterstützen. Da ich allerdings ein großer Freund von kleinen Experimenten bin und davon, Dinge auszuprobieren, anstatt sie tot zu diskutieren, haben wir das Konzept in einem kleinen Projekt angewendet.</p>
 
             <p>Der Auftrag des Projekts war es, eine Webanwendung als Microservice zu erstellen [1]. Im Entwicklungsteam herrschten von Anfang an sehr unterschiedliche Vorstellungen davon, welche Technologien benötigt würden. Nahezu jedes Teammitglied schlug andere Technologien vor und die meisten beharrten darauf, dass diese unbedingt notwendig seien. Wir merkten schnell, dass wir so nicht weiterkamen. Wir mussten ein gemeinsames Verständnis dafür erarbeiten, welche Technologie uns an welcher Stelle wie stark helfen konnte, wie viel Aufwand die Einführung bedeutete und welche Alternativen es gab. Deshalb sollte zunächst jeder seine eigenen Vorschläge dem Team schriftlich vorstellen und dabei folgende Fragen beantworten:</p>
-
-            <ul>
-                <li>Welches unserer Probleme wird diese Technologie lösen?</li>
-                <li>Welche Veränderungen erfordert diese Technologie gegenüber dem Status quo?</li>
-                <li>Wie könnten wir diese Probleme lösen, wenn wir die Technologie nicht einsetzen können?</li>
-            </ul>
 
             <p>Interessant war insbesondere bei den Antworten zu Frage 1, dass hier Probleme genannt wurden, die vorher nie diskutiert worden waren. Dies war ein Gewinn für das Projekt, denn es führte zu Schritt 0: Probleme und Herausforderungen explizit machen. Dieses Ergebnis half den anderen Teammitgliedern, die Beweggründe des Vorschlagenden zu verstehen und einschätzen zu können. Anschließend konnten wir im Team Technologievorschläge zusammenfassen und über die beste Alternative abstimmen. Allerdings konnten wir die Liste immer noch nicht auf die gewünschte Anzahl von nur drei Technologien verkürzen.</p>
 

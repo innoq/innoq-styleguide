@@ -1,9 +1,10 @@
-blockquote {
+.superquote {
   margin-bottom: $component-spacer-blockquote-vertical;
   text-align: center;
 
+  .superquote__zigzag {
+    @extend %zigzag;
 
-  .zigzag {
     display: block;
     margin: 0 auto $component-spacer-zigzag-horizontal;
     width: 300px;
@@ -24,12 +25,12 @@ blockquote {
     }
   }
 
-  cite {
+  .superquote__author {
     @extend %author-name;
     display: block;
   }
 
-  .role {
+  .superquote__role {
     @extend %author-role;
   }
 }

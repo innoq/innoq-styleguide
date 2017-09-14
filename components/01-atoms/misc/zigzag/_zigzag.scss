@@ -4,7 +4,8 @@ $zzthickness: 130%; // increase to make the line thicker
 $zzoffset: 4px;
 $zzdegree: 135deg;
 
-.zigzag {
+.zigzag,
+%zigzag {
   display: block;
   position: relative;
   z-index: 1;

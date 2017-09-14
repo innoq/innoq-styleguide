@@ -78,7 +78,6 @@
 
 @import '../components/01-atoms/misc/zigzag/zigzag';
 
-@import '../components/01-atoms/text/block/blockquote/blockquote';
 @import '../components/01-atoms/text/block/date/date';
 @import '../components/01-atoms/text/block/duration/duration';
 @import '../components/01-atoms/text/block/heading/heading';
@@ -93,6 +92,7 @@
 @import '../components/02-molecules/button-group/button-group';
 @import '../components/02-molecules/content-separator/content-separator';
 @import '../components/02-molecules/table-of-contents/table-of-contents';
+@import '../components/02-molecules/super-quote/super-quote';
 
 // Organisms
 @import '../components/03-organisms/article-intro/article-intro';
