@@ -84,3 +84,19 @@ ol:not([class]) {
     }
   }
 }
+
+// TODO: Finalize when layout is available
+dl:not([class]) {
+  dt {
+    @extend %heading-font-bold;
+    margin-bottom: $spacer-xs;
+    line-height: $bullet-list-line-height;
+    font-size: $definition-list-font-size;
+  }
+
+  dd {
+    @extend %body-font-regular;
+    line-height: $bullet-list-line-height;
+    font-size: $definition-list-font-size;
+  }
+}
