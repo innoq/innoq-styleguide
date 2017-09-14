@@ -87,6 +87,14 @@
 
             <p>Wenn wir neue Software schreiben, gibt es immer Dinge, die wir im Vorfeld noch nicht wissen. Wir wissen aber, dass wir uns um diese Dinge kümmern sollten. Wir sollten z. B. wissen, wie sich die Datenbank verhält, wenn ihre Systemressourcen ausgelastet sind und ob unsere Anwendung in dem Fall auf bestimmte Fehlerszenarien reagieren können muss. Bei neuen Technologien gibt es aber leider auch einige Dinge, von denen wir gar nichts wissen. Da wir nicht wissen, dass diese existieren, wissen wir auch nicht, ob und wann sie für uns überhaupt relevant werden oder ob wir uns darum kümmern müssen. Ein Beispiel hierfür wäre, dass in unserem Messaging-System in bestimmten <a href="https://aphyr.com/posts/315-jepsen-rabbitmq">Situationen Nachrichten verloren gehen</a>. Die Anzahl dieser unbekannten Unbekannten (Unknown Unknowns) wollen wir dringend auf ein Minimum reduzieren, denn sie können im schlimmsten Fall zu Datenverlust, Produktionsausfall oder Scheitern des Projekts führen.</p>
 
+            <ul class="checklist">
+                <li>Die unbekannten Unbekannten reduzieren</li>
+                <li>Den kognitiven Ballast reduzieren</li>
+                <li>
+                    Unsere Zeit auf die Wertschöpfung verwenden, anstatt auf „Nebenkriegsschauplätze“
+                </li>
+            </ul>
+
             <h3 id="ballast">Kognitiven Ballast vermeiden</h3>
 
             <p>Auch kognitiven Ballast sollten wir vermeiden. Als kognitiven Ballast bezeichnen wir Aufgaben, die wir bei der Einführung neuer Technologien implizit mit aufgebürdet bekommen. Es gibt schon Unit-Tests für die Anwendung, aber wie schreiben wir Unit-Tests für diese neue Technologie? Wir haben Monitoring für unser System, aber wie muss es angepasst werden, wenn wir die neue Technologie einführen? Was muss ein Entwickler wissen, um überhaupt anfangen zu können die neue Technologie zu nutzen? Wie verändern sich dadurch die Folgeprozesse?</p>
