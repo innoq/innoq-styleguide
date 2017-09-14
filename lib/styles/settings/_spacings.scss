@@ -10,11 +10,6 @@ $spacer-base: ms(8); // ~33px
 $spacer-lg: ms(12);  // ~48px
 $spacer-xl: ms(15);  // ~62px
 
-// TODO: refactor references to these variables, delete them after all of them are refactored.
-$spacer-x: $spacer-base;
-$spacer-y: $spacer-base;
-
-
 //
 // Spacing system according to the rule of 3Cs
 // see https://blog.prototypr.io/a-framework-for-creating-a-predictable-and-harmonious-spacing-system-8eee8aaf773c
@@ -27,17 +22,12 @@ $spacer-y: $spacer-base;
 $container-spacer-x: $spacer-base;
 $container-spacer-y: $spacer-base;
 
-
-
 // Content spacers
-$content-spacer-x: $spacer-sm;
-$content-spacer-y: $spacer-sm;
+
 $content-spacer-paragraph-vertical: $spacer-base;
 $content-spacer-lists-vertical: $spacer-base;
 
 // Component spacers
-$component-spacer-x: $spacer-base;
-$component-spacer-y: $spacer-base;
 $component-spacer-author-name-vertical: $spacer-xs;
 $component-spacer-author-bio-horizontal: $spacer-sm;
 $component-spacer-superquote-vertical: $spacer-base;
