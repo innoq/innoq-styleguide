@@ -1,0 +1,7 @@
+blockquote {
+  margin: 0 spacer-md;
+
+  p {
+    @extend %body-font-italic;
+  }
+}
