@@ -3,3 +3,4 @@ node_modules
 dist/**/*
 components/index.js
 public/**/*
+.DS_Store
