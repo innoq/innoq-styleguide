@@ -73,7 +73,7 @@ $h6-line-height: $ratio;
 // Buttons
 //
 $button-medium-font-size: ms(3);
-$button-medium-line-height: 1.2;
+$button-medium-line-height: $ratio;
 
 
 //
@@ -81,13 +81,13 @@ $button-medium-line-height: 1.2;
 //
 // The amount lists and blockquotes are indented.
 $indent-amount: $base-font-size !default;
-$bullet-list-font-size: ms(3);                                // ~20px
-$bullet-list-line-height: 1.2;                                // ~26px
-$ordered-list-font-size: $base-font-size;                     // ~21px
-$ordered-list-line-height: ms(8);                             // ~32px
-$ordered-list-counter-font-size:  $bullet-list-font-size;     // ~20px
-$ordered-list-counter-line-height: $bullet-list-line-height;  // ~26px
-
+$bullet-list-font-size: ms(3);                // ~20px
+$bullet-list-line-height: $ratio;             // ~26px
+$checkmark-list-font-size: ms(5);             // ~25px
+$ordered-list-font-size: ms(3);               // ~21px
+$ordered-list-line-height: $ratio * $ratio;   // ~32px
+$ordered-list-counter-font-size: ms(2);       // ~19px
+$ordered-list-counter-line-height: $ratio;    // ~26px
 
 //
 // Paragraph Text

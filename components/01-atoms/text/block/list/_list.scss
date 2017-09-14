@@ -1,10 +1,7 @@
-$bullet-size: $base-font-size * .476190476; // ~10px
-$bullet-offset: $base-font-size * .80952381; // ~17px
+$bullet-size: $spacer-xs; // ~9px
+$bullet-offset: $spacer-sm; // ~16px
 
-// sass-lint:disable force-pseudo-nesting
-// Scope element based selector to elements, that do not carry a
-// class attribute, to prevent reverting styles for all non-default lists.
-ul:not([class]) {
+%unsorted-list {
   @extend %heading-font-bold;
   @include list-unstyled;
   margin-bottom: $content-spacer-lists-vertical;
@@ -13,9 +10,18 @@ ul:not([class]) {
 
   li {
     position: relative;
-    margin-bottom: $spacer-xs;
+    margin-bottom: $spacer-sm;
+  }
+}
 
-    &::before  {
+// sass-lint:disable force-pseudo-nesting
+// Scope element based selector to elements, that do not carry a
+// class attribute, to prevent reverting styles for all non-default lists.
+ul:not([class]) {
+  @extend %unsorted-list;
+
+  li {
+    &::before {
       position: absolute;
       top: ($bullet-list-line-height * $bullet-list-font-size) / 2;
       left: -($bullet-offset + $bullet-size);
@@ -26,14 +32,25 @@ ul:not([class]) {
       height: $bullet-size;
       content: '';
     }
+  }
+}
 
-    :last-child {
-      margin-bottom: 0;
+ul {
+  &.checklist {
+    @extend %unsorted-list;
+
+    li::before {
+      @extend %icon;
+      @extend %icon-check;
+      position: absolute;
+      left: -1.9875rem; // Determined by the hard science of pushing things around
+      color: $bullet-list-color;
+      font-size: $checkmark-list-font-size;
     }
   }
 }
 
-$number-space: 25px;
+$number-space: $spacer-md;
 
 // ---- Ordered Lists ------------------------------------------------------
 // Generated numbers from default ordered lists can't be styled directly
@@ -53,7 +70,7 @@ ol:not([class]) {
 
   li {
     position: relative;
-    margin-bottom: $spacer-y * .857142857;
+    margin-bottom: $spacer-xs;
 
     &::before {
       @extend %heading-font-bold;

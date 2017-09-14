@@ -21,7 +21,8 @@
   }
 }
 
-.icon-check {
+.icon-check,
+%icon-check {
   &::before {
     content: $icon-check;
   }
