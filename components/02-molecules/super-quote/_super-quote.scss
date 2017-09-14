@@ -1,5 +1,5 @@
 .superquote {
-  margin-bottom: $component-spacer-blockquote-vertical;
+  margin-bottom: $component-spacer-superuote-vertical;
   text-align: center;
 
   .superquote__zigzag {
@@ -12,9 +12,9 @@
 
   p {
     @extend %heading-font-heavy;
-    line-height: $blockquote-line-height;
-    color: $block-quote-color;
-    font-size: $blockquote-font-size;
+    line-height: $superquote-line-height;
+    color: $superquote-color;
+    font-size: $superquote-font-size;
 
     &::before {
       content: '„';
