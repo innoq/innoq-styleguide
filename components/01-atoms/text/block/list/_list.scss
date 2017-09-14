@@ -7,13 +7,13 @@ $bullet-offset: $base-font-size * .80952381; // ~17px
 ul:not([class]) {
   @extend %heading-font-bold;
   @include list-unstyled;
-  margin-bottom: $spacer-y * 1.238095238;
+  margin-bottom: $content-spacer-lists-vertical;
   line-height: $bullet-list-line-height;
   font-size: $bullet-list-font-size;
 
   li {
     position: relative;
-    margin-bottom: $spacer-y * .857142857;
+    margin-bottom: $spacer-xs;
 
     &::before  {
       position: absolute;
@@ -25,6 +25,10 @@ ul:not([class]) {
       width: $bullet-size;
       height: $bullet-size;
       content: '';
+    }
+
+    :last-child {
+      margin-bottom: 0;
     }
   }
 }
@@ -42,7 +46,7 @@ $number-space: 25px;
 ol:not([class]) {
   @extend %body-font-regular;
   @include list-unstyled;
-  margin-bottom: $spacer-y * 1.238095238;
+  margin-bottom: $content-spacer-lists-vertical;
   line-height: $ordered-list-line-height;
   font-size: $ordered-list-font-size;
   counter-reset: number;
