@@ -58,23 +58,17 @@
             <p>Die Idee von Innovation Tokens besteht darin, dass ein Team für die Umsetzung einer bestimmten Anforderung nur eine begrenzte Anzahl an Tokens zur Verfügung hat. Die genaue Anzahl hängt von den Fähigkeiten und der Einsatzbereitschaft des Teams und der Organisation ab. Die Anzahl der Tokens hängt aber nicht vom Umfang der Anforderung ab. Wenn die Anforderung groß ist, war es in unseren Projekten bisher nie effektiv, diese mit noch mehr Technologie zu erschlagen. Dies führte eher zum gegenteiligen Effekt. Des Weiteren haben wir auch noch kein Team erlebt, das mehr als fünf Tokens in einer Phase eingesetzt hat. In der Regel sollten Teams mit drei Innovation Tokens pro Projekt auskommen.</p>
 
             {/* start pull quote component @see atoms/text/block/pull-quote */}
-            <aside>
-                <blockquote>
-                    An dieser Stelle kommt oft die Frage auf: Verspiele ich nicht eine Chance, wenn ich Innovation so stark begrenze?
-                </blockquote>
-            </aside>
+            <blockquote class="pullquote">
+                An dieser Stelle kommt oft die Frage auf: Verspiele ich nicht eine Chance, wenn ich Innovation so stark begrenze?
+            </blockquote>
             {/* end pull quote */}
-
-
 
             <p>Nein, denn wir wollen die Anzahl der gleichzeitig eingeführten Neuerungen auf diejenigen begrenzen, von denen wir uns den größten Mehrwert für unsere Produkte oder unseren Business Value-Versprechen. Wir können drei wesentliche Punkte festhalten, die die Notwendigkeit unterstreichen, die Anzahl gleichzeitig neu eingeführter Technologien zu begrenzen:</p>
 
             <ul>
                 <li>Die unbekannten Unbekannten reduzieren</li>
                 <li>Den kognitiven Ballast reduzieren</li>
-                <li>
-                    Unsere Zeit auf die Wertschöpfung verwenden, anstatt auf „Nebenkriegsschauplätze“
-                </li>
+                <li>Unsere Zeit auf die Wertschöpfung verwenden, anstatt auf „Nebenkriegsschauplätze“</li>
             </ul>
 
             <ol>
@@ -90,9 +84,7 @@
             <ul class="checklist">
                 <li>Die unbekannten Unbekannten reduzieren</li>
                 <li>Den kognitiven Ballast reduzieren</li>
-                <li>
-                    Unsere Zeit auf die Wertschöpfung verwenden, anstatt auf „Nebenkriegsschauplätze“
-                </li>
+                <li>Unsere Zeit auf die Wertschöpfung verwenden, anstatt auf „Nebenkriegsschauplätze“</li>
             </ul>
 
             <h3 id="ballast">Kognitiven Ballast vermeiden</h3>
@@ -106,13 +98,15 @@
             <p>Wertschöpfung findet statt, wenn unsere Änderung oder das neue Feature in unserem Produktionssystem genutzt wird. Dementsprechend sollte es unser Anliegen sein, die Projektziele an dieser Wertschöpfung und den fachlichen Zielen zu orientieren, damit das Projektteam diese in technische Detailentscheidungen immer einbezieht – wie der Einführung neuer Technologien. Wenn bei der Definition der Projektziele die fachlichen Ziele nicht transparent sind und nicht klar ist, wie der Mehrwert am Ende gemessen wird, kann dies dazu führen, dass unbewusst Entscheidungen getroffen werden, die gegen unsere fachlichen Ziele laufen.</p>
 
             {/* start superquote molecule @see molecules/super-quote */}
-            <blockquote class="superquote" itemscope itemtype="http://schema.org/Person">
+            <blockquote class="superquote">
                 <span class="superquote__zigzag"></span>
                 <p>Wertschöpfung findet statt, wenn unsere Änderung oder das neue Feature in unserem Produktionssystem genutzt wird.</p>
-                <cite class="superquote__author" itemprop="name">Alexander Heusingfeld</cite>
-                <span class="superquote__role" itemprop="jobTitle">Senior Consultant</span>
+                <div itemscope itemtype="http://schema.org/Person">
+                    <cite class="superquote__author" itemprop="name">Alexander Heusingfeld</cite>
+                    <span class="superquote__role" itemprop="jobTitle">Senior Consultant</span>
+                </div>
             </blockquote>
-            {/* end super-uote component */}
+            {/* end super-quote component */}
 
             <p>Der Endkunde zahlt nicht mehr Geld für unsere Produkte, nur weil unsere Protokollevents per TCP in eine zentrale ElasticSearch-Datenbank geschrieben werden, anstatt in eine Datei auf der Festplatte. Wie hilft das dem Kunden? Wo trägt diese Änderung zur Wertschöpfung bei? Wird das System dadurch stabiler? Sinken die Wartungskosten? Können potenzielle Fehlerszenarien früher entdeckt und behoben werden, bevor der Kunde davon betroffen ist? Die Aufgabe des Entwicklungsteams ist es, mit ihrer Arbeit zur Wertschöpfung ihres Unternehmens beizutragen. Und unter diesem Gesichtspunkt sollten wir auch unsere Innovation Tokens einsetzen.</p>
 
@@ -122,9 +116,11 @@
 
             <p>Nehmen wir an, wir sind in einem Team mit JavaScript-Entwicklern und sollen eine neue Webanwendung schreiben. Das Team hat bisher gute Ergebnisse mit dem JavaScript-Web-Framework Express.js erzielt, das im Node.js-Ökosystem weit verbreitet ist. Nun möchten die Kollegen aber auf das Framework hapi wechseln, weil es einige Expertenfeatures mitbringt. Hierfür müsste das Team ein Innovation Token ausgeben, da es sich um einen invasiven Austausch handelt, durch den die Vorgehensweise bei der Entwicklung verändert wird und weite Teile der Anwendung umgebaut werden müssen. In Konzeption, Test und Betrieb sollten die Veränderungen nicht oder nur marginal zu spüren sein.</p>
 
-            <blockquote>
-                <p>"Wichtig ist hierbei, dass die Einführung dieser neuen Technologie eine Mehrheitsentscheidung des Teams ist und dass diese Entwurfsentscheidung sowie die Gründe und Alternativen dieser Entscheidung schriftlich festgehalten werden(<a href="http://www.arc42.de/template/struktur.html">arc42 Kapitel 9</a> ). Auf diese Weise ist nicht nur für Außenstehende, beispielsweise andere Teams oder Auditoren, sondern auch für das Team selbst nach ein paar Monaten noch klar ersichtlich, warum die Entscheidung so getroffen wurde. So kann das Team zu einem späteren Zeitpunkt die Kriterien ansehen und gegebenenfalls feststellen, dass sich die Rahmenbedingungen geändert haben und die Entscheidung zu Gunsten einer Alternative revidiert werden sollte."</p>
+            {/* start blockquote atom @see atoms/text/block/block-quote */}
+            <blockquote class="blockquote">
+                "Wichtig ist hierbei, dass die Einführung dieser neuen Technologie eine Mehrheitsentscheidung des Teams ist und dass diese Entwurfsentscheidung sowie die Gründe und Alternativen dieser Entscheidung schriftlich festgehalten werden(<a href="http://www.arc42.de/template/struktur.html">arc42 Kapitel 9</a> ). Auf diese Weise ist nicht nur für Außenstehende, beispielsweise andere Teams oder Auditoren, sondern auch für das Team selbst nach ein paar Monaten noch klar ersichtlich, warum die Entscheidung so getroffen wurde. So kann das Team zu einem späteren Zeitpunkt die Kriterien ansehen und gegebenenfalls feststellen, dass sich die Rahmenbedingungen geändert haben und die Entscheidung zu Gunsten einer Alternative revidiert werden sollte."
             </blockquote>
+            {/* end blockquote component */}
 
             <p>In dem Moment, in dem eine Entwurfsentscheidung über die Teamgrenzen hinaus geht, also beispielsweise auch Auswirkungen auf den Betrieb der Anwendung hat, muss das Team hierfür zwei Innovation Tokens ausgeben. Dies wäre bei der Einführung einer neuen Datenbanktechnologie der Fall, die noch nicht im Unternehmen vorhanden ist. Der Grund hierfür ist, dass dies nicht nur Aufwände und Risiken in unserem Team erzeugt, sondern eben auch in mindestens einem anderen Team. Unser Operationsteam muss sich bei der Einführung beispielsweise von Cassandra mit Themen wie Clusterbetrieb, Datensicherung und -wiederherstellung, dem Monitoring und dem Verhalten der Datenbank bei <a href="https://en.m.wikipedia.org/wiki/Network_partition">Network Partitions beschäftigen</a>, damit das Entwicklungsteam die Datenbank überhaupt benutzen kann.</p>
 

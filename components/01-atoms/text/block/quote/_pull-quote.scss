@@ -1,13 +1,12 @@
-aside {
-  blockquote {
-    @extend %heading-font-bold;
-    border: 1px solid $pull-quote-border-color;
-    border-width: 1px 0;
-    padding: $spacer-sm;
-    width: 80%;
-    text-align: center;
-    line-height: $pull-quote-line-height;
-    color: $pull-quote-color;
-    font-size: $pull-quote-font-size;
-  }
+.pullquote {
+  @extend %heading-font-bold;
+  margin-bottom: $content-spacer-base;
+  border: 1px solid $pull-quote-border-color;
+  border-width: 1px 0;
+  padding: $spacer-sm;
+  width: 80%;
+  text-align: center;
+  line-height: $pull-quote-line-height;
+  color: $pull-quote-color;
+  font-size: $pull-quote-font-size;
 }

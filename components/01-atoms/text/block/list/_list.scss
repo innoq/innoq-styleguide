@@ -4,7 +4,7 @@ $bullet-offset: $spacer-sm; // ~16px
 %unsorted-list {
   @extend %heading-font-bold;
   @include list-unstyled;
-  margin-bottom: $content-spacer-lists-vertical;
+  margin-bottom: $content-spacer-base;
   line-height: $bullet-list-line-height;
   font-size: $bullet-list-font-size;
 
@@ -63,7 +63,7 @@ $number-space: $spacer-md;
 ol:not([class]) {
   @extend %body-font-regular;
   @include list-unstyled;
-  margin-bottom: $content-spacer-lists-vertical;
+  margin-bottom: $content-spacer-base;
   line-height: $ordered-list-line-height;
   font-size: $ordered-list-font-size;
   counter-reset: number;

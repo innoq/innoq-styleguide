@@ -1,7 +1,7 @@
 p {
   @extend %body-font-regular;
   margin-top: 0;
-  margin-bottom: $content-spacer-paragraph-vertical;
+  margin-bottom: $content-spacer-base;
   line-height: $paragraph-line-height;
   font-size: $paragraph-font-size;
 

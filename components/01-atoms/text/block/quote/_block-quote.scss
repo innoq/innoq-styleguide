@@ -1,7 +1,18 @@
-blockquote {
-  margin: 0 spacer-md;
+.blockquote {
+  @extend %body-font-italic;
+  position: relative;
+  margin: 0 0 $content-spacer-base;
+  line-height: $paragraph-line-height;
+  font-size: $paragraph-font-size;
 
-  p {
-    @extend %body-font-italic;
+  &::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -$spacer-lg;
+    background-color: $brand-green;
+    width: 10px;
+    content: '';
   }
 }
