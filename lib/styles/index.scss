@@ -35,7 +35,6 @@
 
 @import 'generic/animations';
 @import 'generic/fontfaces';
-@import 'generic/normalize';
 
 
 //
@@ -69,15 +68,19 @@
 // the categories of Atomic Design. So they are either atoms or molecules
 // (composed atoms).
 
-// Atoms
+// Form atoms
 @import '../components/01-atoms/form/button/button';
+
+// Media atoms
 @import '../components/01-atoms/media/avatar/avatar';
 @import '../components/01-atoms/media/figure/figure';
 @import '../components/01-atoms/media/icon/icon';
 @import '../components/01-atoms/media/image/image';
 
+// Miscellaneous atoms
 @import '../components/01-atoms/misc/zigzag/zigzag';
 
+// Block text atoms
 @import '../components/01-atoms/text/block/date/date';
 @import '../components/01-atoms/text/block/duration/duration';
 @import '../components/01-atoms/text/block/heading/heading';
@@ -86,6 +89,7 @@
 @import '../components/01-atoms/text/block/quote/block-quote';
 @import '../components/01-atoms/text/block/list/list';
 
+// Inline text atoms
 @import '../components/01-atoms/text/inline/inline';
 
 // Molecules

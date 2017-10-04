@@ -23,18 +23,17 @@
   },
   "devDependencies": {
     "complate-fractal": "^0.2.0",
-    "eslint": "^4.6.1",
+    "eslint": "^4.8.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-node": "^5.2.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "faucet-pipeline-sass": "^0.7.0",
     "modularscale-sass": "^3.0.3",
-    "nodemon": "^1.11.0",
-    "normalize-scss": "^7.0.0",
+    "nodemon": "^1.12.1",
     "npm-run-all": "^4.1.1",
-    "sass-lint": "^1.11.1",
+    "sass-lint": "^1.12.0",
     "webfontloader": "^1.6.28"
   }
 }
