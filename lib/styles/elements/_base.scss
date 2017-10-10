@@ -4,7 +4,12 @@
 }
 
 body {
+  padding: $container-spacer-y-sm $container-spacer-x-sm;
   color: $base-color;
+
+  @media screen and (min-width: $grid-breakpoint-md) {
+    padding: $container-spacer-y $container-spacer-x;
+  }
 }
 
 ::selection {

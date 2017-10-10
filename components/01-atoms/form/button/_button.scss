@@ -10,7 +10,7 @@
   border: 3px solid $button-border-color;
   background-color: $button-background;
   cursor: pointer;
-  padding: $component-spacer-button-medium-vertical $component-spacer-button-medium-horizontal;
+  padding: $spacer-md $spacer-md;
   line-height: $button-medium-line-height;
   white-space: nowrap;
   color: $button-color;
@@ -71,6 +71,6 @@
   &--light {
     border-width: 0 0 3px;
     background-color: transparent;
-    padding: $component-spacer-button-light-vertical 0;
+    padding: $spacer-xs 0;
   }
 }

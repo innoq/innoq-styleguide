@@ -11,7 +11,7 @@ $border-position: $base-font-size / 2;
   align-content: center;
   align-items: baseline;
   justify-content: center;
-  margin-bottom: $component-spacer-content-seperator-vertical;
+  margin-bottom: $spacer-base;
 
   // The border in the middle of the component is realized with
   // a stack of two inset box-shadows the first one is white
@@ -28,11 +28,11 @@ $border-position: $base-font-size / 2;
 .content-separator__date,
 .content-separator__duration {
   background-color: $box-shadow-color-light;
-  padding-right: $component-spacer-content-seperator-horizontal;
-  padding-left: $component-spacer-content-seperator-horizontal;
+  padding-right: $spacer-xs;
+  padding-left: $spacer-xs;
   line-height: 1;
 }
 
 .content-separator__date {
-  margin-right: $component-spacer-content-seperator-vertical;
+  margin-right: $spacer-base;
 }

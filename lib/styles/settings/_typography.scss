@@ -16,19 +16,16 @@ $font-family-icons: FFMarkWebProHeavy, 'Helvetica Neue', Helvetica, Arial, sans-
 //
 
 // The font size set on the root html element.
-$base-font-size: 1rem;
+$base-font-size: 1rem; // 16px
 
 // The companion font size to create a modular scale.
-$companion-font-size: 1.3125rem;
-
-// Ratio
-$ratio: $minor-third;
+$companion-font-size: 1.3125rem; // 21px
 
 // Setting up a modular scale. You can see its values here:
 // http://www.modularscale.com/?16,21&px&1.2
 $modularscale: (
   base: $base-font-size $companion-font-size,
-  ratio: $ratio
+  ratio: $minor-third
 );
 
 // Color set on the root html element.
@@ -40,40 +37,43 @@ $base-unit: 'rem';
 // The default font family.
 $base-font-family: $font-family-serif;
 
+$base-line-height: 1.52;
+$heading-line-height: 1.2;
+
 //
 // Headlines
 //
 
 // H1
 $h1-font-size: ms(12); // 48px (~50px)
-$h1-line-height: $ratio;
+$h1-line-height: $heading-line-height;
 
 // H2
 $h2-font-size: ms(9); // 36px (~35px)
-$h2-line-height: $ratio;
+$h2-line-height: $heading-line-height;
 
 // H3
 $h3-font-size: ms(7); // ~30px
-$h3-line-height: $ratio;
+$h3-line-height: $heading-line-height;
 
 // H4
 $h4-font-size: ms(5);  // ~25px
-$h4-line-height: $ratio * $ratio * $ratio;
+$h4-line-height: $heading-line-height;
 
 // H5
 $h5-font-size: ms(3);  // ~21px
-$h5-line-height: $ratio;
+$h5-line-height: $heading-line-height;
 
 // H6
 $h6-font-size: ms(0);  // ~16px
-$h6-line-height: $ratio;
+$h6-line-height: $heading-line-height;
 
 
 //
 // Buttons
 //
 $button-medium-font-size: ms(3);
-$button-medium-line-height: $ratio;
+$button-medium-line-height: $base-line-height;
 
 
 //
@@ -81,50 +81,49 @@ $button-medium-line-height: $ratio;
 //
 // The amount lists and blockquotes are indented.
 $indent-amount: $base-font-size !default;
-$bullet-list-font-size: ms(3);                // ~20px
-$bullet-list-line-height: $ratio;             // ~26px
-$checkmark-list-font-size: ms(5);             // ~25px
-$ordered-list-font-size: ms(3);               // ~21px
-$ordered-list-line-height: $ratio * $ratio;   // ~32px
-$ordered-list-counter-font-size: ms(2);       // ~19px
-$ordered-list-counter-line-height: $ratio;    // ~26px
-
-$definition-list-font-size: ms(3);                // ~20px
-$definition-list-line-height: $ratio;             // ~26px
+$bullet-list-font-size: ms(3);                        // ~20px
+$bullet-list-line-height: $base-line-height;          // ~26px
+$checkmark-list-font-size: ms(5);                     // ~25px
+$ordered-list-font-size: ms(3);                       // ~21px
+$ordered-list-line-height: $base-line-height;         // ~32px
+$ordered-list-counter-font-size: ms(2);               // ~19px
+$ordered-list-counter-line-height: $base-line-height; // ~26px
+$definition-list-font-size: ms(3);                    // ~20px
+$definition-list-line-height: $base-line-height;      // ~26px
 
 
 //
 // Paragraph Text
 //
-$paragraph-font-size: ms(3);                  // ~21px
-$paragraph-line-height: $ratio * $ratio;      // ~30px
-$paragraph-lead-font-size: ms(5);             // ~25px
-$paragraph-lead-line-height: $ratio * $ratio; // ~38px
+$paragraph-font-size: ms(3);                    // ~21px
+$paragraph-line-height: $base-line-height;      // ~30px
+$paragraph-lead-font-size: ms(5);               // ~25px
+$paragraph-lead-line-height: $base-line-height; // ~38px
 
 
 //
 // Date & Duration
 //
-$date-font-size: ms(0);     // ~16px
-$duration-font-size: ms(1); // ~17px
-$date-line-height: $ratio;  // ~22px
+$date-font-size: ms(0);               // ~16px
+$duration-font-size: ms(1);           // ~17px
+$date-line-height: $base-line-height; // ~22px
 
 
 //
 // Table of contents
 //
-$toc-anchor-font-size: ms(1);               // ~17px
-$toc-anchor-line-height: $ratio;            // ~22px
-$toc-heading-font-size: ms(2);              // ~19px
-$toc-heading-line-height: $ratio * $ratio;  // ~26px
+$toc-anchor-font-size: ms(1);                // ~17px
+$toc-anchor-line-height: $base-line-height;  // ~22px
+$toc-heading-font-size: ms(2);               // ~19px
+$toc-heading-line-height: $base-line-height; // ~26px
 
 
 //
 // Author Bio
 //
-$author-bio-name-font-size: ms(0);         // ~16px
-$author-bio-position-font-size: ms(1);     // ~17px
-$author-bio-line-height: $ratio;           // ~22px
+$author-bio-name-font-size: ms(0);          // ~16px
+$author-bio-position-font-size: ms(1);      // ~17px
+$author-bio-line-height: $base-line-height; // ~22px
 
 
 //
@@ -138,4 +137,4 @@ $superquote-line-height: $h2-line-height;
 // Pull Quote
 //
 $pull-quote-font-size: ms(2);               // ~19px
-$pull-quote-line-height: $ratio * $ratio;   // ~26px
+$pull-quote-line-height: $base-line-height; // ~26px

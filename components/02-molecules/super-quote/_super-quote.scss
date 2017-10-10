@@ -6,8 +6,8 @@
     @extend %zigzag;
 
     display: block;
-    margin: 0 auto $component-spacer-zigzag-horizontal;
-    width: 300px;
+    margin: 0 auto $spacer-base;
+    width: 80%;
   }
 
   p {

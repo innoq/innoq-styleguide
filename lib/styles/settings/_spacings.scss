@@ -16,28 +16,16 @@ $spacer-xl: ms(15);   // ~62px
 // see https://blog.prototypr.io/a-framework-for-creating-a-predictable-and-harmonious-spacing-system-8eee8aaf773c
 //
 
-// TODO: create sensible variables and values for each category.
-// Maybe we should switch the naming from x/y to horizontal/vertical.
-
 // Spacers for container insets (usually top and bottom margins)
+$container-spacer-x-sm: $spacer-sm;
+$container-spacer-y-sm: $spacer-sm;
+
 $container-spacer-x: $spacer-base;
 $container-spacer-y: $spacer-base;
 
-// Spacers for content elements (for always vertical)
+// Spacers for content elements (always vertical)
 $content-spacer-header: $spacer-lg;
 $content-spacer-base: $spacer-base; // for all basic block elements, e.g. paragraphs, lists etc.
-
-// Spacers for specific components
-$component-spacer-author-name-vertical: $spacer-xs;
-$component-spacer-author-bio-horizontal: $spacer-sm;
-$component-spacer-button-medium-vertical: $spacer-md;
-$component-spacer-button-medium-horizontal: $spacer-md;
-$component-spacer-button-light-vertical: $spacer-xs;
-$component-spacer-content-seperator-vertical: $spacer-base;
-$component-spacer-content-seperator-horizontal: $spacer-xs;
-$component-spacer-zigzag-horizontal: $spacer-md;
-$component-spacer-blockquote-vertical: $spacer-lg;
-$component-spacer-pullquote-vertical: $spacer-lg;
 
 
 //

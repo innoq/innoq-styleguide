@@ -39,7 +39,7 @@ h3 {
 h4 {
   @extend %heading-font-bold;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: $spacer-sm;
   line-height: $h4-line-height;
   color: $h4-color;
   font-size: $h4-font-size;
