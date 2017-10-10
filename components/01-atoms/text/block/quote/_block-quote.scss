@@ -2,17 +2,19 @@
   @extend %body-font-italic;
   position: relative;
   margin: 0 0 $content-spacer-base;
-  line-height: $paragraph-line-height;
+  line-height: $base-line-height;
   font-size: $paragraph-font-size;
 
-  &::before {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -$spacer-lg;
-    background-color: $brand-green;
-    width: 10px;
-    content: '';
+  @media screen and (min-width: $grid-breakpoint-md) {
+    &::before {
+      display: block;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -$spacer-lg;
+      background-color: $brand-green;
+      width: 10px;
+      content: '';
+    }
   }
 }
