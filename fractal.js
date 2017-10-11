@@ -9,6 +9,7 @@ const path = require('path')
  * Require the Fractal module
  */
 const fractal = module.exports = require('@frctl/fractal').create()
+const complate = require('complate-fractal')
 
 /*
  * Require the complate adapter for Fractal and configure it
@@ -23,15 +24,26 @@ const complateAdapter = require('complate-fractal')({
 fractal.set('project.title', 'innoQ Styleguide')
 
 /*
- * Tell Fractal where to look for components.
- */
-fractal.components.set('path', path.join(__dirname, 'components'))
-
-/*
  * Register complate adapter.
  */
+const componentsDir = path.join(__dirname, 'components')
+
 fractal.components.engine(complateAdapter)
 fractal.components.set('ext', '.html')
+
+fractal.components.engine(complate({
+  rootDir: __dirname,
+  envPath: path.resolve(componentsDir, 'env.js'),
+  previewPath: path.resolve(componentsDir, '_preview.jsx'),
+  appContext: { uri: generateURI }
+}))
+fractal.components.set('path', componentsDir)
+fractal.components.set('ext', '.html')
+
+// NB: invocation context is `{ assetPath }`
+function generateURI (uri) {
+  return this.assetPath(uri)
+}
 
 /*
  * Tell Fractal where to look for documentation pages.

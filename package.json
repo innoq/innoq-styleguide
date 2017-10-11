@@ -22,7 +22,7 @@
     "webfontloader": "^1.6.28"
   },
   "devDependencies": {
-    "complate-fractal": "^0.2.0",
+    "complate-fractal": "^0.3.0",
     "eslint": "^4.8.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-import": "^2.7.0",
