@@ -5,6 +5,7 @@ cache: yarn
 script:
   - npm test
   - npm run dist
+  - cat $TRAVIS_COMMIT > dist/site/release.txt
 deploy:
   - provider: pages
     skip_cleanup: true
