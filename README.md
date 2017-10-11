@@ -6,7 +6,7 @@
 
 Install:
 
-    npm install
+    yarn install
 
 This starts a local development server complete with asset pipeline:
 
