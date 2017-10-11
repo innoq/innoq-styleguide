@@ -2,12 +2,37 @@
 // Brand Colors
 //
 
-$brand-blue: #28285c;
-$brand-red: #ff3c5a;
-$brand-green: #55cdaf;
-$brand-black: #242424;
-$brand-white: #fff;
-$brand-silver: #d8d8d8;
-$brand-yellow: #fff458;
-$brand-transparent-black: rgba(36, 36, 36, .49);
-$brand-transparent-green: rgba($brand-green, .2);
+// INNOQ Blue
+$brand-blue:    #25215f;
+$brand-blue-80: #5d5986;
+$brand-blue-40: #9290ae;
+$brand-blue-20: #c9c7d6;
+
+// INNOQ Red
+$brand-red:    #ff3c5a;
+$brand-red-80: #fc6e86;
+$brand-red-40: #fd9eae;
+$brand-red-20: #feced6;
+
+// INNOQ Green
+$brand-green:    #21d5b1;
+$brand-green-80: #68ddc3;
+$brand-green-40: #9ae8d7;
+$brand-green-20: #ccf3eb;
+$brand-green-transparent: rgba($brand-green, .2);
+
+// INNOQ Yellow
+$brand-yellow:    #ffe058;
+$brand-yellow-80: #feec9b;
+$brand-yellow-40: #fef2bc;
+$brand-yellow-20: #fff9dd;
+
+// INNOQ Gray
+$brand-gray:    #242424;
+$brand-gray-80: #646465;
+$brand-gray-40: #979798;
+$brand-gray-20: #cbcbcb;
+$brand-gray-transparent: rgba(36, 36, 36, .49);
+
+// INNOQ White
+$brand-white:  #fff;

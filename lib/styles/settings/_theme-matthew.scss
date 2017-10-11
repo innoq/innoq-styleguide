@@ -3,7 +3,7 @@
 //
 $brand-primary: $brand-green;
 $brand-interaction: $brand-green;
-$brand-text: $brand-black;
+$brand-text: $brand-gray;
 
 // Buttons
 $button-border-color: $brand-text;
@@ -31,7 +31,7 @@ $h6-color: $brand-text;
 // Inline
 $link-color: $brand-text;
 $hover-color: $brand-interaction;
-$mark-color: $brand-transparent-green;
+$mark-color: $brand-green-transparent;
 
 // Pull Quote
 $pull-quote-border-color: $brand-text;
@@ -56,4 +56,4 @@ $box-shadow-color-light: $brand-white;
 $box-shadow-color-dark: $brand-text;
 
 // Table of Content
-$toc-border-color: $brand-silver;
+$toc-border-color: $brand-gray-20;
