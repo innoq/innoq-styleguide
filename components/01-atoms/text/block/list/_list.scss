@@ -140,6 +140,7 @@ dl:not([class]) {
 
     li {
       padding-left: 0;
+
       &::before {
         left: -$number-space;
         font-size: $ordered-list-counter-font-size;
