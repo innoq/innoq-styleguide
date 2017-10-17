@@ -12,9 +12,9 @@
 
   p {
     @extend %heading-font-heavy;
-    line-height: $superquote-line-height;
+    line-height: $superquote-line-height-small;
     color: $superquote-color;
-    font-size: $superquote-font-size;
+    font-size: $superquote-font-size-small;
 
     &::before {
       content: '„';
@@ -32,5 +32,14 @@
 
   .superquote__role {
     @extend %author-role;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .superquote {
+    p {
+      line-height: $superquote-line-height;
+      font-size: $superquote-font-size;
+    }
   }
 }

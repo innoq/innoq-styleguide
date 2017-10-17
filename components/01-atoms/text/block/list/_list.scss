@@ -1,12 +1,13 @@
 $bullet-size: $spacer-xs; // ~9px
 $bullet-offset: $spacer-sm; // ~16px
+$checklist-icon-size: 1.9875rem; // Determined by the hard science of pushing things around
 
 %unsorted-list {
   @extend %heading-font-bold;
   @include list-unstyled;
   margin-bottom: $content-spacer-base;
-  line-height: $bullet-list-line-height;
-  font-size: $bullet-list-font-size;
+  line-height: $bullet-list-line-height-small;
+  font-size: $bullet-list-font-size-small;
 
   li {
     position: relative;
@@ -21,10 +22,12 @@ ul:not([class]) {
   @extend %unsorted-list;
 
   li {
+    padding-left: $bullet-offset + $bullet-size;
+
     &::before {
       position: absolute;
       top: ($bullet-list-line-height * $bullet-list-font-size) / 2;
-      left: -($bullet-offset + $bullet-size);
+      left: 0;
       margin-top: -($bullet-size / 2);
       border-radius: 50%;
       background: $bullet-list-color;
@@ -35,15 +38,17 @@ ul:not([class]) {
   }
 }
 
-ul {
-  &.checklist {
-    @extend %unsorted-list;
+.checklist {
+  @extend %unsorted-list;
 
-    li::before {
+  li {
+    padding-left: $checklist-icon-size;
+
+    &::before {
       @extend %icon;
       @extend %icon-check;
       position: absolute;
-      left: -1.9875rem; // Determined by the hard science of pushing things around
+      left: 0;
       color: $bullet-list-color;
       font-size: $checkmark-list-font-size;
     }
@@ -64,21 +69,22 @@ ol:not([class]) {
   @extend %body-font-regular;
   @include list-unstyled;
   margin-bottom: $content-spacer-base;
-  line-height: $ordered-list-line-height;
-  font-size: $ordered-list-font-size;
+  line-height: $ordered-list-line-height-small;
+  font-size: $ordered-list-font-size-small;
   counter-reset: number;
 
   li {
     position: relative;
     margin-bottom: $spacer-xs;
+    padding-left: $number-space;
 
     &::before {
       @extend %heading-font-bold;
       position: absolute;
-      left: -$number-space;
+      left: 0;
       width: $number-space;
       line-height: $ordered-list-counter-line-height;
-      font-size: $ordered-list-counter-font-size;
+      font-size: $ordered-list-counter-font-size-small;
       content: counter(number);
       counter-increment: number;
     }
@@ -98,5 +104,46 @@ dl:not([class]) {
     @extend %body-font-regular;
     line-height: $bullet-list-line-height;
     font-size: $definition-list-font-size;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  ul:not([class]) {
+    line-height: $bullet-list-line-height;
+    font-size: $bullet-list-font-size;
+
+    li {
+      padding-left: 0;
+
+      &::before {
+        left: -($bullet-offset + $bullet-size);
+      }
+    }
+  }
+
+  .checklist {
+    line-height: $bullet-list-line-height;
+    font-size: $bullet-list-font-size;
+
+    li {
+      padding-left: 0;
+
+      &::before {
+        left: -$checklist-icon-size;
+      }
+    }
+  }
+
+  ol:not([class]) {
+    line-height: $ordered-list-line-height;
+    font-size: $ordered-list-font-size;
+
+    li {
+      padding-left: 0;
+      &::before {
+        left: -$number-space;
+        font-size: $ordered-list-counter-font-size;
+      }
+    }
   }
 }
