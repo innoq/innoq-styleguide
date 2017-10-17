@@ -1,0 +1,30 @@
+//
+// Conclusion
+//
+
+
+.conclusion-content {
+  background: $conclusion-content-background-color;
+  padding: $spacer-xxl 0;
+  border: 25px solid $conclusion-background-color;
+}
+
+.conclusion-headline {
+  line-height: $conclusion-headline-line-height;
+  color: $conclusion-headline-color;
+  font-size: $conclusion-headline-font-size;
+}
+
+.conclusion-subheadline {
+  line-height: $conclusion-subheadline-line-height;
+  color: $conclusion-subheadline-color;
+  font-size: $conclusion-subheadline-font-size;
+}
+
+.conclusion-text {
+  @extend %heading-font-regular;
+
+  line-height: $conclusion-text-line-height;
+  color: $conclusion-text-color;
+  font-size: $conclusion-text-font-size;
+}
