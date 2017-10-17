@@ -1,6 +1,12 @@
 //
 // Conclusion
 //
+.conclusion {
+  grid-column-start: 1;
+  grid-column-end: three;
+  grid-row-start: row1-start;
+  grid-row-end: 2;
+}
 
 .conclusion-content {
   border: 25px solid $conclusion-background-color;
