@@ -20,6 +20,10 @@
   width: 80%;
 }
 
+.article-page__content {
+  padding: $container-spacer-y-sm $container-spacer-x-sm;
+}
+
 // On medium sized screens, only the outer grid is set up with
 // two columns on the outside and one big column in the center.
 @media screen and (min-width: $grid-breakpoint-md) {

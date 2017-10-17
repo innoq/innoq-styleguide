@@ -1,10 +1,15 @@
 * {
   margin-top: 0;
   hyphens: auto;
+
+  &,
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
 }
 
 body {
-  padding: $container-spacer-y-sm $container-spacer-x-sm;
   color: $base-color;
 
   @media screen and (min-width: $grid-breakpoint-md) {
