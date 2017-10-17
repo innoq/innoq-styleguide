@@ -1,12 +1,18 @@
 .pullquote {
   @extend %heading-font-bold;
-  margin-bottom: $content-spacer-base;
+  margin: 0 0 $content-spacer-base;
   border: 1px solid $pull-quote-border-color;
   border-width: 1px 0;
   padding: $spacer-sm;
-  width: 80%;
   text-align: center;
   line-height: $pull-quote-line-height;
   color: $pull-quote-color;
   font-size: $pull-quote-font-size;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .pullquote {
+    margin: 0 auto $content-spacer-base;
+    width: 80%;
+  }
 }

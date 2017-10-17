@@ -9,7 +9,7 @@ h1 {
   margin-bottom: $spacer-lg;
   line-height: $h1-line-height;
   color: $h1-color;
-  font-size: $h1-font-size;
+  font-size: $h1-font-size-small;
 }
 
 // H2
@@ -20,7 +20,7 @@ h2 {
   margin-bottom: $spacer-base;
   line-height: $h2-line-height;
   color: $h2-color;
-  font-size: $h2-font-size;
+  font-size: $h2-font-size-small;
 }
 
 // H3
@@ -31,7 +31,7 @@ h3 {
   margin-bottom: $spacer-md;
   line-height: $h3-line-height;
   color: $h3-color;
-  font-size: $h3-font-size;
+  font-size: $h3-font-size-small;
 }
 
 // H4
@@ -42,7 +42,7 @@ h4 {
   margin-bottom: $spacer-sm;
   line-height: $h4-line-height;
   color: $h4-color;
-  font-size: $h4-font-size;
+  font-size: $h4-font-size-small;
 }
 
 // H5
@@ -53,7 +53,7 @@ h5 {
   margin-bottom: $spacer-xs;
   line-height: $h5-line-height;
   color: $h5-color;
-  font-size: $h5-font-size;
+  font-size: $h5-font-size-small;
 }
 
 // H6
@@ -64,5 +64,49 @@ h6 {
   margin-bottom: $spacer-xs;
   line-height: $h6-line-height;
   color: $h6-color;
-  font-size: $h6-font-size;
+  font-size: $h6-font-size-small;
+}
+
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  %h1,
+  h1 {
+    line-height: $h1-line-height;
+    font-size: $h1-font-size;
+  }
+
+  // H2
+  %h2,
+  h2 {
+    line-height: $h2-line-height;
+    font-size: $h2-font-size;
+  }
+
+  // H3
+  %h3,
+  h3 {
+    line-height: $h3-line-height;
+    font-size: $h3-font-size;
+  }
+
+  // H4
+  %h4,
+  h4 {
+    line-height: $h4-line-height;
+    font-size: $h4-font-size;
+  }
+
+  // H5
+  %h5,
+  h5 {
+    line-height: $h5-line-height;
+    font-size: $h5-font-size;
+  }
+
+  // H6
+  %h6,
+  h6 {
+    line-height: $h6-line-height;
+    font-size: $h6-font-size;
+  }
 }
