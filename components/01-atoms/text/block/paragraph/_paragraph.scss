@@ -2,12 +2,24 @@ p {
   @extend %body-font-regular;
   margin-top: 0;
   margin-bottom: $content-spacer-base;
-  line-height: $paragraph-line-height;
-  font-size: $paragraph-font-size;
+  line-height: $paragraph-line-height-small;
+  font-size: $paragraph-font-size-small;
 
   &.lead {
     @extend %body-font-italic;
-    line-height: $paragraph-lead-line-height;
-    font-size: $paragraph-lead-font-size;
+    line-height: $paragraph-lead-line-height-small;
+    font-size: $paragraph-lead-font-size-small;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  p {
+    line-height: $paragraph-line-height;
+    font-size: $paragraph-font-size;
+
+    &.lead {
+      line-height: $paragraph-lead-line-height;
+      font-size: $paragraph-lead-font-size;
+    }
   }
 }
