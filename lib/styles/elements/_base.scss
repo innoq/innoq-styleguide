@@ -11,10 +11,6 @@
 
 body {
   color: $base-color;
-
-  @media screen and (min-width: $grid-breakpoint-md) {
-    padding: $container-spacer-y $container-spacer-x;
-  }
 }
 
 ::selection {
