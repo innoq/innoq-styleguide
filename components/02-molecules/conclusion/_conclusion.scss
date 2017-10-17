@@ -2,11 +2,10 @@
 // Conclusion
 //
 
-
 .conclusion-content {
+  border: 25px solid $conclusion-background-color;
   background: $conclusion-content-background-color;
   padding: $spacer-xxl 0;
-  border: 25px solid $conclusion-background-color;
 }
 
 .conclusion-headline {
