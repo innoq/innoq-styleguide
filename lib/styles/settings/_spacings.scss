@@ -9,7 +9,7 @@ $spacer-md: ms(4);    // ~24px
 $spacer-base: ms(8);  // ~33px
 $spacer-lg: ms(12);   // ~48px
 $spacer-xl: ms(15);   // ~62px
-
+$spacer-xxl: ms(22);   // ~112px
 
 //
 // Spacing system according to the rule of 3Cs
@@ -33,4 +33,4 @@ $content-spacer-base: $spacer-base; // for all basic block elements, e.g. paragr
 //
 $article-grid-width: 90.25rem;     // ~1444px, full-width, including table of contents
 $article-main-column-width: 50rem; // ~800px, main column, just for the text
-$article-margin: $spacer-xl;
+$article-margin: $spacer-md;
