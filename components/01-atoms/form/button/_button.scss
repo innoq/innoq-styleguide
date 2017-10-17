@@ -2,11 +2,14 @@
 // Button
 //
 
+$default-btn-margin: $spacer-sm;
+
 .btn {
   @extend %heading-font-bold;
   display: inline-block;
   position: relative;
   transition: $standard-transition;
+  margin-bottom: $default-btn-margin;
   border: 3px solid $button-border-color;
   background-color: $button-background;
   cursor: pointer;
@@ -72,5 +75,21 @@
     border-width: 0 0 3px;
     background-color: transparent;
     padding: $spacer-xs 0;
+  }
+
+  &--small {
+    padding: $spacer-sm $spacer-md;
+    line-height: $button-small-line-height;
+    font-size: $button-small-font-size;
+  }
+
+  &--large {
+    padding: $spacer-md $spacer-lg;
+    line-height: $button-large-line-height;
+    font-size: $button-large-font-size;
+  }
+
+  & + .btn {
+    margin-left: $default-btn-margin;
   }
 }
