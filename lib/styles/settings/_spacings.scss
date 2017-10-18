@@ -11,6 +11,7 @@ $spacer-lg: ms(12);   // ~48px
 $spacer-xl: ms(15);   // ~62px
 $spacer-xxl: ms(22);   // ~112px
 
+
 //
 // Spacing system according to the rule of 3Cs
 // see https://blog.prototypr.io/a-framework-for-creating-a-predictable-and-harmonious-spacing-system-8eee8aaf773c
@@ -34,3 +35,9 @@ $content-spacer-base: $spacer-base; // for all basic block elements, e.g. paragr
 $article-grid-width: 90.25rem;     // ~1444px, full-width, including table of contents
 $article-main-column-width: 50rem; // ~800px, main column, just for the text
 $article-margin: $spacer-md;
+$article-intro-margin: $spacer-lg;
+
+//
+// Avatars
+//
+$avatar-size-small: ms(18);

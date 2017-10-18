@@ -6,7 +6,7 @@
   border-radius: 100%;
 
   .avatar--small & {
-    width: 84px;
+    width: $avatar-size-small;
     height: auto;
   }
 }
