@@ -1150,9 +1150,9 @@ commander@^2.2.0, commander@^2.8.1, commander@^2.9.0:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
 
-complate-fractal@^0.3.0:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/complate-fractal/-/complate-fractal-0.3.1.tgz#3ff3d68c5da44fc0973e497d677db5c7449e0a26"
+complate-fractal@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/complate-fractal/-/complate-fractal-0.4.0.tgz#ac57377e94359803b6d7617f86a987c855a7345f"
   dependencies:
     "@frctl/fractal" "^1.1.7"
     "@std/esm" "0.11.0"

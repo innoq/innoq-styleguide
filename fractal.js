@@ -12,13 +12,6 @@ const fractal = module.exports = require('@frctl/fractal').create()
 const complate = require('complate-fractal')
 
 /*
- * Require the complate adapter for Fractal and configure it
- */
-const complateAdapter = require('complate-fractal')({
-  bundlePath: path.join(__dirname, 'dist', 'index.js')
-})
-
-/*
  * Give your project a title.
  */
 fractal.set('project.title', 'innoQ Styleguide')
@@ -28,22 +21,21 @@ fractal.set('project.title', 'innoQ Styleguide')
  */
 const componentsDir = path.join(__dirname, 'components')
 
-fractal.components.engine(complateAdapter)
 fractal.components.set('ext', '.html')
-
 fractal.components.engine(complate({
   rootDir: __dirname,
-  envPath: path.resolve(componentsDir, 'env.js'),
-  previewPath: path.resolve(componentsDir, '_preview.jsx'),
-  appContext: { uri: generateURI }
+  // TBD explain envPath
+  // envPath: path.resolve(componentsDir, 'env.js'),
+  //
+  // If you're using some other file name for your preview layout, you
+  // can configure it with `previewPath`
+  // previewPath: path.resolve(componentsDir, '_preview.jsx'),
+  generateURI: function (uri) { // Don't use () to avoid this binding
+    return this.assetPath(uri)
+  }
 }))
 fractal.components.set('path', componentsDir)
 fractal.components.set('ext', '.html')
-
-// NB: invocation context is `{ assetPath }`
-function generateURI (uri) {
-  return this.assetPath(uri)
-}
 
 /*
  * Tell Fractal where to look for documentation pages.
