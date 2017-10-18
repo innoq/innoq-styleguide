@@ -10,7 +10,7 @@
   "scripts": {
     "start": "npm-run-all --parallel server-watch compile-watch",
     "server": "fractal start",
-    "server-watch": "nodemon -w dist/bundle.js -w components/ -w docs/ -e js,jsx,md,yml,css,scss -x 'npm run server'",
+    "server-watch": "nodemon -w fractal.js -w faucet.config.js -w components/ -e yml -x 'npm run server'",
     "compile": "faucet --no-fingerprint",
     "compile-watch": "npm run compile -- --watch",
     "test": "eslint --cache . && sass-lint -v -q",
