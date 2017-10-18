@@ -1,0 +1,37 @@
+.breakout {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.breakout__content {
+  margin-right: auto;
+  margin-left: auto;
+  width: 95%;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .breakout__content {
+    width: calc(80% + 50px);
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .breakout__content {
+    width: calc(60% + 50px);
+  }
+}
+
+@supports (display: grid) {
+  @media screen and (min-width: $grid-breakpoint-xl) {
+    .breakout__content {
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr $article-main-column-width 1fr;
+
+      // All content elements are placed on the center column.
+      > * {
+        grid-column: 2; // center column
+      }
+    }
+  }
+}

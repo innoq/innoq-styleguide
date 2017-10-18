@@ -1,8 +1,9 @@
 //
 // Conclusion
 //
+
 .conclusion {
-  border: 25px solid $conclusion-background-color;
+  border: 2px solid $conclusion-background-color;
   background: $conclusion-content-background-color;
   padding: $spacer-xxl $spacer-base;
 }
@@ -25,4 +26,10 @@
   line-height: $conclusion-text-line-height;
   color: $conclusion-text-color;
   font-size: $conclusion-text-font-size;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .conclusion {
+    border: 25px solid $conclusion-background-color;
+  }
 }

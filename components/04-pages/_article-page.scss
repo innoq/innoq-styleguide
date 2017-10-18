@@ -1,89 +1,63 @@
 //
-// Article page layout
+// Content page layout
 //
 
-// The article-page layout is setup as two nested grids that consits of
+// The content-page-layout layout is setup as two nested grids that consits of
 // three columns each.
-.article-page,
-.article-page__content {
-  display: grid;
-  width: 100%;
-}
+.content-page-layout {
 
-// If the browser does not support grid, we use a simple layout:
-// One column, 80% width centered in the middle of the page.
-.article-page {
+  // If the browser does not support grid, we use a simple layout:
+  // One column centered in the middle of the page.
   margin-top: $article-margin;
   margin-right: auto;
   margin-bottom: $article-margin;
   margin-left: auto;
-  width: 80%;
-}
-
-.article-page__content {
   padding: $container-spacer-y-sm $container-spacer-x-sm;
+  width: 95%;
+  max-width: $article-main-column-width;
 }
 
-.article-page__conclusion {
-  grid-column-start: 1;
-  grid-column-end: -1;
+.center {
+  grid-area: center;
 }
 
+.left {
+  grid-area: left;
+}
 
-// On medium sized screens, only the outer grid is set up with
-// two columns on the outside and one big column in the center.
+.right {
+  grid-area: right;
+}
+
 @media screen and (min-width: $grid-breakpoint-md) {
-  .article-page {
-    grid-template-columns: 1fr 5fr 1fr;
-  }
-
-  // The content is placed on the second (big) column in the center.
-  .article-page__content {
-    padding: $container-spacer-y $container-spacer-x;
-    grid-column: 2; // center column
+  .content-page-layout {
+    width: 80%;
   }
 }
 
-// On large screens, the outer grid is slightly changed. The center
-// column gets a fixed width (~800px), only the outer columns grow
-// fluently.
 @media screen and (min-width: $grid-breakpoint-lg) {
-  .article-page {
-    grid-template-columns: 1fr $article-main-column-width 1fr;
+  .content-page-layout {
+    width: 60%;
   }
 }
 
-// On very large screens, the inner, nested grid is introduced. It gets placed
-// inside the content area and consists of three columns as well.
-@media screen and (min-width: $grid-breakpoint-xl) {
-  .article-page {
-    grid-template-columns: 1fr $article-grid-width 1fr;
-  }
-
-  // The nested grid inside the content has a fixed center column (~800px).
-  // The outer columns can be used to break out arbitrary content parts.
-  .article-page__content {
-    grid-template-columns: 1fr $article-main-column-width 1fr;
-
-    // All content elements are placed on the center column.
-    > * {
-      grid-column: 2; // center column
-    }
-
-    // Except for special content elements like this table of contents
-    // component.
-    > .article-page__toc {
-      grid-column: 1; // left column
-    }
-  }
-}
-
-// We need to set the widths and margins back to the intended values for the
-// grid.
 @supports (display: grid) {
-  .article-page {
-    margin-right: 0;
-    margin-left: 0;
-    width: 100%;
+  @media screen and (min-width: $grid-breakpoint-xl) {
+    .content-page-layout {
+      display: grid;
+      margin-right: 0;
+      margin-left: 0;
+      padding: 0;
+      width: 100%;
+      max-width: none;
+      grid-template-columns: 1fr 322px 800px 322px 1fr;
+      grid-template-rows: auto;
+      grid-template-areas: '. left center right .';
+      grid-column-gap: $spacer-sm;
+
+      > * {
+        grid-row: auto;
+      }
+    }
   }
 }

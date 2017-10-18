@@ -53,13 +53,7 @@
 
 @media screen and (min-width: $grid-breakpoint-xl) {
   .toc {
-    margin-top: $spacer-lg;
+    margin-top: $spacer-xxs;
     margin-right: $spacer-xl;
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-md) and (max-width: $grid-breakpoint-xl) {
-  .toc {
-    max-width: 50%;
   }
 }
