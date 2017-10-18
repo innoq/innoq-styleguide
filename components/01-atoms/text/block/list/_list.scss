@@ -15,6 +15,11 @@ $checklist-icon-size: 1.9875rem; // Determined by the hard science of pushing th
   }
 }
 
+
+.list-unstyled {
+  @extend %list-unstyled;
+}
+
 // sass-lint:disable force-pseudo-nesting
 // Scope element based selector to elements, that do not carry a
 // class attribute, to prevent reverting styles for all non-default lists.
