@@ -1,9 +1,12 @@
 .author-bio {
+  margin-bottom: $spacer-base;
+
   &.author-bio--short {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
+    width: 100%;
   }
 }
 
@@ -13,6 +16,8 @@
 
 .author-bio__link {
   @extend %link-unstyled;
+  white-space: normal;
+  hyphens: none;
 }
 
 .author-bio__info {
@@ -40,4 +45,12 @@
 
 .author-bio__image {
   margin-right: $spacer-md;
+}
+
+@media screen and (min-width: $grid-breakpoint-xl) {
+  .author-bio {
+    &.author-bio--short {
+      width: 49%;
+    }
+  }
 }
