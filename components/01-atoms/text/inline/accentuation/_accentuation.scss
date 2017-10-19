@@ -2,11 +2,3 @@ mark {
   display: inline-block;
   background-color: $mark-color;
 }
-
-strong {
-  @extend %body-font-bold;
-}
-
-em {
-  @extend %body-font-italic;
-}
