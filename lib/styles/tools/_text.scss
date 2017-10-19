@@ -15,3 +15,29 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin hover-fill($fill-color, $text-color, $hover-color) {
+  z-index: 1;
+  color: $text-color;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: $standard-transition;
+    z-index: -1;
+    background-color: $fill-color;
+    width: 0%;
+    height: 100%;
+    content: '';
+  }
+
+  &:hover,
+  &:focus {
+    color: $hover-color;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}

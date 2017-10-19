@@ -30,8 +30,10 @@
 
 .toc__anchor {
   @extend %link-unstyled;
+  @include hover-fill($brand-green-transparent, $brand-text, $brand-text);
   display: inline-block;
   position: relative;
+  z-index: 1;
   padding: 0;
 
   &::before {
@@ -42,12 +44,6 @@
     width: $spacer-base;
     color: $brand-interaction;
     content: $icon-arrow-down;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: $brand-interaction;
-    color: $brand-text;
   }
 }
 
