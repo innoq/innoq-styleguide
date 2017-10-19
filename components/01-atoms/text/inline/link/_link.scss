@@ -1,8 +1,12 @@
-a {
+a:not([class]) {
   transition: $standard-transition;
+  box-shadow: inset 0 -3px 0 $brand-white, inset 0 -4px 0 $link-color;
+  text-decoration: none;
   color: $link-color;
 
+  &:focus,
   &:hover {
-    color: $hover-color;
+    box-shadow: inset 0 -3px 0 $brand-white, inset 0 -4px 0 $link-hover-color;
+    color: $link-hover-color;
   }
 }
