@@ -91,7 +91,8 @@
 @import '../components/01-atoms/text/block/list/list';
 
 // Inline text atoms
-@import '../components/01-atoms/text/inline/inline';
+@import '../components/01-atoms/text/inline/link/link';
+@import '../components/01-atoms/text/inline/accentuation/accentuation';
 
 // Molecules
 @import '../components/02-molecules/author-bio/author-bio';
