@@ -3,33 +3,51 @@
 //
 
 .conclusion {
-  border: 2px solid $conclusion-background-color;
-  background: $conclusion-content-background-color;
-  padding: $spacer-xxl $spacer-base;
+  border: ms(-13) solid $conclusion-border-color;
+  background: $conclusion-background-color;
+  // make padding-bottom smaller than padding-top because of last paragraph"s border
+  padding: $spacer-lg $spacer-base $spacer-base;
 }
 
 .conclusion-headline {
-  line-height: $conclusion-headline-line-height;
+  line-height: $conclusion-headline-line-height-small;
   color: $conclusion-headline-color;
-  font-size: $conclusion-headline-font-size;
+  font-size: $conclusion-headline-font-size-small;
 }
 
 .conclusion-subheadline {
-  line-height: $conclusion-subheadline-line-height;
+  line-height: $conclusion-subheadline-line-height-small;
   color: $conclusion-subheadline-color;
-  font-size: $conclusion-subheadline-font-size;
+  font-size: $conclusion-subheadline-font-size-small;
 }
 
 .conclusion-text {
   @extend %heading-font-regular;
 
-  line-height: $conclusion-text-line-height;
+  line-height: $conclusion-text-line-height-small;
   color: $conclusion-text-color;
-  font-size: $conclusion-text-font-size;
+  font-size: $conclusion-text-font-size-small;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .conclusion {
-    border: 25px solid $conclusion-background-color;
+    border: ms(5) solid $conclusion-border-color;
+    // make padding-bottom smaller than padding-top because of last paragraph"s border
+    padding: $spacer-xxl $spacer-base ms(20);
+  }
+
+  .conclusion-headline {
+    line-height: $conclusion-headline-line-height;
+    font-size: $conclusion-headline-font-size;
+  }
+
+  .conclusion-subheadline {
+    line-height: $conclusion-subheadline-line-height;
+    font-size: $conclusion-subheadline-font-size;
+  }
+
+  .conclusion-text {
+    line-height: $conclusion-text-line-height;
+    font-size: $conclusion-text-font-size;
   }
 }

@@ -103,7 +103,7 @@ $ordered-list-font-size-small: ms(1);                 // ~21px
 $ordered-list-line-height: $base-line-height;         // ~32px
 $ordered-list-line-height-small: $base-line-height;   // ~32px
 $ordered-list-counter-font-size: ms(2);               // ~19px
-$ordered-list-counter-font-size-small: ms(1);         // ~19px
+$ordered-list-counter-font-size-small: ms(1);         // ~16px
 $ordered-list-counter-line-height: $base-line-height; // ~26px
 $definition-list-font-size: ms(3);                    // ~20px
 $definition-list-line-height: $base-line-height;      // ~26px
@@ -165,9 +165,15 @@ $pull-quote-line-height: $base-line-height; // ~26px
 //
 // Conclusion
 //
-$conclusion-headline-font-size: ms(16);    // ~70px
-$conclusion-headline-line-height: 1.07;    // ~60px
-$conclusion-subheadline-font-size: ms(7);  // ~30px
-$conclusion-subheadline-line-height: 2;     // ~60px
-$conclusion-text-font-size: ms(2);          // ~19px
-$conclusion-text-line-height: 1.37;         // ~26px
+$conclusion-headline-font-size: ms(16);                         // ~70px
+$conclusion-headline-font-size-small: ms(12);                   // ~48px
+$conclusion-headline-line-height: 1.07;                         // ~60px
+$conclusion-headline-line-height-small: $heading-line-height;
+$conclusion-subheadline-font-size: ms(7);                       // ~30px
+$conclusion-subheadline-font-size-small: ms(5);                 // ~25px
+$conclusion-subheadline-line-height: 2;                         // ~60px
+$conclusion-subheadline-line-height-small: $heading-line-height;
+$conclusion-text-font-size: ms(2);                              // ~19px
+$conclusion-text-font-size-small: ms(1);                        // ~19px
+$conclusion-text-line-height: 1.37;                             // ~26px
+$conclusion-text-line-height-small: $base-line-height;          // ~26px
