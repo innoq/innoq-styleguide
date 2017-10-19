@@ -4,9 +4,9 @@ mark {
 }
 
 strong {
-  // TODO
+  @extend %body-font-bold;
 }
 
 em {
-  // TODO
+  @extend %body-font-italic;
 }
