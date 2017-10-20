@@ -32,6 +32,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
+    transition: $standard-transition;
     border-radius: 100%;
     background-color: $author-bio-link-background-color;
     width: $spacer-md;
@@ -40,6 +41,13 @@
     line-height: $spacer-md;
     color: $author-bio-link-color;
     content: $icon-arrow-down;
+  }
+
+  &:focus,
+  &:hover {
+    &::before {
+      bottom: -2px; // on hover move the anchor icon slightly down
+    }
   }
 }
 
