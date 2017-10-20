@@ -1,0 +1,27 @@
+.meta-tags {
+  background-color: $meta-tags-background-color;
+  padding-top: $spacer-base;
+  padding-bottom: $spacer-lg;
+}
+
+.meta-tags__headline {
+  @extend %heading-font-heavy;
+
+
+  text-align: center;
+  line-height: $meta-tags-headline-line-height-small;
+  color: $meta-tags-headline-text-color;
+  font-size: $meta-tags-headline-font-size-small;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .meta-tags {
+    padding-top: $spacer-lg;
+    padding-bottom: $spacer-xl;
+  }
+
+  .meta-tags__headline {
+    line-height: $meta-tags-headline-line-height;
+    font-size: $meta-tags-headline-font-size;
+  }
+}

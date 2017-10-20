@@ -61,7 +61,17 @@ $toc-border-color: $brand-gray-25;
 
 // Conclusion
 $conclusion-border-color: $brand-primary;
-$conclusion-background-color: $brand-gray;
+$conclusion-background-color: $brand-text;
 $conclusion-headline-color: $brand-white;
 $conclusion-subheadline-color: $brand-primary;
 $conclusion-text-color: $brand-white;
+
+//Tags
+$tag-background-color: $brand-text;
+$tag-background-color-hover: $brand-primary;
+$tag-text-color-hover: $brand-white;
+$tag-text-color: $brand-white;
+
+// Tag-Element
+$meta-tags-background-color: #f7f7f7; //TODO: Check grey colors with Frank.
+$meta-tags-headline-text-color: $brand-text;

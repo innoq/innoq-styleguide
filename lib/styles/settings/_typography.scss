@@ -174,6 +174,20 @@ $conclusion-subheadline-font-size-small: ms(5);                 // ~25px
 $conclusion-subheadline-line-height: 2;                         // ~60px
 $conclusion-subheadline-line-height-small: $heading-line-height;
 $conclusion-text-font-size: ms(2);                              // ~19px
-$conclusion-text-font-size-small: ms(1);                        // ~19px
+$conclusion-text-font-size-small: ms(1);                        // ~17px
 $conclusion-text-line-height: 1.37;                             // ~26px
-$conclusion-text-line-height-small: $base-line-height;          // ~26px
+$conclusion-text-line-height-small: $base-line-height;
+
+//
+// Tags
+//
+$tag-font-size: $base-font-size;            // ~16px
+$tag-font-size-small: ms(-1);               // ~14px
+$tag-line-height: 1.375;                    // ~26px
+$tag-line-height-small: $base-line-height;
+
+// Tag Element
+$meta-tags-headline-font-size: ms(2);                         // ~19px
+$meta-tags-headline-font-size-small: $base-font-size;         // ~16px
+$meta-tags-headline-line-height: 1.37;                        // ~26px
+$meta-tags-headline-line-height-small: $base-line-height;  // ~26px
