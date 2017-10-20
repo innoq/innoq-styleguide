@@ -1,12 +1,22 @@
+//
+// Default Link - used on all class-less link elements
+//
+
+$underline-offset: -3px;
+$underline-width: $underline-offset - 1px;
+$hover-padding: 4px;
+
+// sass-lint:disable force-pseudo-nesting
 a:not([class]) {
   transition: $standard-transition;
-  box-shadow: inset 0 -3px 0 $brand-white, inset 0 -4px 0 $link-color;
+  box-shadow: inset 0 $underline-offset 0 $brand-white, inset 0 $underline-width 0 $link-color;
   text-decoration: none;
   color: $link-color;
 
   &:focus,
   &:hover {
-    box-shadow: inset 0 -3px 0 $brand-white, inset 0 -4px 0 $link-hover-color;
-    color: $link-hover-color;
+    background-color: $brand-green-transparent;
+    padding-top: $hover-padding;
+    padding-bottom: $hover-padding;
   }
 }
