@@ -10,11 +10,11 @@ Install:
 
 This starts a local development server complete with asset pipeline:
 
-    npm start
+    yarn start
 
 Export a static site to `./dist/site`
 
-    npm run site
+    yarn run site
 
 ## With Docker & Docker-Compose
 
