@@ -3,10 +3,11 @@
 //
 
 .conclusion {
-  border: ms(-13) solid $conclusion-border-color;
+  margin-top: $spacer-xxl;
+  border-top: $conclusion-border-size solid $conclusion-border-color;
+  border-bottom: $conclusion-border-size solid $conclusion-border-color;
   background: $conclusion-background-color;
-  // make padding-bottom smaller than padding-top because of last paragraph"s border
-  padding: $spacer-lg $spacer-base $spacer-base;
+  padding: $spacer-lg $container-spacer-x;
 }
 
 .conclusion-headline {
@@ -27,13 +28,16 @@
   line-height: $conclusion-text-line-height-small;
   color: $conclusion-text-color;
   font-size: $conclusion-text-font-size-small;
+
+  // Remove the margin of the last paragraph inside a conclusion
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .conclusion {
-    border: ms(5) solid $conclusion-border-color;
-    // make padding-bottom smaller than padding-top because of last paragraph"s border
-    padding: $spacer-xxl $spacer-base ms(20);
+    padding: $spacer-xxl 0;
   }
 
   .conclusion-headline {
@@ -49,5 +53,11 @@
   .conclusion-text {
     line-height: $conclusion-text-line-height;
     font-size: $conclusion-text-font-size;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .conclusion {
+    border: $conclusion-border-size solid $conclusion-border-color;
   }
 }

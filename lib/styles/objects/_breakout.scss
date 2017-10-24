@@ -1,23 +1,30 @@
+//
+// Breakout Layout Object
+//
+
 .breakout {
   grid-column-start: 1;
   grid-column-end: -1;
 }
 
 .breakout__content {
-  margin-right: auto;
-  margin-left: auto;
   width: 95%;
+  max-width: $article-main-column-width;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .breakout__content {
-    width: calc(80% + 50px);
+    margin-right: auto;
+    margin-left: auto;
+    // Interpolate the variable, otherwise calc gets confused
+    width: 80%;
   }
 }
 
 @media screen and (min-width: $grid-breakpoint-lg) {
   .breakout__content {
-    width: calc(60% + 50px);
+    // Interpolate the variable, otherwise calc gets confused
+    width: 60%;
   }
 }
 
