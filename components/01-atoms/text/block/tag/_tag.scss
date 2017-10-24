@@ -13,28 +13,25 @@
 }
 
 .tag-list__item {
-  display: inline-block;
   margin: $spacer-xxs;
+}
+
+.tag-list__link {
+  @extend %heading-font-bold;
+
+  display: inline-block;
+  transition: .2s background-color ease-in-out;
   background: $tag-background-color;
   padding: $spacer-xs $spacer-sm;
 
+  text-decoration: none;
+  line-height: $tag-line-height-small;
+  color: $tag-text-color;
+  font-size: $tag-font-size-small;
 
   &:hover {
     background-color: $tag-background-color-hover;
     color: $tag-text-color-hover;
-  }
-
-  a {
-    @extend %heading-font-bold;
-
-    text-decoration: none;
-    line-height: $tag-line-height-small;
-    color: $tag-text-color;
-    font-size: $tag-font-size-small;
-
-    &:hover {
-      color: $tag-text-color;
-    }
   }
 }
 
