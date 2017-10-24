@@ -1,5 +1,6 @@
-.eslintignore
-.editorconfig
-.sass-lint.yml
-docker-compose.yml
-Dockerfile
+.eslintcache
+node_modules
+dist/**/*
+components/index.js
+public/**/*
+.DS_Store
