@@ -1,3 +1,4 @@
+pull-quote > blockquote,
 .pullquote {
   @extend %heading-font-bold;
   margin: 0 0 $content-spacer-base;
@@ -11,6 +12,7 @@
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
+  pull-quote > blockquote,
   .pullquote {
     margin: 0 auto $content-spacer-base;
     width: 80%;
