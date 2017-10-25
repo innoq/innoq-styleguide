@@ -13,6 +13,14 @@ const config = {
       {
         entryPoint: './node_modules/normalize.css/normalize.css',
         target: './public/css/normalize.css'
+      },
+      {
+        entryPoint: './lib/styles/index.scss',
+        target: './dist/css/bundle.css'
+      },
+      {
+        entryPoint: './node_modules/normalize.css/normalize.css',
+        target: './dist/css/normalize.css'
       }
     ]
   }
