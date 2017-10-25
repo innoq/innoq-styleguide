@@ -1,8 +1,3 @@
-.tag-list__container {
-  margin: 0 auto;
-  width: 90%;
-}
-
 .tag-list {
   @extend %list-unstyled;
 
@@ -36,16 +31,12 @@
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
-  .tag-list__container {
-    width: 60%;
-  }
-
   .tag-list__item {
     margin: $spacer-xxs;
+  }
 
-    a {
-      line-height: $tag-line-height;
-      font-size: $tag-font-size;
-    }
+  .tag-list__link {
+    line-height: $tag-line-height;
+    font-size: $tag-font-size;
   }
 }

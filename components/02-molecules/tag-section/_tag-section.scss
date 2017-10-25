@@ -1,10 +1,15 @@
-.meta-tags {
+.tag-section {
   background-color: $meta-tags-background-color;
   padding-top: $spacer-base;
   padding-bottom: $spacer-lg;
 }
 
-.meta-tags__headline {
+.tag-section__container {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.tag-section__headline {
   @extend %heading-font-heavy;
 
   text-align: center;
@@ -14,13 +19,17 @@
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
-  .meta-tags {
+  .tag-section {
     padding-top: $spacer-lg;
     padding-bottom: $spacer-xl;
   }
 
-  .meta-tags__headline {
+  .tag-section__headline {
     line-height: $meta-tags-headline-line-height;
     font-size: $meta-tags-headline-font-size;
+  }
+
+  .tag-section__container {
+    width: 60%;
   }
 }

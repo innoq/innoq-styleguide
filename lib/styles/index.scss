@@ -89,7 +89,7 @@
 @import '../components/01-atoms/text/block/quote/pull-quote';
 @import '../components/01-atoms/text/block/quote/block-quote';
 @import '../components/01-atoms/text/block/list/list';
-@import '../components/01-atoms/text/block/tag/tag';
+@import '../components/01-atoms/text/block/tag-list/tag-list';
 
 // Inline text atoms
 @import '../components/01-atoms/text/inline/link/link';
@@ -102,7 +102,7 @@
 @import '../components/02-molecules/table-of-contents/table-of-contents';
 @import '../components/02-molecules/super-quote/super-quote';
 @import '../components/02-molecules/conclusion/conclusion';
-@import '../components/02-molecules/tag-element/tag-element';
+@import '../components/02-molecules/tag-section/tag-section';
 
 // Organisms
 @import '../components/03-organisms/article-intro/article-intro';
