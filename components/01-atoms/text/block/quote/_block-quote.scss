@@ -1,9 +1,20 @@
+// ---- Block quotes -----------------------------------------------------------
+//
+// Scope element based selector to elements, that do not carry a
+// class attribute, to prevent reverting styles for all non-default quotes.
+//
+// sass-lint:disable force-pseudo-nesting
+blockquote:not([class]),
 .blockquote {
-  @extend %body-font-italic;
   position: relative;
   margin: 0 0 $content-spacer-base;
-  line-height: $base-line-height;
-  font-size: $paragraph-font-size;
+
+  &,
+  & > p {
+    @extend %body-font-italic;
+    line-height: $base-line-height;
+    font-size: $paragraph-font-size;
+  }
 
   @media screen and (min-width: $grid-breakpoint-md) {
     &::before {

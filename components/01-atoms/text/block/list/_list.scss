@@ -1,28 +1,23 @@
+// ---- List related variables--------------------------------------------------
 $bullet-size: $spacer-xs; // ~9px
 $bullet-offset: $spacer-sm; // ~16px
 $checklist-icon-size: 1.9875rem; // Determined by the hard science of pushing things around
-
-%unsorted-list {
-  @extend %heading-font-bold;
-  @include list-unstyled;
-  margin-bottom: $content-spacer-base;
-  line-height: $bullet-list-line-height-small;
-  font-size: $bullet-list-font-size-small;
-
-  li {
-    position: relative;
-    margin-bottom: $spacer-sm;
-  }
-}
+$number-space: $spacer-md;
 
 
+// ---- Unordered Lists --------------------------------------------------------
+//
 .list-unstyled {
   @extend %list-unstyled;
 }
 
-// sass-lint:disable force-pseudo-nesting
+// ---- Unordered Lists --------------------------------------------------------
+//
 // Scope element based selector to elements, that do not carry a
 // class attribute, to prevent reverting styles for all non-default lists.
+//
+// sass-lint:disable force-pseudo-nesting
+
 ul:not([class]) {
   @extend %unsorted-list;
 
@@ -43,6 +38,9 @@ ul:not([class]) {
   }
 }
 
+
+// ---- Checked Lists ----------------------------------------------------------
+//
 .checklist {
   @extend %unsorted-list;
 
@@ -60,16 +58,17 @@ ul:not([class]) {
   }
 }
 
-$number-space: $spacer-md;
 
-// ---- Ordered Lists ------------------------------------------------------
+// ---- Ordered Lists ----------------------------------------------------------
+//
 // Generated numbers from default ordered lists can't be styled directly
 // yet. Therefore we disable auto-numbering and use a counter to increment
 // a number and insert it via :before content.
-
-// sass-lint:disable force-pseudo-nesting
+//
 // Scope element based selector to elements, that do not carry a
 // class attribute, to prevent reverting styles for all non-default lists.
+//
+// sass-lint:disable force-pseudo-nesting
 ol:not([class]) {
   @extend %body-font-regular;
   @include list-unstyled;
@@ -96,6 +95,8 @@ ol:not([class]) {
   }
 }
 
+// ---- Definition Lists -------------------------------------------------------
+//
 // TODO: Finalize when layout is available
 dl:not([class]) {
   dt {
@@ -112,6 +113,10 @@ dl:not([class]) {
   }
 }
 
+
+//
+// Media Queries
+//
 @media screen and (min-width: $grid-breakpoint-md) {
   ul:not([class]) {
     line-height: $bullet-list-line-height;
