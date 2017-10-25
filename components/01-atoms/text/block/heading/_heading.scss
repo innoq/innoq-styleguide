@@ -68,6 +68,20 @@ h6 {
 }
 
 
+// sass-lint:disable force-pseudo-nesting
+// Remove links stylings inside headlines
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  & > a:not([class]) {
+    @extend %link-unstyled;
+  }
+}
+
+
 @media screen and (min-width: $grid-breakpoint-md) {
   %h1,
   h1 {

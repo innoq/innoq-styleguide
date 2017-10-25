@@ -1,6 +1,12 @@
 %link-unstyled {
+  box-shadow: none;
   text-decoration: none;
   color: inherit;
+
+  &:hover,
+  &:focus {
+    background-color: initial;
+  }
 }
 
 %list-unstyled {
