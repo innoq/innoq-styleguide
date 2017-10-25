@@ -27,9 +27,21 @@ https://innoq.github.io/innoq-styleguide.
 
 See `.travis.yml` for more info.
 
-## Release to npm
+## Release
 
-- Increment version in `package.json`
-- `git commit`
-- `git tag -am "vX.X.X" X.X.X`
-- `git push --follow-tags`
+Just hit `ENTER` all the time to release a new version.
+
+Travis deals with npm publishing, no need to answer
+with "YES" here.
+
+### Patch level version (auto increment)
+
+    $ release-it
+
+### Minor
+
+    $ release-it minor
+
+### Major
+
+    $ release-it major

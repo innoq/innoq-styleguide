@@ -1,0 +1,25 @@
+{
+  "pkgFiles": ["package.json"],
+  "increment": "patch",
+  "changelogCommand": "git log --pretty=format:\"* %s (%h)\" [REV_RANGE]",
+  "requireCleanWorkingDir": false,
+  "src": {
+    "commit": true,
+    "commitMessage": "v%s",
+    "tag": true,
+    "tagName": "%s",
+    "tagAnnotation": "v%s",
+    "push": true
+  },
+  "npm": {
+    "publish": false
+  },
+  "github": {
+    "release": false
+  },
+  "prompt": {
+    "src": {
+      "release": false
+    }
+  }
+}
