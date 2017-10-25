@@ -2,15 +2,21 @@
 //
 pull-quote > blockquote,
 .pullquote {
-  @extend %heading-font-bold;
+
   margin: 0 0 $content-spacer-base;
   border: 1px solid $pull-quote-border-color;
   border-width: 1px 0;
   padding: $spacer-sm;
-  text-align: center;
-  line-height: $pull-quote-line-height;
-  color: $pull-quote-color;
-  font-size: $pull-quote-font-size;
+
+  &,
+  & > p {
+    @extend %heading-font-bold;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: $pull-quote-line-height;
+    color: $pull-quote-color;
+    font-size: $pull-quote-font-size;
+  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

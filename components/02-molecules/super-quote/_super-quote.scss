@@ -11,7 +11,7 @@ super-quote > blockquote,
     width: 80%;
   }
 
-  p {
+  > p {
     @extend %heading-font-heavy;
     line-height: $superquote-line-height-small;
     color: $superquote-color;
