@@ -3,7 +3,6 @@
 //
 // Font stacks
 //
-
 $font-family-serif: FreightTextPro, Georgia, Times, 'Times New Roman', serif;
 $font-family-sans-serif: FFMarkWebProBook, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-family-sans-serif-bold: FFMarkWebProBold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -45,149 +44,163 @@ $heading-line-height: 1.2;
 //
 
 // H1
-$h1-font-size: ms(12);       // 48px (~50px)
-$h1-font-size-small: ms(9);  // 36px (~35px)
-$h1-line-height: $heading-line-height;
+$h1-font-size: ms(12);                   // 48px (~50px)
+$h1-font-size-small: ms(9);              // 36px (~35px)
+$h1-line-height: $heading-line-height;   // 47px
 
 // H2
-$h2-font-size: ms(9);        // 36px (~35px)
-$h2-font-size-small: ms(7);  // ~30px
-$h2-line-height: $heading-line-height;
+$h2-font-size: ms(9);                     // 36px (~35px)
+$h2-font-size-small: ms(7);               // ~30px
+$h2-line-height: $heading-line-height;    // 43px
 
 // H3
-$h3-font-size: ms(7);        // ~30px
-$h3-font-size-small: ms(5);  // ~25px
-$h3-line-height: $heading-line-height;
+$h3-font-size: ms(7);                     // ~30px
+$h3-font-size-small: ms(5);               // ~25px
+$h3-line-height: $heading-line-height;    // 36px
 
 // H4
-$h4-font-size: ms(5);        // ~25px
-$h4-font-size-small: ms(3);  // ~21px
-$h4-line-height: $heading-line-height;
+$h4-font-size: ms(5);                     // ~25px
+$h4-font-size-small: ms(3);               // ~21px
+$h4-line-height: $heading-line-height;    // ~30px
 
 // H5
-$h5-font-size: ms(3);        // ~21px
-$h5-font-size-small: ms(0);  // ~16px
-$h5-line-height: $heading-line-height;
+$h5-font-size: ms(3);                     // ~21px
+$h5-font-size-small: ms(0);               // ~16px
+$h5-line-height: $heading-line-height;    // 25px
 
 // H6
-$h6-font-size: ms(0);        // ~16px
-$h6-font-size-small: ms(0);  // ~16px
-$h6-line-height: $heading-line-height;
+$h6-font-size: ms(0);                     // ~16px
+$h6-font-size-small: ms(0);               // ~16px
+$h6-line-height: $heading-line-height;    // 19px
 
 
 //
 // Buttons
 //
-$button-small-font-size: ms(1);
-$button-small-line-height: 1;
+$button-small-font-size: ms(1);   // ~17px
+$button-small-line-height: 1;     // ~17px
 
-$button-medium-font-size: ms(3);
-$button-medium-line-height: 1.3;
+$button-medium-font-size: ms(3);  // 21px
+$button-medium-line-height: 1.3;  // ~27px
 
-$button-large-font-size: ms(4);
-$button-large-line-height: 1.4;
+$button-large-font-size: ms(4);   // 23px
+$button-large-line-height: 1.4;   // 32px
 
 
 //
 // Lists
 //
 // The amount lists and blockquotes are indented.
-$indent-amount: $base-font-size !default;
-$bullet-list-font-size: ms(3);                        // ~20px
-$bullet-list-font-size-small: ms(1);                  // ~20px
-$bullet-list-line-height: $base-line-height;          // ~26px
-$bullet-list-line-height-small: 1.58;                 // ~26px
-$checkmark-list-font-size: ms(5);                     // ~25px
-$ordered-list-font-size: ms(3);                       // ~21px
-$ordered-list-font-size-small: ms(1);                 // ~21px
-$ordered-list-line-height: $base-line-height;         // ~32px
-$ordered-list-line-height-small: $base-line-height;   // ~32px
-$ordered-list-counter-font-size: ms(2);               // ~19px
-$ordered-list-counter-font-size-small: ms(1);         // ~16px
-$ordered-list-counter-line-height: $base-line-height; // ~26px
-$definition-list-font-size: ms(3);                    // ~20px
-$definition-list-line-height: $base-line-height;      // ~26px
+$indent-amount: $base-font-size !default;                 // ~16px
+$bullet-list-font-size: ms(3);                            // ~20px
+$bullet-list-font-size-small: ms(1);                      // ~20px
+$bullet-list-line-height: $base-line-height;              // ~31px
+$bullet-list-line-height-small: 1.58;                     // ~27px
+$checkmark-list-font-size: ms(5);                         // ~25px
+$ordered-list-font-size: ms(3);                           // ~21px
+$ordered-list-font-size-small: ms(1);                     // ~21px
+$ordered-list-line-height: $base-line-height;             // ~31px
+$ordered-list-line-height-small: $base-line-height;       // ~26px
+$ordered-list-counter-font-size: ms(2);                   // ~19px
+$ordered-list-counter-font-size-small: ms(1);             // ~16px
+$ordered-list-counter-line-height: $base-line-height;     // ~29px
+$definition-list-font-size: ms(3);                        // ~20px
+$definition-list-line-height: $base-line-height;          // ~26px
 
 
 //
 // Paragraph Text
 //
-$paragraph-font-size: ms(3);                          // ~21px
-$paragraph-font-size-small: ms(1);                    // ~18px
-$paragraph-line-height: $base-line-height;            // ~30px
-$paragraph-line-height-small: 1.58;                   // ~28px
-$paragraph-lead-font-size: ms(5);                     // ~25px
-$paragraph-lead-font-size-small: ms(2);               // ~21px
-$paragraph-lead-line-height: $base-line-height;       // ~38px
-$paragraph-lead-line-height-small: $base-line-height; // ~38px
+$paragraph-font-size: ms(3);                              // ~21px
+$paragraph-font-size-small: ms(1);                        // ~18px
+$paragraph-line-height: $base-line-height;                // ~32px
+$paragraph-line-height-small: 1.58;                       // ~27px
+$paragraph-lead-font-size: ms(5);                         // ~25px
+$paragraph-lead-font-size-small: ms(2);                   // ~21px
+$paragraph-lead-line-height: $base-line-height;           // ~38px
+$paragraph-lead-line-height-small: $base-line-height;     // ~29px
 
 
 //
 // Date & Duration
 //
-$date-font-size: ms(0);               // ~16px
-$duration-font-size: ms(1);           // ~17px
-$date-line-height: $base-line-height; // ~22px
+$date-font-size: ms(0);                   // ~16px
+$duration-font-size: ms(1);               // ~17px
+$date-line-height: $base-line-height;     // ~16px
 
 
 //
 // Table of contents
 //
-$toc-anchor-font-size: ms(1);                // ~17px
-$toc-anchor-line-height: $base-line-height;  // ~22px
-$toc-heading-font-size: ms(2);               // ~19px
-$toc-heading-line-height: $base-line-height; // ~26px
+$toc-anchor-font-size: ms(1);                   // ~17px
+$toc-anchor-line-height: $base-line-height;     // ~26px
+$toc-heading-font-size: ms(2);                  // ~19px
+$toc-heading-line-height: $base-line-height;    // ~29px
 
 
 //
 // Author Bio
 //
-$author-bio-name-font-size: ms(0);          // ~16px
-$author-bio-position-font-size: ms(1);      // ~17px
-$author-bio-line-height: $base-line-height; // ~22px
+$author-bio-name-font-size: ms(0);              // ~16px
+$author-bio-position-font-size: ms(1);          // ~17px
+$author-bio-line-height: $base-line-height;     // ~24px
 
 
 //
 // Super-Quote
 //
-$superquote-font-size: $h2-font-size;
-$superquote-font-size-small: $h3-font-size;
-$superquote-line-height: $h2-line-height;
-$superquote-line-height-small: $h3-line-height;
+$superquote-font-size: ms(9);                           // ~35px
+$superquote-font-size-small: ms(7);                     // ~30px
+$superquote-line-height: $heading-line-height;          // ~48px
+$superquote-line-height-small: $heading-line-height;    // ~36px
 
 
 //
 // Pull Quote
 //
-$pull-quote-font-size: ms(2);               // ~19px
-$pull-quote-line-height: $base-line-height; // ~26px
+$pull-quote-font-size: ms(2);                 // ~19px
+$pull-quote-line-height: $base-line-height;   // ~29px
+
 
 //
 // Conclusion
 //
-$conclusion-headline-font-size: ms(16);                         // ~70px
-$conclusion-headline-font-size-small: ms(12);                   // ~48px
-$conclusion-headline-line-height: 1.07;                         // ~60px
-$conclusion-headline-line-height-small: $heading-line-height;
-$conclusion-subheadline-font-size: ms(7);                       // ~30px
-$conclusion-subheadline-font-size-small: ms(5);                 // ~25px
-$conclusion-subheadline-line-height: 2;                         // ~60px
-$conclusion-subheadline-line-height-small: $heading-line-height;
-$conclusion-text-font-size: ms(2);                              // ~19px
-$conclusion-text-font-size-small: ms(1);                        // ~17px
-$conclusion-text-line-height: 1.37;                             // ~26px
-$conclusion-text-line-height-small: $base-line-height;
+$conclusion-headline-font-size: ms(16);                             // ~70px
+$conclusion-headline-font-size-small: ms(12);                       // ~48px
+$conclusion-headline-line-height: 1.07;                             // ~73px
+$conclusion-headline-line-height-small: $heading-line-height;       // ~57px
+$conclusion-subheadline-font-size: ms(7);                           // ~30px
+$conclusion-subheadline-font-size-small: ms(5);                     // ~25px
+$conclusion-subheadline-line-height: 2;                             // ~60px
+$conclusion-subheadline-line-height-small: $heading-line-height;    // ~30px
+$conclusion-text-font-size: ms(2);                                  // ~19px
+$conclusion-text-font-size-small: ms(1);                            // ~17px
+$conclusion-text-line-height: 1.37;                                 // ~26px
+$conclusion-text-line-height-small: $base-line-height;              // ~26px
+
 
 //
 // Tags
 //
-$tag-font-size: $base-font-size;            // ~16px
-$tag-font-size-small: ms(-1);               // ~14px
-$tag-line-height: 1.375;                    // ~26px
-$tag-line-height-small: $base-line-height;
+$tag-font-size: $base-font-size;               // ~16px
+$tag-font-size-small: ms(-1);                  // ~14px
+$tag-line-height: 1.375;                       // ~22px
+$tag-line-height-small: $base-line-height;     // ~22px
 
-// Tag Element
+
+//
+// Tag Section
+//
 $meta-tags-headline-font-size: ms(2);                         // ~19px
 $meta-tags-headline-font-size-small: $base-font-size;         // ~16px
 $meta-tags-headline-line-height: 1.37;                        // ~26px
-$meta-tags-headline-line-height-small: $base-line-height;  // ~26px
+$meta-tags-headline-line-height-small: $base-line-height;     // ~24px
+
+
+//
+// Reference
+//
+$reference-font-size: $base-font-size;    // ~16px
+$reference-font-size-small: ms(-2);       // ~13px
+$reference-line-height: 1.56;             // ~25px
+$reference-line-height-small: 1.69;       // ~23px
