@@ -23,15 +23,18 @@
 }
 
 .conclusion-text {
-  @extend %heading-font-regular;
+  &,
+  & > * {
+    @extend %heading-font-regular;
 
-  line-height: $conclusion-text-line-height-small;
-  color: $conclusion-text-color;
-  font-size: $conclusion-text-font-size-small;
+    line-height: $conclusion-text-line-height-small;
+    color: $conclusion-text-color;
+    font-size: $conclusion-text-font-size-small;
 
-  // Remove the margin of the last paragraph inside a conclusion
-  &:last-child {
-    margin-bottom: 0;
+    // Remove the margin of the last paragraph inside a conclusion
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 

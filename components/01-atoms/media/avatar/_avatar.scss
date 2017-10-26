@@ -9,6 +9,11 @@
     width: $avatar-size-small;
     height: auto;
   }
+
+  .avatar--base & {
+    width: $avatar-size-base;
+    height: auto;
+  }
 }
 
 .avatar__link {

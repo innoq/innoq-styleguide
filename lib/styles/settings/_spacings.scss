@@ -37,10 +37,19 @@ $article-main-column-width: 50rem; // ~800px, main column, just for the text
 $article-margin: $spacer-md;
 $article-intro-margin: $spacer-lg;
 
+
 //
 // Avatars
 //
 $avatar-size-small: ms(18);
+$avatar-size-base: ms(22);
+
+
+//
+// Author Bio
+//
+$author-bio-image-offset: $avatar-size-base / 2;
+
 
 //
 // Conclusion

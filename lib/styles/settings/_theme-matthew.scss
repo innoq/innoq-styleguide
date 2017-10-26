@@ -48,7 +48,8 @@ $zzlinecolor: $brand-text;
 // Lists
 $bullet-list-color: $brand-primary;
 
-//author
+// Author
+$author-bio-background-color: $brand-gray-10;
 $author-bio-link-color: $brand-white;
 $author-bio-link-background-color: $brand-interaction;
 
@@ -66,12 +67,12 @@ $conclusion-headline-color: $brand-white;
 $conclusion-subheadline-color: $brand-primary;
 $conclusion-text-color: $brand-white;
 
-//Tags
+// Tag List
 $tag-background-color: $brand-text;
 $tag-background-color-hover: $brand-primary;
 $tag-text-color-hover: $brand-white;
 $tag-text-color: $brand-white;
 
-// Tag-Element
-$meta-tags-background-color: #f7f7f7; //TODO: Check grey colors with Frank.
+// Tag Section
+$meta-tags-background-color: $brand-gray-10;
 $meta-tags-headline-text-color: $brand-text;

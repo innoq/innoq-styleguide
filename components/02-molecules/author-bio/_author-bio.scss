@@ -1,4 +1,5 @@
 .author-bio {
+  position: relative;
   margin-bottom: $spacer-base;
 
   &.author-bio--short {
@@ -8,6 +9,19 @@
     justify-content: flex-start;
     width: 100%;
   }
+
+  &.author-bio--long {
+    margin-top: $author-bio-image-offset;
+    margin-bottom: $spacer-xl;
+    background-color: $author-bio-background-color;
+    padding: $spacer-base;
+    padding-top: $author-bio-image-offset + $spacer-sm;
+  }
+}
+
+.author-bio__head {
+  margin-bottom: $spacer-base;
+  text-align: center;
 }
 
 .author-bio__name {
@@ -22,6 +36,32 @@
 
 .author-bio__info {
   @extend %author-role;
+}
+
+.author-bio__social {
+  margin: $spacer-sm auto;
+  border-top: 1px solid $brand-gray-25;
+  padding-top: $spacer-sm;
+  width: 80%;
+}
+
+.author-bio__handle {
+  @extend %link-unstyled;
+  @extend %heading-font-bold;
+  text-transform: lowercase;
+  color: $brand-interaction;
+
+  & + & {
+    margin-left: $spacer-sm;
+  }
+}
+
+.author-bio__text,
+.author-bio__text > p {
+  @extend %heading-font-regular;
+  margin-bottom: 0;
+  line-height: $base-line-height;
+  font-size: $base-font-size;
 }
 
 .author-bio__anchor {
@@ -53,6 +93,12 @@
 
 .author-bio__image {
   margin-right: $spacer-md;
+
+  .author-bio--long & {
+    position: absolute;
+    top: -$author-bio-image-offset;
+    left: calc(50% - #{$author-bio-image-offset});
+  }
 }
 
 @media screen and (min-width: $grid-breakpoint-xl) {
