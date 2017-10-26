@@ -22,7 +22,7 @@
   font-size: $conclusion-subheadline-font-size-small;
 }
 
-.conclusion-text {
+.conclusion-text * {
   @extend %heading-font-regular;
 
   line-height: $conclusion-text-line-height-small;
