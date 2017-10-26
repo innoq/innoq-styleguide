@@ -1,0 +1,61 @@
+$share-section-offset: ms(15);
+$share-section-icon-size: ms(4);
+
+.share-section {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: $spacer-xl;
+  padding-top: $share-section-offset + $spacer-sm;
+  width: 50%;
+  text-align: center;
+
+  &::before {
+    // TODO: Replace with icons
+    display: block;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    background-color: $brand-text;
+    width: 1px;
+    height: $share-section-offset;
+    content: '';
+  }
+}
+
+.share-section__heading {
+  line-height: $h5-line-height;
+  font-size: $h5-font-size;
+}
+
+.share-section__list {
+  @extend %list-unstyled;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.share-section__link {
+  @extend %heading-font-bold;
+  @extend %link-unstyled;
+  transition: $standard-transition;
+  padding: $spacer-sm;
+  font-size: $share-section-icon-size;
+
+  &:hover,
+  &:focus {
+    color: $brand-interaction;
+  }
+
+  // TODO: Fill with icons
+  // &--twitter {
+  //
+  // }
+  //
+  // &--facebook {
+  //
+  // }
+  //
+  // &--mail {
+  //
+  // }
+}

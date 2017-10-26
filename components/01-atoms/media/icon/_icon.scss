@@ -8,11 +8,15 @@
   font-variant: normal;
   speak: none;
 
-
   // Better Font Rendering
   // sass-lint:disable no-vendor-prefixes
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  // TODO: Remove once all icons are unified
+  &.icon--social {
+    font-family: 'social';
+  }
 }
 
 .icon-arrow-down {
@@ -37,5 +41,23 @@
 .icon-download {
   &::before {
     content: $icon-download;
+  }
+}
+
+.icon-facebook {
+  &::before {
+    content: '\e900';
+  }
+}
+
+.icon-twitter {
+  &::before {
+    content: '\e901';
+  }
+}
+
+.icon-mail {
+  &::before {
+    content: '\e902';
   }
 }
