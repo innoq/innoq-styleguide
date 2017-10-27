@@ -48,6 +48,7 @@
 .author-bio__handle {
   @extend %link-unstyled;
   @extend %heading-font-bold;
+  margin-left: $spacer-xxs;
   text-transform: lowercase;
   color: $brand-interaction;
 
