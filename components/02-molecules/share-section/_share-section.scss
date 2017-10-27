@@ -10,7 +10,7 @@ $share-section-icon-size: ms(4);
   text-align: center;
 
   &::before {
-    // TODO: Replace with icons
+    // TODO: Replace with icon
     display: block;
     position: absolute;
     top: 0;
@@ -45,17 +45,4 @@ $share-section-icon-size: ms(4);
   &:focus {
     color: $brand-interaction;
   }
-
-  // TODO: Fill with icons
-  // &--twitter {
-  //
-  // }
-  //
-  // &--facebook {
-  //
-  // }
-  //
-  // &--mail {
-  //
-  // }
 }
