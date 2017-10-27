@@ -102,10 +102,22 @@
   }
 }
 
+@media screen and (min-width: $grid-breakpoint-md) {
+  .author-bio {
+    &.author-bio--long {
+      margin-top: $author-bio-image-offset + $spacer-xl;
+    }
+  }
+}
+
 @media screen and (min-width: $grid-breakpoint-xl) {
   .author-bio {
     &.author-bio--short {
       width: 49%;
+    }
+
+    &.author-bio--long {
+      margin-top: $author-bio-image-offset;
     }
   }
 }
