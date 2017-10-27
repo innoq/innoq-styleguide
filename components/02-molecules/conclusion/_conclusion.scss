@@ -3,7 +3,7 @@
 //
 
 .conclusion {
-  margin-top: $spacer-xxl;
+  margin-top: $spacer-xl;
   border-top: $conclusion-border-size solid $conclusion-border-color;
   border-bottom: $conclusion-border-size solid $conclusion-border-color;
   background: $conclusion-background-color;
@@ -40,6 +40,7 @@
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .conclusion {
+    margin-top: $spacer-xxl;
     padding: $spacer-xxl 0;
   }
 

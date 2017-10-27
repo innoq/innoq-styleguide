@@ -21,6 +21,7 @@
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .tag-section {
+    margin-bottom: $spacer-xxl;
     padding-top: $spacer-lg;
     padding-bottom: $spacer-xl;
   }
