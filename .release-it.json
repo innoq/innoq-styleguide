@@ -15,8 +15,7 @@
     "publish": false
   },
   "github": {
-    "release": true,
-    "tokenRef": "INNOQ_STYLEGUIDE_GITHUB_TOKEN"
+    "release": false
   },
   "prompt": {
     "src": {
