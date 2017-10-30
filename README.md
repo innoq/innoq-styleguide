@@ -27,6 +27,12 @@ https://innoq.github.io/innoq-styleguide.
 
 See `.travis.yml` for more info.
 
+## Generate assets locally
+
+    yarn run compile
+
+After that, you'll find all the relevant assets in `./dist/`.
+
 ## Release
 
 Just hit `ENTER` all the time to release a new version.
