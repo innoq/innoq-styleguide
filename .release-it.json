@@ -3,8 +3,9 @@
   "increment": "patch",
   "changelogCommand": "git log --pretty=format:\"* %s (%h)\" [REV_RANGE]",
   "requireCleanWorkingDir": false,
+  "buildCommand": "zip -r dist/innoq-styleguide-${src.tagName}.zip dist/* -x dist/site -x dist/css/.gitkeep",
   "src": {
-    "afterStageCommand": "zip -r innoq-styleguide-v%s.zip dist/* -x dist/site",
+    "beforeReleaseCommand": "echo 'oi!' %s",
     "commit": true,
     "commitMessage": "v%s",
     "tag": true,
@@ -17,12 +18,18 @@
   },
   "github": {
     "release": true,
+    "releaseName": "v%s",
     "tokenRef": "INNOQ_STYLEGUIDE_GITHUB_TOKEN",
     "assets": "dist/*.zip"
   },
   "prompt": {
     "src": {
-      "release": false
+      "status": true,
+      "commit": true,
+      "tag": true,
+      "push": true,
+      "release": true,
+      "publish": false
     }
   }
 }
