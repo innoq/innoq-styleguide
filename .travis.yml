@@ -6,7 +6,6 @@ cache: yarn
 script:
   - yarn test
   - yarn run dist
-  - echo $TRAVIS_COMMIT > dist/site/RELEASE.txt
 deploy:
   - provider: pages
     skip_cleanup: true
