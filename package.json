@@ -15,7 +15,7 @@
     "compile-watch": "npm run compile -- --watch",
     "test": "eslint --cache . && sass-lint -v -q",
     "site": "yarn run compile && fractal build",
-    "dist": "yarn run site && cp -r dist/site/css dist/"
+    "dist": "yarn run site && cp -r dist/site/css dist/ && cd dist && zip -r innoq-styleguide-$TRAVIS_TAG.zip css site && cd -"
   },
   "dependencies": {
     "normalize.css": "^7.0.0",

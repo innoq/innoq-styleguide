@@ -6,7 +6,7 @@ cache: yarn
 script:
   - yarn test
   - yarn run dist
-  - echo $TRAVIS_COMMIT > dist/site/release.txt
+  - echo $TRAVIS_COMMIT > dist/site/RELEASE.txt
 deploy:
   - provider: pages
     skip_cleanup: true
@@ -20,6 +20,13 @@ deploy:
     email: mail@robert-glaser.de
     api_key:
       secure: rU1W4ZTxjH73GZhCzdTGFSDnZEEgUTlhzLzHbV+kXdfL8ogUDFKG7GS3FTTgQ7TKjj4ip6vXoBa1fp3oOaOzcu7cgQXhisx1uIrnV1LYfVCYKBmjs/e5pSE0yTqmJFB3ixrwmAhiTYC61JM6jCTkzGejOOQWU6dx/161ZFSZyEv3M8DoUM57T/aoGcwYrqYbA3axhNpcxiLv39SitbN/OBNHYbocUUiocShLdGVA+g12eOscGCIHxbz/TgMEjLHd4dQlnnjklIbEc56Yspn0dDUVfbG7N4p0eTa0u2Q5K2UGDqs/ltTGBsUmInkQQqte/A4qE70kQYVtcHtqFVTJ1Ereh3MFNSnB6pooFkd5zz3lpBtnvQxLQrLT2r8pzq41Nw2l5RnD90heefZNn5clj0zwcN3Ax1D02eOPh0dhKAe4iSvwZrzCV6PjhoYYTxAb1j2Jz875hm8IGKeFSswEwK9/o/uQpmyiNX0Cl+VpXOkvt/UAe3qkE9MQ/pCEoy57STd0VANOebrEhBiHntPZ8Mr4kIT+LAuZAe0AIniH2QBn10rXM5m5hiKAqpJosCqLdjpC8iwRE/juO85oXGkriqOxRGmdT5/Gp6t/3Y0BCLURKtLr0RNcmJ66NxzGtWoM1yW87Kdqn8BQLW5/5kDpFEssSipUAmjDPrMbM/QYP40=
+    on:
+      tags: true
+      repo: innoq/innoq-styleguide
+  - provider: releases
+    api_key:
+      secure: WSUrEpJZ6TFUQxS2WglW7ys+aky1MRDVWxEc0f6dCFYfqqAxIxKjbYtLPK0I++9AvEX0x63bMXDZJQZHjm3CzJ/s3QsTmpdfHClAZEWx07UdAYWxxqifJhElc7ZUqnN3x1/08XR/HRvH+00+SDbWNPIAcrm2IK7HmaHTouNbN5qv+9ilnrTU3oosW2nIpWoAi2IRhFMGDR4qXmXBGzaTeGTlCfIwNc+tnPdlVaTsKAqkiFSoSii2ju3XuWoNqrARIdL9uPUgSi/2ef1KgNUoFIi8avPGAl3MBupYAzBF0LBRjuqiLRYgAISSzQicGBNIq+6LOoH9wnfnTgFKbOO18CKC+QyQ9YpvZI3fLYfK0Dk8+NHepb4z17u85qli2yrOsymR/FGzovPX4uG23YTIKwyRkeqh+ZmhONEADLcaiRGe278wsBIw9lKxKIhguysjkXIbIFVN5Tg7Jr2I5rRLaEmSDbZbPJWyx45hEghUUZonLHUJrMpsooDSFGfINB16foKk6j8tW/k1N0X4Ac+Nh0bQ7aELLmCFpjRT/v0S71QSye91Izkes49emEGwokMva7QGh4Ja872F1ZvxoLUZQOBv9qX4JnjXwkq4aJQnXPE21DdGfJKy0iFPUJHPmaw1Svhh02iWNGr31MOpYl852gYAzgjzqkeV448m8YHWa8E=
+    file: dist/innoq-styleguide-$TRAVIS_TAG.zip
     on:
       tags: true
       repo: innoq/innoq-styleguide
