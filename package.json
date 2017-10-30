@@ -1,6 +1,6 @@
 {
   "name": "innoq-styleguide",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "innoQ's Styleguide and Component Library",
   "license": "Copyright 2017 innoQ Deutschland GmbH",
   "repository": {
@@ -15,7 +15,7 @@
     "compile-watch": "npm run compile -- --watch",
     "test": "eslint --cache . && sass-lint -v -q",
     "site": "yarn run compile && fractal build",
-    "dist": "yarn run site && cp -r dist/site/css dist/ && cd dist && zip -r innoq-styleguide-$TRAVIS_TAG.zip css site && cd -"
+    "dist": "yarn run site && cp -r dist/site/css dist/ && echo $TRAVIS_COMMIT > dist/site/RELEASE.txt && cd dist && zip -r innoq-styleguide-$TRAVIS_TAG.zip css site && cd -"
   },
   "dependencies": {
     "normalize.css": "^7.0.0",
