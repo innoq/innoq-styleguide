@@ -4,6 +4,7 @@
   "changelogCommand": "git log --pretty=format:\"* %s (%h)\" [REV_RANGE]",
   "requireCleanWorkingDir": false,
   "src": {
+    "afterStageCommand": "zip -r innoq-styleguide-v%s.zip dist/* -x dist/site",
     "commit": true,
     "commitMessage": "v%s",
     "tag": true,
@@ -15,7 +16,9 @@
     "publish": false
   },
   "github": {
-    "release": false
+    "release": true,
+    "tokenRef": "INNOQ_STYLEGUIDE_GITHUB_TOKEN",
+    "assets": "dist/*.zip"
   },
   "prompt": {
     "src": {
