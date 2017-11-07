@@ -204,3 +204,19 @@ $reference-font-size: $base-font-size;    // ~16px
 $reference-font-size-small: ms(-2);       // ~13px
 $reference-line-height: 1.56;             // ~25px
 $reference-line-height-small: 1.69;       // ~23px
+
+//
+// Contant Table
+//
+$content-table-caption-font-size: ms(2);                // ~19px
+$content-table-caption-font-size-small: ms(1);          // ~17px
+$content-table-caption-line-height: 1.37;               // ~26px
+$content-table-caption-line-height-small: 1.37;         // ~26px
+$content-table-head-font-size: $base-font-size;         // ~16px
+$content-table-head-font-size-small: ms(-1);            // ~14px
+$content-table-head-line-height: 1.375;                 // ~22px
+$content-table-head-line-height-small: 1.375;           // ~22px
+$content-table-body-font-size: $base-font-size;         // ~16px
+$content-table-body-font-size-small: ms(-1);            // ~14px
+$content-table-body-line-height: 1.56;                  // ~25px
+$content-table-body-line-height-small: 1.56;            // ~25px

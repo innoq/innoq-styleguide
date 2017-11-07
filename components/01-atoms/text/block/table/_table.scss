@@ -1,0 +1,78 @@
+.table__container {
+  width: 100%;
+  overflow: auto;
+  overflow-y: auto;
+
+}
+
+.content__table {
+  margin-bottom: $content-spacer-base;
+  border-bottom: 3px solid $table-border-color;
+  width: 100%; // Workaround for Chrome bug
+  max-width: 100%; // Workaround for Chrome bug
+  table-layout: fixed; // Workaround for Chrome bug
+  border-collapse: collapse;
+}
+
+.content__table__caption {
+  @extend %heading-font-bold;
+
+  margin-bottom: $spacer-sm;
+  text-align: left;
+  line-height: $content-table-caption-line-height-small;
+  font-size: $content-table-caption-font-size-small;
+}
+
+.content__table__head,
+.content__table__footer {
+  @extend %heading-font-bold;
+
+  background-color: $table-header-background-color;
+  line-height: $content-table-head-line-height-small;
+  color: $table-header-text-color;
+  font-size: $content-table-head-font-size-small;
+}
+
+.content__table__head__item,
+.content__table__footer__item {
+
+  padding: $spacer-sm $spacer-xs;
+  text-align: left;
+}
+
+.content__table__body__row {
+  border-bottom: 1px solid $table-row-border-color;
+
+  &:nth-child(odd) {
+    background-color: $table-row-color-dark;
+  }
+}
+
+.content__table__body__item {
+  @extend %heading-font-regular;
+
+  padding: $spacer-xs;
+  vertical-align: top;
+  line-height: $content-table-body-line-height-small;
+  font-size: $content-table-body-font-size-small;
+
+}
+
+
+@media screen and (min-width: $grid-breakpoint-md)  {
+  .content__table__caption {
+    line-height: $content-table-caption-line-height;
+    font-size: $content-table-caption-font-size;
+  }
+
+  .content__table__head,
+  .content__table__footer {
+    line-height: $content-table-head-line-height;
+    font-size: $content-table-head-font-size;
+  }
+
+  .content__table__body__item {
+    line-height: $content-table-body-line-height;
+    font-size: $content-table-body-font-size;
+  }
+}

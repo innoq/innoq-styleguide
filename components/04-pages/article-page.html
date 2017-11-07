@@ -146,7 +146,45 @@
             <p>Letztlich steht und fällt die Idee der Innovation Tokens mit der Akzeptanz bei den Teammitgliedern. Was, wenn die Teams die Gründe für diese Einschränkung nicht verstehen? Oder schlimmer noch, sie vermuten als Ursache die vermeintliche Inkompetenz eines anderen Teams mit den neuen Technologien umzugehen und beschuldigen das andere Team, sie auszubremsen, anstatt dieses Team bei der Aufgabe zu unterstützen. Da ich allerdings ein großer Freund von kleinen Experimenten bin und davon, Dinge auszuprobieren, anstatt sie tot zu diskutieren, haben wir das Konzept in einem kleinen Projekt angewendet.</p>
 
             <p>Der Auftrag des Projekts war es, eine Webanwendung als Microservice zu erstellen [1]. Im Entwicklungsteam herrschten von Anfang an sehr unterschiedliche Vorstellungen davon, welche Technologien benötigt würden. Nahezu jedes Teammitglied schlug andere Technologien vor und die meisten beharrten darauf, dass diese unbedingt notwendig seien. Wir merkten schnell, dass wir so nicht weiterkamen. Wir mussten ein gemeinsames Verständnis dafür erarbeiten, welche Technologie uns an welcher Stelle wie stark helfen konnte, wie viel Aufwand die Einführung bedeutete und welche Alternativen es gab. Deshalb sollte zunächst jeder seine eigenen Vorschläge dem Team schriftlich vorstellen und dabei folgende Fragen beantworten:</p>
-
+            <div class="table__container">
+                <table class="content__table">
+                    <caption class="content__table__caption">Qualitätsmerkmal</caption>
+                    <thead class="content__table__head">
+                        <tr>
+                            <th class="content__table__head__item">Merkmal</th>
+                            <th class="content__table__head__item">Untermerkmal</th>
+                            <th class="content__table__head__item">Szenario</th>
+                            <th class="content__table__head__item">Priorität</th>
+                        </tr>
+                    </thead>
+                    <tbody class="content__table__body">
+                        <tr class="content__table__body__row">
+                            <td class="content__table__body__item">Zuverlässigkeit</td>
+                            <td class="content__table__body__item">Robustheit</td>
+                            <td class="content__table__body__item">Beim Upload eines korrumpierten jpg-Fotos gibt das System einen aussagekräftigen Hinweis ohne Absturz.</td>
+                            <td class="content__table__body__item">B</td>
+                        </tr>
+                        <tr class="content__table__body__row">
+                            <td class="content__table__body__item"></td>
+                            <td class="content__table__body__item">Robustheit</td>
+                            <td class="content__table__body__item">Beim Upload eines korrumpierten jpg-Fotos gibt das System einen aussagekräftigen Hinweis ohne Absturz.</td>
+                            <td class="content__table__body__item">A</td>
+                        </tr>
+                        <tr class="content__table__body__row">
+                            <td class="content__table__body__item">Zuverlässigkeit</td>
+                            <td class="content__table__body__item">Datenintegerität</td>
+                            <td class="content__table__body__item">Beim Upload eines korrumpierten jpg-Fotos gibt das System einen aussagekräftigen Hinweis ohne Absturz.</td>
+                            <td class="content__table__body__item">A</td>
+                        </tr>
+                        <tr class="content__table__body__row">
+                            <td class="content__table__body__item">Performance</td>
+                            <td class="content__table__body__item">Benutzeranzahl</td>
+                            <td class="content__table__body__item">Beim Upload eines korrumpierten jpg-Fotos gibt das System einen aussagekräftigen Hinweis ohne Absturz.</td>
+                            <td class="content__table__body__item">B</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
             <p>Interessant war insbesondere bei den Antworten zu Frage 1, dass hier Probleme genannt wurden, die vorher nie diskutiert worden waren. Dies war ein Gewinn für das Projekt, denn es führte zu Schritt 0: Probleme und Herausforderungen explizit machen. Dieses Ergebnis half den anderen Teammitgliedern, die Beweggründe des Vorschlagenden zu verstehen und einschätzen zu können. Anschließend konnten wir im Team Technologievorschläge zusammenfassen und über die beste Alternative abstimmen. Allerdings konnten wir die Liste immer noch nicht auf die gewünschte Anzahl von nur drei Technologien verkürzen.</p>
 
             <p>Um dieses Ziel letztlich doch zu erreichen, schlug unser Projektleiter eine geheime Abstimmung vor. Jeder von uns wählte die aus seiner Sicht wichtigsten drei Technologien aus und schickte seine Auswahl an unseren Projektleiter. Dieser addierte die Stimmen und stellte uns das Ergebnis in einem Folgetermin vor. So reduzierten wir eine Liste von 28 Technologien auf sechs, wobei zwei Technologien ganz vorne lagen. Da wir uns hier nicht auf eine dritte Technologie einigen konnten, beschlossen wir, zunächst mit den zwei neuen sowie den vorhandenen Technologien zu starten. Die Entscheidung für die dritte Technologie wollten wir erst später treffen, wenn wir an einen Punkt kommen sollten, an dem wir unsere Herausforderungen nicht mehr lösen könnten. Dieser Fall trat in diesem Projekt jedoch nie ein.</p>
