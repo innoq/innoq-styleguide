@@ -37,6 +37,8 @@ After that, you'll find all the relevant assets in `./dist/`.
 
 Just hit `ENTER` all the time to release a new version.
 
+![Just. hit. Enter.](http://www.reactiongifs.com/r/Dz3nk.gif)
+
 Travis deals with npm publishing, no need to answer
 with "YES" here.
 
