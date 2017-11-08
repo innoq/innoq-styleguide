@@ -1,3 +1,7 @@
+figure {
+  margin: 0 0 $content-spacer-base;
+}
+
 figcaption {
   @extend %heading-font-regular;
 
