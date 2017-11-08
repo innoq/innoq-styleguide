@@ -1,0 +1,7 @@
+figcaption {
+  @extend %heading-font-regular;
+
+  text-align: center;
+  line-height: $figcaption-line-height;
+  font-size: $figcaption-font-size;
+}
