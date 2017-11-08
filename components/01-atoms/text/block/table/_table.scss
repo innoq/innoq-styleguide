@@ -2,11 +2,11 @@
   width: 100%;
   overflow: auto;
   overflow-y: auto;
-
+  margin-bottom: $spacer-xs;
 }
 
 .content__table {
-  margin-bottom: $content-spacer-base;
+
   border-bottom: 3px solid $table-border-color;
   width: 100%; // Workaround for Chrome bug
   max-width: 100%; // Workaround for Chrome bug
@@ -60,6 +60,10 @@
 
 
 @media screen and (min-width: $grid-breakpoint-md)  {
+  .table__container {
+    margin-bottom: $spacer-sm;
+  }
+
   .content__table__caption {
     line-height: $content-table-caption-line-height;
     font-size: $content-table-caption-font-size;
