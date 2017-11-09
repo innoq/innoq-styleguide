@@ -29,11 +29,14 @@
     "eslint-plugin-node": "^5.2.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
+    "faucet-pipeline": "^0.13.0",
+    "faucet-pipeline-js": "^0.15.4",
     "faucet-pipeline-sass": "^0.7.0",
+    "faucet-pipeline-static": "^0.4.0",
     "modularscale-sass": "^3.0.3",
     "nodemon": "^1.12.1",
     "npm-run-all": "^4.1.1",
-    "release-it": "^4.1.0",
+    "release-it": "^3.2.0",
     "sass-lint": "^1.12.0",
     "webfontloader": "^1.6.28"
   }
