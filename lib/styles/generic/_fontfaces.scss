@@ -1,84 +1,87 @@
+// sass-lint:disable no-url-domains, no-url-protocols
+
 // Myfonts.net web fonts
 
-@import url("//hello.myfonts.net/count/350ed6");
+@import url('//hello.myfonts.net/count/350ed6');
 
 @font-face {
   font-family: FreightTextPro;
+  font-weight: bold;
+  font-style: normal;
   src: url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_0_unhinted_0.eot'),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_0_unhinted_0.eot?#iefix') format("embedded-opentype"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_0_unhinted_0.woff2') format("woff2"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_0_unhinted_0.woff') format("woff"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_0_unhinted_0.ttf') format("truetype");
-  font-weight: bold;
-  font-style: normal;
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_0_unhinted_0.eot?#iefix') format('embedded-opentype'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_0_unhinted_0.woff2') format('woff2'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_0_unhinted_0.woff') format('woff'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_0_unhinted_0.ttf') format('truetype');
 }
 
 @font-face {
   font-family: FreightTextPro;
+  font-weight: normal;
+  font-style: italic;
   src: url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_1_unhinted_0.eot'),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_1_unhinted_0.eot?#iefix') format("embedded-opentype"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_1_unhinted_0.woff2') format("woff2"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_1_unhinted_0.woff') format("woff"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_1_unhinted_0.ttf') format("truetype");
-  font-weight: normal;
-  font-style: italic;
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_1_unhinted_0.eot?#iefix') format('embedded-opentype'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_1_unhinted_0.woff2') format('woff2'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_1_unhinted_0.woff') format('woff'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_1_unhinted_0.ttf') format('truetype');
 }
 
 @font-face {
   font-family: FreightTextPro;
-  src: url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_2_unhinted_0.eot'),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_2_unhinted_0.eot?#iefix') format("embedded-opentype"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_2_unhinted_0.woff2') format("woff2"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_2_unhinted_0.woff') format("woff"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_2_unhinted_0.ttf') format("truetype");
   font-weight: normal;
   font-style: normal;
+  src: url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_2_unhinted_0.eot'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_2_unhinted_0.eot?#iefix') format('embedded-opentype'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_2_unhinted_0.woff2') format('woff2'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_2_unhinted_0.woff') format('woff'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_2_unhinted_0.ttf') format('truetype');
+
 }
 
 @font-face {
   font-family: FreightTextPro;
-  src: url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_3_unhinted_0.eot'),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_3_unhinted_0.eot?#iefix') format("embedded-opentype"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_3_unhinted_0.woff2') format("woff2"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_3_unhinted_0.woff') format("woff"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_3_unhinted_0.ttf') format("truetype");
   font-weight: bold;
   font-style: italic;
+  src: url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_3_unhinted_0.eot'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_3_unhinted_0.eot?#iefix') format('embedded-opentype'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_3_unhinted_0.woff2') format('woff2'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_3_unhinted_0.woff') format('woff'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_3_unhinted_0.ttf') format('truetype');
 }
 
 @font-face {
   font-family: FFMarkWebProBook;
   src: url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_4_unhinted_0.eot'),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_4_unhinted_0.eot?#iefix') format("embedded-opentype"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_4_unhinted_0.woff2') format("woff2"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_4_unhinted_0.woff') format("woff"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_4_unhinted_0.ttf') format("truetype");
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_4_unhinted_0.eot?#iefix') format('embedded-opentype'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_4_unhinted_0.woff2') format('woff2'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_4_unhinted_0.woff') format('woff'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_4_unhinted_0.ttf') format('truetype');
 }
 
 @font-face {
   font-family: FFMarkWebProBold;
   src: url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_5_unhinted_0.eot'),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_5_unhinted_0.eot?#iefix') format("embedded-opentype"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_5_unhinted_0.woff2') format("woff2"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_5_unhinted_0.woff') format("woff"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_5_unhinted_0.ttf') format("truetype");
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_5_unhinted_0.eot?#iefix') format('embedded-opentype'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_5_unhinted_0.woff2') format('woff2'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_5_unhinted_0.woff') format('woff'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_5_unhinted_0.ttf') format('truetype');
 }
 
 @font-face {
   font-family: FFMarkWebProHeavy;
   src: url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_6_unhinted_0.eot'),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_6_unhinted_0.eot?#iefix') format("embedded-opentype"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_6_unhinted_0.woff2') format("woff2"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_6_unhinted_0.woff') format("woff"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_6_unhinted_0.ttf') format("truetype");
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_6_unhinted_0.eot?#iefix') format('embedded-opentype'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_6_unhinted_0.woff2') format('woff2'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_6_unhinted_0.woff') format('woff'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/350ED6_6_unhinted_0.ttf') format('truetype');
 }
 
 // Hack
 
 @font-face {
   font-family: HackRegular;
-  src: url('https://d1feosfg1qz8rt.cloudfront.net/fonts/hack-regular.woff2') format("woff2"),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/hack-regular.woff') format("woff");
+  src: url('https://d1feosfg1qz8rt.cloudfront.net/fonts/hack-regular.woff2') format('woff2'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/hack-regular.woff') format('woff');
 }
 
 
@@ -91,10 +94,10 @@
   font-family: 'icons';
   src: url('https://d1feosfg1qz8rt.cloudfront.net/fonts/icomoon.eot?adk7u5');
   src: url('https://d1feosfg1qz8rt.cloudfront.net/fonts/icomoon.eot?adk7u5#iefix') format('embedded-opentype'),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/icomoon.woff2?adk7u5') format('woff2'),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/icomoon.woff?adk7u5') format('woff'),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/icomoon.ttf?adk7u5') format('truetype'),
-       url('https://d1feosfg1qz8rt.cloudfront.net/fonts/icomoon.svg?adk7u5#icons') format('svg');
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/icomoon.woff2?adk7u5') format('woff2'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/icomoon.woff?adk7u5') format('woff'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/icomoon.ttf?adk7u5') format('truetype'),
+  url('https://d1feosfg1qz8rt.cloudfront.net/fonts/icomoon.svg?adk7u5#icons') format('svg');
   font-style: normal;
   font-weight: normal;
 }
