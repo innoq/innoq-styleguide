@@ -1,11 +1,20 @@
 figure {
   margin: 0 0 $content-spacer-base;
+  // Short figcaptions will be centered, long ones left aligned
+  text-align: center;
+
+  & img {
+    width: 100%;
+  }
+
 }
 
 figcaption {
   @extend %heading-font-regular;
 
-  text-align: center;
+  display: inline-block;
+  // Short figcaptions will be centered, long ones left aligned
+  text-align: left;
   line-height: $figcaption-line-height;
   font-size: $figcaption-font-size;
 }
