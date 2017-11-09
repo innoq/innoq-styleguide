@@ -12,19 +12,34 @@
   // sass-lint:disable no-vendor-prefixes
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  // TODO: Remove once all icons are unified
-  &.icon--social {
-    font-family: 'social';
-  }
 }
 
+// Arrows
 .icon-arrow-down {
   &::before {
     content: $icon-arrow-down;
   }
 }
 
+.icon-arrow-long-right {
+  &::before {
+    content: $icon-arrow-long-right;
+  }
+}
+
+.icon-chevron-up {
+  &::before {
+    content: $icon-chevron-up;
+  }
+}
+
+.icon-chevron-down {
+  &::before {
+    content: $icon-chevron-down;
+  }
+}
+
+// Misc
 .icon-check,
 %icon-check {
   &::before {
@@ -38,26 +53,52 @@
   }
 }
 
+.icon-mail {
+  &::before {
+    content: $icon-mail;
+  }
+}
+
 .icon-download {
   &::before {
     content: $icon-download;
   }
 }
 
+
+// Social Icons
 .icon-facebook {
   &::before {
-    content: '\e900';
+    content: $icon-facebook;
+  }
+}
+
+.icon-gplus {
+  &::before {
+    content: $icon-gplus;
+  }
+}
+
+.icon-linkedin {
+  &::before {
+    content: $icon-linkedin;
   }
 }
 
 .icon-twitter {
   &::before {
-    content: '\e901';
+    content: $icon-twitter;
   }
 }
 
-.icon-mail {
+.icon-xing {
   &::before {
-    content: '\e902';
+    content: $icon-twitter;
+  }
+}
+
+.icon-youtube {
+  &::before {
+    content: $icon-youtube;
   }
 }
