@@ -4,7 +4,7 @@ node_js:
 - '8'
 script:
 - yarn test
-- yarn run dist
+- yarn dist
 deploy:
 - provider: pages
   skip_cleanup: true
@@ -25,7 +25,7 @@ deploy:
   skip_cleanup: true
   api_key:
     secure: WSUrEpJZ6TFUQxS2WglW7ys+aky1MRDVWxEc0f6dCFYfqqAxIxKjbYtLPK0I++9AvEX0x63bMXDZJQZHjm3CzJ/s3QsTmpdfHClAZEWx07UdAYWxxqifJhElc7ZUqnN3x1/08XR/HRvH+00+SDbWNPIAcrm2IK7HmaHTouNbN5qv+9ilnrTU3oosW2nIpWoAi2IRhFMGDR4qXmXBGzaTeGTlCfIwNc+tnPdlVaTsKAqkiFSoSii2ju3XuWoNqrARIdL9uPUgSi/2ef1KgNUoFIi8avPGAl3MBupYAzBF0LBRjuqiLRYgAISSzQicGBNIq+6LOoH9wnfnTgFKbOO18CKC+QyQ9YpvZI3fLYfK0Dk8+NHepb4z17u85qli2yrOsymR/FGzovPX4uG23YTIKwyRkeqh+ZmhONEADLcaiRGe278wsBIw9lKxKIhguysjkXIbIFVN5Tg7Jr2I5rRLaEmSDbZbPJWyx45hEghUUZonLHUJrMpsooDSFGfINB16foKk6j8tW/k1N0X4Ac+Nh0bQ7aELLmCFpjRT/v0S71QSye91Izkes49emEGwokMva7QGh4Ja872F1ZvxoLUZQOBv9qX4JnjXwkq4aJQnXPE21DdGfJKy0iFPUJHPmaw1Svhh02iWNGr31MOpYl852gYAzgjzqkeV448m8YHWa8E=
-  file: dist/innoq-styleguide-$TRAVIS_TAG.zip
+  file: innoq-styleguide-$TRAVIS_TAG.zip
   on:
     tags: true
 notifications:

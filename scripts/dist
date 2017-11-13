@@ -3,7 +3,10 @@ set -ex
 
 yarn run site
 cp -r dist/site/css dist/
+cp -r dist/site/js dist/
+cp -r dist/site/static dist/
 echo $TRAVIS_COMMIT > dist/site/RELEASE.txt
 cd dist
-zip -r innoq-styleguide-$TRAVIS_TAG.zip css site
+zip -r innoq-styleguide-$TRAVIS_TAG.zip css js static site
 cd -
+mv dist/innoq-styleguide-$TRAVIS_TAG.zip ./

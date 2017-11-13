@@ -1,24 +1,15 @@
 const config = {
   static: {
-    manifest: {
-      file: 'public/manifests/static.json',
-      baseURI: (bundlePath, baseName) => `/static/${baseName}`
-    },
+    manifest: false,
     bundles: [
       {
-        source: 'assets/images',
+        source: 'lib/images',
         target: 'public/static'
       }
     ]
   },
   sass: {
-    manifest: {
-      file: 'public/css.json',
-      baseURI: (bundlePath, baseName) => `/css/${baseName}`
-    },
-    // assets: [
-    //   'public/manifests/static.json'
-    // ],
+    manifest: false,
     prefixes: {
       browsers: [ 'last 2 versions' ]
     },
@@ -30,23 +21,17 @@ const config = {
       {
         entryPoint: 'node_modules/normalize.css/normalize.css',
         target: 'public/css/normalize.css'
-      },
-      {
-        entryPoint: 'lib/styles/index.scss',
-        target: 'dist/css/bundle.css'
-      },
-      {
-        entryPoint: 'node_modules/normalize.css/normalize.css',
-        target: 'dist/css/normalize.css'
       }
     ]
   },
   js: {
     manifest: false,
-    bundles: [{
-      entryPoint: 'lib/scripts/index.js',
-      target: 'dist/js/bundle.js'
-    }]
+    bundles: [
+      {
+        entryPoint: 'lib/scripts/index.js',
+        target: 'public/js/bundle.js'
+      }
+    ]
   }
 }
 
