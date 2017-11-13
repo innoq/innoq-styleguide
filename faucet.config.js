@@ -40,6 +40,13 @@ const config = {
         target: 'dist/css/normalize.css'
       }
     ]
+  },
+  js: {
+    manifest: false,
+    bundles: [{
+      entryPoint: 'lib/scripts/index.js',
+      target: 'dist/js/bundle.js'
+    }]
   }
 }
 
