@@ -14,5 +14,6 @@ export default function PreviewLayout(params, ...children) {
         <body class="application">
           {children}
         </body>
+        <script src="/js/bundle.js"></script>
     </html>;
 }
