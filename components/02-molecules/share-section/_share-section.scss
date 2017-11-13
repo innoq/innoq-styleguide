@@ -1,5 +1,5 @@
-$share-section-offset: ms(15);
 $share-section-icon-size: ms(4);
+$shar-section-arrow-size: ms(16);
 
 .share-section {
   @extend %icon;
@@ -7,19 +7,18 @@ $share-section-icon-size: ms(4);
   position: relative;
   margin: 0 auto;
   margin-bottom: $spacer-xl;
-  padding-top: $share-section-offset + $spacer-sm;
   width: 50%;
   text-align: center;
 
   &::before {
-    font-size: ms(16);
+    font-size: $shar-section-arrow-size;
     content: $icon-arrow-long-down;
   }
 }
 
 .share-section__heading {
-  line-height: $h5-line-height;
-  font-size: $h5-font-size;
+  line-height: $share-section-heading-line-height;
+  font-size: $share-section-heading-font-size;
 }
 
 .share-section__list {
@@ -38,6 +37,6 @@ $share-section-icon-size: ms(4);
 
   &:hover,
   &:focus {
-    color: $brand-interaction;
+    color: $haring-interaction-color;
   }
 }
