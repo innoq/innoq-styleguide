@@ -27,6 +27,13 @@
   }
 }
 
+.icon-arrow-long-down {
+  &::before {
+    content: $icon-arrow-long-down;
+  }
+}
+
+
 .icon-chevron-up {
   &::before {
     content: $icon-chevron-up;
@@ -65,6 +72,11 @@
   }
 }
 
+.icon-info {
+  &::before {
+    content: $icon-info;
+  }
+}
 
 // Social Icons
 .icon-facebook {
@@ -93,12 +105,18 @@
 
 .icon-xing {
   &::before {
-    content: $icon-twitter;
+    content: $icon-xing;
   }
 }
 
 .icon-youtube {
   &::before {
     content: $icon-youtube;
+  }
+}
+
+.icon-github {
+  &::before {
+    content: $icon-github;
   }
 }
