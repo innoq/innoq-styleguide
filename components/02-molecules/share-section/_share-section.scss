@@ -2,6 +2,8 @@ $share-section-offset: ms(15);
 $share-section-icon-size: ms(4);
 
 .share-section {
+  @extend %icon;
+
   position: relative;
   margin: 0 auto;
   margin-bottom: $spacer-xl;
@@ -10,15 +12,8 @@ $share-section-icon-size: ms(4);
   text-align: center;
 
   &::before {
-    // TODO: Replace with icon
-    display: block;
-    position: absolute;
-    top: 0;
-    left: calc(50% - 1px);
-    background-color: $brand-text;
-    width: 1px;
-    height: $share-section-offset;
-    content: '';
+    font-size: ms(16);
+    content: $icon-arrow-long-down;
   }
 }
 
