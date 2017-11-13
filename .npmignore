@@ -1,6 +1,7 @@
 .dockerignore
 .eslint*
 .release-it.json
+.sass-lint*
 .travis.yml
 *.zip
 /components
@@ -10,7 +11,7 @@
 /scripts
 docker-compose.override.yml
 docker-compose.yml
+Dockerfile
 faucet.config.js
 fractal.js
-package.json
 yarn.lock
