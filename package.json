@@ -1,6 +1,6 @@
 {
   "name": "innoq-styleguide",
-  "version": "0.2.15",
+  "version": "0.2.16",
   "description": "innoQ's Styleguide and Component Library",
   "license": "Copyright 2017 innoQ Deutschland GmbH",
   "repository": {
@@ -27,7 +27,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "faucet-pipeline": "^0.13.0",
     "faucet-pipeline-js": "^0.15.4",
-    "faucet-pipeline-sass": "^0.7.0",
+    "faucet-pipeline-sass": "^0.8.0",
     "faucet-pipeline-static": "^0.4.0",
     "modularscale-sass": "^3.0.3",
     "nodemon": "^1.12.1",
