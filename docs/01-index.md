@@ -11,4 +11,5 @@ To update them:
 2. Replace the font files you need to update
 3. Commit + push
 4. Wait until the new versions are deployed
-5. Increment the cachebuster query parameter in CSS `url()` references in the style guide
+5. Update the $cachebuster for the updated font families in the style guide,
+   you can just use the hash of the current time: `date +%s | md5`
