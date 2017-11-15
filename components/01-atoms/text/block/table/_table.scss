@@ -1,8 +1,8 @@
 .table__container {
-  overflow-y: auto;
   margin-bottom: $spacer-xs;
   width: 100%;
   overflow: auto;
+  overflow-y: auto;
 }
 
 .content__table {
