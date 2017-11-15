@@ -30,7 +30,7 @@
 
 .toc__anchor {
   @extend %link-unstyled;
-  @include hover-fill($brand-green-transparent, $brand-text, $brand-text);
+  @include hover-fill($link-hover-color-light, $brand-text, $brand-text);
   display: inline-block;
   position: relative;
   z-index: 1;
