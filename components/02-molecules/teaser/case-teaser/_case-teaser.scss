@@ -1,0 +1,42 @@
+// sass-lint:disable no-vendor-prefixes no-url-domains no-url-protocols
+
+$teaser-size: 500px;
+$teaser-outer-padding: $spacer-lg;
+$teaser-inner-padding: $spacer-base;
+$header-top-offset: -($teaser-inner-padding + $teaser-outer-padding + $spacer-md + $spacer-sm);
+$header-left-offset: -($teaser-inner-padding + $teaser-outer-padding);
+
+
+.case-teaser {
+  background: url('https://source.unsplash.com/jjhvyxm34nY/500x500') top left;
+  padding: $teaser-outer-padding;
+  width: $teaser-size;
+  max-height: $teaser-size;
+}
+
+.case-teaser__body {
+  @extend %heading-font-regular;
+
+  background-color: $brand-white;
+  padding: $teaser-inner-padding;
+  line-height: $base-line-height;
+  font-size: $base-font-size;
+}
+
+.case-teaser__caption {
+  @extend %heading-font-bold;
+
+  margin-bottom: $spacer-sm;
+  height: $spacer-md;
+  text-transform: uppercase;
+  font-size: $tag-font-size-small;
+}
+
+.case-teaser__header {
+  background: url('https://source.unsplash.com/jjhvyxm34nY/500x500');
+  background-clip: text;
+  background-position: top $header-top-offset left $header-left-offset;
+  background-size: $teaser-size $teaser-size;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
