@@ -84,10 +84,10 @@ info-box {
 
 .infobox__content__box {
   padding: $spacer-sm $spacer-sm $spacer-md;
-}
 
-.infobox__content__text {
-  @extend %heading-font-regular;
-  line-height: $infobox-text-line-height;
-  font-size: $infobox-text-font-size;
+  & p {
+    @extend %heading-font-regular;
+    line-height: $infobox-text-line-height;
+    font-size: $infobox-text-font-size;
+  }
 }
