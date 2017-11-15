@@ -4,13 +4,14 @@ $shar-section-arrow-size: ms(16);
 .share-section {
   @extend %icon;
 
-  position: relative;
   margin: 0 auto;
   margin-bottom: $spacer-xl;
   width: 50%;
   text-align: center;
 
   &::before {
+    display: block;
+    margin-bottom: $spacer-sm;
     font-size: $shar-section-arrow-size;
     content: $icon-arrow-long-down;
   }
