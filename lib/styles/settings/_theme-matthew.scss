@@ -1,8 +1,8 @@
 //
 // Theme colors
 //
-$brand-primary: $brand-green;
-$brand-interaction: $brand-green;
+$brand-primary: $brand-yellow;
+$brand-interaction: $brand-yellow;
 $brand-text: $brand-gray;
 
 // Buttons
@@ -21,7 +21,7 @@ $button-cta-hover-color: $brand-white;
 $button-cta-hover-border-color: $brand-text;
 
 // Headlines
-$h1-color: $brand-primary;
+$h1-color: $brand-text;
 $h2-color: $brand-text;
 $h3-color: $brand-text;
 $h4-color: $brand-text;
@@ -32,7 +32,7 @@ $h6-color: $brand-text;
 $link-color: $brand-text;
 $link-hover-color: $brand-interaction;
 $hover-color: $brand-interaction;
-$mark-color: $brand-green-transparent;
+$mark-color: $brand-yellow-transparent;
 
 // Pull Quote
 $pull-quote-border-color: $brand-text;
