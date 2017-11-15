@@ -15,7 +15,7 @@ a:not([class]) {
 
   &:focus,
   &:hover {
-    background-color: $brand-green-transparent;
+    background-color: $link-hover-color-light;
     padding-top: $hover-padding;
     padding-bottom: $hover-padding;
   }
