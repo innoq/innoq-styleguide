@@ -1,3 +1,13 @@
+code {
+  @extend %monospace-font-regular;
+
+  display: inline-block;
+  background-color: $code-background-color;
+  padding: 2px $spacer-xxs;
+  line-height: $code-line-height;
+  font-size: $code-font-size;
+}
+
 mark {
   display: inline-block;
   background-color: $mark-color;

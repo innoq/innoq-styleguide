@@ -34,6 +34,7 @@ $link-hover-color: $brand-interaction;
 $link-hover-color-light: $brand-yellow-transparent;
 $hover-color: $brand-interaction;
 $mark-color: $brand-yellow-transparent;
+$code-background-color: rgba($brand-gray-20, .2);
 
 // Pull Quote
 $pull-quote-border-color: $brand-text;
@@ -44,6 +45,7 @@ $superquote-color: $brand-interaction;
 
 // Block Quote
 $quote-color: $brand-primary;
+
 // ZigZag
 $zzbgc: $brand-white;
 $zzlinecolor: $brand-text;
@@ -80,14 +82,14 @@ $tag-text-color: $brand-white;
 $meta-tags-background-color: $brand-gray-10;
 $meta-tags-headline-text-color: $brand-text;
 
-//table
+// Table
 $table-header-text-color: $brand-white;
 $table-header-background-color: $brand-text;
 $table-row-border-color: $brand-gray-75;
 $table-row-color-dark:  $brand-gray-10;
 $table-border-color: $brand-text;
 
-// infobox
+// Infobox
 $infobox-teaser-text-color-closed: $brand-text;
 $infobox-teaser-text-color-open: $brand-gray-10;
 $infobox-teaser-background-color-closed: $brand-gray-10;
@@ -95,5 +97,5 @@ $infobox-teaser-background-color-open: $brand-text;
 $infobox-content-background-color: $brand-gray-10;
 $infobox-teaser-border-color: $brand-primary;
 
-//Sharing Section
+// Sharing Section
 $haring-interaction-color: $brand-interaction;
