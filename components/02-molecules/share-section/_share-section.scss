@@ -11,9 +11,16 @@ $shar-section-arrow-size: ms(16);
 
   &::before {
     display: block;
+    transition: $ease-out-back-transition;
     margin-bottom: $spacer-sm;
     font-size: $shar-section-arrow-size;
     content: $icon-arrow-long-down;
+  }
+
+  &:hover {
+    &::before {
+      transform: translateY($spacer-xs);
+    }
   }
 }
 
