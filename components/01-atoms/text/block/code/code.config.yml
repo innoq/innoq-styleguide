@@ -1,8 +1,9 @@
 status: wip
 context:
-  text: Codesnippet
-ontext:
-    code: |
-        <ul>
-            <li> <mark>xxx</mark> </li>
-        </ul>
+  code: |
+      pick(:love) do |something|
+          n.times do
+              result = play(something)
+              result.publish
+          end
+      end
