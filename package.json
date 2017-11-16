@@ -19,6 +19,7 @@
   },
   "devDependencies": {
     "complate-fractal": "^0.4.2",
+    "complate-stream": "0.14.2",
     "eslint": "^4.8.0",
     "eslint-config-standard": "^10.2.1",
     "eslint-config-standard-jsx": "^4.0.2",
