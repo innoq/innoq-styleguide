@@ -10,9 +10,6 @@ const config = {
   },
   sass: {
     manifest: false,
-    prefixes: {
-      browsers: [ 'last 2 versions' ]
-    },
     bundles: [
       {
         entryPoint: 'lib/styles/index.scss',
