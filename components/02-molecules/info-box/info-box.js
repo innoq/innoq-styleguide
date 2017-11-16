@@ -1,4 +1,4 @@
-class InfoBox extends HTMLElement {
+export default class InfoBox extends HTMLElement {
   connectedCallback () {
     this.classList.add('enhanced')
     this.setAttribute('open', 'false')
@@ -33,5 +33,3 @@ class InfoBox extends HTMLElement {
     this.setAttribute('open', value.toString())
   }
 }
-
-customElements.define('info-box', InfoBox)
