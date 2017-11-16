@@ -5,8 +5,10 @@
 $underline-offset: -3px;
 $underline-width: $underline-offset - 1px;
 $hover-padding: 4px;
+$link-arrow-size: ms(16);
 
 // sass-lint:disable force-pseudo-nesting
+.link-default,
 a:not([class]) {
   transition: $standard-transition;
   box-shadow: inset 0 $underline-offset 0 $brand-white, inset 0 $underline-width 0 $link-color;
@@ -18,5 +20,32 @@ a:not([class]) {
     background-color: $link-hover-color-light;
     padding-top: $hover-padding;
     padding-bottom: $hover-padding;
+  }
+}
+
+.link-teaser {
+  @extend %heading-font-bold;
+  @extend %link-unstyled;
+
+  box-shadow: inset 0 0 0 $brand-white, inset 0 -3px 0 $brand-interaction;
+  color: $brand-text;
+}
+
+.link-arrow {
+  @extend %link-unstyled;
+
+  display: inline-block;
+  color: inherit;
+
+  > .icon {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    line-height: 0;
+    font-size: $link-arrow-size;
+  }
+
+  > span {
+    @extend %sr-only;
   }
 }

@@ -31,6 +31,24 @@
   }
 }
 
+// Headlines & Text
+
+%teaser-caption {
+  @extend %heading-font-bold;
+
+  text-transform: uppercase;
+  line-height: $base-line-height;
+  font-size: $tag-font-size-small;
+}
+
+%teaser-text {
+  @extend %heading-font-regular;
+
+  line-height: $base-line-height;
+  font-size: $base-font-size;
+}
+
+
 // Should only be used, when placeholder is overridden by normalize.
 @mixin list-unstyled {
   margin-top: 0;

@@ -8,35 +8,39 @@ $header-left-offset: -($teaser-inner-padding + $teaser-outer-padding);
 
 
 .case-teaser {
-  background: url('https://source.unsplash.com/jjhvyxm34nY/500x500') top left;
   padding: $teaser-outer-padding;
   width: $teaser-size;
-  max-height: $teaser-size;
+}
+
+.case-teaser--punched {
+  background: url('https://source.unsplash.com/jjhvyxm34nY/500x500') top left;
+
+  .case-teaser__header {
+    background: url('https://source.unsplash.com/jjhvyxm34nY/500x500');
+    background-clip: text;
+    background-position: top $header-top-offset left $header-left-offset;
+    background-size: $teaser-size $teaser-size;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .case-teaser__body {
-  @extend %heading-font-regular;
-
   background-color: $brand-white;
   padding: $teaser-inner-padding;
-  line-height: $base-line-height;
-  font-size: $base-font-size;
 }
 
-.case-teaser__caption {
-  @extend %heading-font-bold;
-
-  margin-bottom: $spacer-sm;
-  height: $spacer-md;
-  text-transform: uppercase;
-  font-size: $tag-font-size-small;
+.case-teaser__text {
+  @extend %teaser-text;
+  margin-bottom: $spacer-base;
 }
 
 .case-teaser__header {
-  background: url('https://source.unsplash.com/jjhvyxm34nY/500x500');
-  background-clip: text;
-  background-position: top $header-top-offset left $header-left-offset;
-  background-size: $teaser-size $teaser-size;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: $brand-text;
+}
+
+.case-teaser__caption {
+  @extend %teaser-caption;
+  margin-bottom: $spacer-sm;
+  height: $spacer-md;
 }

@@ -1,5 +1,5 @@
 $share-section-icon-size: ms(4);
-$shar-section-arrow-size: ms(16);
+$share-section-arrow-size: ms(16);
 
 .share-section {
   @extend %icon;
@@ -13,7 +13,7 @@ $shar-section-arrow-size: ms(16);
     display: block;
     transition: $ease-out-back-transition;
     margin-bottom: $spacer-sm;
-    font-size: $shar-section-arrow-size;
+    font-size: $share-section-arrow-size;
     content: $icon-arrow-long-down;
   }
 

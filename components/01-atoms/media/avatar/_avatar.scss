@@ -5,8 +5,14 @@
 .avatar__image {
   border-radius: 100%;
 
+  .avatar--xs & {
+    width: $avatar-size-xs;
+    height: auto;
+  }
+
+  .avatar--sm &,
   .avatar--small & {
-    width: $avatar-size-small;
+    width: $avatar-size-sm;
     height: auto;
   }
 

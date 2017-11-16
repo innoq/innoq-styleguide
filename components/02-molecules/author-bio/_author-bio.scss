@@ -2,6 +2,14 @@
   position: relative;
   margin-bottom: $spacer-base;
 
+  &.author-bio--condensed {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
   &.author-bio--short {
     display: inline-flex;
     flex-wrap: nowrap;
@@ -36,6 +44,13 @@
 
 .author-bio__info {
   @extend %author-role;
+}
+
+.author-bio__info,
+.author-bio__link {
+  .author-bio--condensed & {
+    line-height: normal;
+  }
 }
 
 .author-bio__social {
@@ -94,6 +109,10 @@
 
 .author-bio__image {
   margin-right: $spacer-md;
+
+  .author-bio--condensed & {
+    margin-right: $spacer-sm;
+  }
 
   .author-bio--long & {
     position: absolute;
