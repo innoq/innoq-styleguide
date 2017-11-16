@@ -20,6 +20,10 @@ Export a static site to `./dist/site`
 
     docker-compose up
 
+You need to prefix all maintenance commands from above like `yarn …` with
+
+    docker-compose run --rm web …
+
 ## Deployment
 
 Everything in master gets deployed automatically to
