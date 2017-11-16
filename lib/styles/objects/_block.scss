@@ -1,0 +1,22 @@
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: $spacer-base;
+
+  > * + * {
+    flex-basis: 100%;
+    margin-top: $spacer-md;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .blocks {
+    flex-wrap: nowrap;
+
+    > * + * {
+      flex-basis: auto;
+      margin-top: 0;
+      margin-left: $spacer-md;
+    }
+  }
+}
