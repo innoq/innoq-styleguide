@@ -1,10 +1,18 @@
 #!/usr/bin/env bash
 set -ex
 
+js_components_target="dist/js/components"
+
 yarn run site
+
 cp -r dist/site/css dist/
 cp -r dist/site/js dist/
 cp -r dist/site/static dist/
+
+# Copy JavaScript components to dist so they can be imported separately
+mkdir -p $js_components_target
+find components/*/ -name "*.js" -exec cp "{}" $js_components_target \;
+
 echo $TRAVIS_COMMIT > dist/site/RELEASE.txt
 cd dist
 zip -r innoq-styleguide-$TRAVIS_TAG.zip css js static site
