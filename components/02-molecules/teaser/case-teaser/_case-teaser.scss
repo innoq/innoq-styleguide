@@ -1,6 +1,8 @@
 // sass-lint:disable no-vendor-prefixes no-url-domains no-url-protocols
 
-$teaser-size: 500px;
+$case-teaser-bg-width: 1444px; // Arbitrary value
+$case-teaser-bg-height: 1000px; // Arbitrary value
+
 $teaser-outer-padding: $spacer-lg;
 $teaser-inner-padding: $spacer-base;
 $header-top-offset: -($teaser-inner-padding + $teaser-outer-padding + $spacer-md + $spacer-sm);
@@ -8,25 +10,27 @@ $header-left-offset: -($teaser-inner-padding + $teaser-outer-padding);
 
 
 .case-teaser {
+  display: flex;
   padding: $teaser-outer-padding;
-  width: $teaser-size;
 }
 
 .case-teaser--punched {
-  background: url('https://source.unsplash.com/jjhvyxm34nY/500x500') top left;
+  background: url('https://source.unsplash.com/ThPRaw2qSwk/1444x1000') top left;
 
   .case-teaser__header {
-    background: url('https://source.unsplash.com/jjhvyxm34nY/500x500');
+    background: url('https://source.unsplash.com/ThPRaw2qSwk/1444x1000');
     background-clip: text;
+    background-repeat: no-repeat;
     background-position: top $header-top-offset left $header-left-offset;
-    background-size: $teaser-size $teaser-size;
+    background-size: $case-teaser-bg-width $case-teaser-bg-height;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 }
 
 .case-teaser__body {
-  background-color: $brand-white;
+  flex-basis: 100%;
+  background-color: $case-teaser-body-bg;
   padding: $teaser-inner-padding;
 }
 
@@ -36,11 +40,17 @@ $header-left-offset: -($teaser-inner-padding + $teaser-outer-padding);
 }
 
 .case-teaser__header {
-  color: $brand-text;
+  color: $case-teaser-body-color;
 }
 
 .case-teaser__caption {
   @extend %teaser-caption;
   margin-bottom: $spacer-sm;
   height: $spacer-md;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .case-teaser__body {
+    flex-basis: 50%;
+  }
 }
