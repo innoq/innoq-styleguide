@@ -1,5 +1,3 @@
-// sass-lint:disable no-vendor-prefixes no-url-domains no-url-protocols
-
 $case-teaser-bg-width: 1444px; // Arbitrary value
 $case-teaser-bg-height: 1000px; // Arbitrary value
 
@@ -8,23 +6,39 @@ $teaser-inner-padding: $spacer-base;
 $header-top-offset: -($teaser-inner-padding + $teaser-outer-padding + $spacer-md + $spacer-sm);
 $header-left-offset: -($teaser-inner-padding + $teaser-outer-padding);
 
-
 .case-teaser {
   display: flex;
   padding: $teaser-outer-padding;
 }
 
 .case-teaser--punched {
+  // TODO: Replace Unsplash with real images.
+  // sass-lint:disable no-url-domains no-url-protocols
   background: url('https://source.unsplash.com/ThPRaw2qSwk/1444x1000') top left;
+  background-repeat: no-repeat;
 
   .case-teaser__header {
     background: url('https://source.unsplash.com/ThPRaw2qSwk/1444x1000');
     background-clip: text;
-    background-repeat: no-repeat;
     background-position: top $header-top-offset left $header-left-offset;
     background-size: $case-teaser-bg-width $case-teaser-bg-height;
+    color: $brand-text;
+
+    // sass-lint:disable no-vendor-prefixes
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    > * {
+      // Prevent clipping of letters.
+      margin: 0;
+      padding-bottom: $spacer-base;
+
+      // Don't ask! Just a littler hack for Safari to show knockout letters.
+      // sass-lint:disable nesting-depth
+      &::after {
+        content: '\00a0';
+      }
+    }
   }
 }
 
