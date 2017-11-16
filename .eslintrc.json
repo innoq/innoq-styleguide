@@ -1,5 +1,5 @@
 {
-  "extends": "standard",
+  "extends": ["standard", "standard-jsx"],
   "env": {
     "node": true,
     "es6": true,
@@ -9,5 +9,9 @@
     "ecmaFeatures": {
       "jsx": true
     }
-  }
+  },
+  "plugins": ["react"],
+	"settings": {
+		"react": { "pragma": "createElement" }
+	}
 }

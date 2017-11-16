@@ -1,4 +1,3 @@
-public/js/bundle.js
+/dist
+/public
 components/index.js
-dist/
-**/*.jsx
