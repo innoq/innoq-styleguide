@@ -1,0 +1,8 @@
+.code-snippet {
+  @extend %monospace-font-regular;
+
+  background-color: $code-background-color;
+  overflow: scroll;
+  line-height: $code-line-height;
+  font-size: $code-font-size;
+}
