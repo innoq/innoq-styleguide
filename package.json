@@ -10,30 +10,32 @@
   "scripts": {
     "start": "npm-run-all --parallel server-watch compile-watch",
     "server": "fractal start",
-    "server-watch": "fractal start --watch",
+    "server-watch": "nodemon -I -w components -e jsx -x 'npm run server'",
     "compile": "faucet --no-fingerprint",
     "compile-watch": "npm run compile -- --watch",
-    "test": "eslint --cache . && sass-lint -v -q",
+    "test": "eslint --cache --ext .js --ext .jsx . && sass-lint -v -q",
     "site": "yarn run compile && fractal build",
     "dist": "./scripts/dist"
   },
   "devDependencies": {
-    "complate-fractal": "^0.4.0",
+    "complate-fractal": "^0.4.2",
     "eslint": "^4.8.0",
     "eslint-config-standard": "^10.2.1",
+    "eslint-config-standard-jsx": "^4.0.2",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.2.0",
     "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.4.0",
     "eslint-plugin-standard": "^3.0.1",
     "faucet-pipeline": "^0.13.0",
     "faucet-pipeline-js": "^0.15.4",
-    "faucet-pipeline-sass": "^0.8.0",
-    "faucet-pipeline-static": "^0.4.0",
+    "faucet-pipeline-sass": "^0.9.0",
+    "faucet-pipeline-static": "^0.5.0",
     "modularscale-sass": "^3.0.3",
     "nodemon": "^1.12.1",
     "normalize.css": "^7.0.0",
     "npm-run-all": "^4.1.1",
-    "release-it": "^3.2.0",
+    "release-it": "^4.4.1",
     "sass-lint": "^1.12.0"
   }
 }
