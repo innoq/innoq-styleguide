@@ -1,4 +1,4 @@
-# innoQ Styleguide and Component Library
+# INNOQ Styleguide and Component Library
 
 [![Build Status](https://travis-ci.org/innoq/innoq-styleguide.svg?branch=master)](https://travis-ci.org/innoq/innoq-styleguide)
 

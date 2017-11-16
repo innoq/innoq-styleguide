@@ -14,7 +14,7 @@ const complate = require('complate-fractal')
 /*
  * Give your project a title.
  */
-fractal.set('project.title', 'innoQ Styleguide')
+fractal.set('project.title', 'INNOQ Styleguide')
 
 /*
  * Register complate adapter.
