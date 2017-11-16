@@ -1302,8 +1302,8 @@ complate-fractal@^0.4.2:
     html "^1.0.0"
 
 complate-stream@^0.14.0:
-  version "0.14.1"
-  resolved "https://registry.yarnpkg.com/complate-stream/-/complate-stream-0.14.1.tgz#358e70f1b008b2c71a6bef5aa4e4cfbcd6605b29"
+  version "0.14.2"
+  resolved "https://registry.yarnpkg.com/complate-stream/-/complate-stream-0.14.2.tgz#00f10703e7316a852acf7a39aef588dabd45f097"
 
 component-bind@1.0.0:
   version "1.0.0"
