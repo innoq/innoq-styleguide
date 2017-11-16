@@ -6,6 +6,14 @@
   border-collapse: collapse;
   text-align: left;
 
+  caption {
+    @extend %heading-font-regular;
+
+    caption-side: bottom;
+    line-height: $figcaption-line-height;
+    font-size: $figcaption-font-size;
+  }
+
   thead,
   tfoot {
     @extend %heading-font-bold;
