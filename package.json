@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "npm-run-all --parallel server-watch compile-watch",
-    "server": "fractal start",
+    "server": "fractal start --watch",
     "server-watch": "nodemon -I -w components -e jsx -x 'npm run server'",
     "compile": "faucet --no-fingerprint",
     "compile-watch": "npm run compile -- --watch",
