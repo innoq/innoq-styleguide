@@ -1126,8 +1126,8 @@ camelcase@^4.0.0, camelcase@^4.1.0:
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
 caniuse-lite@^1.0.30000748, caniuse-lite@^1.0.30000760:
-  version "1.0.30000765"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000765.tgz#aa1a75019276b48463c0fca2a5257fb9f26a7c9d"
+  version "1.0.30000766"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000766.tgz#8a095cc5eb9923c27008ce4d0db23e65a3e28843"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -1290,18 +1290,18 @@ commander@^2.2.0, commander@^2.8.1, commander@^2.9.0:
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.11.0.tgz#157152fd1e7a6c8d98a5b715cf376df928004563"
 
 complate-fractal@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/complate-fractal/-/complate-fractal-0.4.2.tgz#475e54f0059d8df41c3f7c171296c910932f2b6f"
+  version "0.4.3"
+  resolved "https://registry.yarnpkg.com/complate-fractal/-/complate-fractal-0.4.3.tgz#e9ba76531e6eaf039d71f3f5341a47adf842b1e2"
   dependencies:
     "@frctl/fractal" "^1.1.7"
     "@std/esm" "0.11.0"
     babel-plugin-transform-react-jsx "^6.24.1"
     babel-preset-es2015 "^6.24.1"
     babel-register "^6.26.0"
-    complate-stream "^0.14.0"
+    complate-stream "^0.14.2"
     html "^1.0.0"
 
-complate-stream@^0.14.0:
+complate-stream@^0.14.2:
   version "0.14.2"
   resolved "https://registry.yarnpkg.com/complate-stream/-/complate-stream-0.14.2.tgz#00f10703e7316a852acf7a39aef588dabd45f097"
 
@@ -5045,8 +5045,8 @@ rollup-pluginutils@^2.0.1:
     micromatch "^2.3.11"
 
 rollup@^0.51.5:
-  version "0.51.6"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.51.6.tgz#ed98e777ce7bd74cf2d0be249b2d9a2d19399c0f"
+  version "0.51.7"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.51.7.tgz#3c387316ceca3655727cbef716f2733aa15c46df"
 
 run-async@^0.1.0:
   version "0.1.0"
