@@ -1,8 +1,19 @@
-.code-snippet {
+pre {
   @extend %monospace-font-regular;
 
+  margin-bottom: $spacer-base;
+  border-right: 2px solid $code-snippet-border-color;
   background-color: $code-background-color;
+  padding: $spacer-xs 0 $spacer-xs $spacer-md;
   overflow: scroll;
-  line-height: $code-line-height;
-  font-size: $code-font-size;
+  line-height: $code-snippet-line-height-small;
+  font-size: $code-snippet-font-size-small;
+
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  pre {
+    line-height: $code-snippet-line-height;
+    font-size: $code-snippet-font-size;
+  }
 }
