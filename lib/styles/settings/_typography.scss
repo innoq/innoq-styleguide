@@ -233,8 +233,10 @@ $content-table-body-line-height-small: 1.56;            // ~25px
 //
 // Figure
 //
-$figcaption-font-size: $base-font-size;  // ~16px
-$figcaption-line-height: 1.56;           // ~25px
+$figcaption-font-size: $base-font-size;   // ~16px
+$figcaption-font-size-small: ms(-2);      // ~14px
+$figcaption-line-height: 1.56;            // ~25px
+$figcaption-line-height-small: 1.64;      // ~25px
 
 //
 // Infobox

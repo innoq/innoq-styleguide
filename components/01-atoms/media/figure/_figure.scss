@@ -14,6 +14,15 @@ figcaption {
   display: inline-block;
   // Short figcaptions will be centered, long ones left aligned
   text-align: left;
-  line-height: $figcaption-line-height;
-  font-size: $figcaption-font-size;
+  line-height: $figcaption-line-height-small;
+  font-size: $figcaption-font-size-small;
+}
+
+
+@media screen and (min-width: $grid-breakpoint-md) {
+
+  figcaption{
+    line-height: $figcaption-line-height;
+    font-size: $figcaption-font-size;
+  }
 }
