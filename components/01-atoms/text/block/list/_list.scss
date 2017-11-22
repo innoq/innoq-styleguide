@@ -51,6 +51,7 @@ ul:not([class]) {
       @extend %icon;
       @extend %icon-check;
       position: absolute;
+      top: $spacer-xxs;
       left: 0;
       color: $bullet-list-color;
       font-size: $checkmark-list-font-size;

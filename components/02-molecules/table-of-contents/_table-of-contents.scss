@@ -1,3 +1,5 @@
+$anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing things around
+
 .toc {
   margin-bottom: $spacer-lg;
   max-width: 100%;
@@ -43,6 +45,7 @@
     left: -$spacer-md;
     width: $spacer-base;
     color: $brand-interaction;
+    font-size: $anchor-list-font-size;
     content: $icon-arrow-down;
   }
 }
