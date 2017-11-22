@@ -11,7 +11,7 @@ pull-quote > blockquote,
   &,
   & > p {
     @extend %heading-font-bold;
-    margin-bottom: 0;
+
     text-align: center;
     line-height: $pull-quote-line-height;
     color: $pull-quote-color;
