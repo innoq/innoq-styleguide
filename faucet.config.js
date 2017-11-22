@@ -5,6 +5,10 @@ const config = {
       {
         source: 'lib/images',
         target: 'public/static'
+      },
+      {
+        source: 'node_modules/document-register-element/build/document-register-element.js',
+        target: 'public/js/document-register-element.js'
       }
     ]
   },

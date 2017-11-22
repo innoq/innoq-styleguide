@@ -12,6 +12,7 @@ export default function PreviewLayout ({ context }, ...children) {
     <body class='application'>
       {children}
     </body>
+    <script src={context.app.uri('js/document-register-element.js')} />
     <script src={context.app.uri('js/bundle.js')} />
   </html>
 }
