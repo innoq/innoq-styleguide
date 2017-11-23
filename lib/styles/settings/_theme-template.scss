@@ -3,6 +3,7 @@
 //
 $brand-primary: $brand-yellow;
 $brand-interaction: $brand-yellow;
+$brand-hover: $brand-yellow-transparent;
 $brand-text: $brand-gray;
 
 // Buttons
@@ -31,9 +32,9 @@ $h6-color: $brand-text;
 // Inline
 $link-color: $brand-text;
 $link-hover-color: $brand-interaction;
-$link-hover-color-light: $brand-yellow-transparent;
+$link-hover-color-light: $brand-hover;
 $hover-color: $brand-interaction;
-$mark-color: $brand-yellow-transparent;
+$mark-color: $brand-hover;
 $code-background-color: rgba($brand-gray-20, .2);
 
 $code-snippet-border-color: $brand-text;
