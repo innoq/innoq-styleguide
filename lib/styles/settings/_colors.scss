@@ -3,16 +3,17 @@
 //
 
 // INNOQ Blue
-$brand-blue:    #28285c; //updated from invision
+$brand-blue:    #1D1D3E; // Final color
 $brand-blue-75: #5d5986; //TODO Check color with Frank
 $brand-blue-50: #9290ae; //TODO Check color with Frank
 $brand-blue-25: #c9c7d6; //TODO Check color with Frank
 
 // INNOQ Red
-$brand-red:    #ff3c5a; //updated from invision
+$brand-red:    #FF3C5A; //updated from invision
 $brand-red-75: #fc6e86; //TODO Check color with Frank
 $brand-red-50: #fd9eae; //TODO Check color with Frank
 $brand-red-25: #feced6; //TODO Check color with Frank
+$brand-red-transparent: rgba($brand-red, .2); //TODO Check color with Frank
 
 // INNOQ Green
 $brand-green:    #55cdaf; //updated from invision
