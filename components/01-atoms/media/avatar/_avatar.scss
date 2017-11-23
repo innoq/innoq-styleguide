@@ -1,10 +1,10 @@
 .avatar {
   display: inline-block;
-  filter: grayscale(100%);
 }
 
 .avatar__image {
   border-radius: 100%;
+  // filter: grayscale(100%); Filter sorgt dafür, dass icon überdeckt wird. z-index und trabslatez helfen nicht.
 
   .avatar--xs & {
     width: $avatar-size-xs;
@@ -25,4 +25,5 @@
 
 .avatar__link {
   @extend %link-unstyled;
+  transform: translateZ(100);
 }
