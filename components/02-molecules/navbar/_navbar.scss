@@ -119,6 +119,10 @@
     }
   }
 
+  .navbar__logo + .navbar__header__meta {
+    margin-top: 0;
+  }
+
   .navbar__secondary {
     .navbar__item + .navbar__item {
       margin-left: $spacer-sm;
