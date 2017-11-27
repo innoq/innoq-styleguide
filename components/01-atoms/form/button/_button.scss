@@ -75,6 +75,12 @@ $default-btn-margin: $spacer-sm;
     font-size: $button-large-font-size;
   }
 
+  &--inverted {
+    @include hover-fill($brand-interaction, $button-inverted-color, $button-inverted-color);
+    color: $button-inverted-color;
+    border-color: $button-inverted-border-color;
+  }
+
   & + .btn {
     margin-left: $default-btn-margin;
   }
