@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   background-color: $navbar-body-bg;
   padding: $spacer-md;
   color: $navbar-link-color;
@@ -8,6 +8,16 @@
   .dropdown__menu {
     font-size: $navbar-secondary-font-size;
   }
+
+  .collapse {
+    // sass-lint:disable no-important
+    display: none !important;
+  }
+}
+
+.navbar__inner {
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar__header {
@@ -15,15 +25,17 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: $spacer-md;
   text-transform: uppercase;
   font-size: $navbar-secondary-font-size;
 }
 
 .navbar__logo {
   display: block;
-  margin-bottom: $spacer-sm;
   height: 2.25rem;
+}
+
+.navbar__logo + .navbar__header__meta {
+  margin-top: $spacer-sm;
 }
 
 .navbar__nav {
@@ -33,6 +45,7 @@
 
 .navbar__primary {
   @extend %heading-font-bold;
+  margin-top: $spacer-md;
   font-size: $navbar-primary-font-size;
 }
 
@@ -60,11 +73,24 @@
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
+  .navbar {
+    display: block;
+
+    .collapse {
+      display: flex !important;
+    }
+  }
+
   .navbar__header {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+  }
+
+  .navbar__inner {
+    // display: block;
+    flex: 1;
   }
 
   .navbar__logo {
@@ -86,7 +112,7 @@
   }
 
   .navbar__primary {
-    margin: 0 auto;
+    margin: $spacer-md auto 0;
 
     .navbar__item + .navbar__item {
       margin-left: $spacer-md;
@@ -97,5 +123,9 @@
     .navbar__item + .navbar__item {
       margin-left: $spacer-sm;
     }
+  }
+
+  navbar-toggler {
+    display: none;
   }
 }
