@@ -13,6 +13,9 @@ cp -r dist/site/static dist/
 mkdir -p $js_components_target
 find components/*/ -name "*.js" -exec cp "{}" $js_components_target \;
 
+cp -r components dist/
+cp -r lib/styles dist/sass
+
 echo $TRAVIS_COMMIT > dist/site/RELEASE.txt
 cd dist
 zip -r innoq-styleguide-$TRAVIS_TAG.zip css js static site
