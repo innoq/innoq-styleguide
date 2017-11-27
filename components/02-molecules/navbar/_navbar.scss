@@ -72,6 +72,10 @@
   }
 }
 
+.navbar__toggler {
+  padding: .5rem; // FIXME: magic number
+}
+
 @media screen and (min-width: $grid-breakpoint-md) {
   .navbar {
     display: block;
