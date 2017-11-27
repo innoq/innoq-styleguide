@@ -64,14 +64,6 @@
   }
 }
 
-.navbar__locale-switch {
-  * + * {
-    &::before {
-      content: ' | ';
-    }
-  }
-}
-
 .navbar__toggler {
   padding: .5rem; // FIXME: magic number
 }
