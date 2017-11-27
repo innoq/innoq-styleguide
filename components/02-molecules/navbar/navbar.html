@@ -1,6 +1,6 @@
 <nav class="navbar">
     <div class="navbar__header">
-        <img class="logo navbar__logo" src={context.app.uri('static/innoq-logo--whitered.svg')} />
+        <img class="logo navbar__logo" src={context.app.uri( 'static/innoq-logo--whitered.svg')} />
         <div class="navbar__header__meta">
             <ul class="navbar__nav navbar__secondary">
                 <li class="navbar__item">
@@ -19,7 +19,23 @@
 
     <ul class="navbar__nav navbar__primary">
         <li class="navbar__item">
-            <a href="#" class="navbar__link">Leistungen</a>
+            <div class="dropdown">
+                <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="sr-only dropdown__checkbox" />
+                <label for="toggle" class="dropdown__toggle">
+                    &#x2630; Leistungen
+                    <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
+                    <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
+                </label>
+                <div role="menu" data-menu-origin="left" class="dropdown__menu">
+                    <ul class="dropdown__list">
+                        <li><a href="#" class="navbar__link dropdown-link">Strategie- und Technologieberatung</a></li>
+                        <li><a href="#" class="navbar__link dropdown-link">Entwicklung digitaler Geschäftsmodelle</a></li>
+                        <li><a href="#" class="navbar__link dropdown-link">Softwarearchitektur und -entwicklung</a></li>
+                        <li><a href="#" class="navbar__link dropdown-link">Digitale Plattformen und Infrastrukturen</a></li>
+                        <li><a href="#" class="navbar__link dropdown-link">Wissenstransfer, Coaching und Trainings</a></li>
+                    </ul>
+                </div>
+            </div>
         </li>
         <li class="navbar__item">
             <a href="#" class="navbar__link">Projekte</a>

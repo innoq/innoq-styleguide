@@ -4,6 +4,10 @@
   background-color: $navbar-body-bg;
   padding: $spacer-md;
   color: $navbar-link-color;
+
+  .dropdown__menu {
+    font-size: $navbar-secondary-font-size;
+  }
 }
 
 .navbar__header {
