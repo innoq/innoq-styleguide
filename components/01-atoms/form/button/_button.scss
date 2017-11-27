@@ -77,8 +77,8 @@ $default-btn-margin: $spacer-sm;
 
   &--inverted {
     @include hover-fill($brand-interaction, $button-inverted-color, $button-inverted-color);
-    color: $button-inverted-color;
     border-color: $button-inverted-border-color;
+    color: $button-inverted-color;
   }
 
   & + .btn {
