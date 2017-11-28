@@ -5,6 +5,10 @@
   padding: $spacer-md;
   color: $navbar-link-color;
 
+  &--transparent {
+    background-color: transparent;
+  }
+
   .dropdown__menu {
     font-size: $navbar-secondary-font-size;
   }

@@ -1,0 +1,61 @@
+<div style="background: url('https://source.unsplash.com/ThPRaw2qSwk/1444x1000')">
+    <nav class="navbar navbar--transparent">
+        <div class="navbar__inner">
+            <div class="navbar__header">
+                <img class="logo navbar__logo" src={context.app.uri('static/innoq-logo--whitered.svg')} />
+                <div class="navbar__header__meta collapse" data-collapsible>
+                    <ul class="navbar__nav navbar__secondary">
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">Kontakt</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#" class="navbar__link">Suche</a>
+                        </li>
+                    </ul>
+                    <div class="navbar__locale-switch">
+                        <a href="#" class="navbar__link active" title="Deutsch">de</a> | <a href="#" class="navbar__link" title="Englisch">en</a>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="navbar__nav navbar__primary collapse" data-collapsible>
+                <li class="navbar__item">
+                    <div class="dropdown">
+                        <input type="checkbox" role="button" aria-haspopup="true" id="toggle2" class="sr-only dropdown__checkbox" />
+                        <label for="toggle2" class="dropdown__toggle">
+                            &#x2630; Leistungen
+                            <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
+                            <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
+                        </label>
+                        <div role="menu" data-menu-origin="left" class="dropdown__menu dropdown__menu--transparent">
+                            <ul class="dropdown__list">
+                                <li><a href="#" class="navbar__link dropdown__link">Strategie- und Technologieberatung</a></li>
+                                <li><a href="#" class="navbar__link dropdown__link">Entwicklung digitaler Geschäftsmodelle</a></li>
+                                <li><a href="#" class="navbar__link dropdown__link">Softwarearchitektur und -entwicklung</a></li>
+                                <li><a href="#" class="navbar__link dropdown__link">Digitale Plattformen und Infrastrukturen</a></li>
+                                <li><a href="#" class="navbar__link dropdown__link">Wissenstransfer, Coaching und Trainings</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Projekte</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Kultur</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Magazin</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Termine</a>
+                </li>
+            </ul>
+        </div>
+        <navbar-toggler target=".navbar [data-collapsible]">
+            <button class="navbar__toggler btn btn--inverted btn--small" type="button" aria-label="Navigation ein- oder ausblenden">
+                MENÜ
+            </button>
+        </navbar-toggler>
+    </nav>
+</div>
