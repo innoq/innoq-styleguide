@@ -87,6 +87,7 @@
 @import '../components/01-atoms/text/block/code/code';
 @import '../components/01-atoms/text/block/date/date';
 @import '../components/01-atoms/text/block/duration/duration';
+@import '../components/01-atoms/text/block/footnote/footnote';
 @import '../components/01-atoms/text/block/heading/heading';
 @import '../components/01-atoms/text/block/paragraph/paragraph';
 @import '../components/01-atoms/text/block/quote/pull-quote';
@@ -110,6 +111,7 @@
 @import '../components/02-molecules/reference/reference';
 @import '../components/02-molecules/share-section/share-section';
 @import '../components/02-molecules/info-box/info-box';
+@import '../components/02-molecules/footnote-section/footnote-section';
 
 // Teaser Molecules
 @import '../components/02-molecules/teaser/case-teaser/case-teaser';

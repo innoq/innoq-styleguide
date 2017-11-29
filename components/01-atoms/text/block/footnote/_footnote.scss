@@ -1,0 +1,77 @@
+.footnote {
+  @extend %link-unstyled;
+  @extend %heading-font-regular;
+
+  color: $footnote-link-color;
+}
+
+.footnotes__list {
+  @extend %list-unstyled;
+
+  counter-reset: number;
+
+  li,
+  li > p {
+
+    @extend %heading-font-regular;
+
+    margin-bottom: $spacer-sm;
+    line-height: $footote-line-height-small;
+    font-size: $footnote-font-size-small;
+  }
+
+  li {
+    position: relative;
+    padding-left: $spacer-sm;
+
+    a {
+      @extend %link-unstyled;
+
+      color: $footnote-link-color;
+    }
+
+    &::before {
+      @extend %heading-font-bold;
+
+      position: absolute;
+      left: 0;
+      width: $spacer-sm;
+      content: counter(number);
+      counter-increment: number;
+      }
+    }
+}
+
+.tooltip {
+  box-shadow: 1px 0 20px 1px $tooltip-shadow-color;
+  background-color: $tooltip-background-color;
+  padding: $spacer-lg $spacer-md;
+  max-width: 90%;
+
+  & p {
+    @extend %heading-font-regular;
+    margin: 0;
+    line-height: $tooltip-line-height-small;
+    font-size: $tooltip-font-size-small;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .footnotes__list {
+
+    li,
+    li > p {
+      line-height: $footote-line-height;
+      font-size: $footnote-font-size;
+    }
+  }
+
+  .tooltip {
+    max-width: 40%;
+
+    & p {
+      line-height: $tooltip-line-height;
+      font-size: $tooltip-font-size;
+    }
+  }
+}

@@ -110,9 +110,12 @@ $infobox-teaser-border-color: $brand-primary;
 // Sharing Section
 $haring-interaction-color: $brand-interaction;
 
-// Tooltip
+// Tooltip / Footnote
+$footnote-link-color: $brand-interaction;
 $tooltip-shadow-color: $brand-gray-75;
 $tooltip-background-color: $brand-white;
+$footnote-section-headline-color: $brand-text;
+
 //
 // Teasers
 //
@@ -136,9 +139,9 @@ $case-teaser-body-color: $brand-text;
 // Navbar
 $navbar-body-bg: $brand-gray;
 $navbar-link-color: $brand-white;
-$navbar-link-active-color: $brand-red;
-$navbar-link-hover-color: $brand-red;
+$navbar-link-active-color: $brand-primary;
+$navbar-link-hover-color: $brand-interaction;
 
 // Dropdown
 $dropdown-menu-body-bg: $brand-gray;
-$dropdown-link-hover-color: $brand-red;
+$dropdown-link-hover-color: $brand-interaction;
