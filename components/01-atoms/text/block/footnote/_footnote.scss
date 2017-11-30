@@ -16,7 +16,7 @@
     @extend %heading-font-regular;
 
     margin-bottom: $spacer-sm;
-    line-height: $footote-line-height-small;
+    line-height: $footnote-line-height-small;
     font-size: $footnote-font-size-small;
   }
 
@@ -61,7 +61,7 @@
 
     li,
     li > p {
-      line-height: $footote-line-height;
+      line-height: $footnote-line-height;
       font-size: $footnote-font-size;
     }
   }
