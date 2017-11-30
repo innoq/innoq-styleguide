@@ -4,6 +4,7 @@
 }
 
 .dropdown__menu {
+  @extend %heading-font-regular;
   display: none;
   position: absolute;
   left: 0;
