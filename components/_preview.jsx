@@ -7,6 +7,11 @@ export default function PreviewLayout ({ context }, ...children) {
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <link rel='stylesheet' type='text/css' href={context.app.uri('css/normalize.css')} />
       <link media='all' rel='stylesheet' href={context.app.uri('css/bundle.css')} />
+      <style>{'\
+        body {\
+          padding: 1rem;\
+        }\
+      '}</style>
       <title>Preview Layout</title>
     </head>
     <body class='application'>

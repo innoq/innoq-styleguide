@@ -1,0 +1,22 @@
+.form-check {
+  display: block;
+  position: relative;
+  margin-bottom: $spacer-xs;
+
+  &--invalid {
+    .form-check__label {
+      color: $form-label-invalid-color;
+    }
+  }
+}
+
+.form-check__label {
+  @extend %heading-font-regular;
+  padding-left: $spacer-md;
+}
+
+.form-check__input {
+  position: absolute;
+  margin-top: 2px; // FIXME: pixel value
+  margin-left: -$spacer-md;
+}

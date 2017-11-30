@@ -28,6 +28,15 @@ $button-inverted-hover-background: $brand-interaction;
 $button-inverted-hover-color: $brand-white;
 $button-inverted-hover-border-color: $brand-white;
 
+// Forms
+$form-control-border-color: $brand-text;
+$form-control-placeholder-color: $brand-gray-50;
+$form-control-caret-color: $brand-interaction;
+$form-control-focus-color: $brand-white;
+$form-control-focus-bg: $brand-text;
+$form-control-invalid-border-color: $brand-danger;
+$form-label-invalid-color: $brand-danger;
+
 // Headlines
 $h1-color: $brand-primary;
 $h2-color: $brand-text;

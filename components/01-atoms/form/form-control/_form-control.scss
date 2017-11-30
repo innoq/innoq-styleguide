@@ -1,0 +1,27 @@
+// Adopted from https://css-tricks.com/styling-texty-inputs-only/
+// sass-lint:disable force-pseudo-nesting
+.form-control {
+  @extend %heading-font-regular;
+  display: block;
+  transition: $standard-transition;
+  outline: none;
+  border: 2px solid $form-control-border-color;
+  border-radius: 0;
+  padding: $spacer-xs;
+  width: 100%;
+  caret-color: $form-control-caret-color;
+  appearance: none;
+
+  &:focus {
+    background-color: $form-control-focus-bg;
+    color: $form-control-focus-color;
+  }
+
+  &::placeholder {
+    color: $form-control-placeholder-color;
+  }
+
+  &--invalid {
+    border-color: $form-control-invalid-border-color;
+  }
+}

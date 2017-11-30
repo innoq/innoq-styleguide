@@ -73,6 +73,11 @@
 
 // Form atoms
 @import '../components/01-atoms/form/button/button';
+@import '../components/01-atoms/form/form-label/form-label';
+@import '../components/01-atoms/form/form-control/form-control';
+@import '../components/01-atoms/form/form-text/form-text';
+@import '../components/01-atoms/form/fieldset/fieldset';
+@import '../components/01-atoms/form/legend/legend';
 
 // Media atoms
 @import '../components/01-atoms/media/avatar/avatar';
@@ -126,6 +131,9 @@
 // Dropdown
 @import '../components/02-molecules/dropdown/dropdown';
 
+// Forms
+@import '../components/02-molecules/form-group/form-group';
+@import '../components/02-molecules/form-check/form-check';
 
 // Organisms
 @import '../components/03-organisms/article-intro/article-intro';
