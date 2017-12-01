@@ -4,7 +4,8 @@
 
 .avatar__image {
   border-radius: 100%;
-  // filter: grayscale(100%); Filter sorgt dafür, dass icon überdeckt wird. z-index und trabslatez helfen nicht.
+  // FIXME: filter: grayscale(100%);
+  // Filter sorgt dafür, dass icon überdeckt wird. z-index und translatez helfen nicht.
 
   .avatar--xs & {
     width: $avatar-size-xs;
