@@ -1,0 +1,22 @@
+.paginator {
+  @extend %list-unstyled;
+  @extend %heading-font-regular;
+}
+
+.paginator__item {
+  display: inline-block;
+}
+
+.paginator__item + .paginator__item {
+  margin-left: $spacer-xs;
+}
+
+.paginator__link {
+  @extend %link-unstyled;
+  transition: $standard-transition;
+
+  &:hover,
+  &focus {
+    color: $paginator-focus-color;
+  }
+}
