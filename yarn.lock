@@ -134,8 +134,8 @@ ajv@^4.7.0, ajv@^4.9.1:
     json-stable-stringify "^1.0.1"
 
 ajv@^5.1.0, ajv@^5.2.3, ajv@^5.3.0:
-  version "5.5.0"
-  resolved "https://registry.yarnpkg.com/ajv/-/ajv-5.5.0.tgz#eb2840746e9dc48bd5e063a36e3fd400c5eab5a9"
+  version "5.5.1"
+  resolved "https://registry.yarnpkg.com/ajv/-/ajv-5.5.1.tgz#b38bb8876d9e86bee994956a04e721e88b248eb2"
   dependencies:
     co "^4.6.0"
     fast-deep-equal "^1.0.0"
@@ -268,8 +268,8 @@ array-reduce@~0.0.0:
   resolved "https://registry.yarnpkg.com/array-reduce/-/array-reduce-0.0.0.tgz#173899d3ffd1c7d9383e4479525dbe278cab5f2b"
 
 array-slice@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/array-slice/-/array-slice-1.0.0.tgz#e73034f00dcc1f40876008fd20feae77bd4b7c2f"
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/array-slice/-/array-slice-1.1.0.tgz#e368ea15f89bc7069f7ffb89aec3a6c7d4ac22d4"
 
 array-union@^1.0.1:
   version "1.0.2"
@@ -336,14 +336,14 @@ asynckit@^0.4.0:
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
 autoprefixer@^7.1.5:
-  version "7.1.6"
-  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-7.1.6.tgz#fb933039f74af74a83e71225ce78d9fd58ba84d7"
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-7.2.1.tgz#906b1447a0e6a9e13b371f7909bc4e36da5a5a79"
   dependencies:
-    browserslist "^2.5.1"
-    caniuse-lite "^1.0.30000748"
+    browserslist "^2.9.1"
+    caniuse-lite "^1.0.30000777"
     normalize-range "^0.1.2"
     num2fraction "^1.2.2"
-    postcss "^6.0.13"
+    postcss "^6.0.14"
     postcss-value-parser "^3.2.3"
 
 aws-sign2@~0.6.0:
@@ -981,8 +981,8 @@ boxen@^0.6.0:
     widest-line "^1.0.0"
 
 boxen@^1.2.1:
-  version "1.2.2"
-  resolved "https://registry.yarnpkg.com/boxen/-/boxen-1.2.2.tgz#3f1d4032c30ffea9d4b02c322eaf2ea741dcbce5"
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/boxen/-/boxen-1.3.0.tgz#55c6c39a8ba58d9c61ad22cd877532deb665a20b"
   dependencies:
     ansi-align "^2.0.0"
     camelcase "^4.0.0"
@@ -990,7 +990,7 @@ boxen@^1.2.1:
     cli-boxes "^1.0.0"
     string-width "^2.0.0"
     term-size "^1.2.0"
-    widest-line "^1.0.0"
+    widest-line "^2.0.0"
 
 brace-expansion@^1.1.7:
   version "1.1.8"
@@ -1062,7 +1062,7 @@ browser-sync@^2.18.13:
     ua-parser-js "0.7.12"
     yargs "6.4.0"
 
-browserslist@^2.1.2, browserslist@^2.5.1:
+browserslist@^2.1.2, browserslist@^2.9.1:
   version "2.9.1"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.9.1.tgz#b72d3982ab01b5cd24da62ff6d45573886aff275"
   dependencies:
@@ -1125,9 +1125,9 @@ camelcase@^4.0.0, camelcase@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/camelcase/-/camelcase-4.1.0.tgz#d545635be1e33c542649c69173e5de6acfae34dd"
 
-caniuse-lite@^1.0.30000748, caniuse-lite@^1.0.30000770:
-  version "1.0.30000772"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000772.tgz#78129622cabfed7af1ff38b64ab680a6a0865420"
+caniuse-lite@^1.0.30000770, caniuse-lite@^1.0.30000777:
+  version "1.0.30000778"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000778.tgz#f1e7cb8b13b1f6744402291d75f0bcd4c3160369"
 
 capture-stack-trace@^1.0.0:
   version "1.0.0"
@@ -1294,8 +1294,8 @@ combined-stream@^1.0.5, combined-stream@~1.0.5:
     delayed-stream "~1.0.0"
 
 commander@^2.2.0, commander@^2.8.1, commander@^2.9.0:
-  version "2.12.1"
-  resolved "https://registry.yarnpkg.com/commander/-/commander-2.12.1.tgz#468635c4168d06145b9323356d1da84d14ac4a7a"
+  version "2.12.2"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-2.12.2.tgz#0f5946c427ed9ec0d91a46bb9def53e54650e555"
 
 complate-fractal@^0.4.2:
   version "0.4.3"
@@ -1532,13 +1532,13 @@ debug@2.6.8:
   dependencies:
     ms "2.0.0"
 
-debug@2.6.9, debug@^2.1.1, debug@^2.2.0, debug@^2.4.1, debug@^2.6.8, debug@^2.6.9:
+debug@2.6.9, debug@^2.1.1, debug@^2.2.0, debug@^2.6.8, debug@^2.6.9:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   dependencies:
     ms "2.0.0"
 
-debug@3.1.0, debug@^3.0.1:
+debug@3.1.0, debug@^3.0.1, debug@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
   dependencies:
@@ -1995,8 +1995,8 @@ eslint@^2.7.0:
     user-home "^2.0.0"
 
 eslint@^4.8.0:
-  version "4.12.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.12.0.tgz#a7ce78eba8cc8f2443acfbbc870cc31a65135884"
+  version "4.12.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.12.1.tgz#5ec1973822b4a066b353770c3c6d69a2a188e880"
   dependencies:
     ajv "^5.3.0"
     babel-code-frame "^6.22.0"
@@ -2223,9 +2223,13 @@ extglob@^0.3.1:
   dependencies:
     is-extglob "^1.0.0"
 
-extsprintf@1.3.0, extsprintf@^1.2.0:
+extsprintf@1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.3.0.tgz#96918440e3041a7a414f8c52e3c574eb3c3e1e05"
+
+extsprintf@^1.2.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/extsprintf/-/extsprintf-1.4.0.tgz#e2689f8f356fad62cca65a3a91c5df5f9551692f"
 
 fast-deep-equal@^1.0.0:
   version "1.0.0"
@@ -2256,20 +2260,20 @@ faucet-pipeline-js@^0.15.4:
     rollup-plugin-babel "^3.0.2"
     rollup-plugin-cleanup "^2.0.0"
 
-faucet-pipeline-sass@^0.9.0:
-  version "0.9.0"
-  resolved "https://registry.yarnpkg.com/faucet-pipeline-sass/-/faucet-pipeline-sass-0.9.0.tgz#b7221d887cb8a4c8ce6667c9cbf619cbb336d2b1"
+faucet-pipeline-sass@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/faucet-pipeline-sass/-/faucet-pipeline-sass-0.10.0.tgz#6bff29ad375c3c481d11f1d8873a25b3a2288fde"
   dependencies:
     autoprefixer "^7.1.5"
-    faucet-pipeline "^0.12.0"
+    faucet-pipeline "^0.14.0"
     faucet-pipeline-util "^0.10.3"
     node-sass "^4.5.3"
 
-faucet-pipeline-static@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/faucet-pipeline-static/-/faucet-pipeline-static-0.6.0.tgz#8c96eb6f2f35070e91ba93fbf2fced92e63a0614"
+faucet-pipeline-static@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/faucet-pipeline-static/-/faucet-pipeline-static-0.7.0.tgz#aab0358ffb907fb432c6370e3ebe3fa94ad752f5"
   dependencies:
-    faucet-pipeline "^0.13.0"
+    faucet-pipeline "^0.14.0"
     faucet-pipeline-util "^0.10.3"
 
 faucet-pipeline-util@^0.10.3:
@@ -2277,20 +2281,6 @@ faucet-pipeline-util@^0.10.3:
   resolved "https://registry.yarnpkg.com/faucet-pipeline-util/-/faucet-pipeline-util-0.10.3.tgz#95dcd5b9443a8e903d77a4db65034eded6c5b4df"
   dependencies:
     mkdirp "^0.5.1"
-
-faucet-pipeline@^0.12.0:
-  version "0.12.0"
-  resolved "https://registry.yarnpkg.com/faucet-pipeline/-/faucet-pipeline-0.12.0.tgz#844ffdfbd0019474757c0ea9ed659e3de1e2dd29"
-  dependencies:
-    minimist "^1.2.0"
-    nite-owl "^3.1.0"
-
-faucet-pipeline@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/faucet-pipeline/-/faucet-pipeline-0.13.0.tgz#3f79cec0ee193ed6085c16a2639d2c09fe053ff0"
-  dependencies:
-    minimist "^1.2.0"
-    nite-owl "^3.1.0"
 
 faucet-pipeline@^0.14.0:
   version "0.14.0"
@@ -2964,11 +2954,11 @@ http-signature@~1.2.0:
     sshpk "^1.7.0"
 
 https-proxy-agent@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-2.1.0.tgz#1391bee7fd66aeabc0df2a1fa90f58954f43e443"
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-2.1.1.tgz#a7ce4382a1ba8266ee848578778122d491260fd9"
   dependencies:
     agent-base "^4.1.0"
-    debug "^2.4.1"
+    debug "^3.1.0"
 
 iconv-lite@0.4.19, iconv-lite@^0.4.17, iconv-lite@~0.4.13:
   version "0.4.19"
@@ -3105,8 +3095,8 @@ inquirer@^1.1.2:
     through "^2.3.6"
 
 interpret@^1.0.0:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.0.4.tgz#820cdd588b868ffb191a809506d6c9c8f212b1b0"
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.1.0.tgz#7ed1b1410c6a0e0f78cf95d3b8440c63f78b8614"
 
 invariant@^2.2.2:
   version "2.2.2"
@@ -3284,8 +3274,8 @@ is-path-in-cwd@^1.0.0:
     is-path-inside "^1.0.0"
 
 is-path-inside@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/is-path-inside/-/is-path-inside-1.0.0.tgz#fc06e5a1683fbda13de667aff717bbc10a48f37f"
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/is-path-inside/-/is-path-inside-1.0.1.tgz#8ef5b7de50437a3fdca6b4e865ef7aa55cb48036"
   dependencies:
     path-is-inside "^1.0.1"
 
@@ -3416,8 +3406,8 @@ isurl@^1.0.0-alpha5:
     is-object "^1.0.1"
 
 js-base64@^2.1.8:
-  version "2.3.2"
-  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.3.2.tgz#a79a923666372b580f8e27f51845c6f7e8fbfbaf"
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/js-base64/-/js-base64-2.4.0.tgz#9e566fee624751a1d720c966cd6226d29d4025aa"
 
 js-beautify@1.6.14:
   version "1.6.14"
@@ -3840,8 +3830,8 @@ map-stream@~0.1.0:
   resolved "https://registry.yarnpkg.com/map-stream/-/map-stream-0.1.0.tgz#e56aa94c4c8055a16404a0674b78f215f7c8e194"
 
 marked@^0.3.6:
-  version "0.3.6"
-  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.6.tgz#b2c6c618fccece4ef86c4fc6cb8a7cbf5aeda8d7"
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-0.3.7.tgz#80ef3bbf1bd00d1c9cfebe42ba1b8c85da258d0d"
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -3918,13 +3908,13 @@ mime@1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.4.1.tgz#121f9ebc49e3766f311a76e1fa1c8003c4b03aa6"
 
-"mime@>= 0.0.1", mime@^1.3.4:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
-
-mime@^2.0.3:
+"mime@>= 0.0.1", mime@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/mime/-/mime-2.0.3.tgz#4353337854747c48ea498330dc034f9f4bbbcc0b"
+
+mime@^1.3.4:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
 
 mimic-fn@^1.0.0:
   version "1.1.0"
@@ -4028,7 +4018,7 @@ netrc@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/netrc/-/netrc-0.1.4.tgz#6be94fcaca8d77ade0a9670dc460914c94472444"
 
-nite-owl@^3.1.0, nite-owl@^3.2.0:
+nite-owl@^3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/nite-owl/-/nite-owl-3.2.0.tgz#206d4bfd3e77baa6316e957dec0c62d8b89a4d60"
   dependencies:
@@ -4582,7 +4572,7 @@ postcss-value-parser@^3.2.3:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/postcss-value-parser/-/postcss-value-parser-3.3.0.tgz#87f38f9f18f774a4ab4c8a232f5c5ce8872a9d15"
 
-postcss@^6.0.13:
+postcss@^6.0.14:
   version "6.0.14"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.14.tgz#5534c72114739e75d0afcf017db853099f562885"
   dependencies:
@@ -5973,6 +5963,12 @@ widest-line@^1.0.0:
   resolved "https://registry.yarnpkg.com/widest-line/-/widest-line-1.0.0.tgz#0c09c85c2a94683d0d7eaf8ee097d564bf0e105c"
   dependencies:
     string-width "^1.0.1"
+
+widest-line@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/widest-line/-/widest-line-2.0.0.tgz#0142a4e8a243f8882c0233aa0e0281aa76152273"
+  dependencies:
+    string-width "^2.1.1"
 
 win-release@^1.0.0:
   version "1.1.1"
