@@ -60,7 +60,7 @@ $navbar-padding: $spacer-md;
   text-decoration: none;
   color: $navbar-link-color;
 
-  &.active {
+  &--active {
     border-bottom: 2px solid $navbar-link-active-color;
   }
 
