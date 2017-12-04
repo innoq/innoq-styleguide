@@ -1,0 +1,17 @@
+.search-result {
+  text-decoration: none;
+  color: $search-result-color;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.search-result__date {
+  @extend %heading-font-regular;
+}
+
+.search-result__title {
+  @extend %h3;
+}
