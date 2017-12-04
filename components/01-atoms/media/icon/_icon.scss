@@ -3,10 +3,12 @@
   text-transform: none;
   line-height: 1;
   font-family: 'icons';
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
   font-variant: normal;
   speak: none;
+  // sass-lint:disable no-vendor-prefixes
+  // -webkit-text-stroke: 1px;
 
   // Better Font Rendering
   // sass-lint:disable no-vendor-prefixes
@@ -23,28 +25,15 @@ icon {
   }
 }
 
-.icon-arrow-long {
+.icon-search {
   &::before {
-    content: $icon-arrow-long;
+    content: $icon-search;
   }
 }
 
-.icon-arrow-small {
+.icon-arrow-down {
   &::before {
-    content: $icon-arrow-small;
-  }
-}
-
-.icon-backlink {
-  &::before {
-    content: $icon-backlink;
-  }
-}
-
-.icon-check,
-%icon-check {
-  &::before {
-    content: $icon-check;
+    content: $icon-arrow-down;
   }
 }
 
@@ -57,6 +46,30 @@ icon {
 .icon-chevron-up {
   &::before {
     content: $icon-chevron-up;
+  }
+}
+
+.icon-chevron-right {
+  &::before {
+    content: $icon-chevron-right;
+  }
+}
+
+.icon-chevron-left {
+  &::before {
+    content: $icon-chevron-left;
+  }
+}
+
+.icon-return {
+  &::before {
+    content: $icon-return;
+  }
+}
+
+.icon-check {
+  &::before {
+    content: $icon-check;
   }
 }
 
@@ -78,21 +91,15 @@ icon {
   }
 }
 
-.icon-feedback {
+.icon-twitter {
   &::before {
-    content: $icon-feedback;
+    content: $icon-twitter;
   }
 }
 
-.icon-github-logo {
+.icon-bubble-conversation-4 {
   &::before {
-    content: $icon-github-logo;
-  }
-}
-
-.icon-github-typo {
-  &::before {
-    content: $icon-github-typo;
+    content: $icon-bubble-conversation-4;
   }
 }
 
@@ -108,21 +115,9 @@ icon {
   }
 }
 
-.icon-location-filled {
+.icon-email {
   &::before {
-    content: $icon-location-filled;
-  }
-}
-
-.icon-location {
-  &::before {
-    content: $icon-location;
-  }
-}
-
-.icon-mail {
-  &::before {
-    content: $icon-mail;
+    content: $icon-email;
   }
 }
 
@@ -138,26 +133,14 @@ icon {
   }
 }
 
-.icon-search {
+.icon-location {
   &::before {
-    content: $icon-search;
+    content: $icon-location;
   }
 }
 
-.icon-transcript {
+.icon-text {
   &::before {
-    content: $icon-transcript;
-  }
-}
-
-.icon-twitter {
-  &::before {
-    content: $icon-twitter;
-  }
-}
-
-.icon-arrow-long-down {
-  &::before {
-    content: $icon-arrow-long-down;
+    content: $icon-text;
   }
 }
