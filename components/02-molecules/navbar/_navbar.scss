@@ -1,8 +1,10 @@
+$navbar-padding: $spacer-md;
+
 .navbar {
   display: flex;
   justify-content: space-between;
   background-color: $navbar-body-bg;
-  padding: $spacer-md;
+  padding: $navbar-padding;
   color: $navbar-link-color;
 
   &--transparent {
