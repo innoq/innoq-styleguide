@@ -7,6 +7,10 @@
   display: inline-block;
 }
 
+.paginator__item--active {
+  text-decoration: underline;
+}
+
 .paginator__item + .paginator__item {
   margin-left: $spacer-xs;
 }
