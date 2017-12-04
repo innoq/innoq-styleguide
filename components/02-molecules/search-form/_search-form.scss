@@ -1,0 +1,33 @@
+.search-form {
+  display: flex;
+  align-items: center;
+  border-width: 0 0 2px;
+  border-style: solid;
+  border-color: $search-field-border-color;
+
+  &--xl {
+    font-size: $search-field-xl-font-size;
+
+    .search-form__input {
+      padding: $spacer-sm;
+    }
+  }
+}
+
+.search-form__input {
+  @extend %heading-font-bold;
+  display: block;
+  transition: $standard-transition;
+  outline: none;
+  border: 0;
+  width: 100%;
+  color: $search-field-color;
+  caret-color: $search-field-caret-color;
+  appearance: none;
+}
+
+.search-form__btn {
+  border: 0;
+  background-color: transparent;
+  color: $search-field-color;
+}
