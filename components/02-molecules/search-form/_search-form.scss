@@ -4,14 +4,7 @@
   border-width: 0 0 2px;
   border-style: solid;
   border-color: $search-field-border-color;
-
-  &--xl {
-    font-size: $search-field-xl-font-size;
-
-    .search-form__input {
-      padding: $spacer-sm;
-    }
-  }
+  background-color: $search-field-background;
 }
 
 .search-form__input {
@@ -20,6 +13,7 @@
   transition: $standard-transition;
   outline: none;
   border: 0;
+  background-color: $search-field-background;
   width: 100%;
   color: $search-field-color;
   caret-color: $search-field-caret-color;
@@ -30,4 +24,14 @@
   border: 0;
   background-color: transparent;
   color: $search-field-color;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .search-form {
+    font-size: $search-field-xl-font-size;
+  }
+
+  .search-form__input {
+    padding: $spacer-sm;
+  }
 }
