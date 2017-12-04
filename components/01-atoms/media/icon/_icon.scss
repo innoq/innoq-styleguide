@@ -14,29 +14,37 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-// Arrows
-.icon-arrow-down {
-  &::before {
-    content: $icon-arrow-down;
+// Adds support for embedded svg icons
+icon {
+  svg {
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
   }
 }
 
-.icon-arrow-long-right {
+.icon-arrow-long {
   &::before {
-    content: $icon-arrow-long-right;
+    content: $icon-arrow-long;
   }
 }
 
-.icon-arrow-long-down {
+.icon-arrow-small {
   &::before {
-    content: $icon-arrow-long-down;
+    content: $icon-arrow-small;
   }
 }
 
-
-.icon-chevron-up {
+.icon-backlink {
   &::before {
-    content: $icon-chevron-up;
+    content: $icon-backlink;
+  }
+}
+
+.icon-check,
+%icon-check {
+  &::before {
+    content: $icon-check;
   }
 }
 
@@ -46,11 +54,9 @@
   }
 }
 
-// Misc
-.icon-check,
-%icon-check {
+.icon-chevron-up {
   &::before {
-    content: $icon-check;
+    content: $icon-chevron-up;
   }
 }
 
@@ -60,15 +66,33 @@
   }
 }
 
-.icon-mail {
-  &::before {
-    content: $icon-mail;
-  }
-}
-
 .icon-download {
   &::before {
     content: $icon-download;
+  }
+}
+
+.icon-facebook {
+  &::before {
+    content: $icon-facebook;
+  }
+}
+
+.icon-feedback {
+  &::before {
+    content: $icon-feedback;
+  }
+}
+
+.icon-github-logo {
+  &::before {
+    content: $icon-github-logo;
+  }
+}
+
+.icon-github-typo {
+  &::before {
+    content: $icon-github-typo;
   }
 }
 
@@ -78,22 +102,51 @@
   }
 }
 
-// Social Icons
-.icon-facebook {
+.icon-itunes {
   &::before {
-    content: $icon-facebook;
+    content: $icon-itunes;
   }
 }
 
-.icon-gplus {
+.icon-location-filled {
   &::before {
-    content: $icon-gplus;
+    content: $icon-location-filled;
   }
 }
 
-.icon-linkedin {
+.icon-location {
   &::before {
-    content: $icon-linkedin;
+    content: $icon-location;
+  }
+}
+
+.icon-mail {
+  &::before {
+    content: $icon-mail;
+  }
+}
+
+.icon-phone {
+  &::before {
+    content: $icon-phone;
+  }
+}
+
+.icon-rss {
+  &::before {
+    content: $icon-rss;
+  }
+}
+
+.icon-search {
+  &::before {
+    content: $icon-search;
+  }
+}
+
+.icon-transcript {
+  &::before {
+    content: $icon-transcript;
   }
 }
 
@@ -103,20 +156,8 @@
   }
 }
 
-.icon-xing {
+.icon-arrow-long-down {
   &::before {
-    content: $icon-xing;
-  }
-}
-
-.icon-youtube {
-  &::before {
-    content: $icon-youtube;
-  }
-}
-
-.icon-github {
-  &::before {
-    content: $icon-github;
+    content: $icon-arrow-long-down;
   }
 }
