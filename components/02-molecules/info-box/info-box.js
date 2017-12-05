@@ -30,6 +30,6 @@ export default class InfoBox extends HTMLElement {
   }
 
   set open (value) {
-    this.removeAttribute('open', value.toString())
+    this.setAttribute('open', value.toString())
   }
 }
