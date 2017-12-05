@@ -1,0 +1,62 @@
+.footer {
+  @extend %heading-font-regular;
+  display: grid;
+  background-color: $footer-body-bg;
+  padding: $spacer-lg;
+  color: $footer-color;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-column-gap: $spacer-md;
+}
+
+.footer__form {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.footer__paragraph,
+.footer__address {
+  @extend %heading-font-regular;
+  line-height: $footer-paragraph-line-height;
+  font-size: $footer-paragraph-font-size;
+}
+
+.footer__heading {
+  color: $footer-heading-color;
+  grid-row: 1;
+}
+
+.footer__subheading {
+  color: $footer-color;
+  font-size: $footer-subheading-font-size;
+  grid-row: 2;
+}
+
+.footer__aside-1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.footer__aside-2 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.footer__address {
+  font-style: normal;
+}
+
+.footer__directions-link {
+  @extend %link-unstyled;
+  @extend %heading-font-bold;
+  display: block;
+  margin-top: $spacer-xs;
+  text-transform: uppercase;
+  color: $footer-color;
+
+  &::before {
+    @extend %icon;
+    color: $footer-heading-color;
+    content: $icon-location;
+  }
+}

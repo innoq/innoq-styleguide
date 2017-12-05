@@ -28,7 +28,7 @@ $button-inverted-hover-background: $brand-interaction;
 $button-inverted-hover-color: $brand-white;
 $button-inverted-hover-border-color: $brand-white;
 
-// Forms
+// Form
 $form-control-border-color: $brand-text;
 $form-control-placeholder-color: $brand-gray-50;
 $form-control-caret-color: $brand-interaction;
@@ -36,6 +36,12 @@ $form-control-focus-color: $brand-white;
 $form-control-focus-bg: $brand-text;
 $form-control-invalid-border-color: $brand-danger;
 $form-label-invalid-color: $brand-danger;
+
+// Form (inverted)
+$form-control-inverted-border-color: $brand-white;
+$form-control-inverted-focus-bg: $brand-white;
+$form-control-inverted-focus-color: $brand-text;
+$form-label-inverted-color: $brand-white;
 
 // Search field
 $search-field-caret-color: $brand-interaction;
@@ -167,3 +173,8 @@ $navbar-link-hover-color: $brand-interaction;
 // Dropdown
 $dropdown-menu-body-bg: $brand-text;
 $dropdown-link-hover-color: $brand-interaction;
+
+// Footer
+$footer-body-bg: $brand-text;
+$footer-color: $brand-white;
+$footer-heading-color: $brand-interaction;
