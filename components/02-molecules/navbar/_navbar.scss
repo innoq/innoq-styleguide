@@ -40,7 +40,7 @@ $navbar-padding: $spacer-md;
   height: 2.25rem;
 }
 
-.navbar__logo + .navbar__header__meta {
+.navbar__brand + .navbar__header__meta {
   margin-top: $spacer-sm;
 }
 
@@ -95,7 +95,9 @@ $navbar-padding: $spacer-md;
     flex: 1;
   }
 
-  .navbar__logo {
+  .navbar__brand {
+    @extend %link-unstyled;
+    display: block;
     margin-bottom: 0;
     grid-column-start: 2;
   }
@@ -121,7 +123,7 @@ $navbar-padding: $spacer-md;
     }
   }
 
-  .navbar__logo + .navbar__header__meta {
+  .navbar__brand + .navbar__header__meta {
     margin-top: 0;
   }
 
