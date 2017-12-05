@@ -35,6 +35,11 @@ $navbar-padding: $spacer-md;
   font-size: $navbar-secondary-font-size;
 }
 
+.navbar__brand {
+  @extend %link-unstyled;
+  display: block;
+}
+
 .navbar__logo {
   display: block;
   height: 2.25rem;
@@ -96,8 +101,6 @@ $navbar-padding: $spacer-md;
   }
 
   .navbar__brand {
-    @extend %link-unstyled;
-    display: block;
     margin-bottom: 0;
     grid-column-start: 2;
   }
