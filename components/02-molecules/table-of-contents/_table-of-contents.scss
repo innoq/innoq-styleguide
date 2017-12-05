@@ -41,11 +41,11 @@ $anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing th
   &::before {
     @extend %icon; // inline-block
     position: absolute;
-    top: 0;
+    top: $spacer-xxs;
     left: -$spacer-md;
     width: $spacer-base;
     color: $brand-interaction;
-    font-size: $anchor-list-font-size;
+    // font-size: $anchor-list-font-size;
     content: $icon-arrow-down;
   }
 }

@@ -53,8 +53,11 @@ ul:not([class]) {
       top: $spacer-xxs;
       left: 0;
       color: $bullet-list-color;
-      font-size: $checkmark-list-font-size;
+      // font-size: $checkmark-list-font-size;
       content: $icon-check;
+
+      // sass-lint:disable no-vendor-prefixes
+      -webkit-text-stroke-width: 2px;
     }
   }
 }
