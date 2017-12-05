@@ -25,122 +25,124 @@ icon {
   }
 }
 
+// sass-lint:disable pseudo-element, empty-line-between-blocks
 .icon-search {
-  &::before {
+  &:before {
     content: $icon-search;
   }
 }
-
 .icon-arrow-down {
-  &::before {
+  &:before {
     content: $icon-arrow-down;
   }
 }
-
 .icon-chevron-down {
-  &::before {
+  &:before {
     content: $icon-chevron-down;
   }
 }
-
 .icon-chevron-up {
-  &::before {
+  &:before {
     content: $icon-chevron-up;
   }
 }
-
 .icon-chevron-right {
-  &::before {
+  &:before {
     content: $icon-chevron-right;
   }
 }
-
 .icon-chevron-left {
-  &::before {
+  &:before {
     content: $icon-chevron-left;
   }
 }
-
 .icon-return {
-  &::before {
+  &:before {
     content: $icon-return;
   }
 }
-
 .icon-check {
-  &::before {
+  &:before {
     content: $icon-check;
   }
 }
-
 .icon-close {
-  &::before {
+  &:before {
     content: $icon-close;
   }
 }
-
 .icon-download {
-  &::before {
+  &:before {
     content: $icon-download;
   }
 }
-
 .icon-facebook {
-  &::before {
+  &:before {
     content: $icon-facebook;
   }
 }
-
 .icon-twitter {
-  &::before {
+  &:before {
     content: $icon-twitter;
   }
 }
-
 .icon-bubble-conversation-4 {
-  &::before {
+  &:before {
     content: $icon-bubble-conversation-4;
   }
 }
-
 .icon-info {
-  &::before {
+  &:before {
     content: $icon-info;
   }
 }
-
 .icon-itunes {
-  &::before {
+  &:before {
     content: $icon-itunes;
   }
 }
-
 .icon-email {
-  &::before {
+  &:before {
     content: $icon-email;
   }
 }
-
 .icon-phone {
-  &::before {
+  &:before {
     content: $icon-phone;
   }
 }
-
 .icon-rss {
-  &::before {
+  &:before {
     content: $icon-rss;
   }
 }
-
 .icon-location {
-  &::before {
+  &:before {
     content: $icon-location;
   }
 }
-
 .icon-text {
-  &::before {
+  &:before {
     content: $icon-text;
+  }
+}
+.icon-chevron-2-down {
+  &:before {
+    content: $icon-chevron-2-down;
+  }
+}
+.icon-chevron-2-left {
+  &:before {
+    content: $icon-chevron-2-left;
+  }
+}
+.icon-chevron-2-right {
+  &:before {
+    content: $icon-chevron-2-right;
+  }
+}
+.icon-chevron-2-up {
+  &:before {
+    content: $icon-chevron-2-up;
   }
 }
