@@ -3,12 +3,13 @@
   text-transform: none;
   line-height: 1;
   font-family: 'icons';
+  font-size: .8em;
   font-weight: normal;
   font-style: normal;
   font-variant: normal;
   speak: none;
   // sass-lint:disable no-vendor-prefixes
-  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 1px;
 
   // Better Font Rendering
   // sass-lint:disable no-vendor-prefixes
