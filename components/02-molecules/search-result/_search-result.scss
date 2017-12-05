@@ -14,4 +14,9 @@
 
 .search-result__title {
   @extend %h3;
+
+  // Fix Google CSE markup and the resulting style
+  b {
+    font-weight: normal;
+  }
 }
