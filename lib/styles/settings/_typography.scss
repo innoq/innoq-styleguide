@@ -290,5 +290,16 @@ $footer-subheading-font-size: ms(2);
 $footer-subheading-line-height: 1.37;
 $footer-paragraph-font-size: $base-font-size;
 $footer-paragraph-line-height: 1.56;
+
+//
+// Teaser
+//
+
+$teaser-caption-font-size: $base-font-size;       // ~16px
+$teaser-caption-line-height: 1.375 ;              // ~22px
+$teaser-text-font-size: $base-font-size;          // ~16px
+$teaser-text-line-height: 1.5 ;                   // ~24px
+$podcast-teaser-subheadline-font-size: ms(2);     // ~20px
+$podcast-teaser-subheadline-line-height: 1.25;    // ~24px
 $footer-directions-link-font-size: ms(-2);
 $footer-directions-link-line-height: 1.69;

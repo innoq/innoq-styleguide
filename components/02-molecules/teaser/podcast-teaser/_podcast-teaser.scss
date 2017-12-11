@@ -1,3 +1,104 @@
-// .podcast-teaser {
+$podcast-teaser-height-sm: ms(30);
+$podcast-teaser-height-md: ms(35);
+
+.podcast-teaser {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: $podcast-teaser-height-sm;
+}
+
+.podcast-teaser__body {
+  margin-bottom: 0;
+  padding: $spacer-sm $spacer-md;
+}
+
+.podcast-teaser__footer {
+  margin-bottom: 0;
+  padding: $spacer-sm $spacer-md;
+
+  > * {
+    margin: 0;
+  }
+}
+
+.podcast-teaser__caption {
+  @extend %teaser-caption;
+}
+
+.podcast-teaser__headline {
+  @extend %h2;
+  margin-bottom: $spacer-md;
+  color: $podcast-teaser-default-color;
+  hyphens: none;
+}
+
+.podcast-teaser__subheadline {
+  @extend %body-font-italic;
+
+  margin-bottom: $spacer-xs;
+  line-height: $podcast-teaser-subheadline-line-height;
+  color: $podcast-teaser-default-color;
+  font-size: $podcast-teaser-subheadline-font-size;
+  hyphens: none;
+}
+
+.podcast-author {
+  @extend %author-name;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .podcast-teaser {
+    min-height: $podcast-teaser-height-md;
+  }
+}
+
+
 //
-// }
+// Variations
+//
+.podcast-teaser--avatar--overlay {
+  background-color: $podcast-teaser-overlay-color;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  color: $podcast-teaser-default-color;
+  background-blend-mode: multiply;
+}
+
+.podcast-teaser--avatar--overlay--big {
+  background-color: $podcast-teaser-overlay-color;
+  background-repeat: no-repeat;
+  background-position: top right, top left;
+  background-size: contain;
+  color: $podcast-teaser-default-color;
+  background-blend-mode: multiply;
+
+  .podcast-teaser__body  {
+    padding: $spacer-lg;
+    text-align: center;
+  }
+
+  .podcast-teaser__footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.podcast-teaser--avatar {
+  background-color: $podcast-teaser-default-color;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  color:  $podcast-teaser-default-bg;
+
+  .podcast-teaser__headline,
+  .podcast-teaser__subheadline  {
+    color:  $podcast-teaser-default-bg;
+  }
+}
+
+.podcast-teaser--default {
+  background-color: $podcast-teaser-default-bg;
+  color: $podcast-teaser-default-color;
+}

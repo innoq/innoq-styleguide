@@ -1,11 +1,14 @@
 .blocks {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: $spacer-base;
+  margin-bottom: $spacer-sm;
+
+  > * {
+    flex-basis: 100%;
+  }
 
   > * + * {
-    flex-basis: 100%;
-    margin-top: $spacer-md;
+    margin-top: $spacer-sm;
   }
 }
 
@@ -13,10 +16,18 @@
   .blocks {
     flex-wrap: nowrap;
 
+    > * {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+
     > * + * {
-      flex-basis: auto;
       margin-top: 0;
       margin-left: $spacer-md;
     }
+  }
+
+  .two-column {
+    flex-grow: 2;
   }
 }

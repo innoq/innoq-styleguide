@@ -37,15 +37,15 @@
   @extend %heading-font-bold;
 
   text-transform: uppercase;
-  line-height: $base-line-height;
-  font-size: $tag-font-size-small;
+  line-height: $teaser-caption-line-height;
+  font-size: $teaser-caption-font-size;
 }
 
 %teaser-text {
   @extend %heading-font-regular;
 
-  line-height: $base-line-height;
-  font-size: $base-font-size;
+  line-height: $teaser-text-line-height;
+  font-size: $teaser-text-font-size;
 }
 
 
