@@ -29,6 +29,7 @@ icon {
 }
 
 // sass-lint:disable pseudo-element, empty-line-between-blocks
+
 .icon-search {
   &:before {
     content: $icon-search;
@@ -147,5 +148,25 @@ icon {
 .icon-chevron-2-up {
   &:before {
     content: $icon-chevron-2-up;
+  }
+}
+.icon-location-filled {
+  &:before {
+    content: $icon-location-filled;
+  }
+}
+.icon-xing {
+  &:before {
+    content: $icon-xing;
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin;
+  }
+}
+.icon-rss-1 {
+  &:before {
+    content: $icon-rss-1;
   }
 }
