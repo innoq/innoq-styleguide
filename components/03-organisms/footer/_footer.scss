@@ -1,17 +1,12 @@
 .footer {
   @extend %heading-font-regular;
-  display: grid;
   background-color: $footer-body-bg;
   padding: $spacer-lg;
   color: $footer-color;
-  grid-template-columns: 2fr 1fr 1fr;
-  grid-template-rows: auto auto;
-  grid-column-gap: $spacer-md;
 }
 
 .footer__form {
-  grid-column: 1;
-  grid-row: 2;
+  margin-bottom: $spacer-lg;
 }
 
 .footer__paragraph,
@@ -23,23 +18,11 @@
 
 .footer__heading {
   color: $footer-heading-color;
-  grid-row: 1;
 }
 
 .footer__subheading {
   color: $footer-color;
   font-size: $footer-subheading-font-size;
-  grid-row: 2;
-}
-
-.footer__aside-1 {
-  grid-column: 2;
-  grid-row: 2;
-}
-
-.footer__aside-2 {
-  grid-column: 3;
-  grid-row: 2;
 }
 
 .footer__address {
@@ -50,13 +33,55 @@
   @extend %link-unstyled;
   @extend %heading-font-bold;
   display: block;
-  margin-top: $spacer-xs;
+  transition: $standard-transition;
+  margin: $spacer-xs 0 $spacer-lg;
   text-transform: uppercase;
+  line-height: $footer-directions-link-line-height;
   color: $footer-color;
+  font-size: $footer-directions-link-font-size;
+
+  &:hover,
+  &:focus {
+    color: $footer-link-hover-color;
+  }
 
   &::before {
     @extend %icon;
+    margin-right: $spacer-xxs;
     color: $footer-heading-color;
     content: $icon-location;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap: $spacer-lg;
+  }
+
+  .footer__form {
+    margin-bottom: 0;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .footer__heading {
+    grid-row: 1;
+  }
+
+  .footer__subheading {
+    grid-row: 2;
+  }
+
+  .footer__aside-1 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .footer__aside-2 {
+    grid-column: 3;
+    grid-row: 2;
   }
 }
