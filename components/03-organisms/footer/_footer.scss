@@ -57,6 +57,17 @@
 
 .footer__link {
   @extend %link-unstyled;
+  border-bottom: 2px solid $footer-color;
+  color: $footer-color;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $footer-link-hover-color;
+  }
+}
+
+.footer__link,
+.footer__directions-link {
   transition: $standard-transition;
 
   &:hover,
