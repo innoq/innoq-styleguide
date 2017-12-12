@@ -118,6 +118,9 @@
 @import '../components/02-molecules/info-box/info-box';
 @import '../components/02-molecules/footnote-section/footnote-section';
 
+//Header molecules
+@import '../components/02-molecules/teaser/page-header/topic-header';
+
 // Teaser Molecules
 @import '../components/02-molecules/teaser/case-teaser/case-teaser';
 @import '../components/02-molecules/teaser/content-teaser/content-teaser';
@@ -132,12 +135,12 @@
 @import '../components/02-molecules/dropdown/dropdown';
 
 // Forms
-@import '../components/02-molecules/form-group/form-group';
-@import '../components/02-molecules/form-check/form-check';
+@import '../components/02-molecules/form/form-group/form-group';
+@import '../components/02-molecules/form/form-check/form-check';
 
 // Search
-@import '../components/02-molecules/search-form/search-form';
-@import '../components/02-molecules/search-result/search-result';
+@import '../components/02-molecules/search/search-form';
+@import '../components/02-molecules/search/search-result';
 
 // Paginator
 @import '../components/02-molecules/paginator/paginator';
@@ -150,6 +153,7 @@
 
 // Pages
 @import '../components/04-pages/article-page';
+@import '../components/04-pages/aggregator-page';
 
 //
 // Trumps
