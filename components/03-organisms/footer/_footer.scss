@@ -30,7 +30,6 @@
 }
 
 .footer__directions-link {
-  @extend %link-unstyled;
   @extend %heading-font-bold;
   display: block;
   margin: $spacer-xs 0 $spacer-lg;
@@ -56,7 +55,6 @@
 }
 
 .footer__link {
-  @extend %link-unstyled;
   border-bottom: 2px solid $footer-color;
   color: $footer-color;
 
@@ -67,7 +65,9 @@
 }
 
 .footer__link,
-.footer__directions-link {
+.footer__directions-link,
+.footer__list__link {
+  @extend %link-unstyled;
   transition: $standard-transition;
 
   &:hover,
