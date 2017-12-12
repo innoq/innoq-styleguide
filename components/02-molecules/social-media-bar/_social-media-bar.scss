@@ -1,0 +1,20 @@
+.social-media-bar {
+  @extend %list-unstyled;
+}
+
+.social-media-bar__item {
+  display: inline-block;
+
+  & + & {
+    margin-left: $spacer-md;
+  }
+}
+
+.social-media-bar__link {
+  @extend %link-unstyled;
+}
+
+.social-media-bar__icon {
+  // sass-lint:disable no-vendor-prefixes
+  -webkit-text-stroke-width: 0;
+}

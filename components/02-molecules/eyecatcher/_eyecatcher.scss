@@ -1,0 +1,32 @@
+.eyecatcher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $eyecatcher-body-bg;
+  padding: $spacer-md;
+  overflow: hidden;
+  text-align: center;
+  color: $eyecatcher-color;
+
+  .social-media-bar {
+    margin-bottom: 0;
+    color: $eyecatcher-color-inverted;
+    font-size: $eyecatcher-font-size-large;
+  }
+
+  .social-media-bar__link {
+    transition: $standard-transition;
+
+    &:hover,
+    &:focus {
+      color: $eyecatcher-color;
+    }
+  }
+}
+
+.eyecatcher__text {
+  @extend %heading-font-bold;
+  margin-bottom: $spacer-md;
+  font-size: $eyecatcher-font-size;
+}

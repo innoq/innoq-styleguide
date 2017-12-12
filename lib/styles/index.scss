@@ -117,6 +117,7 @@
 @import '../components/02-molecules/share-section/share-section';
 @import '../components/02-molecules/info-box/info-box';
 @import '../components/02-molecules/footnote-section/footnote-section';
+@import '../components/02-molecules/eyecatcher/eyecatcher';
 
 //Header molecules
 @import '../components/02-molecules/teaser/page-header/topic-header';
@@ -144,6 +145,9 @@
 
 // Paginator
 @import '../components/02-molecules/paginator/paginator';
+
+// Social Media Bar
+@import '../components/02-molecules/social-media-bar/social-media-bar';
 
 // Organisms
 @import '../components/03-organisms/article-intro/article-intro';
