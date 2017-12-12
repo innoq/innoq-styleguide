@@ -119,13 +119,14 @@
 @import '../components/02-molecules/footnote-section/footnote-section';
 @import '../components/02-molecules/eyecatcher/eyecatcher';
 
-//Header molecules
-@import '../components/02-molecules/teaser/page-header/topic-header';
+//Header Molecules
+@import '../components/02-molecules/page-header/topic-header';
 
 // Teaser Molecules
 @import '../components/02-molecules/teaser/case-teaser/case-teaser';
 @import '../components/02-molecules/teaser/content-teaser/content-teaser';
 @import '../components/02-molecules/teaser/event-teaser/event-teaser';
+@import '../components/02-molecules/teaser/list-teaser/list-teaser';
 @import '../components/02-molecules/teaser/podcast-teaser/podcast-teaser';
 @import '../components/02-molecules/teaser/topic-teaser/topic-teaser';
 
