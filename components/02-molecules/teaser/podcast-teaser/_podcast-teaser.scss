@@ -28,6 +28,7 @@ $podcast-teaser-height-md: ms(35);
 
 .podcast-teaser__headline {
   @extend %h2;
+
   margin-bottom: $spacer-md;
   color: $podcast-teaser-default-color;
   hyphens: none;
