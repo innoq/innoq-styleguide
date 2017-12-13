@@ -1,6 +1,7 @@
 //
 // Headlines
 //
+
 // H1
 %h1,
 h1 {
@@ -81,6 +82,15 @@ h6 {
   }
 }
 
+.teaser-section-headline {
+  @extend %h2;
+
+  margin-bottom: $spacer-base;
+  text-align: center;
+  line-height: $teaser-section-headline-line-height-small;
+  font-size: $teaser-section-headline-font-size-small;
+}
+
 
 @media screen and (min-width: $grid-breakpoint-md) {
   %h1,
@@ -122,5 +132,11 @@ h6 {
   h6 {
     line-height: $h6-line-height;
     font-size: $h6-font-size;
+  }
+
+  .teaser-section-headline {
+    margin-bottom: $spacer-lg;
+    line-height: $teaser-section-headline-line-height;
+    font-size: $teaser-section-headline-font-size;
   }
 }
