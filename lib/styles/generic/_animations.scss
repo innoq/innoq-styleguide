@@ -1,12 +1,11 @@
 $standard-transition: all .175s ease-in-out;
 $ease-out-back-transition: .5s transform cubic-bezier(.68, -.55, .265, 1.55);
 
-%hover-zoom {
+%hover-zoom-in {
   transition: $ease-out-back-transition;
 
   &:hover,
   &:focus {
-    transform: scale(1.02);
-    background-color: revert;
+    transform: scale(.98);
   }
 }

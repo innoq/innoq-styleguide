@@ -2,7 +2,7 @@ $podcast-teaser-height-sm: ms(30);
 $podcast-teaser-height-md: ms(35);
 
 .podcast-teaser {
-  @extend %hover-zoom;
+  @extend %hover-zoom-in;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
