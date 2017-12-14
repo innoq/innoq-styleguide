@@ -2,10 +2,12 @@ $podcast-teaser-height-sm: ms(30);
 $podcast-teaser-height-md: ms(35);
 
 .podcast-teaser {
+  @extend %hover-zoom;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: $podcast-teaser-height-sm;
+  text-decoration: none;
 }
 
 .podcast-teaser__body {
