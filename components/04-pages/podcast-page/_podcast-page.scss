@@ -10,3 +10,27 @@
   width: 95%;
   max-width: $article-grid-width;
 }
+
+.podcast-grid {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr;
+  grid-gap: $spacer-sm;
+  grid-auto-rows: 1fr;
+}
+
+@media screen and (min-width: $grid-breakpoint-sm) {
+  .podcast-grid {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .podcast-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .podcast-teaser--avatar--overlay--big {
+    grid-column: span 2;
+  }
+}
