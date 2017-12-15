@@ -8,50 +8,87 @@
   padding-top: $spacer-lg;
 
   &__title {
-    line-height: $standard-header-title-line-height;
+    margin-bottom: $spacer-xs;
+    line-height: $standard-header-title-line-height-small;
     color: $standard-header-title-color;
-    font-size: $standard-header-title-font-size;
+    font-size: $standard-header-title-font-size-small;
   }
 
   &__subtitle {
-    line-height: $standard-header-subtitle-line-height;
+    margin-bottom: $spacer-xs;
+    line-height: $standard-header-subtitle-line-height-small;
     color: $standard-header-title-color;
-    font-size: $standard-header-subtitle-font-size;
+    font-size: $standard-header-subtitle-font-size-small;
   }
 
   &__type {
     @extend %heading-font-bold;
+    margin-bottom: $spacer-xs;
     text-transform: uppercase;
-
+    line-height: $standard-header-type-line-height-small;
     color: $standard-header-title-color;
-    font-size: $standard-header-type-font-size;
+    font-size: $standard-header-type-font-size-small;
   }
 }
 
 .standard-header__intro {
   display: flex;
   position: relative;
-  top: $spacer-xxl;
+  top: $spacer-lg;
   flex-direction: column;
   align-items: center;
   margin-top: $spacer-md;
   background-color: $standard-header-intro-bg;
-  padding: $spacer-lg;
+  padding: $spacer-md;
   width: 90%;
 }
 
 .standard-header__intro__text {
   @extend %body-font-italic;
-  line-height: $standard-header-intro-line-height;
-  font-size: $standard-header-intro-font-size;
+  line-height: $standard-header-intro-line-height-small;
+  font-size: $standard-header-intro-font-size-small;
 }
 
 .standard-header__intro__date {
   @extend %heading-font-bold;
   display: block;
   position: relative;
-  top: -4.1rem; // FIXME
+  top: -2.6rem; // FIXME
   background-color: $standard-header-intro-date-bg;
-  padding: $spacer-xs $spacer-sm;
+  padding: $spacer-xxs $spacer-xs;
+  line-height: $standard-header-intro-date-line-height-small;
   color: $standard-header-intro-date-color;
+  font-size: $standard-header-intro-date-font-size-small;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .standard-header__title {
+    line-height: $standard-header-title-line-height;
+    font-size: $standard-header-title-font-size;
+  }
+
+  .standard-header__subtitle {
+    line-height: $standard-header-subtitle-line-height;
+    font-size: $standard-header-subtitle-font-size;
+  }
+
+  .standard-header__type {
+    line-height: $standard-header-type-line-height;
+    font-size: $standard-header-type-font-size;
+  }
+
+  .standard-header__intro {
+    top: $spacer-xxl;
+    padding: $spacer-lg;
+  }
+
+  .standard-header__intro__text {
+    line-height: $standard-header-intro-line-height;
+    font-size: $standard-header-intro-font-size;
+  }
+
+  .standard-header__intro__date {
+    top: -4.1rem; // FIXME
+    padding: $spacer-xs $spacer-sm;
+  }
 }
