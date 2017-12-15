@@ -40,19 +40,82 @@ $list-teaser-height-md: ms(20);
 .list-teaser__subheadline {
   @extend %heading-font-regular;
 
-  display: inline-block;
   margin-bottom: $spacer-xs;
-  padding-right: $spacer-xxs;
   line-height: $list-teaser-subheadline-line-height;
   font-size: $list-teaser-subheadline-font-size;
   hyphens: none;
 }
 
-@media screen and (min-width: $grid-breakpoint-md) {
-  .list-teaser {
-    min-height: $list-teaser-height-md;
+// List Teaser with Abstract
+// sass-lint:disable nesting-depth
+.list-teaser-abstract {
+  margin-bottom: $spacer-base;
+  min-height: $list-teaser-height-sm;
+
+  &.primary {
+    background-color: $list-teaser-abstract-primary-bg-color;
+
+    .list-teaser-abstract__text {
+      color: $list-teaser-abstract-primary-text-color;
+
+      &::first-letter {
+        color: $list-teaser-abstract-primary-drop-caps-color;
+      }
+    }
   }
 
+  &.secondary {
+    background-color: $list-teaser-abstract-secondary-bg-color;
+
+    .list-teaser-abstract__text {
+      color: $list-teaser-abstract-secondary-text-color;
+
+      &::first-letter {
+        color: $list-teaser-abstract-secondary-drop-caps-color;
+      }
+    }
+
+    .author-bio__text {
+      color: $list-teaser-abstract-secondary-author-name-color;
+    }
+  }
+}
+
+.list-teaser-abstract__caption {
+  @extend %teaser-caption;
+
+  margin-bottom: $spacer-xxs;
+  color: $list-teaser-abstract-caption-color;
+}
+
+.list-teaser-abstract__headline {
+  margin-bottom: $spacer-md;
+  line-height: $list-teaser-abstrat-headline-line-height;
+  color: $list-teaser-abstract-headline-color;
+  font-size: $list-teaser-abstrat-headline-font-size;
+}
+
+.list-teaser-abstract__text {
+  @extend %heading-font-regular;
+
+  margin-bottom: 0;
+  line-height: $list-teaser-abstract-text-line-height;
+  font-size: $list-teaser-abstract-text-font-size;
+
+  &::first-letter {
+    @extend %body-font-regular;
+
+    float: left;
+    padding-top: 18px;
+    padding-right: 12px;
+    padding-left: 3px;
+    line-height: 32px;
+    font-size: 70px;
+  }
+}
+
+
+@media screen and (min-width: $grid-breakpoint-md) {
   .list-teaser__footer {
     flex-wrap: nowrap;
   }
