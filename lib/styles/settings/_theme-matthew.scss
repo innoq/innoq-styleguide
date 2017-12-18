@@ -68,6 +68,8 @@ $h6-color: $brand-text;
 $link-color: $brand-text;
 $link-hover-color: $brand-interaction;
 $link-hover-color-light: $brand-hover;
+$link-teaser-border-color: $brand-interaction;
+$link-teaser-text-color: $brand-text;
 $hover-color: $brand-interaction;
 $mark-color: $brand-hover;
 $code-background-color: rgba($brand-gray-20, .2);
@@ -202,6 +204,8 @@ $list-teaser-abstract-secondary-drop-caps-color: $brand-primary;
 $list-teaser-abstract-secondary-author-name-color: $brand-white;
 $list-teaser-abstract-caption-color: $brand-white;
 $list-teaser-abstract-headline-color: $brand-white;
+
+$list-teaser-event-headline-color: $brand-text;
 
 // Navbar
 $navbar-body-bg: $brand-text;

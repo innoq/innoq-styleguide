@@ -2,13 +2,9 @@ $list-teaser-height-sm: ms(20);
 $list-teaser-height-md: ms(20);
 
 .list-teaser {
-  @extend %block-link;
-  @extend %hover-zoom-in;
-  display: block;
-  margin-bottom: $spacer-base;
+  @extend %list-teaser;
   border-top: 3px solid $list-teaser-border-color;
   background-color: $list-teaser-background-color;
-  min-height: $list-teaser-height-sm;
 }
 
 .list-teaser__body {
@@ -17,15 +13,7 @@ $list-teaser-height-md: ms(20);
 }
 
 .list-teaser__footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 0;
-  padding: $spacer-sm $spacer-md;
-
-  > * {
-    margin: 0;
-  }
+  @extend %list-teaser-footer;
 }
 
 .list-teaser__caption {
@@ -52,10 +40,7 @@ $list-teaser-height-md: ms(20);
 // List Teaser with Abstract
 // sass-lint:disable nesting-depth
 .list-teaser-abstract {
-  @extend %block-link;
-  @extend %hover-zoom-in;
-  margin-bottom: $spacer-base;
-  min-height: $list-teaser-height-sm;
+  @extend %list-teaser;
 
   &.primary {
     background-color: $list-teaser-abstract-primary-bg-color;
@@ -119,6 +104,39 @@ $list-teaser-height-md: ms(20);
   }
 }
 
+.list-teaser-event {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-bottom: $spacer-base;
+  background-color: $list-teaser-background-color;
+}
+
+.list-teaser-event__footer {
+  @extend %list-teaser-footer;
+  justify-content: flex-end;
+}
+
+.list-teaser__content {
+  flex-grow: 1;
+}
+
+.list-teaser-event__headline {
+  @extend %h3;
+
+  margin-bottom: $spacer-sm;
+  color: $list-teaser-event-headline-color;
+  hyphens: none;
+}
+
+.list-teaser-event__subheadline {
+  @extend %body-font-italic;
+
+  margin-bottom: $spacer-xs;
+  line-height: $list-teaser-event-subheadline-line-height;
+  font-size: $list-teaser-event-subheadline-font-size;
+  hyphens: none;
+}
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .list-teaser__footer {

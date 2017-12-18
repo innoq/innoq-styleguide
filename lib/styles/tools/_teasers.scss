@@ -1,0 +1,18 @@
+%list-teaser {
+  @extend %block-link;
+  @extend %hover-zoom-in;
+  margin-bottom: $spacer-base;
+  min-height: $list-teaser-height-sm;
+}
+
+%list-teaser-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding: $spacer-sm $spacer-md;
+
+  > * {
+    margin: 0;
+  }
+}
