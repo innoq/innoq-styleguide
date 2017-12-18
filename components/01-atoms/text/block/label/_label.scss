@@ -1,0 +1,32 @@
+.label {
+  display: inline-block;
+  margin-bottom: $spacer-xs;
+  padding: $spacer-xxs;
+  line-height: $label-line-height;
+  font-size: $label-fonte-size;
+
+  &.talk {
+    @extend %heading-font-bold;
+
+    border-left: 6px solid $talk-label-text-color;
+    background-color: $talk-label-background-color;
+    text-transform: uppercase;
+    color: $talk-label-text-color;
+  }
+
+  &.training {
+    @extend %heading-font-bold;
+
+    border-left: 6px solid $training-label-text-color;
+    background-color: $training-label-background-color;
+    text-transform: uppercase;
+    color: $training-label-text-color;
+  }
+
+  &.slides {
+    @extend %heading-font-regular;
+
+    background-color: $slides-label-background-color;
+    color: $slides-label-text-color;
+  }
+}
