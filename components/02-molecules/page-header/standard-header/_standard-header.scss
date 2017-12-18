@@ -17,7 +17,7 @@
   &__subtitle {
     margin-bottom: $spacer-xs;
     line-height: $standard-header-subtitle-line-height-small;
-    color: $standard-header-title-color;
+    color: $standard-header-subtitle-color;
     font-size: $standard-header-subtitle-font-size-small;
   }
 
@@ -26,8 +26,22 @@
     margin-bottom: $spacer-xs;
     text-transform: uppercase;
     line-height: $standard-header-type-line-height-small;
-    color: $standard-header-title-color;
+    color: $standard-header-type-color;
     font-size: $standard-header-type-font-size-small;
+  }
+}
+
+.standard-header--inverted {
+  .standard-header__title {
+    color: $standard-header-inverted-title-color;
+  }
+
+  .standard-header__type {
+    color: $standard-header-inverted-type-color;
+  }
+
+  .standard-header__subtitle {
+    color: $standard-header-inverted-subtitle-color;
   }
 }
 
