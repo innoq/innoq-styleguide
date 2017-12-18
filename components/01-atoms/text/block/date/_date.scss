@@ -3,3 +3,57 @@
   line-height: $date-line-height;
   font-size: $date-font-size;
 }
+
+.event-date-section {
+  background-color: $date-section-background-color;
+  width: 80px;
+  height: 100%;
+}
+
+.one-day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.two-days {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.event-date {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.event-day {
+  @extend %heading-font-heavy;
+
+  line-height: $event-day-line-height;
+  color: $date-section-day-color;
+  font-size: $event-day-font-size;
+}
+
+.event-month {
+  @extend %heading-font-heavy;
+
+  margin-bottom: $spacer-xxs;
+  text-transform: uppercase;
+  line-height: $event-month-line-height;
+  color: $date-section-month-color;
+  font-size: $event-month-font-size;
+}
+
+.event-year {
+  @extend %heading-font-regular;
+
+  border-top: 1px solid $date-section-year-color;
+  padding-top: $spacer-xxs;
+  line-height: $event-year-line-height;
+  color: $date-section-year-color;
+  font-size: $event-year-font-size;
+}
