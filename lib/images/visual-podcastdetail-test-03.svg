@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1440px" height="545px" viewBox="0 0 1440 545" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Visual 02</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1444" height="545"></rect>
+    </defs>
+    <g id="Desktop-HD-Detailseite-Podcast-Intro-Beispiel-2-Copy-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -61.000000)">
+        <g id="Visual-02" transform="translate(-4.000000, 61.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#F4F4F4" xlink:href="#path-1"></use>
+            <polygon id="Rectangle-19" fill="#24244C" mask="url(#mask-2)" points="1453.94922 132 1453.94922 545.066406 1009 545.066406"></polygon>
+            <polygon id="Rectangle-19-Copy" fill="#929292" style="mix-blend-mode: multiply;" opacity="0.1" mask="url(#mask-2)" points="281.757454 3 281.757454 544 -301 544"></polygon>
+            <polygon id="Rectangle-19-Copy-3" fill="#929292" style="mix-blend-mode: multiply;" opacity="0.1" mask="url(#mask-2)" points="572.757454 3 572.757454 544 -10 544"></polygon>
+            <polygon id="Rectangle-19-Copy-4" fill="#929292" style="mix-blend-mode: multiply;" opacity="0.1" mask="url(#mask-2)" points="864.757454 3 864.757454 544 282 544"></polygon>
+            <polygon id="Rectangle-19-Copy-5" fill="#929292" style="mix-blend-mode: multiply;" opacity="0.1" mask="url(#mask-2)" points="1155.75745 3 1155.75745 544 573 544"></polygon>
+            <polygon id="Rectangle-19-Copy-7" fill="#929292" style="mix-blend-mode: multiply;" opacity="0.1" mask="url(#mask-2)" points="1447.75745 3 1447.75745 544 865 544"></polygon>
+            <polygon id="Rectangle-19" fill="#FF4D67" mask="url(#mask-2)" transform="translate(217.474609, 339.533203) scale(-1, 1) translate(-217.474609, -339.533203) " points="439.949219 133 439.949219 546.066406 -5 546.066406"></polygon>
+        </g>
+    </g>
+</svg>
