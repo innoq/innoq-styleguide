@@ -13,7 +13,7 @@
   margin-bottom: $article-margin;
   margin-left: auto;
   padding: $container-spacer-y-sm $container-spacer-x-sm;
-  width: 95%;
+  width: $article-width;
   max-width: $article-main-column-width;
 }
 
@@ -32,13 +32,13 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .content-page-layout {
     padding: 0;
-    width: 80%;
+    width: $article-width-md;
   }
 }
 
 @media screen and (min-width: $grid-breakpoint-lg) {
   .content-page-layout {
-    width: 60%;
+    width: $article-width-lg;
   }
 }
 
@@ -51,7 +51,7 @@
       padding: 0;
       width: 100%;
       max-width: none;
-      grid-template-columns: 1fr 322px 800px 322px 1fr;
+      grid-template-columns: 1fr 322px $article-width-xl 322px 1fr;
       grid-template-rows: auto;
       grid-template-areas: '. left center right .';
       grid-column-gap: $spacer-sm;
