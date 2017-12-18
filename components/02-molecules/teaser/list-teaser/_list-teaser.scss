@@ -2,6 +2,9 @@ $list-teaser-height-sm: ms(20);
 $list-teaser-height-md: ms(20);
 
 .list-teaser {
+  @extend %block-link;
+  @extend %hover-zoom-in;
+  display: block;
   margin-bottom: $spacer-base;
   border-top: 3px solid $list-teaser-border-color;
   background-color: $list-teaser-background-color;
@@ -49,6 +52,8 @@ $list-teaser-height-md: ms(20);
 // List Teaser with Abstract
 // sass-lint:disable nesting-depth
 .list-teaser-abstract {
+  @extend %block-link;
+  @extend %hover-zoom-in;
   margin-bottom: $spacer-base;
   min-height: $list-teaser-height-sm;
 
