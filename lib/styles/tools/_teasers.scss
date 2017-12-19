@@ -1,3 +1,6 @@
+$list-teaser-height-sm: ms(20);
+$list-teaser-height-md: ms(20);
+
 %list-teaser {
   @extend %block-link;
   @extend %hover-zoom-in;

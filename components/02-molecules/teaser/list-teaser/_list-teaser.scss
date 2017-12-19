@@ -1,6 +1,3 @@
-$list-teaser-height-sm: ms(20);
-$list-teaser-height-md: ms(20);
-
 .list-teaser {
   @extend %list-teaser;
   border-top: 3px solid $list-teaser-border-color;
@@ -104,11 +101,13 @@ $list-teaser-height-md: ms(20);
   }
 }
 
+//List Teaser for events
 .list-teaser-event {
+  @extend %list-teaser;
+
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  margin-bottom: $spacer-base;
   background-color: $list-teaser-background-color;
 }
 
