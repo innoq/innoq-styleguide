@@ -10,6 +10,12 @@
   max-width: 50%;
 }
 
+.reference__link {
+  @extend %block-link;
+  @extend %hover-zoom-in;
+  text-align: center;
+}
+
 .reference__description {
   @extend %heading-font-regular;
 
