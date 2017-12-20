@@ -1,6 +1,5 @@
 .label {
   display: inline-block;
-  margin-right: $spacer-xxs;
   margin-bottom: $spacer-xs;
   padding: $spacer-xxs;
   line-height: $label-line-height;
@@ -29,5 +28,11 @@
 
     background-color: $slides-label-background-color;
     color: $slides-label-text-color;
+  }
+}
+//Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+  .label {
+    margin-right: $spacer-xxs;
   }
 }
