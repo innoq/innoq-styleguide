@@ -1,32 +1,37 @@
+$event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spacer-xxs);
+
 .date {
   @extend %heading-font-bold;
   line-height: $date-line-height;
   font-size: $date-font-size;
 }
 
+//Event Date for Teasers
 .event-date-section {
+  display: flex;
+  flex-direction: column;
+  margin-top: -$event-date-section-height;
   background-color: $date-section-background-color;
-  width: 80px;
 }
 
-.one-day {
+.event-date-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.two-days {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
 }
 
 .event-date {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: $spacer-sm;
+}
 
+.event-day-month {
+  display: flex;
+  flex-direction: column;
 }
 
 .event-day {
@@ -40,7 +45,7 @@
 .event-month {
   @extend %heading-font-heavy;
 
-  margin-bottom: $spacer-xxs;
+  margin-bottom: 0;
   text-transform: uppercase;
   line-height: $event-month-line-height;
   color: $date-section-month-color;
@@ -50,9 +55,51 @@
 .event-year {
   @extend %heading-font-regular;
 
-  border-top: 1px solid $date-section-year-color;
-  padding-top: $spacer-xxs;
-  line-height: $event-year-line-height;
+  margin-left: $spacer-xs;
+  border-left: 1px solid $date-section-year-color;
+  padding-left: $spacer-xxs;
+  line-height: 42px;
   color: $date-section-year-color;
   font-size: $event-year-font-size;
+}
+
+.event-date-separator {
+  width: 30px;
+  color: $brand-white;
+}
+
+// Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+
+  .event-date-section {
+    margin-top: 0;
+    width: 80px;
+  }
+
+  .event-date-wrapper {
+    flex-direction: column;
+  }
+
+  .event-date {
+    flex-direction: column;
+  }
+
+  .event-month {
+    margin-bottom: $spacer-xxs;
+  }
+
+  .event-year {
+    margin-left: 0;
+    border-top: 1px solid $date-section-year-color;
+    border-left: 0;
+    padding-top: $spacer-xxs;
+    padding-left: 0;
+    line-height: $event-year-line-height;
+    color: $date-section-year-color;
+    font-size: $event-year-font-size;
+  }
+
+  .event-date-separator {
+    display: none;
+  }
 }

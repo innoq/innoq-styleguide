@@ -1,3 +1,5 @@
+$event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spacer-xxs);
+
 .list-teaser {
   @extend %list-teaser;
   border-top: 3px solid $list-teaser-border-color;
@@ -7,6 +9,14 @@
 .list-teaser__body {
   margin-bottom: 0;
   padding: $spacer-sm $spacer-md;
+
+  & .label {
+    &.talk,
+    &.slides,
+    &.training {
+      display: none;
+    }
+  }
 }
 
 .list-teaser__footer {
@@ -102,13 +112,25 @@
 }
 
 //List Teaser for events
+
 .list-teaser-event {
   @extend %list-teaser;
 
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $event-date-section-height + $spacer-base;
   background-color: $list-teaser-background-color;
+
+  .label {
+    margin-bottom: 0;
+    text-align: center;
+
+    &.training,
+    &.talk {
+      border-left: 0;
+    }
+  }
 }
 
 .list-teaser-event__footer {
@@ -137,8 +159,31 @@
   hyphens: none;
 }
 
+//Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   .list-teaser__footer {
     flex-wrap: nowrap;
+  }
+
+  .list-teaser__body {
+    & .label {
+      &.talk,
+      &.slides,
+      &.training {
+        display: initial;
+      }
+    }
+  }
+
+  .list-teaser-event {
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 0;
+  }
+
+  .event-date-section {
+    .label {
+      display: none;
+    }
   }
 }
