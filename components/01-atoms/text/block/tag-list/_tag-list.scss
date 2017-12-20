@@ -19,6 +19,7 @@
   background: $tag-background-color;
   padding: $spacer-xs $spacer-sm;
 
+  text-transform: lowercase;
   text-decoration: none;
   line-height: $tag-line-height-small;
   color: $tag-text-color;
