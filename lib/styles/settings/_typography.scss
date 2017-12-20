@@ -149,10 +149,14 @@ $duration-font-size: ms(1);               // ~17px
 $date-line-height: $base-line-height;     // ~16px
 $event-day-font-size: ms(7);              // ~30px
 $event-day-line-height: .9;               // ~27px
+$event-day-font-size-small: ms(5);        // ~25px
+$event-day-line-height-small: 1;          // ~34px
 $event-month-font-size: ms(0);            // ~16px
 $event-month-line-height: 1.375;          // ~22px
+$event-month-font-size-small: ms(-1);     // ~14px
+$event-month-line-height-small: 1.57;     // ~22px
 $event-year-font-size: ms(-1);            // ~15px
-$event-year-line-height: 1.27;            // ~19px
+$event-year-line-height: 2.53;            // ~19px
 
 //
 // label
