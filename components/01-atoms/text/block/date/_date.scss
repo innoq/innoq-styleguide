@@ -10,6 +10,7 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
 .event-date-section {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   margin-top: -$event-date-section-height;
   background-color: $date-section-background-color;
 }
@@ -98,13 +99,13 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
     margin-left: 0;
     border-top: 1px solid $date-section-year-color;
     border-left: 0;
-    padding-top: $spacer-xxs;
     padding-left: 0;
     line-height: $event-year-line-height;
     font-size: $event-year-font-size;
   }
 
   .event-date-separator {
-    display: none;
+    transform: rotate(90deg);
+    margin: $spacer-sm 0;
   }
 }

@@ -21,6 +21,10 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
 
 .list-teaser__footer {
   @extend %list-teaser-footer;
+
+  .author-bio {
+    margin-bottom: 0;
+  }
 }
 
 .list-teaser__caption {
@@ -39,8 +43,8 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
   @extend %heading-font-regular;
 
   margin-bottom: $spacer-xs;
-  line-height: $list-teaser-subheadline-line-height;
-  font-size: $list-teaser-subheadline-font-size;
+  line-height: $list-teaser-subheadline-line-height-small;
+  font-size: $list-teaser-subheadline-font-size-small;
 }
 
 // List Teaser with Abstract
@@ -86,17 +90,17 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
 
 .list-teaser-abstract__headline {
   margin-bottom: $spacer-md;
-  line-height: $list-teaser-abstract-headline-line-height;
+  line-height: $list-teaser-abstract-headline-line-height-small;
   color: $list-teaser-abstract-headline-color;
-  font-size: $list-teaser-abstract-headline-font-size;
+  font-size: $list-teaser-abstract-headline-font-size-small;
 }
 
 .list-teaser-abstract__text {
   @extend %heading-font-regular;
 
   margin-bottom: 0;
-  line-height: $list-teaser-abstract-text-line-height;
-  font-size: $list-teaser-abstract-text-font-size;
+  line-height: $list-teaser-abstract-text-line-height-small;
+  font-size: $list-teaser-abstract-text-font-size-small;
 
   &::first-letter {
     @extend %body-font-regular;
@@ -105,8 +109,8 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
     padding-top: 18px;
     padding-right: 12px;
     padding-left: 3px;
-    line-height: 32px;
-    font-size: 70px;
+    line-height: .35;
+    font-size: ms(14);
   }
 }
 
@@ -120,14 +124,18 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
   align-items: center;
   margin-top: $event-date-section-height + $spacer-base;
   background-color: $list-teaser-background-color;
+}
 
-  .label {
-    margin-bottom: 0;
-    text-align: center;
+@media screen and (max-width: $grid-breakpoint-md) {
+  .list-teaser-event {
+    .label {
+      margin-bottom: 0;
+      text-align: center;
 
-    &.training,
-    &.talk {
-      border-left: 0;
+      &.training,
+      &.talk {
+        border-left: 0;
+      }
     }
   }
 }
@@ -164,6 +172,11 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
 //Breakpoints
 //
 @media screen and (min-width: $grid-breakpoint-md) {
+  .list-teaser__subheadline {
+    line-height: $list-teaser-subheadline-line-height;
+    font-size: $list-teaser-subheadline-font-size;
+  }
+
   .list-teaser__footer {
     flex-wrap: nowrap;
   }
@@ -173,8 +186,29 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
       &.talk,
       &.slides,
       &.training {
-        display: initial;
+        display: inline-block;
+        margin-bottom: $spacer-xs;
       }
+    }
+  }
+
+  .list-teaser-abstract__headline {
+    margin-bottom: $spacer-sm;
+    line-height: $list-teaser-abstract-headline-line-height;
+    font-size: $list-teaser-abstract-headline-font-size;
+  }
+
+  .list-teaser-abstract__text {
+    line-height: $list-teaser-abstract-text-line-height;
+    font-size: $list-teaser-abstract-text-font-size;
+
+    &::first-letter {
+      float: left;
+      padding-top: 18px;
+      padding-right: 12px;
+      padding-left: 3px;
+      line-height: .45;
+      font-size: ms(16);
     }
   }
 

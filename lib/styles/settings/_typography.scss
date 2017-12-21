@@ -333,17 +333,26 @@ $footer-directions-link-line-height: 1.69;        // ~23px
 //
 $teaser-caption-font-size: $base-font-size;         // ~16px
 $teaser-caption-line-height: 1.375 ;                // ~22px
+$teaser-caption-font-size-small: ms(-1);            // ~14px
+$teaser-caption-line-height-small: 1.57 ;           // ~22px
 $teaser-text-font-size: $base-font-size;            // ~16px
 $teaser-text-line-height: 1.5 ;                     // ~24px
 $podcast-teaser-subheadline-font-size: ms(2);       // ~20px
 $podcast-teaser-subheadline-line-height: 1.25;      // ~24px
+
 $list-teaser-subheadline-font-size: ms(5);          // ~25px
 $list-teaser-subheadline-line-height: 1.4;          // ~34px
+$list-teaser-subheadline-font-size-small: ms(2);    // ~19px
+$list-teaser-subheadline-line-height-small: 1.37;   // ~26px
 
-$list-teaser-abstract-text-font-size: ms(2);        // ~19px
-$list-teaser-abstract-text-line-height: 1.37;       // ~26px
-$list-teaser-abstract-headline-font-size: ms(9);    // ~35px
-$list-teaser-abstract-headline-line-height: 1.2 ;   // ~42px
+$list-teaser-abstract-headline-font-size: ms(9);          // ~35px
+$list-teaser-abstract-headline-line-height: 1.2 ;         // ~42px
+$list-teaser-abstract-headline-font-size-small: ms(7);    // ~30px
+$list-teaser-abstract-headline-line-height-small: 1.23 ;  // ~37px
+$list-teaser-abstract-text-font-size: ms(2);              // ~19px
+$list-teaser-abstract-text-line-height: 1.37;             // ~26px
+$list-teaser-abstract-text-font-size-small: ms(0);        // ~16px
+$list-teaser-abstract-text-line-height-small: 1.4;       // ~23px
 
 $list-teaser-event-headline-font-size: ms(7);               // ~30px
 $list-teaser-event-headline-line-height: 1.2 ;              // ~36px

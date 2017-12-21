@@ -37,8 +37,8 @@
   @extend %heading-font-bold;
 
   text-transform: uppercase;
-  line-height: $teaser-caption-line-height;
-  font-size: $teaser-caption-font-size;
+  line-height: $teaser-caption-line-height-small;
+  font-size: $teaser-caption-font-size-small;
 }
 
 %teaser-text {
@@ -79,5 +79,16 @@
     &::after {
       width: 100%;
     }
+  }
+}
+
+//
+// Breakpoints
+//
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  %teaser-caption {
+    line-height: $teaser-caption-line-height;
+    font-size: $teaser-caption-font-size;
   }
 }
