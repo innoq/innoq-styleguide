@@ -334,12 +334,20 @@ $podcast-teaser-subheadline-font-size: ms(2);       // ~20px
 $podcast-teaser-subheadline-line-height: 1.25;      // ~24px
 $list-teaser-subheadline-font-size: ms(5);          // ~25px
 $list-teaser-subheadline-line-height: 1.4;          // ~34px
+
 $list-teaser-abstract-text-font-size: ms(2);        // ~19px
 $list-teaser-abstract-text-line-height: 1.37;       // ~26px
 $list-teaser-abstract-headline-font-size: ms(9);    // ~35px
 $list-teaser-abstract-headline-line-height: 1.2 ;   // ~42px
-$list-teaser-event-subheadline-line-height: ms(2);  // ~20px
-$list-teaser-event-subheadline-font-size: 1.25;     // ~25px
+
+$list-teaser-event-headline-font-size: ms(7);               // ~30px
+$list-teaser-event-headline-line-height: 1.2 ;              // ~36px
+$list-teaser-event-headline-font-size-small: ms(4);         // ~23px
+$list-teaser-event-headline-line-height-small: 1.3 ;        // ~30px
+$list-teaser-event-subheadline-line-height: 1.25;           // ~20px
+$list-teaser-event-subheadline-font-size: ms(5);            // ~25px
+$list-teaser-event-subheadline-line-height-small: 1.25;     // ~25px
+$list-teaser-event-subheadline-font-size-small: ms(2);      // ~20px
 
 
 //
