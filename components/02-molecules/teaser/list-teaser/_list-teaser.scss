@@ -160,7 +160,9 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
   hyphens: none;
 }
 
+//
 //Breakpoints
+//
 @media screen and (min-width: $grid-breakpoint-md) {
   .list-teaser__footer {
     flex-wrap: nowrap;

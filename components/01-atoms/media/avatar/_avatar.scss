@@ -28,3 +28,15 @@
   @extend %link-unstyled;
   transform: translateZ(100);
 }
+
+//
+// Breakpoints
+//
+@media screen and (min-width: $grid-breakpoint-md) {
+  .avatar__image {
+    .avatar--sm &,
+    .avatar--small & {
+      width: $avatar-size-md;
+    }
+  }
+}
