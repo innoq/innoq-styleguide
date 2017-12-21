@@ -2,8 +2,8 @@
   display: inline-block;
   margin-bottom: $spacer-xs;
   padding: $spacer-xxs;
-  line-height: $label-line-height;
-  font-size: $label-fonte-size;
+  line-height: $label-line-height-small;
+  font-size: $label-fonte-size-small;
 
   &.talk {
     @extend %heading-font-bold;
@@ -34,5 +34,7 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .label {
     margin-right: $spacer-xxs;
+    line-height: $label-line-height;
+    font-size: $label-fonte-size;
   }
 }
