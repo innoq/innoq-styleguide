@@ -140,3 +140,15 @@ h6 {
     font-size: $teaser-section-headline-font-size;
   }
 }
+
+.section-heading--primary {
+  margin-top: $spacer-xl;
+  margin-bottom: $spacer-base;
+  text-align: center;
+}
+
+.section-heading--secondary {
+  margin-bottom: $spacer-base;
+  border-top: 6px solid $brand-interaction;
+  padding-top: $spacer-sm;
+}
