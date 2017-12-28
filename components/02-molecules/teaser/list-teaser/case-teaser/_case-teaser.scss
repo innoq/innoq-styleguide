@@ -9,6 +9,10 @@ $header-left-offset: -($teaser-inner-padding + $teaser-outer-padding);
 .case-teaser {
   display: flex;
   padding: $teaser-outer-padding;
+
+  &--right-aligned {
+    justify-content: flex-end;
+  }
 }
 
 .case-teaser--punched {
@@ -42,6 +46,15 @@ $header-left-offset: -($teaser-inner-padding + $teaser-outer-padding);
   }
 }
 
+.case-teaser--simple {
+  // TODO: Replace Unsplash with real images.
+  // sass-lint:disable no-url-domains no-url-protocols
+  background: url('https://source.unsplash.com/YXemfQiPR_E/1444x1000') top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 75vh;
+}
+
 .case-teaser__body {
   flex-basis: 100%;
   background-color: $case-teaser-body-bg;
@@ -51,6 +64,8 @@ $header-left-offset: -($teaser-inner-padding + $teaser-outer-padding);
 .case-teaser__text {
   @extend %teaser-text;
   margin-bottom: $spacer-base;
+  line-height: $paragraph-line-height;
+  font-size: $paragraph-font-size;
 }
 
 .case-teaser__header {
