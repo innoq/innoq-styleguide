@@ -70,6 +70,12 @@ $default-btn-margin: $spacer-sm;
     font-size: $button-small-font-size;
   }
 
+  &--condensed {
+    padding: $spacer-xs $spacer-sm;
+    line-height: $button-small-line-height;
+    font-size: $button-small-font-size;
+  }
+
   &--large {
     padding: $spacer-md $spacer-lg;
     line-height: $button-large-line-height;

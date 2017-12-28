@@ -1,0 +1,26 @@
+.simple-teaser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: $spacer-base;
+  background-color: $simple-teaser-bg;
+  padding: $spacer-base;
+
+  &__body {
+    &,
+    & > * {
+      color: $simple-teaser-color;
+    }
+  }
+
+  &__footer {
+    transform: translateY(calc(120%));
+  }
+}
+
+//
+// Breakpoints
+//
+@media screen and (min-width: $grid-breakpoint-md) {
+  margin-bottom: 0;
+}
