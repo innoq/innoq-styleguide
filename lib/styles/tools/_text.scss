@@ -48,6 +48,13 @@
   font-size: $teaser-text-font-size;
 }
 
+%teaser-text-italic {
+  @extend %body-font-italic;
+
+  line-height: $teaser-text-line-height;
+  font-size: $teaser-text-font-size;
+}
+
 
 // Should only be used, when placeholder is overridden by normalize.
 @mixin list-unstyled {
