@@ -1,6 +1,6 @@
 {
   "name": "innoq-styleguide",
-  "version": "0.3.26",
+  "version": "0.3.27",
   "description": "INNOQ's Styleguide and Component Library",
   "license": "Copyright 2017 INNOQ Deutschland GmbH",
   "repository": {
@@ -15,7 +15,8 @@
     "compile-watch": "npm run compile -- --watch",
     "test": "eslint --cache --ext .js --ext .jsx . && sass-lint -v -q",
     "site": "yarn run compile && fractal build",
-    "dist": "./scripts/dist"
+    "dist": "./scripts/dist",
+    "release": "release-it"
   },
   "dependencies": {
     "modularscale-sass": "^3.0.3"
