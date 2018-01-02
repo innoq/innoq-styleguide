@@ -2,6 +2,8 @@ $content-teaser-height-sm: ms(30);
 $content-teaser-height-md: ms(37);
 
 .content-teaser {
+  @extend %block-link;
+  @extend %hover-zoom-in;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
