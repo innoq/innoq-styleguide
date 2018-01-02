@@ -60,12 +60,12 @@ with "YES" here.
 
 ### Patch level version (auto increment)
 
-    $ release-it
+    $ yarn release
 
 ### Minor
 
-    $ release-it minor
+    $ yarn release -- minor
 
 ### Major
 
-    $ release-it major
+    $ yarn release -- major
