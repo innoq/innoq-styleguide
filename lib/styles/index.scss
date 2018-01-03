@@ -27,6 +27,8 @@
 @import 'tools/author';
 @import 'tools/visibility';
 @import 'tools/teasers';
+@import 'tools/background-colors';
+
 
 
 //
@@ -134,7 +136,8 @@
 @import '../components/02-molecules/teaser/list-teaser/simple-teaser/simple-teaser';
 @import '../components/02-molecules/teaser/tile-teaser/podcast-teaser/podcast-teaser';
 @import '../components/02-molecules/teaser/tile-teaser/content-teaser/content-teaser';
-@import '../components/02-molecules/teaser/tile-teaser/simple-teaser/simple-teaser';
+@import '../components/02-molecules/teaser/tile-teaser/event-tile-teaser/event-tile-teaser';
+@import '../components/02-molecules/teaser/tile-teaser/simple-tile-teaser/simple-tile-teaser';
 
 // Navbar
 @import '../components/02-molecules/navbar/navbar';
@@ -172,6 +175,7 @@
 @import '../components/04-pages/article-page/article-page';
 @import '../components/04-pages/aggregator-page/aggregator-page';
 @import '../components/04-pages/podcast-page/podcast-page';
+@import '../components/04-pages/landing-page/landing-page';
 
 //
 // Trumps
