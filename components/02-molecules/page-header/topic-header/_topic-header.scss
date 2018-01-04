@@ -18,6 +18,7 @@ $topic-header-left-offset: -($topic-header-inner-padding + $topic-header-outer-p
     align-items: center;
     background-color: $standard-header-intro-bg;
     padding: $topic-header-inner-padding;
+    width: 100%;
     color: $brand-text;
   }
 
