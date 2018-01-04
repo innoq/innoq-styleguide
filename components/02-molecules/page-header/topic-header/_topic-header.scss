@@ -2,31 +2,31 @@ $topic-header-bg-width: 1444px; // Arbitrary value
 $topic-header-bg-height: 1000px; // Arbitrary value
 
 $topic-header-outer-padding: $spacer-lg;
+$topic-header-outer-padding-small: $spacer-sm;
 $topic-header-inner-padding: $spacer-base;
-$topic-header-top-offset: -($topic-header-inner-padding + $topic-header-outer-padding + $spacer-md + $spacer-sm);
-$topic-header-left-offset: -($topic-header-inner-padding + $topic-header-outer-padding);
 
 .topic-header {
   display: flex;
   background-repeat: no-repeat;
-  background-position: top left;
-  padding: $topic-header-outer-padding;
+  background-position: center;
+  padding: $topic-header-outer-padding $topic-header-outer-padding-small;
 
   &__body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
     background-color: $standard-header-intro-bg;
     padding: $topic-header-inner-padding;
-    width: 100%;
+    max-width: $landing-page-content-width;
     color: $brand-text;
   }
 
   &__punch-in {
     background-clip: text;
-    background-position: top $topic-header-top-offset left $topic-header-left-offset;
-    background-size: $topic-header-bg-width $topic-header-bg-height;
+    background-position: center;
     color: $brand-text;
+
 
     // sass-lint:disable no-vendor-prefixes
     -webkit-background-clip: text;
@@ -72,6 +72,10 @@ $topic-header-left-offset: -($topic-header-inner-padding + $topic-header-outer-p
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
+  .topic-header {
+    padding: $topic-header-outer-padding;
+  }
+
   .topic-header__title {
     line-height: $standard-header-title-line-height;
     font-size: $standard-header-title-font-size;
