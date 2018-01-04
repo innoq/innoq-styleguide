@@ -52,8 +52,11 @@
 }
 
 .standard-header__intro {
+  display: flex;
   position: relative;
   top: $spacer-lg;
+  flex-direction: column;
+  align-items: center;
   margin-top: $spacer-md;
   background-color: $standard-header-intro-bg;
   padding: $spacer-md;
