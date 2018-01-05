@@ -82,13 +82,16 @@ h6 {
   }
 }
 
-.teaser-section-headline {
+.teaser-section-heading {
   @extend %h2;
 
-  margin-bottom: $spacer-base;
+  margin: 0 auto $spacer-base;
+  border-bottom: 4px solid $brand-text;
+  width: max-content;
   text-align: center;
-  line-height: $teaser-section-headline-line-height-small;
-  font-size: $teaser-section-headline-font-size-small;
+  text-transform: uppercase;
+  line-height: $teaser-section-heading-line-height-small;
+  font-size: $teaser-section-heading-font-size-small;
 }
 
 
@@ -134,10 +137,10 @@ h6 {
     font-size: $h6-font-size;
   }
 
-  .teaser-section-headline {
+  .teaser-section-heading {
     margin-bottom: $spacer-lg;
-    line-height: $teaser-section-headline-line-height;
-    font-size: $teaser-section-headline-font-size;
+    line-height: $teaser-section-heading-line-height;
+    font-size: $teaser-section-heading-font-size;
   }
 }
 
