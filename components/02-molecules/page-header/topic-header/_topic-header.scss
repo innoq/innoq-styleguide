@@ -96,3 +96,9 @@ $topic-header-inner-padding: $spacer-base;
     font-size: $standard-header-intro-font-size;
   }
 }
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .topic-header__body {
+    max-width: 70%;
+  }
+}
