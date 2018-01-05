@@ -27,8 +27,6 @@
   }
 
   .service-intro {
-    border-right: 1px solid $brand-gray-50;
-    padding: 0 $spacer-lg;
     grid-column: span 2;
 
     // &:nth-of-type(4) {
@@ -46,8 +44,12 @@
     //   grid-row: 2;
     // }
 
+    &:nth-child(4n+1) {
+      margin-right: $spacer-lg;
+    }
+
     &:nth-child(3n) {
-      border-right: 0;
+      margin-left: $spacer-lg;
     }
 
     & + & {
