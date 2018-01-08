@@ -24,33 +24,11 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-row-gap: $spacer-lg;
+    grid-column-gap: $spacer-lg;
   }
 
   .service-intro {
     grid-column: span 2;
-
-    // &:nth-of-type(4) {
-    //   // sass-lint:disable no-important
-    //   border-left: 0 !important;
-    //   grid-column-start: 2;
-    //   grid-column-end: 4;
-    //   grid-row: 2;
-    //
-    // }
-    //
-    // &:nth-of-type(5) {
-    //   grid-column-start: 4;
-    //   grid-column-end: 6;
-    //   grid-row: 2;
-    // }
-
-    &:nth-child(4n+1) {
-      margin-right: $spacer-lg;
-    }
-
-    &:nth-child(3n) {
-      margin-left: $spacer-lg;
-    }
 
     & + & {
       margin-top: 0;
