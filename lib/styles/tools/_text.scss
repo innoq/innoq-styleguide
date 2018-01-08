@@ -31,6 +31,20 @@
   }
 }
 
+%definition-list {
+  dt {
+    @extend %heading-font-bold;
+    margin-bottom: 0;
+    line-height: $definition-list-line-height;
+    font-size: $definition-list-font-size;
+  }
+
+  dd {
+    @extend %body-font-regular;
+    line-height: $definition-list-line-height;
+    font-size: $definition-list-font-size;
+  }
+}
 // Headlines & Text
 
 %teaser-caption {

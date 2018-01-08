@@ -1,0 +1,24 @@
+.date-location-section {
+  @extend %definition-list;
+  margin-bottom: $spacer-sm;
+  border-top: 1px solid $date-location-section-border-color;
+  border-bottom: 1px solid $date-location-section-border-color;
+  padding-top: $spacer-sm;
+
+  dd {
+    @extend %heading-font-regular;
+    margin-bottom: $spacer-sm;
+    text-transform: uppercase;
+  }
+
+  dd,
+  dt {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .date-location-section {
+    margin-bottom: $spacer-xl;
+  }
+}

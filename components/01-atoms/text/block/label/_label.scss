@@ -3,6 +3,7 @@
   padding: $spacer-xxs;
   line-height: $label-line-height-small;
   font-size: $label-fonte-size-small;
+  hyphens: none;
 
   &.talk {
     @extend %heading-font-bold;

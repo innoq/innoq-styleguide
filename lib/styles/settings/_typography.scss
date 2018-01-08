@@ -74,10 +74,10 @@ $h6-font-size-small: ms(0);               // ~16px
 $h6-line-height: $heading-line-height;    // 19px
 
 // Teaser Section Headline
-$teaser-section-heading-line-height: 1.36; // ~34px
-$teaser-section-heading-font-size: ms(5); // ~25px
-$teaser-section-heading-line-height-small: 1.43; // ~30px
-$teaser-section-heading-font-size-small: ms(3); // ~21px
+$teaser-section-heading-line-height: 1.36;          // ~34px
+$teaser-section-heading-font-size: ms(5);           // ~25px
+$teaser-section-heading-line-height-small: 1.43;    // ~30px
+$teaser-section-heading-font-size-small: ms(3);     // ~21px
 
 
 //
@@ -115,8 +115,8 @@ $ordered-list-line-height-small: $base-line-height;       // ~26px
 $ordered-list-counter-font-size: ms(2);                   // ~19px
 $ordered-list-counter-font-size-small: ms(1);             // ~16px
 $ordered-list-counter-line-height: $base-line-height;     // ~29px
-$definition-list-font-size: ms(3);                        // ~20px
-$definition-list-line-height: $base-line-height;          // ~26px
+$definition-list-font-size: ms(0);                        // ~16px
+$definition-list-line-height: 1.56;                       // ~25px
 
 
 //
@@ -130,6 +130,12 @@ $paragraph-lead-font-size: ms(5);                         // ~25px
 $paragraph-lead-font-size-small: ms(2);                   // ~21px
 $paragraph-lead-line-height: $base-line-height;           // ~38px
 $paragraph-lead-line-height-small: $base-line-height;     // ~29px
+
+$talk-description-line-height: 1.52;        // ~38px
+$talk-description-font-size: ms(5);         // ~25px
+$talk-description-line-height-small: 1.62;  // ~34px
+$talk-description-font-size-small: ms(3);   // ~21px
+
 
 //
 // Code

@@ -1,4 +1,4 @@
-// ---- List related variables--------------------------------------------------
+  // ---- List related variables--------------------------------------------------
 $bullet-size: $spacer-xs; // ~9px
 $bullet-offset: $spacer-sm; // ~16px
 $checklist-icon-size: 1.9875rem; // Determined by the hard science of pushing things around
@@ -103,18 +103,7 @@ ol:not([class]) {
 //
 // TODO: Finalize when layout is available
 dl:not([class]) {
-  dt {
-    @extend %heading-font-bold;
-    margin-bottom: $spacer-xs;
-    line-height: $bullet-list-line-height;
-    font-size: $definition-list-font-size;
-  }
-
-  dd {
-    @extend %body-font-regular;
-    line-height: $bullet-list-line-height;
-    font-size: $definition-list-font-size;
-  }
+  @extend %definition-list;
 }
 
 

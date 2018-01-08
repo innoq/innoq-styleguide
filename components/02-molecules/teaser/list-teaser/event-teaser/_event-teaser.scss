@@ -60,11 +60,11 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
     flex-direction: row;
     align-items: stretch;
     margin-top: 0;
-  }
 
-  .event-date-section {
-    .label {
-      display: none;
+    .event-date-section {
+      .label {
+        display: none;
+      }
     }
   }
 
