@@ -39,9 +39,11 @@
 }
 
 .talk-description {
-  @extend %body-font-italic;
-  line-height: $talk-description-line-height-small;
-  font-size: $talk-description-font-size-small;
+  & > * {
+    @extend %body-font-italic;
+    line-height: $talk-description-line-height-small;
+    font-size: $talk-description-font-size-small;
+  }
 }
 
 // Breakpoints
