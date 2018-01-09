@@ -54,7 +54,7 @@
       grid-template-columns: 1fr 322px $article-width-xl 322px 1fr;
       grid-template-rows: auto;
       grid-template-areas: '. left center right .';
-      grid-column-gap: $spacer-sm;
+      grid-column-gap: 0;
 
       > * {
         grid-row: auto;
