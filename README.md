@@ -64,8 +64,8 @@ with "YES" here.
 
 ### Minor
 
-    $ yarn release -- minor
+    $ yarn release minor
 
 ### Major
 
-    $ yarn release -- major
+    $ yarn release major
