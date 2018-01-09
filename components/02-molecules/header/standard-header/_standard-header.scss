@@ -60,8 +60,8 @@
   margin-top: $spacer-md;
   background-color: $standard-header-intro-bg;
   padding: $spacer-md;
-  width: $article-width;
-  max-width: $article-width-xl;
+  width: $grid-page-layout-content-with;
+  max-width: $grid-page-layout-content-with-xl;
   box-sizing: content-box;
 }
 
@@ -110,7 +110,7 @@
   .standard-header__intro {
     top: $spacer-xxl;
     padding: $spacer-lg;
-    width: $article-width-md;
+    width: $grid-page-layout-content-with-md;
   }
 
   .standard-header__intro__text {
@@ -126,12 +126,12 @@
 
 @media screen and (min-width: $grid-breakpoint-lg) {
   .standard-header__intro {
-    width: $article-width-lg;
+    width: $grid-page-layout-content-with-lg;
   }
 }
 
 @media screen and (min-width: $grid-breakpoint-xl) {
   .standard-header__intro {
-    width: $article-width-xl;
+    width: $grid-page-layout-content-with-xl;
   }
 }

@@ -31,23 +31,29 @@ $content-spacer-base: $spacer-base; // for all basic block elements, e.g. paragr
 
 
 //
+// Default Page Layout
+//
+$default-page-layout-content-width: 90.25rem;     // ~1444px, full-width
+$default-page-layout-width: 95%;
+$default-page-layout-margin: $spacer-md;
+
+
+//
+// Grid Page Layout
+//
+$grid-page-layout-with: 90.25rem;     // ~1444px, full-width, including table of contents
+$grid-page-layout-main-column-width: 50rem; // ~800px, main column, just for the text
+$grid-page-layout-margin: $spacer-md;
+$grid-page-layout-content-with: 95%;
+$grid-page-layout-content-with-md: 80%;
+$grid-page-layout-content-with-lg: 60%;
+$grid-page-layout-content-with-xl: 800px;
+
+//
 // Article
 //
-$article-grid-width: 90.25rem;     // ~1444px, full-width, including table of contents
-$article-main-column-width: 50rem; // ~800px, main column, just for the text
-$article-margin: $spacer-md;
 $article-intro-margin: $spacer-lg;
-$article-width: 95%;
-$article-width-md: 80%;
-$article-width-lg: 60%;
-$article-width-xl: 800px;
 
-
-//
-// Landing Page
-//
-$landing-page-content-width: 90.25rem;     // ~1444px, full-width, including table of contents
-$landing-page-width: 95%;
 
 //
 // Avatars

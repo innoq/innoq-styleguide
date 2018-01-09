@@ -3,12 +3,12 @@
 //
 
 .teaser-page-layout {
-  margin-top: $article-margin;
+  margin-top: $grid-page-layout-margin;
   margin-right: auto;
-  margin-bottom: $article-margin;
+  margin-bottom: $grid-page-layout-margin;
   margin-left: auto;
   width: 95%;
-  max-width: $article-grid-width;
+  max-width: $grid-page-layout-with;
 }
 
 .podcast-grid {

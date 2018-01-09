@@ -1,0 +1,9 @@
+.page-layout--default {
+  margin-top: $default-page-layout-margin;
+  margin-right: auto;
+  margin-bottom: $default-page-layout-margin;
+  margin-left: auto;
+  padding: $container-spacer-y-sm $container-spacer-x-sm;
+  width: $default-page-layout-width;
+  max-width: $default-page-layout-content-width;
+}

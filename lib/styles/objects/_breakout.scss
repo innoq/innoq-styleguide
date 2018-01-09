@@ -9,7 +9,7 @@
 
 .breakout__content {
   width: 95%;
-  max-width: $article-main-column-width;
+  max-width: $grid-page-layout-main-column-width;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -33,7 +33,7 @@
     .breakout__content {
       display: grid;
       width: 100%;
-      grid-template-columns: 1fr $article-main-column-width 1fr;
+      grid-template-columns: 1fr $grid-page-layout-main-column-width 1fr;
 
       // All content elements are placed on the center column.
       > * {

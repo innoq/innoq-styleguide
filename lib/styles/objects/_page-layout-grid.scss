@@ -8,13 +8,13 @@
 
   // If the browser does not support grid, we use a simple layout:
   // One column centered in the middle of the page.
-  margin-top: $article-margin;
+  margin-top: $grid-page-layout-margin;
   margin-right: auto;
-  margin-bottom: $article-margin;
+  margin-bottom: $grid-page-layout-margin;
   margin-left: auto;
   padding: $container-spacer-y-sm $container-spacer-x-sm;
-  width: $article-width;
-  max-width: $article-main-column-width;
+  width: $grid-page-layout-content-with;
+  max-width: $grid-page-layout-main-column-width;
 }
 
 .center {
@@ -32,13 +32,13 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .page-layout--grid {
     padding: 0;
-    width: $article-width-md;
+    width: $grid-page-layout-content-with-md;
   }
 }
 
 @media screen and (min-width: $grid-breakpoint-lg) {
   .page-layout--grid {
-    width: $article-width-lg;
+    width: $grid-page-layout-content-with-lg;
   }
 }
 
@@ -51,7 +51,7 @@
       padding: 0;
       width: 100%;
       max-width: none;
-      grid-template-columns: 1fr 322px $article-width-xl 322px 1fr;
+      grid-template-columns: 1fr 322px $grid-page-layout-content-with-xl 322px 1fr;
       grid-template-rows: auto;
       grid-template-areas: '. left center right .';
       grid-column-gap: $spacer-sm;
