@@ -2,9 +2,9 @@
 // Content page layout
 //
 
-// The page-layout-grid layout is setup as two nested grids that consits of
+// The page-layout--grid layout is setup as two nested grids that consits of
 // three columns each.
-.page-layout-grid {
+.page-layout--grid {
 
   // If the browser does not support grid, we use a simple layout:
   // One column centered in the middle of the page.
@@ -30,21 +30,21 @@
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
-  .page-layout-grid {
+  .page-layout--grid {
     padding: 0;
     width: $article-width-md;
   }
 }
 
 @media screen and (min-width: $grid-breakpoint-lg) {
-  .page-layout-grid {
+  .page-layout--grid {
     width: $article-width-lg;
   }
 }
 
 @supports (display: grid) {
   @media screen and (min-width: $grid-breakpoint-xl) {
-    .page-layout-grid {
+    .page-layout--grid {
       display: grid;
       margin-right: 0;
       margin-left: 0;
