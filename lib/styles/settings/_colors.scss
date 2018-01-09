@@ -1,45 +1,54 @@
 //
-// Brand Colors
+// Brand Colors (final)
 //
 
 // INNOQ Blue
-$brand-blue:    #24244c; // Final color
-$brand-blue-75: #5b5b79; // Final color
-$brand-blue-50: #9191a5; // Final color
-$brand-blue-25: #c8c8d2; // Final color
-$brand-blue-transparent: rgba($brand-blue, .5); // Final color
+$brand-blue:    #24244c;
+$brand-blue-75: #5b5b79;
+$brand-blue-50: #9191a5;
+$brand-blue-25: #c8c8d2;
+$brand-blue-transparent: rgba($brand-blue, .5);
 
 // INNOQ Red
 $brand-red:    #ff4d67; // Final Color
-$brand-red-75: #fc6e86; // Final color
-$brand-red-50: #fd9eae; // Final color
-$brand-red-25: #feced6; // Final color
-$brand-red-transparent: rgba($brand-red, .8); // Final color
+$brand-red-75: #fc6e86;
+$brand-red-50: #fd9eae;
+$brand-red-25: #feced6;
+$brand-red-transparent: rgba($brand-red, .8);
 
 // INNOQ Green
-$brand-green:    #55cdaf; // Final color
-$brand-green-75: #68ddc3; // Final color
-$brand-green-50: #9ae8d7; // Final color
-$brand-green-25: #ccf3eb; // Final color
-$brand-green-transparent: rgba($brand-green, .2); // Final color
+$brand-green:    #55cdaf;
+$brand-green-75: #68ddc3;
+$brand-green-50: #9ae8d7;
+$brand-green-25: #ccf3eb;
+$brand-green-transparent: rgba($brand-green, .2);
 
 // INNOQ Yellow
-$brand-yellow:    #fff019; // Final color
-$brand-yellow-75: #fff87a; // Final color
-$brand-yellow-50: #fffb9f; // Final color
-$brand-yellow-25: #fffdbe; // Final color
+$brand-yellow:    #fff019;
+$brand-yellow-75: #fff87a;
+$brand-yellow-50: #fffb9f;
+$brand-yellow-25: #fffdbe;
 $brand-yellow-transparent: rgba($brand-yellow, .2);
 
 // INNOQ Gray
-$brand-gray:    #242424; // Final color
-$brand-gray-75: #646465; // Final color
-$brand-gray-50: #979798; // Final color
-$brand-gray-25: #d8d8d8; // Final color
-$brand-gray-20: #f4f4f4; // Final color
-$brand-gray-10: #f7f7f7; // Final color
+$brand-gray:    #242424;
+$brand-gray-75: #646465;
+$brand-gray-50: #979798;
+$brand-gray-25: #d8d8d8;
+$brand-gray-20: #f4f4f4;
+$brand-gray-10: #f7f7f7;
 $brand-gray-transparent: rgba(36, 36, 36, .49);
 
 // INNOQ White
 $brand-white: #fff;
 
+
+//
+// Additional colors
+//
+
+// State colors
 $brand-danger: #f00;
+
+// Gradients and Shadows
+$box-shadow-default: 0 4px 6px rgba(0, 0, 0, .3);
