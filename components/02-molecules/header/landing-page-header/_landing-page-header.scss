@@ -69,11 +69,11 @@ $gradient-stencil: rgba(0, 0, 0, .5);
 }
 
 .landing-page-header {
-  background-image: url('/static/visual-header-landing-page.png');
+  background-image: url('/static/visual-header-landing-page.jpg');
 }
 
 .landing-page-header-1440 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil), url('/static/visual-header-landing-page.png');
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil), url('/static/visual-header-landing-page.jpg');
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
