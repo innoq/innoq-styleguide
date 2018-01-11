@@ -134,15 +134,16 @@
 
 
 // Teaser Molecules
-@import '../components/02-molecules/teaser/list-teaser/abstract-teaser/abstract-teaser';
-@import '../components/02-molecules/teaser/list-teaser/case-teaser/case-teaser';
-@import '../components/02-molecules/teaser/list-teaser/topic-teaser/topic-teaser';
-@import '../components/02-molecules/teaser/list-teaser/event-teaser/event-teaser';
+@import '../components/02-molecules/teaser/list-teaser/abstract-list-teaser/abstract-list-teaser';
+@import '../components/02-molecules/teaser/list-teaser/case-list-teaser/case-list-teaser';
+@import '../components/02-molecules/teaser/list-teaser/event-list-teaser/event-list-teaser';
 @import '../components/02-molecules/teaser/list-teaser/podcast-list-teaser/podcast-list-teaser';
-@import '../components/02-molecules/teaser/list-teaser/simple-teaser/simple-teaser';
-@import '../components/02-molecules/teaser/tile-teaser/podcast-teaser/podcast-teaser';
-@import '../components/02-molecules/teaser/tile-teaser/content-teaser/content-teaser';
+@import '../components/02-molecules/teaser/list-teaser/simple-list-teaser/simple-list-teaser';
+@import '../components/02-molecules/teaser/list-teaser/topic-list-teaser/topic-list-teaser';
+
+@import '../components/02-molecules/teaser/tile-teaser/content-tile-teaser/content-tile-teaser';
 @import '../components/02-molecules/teaser/tile-teaser/event-tile-teaser/event-tile-teaser';
+@import '../components/02-molecules/teaser/tile-teaser/podcast-tile-teaser/podcast-tile-teaser';
 @import '../components/02-molecules/teaser/tile-teaser/simple-tile-teaser/simple-tile-teaser';
 
 // Navbar
