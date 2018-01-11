@@ -1,9 +1,1 @@
 status: wip
-context:
-  code: |
-      pick(:love) do |something|
-          n.times do
-              result = play(something)
-              result.publish
-          end
-      end
