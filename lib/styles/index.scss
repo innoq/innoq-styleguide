@@ -127,15 +127,18 @@
 @import '../components/02-molecules/date-location-section/date-location-section';
 
 // Header Molecules
-@import '../components/02-molecules/header/topic-header/topic-header';
-@import '../components/02-molecules/header/standard-header/standard-header';
 @import '../components/02-molecules/header/landing-page-header/landing-page-header';
+@import '../components/02-molecules/header/staff-header/staff-header';
+@import '../components/02-molecules/header/standard-header/standard-header';
+@import '../components/02-molecules/header/topic-header/topic-header';
+
 
 // Teaser Molecules
 @import '../components/02-molecules/teaser/list-teaser/abstract-teaser/abstract-teaser';
 @import '../components/02-molecules/teaser/list-teaser/case-teaser/case-teaser';
 @import '../components/02-molecules/teaser/list-teaser/topic-teaser/topic-teaser';
 @import '../components/02-molecules/teaser/list-teaser/event-teaser/event-teaser';
+@import '../components/02-molecules/teaser/list-teaser/podcast-list-teaser/podcast-list-teaser';
 @import '../components/02-molecules/teaser/list-teaser/simple-teaser/simple-teaser';
 @import '../components/02-molecules/teaser/tile-teaser/podcast-teaser/podcast-teaser';
 @import '../components/02-molecules/teaser/tile-teaser/content-teaser/content-teaser';
@@ -183,6 +186,7 @@
 @import '../components/04-pages/booking-page/booking-page';
 @import '../components/04-pages/landing-page/landing-page';
 @import '../components/04-pages/podcast-page/podcast-page';
+@import '../components/04-pages/staff-page/staff-page';
 @import '../components/04-pages/talk-page/talk-page';
 @import '../components/04-pages/training-page/training-page';
 @import '../components/04-pages/trainings-page/trainings-page';

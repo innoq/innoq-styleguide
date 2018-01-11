@@ -81,10 +81,10 @@ $teaser-section-heading-line-height-small: 1.43;    // ~30px
 $teaser-section-heading-font-size-small: ms(3);     // ~21px
 
 // Teaser Section Headline - Very big
-$teaser-section-headline-line-height: 1.21; //~58px
-$teaser-section-headline-font-size: ms(12); // ~50px
-$teaser-section-headline-line-height-small: 1.21; //~43px
-$teaser-section-headline-font-size-small: ms(9); // ~36 px
+$teaser-section-headline-line-height: 1.21;         // ~58px
+$teaser-section-headline-font-size: ms(12);         // ~50px
+$teaser-section-headline-line-height-small: 1.21;   // ~43px
+$teaser-section-headline-font-size-small: ms(9);    // ~36px
 
 
 //
@@ -411,6 +411,27 @@ $landing-page-header-title-font-size: ms(11);         // ~45px
 $landing-page-header-title-font-size-small: ms(11);   // ~TODO
 $landing-page-header-title-line-height: 1.15;         // ~52px
 $landing-page-header-title-line-height-small: 1.15;   // ~TODO
+
+$staff-page-header-quote-font-size: ms(16);                         // ~70px
+$staff-page-header-quote-font-size-small: ms(10);                   // ~39px
+$staff-page-header-quote-line-height: 1.07;                         // ~73px
+$staff-page-header-quote-line-height-small: $heading-line-height;   // ~57px
+$staff-page-header-quote-author-line-height: 1.375;                 // ~22px
+$staff-page-header-quote-author-font-size: ms(0);                   // ~16px
+$staff-page-header-quote-author-line-height-small: 1.46;            // ~22px
+$staff-page-header-quote-author-font-size-small: ms(-2);            // ~13px
+$staff-page-header-intro-name-font-size: ms(9);                     // ~35px
+$staff-page-header-intro-name-line-height: 1.68;                    // ~42px
+$staff-page-header-intro-name-font-size-small: ms(7);               // ~30px
+$staff-page-header-intro-name-line-height-small: 1.3;               // ~37px
+$staff-page-header-intro-job-title-line-height: 1.52;               // ~38px
+$staff-page-header-intro-job-title-font-size: ms(5);                // ~25px
+$staff-page-header-intro-job-title-line-height-small: 1.62;         // ~34px
+$staff-page-header-intro-job-title-font-size-small: ms(3);          // ~21px
+$staff-page-header-intro-text-line-height: 1.36;                    // ~34px
+$staff-page-header-intro-text-font-size: ms(5);                     // ~25px
+$staff-page-header-intro-text-line-height-small: 1.43;              // ~30px
+$staff-page-header-intro-text-font-size-small: ms(3);               // ~21px
 
 // Service Intros
 $service-intro-header-font-size: $h1-font-size-small;  // 36px (~35px)
