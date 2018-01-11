@@ -1,0 +1,93 @@
+.talk-page {
+  .tag-section {
+    margin-bottom: $spacer-sm;
+  }
+
+  .teaser-section-heading {
+    margin-bottom: $spacer-xxl;
+  }
+
+  .author-bio {
+    &.author-bio--long {
+      margin-bottom: $spacer-sm;
+    }
+  }
+
+  .talk-link {
+    text-align: center;
+  }
+}
+
+.talk-date {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: $spacer-md;
+
+  .label {
+    margin: 0;
+    border-left: 0;
+    text-align: center;
+    }
+  }
+
+.talk-title {
+  @extend %h1;
+
+  margin-bottom: $spacer-md;
+}
+
+.talk-description {
+  & > * {
+    @extend %body-font-italic;
+    line-height: $talk-description-line-height-small;
+    font-size: $talk-description-font-size-small;
+  }
+}
+
+// Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+  .talk-page {
+    .tag-section {
+      margin-bottom: $spacer-md;
+    }
+
+    .teaser-section-heading {
+      margin-bottom: $spacer-md;
+    }
+
+    .author-bio {
+      &.author-bio--long {
+        margin-bottom: $spacer-base;
+      }
+    }
+  }
+
+  .talk-date {
+    margin-bottom: $spacer-lg;
+
+    .event-date-section {
+      width: 40%;
+    }
+  }
+
+  .talk-description {
+    line-height: $talk-description-line-height;
+    font-size: $talk-description-font-size;
+  }
+}
+
+
+@media screen and (min-width: $grid-breakpoint-xl) {
+  .talk-date {
+    align-items: flex-end;
+    margin-right: $spacer-md;
+    margin-bottom: 0;
+
+    .event-date-section,
+    .label {
+      width: 96px;
+    }
+  }
+}

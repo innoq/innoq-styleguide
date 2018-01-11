@@ -13,7 +13,6 @@
 
 .podcast-grid {
   display: grid;
-  // overflow: hidden;
   grid-template-columns: 1fr;
   grid-gap: $spacer-sm;
   grid-auto-rows: 1fr;
