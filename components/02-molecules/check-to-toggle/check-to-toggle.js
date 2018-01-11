@@ -4,21 +4,21 @@ export default class CheckToToggle extends HTMLElement {
   }
 
   get checkbox () {
-    return this.querySelector(".check-to-toggle__checkbox")
+    return this.querySelector('.check-to-toggle__checkbox')
   }
 
   get target () {
-    const selector = this.getAttribute("target")
+    const selector = this.getAttribute('target')
     return document.querySelector(selector)
   }
 
   toggle () {
     if (this.checkbox.checked) {
       console.log(this.target)
-      this.target.classList.add("hidden")
+      this.target.classList.add('hidden')
     } else {
       console.log(this.target)
-      this.target.classList.remove("hidden")
+      this.target.classList.remove('hidden')
     }
   }
 }
