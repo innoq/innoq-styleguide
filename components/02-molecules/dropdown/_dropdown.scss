@@ -1,14 +1,15 @@
-.dropdown {
-  display: inline-block;
-  position: relative;
-}
+// sass-lint:disable force-pseudo-nesting
+
+// .dropdown {
+// display: inline-block;
+// position: relative; // positioning must happen through parent container
+// }
 
 .dropdown__toggle {
   display: inline-block;
   cursor: pointer;
 }
 
-// sass-lint:disable force-pseudo-nesting
 .dropdown__checkbox:focus + .dropdown__toggle {
   outline: none;
   color: $dropdown-link-hover-color;
@@ -34,22 +35,14 @@
   display: block;
 }
 
-[data-menu-origin='right'] {
-  right: 0;
-  left: auto;
-}
-
 .dropdown__list-wrapper {
-  @extend %heading-font-regular;
   display: none;
   position: absolute;
-  left: -$spacer-md;
-  margin-top: .125rem; // FIXME: Avoid obstructing certain low hanging letters like "g"
-  background-color: $dropdown-menu-body-bg;
-  padding: ($spacer-md - .125rem) $spacer-md $spacer-md;
 
-  &--transparent {
-    background-color: transparent;
+  &[data-origin='right'] {
+    right: -$spacer-md;
+    left: auto;
+    text-align: right;
   }
 }
 
@@ -59,8 +52,6 @@
 }
 
 .dropdown__link {
-  display: block;
-  margin-top: $spacer-md;
   min-width: 100%;
   white-space: nowrap;
 }

@@ -1,3 +1,5 @@
+// sass-lint:disable force-pseudo-nesting
+
 $navbar-padding: $spacer-md;
 
 $navbar-min-width: 40rem; // a guess
@@ -8,8 +10,6 @@ $navbar-brandbar-height: $navbar-logo-height + 2 * $navbar-padding;
 $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small screens
 
 .navbar {
-  display: flex;
-  justify-content: space-between;
   background-color: $navbar-body-bg;
   color: $navbar-link-color;
 
@@ -25,21 +25,25 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: flex-end;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $grid-page-layout-with;
 }
 
 .navbar__link,
 .navbar__meta-link {
+  display: inline;
   position: relative;
   transition: $standard-transition;
   text-decoration: none;
   color: $navbar-link-color;
+  hyphens: none;
 
   &--active {
     &::after {
       display: block;
       position: absolute;
-      // bottom: - $spacer-sm + .0625rem;
-      bottom: -14px; // magic number :/
+      bottom: 0;
       background-color: $navbar-link-active-color;
       width: 100%;
       height: 3px;
@@ -150,15 +154,15 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
   @extend %heading-font-bold;
   @extend %list-unstyled;
   margin: 0;
-  padding: $navbar-padding * 2 $navbar-padding $spacer-sm;
+  padding: $navbar-padding $navbar-padding $spacer-sm;
   height: calc(100vh - #{$navbar-bottombar-height} - #{$navbar-brandbar-height});
-  overflow: hidden;
   font-size: $navbar-primary-font-size;
   overflow-y: scroll;
 }
 
 .navbar__nav__item {
-  margin-top: $navbar-padding;
+  position: relative;
+  padding-top: 1.44rem;
   font-size: $h3-font-size;
 
   &:first-child {
@@ -166,10 +170,71 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
   }
 }
 
+
+
+
+
+// dropdown in navbar
+
+.dropdown__checkbox:checked {
+  & ~ .dropdown__toggle {
+    .dropdown__icon--navbar {
+      color: $navbar-link-hover-color;
+    }
+  }
+
+  &[data-origin='right'] {
+    right: auto;
+    left: -$spacer-md;
+    text-align: left;
+  }
+}
+
+.dropdown__icon--navbar {
+  transition: $standard-transition;
+  color: $navbar-link-color;
+
+  &:hover,
+  &:focus  {
+    color: $navbar-link-hover-color;
+  }
+}
+
 .dropdown__list-wrapper--navbar {
   @extend %heading-font-regular;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: $navbar-lightened-bg;
+  padding: 0 $spacer-md $spacer-md;
+  width: 100%;
   font-size: $navbar-primary-font-size;
+
+  &:hover {
+    display: block;
+  }
+
+  &[data-origin='right'] {
+    right: auto;
+    left: -$spacer-md;
+    text-align: left;
+  }
 }
+
+.dropdown__item {
+  padding-top: $navbar-padding;
+}
+
+.dropdown__link {
+  white-space: normal;
+}
+
+
+
+
+
+
+
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .navbar {
@@ -183,6 +248,16 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
 
   .navbar__inner {
     flex: 1;
+  }
+
+  .navbar__link--primary {
+    display: inline-block;
+    padding-bottom: $navbar-padding;
+    height: $navbar-padding * 2; // for exact positioning of dropdown list
+
+    &:hover ~ .dropdown__list-wrapper--navbar {
+      display: block;
+    }
   }
 
   .navbar__brand {
@@ -238,17 +313,39 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    padding-top: 0;
+    padding: 0 $navbar-padding;
     width: 100%;
     min-width: $navbar-min-width;
     max-width: $navbar-max-width;
     height: auto;
-    overflow: auto;
-    overflow-y: auto;
+    overflow-y: unset;
   }
 
   .navbar__nav__item {
-    margin-top: 0;
+    padding-top: 0;
     font-size: inherit;
+  }
+
+
+
+
+  // dropdown
+
+  .dropdown__list-wrapper--navbar {
+    position: absolute;
+    top: $spacer-md * 2;
+    left: -$spacer-md;
+    padding: 0 $spacer-md $spacer-md;
+    width: auto;
+
+    &[data-origin='right'] {
+      right: -$spacer-md;
+      left: auto;
+      text-align: right;
+    }
+  }
+
+  .dropdown__link {
+    white-space: nowrap;
   }
 }
