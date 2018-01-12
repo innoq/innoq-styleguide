@@ -32,6 +32,7 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
 .event-day-month {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .event-day {
