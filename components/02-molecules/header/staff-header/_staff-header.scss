@@ -1,5 +1,7 @@
+$staff-intro-offset: -(ms(22));
+
 .staff-header {
-  background-color: $brand-blue;
+  background-color: $staff-page-header-background-color;
 }
 
 .staff-header-content {
@@ -13,7 +15,7 @@
 }
 
 .staff-header-quote {
-  background-color: $brand-red;
+  background-color: $staff-page-header-quote-background-color;
   padding: $spacer-lg $spacer-md;
 }
 
@@ -33,7 +35,7 @@
 }
 
 .staff-intro {
-  background-color: $brand-white;
+  background-color: $staff-intro-background-color;
   padding: $spacer-md;
   width: 100%;
 }
@@ -58,7 +60,7 @@
 .staff-intro--text {
   @extend %heading-font-regular;
 
-  border-bottom: 1px solid $brand-text;
+  border-bottom: 1px solid $staff-intro-text-border;
   padding-bottom: $spacer-base;
   line-height: $staff-page-header-intro-text-line-height-small;
   font-size: $staff-page-header-intro-text-font-size-small;
@@ -107,8 +109,8 @@
 
   .staff-intro {
     position: relative;
-    top: -122px;
-    margin: 0 auto -122px;
+    top: $staff-intro-offset;
+    margin: 0 auto $staff-intro-offset;
     padding: $spacer-lg $spacer-xl 0;
     width: $grid-page-layout-content-with;
     max-width: $grid-page-layout-content-with-xl;
