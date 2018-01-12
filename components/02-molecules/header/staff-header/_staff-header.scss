@@ -66,10 +66,8 @@
 
 .staff-intro--social {
   padding: $spacer-md 0;
-  text-align: center;
 
   .icon {
-    padding: 0 $spacer-sm;
     font-size: ms(7);
   }
 }
@@ -136,9 +134,5 @@
 
   .staff-intro--social {
     padding: $spacer-base 0;
-
-    .icon {
-      padding: 0 $spacer-sm;
-    }
   }
 }
