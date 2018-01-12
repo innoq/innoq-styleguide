@@ -1,61 +1,50 @@
 <nav class="navbar">
     <div class="navbar__inner">
-        <div class="navbar__header">
-            <a href="#" class="navbar__brand">
+
+        <div class="navbar__brand">
+            <a href="#" class="navbar__brand-link">
                 <img class="logo navbar__logo" src={context.app.uri('static/innoq-logo--whitered.svg')} />
             </a>
-            <div class="navbar__header__meta collapse" data-collapsible>
-                <ul class="navbar__nav navbar__secondary">
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">Kontakt</a>
-                    </li>
-                    <li class="navbar__item">
-                        <a href="#" class="navbar__link">Suche</a>
-                    </li>
-                </ul>
-                <div class="navbar__locale-switch">
-                    <a href="#" class="navbar__link navbar__link--active" title="Deutsch">de</a> | <a href="#" class="navbar__link" title="Englisch">en</a>
-                </div>
-            </div>
         </div>
 
-        <ul class="navbar__nav navbar__primary collapse" data-collapsible>
-            <li class="navbar__item">
-                <div class="dropdown">
-                    <input type="checkbox" role="button" aria-haspopup="true" id="toggle" class="sr-only dropdown__checkbox" />
-                    <label for="toggle" class="dropdown__toggle">
-                        Leistungen<i class="icon icon-chevron-2-down dropdown__icon"></i>
-                        <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
-                        <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
-                    </label>
-                    <div role="menu" data-menu-origin="left" class="dropdown__menu">
-                        <ul class="dropdown__list">
-                            <li><a href="#" class="navbar__link dropdown__link">Strategie- und Technologieberatung</a></li>
-                            <li><a href="#" class="navbar__link dropdown__link">Entwicklung digitaler Geschäftsmodelle</a></li>
-                            <li><a href="#" class="navbar__link dropdown__link">Softwarearchitektur und -entwicklung</a></li>
-                            <li><a href="#" class="navbar__link dropdown__link">Digitale Plattformen und Infrastrukturen</a></li>
-                            <li><a href="#" class="navbar__link dropdown__link">Wissenstransfer, Coaching und Trainings</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </li>
-            <li class="navbar__item">
-                <a href="#" class="navbar__link">Projekte</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#" class="navbar__link">Kultur</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#" class="navbar__link">Magazin</a>
-            </li>
-            <li class="navbar__item">
-                <a href="#" class="navbar__link">Termine</a>
-            </li>
-        </ul>
+        <div class="navbar__meta hidden">
+            <a href="#" class="navbar__meta-link">Kontakt</a>
+            <a href="#" class="navbar__meta-link navbar__meta-link--locale navbar__meta-link--active" title="Deutsch">de</a> |
+            <a href="#" class="navbar__meta-link navbar__meta-link--locale" title="English">en</a>
+        </div>
+
+        <div class="navbar__togglers">
+            <multi-toggler class="navbar__toggler navbar__toggler--menu-toggler" data-target=".navbar__meta, .navbar__nav" data-toggle-class="hidden">
+                <button class="btn btn--inverted btn--small navbar__toggler__btn" type="button" aria-label="Navigation ein- oder ausblenden">
+                    Menü
+                </button>
+            </multi-toggler>
+
+            <multi-toggler class="navbar__toggler navbar__toggler--search-toggler" data-target="">
+                <button class="btn btn--inverted btn--small navbar__toggler__btn" type="button" aria-label="Suche ein- oder ausblenden">
+                    <i class="icon icon-search"></i>
+                </button>
+            </multi-toggler>
+        </div>
+
+        <div class="navbar__nav hidden">
+            <ul class="navbar__nav__primary-list">
+                <li class="navbar__nav__item">
+                    <a href="#" class="navbar__link">Leistungen</a>
+                </li>
+                <li class="navbar__nav__item">
+                    <a href="#" class="navbar__link navbar__link--active">Projekte</a>
+                </li>
+                <li class="navbar__nav__item">
+                    <a href="#" class="navbar__link">Kultur</a>
+                </li>
+                <li class="navbar__nav__item">
+                    <a href="#" class="navbar__link">Magazin</a>
+                </li>
+                <li class="navbar__nav__item">
+                    <a href="#" class="navbar__link">Termine</a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <navbar-toggler target=".navbar [data-collapsible]">
-        <button class="navbar__toggler btn btn--inverted btn--small" type="button" aria-label="Navigation ein- oder ausblenden">
-            Menü
-        </button>
-    </navbar-toggler>
 </nav>

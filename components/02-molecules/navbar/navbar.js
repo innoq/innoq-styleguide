@@ -1,29 +1,25 @@
-export default class NavbarToggler extends HTMLElement {
+export default class MultiToggler extends HTMLElement {
   connectedCallback () {
-    this.classList.add('enhanced')
+    this.toggleClass = this.getAttribute('data-toggle-class')
+    this.toggleTargets = Array.from(document.querySelectorAll(this.getAttribute('data-target')))
     this.onclick = this.toggle.bind(this)
+    this.classList.add('enhanced')
   }
 
   toggle () {
-    this.open = !this.open
-    const targets = Array.from(this.target)
-    targets.forEach((t) => t.classList.toggle('collapse'))
+    this.toggleTargets.forEach(
+      target => target.classList.toggle(this.toggleClass)
+    )
+    this.toggleSelf()
   }
 
-  get target () {
-    const selector = this.getAttribute('target')
-    return document.querySelectorAll(selector)
-  }
-
-  get open () {
-    return this.getAttribute('open') === ''
-  }
-
-  set open (opened) {
-    if (opened) {
-      this.setAttribute('open', '')
+  toggleSelf () {
+    if (this.getAttribute('toggled') !== null) {
+      this.removeAttribute('toggled')
     } else {
-      this.removeAttribute('open')
+      this.setAttribute('toggled')
     }
   }
 }
+
+customElements.define('multi-toggler', MultiToggler)
