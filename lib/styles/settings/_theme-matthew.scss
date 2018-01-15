@@ -181,13 +181,10 @@ $date-location-section-border-color: $brand-gray-25;
 // Content Teaser
 $content-teaser-default-bg: $brand-white;
 $content-teaser-default-color: $brand-text;
-
 $content-teaser-inverted-bg: $brand-text;
 $content-teaser-inverted-color: $brand-white;
-
 $content-teaser-colored-bg: $brand-interaction;
 $content-teaser-colored-color: $brand-text;
-
 $content-teaser-accent-color: $brand-interaction;
 
 // Case Teaser
@@ -218,6 +215,11 @@ $list-teaser-event-headline-color: $brand-text;
 $simple-teaser-bg: $brand-text;
 $simple-teaser-color: $brand-white;
 
+// Podcast Teaser
+$podcast-teaser-default-bg: $brand-text;
+$podcast-teaser-default-color: $brand-white;
+$podcast-teaser-overlay-color: $brand-primary;
+
 // Navbar
 $navbar-body-bg: $brand-text;
 $navbar-link-color: $brand-white;
@@ -233,11 +235,6 @@ $footer-body-bg: $brand-text;
 $footer-color: $brand-white;
 $footer-heading-color: $brand-interaction;
 $footer-link-hover-color: $brand-interaction;
-
-// Podcast Teaser
-$podcast-teaser-default-bg: $brand-text;
-$podcast-teaser-default-color: $brand-white;
-$podcast-teaser-overlay-color: $brand-primary;
 
 // Eyecatcher
 $eyecatcher-body-bg: $brand-interaction;
@@ -260,6 +257,11 @@ $staff-page-header-quote-background-color: $brand-primary;
 $staff-page-header-background-color: $brand-text;
 $staff-intro-text-border: $brand-text;
 $staff-intro-background-color: $brand-white;
+$landing-page-header-border-color: $brand-text;
+$landing-page-header-intro-text-color: $brand-text;
+$landing-page-header-intro-bg-color: $brand-white;
+$topic-header-intro-text-color: $brand-text;
+$topic-header-intro-bg-color: $brand-white;
 
 // Toolbar
 $toolbar-link-hover-color: $brand-interaction;

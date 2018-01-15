@@ -45,8 +45,8 @@
     font-size: $definition-list-font-size;
   }
 }
-// Headlines & Text
 
+// Headlines & Text
 %teaser-caption {
   @extend %heading-font-bold;
 
@@ -67,6 +67,29 @@
 
   line-height: $teaser-text-line-height;
   font-size: $teaser-text-font-size;
+}
+
+%punch-in {
+  background-clip: text;
+  background-position: center;
+  color: $brand-text;
+
+
+  // sass-lint:disable no-vendor-prefixes
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  > * {
+    // Prevent clipping of letters.
+    margin: 0;
+    padding-bottom: $spacer-base;
+
+    // Don't ask! Just a littler hack for Safari to show knockout letters.
+    // sass-lint:disable nesting-depth
+    &::after {
+      content: '\00a0';
+    }
+  }
 }
 
 

@@ -1,19 +1,14 @@
-$topic-header-bg-width: 1444px; // Arbitrary value
-$topic-header-bg-height: 1000px; // Arbitrary value
-
-$topic-header-outer-padding: $spacer-lg;
-$topic-header-outer-padding-small: $spacer-sm;
-$page-header-inner-padding: $spacer-xl $spacer-xl;
+$landing-page-header-outer-padding: $spacer-lg;
+$landing-page-header-outer-padding-small: $spacer-sm;
+$landing-page-header-inner-padding: $spacer-xl $spacer-xl;
 
 $gradient-stencil: rgba(0, 0, 0, .5);
 
-.page-header {
-  display: flex;
+.landing-page-header {
+  @extend %page-header;
+
   margin-bottom: $spacer-xxl;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: $topic-header-outer-padding $topic-header-outer-padding-small;
+  padding: $landing-page-header-outer-padding $landing-page-header-outer-padding-small;
 
   &__body {
     display: flex;
@@ -22,34 +17,16 @@ $gradient-stencil: rgba(0, 0, 0, .5);
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    border-bottom: 8px solid $brand-text;
-    background-color: $standard-header-intro-bg;
-    padding: $page-header-inner-padding;
-    max-width: 860px;
-    color: $brand-text;
+    border-bottom: 8px solid $landing-page-header-border-color;
+    background-color: $landing-page-header-intro-bg-color;
+    padding: $landing-page-header-inner-padding;
+    max-width: $grid-page-layout-content-with-xl;
+    color: $landing-page-header-intro-text-color;
+    box-sizing: content-box;
   }
 
   &__punch-in {
-    background-clip: text;
-    background-position: center;
-    color: $brand-text;
-
-
-    // sass-lint:disable no-vendor-prefixes
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    > * {
-      // Prevent clipping of letters.
-      margin: 0;
-      padding-bottom: $spacer-base;
-
-      // Don't ask! Just a littler hack for Safari to show knockout letters.
-      // sass-lint:disable nesting-depth
-      &::after {
-        content: '\00a0';
-      }
-    }
+    @extend %punch-in;
   }
 
   &__title {
@@ -61,6 +38,7 @@ $gradient-stencil: rgba(0, 0, 0, .5);
 
   &__text {
     @extend %body-font-italic;
+
     margin-bottom: $spacer-base;
     text-align: center;
     line-height: $standard-header-intro-line-height-small;
@@ -68,35 +46,35 @@ $gradient-stencil: rgba(0, 0, 0, .5);
   }
 }
 
-.landing-page-header {
+.landing-page-header-bg-image {
   background-image: url('/static/visual-header-landing-page.jpg');
 }
 
-.landing-page-header-1440 {
+.landing-page-header-bg-image-text-box {
   background-image: linear-gradient($gradient-stencil, $gradient-stencil), url('/static/visual-header-landing-page.jpg');
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
-  .page-header {
-    padding: $topic-header-outer-padding;
+  .landing-page-header {
+    padding: $landing-page-header-outer-padding;
   }
 
-  .page-header__title {
+  .landing-page-header__title {
     line-height: $landing-page-header-title-line-height;
     font-size: $landing-page-header-title-font-size;
   }
 
-  .page-header__subtitle {
+  .landing-page-header__subtitle {
     line-height: $standard-header-subtitle-line-height;
     font-size: $standard-header-subtitle-font-size;
   }
 
-  .page-header__type {
+  .landing-page-header__type {
     line-height: $standard-header-type-line-height;
     font-size: $standard-header-type-font-size;
   }
 
-  .page-header__text {
+  .landing-page-header__text {
     line-height: $standard-header-intro-line-height;
     font-size: $standard-header-intro-font-size;
   }

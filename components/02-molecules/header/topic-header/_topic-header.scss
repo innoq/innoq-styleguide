@@ -1,14 +1,10 @@
-$topic-header-bg-width: 1444px; // Arbitrary value
-$topic-header-bg-height: 1000px; // Arbitrary value
-
 $topic-header-outer-padding: $spacer-lg;
 $topic-header-outer-padding-small: $spacer-sm;
 $topic-header-inner-padding: $spacer-base;
 
 .topic-header {
-  display: flex;
-  background-repeat: no-repeat;
-  background-position: center;
+  @extend %page-header;
+
   padding: $topic-header-outer-padding $topic-header-outer-padding-small;
 
   &__body {
@@ -16,34 +12,15 @@ $topic-header-inner-padding: $spacer-base;
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    background-color: $standard-header-intro-bg;
+    background-color: $topic-header-intro-bg-color;
     background-size: cover;
     padding: $topic-header-inner-padding;
     max-width: $default-page-layout-content-width-xl;
-    color: $brand-text;
+    color: $topic-header-intro-text-color;
   }
 
   &__punch-in {
-    background-clip: text;
-    background-position: center;
-    color: $brand-text;
-
-
-    // sass-lint:disable no-vendor-prefixes
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    > * {
-      // Prevent clipping of letters.
-      margin: 0;
-      padding-bottom: $spacer-base;
-
-      // Don't ask! Just a littler hack for Safari to show knockout letters.
-      // sass-lint:disable nesting-depth
-      &::after {
-        content: '\00a0';
-      }
-    }
+    @extend %punch-in;
   }
 
   &__title {
@@ -66,6 +43,7 @@ $topic-header-inner-padding: $spacer-base;
 
   &__text {
     @extend %body-font-italic;
+
     margin-bottom: $spacer-base;
     line-height: $standard-header-intro-line-height-small;
     font-size: $standard-header-intro-font-size-small;
