@@ -7,6 +7,9 @@
             </a>
         </div>
 
+        <input type="checkbox" id="navbar__toggle-state--menu-toggler" class="sr-only navbar__toggle-state navbar__toggle-state--menu-toggler" />
+        <input type="checkbox" id="navbar__toggle-state--search-toggler" class="sr-only navbar__toggle-state navbar__toggle-state--search-toggler" />
+
         <div class="navbar__meta hidden">
             <a href="#" class="navbar__meta-link">Kontakt</a>
             <a href="#" class="navbar__meta-link navbar__meta-link--locale navbar__meta-link--active" title="Deutsch">de</a> |
@@ -14,17 +17,17 @@
         </div>
 
         <div class="navbar__togglers">
-            <multi-toggler class="navbar__toggler navbar__toggler--menu-toggler" data-target=".navbar__meta, .navbar__nav" data-toggle-class="hidden">
+            <label class="navbar__toggler navbar__toggler--menu-toggler" for="navbar__toggle-state--menu-toggler">
                 <button class="btn btn--inverted btn--small navbar__toggler__btn" type="button" aria-label="Navigation ein- oder ausblenden">
                     Menü
                 </button>
-            </multi-toggler>
+            </label>
 
-            <multi-toggler class="navbar__toggler navbar__toggler--search-toggler" data-target="">
+            <label class="navbar__toggler navbar__toggler--search-toggler" for="navbar__toggle-state--search-toggler">
                 <button class="btn btn--inverted btn--small navbar__toggler__btn" type="button" aria-label="Suche ein- oder ausblenden">
                     <i class="icon icon-search"></i>
                 </button>
-            </multi-toggler>
+            </label>
         </div>
 
         <div class="navbar__nav hidden">

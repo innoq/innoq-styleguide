@@ -155,6 +155,7 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
   @extend %list-unstyled;
   margin: 0;
   padding: $navbar-padding $navbar-padding $spacer-sm;
+  width: 100%;
   height: calc(100vh - #{$navbar-bottombar-height} - #{$navbar-brandbar-height});
   font-size: $navbar-primary-font-size;
   overflow-y: scroll;
@@ -348,4 +349,15 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
   .dropdown__link {
     white-space: nowrap;
   }
+}
+
+// the new toggles
+
+.navbar__toggle-state,
+.navbar__toggle-state {
+  order: 99; // to be continued
+}
+
+.navbar__toggle-state--menu-toggler:checked ~ .navbar__nav {
+  display: flex;
 }
