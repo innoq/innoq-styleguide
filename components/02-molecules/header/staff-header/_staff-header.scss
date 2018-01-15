@@ -90,13 +90,13 @@ $staff-intro-offset: -(ms(22));
   }
 
   .staff-header-quote {
+    flex-grow: 1;
     padding: $spacer-xxl $spacer-md 0;
-    min-width: $default-page-layout-content-width-xl / 2;
-    max-width: $default-page-layout-content-width-xl / 2;
   }
 
   .staff-header-image {
     max-width: $default-page-layout-content-width-xl / 2;
+    max-height: $default-page-layout-content-width-xl / 2;
   }
 
   .staff-header-quote--text {
