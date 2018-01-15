@@ -1,6 +1,7 @@
   // ---- List related variables--------------------------------------------------
 $bullet-size: $spacer-xs; // ~9px
 $bullet-offset: $spacer-sm; // ~16px
+$list-indent: $bullet-offset + $bullet-size;
 $checklist-icon-size: 1.9875rem; // Determined by the hard science of pushing things around
 $number-space: $spacer-md;
 
@@ -22,7 +23,7 @@ ul:not([class]) {
   @extend %unsorted-list;
 
   li {
-    padding-left: $bullet-offset + $bullet-size;
+    padding-left: $list-indent;
 
     &::before {
       position: absolute;
@@ -34,6 +35,24 @@ ul:not([class]) {
       width: $bullet-size;
       height: $bullet-size;
       content: '';
+    }
+  }
+
+  ul {
+    // Nested lists need diffrent vertical spacings
+    // to blend into the outer list.
+    margin-top: $container-spacer-x-sm;
+    padding-left: $list-indent;
+
+    &,
+    li > ul > li {
+      margin-bottom: 0;
+    }
+
+    // Change bullet appeareance in nested contexts
+    li::before {
+      border: 1px solid $bullet-list-color;
+      background: $bullet-list-bg-color;
     }
   }
 }
