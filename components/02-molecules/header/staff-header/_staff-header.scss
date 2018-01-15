@@ -8,6 +8,7 @@ $staff-intro-offset: -(ms(22));
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: strech;
 }
 
 .staff-header-image {
@@ -91,6 +92,8 @@ $staff-intro-offset: -(ms(22));
 
   .staff-header-quote {
     padding: $spacer-xxl $spacer-md 0;
+    min-width: $default-page-layout-content-width-xl / 2;
+    max-width: $default-page-layout-content-width-xl / 2;
   }
 
   .staff-header-image {
