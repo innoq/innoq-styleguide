@@ -1,19 +1,21 @@
 const config = {
   static: {
-    manifest: false,
+    manifest: {
+      file: 'public/static.json',
+      baseURI: (bundlePath, baseName) => `${process.env.BASE_URI || ''}/static/${baseName}`
+    },
     bundles: [
       {
         source: 'lib/images',
         target: 'public/static'
-      },
-      {
-        source: 'node_modules/document-register-element/build/document-register-element.js',
-        target: 'public/js/document-register-element.js'
       }
     ]
   },
   sass: {
     manifest: false,
+    assets: [
+      'public/static.json'
+    ],
     bundles: [
       {
         entryPoint: 'lib/styles/index.scss',
@@ -31,6 +33,10 @@ const config = {
       {
         entryPoint: 'lib/scripts/index.js',
         target: 'public/js/bundle.js'
+      },
+      {
+        entryPoint: 'node_modules/document-register-element/build/document-register-element.js',
+        target: 'public/js/document-register-element.js'
       }
     ]
   }

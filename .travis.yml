@@ -5,6 +5,8 @@ node_js:
 script:
 - yarn test
 - yarn dist
+env:
+- BASE_URI=/innoq-styleguide
 deploy:
 - provider: pages
   skip_cleanup: true
