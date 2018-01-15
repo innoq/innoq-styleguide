@@ -51,7 +51,7 @@ $gradient-stencil: rgba(0, 0, 0, .5);
 }
 
 .landing-page-header-bg-image-text-box {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil), url('/static/visual-header-landing-page.jpg');
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/static/visual-header-landing-page.jpg');
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
