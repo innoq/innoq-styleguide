@@ -49,8 +49,9 @@ $header-left-offset: -($teaser-inner-padding + $teaser-outer-padding);
 .case-teaser--simple {
   // TODO: Replace Unsplash with real images.
   // sass-lint:disable no-url-domains no-url-protocols
-  background: url('https://source.unsplash.com/YXemfQiPR_E/1444x1000') top left;
+  background-image: url('https://source.unsplash.com/YXemfQiPR_E/1444x1000');
   background-repeat: no-repeat;
+  background-position: top left;
   background-size: cover;
   min-height: 75vh;
 }
