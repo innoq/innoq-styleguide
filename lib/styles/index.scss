@@ -23,6 +23,7 @@
 // SCSS base. Important: This layer does not produce any code.
 
 @import 'tools/fonts';
+@import 'tools/forms';
 @import 'tools/text';
 @import 'tools/author';
 @import 'tools/visibility';
@@ -79,11 +80,13 @@
 
 // Form atoms
 @import '../components/01-atoms/form/button/button';
+@import '../components/01-atoms/form/checkbox/checkbox';
 @import '../components/01-atoms/form/form-label/form-label';
 @import '../components/01-atoms/form/form-control/form-control';
 @import '../components/01-atoms/form/form-text/form-text';
 @import '../components/01-atoms/form/fieldset/fieldset';
 @import '../components/01-atoms/form/legend/legend';
+@import '../components/01-atoms/form/radio/radio';
 
 // Media atoms
 @import '../components/01-atoms/media/avatar/avatar';

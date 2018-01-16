@@ -1,14 +1,18 @@
-// Adopted from https://css-tricks.com/styling-texty-inputs-only/
-// sass-lint:disable force-pseudo-nesting
-.form-control {
+.form-control,
+.custom-form-control {
   @extend %heading-font-regular;
   display: block;
   transition: $standard-transition;
+  padding: $spacer-xs;
+  width: 100%;
+}
+
+
+// Adopted from https://css-tricks.com/styling-texty-inputs-only/
+.form-control {
   outline: none;
   border: 2px solid $form-control-border-color;
   border-radius: 0;
-  padding: $spacer-xs;
-  width: 100%;
   caret-color: $form-control-caret-color;
   appearance: none;
 
@@ -23,5 +27,17 @@
 
   &--invalid {
     border-color: $form-control-invalid-border-color;
+  }
+}
+
+.custom-form-control {
+  position: relative;
+  min-height: ($base-line-height * 1rem);
+
+  // Hide the real input inside
+  > .form-control-input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1; // Put the input behind the label so it doesn't overlay text
   }
 }

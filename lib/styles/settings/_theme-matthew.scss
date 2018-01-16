@@ -43,6 +43,25 @@ $form-control-inverted-focus-bg: $brand-white;
 $form-control-inverted-focus-color: $brand-text;
 $form-label-inverted-color: $brand-white;
 
+// Checkbox
+$checkbox-bg: $brand-white;
+$checkbox-bg-active: $brand-blue;
+$checkbox-bg-disabled: $brand-gray-20;
+$checkbox-border: $brand-blue;
+$checkbox-border-hoverfocus: $brand-interaction;
+$checkbox-border-disabled: $brand-gray-25;
+$checkbox-color-active: $brand-white;
+$checkbox-color-disabled: $brand-gray-50;
+
+// Radiobuttons
+$radio-bg: $brand-white;
+$radio-bg-disabled: $brand-gray-20;
+$radio-border: $brand-blue;
+$radio-border-hoverfocus: $brand-interaction;
+$radio-border-disabled: $brand-gray-25;
+$radio-color: $brand-text;
+$radio-color-disabled: $brand-gray-50;
+
 // Search field
 $search-field-caret-color: $brand-interaction;
 $search-field-border-color: $brand-interaction;

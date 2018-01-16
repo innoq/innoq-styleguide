@@ -1,0 +1,56 @@
+$radio-size: $spacer-md; // ~24px
+$radio-offset: .475rem;    // ~16px
+$radio-indent: $radio-offset + $radio-size;
+
+.radio {
+  &.custom-form-control {
+    padding-left: $radio-indent;
+  }
+
+  // Set styles for all form states
+  // sass-lint:disable force-pseudo-nesting
+  > .form-control-input {
+    &:focus ~ .form-label::before {
+      border-color: $radio-border-hoverfocus;
+    }
+
+    &:checked ~ .form-label::after {
+      background-image: radio-icon($radio-color);
+    }
+
+    &:checked:disabled ~ .form-label::after {
+      background-image: radio-icon($radio-color-disabled);
+    }
+
+    &:focus ~ .form-label::after {
+      background-image: radio-icon($radio-border-hoverfocus);
+    }
+
+    &:disabled ~ .form-label::before {
+      border-color: $radio-border-disabled;
+      background-color: $radio-bg-disabled;
+    }
+  }
+
+  .form-label {
+    @include control-icon($radio-size, $radio-offset);
+    margin-bottom: 0;
+
+    // Background (color)
+    &::before {
+      margin-right: $radio-offset;
+      border: 2px solid $radio-border;
+      border-radius: 50%;
+      background-color: $radio-bg;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    // Foreground (icon)
+    &::after {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 75% 75%;
+    }
+  }
+}
