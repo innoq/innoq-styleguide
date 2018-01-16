@@ -47,11 +47,11 @@ $gradient-stencil: rgba(0, 0, 0, .5);
 }
 
 .landing-page-header-bg-image {
-  background-image: asset-url('public/static/visual-header-landing-page.jpg');
+  background-image: asset-url('public/assets/static/visual-header-landing-page.jpg');
 }
 
 .landing-page-header-bg-image-text-box {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/static/visual-header-landing-page.jpg');
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/static/visual-header-landing-page.jpg');
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
