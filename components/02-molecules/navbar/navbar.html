@@ -10,7 +10,7 @@
         <input type="checkbox" id="navbar__toggle-state--menu-toggler" class="sr-only navbar__toggle-state navbar__toggle-state--menu-toggler" />
         <input type="checkbox" id="navbar__toggle-state--search-toggler" class="sr-only navbar__toggle-state navbar__toggle-state--search-toggler" />
 
-        <div class="navbar__meta hidden">
+        <div class="navbar__meta">
             <a href="#" class="navbar__meta-link">Kontakt</a>
             <a href="#" class="navbar__meta-link navbar__meta-link--locale navbar__meta-link--active" title="Deutsch">de</a> |
             <a href="#" class="navbar__meta-link navbar__meta-link--locale" title="English">en</a>
@@ -30,21 +30,46 @@
             </label>
         </div>
 
-        <div class="navbar__nav hidden">
+        <div class="navbar__nav">
             <ul class="navbar__nav__primary-list">
                 <li class="navbar__nav__item">
                     <a href="#" class="navbar__link navbar__link--primary">Leistungen</a>
                 </li>
                 <li class="navbar__nav__item">
-                    <a href="#" class="navbar__link navbar__link--primary navbar__link--active">Projekte</a>
+
+
+                    <div class="dropdown">
+                            <a href="#" class="navbar__link navbar__link--primary" data-for="toggle-unique-name-1">Projekte</a>
+                            <input type="checkbox" role="button" aria-haspopup="true" id="toggle-unique-name-1" class="sr-only dropdown__checkbox" />
+                            <label class="dropdown__toggle navbar__toggler--dropdown" for="toggle-unique-name-1">
+                                <i class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"></i>
+                                <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
+                                <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
+                            </label>
+                            <div role="menu" data-origin="left" class="dropdown__list-wrapper dropdown__list-wrapper--navbar">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link navbar__link">Softwarearchitektur und -entwicklung</a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link navbar__link">Strategie- und Technologieberatung</a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link navbar__link">Entwicklung digitaler Geschäftsmodelle</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
                 </li>
                 <li class="navbar__nav__item">
 
 
                     <div class="dropdown">
-                        <a href="#" class="navbar__link navbar__link--primary">Kultur</a>
-                        <input type="checkbox" role="button" aria-haspopup="true" id="toggle-unique-name" class="sr-only dropdown__checkbox" />
-                        <label for="toggle-unique-name" class="dropdown__toggle">
+                        <a href="#" class="navbar__link navbar__link--primary" data-for="toggle-unique-name-2">Kultur</a>
+                        <input type="checkbox" role="button" aria-haspopup="true" id="toggle-unique-name-2" class="sr-only dropdown__checkbox" />
+                        <label class="dropdown__toggle navbar__toggler--dropdown" for="toggle-unique-name-2">
                             <i class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"></i>
                             <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
                             <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>

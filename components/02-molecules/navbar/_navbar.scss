@@ -10,6 +10,8 @@ $navbar-brandbar-height: $navbar-logo-height + 2 * $navbar-padding;
 $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small screens
 
 .navbar {
+  position: relative;
+  z-index: 1;
   background-color: $navbar-body-bg;
   color: $navbar-link-color;
 
@@ -91,7 +93,7 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
 
 .navbar__meta {
   @extend %heading-font-regular;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   order: 4;
@@ -101,10 +103,6 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
   height: $navbar-brandbar-height;
   text-transform: uppercase;
   font-size: $navbar-secondary-font-size;
-
-  &.hidden {
-    display: none;
-  }
 }
 
 .navbar__togglers {
@@ -144,6 +142,7 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
 }
 
 .navbar__nav {
+  display: none;
   order: 3;
   margin-bottom: 0;
   background-color: $navbar-lightened-bg;
@@ -171,9 +170,12 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
   }
 }
 
+// main toggles
 
-
-
+.navbar__toggle-state--menu-toggler:checked ~ .navbar__nav,
+.navbar__toggle-state--menu-toggler:checked ~ .navbar__meta {
+  display: flex;
+}
 
 // dropdown in navbar
 
@@ -182,12 +184,6 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
     .dropdown__icon--navbar {
       color: $navbar-link-hover-color;
     }
-  }
-
-  &[data-origin='right'] {
-    right: auto;
-    left: -$spacer-md;
-    text-align: left;
   }
 }
 
@@ -278,10 +274,6 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
     background-color: transparent;
     width: auto;
     height: $navbar-brandbar-height;
-
-    &.hidden {
-      display: flex;
-    }
   }
 
   .navbar__togglers {
@@ -301,13 +293,10 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
   }
 
   .navbar__nav {
+    display: flex; // show on big screens
     order: 4;
     background-color: transparent;
     width: 100%;
-
-    &.hidden {
-      display: flex; // show on big screens
-    }
   }
 
   .navbar__nav__primary-list {
@@ -351,13 +340,3 @@ $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small scr
   }
 }
 
-// the new toggles
-
-.navbar__toggle-state,
-.navbar__toggle-state {
-  order: 99; // to be continued
-}
-
-.navbar__toggle-state--menu-toggler:checked ~ .navbar__nav {
-  display: flex;
-}
