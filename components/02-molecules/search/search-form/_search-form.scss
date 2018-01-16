@@ -35,3 +35,10 @@
     padding: $spacer-sm;
   }
 }
+
+@media screen and (min-width: $grid-breakpoint-xl) {
+  .search-form {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+}
