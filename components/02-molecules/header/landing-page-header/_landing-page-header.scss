@@ -2,7 +2,7 @@ $landing-page-header-outer-padding: $spacer-lg;
 $landing-page-header-outer-padding-small: $spacer-sm;
 $landing-page-header-inner-padding: $spacer-xl $spacer-xl;
 
-$gradient-stencil: rgba(0, 0, 0, .5);
+$gradient-stencil: rgba(0, 0, 0, .25);
 
 .landing-page-header {
   @extend %page-header;

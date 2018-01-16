@@ -2,6 +2,8 @@ $topic-header-outer-padding: $spacer-lg;
 $topic-header-outer-padding-small: $spacer-sm;
 $topic-header-inner-padding: $spacer-base;
 
+$gradient-stencil: rgba(0, 0, 0, .25);
+
 .topic-header {
   @extend %page-header;
 
@@ -48,6 +50,39 @@ $topic-header-inner-padding: $spacer-base;
     line-height: $standard-header-intro-line-height-small;
     font-size: $standard-header-intro-font-size-small;
   }
+}
+
+//Background images for topic header
+.topic-header-bg-image-girl {
+  background-image: asset-url('public/assets/static/visual-header-girl.jpg');
+}
+
+.topic-header-bg-image-text-box-girl {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/static/visual-header-girl-1444.jpg');
+}
+
+.topic-header-bg-image-medusa {
+  background-image: asset-url('public/assets/static/visual-header-medusa.jpg');
+}
+
+.topic-header-bg-image-text-box-medusa {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/static/visual-header-medusa-1444.jpg');
+}
+
+.topic-header-bg-image-ice {
+  background-image: asset-url('public/assets/static/visual-header-ice.jpg');
+}
+
+.topic-header-bg-image-text-box-ice {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/static/visual-header-ice-1444.jpg');
+}
+
+.topic-header-bg-image-igel {
+  background-image: asset-url('public/assets/static/visual-header-igel.jpg');
+}
+
+.topic-header-bg-image-text-box-igel {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/static/visual-header-igel-1444.jpg');
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
