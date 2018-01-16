@@ -1,13 +1,14 @@
 $case-teaser-bg-width: 1444px; // Arbitrary value
 $case-teaser-bg-height: 1000px; // Arbitrary value
-$teaser-outer-padding: $spacer-lg;
+$teaser-outer-padding: $spacer-md;
 $teaser-inner-padding: $spacer-base;
 
 $gradient-stencil: rgba(0, 0, 0, .25);
 
 .case-teaser {
   @extend %page-header;
-  padding: $teaser-outer-padding;
+  justify-content: center;
+  min-height: 50vh;
 
   &--right-aligned {
     justify-content: flex-end;
@@ -18,11 +19,19 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   }
 }
 
+.case-teaser__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding: $spacer-xl $container-spacer-x-sm;
+  width: $default-page-layout-width-xl;
+  max-width: $default-page-layout-content-width-xl;
+}
+
 .case-teaser__body {
   flex-basis: 100%;
   background-color: $case-teaser-body-bg;
   padding: $teaser-inner-padding;
-  max-width: 800px;
+  max-width: 620px;
 }
 
 .case-teaser__text {
