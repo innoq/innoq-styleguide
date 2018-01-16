@@ -5,9 +5,7 @@ js_components_target="dist/js/components"
 
 yarn run site
 
-cp -r dist/site/css dist/
-cp -r dist/site/js dist/
-cp -r dist/site/static dist/
+cp -r dist/site/assets dist/
 
 # Copy JavaScript components to dist so they can be imported separately
 mkdir -p $js_components_target
@@ -18,6 +16,6 @@ cp -r lib/styles dist/sass
 
 echo $TRAVIS_COMMIT > dist/site/RELEASE.txt
 cd dist
-zip -r innoq-styleguide-$TRAVIS_TAG.zip css js static site
+zip -r innoq-styleguide-$TRAVIS_TAG.zip assets site
 cd -
 mv dist/innoq-styleguide-$TRAVIS_TAG.zip ./
