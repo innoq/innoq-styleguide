@@ -5,6 +5,7 @@
   border-style: solid;
   border-color: $search-field-border-color;
   background-color: $search-field-background;
+  grid-area: center;
 }
 
 .search-form__input {
@@ -33,12 +34,5 @@
 
   .search-form__input {
     padding: $spacer-sm;
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-xl) {
-  .search-form {
-    grid-column-start: 3;
-    grid-column-end: 4;
   }
 }
