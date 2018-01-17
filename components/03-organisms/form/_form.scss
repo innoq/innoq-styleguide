@@ -13,8 +13,8 @@
     }
   }
 
-  .form-group {
-    .form-control--invalid {
+  .form-group--invalid {
+    .form-control {
       border-color: $form-control-invalid-border-color;
     }
   }
