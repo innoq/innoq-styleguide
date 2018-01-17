@@ -1,11 +1,9 @@
 .standard-header {
-  display: flex;
+  @extend %page-header;
+
   flex-direction: column;
   align-items: center;
   margin-bottom: $spacer-xl;
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
   padding-top: $spacer-lg;
 
   &__title {
