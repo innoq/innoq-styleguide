@@ -12,4 +12,10 @@
       color: $form-control-inverted-focus-color;
     }
   }
+
+  .form-group {
+    .form-control--invalid {
+      border-color: $form-control-invalid-border-color;
+    }
+  }
 }
