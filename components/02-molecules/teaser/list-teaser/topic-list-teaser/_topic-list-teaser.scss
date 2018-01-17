@@ -4,6 +4,7 @@ $gradient-to: rgba(0, 0, 0, .075);
 .topic-teaser {
   @extend %block-link;
   @extend %hover-zoom-in;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,6 +12,7 @@ $gradient-to: rgba(0, 0, 0, .075);
   background-position: top left;
   background-size: cover;
   padding: $spacer-lg;
+  min-height: 60vh;
   text-align: center;
   color: $topic-teaser-body-color;
 }
@@ -21,6 +23,7 @@ $gradient-to: rgba(0, 0, 0, .075);
 
 .topic-teaser__text {
   @extend %teaser-text-italic;
+
   margin-bottom: $spacer-base;
 }
 

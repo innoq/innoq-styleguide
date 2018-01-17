@@ -1,7 +1,7 @@
 .blocks {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: $spacer-sm;
+  margin-bottom: $spacer-base;
 
   > * {
     flex-basis: 100%;
@@ -15,6 +15,7 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .blocks {
     flex-wrap: nowrap;
+    margin-bottom: $spacer-base;
 
     > * {
       flex-basis: 0;

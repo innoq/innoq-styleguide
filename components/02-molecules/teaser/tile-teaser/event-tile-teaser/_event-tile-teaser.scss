@@ -1,15 +1,7 @@
 $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spacer-xxs);
 
 .list-teaser-event {
-  & .tile {
-    min-height: ms(30);
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-md) {
-  .list-teaser-event {
-    & .tile {
-      min-height: ms(37);
-    }
+  &.tile {
+    min-height: 50vh;
   }
 }

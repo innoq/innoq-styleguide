@@ -16,7 +16,10 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
 }
 
 .list-teaser__content {
+  display: flex;
+  flex-direction: column;
   flex-grow: 1;
+  justify-content: space-between;
 }
 
 .list-teaser-event__headline {
