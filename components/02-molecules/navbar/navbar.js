@@ -60,8 +60,7 @@ export default class Navbar {
   enhance (selectors) {
     selectors.forEach(s => {
       s = s.startsWith('.') ? s.slice(1) : s
-      Array
-        .from(document.querySelectorAll('.' + s))
+      Array.from(document.querySelectorAll('.' + s))
         .forEach(e => e.classList.add(s + '--enhanced'))
     })
   }
