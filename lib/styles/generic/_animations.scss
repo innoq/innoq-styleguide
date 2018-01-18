@@ -1,4 +1,4 @@
-$standard-transition: all .175s cubic-bezier(.68, -.55, .265, 1.55);
+$standard-transition: all .175s ease-in-out;
 $fast-transition: all .1s ease-in-out;
 $ease-out-back-transition: .2s transform cubic-bezier(.68, -.55, .265, 1.55),
 .175s box-shadow ease-in-out;
