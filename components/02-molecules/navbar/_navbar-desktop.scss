@@ -17,10 +17,14 @@
   .navbtn--primary {
     padding-bottom: $navbar-padding;
 
-    // show dropdown on hover
     &:hover ~ .dropdown__list-wrapper--navbar {
       display: block;
     }
+
+    // let user toggle dropdown via checkbox-toggle
+    // &:focus ~ .dropdown__list-wrapper--navbar {
+    //   display: block;
+    // }
   }
 
   .navbar__brand {

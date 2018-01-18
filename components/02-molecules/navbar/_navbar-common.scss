@@ -57,6 +57,18 @@ $navbar-drill-transition: left .5s ease;
   hyphens: none;
 }
 
+.navbtn--skip {
+  position: absolute;
+  top: -4rem;
+  left: 10px;
+  text-transform: uppercase;
+}
+
+.navbtn--skip:focus {
+  top: 2px;
+  left: 10px;
+}
+
 .navbtn:hover,
 .navbtn:focus {
   transition: $navbar-navbtn-transition;
@@ -204,6 +216,13 @@ $navbar-drill-transition: left .5s ease;
   }
 }
 
+.dropdown__checkbox:focus ~ .dropdown__toggle--navbar {
+  .dropdown__icon--navbar {
+    outline: auto 5px $outline-color;
+    color: $navbar-link-hover-color;
+  }
+}
+
 .dropdown__icon--navbar {
   transition: $standard-transition;
   color: $navbar-link-color;
@@ -227,6 +246,10 @@ $navbar-drill-transition: left .5s ease;
   &:hover {
     display: block;
   }
+
+  // &:focus {
+  //   display: block;
+  // }
 
   &[data-origin='right'] {
     right: auto;
