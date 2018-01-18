@@ -143,6 +143,11 @@ $talk-description-font-size: ms(5);         // ~25px
 $talk-description-line-height-small: 1.62;  // ~34px
 $talk-description-font-size-small: ms(3);   // ~21px
 
+$wall-note-text-line-height: 1.52;          // ~38px
+$wall-note-text-font-size: ms(5);           // ~25px
+$wall-note-text-line-height-small: 1.62;    // ~34px
+$wall-note-text-font-size-small: ms(3);     // ~21px
+
 
 //
 // Code
@@ -454,6 +459,15 @@ $text-header-intro-font-size: ms(5);               // ~25px
 $text-header-intro-line-height: 1.52;              // ~38px
 $text-header-intro-font-size-small: ms(2);         // ~20px
 $text-header-intro-line-height-small: 1.3;         // ~25px
+
+$claim-header-type-line-height: 1.375;             // ~22px
+$claim-header-type-font-size: ms(0);               // ~16px
+$claim-header-type-line-height-small: 1.43;        // ~20px
+$claim-header-type-font-size-small: ms(-1);        // ~14px
+$claim-header-title-line-height: 1.1;              // ~50px
+$claim-header-title-font-size: ms(11);             // ~45px
+$claim-header-title-line-height-small: 1.12;       // ~41px
+$claim-header-title-font-size-small: ms(9);        // ~36px
 
 // Service Intros
 $service-intro-header-font-size: $h1-font-size-small;  // 36px (~35px)

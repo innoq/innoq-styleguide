@@ -1,0 +1,76 @@
+$big-content-teaser-height-sm: ms(35);
+$big-content-teaser-height-md: ms(40);
+
+.wall-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wall-note__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: $spacer-sm;
+  background-color: $wall-note-content-bg-color;
+  padding: $spacer-lg $spacer-base;
+  max-width: $default-page-layout-content-width-md;
+}
+
+.wall-note__text {
+  @extend %body-font-italic;
+
+  line-height: $wall-note-text-line-height-small;
+  font-size: $wall-note-text-font-size-small;
+}
+
+
+//Background images for topic header
+.wall-note-bg-image-girl {
+  background-image: asset-url('public/assets/static/visual-header-girl.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.wall-note-bg-image-medusa {
+  background-image: asset-url('public/assets/static/visual-header-medusa.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wall-note-bg-image-ice {
+  background-image: asset-url('public/assets/static/visual-header-ice.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.wall-note-bg-image-igel {
+  background-image: asset-url('public/assets/static/visual-header-igel-1444.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.wall-note-bg-image-koralle {
+  background-image: asset-url('public/assets/static/visual-header-koralle.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+//Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+  .wall-note__content {
+    padding: $spacer-xl $spacer-lg;
+  }
+
+  .wall-note__text {
+    line-height: $wall-note-text-line-height;
+    font-size: $wall-note-text-font-size;
+  }
+}

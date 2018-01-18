@@ -118,19 +118,21 @@
 // Molecules
 @import '../components/02-molecules/author-bio/author-bio';
 @import '../components/02-molecules/button-group/button-group';
-@import '../components/02-molecules/content-separator/content-separator';
-@import '../components/02-molecules/table-of-contents/table-of-contents';
-@import '../components/02-molecules/super-quote/super-quote';
 @import '../components/02-molecules/conclusion/conclusion';
-@import '../components/02-molecules/tag-section/tag-section';
+@import '../components/02-molecules/content-separator/content-separator';
+@import '../components/02-molecules/date-location-section/date-location-section';
+@import '../components/02-molecules/eyecatcher/eyecatcher';
+@import '../components/02-molecules/footnote-section/footnote-section';
+@import '../components/02-molecules/info-box/info-box';
 @import '../components/02-molecules/reference/reference';
 @import '../components/02-molecules/share-section/share-section';
-@import '../components/02-molecules/info-box/info-box';
-@import '../components/02-molecules/footnote-section/footnote-section';
-@import '../components/02-molecules/eyecatcher/eyecatcher';
-@import '../components/02-molecules/date-location-section/date-location-section';
+@import '../components/02-molecules/super-quote/super-quote';
+@import '../components/02-molecules/table-of-contents/table-of-contents';
+@import '../components/02-molecules/tag-section/tag-section';
+@import '../components/02-molecules/wall-note/wall-note';
 
 // Header Molecules
+@import '../components/02-molecules/header/claim-header/claim-header';
 @import '../components/02-molecules/header/landing-page-header/landing-page-header';
 @import '../components/02-molecules/header/staff-header/staff-header';
 @import '../components/02-molecules/header/standard-header/standard-header';
@@ -192,6 +194,7 @@
 @import '../components/04-pages/booking-page/booking-page';
 @import '../components/04-pages/landing-page/landing-page';
 @import '../components/04-pages/podcast-page/podcast-page';
+@import '../components/04-pages/service-page/service-page';
 @import '../components/04-pages/services-page/services-page';
 @import '../components/04-pages/staff-page/staff-page';
 @import '../components/04-pages/talk-page/talk-page';
