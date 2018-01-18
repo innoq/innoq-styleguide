@@ -31,4 +31,14 @@ a:not([class]) {
   line-height: $link-teaser-line-height;
   color: $link-teaser-text-color;
   font-size: $link-teaser-font-size;
+
+  &.inverted-text-color {
+    border-bottom: 3px solid $link-teaser-inverted-text-border-color;
+    color: $link-teaser-inverted-text-text-color;
+  }
+
+  &.inverted-interaction-color {
+    border-bottom: 3px solid $link-teaser-inverted-interaction-border-color;
+    color: $link-teaser-inverted-interaction-text-color;
+  }
 }

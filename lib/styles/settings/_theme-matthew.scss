@@ -89,6 +89,10 @@ $link-hover-color: $brand-interaction;
 $link-hover-color-light: $brand-hover;
 $link-teaser-border-color: $brand-interaction;
 $link-teaser-text-color: $brand-text;
+$link-teaser-inverted-text-border-color: $brand-text;
+$link-teaser-inverted-text-text-color: $brand-white;
+$link-teaser-inverted-interaction-border-color: $brand-interaction;
+$link-teaser-inverted-interaction-text-color: $brand-white;
 $hover-color: $brand-interaction;
 $mark-color: $brand-hover;
 $code-background-color: rgba($brand-gray-20, .2);
@@ -205,6 +209,11 @@ $content-teaser-inverted-color: $brand-white;
 $content-teaser-colored-bg: $brand-interaction;
 $content-teaser-colored-color: $brand-text;
 $content-teaser-accent-color: $brand-interaction;
+
+$big-content-teaser-headline-inverted-color: $brand-primary;
+$big-content-teaser-headline-color: $brand-text;
+$big-content-teaser-bg-color: $brand-white;
+$big-content-teaser-image-headline-color: $brand-primary;
 
 // Case Teaser
 $case-teaser-body-bg: $brand-white;

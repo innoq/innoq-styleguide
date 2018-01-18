@@ -350,6 +350,7 @@ $teaser-caption-font-size-small: ms(-1);            // ~14px
 $teaser-caption-line-height-small: 1.57 ;           // ~22px
 $teaser-text-font-size: $base-font-size;            // ~16px
 $teaser-text-line-height: 1.5 ;                     // ~24px
+
 $podcast-teaser-subheadline-font-size: ms(2);       // ~20px
 $podcast-teaser-subheadline-line-height: 1.25;      // ~24px
 
@@ -376,6 +377,18 @@ $list-teaser-event-subheadline-font-size: ms(5);            // ~25px
 $list-teaser-event-subheadline-line-height-small: 1.25;     // ~25px
 $list-teaser-event-subheadline-font-size-small: ms(2);      // ~20px
 
+$big-content-teaser-headline-line-height: 1.24;             // ~75px
+$big-content-teaser-headline-font-size: ms(14);             // ~60px
+$big-content-teaser-headline-line-height-small: 1.32;       // ~62px
+$big-content-teaser-headline-font-size-small: ms(11);       // ~47px
+$big-content-teaser-text-line-height: 1.56;                 // ~28px
+$big-content-teaser-text-font-size: ms(1);                  // ~18px
+$big-content-teaser-text-line-height-small: 1.78;           // ~23px
+$big-content-teaser-text-font-size-small: ms(-1);           // ~13px
+$big-content-teaser-image-headline-line-height: 1.23;       // ~58px
+$big-content-teaser-image-headline-font-size: ms(11);       // ~45px
+$big-content-teaser-image-headline-line-height-small: 1.36; // ~49px
+$big-content-teaser-image-headline-font-size-small: ms(9);  // ~36px
 
 //
 // Eyecatcher
@@ -432,6 +445,15 @@ $staff-page-header-intro-text-line-height: 1.36;                    // ~34px
 $staff-page-header-intro-text-font-size: ms(5);                     // ~25px
 $staff-page-header-intro-text-line-height-small: 1.43;              // ~30px
 $staff-page-header-intro-text-font-size-small: ms(3);               // ~21px
+
+$text-header-title-line-height: 1.16;              // ~58px
+$text-header-title-font-size: ms(13);              // ~50px
+$text-header-title-line-height-small: 1.18;        // ~53px
+$text-header-title-font-size-small: ms(11);        // ~45px
+$text-header-intro-font-size: ms(5);               // ~25px
+$text-header-intro-line-height: 1.52;              // ~38px
+$text-header-intro-font-size-small: ms(2);         // ~20px
+$text-header-intro-line-height-small: 1.3;         // ~25px
 
 // Service Intros
 $service-intro-header-font-size: $h1-font-size-small;  // 36px (~35px)
