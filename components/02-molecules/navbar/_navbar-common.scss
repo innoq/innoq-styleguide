@@ -24,6 +24,10 @@ $navbar-drill-transition: left .5s ease;
   }
 }
 
+.navbar--transparent {
+  background-color: transparent;
+}
+
 .navbar__inner {
   display: flex;
   flex-direction: row;
