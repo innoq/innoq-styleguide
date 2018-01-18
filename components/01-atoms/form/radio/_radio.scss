@@ -44,6 +44,10 @@ $radio-indent: $radio-offset + $radio-size;
       background-color: $radio-bg;
       pointer-events: none;
       user-select: none;
+
+      .form-group--invalid & {
+        border-color: $form-control-invalid-border-color;
+      }
     }
 
     // Foreground (icon)

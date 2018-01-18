@@ -45,6 +45,10 @@ $checkbox-indent: $checkbox-offset + $checkbox-size;
       background-color: $checkbox-bg;
       pointer-events: none;
       user-select: none;
+
+      .form-group--invalid & {
+        border-color: $form-control-invalid-border-color;
+      }
     }
 
     // Foreground (icon)
