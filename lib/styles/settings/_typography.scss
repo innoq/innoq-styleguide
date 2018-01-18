@@ -301,10 +301,10 @@ $share-section-heading-line-height: $heading-line-height;   // ~25px
 //
 // Navbar
 //
-$navbar-primary-font-size: ms(2);        // ~16px
+$navbar-primary-font-size-big: ms(7);
+$navbar-primary-font-size: ms(3);        //
+$navbar-dropdown-font-size: ms(2);       // ~16px
 $navbar-secondary-font-size: ms(-2);     // ~14px
-$navbar-line-height: 1.56;               // ~25px
-$navbar-line-height-small: 1.64;         // ~25px
 
 //
 // Search field

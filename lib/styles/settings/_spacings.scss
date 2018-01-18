@@ -78,3 +78,13 @@ $author-bio-image-offset: $avatar-size-base / 2;
 // Conclusion
 //
 $conclusion-border-size: ms(5);
+
+//
+// Navbar
+//
+$navbar-padding: $spacer-md;
+$navbar-min-width: 40rem; // a guess
+$navbar-max-width: $grid-page-layout-main-column-width;
+$navbar-logo-height: 2.25rem;
+$navbar-brandbar-height: $navbar-logo-height + 2 * $navbar-padding;
+$navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small screens

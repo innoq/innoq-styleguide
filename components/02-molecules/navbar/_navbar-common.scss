@@ -1,0 +1,240 @@
+// sass-lint:disable force-pseudo-nesting
+
+$navbar-navbtn-transition: color .175s ease;
+$navbar-drill-transition: left .5s ease;
+
+//
+// navbar
+//
+%navbar-secondary-wrappers {
+  align-items: center;
+  padding: $navbar-padding;
+  height: $navbar-brandbar-height;
+}
+
+.navbar {
+  @extend %heading-font-regular;
+  position: relative;
+  z-index: 1;
+  background-color: $navbar-body-bg;
+  color: $navbar-link-color;
+
+  &--transparent {
+    background-color: transparent;
+  }
+}
+
+.navbar__inner {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: flex-end;
+  margin: 0 auto;
+  width: 100%;
+  max-width: $grid-page-layout-with;
+}
+
+//
+// navbtn // buttons and links in navigation context
+//
+.navbtn {
+  @extend %heading-font-regular;
+  display: inline-block;
+  position: relative;
+  transition: $navbar-navbtn-transition;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  color: $navbar-link-color;
+  hyphens: none;
+}
+
+.navbtn:hover,
+.navbtn:focus {
+  transition: $navbar-navbtn-transition;
+  color: $navbar-link-hover-color;
+}
+
+.navbtn--primary {
+  @extend %heading-font-bold;
+}
+
+.navbtn--drill-up {
+  display: none;
+  position: absolute;
+  top: $spacer-xs;
+  right: $navbar-padding;
+}
+
+.navbtn--search,
+.navbtn--menu {
+  top: -.1em;
+  padding: 0 $spacer-xs;
+  font-size: ms(3);
+}
+
+.navbtn--menu {
+  @extend %heading-font-bold;
+}
+
+.navbtn__left-icon {
+  position: relative;
+  top: .1em;
+  margin-right: .5em;
+}
+
+.navbtn--active::after {
+  display: block;
+  position: absolute;
+  top: 1.3em;
+  background-color: $navbar-link-active-color;
+  width: 100%;
+  height: 3px;
+  content: '';
+}
+
+.navbtn--meta {
+  margin-right: $spacer-base;
+
+  &.navbtn--locale {
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+  &.navbtn--active::after {
+    height: 2px;
+  }
+}
+
+//
+// navbar__brand // and related things
+//
+.navbar__brand {
+  flex-grow: 1;
+  padding: $navbar-padding 0 $navbar-padding $navbar-padding;
+  height: $navbar-logo-height + 2 * $navbar-padding;
+}
+
+.navbar__brand-link {
+  // display: block;
+  @extend %link-unstyled;
+}
+
+.navbar__logo {
+  height: $navbar-logo-height;
+}
+
+//
+// navbar__meta // container
+//
+.navbar__meta {
+  @extend %navbar-secondary-wrappers;
+  display: none;
+  justify-content: center;
+  order: 4;
+  background-color: $navbar-lightened-bg;
+  width: 100%;
+  text-transform: uppercase;
+  font-size: $navbar-secondary-font-size;
+}
+
+//
+// navbar__togglers // container
+//
+.navbar__togglers {
+  @extend %navbar-secondary-wrappers;
+  display: flex;
+  order: 2;
+}
+
+//
+// main toggles
+//
+.navbar__toggle-state--menu-toggler:checked ~ .primary-nav {
+  display: block;
+}
+
+.navbar__toggle-state--menu-toggler:checked ~ .navbar__meta {
+  display: flex;
+}
+
+//
+// primary-nav // main navigation row
+//
+.primary-nav {
+  display: none;
+  position: relative;
+  order: 3;
+  margin-bottom: 0;
+  background-color: $navbar-lightened-bg;
+  width: 100%;
+}
+
+.primary-nav__list {
+  @extend %heading-font-bold;
+  @extend %list-unstyled;
+  position: relative;
+  margin: 0;
+  padding: $navbar-padding * 2 $navbar-padding $spacer-sm;
+  width: 100%;
+  height: calc(100vh - #{$navbar-bottombar-height} - #{$navbar-brandbar-height});
+  font-size: $navbar-primary-font-size;
+  overflow-y: scroll;
+}
+
+.primary-nav__item {
+  position: relative;
+  padding-top: $navbar-padding;
+}
+
+//
+// dropdown // in navbar context
+//
+.dropdown__checkbox:checked ~ .dropdown__toggle--navbar {
+  .dropdown__icon--navbar {
+    color: $navbar-link-hover-color;
+  }
+}
+
+.dropdown__icon--navbar {
+  transition: $standard-transition;
+  color: $navbar-link-color;
+
+  &:hover,
+  &:focus  {
+    color: $navbar-link-hover-color;
+  }
+}
+
+.dropdown__list-wrapper--navbar {
+  @extend %heading-font-regular;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: $navbar-lightened-bg;
+  padding: 0 $spacer-md $spacer-md;
+  width: 100%;
+  font-size: $navbar-primary-font-size;
+
+  &:hover {
+    display: block;
+  }
+
+  &[data-origin='right'] {
+    right: auto;
+    left: -$spacer-md;
+    text-align: left;
+  }
+}
+
+.dropdown__item--navbar {
+  padding-top: $navbar-padding;
+}
+
+.dropdown__link--navbar {
+  white-space: normal;
+}

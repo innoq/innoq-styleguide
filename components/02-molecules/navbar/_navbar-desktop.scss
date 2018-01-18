@@ -1,0 +1,92 @@
+// sass-lint:disable force-pseudo-nesting
+
+@media screen and (min-width: $nav-breakpoint-px:) {
+  .navbar {
+    display: block;
+    height: auto;
+  }
+
+  // .navbar__inner {
+  //   flex: 1;
+  // }
+
+  .navbtn--menu {
+    display: none;
+  }
+
+  .navbtn--primary {
+    padding-bottom: $navbar-padding;
+
+    // show dropdown on hover
+    &:hover ~ .dropdown__list-wrapper--navbar {
+      display: block;
+    }
+  }
+
+  .navbar__brand {
+    padding: 0;
+    width: 100%;
+    height: 0;
+    text-align: center;
+  }
+
+  .navbar__logo {
+    margin-top: $navbar-padding;
+  }
+
+  .navbar__meta {
+    display: flex;
+    order: 2;
+    background-color: transparent;
+    width: auto;
+    height: $navbar-brandbar-height;
+  }
+
+  .navbar__togglers {
+    order: 3;
+    padding-left: 0;
+    width: auto;
+  }
+
+  .primary-nav {
+    display: flex;
+    order: 4;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .primary-nav__list {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 $navbar-padding;
+    width: 100%;
+    min-width: $navbar-min-width;
+    max-width: $navbar-max-width;
+    height: auto;
+    overflow-y: unset;
+  }
+
+  .primary-nav__item {
+    padding-top: 0;
+    font-size: inherit;
+  }
+
+  .dropdown__list-wrapper--navbar {
+    position: absolute;
+    top: $spacer-md * 2;
+    left: -$spacer-md;
+    padding: 0 $spacer-md $spacer-md;
+    width: auto;
+
+    &[data-origin='right'] {
+      right: -$spacer-md;
+      left: auto;
+      text-align: right;
+    }
+  }
+
+  .dropdown__link--navbar {
+    white-space: nowrap;
+  }
+}
