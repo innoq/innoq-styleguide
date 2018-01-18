@@ -45,6 +45,7 @@ $radio-indent: $radio-offset + $radio-size;
       pointer-events: none;
       user-select: none;
 
+      .custom-form-control--invalid &,
       .form-group--invalid & {
         border-color: $form-control-invalid-border-color;
       }
