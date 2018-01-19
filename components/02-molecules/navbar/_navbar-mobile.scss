@@ -73,6 +73,8 @@
   }
 
   .dropdown__toggle--navbar {
+    padding: 0 .875em;
+
     &.dropdown__toggle--enhanced {
       position: absolute;
       left: calc(50% - #{3 * $navbar-padding});
