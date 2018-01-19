@@ -19,8 +19,8 @@ class DropdownToggle {
   }
 }
 
-export default class Navbar {
-  init () {
+export default class Navbar extends HTMLElement {
+  connectedCallback () {
     let navbar = this
     navbar.primaryList = document.querySelector('.primary-nav__list')
     navbar.dropdownToggles = navbar.compileDropdownToggles('.dropdown__toggle--navbar')
