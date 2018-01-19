@@ -405,8 +405,9 @@ $eyecatcher-font-size-large: ms(8);
 // Page Headers
 //
 $standard-header-title-font-size: ms(16);              // ~69px
-$standard-header-title-font-size-small: ms(5);         // ~25px
-$standard-header-title-line-height: 1.07;              // ~75px
+$standard-header-title-font-size-medium-small: ms(12); // ~48px
+$standard-header-title-font-size-small: ms(10);        // ~25px
+$standard-header-title-line-height: 1.07;              // intrinsic proportional
 $standard-header-title-line-height-small: 1.36;        // ~34px
 $standard-header-subtitle-font-size: ms(7);            // ~30px
 $standard-header-subtitle-line-height: 1.2;            // ~36px

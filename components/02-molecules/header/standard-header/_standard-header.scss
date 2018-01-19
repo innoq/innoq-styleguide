@@ -8,10 +8,12 @@
 
   &__title {
     margin-bottom: $spacer-xs;
+    padding: 0 $spacer-md;
     text-align: center;
-    line-height: $standard-header-title-line-height-small;
+    line-height: $standard-header-title-line-height;
     color: $standard-header-title-color;
     font-size: $standard-header-title-font-size-small;
+    hyphens: auto;
 
     &--separated {
       margin-top: $spacer-xxl;
@@ -85,13 +87,19 @@
   font-size: $standard-header-intro-date-font-size-small;
 }
 
+@media screen and (min-width: $grid-breakpoint-sm) {
+  .standard-header__title {
+    font-size: $standard-header-title-font-size-medium-small;
+    hyphens: none;
+  }
+}
+
 @media screen and (min-width: $grid-breakpoint-md) {
   .standard-header {
     margin-bottom: $spacer-xxl;
   }
 
   .standard-header__title {
-    line-height: $standard-header-title-line-height;
     font-size: $standard-header-title-font-size;
   }
 
