@@ -2,4 +2,9 @@
   .blocks {
     margin-bottom: 0;
   }
+
+  .big-content-teaser__headline,
+  .case-teaser__header h1 {
+    hyphens: auto;
+  }
 }
