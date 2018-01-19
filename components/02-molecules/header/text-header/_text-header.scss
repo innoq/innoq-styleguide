@@ -39,9 +39,3 @@
     font-size: $text-header-intro-font-size;
   }
 }
-
-@media screen and (min-width: $grid-breakpoint-lg) {
-  .text-header__body {
-    max-width: 70%;
-  }
-}
