@@ -21,8 +21,7 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .service-intro-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, 1fr);
     grid-row-gap: $spacer-lg;
     grid-column-gap: $spacer-lg;
   }
@@ -38,5 +37,11 @@
   .service-intro__text {
     line-height: $service-intro-text-line-height;
     font-size: $service-intro-text-font-size;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .service-intro-grid {
+    grid-template-columns: repeat(6, 1fr);
   }
 }
