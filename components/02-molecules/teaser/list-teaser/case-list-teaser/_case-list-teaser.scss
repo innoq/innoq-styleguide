@@ -43,6 +43,10 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 
 .case-teaser__header {
   color: $case-teaser-body-color;
+
+  h1 {
+    hyphens: auto;
+  }
 }
 
 .case-teaser__caption {
