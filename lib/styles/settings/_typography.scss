@@ -148,6 +148,11 @@ $wall-note-text-font-size: ms(5);           // ~25px
 $wall-note-text-line-height-small: 1.62;    // ~34px
 $wall-note-text-font-size-small: ms(3);     // ~21px
 
+$image-divider-right-content-text-line-height: 1.36;    // ~34px
+$image-divider-right-content-text-font-size: ms(5);     // ~25px
+$image-divider-right-content-text-line-height-small: 1.36;    // ~34px
+$image-divider-right-content-text-font-size-small: ms(3);     // ~21px
+
 
 //
 // Code
@@ -469,6 +474,11 @@ $claim-header-title-line-height: 1.1;              // ~50px
 $claim-header-title-font-size: ms(11);             // ~45px
 $claim-header-title-line-height-small: 1.12;       // ~41px
 $claim-header-title-font-size-small: ms(9);        // ~36px
+
+$image-header-font-size: ms(16);                         // ~70px
+$image-header-font-size-small: ms(14);                   // ~57px
+$image-header-line-height: 1.07;                         // ~73px
+$image-header-line-height-small: $heading-line-height;   // ~57px
 
 // Service Intros
 $service-intro-header-font-size: $h1-font-size-small;  // 36px (~35px)

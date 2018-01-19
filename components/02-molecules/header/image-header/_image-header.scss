@@ -1,0 +1,48 @@
+$gradient-stencil: rgba(0, 0, 0, .25);
+
+.image-header {
+  background-color: $image-header-bg-color;
+  padding: $spacer-md 0;
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: $default-page-layout-content-width-xl;
+    min-height: 100vh;
+
+  }
+
+  &__content {
+    background-color: $image-header-content-bg-color;
+    padding: $spacer-base $spacer-base $spacer-sm;
+    text-align: center;
+  }
+
+  &__title {
+    @extend %punch-in;
+    margin-bottom: $spacer-md;
+    line-height: $image-header-line-height-small;
+    font-size: $image-header-font-size-small;
+  }
+}
+
+.image-header-bg {
+  background-image: asset-url('public/assets/static/visual-culture-01.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.image-header-bg-text-box {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/static/visual-culture-01.jpg');
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .image-header__title {
+    margin-bottom: $spacer-base;
+    line-height: $image-header-line-height;
+    font-size: $image-header-font-size;
+  }
+}

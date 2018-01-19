@@ -129,10 +129,13 @@
 @import '../components/02-molecules/super-quote/super-quote';
 @import '../components/02-molecules/table-of-contents/table-of-contents';
 @import '../components/02-molecules/tag-section/tag-section';
-@import '../components/02-molecules/wall-note/wall-note';
+@import '../components/02-molecules/visual-divider/image-divider-center/image-divider-center';
+@import '../components/02-molecules/visual-divider/image-divider-right/image-divider-right';
+@import '../components/02-molecules/visual-divider/wall-note/wall-note';
 
 // Header Molecules
 @import '../components/02-molecules/header/claim-header/claim-header';
+@import '../components/02-molecules/header/image-header/image-header';
 @import '../components/02-molecules/header/landing-page-header/landing-page-header';
 @import '../components/02-molecules/header/staff-header/staff-header';
 @import '../components/02-molecules/header/standard-header/standard-header';
@@ -191,6 +194,7 @@
 // Pages
 @import '../components/04-pages/aggregator-page/aggregator-page';
 @import '../components/04-pages/article-page/article-page';
+@import '../components/04-pages/culture-page/culture-page';
 @import '../components/04-pages/booking-page/booking-page';
 @import '../components/04-pages/landing-page/landing-page';
 @import '../components/04-pages/podcast-page/podcast-page';
