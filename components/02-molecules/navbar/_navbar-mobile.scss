@@ -75,7 +75,8 @@
   .dropdown__toggle--navbar {
     &.dropdown__toggle--enhanced {
       position: absolute;
-      left: calc(50% - #{2 * $navbar-padding});
+      left: calc(50% - #{3 * $navbar-padding});
+      padding: .35rem $navbar-padding .4rem;
     }
   }
 }
