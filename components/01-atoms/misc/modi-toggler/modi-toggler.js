@@ -1,6 +1,6 @@
 /**
  * todo:
- *    separate selectable elements and classNames
+ *    - separate selectable elements and classNames
  */
 export default class ModiToggler extends HTMLElement {
   connectedCallback () {
