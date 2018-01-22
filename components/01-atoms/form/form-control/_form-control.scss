@@ -32,8 +32,23 @@
   position: relative;
   min-height: ($base-line-height * 1rem);
 
+  &.form-control--invalid,
+  .form-group--invalid & {
+    .form-label,
+    .form-text {
+      color: $form-control-invalid-border-color;
+    }
+
+    .form-label {
+      &::before {
+        border-color: $form-control-invalid-border-color;
+      }
+    }
+  }
+
+
   // Hide the real input inside
-  > .form-control-input {
+  > .form-control__input {
     position: absolute;
     opacity: 0;
     z-index: -1; // Put the input behind the label so it doesn't overlay text

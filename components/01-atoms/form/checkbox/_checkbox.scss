@@ -9,7 +9,7 @@ $checkbox-indent: $checkbox-offset + $checkbox-size;
 
   // Set styles for all form states
   // sass-lint:disable force-pseudo-nesting
-  > .form-control-input {
+  > .form-control__input {
 
     &:checked ~ .form-label::before {
       background-color: $checkbox-bg-active;
@@ -45,11 +45,6 @@ $checkbox-indent: $checkbox-offset + $checkbox-size;
       background-color: $checkbox-bg;
       pointer-events: none;
       user-select: none;
-
-      .custom-form-control--invalid &,
-      .form-group--invalid & {
-        border-color: $form-control-invalid-border-color;
-      }
     }
 
     // Foreground (icon)

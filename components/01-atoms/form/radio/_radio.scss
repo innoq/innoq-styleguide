@@ -9,7 +9,7 @@ $radio-indent: $radio-offset + $radio-size;
 
   // Set styles for all form states
   // sass-lint:disable force-pseudo-nesting
-  > .form-control-input {
+  > .form-control__input {
     &:focus ~ .form-label::before {
       border-color: $radio-border-hoverfocus;
     }
@@ -44,11 +44,6 @@ $radio-indent: $radio-offset + $radio-size;
       background-color: $radio-bg;
       pointer-events: none;
       user-select: none;
-
-      .custom-form-control--invalid &,
-      .form-group--invalid & {
-        border-color: $form-control-invalid-border-color;
-      }
     }
 
     // Foreground (icon)
