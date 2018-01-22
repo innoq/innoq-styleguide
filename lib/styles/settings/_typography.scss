@@ -44,8 +44,8 @@ $heading-line-height: 1.2;
 //
 
 // H1
-$h1-font-size: ms(12);                   // 48px (~50px)
-$h1-font-size-small: ms(9);              // 36px (~35px)
+$h1-font-size: ms(16);                   // 48px (~50px)
+$h1-font-size-small: ms(12);              // 36px (~35px)
 $h1-line-height: $heading-line-height;   // 47px
 
 // H2
@@ -359,7 +359,7 @@ $teaser-caption-line-height: 1.375 ;                // ~22px
 $teaser-caption-font-size-small: ms(-1);            // ~14px
 $teaser-caption-line-height-small: 1.57 ;           // ~22px
 $teaser-text-font-size: $base-font-size;            // ~16px
-$teaser-text-line-height: 1.5 ;                     // ~24px
+$teaser-text-line-height: 1.625 ;                   // ~26px
 
 $podcast-teaser-subheadline-font-size: ms(2);       // ~20px
 $podcast-teaser-subheadline-line-height: 1.25;      // ~24px
