@@ -2,6 +2,7 @@ $case-teaser-bg-width: 1444px; // Arbitrary value
 $case-teaser-bg-height: 1000px; // Arbitrary value
 $teaser-outer-padding: $spacer-md;
 $teaser-inner-padding: $spacer-base;
+$teaser-inner-padding-bottom: $spacer-xxl;
 
 $gradient-stencil: rgba(0, 0, 0, .25);
 
@@ -33,13 +34,13 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   flex-direction: column;
   justify-content: space-between;
   background-color: $case-teaser-body-bg;
-  padding: $teaser-inner-padding;
+  padding: $teaser-inner-padding $teaser-inner-padding $teaser-inner-padding-bottom;
   max-width: 620px;
 }
 
 .case-teaser__text {
   @extend %teaser-text;
-  margin-bottom: $spacer-base;
+  margin-bottom: $spacer-md;
   line-height: $teaser-text-line-height;
   font-size: $teaser-text-font-size;
 }
