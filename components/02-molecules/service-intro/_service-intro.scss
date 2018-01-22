@@ -1,6 +1,7 @@
 .service-intro {
   display: flex;
   flex-direction: column;
+  padding: 0 $spacer-base $spacer-base 0;
 
   & + & {
     margin-top: $spacer-lg;
@@ -18,7 +19,7 @@
   font-size: $service-intro-text-font-size-small;
 }
 
-@media screen and (min-width: $grid-breakpoint-md) {
+@media screen and (min-width: $grid-breakpoint-md-lg) {
   .service-intro-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -27,10 +28,15 @@
   }
 
   .service-intro {
+    border-right: 1px solid $brand-gray-25;
     grid-column: span 2;
 
     & + & {
       margin-top: 0;
+    }
+
+    &:nth-child(2n) {
+      border-right: 0;
     }
   }
 
@@ -40,8 +46,18 @@
   }
 }
 
-@media screen and (min-width: $grid-breakpoint-lg) {
+@media screen and (min-width: $grid-breakpoint-lg-xl) {
   .service-intro-grid {
     grid-template-columns: repeat(6, 1fr);
+  }
+
+  .service-intro {
+    &:nth-child(2n) {
+      border-right: 1px solid $brand-gray-25;
+    }
+
+    &:nth-child(3n) {
+      border-right: 0;
+    }
   }
 }
