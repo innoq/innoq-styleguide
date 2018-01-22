@@ -16,6 +16,7 @@
   border: 0;
   background-color: $search-field-background;
   width: 100%;
+  line-height: 1.5em; // don't cut off descenders Chrome/FF
   color: $search-field-color;
   caret-color: $search-field-caret-color;
   appearance: none;
