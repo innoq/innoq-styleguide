@@ -1,0 +1,38 @@
+.newsletter-optin {
+  $gradient-from: rgba(0, 0, 0, .2);
+  $gradient-to: rgba(0, 0, 0, 0);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient($gradient-from, $gradient-to), asset-url('public/assets/static/visual-header-igel.jpg');
+  background-size: cover;
+  padding: $spacer-md;
+  overflow: hidden;
+  text-align: center;
+  color: $newsletter-optin-color;
+}
+
+.newsletter-optin__title {
+  color: $newsletter-optin-color;
+}
+
+.newsletter-optin__form {
+  .form-control {
+    border: 0;
+    padding: $spacer-sm $spacer-md;
+    line-height: $button-small-line-height;
+    font-size: $button-small-font-size;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .newsletter-optin__form {
+    display: flex;
+
+    .form-group {
+      margin-bottom: 0;
+    }
+  }
+}
