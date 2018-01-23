@@ -1,25 +1,24 @@
-//Page Layout without grid
+//
+// Default page layout without grid
+//
 
-
-//Landing Page width, content max-width is 1440px
+// Landing Page width, content max-width is 1440px
 .page-layout-xl--default {
-  margin-top: $default-page-layout-margin;
-  margin-right: auto;
-  margin-bottom: $default-page-layout-margin;
-  margin-left: auto;
-  padding: $container-spacer-y-sm $container-spacer-x-sm;
   width: $default-page-layout-width-xl;
   max-width: $default-page-layout-content-width-xl;
 }
 
 
-//Content Page width, content max-width is 800px
+// Content Page width, content max-width is 800px
 .page-layout-md--default {
-  margin-top: $default-page-layout-margin;
-  margin-right: auto;
-  margin-bottom: $default-page-layout-margin;
-  margin-left: auto;
-  padding: $container-spacer-y-sm $container-spacer-x-sm;
   width: $default-page-layout-width-md;
   max-width: $default-page-layout-content-width-md;
+}
+
+
+// Unified spacings for both variants
+.page-layout-xl--default,
+.page-layout-md--default {
+  margin: $default-page-layout-margin auto;
+  padding: $container-spacer-y-sm $container-spacer-x-sm;
 }

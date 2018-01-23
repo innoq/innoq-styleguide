@@ -1,17 +1,13 @@
 //
-// Content page layout
+// Page page layout build with CSS grid
 //
 
-// The page-layout--grid layout is setup as two nested grids that consits of
-// three columns each.
+// This layout is setup as two nested grids that consits of three columns each.
 .page-layout--grid {
 
   // If the browser does not support grid, we use a simple layout:
   // One column centered in the middle of the page.
-  margin-top: $grid-page-layout-margin;
-  margin-right: auto;
-  margin-bottom: $grid-page-layout-margin;
-  margin-left: auto;
+  margin: $grid-page-layout-margin auto;
   padding: $container-spacer-y-sm $container-spacer-x-sm;
   width: $grid-page-layout-content-with;
   max-width: $grid-page-layout-main-column-width;
@@ -51,7 +47,6 @@
       padding: 0;
       width: 100%;
       max-width: none;
-      //
       grid-template-columns: 1fr $grid-page-layout-leftright-width $grid-page-layout-content-with-xl $grid-page-layout-leftright-width 1fr;
       grid-template-rows: auto;
       grid-template-areas: '. left center right .';
