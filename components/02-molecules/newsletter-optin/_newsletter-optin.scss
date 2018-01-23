@@ -1,6 +1,6 @@
 .newsletter-optin {
-  $gradient-from: rgba(0, 0, 0, .2);
-  $gradient-to: rgba(0, 0, 0, 0);
+  $gradient-from: rgba(0, 0, 0, .3);
+  $gradient-to: rgba(0, 0, 0, .1);
 
   display: flex;
   flex-direction: column;
@@ -8,13 +8,21 @@
   justify-content: center;
   background-image: linear-gradient($gradient-from, $gradient-to), asset-url('public/assets/static/visual-header-igel.jpg');
   background-size: cover;
-  padding: $spacer-md;
+  padding: $spacer-lg;
   overflow: hidden;
   text-align: center;
   color: $newsletter-optin-color;
 }
 
 .newsletter-optin__title {
+  @extend %h1;
+  margin-bottom: $spacer-sm;
+  color: $newsletter-optin-color;
+}
+
+.newsletter-optin__subtitle {
+  @extend %h5;
+  margin-bottom: $spacer-lg;
   color: $newsletter-optin-color;
 }
 
