@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="72px" viewBox="0 0 12 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill-1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="arrow-long-down-blue" fill="#24244C" fill-rule="nonzero">
+            <path d="M41.923,36.3815 C42.025,36.1375 42.025,35.8615 41.923,35.6175 C41.872,35.4945 41.799,35.3845 41.706,35.2925 L36.707,30.2925 C36.317,29.9025 35.684,29.9025 35.293,30.2925 C34.902,30.6835 34.902,31.3165 35.293,31.7065 L38.586,34.9995 L-29,34.9995 C-29.552,34.9995 -30,35.4475 -30,35.9995 C-30,36.5515 -29.552,36.9995 -29,36.9995 L38.586,36.9995 L35.293,40.2925 C34.902,40.6835 34.902,41.3165 35.293,41.7065 C35.488,41.9025 35.744,41.9995 36,41.9995 C36.256,41.9995 36.512,41.9025 36.707,41.7065 L41.706,36.7075 C41.799,36.6145 41.872,36.5045 41.923,36.3815" id="Fill-1" transform="translate(5.999750, 35.999750) rotate(90.000000) translate(-5.999750, -35.999750) "></path>
+        </g>
+    </g>
+</svg>
