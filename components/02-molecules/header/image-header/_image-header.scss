@@ -1,30 +1,33 @@
 $gradient-stencil: rgba(0, 0, 0, .25);
 
 .image-header {
+  display: flex;
+  flex-direction: column;
   background-color: $image-header-bg-color;
-  padding: $spacer-md 0;
+  padding: $spacer-md;
+  min-height: 100vh;
 
   &__body {
     display: flex;
+    flex-grow: 1;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    width: 100%;
     max-width: $default-page-layout-content-width-xl;
-    min-height: 100vh;
-
   }
 
   &__content {
     background-color: $image-header-content-bg-color;
-    padding: $spacer-base $spacer-base $spacer-sm;
+    padding: $spacer-base $spacer-xl;
     text-align: center;
   }
 
   &__title {
     @extend %punch-in;
     margin-bottom: $spacer-md;
-    line-height: $image-header-line-height-small;
-    font-size: $image-header-font-size-small;
+    // line-height: $image-header-line-height-small;
+    // font-size: $image-header-font-size-small;
   }
 }
 
@@ -42,7 +45,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 @media screen and (min-width: $grid-breakpoint-md) {
   .image-header__title {
     margin-bottom: $spacer-base;
-    line-height: $image-header-line-height;
-    font-size: $image-header-font-size;
+    // line-height: $image-header-line-height;
+    // font-size: $image-header-font-size;
   }
 }
