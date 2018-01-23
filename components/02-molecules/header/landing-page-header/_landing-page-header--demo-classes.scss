@@ -1,0 +1,80 @@
+// overrides for easy testing
+// remove in final website
+
+.landing-page-header--red {
+
+  .landing-page-header__body {
+    background-color: $brand-primary;
+  }
+
+  .landing-page-header__title {
+    padding-bottom: $spacer-base;
+    color: $landing-page-header-inverted-text-color;
+  }
+
+  .landing-page-header__down-arrow {
+    text-align: center;
+    color: $brand-text;
+  }
+}
+
+
+
+.landing-page-header--blue {
+
+  .landing-page-header__body {
+    border-bottom: 8px solid $brand-primary;
+    background-color: $brand-text;
+  }
+
+  .landing-page-header__title {
+    padding-bottom: $spacer-base;
+    color: $landing-page-header-inverted-text-color;
+  }
+
+  .landing-page-header__text {
+    color: $brand-primary;
+  }
+}
+
+
+
+.landing-page-header--centered {
+  justify-content: center;
+
+  .landing-page-header__body {
+    top: 0; // reset
+    border: 0;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .landing-page-header--centered {
+    .landing-page-header__title {
+      font-size: ms(13); // unmodified: ms(11)
+    }
+  }
+}
+
+
+
+.landing-page-header--centered-big {
+  justify-content: center;
+
+  .landing-page-header__body {
+    top: 0; // reset
+    border: 0;
+  }
+
+  .landing-page-header__text {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .landing-page-header--centered-big {
+    .landing-page-header__title {
+      font-size: ms(16); // unmodified: ms(11)
+    }
+  }
+}
