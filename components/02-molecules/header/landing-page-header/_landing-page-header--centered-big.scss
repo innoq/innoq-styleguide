@@ -1,0 +1,14 @@
+.landing-page-header--centered-big {
+  justify-content: center;
+}
+
+.landing-page-header__body--centered-big {
+  top: 0; // reset
+  border: 0;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .landing-page-header__title--centered-big {
+    font-size: ms(16); // unmodified: ms(11)
+  }
+}

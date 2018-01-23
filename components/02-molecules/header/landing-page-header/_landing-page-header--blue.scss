@@ -1,0 +1,16 @@
+.landing-page-header {
+
+  &__body--blue {
+    border-bottom: 8px solid $brand-primary;
+    background-color: $brand-text;
+  }
+
+  &__title--blue {
+    padding-bottom: $spacer-base;
+    color: $landing-page-header-inverted-text-color;
+  }
+
+  &__text--blue {
+    color: $brand-primary;
+  }
+}

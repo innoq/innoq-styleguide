@@ -1,0 +1,16 @@
+.landing-page-header {
+
+  &__body--red {
+    background-color: $brand-primary;
+  }
+
+  &__title--red {
+    padding-bottom: $spacer-base;
+    color: $landing-page-header-inverted-text-color;
+  }
+
+  &__down-arrow--red {
+    text-align: center;
+    color: $brand-text;
+  }
+}

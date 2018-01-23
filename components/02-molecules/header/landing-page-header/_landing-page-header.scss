@@ -1,3 +1,5 @@
+// variations imported at the end of this file
+
 $landing-page-header-outer-padding: $spacer-lg;
 $landing-page-header-outer-padding-small: $spacer-sm;
 
@@ -7,13 +9,15 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 .landing-page-header {
   @extend %page-header;
 
+  justify-content: flex-end;
   margin-bottom: $spacer-xxl;
   padding: $landing-page-header-outer-padding $landing-page-header-outer-padding-small;
+  min-height: calc(100vh - 7rem);
 
   &__body {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     margin: 0 auto;
     border-bottom: 8px solid $landing-page-header-border-color;
     background-color: $landing-page-header-intro-bg-color;
@@ -42,6 +46,11 @@ $gradient-stencil: rgba(0, 0, 0, .25);
     line-height: $standard-header-intro-line-height-small;
     font-size: $standard-header-intro-font-size-small;
   }
+
+  &__down-arrow {
+    text-align: center;
+    color: $brand-primary;
+  }
 }
 
 .landing-page-header-bg-image {
@@ -60,6 +69,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   .landing-page-header__body {
     position: relative;
     top: $spacer-xxl;
+    padding: $spacer-xxl $spacer-md $spacer-xl;
   }
 
   .landing-page-header__title {
@@ -82,3 +92,8 @@ $gradient-stencil: rgba(0, 0, 0, .25);
     font-size: $standard-header-intro-font-size;
   }
 }
+
+@import './landing-page-header--red';
+@import './landing-page-header--blue';
+@import './landing-page-header--centered';
+@import './landing-page-header--centered-big';
