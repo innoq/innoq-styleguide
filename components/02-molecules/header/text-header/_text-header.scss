@@ -9,7 +9,7 @@
   }
 
   &__title {
-    margin-bottom: $spacer-md;
+    margin-bottom: $spacer-base;
     line-height: $text-header-title-line-height-small;
     font-size: $text-header-title-font-size-small;
   }
@@ -17,7 +17,7 @@
   &__text {
     @extend %body-font-italic;
 
-    margin-bottom: $spacer-sm;
+    margin-bottom: $spacer-base;
     line-height: $text-header-intro-line-height-small;
     font-size: $text-header-intro-font-size-small;
   }
@@ -30,7 +30,7 @@
   }
 
   .text-header__title {
-    margin-bottom: $spacer-base;
+    margin-bottom: $spacer-lg;
     line-height: $text-header-title-line-height;
     font-size: $text-header-title-font-size;
   }
