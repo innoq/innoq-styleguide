@@ -38,6 +38,7 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .newsletter-optin__form {
     display: flex;
+    justify-content: center;
 
     .form-group {
       margin-bottom: 0;
