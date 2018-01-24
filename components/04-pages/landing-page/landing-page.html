@@ -9,10 +9,11 @@ import { cssRight } from "./components/02-molecules/teaser/tile-teaser/podcast-t
                 ad minim veniam, quis nostrud exercitation ullamco laboris nisi.
             </div>
             <form class="dialog-banner__form" action="#" method="post">
-                <div class="form-check">
-                    <label class="form-check__label" for="gold">
-                        <input type="checkbox" id="gold" class="form-check__input" />I'm OK with this
-                    </label>
+                <div class="form-group">
+                    <div class="custom-form-control checkbox">
+                        <input id="custom-checkbox-1" type="checkbox" class="form-control__input" />
+                        <label for="custom-checkbox-1" class="form-label">I'm ok with this.</label>
+                    </div>
                 </div>
                 <button type="submit" class="btn btn--small">
                     Save settings
