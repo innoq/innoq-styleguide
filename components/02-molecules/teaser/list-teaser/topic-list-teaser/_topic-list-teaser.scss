@@ -1,5 +1,6 @@
-$gradient-from: rgba(0, 0, 0, .3);
-$gradient-to: rgba(0, 0, 0, .075);
+$gradient-from: rgba(0, 0, 0, .4);
+$gradient-to: rgba(0, 0, 0, .1);
+$topic-teaser-height: ms(36);
 
 .topic-teaser {
   @extend %block-link;
@@ -12,7 +13,7 @@ $gradient-to: rgba(0, 0, 0, .075);
   background-position: top left;
   background-size: cover;
   padding: $spacer-lg;
-  min-height: 60vh;
+  min-height: $topic-teaser-height;
   text-align: center;
   color: $topic-teaser-body-color;
 }

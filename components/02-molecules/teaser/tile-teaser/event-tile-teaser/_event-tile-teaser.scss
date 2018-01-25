@@ -1,7 +1,7 @@
-$event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spacer-xxs);
+$event-list-teaser-height: ms(34);
 
 .list-teaser-event {
   &.tile {
-    min-height: 50vh;
+    min-height: $event-list-teaser-height;
   }
 }
