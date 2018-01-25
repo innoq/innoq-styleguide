@@ -42,7 +42,7 @@ $topic-teaser-height: ms(36);
   @extend %heading-font-bold;
 }
 
-//Background images for topic header
+// Background images for topic header
 .topic-list-teaser-bg-image-girl {
   background-image: radial-gradient($gradient-from, $gradient-to), asset-url('public/assets/static/visual-header-girl.jpg');
 }

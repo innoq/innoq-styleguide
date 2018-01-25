@@ -360,8 +360,8 @@ $teaser-caption-font-size-small: ms(-1);            // ~14px
 $teaser-caption-line-height-small: 1.57 ;           // ~22px
 $teaser-text-font-size: ms(0);                      // ~16px
 $teaser-text-line-height: 1.375;                    // ~22px
-$teaser-text-font-size-italic: ms(2);               // ~19px
-$teaser-text-line-height-italic: 1.375;             // ~26px
+$teaser-text-font-size-italic: ms(3);               // ~21px
+$teaser-text-line-height-italic: $base-line-height; // ~32px
 $teaser-small-text-font-size-italic: ms(0);         // ~16px
 $teaser-small-headline-font-size: ms(2);            // ~19px
 
