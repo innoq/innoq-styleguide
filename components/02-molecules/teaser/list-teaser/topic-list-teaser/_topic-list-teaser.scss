@@ -42,23 +42,23 @@ $gradient-to: rgba(0, 0, 0, .075);
 }
 
 //Background images for topic header
-.topic-header-bg-image-girl {
+.topic-list-teaser-bg-image-girl {
   background-image: radial-gradient($gradient-from, $gradient-to), asset-url('public/assets/static/visual-header-girl.jpg');
 }
 
-.topic-header-bg-image-medusa {
+.topic-list-teaser-bg-image-medusa {
   background-image: radial-gradient($gradient-from, $gradient-to), asset-url('public/assets/static/visual-header-medusa.jpg');
 }
 
-.topic-header-bg-image-ice {
+.topic-list-teaser-bg-image-ice {
   background-image: radial-gradient($gradient-from, $gradient-to), asset-url('public/assets/static/visual-header-ice.jpg');
 }
 
-.topic-header-bg-image-igel {
+.topic-list-teaser-bg-image-igel {
   background-image: radial-gradient($gradient-from, $gradient-to), asset-url('public/assets/static/visual-header-igel.jpg');
 }
 
-.topic-header-bg-image-koralle {
+.topic-list-teaser-bg-image-koralle {
   background-image: radial-gradient($gradient-from, $gradient-to), asset-url('public/assets/static/visual-header-koralle.jpg');
 }
 
