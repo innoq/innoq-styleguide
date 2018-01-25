@@ -92,8 +92,8 @@
 %teaser-text-italic {
   @extend %body-font-italic;
 
-  line-height: $teaser-text-line-height;
-  font-size: $teaser-text-font-size;
+  line-height: $teaser-text-line-height-italic;
+  font-size: $teaser-text-font-size-italic;
 }
 
 %punch-in {
