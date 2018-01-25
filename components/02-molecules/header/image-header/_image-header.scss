@@ -13,6 +13,9 @@ $gradient-stencil: rgba(0, 0, 0, .25);
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
     // max-width: $default-page-layout-content-width-xl;
   }
@@ -31,15 +34,20 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   }
 }
 
-.image-header-bg {
+.image-header-bg-culture-01 {
   background-image: asset-url('public/assets/static/visual-culture-01.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
-.image-header-bg-text-box {
+.image-header-bg-staff-01 {
+  background-image: asset-url('public/assets/static/visual-staff-01.jpg');
+}
+
+.image-header-bg-culture-01-text-box {
   background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/static/visual-culture-01.jpg');
+}
+
+.image-header-bg-staff-01-text-box {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/static/visual-staff-01.jpg');
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
