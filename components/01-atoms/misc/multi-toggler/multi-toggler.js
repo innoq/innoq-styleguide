@@ -8,12 +8,12 @@ export default class MultiToggler extends HTMLElement {
     this.toggleSelfClass = this.getAttribute('data-toggle-self-class')
     let initSelfClass = this.getAttribute('data-init-self-class')
 
-    this.targtElements = []
+    this.targetElements = []
     if (targetSelector) {
-      this.targtElements.push(Array.from(document.querySelectorAll(targetSelector)))
+      this.targetElements.push(Array.from(document.querySelectorAll(targetSelector)))
     }
     if (hasNextElementSiblingTarget) {
-      this.targtElements.push(this.nextElementSibling)
+      this.targetElements.push(this.nextElementSibling)
     }
     if (toggleOnInit) {
       this.toggle()
@@ -32,8 +32,8 @@ export default class MultiToggler extends HTMLElement {
   }
 
   toggleTargets (className) {
-    if (this.targtElements[0]) {
-      this.targtElements.forEach(
+    if (this.targetElements[0]) {
+      this.targetElements.forEach(
         target => target.classList.toggle(className)
       )
       this.toggleSelf()
