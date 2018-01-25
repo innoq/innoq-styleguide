@@ -93,6 +93,14 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/static/visual-header-koralle-1444.jpg');
 }
 
+.topic-header-bg-image-heads {
+  background-image: asset-url('public/assets/static/visual-header-heads.jpg');
+}
+
+.topic-header-bg-image-text-box-heads {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/static/visual-header-heads.jpg');
+}
+
 @media screen and (min-width: $grid-breakpoint-md) {
   .topic-header {
     padding: $topic-header-outer-padding;
