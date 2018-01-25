@@ -1,7 +1,7 @@
 .service-intro {
   display: flex;
   flex-direction: column;
-  padding: 0 $spacer-base $spacer-base 0;
+  padding: $spacer-sm $spacer-base $spacer-base 0;
   width: 100%; // FF fix: take full width of grid-area
 
   & + & {
@@ -15,7 +15,7 @@
 
 .service-intro__text {
   @extend %heading-font-bold;
-  margin-bottom: $spacer-sm;
+  margin-bottom: $spacer-base;
   line-height: $service-intro-text-line-height-small;
   font-size: $service-intro-text-font-size-small;
 }
@@ -47,7 +47,7 @@
   }
 }
 
-@media screen and (min-width: $grid-breakpoint-lg-xl) {
+@media screen and (min-width: $grid-breakpoint-xl) {
   .service-intro-grid {
     grid-template-columns: repeat(6, 1fr);
   }

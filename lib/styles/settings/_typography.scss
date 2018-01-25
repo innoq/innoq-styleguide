@@ -376,7 +376,7 @@ $list-teaser-abstract-headline-line-height-small: 1.23 ;  // ~37px
 $list-teaser-abstract-text-font-size: ms(2);              // ~19px
 $list-teaser-abstract-text-line-height: 1.37;             // ~26px
 $list-teaser-abstract-text-font-size-small: ms(0);        // ~16px
-$list-teaser-abstract-text-line-height-small: 1.4;       // ~23px
+$list-teaser-abstract-text-line-height-small: 1.4;        // ~23px
 
 $list-teaser-event-headline-font-size: ms(7);               // ~30px
 $list-teaser-event-headline-line-height: 1.2 ;              // ~36px
@@ -431,10 +431,10 @@ $standard-header-intro-date-line-height: 1.36;         // ~34px
 $standard-header-intro-date-font-size-small: ms(-1);   // ~14px
 $standard-header-intro-date-line-height-small: 1.57;   // ~22px
 
-$landing-page-header-title-font-size: ms(11);         // ~45px
-$landing-page-header-title-font-size-small: ms(9);    // ~35px
-$landing-page-header-title-line-height: 1.15;         // ~52px
-$landing-page-header-title-line-height-small: 1.2;    // ~42px
+$landing-page-header-title-font-size: ms(11);          // ~45px
+$landing-page-header-title-font-size-small: ms(9);     // ~35px
+$landing-page-header-title-line-height: 1.15;          // ~52px
+$landing-page-header-title-line-height-small: 1.2;     // ~42px
 
 $staff-page-header-quote-font-size: ms(16);                         // ~70px
 $staff-page-header-quote-font-size-small: ms(10);                   // ~39px
@@ -481,12 +481,12 @@ $image-header-line-height: 1.07;                         // ~73px
 $image-header-line-height-small: $heading-line-height;   // ~57px
 
 // Service Intros
-$service-intro-header-font-size: $h1-font-size-small;  // 36px (~35px)
-$service-intro-text-font-size: ms(1);                  // ~18px
-$service-intro-text-line-height: 1.625;                 // ~28px
-$service-intro-text-font-size-small: ms(0);            // ~16px
-$service-intro-text-line-height-small: 1.75;          // ~26px
+$service-intro-header-font-size: ms(9);            // 36px (~35px)
+$service-intro-text-font-size: ms(1);              // ~18px
+$service-intro-text-line-height: 1.625;            // ~28px
+$service-intro-text-font-size-small: ms(0);        // ~16px
+$service-intro-text-line-height-small: 1.75;       // ~26px
 
 // Dialog Banner
-$dialog-banner-font-size: $base-font-size;     // ~16px
-$dialog-banner-line-height: 1.56;              // ~25px
+$dialog-banner-font-size: $base-font-size;         // ~16px
+$dialog-banner-line-height: 1.56;                  // ~25px

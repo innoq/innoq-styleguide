@@ -2,17 +2,19 @@
 
 $landing-page-header-outer-padding: $spacer-lg;
 $landing-page-header-outer-padding-small: $spacer-sm;
-
+$landing-page-header-height: 70vh;
+$landing-page-header-bottom-margin: $spacer-xxl;
 
 $gradient-stencil: rgba(0, 0, 0, .25);
+
 
 .landing-page-header {
   @extend %page-header;
 
   justify-content: flex-end;
-  margin-bottom: $spacer-xxl;
+  margin-bottom: $landing-page-header-bottom-margin;
   padding: $landing-page-header-outer-padding $landing-page-header-outer-padding-small;
-  min-height: calc(100vh - 7rem);
+  min-height: $landing-page-header-height;
 
   &__body {
     display: flex;
@@ -21,7 +23,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
     margin: 0 auto;
     border-bottom: 8px solid $landing-page-header-border-color;
     background-color: $landing-page-header-intro-bg-color;
-    padding: $spacer-sm;
+    padding: $spacer-base;
     max-width: $grid-page-layout-content-with-xl;
     color: $landing-page-header-intro-text-color;
     box-sizing: content-box;
@@ -69,7 +71,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   .landing-page-header__body {
     position: relative;
     top: $spacer-xxl;
-    padding: $spacer-xxl $spacer-md $spacer-xl;
+    padding: $spacer-xxl $spacer-base $spacer-xl;
   }
 
   .landing-page-header__title {
@@ -88,6 +90,8 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   }
 
   .landing-page-header__text {
+    padding-right: $spacer-lg;
+    padding-left: $spacer-lg;
     line-height: $standard-header-intro-line-height;
     font-size: $standard-header-intro-font-size;
   }
