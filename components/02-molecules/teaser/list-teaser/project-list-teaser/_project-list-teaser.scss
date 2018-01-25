@@ -28,20 +28,9 @@
 // client-projects
 //
 
-// %client-projects-headline {
-//   line-height: $list-teaser-project-headline-line-height;
-//   font-size: $list-teaser-project-headline-font-size;
-// }
-
 %client-projects-headline-small {
   line-height: $list-teaser-project-headline-line-height-small;
   font-size: $list-teaser-project-headline-font-size-small;
-}
-
-%client-projects-intro-text {
-  @extend %body-font-italic;
-  line-height: $list-teaser-project-intro-text-line-height;
-  font-size: $list-teaser-project-intro-text-font-size;
 }
 
 .client-projects {
@@ -87,9 +76,8 @@
 }
 
 .client-projects__intro-text {
-  @extend %client-projects-intro-text;
+  @extend %teaser-text-italic;
   margin: 0;
-  font-size: $list-teaser-project-intro-text-font-size;
 }
 
 .client-projects__show-more-btn,
