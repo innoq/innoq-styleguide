@@ -29,7 +29,6 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
   line-height: $list-teaser-event-headline-line-height-small;
   color: $list-teaser-event-headline-color;
   font-size: $list-teaser-event-headline-font-size-small;
-  hyphens: none;
 }
 
 .list-teaser-event__subheadline {
@@ -38,7 +37,6 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
   margin-bottom: $spacer-xs;
   line-height: $list-teaser-event-subheadline-line-height-small;
   font-size: $list-teaser-event-subheadline-font-size-small;
-  hyphens: none;
 }
 
 //

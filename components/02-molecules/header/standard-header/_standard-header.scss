@@ -13,7 +13,6 @@
     line-height: $standard-header-title-line-height;
     color: $standard-header-title-color;
     font-size: $standard-header-title-font-size-small;
-    hyphens: auto;
 
     &--separated {
       margin-top: $spacer-xxl;
@@ -90,7 +89,6 @@
 @media screen and (min-width: $grid-breakpoint-sm) {
   .standard-header__title {
     font-size: $standard-header-title-font-size-medium-small;
-    hyphens: none;
   }
 }
 
