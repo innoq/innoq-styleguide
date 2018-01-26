@@ -364,8 +364,9 @@ $teaser-text-font-size-small: ms(-1);               // ~14px
 $teaser-text-line-height-small: 1.78;               // ~25px
 $teaser-text-font-size-italic: ms(3);               // ~21px
 $teaser-text-line-height-italic: $base-line-height; // ~32px
-$teaser-small-text-font-size-italic: ms(0);         // ~16px
-$teaser-small-headline-font-size: ms(2);            // ~19px
+$teaser-text-font-size-italic-big: ms(5);
+$teaser-text-font-size-italic-small: ms(0);         // ~16px
+$teaser-headline-font-size-small: ms(2);            // ~19px
 
 $podcast-teaser-subheadline-font-size: ms(2);       // ~20px
 $podcast-teaser-subheadline-line-height: 1.25;      // ~24px

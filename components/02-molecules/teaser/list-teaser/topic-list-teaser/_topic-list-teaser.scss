@@ -24,17 +24,17 @@ $topic-teaser-height: ms(36);
 
 .topic-teaser__text {
   @extend %teaser-text-italic;
-
   margin-bottom: $spacer-base;
 }
 
 .topic-teaser__header {
+  margin-bottom: $spacer-md;
   color: $topic-teaser-body-color;
 }
 
 .topic-teaser__caption {
   @extend %teaser-caption;
-  margin-bottom: $spacer-sm;
+  margin-bottom: $spacer-lg;
   height: $spacer-md;
 }
 
@@ -64,6 +64,16 @@ $topic-teaser-height: ms(36);
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
+  .topic-teaser {
+    padding: $spacer-xl $spacer-xl $spacer-xxl;
+  }
+
+  .topic-teaser__text {
+    font-size: $teaser-text-font-size-italic-big;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
   .topic-teaser__body {
     width: 50%;
   }
