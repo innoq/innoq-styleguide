@@ -27,6 +27,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 
   &__title {
     margin-bottom: $spacer-xs;
+    text-align: center;
     line-height: $standard-header-title-line-height-small;
     font-size: $standard-header-title-font-size-small;
   }
@@ -34,6 +35,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   &__type {
     @extend %heading-font-bold;
     margin-bottom: $spacer-xs;
+    text-align: center;
     text-transform: uppercase;
     line-height: $standard-header-type-line-height-small;
     font-size: $standard-header-type-font-size-small;
@@ -47,6 +49,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
     @extend %body-font-italic;
 
     margin-bottom: $spacer-base;
+    text-align: center;
     line-height: $standard-header-intro-line-height-small;
     font-size: $standard-header-intro-font-size-small;
   }
