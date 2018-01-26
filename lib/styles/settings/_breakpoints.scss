@@ -4,6 +4,7 @@
 // adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoint-xs: 0     !default;
+$grid-breakpoint-xs-sm: 25rem !default; // 400px
 $grid-breakpoint-sm: 36rem !default;    // 576px
 $grid-breakpoint-md: 48rem !default;    // 768px
 $grid-breakpoint-md-lg: 60rem !default; // 960px
