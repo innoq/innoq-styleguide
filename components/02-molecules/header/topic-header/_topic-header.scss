@@ -6,8 +6,8 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 
 .topic-header {
   @extend %page-header;
-
   padding: $topic-header-outer-padding $topic-header-outer-padding-small;
+  min-height: $fullscreen-like-height;
 
   &__body {
     display: flex;
