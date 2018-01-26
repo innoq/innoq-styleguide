@@ -91,3 +91,13 @@ $navbar-max-width: $grid-page-layout-main-column-width;
 $navbar-logo-height: 2.25rem;
 $navbar-brandbar-height: $navbar-logo-height + 2 * $navbar-padding;
 $navbar-bottombar-height: $navbar-brandbar-height; // meta nav area on small screens
+
+$navbar-total-height-desktop: $navbar-brandbar-height + $navbar-padding + 1.5rem; // 1.5 taken from font size
+$navbar-total-height-mobile: $navbar-brandbar-height;
+
+//
+// Fullscreen values
+//
+$fullscreen-like-height: 70vh;
+$fullscreen-real-mobile-height: calc(100vh - #{$navbar-total-height-mobile});
+$fullscreen-real-desktop-height: calc(100vh - #{$navbar-total-height-desktop});
