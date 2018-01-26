@@ -42,14 +42,14 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
 }
 
 .image-divider-center-bg {
-  background-image: asset-url('public/assets/static/visual-culture-03.jpg');
+  background-image: asset-url('public/assets/visual-culture-03.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .image-divider-center-bg-text-box {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/static/visual-culture-03.jpg');
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-culture-03.jpg');
 }
 
 

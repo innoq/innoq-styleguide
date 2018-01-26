@@ -5,8 +5,8 @@ export default function PreviewLayout ({ context }, ...children) {
     <head>
       <meta charset='utf-8' />
       <meta name='viewport' content='width=device-width, initial-scale=1' />
-      <link rel='stylesheet' type='text/css' href={context.app.uri('assets/stylesheets/normalize.css')} />
-      <link media='all' rel='stylesheet' href={context.app.uri('assets/stylesheets/bundle.css')} />
+      <link rel='stylesheet' type='text/css' href={context.app.uri('assets/normalize.css')} />
+      <link media='all' rel='stylesheet' href={context.app.uri('assets/bundle.css')} />
       <style>{'\
         body {\
           padding: 1rem;\
@@ -17,7 +17,7 @@ export default function PreviewLayout ({ context }, ...children) {
     <body class='application'>
       {children}
     </body>
-    <script src={context.app.uri('assets/javascripts/document-register-element.js')} />
-    <script src={context.app.uri('assets/javascripts/bundle.js')} />
+    <script src={context.app.uri('assets/document-register-element.js')} />
+    <script src={context.app.uri('assets/bundle.js')} />
   </html>
 }
