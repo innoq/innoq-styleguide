@@ -22,6 +22,16 @@
   &__footer {
     margin-top: -$spacer-base;
   }
+
+  &__link {
+    @extend %link-unstyled;
+    transition: $standard-transition;
+
+    &:focus,
+    &:hover {
+      color: $simple-teaser-link-focus-color;
+    }
+  }
 }
 
 //
