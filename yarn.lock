@@ -377,7 +377,7 @@ atob@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.0.3.tgz#19c7a760473774468f20b2d2d03372ad7d4cbf5d"
 
-autoprefixer@^7.1.5:
+autoprefixer@^7.2.5:
   version "7.2.5"
   resolved "https://registry.yarnpkg.com/autoprefixer/-/autoprefixer-7.2.5.tgz#04ccbd0c6a61131b6d13f53d371926092952d192"
   dependencies:
@@ -1120,7 +1120,7 @@ browser-sync@^2.18.13:
     ua-parser-js "0.7.12"
     yargs "6.4.0"
 
-browserslist@^2.1.2, browserslist@^2.11.1:
+browserslist@^2.1.2, browserslist@^2.11.1, browserslist@^2.11.3:
   version "2.11.3"
   resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-2.11.3.tgz#fe36167aed1bbcde4827ebfe71347a2cc70b99b2"
   dependencies:
@@ -2425,51 +2425,43 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
-faucet-pipeline-js@^0.15.4:
-  version "0.15.7"
-  resolved "https://registry.yarnpkg.com/faucet-pipeline-js/-/faucet-pipeline-js-0.15.7.tgz#f415db3cdaee3064ada86bf1e17bff9dd3642f30"
+faucet-pipeline-js@^1.0.0-beta.0:
+  version "1.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/faucet-pipeline-js/-/faucet-pipeline-js-1.0.0-beta.0.tgz#4919d74dee878d3bcdb31c7a74738c941ce1717a"
   dependencies:
     babel-core "^6.26"
-    faucet-pipeline "^0.14.0"
-    faucet-pipeline-util "^0.10.3"
+    faucet-pipeline "1.0.0-beta.0"
     mkdirp "^0.5.1"
-    rollup "^0.53.0"
+    rollup "^0.54.1"
     rollup-plugin-commonjs "^8.2.6"
-    rollup-plugin-node-resolve "^3.0.0"
+    rollup-plugin-node-resolve "^3.0.2"
   optionalDependencies:
     babel-plugin-external-helpers "^6.22.0"
     babel-preset-es2015 "^6.24.1"
     rollup-plugin-babel "^3.0.3"
     rollup-plugin-cleanup "^2.0.0"
 
-faucet-pipeline-sass@^0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/faucet-pipeline-sass/-/faucet-pipeline-sass-0.10.0.tgz#6bff29ad375c3c481d11f1d8873a25b3a2288fde"
+faucet-pipeline-sass@^1.0.0-beta.0:
+  version "1.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/faucet-pipeline-sass/-/faucet-pipeline-sass-1.0.0-beta.0.tgz#83c06c73ca4bf578ead674853a9b57b1629ea7e9"
   dependencies:
-    autoprefixer "^7.1.5"
-    faucet-pipeline "^0.14.0"
-    faucet-pipeline-util "^0.10.3"
-    node-sass "^4.5.3"
+    autoprefixer "^7.2.5"
+    faucet-pipeline "1.0.0-beta.0"
+    node-sass "^4.7.2"
 
-faucet-pipeline-static@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/faucet-pipeline-static/-/faucet-pipeline-static-0.7.0.tgz#aab0358ffb907fb432c6370e3ebe3fa94ad752f5"
+faucet-pipeline-static@^1.0.0-beta.0:
+  version "1.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/faucet-pipeline-static/-/faucet-pipeline-static-1.0.0-beta.0.tgz#964109f10bd2f8e685c84cc902911a15e44df007"
   dependencies:
-    faucet-pipeline "^0.14.0"
-    faucet-pipeline-util "^0.10.3"
+    faucet-pipeline "1.0.0-beta.0"
 
-faucet-pipeline-util@^0.10.3:
-  version "0.10.3"
-  resolved "https://registry.yarnpkg.com/faucet-pipeline-util/-/faucet-pipeline-util-0.10.3.tgz#95dcd5b9443a8e903d77a4db65034eded6c5b4df"
+faucet-pipeline@1.0.0-beta.0, faucet-pipeline@^1.0.0-beta.0:
+  version "1.0.0-beta.0"
+  resolved "https://registry.yarnpkg.com/faucet-pipeline/-/faucet-pipeline-1.0.0-beta.0.tgz#3118e988152c723d1d40ad7213e8a8673459b60d"
   dependencies:
-    mkdirp "^0.5.1"
-
-faucet-pipeline@^0.14.0:
-  version "0.14.0"
-  resolved "https://registry.yarnpkg.com/faucet-pipeline/-/faucet-pipeline-0.14.0.tgz#c9ccc01815daa827ab8f71e735929f75ad2b3f8c"
-  dependencies:
+    browserslist "^2.11.3"
     minimist "^1.2.0"
-    nite-owl "^3.2.0"
+    nite-owl "^3.3.1"
 
 fbjs@^0.8.16:
   version "0.8.16"
@@ -4354,7 +4346,7 @@ nested-error-stacks@^2.0.0:
   dependencies:
     inherits "~2.0.1"
 
-nite-owl@^3.2.0:
+nite-owl@^3.3.1:
   version "3.3.1"
   resolved "https://registry.yarnpkg.com/nite-owl/-/nite-owl-3.3.1.tgz#354fbf1b72f4d8e44b7968104420bd0545d9c20e"
   dependencies:
@@ -4405,7 +4397,7 @@ node-pre-gyp@^0.6.39:
     tar "^2.2.1"
     tar-pack "^3.4.0"
 
-node-sass@^4.5.3:
+node-sass@^4.7.2:
   version "4.7.2"
   resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.7.2.tgz#9366778ba1469eb01438a9e8592f4262bcb6794e"
   dependencies:
@@ -5484,7 +5476,7 @@ rollup-plugin-commonjs@^8.2.6:
     resolve "^1.4.0"
     rollup-pluginutils "^2.0.1"
 
-rollup-plugin-node-resolve@^3.0.0:
+rollup-plugin-node-resolve@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/rollup-plugin-node-resolve/-/rollup-plugin-node-resolve-3.0.2.tgz#38babc12fd404cc2ba1ff68648fe43fa3ffee6b0"
   dependencies:
@@ -5506,9 +5498,9 @@ rollup-pluginutils@^2.0.1:
     estree-walker "^0.3.0"
     micromatch "^2.3.11"
 
-rollup@^0.53.0:
-  version "0.53.4"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.53.4.tgz#f92ce56ee1d097ad5b6f13951bc80db5fef18113"
+rollup@^0.54.1:
+  version "0.54.1"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-0.54.1.tgz#415a5d999421502646cf54b873fc4ce1a7393970"
 
 run-async@^0.1.0:
   version "0.1.0"
