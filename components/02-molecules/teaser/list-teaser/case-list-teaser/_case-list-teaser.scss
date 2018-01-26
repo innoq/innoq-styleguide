@@ -41,8 +41,8 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 .case-teaser__text {
   @extend %teaser-text;
   margin-bottom: $spacer-md;
-  line-height: $teaser-text-line-height;
-  font-size: $teaser-text-font-size;
+  line-height: $teaser-text-line-height-small;
+  font-size: $teaser-text-font-size-small;
 }
 
 .case-teaser__header {
@@ -71,5 +71,10 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 @media screen and (min-width: $grid-breakpoint-md) {
   .case-teaser__body {
     flex-basis: 50%;
+  }
+
+  .case-teaser__text {
+    line-height: $teaser-text-line-height;
+    font-size: $teaser-text-font-size;
   }
 }
