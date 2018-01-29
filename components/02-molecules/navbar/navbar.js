@@ -24,7 +24,9 @@ export default class Navbar extends HTMLElement {
     let navbar = this
     navbar.primaryList = document.querySelector('.primary-nav__list')
     navbar.dropdownToggles = navbar.compileDropdownToggles('.dropdown__toggle--navbar')
+    navbar.dropdownPrimaryLinks = document.querySelectorAll('.dropdown .navbtn--primary')
 
+    // add --enhanced modifier
     navbar.enhance([
       '.primary-nav',
       '.primary-nav__list',
@@ -34,6 +36,24 @@ export default class Navbar extends HTMLElement {
       '.dropdown__toggle'
     ])
 
+    // enhance drill down ux
+    // (copy dropdown heading link into dropdown list)
+    navbar.dropdownPrimaryLinks.forEach((link) => {
+      let targetDropdownList = link.parentNode.querySelector('.dropdown__list')
+
+      let anchorClone = document.createElement('a')
+      anchorClone.classList.add('dropdown__link', 'dropdown__link--navbar', 'navbtn')
+      anchorClone.setAttribute('href', anchorClone.getAttribute('href'))
+      anchorClone.textContent = link.textContent
+
+      let newListItem = document.createElement('li')
+      newListItem.classList.add('dropdown__item', 'dropdown__item--navbar', 'dropdown__item--clone')
+      newListItem.appendChild(anchorClone)
+
+      targetDropdownList.insertBefore(newListItem, targetDropdownList.firstChild)
+    })
+
+    // apply several event listeners
     navbar.dropdownToggles.forEach((ddt, i, all) => {
       ddt.label.addEventListener('click', e => {
         navbar.uncheckDropdownToggles(all, ddt)
@@ -42,6 +62,14 @@ export default class Navbar extends HTMLElement {
       ddt.relatedLink.addEventListener('mouseenter', e => {
         navbar.uncheckDropdownToggles(all, ddt)
         navbar.primaryList.classList.remove('primary-nav__list--level2')
+      })
+      ddt.relatedLink.addEventListener('click', e => {
+        if (navbar.isMobile) {
+          e.preventDefault()
+          ddt.checked = true
+          navbar.uncheckDropdownToggles(all, ddt)
+          navbar.primaryList.classList.add('primary-nav__list--level2')
+        }
       })
     })
 
@@ -71,6 +99,14 @@ export default class Navbar extends HTMLElement {
         t.checked = false
       }
     })
+  }
+
+  get isMobile () {
+    if (this.primaryList.getBoundingClientRect().width > window.innerWidth) {
+      return true
+    } else {
+      return false
+    }
   }
 
   // toggleBEM (elem, base, modifier) {

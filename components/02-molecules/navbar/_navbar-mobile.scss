@@ -60,6 +60,8 @@
 
   .dropdown__list-wrapper--navbar {
     &.dropdown__list-wrapper--enhanced::before {
+      position: relative;
+      top: -$spacer-xs;
       border-bottom: 5px solid $navbar-link-hover-color;
       font-size: $navbar-primary-font-size-big;
       content: attr(title);
