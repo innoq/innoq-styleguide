@@ -24,10 +24,6 @@ $navbar-drill-transition: left .5s ease;
   }
 }
 
-.navbar--transparent {
-  background-color: transparent;
-}
-
 .navbar__inner {
   display: flex;
   flex-direction: row;
@@ -264,4 +260,12 @@ $navbar-drill-transition: left .5s ease;
 
 .dropdown__link--navbar {
   white-space: normal;
+}
+
+//
+// --transparent
+//
+.navbar__inner--transparent,
+.navbar--transparent {
+  background-color: transparent;
 }

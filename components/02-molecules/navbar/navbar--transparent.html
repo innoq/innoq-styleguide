@@ -1,15 +1,17 @@
 <div style="background: url('https://source.unsplash.com/ThPRaw2qSwk/1444x1000')">
-    <nav class="navbar navbar--transparent">
-        <div class="navbar__inner">
+    <nav-bar class="navbar navbar--transparent">
+        <div class="navbar__inner navbar__inner--transparent">
+
+            <a href="#main" class="navbtn navbtn--skip">Zum Inhalt springen</a>
 
             <div class="navbar__brand">
                 <a href="#" class="navbar__brand-link">
-                    <img class="logo navbar__logo" src={context.app.uri('assets/innoq-logo--whitered.svg')} />
+                    <img alt="inno Q" class="logo navbar__logo" src={context.app.uri('assets/innoq-logo--whitered.svg')} />
                 </a>
             </div>
 
-            <input type="checkbox" id="navbar-toggle--menu" class="sr-only navbar__toggle-state navbar__toggle-state--menu-toggler" />
-            <input type="checkbox" id="navbar-toggle--search" class="sr-only navbar__toggle-state navbar__toggle-state--search-toggler" />
+            <input tabindex="-1" type="checkbox" id="navbar-toggle--menu" class="sr-only navbar__toggle-state navbar__toggle-state--menu-toggler" />
+            <input tabindex="-1" type="checkbox" id="navbar-toggle--search" class="sr-only navbar__toggle-state navbar__toggle-state--search-toggler" />
 
             <div class="navbar__meta">
                 <a href="#" class="navbtn navbtn--meta">Kontakt</a>
@@ -19,14 +21,14 @@
 
             <div class="navbar__togglers">
                 <label for="navbar-toggle--menu" aria-label="Navigation ein- oder ausblenden">
-                    <button class="navbtn navbtn--menu">Menü</button>
+                    <span class="navbtn navbtn--menu">Menü</span>
                 </label>
-                <label for="navbar-toggle--search" aria-label="Suche ein- oder ausblenden">
-                    <button class="navbtn navbtn--search"><i class="icon icon-search"></i></button>
-                </label>
+                <a href="#" class="navbtn navbtn--search" aria-label="Suche ein- oder ausblenden">
+                    <i class="icon icon-search"></i>
+                </a>
             </div>
 
-            <div class="navbar__primary-nav primary-nav">
+            <nav class="navbar__primary-nav primary-nav">
                 <ul class="primary-nav__list">
                     <li class="primary-nav__item">
                         <a href="#" class="navbtn navbtn--primary navbtn--active">Leistungen</a>
@@ -104,7 +106,7 @@
                 <button class="navbtn navbtn--drill-up">
                     <img class="navbtn__left-icon" src={context.app.uri('assets/arrow-medium-left-red.svg')} /> Hauptmenü
                 </button>
-            </div>
+            </nav>
         </div>
-    </nav>
+    </nav-bar>
 </div>
