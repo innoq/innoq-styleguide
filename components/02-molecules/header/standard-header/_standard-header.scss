@@ -59,8 +59,8 @@
   margin-top: $spacer-md;
   background-color: $standard-header-intro-bg;
   padding: $spacer-md;
-  width: $grid-page-layout-content-with;
-  max-width: $grid-page-layout-content-with-xl;
+  width: $grid-page-layout-content-width;
+  max-width: $grid-page-layout-content-width-xl;
   box-sizing: content-box;
 }
 
@@ -114,7 +114,7 @@
   .standard-header__intro {
     top: $spacer-xxl;
     padding: $spacer-lg;
-    width: $grid-page-layout-content-with-md;
+    width: $grid-page-layout-content-width-md;
   }
 
   .standard-header__intro__text {
@@ -130,12 +130,12 @@
 
 @media screen and (min-width: $grid-breakpoint-lg) {
   .standard-header__intro {
-    width: $grid-page-layout-content-with-lg;
+    width: $grid-page-layout-content-width-lg;
   }
 }
 
 @media screen and (min-width: $grid-breakpoint-xl) {
   .standard-header__intro {
-    width: $grid-page-layout-content-with-xl;
+    width: $grid-page-layout-content-width-xl;
   }
 }

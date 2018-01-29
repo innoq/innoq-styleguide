@@ -114,8 +114,8 @@ $staff-intro-offset: -(ms(22));
     top: $staff-intro-offset;
     margin: 0 auto $staff-intro-offset;
     padding: $spacer-lg $spacer-xl 0;
-    width: $grid-page-layout-content-with;
-    max-width: $grid-page-layout-content-with-xl;
+    width: $grid-page-layout-content-width;
+    max-width: $grid-page-layout-content-width-xl;
     box-sizing: content-box;
   }
 

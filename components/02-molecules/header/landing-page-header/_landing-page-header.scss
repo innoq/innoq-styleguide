@@ -24,7 +24,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
     border-bottom: 8px solid $landing-page-header-border-color;
     background-color: $landing-page-header-intro-bg-color;
     padding: $spacer-base;
-    max-width: $grid-page-layout-content-with-xl;
+    max-width: $grid-page-layout-content-width-xl;
     color: $landing-page-header-intro-text-color;
     box-sizing: content-box;
   }

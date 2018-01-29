@@ -9,7 +9,7 @@
   // One column centered in the middle of the page.
   margin: $grid-page-layout-margin auto;
   padding: $container-spacer-y-sm $container-spacer-x-sm;
-  width: $grid-page-layout-content-with;
+  width: $grid-page-layout-content-width;
   max-width: $grid-page-layout-main-column-width;
 }
 
@@ -28,13 +28,13 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .page-layout--grid {
     padding: 0;
-    width: $grid-page-layout-content-with-md;
+    width: $grid-page-layout-content-width-md;
   }
 }
 
 @media screen and (min-width: $grid-breakpoint-lg) {
   .page-layout--grid {
-    width: $grid-page-layout-content-with-lg;
+    width: $grid-page-layout-content-width-lg;
   }
 }
 
@@ -47,7 +47,7 @@
       padding: 0;
       width: 100%;
       max-width: none;
-      grid-template-columns: 1fr $grid-page-layout-leftright-width $grid-page-layout-content-with-xl $grid-page-layout-leftright-width 1fr;
+      grid-template-columns: 1fr $grid-page-layout-leftright-width $grid-page-layout-content-width-xl $grid-page-layout-leftright-width 1fr;
       grid-template-rows: auto;
       grid-template-areas: '. left center right .';
       grid-column-gap: $grid-page-layout-column-gap;
