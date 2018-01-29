@@ -62,6 +62,7 @@ ul:not([class]) {
 //
 .checklist {
   @extend %unsorted-list;
+  padding-left: $list-indent;
 
   li {
     padding-left: $checklist-icon-size;
@@ -69,7 +70,7 @@ ul:not([class]) {
     &::before {
       @extend %icon;
       position: absolute;
-      top: $spacer-xxs;
+      top: .52rem;
       left: 0;
       color: $bullet-list-color;
       // font-size: $checkmark-list-font-size;
@@ -96,6 +97,7 @@ ol:not([class]) {
   @extend %body-font-regular;
   @include list-unstyled;
   margin-bottom: $content-spacer-base;
+  padding-left: $list-indent;
   line-height: $ordered-list-line-height-small;
   font-size: $ordered-list-font-size-small;
   counter-reset: number;
@@ -131,6 +133,7 @@ dl:not([class]) {
 //
 @media screen and (min-width: $grid-breakpoint-md) {
   ul:not([class]) {
+    padding-left: $list-indent;
     line-height: $bullet-list-line-height;
     font-size: $bullet-list-font-size;
 
@@ -151,7 +154,8 @@ dl:not([class]) {
       padding-left: 0;
 
       &::before {
-        left: -$checklist-icon-size;
+        // left: -$checklist-icon-size;
+        left: -1.64rem; // align to text border
       }
     }
   }
