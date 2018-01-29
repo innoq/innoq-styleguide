@@ -30,6 +30,7 @@ $topic-teaser-height: ms(36);
 .topic-teaser__header {
   margin-bottom: $spacer-md;
   color: $topic-teaser-body-color;
+  font-size: $topic-teaser-header-font-size-small;
 }
 
 .topic-teaser__caption {
@@ -66,6 +67,11 @@ $topic-teaser-height: ms(36);
 @media screen and (min-width: $grid-breakpoint-md) {
   .topic-teaser {
     padding: $spacer-xl $spacer-xl $spacer-xxl;
+  }
+
+  .topic-teaser__header {
+    margin-bottom: $spacer-base;
+    font-size: $topic-teaser-header-font-size;
   }
 
   .topic-teaser__text {
