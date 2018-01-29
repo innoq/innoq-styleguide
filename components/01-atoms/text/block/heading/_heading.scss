@@ -11,6 +11,7 @@ h1 {
   line-height: $h1-line-height;
   color: $h1-color;
   font-size: $h1-font-size-small;
+  hyphens: auto;
 }
 
 // H2
@@ -111,6 +112,13 @@ h6 {
   padding-top: $spacer-sm;
 }
 
+
+@media screen and (min-width: $grid-breakpoint-sm) {
+  %h1,
+  h1 {
+    hyphens: none;
+  }
+}
 
 @media screen and (min-width: $grid-breakpoint-md) {
   %h1,
