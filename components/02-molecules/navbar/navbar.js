@@ -43,7 +43,7 @@ export default class Navbar extends HTMLElement {
 
       let anchorClone = document.createElement('a')
       anchorClone.classList.add('dropdown__link', 'dropdown__link--navbar', 'navbtn')
-      anchorClone.setAttribute('href', anchorClone.getAttribute('href'))
+      anchorClone.setAttribute('href', link.getAttribute('href'))
       anchorClone.textContent = link.textContent
 
       let newListItem = document.createElement('li')
