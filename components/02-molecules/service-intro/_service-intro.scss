@@ -1,7 +1,6 @@
 .service-intro {
   display: flex;
   flex-direction: column;
-  padding: $spacer-sm $spacer-base $spacer-base 0;
   width: 100%; // FF fix: take full width of grid-area
 
   & + & {
@@ -10,12 +9,13 @@
 }
 
 .service-intro__header {
-  font-size: $service-intro-header-font-size;
+  margin-bottom: $spacer-md;
+  font-size: $service-intro-header-font-size-small;
 }
 
 .service-intro__text {
   @extend %heading-font-bold;
-  margin-bottom: $spacer-base;
+  margin-bottom: $spacer-md;
   line-height: $service-intro-text-line-height-small;
   font-size: $service-intro-text-font-size-small;
 }
@@ -30,6 +30,7 @@
 
   .service-intro {
     border-right: 1px solid $brand-gray-25;
+    padding: $spacer-sm $spacer-base $spacer-base 0;
     grid-column: span 2;
 
     & + & {
@@ -41,7 +42,13 @@
     }
   }
 
+  .service-intro__header {
+    margin-bottom: $spacer-base;
+    font-size: $service-intro-header-font-size;
+  }
+
   .service-intro__text {
+    margin-bottom: $spacer-base;
     line-height: $service-intro-text-line-height;
     font-size: $service-intro-text-font-size;
   }
