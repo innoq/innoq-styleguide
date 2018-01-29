@@ -1,15 +1,17 @@
 // sass-lint:disable force-pseudo-nesting
 
 @media screen and (max-width: $nav-breakpoint-px-below) {
-  .navbtn--menu::after {
-    display: block;
-    position: absolute;
-    top: -.1em;
-    right: 0;
-    background-color: $navbar-link-color;
-    width: 1px;
-    height: 1.5em;
-    content: '';
+  .navbtn--menu {
+    &::after {
+      display: block;
+      position: absolute;
+      top: -.1em;
+      right: 0;
+      background-color: $navbar-link-color;
+      width: 1px;
+      height: 1.5em;
+      content: '';
+    }
   }
 
   .navbtn--primary {

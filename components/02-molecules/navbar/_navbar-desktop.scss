@@ -36,6 +36,7 @@
 
   .navbar__logo {
     margin-top: $navbar-padding;
+    height: $navbar-logo-height;
   }
 
   .navbar__meta {
@@ -50,6 +51,7 @@
     order: 3;
     padding-left: 0;
     width: auto;
+    height: $navbar-brandbar-height;
   }
 
   .primary-nav {

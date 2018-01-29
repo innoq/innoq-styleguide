@@ -6,12 +6,6 @@ $navbar-drill-transition: left .5s ease;
 //
 // navbar
 //
-%navbar-secondary-wrappers {
-  align-items: center;
-  padding: $navbar-padding;
-  height: $navbar-brandbar-height;
-}
-
 .navbar {
   @extend %heading-font-regular;
   position: relative;
@@ -78,8 +72,12 @@ $navbar-drill-transition: left .5s ease;
 .navbtn--drill-up {
   display: none;
   position: absolute;
-  top: $spacer-xs;
-  right: $navbar-padding;
+  top: 0;
+  right: 0;
+  background-color: $navbar-lightened-bg;
+  padding: $spacer-xs $navbar-padding;
+  width: 100%;
+  text-align: right;
 }
 
 .navbtn--search,
@@ -87,6 +85,10 @@ $navbar-drill-transition: left .5s ease;
   top: -.1em;
   padding: 0 $spacer-xs;
   font-size: ms(3);
+}
+
+.navbtn--search {
+  padding-right: 0;
 }
 
 .navbtn--menu {
@@ -128,28 +130,29 @@ $navbar-drill-transition: left .5s ease;
 .navbar__brand {
   flex-grow: 1;
   padding: $navbar-padding 0 $navbar-padding $navbar-padding;
-  height: $navbar-logo-height + 2 * $navbar-padding;
+  height: $navbar-brandbar-height-small;
 }
 
 .navbar__brand-link {
-  // display: block;
   @extend %link-unstyled;
 }
 
 .navbar__logo {
-  height: $navbar-logo-height;
+  height: $navbar-logo-height-small;
 }
 
 //
 // navbar__meta // container
 //
 .navbar__meta {
-  @extend %navbar-secondary-wrappers;
   display: none;
+  align-items: center;
   justify-content: center;
   order: 4;
   background-color: $navbar-lightened-bg;
+  padding: $spacer-sm;
   width: 100%;
+  height: $navbar-bottombar-height-small;
   text-transform: uppercase;
   font-size: $navbar-secondary-font-size;
 }
@@ -158,9 +161,11 @@ $navbar-drill-transition: left .5s ease;
 // navbar__togglers // container
 //
 .navbar__togglers {
-  @extend %navbar-secondary-wrappers;
   display: flex;
+  align-items: center;
   order: 2;
+  padding: $navbar-padding;
+  height: $navbar-brandbar-height-small;
 }
 
 //
@@ -193,7 +198,7 @@ $navbar-drill-transition: left .5s ease;
   margin: 0;
   padding: $navbar-padding * 2 $navbar-padding $spacer-sm;
   width: 100%;
-  height: calc(100vh - #{$navbar-bottombar-height} - #{$navbar-brandbar-height});
+  height: calc(90vh - #{$navbar-bottombar-height-small} - #{$navbar-brandbar-height});
   font-size: $navbar-primary-font-size;
   overflow-y: scroll;
 }
