@@ -17,7 +17,6 @@ $gradient-stencil: rgba(0, 0, 0, .25);
     background-position: center;
     background-size: cover;
     width: 100%;
-    // max-width: $default-page-layout-content-width-xl;
   }
 
   &__content {
@@ -29,8 +28,6 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   &__title {
     @extend %punch-in;
     margin-bottom: $spacer-md;
-    // line-height: $image-header-line-height-small;
-    // font-size: $image-header-font-size-small;
   }
 }
 
@@ -57,7 +54,5 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 
   .image-header__title {
     margin-bottom: $spacer-base;
-    // line-height: $image-header-line-height;
-    // font-size: $image-header-font-size;
   }
 }
