@@ -2,6 +2,8 @@
   @extend %heading-font-regular;
   display: block;
   width: 100%;
+  line-height: $form-label-line-height;
+  font-size: $form-label-font-size;
 
   &--emphasized {
     @extend %heading-font-bold;

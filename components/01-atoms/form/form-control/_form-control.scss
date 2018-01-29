@@ -5,6 +5,8 @@
   transition: $standard-transition;
   padding: $spacer-xs;
   width: 100%;
+  line-height: $form-control-line-height;
+  font-size: $form-control-font-size;
 }
 
 .form-control {
