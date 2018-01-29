@@ -39,6 +39,7 @@ $podcast-teaser-height-md: ms(35);
   @extend %body-font-italic;
 
   margin-bottom: $spacer-xs;
+  max-width: 80%;
   line-height: $podcast-teaser-subheadline-line-height;
   color: $podcast-teaser-default-color;
   font-size: $podcast-teaser-subheadline-font-size;
