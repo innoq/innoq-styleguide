@@ -1,6 +1,7 @@
 $topic-header-outer-padding: $spacer-lg;
 $topic-header-outer-padding-small: $spacer-sm;
-$topic-header-inner-padding: $spacer-base;
+$topic-header-inner-padding: $spacer-lg;
+$topic-header-inner-padding-small: $spacer-base;
 
 $gradient-stencil: rgba(0, 0, 0, .25);
 
@@ -16,8 +17,8 @@ $gradient-stencil: rgba(0, 0, 0, .25);
     margin: 0 auto;
     background-color: $topic-header-intro-bg-color;
     background-size: cover;
-    padding: $topic-header-inner-padding;
-    max-width: $default-page-layout-content-width-xl;
+    padding: $topic-header-inner-padding-small;
+    max-width: $default-page-layout-content-width-md;
     color: $topic-header-intro-text-color;
   }
 
@@ -49,6 +50,8 @@ $gradient-stencil: rgba(0, 0, 0, .25);
     @extend %body-font-italic;
 
     margin-bottom: $spacer-base;
+    padding-right: $topic-header-inner-padding-small;
+    padding-left: $topic-header-inner-padding-small;
     text-align: center;
     line-height: $standard-header-intro-line-height-small;
     font-size: $standard-header-intro-font-size-small;
@@ -109,6 +112,10 @@ $gradient-stencil: rgba(0, 0, 0, .25);
     padding: $topic-header-outer-padding;
   }
 
+  .topic-header__body {
+    padding: $topic-header-inner-padding;
+  }
+
   .topic-header__title {
     line-height: $standard-header-title-line-height;
     font-size: $standard-header-title-font-size;
@@ -120,6 +127,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   }
 
   .topic-header__type {
+    margin-bottom: $spacer-md;
     line-height: $standard-header-type-line-height;
     font-size: $standard-header-type-font-size;
   }
@@ -127,11 +135,5 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   .topic-header__text {
     line-height: $standard-header-intro-line-height;
     font-size: $standard-header-intro-font-size;
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-lg) {
-  .topic-header__body {
-    max-width: 70%;
   }
 }

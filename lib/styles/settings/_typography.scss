@@ -440,8 +440,8 @@ $standard-header-subtitle-font-size: ms(7);            // ~30px
 $standard-header-subtitle-line-height: 1.2;            // ~36px
 $standard-header-subtitle-font-size-small: ms(-1);     // ~14px
 $standard-header-subtitle-line-height-small: 1.57;     // ~22px
-$standard-header-type-font-size: ms(4);                // ~23px
-$standard-header-type-line-height: 1.36;               // ~34px
+$standard-header-type-font-size: $base-font-size;      // ~16px
+$standard-header-type-line-height: 1.375;              // ~22px
 $standard-header-type-font-size-small: ms(-1);         // ~14px
 $standard-header-type-line-height-small: 1.57;         // ~22px
 $standard-header-intro-font-size: ms(5);               // ~25px
