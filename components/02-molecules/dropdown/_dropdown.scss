@@ -13,18 +13,6 @@
 .dropdown__list-wrapper {
   display: none;
   position: absolute;
-
-  &[data-origin='right'] {
-    right: -$spacer-md;
-    left: auto;
-    text-align: right;
-  }
-
-  &[data-origin='left'] {
-    right: auto;
-    left: -$spacer-md;
-    text-align: left;
-  }
 }
 
 .dropdown__list {

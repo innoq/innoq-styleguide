@@ -246,12 +246,6 @@ $navbar-drill-transition: left .5s ease;
   // &:focus {
   //   display: block;
   // }
-
-  &[data-origin='right'] {
-    right: auto;
-    left: -$spacer-md;
-    text-align: left;
-  }
 }
 
 .dropdown__item--navbar {

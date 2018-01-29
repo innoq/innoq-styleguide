@@ -82,12 +82,6 @@
     left: -$spacer-md;
     padding: 0 $spacer-md $spacer-md;
     width: auto;
-
-    &[data-origin='right'] {
-      right: -$spacer-md;
-      left: auto;
-      text-align: right;
-    }
   }
 
   .dropdown__link--navbar {
@@ -96,5 +90,41 @@
 
   .dropdown__item--clone {
     display: none;
+  }
+}
+
+// adjust "dynamic dropdown alignment"
+$navbar-breakpoint-step-size: 250px;
+
+@media screen and (min-width: $nav-breakpoint-px) and (max-width: $nav-breakpoint-px + $navbar-breakpoint-step-size) {
+  // semi dynamic alignment of dropdown lists
+  .primary-nav__item:nth-last-child(1),
+  .primary-nav__item:nth-last-child(2),
+  .primary-nav__item:nth-last-child(3) {
+    .dropdown__list-wrapper--navbar {
+      right: -$spacer-md;
+      left: auto;
+    }
+  }
+}
+
+@media screen and (min-width: $nav-breakpoint-px + $navbar-breakpoint-step-size + 1) and (max-width: $nav-breakpoint-px + (2 * $navbar-breakpoint-step-size)) {
+  // semi dynamic alignment of dropdown lists
+  .primary-nav__item:nth-last-child(1),
+  .primary-nav__item:nth-last-child(2) {
+    .dropdown__list-wrapper--navbar {
+      right: -$spacer-md;
+      left: auto;
+    }
+  }
+}
+
+@media screen and (min-width: $nav-breakpoint-px + (2 * $navbar-breakpoint-step-size) + 1) and (max-width: $nav-breakpoint-px + (3 * $navbar-breakpoint-step-size)) {
+  // semi dynamic alignment of dropdown lists
+  .primary-nav__item:nth-last-child(1) {
+    .dropdown__list-wrapper--navbar {
+      right: -$spacer-md;
+      left: auto;
+    }
   }
 }

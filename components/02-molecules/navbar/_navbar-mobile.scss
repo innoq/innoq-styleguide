@@ -49,13 +49,13 @@
     padding-top: 3 * $navbar-padding;
     width: 50%;
 
-    &[data-origin='right'],
-    &[data-origin='left'] {
-      position: absolute;
-      left: 50%;
-      padding-top: 3 * $navbar-padding;
-      width: 50%;
-    }
+    // &[data-origin='right'],
+    // &[data-origin='left'] {
+    //   position: absolute;
+    //   left: 50%;
+    //   padding-top: 3 * $navbar-padding;
+    //   width: 50%;
+    // }
   }
 
   .dropdown__list-wrapper--navbar {
@@ -63,6 +63,7 @@
       position: relative;
       top: -$spacer-xs;
       border-bottom: 5px solid $navbar-link-hover-color;
+      font-family: $font-family-sans-serif-bold;
       font-size: $navbar-primary-font-size-big;
       content: attr(title);
     }
