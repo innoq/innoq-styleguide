@@ -3,3 +3,8 @@ p {
     hyphens: auto;
   }
 }
+
+.center ~ .form {
+  grid-area: center;
+  grid-row: auto;
+}
