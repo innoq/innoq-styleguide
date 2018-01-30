@@ -65,8 +65,10 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
 }
 
 .event-date-separator {
+  border: 0;
+  background-color: $date-section-year-color;
   width: $spacer-base;
-  color: $date-section-year-color;
+  height: 2px;
 }
 
 // Breakpoints
