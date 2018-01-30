@@ -37,6 +37,12 @@
   }
 }
 
+%block-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 
 // Lists
 %list-unstyled {
