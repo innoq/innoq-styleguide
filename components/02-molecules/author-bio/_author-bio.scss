@@ -129,8 +129,9 @@
 //
 @media screen and (min-width: $grid-breakpoint-md) {
   .author-bio {
+    // adjusted for better spacings in article/podcast context
     &.author-bio--long {
-      margin-top: $author-bio-image-offset + $spacer-xl;
+      margin-top: $author-bio-image-offset + $spacer-md;
     }
 
     &.author-bio--short {
@@ -148,7 +149,7 @@
     }
 
     &.author-bio--long {
-      margin-top: $author-bio-image-offset;
+      margin-top: $author-bio-image-offset + $spacer-md;
     }
   }
 }

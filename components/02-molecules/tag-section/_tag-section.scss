@@ -21,7 +21,7 @@
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .tag-section {
-    margin-bottom: $spacer-xxl;
+    margin-bottom: $spacer-xl; // xxl -> xl related to fix for author bio margin
     padding-top: $spacer-lg;
     padding-bottom: $spacer-xl;
   }
