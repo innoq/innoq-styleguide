@@ -16,6 +16,10 @@
     align-items: center;
     justify-content: flex-start;
     width: 100%;
+
+    & + .author-bio--short {
+      margin-top: $spacer-sm;
+    }
   }
 
   &.author-bio--long {
@@ -127,6 +131,12 @@
   .author-bio {
     &.author-bio--long {
       margin-top: $author-bio-image-offset + $spacer-xl;
+    }
+
+    &.author-bio--short {
+      & + .author-bio--short {
+        margin-top: 0;
+      }
     }
   }
 }
