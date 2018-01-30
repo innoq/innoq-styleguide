@@ -39,19 +39,14 @@ $content-teaser-height-md: ms(36);
 
   margin-bottom: $spacer-xs;
   line-height: $h4-line-height;
-  font-size: $h4-font-size;
-}
-
-@media screen and (min-width: $grid-breakpoint-md) {
-  .content-teaser {
-    min-height: $content-teaser-height-md;
-  }
+  font-size: $h4-font-size-small;
 }
 
 
 //
 // Variants
 //
+
 .content-teaser--inverted {
   background-color: $content-teaser-inverted-bg;
   color: $content-teaser-inverted-color;
@@ -69,4 +64,21 @@ $content-teaser-height-md: ms(36);
 .content-teaser--default {
   background-color: $content-teaser-default-bg;
   color: $content-teaser-default-color;
+}
+
+
+//
+// Media Queries
+//
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .content-teaser {
+    min-height: $content-teaser-height-md;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .content-teaser__text {
+    font-size: $h4-font-size;
+  }
 }
