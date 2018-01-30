@@ -2,9 +2,10 @@
 // Default Link - used on all class-less link elements
 //
 
-$underline-offset: -2px;
-$underline-width: $underline-offset - 1px;
-$hover-padding: 4px;
+// Use relative units for inline links to cover different font faces and sizes.
+$underline-offset: -.1em;
+$underline-width: $underline-offset - .05em;
+$hover-padding: .125em;
 
 // sass-lint:disable force-pseudo-nesting
 .link-default,
@@ -16,6 +17,7 @@ a:not([class]) {
 
   &:focus,
   &:hover {
+    outline: none;
     background-color: $link-hover-color-light;
     padding-top: $hover-padding;
     padding-bottom: $hover-padding;
