@@ -8,6 +8,7 @@ $staff-intro-offset: -(ms(22));
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: $staff-page-header-content-background-color;
 }
 
 .staff-header-image {
