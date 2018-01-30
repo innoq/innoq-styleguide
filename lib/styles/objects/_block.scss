@@ -12,7 +12,7 @@
   }
 }
 
-@media screen and (min-width: $grid-breakpoint-md) {
+@media screen and (min-width: $grid-breakpoint-md-lg) {
   .blocks {
     flex-wrap: nowrap;
     margin-bottom: $spacer-base;
