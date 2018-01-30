@@ -8,6 +8,7 @@ $podcast-teaser-height-md: ms(35);
   flex-direction: column;
   justify-content: space-between;
   min-height: $podcast-teaser-height-sm;
+  overflow: hidden;
 }
 
 .podcast-teaser__body {
@@ -29,7 +30,7 @@ $podcast-teaser-height-md: ms(35);
 }
 
 .podcast-teaser__headline {
-  @extend %h2;
+  @extend %h3;
 
   margin-bottom: $spacer-md;
   color: $podcast-teaser-default-color;
