@@ -103,15 +103,21 @@
 }
 
 %punch-in {
-  background-clip: text;
-  background-position: center;
-  color: $brand-text;
+  // Disable any punch in effect for now by removing any background images
+  // sass-lint:disable no-important
+  background-image: none !important;
 
+  // TODO: fix punch-in text styles for Edge and Safari
 
-  // sass-lint:disable no-vendor-prefixes
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
+  // background-clip: text;
+  // background-position: center;
+  // color: $brand-text;
+  //
+  //
+  // // sass-lint:disable no-vendor-prefixes
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  //
   > * {
     // Prevent clipping of letters.
     margin: 0;
@@ -119,9 +125,9 @@
 
     // Don't ask! Just a littler hack for Safari to show knockout letters.
     // sass-lint:disable nesting-depth
-    &::after {
-      content: '\00a0';
-    }
+    // &::after {
+    //   content: '\00a0';
+    // }
   }
 }
 
