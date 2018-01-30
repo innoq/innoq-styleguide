@@ -1,3 +1,6 @@
+ // tiny space between name and info
+$author-text-margin: .18rem;
+
 .author-bio {
   position: relative;
   margin-bottom: $spacer-base;
@@ -47,6 +50,10 @@
 
 .author-bio__info {
   @extend %author-role;
+
+  .author-bio__name + & {
+    margin-top: $author-text-margin;
+  }
 }
 
 .author-bio__info,
@@ -133,12 +140,6 @@
     &.author-bio--long {
       margin-top: $author-bio-image-offset + $spacer-md;
     }
-
-    &.author-bio--short {
-      & + .author-bio--short {
-        margin-top: 0;
-      }
-    }
   }
 }
 
@@ -146,6 +147,10 @@
   .author-bio {
     &.author-bio--short {
       width: 49%;
+
+      & + .author-bio--short {
+        margin-top: 0;
+      }
     }
 
     &.author-bio--long {

@@ -8,11 +8,16 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
   align-items: center;
   margin-top: $event-date-section-height + $spacer-base;
   background-color: $list-teaser-background-color;
-}
 
-.list-teaser-event__footer {
-  @extend %list-teaser-footer;
-  justify-content: flex-end;
+  .list-teaser__footer {
+    @extend %list-teaser-footer;
+    justify-content: flex-end;
+
+    .author-bio {
+      flex-basis: 100%;
+      margin-bottom: 0;
+    }
+  }
 }
 
 .list-teaser__content {
@@ -65,6 +70,12 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
     .event-date-section {
       .label {
         display: none;
+      }
+    }
+
+    .list-teaser__footer {
+      .author-bio {
+        flex-basis: auto;
       }
     }
   }
