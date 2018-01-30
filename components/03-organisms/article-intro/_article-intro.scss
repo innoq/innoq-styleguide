@@ -1,3 +1,9 @@
 .article-intro {
   margin-bottom: $article-intro-margin;
 }
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .article-intro {
+    margin-top: $article-intro-margin;
+  }
+}
