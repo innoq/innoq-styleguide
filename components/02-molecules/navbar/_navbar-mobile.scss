@@ -15,6 +15,7 @@
   }
 
   .navbtn--primary {
+    z-index: 1;
     font-size: $navbar-primary-font-size-big;
   }
 
@@ -82,8 +83,10 @@
 
     &.dropdown__toggle--enhanced {
       position: absolute;
-      left: calc(50% - #{3 * $navbar-padding});
+      left: 0;
       padding: .35rem $navbar-padding .4rem;
+      width: 50%;
+      text-align: right;
     }
   }
 }
