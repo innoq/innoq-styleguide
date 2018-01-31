@@ -32,6 +32,7 @@
 
 .custom-form-control {
   position: relative;
+  transition: standard-transition(background-color, color, border-color);
   min-height: ($base-line-height * 1rem);
 
   &.form-control--invalid,
