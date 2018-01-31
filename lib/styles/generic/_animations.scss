@@ -1,17 +1,31 @@
-$standard-transition: all .175s ease-in-out;
-$fast-transition: all .1s ease-in-out;
-$ease-out-back-transition: .2s transform cubic-bezier(.68, -.55, .265, 1.55),
-.175s box-shadow ease-in-out;
+// times
+$transition-time-standard: .175s;
+$transition-time-fast: .1s;
 
-@function standard-transition($trans...) {
+// easing functions
+$transition-easing-standard: ease-in-out;
+
+// some transitions
+$standard-transition: all $transition-time-standard $transition-easing-standard;
+$fast-transition: all $transition-time-fast $transition-easing-standard;
+$ease-out-back-transition: .2s transform cubic-bezier(.68, -.55, .265, 1.55), $transition-time-standard box-shadow $transition-easing-standard;
+
+// transition functions
+@function custom-transition($time, $easing, $trans...) {
   $out: ();
   @each $tran in $trans {
-    $out: append($out, #{$tran} .175s ease-in-out, comma);
+    $out: append($out, #{$tran} $time $easing, comma);
   }
   @return $out;
 }
 
-// removed
+@function timed-transition($time, $trans...) {
+  @return custom-transition($transition-time-standard, $transition-easing-standard, $trans...);
+}
+
+@function standard-transition($trans...) {
+  @return timed-transition($transition-time-standard, $trans...);
+}
 
 %hover-zoom-in {
   transition: $ease-out-back-transition;
