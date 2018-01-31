@@ -27,7 +27,6 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  align-self: flex-start; // Prevent content to be centered vertically
   justify-content: space-between;
   width: 100%;
 }
@@ -62,6 +61,10 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
       &.talk {
         border-left: 0;
       }
+    }
+
+    .list-teaser__content {
+      align-self: flex-start; // Prevent content to be centered vertically
     }
   }
 }
