@@ -37,7 +37,7 @@ $content-teaser-height-md: ms(36);
 .content-teaser__text {
   @extend %heading-font-regular;
 
-  margin-bottom: $spacer-xs;
+  margin-bottom: $spacer-md;
   line-height: $h4-line-height;
   font-size: $h4-font-size-small;
 }
