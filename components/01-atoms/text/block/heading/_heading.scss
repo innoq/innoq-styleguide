@@ -6,24 +6,24 @@
 %h1,
 h1 {
   @extend %heading-font-heavy;
+  @extend %manual-hyphenation;
   margin-top: 0;
   margin-bottom: $spacer-lg;
   line-height: $h1-line-height;
   color: $h1-color;
   font-size: $h1-font-size-small;
-  hyphens: auto;
 }
 
 // H2
 %h2,
 h2 {
   @extend %heading-font-heavy;
+  @extend %manual-hyphenation;
   margin-top: 0;
   margin-bottom: $spacer-base;
   line-height: $h2-line-height;
   color: $h2-color;
   font-size: $h2-font-size-small;
-  hyphens: auto;
 }
 
 // H3
@@ -111,16 +111,6 @@ h6 {
   margin-bottom: $spacer-base;
   border-top: 8px solid $brand-interaction;
   padding-top: $spacer-sm;
-}
-
-
-@media screen and (min-width: $grid-breakpoint-sm) {
-  %h1,
-  h1,
-  %h2,
-  h2 {
-    hyphens: none;
-  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

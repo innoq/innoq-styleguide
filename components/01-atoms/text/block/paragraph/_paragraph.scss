@@ -5,6 +5,10 @@ p {
   line-height: $paragraph-line-height-small;
   font-size: $paragraph-font-size-small;
 
+  &:not([class]) {
+    hyphens: auto;
+  }
+
   &.lead {
     @extend %body-font-italic;
     line-height: $paragraph-lead-line-height-small;

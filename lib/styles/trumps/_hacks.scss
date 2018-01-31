@@ -1,5 +1,5 @@
-p {
-  &:not([class]) {
-    hyphens: auto;
-  }
+// sass-lint:disable no-important
+
+.no-hyphenation {
+  hyphens: none !important;
 }

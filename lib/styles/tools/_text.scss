@@ -25,6 +25,13 @@
 // Mixins and Placeholders
 //
 
+%manual-hyphenation {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  word-wrap: normal;
+  hyphens: manual;
+}
+
 // Links
 %link-unstyled {
   box-shadow: none;
