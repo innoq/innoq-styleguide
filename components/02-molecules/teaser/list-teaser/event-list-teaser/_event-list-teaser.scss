@@ -89,7 +89,7 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
   }
 }
 
-@media screen and (min-width: $grid-breakpoint-md) {
+@media screen and (min-width: $grid-breakpoint-lg) {
   .list-teaser-event {
     .list-teaser-event__footer,
     .list-teaser__footer {
