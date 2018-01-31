@@ -45,16 +45,12 @@
 }
 
 //
-//Breakpoints
+// Media Queries
 //
 @media screen and (min-width: $grid-breakpoint-md) {
   .list-teaser__subheadline {
     line-height: $list-teaser-subheadline-line-height;
     font-size: $list-teaser-subheadline-font-size;
-  }
-
-  .list-teaser__footer {
-    flex-wrap: nowrap;
   }
 
   .list-teaser__body {
