@@ -11,7 +11,7 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
 
   .list-teaser-event__footer {
     @extend %list-teaser-footer;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .list-teaser-event__footer,
@@ -29,6 +29,7 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
   flex-grow: 1;
   align-self: flex-start; // Prevent content to be centered vertically
   justify-content: space-between;
+  width: 100%;
 }
 
 .list-teaser-event__headline {
@@ -75,6 +76,10 @@ $event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spa
       .label {
         display: none;
       }
+    }
+
+    .list-teaser-event__footer {
+      justify-content: flex-end;
     }
   }
 
