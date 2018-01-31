@@ -18,9 +18,9 @@
   grid-auto-rows: 1fr;
 }
 
-@media screen and (min-width: $grid-breakpoint-sm) {
+@media screen and (min-width: $grid-breakpoint-md) {
   .podcast-grid {
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
