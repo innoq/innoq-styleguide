@@ -3,6 +3,16 @@ $fast-transition: all .1s ease-in-out;
 $ease-out-back-transition: .2s transform cubic-bezier(.68, -.55, .265, 1.55),
 .175s box-shadow ease-in-out;
 
+@function standard-transition($trans...) {
+  $out: ();
+  @each $tran in $trans {
+    $out: append($out, #{$tran} .175s ease-in-out, comma);
+  }
+  @return $out;
+}
+
+// removed
+
 %hover-zoom-in {
   transition: $ease-out-back-transition;
 

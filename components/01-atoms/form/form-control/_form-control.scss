@@ -2,7 +2,7 @@
 .custom-form-control {
   @extend %heading-font-regular;
   display: block;
-  transition: $standard-transition;
+  // transition: $standard-transition;
   padding: $spacer-xs;
   width: 100%;
   line-height: $form-control-line-height;

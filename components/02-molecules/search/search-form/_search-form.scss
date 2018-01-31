@@ -11,7 +11,7 @@
 .search-form__input {
   @extend %heading-font-bold;
   display: block;
-  transition: $standard-transition;
+  // transition: $standard-transition;
   outline: none;
   border: 0;
   background-color: $search-field-background;

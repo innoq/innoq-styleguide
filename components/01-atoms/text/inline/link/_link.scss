@@ -10,7 +10,7 @@ $hover-padding: .125em;
 // sass-lint:disable force-pseudo-nesting
 .link-default,
 a:not([class]) {
-  transition: $standard-transition;
+  transition: standard-transition(padding-bottom, padding-top, background-color);
   box-shadow: inset 0 $underline-offset 0 $brand-white, inset 0 $underline-width 0 $link-color;
   text-decoration: none;
   color: $link-color;
