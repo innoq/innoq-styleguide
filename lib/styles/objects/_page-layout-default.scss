@@ -2,30 +2,41 @@
 // Default page layout without grid
 //
 
-// Landing Page width, content max-width is 1440px
-.page-layout-xl--default {
-  width: $default-page-layout-width-xl;
-  max-width: $default-page-layout-content-width-xl;
-}
-
-
-// Content Page width, content max-width is 800px
-.page-layout-md--default {
-  width: $default-page-layout-width-md;
-  max-width: $default-page-layout-content-width-md;
-}
-
-
-// Unified spacings for both variants
 .page-layout-xl--default,
 .page-layout-md--default {
-  margin: $default-page-layout-margin auto;
   padding: $container-spacer-y-sm $container-spacer-x-sm;
 }
 
-main > .page-layout-xl--default,
-main > .page-layout-md--default {
-  &:first-child {
-    margin-top: $default-page-layout-to-top-margin;
+//
+// Media Queries
+//
+
+@media screen and (min-width: $grid-breakpoint-md) {
+
+  // Landing Page width, content max-width is 1440px
+  .page-layout-xl--default {
+    width: $default-page-layout-width-xl;
+    max-width: $default-page-layout-content-width-xl;
+  }
+
+
+  // Content Page width, content max-width is 800px
+  .page-layout-md--default {
+    width: $default-page-layout-width-md;
+    max-width: $default-page-layout-content-width-md;
+  }
+
+
+  // Unified spacings for both variants
+  .page-layout-xl--default,
+  .page-layout-md--default {
+    margin: $default-page-layout-margin auto;
+  }
+
+  main > .page-layout-xl--default,
+  main > .page-layout-md--default {
+    &:first-child {
+      margin-top: $default-page-layout-to-top-margin;
+    }
   }
 }
