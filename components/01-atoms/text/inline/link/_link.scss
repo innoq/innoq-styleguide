@@ -22,6 +22,10 @@ a:not([class]) {
     padding-top: $hover-padding;
     padding-bottom: $hover-padding;
   }
+
+  &[href^='mailto'] {
+    hyphens: none;
+  }
 }
 
 .link-teaser {
