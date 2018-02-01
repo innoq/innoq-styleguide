@@ -10,6 +10,10 @@
   margin: $grid-page-layout-margin auto;
   width: $grid-page-layout-content-width;
   max-width: $grid-page-layout-main-column-width;
+
+  &:first-child {
+    margin-top: $default-page-layout-to-top-margin;
+  }
 }
 
 .center {

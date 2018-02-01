@@ -21,4 +21,8 @@
 .page-layout-md--default {
   margin: $default-page-layout-margin auto;
   padding: $container-spacer-y-sm $container-spacer-x-sm;
+
+  &:first-child {
+    margin-top: $default-page-layout-to-top-margin;
+  }
 }
