@@ -9,7 +9,8 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 .case-teaser {
   @extend %page-header;
   justify-content: center;
-  min-height: 50vh;
+  width: 100%;
+  max-width: 100%;
 
   &--right-aligned {
     justify-content: flex-end;
@@ -23,9 +24,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 .case-teaser__wrapper {
   display: flex;
   justify-content: flex-start;
-  padding: $spacer-xl $container-spacer-x-sm;
-  width: $default-page-layout-width-xl;
-  max-width: $default-page-layout-content-width-xl;
+  padding: $container-spacer-x-sm;
 }
 
 .case-teaser__body {
@@ -34,13 +33,12 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   flex-direction: column;
   justify-content: space-between;
   background-color: $case-teaser-body-bg;
-  padding: $teaser-inner-padding $teaser-inner-padding $teaser-inner-padding-bottom;
-  max-width: 620px;
+  padding: $teaser-inner-padding;
 }
 
 .case-teaser__text {
   @extend %teaser-text;
-  margin-bottom: $spacer-md;
+  margin-bottom: $spacer-base;
   line-height: $teaser-text-line-height-small;
   font-size: $teaser-text-font-size-small;
 }
@@ -56,21 +54,44 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   height: $spacer-md;
 }
 
-// Variation without stencil Headlines
-.case-teaser--simple {
-  background-position: top left;
-  min-height: 75vh;
+//
+// Media Queries
+//
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .case-teaser {
+    min-height: 50vh;
+  }
+
+  .case-teaser__wrapper {
+    padding: $spacer-base;
+  }
 }
 
+@media screen and (min-width: $grid-breakpoint-md-lg) {
+  .case-teaser {
+    min-height: 75vh;
+  }
 
-//Breakpoints
-@media screen and (min-width: $grid-breakpoint-md) {
-  .case-teaser__body {
-    flex-basis: 50%;
+  .case-teaser__wrapper {
+    padding: $spacer-sm;
+    width: $default-page-layout-width-xl;
+    max-width: $default-page-layout-content-width-xl;
   }
 
   .case-teaser__text {
     line-height: $teaser-text-line-height;
     font-size: $teaser-text-font-size;
+  }
+
+  // Variation without stencil Headlines
+  .case-teaser--simple {
+    background-position: top left;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .case-teaser__body {
+    flex-basis: 50%;
   }
 }
