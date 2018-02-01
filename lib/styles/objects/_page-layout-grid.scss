@@ -8,7 +8,7 @@
   // If the browser does not support grid, we use a simple layout:
   // One column centered in the middle of the page.
   margin: $grid-page-layout-margin auto;
-  width: $grid-page-layout-content-width;
+  padding: $container-spacer-y-sm $container-spacer-x-sm;
   max-width: $grid-page-layout-main-column-width;
 
   &:first-child {
@@ -30,7 +30,7 @@
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .page-layout--grid {
-    padding: $container-spacer-y-sm $container-spacer-x-sm;
+    padding: 0;
     width: $grid-page-layout-content-width-md;
   }
 }
