@@ -41,6 +41,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   margin-bottom: $spacer-base;
   line-height: $teaser-text-line-height-small;
   font-size: $teaser-text-font-size-small;
+  hyphens: auto;
 }
 
 .case-teaser__header {
@@ -82,6 +83,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
   .case-teaser__text {
     line-height: $teaser-text-line-height;
     font-size: $teaser-text-font-size;
+    hyphens: none;
   }
 
   // Variation without stencil Headlines

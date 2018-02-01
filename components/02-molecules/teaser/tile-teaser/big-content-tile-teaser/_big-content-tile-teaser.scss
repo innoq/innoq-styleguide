@@ -30,6 +30,7 @@ $big-content-teaser-height-md: ms(38);
 
   line-height: $big-content-teaser-text-line-height-small;
   font-size: $big-content-teaser-text-font-size-small;
+  hyphens: auto;
 }
 
 .big-content-teaser__footer {
@@ -128,6 +129,10 @@ $big-content-teaser-height-md: ms(38);
 }
 
 @media screen and (min-width: $grid-breakpoint-lg) {
+  .big-content-teaser__text {
+    hyphens: none;
+  }
+
   .big-content-teaser__headline {
     font-size: $big-content-teaser-headline-font-size;
   }
