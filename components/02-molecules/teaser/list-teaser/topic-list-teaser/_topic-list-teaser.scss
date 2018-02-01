@@ -12,7 +12,7 @@ $topic-teaser-height: ms(36);
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;
-  padding: $spacer-lg;
+  padding: $spacer-md;
   min-height: $topic-teaser-height;
   text-align: center;
   color: $topic-teaser-body-color;
@@ -25,6 +25,7 @@ $topic-teaser-height: ms(36);
 .topic-teaser__text {
   @extend %teaser-text-italic;
   margin-bottom: $spacer-base;
+  font-size: $teaser-text-font-size-italic-small;
 }
 
 .topic-teaser__header {
