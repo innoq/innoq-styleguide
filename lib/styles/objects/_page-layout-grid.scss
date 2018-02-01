@@ -10,7 +10,9 @@
   margin: $grid-page-layout-margin auto;
   padding: $container-spacer-y-sm $container-spacer-x-sm;
   max-width: $grid-page-layout-main-column-width;
+}
 
+main > .page-layout--grid {
   &:first-child {
     margin-top: $default-page-layout-to-top-margin;
   }
