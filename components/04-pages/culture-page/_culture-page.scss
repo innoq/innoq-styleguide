@@ -7,7 +7,7 @@
   }
 
   .culture-bg-04-text-box {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-culture-04.jpg');
+    @extend %culture-bg-04-text-box;
   }
 
   .culture-bg-05 {
@@ -18,6 +18,6 @@
   }
 
   .culture-bg-05-text-box {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-culture-05.jpg');
+    @extend %culture-bg-05-text-box;
   }
 }

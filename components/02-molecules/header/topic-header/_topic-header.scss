@@ -3,8 +3,6 @@ $topic-header-outer-padding-small: $spacer-sm;
 $topic-header-inner-padding: $spacer-lg;
 $topic-header-inner-padding-small: $spacer-base;
 
-$gradient-stencil: rgba(0, 0, 0, .25);
-
 .topic-header {
   @extend %page-header;
   padding: $topic-header-outer-padding $topic-header-outer-padding-small;
@@ -64,7 +62,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 }
 
 .topic-header-bg-image-text-box-girl {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-girl-1444.jpg');
+  @extend %topic-header-bg-image-text-box-girl;
 }
 
 .topic-header-bg-image-medusa {
@@ -72,7 +70,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 }
 
 .topic-header-bg-image-text-box-medusa {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-medusa-1444.jpg');
+  @extend %topic-header-bg-image-text-box-medusa;
 }
 
 .topic-header-bg-image-ice {
@@ -80,7 +78,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 }
 
 .topic-header-bg-image-text-box-ice {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-ice-1444.jpg');
+  @extend %topic-header-bg-image-text-box-ice;
 }
 
 .topic-header-bg-image-igel {
@@ -88,7 +86,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 }
 
 .topic-header-bg-image-text-box-igel {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-igel-1444.jpg');
+  @extend %topic-header-bg-image-text-box-igel;
 }
 
 .topic-header-bg-image-koralle {
@@ -96,7 +94,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 }
 
 .topic-header-bg-image-text-box-koralle {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-koralle-1444.jpg');
+  @extend %topic-header-bg-image-text-box-koralle;
 }
 
 .topic-header-bg-image-heads {
@@ -104,7 +102,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 }
 
 .topic-header-bg-image-text-box-heads {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-heads.jpg');
+  @extend %topic-header-bg-image-text-box-heads;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

@@ -5,9 +5,6 @@ $landing-page-header-outer-padding-small: $spacer-sm;
 $landing-page-header-height: 70vh;
 $landing-page-header-bottom-margin: $spacer-xxl;
 
-$gradient-stencil: rgba(0, 0, 0, .25);
-
-
 .landing-page-header {
   @extend %page-header;
 
@@ -60,7 +57,7 @@ $gradient-stencil: rgba(0, 0, 0, .25);
 }
 
 .landing-page-header-bg-image-text-box {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-landing-page.jpg');
+  @extend %landing-page-header-bg-image-text-box;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

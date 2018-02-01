@@ -4,8 +4,6 @@ $teaser-outer-padding: $spacer-md;
 $teaser-inner-padding: $spacer-base;
 $teaser-inner-padding-bottom: $spacer-xxl;
 
-$gradient-stencil: rgba(0, 0, 0, .25);
-
 .case-teaser {
   @extend %page-header;
   justify-content: center;

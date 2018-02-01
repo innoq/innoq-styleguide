@@ -109,36 +109,6 @@
   font-size: $teaser-text-font-size-italic;
 }
 
-%punch-in {
-  // Disable any punch in effect for now by removing any background images
-  // sass-lint:disable no-important
-  background-image: none !important;
-
-  // TODO: fix punch-in text styles for Edge and Safari
-
-  // background-clip: text;
-  // background-position: center;
-  // color: $brand-text;
-  //
-  //
-  // // sass-lint:disable no-vendor-prefixes
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
-  //
-  > * {
-    // Prevent clipping of letters.
-    margin: 0;
-    padding-bottom: $spacer-base;
-
-    // Don't ask! Just a littler hack for Safari to show knockout letters.
-    // sass-lint:disable nesting-depth
-    // &::after {
-    //   content: '\00a0';
-    // }
-  }
-}
-
-
 // Should only be used, when placeholder is overridden by normalize.
 @mixin list-unstyled {
   margin-top: 0;
@@ -172,6 +142,8 @@
   }
 }
 
+
+
 //
 // Breakpoints
 //
@@ -180,5 +152,82 @@
   %teaser-caption {
     line-height: $teaser-caption-line-height;
     font-size: $teaser-caption-font-size;
+  }
+}
+
+
+
+//
+// stencil / punch-in effect
+//
+
+// sass-lint:disable no-vendor-prefixes
+
+%punch-in {
+  // fallback for all unsopporting browsers
+  // will be overwritten by images in @supports
+  background-image: none;
+}
+
+// @supports: put -webkit- at the end or sass will kill it, kills -moz- anyway
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+
+  .punch-in,
+  %punch-in {
+    background-clip: text;
+    background-position: center;
+    color: transparent;
+
+    -webkit-background-clip: text;
+  }
+
+  // pull all bg images into @supports rule
+
+  %landing-page-header-bg-image-text-box {
+    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-landing-page.jpg');
+  }
+
+  %image-header-bg-culture-01-text-box {
+    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-culture-01.jpg');
+  }
+
+  %image-header-bg-staff-01-text-box {
+    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-staff-01.jpg');
+  }
+
+  %image-divider-center-bg-text-box {
+    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-culture-03.jpg');
+  }
+
+  %culture-bg-04-text-box {
+    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-culture-04.jpg');
+  }
+
+  %culture-bg-05-text-box {
+    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-culture-05.jpg');
+  }
+
+  %topic-header-bg-image-text-box-girl {
+    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-girl-1444.jpg');
+  }
+
+  %topic-header-bg-image-text-box-medusa {
+    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-medusa-1444.jpg');
+  }
+
+  %topic-header-bg-image-text-box-ice {
+    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-ice-1444.jpg');
+  }
+
+  %topic-header-bg-image-text-box-igel {
+    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-igel-1444.jpg');
+  }
+
+  %topic-header-bg-image-text-box-koralle {
+    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-koralle-1444.jpg');
+  }
+
+  %topic-header-bg-image-text-box-heads {
+    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-header-heads.jpg');
   }
 }

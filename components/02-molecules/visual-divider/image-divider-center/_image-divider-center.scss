@@ -1,5 +1,3 @@
-$gradient-stencil: rgba(0, 0, 0, .25);
-
 $divider-center-textbox-offset: $spacer-xxl * 2;
 
 .image-divider-center {
@@ -48,7 +46,7 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
 }
 
 .image-divider-center-bg-text-box {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url('public/assets/visual-culture-03.jpg');
+  @extend %image-divider-center-bg-text-box;
 }
 
 
