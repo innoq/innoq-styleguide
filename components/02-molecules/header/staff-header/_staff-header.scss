@@ -75,9 +75,9 @@ $staff-intro-offset: -(ms(22));
   }
 }
 
-//Breakpoints
+// Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
-  .staff-header-image {
+  .staff-header-image-wrapper {
     margin: 0 auto;
     max-width: 70%;
   }
@@ -93,11 +93,6 @@ $staff-intro-offset: -(ms(22));
   .staff-header-quote {
     flex-grow: 1;
     padding: $spacer-xxl $spacer-md 0;
-  }
-
-  .staff-header-image {
-    max-width: $default-page-layout-content-width-xl / 2;
-    max-height: $default-page-layout-content-width-xl / 2;
   }
 
   .staff-header-quote--text {
