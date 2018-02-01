@@ -58,9 +58,7 @@
   align-items: center;
   margin-top: $spacer-md;
   background-color: $standard-header-intro-bg;
-  padding: $spacer-md;
-  width: $grid-page-layout-content-width;
-  max-width: $grid-page-layout-content-width-xl;
+  padding: $container-spacer-y-sm $container-spacer-x-sm;
   box-sizing: content-box;
 }
 
@@ -115,6 +113,7 @@
     top: $spacer-xxl;
     padding: $spacer-lg;
     width: $grid-page-layout-content-width-md;
+    max-width: $grid-page-layout-content-width-xl;
   }
 
   .standard-header__intro__text {
