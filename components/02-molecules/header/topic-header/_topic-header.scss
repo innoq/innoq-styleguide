@@ -25,7 +25,9 @@ $topic-header-inner-padding-small: $spacer-base;
   }
 
   &__title {
+    @extend %punch-in;
     margin-bottom: $spacer-xs;
+    padding-bottom: $spacer-base;
     text-align: center;
     line-height: $standard-header-title-line-height-small;
     font-size: $standard-header-title-font-size-small;

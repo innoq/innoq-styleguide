@@ -26,12 +26,10 @@ $landing-page-header-bottom-margin: $spacer-xxl;
     box-sizing: content-box;
   }
 
-  &__punch-in {
-    @extend %punch-in;
-  }
-
   &__title {
+    @extend %punch-in;
     margin-bottom: $spacer-xs;
+    padding-bottom: $spacer-base;
     text-align: center;
     line-height: $landing-page-header-title-line-height-small;
     font-size: $landing-page-header-title-font-size-small;
@@ -94,8 +92,10 @@ $landing-page-header-bottom-margin: $spacer-xxl;
   }
 }
 
-@import './landing-page-header--red';
-@import './landing-page-header--blue';
-@import './landing-page-header--centered';
-@import './landing-page-header--centered-big';
-@import './landing-page-header--demo-classes';
+// excluded for now
+
+// @import './landing-page-header--red';
+// @import './landing-page-header--blue';
+// @import './landing-page-header--centered';
+// @import './landing-page-header--centered-big';
+// @import './landing-page-header--demo-classes';
