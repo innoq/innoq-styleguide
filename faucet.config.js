@@ -1,11 +1,13 @@
 const path = require('path')
 
+const webRoot = "./public"
+
 const config = {
   manifest: {
     file: './public/assets/manifest.json',
     value: filepath => {
-      const filename = path.basename(filepath)
-      return `${process.env.BASE_URI || ''}/assets/${filename}`
+      filepath = path.relative(webRoot, filepath)
+      return `${process.env.BASE_URI || ''}/${filepath}`
     }
   },
   static: [
