@@ -1,6 +1,9 @@
 .paginator {
-  @extend %list-unstyled;
   @extend %heading-font-regular;
+}
+
+.paginator__list {
+  @extend %list-unstyled;
 }
 
 .paginator__item {
