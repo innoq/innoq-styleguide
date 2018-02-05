@@ -72,17 +72,42 @@
 }
 
 %definition-list {
+  padding-top: $spacer-sm;
+
   dt {
     @extend %heading-font-bold;
-    margin-bottom: 0;
+    margin-top: $spacer-sm;
     line-height: $definition-list-line-height;
     font-size: $definition-list-font-size;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   dd {
     @extend %body-font-regular;
+    margin-top: $container-spacer-x-sm;
+    margin-left: $spacer-md;
     line-height: $definition-list-line-height;
     font-size: $definition-list-font-size;
+  }
+}
+
+%definition-list-simple {
+  @extend %definition-list;
+
+  dd {
+    @extend %heading-font-regular;
+    margin-top: 0;
+    margin-bottom: $spacer-sm;
+    text-transform: uppercase;
+    font-size: ms(0);
+  }
+
+  dd,
+  dt {
+    margin-left: 0;
   }
 }
 

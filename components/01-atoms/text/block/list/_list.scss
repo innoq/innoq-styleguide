@@ -118,7 +118,8 @@ ol:not([class]) {
 
 // ---- Definition Lists -------------------------------------------------------
 //
-// TODO: Finalize when layout is available
+// adapted from: /components/detail/talk-page
+// see lib/styles/tools/text
 dl:not([class]) {
   @extend %definition-list;
 }
