@@ -22,7 +22,7 @@ import { safe, htmlEncode } from "complate-stream";
                 <li class="author-bio author-bio--short" itemscope itemtype="http://schema.org/Person">
                     <div class="author-bio__image avatar avatar--small">
                         <a class="author-bio__anchor avatar__link" href="#author-bio">
-                            <img class="avatar__image" itemprop="photo" src="https://innoq.com/assets/uploads/staff_member/photo/alex/thumb_DSC02016_2.jpg" alt="Portrait von Alexander Hesingfeld" />
+                            <img class="avatar__image" itemprop="photo" src={context.app.uri("assets/heribert.jpg")} alt="Portrait von Alexander Hesingfeld" />
                         </a>
                     </div>
                     <div>
@@ -35,7 +35,7 @@ import { safe, htmlEncode } from "complate-stream";
                 <li class="author-bio author-bio--short" itemscope itemtype="http://schema.org/Person">
                     <div class="author-bio__image avatar avatar--small">
                         <a class="author-bio__anchor avatar__link" href="#author-bio">
-                            <img class="avatar__image" itemprop="photo" src="https://innoq.com/assets/uploads/staff_member/photo/otigges/thumb_DSC01893.jpg" alt="Portrait von Alexander Hesingfeld" />
+                            <img class="avatar__image" itemprop="photo" src={context.app.uri("assets/heribert.jpg")} alt="Portrait von Alexander Hesingfeld" />
                         </a>
                     </div>
                     <div>
@@ -288,7 +288,7 @@ import { safe, htmlEncode } from "complate-stream";
             <div class="blocks">
                 <div id="author-bio" class="author-bio author-bio--long" itemscope="" itemtype="http://schema.org/Person">
                     <div class="author-bio__image avatar avatar--base">
-                      <img itemprop="photo" class="avatar__image" src="https://innoq.com/assets/uploads/staff_member/photo/alex/thumb_DSC02016_2.jpg" alt="Portrait von Alexander Hesingfeld" />
+                      <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/heribert.jpg")} alt="Portrait von Alexander Hesingfeld" />
                     </div>
                     <div class="author-bio__head">
                         <div class="author-bio__name" itemprop="name">
@@ -332,7 +332,7 @@ import { safe, htmlEncode } from "complate-stream";
 
         <section class="center reference">
             <a href="#" class="reference__link">
-                <img class="reference__image" src="https://innoq.com/assets/source_logos/business_technology-0bb5974e53e7ae33adf5c8e2e52a7acc78578788952d581d4c1c8a84aa0aa4be.svg" alt="Business technology" />
+                <img class="reference__image" src={context.app.uri("assets/business_technology.svg")} alt="Business technology" />
             </a>
             <p class="reference__description">
                 Dieser Artikel ist ursprünglich in Ausgabe 04/2016 der Zeitschrift Business Technology erschienen. Die Veröffentlichung auf innoq.com erfolgt mit freundlicher Genehmigung des S&amp;S Media-Verlags.
@@ -354,4 +354,3 @@ import { safe, htmlEncode } from "complate-stream";
     </div>
 
 </main>
-
