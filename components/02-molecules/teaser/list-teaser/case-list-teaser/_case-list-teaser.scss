@@ -45,6 +45,10 @@ $teaser-inner-padding-bottom: $spacer-xxl;
 .case-teaser__header {
   padding-bottom: 0;
   color: $case-teaser-body-color;
+
+  .punch-in {
+    line-height: 1.31; // fix cut descender
+  }
 }
 
 .case-teaser__caption {
