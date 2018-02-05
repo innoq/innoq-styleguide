@@ -23,6 +23,10 @@
     height: 5px;
   }
 
+  .primary-nav__list {
+    overflow-y: scroll;
+  }
+
   .primary-nav__list--level2 ~ .navbtn--drill-up {
     display: block;
   }

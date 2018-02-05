@@ -200,7 +200,6 @@ $navbar-drill-transition: left .5s ease;
   width: 100%;
   height: calc(90vh - #{$navbar-bottombar-height-small} - #{$navbar-brandbar-height});
   font-size: $navbar-primary-font-size;
-  overflow-y: scroll;
 }
 
 .primary-nav__item {
