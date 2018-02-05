@@ -59,12 +59,6 @@ $navbar-drill-transition: left .5s ease;
   left: 10px;
 }
 
-.navbtn:hover,
-.navbtn:focus {
-  transition: $navbar-navbtn-transition;
-  color: $navbar-link-hover-color;
-}
-
 .navbtn--primary {
   @extend %heading-font-bold;
 }
@@ -83,16 +77,16 @@ $navbar-drill-transition: left .5s ease;
 .navbtn--search,
 .navbtn--menu {
   top: -.1em;
-  padding: 0 $spacer-xs;
   font-size: ms(3);
 }
 
 .navbtn--search {
-  padding-right: 0;
+  padding: 0 0 0 $spacer-md;
 }
 
 .navbtn--menu {
   @extend %heading-font-bold;
+  padding: 0 $spacer-md 0 0;
 }
 
 .navbtn__left-icon {
@@ -122,6 +116,12 @@ $navbar-drill-transition: left .5s ease;
   &.navbtn--active::after {
     height: 2px;
   }
+}
+
+.navbtn:hover,
+.navbtn:focus {
+  transition: $navbar-navbtn-transition;
+  color: $navbar-link-hover-color;
 }
 
 //
