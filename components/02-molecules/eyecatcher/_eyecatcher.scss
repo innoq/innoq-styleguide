@@ -16,7 +16,7 @@
   }
 
   .social-media-bar__link {
-    transition: $standard-transition;
+    transition: standard-transition(color);
 
     &:hover,
     &:focus {

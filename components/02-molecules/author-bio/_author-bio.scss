@@ -97,9 +97,10 @@ $author-text-margin: .18rem;
   &::before {
     @extend %icon;
     position: absolute;
+    top: auto;
     right: 0;
     bottom: 0;
-    transition: $standard-transition;
+    transition: standard-transition(bottom);
     border-radius: 100%;
     background-color: $author-bio-link-background-color;
     width: $spacer-md;
@@ -114,6 +115,7 @@ $author-text-margin: .18rem;
   &:hover {
     &::before {
       bottom: -2px; // on hover move the anchor icon slightly down
+      transition: standard-transition(bottom);
     }
   }
 }
