@@ -149,7 +149,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    transition: $standard-transition;
+    transition: standard-transition(width);
     z-index: -1;
     background-color: $fill-color;
     width: 0%;

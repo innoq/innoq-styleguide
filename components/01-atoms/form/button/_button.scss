@@ -9,7 +9,6 @@ $default-btn-margin: $spacer-sm;
   @include hover-fill($brand-interaction, $button-color, $button-color);
   display: inline-block;
   position: relative;
-  transition: $standard-transition;
   margin-bottom: $default-btn-margin;
   border: 3px solid $button-border-color;
   border-radius: 0;
