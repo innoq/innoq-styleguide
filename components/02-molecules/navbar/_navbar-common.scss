@@ -225,7 +225,7 @@ $navbar-drill-transition: left .5s ease;
 }
 
 .dropdown__icon--navbar {
-  transition: $standard-transition;
+  transition: standard-transition(color);
   color: $navbar-link-color;
 
   &:hover,

@@ -16,7 +16,7 @@
 
 .search-result__title {
   @extend %h3;
-  transition: $standard-transition;
+  transition: standard-transition(color);
 
   // Fix Google CSE markup and the resulting style
   b {

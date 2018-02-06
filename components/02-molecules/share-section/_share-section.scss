@@ -36,7 +36,7 @@ $share-section-arrow-size: ms(16);
 .share-section__link {
   @extend %heading-font-bold;
   @extend %link-unstyled;
-  transition: $standard-transition;
+  transition: standard-transition(color);
   padding: $spacer-sm;
   font-size: $share-section-icon-size;
 

@@ -70,7 +70,7 @@
 .footer__directions-link,
 .footer__list__link {
   @extend %link-unstyled;
-  transition: $standard-transition;
+  transition: standard-transition(color);
 
   &:hover,
   &:focus {

@@ -24,7 +24,7 @@
 .toolbar__link {
   @extend %link-unstyled;
   @extend %heading-font-bold;
-  transition: $standard-transition;
+  transition: standard-transition(color);
 
   &:hover,
   &:focus {
