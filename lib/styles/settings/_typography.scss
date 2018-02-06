@@ -66,7 +66,7 @@ $h4-line-height: $heading-line-height;    // ~30px
 // H5
 $h5-font-size: ms(3);                     // ~21px
 $h5-font-size-small: ms(0);               // ~16px
-$h5-line-height: $heading-line-height;    // 25px
+$h5-line-height: $base-line-height;       // 24/32px
 
 // H6
 $h6-font-size: ms(0);                     // ~16px
@@ -363,7 +363,7 @@ $teaser-caption-font-size-small: ms(-1);            // ~14px
 $teaser-caption-line-height-small: 1.57 ;           // ~22px
 $teaser-text-font-size: ms(1);                      // ~18px
 $teaser-text-line-height: 1.56;                     // ~28px
-$teaser-text-font-size-small: ms(-1);               // ~14px
+$teaser-text-font-size-small: ms(0);                // ~16px
 $teaser-text-line-height-small: 1.78;               // ~25px
 $teaser-text-font-size-italic: ms(3);               // ~21px
 $teaser-text-line-height-italic: $base-line-height; // ~32px
@@ -418,7 +418,7 @@ $topic-teaser-header-font-size-small: ms(9);           // 36px
 //
 // Eyecatcher
 //
-$eyecatcher-font-size: ms(-1);
+$eyecatcher-font-size: ms(0);
 $eyecatcher-font-size-large: ms(8);
 
 //
