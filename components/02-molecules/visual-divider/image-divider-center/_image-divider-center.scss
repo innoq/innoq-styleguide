@@ -5,6 +5,7 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
 
   margin-bottom: $divider-center-textbox-offset;
   padding-top: $spacer-lg;
+  min-height: 50vh;
 
   &__title {
     @extend %punch-in;

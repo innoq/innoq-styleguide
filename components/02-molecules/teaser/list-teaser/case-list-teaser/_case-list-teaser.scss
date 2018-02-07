@@ -9,6 +9,7 @@ $teaser-inner-padding-bottom: $spacer-xxl;
   justify-content: center;
   width: 100%;
   max-width: 100%;
+  min-height: 50vh;
 
   &--right-aligned {
     justify-content: flex-end;

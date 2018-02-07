@@ -2,7 +2,6 @@
 
 $landing-page-header-outer-padding: $spacer-lg;
 $landing-page-header-outer-padding-small: $spacer-sm;
-$landing-page-header-height: 70vh;
 $landing-page-header-bottom-margin: $spacer-xxl;
 
 .landing-page-header {
@@ -11,7 +10,6 @@ $landing-page-header-bottom-margin: $spacer-xxl;
   justify-content: flex-end;
   margin-bottom: $landing-page-header-bottom-margin;
   padding: $landing-page-header-outer-padding $landing-page-header-outer-padding-small;
-  min-height: $landing-page-header-height;
 
   &__body {
     display: flex;

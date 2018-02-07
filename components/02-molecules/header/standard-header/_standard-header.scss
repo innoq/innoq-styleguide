@@ -1,12 +1,16 @@
+$standard-header-intro-offset-xxl: $spacer-xxl;
+
 .standard-header {
   @extend %page-header;
 
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   margin-bottom: $spacer-xl;
   padding-top: $spacer-lg;
 
   &__title {
+    position: relative;
     margin-bottom: $spacer-xs;
     padding: 0 $spacer-md;
     text-align: center;
@@ -20,6 +24,7 @@
   }
 
   &__subtitle {
+    position: relative;
     margin-bottom: $spacer-xs;
     line-height: $standard-header-subtitle-line-height-small;
     color: $standard-header-subtitle-color;
@@ -28,6 +33,7 @@
 
   &__type {
     @extend %heading-font-bold;
+    position: relative;
     margin-bottom: $spacer-xs;
     text-transform: uppercase;
     line-height: $standard-header-type-line-height-small;
@@ -53,10 +59,9 @@
 .standard-header__intro {
   display: flex;
   position: relative;
-  top: $spacer-lg;
   flex-direction: column;
   align-items: center;
-  margin-top: $spacer-md;
+  margin-top: $spacer-lg;
   background-color: $standard-header-intro-bg;
   padding: $container-spacer-y-sm $container-spacer-x-sm;
   box-sizing: content-box;
@@ -92,7 +97,7 @@
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .standard-header {
-    margin-bottom: $spacer-xxl;
+    margin-bottom: $standard-header-intro-offset-xxl;
   }
 
   .standard-header__title {
@@ -110,10 +115,18 @@
   }
 
   .standard-header__intro {
-    top: $spacer-xxl;
+    margin-top: $spacer-xl;
     padding: $spacer-lg;
     width: $grid-page-layout-content-width-md;
     max-width: $grid-page-layout-content-width-xl;
+  }
+
+  // offset
+  .standard-header__type,
+  .standard-header__title,
+  .standard-header__subtitle,
+  .standard-header__intro {
+    top: $standard-header-intro-offset-xxl;
   }
 
   .standard-header__intro__text {
