@@ -52,12 +52,16 @@
   }
 }
 
-.paginator__prevs > *:first-child {
-  padding-left: 0;
+.paginator__prevs {
+  & > *:first-child {
+    padding-left: 0;
+  }
 }
 
-.paginator__nexts > *:last-child {
-  padding-right: 0;
+.paginator__nexts {
+  & > *:last-child {
+    padding-right: 0;
+  }
 }
 
 @media screen and (max-width: $grid-breakpoint-sm) {
@@ -73,8 +77,17 @@
     width: 100%;
   }
 
+  .paginator__prevs {
+    text-align: left;
+  }
+
+  .paginator__nexts {
+    text-align: right;
+  }
+
   .paginator__nexts,
   .paginator__prevs {
+    flex-grow: 1;
     margin-top: $spacer-sm;
   }
 }
