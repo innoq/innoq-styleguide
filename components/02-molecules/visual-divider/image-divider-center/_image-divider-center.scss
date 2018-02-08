@@ -28,6 +28,7 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
   background-color: $standard-header-intro-bg;
   padding: $spacer-md;
   max-width: 630px;
+  text-align: center;
   box-sizing: content-box;
 }
 
@@ -37,6 +38,11 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
   line-height: $standard-header-intro-line-height-small;
   color: $brand-red;
   font-size: $standard-header-intro-font-size-small;
+  // IE11 Hack
+  // sass-lint:disable no-vendor-prefixes
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    max-width: 100%;
+  }
 }
 
 .image-divider-center-bg {

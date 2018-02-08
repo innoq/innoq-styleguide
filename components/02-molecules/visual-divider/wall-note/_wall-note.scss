@@ -24,6 +24,11 @@ $big-content-teaser-height-md: ms(40);
 
   line-height: $wall-note-text-line-height-small;
   font-size: $wall-note-text-font-size-small;
+  // IE11 Hack
+  // sass-lint:disable no-vendor-prefixes
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    max-width: 100%;
+  }
 }
 
 

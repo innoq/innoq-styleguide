@@ -17,6 +17,11 @@ $topic-header-inner-padding-small: $spacer-base;
     background-size: cover;
     padding: $topic-header-inner-padding-small;
     max-width: $default-page-layout-content-width-md;
+    // IE11 Hack
+    // sass-lint:disable no-vendor-prefixes
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+      max-width: 100%;
+    }
     color: $topic-header-intro-text-color;
   }
 
@@ -52,6 +57,8 @@ $topic-header-inner-padding-small: $spacer-base;
     margin-bottom: $spacer-base;
     padding-right: $topic-header-inner-padding-small;
     padding-left: $topic-header-inner-padding-small;
+    // IE11 Hack
+    max-width: 100%;
     text-align: center;
     line-height: $standard-header-intro-line-height-small;
     font-size: $standard-header-intro-font-size-small;

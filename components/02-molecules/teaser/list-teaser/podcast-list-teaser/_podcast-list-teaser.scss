@@ -71,5 +71,10 @@ $podcast-teaser-height-md: ms(35);
   .list-teaser-podcast__footer {
     display: flex;
     justify-content: space-evenly;
+    // IE11 Hack
+    // sass-lint:disable no-vendor-prefixes
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+      justify-content: space-around;
+    }
   }
 }
