@@ -1,29 +1,80 @@
 .paginator {
   @extend %heading-font-regular;
+  display: flex;
+  flex-wrap: wrap;
+  margin: $spacer-sm 0;
+  font-size: $paginator-font-size;
 }
 
 .paginator__list {
   @extend %list-unstyled;
+  display: flex;
+  margin: 0;
 }
 
 .paginator__item {
-  display: inline-block;
+  @extend %heading-font-bold;
+  @extend %link-unstyled;
+  position: relative;
+  // display: inline-block;
 }
 
 .paginator__item--active {
-  text-decoration: underline;
+  // TODO: put this in a placeholder selector
+  &::after {
+    display: block;
+    position: absolute;
+    bottom: -.15em;
+    background-color: $brand-interaction;
+    width: 100%;
+    height: 3px;
+    content: '';
+  }
 }
 
-.paginator__item + .paginator__item {
-  margin-left: $spacer-xs;
+// .paginator__item + .paginator__item {
+//   margin-left: $spacer-xs;
+// }
+
+.paginator__link,
+.paginator__dots {
+  padding: $spacer-xxs $spacer-xs;
 }
 
 .paginator__link {
   @extend %link-unstyled;
+  display: inline-block;
   transition: standard-transition(color);
 
   &:hover,
   &focus {
     color: $paginator-focus-color;
+  }
+}
+
+.paginator__prevs > *:first-child {
+  padding-left: 0;
+}
+
+.paginator__nexts > *:last-child {
+  padding-right: 0;
+}
+
+@media screen and (max-width: $grid-breakpoint-sm) {
+  .paginator {
+    justify-content: space-between;
+    margin-top: $spacer-md;
+    font-size: $paginator-font-size-small;
+  }
+
+  .paginator__list {
+    justify-content: space-between;
+    order: -1;
+    width: 100%;
+  }
+
+  .paginator__nexts,
+  .paginator__prevs {
+    margin-top: $spacer-sm;
   }
 }
