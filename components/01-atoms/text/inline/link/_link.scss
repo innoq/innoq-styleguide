@@ -28,6 +28,13 @@ a:not([class]) {
   }
 }
 
+.link--muted {
+  @extend %heading-font-bold;
+  @extend %link-unstyled;
+  color: $brand-muted;
+  font-size: $link-teaser-font-size;
+}
+
 .link-teaser {
   @extend %heading-font-heavy;
   @extend %link-unstyled;
