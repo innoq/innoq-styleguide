@@ -99,9 +99,10 @@ $link-teaser-inverted-interaction-border-color: $brand-interaction;
 $link-teaser-inverted-interaction-text-color: $brand-white;
 $hover-color: $brand-interaction;
 $mark-color: $brand-hover;
-$code-background-color: rgba($brand-gray-20, .2);
 
-$code-snippet-border-color: $brand-text;
+// Code
+$code-background-color: $brand-gray-10;
+$code-snippet-border-color: $brand-gray-25;
 
 // Pull Quote
 $pull-quote-border-color: $brand-text;
