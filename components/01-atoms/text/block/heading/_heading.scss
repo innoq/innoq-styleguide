@@ -86,14 +86,19 @@ h6 {
 
 .teaser-section-heading {
   @extend %h2;
-
   margin: 0 auto $spacer-base;
-  border-bottom: 4px solid $brand-text;
-  width: max-content;
   text-align: center;
   text-transform: uppercase;
   line-height: $teaser-section-heading-line-height-small;
   font-size: $teaser-section-heading-font-size-small;
+}
+
+// Prevent older Browsers from screwing up with max-content widths
+@supports (width: max-content) {
+  .teaser-section-heading {
+    border-bottom: 4px solid $brand-text;
+    width: max-content;
+  }
 }
 
 .section-heading--primary {
