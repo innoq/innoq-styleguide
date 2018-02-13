@@ -1,10 +1,11 @@
 $topic-header-outer-padding: $spacer-lg;
 $topic-header-outer-padding-small: $spacer-sm;
 $topic-header-inner-padding: $spacer-lg;
-$topic-header-inner-padding-small: $spacer-base;
+$topic-header-inner-padding-small: $spacer-md;
 
 .topic-header {
   @extend %page-header;
+
   padding: $topic-header-outer-padding $topic-header-outer-padding-small;
   min-height: $fullscreen-like-height;
 
@@ -17,11 +18,6 @@ $topic-header-inner-padding-small: $spacer-base;
     background-size: cover;
     padding: $topic-header-inner-padding-small;
     max-width: $default-page-layout-content-width-md;
-    // IE11 Hack
-    // sass-lint:disable no-vendor-prefixes
-    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-      max-width: 100%;
-    }
     color: $topic-header-intro-text-color;
   }
 
@@ -31,6 +27,7 @@ $topic-header-inner-padding-small: $spacer-base;
 
   &__title {
     @extend %punch-in;
+
     margin-bottom: $spacer-xs;
     padding-bottom: $spacer-base;
     text-align: center;
@@ -40,6 +37,7 @@ $topic-header-inner-padding-small: $spacer-base;
 
   &__type {
     @extend %heading-font-bold;
+
     margin-bottom: $spacer-xs;
     text-align: center;
     text-transform: uppercase;
@@ -57,15 +55,14 @@ $topic-header-inner-padding-small: $spacer-base;
     margin-bottom: $spacer-base;
     padding-right: $topic-header-inner-padding-small;
     padding-left: $topic-header-inner-padding-small;
-    // IE11 Hack
-    max-width: 100%;
+    max-width: 100%; // This fixes IE11 Flexbox rendering issues.
     text-align: center;
     line-height: $standard-header-intro-line-height-small;
     font-size: $standard-header-intro-font-size-small;
   }
 }
 
-//Background images for topic header
+// Background images for topic header
 .topic-header-bg-image-girl {
   background-image: asset-url('public/assets/visual-header-girl.jpg');
 }
@@ -114,6 +111,11 @@ $topic-header-inner-padding-small: $spacer-base;
   @extend %topic-header-bg-image-text-box-heads;
 }
 
+
+//
+// Media Queries
+//
+
 @media screen and (min-width: $grid-breakpoint-md) {
   .topic-header {
     padding: $topic-header-outer-padding;
@@ -142,5 +144,13 @@ $topic-header-inner-padding-small: $spacer-base;
   .topic-header__text {
     line-height: $standard-header-intro-line-height;
     font-size: $standard-header-intro-font-size;
+  }
+}
+
+// This fixes IE11 Flexbox rendering issues.
+// sass-lint:disable no-vendor-prefixes
+@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+  .topic-header__body {
+    max-width: 100%;
   }
 }
