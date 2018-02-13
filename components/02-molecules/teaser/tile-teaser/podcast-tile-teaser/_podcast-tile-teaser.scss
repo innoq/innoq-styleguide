@@ -103,7 +103,7 @@ $podcast-teaser-height-md: ms(35);
   background-color: $podcast-teaser-default-color;
   background-repeat: no-repeat;
   background-position: top right;
-  background-size: contain;
+  background-size: auto 100%;
   color:  $podcast-teaser-default-bg;
 
   .podcast-teaser__headline,
