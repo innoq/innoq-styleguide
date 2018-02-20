@@ -8,7 +8,7 @@
   &__body {
     display: flex;
     flex-grow: 1;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
     margin: 0 auto;
     background-repeat: no-repeat;
@@ -43,6 +43,16 @@
 
 .image-header-bg-staff-01-text-box {
   @extend %image-header-bg-staff-01-text-box;
+}
+
+//
+// Media Queries
+//
+
+@media screen and (min-width: $grid-breakpoint-sm) {
+  .image-header__body {
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
