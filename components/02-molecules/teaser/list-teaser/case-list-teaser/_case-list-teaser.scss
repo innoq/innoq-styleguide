@@ -38,8 +38,8 @@ $teaser-inner-padding-bottom: $spacer-xxl;
 .case-teaser__text {
   @extend %teaser-text;
   margin-bottom: $spacer-base;
-  line-height: $teaser-text-line-height-small;
-  font-size: $teaser-text-font-size-small;
+  line-height: $big-content-teaser-text-line-height-small;
+  font-size: $big-content-teaser-text-font-size-small;
   hyphens: auto;
 }
 
@@ -84,8 +84,8 @@ $teaser-inner-padding-bottom: $spacer-xxl;
   }
 
   .case-teaser__text {
-    line-height: $teaser-text-line-height;
-    font-size: $teaser-text-font-size;
+    line-height: $big-content-teaser-text-line-height;
+    font-size: $big-content-teaser-text-font-size;
     hyphens: none;
   }
 
