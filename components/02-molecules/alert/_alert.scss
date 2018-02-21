@@ -5,10 +5,11 @@ $alert-color: $brand-white;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  padding: $container-spacer-y-sm $container-spacer-x-sm;
+  margin-bottom: $content-spacer-sm;
+  padding: $spacer-xs;
   line-height: $alert-line-height;
   color: $alert-color;
-  font-size: $alert-font-size;
+  font-size: $alert-font-size-sm;
 
   &--info {
     background-color: $brand-info;
@@ -27,4 +28,13 @@ $alert-color: $brand-white;
 .alert-btn {
   @extend %base-button;
   color: inherit;
+}
+
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .alert {
+    margin-bottom: $content-spacer-base;
+    padding: $container-spacer-y-sm $container-spacer-x-sm;
+    font-size: $alert-font-size;
+  }
 }
