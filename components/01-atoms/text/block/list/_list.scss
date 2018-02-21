@@ -19,7 +19,7 @@ $number-space: $spacer-md;
 // sass-lint:disable force-pseudo-nesting
 
 ul:not([class]),
-.bullet-list-bold {
+.bold-list {
   @extend %unsorted-list;
   @extend %heading-font-regular;
 
@@ -60,7 +60,7 @@ ul:not([class]),
 
 // ---- Bold Bullet Lists ----------------------------------------------------------
 //
-.bullet-list-bold {
+.bold-list {
   @extend %heading-font-bold;
 }
 
