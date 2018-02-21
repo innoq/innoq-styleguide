@@ -59,7 +59,6 @@
 }
 
 %unsorted-list {
-  @extend %heading-font-bold;
   @extend %list-unstyled;
   margin-bottom: $content-spacer-base;
   line-height: $bullet-list-line-height-small;

@@ -18,8 +18,10 @@ $number-space: $spacer-md;
 //
 // sass-lint:disable force-pseudo-nesting
 
-ul:not([class]) {
+ul:not([class]),
+.bullet-list-bold {
   @extend %unsorted-list;
+  @extend %heading-font-regular;
 
   li {
     padding-left: $list-indent;
@@ -56,10 +58,17 @@ ul:not([class]) {
 }
 
 
+// ---- Bold Bullet Lists ----------------------------------------------------------
+//
+.bullet-list-bold {
+  @extend %heading-font-bold;
+}
+
 // ---- Checked Lists ----------------------------------------------------------
 //
 .checklist {
   @extend %unsorted-list;
+  @extend %heading-font-bold;
 
   li {
     padding-left: $list-indent;
