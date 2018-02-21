@@ -48,7 +48,9 @@ $brand-white: #fff;
 //
 
 // State colors
-$brand-danger: #f00;
+$brand-danger:   #f00;
+$brand-info:     $brand-green-75;
+$brand-warn:     $brand-yellow-75;
 
 // Gradients and Shadows
 $box-shadow-default: 0 4px 6px rgba(0, 0, 0, .3);

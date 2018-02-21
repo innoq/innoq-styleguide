@@ -5,30 +5,17 @@
 $default-btn-margin: $spacer-sm;
 
 .btn {
+  @extend %base-button;
   @extend %heading-font-bold;
   @include hover-fill($brand-interaction, $button-color, $button-color);
-  display: inline-block;
-  position: relative;
+
   margin-bottom: $default-btn-margin;
   border: 3px solid $button-border-color;
   border-radius: 0;
   background-color: $button-background;
-  cursor: pointer;
   padding: $spacer-md $spacer-base;
-  text-decoration: none;
   line-height: $button-medium-line-height;
-  white-space: nowrap;
   font-size: $button-medium-font-size;
-  user-select: none;
-
-  &:focus {
-    outline: none;
-  }
-
-  &:hover,
-  &:focus {
-    text-decoration: none;
-  }
 
   &--cta {
     border-color: $button-cta-border-color;
@@ -85,6 +72,12 @@ $default-btn-margin: $spacer-sm;
     @include hover-fill($brand-interaction, $button-inverted-color, $button-inverted-color);
     border-color: $button-inverted-border-color;
     color: $button-inverted-color;
+  }
+
+  &--icon {
+    border: 0;
+    background-color: transparent;
+    padding: $spacer-xxs;
   }
 
   & + .btn {

@@ -21,3 +21,23 @@
     content: '';
   }
 }
+
+%base-button {
+  display: inline-block;
+  position: relative;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  user-select: none;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}

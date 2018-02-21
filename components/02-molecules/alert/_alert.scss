@@ -1,0 +1,30 @@
+$alert-color: $brand-white;
+
+.alert {
+  @extend %heading-font-regular;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: $container-spacer-y-sm $container-spacer-x-sm;
+  line-height: $alert-line-height;
+  color: $alert-color;
+  font-size: $alert-font-size;
+
+  &--info {
+    background-color: $brand-info;
+  }
+
+  &--warn {
+    background-color: $brand-warn;
+    color: darken($brand-warn, 51%); // Use accessible dark yellow
+  }
+
+  &--error {
+    background-color: $brand-danger;
+  }
+}
+
+.alert-btn {
+  @extend %base-button;
+  color: inherit;
+}
