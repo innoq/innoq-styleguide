@@ -96,8 +96,8 @@ $staff-intro-offset: -(ms(22));
   }
 
   .staff-header-image {
-    min-width: $default-page-layout-content-width-xl / 2;
-    min-height: $default-page-layout-content-width-xl / 2;
+    max-width: $default-page-layout-content-width-xl / 2;
+    max-height: $default-page-layout-content-width-xl / 2;
   }
 
   .staff-header-quote--text {
