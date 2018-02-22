@@ -15,14 +15,14 @@ const complate = require('complate-fractal')
  */
 const fractal = module.exports = require('@frctl/fractal').create()
 const fractalTheme = require('@frctl/mandelbrot')({
-    "skin": "black",
-    "styles": [
-        "default",
-        '/assets/styleguide-theme.css'
-    ]
-});
+  'skin': 'black',
+  'styles': [
+    'default',
+    '/assets/styleguide-theme.css'
+  ]
+})
 
-fractal.web.theme(fractalTheme);
+fractal.web.theme(fractalTheme)
 
 /*
  * Give your project a title.
@@ -54,7 +54,7 @@ fractal.components.set('ext', '.html')
  * Tell Fractal where to look for documentation pages and use HTML as default.
  */
 fractal.docs.set('path', path.join(__dirname, 'docs'))
-fractal.docs.set('ext', '.html');
+fractal.docs.set('ext', '.html')
 
 /*
  * Tell the Fractal web preview plugin where to look for static assets.
