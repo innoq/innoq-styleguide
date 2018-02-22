@@ -1,11 +1,54 @@
-.demo {
-  padding: $spacer-md;
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
 
-  &--inverted {
-    background-color: $brand-text;
+.swatch {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: $content-spacer-base;
+
+  &:first-child {
+    margin-left: 0;
   }
+}
 
-  &--accented {
-    background-color: $brand-interaction;
+.swatch-color {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
+.swatch-text {
+  @extend %monospace-font-regular;
+  background-color: $brand-gray-10;
+  padding-top: $spacer-xs;
+  padding-bottom: $spacer-xs;
+  text-align: center;
+  text-transform: uppercase;
+  color: $brand-text;
+  user-select: all;
+
+  &::after {
+    display: none;
+  }
+}
+
+@each $brand-color in $brand-colors {
+  @each $color, $hex in $brand-color {
+    .swatch-#{$color} {
+      > .swatch-color {
+        background-color: $hex;
+      }
+
+      > .swatch-text {
+        &::after {
+          content: '' + $hex;
+        }
+      }
+    }
   }
 }

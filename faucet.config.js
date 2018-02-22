@@ -20,6 +20,10 @@ const config = {
       target: './public/assets/bundle.css'
     },
     {
+      source: './lib/styles/styleguide-theme.scss',
+      target: './public/assets/styleguide-theme.css'
+    },
+    {
       source: './node_modules/normalize.css/normalize.css',
       target: './public/assets/normalize.css'
     }

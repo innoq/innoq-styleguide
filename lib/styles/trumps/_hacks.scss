@@ -3,3 +3,15 @@
 .no-hyphenation {
   hyphens: none !important;
 }
+
+.demo {
+  padding: $spacer-md;
+
+  &--inverted {
+    background-color: $brand-text;
+  }
+
+  &--accented {
+    background-color: $brand-interaction;
+  }
+}
