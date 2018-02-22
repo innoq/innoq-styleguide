@@ -91,35 +91,6 @@ $author-text-margin: .18rem;
   hyphens: none;
 }
 
-.author-bio__anchor {
-  position: relative;
-
-  &::before {
-    @extend %icon;
-    position: absolute;
-    top: auto;
-    right: 0;
-    bottom: 0;
-    transition: standard-transition(bottom);
-    border-radius: 100%;
-    background-color: $author-bio-link-background-color;
-    width: $spacer-md;
-    height: $spacer-md;
-    text-align: center;
-    line-height: $spacer-md;
-    color: $author-bio-link-color;
-    content: $icon-arrow-down;
-  }
-
-  &:focus,
-  &:hover {
-    &::before {
-      bottom: -2px; // on hover move the anchor icon slightly down
-      transition: standard-transition(bottom);
-    }
-  }
-}
-
 .author-bio__image {
   margin-right: $spacer-md;
 
