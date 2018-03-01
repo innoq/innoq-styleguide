@@ -1,6 +1,6 @@
 const path = require('path')
 
-const webRoot = "./public"
+const webRoot = './public'
 
 const config = {
   manifest: {
