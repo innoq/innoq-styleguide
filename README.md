@@ -27,7 +27,7 @@ You need to prefix all maintenance commands from above like `yarn …` with
 ## Deployment
 
 Everything in master gets deployed automatically to
-https://innoq.github.io/innoq-styleguide.
+https://innoq.style/.
 
 See `.travis.yml` for more info.
 
