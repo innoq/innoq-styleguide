@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:9
 
 WORKDIR /app
 
@@ -8,4 +8,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD [ "npm", "start" ]
+CMD [ "yarn", "start" ]
