@@ -1,26 +1,81 @@
 ---
-title: INNOQ Styleguide
+title: INNOQ Living Styleguide
 ---
+
+<h2>Welcome</h2>
+
+<p>This is the official INNOQ style guide. In here, we develop and document
+all frontend components of our current corporate design. You can see them in use
+at <a href="https://www.innoq.com">innoq.com</a>.</p>
+
+<h2>Methodology</h2>
+
+<p>When developing our components we try to adhere to
+<a href="http://atomicdesign.bradfrost.com/">Atomic Design</a>. As a consequence,
+components are organized into</p>
+
+<ul>
+    <li><code>01-atoms</code></li>
+    <li><code>02-molecules</code></li>
+    <li><code>03-organisms</code></li>
+    <li><code>04-pages</code></li>
+</ul>
+
+<h2>Technology</h2>
+
+We deeply believe in the web, so all of our components are developed according
+to the [ROCA principles](http://roca-style.org/) and Progressive Enhancement.
+There aren’t any React components or Angular monstrosities in here just for the
+sake of it.
 
 <h2>Installation</h2>
 
 <p>Using npm:</p>
 
 <pre>
-  npm install innoq-styleguide
+  npm install innoq-styleguide --save(-dev)
 </pre>
 
 <p>Using yarn:</p>
 
 <pre>
-  yarn add innoq-styleguide
+  yarn add innoq-styleguide (--dev)
 </pre>
 
-<h2>Using JavaScript components</h2>
+<h2>Usage</h2>
+
+<h3>Sass components</h3>
+
+<p>You can import the whole slaw of components:</p>
+
+<pre>
+    @import "innoq-styleguide/dist/sass/index";
+</pre>
+
+<p>…or just the stuff you need:</p>
+
+<pre>
+    @import "innoq-styleguide/dist/components/01-atoms/form/button/button";
+</pre>
+
+<h3>JavaScript components</h3>
 
 <p>
-  Our JS components are written in ESNext and are based on JavaScript Custom Elements.
-  We don't bundle any polyfill for <code>customElements</code>,
-  use <a href="https://github.com/WebReflection/document-register-element">document-register-element</a>
+  Some of our frontend components are enhanced with JavaScript.
+  They are written in ESNext and are based on
+  <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements">JavaScript Custom Elements</a>
+  Please note that we don’t bundle any polyfill for <code>customElements</code>
+  in our npm releases, use <a href="https://github.com/WebReflection/document-register-element">document-register-element</a>
   if needed.
 </p>
+
+<p>After installation, you can import and register them:</p>
+
+<pre>
+   import InfoBox from 'innoq-styleguide/dist/js/components/info-box'
+   customElements.define('info-box', InfoBox)
+</pre>
+
+<h2>Development</h2>
+
+The source repository can be found on <a href="https://github.com/innoq/innoq-styleguide">GitHub</a>.
