@@ -24,8 +24,8 @@ deploy:
   acl: public_read
   region: eu-central-1
   local_dir: dist/site
-  # on:
-  #   tags: true
+  on:
+    tags: true
 - provider: npm
   skip_cleanup: true
   email: mail@robert-glaser.de
