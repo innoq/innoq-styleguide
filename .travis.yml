@@ -6,15 +6,24 @@ script:
 - yarn test
 - yarn dist
 env:
-- BASE_URI=/innoq-styleguide
+# - BASE_URI=/innoq-styleguide
 deploy:
-- provider: pages
+# - provider: pages
+#   skip_cleanup: true
+#   local_dir: dist/site
+#   github_token:
+#     secure: ID7CNbzpYpgPiJuFgMVmAPreJCUBqIicMsBpfia6OIzIIhGiywkOUkQqU9P7LC/+53tlXl4C0QERu5tsvaKTBhuADXctIrphr0o7TzK+3Yc3t+wixpa3u0WOkCO66uEJTWRXw3R4idZI3kOdq0ug38ixETWpQhFVMpSi2J1X7qvz6YCWGaPru7qjcOM3LcjLlTYm5vHMD3rxW7gsNyHPwwYpLMC1ZqqEfMax6jtdy1rNKq5ltQQyZkoLd53PhTOGxjAk9sNedVEEEgHaIEswH0Wq1qNIVHFCmTUMHlIqifkiPAlg1yOHSoT0GhZ1MH3c3re2ldh0U80ysI66yBu1WBGYt2a/Oo6jic2odyfLj/Re0y+A7I4XhIvdPDcFPXOqAiR2+9myzHruGp1paM9NEamYEANDDzLPrxsP2ZbvtXRwdsSvmXPoD8Z7SoSbrtywq0x1uSyN/mhoCqFq9auOGGjmG6h1Z4OZUgDjHUEniJU3tOj9Aq3CYWFi/vU6GO4gElFtpObHlkkzQQtKSslwUpqdqJWdGkX6R4HzlFpg9hiEGTtlplM4tlXPT9fVLpEki71z2KYMLfGhk3ZsP9wfIJQFsCLDDqI+fJXDpDGhAi2oD0o/A7urNEK6ma9EMRHTN9sD0BiD/H1ku6fSxBxXWGEfqOPbGzTBwdY77npwCJo=
+#   on:
+#     branch: master
+- provider: s3
+  access_key_id: AKIAI5OHN3ZFPEPRGZBA
+  secret_access_key:
+    secure: eI9CadfarqWXdZ3uCHjp1PHDaai17e3EyTO6KyTFjFv0z9K1EVSc+xsT43OWMQ5nLo55kqxQSRmhMxRm0QUOAy1l5Rm3QW7LU/G95I4HZ2ZbHaIiK+MxtYAMtnxjKvNdMIWbxuVu0BNJauaVMkQTrZVt1cYl+ahj8KDPWu+GSvlOAi2vAi49djbolujS5JVSW7fWpqFJgaqlyxcuJBAwIjRv3F9tRkTAPp32G2/5YQtFu85hkIaxmbf4CoU0laf+w4VneFaO8+RvdM/uwin17hDVSPEoNVde1dGk48du8B1OMjxRfxjuonKpI54pu9AjYORpZ1JVsTL4fsPU5kUK+toVBtY9ytf8NOJNve+7ung/LG8sgpcLGabbqB9aZbsJ/y5nPZfqTEqcpuoOrN3aSDVxG3d/L0g4MOOEs2ItCJBLtCRpD8f6buSVqlUZJx0mBY7xhLpvuRQV80F23qK60+Ypcl77idl+kdr1IPr20nCKn5zXADMPv894QZZj0jcNtQorhmooP6f/A/wcZwvXFljJZvW+DYeVTmHEnLWpjTjCamK+dLItnaufKi0CFLRYElxSIb81ma5vBX89sifv0MJZvLTRwWY+y0DprhHAeeGYSLrvgYYc7FJeaN9OHG19KvYKmsBt7x1Tm6W4TUwdGRoTsFZqcO0CrRZRsPz7DuQ=
+  bucket: innoq.style
   skip_cleanup: true
-  local_dir: dist/site
-  github_token:
-    secure: ID7CNbzpYpgPiJuFgMVmAPreJCUBqIicMsBpfia6OIzIIhGiywkOUkQqU9P7LC/+53tlXl4C0QERu5tsvaKTBhuADXctIrphr0o7TzK+3Yc3t+wixpa3u0WOkCO66uEJTWRXw3R4idZI3kOdq0ug38ixETWpQhFVMpSi2J1X7qvz6YCWGaPru7qjcOM3LcjLlTYm5vHMD3rxW7gsNyHPwwYpLMC1ZqqEfMax6jtdy1rNKq5ltQQyZkoLd53PhTOGxjAk9sNedVEEEgHaIEswH0Wq1qNIVHFCmTUMHlIqifkiPAlg1yOHSoT0GhZ1MH3c3re2ldh0U80ysI66yBu1WBGYt2a/Oo6jic2odyfLj/Re0y+A7I4XhIvdPDcFPXOqAiR2+9myzHruGp1paM9NEamYEANDDzLPrxsP2ZbvtXRwdsSvmXPoD8Z7SoSbrtywq0x1uSyN/mhoCqFq9auOGGjmG6h1Z4OZUgDjHUEniJU3tOj9Aq3CYWFi/vU6GO4gElFtpObHlkkzQQtKSslwUpqdqJWdGkX6R4HzlFpg9hiEGTtlplM4tlXPT9fVLpEki71z2KYMLfGhk3ZsP9wfIJQFsCLDDqI+fJXDpDGhAi2oD0o/A7urNEK6ma9EMRHTN9sD0BiD/H1ku6fSxBxXWGEfqOPbGzTBwdY77npwCJo=
-  on:
-    branch: master
+  acl: public_read
+  # on:
+  #   tags: true
 - provider: npm
   skip_cleanup: true
   email: mail@robert-glaser.de
