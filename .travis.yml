@@ -22,7 +22,7 @@ deploy:
   bucket: innoq.style
   skip_cleanup: true
   acl: public_read
-  cache_control: max-age=300
+  cache_control: max-age=600
   default_text_charset: utf-8
   region: eu-central-1
   local_dir: dist/site
