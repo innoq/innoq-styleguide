@@ -31,3 +31,17 @@
 //
 
 @import 'trumps/styleguide';
+
+.theme-brand {
+  display: flex;
+  align-items: center;
+}
+
+.theme-brand-title {
+  margin-top: 3px;
+  margin-left: .5rem;
+}
+
+.theme-brand-logo {
+  margin-top: 5px;
+}

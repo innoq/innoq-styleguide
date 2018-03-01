@@ -21,6 +21,7 @@ const fractalTheme = require('@frctl/mandelbrot')({
     '/assets/styleguide-theme.css'
   ]
 })
+fractalTheme.addLoadPath(path.join(__dirname, '/theme-overrides'))
 
 fractal.web.theme(fractalTheme)
 
