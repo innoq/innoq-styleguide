@@ -22,6 +22,8 @@ deploy:
   bucket: innoq.style
   skip_cleanup: true
   acl: public_read
+  region: eu-central-1
+  local_dir: site
   # on:
   #   tags: true
 - provider: npm
