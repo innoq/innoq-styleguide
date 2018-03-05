@@ -46,23 +46,23 @@ $topic-teaser-height: ms(36);
 
 // Background images for topic header
 .topic-list-teaser-bg-image-girl {
-  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('public/assets/visual-header-girl.jpg');
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-girl.jpg');
 }
 
 .topic-list-teaser-bg-image-medusa {
-  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('public/assets/visual-header-medusa.jpg');
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-medusa.jpg');
 }
 
 .topic-list-teaser-bg-image-ice {
-  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('public/assets/visual-header-ice.jpg');
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-ice.jpg');
 }
 
 .topic-list-teaser-bg-image-igel {
-  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('public/assets/visual-header-igel.jpg');
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-igel.jpg');
 }
 
 .topic-list-teaser-bg-image-koralle {
-  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('public/assets/visual-header-koralle.jpg');
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-koralle.jpg');
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
