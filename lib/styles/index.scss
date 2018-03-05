@@ -97,6 +97,10 @@
 @import '../components/01-atoms/misc/zigzag/zigzag';
 @import '../components/01-atoms/misc/collapse-toggler/collapse-toggler';
 
+// Inline text atoms
+@import '../components/01-atoms/text/inline/link/link';
+@import '../components/01-atoms/text/inline/accentuation/accentuation';
+
 // Block text atoms
 @import '../components/01-atoms/text/block/code/code';
 @import '../components/01-atoms/text/block/date/date';
@@ -110,10 +114,6 @@
 @import '../components/01-atoms/text/block/list/list';
 @import '../components/01-atoms/text/block/tag-list/tag-list';
 @import '../components/01-atoms/text/block/table/table';
-
-// Inline text atoms
-@import '../components/01-atoms/text/inline/link/link';
-@import '../components/01-atoms/text/inline/accentuation/accentuation';
 
 // Molecules
 @import '../components/02-molecules/alert/alert';
