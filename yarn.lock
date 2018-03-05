@@ -2581,7 +2581,7 @@ fast-levenshtein@~2.0.4:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
 
-faucet-pipeline-js@^1.0.0-beta.1:
+faucet-pipeline-js@^1.0.0-rc.3:
   version "1.0.0-rc.3"
   resolved "https://registry.yarnpkg.com/faucet-pipeline-js/-/faucet-pipeline-js-1.0.0-rc.3.tgz#1f58ef24b81aad51ce2a865e77a753c58a52ced5"
   dependencies:
@@ -2591,7 +2591,7 @@ faucet-pipeline-js@^1.0.0-beta.1:
     rollup-plugin-commonjs "^8.4.0"
     rollup-plugin-node-resolve "^3.0.3"
 
-faucet-pipeline-sass@^1.0.0-beta.0:
+faucet-pipeline-sass@^1.0.0-rc.2:
   version "1.0.0-rc.2"
   resolved "https://registry.yarnpkg.com/faucet-pipeline-sass/-/faucet-pipeline-sass-1.0.0-rc.2.tgz#00004181a4ec19abffdb7684cddad829cfb49231"
   dependencies:
@@ -2599,13 +2599,22 @@ faucet-pipeline-sass@^1.0.0-beta.0:
     faucet-pipeline "~1.0.0-rc.2"
     node-sass "^4.7.2"
 
-faucet-pipeline-static@^1.0.0-beta.0:
+faucet-pipeline-static@^1.0.0-rc.2:
   version "1.0.0-rc.2"
   resolved "https://registry.yarnpkg.com/faucet-pipeline-static/-/faucet-pipeline-static-1.0.0-rc.2.tgz#fd0518a9dc5627ef611230cd22f7f9f00520aafc"
   dependencies:
     faucet-pipeline "~1.0.0-rc.2"
 
-faucet-pipeline@^1.0.0-beta.1, faucet-pipeline@~1.0.0-rc.2:
+faucet-pipeline@^1.0.0-rc.3:
+  version "1.0.0-rc.3"
+  resolved "https://registry.yarnpkg.com/faucet-pipeline/-/faucet-pipeline-1.0.0-rc.3.tgz#30d25a2e99351a1ec5b88735bd3ee25384d2cad7"
+  dependencies:
+    browserslist "^3.1.1"
+    minimist "^1.2.0"
+    mkdirp "^0.5.1"
+    nite-owl "^3.3.1"
+
+faucet-pipeline@~1.0.0-rc.2:
   version "1.0.0-rc.2"
   resolved "https://registry.yarnpkg.com/faucet-pipeline/-/faucet-pipeline-1.0.0-rc.2.tgz#b8a844aa5729b5965f4b26d90901fecd0e8f1d14"
   dependencies:
