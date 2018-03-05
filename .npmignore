@@ -9,6 +9,8 @@
 /lib
 /public
 /scripts
+/theme-overrides
+/tools
 docker-compose.override.yml
 docker-compose.yml
 Dockerfile
