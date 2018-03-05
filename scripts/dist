@@ -1,21 +1,31 @@
-#!/usr/bin/env bash
-set -ex
+#!/usr/bin/env ruby
+require "fileutils"
+include FileUtils
 
-js_components_target="dist/js/components"
+commit = ENV["TRAVIS_COMMIT"]
+tag = ENV.fetch("TRAVIS_TAG") { "HEAD" }
+js_components_target = "dist/js/components"
+release_exclude_list = File.read(".npmignore")
+release_filename = "innoq-styleguide-#{tag}.zip"
+zip_blacklist = "-x #{File.read(".npmignore").gsub(/\n/, ' ')}"
 
-yarn run site
+exit 1 unless system("yarn run site")
 
-cp -r dist/site/assets dist/
+cp_r "dist/site/assets", "dist/"
 
-# Copy JavaScript components to dist so they can be imported separately
-mkdir -p $js_components_target
-find components/*/ -name "*.js" -exec cp "{}" $js_components_target \;
+# Copy JavaScript components to dist so they can be imported more conveniently
+mkdir_p js_components_target
+Dir.glob("components/**/*.js").each do |f|
+  cp f, js_components_target
+end
 
-cp -r components dist/
-cp -r lib/styles dist/sass
+cp_r "components", "dist/"
+cp_r "lib/styles", "dist/sass"
 
-echo $TRAVIS_COMMIT > dist/site/RELEASE.txt
-cd dist
-zip -r innoq-styleguide-$TRAVIS_TAG.zip assets site
-cd -
-mv dist/innoq-styleguide-$TRAVIS_TAG.zip ./
+File.write "dist/site/RELEASE.txt", commit
+
+cd "dist" do
+  exit 1 unless puts(`zip -r #{release_filename} . #{zip_blacklist}`)
+end
+
+mv release_filename "./"
