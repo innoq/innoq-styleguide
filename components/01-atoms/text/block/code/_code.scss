@@ -1,7 +1,3 @@
-pre {
-  overflow: scroll;
-}
-
 pre > code {
   @extend %monospace-font-regular;
 
@@ -10,6 +6,7 @@ pre > code {
   border-right: 2px solid $code-snippet-border-color;
   background-color: $code-background-color;
   padding: $spacer-xs $spacer-xs $spacer-xs $spacer-md;
+  overflow: scroll;
   line-height: $code-snippet-line-height-small;
   font-size: $code-snippet-font-size-small;
 }
