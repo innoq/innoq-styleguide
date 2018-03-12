@@ -2605,15 +2605,6 @@ faucet-pipeline-static@^1.0.0-rc.2:
   dependencies:
     faucet-pipeline "~1.0.0-rc.2"
 
-faucet-pipeline@^1.0.0-rc.3:
-  version "1.0.0-rc.3"
-  resolved "https://registry.yarnpkg.com/faucet-pipeline/-/faucet-pipeline-1.0.0-rc.3.tgz#30d25a2e99351a1ec5b88735bd3ee25384d2cad7"
-  dependencies:
-    browserslist "^3.1.1"
-    minimist "^1.2.0"
-    mkdirp "^0.5.1"
-    nite-owl "^3.3.1"
-
 faucet-pipeline@~1.0.0-rc.2:
   version "1.0.0-rc.2"
   resolved "https://registry.yarnpkg.com/faucet-pipeline/-/faucet-pipeline-1.0.0-rc.2.tgz#b8a844aa5729b5965f4b26d90901fecd0e8f1d14"
