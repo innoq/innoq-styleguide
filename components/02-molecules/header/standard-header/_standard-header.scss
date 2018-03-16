@@ -13,6 +13,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
     position: relative;
     margin-bottom: $spacer-xs;
     padding: 0 $spacer-md;
+    max-width: $default-page-layout-content-width-md;
     text-align: center;
     line-height: $standard-header-title-line-height;
     color: $standard-header-title-color;
@@ -26,6 +27,8 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   &__subtitle {
     position: relative;
     margin-bottom: $spacer-xs;
+    max-width: $default-page-layout-content-width-md;
+    text-align: center;
     line-height: $standard-header-subtitle-line-height-small;
     color: $standard-header-subtitle-color;
     font-size: $standard-header-subtitle-font-size-small;
@@ -33,8 +36,11 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
 
   &__type {
     @extend %heading-font-bold;
+
     position: relative;
     margin-bottom: $spacer-xs;
+    max-width: $default-page-layout-content-width-md;
+    text-align: center;
     text-transform: uppercase;
     line-height: $standard-header-type-line-height-small;
     color: $standard-header-type-color;
@@ -42,6 +48,8 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   }
 }
 
+
+//Variations
 .standard-header--inverted {
   .standard-header__title {
     color: $standard-header-inverted-title-color;
@@ -53,6 +61,23 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
 
   .standard-header__subtitle {
     color: $standard-header-inverted-subtitle-color;
+  }
+}
+
+.podcast-header--avatar--overlay {
+  background-color: $podcast-teaser-overlay-color;
+  background-repeat: no-repeat;
+  background-position: top right, top left;
+  background-size: 0%;
+  background-blend-mode: multiply;
+
+  .standard-header__subtitle {
+    color: $standard-header-podcast-subtitle-color;
+  }
+
+  .standard-header__title,
+  .standard-header__subtitle {
+    padding: 0 $spacer-xl;
   }
 }
 
@@ -89,6 +114,8 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   font-size: $standard-header-intro-date-font-size-small;
 }
 
+
+//Breakpoints
 @media screen and (min-width: $grid-breakpoint-sm) {
   .standard-header__title {
     font-size: $standard-header-title-font-size-medium-small;
@@ -98,6 +125,10 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
 @media screen and (min-width: $grid-breakpoint-md) {
   .standard-header {
     margin-bottom: $standard-header-intro-offset-xxl;
+  }
+
+  .podcast-header--avatar--overlay {
+    background-size: contain;
   }
 
   .standard-header__title {
