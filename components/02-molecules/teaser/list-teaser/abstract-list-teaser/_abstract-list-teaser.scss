@@ -1,7 +1,12 @@
 // List Teaser with Abstract
 // sass-lint:disable nesting-depth
+
 .list-teaser-abstract {
   @extend %list-teaser;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   &.primary {
     background-color: $list-teaser-abstract-primary-bg-color;
