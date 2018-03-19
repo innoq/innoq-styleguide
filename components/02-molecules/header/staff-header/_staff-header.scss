@@ -1,7 +1,12 @@
 $staff-intro-offset: -(ms(22));
 
 .staff-header {
-  background-color: $staff-page-header-background-color;
+  background-image:
+  linear-gradient(
+    to right,
+    $staff-page-header-background-color 50%,
+    $staff-page-header-background-gray 50%
+  );
 }
 
 .staff-header-content {
@@ -96,7 +101,9 @@ $staff-intro-offset: -(ms(22));
   }
 
   .staff-header-image {
+    min-width: $default-page-layout-content-width-xl / 2;
     max-width: $default-page-layout-content-width-xl / 2;
+    min-height: $default-page-layout-content-width-xl / 2;
     max-height: $default-page-layout-content-width-xl / 2;
   }
 
