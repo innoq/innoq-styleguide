@@ -1,9 +1,10 @@
 $staff-intro-offset: -(ms(22));
+$staff-page-header-background-gray: #f6f6f6;
 
 .staff-header {
-  background-image:
-  linear-gradient(
+  background-image: linear-gradient(
     to right,
+    $staff-page-header-background-color,
     $staff-page-header-background-color 50%,
     $staff-page-header-background-gray 50%
   );
