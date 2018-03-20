@@ -15,7 +15,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
     padding: 0 $spacer-md;
     max-width: $default-page-layout-content-width-md;
     text-align: center;
-    line-height: $standard-header-title-line-height;
+    line-height: $standard-header-title-line-height-small;
     color: $standard-header-title-color;
     font-size: $standard-header-title-font-size-small;
 
@@ -136,6 +136,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   }
 
   .standard-header__title {
+    line-height: $standard-header-title-line-height;
     font-size: $standard-header-title-font-size;
   }
 
