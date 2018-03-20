@@ -120,6 +120,10 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   .standard-header__title {
     font-size: $standard-header-title-font-size-medium-small;
   }
+
+  .podcast-header--avatar--overlay {
+    background-size: 70%;
+  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
