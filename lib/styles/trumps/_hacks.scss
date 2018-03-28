@@ -14,4 +14,9 @@
   &--accented {
     background-color: $brand-interaction;
   }
+
+  &--centered {
+    display: flex;
+    justify-content: center;
+  }
 }
