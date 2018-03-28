@@ -99,7 +99,7 @@ ul:not([class]),
 //
 // sass-lint:disable force-pseudo-nesting
 ol:not([class]) {
-  @extend %body-font-regular;
+  @extend %heading-font-regular;
   @include list-unstyled;
   margin-bottom: $content-spacer-base;
   line-height: $ordered-list-line-height-small;
@@ -114,7 +114,7 @@ ol:not([class]) {
     &::before {
       @extend %heading-font-bold;
       position: absolute;
-      top: -.125em;
+      top: -.02em;
       left: 0;
       width: $number-space;
       line-height: $ordered-list-counter-line-height;
