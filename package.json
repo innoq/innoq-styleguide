@@ -34,7 +34,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "faucet-pipeline-js": "^1.0.0-rc.3",
     "faucet-pipeline-sass": "^1.0.0-rc.2",
-    "faucet-pipeline-static": "^1.0.0-rc.2",
+    "faucet-pipeline-static": "^1.0.0-rc.3",
     "nodemon": "^1.17.2",
     "normalize.css": "^8.0.0",
     "npm-run-all": "^4.1.1",
