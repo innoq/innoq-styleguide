@@ -17,3 +17,7 @@ body {
   background-color: $link-hover-color-light;
   color: $brand-text;
 }
+
+main {
+  min-height: 50vh;
+}
