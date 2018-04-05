@@ -1,5 +1,7 @@
 # INNOQ Styleguide and Component Library
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/innoq/innoq-styleguide.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/innoq/innoq-styleguide.svg?branch=master)](https://travis-ci.org/innoq/innoq-styleguide)
 
 ## Without Docker
