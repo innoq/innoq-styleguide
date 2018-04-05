@@ -2,7 +2,7 @@
   "name": "innoq-styleguide",
   "version": "0.7.17",
   "description": "INNOQ's Styleguide and Component Library",
-  "license": "SEE LICENSE IN <LICENSE.md>",
+  "license": "see <LICENSE.md>",
   "repository": {
     "type": "git",
     "url": "https://github.com/innoq/innoq-styleguide.git"
