@@ -1,8 +1,5 @@
 // sass-lint:disable no-url-domains, no-url-protocols
-
-// Myfonts.net web fonts
-
-// @import url('https://hello.myfonts.net/count/350ed6');
+$cdn: 'https://assets.innoq.com';
 
 @font-face {
   $cachebuster: '7d0a3995eec718ff34fa844413298153';
@@ -11,9 +8,9 @@
   font-weight: bold;
   font-style: normal;
   font-display: swap;
-  src: url('https://assets.innoq.com/fonts/350ED6_0_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('https://assets.innoq.com/fonts/350ED6_0_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('https://assets.innoq.com/fonts/350ED6_0_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  src: url('#{$cdn}/fonts/350ED6_0_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
+  url('#{$cdn}/fonts/350ED6_0_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
+  url('#{$cdn}/fonts/350ED6_0_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
 }
 
 @font-face {
@@ -23,9 +20,9 @@
   font-weight: normal;
   font-style: italic;
   font-display: swap;
-  src: url('https://assets.innoq.com/fonts/350ED6_1_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('https://assets.innoq.com/fonts/350ED6_1_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('https://assets.innoq.com/fonts/350ED6_1_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  src: url('#{$cdn}/fonts/350ED6_1_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
+  url('#{$cdn}/fonts/350ED6_1_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
+  url('#{$cdn}/fonts/350ED6_1_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
 }
 
 @font-face {
@@ -35,9 +32,9 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('https://assets.innoq.com/fonts/350ED6_2_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('https://assets.innoq.com/fonts/350ED6_2_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('https://assets.innoq.com/fonts/350ED6_2_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  src: url('#{$cdn}/fonts/350ED6_2_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
+  url('#{$cdn}/fonts/350ED6_2_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
+  url('#{$cdn}/fonts/350ED6_2_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
 
 }
 
@@ -48,9 +45,9 @@
   font-weight: bold;
   font-style: italic;
   font-display: swap;
-  src: url('https://assets.innoq.com/fonts/350ED6_3_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('https://assets.innoq.com/fonts/350ED6_3_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('https://assets.innoq.com/fonts/350ED6_3_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  src: url('#{$cdn}/fonts/350ED6_3_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
+  url('#{$cdn}/fonts/350ED6_3_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
+  url('#{$cdn}/fonts/350ED6_3_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
 }
 
 @font-face {
@@ -58,9 +55,9 @@
 
   font-family: FFMarkWebProBook;
   font-display: swap;
-  src: url('https://assets.innoq.com/fonts/350ED6_4_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('https://assets.innoq.com/fonts/350ED6_4_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('https://assets.innoq.com/fonts/350ED6_4_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  src: url('#{$cdn}/fonts/350ED6_4_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
+  url('#{$cdn}/fonts/350ED6_4_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
+  url('#{$cdn}/fonts/350ED6_4_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
 }
 
 @font-face {
@@ -68,9 +65,9 @@
 
   font-family: FFMarkWebProBold;
   font-display: swap;
-  src: url('https://assets.innoq.com/fonts/350ED6_5_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('https://assets.innoq.com/fonts/350ED6_5_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('https://assets.innoq.com/fonts/350ED6_5_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  src: url('#{$cdn}/fonts/350ED6_5_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
+  url('#{$cdn}/fonts/350ED6_5_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
+  url('#{$cdn}/fonts/350ED6_5_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
 }
 
 @font-face {
@@ -78,9 +75,9 @@
 
   font-family: FFMarkWebProHeavy;
   font-display: swap;
-  src: url('https://assets.innoq.com/fonts/350ED6_6_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('https://assets.innoq.com/fonts/350ED6_6_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('https://assets.innoq.com/fonts/350ED6_6_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  src: url('#{$cdn}/fonts/350ED6_6_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
+  url('#{$cdn}/fonts/350ED6_6_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
+  url('#{$cdn}/fonts/350ED6_6_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
 }
 
 // Hack
@@ -90,8 +87,8 @@
 
   font-family: HackRegular;
   font-display: swap;
-  src: url('https://assets.innoq.com/fonts/hack-regular.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('https://assets.innoq.com/fonts/hack-regular.woff?cachebuster=#{$cachebuster}') format('woff');
+  src: url('#{$cdn}/fonts/hack-regular.woff2?cachebuster=#{$cachebuster}') format('woff2'),
+  url('#{$cdn}/fonts/hack-regular.woff?cachebuster=#{$cachebuster}') format('woff');
 }
 
 
@@ -105,10 +102,10 @@
 
   font-family: 'icons';
   font-display: swap;
-  src: url('https://assets.innoq.com/fonts/icomoon.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('https://assets.innoq.com/fonts/icomoon.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('https://assets.innoq.com/fonts/icomoon.ttf?cachebuster=#{$cachebuster}') format('truetype'),
-  url('https://assets.innoq.com/fonts/icomoon.svg?cachebuster=#{$cachebuster}#icons') format('svg');
+  src: url('#{$cdn}/fonts/icomoon.woff2?cachebuster=#{$cachebuster}') format('woff2'),
+  url('#{$cdn}/fonts/icomoon.woff?cachebuster=#{$cachebuster}') format('woff'),
+  url('#{$cdn}/fonts/icomoon.ttf?cachebuster=#{$cachebuster}') format('truetype'),
+  url('#{$cdn}/fonts/icomoon.svg?cachebuster=#{$cachebuster}#icons') format('svg');
   font-style: normal;
   font-weight: normal;
 }
