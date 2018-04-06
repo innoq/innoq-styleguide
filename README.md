@@ -55,8 +55,7 @@ Just hit `ENTER` all the time to release a new version.
 
 ![Just. hit. Enter.](http://www.reactiongifs.com/r/Dz3nk.gif)
 
-Travis deals with npm publishing, no need to answer
-with "YES" here.
+Travis deals with npm publishing.
 
 ### Patch level version (auto increment)
 
