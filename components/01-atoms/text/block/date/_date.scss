@@ -1,4 +1,4 @@
-$event-date-section-height: ($label-fonte-size * $label-line-height) + (2 * $spacer-xxs);
+$event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spacer-xxs);
 
 .date {
   @extend %heading-font-bold;

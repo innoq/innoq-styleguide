@@ -108,7 +108,6 @@ $link-teaser-line-height: 1.27;   //~19px
 //
 // Lists
 //
-// The amount lists and blockquotes are indented.
 $indent-amount: $base-font-size !default;                 // ~16px
 $bullet-list-font-size: ms(3);                            // ~20px
 $bullet-list-font-size-small: ms(1);                      // ~20px
@@ -122,9 +121,6 @@ $ordered-list-line-height-small: $base-line-height;       // ~26px
 $ordered-list-counter-font-size: ms(2);                   // ~19px
 $ordered-list-counter-font-size-small: ms(1);             // ~16px
 $ordered-list-counter-line-height: $base-line-height;     // ~29px
-// $definition-list-font-size: ms(0);                     // ~16px
-// $definition-list-line-height: 1.56;                    // ~25px
-// derive definiton-list from ordered list
 $definition-list-font-size: ms(1);                        // ~21px
 $definition-list-line-height: $base-line-height;          // ~26px
 
@@ -187,10 +183,14 @@ $event-year-line-height: 2.53;            // ~19px
 //
 // Label
 //
-$label-fonte-size: ms(-1);           //~15px
-$label-line-height: 1.27;            //~19px
-$label-fonte-size-small: ms(-2);     //~14px
-$label-line-height-small: 1.57;      //~22px
+$label-font-size: ms(-1);                //~15px
+$label-line-height: 1.27;                //~19px
+$label-font-size-small: ms(-2);          //~14px
+$label-line-height-small: 1.57;          //~22px
+$label-big-font-size: ms(2);            //~19px
+$label-big-line-height: 1.27;            //~19px
+$label-big-font-size-small: ms(0);        //~16px
+$label-big-line-height-small: 1.57;      //~22px
 
 //
 // Table of contents

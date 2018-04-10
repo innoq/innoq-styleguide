@@ -2,7 +2,7 @@
   display: inline-block;
   padding: $spacer-xxs;
   line-height: $label-line-height-small;
-  font-size: $label-fonte-size-small;
+  font-size: $label-font-size-small;
 
   &.talk {
     @extend %heading-font-bold;
@@ -29,11 +29,34 @@
     color: $slides-label-text-color;
   }
 }
+
+.label-big {
+  display: inline-block;
+  padding: $spacer-xs;
+  line-height: $label-big-line-height-small;
+  font-size: $label-big-font-size-small;
+
+  &.hint {
+    @extend %heading-font-bold;
+
+    text-transform: uppercase;
+    color: $training-label-text-color;
+    border: 6px solid $training-label-text-color;
+
+  }
+}
+
+
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   .label {
     margin-right: $spacer-xxs;
     line-height: $label-line-height;
-    font-size: $label-fonte-size;
+    font-size: $label-font-size;
+  }
+
+  .label-big {
+    line-height: $label-big-line-height;
+    font-size: $label-big-font-size;
   }
 }
