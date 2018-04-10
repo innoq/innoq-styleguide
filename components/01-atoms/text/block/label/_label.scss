@@ -33,13 +33,13 @@
 .label-big {
   display: inline-block;
   padding: $spacer-xs;
-  line-height: $label-big-line-height-small;
-  font-size: $label-big-font-size-small;
+  line-height: $label-big-line-height;
+  font-size: $label-big-font-size;
 
   &.hint {
     @extend %heading-font-bold;
 
-    border: 6px solid $training-label-text-color;
+    border: 4px solid $training-label-text-color;
     text-transform: uppercase;
     color: $training-label-text-color;
   }
@@ -52,10 +52,5 @@
     margin-right: $spacer-xxs;
     line-height: $label-line-height;
     font-size: $label-font-size;
-  }
-
-  .label-big {
-    line-height: $label-big-line-height;
-    font-size: $label-big-font-size;
   }
 }
