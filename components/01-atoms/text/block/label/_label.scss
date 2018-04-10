@@ -39,10 +39,9 @@
   &.hint {
     @extend %heading-font-bold;
 
+    border: 6px solid $training-label-text-color;
     text-transform: uppercase;
     color: $training-label-text-color;
-    border: 6px solid $training-label-text-color;
-
   }
 }
 
