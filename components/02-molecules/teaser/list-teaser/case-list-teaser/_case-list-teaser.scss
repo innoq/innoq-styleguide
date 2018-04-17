@@ -62,6 +62,17 @@ $teaser-inner-padding-bottom: $spacer-xxl;
 // Media Queries
 //
 
+@media screen and (max-width: $grid-breakpoint-sm) {
+  .case-teaser {
+    margin-bottom: $spacer-xxl;
+  }
+
+  .case-teaser__body {
+    position: relative;
+    top: $spacer-xxl;
+  }
+}
+
 @media screen and (min-width: $grid-breakpoint-md) {
   .case-teaser {
     min-height: 50vh;
