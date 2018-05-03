@@ -92,10 +92,6 @@
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
 
-"@std/esm@0.11.0":
-  version "0.11.0"
-  resolved "https://registry.yarnpkg.com/@std/esm/-/esm-0.11.0.tgz#f5562c6723a2eae5d6f95c3b35ff1338c586ae4e"
-
 "@types/acorn@^4.0.3":
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/@types/acorn/-/acorn-4.0.3.tgz#d1f3e738dde52536f9aad3d3380d14e448820afd"
@@ -1505,16 +1501,16 @@ compare-func@^1.3.1:
     array-ify "^1.0.0"
     dot-prop "^3.0.0"
 
-complate-fractal@^0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/complate-fractal/-/complate-fractal-0.4.4.tgz#6de278e455d55c18e6dcbcab05a1f9023cef6010"
+complate-fractal@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/complate-fractal/-/complate-fractal-0.5.0.tgz#1a9438ca78b7f789c25a7b3ac0b52c4c5c50e2a7"
   dependencies:
     "@frctl/fractal" "^1.1.7"
-    "@std/esm" "0.11.0"
     babel-plugin-transform-react-jsx "^6.24.1"
     babel-preset-es2015 "^6.24.1"
     babel-register "^6.26.0"
     complate-stream "^0.16.3"
+    esm "^3.0.28"
     html "^1.0.0"
 
 complate-stream@^0.16.3:
@@ -2420,6 +2416,10 @@ eslint@^4.19.0:
     strip-json-comments "~2.0.1"
     table "4.0.2"
     text-table "~0.2.0"
+
+esm@^3.0.28:
+  version "3.0.28"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.28.tgz#1b912958328eb1c40538e7d24ce6bf3638bb83df"
 
 espree@^3.1.6, espree@^3.5.4:
   version "3.5.4"
