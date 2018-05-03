@@ -32,7 +32,7 @@
     "eslint-plugin-promise": "^3.7.0",
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.0.1",
-    "faucet-pipeline-js": "^1.0.0-rc.3",
+    "faucet-pipeline-js": "^1.0.0-rc.4",
     "faucet-pipeline-sass": "^1.0.0-rc.2",
     "faucet-pipeline-static": "^1.0.0-rc.3",
     "nodemon": "^1.17.2",
