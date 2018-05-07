@@ -34,10 +34,17 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
 .list-teaser-event__headline {
   @extend %h3;
 
-  margin-bottom: $spacer-sm;
+  margin-bottom: $spacer-xs;
   line-height: $list-teaser-event-headline-line-height-small;
   color: $list-teaser-event-headline-color;
   font-size: $list-teaser-event-headline-font-size-small;
+}
+
+.list-teaser-event__headline--secondary {
+  @extend %h5;
+
+  margin-bottom: $spacer-sm;
+  color: $list-teaser-event-subheadline-color;
 }
 
 .list-teaser-event__subheadline {
