@@ -113,9 +113,15 @@ h6 {
 .section-heading--secondary {
   @extend %h3;
 
-  margin-bottom: $spacer-base;
+  margin-bottom: $spacer-sm;
   border-top: 8px solid $brand-interaction;
   padding-top: $spacer-sm;
+}
+
+.section-heading--tertiary {
+  @extend %h5;
+
+  margin-bottom: $spacer-base;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
