@@ -127,9 +127,12 @@ $bullet-list-bg-color: transparent;
 $talk-label-background-color: $brand-primary;
 $talk-label-text-color: $brand-text;
 $training-label-background-color: $brand-text;
-$training-label-text-color: $brand-red;
+$training-label-text-color: $brand-primary;
 $slides-label-background-color: $brand-green;
 $slides-label-text-color: $brand-text;
+$badge-background-color: $brand-primary;
+$badge-background-color-inverted: $brand-text;
+$badge-text-color: $brand-white;
 
 // Author
 $author-bio-background-color: $brand-gray-10;

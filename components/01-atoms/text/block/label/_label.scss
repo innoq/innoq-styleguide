@@ -43,6 +43,20 @@
     text-transform: uppercase;
     color: $training-label-text-color;
   }
+
+  &.badge,
+  &.badge--inverted {
+    @extend %heading-font-bold;
+
+    transform: skew(-20deg);
+    background-color: $badge-background-color;
+    text-transform: uppercase;
+    color: $badge-text-color;
+  }
+
+  &.badge--inverted {
+    background-color: $badge-background-color-inverted;
+  }
 }
 
 

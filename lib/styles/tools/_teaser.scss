@@ -11,6 +11,7 @@ $list-teaser-height-md: ms(20);
 %list-teaser-footer {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-end;
   justify-content: space-between;
   margin-bottom: 0;
   padding: $spacer-sm $spacer-md;
