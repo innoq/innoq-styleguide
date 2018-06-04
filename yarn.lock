@@ -1501,16 +1501,16 @@ compare-func@^1.3.1:
     array-ify "^1.0.0"
     dot-prop "^3.0.0"
 
-complate-fractal@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/complate-fractal/-/complate-fractal-0.5.0.tgz#1a9438ca78b7f789c25a7b3ac0b52c4c5c50e2a7"
+complate-fractal@^0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/complate-fractal/-/complate-fractal-0.6.1.tgz#94930cb9d5b07ab7c1e1e74acdd2f4e88ce64528"
   dependencies:
     "@frctl/fractal" "^1.1.7"
     babel-plugin-transform-react-jsx "^6.24.1"
     babel-preset-es2015 "^6.24.1"
     babel-register "^6.26.0"
     complate-stream "^0.16.3"
-    esm "^3.0.28"
+    esm "^3.0.46"
     html "^1.0.0"
 
 complate-stream@^0.16.3:
@@ -2417,9 +2417,9 @@ eslint@^4.19.0:
     table "4.0.2"
     text-table "~0.2.0"
 
-esm@^3.0.28:
-  version "3.0.28"
-  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.28.tgz#1b912958328eb1c40538e7d24ce6bf3638bb83df"
+esm@^3.0.46:
+  version "3.0.46"
+  resolved "https://registry.yarnpkg.com/esm/-/esm-3.0.46.tgz#283ac0be814738ef643e7ce28acce40e9c392870"
 
 espree@^3.1.6, espree@^3.5.4:
   version "3.5.4"
