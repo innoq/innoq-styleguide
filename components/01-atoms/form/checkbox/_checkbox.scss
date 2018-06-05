@@ -36,6 +36,7 @@ $checkbox-indent: $checkbox-offset + $checkbox-size;
   .form-label {
     @include control-icon($checkbox-size, $checkbox-offset);
     margin-bottom: 0;
+    text-align: left;
 
     // Background (color)
     &::before {
