@@ -27,10 +27,24 @@
 }
 
 .newsletter-optin__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   .form-control {
     border: 0;
     padding: $spacer-sm $spacer-md;
     font-size: $button-small-font-size;
+  }
+}
+
+.newsletter-optin__inputfield {
+  display: flex;
+  flex-direction: row;
+
+  .btn {
+    margin-bottom: 0;
   }
 }
 
