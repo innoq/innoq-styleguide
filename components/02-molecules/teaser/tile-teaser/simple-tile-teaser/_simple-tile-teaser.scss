@@ -6,17 +6,13 @@
   padding-bottom: $spacer-base;
 
   &__body {
-    &,
-    & > * {
-      flex-basis: 100%;
-      flex-grow: 1;
-      align-content: center;
-      background-color: $simple-teaser-bg;
-      padding: $spacer-sm $spacer-sm $spacer-md;
-      min-height: 20vh;
-      text-align: center;
-      color: $simple-teaser-color;
-    }
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-content: center;
+    background-color: $simple-teaser-bg;
+    padding: $spacer-sm $spacer-sm $spacer-md;
+    min-height: 20vh;
+    text-align: center;
   }
 
   &__footer {
@@ -27,9 +23,23 @@
     @extend %link-unstyled;
     transition: standard-transition(color);
 
-    &:focus,
-    &:hover {
-      color: $simple-teaser-link-focus-color;
+    &,
+    h5,
+    h6 {
+      color: $simple-teaser-color;
+
+      &:focus,
+      &:hover {
+        color: $simple-teaser-link-focus-color;
+      }
+    }
+
+    h5 {
+      margin-bottom: $spacer-sm;
+    }
+
+    h6 {
+      @extend %body-font-italic;
     }
   }
 }
