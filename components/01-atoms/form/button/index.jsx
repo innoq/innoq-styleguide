@@ -1,10 +1,8 @@
 import { createElement } from 'complate-stream'
+import classnames from 'classnames'
 
 export default function Button ({ variant, inverted }, ...children) {
-  let buttonClass = `btn btn--${variant}`
-  if (inverted) {
-    buttonClass += ' btn--inverted'
-  }
+  let buttonClass = classnames(`btn btn--${variant}`, { 'btn--inverted': inverted })
   let label
   if (variant === 'cta') {
     label = children.join('')
