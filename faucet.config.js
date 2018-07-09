@@ -4,6 +4,7 @@ const config = {
     webRoot: './public',
     target: './public/assets/manifest.json'
   },
+  watchDirs: ['./lib', './components'],
 
   static: [
     {
