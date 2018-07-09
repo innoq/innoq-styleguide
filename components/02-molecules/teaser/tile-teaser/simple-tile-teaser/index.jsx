@@ -6,7 +6,7 @@ export default function SimpleTileTeaser ({ title, subtitle, buttonText }) {
     <div class='simple-teaser__body'>
       <a href='#' class='simple-teaser__link'>
         <h5>{title}</h5>
-        <h6>{subtitle}</h6>
+        { subtitle ? <h6>{subtitle}</h6> : ''}
       </a>
     </div>
     <div class='simple-teaser__footer'>
