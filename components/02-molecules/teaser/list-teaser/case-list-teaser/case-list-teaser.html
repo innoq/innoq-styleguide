@@ -1,41 +1,15 @@
+import CaseListTeaser from "./components/02-molecules/teaser/list-teaser/case-list-teaser"
+
 <div>
     <div class="blocks">
-        <div class="case-teaser topic-header-bg-image-girl">
-            <div class="case-teaser__wrapper">
-                <div class="case-teaser__body">
-                    <div>
-                        <div class="case-teaser__caption">Case Study</div>
-                        <div>
-                            <div class="case-teaser__header">
-                                <h1 class="punch-in topic-header-bg-image-text-box-girl">Case Study Headline Eggs</h1>
-                            </div>
-                        </div>
-                        <div class="case-teaser__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit doloremque culpa minima vero quod, optio itaque nisi deserunt, debitis ad laudantium libero, quia nemo!
-                        </div>
-                    </div>
-                    <div><a class="link-teaser" href="#">Mehr erfahren</a></div>
-                </div>
-            </div>
-        </div>
+        <CaseListTeaser header="case study headline eggs" caption="case study" href="#" linkText="mehr erfahren" additionalClasses="topic-header-bg-image-girl" headerAdditionalClasses="topic-header-bg-image-text-box-girl" punchIn>
+            lorem ipsum dolor sit amet, consectetur adipisicing elit. velit doloremque culpa minima vero quod, optio itaque nisi deserunt, debitis ad laudantium libero, quia nemo!
+        </CaseListTeaser>
     </div>
 
     <div class="blocks">
-        <div class="case-teaser case-teaser--simple landing-page-header-bg-image">
-            <div class="case-teaser__wrapper">
-                <div class="case-teaser__body">
-                    <div>
-                        <div class="case-teaser__caption">Case Study</div>
-                        <div class="case-teaser__header">
-                            <h1>Case Study Headline</h1>
-                        </div>
-                        <div class="case-teaser__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit doloremque culpa minima vero quod, optio itaque nisi deserunt, debitis ad laudantium libero, quia nemo!
-                        </div>
-                    </div>
-                    <div><a class="link-teaser" href="#">Mehr erfahren</a></div>
-                </div>
-            </div>
-        </div>
+        <CaseListTeaser header="Case Study Headline" caption="Case Study" href="#" linkText="mehr erfahren" additionalClasses="landing-page-header-bg-image" simple>
+            lorem ipsum dolor sit amet, consectetur adipisicing elit. velit doloremque culpa minima vero quod, optio itaque nisi deserunt, debitis ad laudantium libero, quia nemo!
+        </CaseListTeaser>
     </div>
 </div>

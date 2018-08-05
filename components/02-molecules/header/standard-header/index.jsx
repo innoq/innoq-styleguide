@@ -1,12 +1,16 @@
 import { createElement } from 'complate-stream'
-import { cssBackground } from './config'
+import classnames from 'classnames'
 
-export default function StandardHeader ({ contentType, title, subtitle, date }, ...children) {
-  return <header class='standard-header' style={cssBackground}>
+export default function StandardHeader ({ contentType, title, subtitle, introTitle, date, additionalClassnames, titleSeparated, headerStyle }, ...children) {
+  let headerClass = classnames('standard-header', additionalClassnames)
+  let titleClass = classnames('standard-header__title', { 'standard-header__title--separated': titleSeparated })
+
+  return <header class={headerClass} style={headerStyle}>
     { contentType ? <h3 class='standard-header__type'>{contentType}</h3> : ''}
-    <h1 class='standard-header__title'>{title}</h1>
+    <h1 class={titleClass}>{title}</h1>
     { subtitle ? <h2 class='standard-header__subtitle'>{subtitle}</h2> : ''}
     <div class='standard-header__intro'>
+      { introTitle ? <h2>{introTitle}</h2> : '' }
       { date ? <time class='standard-header__intro__date'>{date}</time> : ''}
       <div class='standard-header__intro__text'>
         {children}
