@@ -2,10 +2,12 @@
 require "fileutils"
 include FileUtils
 
+# Delete old dist folder if it exists
+rm_rf "dist"
+
 commit = ENV["TRAVIS_COMMIT"]
 tag = ENV.fetch("TRAVIS_TAG") { "HEAD" }
 js_components_target = "dist/js/components"
-release_exclude_list = File.read(".npmignore")
 release_filename = "innoq-styleguide-#{tag}.zip"
 zip_blacklist = "-x #{File.read(".npmignore").gsub(/\n/, ' ')}"
 
