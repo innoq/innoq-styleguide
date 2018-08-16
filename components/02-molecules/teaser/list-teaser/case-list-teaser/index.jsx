@@ -1,19 +1,13 @@
 import { createElement } from 'complate-stream'
-import classnames from 'classnames'
+import classNames from 'classnames'
+import Button from '../../../../01-atoms/form/button/index.jsx'
 
 export default function CaseListTeaser ({ header, caption, href, linkText, simple, punchIn, withButton, additionalClasses, headerAdditionalClasses, align }, ...children) {
-  let leftAligned
-  if (align === 'left') {
-    leftAligned = true
-  }
-  let classname = classnames('case-teaser', { 'case-teaser--simple': simple, 'case-teaser--left-aligned': leftAligned }, additionalClasses)
+  let leftAligned = (align === 'left')
+  let classname = classNames('case-teaser', { 'case-teaser--simple': simple, 'case-teaser--left-aligned': leftAligned }, additionalClasses)
   let headerClass
   if (punchIn) {
-    headerClass = classnames('punch-in', headerAdditionalClasses)
-  }
-  let linkClass = 'link-teaser'
-  if (withButton) {
-    linkClass = 'btn btn--small btn--cta'
+    headerClass = classNames('punch-in', headerAdditionalClasses)
   }
 
   return <div class={classname}>
@@ -29,7 +23,8 @@ export default function CaseListTeaser ({ header, caption, href, linkText, simpl
               {children}
             </div>
             <div class='case-teaser__footer'>
-              <a href={href} class={linkClass}>{linkText}</a>
+              { withButton ? <Button href={href} size='small' cta>{linkText}</Button>
+                : <a href={href} class='link-teaser'>{linkText}</a> }
             </div>
           </div>
         </div>

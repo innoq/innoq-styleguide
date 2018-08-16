@@ -1,8 +1,8 @@
 import { createElement } from 'complate-stream'
-import classnames from 'classnames'
+import classNames from 'classnames'
 
-export default function CaseTileTeaser ({type, big, inverted}, ...children) {
-  let classname = classnames(big ? 'label-big' : 'label', type, { 'badge--inverted': inverted })
+export default function CaseTileTeaser ({ type, big, inverted }, ...children) {
+  let classname = classNames(big ? 'label-big' : 'label', type, { 'badge--inverted': inverted })
 
   return <div class={classname}>{children}</div>
 }

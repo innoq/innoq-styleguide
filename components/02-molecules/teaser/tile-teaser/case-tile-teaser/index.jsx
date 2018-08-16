@@ -1,17 +1,17 @@
 import { createElement } from 'complate-stream'
-import classnames from 'classnames'
+import classNames from 'classnames'
 
 export default function CaseTileTeaser ({ size, additionalClassnames, href, caption, headline, linkTeaser }, ...children) {
-  let classname = classnames('case-tile-teaser', additionalClassnames)
+  let classname = classNames('case-tile-teaser', additionalClassnames)
   let contentClass = 'case-tile-teaser__content'
   let headlineClass = 'case-tile-teaser__headline'
   let textClass = 'case-tile-teaser__text'
 
   if (size === 'sm') {
-    classname = classnames(classname, 'case-tile-teaser--sm')
-    contentClass = classnames(contentClass, 'case-tile-teaser__content--sm')
-    headlineClass = classnames(headlineClass, 'case-tile-teaser__headline--sm')
-    textClass = classnames(textClass, 'case-tile-teaser__text--sm')
+    classname = classNames(classname, 'case-tile-teaser--sm')
+    contentClass = classNames(contentClass, 'case-tile-teaser__content--sm')
+    headlineClass = classNames(headlineClass, 'case-tile-teaser__headline--sm')
+    textClass = classNames(textClass, 'case-tile-teaser__text--sm')
   }
 
   return <a href={href} class={classname}>
