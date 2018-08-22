@@ -1,9 +1,12 @@
 import { Fragment } from 'complate-stream'
 import TrainingListTeaser from './components/02-molecules/teaser/list-teaser/training-list-teaser/index.jsx'
+import Label from './components/01-atoms/text/block/label/index.jsx'
 
 <Fragment>
-    <TrainingListTeaser primary title="Titel" subtitle="Untertitel" label="Labeltext" linkText="Termine & Details">
+    <TrainingListTeaser primary title="Titel" subtitle="Untertitel" linkText="Termine & Details">
+        <Label type="badge" big inverted>Labeltext</Label>
     </TrainingListTeaser>
-    <TrainingListTeaser secondary title="Titel" subtitle="Untertitel" label="Labeltext" linkText="Termine & Details">
+    <TrainingListTeaser secondary title="Titel" subtitle="Untertitel" linkText="Termine & Details">
+        <Label type="badge" big>Labeltext</Label>
     </TrainingListTeaser>
 </Fragment>
