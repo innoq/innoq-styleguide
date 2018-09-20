@@ -49,5 +49,7 @@
 // Breakpoints
 //
 @media screen and (min-width: $grid-breakpoint-md) {
-  margin-bottom: 0;
+  .simple-teaser {
+    margin-bottom: 0;
+  }
 }
