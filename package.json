@@ -23,7 +23,7 @@
     "modularscale-sass": "^3.0.8"
   },
   "devDependencies": {
-    "complate-fractal": "^0.6.4",
+    "complate-fractal": "^0.7.0",
     "document-register-element": "^1.11.1",
     "eslint": "^5.6.1",
     "eslint-config-standard": "^12.0.0",
