@@ -23,7 +23,7 @@ ul:not([class]),
   @extend %unsorted-list;
   @extend %heading-font-regular;
 
-  li {
+  & > li {
     padding-left: $list-indent;
 
     &::before {
@@ -106,7 +106,7 @@ ol:not([class]) {
   font-size: $ordered-list-font-size-small;
   counter-reset: number;
 
-  li {
+  & > li {
     position: relative;
     margin-bottom: $spacer-xs;
     padding-left: $number-space;
@@ -121,6 +121,17 @@ ol:not([class]) {
       font-size: $ordered-list-counter-font-size-small;
       content: counter(number);
       counter-increment: number;
+    }
+  }
+
+  ul {
+    // Nested lists need diffrent vertical spacings
+    // to blend into the outer list.
+    margin-top: $container-spacer-x-sm;
+
+    &,
+    li > ul > li {
+      margin-bottom: 0;
     }
   }
 }
