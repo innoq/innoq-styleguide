@@ -39,7 +39,7 @@
     "nodemon": "^1.18.4",
     "normalize.css": "^8.0.0",
     "npm-run-all": "^4.1.1",
-    "release-it": "^7.6.2",
+    "release-it": "^8.0.0",
     "sass-lint": "^1.12.0"
   }
 }
