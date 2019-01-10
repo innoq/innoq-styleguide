@@ -3,13 +3,14 @@ $case-teaser-bg-height: 1000px; // Arbitrary value
 $teaser-outer-padding: $spacer-md;
 $teaser-inner-padding: $spacer-base;
 $teaser-inner-padding-bottom: $spacer-xxl;
+$case-teaser-height: ms(38);
 
 .case-teaser {
   @extend %page-header;
   justify-content: center;
   width: 100%;
   max-width: 100%;
-  min-height: 50vh;
+  min-height: $case-teaser-height;
 
   &--right-aligned {
     justify-content: flex-end;
@@ -74,20 +75,12 @@ $teaser-inner-padding-bottom: $spacer-xxl;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
-  .case-teaser {
-    min-height: 50vh;
-  }
-
   .case-teaser__wrapper {
     padding: $spacer-base;
   }
 }
 
 @media screen and (min-width: $grid-breakpoint-md-lg) {
-  .case-teaser {
-    min-height: 75vh;
-  }
-
   .case-teaser__wrapper {
     padding: $spacer-sm;
     width: $default-page-layout-width-xl;
