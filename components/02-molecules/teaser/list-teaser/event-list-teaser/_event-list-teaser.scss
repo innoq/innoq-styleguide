@@ -96,8 +96,8 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
     }
 
     .list-teaser-event__footer {
-      justify-content: space-between;
       flex-direction: row-reverse;
+      justify-content: space-between;
     }
   }
 
