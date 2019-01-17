@@ -11,7 +11,14 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
 
   .list-teaser-event__footer {
     @extend %list-teaser-footer;
-    justify-content: center;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .link-teaser {
+      margin-bottom: $spacer-sm;
+    }
   }
 
   .list-teaser-event__footer,
@@ -89,7 +96,8 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
     }
 
     .list-teaser-event__footer {
-      justify-content: flex-end;
+      justify-content: space-between;
+      flex-direction: row-reverse;
     }
   }
 
