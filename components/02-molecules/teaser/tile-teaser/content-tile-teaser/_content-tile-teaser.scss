@@ -21,7 +21,11 @@ $content-teaser-height-md: ms(36);
   margin-bottom: 0;
 
   > * {
-    margin: 0;
+    margin-bottom: $spacer-xs;
+  }
+
+  :last-child {
+    margin-bottom: 0;
   }
 }
 
