@@ -90,7 +90,7 @@ $landing-page-header-bottom-margin: $spacer-xxl;
   }
 }
 
-@media screen and (max-width: $grid-breakpoint-md-lg) and (min-height: $grid-breakpoint-md-lg) {
+@media screen and (max-width: $grid-breakpoint-lg) and (min-height: $grid-breakpoint-md-lg) {
   .landing-page-header {
     min-height: 20rem;
   }
