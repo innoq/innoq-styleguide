@@ -151,11 +151,11 @@ dl:not([class]) {
 
 }
 
-.tuple-list__entry{
+.tuple-list__entry {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-rows: auto;
-  grid-template-areas: "label value"
+  grid-template-areas: 'label value';
 }
 
 .tuple-list__label {
@@ -164,6 +164,6 @@ dl:not([class]) {
 }
 
 .tuple-list__value {
-  font-family:$font-family-sans-serif;
+  font-family: $font-family-sans-serif;
   grid-area: value;
 }
