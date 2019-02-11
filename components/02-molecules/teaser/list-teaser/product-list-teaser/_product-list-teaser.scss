@@ -1,0 +1,29 @@
+.product-list-teaser {
+  @extend %list-teaser;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-list-teaser__body {
+  padding: $container-spacer-x $container-spacer-y;
+
+}
+
+.product-list-teaser__caption {
+  @extend %teaser-caption;
+  margin-bottom: $spacer-sm;
+  height: $spacer-md;
+}
+
+.product-list-teaser__headline {
+  margin-bottom: $spacer-sm;
+  color: $list-teaser-headline-color;
+}
+
+.product-list-teaser__text {
+  @extend %teaser-text-italic;
+  margin-bottom: $spacer-base;
+}
+
