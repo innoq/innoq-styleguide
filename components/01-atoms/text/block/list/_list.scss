@@ -154,7 +154,7 @@ dl:not([class]) {
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-rows: auto;
-  grid-template-areas: "label value"
+  grid-template-areas: 'label value';
 }
 
 .tuple-list__label {
