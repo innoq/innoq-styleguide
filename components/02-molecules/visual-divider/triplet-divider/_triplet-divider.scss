@@ -1,5 +1,5 @@
-$divider-height-sm: 2 * $spacer-xxl;
-$divider-height-md: 4 * $spacer-xxl;
+$triplet-divider-height-sm: 2 * $spacer-xxl;
+$triplet-divider-height-md: 4 * $spacer-xxl;
 
 .triplet-divider {
   display: flex;
@@ -36,7 +36,7 @@ $divider-height-md: 4 * $spacer-xxl;
   align-items: center;
   justify-content: center;
   padding: $container-spacer-x $container-spacer-y;
-  min-height: $divider-height-sm;
+  min-height: $triplet-divider-height-sm;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -47,7 +47,6 @@ $divider-height-md: 4 * $spacer-xxl;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: $container-spacer-x $container-spacer-y;
-    min-height: $divider-height-md;
+    min-height: $triplet-divider-height-md;
   }
 }
