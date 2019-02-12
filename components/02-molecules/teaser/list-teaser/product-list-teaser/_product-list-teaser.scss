@@ -1,5 +1,5 @@
 .product-list-teaser {
-  @extend %list-teaser;
+  @extend %block-link;
 
   display: flex;
   flex-direction: column;
@@ -23,7 +23,15 @@
 }
 
 .product-list-teaser__text {
-  @extend %teaser-text-italic;
+  @extend %body-font-italic;
   margin-bottom: $spacer-base;
+  line-height: $paragraph-lead-line-height-small;
+  font-size: $paragraph-lead-font-size-small;
 }
 
+@media screen and (min-width: $grid-breakpoint-md) {
+  .product-list-teaser__text {
+    line-height: $teaser-text-line-height-italic;
+    font-size: $teaser-text-font-size-italic;
+  }
+}

@@ -3,6 +3,7 @@ $bullet-size: $spacer-xs; // ~9px
 $bullet-offset: $spacer-sm; // ~16px
 $list-indent: $bullet-offset + $bullet-size;
 $number-space: $spacer-md;
+$tuple-list-label-width: 8rem;
 
 
 // ---- Unordered Lists --------------------------------------------------------
@@ -153,23 +154,21 @@ dl:not([class]) {
   @extend %teaser-caption;
   display: block;
 }
+
 .tuple-list__entry {
   margin-bottom: $container-spacer-y-sm;
 }
 
 .tuple-list__value {
-  font-family: $font-family-sans-serif;
   display: block;
+  font-family: $font-family-sans-serif;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .tuple-list__entry {
-    margin-bottom: 0;
-  }
-
-  .tuple-list__entry {
     display: grid;
-    grid-template-columns: 8rem auto;
+    margin-bottom: $spacer-xxs;
+    grid-template-columns: $tuple-list-label-width auto;
     grid-template-rows: auto;
     grid-template-areas: 'label value';
   }
@@ -188,6 +187,3 @@ dl:not([class]) {
 //     grid-template-columns: 15% 75%;
 //   }
 // }
-
-
-
