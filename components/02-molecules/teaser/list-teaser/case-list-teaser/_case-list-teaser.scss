@@ -7,6 +7,8 @@ $case-teaser-height: ms(38);
 
 .case-teaser {
   @extend %page-header;
+  @extend %list-teaser;
+
   justify-content: center;
   width: 100%;
   max-width: 100%;
