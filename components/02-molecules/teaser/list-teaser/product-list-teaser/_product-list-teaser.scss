@@ -4,11 +4,22 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-bottom: 5px solid $list-teaser-product-border-color;
+  background-color: $list-teaser-product-background-color;
 }
 
 .product-list-teaser__body {
-  padding: $container-spacer-x $container-spacer-y;
+  margin-bottom: $container-spacer-y;
+  border-bottom: 1px solid $list-teaser-product-border-color-muted;
+  padding: $container-spacer-y $container-spacer-x 0;
+}
 
+.product-list-teaser__footer {
+  padding: 0 $container-spacer-y $container-spacer-x;
+
+  .tuple-list {
+    margin-bottom: 0;
+  }
 }
 
 .product-list-teaser__caption {
