@@ -44,38 +44,34 @@ $big-content-teaser-height-md: ms(40);
 
 //Background images for topic header
 .wall-note-bg-image-girl {
+  @extend %centered-background-image;
   background-image: asset-url('visual-header-girl.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 
 }
 
 .wall-note-bg-image-medusa {
+  @extend %centered-background-image;
   background-image: asset-url('visual-header-medusa.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .wall-note-bg-image-ice {
+  @extend %centered-background-image;
   background-image: asset-url('visual-header-ice.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .wall-note-bg-image-igel {
+  @extend %centered-background-image;
   background-image: asset-url('visual-header-igel-1444.jpg');
-  background-position: center;
-  background-size: cover;
 }
 
 .wall-note-bg-image-koralle {
+  @extend %centered-background-image;
   background-image: asset-url('visual-header-koralle.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+}
+
+.wall-note-bg-image-workshop {
+  @extend %centered-background-image;
+  background-image: asset-url('visual-workshop-06.jpg');
 }
 
 

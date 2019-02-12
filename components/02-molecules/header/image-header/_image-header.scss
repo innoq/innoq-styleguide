@@ -41,6 +41,10 @@
   background-image: asset-url('visual-staff-01.jpg');
 }
 
+.image-header-bg-visual-01 {
+  background-image: asset-url('visual-header-koralle.jpg');
+}
+
 .image-header-bg-culture-01-text-box {
   @extend %image-header-bg-culture-01-text-box;
 }
