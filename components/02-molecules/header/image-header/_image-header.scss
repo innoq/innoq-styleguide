@@ -23,6 +23,10 @@
     text-align: center;
   }
 
+  &__headline {
+    margin-bottom: $spacer-sm;
+  }
+
   &__title {
     @extend %punch-in;
     margin-bottom: $spacer-md;

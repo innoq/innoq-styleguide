@@ -19,6 +19,16 @@ $big-content-teaser-height-md: ms(40);
   max-width: $default-page-layout-content-width-md;
 }
 
+.wall-note__heading {
+  @extend %h1;
+  text-align: center;
+  font-size: $h2-font-size;
+}
+
+.wall-note__subheading {
+  @extend %teaser-caption;
+}
+
 .wall-note__text {
   @extend %body-font-italic;
 
