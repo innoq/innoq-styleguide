@@ -18,6 +18,7 @@ $triplet-divider-height-md: 4 * $spacer-xxl;
 
 .triplet-divider__right {
   background-color: $brand-red;
+  text-align: right;
   color: $brand-blue;
 }
 
@@ -40,6 +41,10 @@ $triplet-divider-height-md: 4 * $spacer-xxl;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
+  .triplet-divider__right {
+    text-align: left;
+  }
+
   .triplet-divider__right,
   .triplet-divider__left,
   .triplet-divider__center {
