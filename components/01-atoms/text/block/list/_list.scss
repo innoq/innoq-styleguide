@@ -164,7 +164,7 @@ dl:not([class]) {
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .tuple-list__entry {
-    margin-bottom: 4px;
+    margin-bottom: 0;
   }
 
   .tuple-list__entry {
