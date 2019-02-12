@@ -1,0 +1,6 @@
+.product-microsite-page {
+  > .stripe--primary {
+    padding-top: 2 * $container-spacer-y;
+    padding-bottom: 2 * $container-spacer-y;
+  }
+}

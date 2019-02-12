@@ -93,6 +93,14 @@ h6 {
   font-size: $teaser-section-heading-font-size-small;
 }
 
+.upcase-heading {
+  @extend %h5;
+  margin: 0 auto $spacer-md;
+  text-transform: uppercase;
+  line-height: $teaser-section-heading-line-height-small;
+  font-size: $teaser-section-heading-font-size-small;
+}
+
 // Prevent older Browsers from screwing up with max-content widths
 @supports (width: max-content) {
   .teaser-section-heading {

@@ -15,12 +15,16 @@ p {
     font-size: $paragraph-lead-font-size-small;
   }
 
-  &.display {
+  &.display,
+  &.standalone {
     @extend %heading-font-regular;
     margin-bottom: 0;
-    text-transform: uppercase;
     line-height: $paragraph-line-height-small;
     font-size: $paragraph-font-size-small;
+  }
+
+  &.display {
+    text-transform: uppercase;
   }
 }
 
