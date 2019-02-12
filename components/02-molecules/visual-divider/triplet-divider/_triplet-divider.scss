@@ -48,10 +48,6 @@ $triplet-divider-height-md: 4 * $spacer-xxl;
   .triplet-divider__right,
   .triplet-divider__left,
   .triplet-divider__center {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     min-height: $triplet-divider-height-md;
   }
 }

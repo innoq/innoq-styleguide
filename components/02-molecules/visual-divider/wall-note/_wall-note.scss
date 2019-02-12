@@ -21,6 +21,7 @@ $big-content-teaser-height-md: ms(40);
 
 .wall-note__heading {
   @extend %h1;
+  text-align: center;
   font-size: $h2-font-size;
 }
 
