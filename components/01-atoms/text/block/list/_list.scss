@@ -147,22 +147,47 @@ dl:not([class]) {
 // ---------- Tuple List ----------
 .tuple-list {
   @extend %list-unstyled;
-
-}
-
-.tuple-list__entry {
-  display: grid;
-  grid-template-columns: 20% 80%;
-  grid-template-rows: auto;
-  grid-template-areas: 'label value';
 }
 
 .tuple-list__label {
   @extend %teaser-caption;
-  grid-area: label;
+  display: block;
+}
+.tuple-list__entry {
+  margin-bottom: $container-spacer-y-sm;
 }
 
 .tuple-list__value {
   font-family: $font-family-sans-serif;
-  grid-area: value;
+  display: block;
 }
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .tuple-list__entry {
+    margin-bottom: 4px;
+  }
+
+  .tuple-list__entry {
+    display: grid;
+    grid-template-columns: 8rem auto;
+    grid-template-rows: auto;
+    grid-template-areas: 'label value';
+  }
+
+  .tuple-list__label {
+    grid-area: label;
+  }
+
+  .tuple-list__value {
+    grid-area: value;
+  }
+}
+
+// @media screen and (min-width: $grid-breakpoint-lg) {
+//   .tuple-list__entry {
+//     grid-template-columns: 15% 75%;
+//   }
+// }
+
+
+
