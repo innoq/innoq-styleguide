@@ -26,11 +26,11 @@
   @extend %block-link;
   @extend %heading-font-heavy;
   background: $list-teaser-product-background-color-cta;
-  color: $brand-white;
-  font-size: $link-teaser-font-size;
-  line-height: $base-line-height;
   padding: $spacer-xxs;
   text-align: center;
+  line-height: $base-line-height;
+  color: $brand-white;
+  font-size: $link-teaser-font-size;
 }
 
 .product-list-teaser__caption {
