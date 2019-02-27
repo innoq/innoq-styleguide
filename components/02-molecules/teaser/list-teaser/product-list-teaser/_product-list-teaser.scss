@@ -5,7 +5,6 @@
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: $container-spacer-y;
-  border-bottom: 4px solid $list-teaser-product-border-color;
   background-color: $list-teaser-product-background-color;
 }
 
@@ -21,6 +20,17 @@
   .tuple-list {
     margin-bottom: 0;
   }
+}
+
+.product-list-teaser__cta {
+  @extend %block-link;
+  @extend %heading-font-heavy;
+  background: $list-teaser-product-background-color-cta;
+  padding: $spacer-xxs;
+  text-align: center;
+  line-height: $base-line-height;
+  color: $brand-white;
+  font-size: $link-teaser-font-size;
 }
 
 .product-list-teaser__caption {
