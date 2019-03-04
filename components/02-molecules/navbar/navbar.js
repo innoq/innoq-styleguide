@@ -20,20 +20,16 @@ class DropdownToggle {
 }
 
 export default class Navbar extends HTMLElement {
-  constructor() {
-    super()
-  }
-
   connectedCallback () {
     if (!this.isInitialized) {
       this.init()
     }
   }
 
-  init() {
+  init () {
     this.primaryList = document.querySelector('.primary-nav__list')
     this.dropdownToggles = Array.from(document.querySelectorAll('.dropdown__toggle--navbar'))
-                                .map(el => new DropdownToggle(el, el.getAttribute('for')))
+      .map(el => new DropdownToggle(el, el.getAttribute('for')))
     this.dropdownPrimaryLinks = document.querySelectorAll('.dropdown .navbtn--primary')
 
     // add --enhanced modifier
