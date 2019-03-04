@@ -44,7 +44,14 @@
   flex-direction: row;
 
   .btn {
+    flex-grow: 1;
     margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: $grid-breakpoint-sm) {
+  .newsletter-optin__inputfield {
+    flex-wrap: wrap;
   }
 }
 
