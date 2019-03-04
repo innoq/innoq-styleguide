@@ -20,14 +20,24 @@ class DropdownToggle {
 }
 
 export default class Navbar extends HTMLElement {
+  constructor() {
+    super()
+  }
+
   connectedCallback () {
-    let navbar = this
-    navbar.primaryList = document.querySelector('.primary-nav__list')
-    navbar.dropdownToggles = navbar.compileDropdownToggles('.dropdown__toggle--navbar')
-    navbar.dropdownPrimaryLinks = document.querySelectorAll('.dropdown .navbtn--primary')
+    if (!this.isInitialized) {
+      this.init()
+    }
+  }
+
+  init() {
+    this.primaryList = document.querySelector('.primary-nav__list')
+    this.dropdownToggles = Array.from(document.querySelectorAll('.dropdown__toggle--navbar'))
+                                .map(el => new DropdownToggle(el, el.getAttribute('for')))
+    this.dropdownPrimaryLinks = document.querySelectorAll('.dropdown .navbtn--primary')
 
     // add --enhanced modifier
-    navbar.enhance([
+    this.enhance([
       '.primary-nav',
       '.primary-nav__list',
       '.primary-nav__item',
@@ -38,7 +48,7 @@ export default class Navbar extends HTMLElement {
 
     // enhance drill down ux
     // (copy dropdown heading link into dropdown list)
-    navbar.dropdownPrimaryLinks.forEach((link) => {
+    this.dropdownPrimaryLinks.forEach((link) => {
       let targetDropdownList = link.parentNode.querySelector('.dropdown__list')
 
       let anchorClone = document.createElement('a')
@@ -54,35 +64,32 @@ export default class Navbar extends HTMLElement {
     })
 
     // apply several event listeners
-    navbar.dropdownToggles.forEach((ddt, i, all) => {
+    this.dropdownToggles.forEach((ddt, i, all) => {
       ddt.label.addEventListener('click', e => {
-        navbar.uncheckDropdownToggles(all, ddt)
-        navbar.primaryList.classList.add('primary-nav__list--level2')
+        this.uncheckDropdownToggles(all, ddt)
+        this.primaryList.classList.add('primary-nav__list--level2')
       })
       ddt.relatedLink.addEventListener('mouseenter', e => {
-        navbar.uncheckDropdownToggles(all, ddt)
-        navbar.primaryList.classList.remove('primary-nav__list--level2')
+        this.uncheckDropdownToggles(all, ddt)
+        this.primaryList.classList.remove('primary-nav__list--level2')
       })
       ddt.relatedLink.addEventListener('click', e => {
-        if (navbar.isMobile) {
+        if (this.isMobile) {
           e.preventDefault()
           ddt.checked = true
-          navbar.uncheckDropdownToggles(all, ddt)
-          navbar.primaryList.classList.add('primary-nav__list--level2')
+          this.uncheckDropdownToggles(all, ddt)
+          this.primaryList.classList.add('primary-nav__list--level2')
         }
       })
     })
 
     document.querySelector('.navbtn--drill-up')
       .addEventListener('click', e => {
-        navbar.uncheckDropdownToggles(navbar.dropdownToggles)
-        navbar.primaryList.classList.remove('primary-nav__list--level2')
+        this.uncheckDropdownToggles(this.dropdownToggles)
+        this.primaryList.classList.remove('primary-nav__list--level2')
       })
-  }
 
-  compileDropdownToggles (selector) {
-    return Array.from(document.querySelectorAll(selector))
-      .map(el => new DropdownToggle(el, el.getAttribute('for')))
+    this.isInitialized = true
   }
 
   enhance (selectors) {
@@ -108,13 +115,4 @@ export default class Navbar extends HTMLElement {
       return false
     }
   }
-
-  // toggleBEM (elem, base, modifier) {
-  //   if (typeof elem === 'string') {
-  //     elem = document.querySelector(elem)
-  //   } elseif (elem instanceof HTMLElement === false) {
-  //     return
-  //   }
-  //   elem.classList.toggle(base + '--' + modifier)
-  // }
 }
