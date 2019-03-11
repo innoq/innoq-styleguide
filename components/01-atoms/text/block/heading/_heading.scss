@@ -107,6 +107,11 @@ h6 {
     border-bottom: 4px solid $brand-text;
     width: max-content;
   }
+
+  .teaser-section-heading__full-width {
+    border: 0;
+    width: 100%;
+  }
 }
 
 .section-heading--primary {
