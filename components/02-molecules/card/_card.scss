@@ -1,5 +1,5 @@
 .card {
-  padding: $container-spacer-x $container-spacer-y;
+  padding: $container-spacer-x-sm $container-spacer-y-sm;
 }
 
 .card__image-header {
@@ -27,6 +27,7 @@
 
 .card__image {
   max-width: 100%;
+  vertical-align: bottom;
 }
 
 .card__body {
@@ -35,8 +36,6 @@
 
 .card__body,
 .card__footer {
-  transform: translateY(-$spacer-xxl);
-  margin: 0 $spacer-lg;
   background-color: $brand-white;
   padding: $container-spacer-x-sm $container-spacer-y-sm;
 }
@@ -56,4 +55,20 @@
   margin-bottom: $spacer-xxs;
   line-height: $paragraph-lead-line-height-small;
   font-size: $paragraph-lead-font-size-small;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .card {
+    padding: $container-spacer-x $container-spacer-y;
+  }
+
+  .card__body,
+  .card__footer {
+    transform: translateY(-$spacer-xxl);
+    margin: 0 $container-spacer-x;
+  }
+
+  .card__image {
+    vertical-align: baseline;
+  }
 }
