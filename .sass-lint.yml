@@ -62,16 +62,20 @@ rules:
 
   # Name Formats
   class-name-format:
-  - 2
-  -
-    convention: hyphenatedbem
-    allow-leading-underscore: false
-    convention-explanation: Please use hypenated BEM. Details can be found here https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
-
+    - 2
+    -
+      convention: hyphenatedbem
+      allow-leading-underscore: false
+      convention-explanation: Please use hypenated BEM. Details can be found here https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
   function-name-format: 2
   id-name-format: 0
   mixin-name-format: 2
-  placeholder-name-format: 2
+  placeholder-name-format:
+    - 2
+    -
+      convention: hyphenatedbem
+      allow-leading-underscore: false
+      convention-explanation: Please use hypenated BEM. Details can be found here https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/
   variable-name-format: 2
 
   # Style Guide

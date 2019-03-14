@@ -1,6 +1,6 @@
 super-quote > blockquote,
 .superquote {
-  @extend .longquote;
+  @extend %longquote;
 
   > p {
     line-height: $superquote-line-height-small;
@@ -9,20 +9,20 @@ super-quote > blockquote,
 }
 
 .superquote__zigzag {
-  @extend .longquote__zigzag;
+  @extend %longquote__zigzag;
 }
 
 .superquote__author {
-  @extend .longquote__author;
+  @extend %longquote__author;
 }
 
 .superquote__role {
-  @extend .longquote__role;
+  @extend %longquote__role;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .superquote {
-    @extend .longquote;
+    @extend %longquote;
 
     > p {
       line-height: $superquote-line-height;
