@@ -1,0 +1,50 @@
+long-quote > blockquote,
+.longquote {
+  margin-bottom: $content-spacer-header;
+  text-align: center;
+
+  > p {
+    @extend %heading-font-heavy;
+    line-height: $longquote-line-height-small;
+    color: $brand-interaction;
+    font-size: $longquote-font-size-small;
+
+    &::before {
+      content: '„';
+    }
+
+    &::after {
+      content: '“';
+    }
+  }
+}
+
+.longquote__zigzag {
+  @extend %zigzag;
+
+  display: block;
+  margin: 0 auto $spacer-base;
+  width: 80%;
+}
+
+.longquote__author {
+  @extend %author-name;
+  display: block;
+}
+
+.longquote__role {
+  @extend %author-role;
+}
+
+.longquote__avatar {
+  margin-bottom: $spacer-xs;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .longquote {
+    > p {
+      line-height: $longquote-line-height;
+      font-size: $longquote-font-size;
+    }
+  }
+}

@@ -212,6 +212,14 @@ $author-bio-name-line-height: 1.1;                 // ~17,6px
 $author-bio-name-font-size-small: ms(-1);          // ~14px
 $author-bio-name-line-height-small: 1;             // ~14px
 
+//
+// Long-Quote
+//
+
+$longquote-font-size: ms(6);                        // ~28px
+$longquote-font-size-small: ms(4);                  // ~23px
+$longquote-line-height: $base-line-height;          // ~48px
+$longquote-line-height-small: $base-line-height;    // ~36px
 
 //
 // Super-Quote

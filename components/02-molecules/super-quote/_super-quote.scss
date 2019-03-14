@@ -1,44 +1,30 @@
 super-quote > blockquote,
 .superquote {
-  margin-bottom: $content-spacer-base;
-  text-align: center;
-
-  .superquote__zigzag {
-    @extend %zigzag;
-
-    display: block;
-    margin: 0 auto $spacer-base;
-    width: 80%;
-  }
+  @extend .longquote;
 
   > p {
-    @extend %heading-font-heavy;
     line-height: $superquote-line-height-small;
-    color: $superquote-color;
     font-size: $superquote-font-size-small;
-
-    &::before {
-      content: '„';
-    }
-
-    &::after {
-      content: '“';
-    }
   }
+}
 
-  .superquote__author {
-    @extend %author-name;
-    display: block;
-  }
+.superquote__zigzag {
+  @extend .longquote__zigzag;
+}
 
-  .superquote__role {
-    @extend %author-role;
-  }
+.superquote__author {
+  @extend .longquote__author;
+}
+
+.superquote__role {
+  @extend .longquote__role;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .superquote {
-    p {
+    @extend .longquote;
+
+    > p {
       line-height: $superquote-line-height;
       font-size: $superquote-font-size;
     }

@@ -5,3 +5,4 @@ components/index.js
 public/**/*
 .DS_Store
 .vscode
+*.sublime-workspace
