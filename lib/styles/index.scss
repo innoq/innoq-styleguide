@@ -78,25 +78,32 @@
 // the categories of Atomic Design. So they are either atoms or molecules
 // (composed atoms).
 
+//
+// ATOMS
+//
+
 // Form atoms
-@import '../components/01-atoms/form/button/button';
-@import '../components/01-atoms/form/checkbox/checkbox';
-@import '../components/01-atoms/form/form-label/form-label';
-@import '../components/01-atoms/form/form-control/form-control';
-@import '../components/01-atoms/form/form-text/form-text';
-@import '../components/01-atoms/form/fieldset/fieldset';
-@import '../components/01-atoms/form/legend/legend';
-@import '../components/01-atoms/form/radio/radio';
+@import '../components/01-atoms/input-elements/alert/alert';
+@import '../components/01-atoms/input-elements/button/button';
+@import '../components/01-atoms/input-elements/button-group/button-group';
+@import '../components/01-atoms/input-elements/checkbox/checkbox';
+@import '../components/01-atoms/input-elements/form-control/form-control';
+@import '../components/01-atoms/input-elements/form-group/form-group';
+@import '../components/01-atoms/input-elements/form-label/form-label';
+@import '../components/01-atoms/input-elements/form-text/form-text';
+@import '../components/01-atoms/input-elements/fieldset/fieldset';
+@import '../components/01-atoms/input-elements/legend/legend';
+@import '../components/01-atoms/input-elements/radio/radio';
 
 // Media atoms
 @import '../components/01-atoms/media/avatar/avatar';
+@import '../components/01-atoms/media/embed-responsive/embed-responsive';
 @import '../components/01-atoms/media/figure/figure';
 @import '../components/01-atoms/media/icon/icon';
 @import '../components/01-atoms/media/image/image';
 
-// Miscellaneous atoms
-@import '../components/01-atoms/misc/zigzag/zigzag';
-@import '../components/01-atoms/misc/collapse-toggler/collapse-toggler';
+// Toggler atoms
+@import '../components/01-atoms/togglers/collapse-toggler/collapse-toggler';
 
 // Inline text atoms
 @import '../components/01-atoms/text/inline/link/link';
@@ -116,59 +123,25 @@
 @import '../components/01-atoms/text/block/tag-list/tag-list';
 @import '../components/01-atoms/text/block/table/table';
 
-// Molecules
-@import '../components/02-molecules/alert/alert';
-@import '../components/02-molecules/author-bio/author-bio';
-@import '../components/02-molecules/button-group/button-group';
-@import '../components/02-molecules/conclusion/conclusion';
-@import '../components/02-molecules/card/card';
-@import '../components/02-molecules/content-separator/content-separator';
-@import '../components/02-molecules/date-location-section/date-location-section';
-@import '../components/02-molecules/eyecatcher/eyecatcher';
-@import '../components/02-molecules/footnote-section/footnote-section';
-@import '../components/02-molecules/info-box/info-box';
-@import '../components/02-molecules/long-quote/long-quote';
-@import '../components/02-molecules/reference/reference';
-@import '../components/02-molecules/share-section/share-section';
-@import '../components/02-molecules/super-quote/super-quote';
-@import '../components/02-molecules/table-of-contents/table-of-contents';
-@import '../components/02-molecules/tag-section/tag-section';
-@import '../components/02-molecules/visual-divider/image-divider-center/image-divider-center';
-@import '../components/02-molecules/visual-divider/image-divider-right/image-divider-right';
-@import '../components/02-molecules/visual-divider/wall-note/wall-note';
-@import '../components/02-molecules/visual-divider/triplet-divider/triplet-divider';
-@import '../components/02-molecules/visual-divider/two-column-image-divider/two-column-image-divider';
-@import '../components/02-molecules/visual-divider/icon-divider/icon-divider';
-@import '../components/02-molecules/newsletter-optin/newsletter-optin';
+// Visual elements atoms
+@import '../components/01-atoms/visual-elements/zigzag/zigzag';
 
-// Header Molecules
-@import '../components/02-molecules/header/claim-header/claim-header';
-@import '../components/02-molecules/header/image-header/image-header';
-@import '../components/02-molecules/header/landing-page-header/landing-page-header';
-@import '../components/02-molecules/header/staff-header/staff-header';
-@import '../components/02-molecules/header/standard-header/standard-header';
-@import '../components/02-molecules/header/text-header/text-header';
-@import '../components/02-molecules/header/topic-header/topic-header';
+//
+// MOLECULES
+//
 
-
-// Teaser Molecules
-@import '../components/02-molecules/teaser/list-teaser/abstract-list-teaser/abstract-list-teaser';
-@import '../components/02-molecules/teaser/list-teaser/case-list-teaser/case-list-teaser';
-@import '../components/02-molecules/teaser/list-teaser/event-list-teaser/event-list-teaser';
-@import '../components/02-molecules/teaser/list-teaser/podcast-list-teaser/podcast-list-teaser';
-@import '../components/02-molecules/teaser/list-teaser/project-list-teaser/project-list-teaser';
-@import '../components/02-molecules/teaser/list-teaser/simple-list-teaser/simple-list-teaser';
-@import '../components/02-molecules/teaser/list-teaser/topic-list-teaser/topic-list-teaser';
-@import '../components/02-molecules/teaser/list-teaser/training-list-teaser/training-list-teaser';
-@import '../components/02-molecules/teaser/list-teaser/product-list-teaser/product-list-teaser';
-
-@import '../components/02-molecules/teaser/tile-teaser/big-content-tile-teaser/big-content-tile-teaser';
-@import '../components/02-molecules/teaser/tile-teaser/case-tile-teaser/case-tile-teaser';
-@import '../components/02-molecules/teaser/tile-teaser/content-tile-teaser/content-tile-teaser';
-@import '../components/02-molecules/teaser/tile-teaser/event-tile-teaser/event-tile-teaser';
-@import '../components/02-molecules/teaser/tile-teaser/podcast-tile-teaser/podcast-tile-teaser';
-@import '../components/02-molecules/teaser/tile-teaser/simple-tile-teaser/simple-tile-teaser';
-
+// Article and blog post molecules
+@import '../components/02-molecules/article&blog-post-elements/author-bio/author-bio';
+@import '../components/02-molecules/article&blog-post-elements/conclusion/conclusion';
+@import '../components/02-molecules/article&blog-post-elements/content-separator/content-separator';
+@import '../components/02-molecules/article&blog-post-elements/footnote-section/footnote-section';
+@import '../components/02-molecules/article&blog-post-elements/info-box/info-box';
+@import '../components/02-molecules/article&blog-post-elements/quotes/long-quote/long-quote';
+@import '../components/02-molecules/article&blog-post-elements/reference/reference';
+@import '../components/02-molecules/article&blog-post-elements/share-section/share-section';
+@import '../components/02-molecules/article&blog-post-elements/quotes/super-quote/super-quote';
+@import '../components/02-molecules/article&blog-post-elements/table-of-contents/table-of-contents';
+@import '../components/02-molecules/article&blog-post-elements/tag-section/tag-section';
 
 // Dropdown
 @import '../components/02-molecules/dropdown/dropdown';
@@ -176,38 +149,75 @@
 // Navbar
 @import '../components/02-molecules/navbar/navbar';
 
-// Forms
-@import '../components/02-molecules/form/form-group/form-group';
-
 // Search
 @import '../components/02-molecules/search/search-form/search-form';
 @import '../components/02-molecules/search/search-result/search-result';
 
+// Visual elements
+@import '../components/02-molecules/visual-elements/card/card';
+@import '../components/02-molecules/visual-elements/date-location-section/date-location-section';
+@import '../components/02-molecules/visual-elements/eyecatcher/eyecatcher';
+
+// Header Molecules
+@import '../components/02-molecules/visual-elements/header/claim-header/claim-header';
+@import '../components/02-molecules/visual-elements/header/image-header/image-header';
+@import '../components/02-molecules/visual-elements/header/landing-page-header/landing-page-header';
+@import '../components/02-molecules/visual-elements/header/staff-header/staff-header';
+@import '../components/02-molecules/visual-elements/header/standard-header/standard-header';
+@import '../components/02-molecules/visual-elements/header/text-header/text-header';
+@import '../components/02-molecules/visual-elements/header/topic-header/topic-header';
+
+@import '../components/02-molecules/visual-elements/newsletter-optin/newsletter-optin';
+
 // Paginator
-@import '../components/02-molecules/paginator/paginator';
+@import '../components/02-molecules/visual-elements/paginator/paginator';
+
+// Service Intro
+@import '../components/02-molecules/visual-elements/service-intro/service-intro';
+@import '../components/02-molecules/visual-elements/dialog-banner/dialog-banner';
 
 // Social Media Bar
-@import '../components/02-molecules/social-media-bar/social-media-bar';
+@import '../components/02-molecules/visual-elements/social-media-bar/social-media-bar';
+
+// Teaser Molecules
+@import '../components/02-molecules/visual-elements/teaser/list-teaser/abstract-list-teaser/abstract-list-teaser';
+@import '../components/02-molecules/visual-elements/teaser/list-teaser/case-list-teaser/case-list-teaser';
+@import '../components/02-molecules/visual-elements/teaser/list-teaser/event-list-teaser/event-list-teaser';
+@import '../components/02-molecules/visual-elements/teaser/list-teaser/podcast-list-teaser/podcast-list-teaser';
+@import '../components/02-molecules/visual-elements/teaser/list-teaser/project-list-teaser/project-list-teaser';
+@import '../components/02-molecules/visual-elements/teaser/list-teaser/simple-list-teaser/simple-list-teaser';
+@import '../components/02-molecules/visual-elements/teaser/list-teaser/topic-list-teaser/topic-list-teaser';
+@import '../components/02-molecules/visual-elements/teaser/list-teaser/training-list-teaser/training-list-teaser';
+@import '../components/02-molecules/visual-elements/teaser/list-teaser/product-list-teaser/product-list-teaser';
+
+@import '../components/02-molecules/visual-elements/teaser/tile-teaser/big-content-tile-teaser/big-content-tile-teaser';
+@import '../components/02-molecules/visual-elements/teaser/tile-teaser/case-tile-teaser/case-tile-teaser';
+@import '../components/02-molecules/visual-elements/teaser/tile-teaser/content-tile-teaser/content-tile-teaser';
+@import '../components/02-molecules/visual-elements/teaser/tile-teaser/event-tile-teaser/event-tile-teaser';
+@import '../components/02-molecules/visual-elements/teaser/tile-teaser/podcast-tile-teaser/podcast-tile-teaser';
+@import '../components/02-molecules/visual-elements/teaser/tile-teaser/simple-tile-teaser/simple-tile-teaser';
+
+@import '../components/02-molecules/visual-elements/visual-divider/image-divider-center/image-divider-center';
+@import '../components/02-molecules/visual-elements/visual-divider/image-divider-right/image-divider-right';
+@import '../components/02-molecules/visual-elements/visual-divider/wall-note/wall-note';
+@import '../components/02-molecules/visual-elements/visual-divider/triplet-divider/triplet-divider';
+@import '../components/02-molecules/visual-elements/visual-divider/two-column-image-divider/two-column-image-divider';
+@import '../components/02-molecules/visual-elements/visual-divider/icon-divider/icon-divider';
 
 // Toolbar
-@import '../components/02-molecules/toolbar/toolbar';
+@import '../components/02-molecules/visual-elements/toolbar/toolbar';
 
-// Service Intro
-@import '../components/02-molecules/service-intro/service-intro';
-
-// Service Intro
-@import '../components/02-molecules/dialog-banner/dialog-banner';
-
-// Embed Responsive
-@import '../components/02-molecules/embed-responsive/embed-responsive';
-
-// Organisms
+//
+// ORGANISMS
+//
 @import '../components/03-organisms/article-intro/article-intro';
 @import '../components/03-organisms/search-result-list/search-result-list';
 @import '../components/03-organisms/form/form';
 @import '../components/03-organisms/footer/footer';
 
-// Pages
+//
+// PAGES
+//
 @import '../components/04-pages/aggregator-page/aggregator-page';
 @import '../components/04-pages/article-page/article-page';
 @import '../components/04-pages/booking-page/booking-page';
