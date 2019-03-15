@@ -43,20 +43,24 @@ export default class Navbar extends HTMLElement {
     ])
 
     // enhance drill down ux
-    // (copy dropdown heading link into dropdown list)
-    this.dropdownPrimaryLinks.forEach((link) => {
+    // (copy dropdown heading link into dropdown list if not present)
+    this.dropdownPrimaryLinks.forEach(link => {
+
       let targetDropdownList = link.parentNode.querySelector('.dropdown__list')
 
-      let anchorClone = document.createElement('a')
-      anchorClone.classList.add('dropdown__link', 'dropdown__link--navbar', 'navbtn')
-      anchorClone.setAttribute('href', link.getAttribute('href'))
-      anchorClone.textContent = link.textContent
+      if (!targetDropdownList.querySelector(".dropdown__item--clone")) {
 
-      let newListItem = document.createElement('li')
-      newListItem.classList.add('dropdown__item', 'dropdown__item--navbar', 'dropdown__item--clone')
-      newListItem.appendChild(anchorClone)
+        let anchorClone = document.createElement('a')
+        anchorClone.classList.add('dropdown__link', 'dropdown__link--navbar', 'navbtn')
+        anchorClone.setAttribute('href', link.getAttribute('href'))
+        anchorClone.textContent = link.textContent
 
-      targetDropdownList.insertBefore(newListItem, targetDropdownList.firstChild)
+        let newListItem = document.createElement('li')
+        newListItem.classList.add('dropdown__item', 'dropdown__item--navbar', 'dropdown__item--clone')
+        newListItem.appendChild(anchorClone)
+
+        targetDropdownList.insertBefore(newListItem, targetDropdownList.firstChild)
+      }
     })
 
     // apply several event listeners
