@@ -30,15 +30,16 @@
 // see: http://clagnut.com/blog/2395
 
 %improved-hyphenation-headlines {
+  // sass-lint:disable-block no-vendor-prefixes no-misspelled-properties
   hyphens: auto;
   hyphenate-limit-lines: 1;
   hyphenate-limit-last: always;
 
-  /* legacy properties */
+  // legacy properties
   -webkit-hyphenate-limit-before: 4;
   -webkit-hyphenate-limit-after: 4;
 
-  /* current proposal */
+  // current proposal
   -moz-hyphenate-limit-chars: 9 4 4;
   -webkit-hyphenate-limit-chars: 9 4 4;
   -ms-hyphenate-limit-chars: 9 4 4;
@@ -48,15 +49,16 @@
 }
 
 %improved-hyphenation-text {
+  // sass-lint:disable-block no-vendor-prefixes no-misspelled-properties
   hyphens: auto;
   hyphenate-limit-lines: 2;
   hyphenate-limit-last: always;
 
-  /* legacy properties */
+  // legacy properties
   -webkit-hyphenate-limit-before: 4;
   -webkit-hyphenate-limit-after: 4;
 
-  /* current proposal */
+  // current proposal
   -moz-hyphenate-limit-chars: 6 4 4;
   -webkit-hyphenate-limit-chars: 6 4 4;
   -ms-hyphenate-limit-chars: 6 4 4;
