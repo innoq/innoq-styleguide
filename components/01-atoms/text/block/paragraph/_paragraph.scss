@@ -6,7 +6,7 @@ p {
   font-size: $paragraph-font-size-small;
 
   &:not([class]) {
-    hyphens: auto;
+    @extend %improved-hyphenation-text;
   }
 
   &.lead {

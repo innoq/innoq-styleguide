@@ -25,6 +25,46 @@
 // Mixins and Placeholders
 //
 
+// hyphenation
+//
+// see: http://clagnut.com/blog/2395
+
+%improved-hyphenation-headlines {
+  hyphens: auto;
+  hyphenate-limit-lines: 1;
+  hyphenate-limit-last: always;
+
+  /* legacy properties */
+  -webkit-hyphenate-limit-before: 4;
+  -webkit-hyphenate-limit-after: 4;
+
+  /* current proposal */
+  -moz-hyphenate-limit-chars: 9 4 4;
+  -webkit-hyphenate-limit-chars: 9 4 4;
+  -ms-hyphenate-limit-chars: 9 4 4;
+  hyphenate-limit-chars: 9 4 4;
+
+  // hyphenate-limit-zone: 8%
+}
+
+%improved-hyphenation-text {
+  hyphens: auto;
+  hyphenate-limit-lines: 2;
+  hyphenate-limit-last: always;
+
+  /* legacy properties */
+  -webkit-hyphenate-limit-before: 4;
+  -webkit-hyphenate-limit-after: 4;
+
+  /* current proposal */
+  -moz-hyphenate-limit-chars: 6 4 4;
+  -webkit-hyphenate-limit-chars: 6 4 4;
+  -ms-hyphenate-limit-chars: 6 4 4;
+  hyphenate-limit-chars: 6 4 4;
+
+  // hyphenate-limit-zone: 8%
+}
+
 %manual-hyphenation {
   overflow-wrap: break-word;
   word-wrap: normal;
