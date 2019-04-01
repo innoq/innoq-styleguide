@@ -1,6 +1,6 @@
 import { createElement } from 'complate-stream'
 import classNames from 'classnames'
-import Button from '../../../../01-atoms/form/button/index.jsx'
+import Button from '../../../../../01-atoms/input-elements/button/index.jsx'
 
 export default function CaseListTeaser ({ header, caption, href, linkText, simple, punchIn, withButton, additionalClasses, headerAdditionalClasses, align }, ...children) {
   let leftAligned = (align === 'left')

@@ -1,5 +1,5 @@
 import { createElement } from 'complate-stream'
-import Button from '../../../../01-atoms/form/button/index.jsx'
+import Button from '../../../../../01-atoms/input-elements/button/index.jsx'
 
 export default function SimpleTileTeaser ({ title, subtitle, buttonText, href, buttonHref }) {
   return <div class='simple-teaser'>
