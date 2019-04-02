@@ -22,7 +22,7 @@ $case-tile-teaser-sm-height: ms(32);
   display: flex;
   flex-direction: column;
   background-size: cover;
-  padding: $spacer-xl $spacer-lg;
+  padding: $spacer-sm $spacer-xs;
 }
 
 .case-tile-teaser__content {
@@ -31,7 +31,7 @@ $case-tile-teaser-sm-height: ms(32);
   flex-grow: 1;
   justify-content: space-between;
   background-color: $case-tile-teaser-body-bg-color;
-  padding: $spacer-lg;
+  padding: $spacer-md;
 }
 
 .case-tile-teaser__body {
@@ -45,13 +45,10 @@ $case-tile-teaser-sm-height: ms(32);
 
 .case-tile-teaser__headline {
   margin: $spacer-xs 0;
-  padding: 0 $spacer-md;
 }
 
 .case-tile-teaser__text {
   @extend %teaser-text-italic;
-  margin: $spacer-md 0;
-  padding: 0 $spacer-md;
 }
 
 .case-tile-teaser__goto {
@@ -81,4 +78,18 @@ $case-tile-teaser-sm-height: ms(32);
 .case-tile-teaser__text--sm {
   margin-bottom: $spacer-xs;
   font-size: $teaser-text-font-size-italic-small;
+}
+
+//
+// Breakpoints
+//
+@media screen and (min-width: $grid-breakpoint-md) {
+  .case-tile-teaser {
+    padding: $spacer-xl $spacer-lg;
+  }
+
+  .case-tile-teaser__content {
+    padding: $spacer-lg;
+  }
+
 }
