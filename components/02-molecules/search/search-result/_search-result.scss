@@ -15,8 +15,10 @@
   @extend %heading-font-regular;
 }
 
-.search-result__type:after {
-  content: " | ";
+.search-result__type {
+  &::after {
+    content: ' | ';
+  }
 }
 
 .search-result__title {
