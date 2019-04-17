@@ -10,8 +10,13 @@
   }
 }
 
-.search-result__date {
+.search-result__date,
+.search-result__type {
   @extend %heading-font-regular;
+}
+
+.search-result__type:after {
+  content: " | ";
 }
 
 .search-result__title {
