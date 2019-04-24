@@ -24,9 +24,26 @@
 .search-result__title {
   @extend %h3;
   transition: standard-transition(color);
+  margin-bottom: 0;
 
   // Fix Google CSE markup and the resulting style
   b {
     font-weight: normal;
   }
+}
+
+.search-result__subtitle {
+  @extend %h4;
+  transition: standard-transition(color);
+  margin-bottom: 0;
+  margin-top: $spacer-xxs;
+
+  // Fix Google CSE markup and the resulting style
+  b {
+    font-weight: normal;
+  }
+}
+
+.search-result__body {
+  margin-top: $spacer-sm;
 }
