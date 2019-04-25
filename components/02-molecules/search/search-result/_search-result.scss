@@ -15,8 +15,9 @@
   @extend %heading-font-regular;
 }
 
-.search-result__type {
-  &::after {
+.search-result__type +
+.search-result__date {
+  &::before {
     content: ' | ';
   }
 }
