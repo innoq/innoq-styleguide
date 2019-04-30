@@ -21,4 +21,8 @@
     display: flex;
     justify-content: center;
   }
+
+  &--black {
+    background-color: $brand-gray;
+  }
 }
