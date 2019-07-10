@@ -94,7 +94,7 @@ rules:
   leading-zero: 2
   max-line-length: 0
   max-file-line-count: 0
-  nesting-depth: 2
+  nesting-depth: 0
   property-sort-order:
     - 2
     -
