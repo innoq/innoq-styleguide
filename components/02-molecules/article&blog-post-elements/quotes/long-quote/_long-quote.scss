@@ -10,12 +10,24 @@ long-quote > blockquote,
     color: $brand-interaction;
     font-size: $longquote-font-size-small;
 
-    &::before {
-      content: '„';
+    &:lang(de) {
+      &::before {
+        content: '„';
+      }
+
+      &::after {
+        content: '“';
+      }
     }
 
-    &::after {
-      content: '“';
+    &:lang(en) {
+      &::before {
+        content: '“';
+      }
+
+      &::after {
+        content: '”';
+      }
     }
   }
 }
