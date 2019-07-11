@@ -2,7 +2,7 @@ $event-list-teaser-height: ms(34);
 
 .list-teaser-event {
   &.tile {
-    min-height: $event-list-teaser-height;
     margin-bottom: 0;
+    min-height: $event-list-teaser-height;
   }
 }
