@@ -1,12 +1,12 @@
 export default class MultiToggler extends HTMLElement {
   connectedCallback () {
-    let targetSelector = this.getAttribute('data-target')
-    let hasNextElementSiblingTarget = this.hasAttribute('data-target-next')
+    const targetSelector = this.getAttribute('data-target')
+    const hasNextElementSiblingTarget = this.hasAttribute('data-target-next')
     this.toggleClass = this.getAttribute('data-toggle-class')
-    let initClass = this.getAttribute('data-init-class')
-    let toggleOnInit = this.hasAttribute('data-toggle-on-init')
+    const initClass = this.getAttribute('data-init-class')
+    const toggleOnInit = this.hasAttribute('data-toggle-on-init')
     this.toggleSelfClass = this.getAttribute('data-toggle-self-class')
-    let initSelfClass = this.getAttribute('data-init-self-class')
+    const initSelfClass = this.getAttribute('data-init-self-class')
 
     this.targetElements = []
     if (targetSelector) {

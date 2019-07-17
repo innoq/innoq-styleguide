@@ -2,8 +2,8 @@ import { createElement } from 'complate-stream'
 import classNames from 'classnames'
 
 export default function StandardHeader ({ contentType, title, subtitle, introTitle, date, additionalClassnames, titleSeparated, headerStyle }, ...children) {
-  let headerClass = classNames('standard-header', additionalClassnames)
-  let titleClass = classNames('standard-header__title', { 'standard-header__title--separated': titleSeparated })
+  const headerClass = classNames('standard-header', additionalClassnames)
+  const titleClass = classNames('standard-header__title', { 'standard-header__title--separated': titleSeparated })
 
   return <header class={headerClass} style={headerStyle}>
     { contentType ? <h3 class='standard-header__type'>{contentType}</h3> : ''}

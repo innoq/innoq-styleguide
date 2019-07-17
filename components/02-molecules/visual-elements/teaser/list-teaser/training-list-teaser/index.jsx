@@ -2,8 +2,8 @@ import { createElement } from 'complate-stream'
 import classNames from 'classnames'
 
 export default function TrainingListTeaser ({ primary, secondary, title, subtitle, linkText, href }, ...children) {
-  let teaserClass = classNames({ ' list-teaser-training primary': primary }, { 'list-teaser-training secondary': secondary })
-  let linkTeaserClass = classNames('link-teaser', {
+  const teaserClass = classNames({ ' list-teaser-training primary': primary }, { 'list-teaser-training secondary': secondary })
+  const linkTeaserClass = classNames('link-teaser', {
     'inverted-text-color': primary,
     'inverted-interaction-color': secondary
   })

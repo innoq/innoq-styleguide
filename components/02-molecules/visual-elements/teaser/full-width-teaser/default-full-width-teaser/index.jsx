@@ -3,8 +3,8 @@ import classNames from 'classnames'
 import Button from '../../../../../01-atoms/input-elements/button/index.jsx'
 
 export default function DefaultFullWidthTeaser ({ header, caption, href, linkText, simple, punchIn, withButton, additionalClasses, headerAdditionalClasses, align }, ...children) {
-  let leftAligned = (align === 'left')
-  let classname = classNames('default-full-width-teaser', { 'default-full-width-teaser--simple': simple, 'default-full-width-teaser--left-aligned': leftAligned }, additionalClasses)
+  const leftAligned = (align === 'left')
+  const classname = classNames('default-full-width-teaser', { 'default-full-width-teaser--simple': simple, 'default-full-width-teaser--left-aligned': leftAligned }, additionalClasses)
   let headerClass
   if (punchIn) {
     headerClass = classNames('punch-in', headerAdditionalClasses)

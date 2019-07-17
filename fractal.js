@@ -15,8 +15,8 @@ const complate = require('complate-fractal')
  */
 const fractal = module.exports = require('@frctl/fractal').create()
 const fractalTheme = require('@frctl/mandelbrot')({
-  'skin': 'black',
-  'styles': [
+  skin: 'black',
+  styles: [
     'default',
     '/assets/styleguide-theme.css'
   ]

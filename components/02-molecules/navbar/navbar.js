@@ -45,14 +45,14 @@ export default class Navbar extends HTMLElement {
     // enhance drill down ux
     // (copy dropdown heading link into dropdown list if not present)
     this.dropdownPrimaryLinks.forEach(link => {
-      let targetDropdownList = link.parentNode.querySelector('.dropdown__list')
+      const targetDropdownList = link.parentNode.querySelector('.dropdown__list')
       if (!targetDropdownList.querySelector('.dropdown__item--clone')) {
-        let anchorClone = document.createElement('a')
+        const anchorClone = document.createElement('a')
         anchorClone.classList.add('dropdown__link', 'dropdown__link--navbar', 'navbtn')
         anchorClone.setAttribute('href', link.getAttribute('href'))
         anchorClone.textContent = link.textContent
 
-        let newListItem = document.createElement('li')
+        const newListItem = document.createElement('li')
         newListItem.classList.add('dropdown__item', 'dropdown__item--navbar', 'dropdown__item--clone')
         newListItem.appendChild(anchorClone)
 
