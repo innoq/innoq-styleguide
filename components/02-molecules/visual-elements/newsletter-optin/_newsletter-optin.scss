@@ -10,32 +10,26 @@
   background-size: cover;
   padding: $spacer-lg;
   overflow: hidden;
-  text-align: center;
   color: $newsletter-optin-color;
 }
 
 .newsletter-optin__title {
   @extend %h1;
   margin-bottom: $spacer-sm;
+  text-align: center;
   color: $newsletter-optin-color;
 }
 
 .newsletter-optin__subtitle {
   @extend %h5;
   margin-bottom: $spacer-lg;
+  text-align: center;
   color: $newsletter-optin-color;
 }
 
 .newsletter-optin__form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
   .form-control {
     border: 0;
-    padding: $spacer-sm $spacer-md;
-    font-size: $button-small-font-size;
   }
 }
 
@@ -46,22 +40,5 @@
   .btn {
     flex-grow: 1;
     margin-bottom: 0;
-  }
-}
-
-@media screen and (max-width: $grid-breakpoint-sm) {
-  .newsletter-optin__inputfield {
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-md) {
-  .newsletter-optin__form {
-    display: flex;
-    justify-content: center;
-
-    .form-group {
-      margin-bottom: 0;
-    }
   }
 }

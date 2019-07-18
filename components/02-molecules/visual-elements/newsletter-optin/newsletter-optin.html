@@ -1,20 +1,31 @@
 <div class="newsletter-optin">
     <div class="page-layout-md--default">
-        <div class="newsletter-optin__title">The INNOQ Newsletter</div>
+        <div class="newsletter-optin__title">Newsletter</div>
         <div class="newsletter-optin__subtitle">Nie mehr spannende Artikel, Veranstaltungstipps und Podcasts zu Architektur, Entwicklung und Technologietrends verpassen!</div>
         <remote-form>
             <form class="newsletter-optin__form" action="#" method="post">
-                <div class="form-group newsletter-optin__inputfield">
-                    <label for="newsletter_email" class="sr-only">E-Mail</label>
-                    <input type="email" name="email" value="" class="form-control" id="newsletter_email" placeholder="Your email address" />
-                    <button type="submit" class="btn btn--small btn--cta" data-label="Subscribe">Subscribe</button>
+                <div class="form-group">
+                    <label class="form-label form-label--emphasized" for="newsletter_email">Email</label>
+                    <input type="email" name="newsletter_email" class="form-control" id="newsletter_email" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="newsletter_firstname">
+                        <span class=" form-label--emphasized">Vorname</span> <small>optional</small>
+                    </label>
+                    <input type="text" id="newsletter_firstname" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="newsletter_lastname">
+                        <span class=" form-label--emphasized">Nachname</span> <small>optional</small>
+                    </label>
+                    <input type="text" id="newsletter_lastname" class="form-control" />
                 </div>
                 <div class="form-group">
                     <div class="custom-form-control checkbox">
                         <input id="custom-checkbox-1" type="checkbox" class="form-control__input" />
                         <label for="custom-checkbox-1" class="form-label">Hiermit willige ich in die Erhebung und Verarbeitung der vorstehenden Daten für das Empfangen des monatlichen Newsletters
-                            der innoQ Deutschland GmbH per E-Mail ein.Diese Einwilligung können Sie per E-Mail an info@innoq.com, direkt per Link in der Newsletter-Email oder an die im Impressum
-                            genannten Kontaktdaten jederzeit widerrufen. Die Datenschutzerklärung der innoQ Deutschland GmbH habe ich Kenntnis genommenund bestätige dies mit Absendung des Formulars.</label>
+                            der innoQ Deutschland GmbH per E-Mail ein. Diese Einwilligung kann ich per E-Mail an info@innoq.com, direkt per Link in der Newsletter-Email oder an die im Impressum
+                            genannten Kontaktdaten jederzeit widerrufen. Die Datenschutzerklärung habe ich Kenntnis genommen und bestätige dies mit Absendung des Formulars.</label>
                     </div>
                 </div>
             </form>
