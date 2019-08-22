@@ -144,6 +144,10 @@ dl:not([class]) {
   @extend %definition-list;
 }
 
+.simple-definition-list {
+  @extend %definition-list-simple;
+}
+
 // ---------- Tuple List ----------
 .tuple-list {
   @extend %list-unstyled;
@@ -155,7 +159,7 @@ dl:not([class]) {
 }
 
 .tuple-list__entry {
-  margin-bottom: $container-spacer-y-sm;
+  margin-bottom: $spacer-sm;
 }
 
 .tuple-list__value {
@@ -180,9 +184,3 @@ dl:not([class]) {
     grid-area: value;
   }
 }
-
-// @media screen and (min-width: $grid-breakpoint-lg) {
-//   .tuple-list__entry {
-//     grid-template-columns: 15% 75%;
-//   }
-// }
