@@ -22,7 +22,6 @@ $tuple-list-label-width: 8rem;
 ul:not([class]),
 .bold-list {
   @extend %unsorted-list;
-  @extend %heading-font-regular;
 
   & > li {
     padding-left: $list-indent;
