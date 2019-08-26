@@ -23,8 +23,8 @@ export default function DefaultFullWidthTeaser ({ header, caption, href, linkTex
               {children}
             </div>
             <div class='default-full-width-teaser__footer'>
-              { withButton ? <Button href={href} size='small' cta>{linkText}</Button>
-                : <a href={href} class='link-teaser'>{linkText}</a> }
+              {withButton ? <Button href={href} size='small' cta>{linkText}</Button>
+                : <a href={href} class='link-teaser'>{linkText}</a>}
             </div>
           </div>
         </div>

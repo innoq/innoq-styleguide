@@ -13,5 +13,8 @@
   "plugins": ["react"],
 	"settings": {
 		"react": { "pragma": "createElement" }
-	}
+  },
+  "rules": {
+    "react/jsx-closing-tag-location": "off"
+  }
 }

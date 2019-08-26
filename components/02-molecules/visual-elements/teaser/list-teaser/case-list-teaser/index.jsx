@@ -23,8 +23,8 @@ export default function CaseListTeaser ({ header, caption, href, linkText, simpl
               {children}
             </div>
             <div class='case-teaser__footer'>
-              { withButton ? <Button href={href} size='small' cta>{linkText}</Button>
-                : <a href={href} class='link-teaser'>{linkText}</a> }
+              {withButton ? <Button href={href} size='small' cta>{linkText}</Button>
+                : <a href={href} class='link-teaser'>{linkText}</a>}
             </div>
           </div>
         </div>
