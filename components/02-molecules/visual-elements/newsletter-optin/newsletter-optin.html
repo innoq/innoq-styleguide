@@ -5,18 +5,28 @@
         <remote-form>
             <form class="newsletter-optin__form" action="#" method="post">
                 <div class="form-group">
-                    <div class="custom-form-control checkbox">
-                        <input id="custom-checkbox-1" type="checkbox" class="form-control__input" />
+                    <check-to-toggle class="custom-form-control checkbox" target="#newsletter-checkbox-innoq">
+                        <input id="custom-checkbox-1" type="checkbox" class="form-control__input  check-to-toggle__checkbox" />
                         <label for="custom-checkbox-1" class="form-label">
-                            <span class="form-label--emphasized">den INNOQ Newsletter</span><br/>spannende Artikel, Veranstaltungstipps und Podcasts zu Architektur, Entwicklung und Technologietrends.
+                            <span class="form-label--emphasized">Der INNOQ Newsletter</span><br/>Spannende Artikel, Veranstaltungstipps und Podcasts zu Architektur, Entwicklung und Technologietrends. Erscheint 1 mal pro Monat.
+                            <span id="newsletter-checkbox-innoq" class="hidden">
+                                <br/><br/>Hiermit willige ich in die Erhebung und Verarbeitung der vorstehenden Daten für den Empfang des monatlichen Newsletters
+                                der innoQ Schweiz GmbH per E-Mail ein. Die <a href="https://www.innoq.com/datenschutz/#innoqnewsletter" class="link-teaser inverted-interaction-color">Datenschutzhinweise</a> nach EU DSGVO habe ich zur Kenntnis genommen und bestätige dies mit Absendung des Formulars.
+                            </span>
                         </label>
-                    </div>
-                    <div class="custom-form-control checkbox">
-                        <input id="custom-checkbox-1" type="checkbox" class="form-control__input" />
-                        <label for="custom-checkbox-1" class="form-label">
-                            <span class="form-label--emphasized">das Digitale Rauchzeichen</span><br/>Success Stories aus Digitalisierung und Modernisierung von INNOQ Schweiz. Erscheint max. 4 mal pro Jahr.
+                    </check-to-toggle>
+                </div>
+                <div class="form-group">
+                    <check-to-toggle class="custom-form-control checkbox" target="#newsletter-checkbox-rauchzeichen">
+                        <input id="custom-checkbox-2" type="checkbox" class="form-control__input check-to-toggle__checkbox" />
+                        <label for="custom-checkbox-2" class="form-label">
+                            <span class="form-label--emphasized">Das Digitale Rauchzeichen</span><br/>Success Stories aus Digitalisierung und Modernisierung von INNOQ Schweiz. Erscheint max. 4 mal pro Jahr.
+                            <span id="newsletter-checkbox-rauchzeichen" class="hidden">
+                                <br/><br/>Hiermit willige ich in die Erhebung und Verarbeitung der vorstehenden Daten für den Empfang des Newsletters
+                                der innoQ Schweiz GmbH per E-Mail ein. Die <a href="https://www.innoq.com/datenschutz/#newsletter:dasdigitalerauchzeichen" class="link-teaser inverted-interaction-color">Datenschutzhinweise</a> nach EU DSGVO habe ich zur Kenntnis genommen und bestätige dies mit Absendung des Formulars.
+                            </span>
                         </label>
-                    </div>
+                    </check-to-toggle>
                 </div>
                 <div class="form-group">
                     <label class="form-label form-label--emphasized" for="newsletter_email">Email</label>
@@ -34,18 +44,18 @@
                     </label>
                     <input type="text" id="newsletter_lastname" class="form-control" />
                 </div>
-                <div class="form-group">
+                <div class="form-group hidden">
                     <div class="custom-form-control checkbox">
-                        <input id="custom-checkbox-1" type="checkbox" class="form-control__input" />
+                        <input id="custom-checkbox-1" type="checkbox" class="form-control__input" required />
                         <label for="custom-checkbox-1" class="form-label">Hiermit willige ich in die Erhebung und Verarbeitung der vorstehenden Daten für den Empfang des monatlichen Newsletters
-                            der innoQ Deutschland GmbH per E-Mail ein. Die <a href="#" class="link-teaser inverted-interaction-color">Datenschutzhinweise</a> nach EU DSGVO habe ich zur Kenntnis genommen und bestätige dies mit Absendung des Formulars.</label>
+                            der innoQ Deutschland GmbH per E-Mail ein. Die <a href="https://www.innoq.com/datenschutz/#newsletter" class="link-teaser inverted-interaction-color">Datenschutzhinweise</a> nach EU DSGVO habe ich zur Kenntnis genommen und bestätige dies mit Absendung des Formulars.</label>
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group hidden" id="newsletter-checkbox-rauchzeichen">
                     <div class="custom-form-control checkbox">
-                        <input id="custom-checkbox-2" type="checkbox" class="form-control__input" />
-                        <label for="custom-checkbox-2" class="form-label">Hiermit willige ich in die Erhebung und Verarbeitung der vorstehenden Daten für den Empfang des Digitalen Rauchzeichens
-                            der innoQ Schweiz GmbH per E-Mail ein. Meine Daten unterliegen dem Schweizer Datenschutzgesetz, Art. 13.</label>
+                        <input id="custom-checkbox-2" type="checkbox" class="form-control__input" required />
+                        <label for="custom-checkbox-2" class="form-label">Hiermit willige ich in die Erhebung und Verarbeitung der vorstehenden Daten für den Empfang des monatlichen Newsletters
+                            der innoQ Schweiz GmbH per E-Mail ein. Die <a href="https://www.innoq.com/datenschutz/#newsletter" class="link-teaser inverted-interaction-color">Datenschutzhinweise</a> nach EU DSGVO habe ich zur Kenntnis genommen und bestätige dies mit Absendung des Formulars.</label>
                     </div>
                 </div>
             </form>
