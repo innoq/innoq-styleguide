@@ -1,5 +1,4 @@
 {
-  "pkgFiles": ["package.json"],
   "increment": "patch",
   "changelogCommand": "git log --pretty=format:\"* %s (%h)\" [REV_RANGE]",
   "requireCleanWorkingDir": false,
