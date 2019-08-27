@@ -4,7 +4,7 @@ export default class CheckToToggle extends HTMLElement {
   }
 
   get checkbox () {
-    return this.querySelector('.check-to-toggle__checkbox')
+    return this.querySelector('input[type="checkbox"]')
   }
 
   get target () {
