@@ -13,10 +13,6 @@ export default class CheckToToggle extends HTMLElement {
   }
 
   toggle () {
-    if (this.checkbox.checked) {
-      this.target.classList.add('hidden')
-    } else {
-      this.target.classList.remove('hidden')
-    }
+    this.target.classList.toggle('hidden')
   }
 }
