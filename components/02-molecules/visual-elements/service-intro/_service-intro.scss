@@ -9,6 +9,7 @@
 }
 
 .service-intro__header {
+  @extend %h1;
   margin-bottom: $spacer-md;
   font-size: $service-intro-header-font-size-small;
 }

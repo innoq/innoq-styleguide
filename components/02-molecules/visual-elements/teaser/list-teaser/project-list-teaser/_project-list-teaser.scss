@@ -17,6 +17,7 @@
 }
 
 .project-index__title {
+  @extend %h1;
   display: inline-block;
   margin: 0;
   background-color: $project-index-text-color;
