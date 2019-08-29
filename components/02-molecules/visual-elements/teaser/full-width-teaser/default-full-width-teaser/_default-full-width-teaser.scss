@@ -46,6 +46,11 @@ $default-full-width-teaser-height: ms(38);
   padding-bottom: 0;
   color: $default-full-width-teaser-body-color;
 
+  h2 {
+    line-height: $h1-line-height;
+    font-size: $h1-font-size;
+  }
+
   .punch-in {
     line-height: 1.31; // fix cut descender
   }

@@ -17,7 +17,7 @@ export default function DefaultFullWidthTeaser ({ header, caption, href, linkTex
           <div class='default-full-width-teaser__caption'>{caption}</div>
           <div>
             <div class='default-full-width-teaser__header'>
-              <h1 class={headerClass}>{header}</h1>
+              <h2 class={headerClass}>{header}</h2>
             </div>
             <div class='default-full-width-teaser__text'>
               {children}
