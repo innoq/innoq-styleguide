@@ -106,7 +106,7 @@ $navbar-drill-transition: left .5s ease;
 }
 
 .navbtn--meta {
-  margin-right: $spacer-base;
+  margin-right: $spacer-base * .55;
 
   &.navbtn--locale {
     margin-right: 2px;
@@ -152,10 +152,11 @@ $navbar-drill-transition: left .5s ease;
   order: 4;
   background-color: $navbar-lightened-bg;
   padding: $spacer-sm;
+  padding-right: 0;
   width: 100%;
   height: $navbar-bottombar-height-small;
   text-transform: uppercase;
-  font-size: $navbar-secondary-font-size;
+  font-size: $navbar-secondary-font-size * .9;
 }
 
 //
