@@ -106,7 +106,7 @@ $navbar-drill-transition: left .5s ease;
 }
 
 .navbtn--meta {
-  margin-right: $spacer-base * 0.55;
+  margin-right: $spacer-base * .55;
 
   &.navbtn--locale {
     margin-right: 2px;
@@ -156,7 +156,7 @@ $navbar-drill-transition: left .5s ease;
   width: 100%;
   height: $navbar-bottombar-height-small;
   text-transform: uppercase;
-  font-size: $navbar-secondary-font-size * 0.9;
+  font-size: $navbar-secondary-font-size * .9;
 }
 
 //
