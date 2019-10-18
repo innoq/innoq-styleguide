@@ -35,8 +35,9 @@
       @extend %heading-font-bold;
 
       position: absolute;
-      left: 0;
+      left: -.5rem;
       width: $spacer-sm;
+      text-align: right;
       content: counter(number);
       counter-increment: number;
       }
