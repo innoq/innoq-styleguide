@@ -48,8 +48,8 @@ $case-teaser-height: ms(38);
   color: $case-teaser-body-color;
 
   h2 {
-    line-height: $h1-line-height;
-    font-size: $h1-font-size;
+    line-height: $h2-line-height;
+    font-size: $h2-font-size-small;
   }
 
   .punch-in {
@@ -81,6 +81,13 @@ $case-teaser-height: ms(38);
 @media screen and (min-width: $grid-breakpoint-md) {
   .case-teaser__wrapper {
     padding: $spacer-base;
+  }
+
+  .case-teaser__header {
+    h2 {
+      line-height: $h1-line-height;
+      font-size: $h1-font-size;
+    }
   }
 }
 
