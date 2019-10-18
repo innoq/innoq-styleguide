@@ -1,0 +1,55 @@
+// ---- Ordered Lists ----------------------------------------------------------
+//
+// Generated numbers from default ordered lists can't be styled directly
+// yet. Therefore we disable auto-numbering and use a counter to increment
+// a number and insert it via :before content.
+//
+// Scope element based selector to elements, that do not carry a
+// class attribute, to prevent reverting styles for all non-default lists.
+//
+// sass-lint:disable force-pseudo-nesting
+
+$number-space: $spacer-md;
+
+ol:not([class]) {
+  @extend %heading-font-regular;
+  @include list-unstyled;
+
+  margin-bottom: $content-spacer-base;
+  line-height: $paragraph-line-height;
+  font-size: $paragraph-font-size-small;
+  counter-reset: number;
+
+  & > li {
+    position: relative;
+    margin-bottom: $spacer-xs;
+    padding-left: $number-space;
+
+    &::before {
+      @extend %heading-font-bold;
+
+      position: absolute;
+      top: -.02em;
+      left: -.5rem;
+      width: $number-space;
+      text-align: right;
+      line-height: $paragraph-line-height;
+      font-size: $paragraph-font-size-small;
+      content: counter(number);
+      counter-increment: number;
+    }
+  }
+
+  ul {
+    // Nested lists need diffrent vertical spacings
+    // to blend into the outer list.
+    margin-top: $spacer-xs;
+    line-height: $paragraph-line-height;
+    font-size: $paragraph-font-size-small;
+
+    &,
+    li > ul > li {
+      margin-bottom: 0;
+    }
+  }
+}

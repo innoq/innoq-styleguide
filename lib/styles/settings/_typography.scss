@@ -105,25 +105,6 @@ $button-large-line-height: 1.4;   // 32px
 $link-teaser-font-size: ms(-1);   //~15px
 $link-teaser-line-height: 1.27;   //~19px
 
-//
-// Lists
-//
-$indent-amount: $base-font-size !default;                 // ~16px
-$bullet-list-font-size: ms(3);                            // ~20px
-$bullet-list-font-size-small: ms(1);                      // ~20px
-$bullet-list-line-height: $base-line-height;              // ~31px
-$bullet-list-line-height-small: 1.58;                     // ~27px
-$checkmark-list-font-size: ms(5);                         // ~25px
-$ordered-list-font-size: ms(3);                           // ~21px
-$ordered-list-font-size-small: ms(1);                     // ~21px
-$ordered-list-line-height: $base-line-height;             // ~31px
-$ordered-list-line-height-small: $base-line-height;       // ~26px
-$ordered-list-counter-font-size: ms(2);                   // ~19px
-$ordered-list-counter-font-size-small: ms(1);             // ~16px
-$ordered-list-counter-line-height: $base-line-height;     // ~29px
-$definition-list-font-size: ms(1);                        // ~21px
-$definition-list-line-height: $base-line-height;          // ~26px
-
 
 //
 // Paragraph Text
@@ -131,7 +112,7 @@ $definition-list-line-height: $base-line-height;          // ~26px
 $paragraph-font-size: ms(3);                              // ~21px
 $paragraph-font-size-small: ms(1);                        // ~18px
 $paragraph-line-height: $base-line-height;                // ~32px
-$paragraph-line-height-small: 1.58;                       // ~27px
+$paragraph-line-height-small: $base-line-height;;         // ~27px
 $paragraph-lead-font-size: ms(5);                         // ~25px
 $paragraph-lead-font-size-small: ms(2);                   // ~21px
 $paragraph-lead-line-height: $base-line-height;           // ~38px

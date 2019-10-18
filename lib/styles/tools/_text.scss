@@ -100,33 +100,49 @@
   list-style-type: none;
 }
 
+// Should only be used, when placeholder is overridden by normalize.
+@mixin list-unstyled {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+}
+
 %unsorted-list {
   @extend %list-unstyled;
+
   margin-bottom: $content-spacer-base;
-  line-height: $bullet-list-line-height-small;
-  font-size: $bullet-list-font-size-small;
+  line-height: $paragraph-line-height-small;
+  font-size: $paragraph-font-size-small;
 
   li {
     position: relative;
-    margin-bottom: $spacer-sm;
+    margin-bottom: $spacer-xs;
   }
+
+  @media screen and (min-width: $grid-breakpoint-md) {
+    line-height: $paragraph-line-height;
+    font-size: $paragraph-font-size;
+  }
+
 }
 
 %definition-list {
+  margin-bottom: $content-spacer-base;
+
   dt {
     @extend %heading-font-bold;
 
-    margin-bottom: $spacer-sm;
-    line-height: $definition-list-line-height;
-    font-size: $definition-list-font-size;
+    margin-bottom: $spacer-xs;
+    line-height: $paragraph-line-height;
+    font-size: $paragraph-font-size-small;
   }
 
   dd {
     @extend %body-font-regular;
-    margin-bottom: $spacer-sm;
+    margin-bottom: $spacer-xs;
     margin-left: $spacer-md;
-    line-height: $definition-list-line-height;
-    font-size: $definition-list-font-size;
+    line-height: $paragraph-line-height;
+    font-size: $paragraph-font-size-small;
   }
 }
 
@@ -137,7 +153,6 @@
     @extend %heading-font-regular;
 
     text-transform: uppercase;
-    font-size: ms(0);
   }
 
   dd,
@@ -149,6 +164,7 @@
     margin-bottom: 0;
   }
 }
+
 
 // Headlines & Text
 %teaser-caption {
@@ -171,13 +187,6 @@
 
   line-height: $teaser-text-line-height-italic;
   font-size: $teaser-text-font-size-italic;
-}
-
-// Should only be used, when placeholder is overridden by normalize.
-@mixin list-unstyled {
-  margin-top: 0;
-  padding: 0;
-  list-style: none;
 }
 
 @mixin hover-fill($fill-color, $text-color, $hover-color) {
