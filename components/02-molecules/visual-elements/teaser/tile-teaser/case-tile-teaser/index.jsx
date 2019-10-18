@@ -19,7 +19,7 @@ export default function CaseTileTeaser ({ size, additionalClassnames, href, capt
       <div class='case-tile-teaser__body'>
         <h2 class='case-tile-teaser__caption'>{caption}</h2>
         <h2 class={headlineClass}>{headline}</h2>
-        <p class={textClass}>{children}</p>
+        <div class={textClass}>{children}</div>
       </div>
       <div class='case-tile-teaser__goto'>
         <span class='link-teaser'>{linkTeaser}</span>
