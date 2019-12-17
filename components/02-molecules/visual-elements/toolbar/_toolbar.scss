@@ -1,8 +1,9 @@
 .toolbar {
   @extend %list-unstyled;
   display: flex;
-  flex-direction: column;
-  // align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   text-align: center;
 }
@@ -10,10 +11,7 @@
 .toolbar__item {
   display: flex;
   align-items: center;
-
-  & + & {
-    margin: $spacer-sm 0 0;
-  }
+  margin: $spacer-sm $spacer-sm 0 0;
 }
 
 .toolbar__icon {
@@ -29,15 +27,5 @@
   &:hover,
   &:focus {
     color: $toolbar-link-hover-color;
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-sm) {
-  .toolbar {
-    flex-direction: row;
-  }
-
-  .toolbar__item + .toolbar__item {
-    margin: 0 0 0 $spacer-md;
   }
 }
