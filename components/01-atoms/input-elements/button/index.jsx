@@ -2,7 +2,7 @@ import { createElement } from 'complate-stream'
 import classNames from 'classnames'
 
 export default function Button ({ size, inverted, cta, light, href }, ...children) {
-  const buttonClass = classNames(`btn btn--${size}`, { 'btn--light': light }, { 'btn--inverted': inverted }, { 'btn--cta': cta })
+  const buttonClass = classNames('btn', size && `btn--${size}`, { 'btn--light': light }, { 'btn--inverted': inverted }, { 'btn--cta': cta })
   let label
   if (cta) {
     label = children.join('')
