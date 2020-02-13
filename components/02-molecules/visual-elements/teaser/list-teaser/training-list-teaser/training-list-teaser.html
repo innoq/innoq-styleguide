@@ -1,9 +1,21 @@
-import TrainingListTeaser from './components/02-molecules/visual-elements/teaser/list-teaser/training-list-teaser/index.jsx'
-import Label from './components/01-atoms/text/block/label/index.jsx'
+<a class=" list-teaser-training primary">
+    <div class="list-teaser__body">
+        <h2 class="list-teaser-training__headline">Titel</h2>
+        <div class="list-teaser-training__caption">Untertitel</div>
+        <div class="label-big badge badge--inverted">Labeltext</div>
+    </div>
+    <div class="list-teaser__footer">
+        <span class="link-teaser inverted-text-color">Termine &amp; Details</span>
+    </div>
+</a>
 
-<TrainingListTeaser primary title="Titel" subtitle="Untertitel" linkText="Termine & Details">
-    <Label type="badge" big inverted>Labeltext</Label>
-</TrainingListTeaser>
-<TrainingListTeaser secondary title="Titel" subtitle="Untertitel" linkText="Termine & Details">
-    <Label type="badge" big>Labeltext</Label>
-</TrainingListTeaser>
+<a class="list-teaser-training secondary">
+    <div class="list-teaser__body">
+        <h2 class="list-teaser-training__headline">Titel</h2>
+        <div class="list-teaser-training__caption">Untertitel</div>
+        <div class="label-big badge">Labeltext</div>
+    </div>
+    <div class="list-teaser__footer">
+        <span class="link-teaser inverted-interaction-color">Termine &amp; Details</span>
+    </div>
+</a>
