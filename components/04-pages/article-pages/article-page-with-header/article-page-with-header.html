@@ -1,15 +1,24 @@
 import { safe, htmlEncode } from "complate-stream";
 import { cssBackground } from './components/02-molecules/visual-elements/header/standard-header/config'
-import StandardHeader from './components/02-molecules/visual-elements/header/standard-header/index'
 
-<StandardHeader title="Innovation Tokens" subtitle="Gegen Informatiker&shy;­romantik und Technologie­überflutung" date="1.1.2020" additionalClassnames="visual-trainings-02-bg-image">
-  Zu oft werden in Softwareprojekten zu viele neue Dinge gleichzeitig
-  ausprobiert, ohne dass der Business Value erkennbar wäre- und vor allem,
-  ohne die Risiken vorher abzuschätzen. Eine Möglichkeit, die unnötige
-  Technologieüberflutung zu vermeiden, sind Innovation Tokens. Mit diesen
-  lassen sich Innovationen in geregeltere Bahnen lenken und bieten eine
-  Grundlage für weniger emotionale Technologiediskussionen.
-</StandardHeader>
+<header class="standard-header" style={cssBackground}>
+    <h3 class="standard-header__type">Content Type</h3>
+    <h1 class="standard-header__title">Titel</h1>
+    <h2 class="standard-header__subtitle">Subtitle</h2>
+    <div class="standard-header__intro">
+        <time class="standard-header__intro__date">
+            01.01.2018
+        </time>
+        <div class="standard-header__intro__text">
+            Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
+            ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket
+            prosciutto buffalo drumstick strip steak capicola short loin.
+            Frankfurter fatback turkey pork chop prosciutto pork ground round tongue
+            chuck doner. Pig venison pork chop shoulder corned beef capicola
+            meatball.
+        </div>
+    </div>
+</header>
 <main role="main">
     <article class="page-layout--grid">
         <section class="center article-intro">
