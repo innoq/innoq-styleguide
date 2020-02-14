@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 32 12">
+  <defs>
+    <mask id="a" x="0" y="0" width="32" height="12" maskUnits="userSpaceOnUse">
+      <g transform="translate(0 0)">
+        <polygon points="32 0 32 12 0 12 0 0 32 0" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </mask>
+  </defs>
+  <title>arrow-medium-left-red</title>
+  <g mask="url(#a)">
+    <path d="M.08,6.38a.93.93,0,0,0,.21.33l5,5a1,1,0,1,0,1.42-1.42L3.41,7H31a1,1,0,0,0,0-2H3.41l3.3-3.29a1,1,0,0,0,0-1.42,1,1,0,0,0-1.42,0l-5,5a1.15,1.15,0,0,0-.21.33A1,1,0,0,0,.08,6.38Z" transform="translate(0 0)" fill="#ff4d67"/>
+  </g>
+</svg>

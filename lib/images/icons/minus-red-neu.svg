@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 23.67 3.38">
+  <defs>
+    <mask id="a" x="0" y="-10.15" width="23.67" height="23.67" maskUnits="userSpaceOnUse">
+      <g transform="translate(-0.16 -10.31)">
+        <polygon points="23.84 0.16 23.84 23.84 0.16 23.84 0.16 0.16 23.84 0.16" fill="#fff" fill-rule="evenodd"/>
+      </g>
+    </mask>
+  </defs>
+  <title>minus-red-neu</title>
+  <g mask="url(#a)">
+    <path d="M1.85,13.69h20.3A1.66,1.66,0,0,0,23.84,12a1.5,1.5,0,0,0-1.69-1.69H1.85A1.49,1.49,0,0,0,.16,12,1.5,1.5,0,0,0,1.85,13.69Z" transform="translate(-0.16 -10.31)" fill="#ea4e69"/>
+  </g>
+</svg>
