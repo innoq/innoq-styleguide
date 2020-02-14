@@ -68,6 +68,16 @@ $author-text-margin: .18rem;
   border-top: 1px solid $brand-gray-25;
   padding-top: $spacer-sm;
   width: 80%;
+
+  > :not(:last-child) {
+    margin-bottom: $spacer-sm;
+  }
+}
+
+.author-bio__social-profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .author-bio__handle {
