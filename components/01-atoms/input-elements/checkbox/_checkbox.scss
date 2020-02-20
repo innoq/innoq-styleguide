@@ -8,7 +8,6 @@ $checkbox-indent: $checkbox-offset + $checkbox-size;
   }
 
   // Set styles for all form states
-  // sass-lint:disable force-pseudo-nesting
   > .form-control__input {
 
     &:checked ~ .form-label::before {

@@ -45,6 +45,7 @@ $author-text-margin: .18rem;
 
 .author-bio__link {
   @extend %link-unstyled;
+
   white-space: normal;
 }
 
@@ -75,14 +76,16 @@ $author-text-margin: .18rem;
 }
 
 .author-bio__social-profile {
+  @extend %link-unstyled;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .author-bio__handle {
-  @extend %link-unstyled;
   @extend %heading-font-bold;
+
   margin-left: $spacer-xxs;
   text-transform: lowercase;
   color: $brand-interaction;
@@ -95,6 +98,8 @@ $author-text-margin: .18rem;
 .author-bio__text,
 .author-bio__text > p {
   @extend %heading-font-regular;
+  @extend %link-unstyled;
+
   margin-bottom: 0;
   line-height: $base-line-height;
   font-size: $base-font-size;

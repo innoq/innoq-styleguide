@@ -8,7 +8,6 @@ $underline-width: $underline-offset - .05em;
 $hover-padding: .125em;
 $link-padding: .2em;
 
-// sass-lint:disable force-pseudo-nesting
 .link-default,
 a:not([class]) {
   transition: standard-transition(padding-bottom, padding-top, background-color);

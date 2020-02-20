@@ -79,12 +79,6 @@
   }
 }
 
-.icon-facebook {
-  &:before {
-    content: $icon-facebook;
-  }
-}
-
 .icon-bubble-conversation-4 {
   &:before {
     content: $icon-bubble-conversation-4;
@@ -100,12 +94,6 @@
 .icon-itunes {
   &:before {
     content: $icon-itunes;
-  }
-}
-
-.icon-email {
-  &:before {
-    content: $icon-email;
   }
 }
 
@@ -185,8 +173,20 @@
 // SVG icons
 // TODO: Clean up svg icon classes after removing icon font
 .icon-svg {
+  display: inline-block;
+  background: $brand-gray;
   width: $spacer-md;
   height: $spacer-md;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+}
+.icon-svg--small {
+  width: $spacer-sm;
+  height: $spacer-sm;
+}
+.icon-svg--medium {
+  width: $spacer-base;
+  height: $spacer-base;
 }
 
 .icon--big {
@@ -194,8 +194,54 @@
   height: $spacer-xl;
 }
 
+.icon--brand-primary {
+  background: $brand-primary;
+}
+
+.icon--brand-secondary {
+  background: $brand-secondary;
+}
+
+.icon--brand-white {
+  background: $brand-white;
+}
+
+// Interface Icons
 .arrow-right {
   position: relative;
   top: .1em;
   margin-left: $spacer-xs;
+}
+
+// .icon-arrow-long-down {
+//   mask: asset-url('icons/arrow-long-down.svg');
+// }
+//
+// .icon-arrow-long-right {
+//   mask: asset-url('icons/arrow-long-right-blue.svg');
+// }
+//
+// .icon-arrow-medium-left {
+//   mask: asset-url('icons/arrow-medium-left-red.svg');
+// }
+
+.icon-arrow-sync {
+  mask: asset-url('icons/arrow-sync.svg');
+}
+
+.icon-email {
+  mask: asset-url('icons/email.svg');
+}
+
+// Logos
+.icon-twitter {
+  mask: asset-url('icons/twitter.svg');
+}
+
+.icon-github {
+  mask: asset-url('icons/github.svg');
+}
+
+.icon-facebook {
+  mask: asset-url('icons/facebook.svg');
 }

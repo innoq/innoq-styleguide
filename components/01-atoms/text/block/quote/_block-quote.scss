@@ -3,7 +3,7 @@
 // Scope element based selector to elements, that do not carry a
 // class attribute, to prevent reverting styles for all non-default quotes.
 //
-// sass-lint:disable force-pseudo-nesting
+
 blockquote:not([class]),
 .blockquote {
   position: relative;

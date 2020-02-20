@@ -58,7 +58,7 @@ rules:
   declarations-before-nesting: 2
   force-attribute-nesting: 2
   force-element-nesting: 2
-  force-pseudo-nesting: 2
+  force-pseudo-nesting: 0
 
   # Name Formats
   class-name-format:

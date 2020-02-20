@@ -2,7 +2,6 @@
 //
 // adapted from: /components/detail/talk-page
 // see lib/styles/tools/text
-// sass-lint:disable force-pseudo-nesting
 
 dl:not([class]) {
   @extend %definition-list;
