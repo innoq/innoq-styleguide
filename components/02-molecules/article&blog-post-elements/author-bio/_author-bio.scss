@@ -65,30 +65,21 @@ $author-text-margin: .18rem;
 }
 
 .author-bio__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: $spacer-sm auto;
   border-top: 1px solid $brand-gray-25;
   padding-top: $spacer-sm;
-  width: 80%;
-
-  > :not(:last-child) {
-    margin-bottom: $spacer-sm;
-  }
 }
 
 .author-bio__social-profile {
   @extend %link-unstyled;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.author-bio__handle {
-  @extend %heading-font-bold;
-
-  margin-left: $spacer-xxs;
-  text-transform: lowercase;
-  color: $brand-interaction;
+  .icon-svg:hover,
+  .icon-svg:focus {
+    background: $author-bio-link-background-color;
+  }
 
   & + & {
     margin-left: $spacer-sm;
