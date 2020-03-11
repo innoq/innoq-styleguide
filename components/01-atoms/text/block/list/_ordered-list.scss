@@ -11,13 +11,18 @@
 $number-space: $spacer-md;
 
 ol:not([class]) {
-  @extend %heading-font-regular;
+  @extend %body-font-regular;
   @include list-unstyled;
 
-  margin-bottom: $content-spacer-base;
+  margin-bottom: $spacer-base;
   line-height: $paragraph-line-height;
   font-size: $paragraph-font-size-small;
   counter-reset: number;
+
+  @media screen and (min-width: $grid-breakpoint-md) {
+    line-height: $paragraph-line-height;
+    font-size: $paragraph-font-size;
+  }
 
   & > li {
     position: relative;
@@ -28,7 +33,7 @@ ol:not([class]) {
       @extend %heading-font-bold;
 
       position: absolute;
-      top: -.02em;
+      top: -.2rem;
       left: -.5rem;
       width: $number-space;
       text-align: right;
@@ -36,6 +41,12 @@ ol:not([class]) {
       font-size: $paragraph-font-size-small;
       content: counter(number);
       counter-increment: number;
+
+      @media screen and (min-width: $grid-breakpoint-md) {
+        top: -.23rem;
+        line-height: $paragraph-line-height;
+        font-size: $paragraph-font-size;
+      }
     }
   }
 
@@ -45,6 +56,11 @@ ol:not([class]) {
     margin-top: $spacer-xs;
     line-height: $paragraph-line-height;
     font-size: $paragraph-font-size-small;
+
+    @media screen and (min-width: $grid-breakpoint-md) {
+      line-height: $paragraph-line-height;
+      font-size: $paragraph-font-size;
+    }
 
     &,
     li > ul > li {
