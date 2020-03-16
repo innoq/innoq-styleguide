@@ -86,6 +86,12 @@ export default class Navbar extends HTMLElement {
         this.primaryList.classList.remove('primary-nav__list--level2')
       })
 
+    document.querySelector('body').addEventListener('click', e => {
+      if(this.primaryList.contains(e.target)) return
+      this.uncheckDropdownToggles(this.dropdownToggles)
+      this.primaryList.classList.remove('primary-nav__list--level2')
+    })
+
     this.isInitialized = true
   }
 
