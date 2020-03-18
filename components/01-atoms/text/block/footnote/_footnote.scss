@@ -2,6 +2,7 @@
   @extend %link-unstyled;
   @extend %heading-font-regular;
 
+  line-height: 1;
   color: $footnote-link-color;
 }
 
@@ -58,9 +59,9 @@
   }
 }
 
+
 @media screen and (min-width: $grid-breakpoint-md) {
   .footnotes__list {
-
     li,
     li > p {
       line-height: $footnote-line-height;
