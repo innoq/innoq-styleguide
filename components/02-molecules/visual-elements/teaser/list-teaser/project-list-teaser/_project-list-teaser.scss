@@ -102,6 +102,7 @@
   @media screen and (min-width: $grid-breakpoint-md) {
     .client-projects__header {
       position: absolute;
+      max-width: 11rem; // Hacky, we should consider a refactoring of the whole component
     }
 
     .client-projects__client-name {
