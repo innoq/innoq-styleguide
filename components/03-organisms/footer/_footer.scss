@@ -1,3 +1,8 @@
+.dark-background {
+  background-color: $brand-text;
+  overflow: hidden;
+}
+
 .footer {
   @extend %heading-font-regular;
   background-color: $footer-body-bg;
@@ -91,7 +96,7 @@
   }
 
   .footer__form {
-    margin-bottom: 0;
+    margin-bottom: $spacer-lg;
     grid-column: 1;
     grid-row: 2;
   }
@@ -115,13 +120,13 @@
   }
 
   .footer__aside--bottom-left {
-    margin-bottom: 0;
-    grid-column: 2;
+    margin-bottom: $spacer-lg;
+    grid-column: 1;
     grid-row: 3;
   }
 
-  .footer__aside--bottom-right {
-    grid-column: 3;
-    grid-row: 3;
+  .footer__aside--bottom-left-secondary {
+    grid-column: 1;
+    grid-row: 4;
   }
 }
