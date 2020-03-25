@@ -45,6 +45,10 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
     line-height: $standard-header-type-line-height-small;
     color: $standard-header-type-color;
     font-size: $standard-header-type-font-size-small;
+
+    &--underlined {
+      border-bottom: $standard-header-type-underline-color solid 3px;
+    }
   }
 }
 
