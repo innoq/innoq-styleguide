@@ -1,0 +1,57 @@
+.contact-section {
+  background-color: $contact-section-background-color;
+  padding: $spacer-lg;
+  // padding-bottom: $spacer-lg;
+}
+
+.contact-section__letter {
+  position: relative;
+  margin: 0 auto;
+  background-color: $brand-white;
+  padding: $spacer-md;
+}
+
+.contact-section__recipients {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-section--overlapping {
+  padding: 0;
+
+  .contact-section__letter {
+    top: - ($spacer-lg + $spacer-sm);
+  }
+}
+
+// sass-lint:disable force-element-nesting
+.contact-section__recipient-input:checked + label .author-bio__name::before {
+  // border-bottom: 2px solid $contact-section-recipient-indicator-color;
+
+  display: block;
+  position: absolute;
+  top: .11em;
+  left: -1.25em;
+  border-radius: 50%;
+  background-color: $contact-section-recipient-indicator-color;
+  width: 1em;
+  height: 1em;
+  content: '';
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .contact-section--overlapping {
+    padding: 0;
+
+    .contact-section__letter {
+      top: -$spacer-xxl;
+      padding: $spacer-lg;
+      box-sizing: content-box;
+    }
+  }
+
+  .contact-section__recipients {
+    flex-direction: row;
+  }
+}

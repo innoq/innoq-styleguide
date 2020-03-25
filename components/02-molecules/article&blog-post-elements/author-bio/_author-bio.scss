@@ -25,6 +25,19 @@ $author-text-margin: .18rem;
     }
   }
 
+  &.author-bio--short-stacked {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+
+    & + .author-bio--short-stacked {
+      margin-left: $spacer-sm;
+    }
+  }
+
   &.author-bio--long {
     margin-top: $author-bio-image-offset;
     margin-bottom: $spacer-xl;
@@ -41,6 +54,7 @@ $author-text-margin: .18rem;
 
 .author-bio__name {
   @extend %author-name;
+  position: relative;
 }
 
 .author-bio__link {
@@ -109,6 +123,10 @@ $author-text-margin: .18rem;
     top: -$author-bio-image-offset;
     left: calc(50% - #{$author-bio-image-offset});
   }
+}
+
+.author-bio__image--short-stacked {
+  margin-right: 0;
 }
 
 //
