@@ -36,10 +36,63 @@ $base-unit: 'rem';
 // The default font family.
 $base-font-family: $font-family-serif;
 
-$base-line-height: 1.52;
-$heading-line-height: 1.2;
+// REFACTORING
 
-//
+//All line-heights
+
+$line-height-1: 1;
+$line-height-1-07: 1.07;
+$line-height-1-1: 1.1;
+$line-height-1-12: 1.12;
+$line-height-1-16: 1.16;
+$line-height-1-18: 1.18;
+$heading-line-height: 1.2;
+$line-height-1-23: 1.23;
+$line-height-1-24: 1.24;
+$line-height-1-25: 1.25;
+$line-height-1-27: 1.27;
+$line-height-1-3: 1.3;
+$line-height-1-36: 1.36;
+$line-height-1-37: 1.37;
+$line-height-1-375: 1.375;
+$line-height-1-4: 1.4;
+$line-height-1-43: 1.43;
+$line-height-1-46: 1.46;
+$line-height-1-47: 1.47;
+$line-height-1-5: 1.5;
+$base-line-height: 1.52;
+$line-height-1-56: 1.56;
+$line-height-1-57: 1.57;
+$line-height-1-62: 1.62;
+$line-height-1-625: 1.625;
+$line-height-1-64: 1.64;
+$line-height-1-68: 1.68;
+$line-height-1-69: 1.69;
+$line-height-1-75: 1.75;
+$line-height-1-78: 1.78;
+$line-height-2-53: 2.53;
+
+
+//All font sizes
+$font-size-m-01: ms(-2);
+$font-size-m-01: ms(-1);
+$font-size-m-0: ms(0);
+$font-size-m-1: ms(1);
+$font-size-m-2: ms(2);
+$font-size-m-3: ms(3);
+$font-size-m-4: ms(4);
+$font-size-m-5: ms(5);
+$font-size-m-6: ms(6);
+$font-size-m-7: ms(7);
+$font-size-m-8: ms(8);
+$font-size-m-9: ms(9);
+$font-size-m-10: ms(10);
+$font-size-m-11: ms(11);
+$font-size-m-12: ms(12);
+$font-size-m-13: ms(13);
+$font-size-m-14: ms(14);
+
+
 // Headlines
 //
 
@@ -72,6 +125,7 @@ $h5-line-height: $base-line-height;       // 24/32px
 $h6-font-size: ms(0);                     // ~16px
 $h6-font-size-small: ms(0);               // ~16px
 $h6-line-height: $heading-line-height;    // 19px
+
 
 
 // Teaser Section Headline
