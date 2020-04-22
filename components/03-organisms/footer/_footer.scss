@@ -85,6 +85,11 @@
 
 .footer__aside--bottom-left {
   margin-bottom: $spacer-lg;
+
+
+  &-secondary {
+    margin-bottom: $spacer-lg;
+  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -95,7 +100,12 @@
     grid-column-gap: $spacer-lg;
   }
 
-  .footer__form {
+  .footer__flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__left {
     margin-bottom: $spacer-lg;
     grid-column: 1;
     grid-row: 2;
@@ -120,13 +130,8 @@
   }
 
   .footer__aside--bottom-left {
+    margin-right: $spacer-xxl;
     margin-bottom: $spacer-lg;
-    grid-column: 1;
-    grid-row: 3;
   }
 
-  .footer__aside--bottom-left-secondary {
-    grid-column: 1;
-    grid-row: 4;
-  }
 }
