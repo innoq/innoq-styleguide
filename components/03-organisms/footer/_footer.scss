@@ -100,11 +100,6 @@
     grid-column-gap: $spacer-lg;
   }
 
-  .footer__form {
-    margin-bottom: $spacer-lg;
-    grid-column: 1;
-  }
-
   .footer__flex {
     display: flex;
     flex-wrap: wrap;
@@ -113,6 +108,7 @@
   .footer__left {
     margin-bottom: $spacer-lg;
     grid-column: 1;
+    grid-row: 2;
   }
 
   .footer__heading {
