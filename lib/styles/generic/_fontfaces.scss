@@ -51,33 +51,33 @@ $cdn: 'https://assets.innoq.com';
 }
 
 @font-face {
-  $cachebuster: '7d0a3995eec718ff34fa844413298153';
+  $cachebuster: 'ebbf66fc8344ca6f16c5d660323ab3b4';
 
   font-family: FFMarkWebProBook;
   font-display: swap;
-  src: url('#{$cdn}/fonts/350ED6_4_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('#{$cdn}/fonts/350ED6_4_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('#{$cdn}/fonts/350ED6_4_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  src: url('#{$cdn}/fonts/MarkPro-Book.woff2?cachebuster=#{$cachebuster}') format('woff2'),
+  url('#{$cdn}/fonts/MarkPro-Book.woff?cachebuster=#{$cachebuster}') format('woff'),
+  url('#{$cdn}/fonts/MarkPro-Book.ttf?cachebuster=#{$cachebuster}') format('truetype');
 }
 
 @font-face {
-  $cachebuster: '7d0a3995eec718ff34fa844413298153';
+  $cachebuster: 'ebbf66fc8344ca6f16c5d660323ab3b4';
 
   font-family: FFMarkWebProBold;
   font-display: swap;
-  src: url('#{$cdn}/fonts/350ED6_5_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('#{$cdn}/fonts/350ED6_5_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('#{$cdn}/fonts/350ED6_5_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  src: url('#{$cdn}/fonts/MarkPro-Bold.woff2?cachebuster=#{$cachebuster}') format('woff2'),
+  url('#{$cdn}/fonts/MarkPro-Bold.woff?cachebuster=#{$cachebuster}') format('woff'),
+  url('#{$cdn}/fonts/MarkPro-Bold.ttf?cachebuster=#{$cachebuster}') format('truetype');
 }
 
 @font-face {
-  $cachebuster: '7d0a3995eec718ff34fa844413298153';
+  $cachebuster: 'ebbf66fc8344ca6f16c5d660323ab3b4';
 
   font-family: FFMarkWebProHeavy;
   font-display: swap;
-  src: url('#{$cdn}/fonts/350ED6_6_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('#{$cdn}/fonts/350ED6_6_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('#{$cdn}/fonts/350ED6_6_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  src: url('#{$cdn}/fonts/MarkPro-Heavy.woff2?cachebuster=#{$cachebuster}') format('woff2'),
+  url('#{$cdn}/fonts/MarkPro-Heavy.woff?cachebuster=#{$cachebuster}') format('woff'),
+  url('#{$cdn}/fonts/MarkPro-Heavy.ttf?cachebuster=#{$cachebuster}') format('truetype');
 }
 
 // Hack
