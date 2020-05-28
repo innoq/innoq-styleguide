@@ -6,27 +6,27 @@
   background-color: $eyecatcher-body-bg;
   padding: $spacer-md;
   overflow: hidden;
-  text-align: center;
-  color: $eyecatcher-color;
 
   .social-media-bar {
     margin-bottom: 0;
-    color: $eyecatcher-color-inverted;
-    font-size: $eyecatcher-font-size-large;
   }
 
   .social-media-bar__link {
     transition: standard-transition(color);
 
-    &:hover,
-    &:focus {
-      color: $eyecatcher-color;
+    .icon-svg:hover,
+    .icon-svg:focus {
+      background: $eyecatcher-text-color;
     }
   }
 }
 
 .eyecatcher__text {
   @extend %heading-font-bold;
+
   margin-bottom: $spacer-md;
+  text-align: center;
+  color: $eyecatcher-text-color;
   font-size: $eyecatcher-font-size;
+
 }

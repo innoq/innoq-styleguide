@@ -151,24 +151,6 @@
   }
 }
 
-.icon-xing {
-  &:before {
-    content: $icon-xing;
-  }
-}
-
-.icon-linkedin {
-  &:before {
-    content: $icon-linkedin;
-  }
-}
-
-.icon-rss-1 {
-  &:before {
-    content: $icon-rss-1;
-  }
-}
-
 
 // SVG icons
 // TODO: Clean up svg icon classes after removing icon font
@@ -177,7 +159,7 @@
   background: $brand-gray;
   width: $spacer-md;
   height: $spacer-md;
-  mask-size: cover;
+  mask-size: auto auto;
   mask-repeat: no-repeat;
 }
 .icon-svg--small {
@@ -244,4 +226,20 @@
 
 .icon-facebook {
   mask: asset-url('icons/facebook.svg');
+}
+
+.icon-youtube {
+  mask: asset-url('icons/youtube.svg');
+}
+
+.icon-xing {
+  mask: asset-url('icons/xing.svg');
+}
+
+.icon-linkedin {
+  mask: asset-url('icons/linkedin.svg');
+}
+
+.icon-rss-1 {
+  mask: asset-url('icons/rss.svg');
 }
