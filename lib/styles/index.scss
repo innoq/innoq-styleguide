@@ -64,6 +64,7 @@
 @import 'objects/media';
 @import 'objects/page-layout-default';
 @import 'objects/page-layout-grid';
+@import 'objects/page-layout-podcast';
 @import 'objects/stripe';
 
 
@@ -231,7 +232,10 @@
 @import '../components/04-pages/error-pages/error-page';
 @import '../components/04-pages/landing-page/landing-page';
 @import '../components/04-pages/magazine-page/magazine-page';
-@import '../components/04-pages/podcast-page/podcast-page';
+@import '../components/04-pages/podcast-pages/innoq-podcast/innoq-podcast-overview-page/innoq-podcast-overview-page';
+@import '../components/04-pages/podcast-pages/innoq-podcast/innoq-podcast-detail-page/innoq-podcast-detail-page';
+@import '../components/04-pages/podcast-pages/security-podcast/security-podcast-overview-page/security-podcast-overview-page';
+@import '../components/04-pages/podcast-pages/security-podcast/security-podcast-detail-page/security-podcast-detail-page';
 @import '../components/04-pages/service-pages/service-detail-page/service-detail-page';
 @import '../components/04-pages/service-pages/services-overview-page/services-overview-page';
 @import '../components/04-pages/staff-page/staff-page';

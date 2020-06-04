@@ -1,0 +1,37 @@
+.podcast-overview-page--security {
+  .topic-header {
+    background-color: $brand-gray-75;
+    background-blend-mode: multiply;
+
+    .toolbar__link {
+      color: $brand-gray;
+
+      &:hover,
+      &:focus {
+        color: $brand-gray;
+      }
+
+      .icon-svg:hover,
+      .icon-svg:focus {
+        background: $brand-gray;
+      }
+    }
+  }
+
+  .podcast-teaser--avatar--overlay,
+  .podcast-teaser--avatar--overlay--big {
+    background-color: $brand-yellow;
+
+    * {
+      color: $brand-gray;
+    }
+  }
+
+  .podcast-teaser--default {
+    background-color: $brand-gray;
+
+    * {
+      color: $brand-yellow;
+    }
+  }
+}

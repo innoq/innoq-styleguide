@@ -1,11 +1,8 @@
-//
-// Teaser page layout
-//
+// This layout is used for podcast teaser
 
 .teaser-page-layout {
-  margin-top: $grid-page-layout-margin;
   margin-right: auto;
-  margin-bottom: $grid-page-layout-margin;
+  margin-bottom: $spacer-md;
   margin-left: auto;
   width: 95%;
   max-width: $grid-page-layout-width;
