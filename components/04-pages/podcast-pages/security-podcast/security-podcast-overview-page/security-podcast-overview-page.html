@@ -1,7 +1,55 @@
 import { cssRight, cssBoth } from "./components/02-molecules/visual-elements/teaser/tile-teaser/podcast-tile-teaser/config";
-<main role="main">
+<main role="main" class="podcast-overview-page podcast-overview-page--security">
+    <header class="topic-header topic-header-bg-image-koralle">
+        <div class="topic-header__body">
+            <div>
+                <h1 class="topic-header__title topic-header-bg-image-text-box-girl">Der INNOQ Security Podcast</h1>
+            </div>
+            <div class="topic-header__text">
+                Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
+                ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket
+                prosciutto buffalo drumstick strip steak capicola short loin.
+                Frankfurter fatback turkey pork chop prosciutto pork ground round tongue
+                chuck doner. Pig venison pork chop shoulder corned beef capicola
+                meatball.
+            </div>
+            <ul class="toolbar">
+                <li class="toolbar__item">
+                    <a href="#" class="toolbar__link">
+                        <span class="icon-svg icon-feedback icon--brand-gray"></span>
+                        Feedback
+                    </a>
+                </li>
+                <li class="toolbar__item">
+                    <a href="#" class="toolbar__link">
+                        <span class="icon-svg icon-apple-itunes icon--brand-gray"></span>
+                        Apple
+                    </a>
+                </li>
+                <li class="toolbar__item">
+                    <a href="#" class="toolbar__link">
+                        <span class="icon-svg icon-spotify icon--brand-gray"></span>
+                        Spotify
+                    </a>
+                </li>
+                <li class="toolbar__item">
+                    <a href="#" class="toolbar__link">
+                        <span class="icon-svg icon-rss icon--brand-gray"></span>
+                        RSS
+                    </a>
+                </li>
+                <li class="toolbar__item">
+                    <a href="#" class="toolbar__link">
+                        <span class="icon-svg icon-text icon--brand-gray"></span>
+                        Transkript
+                    </a>
+                </li>
+            </ul>
+            <img src={context.app.uri('assets/icons/arrow-long-down.svg')} />
+        </div>
+    </header>
+
     <article class="teaser-page-layout">
-        <h2 class="teaser-section-heading">Podcasts</h2>
         <div class="podcast-grid">
             <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay" style={cssRight}>
                 <div class="podcast-teaser__body">
@@ -10,7 +58,7 @@ import { cssRight, cssBoth } from "./components/02-molecules/visual-elements/tea
                     <h3 class="podcast-teaser__subheadline">
                         Podcast Subheadline
                     </h3>
-                    <img src={context.app.uri("assets/icons/arrow-long-right-white.svg")} />
+                    <span class="icon-svg icon-arrow-long-right icon--brand-black"></span>
                 </div>
                 <div class="podcast-teaser__footer">
                     <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
@@ -26,7 +74,7 @@ import { cssRight, cssBoth } from "./components/02-molecules/visual-elements/tea
                     <h3 class="podcast-teaser__subheadline">
                         Podcast Subheadline
                     </h3>
-                    <img src={context.app.uri("assets/icons/arrow-long-right-white.svg")} />
+                    <span class="icon-svg icon-arrow-long-right icon--brand-yellow"></span>
                 </div>
                 <div class="podcast-teaser__footer">
                     <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
@@ -45,7 +93,7 @@ import { cssRight, cssBoth } from "./components/02-molecules/visual-elements/tea
                     <h3 class="podcast-teaser__subheadline">
                         Podcast Subheadline
                     </h3>
-                    <img src={context.app.uri("assets/icons/arrow-long-right-red.svg")} />
+                    <span class="icon-svg icon-arrow-long-right icon--brand-black"></span>
                 </div>
                 <div class="podcast-teaser__footer">
                     <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
@@ -61,7 +109,7 @@ import { cssRight, cssBoth } from "./components/02-molecules/visual-elements/tea
                     <h3 class="podcast-teaser__subheadline">
                         Podcast Subheadline
                     </h3>
-                    <img src={context.app.uri("assets/icons/arrow-long-right-white.svg")} />
+                    <span class="icon-svg icon-arrow-long-right icon--brand-yellow"></span>
                 </div>
                 <div class="podcast-teaser__footer">
                     <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
@@ -77,7 +125,7 @@ import { cssRight, cssBoth } from "./components/02-molecules/visual-elements/tea
                     <h3 class="podcast-teaser__subheadline">
                         Podcast Subheadline
                     </h3>
-                    <img src={context.app.uri("assets/icons/arrow-long-right-white.svg")} />
+                    <span class="icon-svg icon-arrow-long-right icon--brand-black"></span>
                 </div>
                 <div class="podcast-teaser__footer">
                     <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
@@ -89,10 +137,6 @@ import { cssRight, cssBoth } from "./components/02-molecules/visual-elements/tea
                 </div>
             </a>
 
-
-
-
-
             <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay" style={cssRight}>
                 <div class="podcast-teaser__body">
                     <div class="podcast-teaser__caption">Podcast</div>
@@ -100,7 +144,7 @@ import { cssRight, cssBoth } from "./components/02-molecules/visual-elements/tea
                     <h3 class="podcast-teaser__subheadline">
                         Podcast Subheadline
                     </h3>
-                    <img src={context.app.uri("assets/icons/arrow-long-right-white.svg")} />
+                    <span class="icon-svg icon-arrow-long-right icon--brand-black"></span>
                 </div>
                 <div class="podcast-teaser__footer">
                     <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
@@ -119,7 +163,7 @@ import { cssRight, cssBoth } from "./components/02-molecules/visual-elements/tea
                     <h3 class="podcast-teaser__subheadline">
                         Podcast Subheadline
                     </h3>
-                    <img src={context.app.uri("assets/icons/arrow-long-right-white.svg")} />
+                    <span class="icon-svg icon-arrow-long-right icon--brand-yellow"></span>
                 </div>
                 <div class="podcast-teaser__footer">
                     <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >

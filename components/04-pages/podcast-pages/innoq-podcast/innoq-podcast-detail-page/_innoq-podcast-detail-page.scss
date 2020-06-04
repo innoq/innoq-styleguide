@@ -1,0 +1,13 @@
+.podcast-detail-page {
+  .podigee-podcast-player,
+  .toolbar {
+    margin-bottom: $spacer-lg;
+    text-align: center;
+  }
+
+  .btn {
+    display: block;
+    margin: 0 auto $spacer-lg;
+    width: max-content;
+  }
+}

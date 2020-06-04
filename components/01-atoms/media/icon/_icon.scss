@@ -91,33 +91,15 @@
   }
 }
 
-.icon-itunes {
-  &:before {
-    content: $icon-itunes;
-  }
-}
-
 .icon-phone {
   &:before {
     content: $icon-phone;
   }
 }
 
-.icon-rss {
-  &:before {
-    content: $icon-rss;
-  }
-}
-
 .icon-location {
   &:before {
     content: $icon-location;
-  }
-}
-
-.icon-text {
-  &:before {
-    content: $icon-text;
   }
 }
 
@@ -159,13 +141,16 @@
   background: $brand-gray;
   width: $spacer-md;
   height: $spacer-md;
-  mask-size: auto auto;
+  mask-size: contain;
   mask-repeat: no-repeat;
 }
+
+//Sizes
 .icon-svg--small {
   width: $spacer-sm;
   height: $spacer-sm;
 }
+
 .icon-svg--medium {
   width: $spacer-base;
   height: $spacer-base;
@@ -176,6 +161,7 @@
   height: $spacer-xl;
 }
 
+// Colors
 .icon--brand-primary {
   background: $brand-primary;
 }
@@ -186,6 +172,14 @@
 
 .icon--brand-white {
   background: $brand-white;
+}
+
+.icon--brand-gray {
+  background: $brand-gray;
+}
+
+.icon--brand-yellow {
+  background: $brand-yellow;
 }
 
 // Interface Icons
@@ -199,47 +193,69 @@
 //   mask: asset-url('icons/arrow-long-down.svg');
 // }
 //
-// .icon-arrow-long-right {
-//   mask: asset-url('icons/arrow-long-right-blue.svg');
-// }
+.icon-arrow-long-right {
+  width: 4.5rem; // magic number
+  height: .75rem; // magic number
+  mask: asset-url('icons/arrow-long-right-blue.svg');
+}
 //
 // .icon-arrow-medium-left {
 //   mask: asset-url('icons/arrow-medium-left-red.svg');
 // }
 
 .icon-arrow-sync {
-  mask: asset-url('icons/arrow-sync.svg');
+  mask-image: asset-url('icons/arrow-sync.svg');
 }
 
 .icon-email {
-  mask: asset-url('icons/email.svg');
+  mask-image: asset-url('icons/email.svg');
+}
+
+.icon-feedback {
+  mask-image: asset-url('icons/feedback.svg');
+}
+
+.icon-text {
+  mask-image: asset-url('icons/text.svg');
 }
 
 // Logos
-.icon-twitter {
-  mask: asset-url('icons/twitter.svg');
-}
-
-.icon-github {
-  mask: asset-url('icons/github.svg');
+.icon-apple-itunes {
+  mask-image: asset-url('icons/apple-itunes.svg');
 }
 
 .icon-facebook {
-  mask: asset-url('icons/facebook.svg');
+  mask-image: asset-url('icons/facebook.svg');
 }
 
-.icon-youtube {
-  mask: asset-url('icons/youtube.svg');
-}
-
-.icon-xing {
-  mask: asset-url('icons/xing.svg');
+.icon-github {
+  mask-image: asset-url('icons/github.svg');
 }
 
 .icon-linkedin {
-  mask: asset-url('icons/linkedin.svg');
+  mask-image: asset-url('icons/linkedin.svg');
+}
+
+.icon-rss {
+  mask-image: asset-url('icons/rss-1.svg');
 }
 
 .icon-rss-1 {
-  mask: asset-url('icons/rss.svg');
+  mask-image: asset-url('icons/rss.svg');
+}
+
+.icon-spotify {
+  mask-image: asset-url('icons/spotify.svg');
+}
+
+.icon-twitter {
+  mask-image: asset-url('icons/twitter.svg');
+}
+
+.icon-xing {
+  mask-image: asset-url('icons/xing.svg');
+}
+
+.icon-youtube {
+  mask-image: asset-url('icons/youtube.svg');
 }
