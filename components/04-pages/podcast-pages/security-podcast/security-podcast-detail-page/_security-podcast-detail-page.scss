@@ -3,6 +3,10 @@
     color: $brand-gray;
   }
 
+  a:not([class]):hover {
+    background-color: $brand-yellow;
+  }
+
   .podcast-header--avatar--overlay {
     background-color: $brand-yellow;
 
@@ -45,8 +49,15 @@
     }
   }
 
-  ul>li::before {
-    background: $brand-yellow;
+  ul {
+    & > li::before {
+      background: $brand-yellow;
+    }
+
+    ul > li::before {
+      border: 3px solid $brand-yellow;
+      background: $brand-white;
+    }
   }
 
   .tag-list__link {
