@@ -34,6 +34,10 @@ $podcast-teaser-height-md: ms(35);
 
   margin-bottom: $spacer-md;
   color: $podcast-teaser-default-color;
+
+  &--security {
+    color: $podcast-teaser-default-color-sec;
+  }
 }
 
 .podcast-teaser__subheadline {
@@ -43,6 +47,10 @@ $podcast-teaser-height-md: ms(35);
   line-height: $podcast-teaser-subheadline-line-height;
   color: $podcast-teaser-default-color;
   font-size: $podcast-teaser-subheadline-font-size;
+
+  &--security {
+    color: $podcast-teaser-default-color-sec;
+  }
 }
 
 .podcast-author {
@@ -73,6 +81,16 @@ $podcast-teaser-height-md: ms(35);
   background-size: auto 100%;
   color: $podcast-teaser-default-color;
   background-blend-mode: multiply;
+
+  &--security {
+    background-color: $podcast-teaser-overlay-color-sec;
+    color: $podcast-teaser-default-bg-sec;
+  }
+
+  .podcast-teaser__headline--security,
+  .podcast-teaser__subheadline--security  {
+    color: $podcast-teaser-default-bg-sec;
+  }
 }
 
 .podcast-teaser--avatar--overlay--big {
@@ -82,6 +100,20 @@ $podcast-teaser-height-md: ms(35);
   background-size: 0%;
   color: $podcast-teaser-default-color;
   background-blend-mode: multiply;
+
+  &--security {
+    background-color: $podcast-teaser-overlay-color-sec;
+    color: $podcast-teaser-default-bg-sec;
+
+    .podcast-author--security {
+      color: $podcast-teaser-default-color-sec;
+    }
+  }
+
+  .podcast-teaser__headline--security,
+  .podcast-teaser__subheadline--security  {
+    color: $podcast-teaser-default-bg-sec;
+  }
 
   .podcast-teaser__body  {
     padding: $spacer-lg;
@@ -106,15 +138,29 @@ $podcast-teaser-height-md: ms(35);
   background-size: auto 100%;
   color:  $podcast-teaser-default-bg;
 
+  &--security {
+    background-color: $podcast-teaser-default-color-sec;
+    color: $podcast-teaser-default-bg-sec;
+  }
+
   .podcast-teaser__headline,
   .podcast-teaser__subheadline  {
     color:  $podcast-teaser-default-bg;
+
+    &--security {
+      color: $podcast-teaser-default-bg-sec;
+    }
   }
 }
 
 .podcast-teaser--default {
   background-color: $podcast-teaser-default-bg;
   color: $podcast-teaser-default-color;
+
+  &--security {
+    background-color: $podcast-teaser-default-bg-sec;
+    color: $podcast-teaser-default-color-sec;
+  }
 }
 
 //Breakpoints
