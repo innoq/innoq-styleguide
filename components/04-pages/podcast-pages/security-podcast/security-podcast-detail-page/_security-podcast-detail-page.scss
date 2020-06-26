@@ -1,7 +1,4 @@
 .podcast-detail-page--security {
-  * {
-    color: $brand-gray;
-  }
 
   a:not([class]):hover {
     background-color: $brand-yellow;
@@ -9,14 +6,15 @@
 
   .podcast-header--avatar--overlay {
     background-color: $brand-yellow;
-
-    > * {
-      color: $brand-gray;
-    }
   }
 
   .standard-header__intro__label {
     color: $brand-yellow;
+  }
+
+  .standard-header__title,
+  .standard-header__type {
+    color: $brand-gray;
   }
 
   .toolbar__link,

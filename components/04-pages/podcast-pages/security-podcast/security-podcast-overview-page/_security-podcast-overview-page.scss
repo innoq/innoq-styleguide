@@ -17,21 +17,4 @@
       }
     }
   }
-
-  .podcast-teaser--avatar--overlay,
-  .podcast-teaser--avatar--overlay--big {
-    background-color: $brand-yellow;
-
-    * {
-      color: $brand-gray;
-    }
-  }
-
-  .podcast-teaser--default {
-    background-color: $brand-gray;
-
-    * {
-      color: $brand-yellow;
-    }
-  }
 }
