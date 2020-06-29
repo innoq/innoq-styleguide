@@ -21,3 +21,9 @@ body {
 main {
   min-height: 50vh;
 }
+
+label {
+  &[for] {
+    cursor: pointer;
+  }
+}

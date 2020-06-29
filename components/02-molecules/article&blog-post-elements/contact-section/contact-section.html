@@ -1,0 +1,83 @@
+<div>
+    <section class="breakout conclusion">
+        <div class="breakout__content">
+            <h2 class="conclusion-headline">Unser Beitrag</h2>
+            <h3 class="conclusion-subheadline"></h3>
+            <div class="conclusion-text">
+                <check-list>
+                    <ul class="checklist">
+                        <li>Kevin brisket strip</li>
+                        <li>Doner turkey ball tip boudin</li>
+                        <li>Capicola picanha chuck</li>
+                        <li>Chislic buffalo ground round bacon shoulder</li>
+                        <li>Software-Entwicklung</li>
+                    </ul>
+                </check-list>
+                <p>
+                    Spicy jalapeno bacon ipsum dolor amet alcatra strip steak cow, turducken pastrami spare ribs beef ribs short loin ground round ribeye prosciutto <a href="#">jerky capicola tail</a>. Fatback ribeye filet mignon kevin meatball hamburger kielbasa.
+                </p>
+
+                <p>
+                    <a class="btn btn--large btn--inverted" data-label="Sprechen Sie mit uns" href="/de/contact_messages/new/">Sprechen Sie mit uns</a>
+                </p>
+
+                <div class="conclusion-form"></div>
+            </div>
+        </div>
+    </section>
+    <section class="breakout contact-section contact-section--overlapping">
+        <div class="contact-section__letter breakout__content">
+            <h3>Kontaktieren Sie uns</h3>
+            <p>Ex mollit nulla irure elit proident velit consequat ipsum adipisicing anim aliqua aute.<br />elit proident velit consequat ipsum adipisicing</p>
+
+            <form class="form" novalidate="novalidate" action="/de/contact_messages/" accept-charset="UTF-8" method="post">
+
+                <div class="contact-section__recipients">
+                    <input type="radio" class="sr-only contact-section__recipient-input" id="contact-recipient-0" name="contact-recipient" />
+                    <label for="contact-recipient-0" class="author-bio author-bio--short-stacked" itemscope itemtype="http://schema.org/Person">
+                        <div class="author-bio__image author-bio__image--short-stacked avatar avatar--small">
+                            <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/heribert.jpg")} alt="Portrait von Heribert Innoq" />
+                        </div>
+                        <div class="author-bio__text">
+                            <div class="author-bio__name" itemprop="name">Innoq</div>
+                            <div class="author-bio__info" itemprop="jobTitle" >Office</div>
+                        </div>
+                    </label>
+                    <input type="radio" class="sr-only contact-section__recipient-input" id="contact-recipient-1" name="contact-recipient" />
+                    <label for="contact-recipient-1" class="author-bio author-bio--short-stacked" itemscope itemtype="http://schema.org/Person">
+                        <div class="author-bio__image author-bio__image--short-stacked avatar avatar--small">
+                            <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/heribert.jpg")} alt="Portrait von Heribert Innoq" />
+                        </div>
+                        <div class="author-bio__text">
+                            <div class="author-bio__name" itemprop="name">Heribert Innoq</div>
+                            <div class="author-bio__info" itemprop="jobTitle" >Senior Consultant</div>
+                        </div>
+                    </label>
+                    <input type="radio" class="sr-only contact-section__recipient-input" id="contact-recipient-2" name="contact-recipient" />
+                    <label for="contact-recipient-2" class="author-bio author-bio--short-stacked" itemscope itemtype="http://schema.org/Person">
+                        <div class="author-bio__image author-bio__image--short-stacked avatar avatar--small">
+                            <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/heribert.jpg")} alt="Portrait von Heribert Innoq" />
+                        </div>
+                        <div class="author-bio__text">
+                            <div class="author-bio__name" itemprop="name">Heribert Innoq</div>
+                            <div class="author-bio__info" itemprop="jobTitle" >Senior Consultant</div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" for="contact_message_name">Name</label>
+                    <input required="required" class="form-control" type="text" name="contact_message[name]" id="contact_message_name" />
+                </div><div class="form-group">
+                    <label class="form-label" for="contact_message_email">E-Mail</label>
+                    <input required="required" class="form-control" type="email" name="contact_message[email]" id="contact_message_email" />
+                </div><div class="form-group">
+                    <label class="form-label" for="contact_message_content">Nachricht</label>
+                    <textarea required="required" class="form-control" rows="5" name="contact_message[content]" id="contact_message_content"></textarea>
+                </div>
+                <button name="button" type="submit" class="btn btn--cta btn--small" data-label="Senden">Senden</button>
+            </form>
+
+        </div>
+    </section>
+</div>
