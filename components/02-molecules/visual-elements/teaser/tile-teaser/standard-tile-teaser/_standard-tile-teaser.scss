@@ -1,0 +1,109 @@
+$case-tile-teaser-sm-height: ms(32);
+
+// demo bg image
+// class for case tile teaser
+
+.standard-tile-teaser-bg-image-demo {
+  background-image: asset-url('visual-header-igel-1444.jpg');
+  background-position: center;
+}
+
+.standard-tile-teaser-bg-image-training {
+  background-image: asset-url('visual-newsletter.jpg');
+  background-position: top;
+}
+
+// class for podcast overview teaser
+
+.standard-tile-teaser-bg-color {
+  background-color: $podcast-teaser-overlay-color;
+  background-position: center;
+
+  &--security {
+    background-color: $podcast-teaser-overlay-color-sec;
+  }
+}
+
+
+.standard-tile-teaser {
+  @extend %block-link;
+  @extend %hover-zoom-in;
+
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  padding: $spacer-sm $spacer-xs;
+}
+
+.standard-tile-teaser__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  background-color: $case-tile-teaser-body-bg-color;
+  padding: $spacer-md;
+}
+
+.standard-tile-teaser__body {
+  text-align: center;
+}
+
+.standard-tile-teaser__caption {
+  @extend %teaser-caption;
+  margin: 0;
+}
+
+.standard-tile-teaser__headline {
+  margin: $spacer-xs 0;
+}
+
+.standard-tile-teaser__text {
+  @extend %teaser-text-italic;
+}
+
+.standard-tile-teaser__goto {
+  text-align: center;
+}
+
+//
+// case-tile-teaser--sm
+//
+.standard-tile-teaser--sm {
+  margin-bottom: $spacer-xxl;
+  padding: $spacer-md;
+  min-height: $case-tile-teaser-sm-height;
+}
+
+.standard-tile-teaser__content--sm {
+  position: relative;
+  top: $spacer-xxl;
+  justify-content: space-between;
+  padding: $spacer-sm;
+}
+
+.standard-tile-teaser__headline--sm {
+  font-size: $teaser-headline-font-size-small;
+}
+
+.standard-tile-teaser__text--sm {
+  margin-bottom: $spacer-xs;
+  font-size: $teaser-text-font-size-italic-small;
+}
+
+//
+// Breakpoints
+//
+@media screen and (min-width: $grid-breakpoint-md) {
+  .standard-tile-teaser {
+    padding: $spacer-xl $spacer-lg;
+
+    &--narrow {
+      padding: $spacer-sm $spacer-xs;
+    }
+  }
+
+  .standard-tile-teaser__content {
+    padding: $spacer-lg;
+  }
+
+}
