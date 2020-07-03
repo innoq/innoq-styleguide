@@ -1,0 +1,268 @@
+import { cssRight, cssBoth } from "./components/02-molecules/visual-elements/teaser/tile-teaser/podcast-tile-teaser/config";
+
+<main role="main">
+    <nav-bar class="navbar">
+        <div class="navbar__inner">
+            <a href="#main" class="navbtn navbtn--skip">Zum Inhalt springen</a>
+
+            <div class="navbar__brand">
+                <a href="#" class="navbar__brand-link">
+                    <img alt="inno Q" class="logo navbar__logo" src={context.app.uri('assets/innoq-logo--whitered.svg')} />
+                </a>
+            </div>
+
+            <input tabindex="-1" type="checkbox" id="navbar-toggle--menu" class="sr-only navbar__toggle-state navbar__toggle-state--menu-toggler" />
+            <input tabindex="-1" type="checkbox" id="navbar-toggle--search" class="sr-only navbar__toggle-state navbar__toggle-state--search-toggler" />
+
+            <div class="navbar__meta">
+                <a href="#" class="navbtn navbtn--meta">Newsletter</a>
+                <a href="#" class="navbtn navbtn--meta">Kontakt</a>
+                <a href="#" class="navbtn navbtn--meta navbtn--locale navbtn--active" title="Deutsch">de</a> |
+                <a href="#" class="navbtn navbtn--meta navbtn--locale" title="English">en</a>
+            </div>
+
+            <div class="navbar__togglers">
+                <label for="navbar-toggle--menu" aria-label="Navigation ein- oder ausblenden">
+                    <span class="navbtn navbtn--menu">Menü</span>
+                </label>
+                <a href="#" class="navbtn navbtn--search" aria-label="Suche ein- oder ausblenden">
+                    <i class="icon icon-search"></i>
+                </a>
+            </div>
+
+            <nav class="navbar__primary-nav primary-nav">
+                <ul class="primary-nav__list">
+                    <li class="primary-nav__item">
+                        <a href="#" class="navbtn navbtn--primary">Leistungen</a>
+                    </li>
+                    <li class="primary-nav__item">
+                        <div class="dropdown">
+                            <a href="#" class="navbtn navbtn--primary" data-for="dropdown__toggle--projekte">Projekte</a>
+                            <input type="checkbox" role="button" aria-haspopup="true" id="dropdown__toggle--projekte" class="sr-only dropdown__checkbox" />
+                            <label class="dropdown__toggle dropdown__toggle--navbar" for="dropdown__toggle--projekte">
+                                <i class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"></i>
+                                <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
+                                <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
+                            </label>
+                            <div class="dropdown__list-wrapper dropdown__list-wrapper--navbar" role="menu" title="Projekte" data-origin="left">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item dropdown__item--navbar">
+                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Softwarearchitektur und -entwicklung</a>
+                                    </li>
+                                    <li class="dropdown__item dropdown__item--navbar">
+                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Strategie- und Technologieberatung</a>
+                                    </li>
+                                    <li class="dropdown__item dropdown__item--navbar">
+                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Entwicklung digitaler Geschäftsmodelle</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="primary-nav__item">
+                        <div class="dropdown">
+                            <a href="#" class="navbtn navbtn--primary" data-for="dropdown__toggle--kultur">Kultur</a>
+                            <input type="checkbox" role="button" aria-haspopup="true" id="dropdown__toggle--kultur" class="sr-only dropdown__checkbox" />
+                            <label class="dropdown__toggle dropdown__toggle--navbar" for="dropdown__toggle--kultur">
+                                <i class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"></i>
+                                <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
+                                <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
+                            </label>
+                            <div class="dropdown__list-wrapper dropdown__list-wrapper--navbar" role="menu" title="Kultur" data-origin="right">
+                                <ul class="dropdown__list">
+                                    <li class="dropdown__item dropdown__item--navbar">
+                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Strategie- und Technologieberatung</a>
+                                    </li>
+                                    <li class="dropdown__item dropdown__item--navbar">
+                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Entwicklung digitaler Geschäftsmodelle</a>
+                                    </li>
+                                    <li class="dropdown__item dropdown__item--navbar">
+                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Softwarearchitektur und -entwicklung</a>
+                                    </li>
+                                    <li class="dropdown__item dropdown__item--navbar">
+                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Digitale Plattformen und Infrastrukturen</a>
+                                    </li>
+                                    <li class="dropdown__item dropdown__item--navbar">
+                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Wissenstransfer, Coaching und Trainings</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a href="#" class="navbtn navbtn--primary  navbtn--active">Magazin</a>
+                    </li>
+                    <li class="primary-nav__item">
+                        <a href="#" class="navbtn navbtn--primary">Termine</a>
+                    </li>
+                </ul>
+                <button class="navbtn navbtn--drill-up">
+                    <img class="navbtn__left-icon" src={context.app.uri('assets/icons/arrow-medium-left-red.svg')} /> Hauptmenü
+                </button>
+            </nav>
+        </div>
+    </nav-bar>
+    <header class="image-header image-header--podcast">
+        <div class="image-header__body image-header-bg-culture-01">
+            <div class="image-header__content">
+                <h1 class="image-header__title image-header-bg-culture-01-text-box ">Unsere Podcasts</h1>
+                <img src={context.app.uri('assets/icons/arrow-long-down-red.svg')} />
+            </div>
+        </div>
+    </header>
+    <div class="podcast-overview-grid">
+        <div class="grid-item1">
+            <a href="#" class="standard-tile-teaser standard-tile-teaser--narrow standard-tile-teaser-bg-color">
+                <div class="standard-tile-teaser__content">
+                    <div class="standard-tile-teaser__body">
+                        <h2 class="standard-tile-teaser__headline">Der INNOQ Podcast</h2>
+                        <p class="standard-tile-teaser__text">
+                            In dieser Serie diskutieren wir interessante Themen aus Software-Entwicklung und -Architektur – immer mit dem Fokus auf Praxistauglichkeit.
+                        </p>
+                    </div>
+                    <div class="standard-tile-teaser__goto">
+                        <span class="link-teaser">Alle Episoden</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="grid-item2">
+            <div class="podcast-overview-flex">
+                <a href="#" class="podcast-teaser podcast-teaser--default flex-grow">
+                    <div class="podcast-teaser__body">
+                        <div class="podcast-teaser__caption">Podcast</div>
+                        <h2 class="podcast-teaser__headline">Podcast Headline</h2>
+                        <h3 class="podcast-teaser__subheadline">
+                            Podcast Subheadline
+                        </h3>
+                        <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
+                    </div>
+                    <div class="podcast-teaser__footer">
+                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                            Heribert Innoq
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="podcast-teaser podcast-teaser--avatar flex-grow" style={cssRight}>
+                    <div class="podcast-teaser__body">
+                        <div class="podcast-teaser__caption">Podcast</div>
+                        <h2 class="podcast-teaser__headline">Podcast Headline</h2>
+                        <h3 class="podcast-teaser__subheadline">
+                            Podcast Subheadline
+                        </h3>
+                        <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
+                    </div>
+                    <div class="podcast-teaser__footer">
+                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                            Heribert Innoq
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay flex-grow" style={cssRight}>
+                    <div class="podcast-teaser__body">
+                        <div class="podcast-teaser__caption">Podcast</div>
+                        <h2 class="podcast-teaser__headline">Podcast Headline</h2>
+                        <h3 class="podcast-teaser__subheadline">
+                            Podcast Subheadline
+                        </h3>
+                        <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
+                    </div>
+                    <div class="podcast-teaser__footer">
+                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                            Heribert Innoq
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay--big flex-grow style={cssRight}">
+                    <div class="podcast-teaser__body">
+                        <div class="podcast-teaser__caption">Podcast</div>
+                        <h2 class="podcast-teaser__headline">Podcast Headline</h2>
+                        <h3 class="podcast-teaser__subheadline">
+                            Podcast Subheadline
+                        </h3>
+                        <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
+                    </div>
+                    <div class="podcast-teaser__footer">
+                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                            Heribert Innoq
+                        </div>
+                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                            Heribert Innoq
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="grid-item3">
+            <a href="#" class="standard-tile-teaser standard-tile-teaser--narrow standard-tile-teaser-bg-color--security">
+                <div class="standard-tile-teaser__content">
+                    <div class="standard-tile-teaser__body">
+                        <h2 class="standard-tile-teaser__headline podcast-overview-teaser__headline--security">Der Security Podcast</h2>
+                        <p class="standard-tile-teaser__text podcast-overview-teaser__text--security">
+                            In dieser Serie sprechen wir über die Grundlagen von IT-Security. Ein praktischer Einstieg für alle, die an Software arbeiten.
+                        </p>
+                    </div>
+                    <div class="standard-tile-teaser__goto">
+                        <span class="link-teaser link-teaser--security">Alle Episoden</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="grid-item4">
+            <div class="podcast-overview-flex">
+                <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay podcast-teaser--avatar--overlay--security flex-grow" style={cssRight}>
+                    <div class="podcast-teaser__body">
+                        <div class="podcast-teaser__caption podcast-teaser__caption--security">Security Podcast</div>
+                        <h2 class="podcast-teaser__headline podcast-teaser__headline--security">Podcast Headline</h2>
+                        <h3 class="podcast-teaser__subheadline podcast-teaser__subheadline--security">
+                            Podcast Subheadline
+                        </h3>
+                        <span class="icon-svg icon-arrow-long-right icon--brand-black"></span>
+                    </div>
+                    <div class="podcast-teaser__footer">
+                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                            Heribert Innoq
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="podcast-teaser podcast-teaser--default podcast-teaser--default--security flex-grow">
+                    <div class="podcast-teaser__body">
+                        <div class="podcast-teaser__caption">Security-Podcast</div>
+                        <h2 class="podcast-teaser__headline podcast-teaser__headline--security">Podcast Headline</h2>
+                        <h3 class="podcast-teaser__subheadline podcast-teaser__subheadline--security">
+                            Podcast Subheadline
+                        </h3>
+                        <span class="icon-svg icon-arrow-long-right icon--brand-yellow"></span>
+                    </div>
+                    <div class="podcast-teaser__footer">
+                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                            Heribert Innoq
+                        </div>
+                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                            Heribert Innoq
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="podcast-teaser podcast-teaser--default podcast-teaser--default--security flex-grow">
+                    <div class="podcast-teaser__body">
+                        <div class="podcast-teaser__caption">Security-Podcast</div>
+                        <h2 class="podcast-teaser__headline podcast-teaser__headline--security">Podcast Headline</h2>
+                        <h3 class="podcast-teaser__subheadline podcast-teaser__subheadline--security">
+                            Podcast Subheadline
+                        </h3>
+                        <span class="icon-svg icon-arrow-long-right icon--brand-yellow"></span>
+                    </div>
+                    <div class="podcast-teaser__footer">
+                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                            Heribert Innoq
+                        </div>
+                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                            Heribert Innoq
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</main>
