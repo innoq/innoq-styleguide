@@ -27,12 +27,18 @@ $case-tile-teaser-sm-height: ms(32);
 
 .standard-tile-teaser {
   @extend %block-link;
-  @extend %hover-zoom-in;
-
   display: flex;
   flex-direction: column;
   background-size: cover;
   padding: $spacer-sm $spacer-xs;
+
+  &--hover {
+    @extend %hover-zoom-in;
+  }
+
+  &--narrow {
+    padding: $spacer-sm;
+  }
 }
 
 .standard-tile-teaser__content {
@@ -98,7 +104,7 @@ $case-tile-teaser-sm-height: ms(32);
     padding: $spacer-xl $spacer-lg;
 
     &--narrow {
-      padding: $spacer-sm $spacer-xs;
+      padding: $spacer-md;
     }
   }
 
