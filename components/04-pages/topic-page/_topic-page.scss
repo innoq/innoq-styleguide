@@ -54,8 +54,8 @@
 .resource-list-item__caption {
   @extend %heading-font-regular;
 
-  font-size: $paragraph-font-size-small;
   margin-bottom: $spacer-md;
+  font-size: $paragraph-font-size-small;
 }
 
 .resource-list-item__footer {
