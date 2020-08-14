@@ -54,6 +54,7 @@
 .resource-list-item__caption {
   @extend %heading-font-regular;
 
+  font-size: $paragraph-font-size-small;
   margin-bottom: $spacer-md;
 }
 
