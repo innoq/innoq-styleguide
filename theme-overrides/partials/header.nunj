@@ -1,9 +1,13 @@
 <div class="Header">
     <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
-        {% include 'icons/close-nav.svg' %}
-        {% include 'icons/open-nav.svg' %}
+        <div class="Header-navToggleIcon Header-navToggleIcon--open">
+            {% include 'icons/close.svg' %}
+        </div>
+        <div class="Header-navToggleIcon Header-navToggleIcon--closed">
+            {% include 'icons/burger.svg' %}
+        </div>
     </button>
-    <a href="{{ path('/') }}" class="Header-title theme-brand" data-pjax>
+    <a href="{{ path('/') }}" class="Header-title" data-pjax>
       <img src="{{ path('/assets/innoq-logo--whitered.svg') }}" class="theme-brand-logo" alt="INNOQ">
       <span class="theme-brand-title">Living Styleguide</span>
     </a>
