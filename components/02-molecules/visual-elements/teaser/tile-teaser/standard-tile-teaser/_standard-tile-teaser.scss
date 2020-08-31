@@ -36,9 +36,6 @@ $case-tile-teaser-sm-height: ms(32);
     @extend %hover-zoom-in;
   }
 
-  &--narrow {
-    padding: $spacer-sm;
-  }
 }
 
 .standard-tile-teaser__content {

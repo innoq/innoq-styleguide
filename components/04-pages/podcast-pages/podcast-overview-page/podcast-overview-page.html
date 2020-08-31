@@ -102,7 +102,7 @@ import { cssRight, cssBoth } from "./components/02-molecules/visual-elements/tea
             </nav>
         </div>
     </nav-bar>
-    <header class="image-header image-header--podcast">
+    <header class="image-header image-header--no-padding">
         <div class="image-header__body image-header-bg-culture-01">
             <div class="image-header__content">
                 <h1 class="image-header__title image-header-bg-culture-01-text-box ">Unsere Podcasts</h1>
@@ -111,140 +111,132 @@ import { cssRight, cssBoth } from "./components/02-molecules/visual-elements/tea
         </div>
     </header>
     <div class="podcast-overview-grid">
-        <div class="grid-item1">
-            <a href="#" class="standard-tile-teaser standard-tile-teaser--narrow standard-tile-teaser-bg-color">
-                <div class="standard-tile-teaser__content">
-                    <div class="standard-tile-teaser__body">
-                        <h2 class="standard-tile-teaser__headline">Der INNOQ Podcast</h2>
-                        <p class="standard-tile-teaser__text">
-                            In dieser Serie diskutieren wir interessante Themen aus Software-Entwicklung und -Architektur – immer mit dem Fokus auf Praxistauglichkeit.
-                        </p>
-                    </div>
-                    <div class="standard-tile-teaser__goto">
-                        <span class="link-teaser">Alle Episoden</span>
-                    </div>
+        <a href="#" class="podcast-overview-teaser standard-tile-teaser standard-tile-teaser--narrow standard-tile-teaser-bg-color">
+            <div class="standard-tile-teaser__content">
+                <div class="standard-tile-teaser__body">
+                    <h2 class="standard-tile-teaser__headline">Der INNOQ Podcast</h2>
+                    <p class="standard-tile-teaser__text">
+                        In dieser Serie diskutieren wir interessante Themen aus Software-Entwicklung und -Architektur – immer mit dem Fokus auf Praxistauglichkeit.
+                    </p>
                 </div>
-            </a>
-        </div>
-        <div class="grid-item2">
-            <div class="podcast-overview-flex">
-                <a href="#" class="podcast-teaser podcast-teaser--default flex-grow">
-                    <div class="podcast-teaser__body">
-                        <div class="podcast-teaser__caption">Podcast</div>
-                        <h2 class="podcast-teaser__headline">Podcast Headline</h2>
-                        <h3 class="podcast-teaser__subheadline">
-                            Podcast Subheadline
-                        </h3>
-                        <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
-                    </div>
-                    <div class="podcast-teaser__footer">
-                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
-                            Heribert Innoq
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="podcast-teaser podcast-teaser--avatar flex-grow" style={cssRight}>
-                    <div class="podcast-teaser__body">
-                        <div class="podcast-teaser__caption">Podcast</div>
-                        <h2 class="podcast-teaser__headline">Podcast Headline</h2>
-                        <h3 class="podcast-teaser__subheadline">
-                            Podcast Subheadline
-                        </h3>
-                        <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
-                    </div>
-                    <div class="podcast-teaser__footer">
-                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
-                            Heribert Innoq
-                        </div>
-                    </div>
-                </a>
-                <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay flex-grow" style={cssRight}>
-                    <div class="podcast-teaser__body">
-                        <div class="podcast-teaser__caption">Podcast</div>
-                        <h2 class="podcast-teaser__headline">Podcast Headline</h2>
-                        <h3 class="podcast-teaser__subheadline">
-                            Podcast Subheadline
-                        </h3>
-                        <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
-                    </div>
-                    <div class="podcast-teaser__footer">
-                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
-                            Heribert Innoq
-                        </div>
-                    </div>
-                </a>
+                <div class="standard-tile-teaser__goto">
+                    <span class="link-teaser">Alle Episoden</span>
+                </div>
             </div>
-        </div>
-        <div class="grid-item3">
-            <a href="#" class="standard-tile-teaser standard-tile-teaser--narrow standard-tile-teaser-bg-color--security">
-                <div class="standard-tile-teaser__content">
-                    <div class="standard-tile-teaser__body">
-                        <h2 class="standard-tile-teaser__headline podcast-overview-teaser__headline--security">Der Security Podcast</h2>
-                        <p class="standard-tile-teaser__text podcast-overview-teaser__text--security">
-                            In dieser Serie sprechen wir über die Grundlagen von IT-Security. Ein praktischer Einstieg für alle, die an Software arbeiten.
-                        </p>
+        </a>
+        <div class="podcast-overview-samples">
+            <a href="#" class="podcast-teaser podcast-teaser--default flex-grow">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Podcast</div>
+                    <h2 class="podcast-teaser__headline">Podcast Headline</h2>
+                    <h3 class="podcast-teaser__subheadline">
+                        Podcast Subheadline
+                    </h3>
+                    <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
                     </div>
-                    <div class="standard-tile-teaser__goto">
-                        <span class="link-teaser link-teaser--security">Alle Episoden</span>
+                </div>
+            </a>
+            <a href="#" class="podcast-teaser podcast-teaser--avatar flex-grow" style={cssRight}>
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Podcast</div>
+                    <h2 class="podcast-teaser__headline">Podcast Headline</h2>
+                    <h3 class="podcast-teaser__subheadline">
+                        Podcast Subheadline
+                    </h3>
+                    <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay flex-grow" style={cssRight}>
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Podcast</div>
+                    <h2 class="podcast-teaser__headline">Podcast Headline</h2>
+                    <h3 class="podcast-teaser__subheadline">
+                        Podcast Subheadline
+                    </h3>
+                    <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
                     </div>
                 </div>
             </a>
         </div>
-        <div class="grid-item4">
-            <div class="podcast-overview-flex">
-                <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay podcast-teaser--avatar--overlay--security flex-grow" style={cssRight}>
-                    <div class="podcast-teaser__body">
-                        <div class="podcast-teaser__caption podcast-teaser__caption--security">Security Podcast</div>
-                        <h2 class="podcast-teaser__headline podcast-teaser__headline--security">Podcast Headline</h2>
-                        <h3 class="podcast-teaser__subheadline podcast-teaser__subheadline--security">
-                            Podcast Subheadline
-                        </h3>
-                        <span class="icon-svg icon-arrow-long-right icon--brand-black"></span>
+        <a href="#" class="podcast-overview-teaser standard-tile-teaser standard-tile-teaser--narrow standard-tile-teaser-bg-color--security">
+            <div class="standard-tile-teaser__content">
+                <div class="standard-tile-teaser__body">
+                    <h2 class="standard-tile-teaser__headline podcast-overview-teaser__headline--security">Der Security Podcast</h2>
+                    <p class="standard-tile-teaser__text podcast-overview-teaser__text--security">
+                        In dieser Serie sprechen wir über die Grundlagen von IT-Security. Ein praktischer Einstieg für alle, die an Software arbeiten.
+                    </p>
+                </div>
+                <div class="standard-tile-teaser__goto">
+                    <span class="link-teaser link-teaser--security">Alle Episoden</span>
+                </div>
+            </div>
+        </a>
+        <div class="podcast-overview-samples">
+            <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay podcast-teaser--avatar--overlay--security flex-grow" style={cssRight}>
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption podcast-teaser__caption--security">Security Podcast</div>
+                    <h2 class="podcast-teaser__headline podcast-teaser__headline--security">Podcast Headline</h2>
+                    <h3 class="podcast-teaser__subheadline podcast-teaser__subheadline--security">
+                        Podcast Subheadline
+                    </h3>
+                    <span class="icon-svg icon-arrow-long-right icon--brand-black"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
                     </div>
-                    <div class="podcast-teaser__footer">
-                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
-                            Heribert Innoq
-                        </div>
-                    </div>
-                </a>
+                </div>
+            </a>
 
-                <a href="#" class="podcast-teaser podcast-teaser--default podcast-teaser--default--security flex-grow">
-                    <div class="podcast-teaser__body">
-                        <div class="podcast-teaser__caption">Security-Podcast</div>
-                        <h2 class="podcast-teaser__headline podcast-teaser__headline--security">Podcast Headline</h2>
-                        <h3 class="podcast-teaser__subheadline podcast-teaser__subheadline--security">
-                            Podcast Subheadline
-                        </h3>
-                        <span class="icon-svg icon-arrow-long-right icon--brand-yellow"></span>
+            <a href="#" class="podcast-teaser podcast-teaser--default podcast-teaser--default--security flex-grow">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Security-Podcast</div>
+                    <h2 class="podcast-teaser__headline podcast-teaser__headline--security">Podcast Headline</h2>
+                    <h3 class="podcast-teaser__subheadline podcast-teaser__subheadline--security">
+                        Podcast Subheadline
+                    </h3>
+                    <span class="icon-svg icon-arrow-long-right icon--brand-yellow"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
                     </div>
-                    <div class="podcast-teaser__footer">
-                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
-                            Heribert Innoq
-                        </div>
-                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
-                            Heribert Innoq
-                        </div>
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
                     </div>
-                </a>
-                <a href="#" class="podcast-teaser podcast-teaser--default podcast-teaser--default--security flex-grow">
-                    <div class="podcast-teaser__body">
-                        <div class="podcast-teaser__caption">Security-Podcast</div>
-                        <h2 class="podcast-teaser__headline podcast-teaser__headline--security">Podcast Headline</h2>
-                        <h3 class="podcast-teaser__subheadline podcast-teaser__subheadline--security">
-                            Podcast Subheadline
-                        </h3>
-                        <span class="icon-svg icon-arrow-long-right icon--brand-yellow"></span>
+                </div>
+            </a>
+            <a href="#" class="podcast-teaser podcast-teaser--default podcast-teaser--default--security flex-grow">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Security-Podcast</div>
+                    <h2 class="podcast-teaser__headline podcast-teaser__headline--security">Podcast Headline</h2>
+                    <h3 class="podcast-teaser__subheadline podcast-teaser__subheadline--security">
+                        Podcast Subheadline
+                    </h3>
+                    <span class="icon-svg icon-arrow-long-right icon--brand-yellow"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
                     </div>
-                    <div class="podcast-teaser__footer">
-                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
-                            Heribert Innoq
-                        </div>
-                        <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
-                            Heribert Innoq
-                        </div>
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
                     </div>
-                </a>
-            </div>
+                </div>
+            </a>
         </div>
     </div>
 </main>
