@@ -16,7 +16,7 @@ $case-tile-teaser-sm-height: ms(32);
   display: flex;
   flex-direction: column;
   background-size: cover;
-  padding: $spacer-sm $spacer-xs;
+  padding: $spacer-sm;
 }
 
 .static-tile-teaser__content {
@@ -79,11 +79,7 @@ $case-tile-teaser-sm-height: ms(32);
 //
 @media screen and (min-width: $grid-breakpoint-md) {
   .static-tile-teaser {
-    padding: $spacer-xl $spacer-lg;
-
-    &--narrow {
-      padding: $spacer-md;
-    }
+    padding: $spacer-md;
   }
 
   .static-tile-teaser__content {
