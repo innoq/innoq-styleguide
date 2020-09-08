@@ -6,3 +6,4 @@ public/**/*
 .DS_Store
 .vscode
 *.sublime-workspace
+.npmrc

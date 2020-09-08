@@ -202,8 +202,10 @@ $code-snippet-font-size-small: ms(-2);      // ~16px
 // Date & Duration
 //
 $date-font-size: ms(0);                   // ~16px
+$edition-font-size: ms(0);                // ~16px
 $duration-font-size: ms(1);               // ~17px
 $date-line-height: $base-line-height;     // ~16px
+$edition-line-height: $heading-line-height;   // ~16px
 $event-day-font-size: ms(7);              // ~30px
 $event-day-line-height: .9;               // ~27px
 $event-day-font-size-small: ms(5);        // ~25px
@@ -246,6 +248,11 @@ $author-bio-name-font-size: ms(0);                 // ~16px
 $author-bio-name-line-height: 1.1;                 // ~17,6px
 $author-bio-name-font-size-small: ms(-1);          // ~14px
 $author-bio-name-line-height-small: 1;             // ~14px
+
+//Artist-in-Residence
+$artwork-font-size-small: ms(7);                   // ~30px
+$artwork-font-size-default: ms(11);                // ~45px
+
 
 //
 // Long-Quote

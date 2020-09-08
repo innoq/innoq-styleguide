@@ -1,3 +1,6 @@
+$gradient-from: rgba(0, 0, 0, .4);
+$gradient-to: rgba(0, 0, 0, .1);
+
 .image-header {
   display: flex;
   flex-direction: column;
@@ -35,6 +38,11 @@
 
 .image-header-bg-culture-01 {
   background-image: asset-url('visual-culture-01.jpg');
+}
+
+.image-header-bg-art-01 {
+  background-image: linear-gradient($gradient-from, $gradient-to), asset-url('visual-art-02.jpg');
+
 }
 
 .image-header-bg-staff-01 {
