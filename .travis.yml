@@ -6,7 +6,7 @@ before_install:
 - yarn global add greenkeeper-lockfile@1
 before_script:
 - greenkeeper-lockfile-update
-- export NODE_OPTIONS=–max_old_space_size=4096
+- export NODE_OPTIONS=–max_old_space_size=8192
 script:
 - yarn test
 - ./scripts/dist
