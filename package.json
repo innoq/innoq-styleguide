@@ -15,7 +15,7 @@
     "compile-watch": "npm run compile -- --watch",
     "test": "eslint --cache --ext .js --ext .jsx . && sass-lint -v -q",
     "site": "yarn run compile && fractal build",
-    "dist": "node --max_old_space_size=4096 ./scripts/dist",
+    "dist": "./scripts/dist",
     "release": "release-it"
   },
   "dependencies": {
