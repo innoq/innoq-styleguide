@@ -7,7 +7,7 @@ before_install:
 before_script: greenkeeper-lockfile-update
 script:
 - yarn test
-- yarn dist
+- ./scripts/dist
 after_script: greenkeeper-lockfile-upload
 deploy:
 - provider: s3
