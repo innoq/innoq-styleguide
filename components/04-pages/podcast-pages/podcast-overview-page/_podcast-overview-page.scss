@@ -1,5 +1,7 @@
-// overwrites colored padding in original image-header class
+$tile-teaser-width: ms(33);
 
+
+// overwrites colored padding in original image-header class
 .image-header--no-padding {
   padding: 0;
 }
@@ -37,7 +39,7 @@
   }
 
   .flex-grow {
-    flex: 1 320px;
+    flex: 1 $tile-teaser-width;
   }
 }
 
@@ -45,6 +47,8 @@
   .podcast-overview-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: $grid-page-layout-width;
+    margin: auto;
   }
 
   .podcast-overview-samples {
