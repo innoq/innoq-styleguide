@@ -56,7 +56,7 @@
 
   > li {
     @extend %list-unstyled;
-    margin-top: $spacer-xxs;
+    margin-bottom: $spacer-xxs;
 
     > a {
       @extend %link-unstyled;
