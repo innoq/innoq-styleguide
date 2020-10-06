@@ -50,23 +50,24 @@
   @extend %heading-font-regular;
 
   margin-bottom: $spacer-lg;
+  padding-left: 0;
   color: $brand-primary;
   font-size: $paragraph-font-size-small;
 
-  > div {
+  > li {
+    @extend %list-unstyled;
     margin-top: $spacer-xxs;
 
     > a {
-      box-shadow: none;
-      color: inherit;
+      @extend %link-unstyled;
 
       &:focus,
       &:hover {
+        @extend %heading-font-bold;
         background-color: $brand-text-light;
       }
     }
   }
-
 }
 
 .resource-list-item__title {
