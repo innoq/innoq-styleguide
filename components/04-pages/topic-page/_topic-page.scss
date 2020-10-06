@@ -49,20 +49,24 @@
 .resource-list-item__author {
   @extend %heading-font-regular;
 
-  margin-bottom: $spacer-xs;
+  margin-bottom: $spacer-lg;
   color: $brand-primary;
   font-size: $paragraph-font-size-small;
 
+  > div {
+    margin-top: $spacer-xxs;
 
-  > a {
-    box-shadow: none;
-    color: inherit;
+    > a {
+      box-shadow: none;
+      color: inherit;
 
-    &:focus,
-    &:hover {
-      background-color: $brand-text-light;
+      &:focus,
+      &:hover {
+        background-color: $brand-text-light;
+      }
     }
   }
+
 }
 
 .resource-list-item__title {
