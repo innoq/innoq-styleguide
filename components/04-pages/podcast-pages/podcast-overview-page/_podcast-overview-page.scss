@@ -46,9 +46,9 @@ $tile-teaser-width: ms(33);
 @media screen and (min-width: $grid-breakpoint-lg) {
   .podcast-overview-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: $grid-page-layout-width;
     margin: auto;
+    max-width: $grid-page-layout-width;
+    grid-template-columns: 1fr 1fr;
   }
 
   .podcast-overview-samples {
