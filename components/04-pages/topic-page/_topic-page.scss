@@ -46,6 +46,19 @@
   width: 50%;
 }
 
+.resource-list-item__author {
+  @extend %heading-font-regular;
+
+  margin-bottom: $spacer-xs;
+  color: $brand-primary;
+  font-size: $paragraph-font-size-small;
+
+
+  > a {
+    color: inherit;
+  }
+}
+
 .resource-list-item__title {
   margin-bottom: $spacer-xs;
   color: $brand-text-light;
