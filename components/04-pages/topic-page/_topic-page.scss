@@ -55,7 +55,13 @@
 
 
   > a {
+    box-shadow: none;
     color: inherit;
+
+    &:focus,
+    &:hover {
+      background-color: $brand-text-light;
+    }
   }
 }
 
