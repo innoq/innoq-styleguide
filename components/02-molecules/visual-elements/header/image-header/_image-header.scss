@@ -40,6 +40,10 @@ $gradient-to: rgba(0, 0, 0, .1);
   background-image: asset-url('visual-culture-01.jpg');
 }
 
+.image-header-bg-podcast-01 {
+  background-image: asset-url('podcast-header-mobil.jpg');
+}
+
 .image-header-bg-art-01 {
   background-image: linear-gradient($gradient-from, $gradient-to), asset-url('visual-art-02.jpg');
 
@@ -68,6 +72,10 @@ $gradient-to: rgba(0, 0, 0, .1);
 @media screen and (min-width: $grid-breakpoint-sm) {
   .image-header__body {
     align-items: center;
+  }
+
+  .image-header-bg-podcast-01 {
+    background-image: asset-url('podcast-header.jpg');
   }
 }
 
