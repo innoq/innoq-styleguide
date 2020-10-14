@@ -3,7 +3,8 @@ figure {
   // Short figcaptions will be centered, long ones left aligned
   text-align: center;
 
-  & img {
+  & img,
+  & video {
     width: 100%;
   }
 }
