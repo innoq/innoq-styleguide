@@ -27,8 +27,8 @@ cp_r "lib/styles", "dist/sass"
 
 File.write "dist/site/RELEASE.txt", commit
 
-cd "dist" do
-  exit 1 unless system("zip -r #{release_filename} . #{zip_blacklist}")
-end
-
-mv "./dist/#{release_filename}", "./"
+# cd "dist" do
+#   exit 1 unless system("zip -r #{release_filename} . #{zip_blacklist}")
+# end
+#
+# mv "./dist/#{release_filename}", "./"
