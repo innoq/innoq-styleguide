@@ -33,6 +33,6 @@ jobs:
         name: upload-artifact
         path: |
           dist
-    - run: yarn publish
+    - run: npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
