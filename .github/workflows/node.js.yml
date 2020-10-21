@@ -25,6 +25,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         registry-url: 'https://npm.pkg.github.com'
+        scope: '@innoq'
     - run: yarn install --frozen-lockfile
     - run: yarn test
     # - run: ./scripts/dist
