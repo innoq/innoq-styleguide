@@ -49,5 +49,5 @@ jobs:
         path: |
           dist
   #  - run: yarn publish
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # env:
+      #   NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
