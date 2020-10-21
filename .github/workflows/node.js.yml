@@ -27,13 +27,13 @@ jobs:
         registry-url: 'https://npm.pkg.github.com'
     - run: yarn install --frozen-lockfile
     - run: yarn test
-    - run: ./scripts/dist
-    - name: Archive production artifacts
-      uses: actions/upload-artifact@v2
-      with:
-        name: upload-artifact
-        path: |
-          dist
-    - run: npm publish
+    # - run: ./scripts/dist
+    # - name: Archive production artifacts
+    #   uses: actions/upload-artifact@v2
+    #   with:
+    #     name: upload-artifact
+    #     path: |
+    #       dist
+    - run: yarn publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
