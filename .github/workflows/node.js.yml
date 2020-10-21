@@ -43,11 +43,11 @@ jobs:
     - run: yarn test
     - run: ./scripts/dist
   # - run: yarn publish
-    # if: startsWith(github.ref, "v")
+    # if: ${{  startsWith(github.ref, 'v) }}
       # env:
       #   NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Create Release
-      if: startsWith(github.ref, "v")
+      if: ${{  startsWith(github.ref, 'v) }}
       id: create_release
       uses: actions/create-release@v1
       env:
@@ -62,7 +62,7 @@ jobs:
 
     - name: Upload Release Asset
       id: upload-release-asset
-      if: startsWith(github.ref, "v")
+      if: ${{  startsWith(github.ref, 'v) }}
       uses: actions/upload-release-asset@v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
