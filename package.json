@@ -25,7 +25,8 @@
     "postcss-scss": "^4.0.3"
   },
   "devDependencies": {
-    "complate-fractal": "^0.15.0",
+    "@frctl/fractal": "^1.5.1",
+    "document-register-element": "^1.14.5",
     "eslint": "^7.6.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-config-standard-jsx": "^10.0.0",
