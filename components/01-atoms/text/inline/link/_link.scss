@@ -2,18 +2,14 @@
 // Default Link - used on all class-less link elements
 //
 
-// Use relative units for inline links to cover different font faces and sizes.
-$underline-offset: -.1em;
-$underline-width: $underline-offset - .05em;
-$hover-padding: .125em;
-$link-padding: .2em;
+$hover-padding: .1em;
 
 .link-default,
 a:not([class]) {
+  @extend %link-unstyled;
+
   transition: standard-transition(padding-bottom, padding-top, background-color);
-  box-shadow: inset 0 $underline-offset 0 $brand-white, inset 0 $underline-width 0 $link-color;
-  padding-bottom: $link-padding;
-  text-decoration: none;
+  border-bottom: 1px solid $link-color;
   color: $link-color;
 
   &:focus,
@@ -24,7 +20,7 @@ a:not([class]) {
     padding-bottom: $hover-padding;
   }
 
-  &[href^='mailto'] {
+  &[href='mailto'] {
     hyphens: none;
   }
 }
