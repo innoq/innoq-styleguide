@@ -6,10 +6,9 @@ $hover-padding: .1em;
 
 .link-default,
 a:not([class]) {
-  @extend %link-unstyled;
-
   transition: standard-transition(padding-bottom, padding-top, background-color);
   border-bottom: 1px solid $link-color;
+  text-decoration: none;
   color: $link-color;
 
   &:focus,
