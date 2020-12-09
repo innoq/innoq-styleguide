@@ -29,7 +29,7 @@ You need to prefix all maintenance commands from above like `yarn …` with
 Everything in master gets deployed automatically to
 https://innoq.style/.
 
-See `.github/workflow/node.js.yml` for more info.
+See `.github/workflow/build.yml` for more info.
 
 ## Generate assets locally
 
