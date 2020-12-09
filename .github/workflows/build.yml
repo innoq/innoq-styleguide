@@ -39,7 +39,7 @@ jobs:
     - run: yarn test
 
   publish:
-    if: ${{ contains(github.ref, 'refs/tags') }}
+    # if: ${{ contains(github.ref, 'refs/tags') }}
     needs: build
     runs-on: ubuntu-latest
 
@@ -69,7 +69,7 @@ jobs:
     - name: Publish to Node Packages
       run: yarn publish
       env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     - run: ./scripts/dist
     - name: Create Release
       id: create_release
