@@ -93,8 +93,3 @@ jobs:
         asset_path: innoq-styleguide-${{ github.run_number }}.zip
         asset_name: innoq-styleguide-${{ github.run_number }}.zip
         asset_content_type: application/zip
-
-    - name: Slack Notification
-      uses: rtCamp/action-slack-notify@v2
-      env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
