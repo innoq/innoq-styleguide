@@ -1,8 +1,6 @@
 # INNOQ Styleguide and Component Library
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/innoq/innoq-styleguide.svg)](https://greenkeeper.io/)
-
-[![Build Status](https://travis-ci.org/innoq/innoq-styleguide.svg?branch=master)](https://travis-ci.org/innoq/innoq-styleguide)
+[![Build Status](https://github.com/innoq/innoq-styleguide/workflows/Build%20and%20Release/badge.svg)](https://github.com/innoq/innoq-styleguide/actions)
 
 ## Without Docker
 
@@ -31,7 +29,7 @@ You need to prefix all maintenance commands from above like `yarn …` with
 Everything in master gets deployed automatically to
 https://innoq.style/.
 
-See `.travis.yml` for more info.
+See `.github/workflow/build.yml` for more info.
 
 ## Generate assets locally
 
@@ -57,7 +55,7 @@ Just hit `ENTER` all the time to release a new version.
 
 ![Just. hit. Enter.](http://www.reactiongifs.com/r/Dz3nk.gif)
 
-Travis deals with npm publishing.
+GitHub Actions deals with npm publishing.
 
 ### Patch level version (auto increment)
 

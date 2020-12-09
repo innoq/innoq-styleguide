@@ -5,8 +5,8 @@ include FileUtils
 # Delete old dist folder if it exists
 rm_rf "dist"
 
-commit = ENV["TRAVIS_COMMIT"]
-tag = ENV.fetch("TRAVIS_TAG") { "HEAD" }
+commit = ENV["GITHUB_SHA"]
+tag = ENV.fetch("GITHUB_REF") { "HEAD" }
 js_components_target = "dist/js/components"
 release_filename = "innoq-styleguide-#{tag}.zip"
 zip_blacklist = "-x #{File.read(".npmignore").gsub(/\n/, ' ')}"
@@ -27,7 +27,7 @@ cp_r "lib/styles", "dist/sass"
 File.write "dist/site/RELEASE.txt", commit
 
 cd "dist" do
-  exit 1 unless system("zip -r #{release_filename} . #{zip_blacklist}")
-end
+   exit 1 unless system("zip -r #{release_filename} . #{zip_blacklist}")
+ end
 
 mv "./dist/#{release_filename}", "./"
