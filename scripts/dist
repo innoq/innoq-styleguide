@@ -6,7 +6,7 @@ include FileUtils
 rm_rf "dist"
 
 commit = ENV["GITHUB_SHA"]
-tag = ENV.fetch("GITHUB_RUN_NUMBER") { "HEAD" }
+tag = ENV.fetch("GITHUB_REF") { "HEAD" }
 js_components_target = "dist/js/components"
 release_filename = "innoq-styleguide-#{tag}.zip"
 zip_blacklist = "-x #{File.read(".npmignore").gsub(/\n/, ' ')}"
