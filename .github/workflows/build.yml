@@ -6,6 +6,8 @@ name: Build and Release
 on:
   push:
     branches: [ master ]
+    tags:
+      - v* # Our tags are prefixed with 'v'
   pull_request:
     branches: [ master ]
 
