@@ -41,6 +41,7 @@ jobs:
     - run: yarn test
 
   deploy_site:
+    if: ${{ contains(github.ref, 'refs/tags') }}
     needs: build
     runs-on: ubuntu-latest
     strategy:
