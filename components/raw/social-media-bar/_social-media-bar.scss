@@ -1,0 +1,15 @@
+.social-media-bar {
+  @extend %list-unstyled;
+}
+
+.social-media-bar__item {
+  display: inline-block;
+
+  & + & {
+    margin-left: $spacer-md;
+  }
+}
+
+.social-media-bar__link {
+  @extend %link-unstyled;
+}

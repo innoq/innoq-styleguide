@@ -1,0 +1,107 @@
+$podcast-teaser-height-sm: ms(30);
+$podcast-teaser-height-md: ms(35);
+
+.list-teaser-podcast {
+  @extend %list-teaser;
+  @extend %block-link;
+  @extend %hover-zoom-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: $podcast-teaser-height-sm;
+}
+
+.list-teaser-podcast__body {
+  margin-bottom: 0;
+  padding: $spacer-sm $spacer-md;
+}
+
+.list-teaser-podcast__footer {
+  margin-bottom: 0;
+  padding: $spacer-sm $spacer-md;
+
+  > * {
+    margin: 0;
+  }
+}
+
+.list-teaser-podcast__caption {
+  @extend %teaser-caption;
+
+  &--security {
+    color: $podcast-teaser-default-bg-sec;
+  }
+}
+
+.list-teaser-podcast__headline {
+  @extend %h2;
+
+  margin-bottom: $spacer-md;
+  color: $podcast-teaser-default-color;
+
+  &--security {
+    color: $podcast-teaser-default-bg-sec;
+  }
+}
+
+.list-teaser-podcast__subheadline {
+  @extend %body-font-italic;
+
+  margin-bottom: $spacer-xs;
+  line-height: $podcast-teaser-subheadline-line-height;
+  color: $podcast-teaser-default-color;
+  font-size: $podcast-teaser-subheadline-font-size;
+
+  &--security {
+    color: $podcast-teaser-default-bg-sec;
+  }
+}
+
+.podcast-author {
+  @extend %author-name;
+
+  &--security {
+    color: $podcast-teaser-default-color-sec;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .list-teaser-podcast {
+    min-height: $podcast-teaser-height-md;
+  }
+}
+
+.list-teaser-podcast--avatar--overlay--big {
+  background-color: $podcast-teaser-overlay-color;
+  background-repeat: no-repeat;
+  background-position: top right, top left;
+  background-size: 0%;
+  color: $podcast-teaser-default-color;
+  background-blend-mode: multiply;
+
+  &--security {
+    background-color: $podcast-teaser-overlay-color-sec;
+  }
+
+  .list-teaser-podcast__body  {
+    padding: $spacer-lg;
+    text-align: center;
+  }
+
+  .list-teaser-podcast__footer {
+    display: flex;
+    justify-content: space-evenly;
+    // IE11 Hack
+    // sass-lint:disable no-vendor-prefixes
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+      justify-content: space-around;
+    }
+  }
+}
+
+//Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+  .list-teaser-podcast--avatar--overlay--big  {
+    background-size: contain;
+  }
+}

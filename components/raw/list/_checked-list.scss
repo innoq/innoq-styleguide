@@ -1,0 +1,22 @@
+$list-indent: $spacer-xs + $spacer-sm;
+
+.checklist {
+  @extend %unsorted-list;
+  @extend %heading-font-bold;
+
+  li {
+    padding-left: $list-indent;
+
+    &::before {
+      @extend %icon;
+      position: absolute;
+      top: .45em;
+      left: 0;
+      color: $bullet-list-color;
+      content: $icon-check;
+
+      // sass-lint:disable no-vendor-prefixes
+      -webkit-text-stroke-width: 2px;
+    }
+  }
+}

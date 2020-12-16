@@ -1,0 +1,27 @@
+$two-column-image-divider-height-sm: 2 * $spacer-xxl;
+$two-column-image-divider-height-md: 4 * $spacer-xxl;
+
+.two-column-image-divider {
+  display: flex;
+}
+
+.two-column-image-divider__left-image,
+.two-column-image-divider__right-image {
+  flex-basis: 50%;
+  flex-grow: 1;
+  margin: 0;
+  overflow: hidden;
+
+  > img {
+    max-width: 100%;
+    height: $two-column-image-divider-height-sm;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .two-column-image-divider__left-image > img,
+  .two-column-image-divider__right-image > img {
+    height: $two-column-image-divider-height-md;
+  }
+}

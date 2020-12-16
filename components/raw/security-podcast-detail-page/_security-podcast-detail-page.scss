@@ -1,0 +1,70 @@
+.podcast-detail-page--security {
+
+  a:not([class]):hover {
+    background-color: $brand-yellow;
+  }
+
+  .podcast-header--avatar--overlay {
+    background-color: $brand-yellow;
+  }
+
+  .standard-header__intro__label {
+    color: $brand-yellow;
+  }
+
+  .standard-header__title,
+  .standard-header__type {
+    color: $brand-gray;
+  }
+
+  .toolbar__link,
+  .share-section__link,
+  .author-bio__social-profile {
+    &:hover,
+    &:focus {
+      color: $brand-gray;
+    }
+
+    .icon-svg:hover,
+    .icon-svg:focus {
+      background: $brand-gray;
+    }
+  }
+
+  .btn--cta {
+    border-color: $brand-yellow;
+    background-color: $brand-yellow;
+    color: $brand-gray;
+
+    &::after {
+      background-color: $brand-gray;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $brand-gray;
+      color: $brand-yellow;
+    }
+  }
+
+  ul {
+    & > li::before {
+      background: $brand-yellow;
+    }
+
+    ul > li::before {
+      border: 3px solid $brand-yellow;
+      background: $brand-white;
+    }
+  }
+
+  .tag-list__link {
+    background-color: $brand-yellow;
+    color: $brand-gray;
+
+    &:hover {
+      background-color: $brand-gray;
+      color: $brand-yellow;
+    }
+  }
+}

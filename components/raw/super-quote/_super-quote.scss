@@ -1,0 +1,32 @@
+super-quote > blockquote,
+.superquote {
+  @extend %longquote;
+
+  > p {
+    line-height: $superquote-line-height-small;
+    font-size: $superquote-font-size-small;
+  }
+}
+
+.superquote__zigzag {
+  @extend %longquote__zigzag;
+}
+
+.superquote__author {
+  @extend %longquote__author;
+}
+
+.superquote__role {
+  @extend %longquote__role;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .superquote {
+    @extend %longquote;
+
+    > p {
+      line-height: $superquote-line-height;
+      font-size: $superquote-font-size;
+    }
+  }
+}

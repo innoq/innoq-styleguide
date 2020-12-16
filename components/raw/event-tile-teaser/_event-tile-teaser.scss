@@ -1,0 +1,8 @@
+$event-list-teaser-height: ms(34);
+
+.list-teaser-event {
+  &.tile {
+    margin-bottom: 0;
+    min-height: $event-list-teaser-height;
+  }
+}

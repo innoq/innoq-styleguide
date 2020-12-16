@@ -1,0 +1,50 @@
+.search-result {
+  text-decoration: none;
+  color: $search-result-color;
+
+  &:hover,
+  &:focus {
+    .search-result__title {
+      color: $brand-interaction;
+    }
+  }
+}
+
+.search-result__date,
+.search-result__type {
+  @extend %heading-font-regular;
+}
+
+.search-result__type +
+.search-result__date {
+  &::before {
+    content: ' | ';
+  }
+}
+
+.search-result__title {
+  @extend %h3;
+  transition: standard-transition(color);
+  margin-bottom: 0;
+
+  // Fix Google CSE markup and the resulting style
+  b {
+    font-weight: normal;
+  }
+}
+
+.search-result__subtitle {
+  @extend %h4;
+  transition: standard-transition(color);
+  margin-top: $spacer-xxs;
+  margin-bottom: 0;
+
+  // Fix Google CSE markup and the resulting style
+  b {
+    font-weight: normal;
+  }
+}
+
+.search-result__body {
+  margin-top: $spacer-sm;
+}

@@ -1,0 +1,109 @@
+$default-full-width-teaser-bg-width: 1444px; // Arbitrary value
+$default-full-width-teaser-bg-height: 1000px; // Arbitrary value
+$default-full-width-teaser-height: ms(38);
+
+.default-full-width-teaser {
+  @extend %page-header;
+
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  min-height: $default-full-width-teaser-height;
+
+  &--right-aligned {
+    justify-content: flex-end;
+  }
+
+  &__punch-in {
+    @extend %punch-in;
+  }
+}
+
+.default-full-width-teaser__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  padding: $container-spacer-x-sm;
+}
+
+.default-full-width-teaser__body {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $default-full-width-teaser-body-bg;
+  padding: $spacer-base;
+}
+
+.default-full-width-teaser__text {
+  @extend %teaser-text;
+  margin-bottom: $spacer-base;
+  line-height: $big-content-teaser-text-line-height-small;
+  font-size: $big-content-teaser-text-font-size-small;
+  hyphens: auto;
+}
+
+.default-full-width-teaser__header {
+  padding-bottom: 0;
+  color: $default-full-width-teaser-body-color;
+
+  h2 {
+    line-height: $h1-line-height;
+    font-size: $h1-font-size;
+  }
+
+  .punch-in {
+    line-height: 1.31; // fix cut descender
+  }
+}
+
+.default-full-width-teaser__caption {
+  @extend %teaser-caption;
+  margin-bottom: $spacer-xxs;
+  height: $spacer-md;
+}
+
+//
+// Media Queries
+//
+
+@media screen and (max-width: $grid-breakpoint-sm) {
+  .default-full-width-teaser {
+    margin-bottom: $spacer-xxl;
+  }
+
+  .default-full-width-teaser__body {
+    position: relative;
+    top: $spacer-xxl;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .default-full-width-teaser__wrapper {
+    padding: $spacer-base;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md-lg) {
+  .default-full-width-teaser__wrapper {
+    padding: $spacer-sm;
+    width: $default-page-layout-width-xl;
+    max-width: $default-page-layout-content-width-xl;
+  }
+
+  .default-full-width-teaser__text {
+    line-height: $big-content-teaser-text-line-height;
+    font-size: $big-content-teaser-text-font-size;
+    hyphens: none;
+  }
+
+  // Variation without stencil Headlines
+  .default-full-width-teaser--simple {
+    background-position: top left;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .default-full-width-teaser__body {
+    flex-basis: 50%;
+  }
+}

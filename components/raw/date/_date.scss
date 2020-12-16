@@ -1,0 +1,114 @@
+$event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spacer-xxs);
+
+.date {
+  @extend %heading-font-bold;
+  line-height: $date-line-height;
+  font-size: $date-font-size;
+}
+
+//Event Date for Teasers
+.event-date-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: -$event-date-section-height;
+  background-color: $date-section-background-color;
+}
+
+.event-date-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.event-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: $spacer-xxs $spacer-sm;
+}
+
+.event-day-month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-day {
+  @extend %heading-font-heavy;
+
+  line-height: $event-day-line-height-small;
+  color: $date-section-day-color;
+  font-size: $event-day-font-size-small;
+}
+
+.event-month {
+  @extend %heading-font-heavy;
+
+  margin-bottom: 0;
+  text-transform: uppercase;
+  line-height: $event-month-line-height-small;
+  color: $date-section-month-color;
+  font-size: $event-month-font-size-small;
+}
+
+.event-year {
+  @extend %heading-font-regular;
+
+  margin-left: $spacer-xs;
+  border-left: 1px solid $date-section-year-color;
+  padding-left: $spacer-xxs;
+  line-height: $event-year-line-height;
+  color: $date-section-year-color;
+  font-size: $event-year-font-size;
+}
+
+.event-date-separator {
+  border: 0;
+  background-color: $date-section-year-color;
+  width: $spacer-base;
+  height: 2px;
+}
+
+// Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+
+  .event-date-section {
+    margin-top: 0;
+    width: 80px;
+  }
+
+  .event-date-wrapper {
+    flex-direction: column;
+  }
+
+  .event-date {
+    flex-direction: column;
+  }
+
+  .event-day {
+    line-height: $event-day-line-height;
+    font-size: $event-day-font-size;
+  }
+
+  .event-month {
+    margin-bottom: $spacer-xxs;
+    line-height: $event-month-line-height;
+    font-size: $event-month-font-size;
+  }
+
+  .event-year {
+    margin-left: 0;
+    border-top: 1px solid $date-section-year-color;
+    border-left: 0;
+    padding-left: 0;
+    line-height: $event-year-line-height;
+    font-size: $event-year-font-size;
+  }
+
+  .event-date-separator {
+    transform: rotate(90deg);
+    margin: $spacer-sm 0;
+  }
+}

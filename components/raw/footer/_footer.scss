@@ -1,0 +1,137 @@
+.dark-background {
+  background-color: $brand-text;
+  overflow: hidden;
+}
+
+.footer {
+  @extend %heading-font-regular;
+  background-color: $footer-body-bg;
+  padding: $spacer-lg 0;
+  color: $footer-color;
+}
+
+.footer__form {
+  margin-bottom: $spacer-lg;
+}
+
+.footer__paragraph,
+.footer__address {
+  @extend %heading-font-regular;
+  line-height: $footer-paragraph-line-height;
+  font-size: $footer-paragraph-font-size;
+}
+
+.footer__heading {
+  color: $footer-heading-color;
+}
+
+.footer__subheading {
+  color: $footer-color;
+  font-size: $footer-subheading-font-size;
+}
+
+.footer__address {
+  font-style: normal;
+}
+
+.footer__directions-link {
+  @extend %heading-font-bold;
+  display: block;
+  margin: $spacer-xs 0 $spacer-lg;
+  text-transform: uppercase;
+  line-height: $footer-directions-link-line-height;
+  color: $footer-color;
+  font-size: $footer-directions-link-font-size;
+
+  &::before {
+    @extend %icon;
+    position: relative;
+    top: -1px;
+    margin-right: $spacer-xxs;
+    color: $footer-heading-color;
+    content: $icon-location-filled;
+  }
+}
+
+.footer__list {
+  @extend %list-unstyled;
+}
+
+.footer__list__item + .footer__list__item {
+  margin-top: $spacer-xs;
+}
+
+.footer__link {
+  border-bottom: 2px solid $footer-color;
+  color: $footer-color;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid $footer-link-hover-color;
+  }
+}
+
+.footer__link,
+.footer__directions-link,
+.footer__list__link {
+  @extend %link-unstyled;
+  transition: standard-transition(color);
+
+  &:hover,
+  &:focus {
+    color: $footer-link-hover-color;
+  }
+}
+
+.footer__aside--bottom-left {
+  margin-bottom: $spacer-lg;
+
+
+  &-secondary {
+    margin-bottom: $spacer-lg;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-column-gap: $spacer-lg;
+  }
+
+  .footer__flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__left {
+    margin-bottom: $spacer-lg;
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .footer__heading {
+    grid-row: 1;
+  }
+
+  .footer__subheading {
+    grid-row: 2;
+  }
+
+  .footer__aside--top-left {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .footer__aside--top-right {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  .footer__aside--bottom-left {
+    margin-right: $spacer-xxl;
+    margin-bottom: $spacer-lg;
+  }
+
+}

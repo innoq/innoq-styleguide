@@ -1,0 +1,171 @@
+$podcast-teaser-height-sm: ms(30);
+$podcast-teaser-height-md: ms(35);
+
+.podcast-teaser {
+  @extend %block-link;
+  @extend %hover-zoom-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: $podcast-teaser-height-sm;
+  overflow: hidden;
+}
+
+.podcast-teaser__body {
+  margin-bottom: 0;
+  padding: $spacer-sm $spacer-md;
+}
+
+.podcast-teaser__footer {
+  margin-bottom: 0;
+  padding: $spacer-sm $spacer-md;
+
+  > * {
+    margin: 0;
+  }
+}
+
+.podcast-teaser__caption {
+  @extend %teaser-caption;
+}
+
+.podcast-teaser__headline {
+  @extend %h3;
+
+  margin-bottom: $spacer-md;
+  color: $podcast-teaser-default-color;
+
+  &--security {
+    color: $podcast-teaser-default-color-sec;
+  }
+}
+
+.podcast-teaser__subheadline {
+  @extend %body-font-italic;
+
+  margin-bottom: $spacer-xs;
+  line-height: $podcast-teaser-subheadline-line-height;
+  color: $podcast-teaser-default-color;
+  font-size: $podcast-teaser-subheadline-font-size;
+
+  &--security {
+    color: $podcast-teaser-default-color-sec;
+  }
+}
+
+.podcast-author {
+  @extend %author-name;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .podcast-teaser {
+    min-height: $podcast-teaser-height-md;
+  }
+}
+
+
+//
+// Variations
+//
+.podcast-teaser--avatar,
+.podcast-teaser--avatar--overlay {
+  .podcast-teaser__subheadline {
+    max-width: 80%;
+  }
+}
+
+.podcast-teaser--avatar--overlay {
+  background-color: $podcast-teaser-overlay-color;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto 100%;
+  color: $podcast-teaser-default-color;
+  background-blend-mode: multiply;
+
+  &--security {
+    background-color: $podcast-teaser-overlay-color-sec;
+    color: $podcast-teaser-default-bg-sec;
+  }
+
+  .podcast-teaser__headline--security,
+  .podcast-teaser__subheadline--security  {
+    color: $podcast-teaser-default-bg-sec;
+  }
+}
+
+.podcast-teaser--avatar--overlay--big {
+  background-color: $podcast-teaser-overlay-color;
+  background-repeat: no-repeat;
+  background-position: top right, top left;
+  background-size: 0%;
+  color: $podcast-teaser-default-color;
+  background-blend-mode: multiply;
+
+  &--security {
+    background-color: $podcast-teaser-overlay-color-sec;
+    color: $podcast-teaser-default-bg-sec;
+
+    .podcast-author--security {
+      color: $podcast-teaser-default-color-sec;
+    }
+  }
+
+  .podcast-teaser__headline--security,
+  .podcast-teaser__subheadline--security  {
+    color: $podcast-teaser-default-bg-sec;
+  }
+
+  .podcast-teaser__body  {
+    padding: $spacer-lg;
+    text-align: center;
+  }
+
+  .podcast-teaser__footer {
+    display: flex;
+    justify-content: space-evenly;
+    // IE11 Hack
+    // sass-lint:disable no-vendor-prefixes
+    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+      justify-content: space-around;
+    }
+  }
+}
+
+.podcast-teaser--avatar {
+  background-color: $podcast-teaser-default-color;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto 100%;
+  color:  $podcast-teaser-default-bg;
+
+  &--security {
+    background-color: $podcast-teaser-default-color-sec;
+    color: $podcast-teaser-default-bg-sec;
+  }
+
+  .podcast-teaser__headline,
+  .podcast-teaser__subheadline  {
+    color:  $podcast-teaser-default-bg;
+
+    &--security {
+      color: $podcast-teaser-default-bg-sec;
+    }
+  }
+}
+
+.podcast-teaser--default {
+  background-color: $podcast-teaser-default-bg;
+  color: $podcast-teaser-default-color;
+
+  &--security {
+    background-color: $podcast-teaser-default-bg-sec;
+    color: $podcast-teaser-default-color-sec;
+  }
+}
+
+//Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+  .podcast-teaser--avatar--overlay--big {
+    background-size: contain;
+  }
+}

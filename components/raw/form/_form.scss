@@ -1,0 +1,21 @@
+.form--inverted {
+  .form-label {
+    color: $form-label-inverted-color;
+  }
+
+  .form-control {
+    border-color: $form-control-inverted-border-color;
+
+    &:hover,
+    &:focus {
+      background-color: $form-control-inverted-focus-bg;
+      color: $form-control-inverted-focus-color;
+    }
+  }
+
+  .form-group--invalid {
+    .form-control {
+      border-color: $form-control-invalid-border-color;
+    }
+  }
+}

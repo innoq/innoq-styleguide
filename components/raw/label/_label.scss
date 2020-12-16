@@ -1,0 +1,69 @@
+.label {
+  display: inline-block;
+  padding: $spacer-xxs;
+  line-height: $label-line-height-small;
+  font-size: $label-font-size-small;
+
+  &.talk {
+    @extend %heading-font-bold;
+
+    border-left: 6px solid $talk-label-text-color;
+    background-color: $talk-label-background-color;
+    text-transform: uppercase;
+    color: $talk-label-text-color;
+  }
+
+  &.training {
+    @extend %heading-font-bold;
+
+    border-left: 6px solid $training-label-text-color;
+    background-color: $training-label-background-color;
+    text-transform: uppercase;
+    color: $training-label-text-color;
+  }
+
+  &.slides {
+    @extend %heading-font-regular;
+
+    background-color: $slides-label-background-color;
+    color: $slides-label-text-color;
+  }
+}
+
+.label-big {
+  display: inline-block;
+  padding: $spacer-xs;
+  line-height: $label-big-line-height;
+  font-size: $label-big-font-size;
+
+  &.hint {
+    @extend %heading-font-bold;
+
+    border: 4px solid $training-label-text-color;
+    text-transform: uppercase;
+    color: $training-label-text-color;
+  }
+
+  &.badge,
+  &.badge--inverted {
+    @extend %heading-font-bold;
+
+    background-color: $badge-background-color;
+    text-transform: uppercase;
+    color: $badge-text-color;
+  }
+
+  &.badge--inverted {
+    background-color: $badge-background-color-inverted;
+  }
+}
+
+
+//Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+  .label {
+    margin-right: $spacer-xxs;
+    line-height: $label-line-height;
+    font-size: $label-font-size;
+  }
+}

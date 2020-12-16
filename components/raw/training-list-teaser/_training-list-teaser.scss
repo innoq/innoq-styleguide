@@ -1,0 +1,55 @@
+$list-teaser-training-height: ms(32);
+
+// sass-lint:disable nesting-depth
+
+.list-teaser-training {
+  @extend %list-teaser;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: $list-teaser-training-height;
+
+  &.primary {
+    background-color: $list-teaser-abstract-primary-bg-color;
+    background-image: asset-url('visual-trainings-07.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+
+  &.secondary {
+    background-color: $list-teaser-abstract-secondary-bg-color;
+    background-image: asset-url('visual-trainings-07.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    background-blend-mode: multiply;
+  }
+}
+
+.list-teaser-training__caption {
+  @extend %teaser-caption;
+
+  margin-bottom: $spacer-base;
+  color: $list-teaser-abstract-caption-color;
+}
+
+.list-teaser-training__headline {
+  margin-bottom: $spacer-md;
+  line-height: $list-teaser-abstract-headline-line-height-small;
+  color: $list-teaser-abstract-headline-color;
+  font-size: $list-teaser-abstract-headline-font-size-small;
+}
+
+//
+//Breakpoints
+//
+@media screen and (min-width: $grid-breakpoint-md) {
+  .list-teaser-training__headline {
+    margin-bottom: $spacer-sm;
+    line-height: $list-teaser-abstract-headline-line-height;
+    font-size: $list-teaser-abstract-headline-font-size;
+  }
+}

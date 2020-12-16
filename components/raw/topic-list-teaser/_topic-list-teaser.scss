@@ -1,0 +1,88 @@
+$gradient-from: rgba(0, 0, 0, .4);
+$gradient-to: rgba(0, 0, 0, .1);
+$topic-teaser-height: ms(36);
+
+.topic-teaser {
+  @extend %block-link;
+  @extend %hover-zoom-in;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: $spacer-base;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
+  padding: $spacer-md;
+  min-height: $topic-teaser-height;
+  text-align: center;
+  color: $topic-teaser-body-color;
+}
+
+.topic-teaser__body {
+  width: 100%;
+}
+
+.topic-teaser__text {
+  @extend %teaser-text-italic;
+  margin-bottom: $spacer-base;
+  font-size: $teaser-text-font-size-italic-small;
+}
+
+.topic-teaser__header {
+  margin-bottom: $spacer-md;
+  color: $topic-teaser-body-color;
+  font-size: $topic-teaser-header-font-size-small;
+}
+
+.topic-teaser__caption {
+  @extend %teaser-caption;
+  margin-bottom: $spacer-lg;
+  height: $spacer-md;
+}
+
+.topic-teaser__cta {
+  @extend %heading-font-bold;
+}
+
+// Background images for topic header
+.topic-list-teaser-bg-image-girl {
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-girl.jpg');
+}
+
+.topic-list-teaser-bg-image-medusa {
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-medusa.jpg');
+}
+
+.topic-list-teaser-bg-image-ice {
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-ice.jpg');
+}
+
+.topic-list-teaser-bg-image-igel {
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-igel.jpg');
+}
+
+.topic-list-teaser-bg-image-koralle {
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-koralle.jpg');
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .topic-teaser {
+    padding: $spacer-xl $spacer-xl $spacer-xxl;
+  }
+
+  .topic-teaser__header {
+    margin-bottom: $spacer-base;
+    font-size: $topic-teaser-header-font-size;
+  }
+
+  .topic-teaser__text {
+    font-size: $teaser-text-font-size-italic-big;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .topic-teaser__body {
+    width: 50%;
+  }
+}

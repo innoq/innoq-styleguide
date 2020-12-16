@@ -1,0 +1,38 @@
+//
+// Content Separator
+//
+
+// Component specific variables
+$border-position: $base-font-size / 2;
+
+// Component definition
+.content-separator {
+  display: flex;
+  align-content: center;
+  align-items: baseline;
+  justify-content: center;
+  margin-bottom: $spacer-base;
+
+  // The border in the middle of the component is realized with
+  // a stack of two inset box-shadows the first one is white
+  // and reaches from the top to the middle of the baseline.
+  // The second box-shadow is 1px taller than the first one,
+  // resulting in a single line.
+  box-shadow: $box-shadow-color-light 0 $border-position 0 0 inset,
+  $box-shadow-color-dark 0 calc(#{$border-position} + 1px) 0 0 inset;
+  min-height: $base-font-size;
+}
+
+// Both subcomponents overlap the border of its parent component by
+// having a small padding and a white background color.
+.content-separator__date,
+.content-separator__duration {
+  background-color: $box-shadow-color-light;
+  padding-right: $spacer-xs;
+  padding-left: $spacer-xs;
+  line-height: 1;
+}
+
+.content-separator__date {
+  margin-right: $spacer-base;
+}

@@ -1,0 +1,72 @@
+$bullet-size: $spacer-xs; // ~9px
+$bullet-offset: $spacer-sm; // ~16px
+$list-indent: $bullet-offset + $bullet-size;
+
+.list-unstyled {
+  @extend %list-unstyled;
+}
+
+// ---- Unordered Lists --------------------------------------------------------
+//
+// Scope element based selector to elements, that do not carry a
+// class attribute, to prevent reverting styles for all non-default lists.
+//
+
+ul:not([class]),
+.bold-list {
+  @extend %unsorted-list;
+  @extend %body-font-regular;
+
+  & > li {
+    padding-left: $list-indent;
+
+    &::before {
+      position: absolute;
+      top: .4rem; //magic number
+      left: 0;
+      border-radius: 50%;
+      background: $bullet-list-color;
+      width: $bullet-size;
+      height: $bullet-size;
+      content: '';
+
+      @media screen and (min-width: $grid-breakpoint-md) {
+        top: .5rem; //magic number
+      }
+    }
+  }
+
+  ul {
+    // Nested lists need diffrent vertical spacings
+    // to blend into the outer list.
+    margin-top: $spacer-xs;
+
+    &,
+    li > ul > li {
+      margin-bottom: 0;
+    }
+
+    // Change bullet appeareance in nested contexts
+    li::before {
+      border: 1px solid $bullet-list-color;
+      background: $bullet-list-bg-color;
+    }
+  }
+}
+
+
+// ---- Bold Bullet Lists ----------------------------------------------------------
+//
+.bold-list {
+  @extend %heading-font-bold;
+
+  & > li {
+    &::before {
+      top: .59rem; //magic number
+
+      @media screen and (min-width: $grid-breakpoint-md) {
+        top: .73rem; //magic number
+      }
+    }
+  }
+}

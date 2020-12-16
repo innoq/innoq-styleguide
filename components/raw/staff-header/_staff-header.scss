@@ -1,0 +1,151 @@
+$staff-intro-offset: -(ms(22));
+$staff-page-header-background-gray: #f6f6f6;
+
+.staff-header {
+  background-image: linear-gradient(
+    to right,
+    $staff-page-header-background-color,
+    $staff-page-header-background-color 50%,
+    $staff-page-header-background-gray 50%
+  );
+}
+
+.staff-header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $staff-page-header-content-background-color;
+}
+
+.staff-header-image {
+  width: 100%;
+}
+
+.staff-header-quote {
+  background-color: $staff-page-header-quote-background-color;
+  padding: $spacer-lg $spacer-md;
+}
+
+.staff-header-quote--text {
+  line-height: $staff-page-header-quote-line-height-small;
+  color: $staff-page-header-quote-color;
+  font-size: $staff-page-header-quote-font-size-small;
+}
+
+.staff-header-quote--author {
+  @extend %heading-font-regular;
+
+  text-transform: uppercase;
+  line-height: $staff-page-header-quote-author-line-height-small;
+  color: $staff-page-header-quote-author-color;
+  font-size: $staff-page-header-quote-author-font-size-small;
+}
+
+.staff-intro {
+  background-color: $staff-intro-background-color;
+  padding: $spacer-md;
+  width: 100%;
+}
+
+.staff-intro--name {
+  @extend %heading-font-heavy;
+
+  margin-bottom: $spacer-xs;
+  text-transform: uppercase;
+  line-height: $staff-page-header-intro-name-line-height-small;
+  font-size: $staff-page-header-intro-name-font-size-small;
+}
+
+.staff-intro--job-title {
+  @extend %body-font-italic;
+
+  margin-bottom: $spacer-xs;
+  line-height: $staff-page-header-intro-job-title-line-height-small;
+  font-size: $staff-page-header-intro-job-title-font-size-small;
+}
+
+.staff-intro--text {
+  @extend %heading-font-regular;
+
+  border-bottom: 1px solid $staff-intro-text-border;
+  padding-bottom: $spacer-base;
+  line-height: $staff-page-header-intro-text-line-height-small;
+  font-size: $staff-page-header-intro-text-font-size-small;
+}
+
+.staff-intro--social {
+  padding: $spacer-md 0;
+
+  .icon {
+    font-size: ms(7);
+  }
+}
+
+//Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+  .staff-header-image {
+    margin: 0 auto;
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .staff-header-content {
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: $default-page-layout-content-width-xl;
+  }
+
+  .staff-header-quote {
+    flex-grow: 1;
+    padding: $spacer-xxl $spacer-md 0;
+  }
+
+  .staff-header-image {
+    min-width: $default-page-layout-content-width-xl / 2;
+    max-width: $default-page-layout-content-width-xl / 2;
+    min-height: $default-page-layout-content-width-xl / 2;
+    max-height: $default-page-layout-content-width-xl / 2;
+  }
+
+  .staff-header-quote--text {
+    line-height: $staff-page-header-quote-line-height;
+    font-size: $staff-page-header-quote-font-size;
+  }
+
+  .staff-header-quote--author {
+    line-height: $staff-page-header-quote-author-line-height;
+    font-size: $staff-page-header-quote-author-font-size;
+  }
+
+  .staff-intro {
+    position: relative;
+    top: $staff-intro-offset;
+    margin: 0 auto $staff-intro-offset;
+    padding: $spacer-lg $spacer-xl 0;
+    width: $grid-page-layout-content-width;
+    max-width: $grid-page-layout-content-width-xl;
+    box-sizing: content-box;
+  }
+
+  .staff-intro--name {
+    line-height: $staff-page-header-intro-name-line-height-small;
+    font-size: $staff-page-header-intro-name-font-size-small;
+  }
+
+  .staff-intro--job-title {
+    margin-bottom: $spacer-sm;
+    line-height: $staff-page-header-intro-job-title-line-height;
+    font-size: $staff-page-header-intro-job-title-font-size;
+  }
+
+  .staff-intro--text {
+    padding-bottom: $spacer-lg;
+    line-height: $staff-page-header-intro-text-line-height;
+    font-size: $staff-page-header-intro-text-font-size;
+  }
+
+  .staff-intro--social {
+    padding: $spacer-base 0;
+  }
+}

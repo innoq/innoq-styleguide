@@ -1,0 +1,47 @@
+.claim-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $claim-header-bg-color;
+  min-height: 100vh;
+
+  &__body {
+    padding: 0 $spacer-sm;
+    max-width: $default-page-layout-content-width-md;
+    text-align: center;
+  }
+
+  &__type {
+    text-transform: uppercase;
+    line-height: $claim-header-type-line-height-small;
+    color: $claim-header-type-color;
+    font-size: $claim-header-type-font-size-small;
+  }
+
+  &__title {
+    margin-bottom: $spacer-md;
+    line-height: $claim-header-title-line-height-small;
+    color: $claim-header-title-color;
+    font-size: $claim-header-title-font-size-small;
+  }
+
+  &__divider {
+    margin-top: $spacer-base;
+    border: 2px solid $claim-header-divider-color;
+    width: ms(25);
+  }
+}
+
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .claim-header__type {
+    line-height: $claim-header-type-line-height;
+    font-size: $claim-header-type-font-size;
+  }
+
+  .claim-header__title {
+    margin-bottom: $spacer-base;
+    line-height: $claim-header-title-line-height;
+    font-size: $claim-header-title-font-size;
+  }
+}

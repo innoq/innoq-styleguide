@@ -1,0 +1,378 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../../assets/normalize.css" />
+    <link media="all" rel="stylesheet" href="../../assets/bundle.css" />
+    <link
+      rel="preload"
+      href="https://hello.myfonts.net/count/350ed6"
+      as="style"
+    />
+    <style>
+      body {
+        padding: 1rem;
+      }
+    </style>
+    <title>Preview Layout</title>
+  </head>
+  <body class="application">
+    <main role="main" class="culture-page">
+      <nav-bar class="navbar"
+        ><div class="navbar__inner">
+          <a href="#main" class="navbtn navbtn--skip">Zum Inhalt springen</a>
+          <div class="navbar__brand">
+            <a href="#" class="navbar__brand-link"
+              ><img
+                alt="INNOQ"
+                class="logo navbar__logo"
+                src="../../assets/innoq-logo--whitered.svg"
+            /></a>
+          </div>
+          <input
+            tabindex="-1"
+            type="checkbox"
+            id="navbar-toggle--menu"
+            class="sr-only navbar__toggle-state navbar__toggle-state--menu-toggler"
+          /><input
+            tabindex="-1"
+            type="checkbox"
+            id="navbar-toggle--search"
+            class="sr-only navbar__toggle-state navbar__toggle-state--search-toggler"
+          />
+          <div class="navbar__meta">
+            <a href="#" class="navbtn navbtn--meta">Newsletter</a
+            ><a href="#" class="navbtn navbtn--meta">Kontakt</a
+            ><a
+              href="#"
+              class="navbtn navbtn--meta navbtn--locale navbtn--active"
+              title="Deutsch"
+              >de</a
+            >
+            |<a
+              href="#"
+              class="navbtn navbtn--meta navbtn--locale"
+              title="English"
+              >en</a
+            >
+          </div>
+          <div class="navbar__togglers">
+            <label
+              for="navbar-toggle--menu"
+              aria-label="Navigation ein- oder ausblenden"
+              ><span class="navbtn navbtn--menu">Menü</span></label
+            ><a
+              href="#"
+              class="navbtn navbtn--search"
+              aria-label="Suche ein- oder ausblenden"
+              ><i class="icon icon-search"></i
+            ></a>
+          </div>
+          <nav class="navbar__primary-nav primary-nav">
+            <ul class="primary-nav__list">
+              <li class="primary-nav__item">
+                <a href="#" class="navbtn navbtn--primary navbtn--active"
+                  >Leistungen</a
+                >
+              </li>
+              <li class="primary-nav__item">
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="navbtn navbtn--primary"
+                    data-for="dropdown__toggle--projekte"
+                    >Projekte</a
+                  ><input
+                    type="checkbox"
+                    role="button"
+                    aria-haspopup="true"
+                    id="dropdown__toggle--projekte"
+                    class="sr-only dropdown__checkbox"
+                  /><label
+                    class="dropdown__toggle dropdown__toggle--navbar"
+                    for="dropdown__toggle--projekte"
+                    ><i
+                      class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"
+                    ></i
+                    ><span class="sr-only dropdown__toggle--expanded-text"
+                      >ausgeklappt</span
+                    ><span class="sr-only dropdown__toggle--collapsed-text"
+                      >eingeklappt</span
+                    ></label
+                  >
+                  <div
+                    class="dropdown__list-wrapper dropdown__list-wrapper--navbar"
+                    role="menu"
+                    title="Projekte"
+                    data-origin="left"
+                  >
+                    <ul class="dropdown__list">
+                      <li class="dropdown__item dropdown__item--navbar">
+                        <a
+                          href="#"
+                          class="dropdown__link dropdown__link--navbar navbtn"
+                          >Softwarearchitektur und -entwicklung</a
+                        >
+                      </li>
+                      <li class="dropdown__item dropdown__item--navbar">
+                        <a
+                          href="#"
+                          class="dropdown__link dropdown__link--navbar navbtn"
+                          >Strategie- und Technologieberatung</a
+                        >
+                      </li>
+                      <li class="dropdown__item dropdown__item--navbar">
+                        <a
+                          href="#"
+                          class="dropdown__link dropdown__link--navbar navbtn"
+                          >Entwicklung digitaler Geschäftsmodelle</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="primary-nav__item">
+                <div class="dropdown">
+                  <a
+                    href="#"
+                    class="navbtn navbtn--primary"
+                    data-for="dropdown__toggle--kultur"
+                    >Kultur</a
+                  ><input
+                    type="checkbox"
+                    role="button"
+                    aria-haspopup="true"
+                    id="dropdown__toggle--kultur"
+                    class="sr-only dropdown__checkbox"
+                  /><label
+                    class="dropdown__toggle dropdown__toggle--navbar"
+                    for="dropdown__toggle--kultur"
+                    ><i
+                      class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"
+                    ></i
+                    ><span class="sr-only dropdown__toggle--expanded-text"
+                      >ausgeklappt</span
+                    ><span class="sr-only dropdown__toggle--collapsed-text"
+                      >eingeklappt</span
+                    ></label
+                  >
+                  <div
+                    class="dropdown__list-wrapper dropdown__list-wrapper--navbar"
+                    role="menu"
+                    title="Kultur"
+                    data-origin="right"
+                  >
+                    <ul class="dropdown__list">
+                      <li class="dropdown__item dropdown__item--navbar">
+                        <a
+                          href="#"
+                          class="dropdown__link dropdown__link--navbar navbtn"
+                          >Strategie- und Technologieberatung</a
+                        >
+                      </li>
+                      <li class="dropdown__item dropdown__item--navbar">
+                        <a
+                          href="#"
+                          class="dropdown__link dropdown__link--navbar navbtn"
+                          >Entwicklung digitaler Geschäftsmodelle</a
+                        >
+                      </li>
+                      <li class="dropdown__item dropdown__item--navbar">
+                        <a
+                          href="#"
+                          class="dropdown__link dropdown__link--navbar navbtn"
+                          >Softwarearchitektur und -entwicklung</a
+                        >
+                      </li>
+                      <li class="dropdown__item dropdown__item--navbar">
+                        <a
+                          href="#"
+                          class="dropdown__link dropdown__link--navbar navbtn"
+                          >Digitale Plattformen und Infrastrukturen</a
+                        >
+                      </li>
+                      <li class="dropdown__item dropdown__item--navbar">
+                        <a
+                          href="#"
+                          class="dropdown__link dropdown__link--navbar navbtn"
+                          >Wissenstransfer, Coaching und Trainings</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              <li class="primary-nav__item">
+                <a href="#" class="navbtn navbtn--primary">Magazin</a>
+              </li>
+              <li class="primary-nav__item">
+                <a href="#" class="navbtn navbtn--primary">Termine</a>
+              </li>
+            </ul>
+            <button class="navbtn navbtn--drill-up">
+              <img
+                class="navbtn__left-icon"
+                src="../../assets/icons/arrow-medium-left-red.svg"
+              />
+              Hauptmenü
+            </button>
+          </nav>
+        </div></nav-bar
+      >
+      <header class="image-header">
+        <div class="image-header__body image-header-bg-culture-01">
+          <div class="image-header__content">
+            <h1 class="image-header__title image-header-bg-culture-01-text-box">
+              Unsere Kultur
+            </h1>
+            <img src="../../assets/icons/arrow-long-down-red.svg" />
+          </div>
+        </div>
+      </header>
+      <header class="claim-header">
+        <div class="claim-header__body">
+          <h3 class="claim-header__type">Unser Versprechen</h3>
+          <h1 class="claim-header__title">
+            Maximale Transparenz.
+            <hr class="claim-header__divider" />
+            Minimale Regeln.
+            <hr class="claim-header__divider" />
+            Und Arbeit, auf die wir stolz sind.
+          </h1>
+          <img src="../../assets/icons/arrow-long-down-blue.svg" />
+        </div>
+      </header>
+      <div class="image-divider-right">
+        <div class="image-divider-right-content">
+          <div class="image-divider-right-textbox">
+            <p class="image-divider-right-content-textbox__text">
+              Unsere Unternehmenskultur ist aus dem Anspruch entstanden, Dinge
+              anders und besser zu machen. An erster Stelle: Vertrauen in unsere
+              Mitarbeiterinnen und Mitarbeiter und ein respektvoller Umgang
+              untereinander. Jede und jeder Einzelne verfügt über weitreichende
+              Freiheit und trägt ein hohes Maß an Verantwortung.
+            </p>
+          </div>
+          <img
+            class="image-divider-right-image"
+            itemprop="photo"
+            src="../../assets/visual-culture-02.jpg"
+            alt="innoQ Mitarbeiter"
+          />
+        </div>
+      </div>
+      <div class="page-layout-xl--default">
+        <div class="image-divider-center image-divider-center-bg">
+          <div class="image-divider-center__textbox">
+            <h1
+              class="image-divider-center__title image-divider-center-bg-text-box"
+            >
+              Inspiration
+            </h1>
+            <p class="image-divider-center__textbox__text">
+              Wir bilden uns kontinuierlich weiter, ob in internen Workshops,
+              bei unseren regelmäßigen Firmenevents oder durch interne Projekte.
+              Schließlich sind innovative, relevante Technologien und Ideen die
+              Basis unserer Arbeit. Genauso wichtig ist es uns, dass wir Teil
+              der Entwickler-Community sind: wir teilen unser Know-how mit
+              Konferenzbeiträgen, Fachartikeln, Podcasts oder
+              Open-Source-Engagement.
+            </p>
+            <img src="../../assets/icons/arrow-long-down-red.svg" />
+          </div>
+        </div>
+      </div>
+      <div class="case-teaser culture-bg-04">
+        <div class="case-teaser__wrapper">
+          <div class="case-teaser__body">
+            <div>
+              <div class="case-teaser__punch-in culture-bg-04-text-box">
+                <div class="case-teaser__header">
+                  <h1>Was uns wichtig ist</h1>
+                </div>
+              </div>
+              <div class="case-teaser__text">
+                Wir glauben an alle unsere Mitarbeiterinnen und Mitarbeiter. Wir
+                vertrauen in ihre Kompetenz ebenso wie in ihr Wissen und ihre
+                Erfahrung. Wir sind Frauen und Männer verschiedenster Herkunft
+                in allen Altersstufen und mit unterschiedlichsten Lebensläufen.
+                Gemeinsam sind wir ein Team von Technikbegeisterten, die
+                allesamt ihre eigene Meinung vertreten und das auch ausdrücklich
+                sollen. Selbstverständlich glauben wir, dass Technologie das
+                Leben bereichert. Sie ist das Herz von INNOQ. Deshalb setzen wir
+                auf Inhalte statt auf Ideologien. Deshalb sind Austausch und
+                Lernen für uns so wichtig. Woran wir nicht glauben, sind
+                Hierarchien und starre Strukturen. Alle können und sollen (fast)
+                alles machen, aber vor allem das, was sie lieben. Und davon
+                profitiert auch letztendlich jedes Projekt.
+              </div>
+            </div>
+            <div><a class="link-teaser" href="#">Mehr erfahren</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="page-layout-xl--default">
+        <div class="blocks">
+          <a
+            href="#"
+            class="teaser big-content-teaser big-content-teaser--image culture-bg-05"
+            ><div class="big-content-teaser__content filled-background">
+              <div class="big-content-teaser__body">
+                <h2 class="big-content-teaser__headline">Arbeiten bei INNOQ</h2>
+                <p class="big-content-teaser__text">
+                  Wir wünschen uns Kolleginnen und Kollegen, die Fragen stellen
+                  und mitdenken, neugierig, lernbereit, kooperativ und tolerant
+                  sind. Wir setzen auf Eigenverantwortung und Freiraum statt
+                  Formulare und Prozesse. Lieber riskieren wir, von Zeit zu Zeit
+                  einen Fehler zu machen, als starre Kontrollstrukturen
+                  einzuführen. Dabei hilft eine einfache Grundregel: Wenn etwas
+                  dumm ist, tun wir es nicht. Wir geben allen die Möglichkeit,
+                  eigene Projekte zu verfolgen und sich weiterzubilden.
+                  Technologie-Know-how ist unsere Superkraft und dank unserer
+                  Mitarbeiterinnen und Mitarbeiter wächst sie Tag für Tag.
+                </p>
+              </div>
+              <div class="big-content-teaser__footer">
+                <div class="link-teaser" href="#">Mehr erfahren</div>
+              </div>
+            </div></a
+          ><a
+            href="#"
+            class="teaser big-content-teaser big-content-teaser--colored"
+            ><div class="big-content-teaser__content">
+              <div class="big-content-teaser__body">
+                <h2 class="big-content-teaser__headline">
+                  Wie wir zusammenarbeiten
+                </h2>
+                <p class="big-content-teaser__text">
+                  Aktuell sind wir über 120 Personen an sechs Standorten, die
+                  daran arbeiten, unseren Kunden strategische und technologische
+                  Vorteile zu verschaffen. Dabei nehmen wir ganz
+                  unterschiedliche Rollen ein: Wir sind Technologieberater
+                  ebenso wie Realisierungspartner. Wir verstärken oder
+                  unterstützen in einzelnen Bereichen, entwickeln aber auch
+                  ganzheitliche Geschäftsmodelle, Softwareprodukte und
+                  technische Infrastrukturen – immer individuell. Dabei geben
+                  wir unseren Kunden die Unterstützung, die sie brauchen, damit
+                  sie uns möglichst bald nicht mehr brauchen.
+                </p>
+              </div>
+              <div class="big-content-teaser__footer">
+                <div class="link-teaser inverted-text-color" href="#">
+                  Mehr erfahren
+                </div>
+              </div>
+            </div></a
+          >
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="../../assets/document-register-element.js"></script>
+  <script src="../../assets/bundle.js"></script>
+</html>
+

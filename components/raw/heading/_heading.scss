@@ -1,0 +1,190 @@
+//
+// Headlines
+//
+
+// H1
+%h1,
+h1 {
+  @extend %heading-font-heavy;
+  @extend %manual-hyphenation;
+  margin-top: 0;
+  margin-bottom: $spacer-lg;
+  line-height: $h1-line-height;
+  color: $h1-color;
+  font-size: $h1-font-size-small;
+}
+
+// H2
+%h2,
+h2 {
+  @extend %heading-font-heavy;
+  @extend %manual-hyphenation;
+  margin-top: 0;
+  margin-bottom: $spacer-base;
+  line-height: $h2-line-height;
+  color: $h2-color;
+  font-size: $h2-font-size-small;
+}
+
+// H3
+%h3,
+h3 {
+  @extend %heading-font-heavy;
+  @extend %manual-hyphenation;
+  margin-top: 0;
+  margin-bottom: $spacer-md;
+  line-height: $h3-line-height;
+  color: $h3-color;
+  font-size: $h3-font-size-small;
+}
+
+// H4
+%h4,
+h4 {
+  @extend %heading-font-bold;
+  @extend %manual-hyphenation;
+  margin-top: 0;
+  margin-bottom: $spacer-sm;
+  line-height: $h4-line-height;
+  color: $h4-color;
+  font-size: $h4-font-size-small;
+}
+
+// H5
+%h5,
+h5 {
+  @extend %heading-font-bold;
+  @extend %manual-hyphenation;
+  margin-top: 0;
+  margin-bottom: $spacer-xs;
+  line-height: $h5-line-height;
+  color: $h5-color;
+  font-size: $h5-font-size-small;
+}
+
+// H6
+%h6,
+h6 {
+  @extend %heading-font-heavy;
+  @extend %manual-hyphenation;
+  margin-top: 0;
+  margin-bottom: $spacer-xs;
+  line-height: $h6-line-height;
+  color: $h6-color;
+  font-size: $h6-font-size-small;
+}
+
+
+// Remove links stylings inside headlines
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  & > a:not([class]) {
+    @extend %link-unstyled;
+  }
+}
+
+.teaser-section-heading {
+  @extend %h2;
+  margin: 0 auto $spacer-base;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: $teaser-section-heading-line-height-small;
+  font-size: $teaser-section-heading-font-size-small;
+}
+
+.upcase-heading {
+  @extend %h5;
+  margin: 0 auto $spacer-md;
+  text-transform: uppercase;
+  line-height: $teaser-section-heading-line-height-small;
+  font-size: $teaser-section-heading-font-size-small;
+}
+
+// Prevent older Browsers from screwing up with max-content widths
+@supports (width: max-content) {
+  .teaser-section-heading {
+    border-bottom: 4px solid $brand-text;
+    width: max-content;
+  }
+
+  .teaser-section-heading__full-width {
+    border: 0;
+    width: 100%;
+  }
+}
+
+.section-heading--primary {
+  @extend %h1;
+
+  margin-top: $spacer-lg;
+  margin-bottom: $spacer-base;
+  text-align: center;
+  color: $h2-color;
+}
+
+.section-heading--secondary {
+  @extend %h3;
+
+  margin-bottom: $spacer-sm;
+  border-top: 8px solid $brand-interaction;
+  padding-top: $spacer-sm;
+}
+
+.section-heading--tertiary {
+  @extend %h5;
+
+  margin-bottom: $spacer-base;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  %h1,
+  h1 {
+    line-height: $h1-line-height;
+    font-size: $h1-font-size;
+  }
+
+  // H2
+  %h2,
+  h2 {
+    line-height: $h2-line-height;
+    font-size: $h2-font-size;
+  }
+
+  // H3
+  %h3,
+  h3 {
+    line-height: $h3-line-height;
+    font-size: $h3-font-size;
+  }
+
+  // H4
+  %h4,
+  h4 {
+    line-height: $h4-line-height;
+    font-size: $h4-font-size;
+  }
+
+  // H5
+  %h5,
+  h5 {
+    line-height: $h5-line-height;
+    font-size: $h5-font-size;
+  }
+
+  // H6
+  %h6,
+  h6 {
+    line-height: $h6-line-height;
+    font-size: $h6-font-size;
+  }
+
+  .teaser-section-heading {
+    margin-bottom: $spacer-lg;
+    line-height: $teaser-section-heading-line-height;
+    font-size: $teaser-section-heading-font-size;
+  }
+}

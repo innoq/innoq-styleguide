@@ -1,0 +1,19 @@
+.collapse-toggler {
+  @extend %heading-font-heavy;
+  @extend %link-unstyled;
+  cursor: pointer;
+
+  .collapse-toggler__flop {
+    display: none;
+  }
+
+  &.collapsed {
+    .collapse-toggler__flip {
+      display: none;
+    }
+
+    .collapse-toggler__flop {
+      display: inline;
+    }
+  }
+}

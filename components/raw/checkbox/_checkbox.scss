@@ -1,0 +1,57 @@
+$checkbox-size: $spacer-md; // ~24px
+$checkbox-offset: .475rem;    // ~16px
+$checkbox-indent: $checkbox-offset + $checkbox-size;
+
+.checkbox {
+  &.custom-form-control {
+    padding-left: $checkbox-indent;
+  }
+
+  // Set styles for all form states
+  > .form-control__input {
+
+    &:checked ~ .form-label::before {
+      background-color: $checkbox-bg-active;
+    }
+
+    &:focus ~ .form-label::before {
+      border-color: $checkbox-border-hoverfocus;
+    }
+
+    &:checked ~ .form-label::after {
+      background-image: checkbox-icon($checkbox-color-active);
+    }
+
+    &:checked:disabled ~ .form-label::after {
+      background-image: checkbox-icon($checkbox-color-disabled);
+    }
+
+    &:disabled ~ .form-label::before {
+      border-color: $checkbox-border-disabled;
+      background-color: $checkbox-bg-disabled;
+    }
+  }
+
+  .form-label {
+    @include control-icon($checkbox-size, $checkbox-offset);
+    margin-bottom: 0;
+    text-align: left;
+
+    // Background (color)
+    &::before {
+      margin-right: $checkbox-offset;
+      border: 2px solid $checkbox-border;
+      border-radius: 2px;
+      background-color: $checkbox-bg;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    // Foreground (icon)
+    &::after {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50% 50%;
+    }
+  }
+}

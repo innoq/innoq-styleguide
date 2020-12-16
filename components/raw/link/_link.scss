@@ -1,0 +1,53 @@
+//
+// Default Link - used on all class-less link elements
+//
+
+$hover-padding: .1em;
+
+.link-default,
+a:not([class]) {
+  transition: standard-transition(padding-bottom, padding-top, background-color);
+  border-bottom: 1px solid $link-color;
+  text-decoration: none;
+  color: $link-color;
+
+  &:focus,
+  &:hover {
+    outline: none;
+    background-color: $link-hover-color-light;
+    padding-top: $hover-padding;
+    padding-bottom: $hover-padding;
+  }
+
+  &[href='mailto'] {
+    hyphens: none;
+  }
+}
+
+.link--muted {
+  @extend %heading-font-bold;
+  @extend %link-unstyled;
+  color: $brand-muted;
+  font-size: $link-teaser-font-size;
+}
+
+.link-teaser {
+  @extend %heading-font-heavy;
+  @extend %link-unstyled;
+
+  border-bottom: 3px solid $link-teaser-border-color;
+  padding-bottom: 2px;
+  line-height: $link-teaser-line-height;
+  color: $link-teaser-text-color;
+  font-size: $link-teaser-font-size;
+
+  &.inverted-text-color {
+    border-bottom: 3px solid $link-teaser-inverted-text-border-color;
+    color: $link-teaser-inverted-text-text-color;
+  }
+
+  &.inverted-interaction-color {
+    border-bottom: 3px solid $link-teaser-inverted-interaction-border-color;
+    color: $link-teaser-inverted-interaction-text-color;
+  }
+}

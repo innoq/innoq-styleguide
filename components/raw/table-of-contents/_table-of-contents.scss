@@ -1,0 +1,58 @@
+$anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing things around
+
+.toc {
+  margin-bottom: $spacer-lg;
+  max-width: 100%;
+}
+
+.toc__heading {
+  @extend %heading-font-heavy;
+  margin-bottom: $spacer-sm;
+  text-transform: uppercase;
+  line-height: $toc-heading-line-height;
+  font-size: $toc-heading-font-size;
+}
+
+.toc__list {
+  @extend %list-unstyled;
+
+  > li {
+    @extend %body-font-italic;
+    padding-top: $spacer-xxs;
+    padding-bottom: $spacer-xxs;
+    padding-left: $spacer-md;
+    line-height: $toc-anchor-line-height;
+    font-size: $toc-anchor-font-size;
+  }
+
+  > li + li {
+    border-top: 1px solid $toc-border-color;
+  }
+}
+
+.toc__anchor {
+  @extend %link-unstyled;
+  @include hover-fill($link-hover-color-light, $brand-text, $brand-text);
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+
+  &::before {
+    @extend %icon; // inline-block
+    position: absolute;
+    top: $spacer-xxs;
+    left: -$spacer-md;
+    width: $spacer-base;
+    color: $brand-interaction;
+    // font-size: $anchor-list-font-size;
+    content: $icon-arrow-down;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-xl) {
+  .toc {
+    margin-top: $spacer-xxs;
+    margin-right: $spacer-xl;
+  }
+}

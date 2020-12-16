@@ -1,0 +1,88 @@
+$big-content-teaser-height-sm: ms(35);
+$big-content-teaser-height-md: ms(40);
+
+.wall-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.wall-note__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: $spacer-sm;
+  background-color: $wall-note-content-bg-color;
+  padding: $spacer-lg $spacer-base;
+  max-width: $default-page-layout-content-width-md;
+}
+
+.wall-note__heading {
+  @extend %h1;
+  text-align: center;
+  font-size: $h2-font-size;
+}
+
+.wall-note__subheading {
+  @extend %teaser-caption;
+}
+
+.wall-note__text {
+  @extend %body-font-italic;
+
+  line-height: $wall-note-text-line-height-small;
+  font-size: $wall-note-text-font-size-small;
+  // IE11 Hack
+  // sass-lint:disable no-vendor-prefixes
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    max-width: 100%;
+  }
+}
+
+
+//Background images for topic header
+.wall-note-bg-image-girl {
+  @extend %centered-background-image;
+  background-image: asset-url('visual-header-girl.jpg');
+
+}
+
+.wall-note-bg-image-medusa {
+  @extend %centered-background-image;
+  background-image: asset-url('visual-header-medusa.jpg');
+}
+
+.wall-note-bg-image-ice {
+  @extend %centered-background-image;
+  background-image: asset-url('visual-header-ice.jpg');
+}
+
+.wall-note-bg-image-igel {
+  @extend %centered-background-image;
+  background-image: asset-url('visual-header-igel-1444.jpg');
+}
+
+.wall-note-bg-image-koralle {
+  @extend %centered-background-image;
+  background-image: asset-url('visual-header-koralle.jpg');
+}
+
+.wall-note-bg-image-workshop {
+  @extend %centered-background-image;
+  background-image: asset-url('visual-workshop-06.jpg');
+}
+
+
+//Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+  .wall-note__content {
+    padding: $spacer-xl $spacer-lg;
+  }
+
+  .wall-note__text {
+    line-height: $wall-note-text-line-height;
+    font-size: $wall-note-text-font-size;
+  }
+}

@@ -1,0 +1,53 @@
+$triplet-divider-height-sm: 2 * $spacer-xxl;
+$triplet-divider-height-md: 4 * $spacer-xxl;
+
+.triplet-divider {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.triplet-divider__center {
+  flex-grow: 2;
+  text-align: center;
+}
+
+.triplet-divider__left {
+  background-color: $brand-blue;
+  color: $brand-red;
+}
+
+.triplet-divider__right {
+  background-color: $brand-red;
+  text-align: right;
+  color: $brand-blue;
+}
+
+.triplet-divider__right,
+.triplet-divider__left {
+  flex-grow: 1;
+  font-family: $font-family-sans-serif-heavy;
+  font-size: $h2-font-size;
+}
+
+.triplet-divider__right,
+.triplet-divider__left,
+.triplet-divider__center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: $container-spacer-x $container-spacer-y;
+  min-height: $triplet-divider-height-sm;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .triplet-divider__right {
+    text-align: left;
+  }
+
+  .triplet-divider__right,
+  .triplet-divider__left,
+  .triplet-divider__center {
+    min-height: $triplet-divider-height-md;
+  }
+}

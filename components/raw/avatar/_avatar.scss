@@ -1,0 +1,43 @@
+.avatar {
+  display: inline-block;
+}
+
+.avatar__image {
+  border-radius: 100%;
+  background-color: $avatar-default-bg-color; // Show default background on
+  // FIXME: filter: grayscale(100%);
+  // Filter sorgt dafür, dass icon überdeckt wird. z-index und translatez helfen nicht.
+
+  .avatar--xs & {
+    width: $avatar-size-xs;
+    height: auto;
+  }
+
+  .avatar--sm &,
+  .avatar--small & {
+    width: $avatar-size-sm;
+    height: auto;
+  }
+
+  .avatar--base & {
+    width: $avatar-size-base;
+    height: auto;
+  }
+}
+
+.avatar__link {
+  @extend %link-unstyled;
+  transform: translateZ(100);
+}
+
+//
+// Breakpoints
+//
+@media screen and (min-width: $grid-breakpoint-md) {
+  .avatar__image {
+    .avatar--sm &,
+    .avatar--small & {
+      width: $avatar-size-md;
+    }
+  }
+}

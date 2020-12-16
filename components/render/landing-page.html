@@ -1,0 +1,596 @@
+
+
+<main role="main">
+  <nav-bar class="navbar"
+    ><div class="navbar__inner">
+      <a href="#main" class="navbtn navbtn--skip">Zum Inhalt springen</a>
+      <div class="navbar__brand">
+        <a href="#" class="navbar__brand-link"
+          ><img
+            alt="INNOQ"
+            class="logo navbar__logo"
+            src="../../assets/innoq-logo--whitered.svg"
+        /></a>
+      </div>
+      <input
+        tabindex="-1"
+        type="checkbox"
+        id="navbar-toggle--menu"
+        class="sr-only navbar__toggle-state navbar__toggle-state--menu-toggler"
+      /><input
+        tabindex="-1"
+        type="checkbox"
+        id="navbar-toggle--search"
+        class="sr-only navbar__toggle-state navbar__toggle-state--search-toggler"
+      />
+      <div class="navbar__meta">
+        <a href="#" class="navbtn navbtn--meta">Newsletter</a
+        ><a href="#" class="navbtn navbtn--meta">Kontakt</a
+        ><a
+          href="#"
+          class="navbtn navbtn--meta navbtn--locale navbtn--active"
+          title="Deutsch"
+          >de</a
+        >
+        |<a href="#" class="navbtn navbtn--meta navbtn--locale" title="English"
+          >en</a
+        >
+      </div>
+      <div class="navbar__togglers">
+        <label
+          for="navbar-toggle--menu"
+          aria-label="Navigation ein- oder ausblenden"
+          ><span class="navbtn navbtn--menu">Menü</span></label
+        ><a
+          href="#"
+          class="navbtn navbtn--search"
+          aria-label="Suche ein- oder ausblenden"
+          ><i class="icon icon-search"></i
+        ></a>
+      </div>
+      <nav class="navbar__primary-nav primary-nav">
+        <ul class="primary-nav__list">
+          <li class="primary-nav__item">
+            <a href="#" class="navbtn navbtn--primary navbtn--active"
+              >Leistungen</a
+            >
+          </li>
+          <li class="primary-nav__item">
+            <div class="dropdown">
+              <a
+                href="#"
+                class="navbtn navbtn--primary"
+                data-for="dropdown__toggle--projekte"
+                >Projekte</a
+              ><input
+                type="checkbox"
+                role="button"
+                aria-haspopup="true"
+                id="dropdown__toggle--projekte"
+                class="sr-only dropdown__checkbox"
+              /><label
+                class="dropdown__toggle dropdown__toggle--navbar"
+                for="dropdown__toggle--projekte"
+                ><i
+                  class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"
+                ></i
+                ><span class="sr-only dropdown__toggle--expanded-text"
+                  >ausgeklappt</span
+                ><span class="sr-only dropdown__toggle--collapsed-text"
+                  >eingeklappt</span
+                ></label
+              >
+              <div
+                class="dropdown__list-wrapper dropdown__list-wrapper--navbar"
+                role="menu"
+                title="Projekte"
+                data-origin="left"
+              >
+                <ul class="dropdown__list">
+                  <li class="dropdown__item dropdown__item--navbar">
+                    <a
+                      href="#"
+                      class="dropdown__link dropdown__link--navbar navbtn"
+                      >Softwarearchitektur und -entwicklung</a
+                    >
+                  </li>
+                  <li class="dropdown__item dropdown__item--navbar">
+                    <a
+                      href="#"
+                      class="dropdown__link dropdown__link--navbar navbtn"
+                      >Strategie- und Technologieberatung</a
+                    >
+                  </li>
+                  <li class="dropdown__item dropdown__item--navbar">
+                    <a
+                      href="#"
+                      class="dropdown__link dropdown__link--navbar navbtn"
+                      >Entwicklung digitaler Geschäftsmodelle</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="primary-nav__item">
+            <div class="dropdown">
+              <a
+                href="#"
+                class="navbtn navbtn--primary"
+                data-for="dropdown__toggle--kultur"
+                >Kultur</a
+              ><input
+                type="checkbox"
+                role="button"
+                aria-haspopup="true"
+                id="dropdown__toggle--kultur"
+                class="sr-only dropdown__checkbox"
+              /><label
+                class="dropdown__toggle dropdown__toggle--navbar"
+                for="dropdown__toggle--kultur"
+                ><i
+                  class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"
+                ></i
+                ><span class="sr-only dropdown__toggle--expanded-text"
+                  >ausgeklappt</span
+                ><span class="sr-only dropdown__toggle--collapsed-text"
+                  >eingeklappt</span
+                ></label
+              >
+              <div
+                class="dropdown__list-wrapper dropdown__list-wrapper--navbar"
+                role="menu"
+                title="Kultur"
+                data-origin="right"
+              >
+                <ul class="dropdown__list">
+                  <li class="dropdown__item dropdown__item--navbar">
+                    <a
+                      href="#"
+                      class="dropdown__link dropdown__link--navbar navbtn"
+                      >Strategie- und Technologieberatung</a
+                    >
+                  </li>
+                  <li class="dropdown__item dropdown__item--navbar">
+                    <a
+                      href="#"
+                      class="dropdown__link dropdown__link--navbar navbtn"
+                      >Entwicklung digitaler Geschäftsmodelle</a
+                    >
+                  </li>
+                  <li class="dropdown__item dropdown__item--navbar">
+                    <a
+                      href="#"
+                      class="dropdown__link dropdown__link--navbar navbtn"
+                      >Softwarearchitektur und -entwicklung</a
+                    >
+                  </li>
+                  <li class="dropdown__item dropdown__item--navbar">
+                    <a
+                      href="#"
+                      class="dropdown__link dropdown__link--navbar navbtn"
+                      >Digitale Plattformen und Infrastrukturen</a
+                    >
+                  </li>
+                  <li class="dropdown__item dropdown__item--navbar">
+                    <a
+                      href="#"
+                      class="dropdown__link dropdown__link--navbar navbtn"
+                      >Wissenstransfer, Coaching und Trainings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="primary-nav__item">
+            <a href="#" class="navbtn navbtn--primary">Magazin</a>
+          </li>
+          <li class="primary-nav__item">
+            <a href="#" class="navbtn navbtn--primary">Termine</a>
+          </li>
+        </ul>
+        <button class="navbtn navbtn--drill-up">
+          <img
+            class="navbtn__left-icon"
+            src="../../assets/icons/arrow-medium-left-red.svg"
+          />
+          Hauptmenü
+        </button>
+      </nav>
+    </div></nav-bar
+  >
+  <header class="landing-page-header landing-page-header-bg-image">
+    <div class="landing-page-header__body">
+      <div>
+        <h1
+          class="landing-page-header__title landing-page-header-bg-image-text-box"
+        >
+          Wir geben Technologie einen Sinn. <br />Und ihren Ideen eine Zukunft.
+        </h1>
+      </div>
+      <div class="landing-page-header__text">
+        Wir beraten ehrlich, denken innovativ und entwickeln leidenschaftlich
+        gern. Das Ergebnis sind erfolgreiche Softwarelösungen, Infrastrukturen
+        und Geschäftsmodelle.
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="page-layout-xl--default">
+      <h2 class="teaser-section-heading">Unser Fokus</h2>
+      <div class="service-intro-grid">
+        <div class="service-intro">
+          <h1 class="service-intro__header">
+            Strategie- und Technologieberatung
+          </h1>
+          <div class="service-intro__text">
+            Nichts interessiert uns mehr als neue Technologie. Doch bei
+            Strategie und Technologieberatung geht es uns nicht um das neueste,
+            sondern um das, was am besten zu Ihnen und Ihren Aufgabenstellungen
+            passt. Dank unserer branchenübergreifenden Erfahrung können wir
+            Ihnen dazu die richtigen Fragen stellen und die richtigen Antworten
+            gleich dazu liefern. Dabei profitieren Sie von unserem
+            Wissensvorsprung. Damit Ihre Entscheidung zukunftsfähig ist.
+          </div>
+          <a href="#" class="service-intro__link"
+            ><img src="../../assets/icons/arrow-long-right-red.svg" alt=""
+          /></a>
+        </div>
+        <div class="service-intro">
+          <h1 class="service-intro__header">
+            Entwicklung digitaler Geschäftsmodelle
+          </h1>
+          <div class="service-intro__text">
+            Ihre Fachexpertise und unser Entwicklung-Knowhow sind eine
+            erfolgsversprechende Kombination. Im Software-as-a-Service-Modell
+            (SaaS) transformieren wir Ihr neues oder bestehendes Geschäftsmodell
+            in einen innovativen, digitalen Service für Ihre Kunden. Das gilt
+            selbstverständlich für den gesamten Lebenszyklus – fachlich,
+            technisch und kommerziell.
+          </div>
+          <a href="#" class="service-intro__link"
+            ><img src="../../assets/icons/arrow-long-right-red.svg" alt=""
+          /></a>
+        </div>
+        <div class="service-intro">
+          <h1 class="service-intro__header">
+            Softwarearchitektur und -entwicklung
+          </h1>
+          <div class="service-intro__text">
+            Unsere langjährige Erfahrung als Softwarearchitekten und -entwickler
+            lehrt uns vor allem eines: DIE Lösung gibt es nicht. Deshalb nehmen
+            wir Ihre Software- und Systemarchitektur genau unter die Lupe und
+            analysieren Ihre Unternehmensprozesse im Detail. Und deshalb
+            arbeiten wir auch unabhängig von Herstellern und Produkten. Das
+            Ergebnis ist so vielfältig, wie unsere Kunden. Doch ob
+            Modernisierungskonzept oder neu entwickelte Individualsoftware,
+            eines ist immer gleich: Der Nutzer steht im Mittelpunkt.
+          </div>
+          <a href="#" class="service-intro__link"
+            ><img src="../../assets/icons/arrow-long-right-red.svg" alt=""
+          /></a>
+        </div>
+        <div class="service-intro">
+          <h1 class="service-intro__header">
+            Digitale Plattformen und Infrastrukturen
+          </h1>
+          <div class="service-intro__text">Noch in Arbeit.</div>
+          <a href="#" class="service-intro__link"
+            ><img src="../../assets/icons/arrow-long-right-red.svg" alt=""
+          /></a>
+        </div>
+        <div class="service-intro">
+          <h1 class="service-intro__header">
+            Wissenstransfer, Coaching und Trainings
+          </h1>
+          <div class="service-intro__text">
+            Unsere öffentlichen Trainings, Inhouse-Schulungen und Coaching
+            gestalten wir so, wie wir sie als Teilnehmer gerne selbst erleben:
+            Die Schulungen sind interaktiv und unsere Trainer sind
+            praktizierende Softwareentwickler und -architekten. Sie wenden
+            täglich an, was sie lehren und sind immer auf dem neuesten
+            technischen Stand. Und sie teilen gerne ihr Knowhow aus der Praxis.
+          </div>
+          <a href="#" class="service-intro__link"
+            ><img src="../../assets/icons/arrow-long-right-red.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="stripe stripe--primary">
+    <div class="page-layout-xl--default">
+      <div class="blocks">
+        <a href="#" class="topic-teaser topic-list-teaser-bg-image-igel"
+          ><div class="topic-teaser__body">
+            <div class="topic-teaser__caption">Schwerpunktthema</div>
+            <h1 class="topic-teaser__header">
+              Microservices – der aktuelle Stand
+            </h1>
+            <div class="topic-teaser__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+              doloremque culpa minima vero quod, optio itaque nisi deserunt,
+              debitis ad laudantium libero, quia nemo!
+            </div>
+            <div class="topic-teaser__cta">
+              Zum Schwerpunktthema
+              <img src="../../assets/icons/arrow-long-right-red.svg" />
+            </div></div
+        ></a>
+      </div>
+      <div class="blocks">
+        <a href="#" class="teaser content-teaser content-teaser--inverted"
+          ><div class="content-teaser__body">
+            <div class="content-teaser__caption">Artikel</div>
+            <h2 class="content-teaser__header">
+              Command Line Interfaces in Java
+            </h2>
+            <p class="content-teaser__text">
+              Wie man auf Kommando die richtigen Dinge tut.
+            </p>
+          </div>
+          <div class="content-teaser__footer">
+            <div
+              class="author-bio author-bio--condensed"
+              itemscope
+              itemtype="http://schema.org/Person"
+            >
+              <div class="author-bio__image avatar avatar--xs">
+                <img
+                  class="avatar__image"
+                  itemprop="photo"
+                  src="../../assets/heribert.jpg"
+                  alt="Portrait von Alexander Hesingfeld"
+                />
+              </div>
+              <div class="author-bio__text">
+                <div class="author-bio__name" itemprop="name">
+                  <span class="author-bio__link" itemprop="url" href="#"
+                    >Heribert Innoq</span
+                  >
+                </div>
+                <div class="author-bio__info" itemprop="jobTitle">
+                  Senior Consultant
+                </div>
+              </div>
+            </div>
+          </div></a
+        ><a
+          href="#"
+          class="podcast-teaser podcast-teaser--avatar--overlay"
+          style="background-image: url(../../assets/heribert-rechts.png)"
+          ><div class="podcast-teaser__body">
+            <div class="podcast-teaser__caption">Podcast</div>
+            <h2 class="podcast-teaser__headline">Podcast Headline</h2>
+            <h3 class="podcast-teaser__subheadline">Podcast Subheadline</h3>
+            <img src="../../assets/icons/arrow-long-right-white.svg" />
+          </div>
+          <div class="podcast-teaser__footer">
+            <div
+              class="podcast-author"
+              itemscope
+              itemtype="http://schema.org/Person"
+            >
+              Heribert Innoq
+            </div>
+          </div></a
+        ><a href="#" class="teaser content-teaser content-teaser--inverted"
+          ><div class="content-teaser__body">
+            <div class="content-teaser__caption">Artikel</div>
+            <h2 class="content-teaser__header">
+              Command Line Interfaces in Java
+            </h2>
+            <p class="content-teaser__text">
+              Wie man auf Kommando die richtigen Dinge tut.
+            </p>
+          </div>
+          <div class="content-teaser__footer">
+            <div
+              class="author-bio author-bio--condensed"
+              itemscope
+              itemtype="http://schema.org/Person"
+            >
+              <div class="author-bio__image avatar avatar--xs">
+                <img
+                  class="avatar__image"
+                  itemprop="photo"
+                  src="../../assets/heribert.jpg"
+                  alt="Portrait von Alexander Hesingfeld"
+                />
+              </div>
+              <div class="author-bio__text">
+                <div class="author-bio__name" itemprop="name">
+                  <span class="author-bio__link" itemprop="url" href="#"
+                    >Heribert Innoq</span
+                  >
+                </div>
+                <div class="author-bio__info" itemprop="jobTitle">
+                  Senior Consultant
+                </div>
+              </div>
+            </div>
+          </div></a
+        >
+      </div>
+      <div class="blocks">
+        <a href="#" class="list-teaser-event tile"
+          ><div class="event-date-section">
+            <div class="label talk">Vortrag</div>
+            <time class="event-date" datetime="2017-06-23"
+              ><span class="event-day-month"
+                ><span class="event-day">23</span
+                ><span class="event-month">Jun</span></span
+              ><span class="event-year">2017</span></time
+            >
+          </div>
+          <div class="list-teaser__content">
+            <div class="list-teaser__body">
+              <div class="label talk">Vortrag</div>
+              <div class="label slides">Folien verfügbar</div>
+              <h2 class="list-teaser-event__headline">Vortrag Titel</h2>
+              <h3 class="list-teaser-event__subheadline">
+                Vortragsort / 10-12 Uhr<img
+                  class="arrow-right"
+                  src="../../assets/icons/arrow-long-right-red.svg"
+                />
+              </h3>
+            </div>
+            <div class="list-teaser__footer">
+              <div
+                class="author-bio author-bio--short"
+                itemscope
+                itemtype="http://schema.org/Person"
+              >
+                <div class="author-bio__image avatar avatar--small">
+                  <img
+                    class="avatar__image"
+                    itemprop="photo"
+                    src="../../assets/heribert.jpg"
+                    alt="Portrait von Alexander Hesingfeld"
+                  />
+                </div>
+                <div class="author-bio__text">
+                  <div class="author-bio__name" itemprop="name">
+                    Heribert Innoq
+                  </div>
+                  <div class="author-bio__info" itemprop="jobTitle">
+                    Senior Consultant
+                  </div>
+                </div>
+              </div>
+              <div
+                class="author-bio author-bio--short"
+                itemscope="itemscope"
+                itemtype="http://schema.org/Person"
+              >
+                <div class="author-bio__image avatar avatar--small">
+                  <img
+                    class="avatar__image"
+                    itemprop="photo"
+                    alt="Portrait von Till Schulte-Coerne"
+                    src="../../assets/heribert.jpg"
+                  />
+                </div>
+                <div class="author-bio__text">
+                  <div class="author-bio__name" itemprop="name">
+                    Till Schulte-Coerne
+                  </div>
+                  <div class="author-bio__info" itemprop="jobTitle">
+                    Senior Consultant
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div></a
+        ><a href="#" class="list-teaser-event tile"
+          ><div class="event-date-section">
+            <div class="label talk">Training</div>
+            <div class="event-date-wrapper">
+              <time class="event-date" datetime="2017-06-23"
+                ><span class="event-day-month"
+                  ><span class="event-day">23</span
+                  ><span class="event-month">Jun</span></span
+                ></time
+              >
+              <hr class="event-date-separator" />
+              <time class="event-date" datetime="2017-06-24"
+                ><span class="event-day-month"
+                  ><span class="event-day">24</span
+                  ><span class="event-month">Jun</span></span
+                ><span class="event-year">2017</span></time
+              >
+            </div>
+          </div>
+          <div class="list-teaser__content">
+            <div class="list-teaser__body">
+              <div class="label training">Training</div>
+              <h2 class="list-teaser-event__headline">Training Titel</h2>
+              <h3 class="list-teaser-event__subheadline">
+                Trainingsort<img
+                  class="arrow-right"
+                  src="../../assets/icons/arrow-long-right-red.svg"
+                />
+              </h3>
+            </div>
+            <div class="list-teaser__footer">
+              <div
+                class="author-bio author-bio--short"
+                itemscope
+                itemtype="http://schema.org/Person"
+              >
+                <div class="author-bio__image avatar avatar--small">
+                  <img
+                    class="avatar__image"
+                    itemprop="photo"
+                    src="../../assets/heribert.jpg"
+                    alt="Portrait von Alexander Hesingfeld"
+                  />
+                </div>
+                <div class="author-bio__text">
+                  <div class="author-bio__name" itemprop="name">
+                    Heribert Innoq
+                  </div>
+                  <div class="author-bio__info" itemprop="jobTitle">
+                    Senior Consultant
+                  </div>
+                </div>
+              </div>
+              <div
+                class="author-bio author-bio--short"
+                itemscope="itemscope"
+                itemtype="http://schema.org/Person"
+              >
+                <div class="author-bio__image avatar avatar--small">
+                  <img
+                    class="avatar__image"
+                    itemprop="photo"
+                    alt="Portrait von Till Schulte-Coerne"
+                    src="../../assets/heribert.jpg"
+                  />
+                </div>
+                <div class="author-bio__text">
+                  <div class="author-bio__name" itemprop="name">
+                    Till Schulte-Coerne
+                  </div>
+                  <div class="author-bio__info" itemprop="jobTitle">
+                    Senior Consultant
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div></a
+        >
+      </div>
+    </div>
+  </section>
+  <div class="blocks">
+    <div class="case-teaser topic-header-bg-image-girl">
+      <div class="case-teaser__wrapper">
+        <div class="case-teaser__body">
+          <div class="case-teaser__caption">ARTIST COLLABORATION</div>
+          <div>
+            <div class="case-teaser__header">
+              <h1 class="punch-in topic-header-bg-image-text-box-girl">
+                INNOQ Digital Art
+              </h1>
+            </div>
+          </div>
+          <div class="case-teaser__text">
+            Die Kollaborationsreihe „INNOQ Digital Art“ hat zum Ziel, die
+            Zusammenarbeit mit ausgewählten Medienkünstlern zu fördern.
+            Gemeinsam werden Fragen zu technologischem Fortschritt und dessen
+            gesellschaftlichen Auswirkungen aus verschiedenen Perspektiven
+            betrachtet. Dabei steht die gemeinsame Entwicklung von Kunstwerken
+            und der intensive Austausch zwischen INNOQ-Mitarbeitern und den
+            Künstlern im Fokus.
+          </div>
+          <div class="case-teaser__footer">
+            <a class="link-teaser" href="#">Mehr erfahren</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+

@@ -1,0 +1,95 @@
+$case-tile-teaser-sm-height: ms(32);
+
+// demo bg image
+
+.case-tile-teaser-bg-image-demo {
+  background-image: asset-url('visual-header-igel-1444.jpg');
+  background-position: center;
+}
+
+.case-tile-teaser-bg-image-training {
+  background-image: asset-url('visual-newsletter.jpg');
+  background-position: top;
+}
+
+//
+// case tile teaser
+//
+.case-tile-teaser {
+  @extend %block-link;
+  @extend %hover-zoom-in;
+
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  padding: $spacer-sm $spacer-xs;
+}
+
+.case-tile-teaser__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  background-color: $case-tile-teaser-body-bg-color;
+  padding: $spacer-md;
+}
+
+.case-tile-teaser__body {
+  text-align: center;
+}
+
+.case-tile-teaser__caption {
+  @extend %teaser-caption;
+  margin: 0;
+}
+
+.case-tile-teaser__headline {
+  margin: $spacer-xs 0;
+}
+
+.case-tile-teaser__text {
+  @extend %teaser-text-italic;
+}
+
+.case-tile-teaser__goto {
+  text-align: center;
+}
+
+//
+// case-tile-teaser--sm
+//
+.case-tile-teaser--sm {
+  margin-bottom: $spacer-xxl;
+  padding: $spacer-md;
+  min-height: $case-tile-teaser-sm-height;
+}
+
+.case-tile-teaser__content--sm {
+  position: relative;
+  top: $spacer-xxl;
+  justify-content: space-between;
+  padding: $spacer-sm;
+}
+
+.case-tile-teaser__headline--sm {
+  font-size: $teaser-headline-font-size-small;
+}
+
+.case-tile-teaser__text--sm {
+  margin-bottom: $spacer-xs;
+  font-size: $teaser-text-font-size-italic-small;
+}
+
+//
+// Breakpoints
+//
+@media screen and (min-width: $grid-breakpoint-md) {
+  .case-tile-teaser {
+    padding: $spacer-xl $spacer-lg;
+  }
+
+  .case-tile-teaser__content {
+    padding: $spacer-lg;
+  }
+
+}

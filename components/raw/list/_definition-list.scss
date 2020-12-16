@@ -1,0 +1,12 @@
+// ---- Definition Lists -------------------------------------------------------
+//
+// adapted from: /components/detail/talk-page
+// see lib/styles/tools/text
+
+dl:not([class]) {
+  @extend %definition-list;
+}
+
+.simple-definition-list {
+  @extend %definition-list-simple;
+}

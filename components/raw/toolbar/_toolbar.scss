@@ -1,0 +1,37 @@
+.toolbar {
+  @extend %list-unstyled;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.toolbar__item {
+  margin: $spacer-sm;
+}
+
+.toolbar__link {
+  @extend %link-unstyled;
+  @extend %heading-font-bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: standard-transition(color);
+
+  &:hover,
+  &:focus {
+    color: $toolbar-link-hover-color;
+  }
+
+  .icon-svg {
+    margin-right: $spacer-xxs;
+  }
+
+  .icon-svg:hover,
+  .icon-svg:focus {
+    background: $toolbar-link-hover-color;
+  }
+}

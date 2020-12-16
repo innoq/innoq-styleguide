@@ -1,0 +1,105 @@
+// variations imported at the end of this file
+
+$landing-page-header-outer-padding: $spacer-lg;
+$landing-page-header-outer-padding-small: $spacer-sm;
+$landing-page-header-bottom-margin: $spacer-xxl;
+
+.landing-page-header {
+  @extend %page-header;
+
+  justify-content: flex-end;
+  margin-bottom: $landing-page-header-bottom-margin;
+  padding: $landing-page-header-outer-padding $landing-page-header-outer-padding-small;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    border-bottom: 8px solid $landing-page-header-border-color;
+    background-color: $landing-page-header-intro-bg-color;
+    padding: $spacer-base;
+    max-width: $grid-page-layout-content-width-xl;
+    color: $landing-page-header-intro-text-color;
+    box-sizing: content-box;
+  }
+
+  &__title {
+    @extend %punch-in;
+    margin-bottom: $spacer-xs;
+    padding-bottom: $spacer-base;
+    text-align: center;
+    line-height: $landing-page-header-title-line-height-small;
+    font-size: $landing-page-header-title-font-size-small;
+  }
+
+  &__text {
+    @extend %body-font-italic;
+
+    margin-bottom: $spacer-base;
+    text-align: center;
+    line-height: $standard-header-intro-line-height-small;
+    font-size: $standard-header-intro-font-size-small;
+  }
+
+  &__down-arrow {
+    text-align: center;
+    color: $brand-primary;
+  }
+}
+
+.landing-page-header-bg-image {
+  background-image: asset-url('visual-header-landing-page.jpg');
+}
+
+.landing-page-header-bg-image-text-box {
+  @extend %landing-page-header-bg-image-text-box;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .landing-page-header {
+    padding: $landing-page-header-outer-padding;
+  }
+
+  .landing-page-header__body {
+    position: relative;
+    top: $spacer-xxl;
+    padding: $spacer-xxl $spacer-base $spacer-xl;
+  }
+
+  .landing-page-header__title {
+    line-height: $landing-page-header-title-line-height;
+    font-size: $landing-page-header-title-font-size;
+  }
+
+  .landing-page-header__subtitle {
+    line-height: $standard-header-subtitle-line-height;
+    font-size: $standard-header-subtitle-font-size;
+  }
+
+  .landing-page-header__type {
+    line-height: $standard-header-type-line-height;
+    font-size: $standard-header-type-font-size;
+  }
+
+  .landing-page-header__text {
+    padding-right: $spacer-lg;
+    padding-left: $spacer-lg;
+    line-height: $standard-header-intro-line-height;
+    font-size: $standard-header-intro-font-size;
+  }
+}
+
+@media screen and (max-width: $grid-breakpoint-lg) and (min-height: $grid-breakpoint-md-lg) {
+  .landing-page-header {
+    min-height: 20rem;
+  }
+}
+
+// excluded for now
+
+// @import './landing-page-header--red';
+// @import './landing-page-header--blue';
+// @import './landing-page-header--centered';
+// @import './landing-page-header--centered-big';
+// @import './landing-page-header--demo-classes';

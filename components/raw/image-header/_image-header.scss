@@ -1,0 +1,90 @@
+$gradient-from: rgba(0, 0, 0, .4);
+$gradient-to: rgba(0, 0, 0, .1);
+
+.image-header {
+  display: flex;
+  flex-direction: column;
+  background-color: $image-header-bg-color;
+  padding: $spacer-md;
+  min-height: $fullscreen-real-mobile-height;
+
+  &__body {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+
+  &__content {
+    background-color: $image-header-content-bg-color;
+    padding: $spacer-base $spacer-xl;
+    text-align: center;
+  }
+
+  &__headline {
+    margin-bottom: $spacer-sm;
+  }
+
+  &__title {
+    @extend %punch-in;
+    margin-bottom: $spacer-md;
+  }
+}
+
+.image-header-bg-culture-01 {
+  background-image: asset-url('visual-culture-01.jpg');
+}
+
+.image-header-bg-podcast-01 {
+  background-image: asset-url('podcast-header.jpg');
+}
+
+.image-header-bg-art-01 {
+  background-image: linear-gradient($gradient-from, $gradient-to), asset-url('visual-art-02.jpg');
+
+}
+
+.image-header-bg-staff-01 {
+  background-image: asset-url('visual-staff-01.jpg');
+}
+
+.image-header-bg-visual-01 {
+  background-image: asset-url('visual-header-koralle.jpg');
+}
+
+.image-header-bg-culture-01-text-box {
+  @extend %image-header-bg-culture-01-text-box;
+}
+
+.image-header-bg-staff-01-text-box {
+  @extend %image-header-bg-staff-01-text-box;
+}
+
+//
+// Media Queries
+//
+
+@media screen and (min-width: $grid-breakpoint-sm) {
+  .image-header__body {
+    align-items: center;
+  }
+
+  .image-header-bg-podcast-01 {
+    background-image: asset-url('podcast-header-big-screens.jpg');
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .image-header {
+    min-height: $fullscreen-real-desktop-height;
+  }
+
+  .image-header__title {
+    margin-bottom: $spacer-base;
+  }
+}

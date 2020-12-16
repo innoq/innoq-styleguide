@@ -1,0 +1,29 @@
+figure {
+  margin: 0 0 $content-spacer-base;
+  // Short figcaptions will be centered, long ones left aligned
+  text-align: center;
+
+  & img,
+  & video {
+    width: 100%;
+  }
+}
+
+figcaption {
+  @extend %heading-font-regular;
+
+  display: inline-block;
+  // Short figcaptions will be centered, long ones left aligned
+  text-align: left;
+  line-height: $figcaption-line-height-small;
+  font-size: $figcaption-font-size-small;
+}
+
+
+@media screen and (min-width: $grid-breakpoint-md) {
+
+  figcaption {
+    line-height: $figcaption-line-height;
+    font-size: $figcaption-font-size;
+  }
+}

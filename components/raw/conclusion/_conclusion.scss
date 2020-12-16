@@ -1,0 +1,69 @@
+//
+// Conclusion
+//
+
+.conclusion {
+  border-top: $conclusion-border-size solid $conclusion-border-color;
+  border-bottom: $conclusion-border-size solid $conclusion-border-color;
+  background: $conclusion-background-color;
+  padding: $spacer-lg $container-spacer-x;
+}
+
+.conclusion-headline {
+  line-height: $conclusion-headline-line-height-small;
+  color: $conclusion-headline-color;
+  font-size: $conclusion-headline-font-size-small;
+}
+
+.conclusion-subheadline {
+  line-height: $conclusion-subheadline-line-height-small;
+  color: $conclusion-subheadline-color;
+  font-size: $conclusion-subheadline-font-size-small;
+}
+
+.conclusion-text {
+  &,
+  & > * {
+    @extend %heading-font-regular;
+
+    line-height: $conclusion-text-line-height-small;
+    color: $conclusion-text-color;
+    font-size: $conclusion-text-font-size-small;
+
+    // Remove the margin of the last paragraph inside a conclusion
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: $conclusion-link-color;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .conclusion {
+    padding: $spacer-xxl 0;
+  }
+
+  .conclusion-headline {
+    line-height: $conclusion-headline-line-height;
+    font-size: $conclusion-headline-font-size;
+  }
+
+  .conclusion-subheadline {
+    line-height: $conclusion-subheadline-line-height;
+    font-size: $conclusion-subheadline-font-size;
+  }
+
+  .conclusion-text {
+    line-height: $conclusion-text-line-height;
+    font-size: $conclusion-text-font-size;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .conclusion {
+    border: $conclusion-border-size solid $conclusion-border-color;
+  }
+}
