@@ -67,6 +67,8 @@ jobs:
       if: steps.npm_cache.outputs.cache-hit != 'true'
       run: yarn install --frozen-lockfile
     - run: ./scripts/dist
+      env:
+        SKIP_RELEASE_BUNLDE: true
     - name: Deploy
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
