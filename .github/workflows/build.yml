@@ -40,6 +40,44 @@ jobs:
       run: yarn install --frozen-lockfile
     - run: yarn test
 
+  deploy_site:
+    if: ${{ contains(github.ref, 'refs/tags') }}
+    needs: build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - name: Setup cache for npm
+      id: npm_cache
+      uses: actions/cache@v2
+      with:
+        path: |
+          ~/.npm
+          ~/cache
+          !~/cache/exclude
+          **/node_modules
+        key: yarn-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
+    - name: yarn install
+      if: steps.npm_cache.outputs.cache-hit != 'true'
+      run: yarn install --frozen-lockfile
+    - run: ./scripts/dist
+      env:
+        SKIP_RELEASE_BUNLDE: true
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages # The branch the action should deploy to.
+        FOLDER: dist/site # The folder the action should deploy.
+        CLEAN: true # Automatically remove deleted files from the deploy branch
+
   publish:
     if: ${{ contains(github.ref, 'refs/tags') }}
     needs: build
@@ -75,7 +113,7 @@ jobs:
     - run: ./scripts/dist
     - name: Get current tag name
       id: tag_name
-      uses: dawidd6/action-get-tag@v1 
+      uses: dawidd6/action-get-tag@v1
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
