@@ -3808,8 +3808,10 @@ super-quote > blockquote > p,
 }
 .claim-header__divider {
   margin-top: 2.0736rem;
-  border: 2px solid #24244c;
+  border: 0;
+  background-color: #24244c;
   width: 9.7519848653rem;
+  height: 4px;
 }
 
 @media screen and (min-width: 48rem) {
