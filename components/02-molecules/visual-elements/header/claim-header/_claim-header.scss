@@ -27,8 +27,10 @@
 
   &__divider {
     margin-top: $spacer-base;
-    border: 2px solid $claim-header-divider-color;
+    border: 0;
+    background-color: $claim-header-divider-color;
     width: ms(25);
+    height: 4px;
   }
 }
 
