@@ -213,7 +213,7 @@ h6 > a:focus:not([class]),
 
 ul:not([class]),
 .bold-list, .checklist {
-  margin-bottom: 2.0736rem;
+  margin-bottom: 1.44rem;
   line-height: 1.52;
   font-size: 1.09375rem;
 }
@@ -231,7 +231,7 @@ ul:not([class]) li,
 }
 
 dl:not([class]), .date-location-section, .simple-definition-list {
-  margin-bottom: 2.0736rem;
+  margin-bottom: 1.44rem;
 }
 dl:not([class]) dt, .date-location-section dt, .simple-definition-list dt {
   margin-bottom: 0.5787037037rem;
@@ -777,7 +777,7 @@ main > .page-layout--grid:first-child {
 
 @media screen and (min-width: 48rem) {
   .alert {
-    margin-bottom: 2.0736rem;
+    margin-bottom: 1.44rem;
     padding: 1rem 1rem;
   }
 }
@@ -1168,7 +1168,7 @@ main > .page-layout--grid:first-child {
 }
 
 figure {
-  margin: 0 0 2.0736rem;
+  margin: 0 0 1.44rem;
   text-align: center;
 }
 figure img, figure video {
@@ -1922,7 +1922,7 @@ h5 {
 }
 p {
   margin-top: 0;
-  margin-bottom: 2.0736rem;
+  margin-bottom: 1.44rem;
   line-height: 1.52;
   font-size: 1.09375rem;
 }
@@ -1951,7 +1951,7 @@ p.display {
 }
 pull-quote > blockquote,
 .pullquote {
-  margin: 0 0 2.0736rem;
+  margin: 0 0 1.44rem;
   border: 1px solid #24244c;
   border-width: 1px 0;
   padding: 1rem;
@@ -1972,14 +1972,14 @@ pull-quote > blockquote > p,
 @media screen and (min-width: 48rem) {
   pull-quote > blockquote,
 .pullquote {
-    margin: 0 auto 2.0736rem;
+    margin: 0 auto 1.44rem;
     width: 80%;
   }
 }
 blockquote:not([class]),
 .blockquote {
   position: relative;
-  margin: 0 0 2.0736rem;
+  margin: 0 0 1.44rem;
 }
 blockquote:not([class]), blockquote:not([class]) > p,
 .blockquote,
@@ -2067,7 +2067,7 @@ ol:not([class]) {
   margin-top: 0;
   padding: 0;
   list-style: none;
-  margin-bottom: 2.0736rem;
+  margin-bottom: 1.44rem;
   line-height: 1.52;
   font-size: 1.09375rem;
   counter-reset: number;
@@ -2417,7 +2417,7 @@ ul:not([class]) ul li::before,
   }
 }
 hr {
-  margin-bottom: 2.0736rem;
+  margin-bottom: 1.44rem;
   border: 0;
   background-color: #ff4d67;
   height: 3px;
@@ -2810,7 +2810,7 @@ long-quote > blockquote,
 super-quote > blockquote,
 .superquote,
 .longquote {
-  margin-bottom: 2.985984rem;
+  margin-bottom: 1.44rem;
   text-align: center;
 }
 long-quote > blockquote > p,
@@ -6527,7 +6527,7 @@ super-quote > blockquote > p,
 
 .search-result-list .search-result-list__item + .search-result-list__item {
   border-top: 1px solid #979798;
-  padding-top: 2.0736rem;
+  padding-top: 1.44rem;
 }
 
 .form--inverted .form-label {
@@ -7205,7 +7205,7 @@ super-quote > blockquote > p,
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: 2.0736rem;
+  margin-bottom: 1.44rem;
 }
 .swatch:first-child {
   margin-left: 0;

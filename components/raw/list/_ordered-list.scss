@@ -14,7 +14,7 @@ ol:not([class]) {
   @extend %body-font-regular;
   @include list-unstyled;
 
-  margin-bottom: $spacer-base;
+  margin-bottom: $content-spacer-base;
   line-height: $paragraph-line-height;
   font-size: $paragraph-font-size-small;
   counter-reset: number;
