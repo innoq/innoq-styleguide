@@ -33,6 +33,7 @@ export default class ModiToggler extends HTMLElement {
             toggleClass: selector + '--' + toggleModifier
           })
         }
+        return acc
       }, [])
   }
 }
