@@ -1,5 +1,6 @@
 .legend {
   @extend %heading-font-heavy;
+
   margin-bottom: $spacer-md;
-  font-size: $h3-font-size-small;
+  font-size: $font-size-md;
 }

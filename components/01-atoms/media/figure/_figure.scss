@@ -1,5 +1,5 @@
 figure {
-  margin: 0 0 $content-spacer-base;
+  margin: 0 0 $spacer-md;
   // Short figcaptions will be centered, long ones left aligned
   text-align: center;
 
@@ -15,15 +15,15 @@ figcaption {
   display: inline-block;
   // Short figcaptions will be centered, long ones left aligned
   text-align: left;
-  line-height: $figcaption-line-height-small;
-  font-size: $figcaption-font-size-small;
+  line-height: $paragraph-line-height-sm;
+  font-size: $font-size-xxs;
 }
 
 
 @media screen and (min-width: $grid-breakpoint-md) {
 
   figcaption {
-    line-height: $figcaption-line-height;
-    font-size: $figcaption-font-size;
+    line-height: $paragraph-line-height-sm;
+    font-size: $font-size-base;
   }
 }

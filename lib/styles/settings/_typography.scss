@@ -15,7 +15,7 @@ $font-family-monospace: HackRegular, 'Monaco', 'Courier New', monospace;
 //
 
 // The font size set on the root html element.
-$base-font-size: 1rem; // 16px
+$font-size-base: 1rem; // 16px
 
 // The companion font size to create a modular scale.
 $companion-font-size: 1.3125rem; // 21px
@@ -23,12 +23,9 @@ $companion-font-size: 1.3125rem; // 21px
 // Setting up a modular scale. You can see its values here:
 // www.modularscale.com/?16,21&px&1.2
 $modularscale: (
-  base: $base-font-size $companion-font-size,
+  base: $font-size-base $companion-font-size,
   ratio: $minor-third
 );
-
-// Color set on the root html element.
-$base-color: $brand-text;
 
 // The length unit in which to output vertical rhythm values.
 $base-unit: 'rem';
@@ -38,6 +35,19 @@ $base-font-family: $font-family-serif;
 
 // REFACTORING
 
+$font-size-xxs: ms(-2); // 10px
+$font-size-xs: ms(-1); // 14px
+$font-size-base: ms(0); // 16px
+$font-size-sm: ms(2); // 12px
+$font-size-md: ms(5); // 14px
+$font-size-lg: ms(8); // 24px
+$font-size-xl: ms(14); // 32px
+$font-size-xxl: ms(16); // 32px
+
+$paragraph-line-height: 1.52;
+$paragraph-line-height-sm: 1.3;
+
+$heading-line-height: 1.2;
 //All line-heights
 
 $line-height-1: 1;
@@ -46,7 +56,6 @@ $line-height-1-1: 1.1;
 $line-height-1-12: 1.12;
 $line-height-1-16: 1.16;
 $line-height-1-18: 1.18;
-$heading-line-height: 1.2;
 $line-height-1-23: 1.23;
 $line-height-1-24: 1.24;
 $line-height-1-25: 1.25;
@@ -193,29 +202,13 @@ $image-divider-right-content-text-font-size-small: ms(3);     // ~21px
 //
 $code-font-size: ms(-1);                    // ~15px
 $code-line-height: 1.24;                    // ~18px
-$code-snippet-font-size: ms(-1);            // ~15px
-$code-snippet-line-height: 1.75;            // ~25px
-$code-snippet-line-height-small: 1.23;      // ~13px
-$code-snippet-font-size-small: ms(-2);      // ~16px
 
 //
 // Date & Duration
 //
-$date-font-size: ms(0);                   // ~16px
+
 $edition-font-size: ms(0);                // ~16px
-$duration-font-size: ms(1);               // ~17px
-$date-line-height: $base-line-height;     // ~16px
 $edition-line-height: $heading-line-height;   // ~16px
-$event-day-font-size: ms(7);              // ~30px
-$event-day-line-height: .9;               // ~27px
-$event-day-font-size-small: ms(5);        // ~25px
-$event-day-line-height-small: 1;          // ~34px
-$event-month-font-size: ms(0);            // ~16px
-$event-month-line-height: 1.375;          // ~22px
-$event-month-font-size-small: ms(-1);     // ~14px
-$event-month-line-height-small: 1.57;     // ~22px
-$event-year-font-size: ms(-1);            // ~15px
-$event-year-line-height: 2.53;            // ~19px
 
 //
 // Label
@@ -299,7 +292,7 @@ $conclusion-text-line-height-small: $base-line-height;              // ~26px
 //
 // Tags
 //
-$tag-font-size: $base-font-size;               // ~16px
+$tag-font-size: $font-size-base;               // ~16px
 $tag-font-size-small: ms(-1);                  // ~14px
 $tag-line-height: 1.375;                       // ~22px
 $tag-line-height-small: $base-line-height;     // ~22px
@@ -309,7 +302,7 @@ $tag-line-height-small: $base-line-height;     // ~22px
 // Tag Section
 //
 $meta-tags-headline-font-size: ms(2);                         // ~19px
-$meta-tags-headline-font-size-small: $base-font-size;         // ~16px
+$meta-tags-headline-font-size-small: $font-size-base;         // ~16px
 $meta-tags-headline-line-height: 1.37;                        // ~26px
 $meta-tags-headline-line-height-small: $base-line-height;     // ~24px
 
@@ -317,7 +310,7 @@ $meta-tags-headline-line-height-small: $base-line-height;     // ~24px
 //
 // Reference
 //
-$reference-font-size: $base-font-size;    // ~16px
+$reference-font-size: $font-size-base;    // ~16px
 $reference-font-size-small: ms(-2);       // ~13px
 $reference-line-height: 1.56;             // ~25px
 $reference-line-height-small: 1.69;       // ~23px
@@ -329,27 +322,19 @@ $content-table-caption-font-size: ms(2);                // ~19px
 $content-table-caption-font-size-small: ms(1);          // ~17px
 $content-table-caption-line-height: 1.37;               // ~26px
 $content-table-caption-line-height-small: 1.37;         // ~26px
-$content-table-head-font-size: $base-font-size;         // ~16px
+$content-table-head-font-size: $font-size-base;         // ~16px
 $content-table-head-font-size-small: ms(-1);            // ~14px
 $content-table-head-line-height: 1.375;                 // ~22px
 $content-table-head-line-height-small: 1.375;           // ~22px
-$content-table-body-font-size: $base-font-size;         // ~16px
+$content-table-body-font-size: $font-size-base;         // ~16px
 $content-table-body-font-size-small: ms(-1);            // ~14px
 $content-table-body-line-height: 1.56;                  // ~25px
 $content-table-body-line-height-small: 1.56;            // ~25px
 
 //
-// Figure
-//
-$figcaption-font-size: $base-font-size;   // ~16px
-$figcaption-font-size-small: ms(-2);      // ~14px
-$figcaption-line-height: 1.56;            // ~25px
-$figcaption-line-height-small: 1.64;      // ~24px
-
-//
 // Infobox
 //
-$infobox-text-font-size: $base-font-size;     // ~16px
+$infobox-text-font-size: $font-size-base;     // ~16px
 $infobox-text-line-height: 1.56;              // ~25px
 $infobox-heading-font-size: ms(-1);           // ~15px
 $infobox-heading-line-height: 1.3;            // ~19px
@@ -373,17 +358,6 @@ $navbar-secondary-font-size: ms(-2);     // ~14px
 //
 $search-field-xl-font-size: ms(7);
 
-//
-// Tooltip / Footnote
-//
-$tooltip-font-size: $base-font-size;    // ~16px
-$tooltip-font-size-small: ms(-2);       // ~14px
-$tooltip-line-height: 1.56;             // ~25px
-$tooltip-line-height-small: 1.64;       // ~23px
-$footnote-line-height:  1.56;           // ~25px
-$footnote-line-height-small:  1.64;     // ~23px
-$footnote-font-size: $base-font-size;   // ~16px
-$footnote-font-size-small: ms(-2);      // ~14px
 
 //
 // Footnote Section
@@ -398,7 +372,7 @@ $footnote-section-headline-line-height-small: 1.37;             // ~23px
 //
 $footer-subheading-font-size: ms(2);              // ~19px
 $footer-subheading-line-height: 1.37;             // ~26px
-$footer-paragraph-font-size: $base-font-size;     // ~16px
+$footer-paragraph-font-size: $font-size-base;     // ~16px
 $footer-paragraph-line-height: 1.56;              // ~25px
 $footer-directions-link-font-size: ms(-2);        // ~16px
 $footer-directions-link-line-height: 1.69;        // ~23px
@@ -406,7 +380,7 @@ $footer-directions-link-line-height: 1.69;        // ~23px
 //
 // Teaser
 //
-$teaser-caption-font-size: $base-font-size;         // ~16px
+$teaser-caption-font-size: $font-size-base;         // ~16px
 $teaser-caption-line-height: 1.375;                 // ~22px
 $teaser-caption-font-size-small: ms(-1);            // ~14px
 $teaser-caption-line-height-small: 1.57 ;           // ~22px
@@ -482,7 +456,7 @@ $standard-header-subtitle-font-size: ms(7);            // ~30px
 $standard-header-subtitle-line-height: 1.2;            // ~36px
 $standard-header-subtitle-font-size-small: ms(-1);     // ~14px
 $standard-header-subtitle-line-height-small: 1.57;     // ~22px
-$standard-header-type-font-size: $base-font-size;      // ~16px
+$standard-header-type-font-size: $font-size-base;      // ~16px
 $standard-header-type-line-height: 1.375;              // ~22px
 $standard-header-type-font-size-small: ms(-1);         // ~14px
 $standard-header-type-line-height-small: 1.57;         // ~22px
@@ -553,14 +527,8 @@ $service-intro-text-font-size-small: ms(0);        // ~16px
 $service-intro-text-line-height-small: 1.75;       // ~26px
 
 // Dialog Banner
-$dialog-banner-font-size: $base-font-size;         // ~16px
+$dialog-banner-font-size: $font-size-base;         // ~16px
 $dialog-banner-line-height: 1.56;                  // ~25px
-
-// Forms
-$form-label-font-size: $base-font-size;           // ~16px
-$form-label-line-height: 1.375;                   // ~22px
-$form-control-font-size: $base-font-size;         // ~16px
-$form-control-line-height: 1.375;                 // ~22px
 
 // Paginator
 $paginator-font-size-small: ms(0);
@@ -569,4 +537,4 @@ $paginator-font-size: ms(3);
 // Alert
 $alert-font-size: $companion-font-size;         // 21px
 $alert-line-height: $base-line-height;          // 25px
-$alert-font-size-sm: $base-font-size;           // 16px
+$alert-font-size-sm: $font-size-base;           // 16px

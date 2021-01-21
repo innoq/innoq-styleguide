@@ -11,7 +11,7 @@
 
 @import 'settings/breakpoints';
 @import 'settings/colors';
-@import 'settings/theme-matthew';
+@import 'settings/theme-apripetrol';
 @import 'settings/icons';
 @import 'settings/typography';
 @import 'settings/spacings';
@@ -84,17 +84,17 @@
 //
 
 // Form atoms
-@import '../components/01-atoms/input-elements/alert/alert';
-@import '../components/01-atoms/input-elements/button/button';
-@import '../components/01-atoms/input-elements/button-group/button-group';
-@import '../components/01-atoms/input-elements/checkbox/checkbox';
-@import '../components/01-atoms/input-elements/form-control/form-control';
-@import '../components/01-atoms/input-elements/form-group/form-group';
-@import '../components/01-atoms/input-elements/form-label/form-label';
-@import '../components/01-atoms/input-elements/form-text/form-text';
-@import '../components/01-atoms/input-elements/fieldset/fieldset';
-@import '../components/01-atoms/input-elements/legend/legend';
-@import '../components/01-atoms/input-elements/radio/radio';
+@import '../components/01-atoms/form-elements/button/button';
+@import '../components/01-atoms/form-elements/alert/alert';
+@import '../components/01-atoms/form-elements/button-group/button-group';
+@import '../components/01-atoms/form-elements/checkbox/checkbox';
+@import '../components/01-atoms/form-elements/form-control/form-control';
+@import '../components/01-atoms/form-elements/form-group/form-group';
+@import '../components/01-atoms/form-elements/form-label/form-label';
+@import '../components/01-atoms/form-elements/form-text/form-text';
+@import '../components/01-atoms/form-elements/fieldset/fieldset';
+@import '../components/01-atoms/form-elements/legend/legend';
+@import '../components/01-atoms/form-elements/radio/radio';
 
 // Media atoms
 @import '../components/01-atoms/media/avatar/avatar';

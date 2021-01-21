@@ -21,6 +21,10 @@ context:
     - brand-yellow-75
     - brand-yellow-50
     - brand-yellow-25
+  petrols:
+    - brand-petrol
+  apricots:
+    - brand-apricot
   grays:
     - brand-gray
     - brand-gray-75
@@ -67,6 +71,28 @@ context:
 <h2>INNOQ Yellow</h2>
 <div class="swatches">
   {{#each yellows}}
+    <div class="swatch swatch-{{this}}">
+      <div class="swatch-color"></div>
+      <div class="swatch-text"></div>
+    </div>
+  {{/each}}
+</div>
+
+<!-- INNOQ Petrol colors -->
+<h2>INNOQ Petrol</h2>
+<div class="swatches">
+  {{#each petrols}}
+    <div class="swatch swatch-{{this}}">
+      <div class="swatch-color"></div>
+      <div class="swatch-text"></div>
+    </div>
+  {{/each}}
+</div>
+
+<!-- INNOQ Apricot colors -->
+<h2>INNOQ Apricot</h2>
+<div class="swatches">
+  {{#each apricots}}
     <div class="swatch swatch-{{this}}">
       <div class="swatch-color"></div>
       <div class="swatch-text"></div>

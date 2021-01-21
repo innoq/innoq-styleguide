@@ -1,4 +1,5 @@
- // tiny space between name and info
+$author-bio-image-offset: ms(22) / 2;
+// tiny space between name and info
 $author-text-margin: .18rem;
 
 .author-bio {
@@ -93,7 +94,7 @@ $author-text-margin: .18rem;
 
   margin-bottom: 0;
   line-height: $base-line-height;
-  font-size: $base-font-size;
+  font-size: $font-size-base;
   hyphens: none;
 }
 

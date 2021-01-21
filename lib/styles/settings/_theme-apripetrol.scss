@@ -1,11 +1,11 @@
 //
 // Theme colors
 //
-$brand-primary: $brand-red;
-$brand-secondary: $brand-blue;
-$brand-interaction: $brand-red;
+$brand-primary: $brand-apricot;
+$brand-secondary: $brand-petrol;
+$brand-interaction: $brand-apricot;
 $brand-hover: $brand-red-transparent;
-$brand-text: $brand-blue;
+$brand-text: $brand-gray;
 $brand-text-light: $brand-white;
 $brand-background: $brand-white;
 $brand-muted: $brand-gray-25;
@@ -14,19 +14,19 @@ $brand-muted: $brand-gray-25;
 $avatar-default-bg-color: $brand-gray-10;
 
 // Buttons
-$button-border-color: $brand-text;
+$button-border-color: $brand-secondary;
 $button-background: transparent;
-$button-color: $brand-text;
+$button-color: $brand-secondary;
 $button-hover-background: $brand-interaction;
 $button-hover-color: $brand-white;
-$button-hover-border-color: $brand-text;
+$button-hover-border-color: $brand-secondary;
 
 $button-cta-border-color: $brand-interaction;
 $button-cta-background: $brand-interaction;
 $button-cta-color: $brand-white;
-$button-cta-hover-background: $brand-text;
+$button-cta-hover-background: $brand-secondary;
 $button-cta-hover-color: $brand-white;
-$button-cta-hover-border-color: $brand-text;
+$button-cta-hover-border-color: $brand-secondary;
 
 $button-inverted-border-color: $brand-white;
 $button-inverted-background: transparent;
@@ -35,38 +35,38 @@ $button-inverted-hover-background: $brand-interaction;
 $button-inverted-hover-color: $brand-white;
 $button-inverted-hover-border-color: $brand-white;
 
+// Checkbox
+$checkbox-bg: $brand-white;
+$checkbox-bg-active: $brand-secondary;
+$checkbox-bg-disabled: $brand-gray-20;
+$checkbox-border: $brand-secondary;
+$checkbox-border-hoverfocus: $brand-interaction;
+$checkbox-border-disabled: $brand-gray-25;
+$checkbox-color-active: $brand-white;
+$checkbox-color-disabled: $brand-gray-50;
+
 // Form
-$form-control-border-color: $brand-text;
+$form-control-border-color: $brand-secondary;
 $form-control-placeholder-color: $brand-gray-50;
-$form-control-caret-color: $brand-interaction;
+$form-control-caret-color: $brand-white;
 $form-control-focus-color: $brand-white;
-$form-control-focus-bg: $brand-text;
+$form-control-focus-bg: $brand-secondary;
 $form-control-invalid-border-color: $brand-danger;
 $form-label-invalid-color: $brand-danger;
 
 // Form (inverted)
 $form-control-inverted-border-color: $brand-white;
 $form-control-inverted-focus-bg: $brand-white;
-$form-control-inverted-focus-color: $brand-text;
+$form-control-inverted-focus-color: $brand-secondary;
 $form-label-inverted-color: $brand-white;
-
-// Checkbox
-$checkbox-bg: $brand-white;
-$checkbox-bg-active: $brand-blue;
-$checkbox-bg-disabled: $brand-gray-20;
-$checkbox-border: $brand-blue;
-$checkbox-border-hoverfocus: $brand-interaction;
-$checkbox-border-disabled: $brand-gray-25;
-$checkbox-color-active: $brand-white;
-$checkbox-color-disabled: $brand-gray-50;
 
 // Radiobuttons
 $radio-bg: $brand-white;
 $radio-bg-disabled: $brand-gray-20;
-$radio-border: $brand-blue;
+$radio-border: $brand-secondary;
 $radio-border-hoverfocus: $brand-interaction;
 $radio-border-disabled: $brand-gray-25;
-$radio-color: $brand-text;
+$radio-color: $brand-secondary;
 $radio-color-disabled: $brand-gray-50;
 
 // Search field
@@ -105,7 +105,6 @@ $mark-color: $brand-hover;
 
 // Code
 $code-background-color: $brand-gray-10;
-$code-snippet-border-color: $brand-gray-25;
 
 // Pull Quote
 $pull-quote-border-color: $brand-text;
@@ -146,7 +145,7 @@ $author-bio-link-background-color: $brand-interaction;
 
 // Artist-in-Residence
 $artwork-title-color: $brand-red;
-$artwork-title-color-edition-2: $brand-green;
+$artwork-title-color-edition-2: $brand-apricot;
 $artist-collabo-subtitle-color: $brand-gray;
 
 // Content Seperator
@@ -194,6 +193,7 @@ $sharing-interaction-color: $brand-interaction;
 
 // Tooltip / Footnote
 $footnote-link-color: $brand-interaction;
+$footnote-index-color: $brand-secondary;
 $tooltip-shadow-color: $brand-gray-75;
 $tooltip-background-color: $brand-white;
 $footnote-section-headline-color: $brand-text;
@@ -209,7 +209,7 @@ $navbar-lightened-bg: lighten($navbar-body-bg, 5%);
 $dropdown-link-hover-color: $brand-interaction;
 
 // Date section
-$date-section-background-color: $brand-text;
+$date-section-background-color: $brand-secondary;
 $date-section-day-color: $brand-primary;
 $date-section-month-color: $brand-white;
 $date-section-year-color: $brand-white;
