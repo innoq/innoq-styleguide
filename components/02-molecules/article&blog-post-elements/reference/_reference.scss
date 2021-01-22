@@ -21,12 +21,10 @@
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  line-height: $reference-line-height-small;
-  font-size: $reference-font-size-small;
+  font-size: $font-size-base;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
-
   .reference {
     margin-bottom: $spacer-lg;
   }
@@ -34,11 +32,5 @@
   .reference__image {
     margin: 0 auto $spacer-base;
     max-width: 40%;
-  }
-
-  .reference__description {
-    max-width: 90%;
-    line-height: $reference-line-height;
-    font-size: $reference-font-size;
   }
 }

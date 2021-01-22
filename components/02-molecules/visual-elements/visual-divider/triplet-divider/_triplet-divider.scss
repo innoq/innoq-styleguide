@@ -36,7 +36,7 @@ $triplet-divider-height-md: 4 * $spacer-xxl;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: $container-spacer-x $container-spacer-y;
+  padding: $spacer-base $spacer-base;
   min-height: $triplet-divider-height-sm;
 }
 

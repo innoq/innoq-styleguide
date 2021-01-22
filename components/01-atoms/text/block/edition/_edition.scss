@@ -1,6 +1,4 @@
-$event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spacer-xxs);
 $edition-font-size: $font-size-base;
-
 
 //Edition Label for Artist Collabo
 .edition-section {
@@ -60,7 +58,6 @@ $edition-font-size: $font-size-base;
     background-color: $brand-apricot;
   }
 }
-
 
 // Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {

@@ -7,13 +7,13 @@ $brand-blue: #24244c;
 $brand-blue-75: #5b5b79;
 $brand-blue-50: #5b5b79;
 $brand-blue-25: #c8c8d2;
-$brand-blue-transparent: rgba($brand-blue, .5);
+$brand-blue-transparent: rgba($brand-blue, 0.5);
 
 $brand-blues: (
   brand-blue: $brand-blue,
   brand-blue-75: $brand-blue-75,
   brand-blue-50: $brand-blue-50,
-  brand-blue-25: $brand-blue-25
+  brand-blue-25: $brand-blue-25,
 );
 
 // INNOQ Red
@@ -21,13 +21,13 @@ $brand-red: #ff4d67;
 $brand-red-75: #fc6e86;
 $brand-red-50: #fd9eae;
 $brand-red-25: #feced6;
-$brand-red-transparent: rgba($brand-red, .8);
+$brand-red-transparent: rgba($brand-red, 0.8);
 
 $brand-reds: (
   brand-red: $brand-red,
   brand-red-75: $brand-red-75,
   brand-red-50: $brand-red-50,
-  brand-red-25: $brand-red-25
+  brand-red-25: $brand-red-25,
 );
 
 // INNOQ Green
@@ -35,13 +35,13 @@ $brand-green: #55cdaf;
 $brand-green-75: #68ddc3;
 $brand-green-50: #9ae8d7;
 $brand-green-25: #ccf3eb;
-$brand-green-transparent: rgba($brand-green, .2);
+$brand-green-transparent: rgba($brand-green, 0.2);
 
 $brand-greens: (
   brand-green: $brand-green,
   brand-green-75: $brand-green-75,
   brand-green-50: $brand-green-50,
-  brand-green-25: $brand-green-25
+  brand-green-25: $brand-green-25,
 );
 
 // INNOQ Yellow
@@ -49,27 +49,28 @@ $brand-yellow: #fff019;
 $brand-yellow-75: #fff019;
 $brand-yellow-50: #fff019;
 $brand-yellow-25: #fff019;
-$brand-yellow-transparent: rgba($brand-yellow, .2);
+$brand-yellow-transparent: rgba($brand-yellow, 0.2);
 
 $brand-yellows: (
   brand-yellow: $brand-yellow,
   brand-yellow-75: $brand-yellow-75,
   brand-yellow-50: $brand-yellow-50,
-  brand-yellow-25: $brand-yellow-25
+  brand-yellow-25: $brand-yellow-25,
 );
 
 // INNOQ Petrol
 $brand-petrol: #004153;
 
 $brand-petrols: (
-  brand-petrol: $brand-petrol
+  brand-petrol: $brand-petrol,
 );
 
 // INNOQ Apricot
 $brand-apricot: #ff9c66;
+$brand-apricot-transparent: rgba($brand-apricot, 0.8);
 
 $brand-apricots: (
-  brand-apricot: $brand-apricot
+  brand-apricot: $brand-apricot,
 );
 
 // INNOQ Gray
@@ -79,7 +80,7 @@ $brand-gray-50: #646465;
 $brand-gray-25: #d8d8d8;
 $brand-gray-20: #f4f4f4;
 $brand-gray-10: #f7f7f7;
-$brand-gray-transparent: rgba(36, 36, 36, .49);
+$brand-gray-transparent: rgba(36, 36, 36, 0.49);
 
 $brand-grays: (
   brand-gray: $brand-gray,
@@ -87,15 +88,22 @@ $brand-grays: (
   brand-gray-50: $brand-gray-50,
   brand-gray-25: $brand-gray-25,
   brand-gray-20: $brand-gray-20,
-  brand-gray-10: $brand-gray-10
+  brand-gray-10: $brand-gray-10,
 );
 
 // INNOQ White
 $brand-white: #fff;
 
 // All INNOQ colors
-$brand-colors: ($brand-blues, $brand-reds, $brand-greens, $brand-yellows, $brand-petrols, $brand-apricots, $brand-grays);
-
+$brand-colors: (
+  $brand-blues,
+  $brand-reds,
+  $brand-greens,
+  $brand-yellows,
+  $brand-petrols,
+  $brand-apricots,
+  $brand-grays
+);
 
 //
 // Additional colors
@@ -107,14 +115,13 @@ $brand-info: $brand-green-75;
 $brand-warn: $brand-yellow-75;
 
 // Gradients and Shadows
-$box-shadow-default: 0 4px 6px rgba(0, 0, 0, .3);
+$box-shadow-default: 0 4px 6px rgba(0, 0, 0, 0.3);
 
 // Accessibility
 $outline-color: rgb(59, 153, 252);
-
 
 //
 // Gradients
 //
 
-$gradient-stencil: rgba(0, 0, 0, .25);
+$gradient-stencil: rgba(0, 0, 0, 0.25);

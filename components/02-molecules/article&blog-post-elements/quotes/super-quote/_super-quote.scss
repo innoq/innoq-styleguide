@@ -3,8 +3,7 @@ super-quote > blockquote,
   @extend %longquote;
 
   > p {
-    line-height: $superquote-line-height-small;
-    font-size: $superquote-font-size-small;
+    font-size: $font-size-sm;
   }
 }
 
@@ -25,8 +24,7 @@ super-quote > blockquote,
     @extend %longquote;
 
     > p {
-      line-height: $superquote-line-height;
-      font-size: $superquote-font-size;
+      font-size: $font-size-lg;
     }
   }
 }

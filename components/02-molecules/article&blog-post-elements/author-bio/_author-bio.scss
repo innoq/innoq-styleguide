@@ -1,6 +1,6 @@
 $author-bio-image-offset: ms(22) / 2;
 // tiny space between name and info
-$author-text-margin: .18rem;
+$author-text-margin: 0.18rem;
 
 .author-bio {
   position: relative;
@@ -41,7 +41,10 @@ $author-text-margin: .18rem;
 }
 
 .author-bio__name {
-  @extend %author-name;
+  @extend %heading-font-bold;
+
+  text-transform: uppercase;
+  font-size: $font-size-base;
 }
 
 .author-bio__link {
@@ -51,7 +54,9 @@ $author-text-margin: .18rem;
 }
 
 .author-bio__info {
-  @extend %author-role;
+  @extend %body-font-italic;
+
+  font-size: $font-size-base;
 
   .author-bio__name + & {
     margin-top: $author-text-margin;
@@ -70,7 +75,7 @@ $author-text-margin: .18rem;
   align-items: center;
   justify-content: center;
   margin: $spacer-sm auto;
-  border-top: 1px solid $brand-gray-25;
+  border-top: 1px solid $author-bio-social-border-color;
   padding-top: $spacer-sm;
 }
 
@@ -92,8 +97,6 @@ $author-text-margin: .18rem;
   @extend %heading-font-regular;
   @extend %link-unstyled;
 
-  margin-bottom: 0;
-  line-height: $base-line-height;
   font-size: $font-size-base;
   hyphens: none;
 }

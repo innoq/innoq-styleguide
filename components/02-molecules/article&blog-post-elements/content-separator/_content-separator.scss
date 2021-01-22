@@ -19,7 +19,7 @@ $border-position: $font-size-base / 2;
   // The second box-shadow is 1px taller than the first one,
   // resulting in a single line.
   box-shadow: $box-shadow-color-light 0 $border-position 0 0 inset,
-  $box-shadow-color-dark 0 calc(#{$border-position} + 1px) 0 0 inset;
+    $box-shadow-color-dark 0 calc(#{$border-position} + 1px) 0 0 inset;
   min-height: $font-size-base;
 }
 
@@ -31,6 +31,7 @@ $border-position: $font-size-base / 2;
   padding-right: $spacer-xs;
   padding-left: $spacer-xs;
   line-height: 1;
+  color: $content-seperator-text-color;
 }
 
 .content-separator__date {

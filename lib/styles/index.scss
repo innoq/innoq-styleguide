@@ -9,12 +9,12 @@
 // defines colors, spacings, font-sizes, breakpoints settings and many more.
 // Important: This layer does not produce any code.
 
-@import 'settings/breakpoints';
-@import 'settings/colors';
-@import 'settings/theme-apripetrol';
-@import 'settings/icons';
-@import 'settings/typography';
-@import 'settings/spacings';
+@import "settings/breakpoints";
+@import "settings/colors";
+@import "settings/theme-apripetrol";
+@import "settings/icons";
+@import "settings/typography";
+@import "settings/spacings";
 
 //
 // Tools
@@ -22,15 +22,14 @@
 // The tools layer defines all the mixins and functions we utilise in our
 // SCSS base. Important: This layer does not produce any code.
 
-@import 'tools/fonts';
-@import 'tools/forms';
-@import 'tools/text';
-@import 'tools/author';
-@import 'tools/images';
-@import 'tools/visibility';
-@import 'tools/teaser';
-@import 'tools/header';
-
+@import "tools/fonts";
+@import "tools/forms";
+@import "tools/text";
+@import "tools/author";
+@import "tools/images";
+@import "tools/visibility";
+@import "tools/teaser";
+@import "tools/header";
 
 //
 // Generic
@@ -38,9 +37,8 @@
 // The third layer Generic contains amongst other things a normalize or
 // reset.
 
-@import 'generic/animations';
-@import 'generic/fontfaces';
-
+@import "generic/animations";
+@import "generic/fontfaces";
 
 //
 // Elements
@@ -48,8 +46,7 @@
 // The Elements layer contains styles for global element styles, e.g. all
 // headlines h1-h5 on this page should have a certain font-family.
 
-@import 'elements/base';
-
+@import "elements/base";
 
 //
 // Objects
@@ -59,14 +56,13 @@
 // and containers. An example of such a pattern is the well known media
 // object (an image with headline and paragraph next to it).
 
-@import 'objects/block';
-@import 'objects/breakout';
-@import 'objects/media';
-@import 'objects/page-layout-default';
-@import 'objects/page-layout-grid';
-@import 'objects/page-layout-podcast';
-@import 'objects/stripe';
-
+@import "objects/block";
+@import "objects/breakout";
+@import "objects/media";
+@import "objects/page-layout-default";
+@import "objects/page-layout-grid";
+@import "objects/page-layout-podcast";
+@import "objects/stripe";
 
 //
 // Components
@@ -84,175 +80,171 @@
 //
 
 // Form atoms
-@import '../components/01-atoms/form-elements/button/button';
-@import '../components/01-atoms/form-elements/alert/alert';
-@import '../components/01-atoms/form-elements/button-group/button-group';
-@import '../components/01-atoms/form-elements/checkbox/checkbox';
-@import '../components/01-atoms/form-elements/form-control/form-control';
-@import '../components/01-atoms/form-elements/form-group/form-group';
-@import '../components/01-atoms/form-elements/form-label/form-label';
-@import '../components/01-atoms/form-elements/form-text/form-text';
-@import '../components/01-atoms/form-elements/fieldset/fieldset';
-@import '../components/01-atoms/form-elements/legend/legend';
-@import '../components/01-atoms/form-elements/radio/radio';
+@import "../components/01-atoms/form-elements/button/button";
+@import "../components/01-atoms/form-elements/alert/alert";
+@import "../components/01-atoms/form-elements/button-group/button-group";
+@import "../components/01-atoms/form-elements/checkbox/checkbox";
+@import "../components/01-atoms/form-elements/form-control/form-control";
+@import "../components/01-atoms/form-elements/form-group/form-group";
+@import "../components/01-atoms/form-elements/form-label/form-label";
+@import "../components/01-atoms/form-elements/form-text/form-text";
+@import "../components/01-atoms/form-elements/fieldset/fieldset";
+@import "../components/01-atoms/form-elements/legend/legend";
+@import "../components/01-atoms/form-elements/radio/radio";
 
 // Media atoms
-@import '../components/01-atoms/media/avatar/avatar';
-@import '../components/01-atoms/media/embed-responsive/embed-responsive';
-@import '../components/01-atoms/media/figure/figure';
-@import '../components/01-atoms/media/icon/icon';
-@import '../components/01-atoms/media/image/image';
+@import "../components/01-atoms/media/avatar/avatar";
+@import "../components/01-atoms/media/embed-responsive/embed-responsive";
+@import "../components/01-atoms/media/figure/figure";
+@import "../components/01-atoms/media/icon/icon";
+@import "../components/01-atoms/media/image/image";
 
 // Toggler atoms
-@import '../components/01-atoms/togglers/collapse-toggler/collapse-toggler';
+@import "../components/01-atoms/togglers/collapse-toggler/collapse-toggler";
 
 // Inline text atoms
-@import '../components/01-atoms/text/inline/link/link';
-@import '../components/01-atoms/text/inline/accentuation/accentuation';
+@import "../components/01-atoms/text/inline/link/link";
+@import "../components/01-atoms/text/inline/accentuation/accentuation";
 
 // Block text atoms
-@import '../components/01-atoms/text/block/code/code';
-@import '../components/01-atoms/text/block/date/date';
-@import '../components/01-atoms/text/block/duration/duration';
-@import '../components/01-atoms/text/block/edition/edition';
-@import '../components/01-atoms/text/block/footnote/footnote';
-@import '../components/01-atoms/text/block/heading/heading';
-@import '../components/01-atoms/text/block/paragraph/paragraph';
-@import '../components/01-atoms/text/block/quote/pull-quote';
-@import '../components/01-atoms/text/block/quote/block-quote';
-@import '../components/01-atoms/text/block/label/label';
-@import '../components/01-atoms/text/block/list/list';
-@import '../components/01-atoms/text/block/tag-list/tag-list';
-@import '../components/01-atoms/text/block/table/table';
+@import "../components/01-atoms/text/block/code/code";
+@import "../components/01-atoms/text/block/date/date";
+@import "../components/01-atoms/text/block/duration/duration";
+@import "../components/01-atoms/text/block/edition/edition";
+@import "../components/01-atoms/text/block/footnote/footnote";
+@import "../components/01-atoms/text/block/heading/heading";
+@import "../components/01-atoms/text/block/paragraph/paragraph";
+@import "../components/01-atoms/text/block/quote/pull-quote";
+@import "../components/01-atoms/text/block/quote/block-quote";
+@import "../components/01-atoms/text/block/label/label";
+@import "../components/01-atoms/text/block/list/list";
+@import "../components/01-atoms/text/block/tag-list/tag-list";
+@import "../components/01-atoms/text/block/table/table";
 
 // Visual elements atoms
-@import '../components/01-atoms/visual-elements/animation/waiting-dots/waiting-dots';
-@import '../components/01-atoms/visual-elements/horizontal-line/horizontal-line';
-@import '../components/01-atoms/visual-elements/zigzag/zigzag';
-
-
+@import "../components/01-atoms/visual-elements/animation/waiting-dots/waiting-dots";
+@import "../components/01-atoms/visual-elements/horizontal-line/horizontal-line";
+@import "../components/01-atoms/visual-elements/zigzag/zigzag";
 
 //
 // MOLECULES
 //
 
 // Article and blog post molecules
-@import '../components/02-molecules/article&blog-post-elements/author-bio/author-bio';
-@import '../components/02-molecules/article&blog-post-elements/conclusion/conclusion';
-@import '../components/02-molecules/article&blog-post-elements/content-separator/content-separator';
-@import '../components/02-molecules/article&blog-post-elements/footnote-section/footnote-section';
-@import '../components/02-molecules/article&blog-post-elements/info-box/info-box';
-@import '../components/02-molecules/article&blog-post-elements/quotes/long-quote/long-quote';
-@import '../components/02-molecules/article&blog-post-elements/reference/reference';
-@import '../components/02-molecules/article&blog-post-elements/share-section/share-section';
-@import '../components/02-molecules/article&blog-post-elements/quotes/super-quote/super-quote';
-@import '../components/02-molecules/article&blog-post-elements/table-of-contents/table-of-contents';
-@import '../components/02-molecules/article&blog-post-elements/tag-section/tag-section';
+@import "../components/02-molecules/article&blog-post-elements/author-bio/author-bio";
+@import "../components/02-molecules/article&blog-post-elements/conclusion/conclusion";
+@import "../components/02-molecules/article&blog-post-elements/content-separator/content-separator";
+@import "../components/02-molecules/article&blog-post-elements/footnote-section/footnote-section";
+@import "../components/02-molecules/article&blog-post-elements/info-box/info-box";
+@import "../components/02-molecules/article&blog-post-elements/quotes/long-quote/long-quote";
+@import "../components/02-molecules/article&blog-post-elements/reference/reference";
+@import "../components/02-molecules/article&blog-post-elements/share-section/share-section";
+@import "../components/02-molecules/article&blog-post-elements/quotes/super-quote/super-quote";
+@import "../components/02-molecules/article&blog-post-elements/table-of-contents/table-of-contents";
+@import "../components/02-molecules/article&blog-post-elements/tag-section/tag-section";
 
 // Dropdown
-@import '../components/02-molecules/dropdown/dropdown';
+@import "../components/02-molecules/dropdown/dropdown";
 
 // Navbar
-@import '../components/02-molecules/navbar/navbar';
+@import "../components/02-molecules/navbar/navbar";
 
 // Search
-@import '../components/02-molecules/search/search-form/search-form';
-@import '../components/02-molecules/search/search-result/search-result';
+@import "../components/02-molecules/search/search-form/search-form";
+@import "../components/02-molecules/search/search-result/search-result";
 
 // Visual elements
-@import '../components/02-molecules/visual-elements/card/card';
-@import '../components/02-molecules/visual-elements/date-location-section/date-location-section';
-@import '../components/02-molecules/visual-elements/eyecatcher/eyecatcher';
+@import "../components/02-molecules/visual-elements/card/card";
+@import "../components/02-molecules/visual-elements/date-location-section/date-location-section";
+@import "../components/02-molecules/visual-elements/eyecatcher/eyecatcher";
 
 // Header Molecules
-@import '../components/02-molecules/visual-elements/header/claim-header/claim-header';
-@import '../components/02-molecules/visual-elements/header/image-header/image-header';
-@import '../components/02-molecules/visual-elements/header/landing-page-header/landing-page-header';
-@import '../components/02-molecules/visual-elements/header/staff-header/staff-header';
-@import '../components/02-molecules/visual-elements/header/standard-header/standard-header';
-@import '../components/02-molecules/visual-elements/header/text-header/text-header';
-@import '../components/02-molecules/visual-elements/header/topic-header/topic-header';
+@import "../components/02-molecules/visual-elements/header/claim-header/claim-header";
+@import "../components/02-molecules/visual-elements/header/image-header/image-header";
+@import "../components/02-molecules/visual-elements/header/landing-page-header/landing-page-header";
+@import "../components/02-molecules/visual-elements/header/staff-header/staff-header";
+@import "../components/02-molecules/visual-elements/header/standard-header/standard-header";
+@import "../components/02-molecules/visual-elements/header/text-header/text-header";
+@import "../components/02-molecules/visual-elements/header/topic-header/topic-header";
 
-@import '../components/02-molecules/visual-elements/newsletter-optin/newsletter-optin';
+@import "../components/02-molecules/visual-elements/newsletter-optin/newsletter-optin";
 
 // Paginator
-@import '../components/02-molecules/visual-elements/paginator/paginator';
+@import "../components/02-molecules/visual-elements/paginator/paginator";
 
 // Service Intro
-@import '../components/02-molecules/visual-elements/service-intro/service-intro';
-@import '../components/02-molecules/visual-elements/dialog-banner/dialog-banner';
+@import "../components/02-molecules/visual-elements/service-intro/service-intro";
+@import "../components/02-molecules/visual-elements/dialog-banner/dialog-banner";
 
 // Social Media Bar
-@import '../components/02-molecules/visual-elements/social-media-bar/social-media-bar';
+@import "../components/02-molecules/visual-elements/social-media-bar/social-media-bar";
 
 // Teaser Molecules
-@import '../components/02-molecules/visual-elements/teaser/full-width-teaser/default-full-width-teaser/default-full-width-teaser';
+@import "../components/02-molecules/visual-elements/teaser/full-width-teaser/default-full-width-teaser/default-full-width-teaser";
 
-@import '../components/02-molecules/visual-elements/teaser/list-teaser/abstract-list-teaser/abstract-list-teaser';
-@import '../components/02-molecules/visual-elements/teaser/list-teaser/case-list-teaser/case-list-teaser';
-@import '../components/02-molecules/visual-elements/teaser/list-teaser/event-list-teaser/event-list-teaser';
-@import '../components/02-molecules/visual-elements/teaser/list-teaser/podcast-list-teaser/podcast-list-teaser';
-@import '../components/02-molecules/visual-elements/teaser/list-teaser/project-list-teaser/project-list-teaser';
-@import '../components/02-molecules/visual-elements/teaser/list-teaser/simple-list-teaser/simple-list-teaser';
-@import '../components/02-molecules/visual-elements/teaser/list-teaser/topic-list-teaser/topic-list-teaser';
-@import '../components/02-molecules/visual-elements/teaser/list-teaser/training-list-teaser/training-list-teaser';
-@import '../components/02-molecules/visual-elements/teaser/list-teaser/product-list-teaser/product-list-teaser';
+@import "../components/02-molecules/visual-elements/teaser/list-teaser/abstract-list-teaser/abstract-list-teaser";
+@import "../components/02-molecules/visual-elements/teaser/list-teaser/case-list-teaser/case-list-teaser";
+@import "../components/02-molecules/visual-elements/teaser/list-teaser/event-list-teaser/event-list-teaser";
+@import "../components/02-molecules/visual-elements/teaser/list-teaser/podcast-list-teaser/podcast-list-teaser";
+@import "../components/02-molecules/visual-elements/teaser/list-teaser/project-list-teaser/project-list-teaser";
+@import "../components/02-molecules/visual-elements/teaser/list-teaser/simple-list-teaser/simple-list-teaser";
+@import "../components/02-molecules/visual-elements/teaser/list-teaser/topic-list-teaser/topic-list-teaser";
+@import "../components/02-molecules/visual-elements/teaser/list-teaser/training-list-teaser/training-list-teaser";
+@import "../components/02-molecules/visual-elements/teaser/list-teaser/product-list-teaser/product-list-teaser";
 
-@import '../components/02-molecules/visual-elements/teaser/tile-teaser/big-content-tile-teaser/big-content-tile-teaser';
-@import '../components/02-molecules/visual-elements/teaser/tile-teaser/case-tile-teaser/case-tile-teaser';
-@import '../components/02-molecules/visual-elements/teaser/tile-teaser/content-tile-teaser/content-tile-teaser';
-@import '../components/02-molecules/visual-elements/teaser/tile-teaser/event-tile-teaser/event-tile-teaser';
-@import '../components/02-molecules/visual-elements/teaser/tile-teaser/podcast-tile-teaser/podcast-tile-teaser';
-@import '../components/02-molecules/visual-elements/teaser/tile-teaser/simple-tile-teaser/simple-tile-teaser';
-@import '../components/02-molecules/visual-elements/teaser/tile-teaser/static-tile-teaser/static-tile-teaser';
+@import "../components/02-molecules/visual-elements/teaser/tile-teaser/big-content-tile-teaser/big-content-tile-teaser";
+@import "../components/02-molecules/visual-elements/teaser/tile-teaser/case-tile-teaser/case-tile-teaser";
+@import "../components/02-molecules/visual-elements/teaser/tile-teaser/content-tile-teaser/content-tile-teaser";
+@import "../components/02-molecules/visual-elements/teaser/tile-teaser/event-tile-teaser/event-tile-teaser";
+@import "../components/02-molecules/visual-elements/teaser/tile-teaser/podcast-tile-teaser/podcast-tile-teaser";
+@import "../components/02-molecules/visual-elements/teaser/tile-teaser/simple-tile-teaser/simple-tile-teaser";
+@import "../components/02-molecules/visual-elements/teaser/tile-teaser/static-tile-teaser/static-tile-teaser";
 
-
-@import '../components/02-molecules/visual-elements/visual-divider/image-divider-center/image-divider-center';
-@import '../components/02-molecules/visual-elements/visual-divider/image-divider-right/image-divider-right';
-@import '../components/02-molecules/visual-elements/visual-divider/wall-note/wall-note';
-@import '../components/02-molecules/visual-elements/visual-divider/triplet-divider/triplet-divider';
-@import '../components/02-molecules/visual-elements/visual-divider/two-column-image-divider/two-column-image-divider';
-@import '../components/02-molecules/visual-elements/visual-divider/icon-divider/icon-divider';
+@import "../components/02-molecules/visual-elements/visual-divider/image-divider-center/image-divider-center";
+@import "../components/02-molecules/visual-elements/visual-divider/image-divider-right/image-divider-right";
+@import "../components/02-molecules/visual-elements/visual-divider/wall-note/wall-note";
+@import "../components/02-molecules/visual-elements/visual-divider/triplet-divider/triplet-divider";
+@import "../components/02-molecules/visual-elements/visual-divider/two-column-image-divider/two-column-image-divider";
+@import "../components/02-molecules/visual-elements/visual-divider/icon-divider/icon-divider";
 
 // Toolbar
-@import '../components/02-molecules/visual-elements/toolbar/toolbar';
+@import "../components/02-molecules/visual-elements/toolbar/toolbar";
 
 //
 // ORGANISMS
 //
-@import '../components/03-organisms/article-intro/article-intro';
-@import '../components/03-organisms/search-result-list/search-result-list';
-@import '../components/03-organisms/form/form';
-@import '../components/03-organisms/footer/footer';
+@import "../components/03-organisms/article-intro/article-intro";
+@import "../components/03-organisms/search-result-list/search-result-list";
+@import "../components/03-organisms/form/form";
+@import "../components/03-organisms/footer/footer";
 
 //
 // PAGES
 //
-@import '../components/04-pages/aggregator-page/aggregator-page';
-@import '../components/04-pages/article-pages/article-page-default/article-page-default';
-@import '../components/04-pages/article-pages/article-page-with-header/article-page-with-header';
-@import '../components/04-pages/case-study-pages/case-study-overview/case-study-overview';
-@import '../components/04-pages/case-study-pages/case-study-page/case-study-page';
-@import '../components/04-pages/artist-collabo-page/artist-collabo-page';
-@import '../components/04-pages/culture-page/culture-page';
-@import '../components/04-pages/error-pages/error-page';
-@import '../components/04-pages/landing-page/landing-page';
-@import '../components/04-pages/magazine-page/magazine-page';
-@import '../components/04-pages/podcast-pages/podcast-overview-page/podcast-overview-page';
-@import '../components/04-pages/podcast-pages/innoq-podcast/innoq-podcast-overview-page/innoq-podcast-overview-page';
-@import '../components/04-pages/podcast-pages/innoq-podcast/innoq-podcast-detail-page/innoq-podcast-detail-page';
-@import '../components/04-pages/podcast-pages/security-podcast/security-podcast-overview-page/security-podcast-overview-page';
-@import '../components/04-pages/podcast-pages/security-podcast/security-podcast-detail-page/security-podcast-detail-page';
-@import '../components/04-pages/service-pages/service-detail-page/service-detail-page';
-@import '../components/04-pages/service-pages/services-overview-page/services-overview-page';
-@import '../components/04-pages/staff-page/staff-page';
-@import '../components/04-pages/talk-page/talk-page';
-@import '../components/04-pages/topic-page/topic-page';
-@import '../components/04-pages/training-pages/booking-page/booking-page';
-@import '../components/04-pages/training-pages/training-detail-page/training-detail-page';
-@import '../components/04-pages/training-pages/trainings-overview-page/trainings-overview-page';
-@import '../components/04-pages/product-microsite-page/product-microsite-page';
-
+@import "../components/04-pages/aggregator-page/aggregator-page";
+@import "../components/04-pages/article-pages/article-page-default/article-page-default";
+@import "../components/04-pages/article-pages/article-page-with-header/article-page-with-header";
+@import "../components/04-pages/case-study-pages/case-study-overview/case-study-overview";
+@import "../components/04-pages/case-study-pages/case-study-page/case-study-page";
+@import "../components/04-pages/artist-collabo-page/artist-collabo-page";
+@import "../components/04-pages/culture-page/culture-page";
+@import "../components/04-pages/error-pages/error-page";
+@import "../components/04-pages/landing-page/landing-page";
+@import "../components/04-pages/magazine-page/magazine-page";
+@import "../components/04-pages/podcast-pages/podcast-overview-page/podcast-overview-page";
+@import "../components/04-pages/podcast-pages/innoq-podcast/innoq-podcast-overview-page/innoq-podcast-overview-page";
+@import "../components/04-pages/podcast-pages/innoq-podcast/innoq-podcast-detail-page/innoq-podcast-detail-page";
+@import "../components/04-pages/podcast-pages/security-podcast/security-podcast-overview-page/security-podcast-overview-page";
+@import "../components/04-pages/podcast-pages/security-podcast/security-podcast-detail-page/security-podcast-detail-page";
+@import "../components/04-pages/service-pages/service-detail-page/service-detail-page";
+@import "../components/04-pages/service-pages/services-overview-page/services-overview-page";
+@import "../components/04-pages/staff-page/staff-page";
+@import "../components/04-pages/talk-page/talk-page";
+@import "../components/04-pages/topic-page/topic-page";
+@import "../components/04-pages/training-pages/booking-page/booking-page";
+@import "../components/04-pages/training-pages/training-detail-page/training-detail-page";
+@import "../components/04-pages/training-pages/trainings-overview-page/trainings-overview-page";
+@import "../components/04-pages/product-microsite-page/product-microsite-page";
 
 //
 // Trumps
@@ -261,5 +253,5 @@
 // can be stored. This place should be used when selectors need to be as high
 // as possible. It is intended as the last resort.
 
-@import 'trumps/hacks';
-@import 'trumps/styleguide';
+@import "trumps/hacks";
+@import "trumps/styleguide";

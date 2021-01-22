@@ -1,28 +1,12 @@
 %author-name {
   @extend %heading-font-bold;
+
   text-transform: uppercase;
-  line-height: $author-bio-name-line-height-small;
-  font-size: $author-bio-name-font-size-small;
+  font-size: $font-size-base;
 }
 
 %author-role {
   @extend %body-font-italic;
-  line-height: $author-bio-position-line-height-small;
-  font-size: $author-bio-position-font-size-small;
-}
 
-
-//
-//Breakpoints
-//
-@media screen and (min-width: $grid-breakpoint-md) {
-  %author-name {
-    line-height: $author-bio-name-line-height;
-    font-size: $author-bio-name-font-size;
-  }
-
-  %author-role {
-    line-height: $author-bio-position-line-height;
-    font-size: $author-bio-position-font-size;
-  }
+  font-size: $font-size-base;
 }

@@ -1,32 +1,31 @@
 long-quote > blockquote,
 %longquote,
 .longquote {
-  margin-bottom: $content-spacer-base;
+  margin-bottom: $spacer-md;
   text-align: center;
 
   > p {
     @extend %heading-font-heavy;
-    line-height: $longquote-line-height-small;
-    color: $brand-interaction;
-    font-size: $longquote-font-size-small;
+    color: $quote-color;
+    font-size: $font-size-sm;
 
     &:lang(de) {
       &::before {
-        content: '„';
+        content: "„";
       }
 
       &::after {
-        content: '“';
+        content: "“";
       }
     }
 
     &:lang(en) {
       &::before {
-        content: '“';
+        content: "“";
       }
 
       &::after {
-        content: '”';
+        content: "”";
       }
     }
   }
@@ -43,13 +42,18 @@ long-quote > blockquote,
 
 %longquote__author,
 .longquote__author {
-  @extend %author-name;
+  @extend %heading-font-bold;
+
   display: block;
+  text-transform: uppercase;
+  font-size: $font-size-base;
 }
 
 %longquote__role,
 .longquote__role {
-  @extend %author-role;
+  @extend %body-font-italic;
+
+  font-size: $font-size-base;
 }
 
 %longquote__avatar,
@@ -61,8 +65,7 @@ long-quote > blockquote,
   %longquote,
   .longquote {
     > p {
-      line-height: $longquote-line-height;
-      font-size: $longquote-font-size;
+      font-size: $font-size-md;
     }
   }
 }

@@ -1,5 +1,5 @@
 .card {
-  padding: $container-spacer-x-sm $container-spacer-y-sm;
+  padding: $spacer-sm $spacer-sm;
 }
 
 .card__image-header {
@@ -16,9 +16,9 @@
 
 .card__tag {
   @extend %teaser-caption;
-  background-color: $brand-red;
+  background-color: $card-tag-bg-color;
   padding: $spacer-xxs;
-  color: $brand-white;
+  color: $card-tag-text-color;
 
   & + .card__tag {
     margin-top: $spacer-xs;
@@ -36,36 +36,51 @@
 
 .card__body,
 .card__footer {
-  background-color: $brand-white;
-  padding: $container-spacer-x-sm $container-spacer-y-sm;
+  background-color: $card-bg-color;
+  padding: $spacer-sm $spacer-sm;
+
+  .upcase-heading {
+    color: $card-headline-color;
+  }
+
+  .standalone {
+    color: $card-subheadline-color;
+  }
+
+  .checklist {
+    color: $card-headline-color;
+  }
 }
 
 .card__subheadline {
   @extend %teaser-caption;
+
   margin-bottom: $spacer-xxs;
+  color: $card-subheadline-color;
 }
 
 .card__headline {
   @extend %h3;
-  color: $brand-red;
+  color: $card-headline-color;
 }
 
 .card__text {
   @extend %body-font-italic;
+
   margin-bottom: $spacer-xxs;
-  line-height: $paragraph-lead-line-height-small;
-  font-size: $paragraph-lead-font-size-small;
+  font-size: $font-size-sm;
+  color: $card-text-color;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .card {
-    padding: $container-spacer-x $container-spacer-y;
+    padding: $spacer-base $spacer-base;
   }
 
   .card__body,
   .card__footer {
     transform: translateY(-$spacer-xxl);
-    margin: 0 $container-spacer-x;
+    margin: 0 $spacer-base;
   }
 
   .card__image {

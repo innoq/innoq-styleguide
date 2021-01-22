@@ -74,7 +74,6 @@ h6 {
   font-size: $h6-font-size-small;
 }
 
-
 // Remove links stylings inside headlines
 h1,
 h2,
@@ -98,9 +97,9 @@ h6 {
 
 .upcase-heading {
   @extend %h5;
+
   margin: 0 auto $spacer-md;
   text-transform: uppercase;
-  line-height: $teaser-section-heading-line-height-small;
   font-size: $teaser-section-heading-font-size-small;
 }
 

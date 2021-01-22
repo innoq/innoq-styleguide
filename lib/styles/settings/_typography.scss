@@ -1,14 +1,14 @@
-@import 'modularscale-sass/stylesheets/modularscale';
+@import "modularscale-sass/stylesheets/modularscale";
 
 //
 // Font stacks
 //
-$font-family-serif: FreightTextPro, Georgia, Times, 'Times New Roman', serif;
-$font-family-sans-serif: FFMarkWebProBook, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-sans-serif-bold: FFMarkWebProBold, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-sans-serif-heavy: FFMarkWebProHeavy, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-icons: FFMarkWebProHeavy, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$font-family-monospace: HackRegular, 'Monaco', 'Courier New', monospace;
+$font-family-serif: FreightTextPro, Georgia, Times, "Times New Roman", serif;
+$font-family-sans-serif: FFMarkWebProBook, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif-bold: FFMarkWebProBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-sans-serif-heavy: FFMarkWebProHeavy, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-icons: FFMarkWebProHeavy, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-family-monospace: HackRegular, "Monaco", "Courier New", monospace;
 
 //
 // Base values
@@ -24,11 +24,11 @@ $companion-font-size: 1.3125rem; // 21px
 // www.modularscale.com/?16,21&px&1.2
 $modularscale: (
   base: $font-size-base $companion-font-size,
-  ratio: $minor-third
+  ratio: $minor-third,
 );
 
 // The length unit in which to output vertical rhythm values.
-$base-unit: 'rem';
+$base-unit: "rem";
 
 // The default font family.
 $base-font-family: $font-family-serif;
@@ -41,7 +41,7 @@ $font-size-base: ms(0); // 16px
 $font-size-sm: ms(2); // 12px
 $font-size-md: ms(5); // 14px
 $font-size-lg: ms(8); // 24px
-$font-size-xl: ms(14); // 32px
+$font-size-xl: ms(12); // 32px
 $font-size-xxl: ms(16); // 32px
 
 $paragraph-line-height: 1.52;
@@ -81,7 +81,6 @@ $line-height-1-75: 1.75;
 $line-height-1-78: 1.78;
 $line-height-2-53: 2.53;
 
-
 //All font sizes
 $font-size-m-01: ms(-2);
 $font-size-m-01: ms(-1);
@@ -101,440 +100,218 @@ $font-size-m-12: ms(12);
 $font-size-m-13: ms(13);
 $font-size-m-14: ms(14);
 
-
 // Headlines
 //
 
 // H1
-$h1-font-size: ms(13);                    // 52px
-$h1-font-size-small: ms(9);               // 36px
-$h1-line-height: $heading-line-height;    // 47px
+$h1-font-size: ms(13); // 52px
+$h1-font-size-small: ms(9); // 36px
+$h1-line-height: $heading-line-height; // 47px
 
 // H2
-$h2-font-size: ms(9);                     // 36px (~35px)
-$h2-font-size-small: ms(7);               // ~30px
-$h2-line-height: $heading-line-height;    // 43px
+$h2-font-size: ms(9); // 36px (~35px)
+$h2-font-size-small: ms(7); // ~30px
+$h2-line-height: $heading-line-height; // 43px
 
 // H3
-$h3-font-size: ms(7);                     // ~30px
-$h3-font-size-small: ms(5);               // ~25px
-$h3-line-height: $heading-line-height;    // 36px
+$h3-font-size: ms(7); // ~30px
+$h3-font-size-small: ms(5); // ~25px
+$h3-line-height: $heading-line-height; // 36px
 
 // H4
-$h4-font-size: ms(5);                     // ~25px
-$h4-font-size-small: ms(2);               // ~19px
-$h4-line-height: $heading-line-height;    // ~30px
+$h4-font-size: ms(5); // ~25px
+$h4-font-size-small: ms(2); // ~19px
+$h4-line-height: $heading-line-height; // ~30px
 
 // H5
-$h5-font-size: ms(3);                     // ~21px
-$h5-font-size-small: ms(0);               // ~16px
-$h5-line-height: $base-line-height;       // 24/32px
+$h5-font-size: ms(3); // ~21px
+$h5-font-size-small: ms(0); // ~16px
+$h5-line-height: $base-line-height; // 24/32px
 
 // H6
-$h6-font-size: ms(0);                     // ~16px
-$h6-font-size-small: ms(0);               // ~16px
-$h6-line-height: $heading-line-height;    // 19px
-
-
+$h6-font-size: ms(0); // ~16px
+$h6-font-size-small: ms(0); // ~16px
+$h6-line-height: $heading-line-height; // 19px
 
 // Teaser Section Headline
-$teaser-section-heading-line-height: 1.36;          // ~34px
-$teaser-section-heading-font-size: ms(5);           // ~25px
-$teaser-section-heading-line-height-small: 1.43;    // ~30px
-$teaser-section-heading-font-size-small: ms(3);     // ~21px
+$teaser-section-heading-line-height: 1.36; // ~34px
+$teaser-section-heading-font-size: ms(5); // ~25px
+$teaser-section-heading-line-height-small: 1.43; // ~30px
+$teaser-section-heading-font-size-small: ms(3); // ~21px
 
 // Teaser Section Headline - Very big
-$teaser-section-headline-line-height: $heading-line-height;         // ~58px
-$teaser-section-headline-font-size: ms(12);                         // ~50px
-$teaser-section-headline-line-height-small: $heading-line-height;   // ~43px
-$teaser-section-headline-font-size-small: ms(9);                    // ~36px
-
+$teaser-section-headline-line-height: $heading-line-height; // ~58px
+$teaser-section-headline-font-size: ms(12); // ~50px
+$teaser-section-headline-line-height-small: $heading-line-height; // ~43px
+$teaser-section-headline-font-size-small: ms(9); // ~36px
 
 //
 // Buttons
 //
-$button-small-font-size: ms(1);   // ~17px
-$button-small-line-height: 1;     // ~17px
+$button-small-font-size: ms(1); // ~17px
+$button-small-line-height: 1; // ~17px
 
-$button-medium-font-size: ms(3);  // 21px
-$button-medium-line-height: 1.3;  // ~27px
+$button-medium-font-size: ms(3); // 21px
+$button-medium-line-height: 1.3; // ~27px
 
-$button-large-font-size: ms(4);   // 23px
-$button-large-line-height: 1.4;   // 32px
-
-//
-// Links
-//
-$link-teaser-font-size: ms(-1);   //~15px
-$link-teaser-line-height: 1.27;   //~19px
-
+$button-large-font-size: ms(4); // 23px
+$button-large-line-height: 1.4; // 32px
 
 //
-// Paragraph Text
+// Paragraph Text REFACTOR THIS!
 //
-$paragraph-font-size: ms(3);                              // ~21px
-$paragraph-font-size-small: ms(1);                        // ~18px
-$paragraph-line-height: $base-line-height;                // ~32px
-$paragraph-line-height-small: $base-line-height;;         // ~27px
-$paragraph-lead-font-size: ms(5);                         // ~25px
-$paragraph-lead-font-size-small: ms(2);                   // ~21px
-$paragraph-lead-line-height: $base-line-height;           // ~38px
-$paragraph-lead-line-height-small: $base-line-height;     // ~29px
+$paragraph-font-size: ms(3); // ~21px
+$paragraph-font-size-small: ms(1); // ~18px
+$paragraph-line-height: $base-line-height; // ~32px
+$paragraph-line-height-small: $base-line-height; // ~27px
+$paragraph-lead-font-size: ms(5); // ~25px
+$paragraph-lead-font-size-small: ms(2); // ~21px
+$paragraph-lead-line-height: $base-line-height; // ~38px
+$paragraph-lead-line-height-small: $base-line-height; // ~29px
 
-$talk-description-line-height: 1.52;        // ~38px
-$talk-description-font-size: ms(5);         // ~25px
-$talk-description-line-height-small: 1.62;  // ~34px
-$talk-description-font-size-small: ms(3);   // ~21px
+$talk-description-line-height: 1.52; // ~38px
+$talk-description-font-size: ms(5); // ~25px
+$talk-description-line-height-small: 1.62; // ~34px
+$talk-description-font-size-small: ms(3); // ~21px
 
-$wall-note-text-line-height: 1.52;          // ~38px
-$wall-note-text-font-size: ms(5);           // ~25px
-$wall-note-text-line-height-small: 1.62;    // ~34px
-$wall-note-text-font-size-small: ms(3);     // ~21px
+$wall-note-text-line-height: 1.52; // ~38px
+$wall-note-text-font-size: ms(5); // ~25px
+$wall-note-text-line-height-small: 1.62; // ~34px
+$wall-note-text-font-size-small: ms(3); // ~21px
 
-$image-divider-right-content-text-line-height: 1.36;    // ~34px
-$image-divider-right-content-text-font-size: ms(5);     // ~25px
-$image-divider-right-content-text-line-height-small: 1.36;    // ~34px
-$image-divider-right-content-text-font-size-small: ms(3);     // ~21px
-
-
-//
-// Code
-//
-$code-font-size: ms(-1);                    // ~15px
-$code-line-height: 1.24;                    // ~18px
+$image-divider-right-content-text-line-height: 1.36; // ~34px
+$image-divider-right-content-text-font-size: ms(5); // ~25px
+$image-divider-right-content-text-line-height-small: 1.36; // ~34px
+$image-divider-right-content-text-font-size-small: ms(3); // ~21px
 
 //
 // Date & Duration
 //
 
-$edition-font-size: ms(0);                // ~16px
-$edition-line-height: $heading-line-height;   // ~16px
-
-//
-// Label
-//
-$label-font-size: ms(-1);                //~15px
-$label-line-height: 1.27;                //~19px
-$label-font-size-small: ms(-2);          //~14px
-$label-line-height-small: 1.57;          //~22px
-$label-big-font-size: ms(1);             //~17px
-$label-big-line-height: 1;               //~17px
-
-
-//
-// Table of contents
-//
-$toc-anchor-font-size: ms(1);                   // ~17px
-$toc-anchor-line-height: $base-line-height;     // ~26px
-$toc-heading-font-size: ms(2);                  // ~19px
-$toc-heading-line-height: $base-line-height;    // ~29px
-
-
-//
-// Author Bio
-//
-$author-bio-position-font-size: ms(1);             // ~17px
-$author-bio-position-line-height: ms(1);           // ~17px
-$author-bio-position-font-size-small: ms(-1);      // ~15px
-$author-bio-position-line-height-small: 1.47;      // ~22px
-$author-bio-name-font-size: ms(0);                 // ~16px
-$author-bio-name-line-height: 1.1;                 // ~17,6px
-$author-bio-name-font-size-small: ms(-1);          // ~14px
-$author-bio-name-line-height-small: 1;             // ~14px
+$edition-font-size: ms(0); // ~16px
+$edition-line-height: $heading-line-height; // ~16px
 
 //Artist-in-Residence
-$artwork-font-size-small: ms(7);                   // ~30px
-$artwork-font-size-default: ms(11);                // ~45px
-
-
-//
-// Long-Quote
-//
-
-$longquote-font-size: ms(6);                        // ~28px
-$longquote-font-size-small: ms(4);                  // ~23px
-$longquote-line-height: $base-line-height;          // ~48px
-$longquote-line-height-small: $base-line-height;    // ~36px
-
-//
-// Super-Quote
-//
-$superquote-font-size: ms(9);                           // ~35px
-$superquote-font-size-small: ms(7);                     // ~30px
-$superquote-line-height: $heading-line-height;          // ~48px
-$superquote-line-height-small: $heading-line-height;    // ~36px
-
-
-//
-// Pull Quote
-//
-$pull-quote-font-size: ms(2);                 // ~19px
-$pull-quote-line-height: $base-line-height;   // ~29px
-
-
-//
-// Conclusion
-//
-$conclusion-headline-font-size: ms(16);                             // ~70px
-$conclusion-headline-font-size-small: ms(12);                       // ~48px
-$conclusion-headline-line-height: 1.07;                             // ~73px
-$conclusion-headline-line-height-small: $heading-line-height;       // ~57px
-$conclusion-subheadline-font-size: ms(7);                           // ~30px
-$conclusion-subheadline-font-size-small: ms(5);                     // ~25px
-$conclusion-subheadline-line-height: 2;                             // ~60px
-$conclusion-subheadline-line-height-small: $heading-line-height;    // ~30px
-$conclusion-text-font-size: ms(2);                                  // ~19px
-$conclusion-text-font-size-small: ms(1);                            // ~17px
-$conclusion-text-line-height: 1.37;                                 // ~26px
-$conclusion-text-line-height-small: $base-line-height;              // ~26px
-
-
-//
-// Tags
-//
-$tag-font-size: $font-size-base;               // ~16px
-$tag-font-size-small: ms(-1);                  // ~14px
-$tag-line-height: 1.375;                       // ~22px
-$tag-line-height-small: $base-line-height;     // ~22px
-
-
-//
-// Tag Section
-//
-$meta-tags-headline-font-size: ms(2);                         // ~19px
-$meta-tags-headline-font-size-small: $font-size-base;         // ~16px
-$meta-tags-headline-line-height: 1.37;                        // ~26px
-$meta-tags-headline-line-height-small: $base-line-height;     // ~24px
-
-
-//
-// Reference
-//
-$reference-font-size: $font-size-base;    // ~16px
-$reference-font-size-small: ms(-2);       // ~13px
-$reference-line-height: 1.56;             // ~25px
-$reference-line-height-small: 1.69;       // ~23px
-
-//
-// Contant Table
-//
-$content-table-caption-font-size: ms(2);                // ~19px
-$content-table-caption-font-size-small: ms(1);          // ~17px
-$content-table-caption-line-height: 1.37;               // ~26px
-$content-table-caption-line-height-small: 1.37;         // ~26px
-$content-table-head-font-size: $font-size-base;         // ~16px
-$content-table-head-font-size-small: ms(-1);            // ~14px
-$content-table-head-line-height: 1.375;                 // ~22px
-$content-table-head-line-height-small: 1.375;           // ~22px
-$content-table-body-font-size: $font-size-base;         // ~16px
-$content-table-body-font-size-small: ms(-1);            // ~14px
-$content-table-body-line-height: 1.56;                  // ~25px
-$content-table-body-line-height-small: 1.56;            // ~25px
-
-//
-// Infobox
-//
-$infobox-text-font-size: $font-size-base;     // ~16px
-$infobox-text-line-height: 1.56;              // ~25px
-$infobox-heading-font-size: ms(-1);           // ~15px
-$infobox-heading-line-height: 1.3;            // ~19px
-
-//
-// Share Section
-//
-$share-section-heading-font-size: ms(3);                    // ~21px
-$share-section-heading-line-height: $heading-line-height;   // ~25px
-
-//
-// Navbar
-//
-$navbar-primary-font-size-big: ms(7);    //
-$navbar-primary-font-size: ms(3);        //
-$navbar-dropdown-font-size: ms(2);       // ~16px
-$navbar-secondary-font-size: ms(-2);     // ~14px
-
-//
-// Search field
-//
-$search-field-xl-font-size: ms(7);
-
-
-//
-// Footnote Section
-//
-$footnote-section-headline-font-size: ms(2);                    // ~19px
-$footnote-section-headline-font-size-small: ms(1);              // ~17px
-$footnote-section-headline-line-height: 1.37;                   // ~25px
-$footnote-section-headline-line-height-small: 1.37;             // ~23px
+$artwork-font-size-small: ms(7); // ~30px
+$artwork-font-size-default: ms(11); // ~45px
 
 //
 // Footer
 //
-$footer-subheading-font-size: ms(2);              // ~19px
-$footer-subheading-line-height: 1.37;             // ~26px
-$footer-paragraph-font-size: $font-size-base;     // ~16px
-$footer-paragraph-line-height: 1.56;              // ~25px
-$footer-directions-link-font-size: ms(-2);        // ~16px
-$footer-directions-link-line-height: 1.69;        // ~23px
+$footer-subheading-font-size: ms(2); // ~19px
+$footer-subheading-line-height: 1.37; // ~26px
+$footer-paragraph-font-size: $font-size-base; // ~16px
+$footer-paragraph-line-height: 1.56; // ~25px
+$footer-directions-link-font-size: ms(-2); // ~16px
+$footer-directions-link-line-height: 1.69; // ~23px
 
 //
 // Teaser
 //
-$teaser-caption-font-size: $font-size-base;         // ~16px
-$teaser-caption-line-height: 1.375;                 // ~22px
-$teaser-caption-font-size-small: ms(-1);            // ~14px
-$teaser-caption-line-height-small: 1.57 ;           // ~22px
-$teaser-text-font-size: ms(0);                      // ~16px
-$teaser-text-line-height: 1.56;                     // ~25px
-$teaser-text-font-size-small: ms(0);                // ~16px
-$teaser-text-line-height-small: 1.56;               // ~25px
-$teaser-text-font-size-italic: ms(3);               // ~21px
+$teaser-caption-font-size: $font-size-base; // ~16px
+$teaser-caption-line-height: 1.375; // ~22px
+$teaser-caption-font-size-small: ms(-1); // ~14px
+$teaser-caption-line-height-small: 1.57; // ~22px
+$teaser-text-font-size: ms(0); // ~16px
+$teaser-text-line-height: 1.56; // ~25px
+$teaser-text-font-size-small: ms(0); // ~16px
+$teaser-text-line-height-small: 1.56; // ~25px
+$teaser-text-font-size-italic: ms(3); // ~21px
 $teaser-text-line-height-italic: $base-line-height; // ~32px
 $teaser-text-font-size-italic-big: ms(5);
-$teaser-text-font-size-italic-small: ms(0);         // ~16px
-$teaser-headline-font-size-small: ms(2);            // ~19px
+$teaser-text-font-size-italic-small: ms(0); // ~16px
+$teaser-headline-font-size-small: ms(2); // ~19px
 
-$podcast-teaser-subheadline-font-size: ms(2);       // ~20px
-$podcast-teaser-subheadline-line-height: 1.25;      // ~24px
+$podcast-teaser-subheadline-font-size: ms(2); // ~20px
+$podcast-teaser-subheadline-line-height: 1.25; // ~24px
 
-$list-teaser-subheadline-font-size: ms(5);          // ~25px
-$list-teaser-subheadline-line-height: 1.4;          // ~34px
-$list-teaser-subheadline-font-size-small: ms(2);    // ~19px
-$list-teaser-subheadline-line-height-small: 1.37;   // ~26px
+$list-teaser-subheadline-font-size: ms(5); // ~25px
+$list-teaser-subheadline-line-height: 1.4; // ~34px
+$list-teaser-subheadline-font-size-small: ms(2); // ~19px
+$list-teaser-subheadline-line-height-small: 1.37; // ~26px
 
-$list-teaser-abstract-headline-font-size: ms(9);          // ~35px
-$list-teaser-abstract-headline-line-height: 1.2 ;         // ~42px
-$list-teaser-abstract-headline-font-size-small: ms(7);    // ~30px
-$list-teaser-abstract-headline-line-height-small: 1.23 ;  // ~37px
-$list-teaser-abstract-text-font-size: ms(2);              // ~19px
-$list-teaser-abstract-text-line-height: 1.37;             // ~26px
-$list-teaser-abstract-text-font-size-small: ms(0);        // ~16px
-$list-teaser-abstract-text-line-height-small: 1.4;        // ~23px
+$list-teaser-abstract-headline-font-size: ms(9); // ~35px
+$list-teaser-abstract-headline-line-height: 1.2; // ~42px
+$list-teaser-abstract-headline-font-size-small: ms(7); // ~30px
+$list-teaser-abstract-headline-line-height-small: 1.23; // ~37px
+$list-teaser-abstract-text-font-size: ms(2); // ~19px
+$list-teaser-abstract-text-line-height: 1.37; // ~26px
+$list-teaser-abstract-text-font-size-small: ms(0); // ~16px
+$list-teaser-abstract-text-line-height-small: 1.4; // ~23px
 
-$list-teaser-event-headline-font-size: ms(7);             // ~30px
-$list-teaser-event-headline-line-height: 1.2;             // ~36px
-$list-teaser-event-headline-font-size-small: ms(4);       // ~23px
-$list-teaser-event-headline-line-height-small: 1.3 ;      // ~30px
-$list-teaser-event-subheadline-line-height: 1.25;         // ~20px
-$list-teaser-event-subheadline-font-size: ms(5);          // ~25px
-$list-teaser-event-subheadline-line-height-small: 1.25;   // ~25px
-$list-teaser-event-subheadline-font-size-small: ms(2);    // ~20px
+$list-teaser-event-headline-font-size: ms(7); // ~30px
+$list-teaser-event-headline-line-height: 1.2; // ~36px
+$list-teaser-event-headline-font-size-small: ms(4); // ~23px
+$list-teaser-event-headline-line-height-small: 1.3; // ~30px
+$list-teaser-event-subheadline-line-height: 1.25; // ~20px
+$list-teaser-event-subheadline-font-size: ms(5); // ~25px
+$list-teaser-event-subheadline-line-height-small: 1.25; // ~25px
+$list-teaser-event-subheadline-font-size-small: ms(2); // ~20px
 
-$list-teaser-project-headline-font-size-small: ms(2);     // ~19px
-$list-teaser-project-headline-line-height-small: 1.3;     // ~30px
+$list-teaser-project-headline-font-size-small: ms(2); // ~19px
+$list-teaser-project-headline-line-height-small: 1.3; // ~30px
 
-$big-content-teaser-headline-font-size: ms(11);                     // 45px
-$big-content-teaser-headline-line-height: $heading-line-height;     // 54px
-$big-content-teaser-headline-font-size-md: ms(9);                   // 45px
-$big-content-teaser-headline-font-size-small: ms(7);                // 30px
+$big-content-teaser-headline-font-size: ms(11); // 45px
+$big-content-teaser-headline-line-height: $heading-line-height; // 54px
+$big-content-teaser-headline-font-size-md: ms(9); // 45px
+$big-content-teaser-headline-font-size-small: ms(7); // 30px
 $big-content-teaser-headline-line-height-small: 1.36;
 
-$big-content-teaser-text-line-height: 1.56;                 // ~28px
-$big-content-teaser-text-font-size: ms(1);                  // ~18px
-$big-content-teaser-text-line-height-small: 1.78;           // ~23px
-$big-content-teaser-text-font-size-small: ms(-1);           // ~13px
+$big-content-teaser-text-line-height: 1.56; // ~28px
+$big-content-teaser-text-font-size: ms(1); // ~18px
+$big-content-teaser-text-line-height-small: 1.78; // ~23px
+$big-content-teaser-text-font-size-small: ms(-1); // ~13px
 
-$topic-teaser-header-font-size: ms(13);                // 52px
-$topic-teaser-header-font-size-small: ms(9);           // 36px
-
-
-//
-// Eyecatcher
-//
-$eyecatcher-font-size: ms(0);
-$eyecatcher-font-size-large: ms(8);
+$topic-teaser-header-font-size: ms(13); // 52px
+$topic-teaser-header-font-size-small: ms(9); // 36px
 
 //
 // Page Headers
 //
-$standard-header-title-font-size: ms(16);              // ~69px
+$standard-header-title-font-size: ms(16); // ~69px
 $standard-header-title-font-size-medium-small: ms(12); // ~48px
-$standard-header-title-font-size-small: ms(10);        // ~25px
-$standard-header-title-line-height: 1.07;              // intrinsic proportional
-$standard-header-title-line-height-small: 1.36;        // ~34px
-$standard-header-subtitle-font-size: ms(7);            // ~30px
-$standard-header-subtitle-line-height: 1.2;            // ~36px
-$standard-header-subtitle-font-size-small: ms(-1);     // ~14px
-$standard-header-subtitle-line-height-small: 1.57;     // ~22px
-$standard-header-type-font-size: $font-size-base;      // ~16px
-$standard-header-type-line-height: 1.375;              // ~22px
-$standard-header-type-font-size-small: ms(-1);         // ~14px
-$standard-header-type-line-height-small: 1.57;         // ~22px
-$standard-header-intro-font-size: ms(5);               // ~25px
-$standard-header-intro-line-height: 1.52;              // ~38px
-$standard-header-intro-font-size-small: ms(2);         // ~20px
-$standard-header-intro-line-height-small: 1.5;         // ~25px
-$standard-header-intro-date-font-size: ms(4);          // ~23px
-$standard-header-intro-date-line-height: 1.36;         // ~34px
-$standard-header-intro-date-font-size-small: ms(-1);   // ~14px
-$standard-header-intro-date-line-height-small: 1.57;   // ~22px
+$standard-header-title-font-size-small: ms(10); // ~25px
+$standard-header-title-line-height: 1.07; // intrinsic proportional
+$standard-header-title-line-height-small: 1.36; // ~34px
+$standard-header-subtitle-font-size: ms(7); // ~30px
+$standard-header-subtitle-line-height: 1.2; // ~36px
+$standard-header-subtitle-font-size-small: ms(-1); // ~14px
+$standard-header-subtitle-line-height-small: 1.57; // ~22px
+$standard-header-type-font-size: $font-size-base; // ~16px
+$standard-header-type-line-height: 1.375; // ~22px
+$standard-header-type-font-size-small: ms(-1); // ~14px
+$standard-header-type-line-height-small: 1.57; // ~22px
+$standard-header-intro-font-size: ms(5); // ~25px
+$standard-header-intro-line-height: 1.52; // ~38px
+$standard-header-intro-font-size-small: ms(2); // ~20px
+$standard-header-intro-line-height-small: 1.5; // ~25px
+$standard-header-intro-date-font-size: ms(4); // ~23px
+$standard-header-intro-date-line-height: 1.36; // ~34px
+$standard-header-intro-date-font-size-small: ms(-1); // ~14px
+$standard-header-intro-date-line-height-small: 1.57; // ~22px
 
-$landing-page-header-title-font-size: ms(11);          // ~45px
-$landing-page-header-title-font-size-small: ms(9);     // ~35px
-$landing-page-header-title-line-height: 1.15;          // ~52px
-$landing-page-header-title-line-height-small: 1.2;     // ~42px
-
-$staff-page-header-quote-font-size: ms(16);                         // ~70px
-$staff-page-header-quote-font-size-small: ms(10);                   // ~39px
-$staff-page-header-quote-line-height: 1.07;                         // ~73px
-$staff-page-header-quote-line-height-small: $heading-line-height;   // ~57px
-$staff-page-header-quote-author-line-height: 1.375;                 // ~22px
-$staff-page-header-quote-author-font-size: ms(0);                   // ~16px
-$staff-page-header-quote-author-line-height-small: 1.46;            // ~22px
-$staff-page-header-quote-author-font-size-small: ms(-2);            // ~13px
-$staff-page-header-intro-name-font-size: ms(9);                     // ~35px
-$staff-page-header-intro-name-line-height: 1.68;                    // ~42px
-$staff-page-header-intro-name-font-size-small: ms(7);               // ~30px
-$staff-page-header-intro-name-line-height-small: 1.3;               // ~37px
-$staff-page-header-intro-job-title-line-height: 1.52;               // ~38px
-$staff-page-header-intro-job-title-font-size: ms(5);                // ~25px
-$staff-page-header-intro-job-title-line-height-small: 1.62;         // ~34px
-$staff-page-header-intro-job-title-font-size-small: ms(3);          // ~21px
-$staff-page-header-intro-text-line-height: 1.36;                    // ~34px
-$staff-page-header-intro-text-font-size: ms(5);                     // ~25px
-$staff-page-header-intro-text-line-height-small: 1.43;              // ~30px
-$staff-page-header-intro-text-font-size-small: ms(3);               // ~21px
-
-$text-header-title-line-height: 1.16;              // ~58px
-$text-header-title-font-size: ms(13);              // ~50px
-$text-header-title-line-height-small: 1.18;        // ~53px
-$text-header-title-font-size-small: ms(9);         // ~36px
-$text-header-intro-font-size: ms(5);               // ~25px
-$text-header-intro-line-height: 1.52;              // ~38px
-$text-header-intro-font-size-small: ms(2);         // ~20px
-$text-header-intro-line-height-small: 1.3;         // ~25px
-
-$claim-header-type-line-height: 1.375;             // ~22px
-$claim-header-type-font-size: ms(0);               // ~16px
-$claim-header-type-line-height-small: 1.43;        // ~20px
-$claim-header-type-font-size-small: ms(-1);        // ~14px
-$claim-header-title-line-height: 1.1;              // ~50px
-$claim-header-title-font-size: ms(11);             // ~45px
-$claim-header-title-line-height-small: 1.12;       // ~41px
-$claim-header-title-font-size-small: ms(9);        // ~36px
-
-$image-header-font-size: ms(16);                         // ~70px
-$image-header-font-size-small: ms(14);                   // ~57px
-$image-header-line-height: 1.07;                         // ~73px
-$image-header-line-height-small: $heading-line-height;   // ~57px
+$text-header-title-line-height: 1.16; // ~58px
+$text-header-title-font-size: ms(13); // ~50px
+$text-header-title-line-height-small: 1.18; // ~53px
+$text-header-title-font-size-small: ms(9); // ~36px
+$text-header-intro-font-size: ms(5); // ~25px
+$text-header-intro-line-height: 1.52; // ~38px
+$text-header-intro-font-size-small: ms(2); // ~20px
+$text-header-intro-line-height-small: 1.3; // ~25px
 
 // Service Intros
-$service-intro-header-font-size: ms(9);            // 36px (~35px)
-$service-intro-header-font-size-small: ms(7);      // ~30px
-$service-intro-text-font-size: ms(1);              // ~18px
-$service-intro-text-line-height: 1.625;            // ~28px
-$service-intro-text-font-size-small: ms(0);        // ~16px
-$service-intro-text-line-height-small: 1.75;       // ~26px
-
-// Dialog Banner
-$dialog-banner-font-size: $font-size-base;         // ~16px
-$dialog-banner-line-height: 1.56;                  // ~25px
+$service-intro-header-font-size: ms(9); // 36px (~35px)
+$service-intro-header-font-size-small: ms(7); // ~30px
+$service-intro-text-font-size: ms(1); // ~18px
+$service-intro-text-line-height: 1.625; // ~28px
+$service-intro-text-font-size-small: ms(0); // ~16px
+$service-intro-text-line-height-small: 1.75; // ~26px
 
 // Paginator
 $paginator-font-size-small: ms(0);
 $paginator-font-size: ms(3);
 
 // Alert
-$alert-font-size: $companion-font-size;         // 21px
-$alert-line-height: $base-line-height;          // 25px
-$alert-font-size-sm: $font-size-base;           // 16px
+$alert-font-size: $companion-font-size; // 21px
+$alert-line-height: $base-line-height; // 25px
+$alert-font-size-sm: $font-size-base; // 16px

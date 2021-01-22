@@ -1,5 +1,7 @@
-$navbar-navbtn-transition: color .175s ease;
-$navbar-drill-transition: left .5s ease;
+$navbar-navbtn-transition: color 0.175s ease;
+$navbar-drill-transition: left 0.5s ease;
+$navbar-primary-font-size: ms(3);
+$navbar-secondary-font-size: ms(-2);
 
 //
 // navbar
@@ -74,7 +76,7 @@ $navbar-drill-transition: left .5s ease;
 
 .navbtn--search,
 .navbtn--menu {
-  top: -.1em;
+  top: -0.1em;
   font-size: ms(3);
 }
 
@@ -84,13 +86,14 @@ $navbar-drill-transition: left .5s ease;
 
 .navbtn--menu {
   @extend %heading-font-bold;
+
   padding: 0 $spacer-md 0 0;
 }
 
 .navbtn__left-icon {
   position: relative;
-  top: .1em;
-  margin-right: .5em;
+  top: 0.1em;
+  margin-right: 0.5em;
 }
 
 .navbtn--active::after {
@@ -100,11 +103,11 @@ $navbar-drill-transition: left .5s ease;
   background-color: $navbar-link-active-color;
   width: 100%;
   height: 3px;
-  content: '';
+  content: "";
 }
 
 .navbtn--meta {
-  margin-right: $spacer-base * .55;
+  margin-right: $spacer-base * 0.55;
 
   &.navbtn--locale {
     margin-right: 2px;
@@ -154,7 +157,7 @@ $navbar-drill-transition: left .5s ease;
   width: 100%;
   height: $navbar-bottombar-height-small;
   text-transform: uppercase;
-  font-size: $navbar-secondary-font-size * .9;
+  font-size: $navbar-secondary-font-size * 0.9;
 }
 
 //
@@ -228,7 +231,7 @@ $navbar-drill-transition: left .5s ease;
   color: $navbar-link-color;
 
   &:hover,
-  &:focus  {
+  &:focus {
     color: $navbar-link-hover-color;
   }
 }

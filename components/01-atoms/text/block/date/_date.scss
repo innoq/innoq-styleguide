@@ -1,18 +1,13 @@
-$event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spacer-xxs);
-
 .date {
   @extend %heading-font-bold;
 
-  line-height: $paragraph-line-height;
   font-size: $font-size-base;
 }
 
 //Event Date for Teasers
 .event-date-section {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
-  margin-top: -$event-date-section-height;
   background-color: $date-section-background-color;
 }
 
@@ -20,7 +15,7 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .event-date {
@@ -71,7 +66,6 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
 
 // Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
-
   .event-date-section {
     margin-top: 0;
     width: 80px;

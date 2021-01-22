@@ -16,7 +16,7 @@ info-box {
       }
     }
 
-    &[open='true'] {
+    &[open="true"] {
       .infobox__teaser__chevron {
         &::before {
           content: $icon-chevron-up;
@@ -25,7 +25,7 @@ info-box {
     }
   }
 
-  &[open='false'] {
+  &[open="false"] {
     .infobox__teaser,
     .infobox__teaser__heading {
       background-color: $infobox-teaser-background-color-closed;
@@ -53,8 +53,8 @@ info-box {
 
   display: inline-block;
   margin: 0;
-  line-height: $infobox-heading-line-height;
-  font-size: $infobox-heading-font-size;
+
+  font-size: $font-size-xs;
 }
 
 .infobox__teaser__left,
@@ -87,7 +87,6 @@ info-box {
 
   & p {
     @extend %heading-font-regular;
-    line-height: $infobox-text-line-height;
-    font-size: $infobox-text-font-size;
+    font-size: $font-size-base;
   }
 }

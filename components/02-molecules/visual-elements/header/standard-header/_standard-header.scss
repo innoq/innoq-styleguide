@@ -52,7 +52,6 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   }
 }
 
-
 //Variations
 .standard-header--inverted {
   .standard-header__title {
@@ -92,7 +91,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   align-items: center;
   margin-top: $spacer-lg;
   background-color: $standard-header-intro-bg;
-  padding: $container-spacer-y-sm $container-spacer-x-sm;
+  padding: $spacer-sm $spacer-sm;
   box-sizing: content-box;
 }
 

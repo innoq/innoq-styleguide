@@ -4,11 +4,15 @@
 $brand-primary: $brand-apricot;
 $brand-secondary: $brand-petrol;
 $brand-interaction: $brand-apricot;
-$brand-hover: $brand-red-transparent;
+$brand-hover: $brand-apricot-transparent;
 $brand-text: $brand-gray;
 $brand-text-light: $brand-white;
 $brand-background: $brand-white;
 $brand-muted: $brand-gray-25;
+
+//
+//ATOMS
+//
 
 // Avatars
 $avatar-default-bg-color: $brand-gray-10;
@@ -72,11 +76,11 @@ $radio-color-disabled: $brand-gray-50;
 // Search field
 $search-field-caret-color: $brand-interaction;
 $search-field-border-color: $brand-interaction;
-$search-field-background: $brand-text;
+$search-field-background: $brand-secondary;
 $search-field-color: $brand-interaction;
 
 // Search result
-$search-result-color: $brand-text;
+$search-result-color: $brand-secondary;
 $search-result-border-color: $brand-gray-50;
 
 // Paginator
@@ -95,51 +99,53 @@ $link-color: $brand-text;
 $link-hover-color: $brand-interaction;
 $link-hover-color-light: $brand-hover;
 $link-teaser-border-color: $brand-interaction;
-$link-teaser-text-color: $brand-text;
-$link-teaser-inverted-text-border-color: $brand-text;
+$link-teaser-text-color: $brand-secondary;
+$link-teaser-inverted-text-border-color: $brand-secondary;
 $link-teaser-inverted-text-text-color: $brand-white;
 $link-teaser-inverted-interaction-border-color: $brand-interaction;
 $link-teaser-inverted-interaction-text-color: $brand-white;
 $hover-color: $brand-interaction;
 $mark-color: $brand-hover;
-
-// Code
 $code-background-color: $brand-gray-10;
 
 // Pull Quote
-$pull-quote-border-color: $brand-text;
-$pull-quote-color: $brand-text;
-
-// Super-Quote
+$pull-quote-border-color: $brand-primary;
+$pull-quote-color: $brand-secondary;
 $superquote-color: $brand-interaction;
-
-// Block Quote
 $quote-color: $brand-primary;
 
 // ZigZag
 $zzbgc: $brand-white;
-$zzlinecolor: $brand-text;
+$zzlinecolor: $brand-secondary;
 
 // hr line
 $horizontal-line-color: $brand-primary;
 
+//Waiting Dots
+$dot-color: $brand-secondary;
+
 // Lists
 $bullet-list-color: $brand-primary;
-$bullet-list-bg-color: transparent;
+$bullet-list-color-primary: $brand-primary;
+$bullet-list-color-secondary: $brand-secondary;
+$definition-list-dt-color: $brand-secondary;
+$tupel-list-label-color: $brand-secondary;
 
 // label
 $talk-label-background-color: $brand-primary;
-$talk-label-text-color: $brand-text;
-$training-label-background-color: $brand-text;
+$talk-label-text-color: $brand-secondary;
+$training-label-background-color: $brand-secondary;
 $training-label-text-color: $brand-primary;
 $slides-label-background-color: $brand-green;
 $slides-label-text-color: $brand-text;
 $badge-background-color: $brand-primary;
-$badge-background-color-inverted: $brand-text;
-$badge-text-color: $brand-white;
+$badge-background-color-inverted: $brand-secondary;
+$badge-text-color: $brand-secondary;
+$badge-text-color-inverted: $brand-primary;
 
 // Author
 $author-bio-background-color: $brand-gray-10;
+$author-bio-social-border-color: $brand-gray-25;
 $author-bio-link-color: $brand-white;
 $author-bio-link-background-color: $brand-interaction;
 
@@ -150,45 +156,51 @@ $artist-collabo-subtitle-color: $brand-gray;
 
 // Content Seperator
 $box-shadow-color-light: $brand-white;
-$box-shadow-color-dark: $brand-text;
+$box-shadow-color-dark: $brand-secondary;
+$content-seperator-text-color: $brand-secondary;
 
 // Table of Content
+$toc-heading-color: $brand-secondary;
 $toc-border-color: $brand-gray-25;
+$toc-anchor-text-color: $brand-secondary;
+$toc-anchor-hover-text-color: $brand-secondary;
 
 // Conclusion
 $conclusion-border-color: $brand-primary;
-$conclusion-background-color: $brand-text;
-$conclusion-headline-color: $brand-white;
+$conclusion-background-color: $brand-secondary;
+$conclusion-headline-color: $brand-primary;
 $conclusion-subheadline-color: $brand-primary;
 $conclusion-text-color: $brand-white;
 $conclusion-link-color: $brand-white;
+$conclusion-link-hover-color: $brand-secondary;
 
 // Tag List
-$tag-background-color: $brand-text;
+$tag-background-color: $brand-secondary;
 $tag-background-color-hover: $brand-primary;
-$tag-text-color-hover: $brand-white;
-$tag-text-color: $brand-white;
+$tag-text-color-hover: $brand-secondary;
+$tag-text-color: $brand-primary;
 
 // Tag Section
 $meta-tags-background-color: $brand-gray-10;
-$meta-tags-headline-text-color: $brand-text;
+$meta-tags-headline-text-color: $brand-secondary;
 
 // Table
-$table-header-text-color: $brand-white;
-$table-header-background-color: $brand-text;
+$table-header-text-color: $brand-primary;
+$table-header-background-color: $brand-secondary;
 $table-row-border-color: $brand-gray-75;
-$table-row-color-dark:  $brand-gray-10;
-$table-border-color: $brand-text;
+$table-row-color-dark: $brand-gray-10;
+$table-border-color: $brand-secondary;
 
 // Infobox
-$infobox-teaser-text-color-closed: $brand-text;
+$infobox-teaser-text-color-closed: $brand-secondary;
 $infobox-teaser-text-color-open: $brand-gray-10;
 $infobox-teaser-background-color-closed: $brand-gray-10;
-$infobox-teaser-background-color-open: $brand-text;
+$infobox-teaser-background-color-open: $brand-secondary;
 $infobox-content-background-color: $brand-gray-10;
 $infobox-teaser-border-color: $brand-primary;
 
 // Sharing Section
+$sharing-headline-color: $brand-secondary;
 $sharing-interaction-color: $brand-interaction;
 
 // Tooltip / Footnote
@@ -196,10 +208,10 @@ $footnote-link-color: $brand-interaction;
 $footnote-index-color: $brand-secondary;
 $tooltip-shadow-color: $brand-gray-75;
 $tooltip-background-color: $brand-white;
-$footnote-section-headline-color: $brand-text;
+$footnote-section-headline-color: $brand-secondary;
 
 // Navbar
-$navbar-body-bg: $brand-text;
+$navbar-body-bg: $brand-secondary;
 $navbar-link-color: $brand-white;
 $navbar-link-active-color: $brand-primary;
 $navbar-link-hover-color: $brand-interaction;
@@ -306,7 +318,7 @@ $footer-link-hover-color: $brand-interaction;
 
 // Eyecatcher
 $eyecatcher-body-bg: $brand-interaction;
-$eyecatcher-text-color: $brand-text;
+$eyecatcher-text-color: $brand-secondary;
 $eyecatcher-color-inverted: $brand-white;
 
 // Newsletter Optin
@@ -325,29 +337,43 @@ $standard-header-inverted-title-color: $brand-text;
 $standard-header-inverted-subtitle-color: $brand-interaction;
 $standard-header-inverted-type-color: $brand-text;
 $standard-header-podcast-subtitle-color: $brand-text;
-$staff-page-header-quote-color: $brand-white;
-$staff-page-header-quote-author-color: $brand-white;
-$staff-page-header-quote-background-color: $brand-primary;
-$staff-page-header-background-color: $brand-primary;
-$staff-page-header-content-background-color: $brand-gray-10;
-$staff-intro-text-border: $brand-text;
-$staff-intro-background-color: $brand-white;
-$landing-page-header-border-color: $brand-text;
-$landing-page-header-intro-text-color: $brand-text;
+
+$staff-header-quote-color: $brand-primary;
+$staff-header-quote-author-color: $brand-primary;
+$staff-header-quote-bg-color: $brand-secondary;
+$staff-header-bg-color: $brand-secondary;
+$staff-header-content-bg-color: $brand-gray-10;
+$staff-header-intro-text-border: $brand-secondary;
+$staff-header-intro-text-color: $brand-secondary;
+$staff-header-intro-bg-color: $brand-primary;
+$staff-header-icon-hover-color: $brand-white;
+
+$landing-page-header-border-color: $brand-primary;
+$landing-page-header-intro-text-color: $brand-secondary;
 $landing-page-header-intro-bg-color: $brand-white;
 $landing-page-header-inverted-text-color: $brand-white;
+
 $topic-header-intro-text-color: $brand-text;
 $topic-header-intro-bg-color: $brand-white;
+
 $claim-header-bg-color: $brand-primary;
-$claim-header-type-color: $brand-text;
-$claim-header-title-color: $brand-text;
-$claim-header-divider-color: $brand-text;
+$claim-header-type-color: $brand-secondary;
+$claim-header-title-color: $brand-secondary;
+$claim-header-divider-color: $brand-secondary;
+
 $image-header-bg-color: $brand-primary;
 $image-header-content-bg-color: $brand-white;
-
 
 // Toolbar
 $toolbar-link-hover-color: $brand-interaction;
 
 // Dialog banner
 // $dialog-banner-body-background: $brand-interaction;
+
+//Card
+$card-tag-bg-color: $brand-primary;
+$card-tag-text-color: $brand-secondary;
+$card-headline-color: $brand-primary;
+$card-subheadline-color: $brand-white;
+$card-bg-color: $brand-secondary;
+$card-text-color: $brand-white;

@@ -8,30 +8,23 @@
   justify-content: left;
   margin-bottom: $spacer-sm;
   text-transform: uppercase;
-  line-height:  $footnote-section-headline-line-height-small;
   color: $footnote-section-headline-color;
-  font-size: $footnote-section-headline-font-size-small;
+  font-size: $font-size-sm;
 
   &::after {
     position: relative;
-    top: .65em;
+    top: 0.65em;
     flex-grow: 1;
     margin-left: 10px;
     background-color: $footnote-section-headline-color;
     max-width: 80px;
     height: 3px;
-    content: '\a0';
+    content: "\a0";
   }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
-
   .footnote-section__headline__container {
     width: 30%;
-  }
-
-  .footnote-sectiom__headline {
-    line-height:  $footnote-section-headline-line-height;
-    font-size: $footnote-section-headline-font-size;
   }
 }

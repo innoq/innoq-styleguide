@@ -4,49 +4,35 @@
 //
 
 $spacer-xxs: ms(-12); // ~7px
-$spacer-xs: ms(-6);   // ~9px;
-$spacer-sm: ms(0);    // ~16px
-$spacer-md: ms(4);    // ~24px
-$spacer-base: ms(8);  // ~33px
-$spacer-lg: ms(12);   // ~48px
-$spacer-xl: ms(15);   // ~62px
-$spacer-xxl: ms(22);  // ~112px
-
+$spacer-xs: ms(-6); // ~9px;
+$spacer-sm: ms(0); // ~16px
+$spacer-md: ms(4); // ~24px
+$spacer-base: ms(8); // ~33px
+$spacer-lg: ms(12); // ~48px
+$spacer-xl: ms(15); // ~62px
+$spacer-xxl: ms(22); // ~112px
 
 //
 // Spacing system according to the rule of 3Cs
 // see https://blog.prototypr.io/a-framework-for-creating-a-predictable-and-harmonious-spacing-system-8eee8aaf773c
 //
 
-// Spacers for container insets (usually top and bottom margins)
-$container-spacer-x-sm: $spacer-sm;
-$container-spacer-y-sm: $spacer-sm;
-
-$container-spacer-x: $spacer-base;
-$container-spacer-y: $spacer-base;
-
-// Spacers for content elements (always vertical)
-$content-spacer-header: $spacer-lg;
-$content-spacer-base: $spacer-md; // for all basic block elements, e.g. paragraphs, lists etc.
-$content-spacer-sm: $spacer-sm;
-
 //
 // Default Page Layout
 //
-$default-page-layout-content-width-xl: 90.25rem;  // ~1444px, full-width
+$default-page-layout-content-width-xl: 90.25rem; // ~1444px, full-width
 $default-page-layout-width-xl: 95%;
 
-$default-page-layout-content-width-md: 50rem;   // ~800px, main column width of articles
+$default-page-layout-content-width-md: 50rem; // ~800px, main column width of articles
 $default-page-layout-width-md: 95%;
 
 $default-page-layout-margin: $spacer-md;
 $default-page-layout-to-top-margin: $spacer-lg;
 
-
 //
 // Grid Page Layout
 //
-$grid-page-layout-width: 90.25rem;     // ~1444px, full-width, including table of contents
+$grid-page-layout-width: 90.25rem; // ~1444px, full-width, including table of contents
 $grid-page-layout-main-column-width: 50rem; // ~800px, main column, just for the text
 $grid-page-layout-margin: $spacer-md;
 $grid-page-layout-column-gap: $spacer-sm;
@@ -56,7 +42,8 @@ $grid-page-layout-content-width-lg: 60%;
 $grid-page-layout-content-width-xl: 50rem; // 800px;
 
 // Layout-width without content and column gaps devided by 2 (left and right)
-$grid-page-layout-leftright-width: (($grid-page-layout-width - $grid-page-layout-content-width-xl) / 2) - (3 * $grid-page-layout-column-gap);
+$grid-page-layout-leftright-width: (($grid-page-layout-width - $grid-page-layout-content-width-xl) / 2) -
+  (3 * $grid-page-layout-column-gap);
 
 //
 // Article

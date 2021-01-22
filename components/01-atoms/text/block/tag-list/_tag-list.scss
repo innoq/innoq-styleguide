@@ -15,15 +15,15 @@
   @extend %heading-font-bold;
 
   display: inline-block;
-  transition: .2s background-color ease-in-out;
+  transition: 0.2s background-color ease-in-out;
   background: $tag-background-color;
   padding: $spacer-xs $spacer-sm;
 
   text-transform: lowercase;
   text-decoration: none;
-  line-height: $tag-line-height-small;
+
   color: $tag-text-color;
-  font-size: $tag-font-size-small;
+  font-size: $font-size-base;
 
   &:hover {
     background-color: $tag-background-color-hover;
@@ -34,10 +34,5 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .tag-list__item {
     margin: $spacer-xxs;
-  }
-
-  .tag-list__link {
-    line-height: $tag-line-height;
-    font-size: $tag-font-size;
   }
 }

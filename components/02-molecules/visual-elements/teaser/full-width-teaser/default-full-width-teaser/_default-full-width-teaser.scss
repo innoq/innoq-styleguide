@@ -22,7 +22,7 @@ $default-full-width-teaser-height: ms(38);
 .default-full-width-teaser__wrapper {
   display: flex;
   justify-content: flex-start;
-  padding: $container-spacer-x-sm;
+  padding: $spacer-sm;
 }
 
 .default-full-width-teaser__body {

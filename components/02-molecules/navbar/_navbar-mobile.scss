@@ -1,14 +1,17 @@
+$navbar-primary-font-size-big: ms(7);
+$navbar-primary-font-size: ms(3);
+
 @media screen and (max-width: $nav-breakpoint-px-below) {
   .navbtn--menu {
     &::after {
       display: block;
       position: absolute;
-      top: -.1em;
+      top: -0.1em;
       right: 0;
       background-color: $navbar-link-color;
       width: 1px;
       height: 1.5em;
-      content: '';
+      content: "";
     }
   }
 
@@ -81,12 +84,12 @@
   }
 
   .dropdown__toggle--navbar {
-    padding: 0 .875em;
+    padding: 0 0.875em;
 
     &.dropdown__toggle--enhanced {
       position: absolute;
       left: 0;
-      padding: .35rem $navbar-padding .4rem;
+      padding: 0.35rem $navbar-padding 0.4rem;
       width: 50%;
       text-align: right;
     }

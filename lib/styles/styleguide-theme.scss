@@ -4,33 +4,30 @@
 // Settings
 //
 
-@import 'settings/breakpoints';
-@import 'settings/colors';
-@import 'settings/theme-matthew';
-@import 'settings/typography';
-@import 'settings/spacings';
-
+@import "settings/breakpoints";
+@import "settings/colors";
+@import "settings/theme-apripetrol";
+@import "settings/typography";
+@import "settings/spacings";
 
 //
 // Tools
 //
 
-@import 'tools/fonts';
-@import 'tools/text';
-
+@import "tools/fonts";
+@import "tools/text";
 
 //
 // Generic
 //
 
-@import 'generic/fontfaces';
-
+@import "generic/fontfaces";
 
 //
 // Styleguide Overrides
 //
 
-@import 'trumps/styleguide';
+@import "trumps/styleguide";
 
 .theme-brand {
   display: flex;
@@ -39,7 +36,7 @@
 
 .theme-brand-title {
   margin-top: 3px;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .theme-brand-logo {
