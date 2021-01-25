@@ -7,6 +7,7 @@
 //Event Date for Teasers
 .event-date-section {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
   background-color: $date-section-background-color;
 }
@@ -35,7 +36,7 @@
   @extend %heading-font-heavy;
 
   color: $date-section-day-color;
-  font-size: $font-size-md;
+  font-size: $font-size-lg;
 }
 
 .event-month {
@@ -80,7 +81,7 @@
   }
 
   .event-day {
-    font-size: $font-size-lg;
+    font-size: $font-size-xl;
   }
 
   .event-month {

@@ -23,7 +23,7 @@
     margin-bottom: $spacer-xs;
     padding-bottom: $spacer-base;
     text-align: center;
-    font-size: $font-size-lg;
+    font-size: $font-size-xl;
   }
 
   &__text {
@@ -56,11 +56,11 @@
   }
 
   .landing-page-header__title {
-    font-size: $font-size-xl;
+    font-size: $font-size-xxxl;
   }
 
   .landing-page-header__subtitle {
-    font-size: $font-size-lg;
+    font-size: $font-size-xl;
   }
 
   .landing-page-header__type {
@@ -70,7 +70,7 @@
   .landing-page-header__text {
     padding-right: $spacer-lg;
     padding-left: $spacer-lg;
-    font-size: $font-size-md;
+    font-size: $font-size-lg;
   }
 }
 

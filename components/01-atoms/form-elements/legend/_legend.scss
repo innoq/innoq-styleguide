@@ -2,5 +2,6 @@
   @extend %heading-font-heavy;
 
   margin-bottom: $spacer-md;
-  font-size: $font-size-md;
+  font-size: $font-size-lg;
+  color: $form-legend-color;
 }

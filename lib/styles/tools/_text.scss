@@ -111,8 +111,8 @@
   @extend %list-unstyled;
 
   margin-bottom: $spacer-md;
-  line-height: $paragraph-line-height-small;
-  font-size: $paragraph-font-size-small;
+  line-height: $paragraph-line-height;
+  font-size: $font-size-base;
 
   li {
     position: relative;
@@ -121,7 +121,7 @@
 
   @media screen and (min-width: $grid-breakpoint-md) {
     line-height: $paragraph-line-height;
-    font-size: $paragraph-font-size;
+    font-size: $font-size-sm;
   }
 }
 
@@ -134,7 +134,7 @@
     margin-bottom: $spacer-xs;
     line-height: $paragraph-line-height;
     color: $definition-list-dt-color;
-    font-size: $paragraph-font-size-small;
+    font-size: $font-size-base;
   }
 
   dd {
@@ -143,7 +143,7 @@
     margin-bottom: $spacer-xs;
     margin-left: $spacer-md;
     line-height: $paragraph-line-height;
-    font-size: $paragraph-font-size-small;
+    font-size: $font-size-base;
   }
 }
 
@@ -171,22 +171,19 @@
   @extend %heading-font-bold;
 
   text-transform: uppercase;
-  line-height: $teaser-caption-line-height-small;
-  font-size: $teaser-caption-font-size-small;
+  font-size: $font-size-xs;
 }
 
 %teaser-text {
   @extend %heading-font-regular;
 
-  line-height: $teaser-text-line-height;
-  font-size: $teaser-text-font-size;
+  font-size: $font-size-base;
 }
 
 %teaser-text-italic {
   @extend %body-font-italic;
 
-  line-height: $teaser-text-line-height-italic;
-  font-size: $teaser-text-font-size-italic;
+  font-size: $font-size-sm;
 }
 
 @mixin hover-fill($fill-color, $text-color, $hover-color) {
@@ -221,8 +218,7 @@
 
 @media screen and (min-width: $grid-breakpoint-md) {
   %teaser-caption {
-    line-height: $teaser-caption-line-height;
-    font-size: $teaser-caption-font-size;
+    font-size: $font-size-base;
   }
 }
 

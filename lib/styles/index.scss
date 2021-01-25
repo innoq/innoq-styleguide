@@ -167,8 +167,6 @@
 @import "../components/02-molecules/visual-elements/header/text-header/text-header";
 @import "../components/02-molecules/visual-elements/header/topic-header/topic-header";
 
-@import "../components/02-molecules/visual-elements/newsletter-optin/newsletter-optin";
-
 // Paginator
 @import "../components/02-molecules/visual-elements/paginator/paginator";
 
@@ -214,16 +212,16 @@
 // ORGANISMS
 //
 @import "../components/03-organisms/article-intro/article-intro";
-@import "../components/03-organisms/search-result-list/search-result-list";
 @import "../components/03-organisms/form/form";
 @import "../components/03-organisms/footer/footer";
+@import "../components/03-organisms/newsletter-optin/newsletter-optin";
+@import "../components/03-organisms/search-result-list/search-result-list";
 
 //
 // PAGES
 //
 @import "../components/04-pages/aggregator-page/aggregator-page";
 @import "../components/04-pages/article-pages/article-page-default/article-page-default";
-@import "../components/04-pages/article-pages/article-page-with-header/article-page-with-header";
 @import "../components/04-pages/case-study-pages/case-study-overview/case-study-overview";
 @import "../components/04-pages/case-study-pages/case-study-page/case-study-page";
 @import "../components/04-pages/artist-collabo-page/artist-collabo-page";

@@ -18,6 +18,9 @@
         color: $list-teaser-abstract-primary-drop-caps-color;
       }
     }
+    .author-bio__text {
+      color: $list-teaser-abstract-primary-author-name-color;
+    }
   }
 
   &.secondary {
@@ -46,26 +49,23 @@
 
 .list-teaser-abstract__headline {
   margin-bottom: $spacer-md;
-  line-height: $list-teaser-abstract-headline-line-height-small;
   color: $list-teaser-abstract-headline-color;
-  font-size: $list-teaser-abstract-headline-font-size-small;
+  font-size: $font-size-lg;
 }
 
 .list-teaser-abstract__text {
   @extend %heading-font-regular;
 
   margin-bottom: 0;
-  line-height: $list-teaser-abstract-text-line-height-small;
-  font-size: $list-teaser-abstract-text-font-size-small;
+  font-size: $font-size-base;
 
   &::first-letter {
     @extend %body-font-regular;
 
     float: left;
-    padding-top: 18px;
+    padding-top: 10px;
     padding-right: 12px;
     padding-left: 3px;
-    line-height: .35;
     font-size: ms(14);
   }
 }
@@ -76,20 +76,17 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .list-teaser-abstract__headline {
     margin-bottom: $spacer-sm;
-    line-height: $list-teaser-abstract-headline-line-height;
-    font-size: $list-teaser-abstract-headline-font-size;
+    font-size: $font-size-xl;
   }
 
   .list-teaser-abstract__text {
-    line-height: $list-teaser-abstract-text-line-height;
-    font-size: $list-teaser-abstract-text-font-size;
+    font-size: $font-size-sm;
 
     &::first-letter {
       float: left;
-      padding-top: 18px;
+      padding-top: 10px;
       padding-right: 12px;
       padding-left: 3px;
-      line-height: .45;
       font-size: ms(16);
     }
   }

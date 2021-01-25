@@ -20,7 +20,7 @@
   &__title {
     margin-bottom: $spacer-md;
     color: $claim-header-title-color;
-    font-size: $font-size-lg;
+    font-size: $font-size-xl;
   }
 
   &__divider {
@@ -35,6 +35,6 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .claim-header__title {
     margin-bottom: $spacer-base;
-    font-size: $font-size-xl;
+    font-size: $font-size-xxxl;
   }
 }

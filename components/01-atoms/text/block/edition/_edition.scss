@@ -63,7 +63,7 @@ $edition-font-size: $font-size-base;
 @media screen and (min-width: $grid-breakpoint-md) {
   .edition-date {
     flex-direction: row;
-    font-size: $font-size-lg;
+    font-size: $font-size-xl;
   }
 
   .edition-date-separator {

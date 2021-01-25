@@ -1,5 +1,6 @@
 .list-teaser {
   @extend %list-teaser;
+
   border-top: 3px solid $list-teaser-border-color;
   background-color: $list-teaser-background-color;
 }
@@ -22,11 +23,14 @@
 
   .author-bio {
     margin-bottom: 0;
+    color: $list-teaser-headline-color;
   }
 }
 
 .list-teaser__caption {
   @extend %teaser-caption;
+
+  color: $list-teaser-caption-color;
 }
 
 .list-teaser__headline {
@@ -40,8 +44,8 @@
   @extend %heading-font-regular;
 
   margin-bottom: $spacer-xs;
-  line-height: $list-teaser-subheadline-line-height-small;
-  font-size: $list-teaser-subheadline-font-size-small;
+  line-height: $paragraph-line-height-sm;
+  font-size: $font-size-sm;
 }
 
 //
@@ -49,8 +53,7 @@
 //
 @media screen and (min-width: $grid-breakpoint-md) {
   .list-teaser__subheadline {
-    line-height: $list-teaser-subheadline-line-height;
-    font-size: $list-teaser-subheadline-font-size;
+    font-size: $font-size-md;
   }
 
   .list-teaser__body {

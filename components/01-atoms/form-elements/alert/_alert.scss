@@ -1,5 +1,3 @@
-$alert-color: $brand-white;
-
 .alert {
   @extend %heading-font-regular;
   display: flex;
@@ -7,9 +5,8 @@ $alert-color: $brand-white;
   justify-content: space-between;
   margin-bottom: $spacer-sm;
   padding: $spacer-xs;
-  line-height: $alert-line-height;
   color: $alert-color;
-  font-size: $alert-font-size-sm;
+  font-size: $font-size-base;
 
   &--info {
     background-color: $brand-info;
@@ -33,6 +30,6 @@ $alert-color: $brand-white;
 @media screen and (min-width: $grid-breakpoint-md) {
   .alert {
     margin-bottom: $spacer-md;
-    padding: $spacer-sm $spacer-sm;
+    padding: $spacer-sm;
   }
 }

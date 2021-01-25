@@ -11,10 +11,16 @@
   padding: $spacer-lg;
   overflow: hidden;
   color: $newsletter-optin-color;
+
+  .form-label {
+  color: $newsletter-optin-color;
+}
+
 }
 
 .newsletter-optin__title {
   @extend %h1;
+
   margin-bottom: $spacer-sm;
   text-align: center;
   color: $newsletter-optin-color;
@@ -22,6 +28,7 @@
 
 .newsletter-optin__subtitle {
   @extend %h5;
+
   margin-bottom: $spacer-lg;
   text-align: center;
   color: $newsletter-optin-color;

@@ -3,12 +3,12 @@ $case-tile-teaser-sm-height: ms(32);
 // demo bg image
 
 .case-tile-teaser-bg-image-demo {
-  background-image: asset-url('visual-header-igel-1444.jpg');
+  background-image: asset-url("visual-header-igel-1444.jpg");
   background-position: center;
 }
 
 .case-tile-teaser-bg-image-training {
-  background-image: asset-url('visual-newsletter.jpg');
+  background-image: asset-url("visual-newsletter.jpg");
   background-position: top;
 }
 
@@ -23,6 +23,7 @@ $case-tile-teaser-sm-height: ms(32);
   flex-direction: column;
   background-size: cover;
   padding: $spacer-sm $spacer-xs;
+  color: $case-tile-teaser-text-color;
 }
 
 .case-tile-teaser__content {
@@ -40,15 +41,20 @@ $case-tile-teaser-sm-height: ms(32);
 
 .case-tile-teaser__caption {
   @extend %teaser-caption;
+
   margin: 0;
+  color: $case-tile-teaser-text-color;
 }
 
 .case-tile-teaser__headline {
   margin: $spacer-xs 0;
+  color: $case-tile-teaser-text-color;
 }
 
 .case-tile-teaser__text {
   @extend %teaser-text-italic;
+
+  color: $case-tile-teaser-text-color;
 }
 
 .case-tile-teaser__goto {
@@ -72,12 +78,12 @@ $case-tile-teaser-sm-height: ms(32);
 }
 
 .case-tile-teaser__headline--sm {
-  font-size: $teaser-headline-font-size-small;
+  font-size: $font-size-sm;
 }
 
 .case-tile-teaser__text--sm {
   margin-bottom: $spacer-xs;
-  font-size: $teaser-text-font-size-italic-small;
+  font-size: $font-size-base;
 }
 
 //
@@ -91,5 +97,4 @@ $case-tile-teaser-sm-height: ms(32);
   .case-tile-teaser__content {
     padding: $spacer-lg;
   }
-
 }

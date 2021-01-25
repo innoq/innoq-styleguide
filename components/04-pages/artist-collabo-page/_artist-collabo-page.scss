@@ -20,7 +20,7 @@ $triplet-divider-height-sm: 2 * $spacer-xxl;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: $spacer-base $spacer-base;
+  padding: $spacer-base;
   min-height: $triplet-divider-height-sm;
   text-align: center;
   color: $artwork-title-color;
@@ -28,10 +28,11 @@ $triplet-divider-height-sm: 2 * $spacer-xxl;
 
 .artist-collabo-artwork {
   @extend %heading-font-heavy;
+
   margin-bottom: $spacer-sm;
   text-align: center;
   color: $artwork-title-color;
-  font-size: $artwork-font-size-small;
+  font-size: $font-size-lg;
 
   &--variant {
     color: $artwork-title-color-edition-2;
@@ -51,7 +52,7 @@ $triplet-divider-height-sm: 2 * $spacer-xxl;
   }
 
   .artist-collabo-artwork {
-    font-size: $artwork-font-size-default;
+    font-size: $font-size-xxxl;
   }
 
   .artist-collabo-artist {

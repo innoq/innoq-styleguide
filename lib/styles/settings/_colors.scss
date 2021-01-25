@@ -46,9 +46,9 @@ $brand-greens: (
 
 // INNOQ Yellow
 $brand-yellow: #fff019;
-$brand-yellow-75: #fff019;
-$brand-yellow-50: #fff019;
-$brand-yellow-25: #fff019;
+$brand-yellow-75: #fff87a;
+$brand-yellow-50: #fffb9f;
+$brand-yellow-25: #fffdbe;
 $brand-yellow-transparent: rgba($brand-yellow, 0.2);
 
 $brand-yellows: (
@@ -60,17 +60,29 @@ $brand-yellows: (
 
 // INNOQ Petrol
 $brand-petrol: #004153;
+$brand-petrol-75: #40707e;
+$brand-petrol-50: #80a0a9;
+$brand-petrol-25: #bfcfd4;
 
 $brand-petrols: (
   brand-petrol: $brand-petrol,
+  brand-petrol-75: $brand-petrol-75,
+  brand-petrol-50: $brand-petrol-50,
+  brand-petrol-25: $brand-petrol-25,
 );
 
 // INNOQ Apricot
 $brand-apricot: #ff9c66;
+$brand-apricot-75: #ffb58c;
+$brand-apricot-50: #ffcdb2;
+$brand-apricot-25: #ffe6d9;
 $brand-apricot-transparent: rgba($brand-apricot, 0.8);
 
 $brand-apricots: (
   brand-apricot: $brand-apricot,
+  brand-apricot-75: $brand-apricot-75,
+  brand-apricot-50: $brand-apricot-75,
+  brand-apricot-25: $brand-apricot-75,
 );
 
 // INNOQ Gray

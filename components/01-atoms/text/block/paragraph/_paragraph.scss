@@ -2,8 +2,8 @@ p {
   @extend %body-font-regular;
 
   margin-bottom: $spacer-md;
-  line-height: $paragraph-line-height-small;
-  font-size: $paragraph-font-size-small;
+  line-height: $paragraph-line-height;
+  font-size: $font-size-base;
 
   &:not([class]) {
     @extend %improved-hyphenation-text;
@@ -11,8 +11,9 @@ p {
 
   &.lead {
     @extend %body-font-italic;
-    line-height: $paragraph-lead-line-height-small;
-    font-size: $paragraph-lead-font-size-small;
+
+    line-height: $paragraph-line-height;
+    font-size: $font-size-sm;
   }
 
   &.display,
@@ -20,8 +21,8 @@ p {
     @extend %heading-font-regular;
 
     margin-bottom: 0;
-    line-height: $paragraph-line-height-small;
-    font-size: $paragraph-font-size-small;
+    line-height: $paragraph-line-height;
+    font-size: $font-size-base;
   }
 
   &.display {
@@ -31,12 +32,10 @@ p {
 
 @media screen and (min-width: $grid-breakpoint-md) {
   p {
-    line-height: $paragraph-line-height;
-    font-size: $paragraph-font-size;
+    font-size: $font-size-sm;
 
     &.lead {
-      line-height: $paragraph-lead-line-height;
-      font-size: $paragraph-lead-font-size;
+      font-size: $font-size-md;
     }
   }
 }

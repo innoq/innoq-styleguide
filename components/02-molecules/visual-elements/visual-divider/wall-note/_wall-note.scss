@@ -22,7 +22,7 @@ $big-content-teaser-height-md: ms(40);
 .wall-note__heading {
   @extend %h1;
   text-align: center;
-  font-size: $h2-font-size;
+  font-size: $font-size-xxl
 }
 
 .wall-note__subheading {
@@ -32,8 +32,7 @@ $big-content-teaser-height-md: ms(40);
 .wall-note__text {
   @extend %body-font-italic;
 
-  line-height: $wall-note-text-line-height-small;
-  font-size: $wall-note-text-font-size-small;
+  font-size: $font-size-sm;
   // IE11 Hack
   // sass-lint:disable no-vendor-prefixes
   @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
@@ -41,39 +40,36 @@ $big-content-teaser-height-md: ms(40);
   }
 }
 
-
 //Background images for topic header
 .wall-note-bg-image-girl {
   @extend %centered-background-image;
-  background-image: asset-url('visual-header-girl.jpg');
-
+  background-image: asset-url("visual-header-girl.jpg");
 }
 
 .wall-note-bg-image-medusa {
   @extend %centered-background-image;
-  background-image: asset-url('visual-header-medusa.jpg');
+  background-image: asset-url("visual-header-medusa.jpg");
 }
 
 .wall-note-bg-image-ice {
   @extend %centered-background-image;
-  background-image: asset-url('visual-header-ice.jpg');
+  background-image: asset-url("visual-header-ice.jpg");
 }
 
 .wall-note-bg-image-igel {
   @extend %centered-background-image;
-  background-image: asset-url('visual-header-igel-1444.jpg');
+  background-image: asset-url("visual-header-igel-1444.jpg");
 }
 
 .wall-note-bg-image-koralle {
   @extend %centered-background-image;
-  background-image: asset-url('visual-header-koralle.jpg');
+  background-image: asset-url("visual-header-koralle.jpg");
 }
 
 .wall-note-bg-image-workshop {
   @extend %centered-background-image;
-  background-image: asset-url('visual-workshop-06.jpg');
+  background-image: asset-url("visual-workshop-06.jpg");
 }
-
 
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -82,7 +78,6 @@ $big-content-teaser-height-md: ms(40);
   }
 
   .wall-note__text {
-    line-height: $wall-note-text-line-height;
-    font-size: $wall-note-text-font-size;
+    font-size: $font-size-lg;
   }
 }

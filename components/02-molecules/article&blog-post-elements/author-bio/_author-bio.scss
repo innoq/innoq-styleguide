@@ -97,6 +97,7 @@ $author-text-margin: 0.18rem;
   @extend %heading-font-regular;
   @extend %link-unstyled;
 
+  line-height: $paragraph-line-height;
   font-size: $font-size-base;
   hyphens: none;
 }

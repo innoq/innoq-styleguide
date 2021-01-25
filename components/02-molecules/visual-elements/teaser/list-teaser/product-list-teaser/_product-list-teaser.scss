@@ -25,35 +25,35 @@
 .product-list-teaser__cta {
   @extend %block-link;
   @extend %heading-font-heavy;
+
   background: $list-teaser-product-background-color-cta;
   padding: $spacer-xxs;
   text-align: center;
-  line-height: $base-line-height;
-  color: $brand-white;
+  color: $list-teaser-product-color-cta;
   font-size: $font-size-xs;
 }
 
 .product-list-teaser__caption {
   @extend %teaser-caption;
+
   margin-bottom: $spacer-sm;
   height: $spacer-md;
+  color: $list-teaser-product-caption-color;
 }
 
 .product-list-teaser__headline {
   margin-bottom: $spacer-sm;
-  color: $list-teaser-headline-color;
+  color: $list-teaser-product-headline-color;
 }
 
 .product-list-teaser__text {
   @extend %body-font-italic;
-  margin-bottom: $spacer-base;
-  line-height: $paragraph-lead-line-height-small;
-  font-size: $paragraph-lead-font-size-small;
+
+  font-size: $font-size-sm;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .product-list-teaser__text {
-    line-height: $teaser-text-line-height-italic;
-    font-size: $teaser-text-font-size-italic;
+    font-size: $font-size-base;
   }
 }

@@ -9,10 +9,19 @@
   }
 
   .standard-header__intro__label {
+    background-color: $brand-gray;
     color: $brand-yellow;
   }
 
+  .standard-header__intro {
+    background-color: $brand-white;
+    color: $brand-gray;
+  }
+
+  h3,
+  .standard-header__intro__text,
   .standard-header__title,
+  .standard-header__subtitle,
   .standard-header__type {
     color: $brand-gray;
   }
@@ -23,6 +32,10 @@
     &:hover,
     &:focus {
       color: $brand-gray;
+    }
+
+    .icon-svg {
+      background: $brand-gray;
     }
 
     .icon-svg:hover,

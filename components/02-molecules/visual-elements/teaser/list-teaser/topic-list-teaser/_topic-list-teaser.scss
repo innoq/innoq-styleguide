@@ -1,5 +1,5 @@
-$gradient-from: rgba(0, 0, 0, .4);
-$gradient-to: rgba(0, 0, 0, .1);
+$gradient-from: rgba(0, 0, 0, 0.4);
+$gradient-to: rgba(0, 0, 0, 0.1);
 $topic-teaser-height: ms(36);
 
 .topic-teaser {
@@ -25,18 +25,20 @@ $topic-teaser-height: ms(36);
 
 .topic-teaser__text {
   @extend %teaser-text-italic;
+
   margin-bottom: $spacer-base;
-  font-size: $teaser-text-font-size-italic-small;
+  font-size: $font-size-base;
 }
 
 .topic-teaser__header {
   margin-bottom: $spacer-md;
   color: $topic-teaser-body-color;
-  font-size: $topic-teaser-header-font-size-small;
+  font-size: $font-size-xl;
 }
 
 .topic-teaser__caption {
   @extend %teaser-caption;
+
   margin-bottom: $spacer-lg;
   height: $spacer-md;
 }
@@ -47,23 +49,23 @@ $topic-teaser-height: ms(36);
 
 // Background images for topic header
 .topic-list-teaser-bg-image-girl {
-  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-girl.jpg');
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url("visual-header-girl.jpg");
 }
 
 .topic-list-teaser-bg-image-medusa {
-  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-medusa.jpg');
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url("visual-header-medusa.jpg");
 }
 
 .topic-list-teaser-bg-image-ice {
-  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-ice.jpg');
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url("visual-header-ice.jpg");
 }
 
 .topic-list-teaser-bg-image-igel {
-  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-igel.jpg');
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url("visual-header-igel.jpg");
 }
 
 .topic-list-teaser-bg-image-koralle {
-  background-image: radial-gradient($gradient-from, $gradient-to), asset-url('visual-header-koralle.jpg');
+  background-image: radial-gradient($gradient-from, $gradient-to), asset-url("visual-header-koralle.jpg");
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -73,11 +75,11 @@ $topic-teaser-height: ms(36);
 
   .topic-teaser__header {
     margin-bottom: $spacer-base;
-    font-size: $topic-teaser-header-font-size;
+    font-size: $font-size-xxxl;
   }
 
   .topic-teaser__text {
-    font-size: $teaser-text-font-size-italic-big;
+    font-size: $font-size-md;
   }
 }
 

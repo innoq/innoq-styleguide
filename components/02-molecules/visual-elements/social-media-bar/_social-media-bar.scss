@@ -8,6 +8,11 @@
   & + & {
     margin-left: $spacer-md;
   }
+
+  .icon-svg:hover,
+  .icon-svg:focus {
+    background: $brand-white;
+  }
 }
 
 .social-media-bar__link {

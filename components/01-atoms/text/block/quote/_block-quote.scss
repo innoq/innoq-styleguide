@@ -12,8 +12,8 @@ blockquote:not([class]),
   &,
   & > p {
     @extend %body-font-italic;
-    line-height: $base-line-height;
-    font-size: $paragraph-font-size;
+    line-height: $paragraph-line-height;
+    font-size: $font-size-sm;
   }
 
   @media screen and (min-width: $grid-breakpoint-md) {

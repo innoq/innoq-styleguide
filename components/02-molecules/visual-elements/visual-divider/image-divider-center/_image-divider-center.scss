@@ -13,8 +13,7 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
     margin-bottom: $spacer-md;
     padding: 0 $spacer-md;
     text-align: center;
-    line-height: $standard-header-title-line-height;
-    font-size: $standard-header-title-font-size-small;
+    font-size: $font-size-xxl;
   }
 }
 
@@ -25,7 +24,7 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
   flex-direction: column;
   align-items: center;
   margin-top: $spacer-md;
-  background-color: $standard-header-intro-bg;
+  background-color: $image-divider-center-bg-color;
   padding: $spacer-md;
   max-width: 630px;
   text-align: center;
@@ -35,9 +34,8 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
 .image-divider-center__textbox__text {
   @extend %body-font-italic;
 
-  line-height: $standard-header-intro-line-height-small;
-  color: $brand-red;
-  font-size: $standard-header-intro-font-size-small;
+  color: $image-divider-center-color;
+  font-size: $font-size-sm;
   // IE11 Hack
   // sass-lint:disable no-vendor-prefixes
   @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
@@ -46,7 +44,7 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
 }
 
 .image-divider-center-bg {
-  background-image: asset-url('visual-culture-03.jpg');
+  background-image: asset-url("visual-culture-03.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -56,7 +54,6 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
   @extend %image-divider-center-bg-text-box;
 }
 
-
 @media screen and (min-width: $grid-breakpoint-md) {
   .image-divider-center {
     margin-bottom: $divider-center-textbox-offset;
@@ -64,7 +61,7 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
 
   .image-divider-center__title {
     margin-bottom: $spacer-lg;
-    font-size: $standard-header-title-font-size;
+    font-size: $font-size-xxxxl;
   }
 
   .image-divider-center__textbox {
@@ -74,7 +71,6 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
   }
 
   .image-divider-center__textbox__text {
-    line-height: $standard-header-intro-line-height;
-    font-size: $standard-header-intro-font-size;
+    font-size: $font-size-lg;
   }
 }

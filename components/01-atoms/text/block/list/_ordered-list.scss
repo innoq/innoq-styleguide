@@ -16,12 +16,12 @@ ol:not([class]) {
 
   margin-bottom: $spacer-md;
   line-height: $paragraph-line-height;
-  font-size: $paragraph-font-size-small;
+  font-size: $font-size-base;
   counter-reset: number;
 
   @media screen and (min-width: $grid-breakpoint-md) {
     line-height: $paragraph-line-height;
-    font-size: $paragraph-font-size;
+    font-size: $font-size-sm;
   }
 
   & > li {
@@ -38,7 +38,7 @@ ol:not([class]) {
       width: $number-space;
       text-align: right;
       line-height: $paragraph-line-height;
-      font-size: $paragraph-font-size-small;
+      font-size: $font-size-base;
       content: counter(number);
       counter-increment: number;
       color: $bullet-list-color-secondary;
@@ -46,7 +46,7 @@ ol:not([class]) {
       @media screen and (min-width: $grid-breakpoint-md) {
         top: -0.23rem;
         line-height: $paragraph-line-height;
-        font-size: $paragraph-font-size;
+        font-size: $font-size-sm;
       }
     }
   }
@@ -56,11 +56,11 @@ ol:not([class]) {
     // to blend into the outer list.
     margin-top: $spacer-xs;
     line-height: $paragraph-line-height;
-    font-size: $paragraph-font-size-small;
+    font-size: $font-size-base;
 
     @media screen and (min-width: $grid-breakpoint-md) {
       line-height: $paragraph-line-height;
-      font-size: $paragraph-font-size;
+      font-size: $font-size-sm;
     }
 
     &,

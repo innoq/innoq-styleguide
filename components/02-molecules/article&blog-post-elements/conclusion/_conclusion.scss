@@ -1,3 +1,5 @@
+$conclusion-border-size: ms(5);
+
 //
 // Conclusion
 //
@@ -11,12 +13,12 @@
 
 .conclusion-headline {
   color: $conclusion-headline-color;
-  font-size: $font-size-xl;
+  font-size: $font-size-xxxl;
 }
 
 .conclusion-subheadline {
   color: $conclusion-subheadline-color;
-  font-size: $font-size-md;
+  font-size: $font-size-lg;
 }
 
 .conclusion-text {
@@ -50,11 +52,11 @@
   }
 
   .conclusion-headline {
-    font-size: $font-size-xxl;
+    font-size: $font-size-xxxxl;
   }
 
   .conclusion-subheadline {
-    font-size: $font-size-lg;
+    font-size: $font-size-xl;
   }
 }
 

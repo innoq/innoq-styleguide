@@ -28,7 +28,7 @@ $staff-header-bg-gray: #f6f6f6;
 
 .staff-header-quote--text {
   color: $staff-header-quote-color;
-  font-size: $font-size-lg;
+  font-size: $font-size-xl;
 }
 
 .staff-header-quote--author {
@@ -52,7 +52,7 @@ $staff-header-bg-gray: #f6f6f6;
   margin-bottom: $spacer-xs;
   text-transform: uppercase;
   color: $staff-header-intro-text-color;
-  font-size: $font-size-lg;
+  font-size: $font-size-xl;
 }
 
 .staff-intro--job-title {
@@ -60,7 +60,7 @@ $staff-header-bg-gray: #f6f6f6;
 
   margin-bottom: $spacer-xs;
   color: $staff-header-intro-text-color;
-  font-size: $font-size-md;
+  font-size: $font-size-lg;
 }
 
 .staff-intro--text {
@@ -113,7 +113,7 @@ $staff-header-bg-gray: #f6f6f6;
   }
 
   .staff-header-quote--text {
-    font-size: $font-size-xl;
+    font-size: $font-size-xxxl;
   }
 
   .staff-intro {
@@ -132,7 +132,7 @@ $staff-header-bg-gray: #f6f6f6;
 
   .staff-intro--text {
     padding-bottom: $spacer-lg;
-    font-size: $font-size-md;
+    font-size: $font-size-lg;
   }
 
   .staff-intro--social {

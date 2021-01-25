@@ -27,22 +27,20 @@ $big-content-teaser-height-md: ms(38);
     width: 100%;
     height: 100%;
   }
-
 }
 
 .big-content-teaser__headline {
   @extend %heading-font-heavy;
 
-  line-height: $big-content-teaser-headline-line-height-small;
   color: $big-content-teaser-headline-color;
-  font-size: $big-content-teaser-headline-font-size-small;
+  font-size: $font-size-lg;
 }
 
 .big-content-teaser__text {
   @extend %heading-font-regular;
 
-  line-height: $big-content-teaser-text-line-height-small;
-  font-size: $big-content-teaser-text-font-size-small;
+  color: $big-content-teaser-text-color;
+  font-size: $font-size-xs;
   hyphens: auto;
 }
 
@@ -58,20 +56,19 @@ $big-content-teaser-height-md: ms(38);
   }
 }
 
-
 // Variations
 .big-content-teaser--inverted {
-  background-color: $content-teaser-inverted-bg;
-  color: $content-teaser-inverted-color;
+  background-color: $big-content-teaser-bg-color-secondary;
+  color: $big-content-teaser-text-color;
 
-  .big-content-teaser__headline--inverted {
+  .big-content-teaser__headline--inverted,
+  .big-content-teaser__text {
     color: $big-content-teaser-headline-inverted-color;
   }
 }
 
 .big-content-teaser--colored {
-  background-color: $content-teaser-colored-bg;
-  color: $content-teaser-colored-color;
+  background-color: $big-content-teaser-bg-color-primary;
 }
 
 .big-content-teaser--image {
@@ -88,30 +85,29 @@ $big-content-teaser-height-md: ms(38);
 
 //Background images for topic header
 .big-content-teaser-bg-image-girl {
-  background-image: asset-url('visual-header-girl.jpg');
+  background-image: asset-url("visual-header-girl.jpg");
   background-position: center;
 }
 
 .big-content-teaser-bg-image-medusa {
-  background-image: asset-url('visual-header-medusa.jpg');
+  background-image: asset-url("visual-header-medusa.jpg");
   background-position: center;
 }
 
 .big-content-teaser-bg-image-ice {
-  background-image: asset-url('visual-header-ice.jpg');
+  background-image: asset-url("visual-header-ice.jpg");
   background-position: center;
 }
 
 .big-content-teaser-bg-image-igel {
-  background-image: asset-url('visual-header-igel-1444.jpg');
+  background-image: asset-url("visual-header-igel-1444.jpg");
   background-position: center;
 }
 
 .topic-header-bg-image-koralle {
-  background-image: asset-url('visual-header-koralle.jpg');
+  background-image: asset-url("visual-header-koralle.jpg");
   background-position: center;
 }
-
 
 // Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -124,13 +120,11 @@ $big-content-teaser-height-md: ms(38);
   }
 
   .big-content-teaser__headline {
-    line-height: $big-content-teaser-headline-line-height;
-    font-size: $big-content-teaser-headline-font-size-md;
+    font-size: $font-size-xl;
   }
 
   .big-content-teaser__text {
-    line-height: $big-content-teaser-text-line-height;
-    font-size: $big-content-teaser-text-font-size;
+    font-size: $font-size-sm;
   }
 
   .big-content-teaser--image {
@@ -147,6 +141,6 @@ $big-content-teaser-height-md: ms(38);
   }
 
   .big-content-teaser__headline {
-    font-size: $big-content-teaser-headline-font-size;
+    font-size: $font-size-xxxl;
   }
 }

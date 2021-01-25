@@ -1,9 +1,10 @@
 .form-label {
   @extend %heading-font-regular;
+
   display: block;
   width: 100%;
-  line-height: $paragraph-line-height;
   font-size: $font-size-base;
+  color: $form-label-color;
 
   &--emphasized {
     @extend %heading-font-bold;

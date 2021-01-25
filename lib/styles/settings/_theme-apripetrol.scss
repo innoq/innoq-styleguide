@@ -3,6 +3,7 @@
 //
 $brand-primary: $brand-apricot;
 $brand-secondary: $brand-petrol;
+$brand-secondary-75: $brand-petrol-75;
 $brand-interaction: $brand-apricot;
 $brand-hover: $brand-apricot-transparent;
 $brand-text: $brand-gray;
@@ -57,6 +58,9 @@ $form-control-focus-color: $brand-white;
 $form-control-focus-bg: $brand-secondary;
 $form-control-invalid-border-color: $brand-danger;
 $form-label-invalid-color: $brand-danger;
+$form-label-color: $brand-secondary;
+$form-legend-color: $brand-primary;
+$alert-color: $brand-white;
 
 // Form (inverted)
 $form-control-inverted-border-color: $brand-white;
@@ -81,19 +85,22 @@ $search-field-color: $brand-interaction;
 
 // Search result
 $search-result-color: $brand-secondary;
-$search-result-border-color: $brand-gray-50;
+$search-result-border-color: $brand-primary;
 
 // Paginator
 $paginator-focus-color: $brand-interaction;
 
 // Headlines
 $h1-color: $brand-primary;
-$h2-color: $brand-text;
-$h3-color: $brand-text;
-$h4-color: $brand-text;
-$h5-color: $brand-text;
-$h6-color: $brand-text;
+$h2-color: $brand-secondary;
+$h3-color: $brand-secondary;
+$h4-color: $brand-secondary;
+$h5-color: $brand-secondary;
+$h6-color: $brand-secondary;
 
+$teaser-section-heading-border-color: $brand-secondary;
+
+$section-heading-border-color: $brand-primary;
 // Inline
 $link-color: $brand-text;
 $link-hover-color: $brand-interaction;
@@ -238,82 +245,102 @@ $wall-note-content-bg-color: $brand-white;
 
 // Content Teaser
 $content-teaser-default-bg: $brand-white;
-$content-teaser-default-color: $brand-text;
-$content-teaser-inverted-bg: $brand-text;
+$content-teaser-default-color: $brand-secondary;
+$content-teaser-inverted-bg: $brand-secondary;
 $content-teaser-inverted-color: $brand-white;
 $content-teaser-colored-bg: $brand-interaction;
-$content-teaser-colored-color: $brand-text;
+$content-teaser-colored-color: $brand-secondary;
 $content-teaser-accent-color: $brand-interaction;
 
 $big-content-teaser-headline-inverted-color: $brand-primary;
-$big-content-teaser-headline-color: $brand-text;
+$big-content-teaser-headline-color: $brand-secondary;
+$big-content-teaser-text-color: $brand-secondary;
 $big-content-teaser-bg-color: $brand-white;
+$big-content-teaser-bg-color-primary: $brand-primary;
+$big-content-teaser-bg-color-secondary: $brand-secondary;
 $big-content-teaser-image-headline-color: $brand-primary;
 
 // Full width default teaser
-$default-full-width-teaser-body-bg: $brand-white;
-$default-full-width-teaser-body-color: $brand-text;
+$full-width-teaser-body-bg: $brand-white;
+$full-width-teaser-body-color: $brand-secondary;
 
 // Case Teaser
 $case-teaser-body-bg: $brand-white;
-$case-teaser-body-color: $brand-text;
+$case-teaser-body-color: $brand-secondary;
 
 $case-tile-teaser-body-bg-color: $brand-white;
+$case-tile-teaser-text-color: $brand-secondary;
 
 // Topic Teaser
 $topic-teaser-body-color: $brand-white;
 
 // List Teaser
-$list-teaser-headline-color: $brand-primary;
-$list-teaser-border-color: $brand-text;
+$list-teaser-headline-color: $brand-secondary;
+$list-teaser-border-color: $brand-secondary;
 $list-teaser-background-color: $brand-white;
+$list-teaser-caption-color: $brand-primary;
 
 $list-teaser-abstract-primary-bg-color: $brand-primary;
-$list-teaser-abstract-secondary-bg-color: $brand-text;
-$list-teaser-abstract-primary-text-color: $brand-text;
-$list-teaser-abstract-secondary-text-color: $brand-white;
-$list-teaser-abstract-primary-drop-caps-color: $brand-white;
+$list-teaser-abstract-secondary-bg-color: $brand-secondary;
+$list-teaser-abstract-primary-text-color: $brand-secondary;
+$list-teaser-abstract-secondary-text-color: $brand-primary;
+$list-teaser-abstract-primary-drop-caps-color: $brand-secondary;
 $list-teaser-abstract-secondary-drop-caps-color: $brand-primary;
-$list-teaser-abstract-secondary-author-name-color: $brand-white;
+$list-teaser-abstract-primary-author-name-color: $brand-secondary;
+$list-teaser-abstract-secondary-author-name-color: $brand-primary;
 $list-teaser-abstract-caption-color: $brand-white;
 $list-teaser-abstract-headline-color: $brand-white;
 
-$list-teaser-event-headline-color: $brand-text;
-$list-teaser-event-subheadline-color: $brand-primary;
+$list-teaser-event-headline-color: $brand-secondary;
+$list-teaser-event-subheadline-color: $brand-secondary;
 
-$list-teaser-product-border-color: $brand-red;
+$list-teaser-product-headline-color: $brand-primary;
+$list-teaser-product-caption-color: $brand-secondary;
+$list-teaser-product-border-color: $brand-secondary;
 $list-teaser-product-border-color-muted: $brand-gray-25;
 $list-teaser-product-background-color: $brand-white;
-$list-teaser-product-background-color-cta: $brand-red;
+$list-teaser-product-background-color-cta: $brand-secondary;
+$list-teaser-product-color-cta: $brand-primary;
+
+$list-teaser-training-bg-color-primary: $brand-primary;
+$list-teaser-training-bg-color-secondary: $brand-secondary;
+$list-teaser-training-text-color-primary: $brand-white;
+$list-teaser-training-text-color-secondary: $brand-white;
 
 // Simple Teaser
-$simple-teaser-bg: $brand-text;
-$simple-teaser-color: $brand-white;
+$simple-teaser-bg: $brand-secondary;
+$simple-teaser-color: $brand-primary;
 $simple-teaser-link-focus-color: $brand-primary;
 
 // Podcast Teaser
-$podcast-teaser-default-bg: $brand-text;
-$podcast-teaser-default-color: $brand-white;
+$podcast-teaser-default-bg: $brand-primary;
+$podcast-teaser-light-bg: $brand-white;
+$podcast-teaser-default-color: $brand-secondary;
+$podcast-teaser-default-color-secondary: $brand-primary;
 $podcast-teaser-overlay-color: $brand-primary;
+$podcast-teaser-overlay-color-secondary: $brand-secondary-75;
 
 // Security-Podcast Teaser
 $podcast-teaser-default-bg-sec: $brand-gray;
 $podcast-teaser-default-color-sec: $brand-white;
 $podcast-teaser-overlay-color-sec: $brand-yellow;
 
+$static-tile-teaser-text-color: $brand-secondary;
+
 // Project Index
-$project-index-text-color: $brand-text;
+$project-index-text-color: $brand-secondary;
+$project-index-title-color: $brand-secondary;
 $project-index-highlight-color: $brand-interaction;
-$project-index-text-inverted-color: $brand-white;
+$project-index-text-inverted-color: $brand-primary;
 
 // Dropdown
 $dropdown-menu-body-bg: $brand-text;
 $dropdown-link-hover-color: $brand-interaction;
 
 // Footer
-$footer-body-bg: $brand-text;
+$footer-body-bg: $brand-secondary;
 $footer-color: $brand-white;
-$footer-heading-color: $brand-interaction;
+$footer-heading-color: $brand-primary;
 $footer-link-hover-color: $brand-interaction;
 
 // Eyecatcher
@@ -328,15 +355,19 @@ $newsletter-optin-color: $brand-white;
 $standard-header-title-color: $brand-white;
 $standard-header-subtitle-color: $brand-white;
 $standard-header-type-color: $brand-white;
-$standard-header-type-underline-color: $brand-red;
-$standard-header-intro-bg: $brand-white;
+$standard-header-type-underline-color: $brand-primary;
+$standard-header-intro-bg: $brand-secondary;
 $standard-header-intro-label-color: $brand-white;
-$standard-header-intro-label-bg: $brand-text;
+$standard-header-intro-label-bg: $brand-primary;
 $standard-header-intro-label-alt-bg: $brand-red;
-$standard-header-inverted-title-color: $brand-text;
+$standard-header-intro-text-color: $brand-white;
+$standard-header-inverted-title-color: $brand-secondary;
 $standard-header-inverted-subtitle-color: $brand-interaction;
-$standard-header-inverted-type-color: $brand-text;
-$standard-header-podcast-subtitle-color: $brand-text;
+$standard-header-inverted-type-color: $brand-secondary;
+$standard-header-podcast-subtitle-color: $brand-secondary;
+$standard-header-podcast-overlay-color: $brand-primary;
+$standard-header-podcast-intro-label-bg-color: $brand-white;
+$standard-header-podcast-intro-label-color: $brand-secondary;
 
 $staff-header-quote-color: $brand-primary;
 $staff-header-quote-author-color: $brand-primary;
@@ -353,8 +384,8 @@ $landing-page-header-intro-text-color: $brand-secondary;
 $landing-page-header-intro-bg-color: $brand-white;
 $landing-page-header-inverted-text-color: $brand-white;
 
-$topic-header-intro-text-color: $brand-text;
-$topic-header-intro-bg-color: $brand-white;
+$topic-header-intro-text-color: $brand-primary;
+$topic-header-intro-bg-color: $brand-secondary;
 
 $claim-header-bg-color: $brand-primary;
 $claim-header-type-color: $brand-secondary;
@@ -364,8 +395,12 @@ $claim-header-divider-color: $brand-secondary;
 $image-header-bg-color: $brand-primary;
 $image-header-content-bg-color: $brand-white;
 
+$text-header-bg-color: $brand-secondary;
+$text-header-color: $brand-primary;
+
 // Toolbar
 $toolbar-link-hover-color: $brand-interaction;
+$toolbar-link-color: $brand-secondary;
 
 // Dialog banner
 // $dialog-banner-body-background: $brand-interaction;
@@ -377,3 +412,22 @@ $card-headline-color: $brand-primary;
 $card-subheadline-color: $brand-white;
 $card-bg-color: $brand-secondary;
 $card-text-color: $brand-white;
+
+// Paginator
+$paginator-text-color: $brand-secondary;
+$paginator-active-color: $brand-interaction;
+
+// Service Intro
+$service-intro-text-color: $brand-secondary;
+
+// image-divider
+$image-divider-center-bg-color: $brand-white;
+$image-divider-center-color: $brand-secondary;
+
+$image-divider-bg-color: $brand-white;
+$image-divider-right-color: $brand-secondary;
+
+$triplet-divider-bg-color-primary: $brand-primary;
+$triplet-divider-bg-color-secondary: $brand-secondary;
+$triplet-divider-color-primary: $brand-primary;
+$triplet-divider-color-secondary: $brand-secondary;

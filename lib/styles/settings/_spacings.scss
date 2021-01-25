@@ -45,17 +45,7 @@ $grid-page-layout-content-width-xl: 50rem; // 800px;
 $grid-page-layout-leftright-width: (($grid-page-layout-width - $grid-page-layout-content-width-xl) / 2) -
   (3 * $grid-page-layout-column-gap);
 
-//
-// Article
-//
-$article-intro-margin: $spacer-lg;
 
-//
-// Conclusion
-//
-$conclusion-border-size: ms(5);
-
-//
 // Navbar
 //
 $navbar-padding: $spacer-md;
