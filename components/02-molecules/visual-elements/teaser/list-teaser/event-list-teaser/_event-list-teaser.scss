@@ -61,6 +61,10 @@ $event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
   margin-bottom: $spacer-xs;
   color: $list-teaser-event-subheadline-color;
   font-size: $font-size-sm;
+
+  .icon-svg {
+    margin-left: $spacer-xs;
+  }
 }
 
 //

@@ -87,8 +87,8 @@
 }
 
 .client-projects__show-more-btn {
-  img {
-    vertical-align: middle;
+  .icon-svg {
+    margin-left: $spacer-xxs;
   }
 }
 

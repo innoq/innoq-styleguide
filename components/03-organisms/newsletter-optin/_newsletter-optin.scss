@@ -1,21 +1,20 @@
 .newsletter-optin {
-  $gradient-from: rgba(0, 0, 0, .6);
-  $gradient-to: rgba(0, 0, 0, .3);
+  $gradient-from: rgba(0, 0, 0, 0.6);
+  $gradient-to: rgba(0, 0, 0, 0.3);
 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient($gradient-from, $gradient-to), asset-url('visual-newsletter.jpg');
+  background-image: linear-gradient($gradient-from, $gradient-to), asset-url("visual-newsletter.jpg");
   background-size: cover;
   padding: $spacer-lg;
   overflow: hidden;
   color: $newsletter-optin-color;
 
   .form-label {
-  color: $newsletter-optin-color;
-}
-
+    color: $newsletter-optin-color;
+  }
 }
 
 .newsletter-optin__title {

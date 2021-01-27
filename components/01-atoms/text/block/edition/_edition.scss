@@ -2,40 +2,39 @@ $edition-font-size: $font-size-base;
 
 //Edition Label for Artist Collabo
 .edition-section {
-  @extend %heading-font-bold;
-
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-around;
-  margin-right: auto;
-  margin-left: auto;
-  max-width: 250px;
+  margin-bottom: $spacer-sm;
   text-align: center;
 }
 
 .edition-separator {
   transform: rotate(90deg);
-  margin-top: $spacer-xl;
+  margin-bottom: $spacer-lg;
   border: 0;
   background-color: $brand-gray;
-  width: 3 * $spacer-base;
+  width: $spacer-xl;
   height: 1px;
 }
 
 .edition {
-  margin-top: $spacer-xl;
+  @extend %heading-font-bold;
+
+  margin-bottom: $spacer-xs;
   text-transform: uppercase;
   color: $brand-gray;
-  font-size: $edition-font-size;
+  font-size: $font-size-md;
 }
 
 .edition-date {
+  @extend %heading-font-heavy;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: $spacer-md;
-  padding: $spacer-sm $spacer-xl 0;
-  font-size: 1.5 * $edition-font-size;
+  font-size: $font-size-xxl;
 
   &--edition-1 {
     color: $brand-blue;
@@ -61,13 +60,27 @@ $edition-font-size: $font-size-base;
 
 // Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
+  .edition-section {
+    margin-bottom: $spacer-xxs;
+  }
+
+  .edition {
+    font-size: $font-size-lg;
+  }
+
+  .edition-separator {
+    margin-bottom: $spacer-xl;
+    width: ms(20);
+  }
+
   .edition-date {
     flex-direction: row;
-    font-size: $font-size-xl;
+    font-size: $font-size-xxxxl;
   }
 
   .edition-date-separator {
     transform: rotate(0deg);
-    margin: 0 $spacer-xs;
+    height: 8px;
+    margin: 0 $spacer-xxs;
   }
 }

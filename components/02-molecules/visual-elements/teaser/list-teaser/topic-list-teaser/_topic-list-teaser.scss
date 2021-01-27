@@ -45,6 +45,10 @@ $topic-teaser-height: ms(36);
 
 .topic-teaser__cta {
   @extend %heading-font-bold;
+
+  .icon-svg {
+    margin-left: $spacer-xs;
+  }
 }
 
 // Background images for topic header

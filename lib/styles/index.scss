@@ -146,9 +146,6 @@
 // Dropdown
 @import "../components/02-molecules/dropdown/dropdown";
 
-// Navbar
-@import "../components/02-molecules/navbar/navbar";
-
 // Search
 @import "../components/02-molecules/search/search-form/search-form";
 @import "../components/02-molecules/search/search-result/search-result";
@@ -183,6 +180,7 @@
 @import "../components/02-molecules/visual-elements/teaser/list-teaser/abstract-list-teaser/abstract-list-teaser";
 @import "../components/02-molecules/visual-elements/teaser/list-teaser/case-list-teaser/case-list-teaser";
 @import "../components/02-molecules/visual-elements/teaser/list-teaser/event-list-teaser/event-list-teaser";
+@import "../components/02-molecules/visual-elements/teaser/list-teaser/image-list-teaser/image-list-teaser";
 @import "../components/02-molecules/visual-elements/teaser/list-teaser/podcast-list-teaser/podcast-list-teaser";
 @import "../components/02-molecules/visual-elements/teaser/list-teaser/project-list-teaser/project-list-teaser";
 @import "../components/02-molecules/visual-elements/teaser/list-teaser/simple-list-teaser/simple-list-teaser";
@@ -214,6 +212,7 @@
 @import "../components/03-organisms/article-intro/article-intro";
 @import "../components/03-organisms/form/form";
 @import "../components/03-organisms/footer/footer";
+@import "../components/03-organisms/navbar/navbar";
 @import "../components/03-organisms/newsletter-optin/newsletter-optin";
 @import "../components/03-organisms/search-result-list/search-result-list";
 
