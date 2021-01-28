@@ -3,8 +3,8 @@
 
   display: block;
   width: 100%;
-  font-size: $font-size-base;
   color: $form-label-color;
+  font-size: $font-size-base;
 
   &--emphasized {
     @extend %heading-font-bold;

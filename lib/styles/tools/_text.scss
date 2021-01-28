@@ -227,13 +227,14 @@
 //
 
 // @supports: put -webkit- at the end or sass will kill it, kills -moz- anyway
+// sass-lint:disable no-vendor-prefixes
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .punch-in,
   %punch-in {
     background-clip: text;
     background-position: center;
     color: transparent;
-
+    // sass-lint:disable-block no-vendor-prefixes
     -webkit-background-clip: text;
   }
 }

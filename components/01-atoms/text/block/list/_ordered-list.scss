@@ -38,10 +38,10 @@ ol:not([class]) {
       width: $number-space;
       text-align: right;
       line-height: $paragraph-line-height;
+      color: $bullet-list-color-secondary;
       font-size: $font-size-base;
       content: counter(number);
       counter-increment: number;
-      color: $bullet-list-color-secondary;
 
       @media screen and (min-width: $grid-breakpoint-md) {
         top: -0.23rem;

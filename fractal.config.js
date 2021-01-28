@@ -19,7 +19,9 @@ const fractalTheme = require('@frctl/mandelbrot')({
   styles: [
     'default',
     '/assets/styleguide-theme.css'
-  ]
+  ],
+  favicon: '/assets/favicons/edition-02/favicon-apricot/favicon.svg'
+
 })
 fractalTheme.addLoadPath(path.join(__dirname, '/theme-overrides'))
 
