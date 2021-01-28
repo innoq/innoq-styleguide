@@ -7,10 +7,11 @@ $anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing th
 
 .toc__heading {
   @extend %heading-font-heavy;
+
   margin-bottom: $spacer-sm;
   text-transform: uppercase;
-  line-height: $toc-heading-line-height;
-  font-size: $toc-heading-font-size;
+  color: $toc-heading-color;
+  font-size: $font-size-sm;
 }
 
 .toc__list {
@@ -21,8 +22,8 @@ $anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing th
     padding-top: $spacer-xxs;
     padding-bottom: $spacer-xxs;
     padding-left: $spacer-md;
-    line-height: $toc-anchor-line-height;
-    font-size: $toc-anchor-font-size;
+
+    font-size: $font-size-base;
   }
 
   > li + li {
@@ -32,7 +33,8 @@ $anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing th
 
 .toc__anchor {
   @extend %link-unstyled;
-  @include hover-fill($link-hover-color-light, $brand-text, $brand-text);
+  @include hover-fill($link-hover-color-light, $toc-anchor-hover-text-color, $toc-anchor-text-color);
+
   display: inline-block;
   position: relative;
   z-index: 1;
@@ -40,12 +42,11 @@ $anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing th
 
   &::before {
     @extend %icon; // inline-block
+
     position: absolute;
-    top: $spacer-xxs;
     left: -$spacer-md;
     width: $spacer-base;
     color: $brand-interaction;
-    // font-size: $anchor-list-font-size;
     content: $icon-arrow-down;
   }
 }

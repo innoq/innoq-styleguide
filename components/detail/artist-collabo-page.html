@@ -9,7 +9,7 @@
     };
     </script>
     <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
-    <link rel="shortcut icon" href="../../themes/mandelbrot/favicon.ico" type="image/ico">
+    <link rel="shortcut icon" href="../../assets/favicons/edition-02/favicon-apricot/favicon.svg" type="image/ico">
 <style>
     :root {
         
@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=1.7.0" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.6.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.7.0" type="text/css">
 
 
 <title>Artist Collabo Page | INNOQ Styleguide</title>
@@ -36,26 +36,25 @@
 
     <div class="Frame-header">
         <div class="Header">
-    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
-        <div class="Header-navToggleIcon Header-navToggleIcon--open">
-            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+  <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+    <div class="Header-navToggleIcon Header-navToggleIcon--open">
+      <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
 </svg>
 
-        </div>
-        <div class="Header-navToggleIcon Header-navToggleIcon--closed">
-            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    </div>
+    <div class="Header-navToggleIcon Header-navToggleIcon--closed">
+      <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 0h24v24H0z" fill="none"/>
     <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
 </svg>
 
-        </div>
-    </button>
-    <a href="../../index.html" class="Header-title" data-pjax>
-      <img src="../../assets/innoq-logo--whitered.svg" class="theme-brand-logo" alt="INNOQ">
-      <span class="theme-brand-title">Living Styleguide</span>
-    </a>
+    </div>
+  </button>
+  <a href="../../index.html" class="Header-title" data-pjax="data-pjax">
+    <img src="../../assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg" class="theme-brand-logo" alt="INNOQ">
+  </a>
 </div>
 
     </div>
@@ -85,6 +84,9 @@
 
         </a>
     </h1>
+
+    <span class="Pen-preview-size" data-role="preview-size"></span>
+
     
 
 <div class="Status Status--tag">
@@ -184,128 +186,62 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-3d8e7b9c3631387645c35f1fed97b80f-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"main"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">nav-bar</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__inner"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#main"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--skip"</span>&gt;</span>Zum Inhalt springen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__brand"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__brand-link"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"INNOQ"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"logo navbar__logo"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/innoq-logo--whitered.svg"</span> /&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbar-toggle--menu"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only navbar__toggle-state navbar__toggle-state--menu-toggler"</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbar-toggle--search"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only navbar__toggle-state navbar__toggle-state--search-toggler"</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__meta"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--meta"</span>&gt;</span>Newsletter<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--meta"</span>&gt;</span>Kontakt<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--meta navbtn--locale navbtn--active"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Deutsch"</span>&gt;</span>de<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                |<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--meta navbtn--locale"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"English"</span>&gt;</span>en<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__togglers"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"navbar-toggle--menu"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Navigation ein- oder ausblenden"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--menu"</span>&gt;</span>Menü<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--search"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Suche ein- oder ausblenden"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-search"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__primary-nav primary-nav"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav__list"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav__item"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--primary navbtn--active"</span>&gt;</span>Leistungen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav__item"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--primary"</span> <span class="hljs-attr">data-for</span>=<span class="hljs-string">"dropdown__toggle--projekte"</span>&gt;</span>Projekte<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dropdown__toggle--projekte"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only dropdown__checkbox"</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__toggle dropdown__toggle--navbar"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"dropdown__toggle--projekte"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only dropdown__toggle--expanded-text"</span>&gt;</span>ausgeklappt<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only dropdown__toggle--collapsed-text"</span>&gt;</span>eingeklappt<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__list-wrapper dropdown__list-wrapper--navbar"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menu"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Projekte"</span> <span class="hljs-attr">data-origin</span>=<span class="hljs-string">"left"</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__list"</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Softwarearchitektur und -entwicklung<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Strategie- und Technologieberatung<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Entwicklung digitaler Geschäftsmodelle<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav__item"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--primary"</span> <span class="hljs-attr">data-for</span>=<span class="hljs-string">"dropdown__toggle--kultur"</span>&gt;</span>Kultur<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dropdown__toggle--kultur"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only dropdown__checkbox"</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__toggle dropdown__toggle--navbar"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"dropdown__toggle--kultur"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only dropdown__toggle--expanded-text"</span>&gt;</span>ausgeklappt<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only dropdown__toggle--collapsed-text"</span>&gt;</span>eingeklappt<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__list-wrapper dropdown__list-wrapper--navbar"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menu"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Kultur"</span> <span class="hljs-attr">data-origin</span>=<span class="hljs-string">"right"</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__list"</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Strategie- und Technologieberatung<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Entwicklung digitaler Geschäftsmodelle<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Softwarearchitektur und -entwicklung<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Digitale Plattformen und Infrastrukturen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Wissenstransfer, Coaching und Trainings<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav__item"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--primary"</span>&gt;</span>Magazin<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav__item"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--primary"</span>&gt;</span>Termine<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--drill-up"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn__left-icon"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/icons/arrow-medium-left-red.svg"</span> /&gt;</span>
-                    Hauptmenü
-                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">nav-bar</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"standard-header image-header-bg-art-01"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"standard-header__type"</span>&gt;</span>Artist Collaboration<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"standard-header__title"</span>&gt;</span>Artist-in-Residence Program by INNOQ<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"standard-header__intro header-label"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"artist-collabo__subtitle"</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;main&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;artist-collabo-page&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header bg-image-art-01&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__type&quot;</span>&gt;</span>Artist Collaboration<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__title&quot;</span>&gt;</span>Artist-in-Residence Program by INNOQ<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__intro&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>
                 Wir glauben an die bewusste Reflektion zwischen Technik und
                 Gesellschaft.
             <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"standard-header__intro__text"</span>&gt;</span>
-                Das Artist-in-Residence Programm lorem ipsum interessante Themen aus
-                Software-Entwicklung und -Architektur. Das Artist-in-Residence Programm
-                lorem ipsum interessante Themen aus Software-Entwicklung.
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__intro__text&quot;</span>&gt;</span>
+                Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
+                ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket
+                prosciutto buffalo drumstick strip steak capicola short loin.
+                Frankfurter fatback turkey pork chop prosciutto pork ground round tongue
+                chuck doner. Pig venison pork chop shoulder corned beef capicola
+                meatball.
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page-layout-xl--default"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-section"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-separator"</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition"</span>&gt;</span>Edition<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-date"</span>&gt;</span>18
-                <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-date-separator"</span> /&gt;</span>
-                19
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-layout-xl--default&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-section&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-separator&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition&quot;</span>&gt;</span>Edition<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-date edition-date--edition-1&quot;</span>&gt;</span>18
+                <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-date-separator&quot;</span> /&gt;</span>
+                21
             <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"artist-collabo-artwork"</span>&gt;</span>Vertigo in the Face of the Infinite<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"artist-collabo-artist"</span>&gt;</span>Matthew Plummer-Fernandez<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content__image__big"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/visual-header-heads.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Tower"</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Erste INNOQ-Medienkunst-Edition<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-section"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-separator"</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition"</span>&gt;</span>Edition<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-date"</span>&gt;</span>20
-                <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-date-separator edition-date-separator--variant"</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-list-teaser&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-list-teaser__title image-list-teaser__title--01&quot;</span>&gt;</span>
+                Vertigo in the Face of the Infinite
+            <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-list-teaser__subtitle&quot;</span>&gt;</span>Matthew Plummer-Fernandez<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content__image__big&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/bg-images/edition-01/visual-header-heads.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Tower&quot;</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Erste INNOQ-Medienkunst-Edition<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-section&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-separator&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition&quot;</span>&gt;</span>Edition<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-date edition-date--edition-2&quot;</span>&gt;</span>21
+                <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-date-separator edition-date-separator--edition-2&quot;</span> /&gt;</span>
                 jetzt
             <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"artist-collabo-artwork artist-collabo-artwork--variant"</span>&gt;</span>
-            Neuroevolutionary Trails
-        <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"artist-collabo-artist"</span>&gt;</span>Studio Waltz Binaire<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content__image__big"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/edition02-01.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Neuroevolutionary Trails"</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Zweite INNOQ-Medienkunst-Edition<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-list-teaser&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-list-teaser__title image-list-teaser__title--02&quot;</span>&gt;</span>
+                Neuroevolutionary Trails
+            <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-list-teaser__subtitle&quot;</span>&gt;</span>Studio Waltz Binaire<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content__image__big&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/bg-images/edition-02/edition02-canyon-01.jpg&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Neuroevolutionary Trails&quot;</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Zweite INNOQ-Medienkunst-Edition<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span></pre>
         
@@ -315,151 +251,62 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-3d8e7b9c3631387645c35f1fed97b80f-panel-view">
     <code class="Code Code--lang-html hljs">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"main"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">nav-bar</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__inner"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#main"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--skip"</span>&gt;</span>Zum Inhalt springen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__brand"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__brand-link"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"INNOQ"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"logo navbar__logo"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">{context.app.uri(</span>'<span class="hljs-attr">assets</span>/<span class="hljs-attr">innoq-logo--whitered.svg</span>')} /&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbar-toggle--menu"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only navbar__toggle-state navbar__toggle-state--menu-toggler"</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">tabindex</span>=<span class="hljs-string">"-1"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"navbar-toggle--search"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only navbar__toggle-state navbar__toggle-state--search-toggler"</span> /&gt;</span>
-
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__meta"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--meta"</span>&gt;</span>Newsletter<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--meta"</span>&gt;</span>Kontakt<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--meta navbtn--locale navbtn--active"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Deutsch"</span>&gt;</span>de<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> |
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--meta navbtn--locale"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"English"</span>&gt;</span>en<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__togglers"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"navbar-toggle--menu"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Navigation ein- oder ausblenden"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--menu"</span>&gt;</span>Menü<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--search"</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">"Suche ein- oder ausblenden"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-search"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-
-            <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbar__primary-nav primary-nav"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav__list"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav__item"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--primary navbtn--active"</span>&gt;</span>Leistungen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav__item"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--primary"</span> <span class="hljs-attr">data-for</span>=<span class="hljs-string">"dropdown__toggle--projekte"</span>&gt;</span>Projekte<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dropdown__toggle--projekte"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only dropdown__checkbox"</span> /&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__toggle dropdown__toggle--navbar"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"dropdown__toggle--projekte"</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only dropdown__toggle--expanded-text"</span>&gt;</span>ausgeklappt<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only dropdown__toggle--collapsed-text"</span>&gt;</span>eingeklappt<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__list-wrapper dropdown__list-wrapper--navbar"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menu"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Projekte"</span> <span class="hljs-attr">data-origin</span>=<span class="hljs-string">"left"</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__list"</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Softwarearchitektur und -entwicklung<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Strategie- und Technologieberatung<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Entwicklung digitaler Geschäftsmodelle<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav__item"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown"</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--primary"</span> <span class="hljs-attr">data-for</span>=<span class="hljs-string">"dropdown__toggle--kultur"</span>&gt;</span>Kultur<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"checkbox"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">"true"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"dropdown__toggle--kultur"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only dropdown__checkbox"</span> /&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__toggle dropdown__toggle--navbar"</span> <span class="hljs-attr">for</span>=<span class="hljs-string">"dropdown__toggle--kultur"</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only dropdown__toggle--expanded-text"</span>&gt;</span>ausgeklappt<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"sr-only dropdown__toggle--collapsed-text"</span>&gt;</span>eingeklappt<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-                            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__list-wrapper dropdown__list-wrapper--navbar"</span> <span class="hljs-attr">role</span>=<span class="hljs-string">"menu"</span> <span class="hljs-attr">title</span>=<span class="hljs-string">"Kultur"</span> <span class="hljs-attr">data-origin</span>=<span class="hljs-string">"right"</span>&gt;</span>
-                                <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__list"</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Strategie- und Technologieberatung<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Entwicklung digitaler Geschäftsmodelle<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Softwarearchitektur und -entwicklung<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Digitale Plattformen und Infrastrukturen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__item dropdown__item--navbar"</span>&gt;</span>
-                                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"dropdown__link dropdown__link--navbar navbtn"</span>&gt;</span>Wissenstransfer, Coaching und Trainings<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-                            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav__item"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--primary"</span>&gt;</span>Magazin<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"primary-nav__item"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"#"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--primary"</span>&gt;</span>Termine<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn navbtn--drill-up"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"navbtn__left-icon"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">{context.app.uri(</span>'<span class="hljs-attr">assets</span>/<span class="hljs-attr">icons</span>/<span class="hljs-attr">arrow-medium-left-red.svg</span>')} /&gt;</span> Hauptmenü
-                <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-name">nav-bar</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"standard-header image-header-bg-art-01"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"standard-header__type"</span>&gt;</span>Artist Collaboration<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"standard-header__title"</span>&gt;</span>Artist-in-Residence Program by INNOQ<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"standard-header__intro header-label"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"artist-collabo__subtitle"</span>&gt;</span>Wir glauben an die bewusste Reflektion zwischen Technik und Gesellschaft.<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"standard-header__intro__text"</span>&gt;</span>
-                Das Artist-in-Residence Programm lorem ipsum interessante Themen aus Software-Entwicklung und -Architektur. Das Artist-in-Residence Programm lorem ipsum interessante Themen aus Software-Entwicklung.
-            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;main&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;artist-collabo-page&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header bg-image-art-01&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__type&quot;</span>&gt;</span>Artist Collaboration<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__title&quot;</span>&gt;</span>Artist-in-Residence Program by INNOQ<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__intro&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span>&gt;</span>Wir glauben an die bewusste Reflektion zwischen Technik und Gesellschaft.<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__intro__text&quot;</span>&gt;</span>
+                Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
+                ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket
+                prosciutto buffalo drumstick strip steak capicola short loin.
+                Frankfurter fatback turkey pork chop prosciutto pork ground round tongue
+                chuck doner. Pig venison pork chop shoulder corned beef capicola
+                meatball.
+            <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
 
-    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"page-layout-xl--default"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-section"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-separator"</span>/&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition"</span>&gt;</span>Edition<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-date"</span>&gt;</span>18
-                <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-date-separator"</span>/&gt;</span>
-                19
+    <span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-layout-xl--default&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-section&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-separator&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition&quot;</span>&gt;</span>Edition<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-date edition-date--edition-1&quot;</span>&gt;</span>18
+                <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-date-separator&quot;</span> /&gt;</span>
+                21
             <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"artist-collabo-artwork"</span>&gt;</span>Vertigo in the Face of the Infinite<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"artist-collabo-artist"</span>&gt;</span>Matthew Plummer-Fernandez<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content__image__big"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/visual-header-heads.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Tower"</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>
-                Erste INNOQ-Medienkunst-Edition
-            <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-section"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-separator"</span>/&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition"</span>&gt;</span>Edition<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-date"</span>&gt;</span>20
-                <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"edition-date-separator edition-date-separator--variant"</span>/&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-list-teaser&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-list-teaser__title image-list-teaser__title--01&quot;</span>&gt;</span>Vertigo in the Face of the Infinite<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-list-teaser__subtitle&quot;</span>&gt;</span>Matthew Plummer-Fernandez<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content__image__big&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">{context.app.uri(</span>&quot;<span class="hljs-attr">assets</span>/<span class="hljs-attr">bg-images</span>/<span class="hljs-attr">edition-01</span>/<span class="hljs-attr">visual-header-heads.jpg</span>&quot;)} <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Tower&quot;</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>
+                    Erste INNOQ-Medienkunst-Edition
+                <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-section&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-separator&quot;</span> /&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition&quot;</span>&gt;</span>Edition<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-date edition-date--edition-2&quot;</span>&gt;</span>21
+                <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;edition-date-separator edition-date-separator--edition-2&quot;</span> /&gt;</span>
                 jetzt
             <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"artist-collabo-artwork artist-collabo-artwork--variant"</span>&gt;</span>Neuroevolutionary Trails<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"artist-collabo-artist"</span>&gt;</span>Studio Waltz Binaire<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"content__image__big"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"../../assets/edition02-01.jpg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"Neuroevolutionary Trails"</span> /&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>
-                Zweite INNOQ-Medienkunst-Edition
-            <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-list-teaser&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-list-teaser__title image-list-teaser__title--02&quot;</span>&gt;</span>Neuroevolutionary Trails<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image-list-teaser__subtitle&quot;</span>&gt;</span>Studio Waltz Binaire<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content__image__big&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">{context.app.uri(</span>&quot;<span class="hljs-attr">assets</span>/<span class="hljs-attr">bg-images</span>/<span class="hljs-attr">edition-02</span>/<span class="hljs-attr">edition02-canyon-01.jpg</span>&quot;)} <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;Neuroevolutionary Trails&quot;</span> /&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>
+                    Zweite INNOQ-Medienkunst-Edition
+                <span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">main</span>&gt;</span></pre>
     </code>
@@ -501,64 +348,35 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-selector-class">.artist-collabo__subtitle</span> {
-  <span class="hljs-keyword">@extend</span> %heading-font-bold;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$artist-collabo-subtitle-color</span>;
-}
-
-<span class="hljs-selector-class">.header-label</span> {
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">75%</span>;
-}
-
-<span class="hljs-variable">$triplet-divider-height-sm</span>: <span class="hljs-number">2</span> * <span class="hljs-variable">$spacer-xxl</span>;
-
-<span class="hljs-selector-class">.artist-collabo-intro</span> {
-  <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">flex-wrap</span>: wrap;
-}
-
-<span class="hljs-selector-class">.artist-collabo-intro__text</span> {
-  <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">flex-grow</span>: <span class="hljs-number">2</span>;
-  <span class="hljs-attribute">flex-wrap</span>: wrap;
-  <span class="hljs-attribute">align-items</span>: center;
-  <span class="hljs-attribute">justify-content</span>: center;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$container-spacer-x</span> <span class="hljs-variable">$container-spacer-y</span>;
-  <span class="hljs-attribute">min-height</span>: <span class="hljs-variable">$triplet-divider-height-sm</span>;
-  <span class="hljs-attribute">text-align</span>: center;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$artwork-title-color</span>;
-}
-
-<span class="hljs-selector-class">.artist-collabo-artwork</span> {
-  <span class="hljs-keyword">@extend</span> %heading-font-heavy;
-  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-sm</span>;
-  <span class="hljs-attribute">text-align</span>: center;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$artwork-title-color</span>;
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$artwork-font-size-small</span>;
-
-  &amp;--variant {
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$artwork-title-color--variant</span>;
-  }
-}
-
-<span class="hljs-selector-class">.artist-collabo-artist</span> {
-  <span class="hljs-keyword">@extend</span> %body-font-italic;
-  <span class="hljs-attribute">text-align</span>: center;
-  <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$author-bio-position-line-height-small</span>;
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$author-bio-position-font-size-small</span>;
-}
-
-<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (min-width: <span class="hljs-variable">$grid-breakpoint-md</span>) {
-  <span class="hljs-selector-class">.header-label</span> {
-    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-xxl</span>;
+                                <pre><span class="hljs-selector-class">.artist-collabo-page</span> {
+  <span class="hljs-selector-class">.standard-header__type</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
   }
 
-  <span class="hljs-selector-class">.artist-collabo-artwork</span> {
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$artwork-font-size-default</span>;
+  <span class="hljs-selector-class">.standard-header__intro</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$brand-white</span>;
+
+    <span class="hljs-selector-tag">h3</span> {
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$brand-gray</span>;
+    }
   }
 
-  <span class="hljs-selector-class">.artist-collabo-artist</span> {
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$author-bio-position-font-size</span>;
+  <span class="hljs-selector-class">.standard-header__intro__text</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$brand-gray</span>;
+  }
+
+  <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (min-width: <span class="hljs-variable">$grid-breakpoint-md</span>) {
+    <span class="hljs-selector-class">.standard-header</span> {
+      <span class="hljs-attribute">margin-bottom</span>: ms(<span class="hljs-number">20</span>);
+    }
+
+    <span class="hljs-selector-class">.artist-collabo-artwork</span> {
+      <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xxxl</span>;
+    }
+
+    <span class="hljs-selector-class">.artist-collabo-artist</span> {
+      <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
+    }
   }
 }
 </pre>
@@ -577,7 +395,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.2 KB</span>
+                    <span class="Meta-value">519 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -703,11 +521,11 @@
         
             
             
-            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-input-elements">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-input-elements-items">
-                    Input Elements
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-form-elements">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-form-elements-items">
+                    Form Elements
                 </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-input-elements-items">
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-form-elements-items">
                 
                 
                 
@@ -1241,73 +1059,6 @@
         
     
         
-            
-            
-            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-favicon">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-favicon-items">
-                    Favicon
-                </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-favicon-items">
-                
-                
-                
-                
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="favicon-blue.html" data-pjax>
-                <span>Favicon Blue</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="favicon-red.html" data-pjax>
-                <span>Favicon Red</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-                </ul>
-            </li>
-            
-        
-    
-        
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="figure.html" data-pjax>
@@ -1343,7 +1094,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -2552,73 +2303,6 @@
         
             
             
-            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-navbar">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-navbar-items">
-                    Navbar
-                </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-navbar-items">
-                
-                
-                
-                
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="navbar--default.html" data-pjax>
-                <span>Default</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="navbar--transparent.html" data-pjax>
-                <span>Transparent</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-
-                </ul>
-            </li>
-            
-        
-    
-        
-            
-            
             <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-search">
                 <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-search-items">
                     Search
@@ -3092,30 +2776,6 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="newsletter-optin.html" data-pjax>
-                <span>Newsletter Optin</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="paginator.html" data-pjax>
                 <span>Paginator</span>
                 
@@ -3307,6 +2967,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="event-list-teaser.html" data-pjax>
                 <span>Event List Teaser</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="image-list-teaser.html" data-pjax>
+                <span>Image List Teaser</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4040,6 +3724,97 @@
         
     
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-navbar">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-navbar-items">
+                    Navbar
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-navbar-items">
+                
+                
+                
+                
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="navbar--default.html" data-pjax>
+                <span>Default</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="navbar--transparent.html" data-pjax>
+                <span>Transparent</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="newsletter-optin.html" data-pjax>
+                <span>Newsletter Optin</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="search-result-list.html" data-pjax>
@@ -4124,30 +3899,6 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="article-page-default.html" data-pjax>
                 <span>Article Page Default</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="article-page-with-header.html" data-pjax>
-                <span>Article Page With Header</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4875,13 +4626,42 @@
         
     
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-basics">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-basics-items">
+                    Basics
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-basics-items">
+                
+                
+                
+                
+    
+        
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="../../docs/colors.html" data-pjax>
+            <a class="Tree-entityLink" href="../../docs/basics/colors.html" data-pjax>
                 <span>Colors</span>
                 
             </a>
         </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/basics/favicons.html" data-pjax>
+                <span>Favicons</span>
+                
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
 
@@ -4909,8 +4689,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2020-12-17T17:00:43.244Z">
-                                12/17/2020
+                            <time datetime="2021-01-28T21:34:39.043Z">
+                                1/28/2021
                             </time>
                         
                     </dd>
@@ -4931,7 +4711,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.6.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.7.0"></script>
 
 
 

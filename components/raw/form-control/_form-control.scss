@@ -5,8 +5,8 @@
   transition: standard-transition(background-color);
   padding: $spacer-xs;
   width: 100%;
-  line-height: $form-control-line-height;
-  font-size: $form-control-font-size;
+  line-height: $paragraph-line-height;
+  font-size: $font-size-base;
 }
 
 .form-control {
@@ -33,7 +33,7 @@
 .custom-form-control {
   position: relative;
   transition: standard-transition(background-color, color, border-color);
-  min-height: ($base-line-height * 1rem);
+  min-height: ($paragraph-line-height * 1rem);
 
   &.form-control--invalid,
   .form-group--invalid & {

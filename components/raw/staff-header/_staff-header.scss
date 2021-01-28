@@ -1,12 +1,12 @@
 $staff-intro-offset: -(ms(22));
-$staff-page-header-background-gray: #f6f6f6;
+$staff-header-bg-gray: #f6f6f6;
 
 .staff-header {
   background-image: linear-gradient(
     to right,
-    $staff-page-header-background-color,
-    $staff-page-header-background-color 50%,
-    $staff-page-header-background-gray 50%
+    $staff-header-bg-color,
+    $staff-header-bg-color 50%,
+    $staff-header-bg-gray 50%
   );
 }
 
@@ -14,7 +14,7 @@ $staff-page-header-background-gray: #f6f6f6;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: $staff-page-header-content-background-color;
+  background-color: $staff-header-content-bg-color;
 }
 
 .staff-header-image {
@@ -22,29 +22,28 @@ $staff-page-header-background-gray: #f6f6f6;
 }
 
 .staff-header-quote {
-  background-color: $staff-page-header-quote-background-color;
+  background-color: $staff-header-quote-bg-color;
   padding: $spacer-lg $spacer-md;
 }
 
 .staff-header-quote--text {
-  line-height: $staff-page-header-quote-line-height-small;
-  color: $staff-page-header-quote-color;
-  font-size: $staff-page-header-quote-font-size-small;
+  color: $staff-header-quote-color;
+  font-size: $font-size-xl;
 }
 
 .staff-header-quote--author {
   @extend %heading-font-regular;
 
   text-transform: uppercase;
-  line-height: $staff-page-header-quote-author-line-height-small;
-  color: $staff-page-header-quote-author-color;
-  font-size: $staff-page-header-quote-author-font-size-small;
+  color: $staff-header-quote-author-color;
+  font-size: $font-size-base;
 }
 
 .staff-intro {
-  background-color: $staff-intro-background-color;
+  background-color: $staff-header-intro-bg-color;
   padding: $spacer-md;
   width: 100%;
+  color: $staff-header-intro-text-color;
 }
 
 .staff-intro--name {
@@ -52,25 +51,25 @@ $staff-page-header-background-gray: #f6f6f6;
 
   margin-bottom: $spacer-xs;
   text-transform: uppercase;
-  line-height: $staff-page-header-intro-name-line-height-small;
-  font-size: $staff-page-header-intro-name-font-size-small;
+  color: $staff-header-intro-text-color;
+  font-size: $font-size-xl;
 }
 
 .staff-intro--job-title {
   @extend %body-font-italic;
 
   margin-bottom: $spacer-xs;
-  line-height: $staff-page-header-intro-job-title-line-height-small;
-  font-size: $staff-page-header-intro-job-title-font-size-small;
+  color: $staff-header-intro-text-color;
+  font-size: $font-size-lg;
 }
 
 .staff-intro--text {
   @extend %heading-font-regular;
 
-  border-bottom: 1px solid $staff-intro-text-border;
+  border-bottom: 1px solid $staff-header-intro-text-border;
   padding-bottom: $spacer-base;
-  line-height: $staff-page-header-intro-text-line-height-small;
-  font-size: $staff-page-header-intro-text-font-size-small;
+  line-height: $paragraph-line-height;
+  font-size: $font-size-sm;
 }
 
 .staff-intro--social {
@@ -78,6 +77,11 @@ $staff-page-header-background-gray: #f6f6f6;
 
   .icon {
     font-size: ms(7);
+  }
+
+  .icon-svg:hover,
+  .icon-svg:focus {
+    background: $staff-header-icon-hover-color;
   }
 }
 
@@ -109,13 +113,7 @@ $staff-page-header-background-gray: #f6f6f6;
   }
 
   .staff-header-quote--text {
-    line-height: $staff-page-header-quote-line-height;
-    font-size: $staff-page-header-quote-font-size;
-  }
-
-  .staff-header-quote--author {
-    line-height: $staff-page-header-quote-author-line-height;
-    font-size: $staff-page-header-quote-author-font-size;
+    font-size: $font-size-xxxl;
   }
 
   .staff-intro {
@@ -128,21 +126,13 @@ $staff-page-header-background-gray: #f6f6f6;
     box-sizing: content-box;
   }
 
-  .staff-intro--name {
-    line-height: $staff-page-header-intro-name-line-height-small;
-    font-size: $staff-page-header-intro-name-font-size-small;
-  }
-
   .staff-intro--job-title {
     margin-bottom: $spacer-sm;
-    line-height: $staff-page-header-intro-job-title-line-height;
-    font-size: $staff-page-header-intro-job-title-font-size;
   }
 
   .staff-intro--text {
     padding-bottom: $spacer-lg;
-    line-height: $staff-page-header-intro-text-line-height;
-    font-size: $staff-page-header-intro-text-font-size;
+    font-size: $font-size-lg;
   }
 
   .staff-intro--social {

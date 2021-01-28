@@ -1,6 +1,6 @@
-$default-full-width-teaser-bg-width: 1444px; // Arbitrary value
-$default-full-width-teaser-bg-height: 1000px; // Arbitrary value
-$default-full-width-teaser-height: ms(38);
+$full-width-teaser-bg-width: 1444px; // Arbitrary value
+$full-width-teaser-bg-height: 1000px; // Arbitrary value
+$full-width-teaser-height: ms(38);
 
 .default-full-width-teaser {
   @extend %page-header;
@@ -8,7 +8,7 @@ $default-full-width-teaser-height: ms(38);
   justify-content: center;
   width: 100%;
   max-width: 100%;
-  min-height: $default-full-width-teaser-height;
+  min-height: $full-width-teaser-height;
 
   &--right-aligned {
     justify-content: flex-end;
@@ -22,7 +22,7 @@ $default-full-width-teaser-height: ms(38);
 .default-full-width-teaser__wrapper {
   display: flex;
   justify-content: flex-start;
-  padding: $container-spacer-x-sm;
+  padding: $spacer-sm;
 }
 
 .default-full-width-teaser__body {
@@ -30,25 +30,24 @@ $default-full-width-teaser-height: ms(38);
   flex-basis: 100%;
   flex-direction: column;
   justify-content: space-between;
-  background-color: $default-full-width-teaser-body-bg;
+  background-color: $full-width-teaser-body-bg;
   padding: $spacer-base;
+  color: $full-width-teaser-body-color;
 }
 
 .default-full-width-teaser__text {
   @extend %teaser-text;
+
   margin-bottom: $spacer-base;
-  line-height: $big-content-teaser-text-line-height-small;
-  font-size: $big-content-teaser-text-font-size-small;
+  font-size: $font-size-xs;
   hyphens: auto;
 }
 
 .default-full-width-teaser__header {
   padding-bottom: 0;
-  color: $default-full-width-teaser-body-color;
 
   h2 {
-    line-height: $h1-line-height;
-    font-size: $h1-font-size;
+    font-size: $font-size-xxxl;
   }
 
   .punch-in {
@@ -91,8 +90,7 @@ $default-full-width-teaser-height: ms(38);
   }
 
   .default-full-width-teaser__text {
-    line-height: $big-content-teaser-text-line-height;
-    font-size: $big-content-teaser-text-font-size;
+    font-size: $font-size-base;
     hyphens: none;
   }
 

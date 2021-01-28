@@ -16,7 +16,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $brand-white;
+  background-color: $image-divider-bg-color;
   padding: $spacer-md;
 }
 
@@ -24,10 +24,8 @@
   @extend %heading-font-bold;
 
   margin-bottom: 0;
-  line-height: $image-divider-right-content-text-line-height-small;
-  color: $brand-red;
-  font-size: $image-divider-right-content-text-font-size-small;
-
+  color: $image-divider-right-color;
+  font-size: $font-size-sm;
 }
 
 //Breakpoints
@@ -40,7 +38,6 @@
   .image-divider-right-textbox {
     padding: $spacer-lg;
   }
-
 }
 
 @media screen and (min-width: $grid-breakpoint-lg) {
@@ -62,7 +59,6 @@
   }
 
   .image-divider-right-content-textbox__text {
-    line-height: $image-divider-right-content-text-line-height;
-    font-size: $image-divider-right-content-text-font-size;
+    font-size: $font-size-lg;
   }
 }

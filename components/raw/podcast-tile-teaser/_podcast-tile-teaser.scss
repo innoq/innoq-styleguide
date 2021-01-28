@@ -33,24 +33,13 @@ $podcast-teaser-height-md: ms(35);
   @extend %h3;
 
   margin-bottom: $spacer-md;
-  color: $podcast-teaser-default-color;
-
-  &--security {
-    color: $podcast-teaser-default-color-sec;
-  }
 }
 
 .podcast-teaser__subheadline {
   @extend %body-font-italic;
 
   margin-bottom: $spacer-xs;
-  line-height: $podcast-teaser-subheadline-line-height;
-  color: $podcast-teaser-default-color;
-  font-size: $podcast-teaser-subheadline-font-size;
-
-  &--security {
-    color: $podcast-teaser-default-color-sec;
-  }
+  font-size: $font-size-sm;
 }
 
 .podcast-author {
@@ -63,7 +52,6 @@ $podcast-teaser-height-md: ms(35);
   }
 }
 
-
 //
 // Variations
 //
@@ -74,48 +62,59 @@ $podcast-teaser-height-md: ms(35);
   }
 }
 
+.podcast-teaser__headline--security,
+.podcast-teaser__subheadline--security {
+  color: $podcast-teaser-default-bg-sec;
+}
+
 .podcast-teaser--avatar--overlay {
-  background-color: $podcast-teaser-overlay-color;
+  background-color: $podcast-teaser-overlay-color-secondary;
   background-repeat: no-repeat;
   background-position: top right;
   background-size: auto 100%;
-  color: $podcast-teaser-default-color;
+  color: $podcast-teaser-default-color-secondary;
   background-blend-mode: multiply;
+
+  .podcast-teaser__headline,
+  .podcast-teaser__subheadline {
+    color: $podcast-teaser-default-color-secondary;
+  }
 
   &--security {
     background-color: $podcast-teaser-overlay-color-sec;
     color: $podcast-teaser-default-bg-sec;
-  }
 
-  .podcast-teaser__headline--security,
-  .podcast-teaser__subheadline--security  {
-    color: $podcast-teaser-default-bg-sec;
+    .podcast-teaser__headline,
+    .podcast-teaser__subheadline {
+      color: $podcast-teaser-default-bg-sec;
+    }
   }
 }
 
 .podcast-teaser--avatar--overlay--big {
-  background-color: $podcast-teaser-overlay-color;
+  background-color: $brand-petrol-75;
   background-repeat: no-repeat;
   background-position: top right, top left;
   background-size: 0%;
-  color: $podcast-teaser-default-color;
+  color: $podcast-teaser-default-color-secondary;
   background-blend-mode: multiply;
+
+  .podcast-teaser__headline,
+  .podcast-teaser__subheadline {
+    color: $podcast-teaser-default-color-secondary;
+  }
 
   &--security {
     background-color: $podcast-teaser-overlay-color-sec;
     color: $podcast-teaser-default-bg-sec;
 
-    .podcast-author--security {
-      color: $podcast-teaser-default-color-sec;
+    .podcast-teaser__headline,
+    .podcast-teaser__subheadline {
+      color: $podcast-teaser-default-bg-sec;
     }
   }
 
-  .podcast-teaser__headline--security,
-  .podcast-teaser__subheadline--security  {
-    color: $podcast-teaser-default-bg-sec;
-  }
-
-  .podcast-teaser__body  {
+  .podcast-teaser__body {
     padding: $spacer-lg;
     text-align: center;
   }
@@ -132,24 +131,20 @@ $podcast-teaser-height-md: ms(35);
 }
 
 .podcast-teaser--avatar {
-  background-color: $podcast-teaser-default-color;
+  background-color: $podcast-teaser-light-bg;
   background-repeat: no-repeat;
   background-position: top right;
   background-size: auto 100%;
-  color:  $podcast-teaser-default-bg;
+  color: $podcast-teaser-default-color;
 
   &--security {
     background-color: $podcast-teaser-default-color-sec;
     color: $podcast-teaser-default-bg-sec;
-  }
 
-  .podcast-teaser__headline,
-  .podcast-teaser__subheadline  {
-    color:  $podcast-teaser-default-bg;
-
-    &--security {
+    .podcast-teaser__headline,
+    .podcast-teaser__subheadline {
       color: $podcast-teaser-default-bg-sec;
-    }
+  }
   }
 }
 
@@ -157,10 +152,21 @@ $podcast-teaser-height-md: ms(35);
   background-color: $podcast-teaser-default-bg;
   color: $podcast-teaser-default-color;
 
+  .podcast-teaser__headline,
+  .podcast-teaser__subheadline {
+    color: $podcast-teaser-default-color;
+  }
+
   &--security {
     background-color: $podcast-teaser-default-bg-sec;
     color: $podcast-teaser-default-color-sec;
+
+    .podcast-teaser__headline,
+    .podcast-teaser__subheadline {
+      color: $podcast-teaser-default-color-sec;
   }
+  }
+
 }
 
 //Breakpoints

@@ -9,8 +9,9 @@ $list-indent: $spacer-xs + $spacer-sm;
 
     &::before {
       @extend %icon;
+
       position: absolute;
-      top: .45em;
+      top: 0.45em;
       left: 0;
       color: $bullet-list-color;
       content: $icon-check;

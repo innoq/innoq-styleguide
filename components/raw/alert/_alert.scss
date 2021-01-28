@@ -1,15 +1,12 @@
-$alert-color: $brand-white;
-
 .alert {
   @extend %heading-font-regular;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin-bottom: $content-spacer-sm;
+  margin-bottom: $spacer-sm;
   padding: $spacer-xs;
-  line-height: $alert-line-height;
   color: $alert-color;
-  font-size: $alert-font-size-sm;
+  font-size: $font-size-base;
 
   &--info {
     background-color: $brand-info;
@@ -30,10 +27,9 @@ $alert-color: $brand-white;
   color: inherit;
 }
 
-
 @media screen and (min-width: $grid-breakpoint-md) {
   .alert {
-    margin-bottom: $content-spacer-base;
-    padding: $container-spacer-y-sm $container-spacer-x-sm;
+    margin-bottom: $spacer-md;
+    padding: $spacer-sm;
   }
 }

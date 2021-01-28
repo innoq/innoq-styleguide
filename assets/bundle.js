@@ -1,42 +1,6 @@
 (function () {
 'use strict';
 
-class InfoBox extends HTMLElement {
-  connectedCallback () {
-    this.classList.add('enhanced');
-    this.setAttribute('open', 'false');
-    this.contentHeight = `${this.content.clientHeight}px`;
-    this.content.style.height = 0;
-    this.teaser.onclick = this.toggle.bind(this);
-  }
-
-  get content () {
-    return this.querySelector('.infobox__content')
-  }
-
-  get teaser () {
-    return this.querySelector('.infobox__teaser')
-  }
-
-  toggle () {
-    this.open = !this.open;
-
-    if (this.open) {
-      this.content.style.height = this.contentHeight;
-    } else {
-      this.content.style.height = 0;
-    }
-  }
-
-  get open () {
-    return this.getAttribute('open') === 'true'
-  }
-
-  set open (value) {
-    this.setAttribute('open', value.toString());
-  }
-}
-
 class CheckToToggle extends HTMLElement {
   connectedCallback () {
     this.checkbox.onclick = this.toggle.bind(this);
@@ -102,6 +66,42 @@ class MultiToggler extends HTMLElement {
     if (this.toggleSelfClass) {
       this.classList.toggle(this.toggleSelfClass);
     }
+  }
+}
+
+class InfoBox extends HTMLElement {
+  connectedCallback () {
+    this.classList.add('enhanced');
+    this.setAttribute('open', 'false');
+    this.contentHeight = `${this.content.clientHeight}px`;
+    this.content.style.height = 0;
+    this.teaser.onclick = this.toggle.bind(this);
+  }
+
+  get content () {
+    return this.querySelector('.infobox__content')
+  }
+
+  get teaser () {
+    return this.querySelector('.infobox__teaser')
+  }
+
+  toggle () {
+    this.open = !this.open;
+
+    if (this.open) {
+      this.content.style.height = this.contentHeight;
+    } else {
+      this.content.style.height = 0;
+    }
+  }
+
+  get open () {
+    return this.getAttribute('open') === 'true'
+  }
+
+  set open (value) {
+    this.setAttribute('open', value.toString());
   }
 }
 

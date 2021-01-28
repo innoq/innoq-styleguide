@@ -4,8 +4,7 @@ code {
   display: inline-block;
   background-color: $code-background-color;
   padding: 2px $spacer-xxs;
-  line-height: $code-line-height;
-  font-size: $code-font-size;
+  font-size: $font-size-xs;
 }
 
 mark {

@@ -116,7 +116,7 @@
   padding-bottom: 0.5787037037rem;
   text-align: center;
   text-transform: uppercase;
-  color: #24244c;
+  color: #242424;
   -webkit-user-select: all;
      -moz-user-select: all;
       -ms-user-select: all;
@@ -141,10 +141,10 @@
 }
 
 .swatch-brand-blue-50 > .swatch-color {
-  background-color: #9191a5;
+  background-color: #5b5b79;
 }
 .swatch-brand-blue-50 > .swatch-text::after {
-  content: "#9191a5";
+  content: "#5b5b79";
 }
 
 .swatch-brand-blue-25 > .swatch-color {
@@ -238,6 +238,62 @@
   content: "#fffdbe";
 }
 
+.swatch-brand-petrol > .swatch-color {
+  background-color: #004153;
+}
+.swatch-brand-petrol > .swatch-text::after {
+  content: "#004153";
+}
+
+.swatch-brand-petrol-75 > .swatch-color {
+  background-color: #40707e;
+}
+.swatch-brand-petrol-75 > .swatch-text::after {
+  content: "#40707e";
+}
+
+.swatch-brand-petrol-50 > .swatch-color {
+  background-color: #80a0a9;
+}
+.swatch-brand-petrol-50 > .swatch-text::after {
+  content: "#80a0a9";
+}
+
+.swatch-brand-petrol-25 > .swatch-color {
+  background-color: #bfcfd4;
+}
+.swatch-brand-petrol-25 > .swatch-text::after {
+  content: "#bfcfd4";
+}
+
+.swatch-brand-apricot > .swatch-color {
+  background-color: #ff9c66;
+}
+.swatch-brand-apricot > .swatch-text::after {
+  content: "#ff9c66";
+}
+
+.swatch-brand-apricot-75 > .swatch-color {
+  background-color: #ffb58c;
+}
+.swatch-brand-apricot-75 > .swatch-text::after {
+  content: "#ffb58c";
+}
+
+.swatch-brand-apricot-50 > .swatch-color {
+  background-color: #ffcdb2;
+}
+.swatch-brand-apricot-50 > .swatch-text::after {
+  content: "#ffcdb2";
+}
+
+.swatch-brand-apricot-25 > .swatch-color {
+  background-color: #ffe6d9;
+}
+.swatch-brand-apricot-25 > .swatch-text::after {
+  content: "#ffe6d9";
+}
+
 .swatch-brand-gray > .swatch-color {
   background-color: #242424;
 }
@@ -253,10 +309,10 @@
 }
 
 .swatch-brand-gray-50 > .swatch-color {
-  background-color: #979798;
+  background-color: #646465;
 }
 .swatch-brand-gray-50 > .swatch-text::after {
-  content: "#979798";
+  content: "#646465";
 }
 
 .swatch-brand-gray-25 > .swatch-color {
@@ -280,18 +336,20 @@
   content: "#f7f7f7";
 }
 
-.theme-brand {
+.Header {
+  background-color: #004153;
+}
+
+.Header-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.theme-brand-title {
-  margin-top: 3px;
-  margin-left: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .theme-brand-logo {

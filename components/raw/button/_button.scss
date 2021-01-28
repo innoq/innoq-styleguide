@@ -14,8 +14,7 @@ $default-btn-margin: $spacer-sm;
   border-radius: 0;
   background-color: $button-background;
   padding: $spacer-md $spacer-base;
-  line-height: $button-medium-line-height;
-  font-size: $button-medium-font-size;
+  font-size: $font-size-sm;
 
   &--cta {
     border-color: $button-cta-border-color;
@@ -52,20 +51,17 @@ $default-btn-margin: $spacer-sm;
 
   &--small {
     padding: $spacer-sm $spacer-md;
-    line-height: $button-small-line-height;
-    font-size: $button-small-font-size;
+    font-size: $font-size-base;
   }
 
   &--condensed {
     padding: $spacer-xs $spacer-sm;
-    line-height: $button-small-line-height;
-    font-size: $button-small-font-size;
+    font-size: $font-size-base;
   }
 
   &--large {
     padding: $spacer-md $spacer-lg;
-    line-height: $button-large-line-height;
-    font-size: $button-large-font-size;
+    font-size: $font-size-md;
   }
 
   &--inverted {

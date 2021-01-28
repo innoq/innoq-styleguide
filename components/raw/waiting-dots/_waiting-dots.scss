@@ -9,12 +9,11 @@
   background: none;
   width: 50px;
   height: 20px;
-
 }
 
 .duo,
 .dot {
-  animation-duration: .8s;
+  animation-duration: 0.8s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -27,9 +26,8 @@
     animation-name: onOff;
     animation-direction: reverse;
     opacity: 0;
-	}
+  }
 }
-
 
 .duo2 {
   left: 30px;
@@ -38,18 +36,15 @@
 
   .dot-b {
     animation-name: onOff;
-	}
+  }
 }
-
 
 .dot {
   position: absolute;
   border-radius: 10px;
-  background: $brand-red;
+  background: $dot-color;
   width: 20px;
   height: 20px;
-
-
 }
 
 .dot-a {
@@ -59,7 +54,6 @@
 .dot-b {
   right: 0;
 }
-
 
 @keyframes spin {
   0% {
@@ -86,9 +80,9 @@
 
   50% {
     opacity: 1;
-	}
+  }
 
   100% {
     opacity: 1;
-	}
+  }
 }

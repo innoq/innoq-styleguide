@@ -3,6 +3,6 @@
 
   .search-result-list__item + .search-result-list__item {
     border-top: 1px solid $search-result-border-color;
-    padding-top: $content-spacer-base;
+    padding-top: $spacer-md;
   }
 }

@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: center;
   transition: standard-transition(color);
+  color: $toolbar-link-color;
 
   &:hover,
   &:focus {

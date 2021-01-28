@@ -1,6 +1,7 @@
 .collapse-toggler {
   @extend %heading-font-heavy;
   @extend %link-unstyled;
+
   cursor: pointer;
 
   .collapse-toggler__flop {

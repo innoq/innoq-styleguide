@@ -1,5 +1,6 @@
 .text-header {
-  background-color: $topic-header-intro-bg-color;
+  background-color: $text-header-bg-color;
+  color: $text-header-color;
 
   &__body {
     margin: $spacer-lg auto;
@@ -10,19 +11,25 @@
 
   &__title {
     margin-bottom: $spacer-base;
-    line-height: $text-header-title-line-height-small;
-    font-size: $text-header-title-font-size-small;
+    font-size: $font-size-xl;
   }
 
   &__text {
     @extend %body-font-italic;
 
     margin-bottom: $spacer-base;
-    line-height: $text-header-intro-line-height-small;
-    font-size: $text-header-intro-font-size-small;
+    line-height: $paragraph-line-height;
+    font-size: $font-size-sm;
+  }
+
+    &__divider {
+    margin-top: $spacer-base;
+    border: 0;
+    background-color: $text-header-color;
+    width: ms(25);
+    height: 4px;
   }
 }
-
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .text-header__body {
@@ -31,12 +38,10 @@
 
   .text-header__title {
     margin-bottom: $spacer-lg;
-    line-height: $text-header-title-line-height;
-    font-size: $text-header-title-font-size;
+    font-size: $font-size-xxxl;
   }
 
   .text-header__text {
-    line-height: $text-header-intro-line-height;
-    font-size: $text-header-intro-font-size;
+    font-size: $font-size-lg;
   }
 }

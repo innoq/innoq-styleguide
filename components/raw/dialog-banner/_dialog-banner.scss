@@ -1,6 +1,6 @@
 .dialog-banner__body {
   @extend %heading-font-regular;
+
   margin-bottom: $spacer-sm;
-  line-height: $dialog-banner-line-height;
-  font-size: $dialog-banner-font-size;
+  font-size: $font-size-base;
 }

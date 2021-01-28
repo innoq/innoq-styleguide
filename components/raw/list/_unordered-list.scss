@@ -22,16 +22,16 @@ ul:not([class]),
 
     &::before {
       position: absolute;
-      top: .4rem; //magic number
+      top: 0.4rem; //magic number
       left: 0;
       border-radius: 50%;
-      background: $bullet-list-color;
+      background: $bullet-list-color-primary;
       width: $bullet-size;
       height: $bullet-size;
-      content: '';
+      content: "";
 
       @media screen and (min-width: $grid-breakpoint-md) {
-        top: .5rem; //magic number
+        top: 0.5rem; //magic number
       }
     }
   }
@@ -48,12 +48,10 @@ ul:not([class]),
 
     // Change bullet appeareance in nested contexts
     li::before {
-      border: 1px solid $bullet-list-color;
-      background: $bullet-list-bg-color;
+      background: $bullet-list-color-secondary;
     }
   }
 }
-
 
 // ---- Bold Bullet Lists ----------------------------------------------------------
 //
@@ -62,10 +60,10 @@ ul:not([class]),
 
   & > li {
     &::before {
-      top: .59rem; //magic number
+      top: 0.59rem; //magic number
 
       @media screen and (min-width: $grid-breakpoint-md) {
-        top: .73rem; //magic number
+        top: 0.73rem; //magic number
       }
     }
   }

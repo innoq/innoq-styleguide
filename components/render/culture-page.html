@@ -1,212 +1,13 @@
 
 
 <main role="main" class="culture-page">
-  <nav-bar class="navbar"
-    ><div class="navbar__inner">
-      <a href="#main" class="navbtn navbtn--skip">Zum Inhalt springen</a>
-      <div class="navbar__brand">
-        <a href="#" class="navbar__brand-link"
-          ><img
-            alt="INNOQ"
-            class="logo navbar__logo"
-            src="../../assets/innoq-logo--whitered.svg"
-        /></a>
-      </div>
-      <input
-        tabindex="-1"
-        type="checkbox"
-        id="navbar-toggle--menu"
-        class="sr-only navbar__toggle-state navbar__toggle-state--menu-toggler"
-      /><input
-        tabindex="-1"
-        type="checkbox"
-        id="navbar-toggle--search"
-        class="sr-only navbar__toggle-state navbar__toggle-state--search-toggler"
-      />
-      <div class="navbar__meta">
-        <a href="#" class="navbtn navbtn--meta">Newsletter</a
-        ><a href="#" class="navbtn navbtn--meta">Kontakt</a
-        ><a
-          href="#"
-          class="navbtn navbtn--meta navbtn--locale navbtn--active"
-          title="Deutsch"
-          >de</a
-        >
-        |<a href="#" class="navbtn navbtn--meta navbtn--locale" title="English"
-          >en</a
-        >
-      </div>
-      <div class="navbar__togglers">
-        <label
-          for="navbar-toggle--menu"
-          aria-label="Navigation ein- oder ausblenden"
-          ><span class="navbtn navbtn--menu">Menü</span></label
-        ><a
-          href="#"
-          class="navbtn navbtn--search"
-          aria-label="Suche ein- oder ausblenden"
-          ><i class="icon icon-search"></i
-        ></a>
-      </div>
-      <nav class="navbar__primary-nav primary-nav">
-        <ul class="primary-nav__list">
-          <li class="primary-nav__item">
-            <a href="#" class="navbtn navbtn--primary navbtn--active"
-              >Leistungen</a
-            >
-          </li>
-          <li class="primary-nav__item">
-            <div class="dropdown">
-              <a
-                href="#"
-                class="navbtn navbtn--primary"
-                data-for="dropdown__toggle--projekte"
-                >Projekte</a
-              ><input
-                type="checkbox"
-                role="button"
-                aria-haspopup="true"
-                id="dropdown__toggle--projekte"
-                class="sr-only dropdown__checkbox"
-              /><label
-                class="dropdown__toggle dropdown__toggle--navbar"
-                for="dropdown__toggle--projekte"
-                ><i
-                  class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"
-                ></i
-                ><span class="sr-only dropdown__toggle--expanded-text"
-                  >ausgeklappt</span
-                ><span class="sr-only dropdown__toggle--collapsed-text"
-                  >eingeklappt</span
-                ></label
-              >
-              <div
-                class="dropdown__list-wrapper dropdown__list-wrapper--navbar"
-                role="menu"
-                title="Projekte"
-                data-origin="left"
-              >
-                <ul class="dropdown__list">
-                  <li class="dropdown__item dropdown__item--navbar">
-                    <a
-                      href="#"
-                      class="dropdown__link dropdown__link--navbar navbtn"
-                      >Softwarearchitektur und -entwicklung</a
-                    >
-                  </li>
-                  <li class="dropdown__item dropdown__item--navbar">
-                    <a
-                      href="#"
-                      class="dropdown__link dropdown__link--navbar navbtn"
-                      >Strategie- und Technologieberatung</a
-                    >
-                  </li>
-                  <li class="dropdown__item dropdown__item--navbar">
-                    <a
-                      href="#"
-                      class="dropdown__link dropdown__link--navbar navbtn"
-                      >Entwicklung digitaler Geschäftsmodelle</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="primary-nav__item">
-            <div class="dropdown">
-              <a
-                href="#"
-                class="navbtn navbtn--primary"
-                data-for="dropdown__toggle--kultur"
-                >Kultur</a
-              ><input
-                type="checkbox"
-                role="button"
-                aria-haspopup="true"
-                id="dropdown__toggle--kultur"
-                class="sr-only dropdown__checkbox"
-              /><label
-                class="dropdown__toggle dropdown__toggle--navbar"
-                for="dropdown__toggle--kultur"
-                ><i
-                  class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"
-                ></i
-                ><span class="sr-only dropdown__toggle--expanded-text"
-                  >ausgeklappt</span
-                ><span class="sr-only dropdown__toggle--collapsed-text"
-                  >eingeklappt</span
-                ></label
-              >
-              <div
-                class="dropdown__list-wrapper dropdown__list-wrapper--navbar"
-                role="menu"
-                title="Kultur"
-                data-origin="right"
-              >
-                <ul class="dropdown__list">
-                  <li class="dropdown__item dropdown__item--navbar">
-                    <a
-                      href="#"
-                      class="dropdown__link dropdown__link--navbar navbtn"
-                      >Strategie- und Technologieberatung</a
-                    >
-                  </li>
-                  <li class="dropdown__item dropdown__item--navbar">
-                    <a
-                      href="#"
-                      class="dropdown__link dropdown__link--navbar navbtn"
-                      >Entwicklung digitaler Geschäftsmodelle</a
-                    >
-                  </li>
-                  <li class="dropdown__item dropdown__item--navbar">
-                    <a
-                      href="#"
-                      class="dropdown__link dropdown__link--navbar navbtn"
-                      >Softwarearchitektur und -entwicklung</a
-                    >
-                  </li>
-                  <li class="dropdown__item dropdown__item--navbar">
-                    <a
-                      href="#"
-                      class="dropdown__link dropdown__link--navbar navbtn"
-                      >Digitale Plattformen und Infrastrukturen</a
-                    >
-                  </li>
-                  <li class="dropdown__item dropdown__item--navbar">
-                    <a
-                      href="#"
-                      class="dropdown__link dropdown__link--navbar navbtn"
-                      >Wissenstransfer, Coaching und Trainings</a
-                    >
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li class="primary-nav__item">
-            <a href="#" class="navbtn navbtn--primary">Magazin</a>
-          </li>
-          <li class="primary-nav__item">
-            <a href="#" class="navbtn navbtn--primary">Termine</a>
-          </li>
-        </ul>
-        <button class="navbtn navbtn--drill-up">
-          <img
-            class="navbtn__left-icon"
-            src="../../assets/icons/arrow-medium-left-red.svg"
-          />
-          Hauptmenü
-        </button>
-      </nav>
-    </div></nav-bar
-  >
   <header class="image-header">
-    <div class="image-header__body image-header-bg-culture-01">
+    <div class="image-header__body bg-image-culture-01">
       <div class="image-header__content">
-        <h1 class="image-header__title image-header-bg-culture-01-text-box">
-          Unsere Kultur
-        </h1>
-        <img src="../../assets/icons/arrow-long-down-red.svg" />
+        <h1 class="image-header__title bg-image-culture-01">Unsere Kultur</h1>
+        <span
+          class="icon-svg icon-arrow-long-down icon--brand-secondary"
+        ></span>
       </div>
     </div>
   </header>
@@ -220,7 +21,7 @@
         <hr class="claim-header__divider" />
         Und Arbeit, auf die wir stolz sind.
       </h1>
-      <img src="../../assets/icons/arrow-long-down-blue.svg" />
+      <span class="icon-svg icon-arrow-long-down icon--brand-secondary"></span>
     </div>
   </header>
   <div class="image-divider-right">
@@ -237,17 +38,15 @@
       <img
         class="image-divider-right-image"
         itemprop="photo"
-        src="../../assets/visual-culture-02.jpg"
+        src="../../assets/bg-images/general/visual-culture-02.jpg"
         alt="innoQ Mitarbeiter"
       />
     </div>
   </div>
   <div class="page-layout-xl--default">
-    <div class="image-divider-center image-divider-center-bg">
+    <div class="image-divider-center bg-image-culture-03">
       <div class="image-divider-center__textbox">
-        <h1
-          class="image-divider-center__title image-divider-center-bg-text-box"
-        >
+        <h1 class="image-divider-center__title bg-image-culture-03">
           Inspiration
         </h1>
         <p class="image-divider-center__textbox__text">
@@ -259,15 +58,17 @@
           Konferenzbeiträgen, Fachartikeln, Podcasts oder
           Open-Source-Engagement.
         </p>
-        <img src="../../assets/icons/arrow-long-down-red.svg" />
+        <span
+          class="icon-svg icon-arrow-long-down icon--brand-secondary"
+        ></span>
       </div>
     </div>
   </div>
-  <div class="case-teaser culture-bg-04">
+  <div class="case-teaser bg-image-culture-04">
     <div class="case-teaser__wrapper">
       <div class="case-teaser__body">
         <div>
-          <div class="case-teaser__punch-in culture-bg-04-text-box">
+          <div class="case-teaser__punch-in bg-image-culture-04">
             <div class="case-teaser__header"><h1>Was uns wichtig ist</h1></div>
           </div>
           <div class="case-teaser__text">
@@ -294,7 +95,7 @@
     <div class="blocks">
       <a
         href="#"
-        class="teaser big-content-teaser big-content-teaser--image culture-bg-05"
+        class="big-content-teaser big-content-teaser--image bg-image-culture-05"
         ><div class="big-content-teaser__content filled-background">
           <div class="big-content-teaser__body">
             <h2 class="big-content-teaser__headline">Arbeiten bei INNOQ</h2>
@@ -315,7 +116,7 @@
             <div class="link-teaser" href="#">Mehr erfahren</div>
           </div>
         </div></a
-      ><a href="#" class="teaser big-content-teaser big-content-teaser--colored"
+      ><a href="#" class="big-content-teaser big-content-teaser--colored"
         ><div class="big-content-teaser__content">
           <div class="big-content-teaser__body">
             <h2 class="big-content-teaser__headline">

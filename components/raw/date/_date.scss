@@ -1,9 +1,7 @@
-$event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spacer-xxs);
-
 .date {
   @extend %heading-font-bold;
-  line-height: $date-line-height;
-  font-size: $date-font-size;
+
+  font-size: $font-size-base;
 }
 
 //Event Date for Teasers
@@ -11,7 +9,6 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: -$event-date-section-height;
   background-color: $date-section-background-color;
 }
 
@@ -19,7 +16,7 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .event-date {
@@ -38,9 +35,8 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
 .event-day {
   @extend %heading-font-heavy;
 
-  line-height: $event-day-line-height-small;
   color: $date-section-day-color;
-  font-size: $event-day-font-size-small;
+  font-size: $font-size-lg;
 }
 
 .event-month {
@@ -48,9 +44,8 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
 
   margin-bottom: 0;
   text-transform: uppercase;
-  line-height: $event-month-line-height-small;
   color: $date-section-month-color;
-  font-size: $event-month-font-size-small;
+  font-size: $font-size-xs;
 }
 
 .event-year {
@@ -59,9 +54,8 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
   margin-left: $spacer-xs;
   border-left: 1px solid $date-section-year-color;
   padding-left: $spacer-xxs;
-  line-height: $event-year-line-height;
   color: $date-section-year-color;
-  font-size: $event-year-font-size;
+  font-size: $font-size-xs;
 }
 
 .event-date-separator {
@@ -73,7 +67,6 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
 
 // Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
-
   .event-date-section {
     margin-top: 0;
     width: 80px;
@@ -88,14 +81,12 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
   }
 
   .event-day {
-    line-height: $event-day-line-height;
-    font-size: $event-day-font-size;
+    font-size: $font-size-xl;
   }
 
   .event-month {
     margin-bottom: $spacer-xxs;
-    line-height: $event-month-line-height;
-    font-size: $event-month-font-size;
+    font-size: $font-size-base;
   }
 
   .event-year {
@@ -103,8 +94,7 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
     border-top: 1px solid $date-section-year-color;
     border-left: 0;
     padding-left: 0;
-    line-height: $event-year-line-height;
-    font-size: $event-year-font-size;
+    font-size: $font-size-xs;
   }
 
   .event-date-separator {
