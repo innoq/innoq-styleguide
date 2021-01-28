@@ -29,14 +29,14 @@
 
 @import "trumps/styleguide";
 
-.theme-brand {
-  display: flex;
-  align-items: center;
+.Header {
+  background-color: $brand-secondary;
 }
 
-.theme-brand-title {
-  margin-top: 3px;
-  margin-left: 0.5rem;
+.Header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .theme-brand-logo {

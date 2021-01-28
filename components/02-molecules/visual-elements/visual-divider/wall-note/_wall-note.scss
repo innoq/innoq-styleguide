@@ -22,7 +22,7 @@ $big-content-teaser-height-md: ms(40);
 .wall-note__heading {
   @extend %h1;
   text-align: center;
-  font-size: $font-size-xxl
+  font-size: $font-size-xxl;
 }
 
 .wall-note__subheading {
@@ -38,37 +38,6 @@ $big-content-teaser-height-md: ms(40);
   @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
     max-width: 100%;
   }
-}
-
-//Background images for topic header
-.wall-note-bg-image-girl {
-  @extend %centered-background-image;
-  background-image: asset-url("visual-header-girl.jpg");
-}
-
-.wall-note-bg-image-medusa {
-  @extend %centered-background-image;
-  background-image: asset-url("visual-header-medusa.jpg");
-}
-
-.wall-note-bg-image-ice {
-  @extend %centered-background-image;
-  background-image: asset-url("visual-header-ice.jpg");
-}
-
-.wall-note-bg-image-igel {
-  @extend %centered-background-image;
-  background-image: asset-url("visual-header-igel-1444.jpg");
-}
-
-.wall-note-bg-image-koralle {
-  @extend %centered-background-image;
-  background-image: asset-url("visual-header-koralle.jpg");
-}
-
-.wall-note-bg-image-workshop {
-  @extend %centered-background-image;
-  background-image: asset-url("visual-workshop-06.jpg");
 }
 
 //Breakpoints

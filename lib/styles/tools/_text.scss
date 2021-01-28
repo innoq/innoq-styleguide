@@ -226,14 +226,6 @@
 // stencil / punch-in effect
 //
 
-// sass-lint:disable no-vendor-prefixes
-
-%punch-in {
-  // fallback for all unsopporting browsers
-  // will be overwritten by images in @supports
-  background-image: none;
-}
-
 // @supports: put -webkit- at the end or sass will kill it, kills -moz- anyway
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .punch-in,
@@ -243,55 +235,5 @@
     color: transparent;
 
     -webkit-background-clip: text;
-  }
-
-  // pull all bg images into @supports rule
-
-  %landing-page-header-bg-image-text-box {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url("visual-header-landing-page.jpg");
-  }
-
-  %image-header-bg-culture-01-text-box {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url("visual-culture-01.jpg");
-  }
-
-  %image-header-bg-staff-01-text-box {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url("visual-staff-01.jpg");
-  }
-
-  %image-divider-center-bg-text-box {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url("visual-culture-03.jpg");
-  }
-
-  %culture-bg-04-text-box {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url("visual-culture-04.jpg");
-  }
-
-  %culture-bg-05-text-box {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url("visual-culture-05.jpg");
-  }
-
-  %topic-header-bg-image-text-box-girl {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url("visual-header-girl-1444.jpg");
-  }
-
-  %topic-header-bg-image-text-box-medusa {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url("visual-header-medusa-1444.jpg");
-  }
-
-  %topic-header-bg-image-text-box-ice {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url("visual-header-ice-1444.jpg");
-  }
-
-  %topic-header-bg-image-text-box-igel {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url("visual-header-igel-1444.jpg");
-  }
-
-  %topic-header-bg-image-text-box-koralle {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url("visual-header-koralle-1444.jpg");
-  }
-
-  %topic-header-bg-image-text-box-heads {
-    background-image: linear-gradient($gradient-stencil, $gradient-stencil), asset-url("visual-header-heads.jpg");
   }
 }

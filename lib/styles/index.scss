@@ -22,6 +22,7 @@
 // The tools layer defines all the mixins and functions we utilise in our
 // SCSS base. Important: This layer does not produce any code.
 
+@import "tools/bg-images";
 @import "tools/fonts";
 @import "tools/forms";
 @import "tools/text";

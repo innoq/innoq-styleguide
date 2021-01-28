@@ -43,17 +43,6 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
   }
 }
 
-.image-divider-center-bg {
-  background-image: asset-url("visual-culture-03.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.image-divider-center-bg-text-box {
-  @extend %image-divider-center-bg-text-box;
-}
-
 @media screen and (min-width: $grid-breakpoint-md) {
   .image-divider-center {
     margin-bottom: $divider-center-textbox-offset;

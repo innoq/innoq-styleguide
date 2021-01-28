@@ -37,34 +37,6 @@ $gradient-to: rgba(0, 0, 0, 0.1);
   }
 }
 
-.image-header-bg-culture-01 {
-  background-image: asset-url("visual-culture-01.jpg");
-}
-
-.image-header-bg-podcast-01 {
-  background-image: asset-url("podcast-header.jpg");
-}
-
-.image-header-bg-art-01 {
-  background-image: linear-gradient($gradient-from, $gradient-to), asset-url("visual-art-02.jpg");
-}
-
-.image-header-bg-staff-01 {
-  background-image: asset-url("visual-staff-01.jpg");
-}
-
-.image-header-bg-visual-01 {
-  background-image: asset-url("visual-header-koralle.jpg");
-}
-
-.image-header-bg-culture-01-text-box {
-  @extend %image-header-bg-culture-01-text-box;
-}
-
-.image-header-bg-staff-01-text-box {
-  @extend %image-header-bg-staff-01-text-box;
-}
-
 //
 // Media Queries
 //
@@ -72,10 +44,6 @@ $gradient-to: rgba(0, 0, 0, 0.1);
 @media screen and (min-width: $grid-breakpoint-sm) {
   .image-header__body {
     align-items: center;
-  }
-
-  .image-header-bg-podcast-01 {
-    background-image: asset-url("podcast-header-big-screens.jpg");
   }
 }
 

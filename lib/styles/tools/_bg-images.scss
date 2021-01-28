@@ -1,0 +1,130 @@
+.bg-image-culture-01 {
+  @extend %bg-image-culture-01;
+}
+
+.bg-image-culture-03 {
+  @extend %bg-image-culture-03;
+}
+
+.bg-image-culture-04 {
+  @extend %bg-image-culture-04;
+}
+
+.bg-image-culture-05 {
+  @extend %bg-image-culture-05;
+}
+
+.bg-image-podcast-01 {
+  @extend %bg-image-podcast-01;
+}
+
+.bg-image-art-01 {
+  @extend %bg-image-art-01;
+}
+
+.bg-image-staff-01 {
+  @extend %bg-image-staff-01;
+}
+
+.bg-image-edition02-04 {
+  @extend %bg-image-edition02-04;
+}
+
+.bg-image-edition02-05 {
+  @extend %bg-image-edition02-05;
+}
+
+.bg-image-edition02-06 {
+  @extend %bg-image-edition02-06;
+}
+
+.bg-image-landing-page-edition-02 {
+  @extend %bg-image-landing-page-edition-02;
+}
+
+.bg-image-workshop-06 {
+  @extend %bg-image-workshop-06;
+}
+
+.bg-image-trainings-03 {
+  @extend %bg-image-trainings-03;
+}
+
+.bg-image-trainings-06 {
+  @extend %bg-image-trainings-06;
+}
+
+%bg-image-art-01 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/general/visual-art-02.jpg");
+}
+
+%bg-image-culture-01 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/general/visual-culture-01.jpg");
+}
+
+%bg-image-culture-03 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/general/visual-culture-03.jpg");
+}
+
+%bg-image-culture-04 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/general/visual-culture-04.jpg");
+}
+
+%bg-image-culture-05 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/general/visual-culture-05.jpg");
+}
+
+%bg-image-edition02-04 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/edition-02/edition02-04.jpg");
+}
+
+%bg-image-edition02-03 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/edition-02/edition02-03.jpg");
+}
+
+%bg-image-edition02-05 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/edition-02/edition02-05.jpg");
+}
+
+%bg-image-edition02-06 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/edition-02/edition02-06.jpg");
+}
+
+%bg-image-landing-page-edition-02 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/edition-02/edition02-01.jpg");
+}
+
+%bg-image-staff-01 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/general/visual-staff-01.jpg");
+}
+
+%bg-image-podcast-01 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/general/podcast-header-big-screens.jpg");
+}
+
+%bg-image-workshop-06 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/general/visual-workshop-06.jpg");
+}
+
+%bg-image-trainings-03 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/general/visual-trainings-03.jpg");
+}
+
+%bg-image-trainings-06 {
+  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
+    asset-url("bg-images/general/visual-trainings-06.jpg");
+}

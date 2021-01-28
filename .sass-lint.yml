@@ -90,7 +90,7 @@ rules:
   empty-args: 2
   hex-length: 2
   hex-notation: 2
-  indentation: 2
+  indentation: 0
   leading-zero: 0
   max-line-length: 0
   max-file-line-count: 0

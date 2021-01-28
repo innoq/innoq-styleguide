@@ -1,5 +1,5 @@
 .card {
-  padding: $spacer-sm $spacer-sm;
+  padding: $spacer-sm;
 }
 
 .card__image-header {
@@ -37,7 +37,7 @@
 .card__body,
 .card__footer {
   background-color: $card-bg-color;
-  padding: $spacer-sm $spacer-sm;
+  padding: $spacer-sm;
 
   .upcase-heading {
     color: $card-headline-color;
@@ -68,13 +68,13 @@
   @extend %body-font-italic;
 
   margin-bottom: $spacer-xxs;
-  font-size: $font-size-sm;
   color: $card-text-color;
+  font-size: $font-size-sm;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .card {
-    padding: $spacer-base $spacer-base;
+    padding: $spacer-base;
   }
 
   .card__body,

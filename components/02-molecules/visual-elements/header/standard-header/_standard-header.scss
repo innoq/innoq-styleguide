@@ -121,10 +121,6 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   font-size: $font-size-xs;
 }
 
-.label--primary {
-  background-color: $standard-header-intro-label-alt-bg;
-}
-
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-sm) {
   .standard-header__title {

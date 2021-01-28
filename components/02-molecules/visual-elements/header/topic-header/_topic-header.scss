@@ -62,55 +62,6 @@ $topic-header-inner-padding-small: $spacer-md;
   }
 }
 
-// Background images for topic header
-.topic-header-bg-image-girl {
-  background-image: asset-url("visual-header-girl.jpg");
-}
-
-.topic-header-bg-image-text-box-girl {
-  @extend %topic-header-bg-image-text-box-girl;
-}
-
-.topic-header-bg-image-medusa {
-  background-image: asset-url("visual-header-medusa.jpg");
-}
-
-.topic-header-bg-image-text-box-medusa {
-  @extend %topic-header-bg-image-text-box-medusa;
-}
-
-.topic-header-bg-image-ice {
-  background-image: asset-url("visual-header-ice.jpg");
-}
-
-.topic-header-bg-image-text-box-ice {
-  @extend %topic-header-bg-image-text-box-ice;
-}
-
-.topic-header-bg-image-igel {
-  background-image: asset-url("visual-header-igel.jpg");
-}
-
-.topic-header-bg-image-text-box-igel {
-  @extend %topic-header-bg-image-text-box-igel;
-}
-
-.topic-header-bg-image-koralle {
-  background-image: asset-url("visual-header-koralle.jpg");
-}
-
-.topic-header-bg-image-text-box-koralle {
-  @extend %topic-header-bg-image-text-box-koralle;
-}
-
-.topic-header-bg-image-heads {
-  background-image: asset-url("visual-header-heads.jpg");
-}
-
-.topic-header-bg-image-text-box-heads {
-  @extend %topic-header-bg-image-text-box-heads;
-}
-
 //
 // Media Queries
 //
