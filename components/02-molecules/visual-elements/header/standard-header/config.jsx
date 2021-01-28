@@ -1,6 +1,6 @@
 import { context } from '../../../../env'
 
-const urlBackground = context.uri('assets/bg-images/edition-02/edition02-02.jpg')
+const urlBackground = context.uri('assets/bg-images/edition-02/edition02-human-02.jpg')
 const urlRight = context.uri('assets/example-content/heribert-rechts.png')
 const urlLeft = context.uri('assets/example-content/heribert-links.png')
 
