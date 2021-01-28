@@ -13,16 +13,14 @@
 
   &__type {
     text-transform: uppercase;
-    line-height: $claim-header-type-line-height-small;
     color: $claim-header-type-color;
-    font-size: $claim-header-type-font-size-small;
+    font-size: $font-size-base;
   }
 
   &__title {
     margin-bottom: $spacer-md;
-    line-height: $claim-header-title-line-height-small;
     color: $claim-header-title-color;
-    font-size: $claim-header-title-font-size-small;
+    font-size: $font-size-xl;
   }
 
   &__divider {
@@ -34,16 +32,9 @@
   }
 }
 
-
 @media screen and (min-width: $grid-breakpoint-md) {
-  .claim-header__type {
-    line-height: $claim-header-type-line-height;
-    font-size: $claim-header-type-font-size;
-  }
-
   .claim-header__title {
     margin-bottom: $spacer-base;
-    line-height: $claim-header-title-line-height;
-    font-size: $claim-header-title-font-size;
+    font-size: $font-size-xxxl;
   }
 }

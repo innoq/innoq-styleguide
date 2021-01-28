@@ -4,11 +4,10 @@
 
 // This layout is setup as two nested grids that consits of three columns each.
 .page-layout--grid {
-
   // If the browser does not support grid, we use a simple layout:
   // One column centered in the middle of the page.
   margin: $grid-page-layout-margin auto;
-  padding: $container-spacer-y-sm $container-spacer-x-sm;
+  padding: $spacer-sm;
   max-width: $grid-page-layout-main-column-width;
 }
 
@@ -54,7 +53,7 @@ main > .page-layout--grid {
       max-width: none;
       grid-template-columns: 1fr $grid-page-layout-leftright-width $grid-page-layout-content-width-xl $grid-page-layout-leftright-width 1fr;
       grid-template-rows: auto;
-      grid-template-areas: '. left center right .';
+      grid-template-areas: ". left center right .";
       grid-column-gap: $grid-page-layout-column-gap;
 
       > * {

@@ -1,0 +1,112 @@
+<nav-bar class="navbar">
+    <div class="navbar__inner">
+        <a href="#main" class="navbtn navbtn--skip">Zum Inhalt springen</a>
+
+        <div class="navbar__brand">
+            <a href="#" class="navbar__brand-link">
+                <img alt="INNOQ" class="logo navbar__logo" src={context.app.uri('assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg')} />
+            </a>
+        </div>
+
+        <input tabindex="-1" type="checkbox" id="navbar-toggle--menu" class="sr-only navbar__toggle-state navbar__toggle-state--menu-toggler" />
+        <input tabindex="-1" type="checkbox" id="navbar-toggle--search" class="sr-only navbar__toggle-state navbar__toggle-state--search-toggler" />
+
+        <div class="navbar__meta">
+            <a href="#" class="navbtn navbtn--meta">Newsletter</a>
+            <a href="#" class="navbtn navbtn--meta">Kontakt</a>
+            <a href="#" class="navbtn navbtn--meta navbtn--locale navbtn--active" title="Deutsch">de</a> |
+            <a href="#" class="navbtn navbtn--meta navbtn--locale" title="English">en</a>
+        </div>
+
+        <div class="navbar__togglers">
+            <label for="navbar-toggle--menu" aria-label="Navigation ein- oder ausblenden">
+                <span class="navbtn navbtn--menu">Menü</span>
+            </label>
+            <a href="#" class="navbtn navbtn--search" aria-label="Suche ein- oder ausblenden">
+                <i class="icon icon-search"></i>
+            </a>
+        </div>
+
+        <nav class="navbar__primary-nav primary-nav">
+            <ul class="primary-nav__list">
+
+                <li class="primary-nav__item">
+                    <a href="#" class="navbtn navbtn--primary navbtn--active">Leistungen</a>
+                </li>
+
+                <li class="primary-nav__item">
+                    <div class="dropdown">
+                        <a href="#" class="navbtn navbtn--primary" data-for="dropdown__toggle--projekte">Projekte</a>
+                        <input type="checkbox" role="button" aria-haspopup="true" id="dropdown__toggle--projekte" class="sr-only dropdown__checkbox" />
+                        <label class="dropdown__toggle dropdown__toggle--navbar" for="dropdown__toggle--projekte">
+                            <i class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"></i>
+                            <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
+                            <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
+                        </label>
+                        <div class="dropdown__list-wrapper dropdown__list-wrapper--navbar" role="menu" title="Projekte">
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Softwarearchitektur und -entwicklung</a>
+                                </li>
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Strategie- und Technologieberatung</a>
+                                </li>
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Entwicklung digitaler Geschäftsmodelle</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="primary-nav__item">
+                    <a href="#" class="navbtn navbtn--primary">Success Stories</a>
+                </li>
+
+                <li class="primary-nav__item">
+                    <a href="#" class="navbtn navbtn--primary">Magazin</a>
+                </li>
+
+                <li class="primary-nav__item">
+                    <a href="#" class="navbtn navbtn--primary">Termine</a>
+                </li>
+
+                <li class="primary-nav__item">
+                    <div class="dropdown">
+                        <a href="#" class="navbtn navbtn--primary" data-for="dropdown__toggle--kultur">Kultur</a>
+                        <input type="checkbox" role="button" aria-haspopup="true" id="dropdown__toggle--kultur" class="sr-only dropdown__checkbox" />
+                        <label class="dropdown__toggle dropdown__toggle--navbar" for="dropdown__toggle--kultur">
+                            <i class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"></i>
+                            <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
+                            <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
+                        </label>
+                        <div class="dropdown__list-wrapper dropdown__list-wrapper--navbar" role="menu" title="Kultur">
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Strategie- und Technologieberatung</a>
+                                </li>
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Entwicklung digitaler Geschäftsmodelle</a>
+                                </li>
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Softwarearchitektur und -entwicklung</a>
+                                </li>
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Digitale Plattformen und Infrastrukturen</a>
+                                </li>
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Wissenstransfer, Coaching und Trainings</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <button class="navbtn navbtn--drill-up">
+                <span class="icon-svg icon-arrow-medium-left icon--brand-primary"></span> Hauptmenü
+            </button>
+        </nav>
+    </div>
+</nav-bar>

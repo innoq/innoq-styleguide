@@ -1,60 +1,31 @@
-.artist-collabo__subtitle {
-  @extend %heading-font-bold;
-  color: $artist-collabo-subtitle-color;
-}
-
-.header-label {
-  width: 75%;
-}
-
-$triplet-divider-height-sm: 2 * $spacer-xxl;
-
-.artist-collabo-intro {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.artist-collabo-intro__text {
-  display: flex;
-  flex-grow: 2;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: $container-spacer-x $container-spacer-y;
-  min-height: $triplet-divider-height-sm;
-  text-align: center;
-  color: $artwork-title-color;
-}
-
-.artist-collabo-artwork {
-  @extend %heading-font-heavy;
-  margin-bottom: $spacer-sm;
-  text-align: center;
-  color: $artwork-title-color;
-  font-size: $artwork-font-size-small;
-
-  &--variant {
-    color: $artwork-title-color--variant;
-  }
-}
-
-.artist-collabo-artist {
-  @extend %body-font-italic;
-  text-align: center;
-  line-height: $author-bio-position-line-height-small;
-  font-size: $author-bio-position-font-size-small;
-}
-
-@media screen and (min-width: $grid-breakpoint-md) {
-  .header-label {
-    margin-top: $spacer-xxl;
+.artist-collabo-page {
+  .standard-header__type {
+    font-size: $font-size-sm;
   }
 
-  .artist-collabo-artwork {
-    font-size: $artwork-font-size-default;
+  .standard-header__intro {
+    background-color: $brand-white;
+
+    h3 {
+      color: $brand-gray;
+    }
   }
 
-  .artist-collabo-artist {
-    font-size: $author-bio-position-font-size;
+  .standard-header__intro__text {
+    color: $brand-gray;
+  }
+
+  @media screen and (min-width: $grid-breakpoint-md) {
+    .standard-header {
+      margin-bottom: ms(20);
+    }
+
+    .artist-collabo-artwork {
+      font-size: $font-size-xxxl;
+    }
+
+    .artist-collabo-artist {
+      font-size: $font-size-base;
+    }
   }
 }

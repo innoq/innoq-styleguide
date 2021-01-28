@@ -1,0 +1,35 @@
+.alert {
+  @extend %heading-font-regular;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: $spacer-sm;
+  padding: $spacer-xs;
+  color: $alert-color;
+  font-size: $font-size-base;
+
+  &--info {
+    background-color: $brand-info;
+  }
+
+  &--warn {
+    background-color: $brand-warn;
+    color: darken($brand-warn, 51%); // Use accessible dark yellow
+  }
+
+  &--error {
+    background-color: $brand-danger;
+  }
+}
+
+.alert-btn {
+  @extend %base-button;
+  color: inherit;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .alert {
+    margin-bottom: $spacer-md;
+    padding: $spacer-sm;
+  }
+}

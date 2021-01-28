@@ -1,0 +1,23 @@
+.form-label {
+  @extend %heading-font-regular;
+
+  display: block;
+  width: 100%;
+  color: $form-label-color;
+  font-size: $font-size-base;
+
+  &--emphasized {
+    @extend %heading-font-bold;
+  }
+
+  &--invalid {
+    color: $form-label-invalid-color;
+  }
+
+  // Mute labels in next to disabled form-controls
+  &.form-label--disabled,
+  .form-control__input:disabled ~ & {
+    cursor: not-allowed;
+    color: $checkbox-color-disabled;
+  }
+}

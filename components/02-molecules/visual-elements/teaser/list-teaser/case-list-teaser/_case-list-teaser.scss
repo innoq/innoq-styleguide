@@ -23,7 +23,7 @@ $case-teaser-height: ms(38);
 .case-teaser__wrapper {
   display: flex;
   justify-content: flex-start;
-  padding: $container-spacer-x-sm;
+  padding: $spacer-sm;
 }
 
 .case-teaser__body {
@@ -33,23 +33,22 @@ $case-teaser-height: ms(38);
   justify-content: space-between;
   background-color: $case-teaser-body-bg;
   padding: $spacer-base;
+  color: $case-teaser-body-color;
 }
 
 .case-teaser__text {
   @extend %teaser-text;
   margin-bottom: $spacer-base;
-  line-height: $big-content-teaser-text-line-height-small;
-  font-size: $big-content-teaser-text-font-size-small;
+  line-height: $paragraph-line-height;
+  font-size: $font-size-xs;
   hyphens: auto;
 }
 
 .case-teaser__header {
   padding-bottom: 0;
-  color: $case-teaser-body-color;
 
   h2 {
-    line-height: $h2-line-height;
-    font-size: $h2-font-size-small;
+    font-size: $font-size-xl;
   }
 
   .punch-in {
@@ -85,8 +84,7 @@ $case-teaser-height: ms(38);
 
   .case-teaser__header {
     h2 {
-      line-height: $h1-line-height;
-      font-size: $h1-font-size;
+      font-size: $font-size-xxxl;
     }
   }
 }
@@ -99,8 +97,7 @@ $case-teaser-height: ms(38);
   }
 
   .case-teaser__text {
-    line-height: $big-content-teaser-text-line-height;
-    font-size: $big-content-teaser-text-font-size;
+    font-size: $font-size-sm;
     hyphens: none;
   }
 

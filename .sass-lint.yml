@@ -90,8 +90,8 @@ rules:
   empty-args: 2
   hex-length: 2
   hex-notation: 2
-  indentation: 2
-  leading-zero: 2
+  indentation: 0
+  leading-zero: 0
   max-line-length: 0
   max-file-line-count: 0
   nesting-depth: 0
@@ -101,7 +101,7 @@ rules:
       order: 'concentric'
       order-explanation: Please use concentric property order. Details can be found here http://rhodesmill.org/brandon/2011/concentric-css/
   pseudo-element: 2
-  quotes: 2
+  quotes: 0
   shorthand-values: 2
   url-quotes: 2
   variable-for-property: 2

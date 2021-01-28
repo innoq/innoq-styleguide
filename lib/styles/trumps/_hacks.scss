@@ -7,10 +7,12 @@
 }
 
 .demo {
-  padding: $spacer-md;
+  > * {
+    margin: $spacer-md;
+  }
 
   &--inverted {
-    background-color: $brand-text;
+    background-color: $brand-secondary;
   }
 
   &--accented {

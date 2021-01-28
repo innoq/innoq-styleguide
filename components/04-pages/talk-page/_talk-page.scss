@@ -41,8 +41,7 @@
 .talk-description {
   & > * {
     @extend %body-font-italic;
-    line-height: $talk-description-line-height-small;
-    font-size: $talk-description-font-size-small;
+    font-size: $font-size-md;
   }
 }
 
@@ -70,11 +69,6 @@
     .event-date-section {
       width: 40%;
     }
-  }
-
-  .talk-description {
-    line-height: $talk-description-line-height;
-    font-size: $talk-description-font-size;
   }
 }
 

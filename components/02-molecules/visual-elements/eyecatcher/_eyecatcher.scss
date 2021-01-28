@@ -16,7 +16,7 @@
     @extend %heading-font-bold;
 
     margin-bottom: 0;
-    font-size: $eyecatcher-font-size;
+    font-size: $font-size-base;
   }
 
   &--event__link {
@@ -36,7 +36,7 @@
     .social-media-bar {
       margin-bottom: 0;
       color: $eyecatcher-color-inverted;
-      font-size: $eyecatcher-font-size-large;
+      font-size: $font-size-xl;
     }
 
     .social-media-bar__link {
@@ -53,7 +53,6 @@
     @extend %heading-font-bold;
 
     margin-bottom: $spacer-md;
-    font-size: $eyecatcher-font-size;
+    font-size: $font-size-base;
   }
-
 }

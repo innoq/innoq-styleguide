@@ -10,15 +10,19 @@
 
 .service-intro__header {
   @extend %h1;
+
   margin-bottom: $spacer-md;
-  font-size: $service-intro-header-font-size-small;
+  color: $service-intro-text-color;
+  font-size: $font-size-xl;
 }
 
 .service-intro__text {
   @extend %heading-font-bold;
+
   margin-bottom: $spacer-md;
-  line-height: $service-intro-text-line-height-small;
-  font-size: $service-intro-text-font-size-small;
+  line-height: $paragraph-line-height;
+  color: $service-intro-text-color;
+  font-size: $font-size-base;
 }
 
 @media screen and (min-width: $grid-breakpoint-md-lg) {
@@ -45,13 +49,12 @@
 
   .service-intro__header {
     margin-bottom: $spacer-base;
-    font-size: $service-intro-header-font-size;
+    font-size: $font-size-xxl;
   }
 
   .service-intro__text {
     margin-bottom: $spacer-base;
-    line-height: $service-intro-text-line-height;
-    font-size: $service-intro-text-font-size;
+    font-size: $font-size-sm;
   }
 }
 

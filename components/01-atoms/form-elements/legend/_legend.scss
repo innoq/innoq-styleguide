@@ -1,0 +1,7 @@
+.legend {
+  @extend %heading-font-heavy;
+
+  margin-bottom: $spacer-md;
+  color: $form-legend-color;
+  font-size: $font-size-lg;
+}

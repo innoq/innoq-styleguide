@@ -1,0 +1,39 @@
+.image-list-teaser {
+  @extend %link-unstyled;
+
+  display: block;
+  margin-bottom: $spacer-xxl;
+}
+
+.image-list-teaser__title {
+  @extend %heading-font-heavy;
+
+  margin-bottom: 0;
+  text-align: center;
+  font-size: $font-size-lg;
+
+  &--01 {
+    color: $brand-red;
+  }
+
+  &--02 {
+    color: $brand-apricot;
+  }
+}
+
+.image-list-teaser__subtitle {
+  @extend %body-font-italic;
+
+  text-align: center;
+  font-size: $font-size-base;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .image-list-teaser__title {
+    font-size: $font-size-xxl;
+  }
+
+  .image-list-teaser__subtitle {
+    font-size: $font-size-sm;
+  }
+}

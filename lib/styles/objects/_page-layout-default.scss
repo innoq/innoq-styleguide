@@ -5,7 +5,7 @@
 .page-layout-xl--default,
 .page-layout-md--default,
 .page-layout-md--no-margin {
-  padding: $container-spacer-y-sm $container-spacer-x-sm;
+  padding: $spacer-sm;
 }
 
 //
@@ -13,7 +13,6 @@
 //
 
 @media screen and (min-width: $grid-breakpoint-md) {
-
   // Landing Page width, content max-width is 1440px
   .page-layout-xl--default {
     width: $default-page-layout-width-xl;

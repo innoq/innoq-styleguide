@@ -6,7 +6,9 @@ $tuple-list-label-width: 8rem;
 
 .tuple-list__label {
   @extend %teaser-caption;
+
   display: block;
+  color: $tupel-list-label-color;
 }
 
 .tuple-list__entry {
@@ -14,8 +16,9 @@ $tuple-list-label-width: 8rem;
 }
 
 .tuple-list__value {
+  @extend %heading-font-regular;
+
   display: block;
-  font-family: $font-family-sans-serif;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -24,7 +27,7 @@ $tuple-list-label-width: 8rem;
     margin-bottom: $spacer-xxs;
     grid-template-columns: $tuple-list-label-width auto;
     grid-template-rows: auto;
-    grid-template-areas: 'label value';
+    grid-template-areas: "label value";
   }
 
   .tuple-list__label {

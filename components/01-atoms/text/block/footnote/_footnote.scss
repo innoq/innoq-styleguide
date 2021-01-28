@@ -17,8 +17,8 @@
     @extend %heading-font-regular;
 
     margin-bottom: $spacer-sm;
-    line-height: $footnote-line-height-small;
-    font-size: $footnote-font-size-small;
+    line-height: $paragraph-line-height;
+    font-size: $font-size-xxs;
   }
 
   li {
@@ -39,6 +39,7 @@
       left: -.5rem;
       width: $spacer-sm;
       text-align: right;
+      color: $footnote-index-color;
       content: counter(number);
       counter-increment: number;
       }
@@ -54,8 +55,7 @@
   & p {
     @extend %heading-font-regular;
     margin: 0;
-    line-height: $tooltip-line-height-small;
-    font-size: $tooltip-font-size-small;
+    font-size: $font-size-xxs;
   }
 }
 
@@ -64,8 +64,7 @@
   .footnotes__list {
     li,
     li > p {
-      line-height: $footnote-line-height;
-      font-size: $footnote-font-size;
+      font-size: $font-size-base;
     }
   }
 
@@ -73,8 +72,7 @@
     max-width: 40%;
 
     & p {
-      line-height: $tooltip-line-height;
-      font-size: $tooltip-font-size;
+      font-size: $font-size-base;
     }
   }
 }

@@ -1,4 +1,5 @@
-$event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spacer-xxs);
+$event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
+// todo
 
 .list-teaser-event {
   @extend %list-teaser;
@@ -26,6 +27,7 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
     .author-bio {
       flex-basis: 100%;
       margin-bottom: 0;
+      color: $list-teaser-event-subheadline-color;
     }
   }
 }
@@ -42,9 +44,8 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
   @extend %h3;
 
   margin-bottom: $spacer-xs;
-  line-height: $list-teaser-event-headline-line-height-small;
   color: $list-teaser-event-headline-color;
-  font-size: $list-teaser-event-headline-font-size-small;
+  font-size: $font-size-md;
 }
 
 .list-teaser-event__headline--secondary {
@@ -58,8 +59,12 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
   @extend %body-font-italic;
 
   margin-bottom: $spacer-xs;
-  line-height: $list-teaser-event-subheadline-line-height-small;
-  font-size: $list-teaser-event-subheadline-font-size-small;
+  color: $list-teaser-event-subheadline-color;
+  font-size: $font-size-sm;
+
+  .icon-svg {
+    margin-left: $spacer-xs;
+  }
 }
 
 //
@@ -102,13 +107,11 @@ $event-date-section-height: ($label-font-size * $label-line-height) + (2 * $spac
   }
 
   .list-teaser-event__headline {
-    line-height: $list-teaser-event-headline-line-height;
-    font-size: $list-teaser-event-headline-font-size;
+    font-size: $font-size-lg;
   }
 
   .list-teaser-event__subheadline {
-    line-height: $list-teaser-event-subheadline-line-height;
-    font-size: $list-teaser-event-subheadline-font-size;
+    font-size: $font-size-md;
   }
 }
 

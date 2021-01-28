@@ -22,8 +22,8 @@ $share-section-arrow-size: ms(16);
 }
 
 .share-section__heading {
-  line-height: $share-section-heading-line-height;
-  font-size: $share-section-heading-font-size;
+  color: $sharing-headline-color;
+  font-size: $font-size-lg;
 }
 
 .share-section__list {

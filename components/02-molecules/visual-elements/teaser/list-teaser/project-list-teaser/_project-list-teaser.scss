@@ -18,6 +18,7 @@
 
 .project-index__title {
   @extend %h1;
+
   display: inline-block;
   margin: 0;
   background-color: $project-index-text-color;
@@ -29,13 +30,9 @@
 // client-projects
 //
 
-%client-projects-headline-small {
-  line-height: $list-teaser-project-headline-line-height-small;
-  font-size: $list-teaser-project-headline-font-size-small;
-}
-
 .client-projects {
   @extend %list-unstyled;
+
   position: relative;
 }
 
@@ -48,9 +45,9 @@
 }
 
 .client-projects__client-name {
-  @extend %client-projects-headline-small;
   margin: $spacer-lg 0 $spacer-sm;
   color: $project-index-highlight-color;
+  font-size: $font-size-md;
 }
 
 .client-projects__project {
@@ -71,13 +68,15 @@
 }
 
 .client-projects__project-title {
-  @extend %client-projects-headline-small;
   margin-bottom: $spacer-sm;
   text-transform: none;
+  color: $project-index-title-color;
+  font-size: $font-size-md;
 }
 
 .client-projects__intro-text {
   @extend %teaser-text-italic;
+
   margin: 0;
 }
 
@@ -88,13 +87,14 @@
 }
 
 .client-projects__show-more-btn {
-  img {
-    vertical-align: middle;
+  .icon-svg {
+    margin-left: $spacer-xxs;
   }
 }
 
 .client-projects__text {
   @extend %teaser-text;
+
   margin: $spacer-md 0 $spacer-sm;
 }
 

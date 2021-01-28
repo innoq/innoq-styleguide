@@ -15,15 +15,15 @@
   @extend %heading-font-regular;
 }
 
-.search-result__type +
-.search-result__date {
+.search-result__type + .search-result__date {
   &::before {
-    content: ' | ';
+    content: " | ";
   }
 }
 
 .search-result__title {
   @extend %h3;
+
   transition: standard-transition(color);
   margin-bottom: 0;
 

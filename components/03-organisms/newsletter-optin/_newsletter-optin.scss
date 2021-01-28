@@ -1,0 +1,51 @@
+.newsletter-optin {
+  $gradient-from: rgba(0, 0, 0, 0.6);
+  $gradient-to: rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient($gradient-from, $gradient-to),
+    asset-url("bg-images/edition-02/edition02-data-05.jpg");
+  background-size: cover;
+  padding: $spacer-lg;
+  overflow: hidden;
+  color: $newsletter-optin-color;
+
+  .form-label {
+    color: $newsletter-optin-color;
+  }
+}
+
+.newsletter-optin__title {
+  @extend %h1;
+
+  margin-bottom: $spacer-sm;
+  text-align: center;
+  color: $newsletter-optin-color;
+}
+
+.newsletter-optin__subtitle {
+  @extend %h5;
+
+  margin-bottom: $spacer-lg;
+  text-align: center;
+  color: $newsletter-optin-color;
+}
+
+.newsletter-optin__form {
+  .form-control {
+    border: 0;
+  }
+}
+
+.newsletter-optin__inputfield {
+  display: flex;
+  flex-direction: row;
+
+  .btn {
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+}
