@@ -39,6 +39,7 @@ $full-width-teaser-height: ms(38);
   @extend %teaser-text;
 
   margin-bottom: $spacer-base;
+  line-height: $paragraph-line-height;
   font-size: $font-size-xs;
   hyphens: auto;
 }
