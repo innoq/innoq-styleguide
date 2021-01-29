@@ -27,7 +27,7 @@
   @extend %heading-font-heavy;
 
   background: $list-teaser-product-background-color-cta;
-  padding: $spacer-xxs;
+  padding: $spacer-xs;
   text-align: center;
   color: $list-teaser-product-color-cta;
   font-size: $font-size-xs;
@@ -54,6 +54,6 @@
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .product-list-teaser__text {
-    font-size: $font-size-base;
+    font-size: $font-size-md;
   }
 }
