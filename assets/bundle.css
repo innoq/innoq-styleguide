@@ -4318,6 +4318,7 @@ super-quote > blockquote > p,
 
 .default-full-width-teaser__text {
   margin-bottom: 2.0736rem;
+  line-height: 1.52;
   font-size: 0.9114583333rem;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
