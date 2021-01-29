@@ -189,8 +189,11 @@
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-header&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-header__body&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-header__title&quot;</span>&gt;</span>
-            Gemeinsam neue Wege gehen. <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>Dinge tun, die etwas bewirken. <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>Mit
-            Technologie die Zukunft gestalten.
+            Gemeinsam neue Wege gehen.
+            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-header__divider&quot;</span> /&gt;</span>
+            Dinge tun, die etwas bewirken.
+            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-header__divider&quot;</span> /&gt;</span>
+            Mit Technologie die Zukunft gestalten.
         <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-header__text&quot;</span>&gt;</span>
             Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
@@ -212,8 +215,10 @@
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-header&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-header__body&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-header__title&quot;</span>&gt;</span>
-            Gemeinsam neue Wege gehen. <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
-            Dinge tun, die etwas bewirken. <span class="hljs-tag">&lt;<span class="hljs-name">br</span> /&gt;</span>
+            Gemeinsam neue Wege gehen.
+            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-header__divider&quot;</span>/&gt;</span>
+            Dinge tun, die etwas bewirken.
+            <span class="hljs-tag">&lt;<span class="hljs-name">hr</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-header__divider&quot;</span>/&gt;</span>
             Mit Technologie die Zukunft gestalten.
         <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;text-header__text&quot;</span>&gt;</span>
@@ -268,7 +273,6 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-selector-class">.text-header</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$text-header-bg-color</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$text-header-color</span>;
 
   &amp;__body {
     <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$spacer-lg</span> auto;
@@ -279,6 +283,7 @@
 
   &amp;__title {
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-base</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$text-header-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xl</span>;
   }
 
@@ -287,10 +292,11 @@
 
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-base</span>;
     <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$text-header-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
   }
 
-    &amp;__divider {
+  &amp;__divider {
     <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
     <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$text-header-color</span>;
@@ -329,7 +335,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">879 Bytes</span>
+                    <span class="Meta-value">910 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -4623,7 +4629,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-01-29T17:50:39.462Z">
+                            <time datetime="2021-01-29T19:23:24.635Z">
                                 1/29/2021
                             </time>
                         

@@ -3986,8 +3986,7 @@ super-quote > blockquote > p,
   }
 }
 .text-header {
-  background-color: #004153;
-  color: #ff9c66;
+  background-color: #fff;
 }
 .text-header__body {
   margin: 2.985984rem auto;
@@ -3997,17 +3996,19 @@ super-quote > blockquote > p,
 }
 .text-header__title {
   margin-bottom: 2.0736rem;
+  color: #004153;
   font-size: 2.0736rem;
 }
 .text-header__text {
   margin-bottom: 2.0736rem;
   line-height: 1.52;
+  color: #004153;
   font-size: 1.2rem;
 }
 .text-header__divider {
   margin-top: 2.0736rem;
   border: 0;
-  background-color: #ff9c66;
+  background-color: #004153;
   width: 9.7519848653rem;
   height: 4px;
 }
@@ -4363,7 +4364,7 @@ super-quote > blockquote > p,
   }
 
   .default-full-width-teaser__text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     -webkit-hyphens: none;
         -ms-hyphens: none;
             hyphens: none;
@@ -5473,7 +5474,7 @@ super-quote > blockquote > p,
 }
 
 .podcast-teaser--avatar--overlay {
-  background-color: #40707e;
+  background-color: #004153;
   background-repeat: no-repeat;
   background-position: top right;
   background-size: auto 100%;
