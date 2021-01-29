@@ -318,7 +318,7 @@ $podcast-teaser-light-bg: $brand-white;
 $podcast-teaser-default-color: $brand-secondary;
 $podcast-teaser-default-color-secondary: $brand-primary;
 $podcast-teaser-overlay-color: $brand-primary;
-$podcast-teaser-overlay-color-secondary: $brand-secondary-75;
+$podcast-teaser-overlay-color-secondary: $brand-secondary;
 
 // Security-Podcast Teaser
 $podcast-teaser-default-bg-sec: $brand-gray;
@@ -394,8 +394,8 @@ $claim-header-divider-color: $brand-secondary;
 $image-header-bg-color: $brand-primary;
 $image-header-content-bg-color: $brand-white;
 
-$text-header-bg-color: $brand-secondary;
-$text-header-color: $brand-primary;
+$text-header-bg-color: $brand-white;
+$text-header-color: $brand-secondary;
 
 // Toolbar
 $toolbar-link-hover-color: $brand-interaction;

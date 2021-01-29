@@ -1,6 +1,5 @@
 .text-header {
   background-color: $text-header-bg-color;
-  color: $text-header-color;
 
   &__body {
     margin: $spacer-lg auto;
@@ -11,6 +10,7 @@
 
   &__title {
     margin-bottom: $spacer-base;
+    color: $text-header-color;
     font-size: $font-size-xl;
   }
 
@@ -19,10 +19,11 @@
 
     margin-bottom: $spacer-base;
     line-height: $paragraph-line-height;
+    color: $text-header-color;
     font-size: $font-size-sm;
   }
 
-    &__divider {
+  &__divider {
     margin-top: $spacer-base;
     border: 0;
     background-color: $text-header-color;
