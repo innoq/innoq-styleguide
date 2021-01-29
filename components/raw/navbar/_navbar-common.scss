@@ -90,12 +90,6 @@ $navbar-secondary-font-size: ms(-2);
   padding: 0 $spacer-md 0 0;
 }
 
-.navbtn__left-icon {
-  position: relative;
-  top: 0.1em;
-  margin-right: 0.5em;
-}
-
 .navbtn--active::after {
   display: block;
   position: absolute;

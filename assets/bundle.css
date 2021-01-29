@@ -1529,8 +1529,8 @@ figcaption {
 .icon-arrow-medium-left {
   width: 2rem;
   height: 0.75rem;
-  -webkit-mask-image: url("/assets/icons/arrow-medium-left-red.svg");
-          mask-image: url("/assets/icons/arrow-medium-left-red.svg");
+  -webkit-mask-image: url("/assets/icons/arrow-medium-left.svg");
+          mask-image: url("/assets/icons/arrow-medium-left.svg");
 }
 
 .icon-arrow-sync {
@@ -1551,15 +1551,15 @@ figcaption {
 .icon-minus {
   width: 1rem;
   height: 0.5rem;
-  -webkit-mask-image: url("/assets/icons/minus-red.svg");
-          mask-image: url("/assets/icons/minus-red.svg");
+  -webkit-mask-image: url("/assets/icons/minus.svg");
+          mask-image: url("/assets/icons/minus.svg");
 }
 
 .icon-plus {
   width: 1rem;
   height: 1rem;
-  -webkit-mask-image: url("/assets/icons/plus-red.svg");
-          mask-image: url("/assets/icons/plus-red.svg");
+  -webkit-mask-image: url("/assets/icons/plus.svg");
+          mask-image: url("/assets/icons/plus.svg");
 }
 
 .icon-text {
@@ -5115,7 +5115,7 @@ super-quote > blockquote > p,
 
 .product-list-teaser__cta {
   background: #004153;
-  padding: 0.3348979767rem;
+  padding: 0.5787037037rem;
   text-align: center;
   color: #ff9c66;
   font-size: 0.9114583333rem;
@@ -5138,7 +5138,7 @@ super-quote > blockquote > p,
 
 @media screen and (min-width: 48rem) {
   .product-list-teaser__text {
-    font-size: 1rem;
+    font-size: 1.44rem;
   }
 }
 .big-content-teaser {
@@ -5864,6 +5864,7 @@ super-quote > blockquote > p,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-size: cover;
   min-height: 100vh;
 }
 
@@ -6288,12 +6289,6 @@ super-quote > blockquote > p,
 
 .navbtn--menu {
   padding: 0 1.44rem 0 0;
-}
-
-.navbtn__left-icon {
-  position: relative;
-  top: 0.1em;
-  margin-right: 0.5em;
 }
 
 .navbtn--active::after {
