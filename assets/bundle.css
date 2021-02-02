@@ -1480,9 +1480,9 @@ figcaption {
   height: 1rem;
 }
 
-.icon-svg--medium {
-  width: 2.0736rem;
-  height: 2.0736rem;
+.icon--medium {
+  width: 2.985984rem;
+  height: 2.985984rem;
 }
 
 .icon--big {
@@ -1538,6 +1538,16 @@ figcaption {
           mask-image: url("/assets/icons/arrow-sync.svg");
 }
 
+.icon-bookshelf {
+  -webkit-mask-image: url("/assets/icons/bookshelf.svg");
+          mask-image: url("/assets/icons/bookshelf.svg");
+}
+
+.icon-certificate {
+  -webkit-mask-image: url("/assets/icons/certificate.svg");
+          mask-image: url("/assets/icons/certificate.svg");
+}
+
 .icon-email {
   -webkit-mask-image: url("/assets/icons/email.svg");
           mask-image: url("/assets/icons/email.svg");
@@ -1546,6 +1556,51 @@ figcaption {
 .icon-feedback {
   -webkit-mask-image: url("/assets/icons/feedback.svg");
           mask-image: url("/assets/icons/feedback.svg");
+}
+
+.icon-flame {
+  -webkit-mask-image: url("/assets/icons/flame.svg");
+          mask-image: url("/assets/icons/flame.svg");
+}
+
+.icon-globe {
+  -webkit-mask-image: url("/assets/icons/globe.svg");
+          mask-image: url("/assets/icons/globe.svg");
+}
+
+.icon-group-idea {
+  -webkit-mask-image: url("/assets/icons/group-idea.svg");
+          mask-image: url("/assets/icons/group-idea.svg");
+}
+
+.icon-interactive {
+  -webkit-mask-image: url("/assets/icons/interactive.svg");
+          mask-image: url("/assets/icons/interactive.svg");
+}
+
+.icon-learning {
+  -webkit-mask-image: url("/assets/icons/learning.svg");
+          mask-image: url("/assets/icons/learning.svg");
+}
+
+.icon-rooms {
+  -webkit-mask-image: url("/assets/icons/rooms.svg");
+          mask-image: url("/assets/icons/rooms.svg");
+}
+
+.icon-support {
+  -webkit-mask-image: url("/assets/icons/support.svg");
+          mask-image: url("/assets/icons/support.svg");
+}
+
+.icon-trainer {
+  -webkit-mask-image: url("/assets/icons/trainer.svg");
+          mask-image: url("/assets/icons/trainer.svg");
+}
+
+.icon-virtual {
+  -webkit-mask-image: url("/assets/icons/virtual.svg");
+          mask-image: url("/assets/icons/virtual.svg");
 }
 
 .icon-minus {

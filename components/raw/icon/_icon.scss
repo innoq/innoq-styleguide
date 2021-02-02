@@ -151,9 +151,9 @@
   height: $spacer-sm;
 }
 
-.icon-svg--medium {
-  width: $spacer-base;
-  height: $spacer-base;
+.icon--medium {
+  width: $spacer-lg;
+  height: $spacer-lg;
 }
 
 .icon--big {
@@ -207,12 +207,56 @@
 }
 
 // Interface Icons
+.icon-bookshelf {
+  mask-image: asset-url("icons/bookshelf.svg");
+}
+
+.icon-certificate {
+  mask-image: asset-url("icons/certificate.svg");
+}
+
 .icon-email {
   mask-image: asset-url("icons/email.svg");
 }
 
 .icon-feedback {
   mask-image: asset-url("icons/feedback.svg");
+}
+
+.icon-flame {
+  mask-image: asset-url("icons/flame.svg");
+}
+
+.icon-globe {
+  mask-image: asset-url("icons/globe.svg");
+}
+
+.icon-group-idea {
+  mask-image: asset-url("icons/group-idea.svg");
+}
+
+.icon-interactive {
+  mask-image: asset-url("icons/interactive.svg");
+}
+
+.icon-learning {
+  mask-image: asset-url("icons/learning.svg");
+}
+
+.icon-rooms {
+  mask-image: asset-url("icons/rooms.svg");
+}
+
+.icon-support {
+  mask-image: asset-url("icons/support.svg");
+}
+
+.icon-trainer {
+  mask-image: asset-url("icons/trainer.svg");
+}
+
+.icon-virtual {
+  mask-image: asset-url("icons/virtual.svg");
 }
 
 .icon-minus {
