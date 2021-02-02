@@ -568,6 +568,10 @@ dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
     -webkit-background-clip: text;
   }
 }
+.text-center {
+  text-align: center;
+}
+
 .podcast-author {
   text-transform: uppercase;
   font-size: 1rem;
@@ -632,6 +636,70 @@ dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
   background-position: center;
   background-size: cover;
   min-height: 70vh;
+}
+
+.m-t-xxs {
+  margin-top: 0.3348979767rem;
+}
+
+.m-t-xs {
+  margin-top: 0.5787037037rem;
+}
+
+.m-t-sm {
+  margin-top: 1rem;
+}
+
+.m-t-md {
+  margin-top: 1.44rem;
+}
+
+.m-t-lg {
+  margin-top: 2.985984rem;
+}
+
+.m-t-xl {
+  margin-top: 3.919104rem;
+}
+
+.m-t-xxl {
+  margin-top: 7.4300837069rem;
+}
+
+.m-t-0 {
+  margin-top: 0;
+}
+
+.m-b-xxs {
+  margin-bottom: 0.3348979767rem;
+}
+
+.m-b-xs {
+  margin-bottom: 0.5787037037rem;
+}
+
+.m-b-sm {
+  margin-bottom: 1rem;
+}
+
+.m-b-md {
+  margin-bottom: 1.44rem;
+}
+
+.m-b-lg {
+  margin-bottom: 2.985984rem;
+}
+
+.m-b-xl {
+  margin-bottom: 3.919104rem;
+}
+
+.m-b-xxl {
+  margin-bottom: 7.4300837069rem;
+}
+
+.m-b-0 {
+  margin-bottom: 0;
 }
 
 .podcast-teaser, .content-teaser, .case-tile-teaser, .big-content-teaser, .topic-teaser, .list-teaser-training, .list-teaser, .list-teaser-podcast, .list-teaser-event, .case-teaser, .list-teaser-abstract {
@@ -3556,6 +3624,106 @@ super-quote > blockquote > p,
   font-size: 1rem;
 }
 
+.icon-eyecatcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.icon-eyecatcher__cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2.985984rem;
+  max-width: 12.5rem;
+  text-align: center;
+}
+.icon-eyecatcher__cell .icon-svg {
+  margin-bottom: 1rem;
+}
+
+.video-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1.44rem;
+}
+
+@media screen and (min-width: 48rem) {
+  .video-cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 75rem) {
+  .video-cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.video-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: auto;
+      align-self: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  padding: 1.44rem;
+  width: 100%;
+}
+.video-card__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.video-card__title {
+  text-align: center;
+  color: #ff9c66;
+}
+.video-card__label {
+  margin-bottom: 0.5787037037rem;
+}
+.video-card__video {
+  margin-top: 1.44rem;
+}
+.video-card__video > * {
+  max-width: 100%;
+}
+.video-card__video + * {
+  margin-top: 1rem;
+}
+
 .claim-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3961,8 +4129,9 @@ super-quote > blockquote > p,
           box-sizing: content-box;
 }
 
-.standard-header__intro__headline {
-  text-align: left;
+.standard-header__intro-headline {
+  text-align: center;
+  color: #fff;
 }
 
 .standard-header__intro__text {
@@ -6061,7 +6230,7 @@ super-quote > blockquote > p,
     height: 29.7203348275rem;
   }
 }
-.icon-devider {
+.icon-divider {
   margin-top: 2.0736rem;
   margin-bottom: 2.0736rem;
   text-align: center;
