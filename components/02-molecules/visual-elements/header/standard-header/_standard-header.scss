@@ -97,8 +97,9 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   box-sizing: content-box;
 }
 
-.standard-header__intro__headline {
-  text-align: left;
+.standard-header__intro-headline {
+  text-align: center;
+  color: $standard-header-intro-text-color;
 }
 
 .standard-header__intro__text {

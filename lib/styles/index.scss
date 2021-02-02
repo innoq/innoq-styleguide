@@ -31,6 +31,7 @@
 @import "tools/visibility";
 @import "tools/teaser";
 @import "tools/header";
+@import "tools/helperclasses";
 
 //
 // Generic
@@ -154,7 +155,9 @@
 // Visual elements
 @import "../components/02-molecules/visual-elements/card/card";
 @import "../components/02-molecules/visual-elements/date-location-section/date-location-section";
-@import "../components/02-molecules/visual-elements/eyecatcher/eyecatcher";
+@import "../components/02-molecules/visual-elements/eyecatcher/eyecatcher-banner/eyecatcher-banner";
+@import "../components/02-molecules/visual-elements/eyecatcher/icon-eyecatcher/icon-eyecatcher";
+@import "../components/02-molecules/visual-elements/video-card/video-card";
 
 // Header Molecules
 @import "../components/02-molecules/visual-elements/header/claim-header/claim-header";
