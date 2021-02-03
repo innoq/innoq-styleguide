@@ -4918,7 +4918,7 @@ super-quote > blockquote > p,
   font-size: 1.2rem;
 }
 .list-teaser-event__subheadline .icon-svg {
-  margin-left: 0.5787037037rem;
+  margin-left: 0.3348979767rem;
 }
 
 @media screen and (max-width: 48rem) {
@@ -5132,7 +5132,10 @@ super-quote > blockquote > p,
 .client-projects__client-name {
   margin: 2.985984rem 0 1rem;
   color: #ff9c66;
-  font-size: 1.44rem;
+  font-size: 1.2rem;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 .client-projects__project {

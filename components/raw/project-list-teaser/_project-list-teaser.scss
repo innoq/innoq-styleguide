@@ -47,7 +47,8 @@
 .client-projects__client-name {
   margin: $spacer-lg 0 $spacer-sm;
   color: $project-index-highlight-color;
-  font-size: $font-size-md;
+  font-size: $font-size-sm;
+  hyphens: auto;
 }
 
 .client-projects__project {
