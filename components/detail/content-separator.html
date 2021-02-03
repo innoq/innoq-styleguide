@@ -188,6 +188,11 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-separator&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-separator__date date&quot;</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;2017-06-26&quot;</span>&gt;</span>26. Juni 2017<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-separator__duration duration&quot;</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;P8M&quot;</span>&gt;</span>8 Min. Lesedauer<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;demo demo--inverted&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-separator content-seperator--inverted&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-separator__date date&quot;</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;2017-06-26&quot;</span>&gt;</span>26. Juni 2017<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-separator__duration duration&quot;</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;P8M&quot;</span>&gt;</span>8 Min. Lesedauer<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -199,6 +204,13 @@
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-separator&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-separator__date date&quot;</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;2017-06-26&quot;</span>&gt;</span>26. Juni 2017<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-separator__duration duration&quot;</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;P8M&quot;</span>&gt;</span>8 Min. Lesedauer<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;demo demo--inverted&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-separator content-seperator--inverted&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-separator__date date&quot;</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;2017-06-26&quot;</span>&gt;</span>26. Juni 2017<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content-separator__duration duration&quot;</span> <span class="hljs-attr">datetime</span>=<span class="hljs-string">&quot;P8M&quot;</span>&gt;</span>8 Min. Lesedauer<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
     </code>
 </div>
@@ -264,6 +276,22 @@
   <span class="hljs-attribute">min-height</span>: <span class="hljs-variable">$font-size-base</span>;
 }
 
+<span class="hljs-selector-class">.content-seperator--inverted</span> {
+  <span class="hljs-comment">// The border in the middle of the component is realized with</span>
+  <span class="hljs-comment">// a stack of two inset box-shadows the first one is white</span>
+  <span class="hljs-comment">// and reaches from the top to the middle of the baseline.</span>
+  <span class="hljs-comment">// The second box-shadow is 1px taller than the first one,</span>
+  <span class="hljs-comment">// resulting in a single line.</span>
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$box-shadow-color-dark</span> <span class="hljs-number">0</span> <span class="hljs-variable">$border-position</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> inset,
+    <span class="hljs-variable">$box-shadow-color-light</span> <span class="hljs-number">0</span> calc(#{<span class="hljs-variable">$border-position</span>} + <span class="hljs-number">1px</span>) <span class="hljs-number">0</span> <span class="hljs-number">0</span> inset;
+
+  <span class="hljs-selector-class">.content-separator__date</span>,
+  <span class="hljs-selector-class">.content-separator__duration</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$content-seperator-text-color</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$box-shadow-color-light</span>;
+  }
+}
+
 <span class="hljs-comment">// Both subcomponents overlap the border of its parent component by</span>
 <span class="hljs-comment">// having a small padding and a white background color.</span>
 <span class="hljs-selector-class">.content-separator__date</span>,
@@ -294,7 +322,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.1 KB</span>
+                    <span class="Meta-value">1.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -4636,8 +4664,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-02-02T13:50:46.338Z">
-                                2/2/2021
+                            <time datetime="2021-02-03T16:31:05.517Z">
+                                2/3/2021
                             </time>
                         
                     </dd>

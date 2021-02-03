@@ -638,6 +638,15 @@ dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
   min-height: 70vh;
 }
 
+.dark-background {
+  background-color: #004153;
+  overflow: hidden;
+}
+
+.bg-primary {
+  background-color: #ff9c66;
+}
+
 .m-t-xxs {
   margin-top: 0.3348979767rem;
 }
@@ -2307,7 +2316,7 @@ blockquote:not([class]), blockquote:not([class]) > p,
     top: 0;
     bottom: 0;
     left: -2.985984rem;
-    background-color: #ff9c66;
+    background-color: #004153;
     width: 10px;
     content: "";
   }
@@ -2955,6 +2964,16 @@ hr {
   min-height: 1rem;
 }
 
+.content-seperator--inverted {
+  -webkit-box-shadow: #004153 0 0.5rem 0 0 inset, #fff 0 calc(0.5rem + 1px) 0 0 inset;
+          box-shadow: #004153 0 0.5rem 0 0 inset, #fff 0 calc(0.5rem + 1px) 0 0 inset;
+}
+.content-seperator--inverted .content-separator__date,
+.content-seperator--inverted .content-separator__duration {
+  background-color: #004153;
+  color: #fff;
+}
+
 .content-separator__date,
 .content-separator__duration {
   background-color: #fff;
@@ -3098,14 +3117,22 @@ super-quote > blockquote,
 .superquote,
 .longquote {
   margin-bottom: 1.44rem;
+  padding: 2px 0;
   text-align: center;
 }
 long-quote > blockquote > p,
 super-quote > blockquote > p,
 .superquote > p,
 .longquote > p {
-  color: #ff9c66;
+  display: inline;
+  -webkit-box-shadow: 0.3348979767rem 0 0 #ff9c66, -0.3348979767rem 0 0 #ff9c66;
+          box-shadow: 0.3348979767rem 0 0 #ff9c66, -0.3348979767rem 0 0 #ff9c66;
+  background-color: #ff9c66;
+  padding: 0.5787037037rem;
+  color: #004153;
   font-size: 1.2rem;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 long-quote > blockquote > p:lang(de)::before,
 super-quote > blockquote > p:lang(de)::before,
@@ -3142,6 +3169,7 @@ super-quote > blockquote > p:lang(en)::after,
 .superquote__author,
 .longquote__author {
   display: block;
+  margin-top: 0.5787037037rem;
   text-transform: uppercase;
   font-size: 1rem;
 }
@@ -3152,7 +3180,8 @@ super-quote > blockquote > p:lang(en)::after,
 }
 
 .longquote__avatar {
-  margin-bottom: 0.5787037037rem;
+  display: block;
+  margin-top: 0.5787037037rem;
 }
 
 @media screen and (min-width: 48rem) {
@@ -3505,29 +3534,39 @@ super-quote > blockquote > p,
 }
 
 .card__body {
-  border-bottom: 1px solid #d8d8d8;
-}
-
-.card__body,
-.card__footer {
   background-color: #004153;
   padding: 1rem;
 }
-.card__body .upcase-heading,
-.card__footer .upcase-heading {
+.card__body .upcase-heading {
   color: #ff9c66;
 }
-.card__body .standalone,
-.card__footer .standalone {
+.card__body .standalone {
   color: #fff;
 }
-.card__body .checklist,
+.card__body .checklist {
+  color: #fff;
+}
+
+.card__footer {
+  background-color: #ff9c66;
+  padding: 1rem;
+}
+.card__footer .upcase-heading {
+  color: #004153;
+}
+.card__footer .standalone {
+  color: #004153;
+}
 .card__footer .checklist {
-  color: #ff9c66;
+  color: #fff;
+}
+.card__footer .checklist li::before {
+  color: #004153;
 }
 
 .card__subheadline {
   margin-bottom: 0.3348979767rem;
+  line-height: 1.52;
   color: #fff;
 }
 
@@ -3539,6 +3578,9 @@ super-quote > blockquote > p,
   margin-bottom: 0.3348979767rem;
   color: #fff;
   font-size: 1.2rem;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 @media screen and (min-width: 48rem) {
@@ -4434,6 +4476,19 @@ super-quote > blockquote > p,
   color: #004153;
   font-size: 2.0736rem;
 }
+.service-intro__header a,
+.service-intro__header a:not([class]) {
+  -webkit-box-shadow: 0.3348979767rem 0 0 #ff9c66, -0.3348979767rem 0 0 #ff9c66;
+          box-shadow: 0.3348979767rem 0 0 #ff9c66, -0.3348979767rem 0 0 #ff9c66;
+  background-color: #ff9c66;
+  padding: 0.3348979767rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+.service-intro__header a:hover,
+.service-intro__header a:not([class]):hover {
+  background-color: #ff9c66;
+}
 
 .service-intro__text {
   margin-bottom: 1.44rem;
@@ -4664,8 +4719,7 @@ super-quote > blockquote > p,
   font-size: 3.5831808rem;
 }
 .list-teaser-abstract__text .icon-svg {
-  display: block;
-  margin-top: 0.5787037037rem;
+  margin-left: 0.3348979767rem;
 }
 
 @media screen and (min-width: 48rem) {
@@ -5101,7 +5155,10 @@ super-quote > blockquote > p,
   margin-bottom: 1rem;
   text-transform: none;
   color: #004153;
-  font-size: 1.44rem;
+  font-size: 1.2rem;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 .client-projects__intro-text {
@@ -5187,7 +5244,7 @@ super-quote > blockquote > p,
   font-size: 1.2rem;
 }
 .list-teaser__subheadline .icon-svg {
-  margin-left: 0.5787037037rem;
+  margin-left: 0.3348979767rem;
 }
 
 @media screen and (min-width: 48rem) {
@@ -6304,11 +6361,6 @@ super-quote > blockquote > p,
 }
 .form--inverted .form-group--invalid .form-control {
   border-color: #ff4d67;
-}
-
-.dark-background {
-  background-color: #004153;
-  overflow: hidden;
 }
 
 .footer {

@@ -252,7 +252,10 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">blockquote</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;longquote&quot;</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">&quot;http://schema.org/Person&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;longquote__zigzag&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
-                Mit INNOQ Schweiz haben wir einen innovativen Partner gefunden, der uns mit seiner kompetenten Beratung und professionellen Umsetzung eine wichtige Stütze unseres Geschäfts ist. Die Mitarbeiter zeichnen sich durch hohe Flexibilität und Agilität aus. Gepaart mit fundiertem Fachwissen ist es ihnen möglich, auch in hektischen Situationen pragmatische und zielführende Lösungen zu finden.
+                Mit INNOQ Schweiz haben wir einen innovativen Partner gefunden, der uns mit seiner kompetenten Beratung und
+                professionellen Umsetzung eine wichtige Stütze unseres Geschäfts ist. Die Mitarbeiter zeichnen sich durch hohe
+                Flexibilität und Agilität aus. Gepaart mit fundiertem Fachwissen ist es ihnen möglich, auch in hektischen Situationen
+                pragmatische und zielführende Lösungen zu finden.
             <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">cite</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;longquote__author&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;name&quot;</span>&gt;</span>Heribert Innoq<span class="hljs-tag">&lt;/<span class="hljs-name">cite</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;longquote__role&quot;</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;jobTitle&quot;</span>&gt;</span>Senior Consultant<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -315,16 +318,26 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre>long-quote &gt; <span class="hljs-selector-tag">blockquote</span>,
+                                <pre><span class="hljs-comment">// sass-lint:disable no-vendor-prefixes</span>
+
+long-quote &gt; <span class="hljs-selector-tag">blockquote</span>,
 %longquote,
 <span class="hljs-selector-class">.longquote</span> {
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-md</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">2px</span> <span class="hljs-number">0</span>;
   <span class="hljs-attribute">text-align</span>: center;
 
   &gt; <span class="hljs-selector-tag">p</span> {
     <span class="hljs-keyword">@extend</span> %heading-font-heavy;
+    <span class="hljs-attribute">display</span>: inline;
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$spacer-xxs</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-variable">$brand-primary</span>, -<span class="hljs-variable">$spacer-xxs</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-variable">$brand-primary</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$quote-bg-color</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xs</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$quote-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
+
+    <span class="hljs-attribute">box-decoration-break</span>: clone;
+    -webkit-<span class="hljs-attribute">box-decoration-break</span>: clone;
 
     &amp;<span class="hljs-selector-pseudo">:lang</span>(de) {
       &amp;<span class="hljs-selector-pseudo">::before</span> {
@@ -362,6 +375,7 @@
   <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
   <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-xs</span>;
   <span class="hljs-attribute">text-transform</span>: uppercase;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
 }
@@ -375,7 +389,8 @@
 
 %longquote__avatar,
 <span class="hljs-selector-class">.longquote__avatar</span> {
-  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
+  <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-xs</span>;
 }
 
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (min-width: <span class="hljs-variable">$grid-breakpoint-md</span>) {
@@ -402,7 +417,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1 KB</span>
+                    <span class="Meta-value">1.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -4744,8 +4759,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-02-02T13:50:46.338Z">
-                                2/2/2021
+                            <time datetime="2021-02-03T16:31:05.517Z">
+                                2/3/2021
                             </time>
                         
                     </dd>
