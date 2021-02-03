@@ -30,12 +30,11 @@
   vertical-align: bottom;
 }
 
-.card__body {
-  border-bottom: 1px solid $brand-gray-25;
-}
+// .card__body {
+//   border-bottom: 1px solid $brand-gray-25;
+// }
 
-.card__body,
-.card__footer {
+.card__body {
   background-color: $card-bg-color;
   padding: $spacer-sm;
 
@@ -48,7 +47,28 @@
   }
 
   .checklist {
-    color: $card-headline-color;
+    color: $card-subheadline-color;
+  }
+}
+
+.card__footer {
+  background-color: $card-headline-color;
+  padding: $spacer-sm;
+
+  .upcase-heading {
+    color: $card-bg-color;
+  }
+
+  .standalone {
+    color: $card-bg-color;
+  }
+
+  .checklist {
+    color: $card-subheadline-color;
+
+    li::before {
+      color: $card-bg-color;
+    }
   }
 }
 
@@ -56,6 +76,7 @@
   @extend %teaser-caption;
 
   margin-bottom: $spacer-xxs;
+  line-height: $paragraph-line-height;
   color: $card-subheadline-color;
 }
 
@@ -70,6 +91,7 @@
   margin-bottom: $spacer-xxs;
   color: $card-text-color;
   font-size: $font-size-sm;
+  hyphens: auto;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

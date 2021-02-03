@@ -71,7 +71,8 @@
   margin-bottom: $spacer-sm;
   text-transform: none;
   color: $project-index-title-color;
-  font-size: $font-size-md;
+  font-size: $font-size-sm;
+  hyphens: auto;
 }
 
 .client-projects__intro-text {

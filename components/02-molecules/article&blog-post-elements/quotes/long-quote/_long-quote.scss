@@ -1,13 +1,23 @@
+// sass-lint:disable no-vendor-prefixes
+
 long-quote > blockquote,
 %longquote,
 .longquote {
   margin-bottom: $spacer-md;
+  padding: 2px 0;
   text-align: center;
 
   > p {
     @extend %heading-font-heavy;
+    display: inline;
+    box-shadow: $spacer-xxs 0 0 $brand-primary, -$spacer-xxs 0 0 $brand-primary;
+    background-color: $quote-bg-color;
+    padding: $spacer-xs;
     color: $quote-color;
     font-size: $font-size-sm;
+
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 
     &:lang(de) {
       &::before {
@@ -45,6 +55,7 @@ long-quote > blockquote,
   @extend %heading-font-bold;
 
   display: block;
+  margin-top: $spacer-xs;
   text-transform: uppercase;
   font-size: $font-size-base;
 }
@@ -58,7 +69,8 @@ long-quote > blockquote,
 
 %longquote__avatar,
 .longquote__avatar {
-  margin-bottom: $spacer-xs;
+  display: block;
+  margin-top: $spacer-xs;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

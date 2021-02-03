@@ -1,3 +1,12 @@
+.dark-background {
+  background-color: $footer-body-bg;
+  overflow: hidden;
+}
+
+.bg-primary {
+  background-color: $brand-primary;
+}
+
 .m-t-xxs {
   margin-top: $spacer-xxs;
 }

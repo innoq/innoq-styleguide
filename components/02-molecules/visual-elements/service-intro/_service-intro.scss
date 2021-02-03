@@ -1,3 +1,5 @@
+// sass-lint:disable no-vendor-prefixes,
+
 .service-intro {
   display: flex;
   flex-direction: column;
@@ -14,6 +16,19 @@
   margin-bottom: $spacer-md;
   color: $service-intro-text-color;
   font-size: $font-size-xl;
+
+  a,
+  a:not([class]) {
+    box-shadow: $spacer-xxs 0 0 $brand-primary, -$spacer-xxs 0 0 $brand-primary;
+    background-color: $brand-primary;
+    padding: $spacer-xxs;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+
+    &:hover {
+      background-color: $brand-primary;
+    }
+  }
 }
 
 .service-intro__text {

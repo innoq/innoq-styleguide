@@ -2,8 +2,6 @@
 // Default Link - used on all class-less link elements
 //
 
-$hover-padding: 0.1em;
-
 .link-default,
 a:not([class]) {
   transition: standard-transition(background-color);
