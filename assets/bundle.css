@@ -711,6 +711,25 @@ dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
   margin-bottom: 0;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-direction-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-align-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .podcast-teaser, .content-teaser, .case-tile-teaser, .big-content-teaser, .topic-teaser, .list-teaser-training, .list-teaser, .list-teaser-podcast, .list-teaser-event, .case-teaser, .list-teaser-abstract {
   -webkit-transition: 0.2s -webkit-transform cubic-bezier(0.68, -0.55, 0.265, 1.55), 0.175s -webkit-box-shadow ease-in-out;
   transition: 0.2s -webkit-transform cubic-bezier(0.68, -0.55, 0.265, 1.55), 0.175s -webkit-box-shadow ease-in-out;
