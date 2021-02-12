@@ -20,7 +20,7 @@ ul:not([class]),
   & > li {
     padding-left: $list-indent;
 
-    &::before {
+    &::marker {
       position: absolute;
       top: 0.4rem; //magic number
       left: 0;
@@ -47,7 +47,7 @@ ul:not([class]),
     }
 
     // Change bullet appeareance in nested contexts
-    li::before {
+    li::marker {
       background: $bullet-list-color-secondary;
     }
   }
