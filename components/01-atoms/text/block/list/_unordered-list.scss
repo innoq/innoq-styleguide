@@ -59,7 +59,7 @@ ul:not([class]),
   @extend %heading-font-bold;
 
   & > li {
-    &::before {
+    &::marker {
       top: 0.59rem; //magic number
 
       @media screen and (min-width: $grid-breakpoint-md) {
