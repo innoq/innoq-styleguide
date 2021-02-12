@@ -40,7 +40,7 @@ $anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing th
   z-index: 1;
   padding: 0;
 
-  &::before {
+  &::marker {
     @extend %icon; // inline-block
 
     position: absolute;
