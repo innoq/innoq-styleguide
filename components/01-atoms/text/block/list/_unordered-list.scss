@@ -1,6 +1,7 @@
 $bullet-size: $spacer-xs; // ~9px
 $bullet-offset: $spacer-sm; // ~16px
 $list-indent: $bullet-offset + $bullet-size;
+$background: $bullet-list-color-primary;
 
 .list-unstyled {
   @extend %list-unstyled;
@@ -12,15 +13,18 @@ $list-indent: $bullet-offset + $bullet-size;
 // class attribute, to prevent reverting styles for all non-default lists.
 //
 
-ul:not([class]),
+/*ul:not([class]),
 .bold-list {
   @extend %unsorted-list;
   @extend %body-font-regular;
 
+
   & > li {
     padding-left: $list-indent;
 
-    &::marker {
+
+  &::marker {
+
       position: absolute;
       top: 0.4rem; //magic number
       left: 0;
@@ -51,7 +55,37 @@ ul:not([class]),
       background: $bullet-list-color-secondary;
     }
   }
+}*/
+
+//allgmein für die UL
+ul:not([class]) {
+  @extend %unsorted-list;
+  @extend %body-font-regular;
 }
+
+//einrückung je listenelement, 3 tiefenebenen mit den variablen oben definiert
+ul:not([class]) > li {
+  padding-left: $list-indent;
+
+}
+
+ul:not([class]) > li::marker {
+  position: absolute;
+  top: 0.4rem; //magic number
+  left: 0;
+  border-radius: 50%;
+  color: $bullet-list-color-primary;
+  width: $bullet-size;
+  height: $bullet-size;
+  content: $icon-search;
+
+}
+
+li::marker {
+  color: red;
+
+}
+
 
 // ---- Bold Bullet Lists ----------------------------------------------------------
 //
