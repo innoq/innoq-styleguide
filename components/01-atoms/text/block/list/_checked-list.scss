@@ -7,7 +7,7 @@ $list-indent: $spacer-xs + $spacer-sm;
   li {
     padding-left: $list-indent;
 
-    &::before {
+    &::marker {
       @extend %icon;
 
       position: absolute;
