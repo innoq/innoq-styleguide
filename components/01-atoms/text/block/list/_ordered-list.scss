@@ -29,7 +29,7 @@ ol:not([class]) {
     margin-bottom: $spacer-xs;
     padding-left: $number-space;
 
-    &::before {
+    &::marker {
       @extend %heading-font-bold;
 
       position: absolute;
