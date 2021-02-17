@@ -1150,7 +1150,7 @@ main > .page-layout--grid:first-child {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
 }
 .checkbox > .form-control__input:checked:disabled ~ .form-label::after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23646465' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23979798' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
 }
 .checkbox > .form-control__input:disabled ~ .form-label::before {
   border-color: #d8d8d8;
@@ -1213,19 +1213,19 @@ main > .page-layout--grid:first-child {
   color: #fff;
 }
 .form-control::-webkit-input-placeholder {
-  color: #646465;
+  color: #979798;
 }
 .form-control::-moz-placeholder {
-  color: #646465;
+  color: #979798;
 }
 .form-control:-ms-input-placeholder {
-  color: #646465;
+  color: #979798;
 }
 .form-control::-ms-input-placeholder {
-  color: #646465;
+  color: #979798;
 }
 .form-control::placeholder {
-  color: #646465;
+  color: #979798;
 }
 .form-control--invalid {
   border-color: #ff4d67;
@@ -1280,7 +1280,7 @@ main > .page-layout--grid:first-child {
 }
 .form-label.form-label--disabled, .form-control__input:disabled ~ .form-label {
   cursor: not-allowed;
-  color: #646465;
+  color: #979798;
 }
 
 .form-text {
@@ -1309,7 +1309,7 @@ main > .page-layout--grid:first-child {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23004153'/%3E%3C/svg%3E");
 }
 .radio > .form-control__input:checked:disabled ~ .form-label::after {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23646465'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23979798'/%3E%3C/svg%3E");
 }
 .radio > .form-control__input:focus ~ .form-label::after {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='%23ff9c66'/%3E%3C/svg%3E");
@@ -7512,10 +7512,10 @@ super-quote > blockquote > p,
 }
 
 .swatch-brand-blue-50 > .swatch-color {
-  background-color: #5b5b79;
+  background-color: #9191a5;
 }
 .swatch-brand-blue-50 > .swatch-text::after {
-  content: "#5b5b79";
+  content: "#9191a5";
 }
 
 .swatch-brand-blue-25 > .swatch-color {
@@ -7680,10 +7680,10 @@ super-quote > blockquote > p,
 }
 
 .swatch-brand-gray-50 > .swatch-color {
-  background-color: #646465;
+  background-color: #979798;
 }
 .swatch-brand-gray-50 > .swatch-text::after {
-  content: "#646465";
+  content: "#979798";
 }
 
 .swatch-brand-gray-25 > .swatch-color {

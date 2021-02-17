@@ -145,10 +145,10 @@
 }
 
 .swatch-brand-blue-50 > .swatch-color {
-  background-color: #5b5b79;
+  background-color: #9191a5;
 }
 .swatch-brand-blue-50 > .swatch-text::after {
-  content: "#5b5b79";
+  content: "#9191a5";
 }
 
 .swatch-brand-blue-25 > .swatch-color {
@@ -313,10 +313,10 @@
 }
 
 .swatch-brand-gray-50 > .swatch-color {
-  background-color: #646465;
+  background-color: #979798;
 }
 .swatch-brand-gray-50 > .swatch-text::after {
-  content: "#646465";
+  content: "#979798";
 }
 
 .swatch-brand-gray-25 > .swatch-color {
