@@ -143,11 +143,3 @@ context:
     </div>
   {{/each}}
 </div>
-
-<script>
-  var swatches = document.querySelectorAll('.swatch-text');
-  for (let swatch of swatches) {
-    var content = window.getComputedStyle(swatch, ':after').getPropertyValue('content');
-    swatch.innerHTML = content.replace(/["]/g, '');
-  }
-</script>

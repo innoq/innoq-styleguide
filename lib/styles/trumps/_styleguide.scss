@@ -31,10 +31,6 @@
   text-transform: uppercase;
   color: $brand-text;
   user-select: all;
-
-  &::after {
-    display: none;
-  }
 }
 
 @each $brand-color in $brand-colors {
