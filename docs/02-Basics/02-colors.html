@@ -145,9 +145,8 @@ context:
 </div>
 
 <script>
-  var swatches = document.querySelectorAll('.swatch-text');
-  for (let swatch of swatches) {
-    var content = window.getComputedStyle(swatch, ':after').getPropertyValue('content');
-    swatch.innerHTML = content.replace(/["]/g, '');
-  }
+  document.querySelectorAll('.swatch-text').forEach(swatch => {
+    let hex = window.getComputedStyle(swatch, ':after').getPropertyValue('content');
+    swatch.textContent = hex.replace(/["]/g, '');
+  });
 </script>
