@@ -1,6 +1,7 @@
 .landing-page-header {
   @extend %page-header;
 
+  position: relative;
   justify-content: flex-end;
   margin-bottom: $spacer-xxl;
   padding: $spacer-lg $spacer-sm;
