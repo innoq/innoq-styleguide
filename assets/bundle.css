@@ -5613,6 +5613,11 @@ super-quote > blockquote > p,
   color: #004153;
 }
 
+.case-tile-teaser__logo {
+  margin: 2.985984rem 0;
+  max-width: 6.1917364224rem;
+}
+
 .case-tile-teaser__goto {
   text-align: center;
 }

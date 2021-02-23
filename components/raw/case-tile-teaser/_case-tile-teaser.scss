@@ -45,6 +45,11 @@ $case-tile-teaser-sm-height: ms(32);
   color: $case-tile-teaser-text-color;
 }
 
+.case-tile-teaser__logo {
+  margin: $spacer-lg 0;
+  max-width: ms(20);
+}
+
 .case-tile-teaser__goto {
   text-align: center;
 }
