@@ -14,6 +14,7 @@
   @extend %h1;
 
   margin-bottom: $spacer-md;
+  line-height: 1.38;
   color: $service-intro-text-color;
   font-size: $font-size-xl;
 
@@ -21,7 +22,7 @@
   a:not([class]) {
     box-shadow: $spacer-xxs 0 0 $brand-primary, -$spacer-xxs 0 0 $brand-primary;
     background-color: $brand-primary;
-    padding: $spacer-xxs;
+    padding: ms(-16);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 
@@ -64,6 +65,7 @@
 
   .service-intro__header {
     margin-bottom: $spacer-base;
+    line-height: 1.35;
     font-size: $font-size-xxl;
   }
 

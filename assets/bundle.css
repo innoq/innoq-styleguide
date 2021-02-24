@@ -4496,6 +4496,7 @@ super-quote > blockquote > p,
 
 .service-intro__header {
   margin-bottom: 1.44rem;
+  line-height: 1.38;
   color: #004153;
   font-size: 2.0736rem;
 }
@@ -4504,7 +4505,7 @@ super-quote > blockquote > p,
   -webkit-box-shadow: 0.3348979767rem 0 0 #ff9c66, -0.3348979767rem 0 0 #ff9c66;
           box-shadow: 0.3348979767rem 0 0 #ff9c66, -0.3348979767rem 0 0 #ff9c66;
   background-color: #ff9c66;
-  padding: 0.3348979767rem;
+  padding: 0.2325680394rem;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
@@ -4542,6 +4543,7 @@ super-quote > blockquote > p,
 
   .service-intro__header {
     margin-bottom: 2.0736rem;
+    line-height: 1.35;
     font-size: 2.48832rem;
   }
 
