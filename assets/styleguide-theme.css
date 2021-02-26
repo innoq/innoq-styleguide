@@ -1,4 +1,47 @@
-.swatch-text {
+.body-font-regular {
+  font-family: FreightTextPro, Georgia, Times, "Times New Roman", serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.body-font-italic {
+  font-family: FreightTextPro, Georgia, Times, "Times New Roman", serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+.body-font-bold {
+  font-family: FreightTextPro, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.body-font-bold-italic {
+  font-family: FreightTextPro, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.heading-font-regular {
+  font-family: FFMarkWebProBook, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.heading-font-bold {
+  font-family: FFMarkWebProBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.heading-font-heavy {
+  font-family: FFMarkWebProHeavy, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+.swatch-text,
+.monospace-font-regular {
   font-family: HackRegular, "Monaco", "Courier New", monospace;
   font-weight: normal;
   font-style: normal;
