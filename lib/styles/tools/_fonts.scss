@@ -2,49 +2,57 @@
 // Font-family helpers
 //
 
-%body-font-regular {
+%body-font-regular,
+.body-font-regular {
   font-family: $font-family-serif;
   font-weight: normal;
   font-style: normal;
 }
 
-%body-font-italic {
+%body-font-italic,
+.body-font-italic {
   font-family: $font-family-serif;
   font-weight: normal;
   font-style: italic;
 }
 
-%body-font-bold {
+%body-font-bold,
+.body-font-bold {
   font-family: $font-family-serif;
   font-weight: bold;
   font-style: normal;
 }
 
-%body-font-bold-italic {
+%body-font-bold-italic,
+.body-font-bold-italic {
   font-family: $font-family-serif;
   font-weight: bold;
   font-style: italic;
 }
 
-%heading-font-regular {
+%heading-font-regular,
+.heading-font-regular {
   font-family: $font-family-sans-serif;
   font-weight: normal;
   font-style: normal;
 }
 
-%heading-font-bold {
+%heading-font-bold,
+.heading-font-bold {
   font-family: $font-family-sans-serif-bold;
   font-weight: normal;
   font-style: normal;
 }
 
-%heading-font-heavy {
+%heading-font-heavy,
+.heading-font-heavy {
   font-family: $font-family-sans-serif-heavy;
   font-weight: normal;
   font-style: normal;
 }
 
-%monospace-font-regular {
+%monospace-font-regular,
+.monospace-font-regular {
   font-family: $font-family-monospace;
   font-weight: normal;
   font-style: normal;
