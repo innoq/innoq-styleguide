@@ -22,17 +22,17 @@
   transition: standard-transition(color);
   color: $toolbar-link-color;
 
-  &:hover,
-  &:focus {
-    color: $toolbar-link-hover-color;
-  }
-
   .icon-svg {
+    transition: standard-transition(background);
     margin-right: $spacer-xxs;
   }
 
-  .icon-svg:hover,
-  .icon-svg:focus {
-    background: $toolbar-link-hover-color;
+  &:hover,
+  &:focus {
+    color: $toolbar-link-hover-color;
+
+    .icon-svg {
+      background: $toolbar-link-hover-color;
+    }
   }
 }

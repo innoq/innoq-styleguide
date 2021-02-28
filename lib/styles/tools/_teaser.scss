@@ -3,7 +3,7 @@ $list-teaser-height-md: ms(20);
 
 %list-teaser {
   @extend %block-link;
-  @extend %hover-zoom-in;
+  @extend %hover-glow;
   margin-bottom: $spacer-base;
   min-height: $list-teaser-height-sm;
 }
