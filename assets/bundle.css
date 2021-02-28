@@ -733,16 +733,14 @@ dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
 }
 
 .podcast-teaser, .content-teaser, .case-tile-teaser, .big-content-teaser, .topic-teaser, .list-teaser-training, .list-teaser, .list-teaser-podcast, .list-teaser-event, .case-teaser, .list-teaser-abstract {
-  -webkit-transition: 0.2s -webkit-transform cubic-bezier(0.68, -0.55, 0.265, 1.55), 0.175s -webkit-box-shadow ease-in-out;
-  transition: 0.2s -webkit-transform cubic-bezier(0.68, -0.55, 0.265, 1.55), 0.175s -webkit-box-shadow ease-in-out;
-  transition: 0.2s transform cubic-bezier(0.68, -0.55, 0.265, 1.55), 0.175s box-shadow ease-in-out;
-  transition: 0.2s transform cubic-bezier(0.68, -0.55, 0.265, 1.55), 0.175s box-shadow ease-in-out, 0.2s -webkit-transform cubic-bezier(0.68, -0.55, 0.265, 1.55), 0.175s -webkit-box-shadow ease-in-out;
+  -webkit-transition: 0.2s -webkit-box-shadow ease-in-out;
+  transition: 0.2s -webkit-box-shadow ease-in-out;
+  transition: 0.2s box-shadow ease-in-out;
+  transition: 0.2s box-shadow ease-in-out, 0.2s -webkit-box-shadow ease-in-out;
 }
 .podcast-teaser:hover, .content-teaser:hover, .case-tile-teaser:hover, .big-content-teaser:hover, .topic-teaser:hover, .list-teaser-training:hover, .list-teaser:hover, .list-teaser-podcast:hover, .list-teaser-event:hover, .case-teaser:hover, .list-teaser-abstract:hover, .podcast-teaser:focus, .content-teaser:focus, .case-tile-teaser:focus, .big-content-teaser:focus, .topic-teaser:focus, .list-teaser-training:focus, .list-teaser:focus, .list-teaser-podcast:focus, .list-teaser-event:focus, .case-teaser:focus, .list-teaser-abstract:focus {
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
-  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 2px 5px rgba(255, 156, 102, 0.8);
+          box-shadow: 0 0 2px 5px rgba(255, 156, 102, 0.8);
 }
 
 @font-face {
@@ -3258,16 +3256,14 @@ super-quote > blockquote > p:lang(en)::after,
   width: 50%;
   text-align: center;
 }
-.share-section::before {
-  display: block;
-  -webkit-transition: 0.2s -webkit-transform cubic-bezier(0.68, -0.55, 0.265, 1.55), 0.175s -webkit-box-shadow ease-in-out;
-  transition: 0.2s -webkit-transform cubic-bezier(0.68, -0.55, 0.265, 1.55), 0.175s -webkit-box-shadow ease-in-out;
-  transition: 0.2s transform cubic-bezier(0.68, -0.55, 0.265, 1.55), 0.175s box-shadow ease-in-out;
-  transition: 0.2s transform cubic-bezier(0.68, -0.55, 0.265, 1.55), 0.175s box-shadow ease-in-out, 0.2s -webkit-transform cubic-bezier(0.68, -0.55, 0.265, 1.55), 0.175s -webkit-box-shadow ease-in-out;
+.share-section .icon-arrow-long-down {
+  -webkit-transition: 0.2s -webkit-transform ease-in-out;
+  transition: 0.2s -webkit-transform ease-in-out;
+  transition: 0.2s transform ease-in-out;
+  transition: 0.2s transform ease-in-out, 0.2s -webkit-transform ease-in-out;
   margin-bottom: 1rem;
-  font-size: 4.29981696rem;
 }
-.share-section:hover::before {
+.share-section:hover .icon-arrow-long-down {
   -webkit-transform: translateY(0.5787037037rem);
           transform: translateY(0.5787037037rem);
 }
@@ -3289,15 +3285,14 @@ super-quote > blockquote > p:lang(en)::after,
 }
 
 .share-section__link {
-  display: block;
-  -webkit-transition: color 0.175s ease-in-out;
-  transition: color 0.175s ease-in-out;
   padding: 1rem;
-  font-size: 1.44rem;
 }
-.share-section__link .icon-svg:hover,
-.share-section__link .icon-svg:focus {
-  background: #ff9c66;
+.share-section__link .icon-svg {
+  -webkit-transition: background-color 0.175s ease-in-out;
+  transition: background-color 0.175s ease-in-out;
+}
+.share-section__link .icon-svg:hover, .share-section__link .icon-svg:focus {
+  background-color: #ff9c66;
 }
 
 super-quote > blockquote > p,
@@ -4758,7 +4753,7 @@ super-quote > blockquote > p,
   float: left;
   padding-top: 10px;
   padding-right: 12px;
-  padding-left: 3px;
+  line-height: 0.9;
   font-size: 3.5831808rem;
 }
 .list-teaser-abstract__text .icon-svg {
@@ -5620,12 +5615,12 @@ super-quote > blockquote > p,
 }
 
 .case-tile-teaser__caption {
-  margin: 0;
+  margin-bottom: 0.5787037037rem;
   color: #004153;
 }
 
 .case-tile-teaser__headline {
-  margin: 0.5787037037rem 0;
+  margin-bottom: 0.5787037037rem;
   color: #004153;
 }
 
@@ -5806,7 +5801,7 @@ super-quote > blockquote > p,
 }
 
 .podcast-teaser--avatar--overlay {
-  background-color: #004153;
+  background-color: #40707e;
   background-repeat: no-repeat;
   background-position: top right;
   background-size: auto 100%;
@@ -6385,14 +6380,15 @@ super-quote > blockquote > p,
   transition: color 0.175s ease-in-out;
   color: #004153;
 }
+.toolbar__link .icon-svg {
+  -webkit-transition: background 0.175s ease-in-out;
+  transition: background 0.175s ease-in-out;
+  margin-right: 0.3348979767rem;
+}
 .toolbar__link:hover, .toolbar__link:focus {
   color: #ff9c66;
 }
-.toolbar__link .icon-svg {
-  margin-right: 0.3348979767rem;
-}
-.toolbar__link .icon-svg:hover,
-.toolbar__link .icon-svg:focus {
+.toolbar__link:hover .icon-svg, .toolbar__link:focus .icon-svg {
   background: #ff9c66;
 }
 
@@ -7133,14 +7129,13 @@ super-quote > blockquote > p,
 .podcast-overview-page .topic-header {
   margin-bottom: 2.985984rem;
 }
-.podcast-overview-page .toolbar__link:hover, .podcast-overview-page .toolbar__link:focus {
-  color: #fff;
-}
 .podcast-overview-page .toolbar__link .icon-svg {
   background: #004153;
 }
-.podcast-overview-page .toolbar__link .icon-svg:hover,
-.podcast-overview-page .toolbar__link .icon-svg:focus {
+.podcast-overview-page .toolbar__link:hover, .podcast-overview-page .toolbar__link:focus {
+  color: #fff;
+}
+.podcast-overview-page .toolbar__link:hover .icon-svg, .podcast-overview-page .toolbar__link:focus .icon-svg {
   background: #fff;
 }
 
@@ -7166,16 +7161,15 @@ super-quote > blockquote > p,
   color: #242424;
 }
 .podcast-overview-page--security .topic-header .toolbar__link {
+  -webkit-transition: background-color 0.175s ease-in-out;
+  transition: background-color 0.175s ease-in-out;
+  padding: 0.5787037037rem;
   color: #242424;
 }
 .podcast-overview-page--security .topic-header .toolbar__link:hover, .podcast-overview-page--security .topic-header .toolbar__link:focus {
-  color: #242424;
+  background-color: #fff019;
 }
 .podcast-overview-page--security .topic-header .toolbar__link .icon-svg {
-  background: #242424;
-}
-.podcast-overview-page--security .topic-header .toolbar__link .icon-svg:hover,
-.podcast-overview-page--security .topic-header .toolbar__link .icon-svg:focus {
   background: #242424;
 }
 

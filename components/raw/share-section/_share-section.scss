@@ -1,21 +1,16 @@
-$share-section-icon-size: ms(4);
-$share-section-arrow-size: ms(16);
-
 .share-section {
   margin: 0 auto;
   margin-bottom: $spacer-xl;
   width: 50%;
   text-align: center;
 
-  &::before {
-    display: block;
-    transition: $ease-out-back-transition;
+  .icon-arrow-long-down {
+    transition: $transform-transition;
     margin-bottom: $spacer-sm;
-    font-size: $share-section-arrow-size;
   }
 
   &:hover {
-    &::before {
+    .icon-arrow-long-down {
       transform: translateY($spacer-xs);
     }
   }
@@ -37,13 +32,14 @@ $share-section-arrow-size: ms(16);
   @extend %heading-font-bold;
   @extend %link-unstyled;
 
-  display: block;
-  transition: standard-transition(color);
   padding: $spacer-sm;
-  font-size: $share-section-icon-size;
 
-  .icon-svg:hover,
-  .icon-svg:focus {
-    background: $sharing-interaction-color;
+  .icon-svg {
+    transition: standard-transition(background-color);
+
+    &:hover,
+    &:focus {
+      background-color: $sharing-interaction-color;
+    }
   }
 }

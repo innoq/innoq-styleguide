@@ -4,18 +4,17 @@
   }
 
   .toolbar__link {
-    &:hover,
-    &:focus {
-      color: $brand-white;
-    }
-
     .icon-svg {
       background: $brand-secondary;
     }
 
-    .icon-svg:hover,
-    .icon-svg:focus {
-      background: $brand-white;
+    &:hover,
+    &:focus {
+      color: $brand-white;
+
+      .icon-svg {
+        background: $brand-white;
+      }
     }
   }
 }

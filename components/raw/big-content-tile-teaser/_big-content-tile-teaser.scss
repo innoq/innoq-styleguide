@@ -3,7 +3,7 @@ $big-content-teaser-height-md: ms(38);
 
 .big-content-teaser {
   @extend %block-link;
-  @extend %hover-zoom-in;
+  @extend %hover-glow;
 
   display: flex;
   justify-content: center;
