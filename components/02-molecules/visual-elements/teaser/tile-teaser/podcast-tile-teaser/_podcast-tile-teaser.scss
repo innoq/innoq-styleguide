@@ -92,7 +92,7 @@ $podcast-teaser-height-md: ms(35);
 }
 
 .podcast-teaser--avatar--overlay--big {
-  background-color: $brand-petrol-75;
+  background-color: $podcast-teaser-overlay-color-secondary;
   background-repeat: no-repeat;
   background-position: top right, top left;
   background-size: 0%;
@@ -144,7 +144,7 @@ $podcast-teaser-height-md: ms(35);
     .podcast-teaser__headline,
     .podcast-teaser__subheadline {
       color: $podcast-teaser-default-bg-sec;
-  }
+    }
   }
 }
 
@@ -164,9 +164,8 @@ $podcast-teaser-height-md: ms(35);
     .podcast-teaser__headline,
     .podcast-teaser__subheadline {
       color: $podcast-teaser-default-color-sec;
+    }
   }
-  }
-
 }
 
 //Breakpoints
