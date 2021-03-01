@@ -739,8 +739,8 @@ dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
   transition: 0.2s box-shadow ease-in-out, 0.2s -webkit-box-shadow ease-in-out;
 }
 .podcast-teaser:hover, .content-teaser:hover, .case-tile-teaser:hover, .big-content-teaser:hover, .topic-teaser:hover, .list-teaser-training:hover, .list-teaser:hover, .list-teaser-podcast:hover, .list-teaser-event:hover, .case-teaser:hover, .list-teaser-abstract:hover, .podcast-teaser:focus, .content-teaser:focus, .case-tile-teaser:focus, .big-content-teaser:focus, .topic-teaser:focus, .list-teaser-training:focus, .list-teaser:focus, .list-teaser-podcast:focus, .list-teaser-event:focus, .case-teaser:focus, .list-teaser-abstract:focus {
-  -webkit-box-shadow: 0 0 2px 5px rgba(255, 156, 102, 0.8);
-          box-shadow: 0 0 2px 5px rgba(255, 156, 102, 0.8);
+  -webkit-box-shadow: 0 0 0 5px rgba(255, 156, 102, 0.8);
+          box-shadow: 0 0 0 5px rgba(255, 156, 102, 0.8);
 }
 
 @font-face {
