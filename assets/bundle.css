@@ -2938,11 +2938,11 @@ hr {
 .conclusion-text:last-child, .conclusion-text > *:last-child {
   margin-bottom: 0;
 }
-.conclusion-text a {
+.conclusion-text a:not([class]) {
   border-bottom: 1px solid #fff;
   color: #fff;
 }
-.conclusion-text a:hover {
+.conclusion-text a:not([class]):hover {
   border-bottom: 1px solid #004153;
   color: #004153;
 }
