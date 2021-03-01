@@ -35,7 +35,7 @@ $conclusion-border-size: ms(5);
     }
   }
 
-  a {
+  a:not([class]) {
     border-bottom: 1px solid $conclusion-link-color;
     color: $conclusion-link-color;
 
