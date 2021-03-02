@@ -4827,6 +4827,11 @@ super-quote > blockquote > p,
           hyphens: auto;
 }
 
+.case-teaser__logo {
+  margin-bottom: 2.0736rem;
+  max-width: 7.4300837069rem;
+}
+
 .case-teaser__header {
   padding-bottom: 0;
 }
