@@ -1444,15 +1444,13 @@ main > .page-layout--grid:first-child {
 
 figure {
   margin: 0 0 1.44rem;
-  text-align: center;
 }
 figure img, figure video {
   width: 100%;
 }
 
 figcaption {
-  display: inline-block;
-  text-align: left;
+  text-align: center;
   line-height: 1.3;
   font-size: 0.8333333333rem;
 }
@@ -1841,12 +1839,20 @@ mark {
 
 pre > code {
   display: block;
-  margin-bottom: 2.0736rem;
+  margin-bottom: 1.44rem;
   background-color: #f7f7f7;
-  padding: 0.5787037037rem 0.5787037037rem 0.5787037037rem 1.44rem;
+  padding: 0.5787037037rem;
   overflow: auto;
   line-height: 1.52;
   font-size: 0.9114583333rem;
+}
+
+pre {
+  margin: 0;
+}
+
+figure > div > pre code {
+  margin-bottom: 0.3348979767rem;
 }
 
 .date {

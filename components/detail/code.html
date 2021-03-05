@@ -187,7 +187,19 @@
         result.publish
     end
 end
-<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>pick(:love) do |something|
+    n.times do
+        result = play(something)
+        result.publish
+    end
+end
+<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Code mit Figaption<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -197,7 +209,14 @@ end
     <code class="Code Code--lang-html hljs">
         <pre>import { safe, htmlEncode } from &quot;complate-stream&quot;;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>{safe(htmlEncode(context.code))}<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span></pre>
+<span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>{safe(htmlEncode(context.code))}<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>{safe(htmlEncode(context.code))}<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Code mit Figaption<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span></pre>
     </code>
 </div>
 
@@ -243,12 +262,22 @@ end
   <span class="hljs-keyword">@extend</span> %monospace-font-regular;
 
   <span class="hljs-attribute">display</span>: block;
-  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-base</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-md</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$code-background-color</span>;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xs</span> <span class="hljs-variable">$spacer-xs</span> <span class="hljs-variable">$spacer-xs</span> <span class="hljs-variable">$spacer-md</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xs</span>;
   <span class="hljs-attribute">overflow</span>: auto;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xs</span>;
+}
+
+pre {
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-selector-tag">figure</span> &gt; <span class="hljs-selector-tag">div</span> &gt; pre {
+  <span class="hljs-selector-tag">code</span> {
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xxs</span>;
+  }
 }
 </pre>
                             </code>
@@ -266,7 +295,7 @@ end
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">285 Bytes</span>
+                    <span class="Meta-value">341 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -4470,7 +4499,7 @@ end
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-05T10:20:10.165Z">
+                            <time datetime="2021-03-05T11:08:07.848Z">
                                 3/5/2021
                             </time>
                         

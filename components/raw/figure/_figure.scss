@@ -1,7 +1,5 @@
 figure {
   margin: 0 0 $spacer-md;
-  // Short figcaptions will be centered, long ones left aligned
-  text-align: center;
 
   & img,
   & video {
@@ -12,16 +10,12 @@ figure {
 figcaption {
   @extend %heading-font-regular;
 
-  display: inline-block;
-  // Short figcaptions will be centered, long ones left aligned
-  text-align: left;
+  text-align: center;
   line-height: $paragraph-line-height-sm;
   font-size: $font-size-xxs;
 }
 
-
 @media screen and (min-width: $grid-breakpoint-md) {
-
   figcaption {
     line-height: $paragraph-line-height-sm;
     font-size: $font-size-base;
