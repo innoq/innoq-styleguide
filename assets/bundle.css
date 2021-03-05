@@ -3893,7 +3893,7 @@ super-quote > blockquote > p,
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-bottom: 7.4300837069rem;
+  margin-bottom: 1.44rem;
   padding: 2.985984rem 1rem;
 }
 .landing-page-header__body {
@@ -3931,6 +3931,7 @@ super-quote > blockquote > p,
 
 @media screen and (min-width: 48rem) {
   .landing-page-header {
+    margin-bottom: 7.4300837069rem;
     padding: 2.985984rem;
   }
 
@@ -4511,7 +4512,7 @@ super-quote > blockquote > p,
   margin-bottom: 1.44rem;
   line-height: 1.38;
   color: #004153;
-  font-size: 2.0736rem;
+  font-size: 1.728rem;
 }
 .service-intro__header a,
 .service-intro__header a:not([class]) {
@@ -4557,7 +4558,7 @@ super-quote > blockquote > p,
   .service-intro__header {
     margin-bottom: 2.0736rem;
     line-height: 1.35;
-    font-size: 2.48832rem;
+    font-size: 2.0736rem;
   }
 
   .service-intro__text {

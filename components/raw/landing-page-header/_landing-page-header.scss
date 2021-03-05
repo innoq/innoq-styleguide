@@ -3,7 +3,7 @@
 
   position: relative;
   justify-content: flex-end;
-  margin-bottom: $spacer-xxl;
+  margin-bottom: $spacer-md;
   padding: $spacer-lg $spacer-sm;
 
   &__body {
@@ -39,6 +39,7 @@
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .landing-page-header {
+    margin-bottom: $spacer-xxl;
     padding: $spacer-lg;
   }
 
