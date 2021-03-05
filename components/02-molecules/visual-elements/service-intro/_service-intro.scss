@@ -14,9 +14,9 @@
   @extend %h1;
 
   margin-bottom: $spacer-md;
-  line-height: 1.38;
+  line-height: 1.38; //magic number
   color: $service-intro-text-color;
-  font-size: $font-size-xl;
+  font-size: $font-size-lg;
 
   a,
   a:not([class]) {
@@ -65,8 +65,8 @@
 
   .service-intro__header {
     margin-bottom: $spacer-base;
-    line-height: 1.35;
-    font-size: $font-size-xxl;
+    line-height: 1.35; //magic number
+    font-size: $font-size-xl;
   }
 
   .service-intro__text {
