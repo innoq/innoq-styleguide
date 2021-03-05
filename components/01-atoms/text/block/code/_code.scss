@@ -2,10 +2,20 @@ pre > code {
   @extend %monospace-font-regular;
 
   display: block;
-  margin-bottom: $spacer-base;
+  margin-bottom: $spacer-md;
   background-color: $code-background-color;
-  padding: $spacer-xs $spacer-xs $spacer-xs $spacer-md;
+  padding: $spacer-xs;
   overflow: auto;
   line-height: $paragraph-line-height;
   font-size: $font-size-xs;
+}
+
+pre {
+  margin: 0;
+}
+
+figure > div > pre {
+  code {
+    margin-bottom: $spacer-xxs;
+  }
 }

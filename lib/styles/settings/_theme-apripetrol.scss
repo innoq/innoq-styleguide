@@ -28,7 +28,7 @@ $button-hover-border-color: $brand-secondary;
 
 $button-cta-border-color: $brand-interaction;
 $button-cta-background: $brand-interaction;
-$button-cta-color: $brand-white;
+$button-cta-color: $brand-secondary;
 $button-cta-hover-background: $brand-secondary;
 $button-cta-hover-color: $brand-white;
 $button-cta-hover-border-color: $brand-secondary;
@@ -37,8 +37,8 @@ $button-inverted-border-color: $brand-white;
 $button-inverted-background: transparent;
 $button-inverted-color: $brand-white;
 $button-inverted-hover-background: $brand-interaction;
-$button-inverted-hover-color: $brand-white;
-$button-inverted-hover-border-color: $brand-white;
+$button-inverted-hover-color: $brand-secondary;
+$button-inverted-hover-border-color: $brand-secondary;
 
 // Checkbox
 $checkbox-bg: $brand-white;
@@ -91,7 +91,7 @@ $search-result-border-color: $brand-primary;
 $paginator-focus-color: $brand-interaction;
 
 // Headlines
-$h1-color: $brand-primary;
+$h1-color: $brand-secondary;
 $h2-color: $brand-secondary;
 $h3-color: $brand-secondary;
 $h4-color: $brand-secondary;
@@ -319,7 +319,7 @@ $podcast-teaser-light-bg: $brand-white;
 $podcast-teaser-default-color: $brand-secondary;
 $podcast-teaser-default-color-secondary: $brand-primary;
 $podcast-teaser-overlay-color: $brand-primary;
-$podcast-teaser-overlay-color-secondary: $brand-secondary;
+$podcast-teaser-overlay-color-secondary: $brand-secondary-75;
 
 // Security-Podcast Teaser
 $podcast-teaser-default-bg-sec: $brand-gray;

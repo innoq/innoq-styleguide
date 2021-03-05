@@ -42,6 +42,28 @@ context:
     - brand-gray-10
 ---
 
+<!-- INNOQ Petrol colors -->
+<h2>INNOQ Petrol</h2>
+<div class="swatches">
+  {{#each petrols}}
+    <div class="swatch swatch-{{this}}">
+      <div class="swatch-color"></div>
+      <div class="swatch-text"></div>
+    </div>
+  {{/each}}
+</div>
+
+<!-- INNOQ Apricot colors -->
+<h2>INNOQ Apricot</h2>
+<div class="swatches">
+  {{#each apricots}}
+    <div class="swatch swatch-{{this}}">
+      <div class="swatch-color"></div>
+      <div class="swatch-text"></div>
+    </div>
+  {{/each}}
+</div>
+
 <!-- INNOQ Blue colors -->
 <h2>INNOQ Blue</h2>
 <div class="swatches">
@@ -122,36 +144,9 @@ context:
   {{/each}}
 </div>
 
-<hr>
-
-<h2>Edition 02</h2>
-
-<!-- INNOQ Petrol colors -->
-<h3>INNOQ Petrol</h3>
-<div class="swatches">
-  {{#each petrols}}
-    <div class="swatch swatch-{{this}}">
-      <div class="swatch-color"></div>
-      <div class="swatch-text"></div>
-    </div>
-  {{/each}}
-</div>
-
-<!-- INNOQ Apricot colors -->
-<h3>INNOQ Apricot</h3>
-<div class="swatches">
-  {{#each apricots}}
-    <div class="swatch swatch-{{this}}">
-      <div class="swatch-color"></div>
-      <div class="swatch-text"></div>
-    </div>
-  {{/each}}
-</div>
-
 <script>
-  var swatches = document.querySelectorAll('.swatch-text');
-  for (let swatch of swatches) {
-    var content = window.getComputedStyle(swatch, ':after').getPropertyValue('content');
-    swatch.innerHTML = content.replace(/["]/g, '');
-  }
+  document.querySelectorAll('.swatch-text').forEach(swatch => {
+    let hex = window.getComputedStyle(swatch, ':after').getPropertyValue('content');
+    swatch.textContent = hex.replace(/["]/g, '');
+  });
 </script>

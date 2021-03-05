@@ -45,6 +45,11 @@ $case-teaser-height: ms(38);
   hyphens: auto;
 }
 
+.case-teaser__logo {
+  margin-bottom: $spacer-base;
+  max-width: ms(22);
+}
+
 .case-teaser__header {
   padding-bottom: 0;
 

@@ -5,7 +5,7 @@ $case-tile-teaser-sm-height: ms(32);
 //
 .case-tile-teaser {
   @extend %block-link;
-  @extend %hover-zoom-in;
+  @extend %hover-glow;
 
   display: flex;
   flex-direction: column;
@@ -30,12 +30,12 @@ $case-tile-teaser-sm-height: ms(32);
 .case-tile-teaser__caption {
   @extend %teaser-caption;
 
-  margin: 0;
+  margin-bottom: $spacer-xs;
   color: $case-tile-teaser-text-color;
 }
 
 .case-tile-teaser__headline {
-  margin: $spacer-xs 0;
+  margin-bottom: $spacer-xs;
   color: $case-tile-teaser-text-color;
 }
 
@@ -43,6 +43,11 @@ $case-tile-teaser-sm-height: ms(32);
   @extend %teaser-text-italic;
 
   color: $case-tile-teaser-text-color;
+}
+
+.case-tile-teaser__logo {
+  margin: $spacer-lg 0;
+  max-width: ms(22);
 }
 
 .case-tile-teaser__goto {

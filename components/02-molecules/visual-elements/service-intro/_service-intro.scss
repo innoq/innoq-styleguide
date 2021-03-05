@@ -14,14 +14,15 @@
   @extend %h1;
 
   margin-bottom: $spacer-md;
+  line-height: 1.38; //magic number
   color: $service-intro-text-color;
-  font-size: $font-size-xl;
+  font-size: $font-size-lg;
 
   a,
   a:not([class]) {
     box-shadow: $spacer-xxs 0 0 $brand-primary, -$spacer-xxs 0 0 $brand-primary;
     background-color: $brand-primary;
-    padding: $spacer-xxs;
+    padding: ms(-16);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 
@@ -64,7 +65,8 @@
 
   .service-intro__header {
     margin-bottom: $spacer-base;
-    font-size: $font-size-xxl;
+    line-height: 1.35; //magic number
+    font-size: $font-size-xl;
   }
 
   .service-intro__text {

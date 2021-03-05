@@ -9,19 +9,16 @@
     }
 
     .toolbar__link {
+      transition: standard-transition(background-color);
+      padding: $spacer-xs;
       color: $brand-gray;
 
       &:hover,
       &:focus {
-        color: $brand-gray;
+        background-color: $brand-yellow;
       }
 
       .icon-svg {
-        background: $brand-gray;
-      }
-
-      .icon-svg:hover,
-      .icon-svg:focus {
         background: $brand-gray;
       }
     }

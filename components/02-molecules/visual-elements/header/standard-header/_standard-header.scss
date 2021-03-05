@@ -6,6 +6,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  padding-top: $spacer-xl;
 
   &__title {
     position: relative;
@@ -15,7 +16,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
     text-align: center;
     line-height: $heading-line-height-sm;
     color: $standard-header-title-color;
-    font-size: $font-size-xxl;
+    font-size: $font-size-xl;
 
     &--separated {
       margin-top: $spacer-xxl;
@@ -125,7 +126,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-sm) {
   .standard-header__title {
-    font-size: $font-size-xxxl;
+    font-size: $font-size-xxl;
   }
 
   .podcast-header--avatar--overlay {
@@ -143,7 +144,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   }
 
   .standard-header__title {
-    font-size: $font-size-xxxxl;
+    font-size: $font-size-xxxl;
   }
 
   .standard-header__subtitle {

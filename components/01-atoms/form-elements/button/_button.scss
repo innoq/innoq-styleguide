@@ -35,7 +35,7 @@ $default-btn-margin: $spacer-sm;
     &:hover,
     &:focus {
       border-color: $button-cta-hover-border-color;
-      color: $button-cta-color;
+      color: $button-cta-hover-color;
 
       &::after {
         width: 100%;
@@ -65,7 +65,7 @@ $default-btn-margin: $spacer-sm;
   }
 
   &--inverted {
-    @include hover-fill($brand-interaction, $button-inverted-color, $button-inverted-color);
+    @include hover-fill($brand-interaction, $button-inverted-hover-color, $button-inverted-hover-color);
     border-color: $button-inverted-border-color;
     color: $button-inverted-color;
   }
