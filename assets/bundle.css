@@ -4116,6 +4116,7 @@ super-quote > blockquote > p,
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-top: 3.919104rem;
 }
 .standard-header__title {
   position: relative;
@@ -4125,7 +4126,7 @@ super-quote > blockquote > p,
   text-align: center;
   line-height: 1.07;
   color: #fff;
-  font-size: 2.48832rem;
+  font-size: 2.0736rem;
 }
 .standard-header__title--separated {
   margin-top: 7.4300837069rem;
@@ -4223,7 +4224,7 @@ super-quote > blockquote > p,
 
 @media screen and (min-width: 36rem) {
   .standard-header__title {
-    font-size: 2.985984rem;
+    font-size: 2.48832rem;
   }
 
   .podcast-header--avatar--overlay {
@@ -4240,7 +4241,7 @@ super-quote > blockquote > p,
   }
 
   .standard-header__title {
-    font-size: 4.29981696rem;
+    font-size: 2.985984rem;
   }
 
   .standard-header__subtitle {
