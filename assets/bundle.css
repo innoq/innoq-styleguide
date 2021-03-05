@@ -2951,6 +2951,11 @@ hr {
   .conclusion {
     padding: 7.4300837069rem 0;
   }
+}
+@media screen and (min-width: 75rem) {
+  .conclusion {
+    border: 1.575rem solid #ff9c66;
+  }
 
   .conclusion-headline {
     font-size: 4.29981696rem;
@@ -2958,11 +2963,6 @@ hr {
 
   .conclusion-subheadline {
     font-size: 2.0736rem;
-  }
-}
-@media screen and (min-width: 75rem) {
-  .conclusion {
-    border: 1.575rem solid #ff9c66;
   }
 }
 .content-separator {

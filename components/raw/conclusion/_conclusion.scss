@@ -50,6 +50,12 @@ $conclusion-border-size: ms(5);
   .conclusion {
     padding: $spacer-xxl 0;
   }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .conclusion {
+    border: $conclusion-border-size solid $conclusion-border-color;
+  }
 
   .conclusion-headline {
     font-size: $font-size-xxxxl;
@@ -57,11 +63,5 @@ $conclusion-border-size: ms(5);
 
   .conclusion-subheadline {
     font-size: $font-size-xl;
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-lg) {
-  .conclusion {
-    border: $conclusion-border-size solid $conclusion-border-color;
   }
 }
