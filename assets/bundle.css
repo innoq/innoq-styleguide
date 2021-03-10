@@ -3406,6 +3406,11 @@ super-quote > blockquote > p,
     width: 60%;
   }
 }
+wall-of-consent {
+  display: block;
+  margin-bottom: 1rem;
+}
+
 .dropdown__toggle {
   display: inline-block;
   cursor: pointer;
