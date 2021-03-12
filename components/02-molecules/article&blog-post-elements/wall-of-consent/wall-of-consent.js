@@ -7,9 +7,12 @@ export default class WallOfConsent extends HTMLElement {
       this.checkbox.setAttribute('checked', '')
     }
 
-    this.checkbox.addEventListener('change', this.toggle.bind(this))
-    document.body.addEventListener('consent-to-embeds', this.revealContent.bind(this))
-    document.body.addEventListener('disconsent-to-embeds', this.removeContent.bind(this))
+    ['toggle', 'revealContent', 'removeContent'].forEach(prop => {
+      this[prop] = this[prop].bind(this)
+    });
+    this.checkbox.addEventListener('change', this.toggle)
+    document.body.addEventListener('consent-to-embeds', this.revealContent)
+    document.body.addEventListener('disconsent-to-embeds', this.removeContent)
   }
 
   disconnectedCallback () {
