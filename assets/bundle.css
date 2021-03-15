@@ -3996,6 +3996,7 @@ wall-of-consent {
 
 .staff-header-image {
   width: 100%;
+  height: auto;
 }
 
 .staff-header-quote {

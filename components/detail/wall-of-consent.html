@@ -327,9 +327,16 @@
     }
 
     <span class="hljs-built_in">this</span>.checkbox.addEventListener(<span class="hljs-string">&#x27;change&#x27;</span>, <span class="hljs-built_in">this</span>.toggle.bind(<span class="hljs-built_in">this</span>))
+    ;[<span class="hljs-string">&#x27;revealContent&#x27;</span>, <span class="hljs-string">&#x27;removeContent&#x27;</span>].forEach(<span class="hljs-function"><span class="hljs-params">prop</span> =&gt;</span> {
+      <span class="hljs-built_in">this</span>[prop] = <span class="hljs-built_in">this</span>[prop].bind(<span class="hljs-built_in">this</span>)
+    })
+    <span class="hljs-built_in">document</span>.body.addEventListener(<span class="hljs-string">&#x27;consent-to-embeds&#x27;</span>, <span class="hljs-built_in">this</span>.revealContent)
+    <span class="hljs-built_in">document</span>.body.addEventListener(<span class="hljs-string">&#x27;disconsent-to-embeds&#x27;</span>, <span class="hljs-built_in">this</span>.removeContent)
+  }
 
-    <span class="hljs-built_in">document</span>.body.addEventListener(<span class="hljs-string">&#x27;consent-to-embeds&#x27;</span>, <span class="hljs-built_in">this</span>.revealContent.bind(<span class="hljs-built_in">this</span>))
-    <span class="hljs-built_in">document</span>.body.addEventListener(<span class="hljs-string">&#x27;disconsent-to-embeds&#x27;</span>, <span class="hljs-built_in">this</span>.removeContent.bind(<span class="hljs-built_in">this</span>))
+  disconnectedCallback () {
+    <span class="hljs-built_in">document</span>.body.removeEventListener(<span class="hljs-string">&#x27;consent-to-embeds&#x27;</span>, <span class="hljs-built_in">this</span>.revealContent)
+    <span class="hljs-built_in">document</span>.body.removeEventListener(<span class="hljs-string">&#x27;disconsent-to-embeds&#x27;</span>, <span class="hljs-built_in">this</span>.removeContent)
   }
 
   get checkbox () {
@@ -394,7 +401,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.7 KB</span>
+                    <span class="Meta-value">2 KB</span>
                 </li>
             </ul>
         </div>
@@ -4624,8 +4631,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-03-11T10:58:19.714Z">
-                                3/11/2021
+                            <time datetime="2021-03-15T15:07:13.756Z">
+                                3/15/2021
                             </time>
                         
                     </dd>

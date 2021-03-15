@@ -114,10 +114,17 @@ class WallOfConsent extends HTMLElement {
       this.checkbox.setAttribute('checked', '');
     }
 
-    this.checkbox.addEventListener('change', this.toggle.bind(this));
+    this.checkbox.addEventListener('change', this.toggle.bind(this))
+    ;['revealContent', 'removeContent'].forEach(prop => {
+      this[prop] = this[prop].bind(this);
+    });
+    document.body.addEventListener('consent-to-embeds', this.revealContent);
+    document.body.addEventListener('disconsent-to-embeds', this.removeContent);
+  }
 
-    document.body.addEventListener('consent-to-embeds', this.revealContent.bind(this));
-    document.body.addEventListener('disconsent-to-embeds', this.removeContent.bind(this));
+  disconnectedCallback () {
+    document.body.removeEventListener('consent-to-embeds', this.revealContent);
+    document.body.removeEventListener('disconsent-to-embeds', this.removeContent);
   }
 
   get checkbox () {
