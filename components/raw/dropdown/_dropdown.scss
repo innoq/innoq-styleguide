@@ -28,22 +28,24 @@
   color: $dropdown-link-hover-color;
 }
 
-.dropdown__checkbox:checked + .dropdown__toggle--expanded-text {
+
+.dropdown__checkbox:checked + .dropdown__toggle > .dropdown__toggle__expanded-text {
   display: inline;
 }
 
-.dropdown__checkbox:checked + .dropdown__toggle--collapsed-text {
+.dropdown__checkbox:checked + .dropdown__toggle > .dropdown__toggle__collapsed-text {
   display: none;
 }
 
-.dropdown__checkbox:not(:checked) + .dropdown__toggle--expanded-text {
+.dropdown__checkbox:not(:checked) + .dropdown__toggle > .dropdown__toggle__expanded-text {
   display: none;
 }
 
-.dropdown__checkbox:not(:checked) + .dropdown__toggle--collapsed-text {
+.dropdown__checkbox:not(:checked) + .dropdown__toggle > .dropdown__toggle__collapsed-text {
   display: inline;
 }
 
+// show dropdown list when checkbox is checked
 .dropdown__checkbox:checked ~ .dropdown__list-wrapper {
   display: block;
 }
