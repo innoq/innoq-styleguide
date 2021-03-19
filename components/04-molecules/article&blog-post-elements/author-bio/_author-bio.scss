@@ -43,6 +43,7 @@ $author-text-margin: 0.18rem;
 .author-bio__name {
   @extend %heading-font-bold;
 
+  display: block;
   text-transform: uppercase;
   font-size: $font-size-base;
 }
