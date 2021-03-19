@@ -1,4 +1,4 @@
-import { context } from '../../../../env'
+import { context } from '../../../env'
 
 const urlBackground = context.uri('assets/bg-images/edition-02/edition02-human-02.jpg')
 const urlRight = context.uri('assets/example-content/heribert-rechts.png')
