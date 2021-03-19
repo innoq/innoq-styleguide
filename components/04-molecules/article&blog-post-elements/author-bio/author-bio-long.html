@@ -1,21 +1,23 @@
-<div id="author-bio" class="author-bio author-bio--long" itemscope="" itemtype="http://schema.org/Person">
-    <div class="author-bio__image avatar avatar--base">
-        <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq" />
-    </div>
-    <div class="author-bio__head">
+<div id="author-bio" class="author-bio author-bio--long" itemscope itemtype="http://schema.org/Person">
+
+    <a rel="author" class ="author-bio author-bio--long avatar__link author-bio__head" itemprop="url" href="#">
+        <div class="author-bio__image avatar avatar--base">
+            <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+        </div>
         <address class="author">
-            <a rel="author" class="author-bio__link author-bio__name" itemprop="givenName" href="#">Heribert Innoq</a>
+            <span rel="author" class="author-bio__name" itemprop="givenName">Heribert Innoq</span>
             <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
-            <div class="author-bio__social">
-                <a rel="author" class="author-bio__social-profile" href="#" title="Twitter">
-                    <span class="icon-svg icon-svg--small icon-twitter icon--brand-secondary"></span>
-                </a>
-                <a rel= "author" class="author-bio__social-profile" href="#" title="GitHub">
-                    <span class="icon-svg icon-svg--small icon-github icon--brand-secondary"></span>
-                </a>
-            </div>
         </address>
-    </div>
+    </a>
+
+    <address class="author-bio__social">
+        <a rel="author" class="author-bio__social-profile" href="#" title="Twitter">
+            <span class="icon-svg icon-svg--small icon-twitter icon--brand-secondary"></span>
+        </a>
+        <a rel= "author" class="author-bio__social-profile" href="#" title="GitHub">
+            <span class="icon-svg icon-svg--small icon-github icon--brand-secondary"></span>
+        </a>
+    </address>
     <div class="author-bio__text">
         <p>Heribert Innoq ist Senior Consultant bei INNOQ. Als Berater, Entwickler und Architekt unterstützt er Kunden vor allem mit seinen langjährigen Kenntnissen von Java- und JVM-basierten Systemen. Meist beschäftigt er sich hier mit dem Design, der Evaluierung und Implementierung von Architekturen für moderne Webanwendungen und Microservices in Softwaremodernisierungsprojekten. Sein aktueller Fokus gilt den Themen Team-Organisation und Softwareevolution.</p>
     </div>
