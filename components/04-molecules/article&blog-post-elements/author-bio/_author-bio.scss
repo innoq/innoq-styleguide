@@ -43,8 +43,6 @@ $author-text-margin: 0.18rem;
 .author-bio__name {
   @extend %heading-font-bold;
 
-
-
   text-transform: uppercase;
   font-size: $font-size-base;
 }
@@ -57,7 +55,6 @@ $author-text-margin: 0.18rem;
 
 .author-bio__info {
   @extend %body-font-italic;
-  display: block;
 
   font-size: $font-size-base;
 
