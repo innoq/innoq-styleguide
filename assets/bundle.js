@@ -105,30 +105,43 @@ class InfoBox extends HTMLElement {
   }
 }
 
+const EVENT_NAME = 'embeds-consent';
+const STORAGE = 'consent-to-embeds';
+
 class WallOfConsent extends HTMLElement {
   connectedCallback () {
     this.content = document.createElement('div');
 
-    if (localStorage.getItem('consent-to-embeds') === '1') {
+    if (localStorage.getItem(STORAGE) === '1') {
       this.revealContent();
-      this.checkbox.setAttribute('checked', '');
     }
 
-    this.checkbox.addEventListener('change', this.toggle.bind(this))
-    ;['revealContent', 'removeContent'].forEach(prop => {
-      this[prop] = this[prop].bind(this);
-    });
-    document.body.addEventListener('consent-to-embeds', this.revealContent);
-    document.body.addEventListener('disconsent-to-embeds', this.removeContent);
+    this.checkbox.addEventListener('change', this.onToggle.bind(this));
+    this.toggleContent = this.toggleContent.bind(this);
+    document.body.addEventListener(EVENT_NAME, this.toggleContent);
   }
 
   disconnectedCallback () {
-    document.body.removeEventListener('consent-to-embeds', this.revealContent);
-    document.body.removeEventListener('disconsent-to-embeds', this.removeContent);
+    document.body.removeEventListener(EVENT_NAME, this.toggleContent);
   }
 
-  get checkbox () {
-    return this.querySelector('input[type=checkbox]')
+  onToggle (event) {
+    if (event.target.checked) {
+      localStorage.setItem(STORAGE, '1');
+    } else {
+      localStorage.removeItem(STORAGE);
+    }
+
+    const ev = new Event(EVENT_NAME);
+    document.body.dispatchEvent(ev);
+  }
+
+  toggleContent () {
+    if (localStorage.getItem(STORAGE) === '1') {
+      this.revealContent();
+    } else {
+      this.removeContent();
+    }
   }
 
   revealContent () {
@@ -137,40 +150,24 @@ class WallOfConsent extends HTMLElement {
 
     this.content.replaceChildren(templateContent.cloneNode(true));
     this.prepend(this.content);
-    this.hideInitialElements();
+    this.toggleInitialElements(true);
     this.checkbox.checked = true;
   }
 
   removeContent () {
     this.content.innerHTML = '';
-    this.unhideInitialElements();
+    this.toggleInitialElements(false);
     this.checkbox.checked = false;
   }
 
-  toggle (event) {
-    if (event.target.checked) {
-      localStorage.setItem('consent-to-embeds', '1');
-      const event = new Event('consent-to-embeds');
-      document.body.dispatchEvent(event);
-      this.revealContent();
-    } else {
-      localStorage.removeItem('consent-to-embeds');
-      const event = new Event('disconsent-to-embeds');
-      document.body.dispatchEvent(event);
-      this.removeContent();
-    }
-  }
-
-  hideInitialElements () {
+  toggleInitialElements (hidden) {
     this.querySelectorAll('[data-hide-if-consent]').forEach((node) => {
-      node.hidden = true;
+      node.hidden = hidden;
     });
   }
 
-  unhideInitialElements () {
-    this.querySelectorAll('[data-hide-if-consent]').forEach((node) => {
-      node.hidden = false;
-    });
+  get checkbox () {
+    return this.querySelector('input[type=checkbox]')
   }
 }
 
