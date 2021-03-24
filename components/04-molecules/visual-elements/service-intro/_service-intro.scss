@@ -11,7 +11,8 @@
 }
 
 .service-intro__header {
-  @extend %h1;
+  @extend %heading-font-heavy;
+  @extend %manual-hyphenation;
 
   margin-bottom: $spacer-md;
   line-height: 1.38; //magic number
