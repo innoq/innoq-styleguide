@@ -96,6 +96,10 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   background-color: $standard-header-intro-bg;
   padding: $spacer-sm;
   box-sizing: content-box;
+
+  .content-separator {
+    margin-bottom: 0;
+  }
 }
 
 .standard-header__intro-headline {
@@ -106,6 +110,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
 .standard-header__intro__text {
   @extend %body-font-italic;
 
+  margin-bottom: $spacer-sm;
   line-height: $paragraph-line-height;
   color: $standard-header-intro-text-color;
   font-size: $font-size-sm;
