@@ -313,9 +313,9 @@ h4, .footnotes__list li::before, .edition, .date, .link--muted, .form-label--emp
 
 h6, .section-heading--secondary, .search-result__title, .card__headline, .list-teaser-event__headline, .list-teaser__headline, .content-teaser__header, .podcast-teaser__headline,
 h3, .teaser-section-heading, .list-teaser-podcast__headline,
-h2, .section-heading--primary, .talk-title, .newsletter-optin__title, .service-intro__header, .project-index__title, .wall-note__heading,
+h2, .section-heading--primary, .talk-title, .newsletter-optin__title, .project-index__title, .wall-note__heading,
 h1, .edition-date, .event-month, .event-day, .link-teaser, .collapse-toggler, .legend, .triplet-divider__right,
-.triplet-divider__left, .big-content-teaser__headline, .product-list-teaser__cta, .image-list-teaser__title, .tag-section__headline, .toc__heading, long-quote > blockquote > p,
+.triplet-divider__left, .big-content-teaser__headline, .product-list-teaser__cta, .image-list-teaser__title, .service-intro__header, .tag-section__headline, .toc__heading, long-quote > blockquote > p,
 super-quote > blockquote > p,
 .superquote > p,
 .longquote > p, .staff-intro--name,
@@ -370,8 +370,8 @@ h6, .section-heading--tertiary, .upcase-heading, .newsletter-optin__subtitle, .l
 h5, .search-result__subtitle,
 h4, .section-heading--secondary, .search-result__title, .card__headline, .list-teaser-event__headline, .list-teaser__headline, .content-teaser__header, .podcast-teaser__headline,
 h3, .teaser-section-heading, .list-teaser-podcast__headline,
-h2, .section-heading--primary, .talk-title, .newsletter-optin__title, .service-intro__header, .project-index__title, .wall-note__heading,
-h1 {
+h2, .section-heading--primary, .talk-title, .newsletter-optin__title, .project-index__title, .wall-note__heading,
+h1, .service-intro__header {
   overflow-wrap: break-word;
   word-wrap: normal;
   -webkit-hyphens: manual;
@@ -6822,7 +6822,7 @@ figure > div > pre code {
     font-size: 1rem;
   }
 }
-.section-heading--primary, .talk-title, .newsletter-optin__title, .service-intro__header, .project-index__title, .wall-note__heading,
+.section-heading--primary, .talk-title, .newsletter-optin__title, .project-index__title, .wall-note__heading,
 h1 {
   margin-top: 0;
   margin-bottom: 2.985984rem;
@@ -6919,7 +6919,7 @@ h6 {
 }
 
 @media screen and (min-width: 48rem) {
-  .talk-title, .newsletter-optin__title, .service-intro__header, .project-index__title, .wall-note__heading, .section-heading--primary,
+  .talk-title, .newsletter-optin__title, .project-index__title, .wall-note__heading, .section-heading--primary,
 h1 {
     font-size: 2.985984rem;
   }
