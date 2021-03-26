@@ -2,7 +2,6 @@
   @extend %container-xl;
 
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
   grid-gap: $spacer-md;
 
   .case-teaser {
@@ -17,14 +16,21 @@
   padding: $spacer-lg 0;
 }
 
-.span-4 {
-  grid-column: span 4;
-}
+@media screen and (min-width: $grid-breakpoint-md) {
+  .case-teaser-grid {
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: $spacer-md;
+  }
 
-.span-3 {
-  grid-column: span 3;
-}
+  .span-4 {
+    grid-column: span 4;
+  }
 
-.span-5 {
-  grid-column: span 5;
+  .span-3 {
+    grid-column: span 3;
+  }
+
+  .span-5 {
+    grid-column: span 5;
+  }
 }
