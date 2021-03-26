@@ -1,0 +1,39 @@
+.masonry-grid {
+  @extend %container-xl;
+
+  display: grid;
+  grid-gap: $spacer-md;
+
+  .case-teaser {
+    margin-bottom: 0;
+  }
+
+  .case-teaser__body {
+    top: 0;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md-lg) {
+  .masonry-grid {
+    grid-template-columns: repeat(8, minmax(6rem, 1fr));
+    grid-gap: $spacer-md;
+  }
+
+  .span-4 {
+    grid-column: span 4;
+  }
+
+  .span-3 {
+    grid-column: span 3;
+  }
+
+  .span-5 {
+    grid-column: span 5;
+  }
+}
+
+// Demo Class
+.masonry-grid-demo {
+  background: $brand-primary;
+  height: 20rem;
+}
