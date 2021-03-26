@@ -1,11 +1,11 @@
-$list-teaser-height-sm: ms(18);
-$list-teaser-height-md: ms(20);
+$list-teaser-height: ms(32);
 
 %list-teaser {
   @extend %block-link;
   @extend %hover-glow;
+
   margin-bottom: $spacer-base;
-  min-height: $list-teaser-height-sm;
+  min-height: $list-teaser-height;
 }
 
 %list-teaser-footer {
