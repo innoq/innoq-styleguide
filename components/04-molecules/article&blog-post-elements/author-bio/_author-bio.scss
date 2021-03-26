@@ -114,6 +114,7 @@ $author-text-margin: 0.18rem;
     position: absolute;
     top: -$author-bio-image-offset;
     left: calc(50% - #{$author-bio-image-offset});
+    margin-right: 0;
   }
 }
 
