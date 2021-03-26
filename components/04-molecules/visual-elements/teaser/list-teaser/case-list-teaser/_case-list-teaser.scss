@@ -3,10 +3,15 @@ $case-teaser-bg-height: 1000px; // Arbitrary value
 $case-teaser-height: ms(38);
 
 .case-teaser {
-  @extend %page-header;
   @extend %list-teaser;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   width: 100%;
   max-width: 100%;
   min-height: $case-teaser-height;
