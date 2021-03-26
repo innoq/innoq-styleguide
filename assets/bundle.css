@@ -599,7 +599,7 @@ dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
 
 .list-teaser-training, .list-teaser, .list-teaser-podcast, .list-teaser-event, .case-teaser, .list-teaser-abstract {
   margin-bottom: 2.0736rem;
-  min-height: 5.159780352rem;
+  min-height: 18.4884258895rem;
 }
 
 .list-teaser__footer, .list-teaser-event .list-teaser-event__footer {
