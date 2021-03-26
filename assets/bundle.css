@@ -2975,22 +2975,24 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 2.0736rem;
   width: 100%;
-  min-height: 1rem;
   white-space: nowrap;
 }
 
 .content-separator__date,
 .content-separator__duration {
+  display: inline-block;
   background-color: #fff;
   padding-right: 0.5787037037rem;
   padding-left: 0.5787037037rem;
@@ -2998,8 +3000,14 @@ hr {
   color: #004153;
 }
 
-.content-separator__date {
-  margin-right: 2.0736rem;
+.content-separator__separator {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin: 1rem 0;
+  border: 0;
+  background-color: #004153;
+  width: 1rem;
+  height: 2px;
 }
 
 .content-seperator--inverted .content-separator__date,
@@ -3007,16 +3015,33 @@ hr {
   background-color: #004153;
   color: #fff;
 }
+.content-seperator--inverted .content-separator__separator {
+  background-color: #fff;
+}
 
-@media screen and (min-width: 25rem) {
+@media screen and (min-width: 48rem) {
   .content-separator {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
     -webkit-box-shadow: #fff 0 0.5rem 0 0 inset, #004153 0 calc(0.5rem + 1px) 0 0 inset;
             box-shadow: #fff 0 0.5rem 0 0 inset, #004153 0 calc(0.5rem + 1px) 0 0 inset;
+    height: 1px;
+    min-height: 1rem;
   }
 
   .content-seperator--inverted {
     -webkit-box-shadow: #004153 0 0.5rem 0 0 inset, #fff 0 calc(0.5rem + 1px) 0 0 inset;
             box-shadow: #004153 0 0.5rem 0 0 inset, #fff 0 calc(0.5rem + 1px) 0 0 inset;
+  }
+
+  .content-separator__separator {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    margin: 0;
   }
 }
 .footnote-section__headline__container {
