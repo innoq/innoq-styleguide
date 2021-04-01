@@ -43,7 +43,10 @@ $podcast-teaser-height-md: ms(35);
 }
 
 .podcast-author {
-  @extend %author-name;
+  @extend %heading-font-bold;
+
+  text-transform: uppercase;
+  font-size: $font-size-base;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

@@ -47,27 +47,6 @@
   font-style: normal;
 }
 
-.link-unstyled {
-  border-bottom: 0;
-  text-decoration: none;
-  color: inherit;
-}
-.link-unstyled:hover, .link-unstyled:focus {
-  background-color: initial;
-}
-
-@supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
-  .punch-in {
-    background-clip: text;
-    background-position: center;
-    color: transparent;
-    -webkit-background-clip: text;
-  }
-}
-.text-center {
-  text-align: center;
-}
-
 @font-face {
   font-family: FreightTextPro;
   font-weight: bold;
@@ -123,6 +102,27 @@
   font-style: normal;
   font-weight: normal;
 }
+.link-unstyled {
+  border-bottom: 0;
+  text-decoration: none;
+  color: inherit;
+}
+.link-unstyled:hover, .link-unstyled:focus {
+  background-color: initial;
+}
+
+@supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
+  .punch-in {
+    background-clip: text;
+    background-position: center;
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+.text-center {
+  text-align: center;
+}
+
 .swatches {
   display: -webkit-box;
   display: -ms-flexbox;
