@@ -13,6 +13,6 @@ export default class CheckToToggle extends HTMLElement {
   }
 
   toggle () {
-    this.target.classList.toggle('hidden')
+    this.target.classList.toggle('is-hidden')
   }
 }

@@ -1,0 +1,16 @@
+.container-xl,
+%container-xl {
+  margin: 0 auto;
+  padding: $spacer-lg $spacer-xs;
+  max-width: $default-page-layout-content-width-xl;
+
+  @media screen and (min-width: $grid-breakpoint-lg) {
+    padding: $spacer-lg $spacer-base;
+  }
+}
+
+// Demo Container
+.container-demo {
+  background: $brand-primary;
+  min-height: 20rem;
+}

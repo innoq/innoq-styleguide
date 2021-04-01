@@ -88,11 +88,16 @@ $case-tile-teaser-sm-height: ms(32);
 // Breakpoints
 //
 @media screen and (min-width: $grid-breakpoint-md) {
-  .case-tile-teaser {
-    padding: $spacer-xl $spacer-lg;
-  }
-
   .case-tile-teaser__content {
     padding: $spacer-lg $spacer-md;
+  }
+}
+
+// Hack for tease in masonry grid
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .span-5 {
+    .case-tile-teaser__content {
+      max-width: ms(37);
+    }
   }
 }

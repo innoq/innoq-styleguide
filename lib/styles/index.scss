@@ -1,81 +1,22 @@
-// This Framework is constructed by the principles of ITCSS.
-// More information about it can be read here:
-// https://medium.com/@pistenprinz/css-at-trivago-part-1-structure-and-itcss-52f63ed557ca
+@import "01-base/typography";
+@import "01-base/breakpoints";
+@import "01-base/colors";
+@import "01-base/fontfaces";
+@import "01-base/fonts";
+@import "01-base/spacings";
+@import "01-base/theme-apripetrol";
 
-//
-// Settings
-//
-// The settings-layer contains all our global Design System variables, so it
-// defines colors, spacings, font-sizes, breakpoints settings and many more.
-// Important: This layer does not produce any code.
+@import "01-base/base";
 
-@import "settings/breakpoints";
-@import "settings/colors";
-@import "settings/theme-apripetrol";
-@import "settings/icons";
-@import "settings/typography";
-@import "settings/spacings";
-
-//
-// Tools
-//
-// The tools layer defines all the mixins and functions we utilise in our
-// SCSS base. Important: This layer does not produce any code.
-
-@import "tools/bg-images";
-@import "tools/fonts";
-@import "tools/forms";
-@import "tools/text";
-@import "tools/author";
-@import "tools/images";
-@import "tools/visibility";
-@import "tools/teaser";
-@import "tools/header";
-@import "tools/helperclasses";
-
-//
-// Generic
-//
-// The third layer Generic contains amongst other things a normalize or
-// reset.
-
-@import "generic/animations";
-@import "generic/fontfaces";
-
-//
-// Elements
-//
-// The Elements layer contains styles for global element styles, e.g. all
-// headlines h1-h5 on this page should have a certain font-family.
-
-@import "elements/base";
-
-//
-// Objects
-//
-// The fifth layer — the objects layer — starts to become more specific and
-// provides more or less unstyled patterns as reusable objects like wrappers
-// and containers. An example of such a pattern is the well known media
-// object (an image with headline and paragraph next to it).
-
-@import "objects/block";
-@import "objects/breakout";
-@import "objects/media";
-@import "objects/page-layout-default";
-@import "objects/page-layout-grid";
-@import "objects/page-layout-podcast";
-@import "objects/stripe";
-
-//
-// Components
-//
-// The sixth layer — the components — itself is the first layer which is
-// using the BEM naming convention. All components are very encapsulated and of
-// course we try to limit any dependencies between components. So here we have
-// e.g. one component which has all the CSS needed for our search result list
-// item which we call item element. All components are classified into the
-// the categories of Atomic Design. So they are either atoms or molecules
-// (composed atoms).
+@import "02-util/animations";
+@import "02-util/bg-images";
+@import "02-util/forms";
+@import "02-util/icons";
+@import "02-util/text";
+@import "02-util/teaser";
+@import "02-util/header";
+@import "02-util/helperclasses";
+@import "02-util/visibility";
 
 //
 // ATOMS
@@ -221,8 +162,16 @@
 @import "../components/03-organisms/search-result-list/search-result-list";
 
 // LAYOUTS
-@import "../components/02-layouts/container/container";
-@import "../components/02-layouts/masonry-layout/masonry-layout";
+@import "../components/02-layouts/component-layouts/container/container";
+@import "../components/02-layouts/component-layouts/masonry-layout/masonry-layout";
+@import "../components/02-layouts/component-layouts/block";
+@import "../components/02-layouts/component-layouts/breakout";
+@import "../components/02-layouts/component-layouts/stripe/stripe";
+
+@import "../components/02-layouts/page-layouts/main-layout/main-layout";
+@import "../components/02-layouts/page-layouts/page-layout-default";
+@import "../components/02-layouts/page-layouts/page-layout-grid";
+@import "../components/02-layouts/page-layouts/page-layout-podcast";
 
 //
 // PAGES
@@ -251,12 +200,5 @@
 @import "../components/01-pages/training-pages/trainings-overview-page/trainings-overview-page";
 @import "../components/01-pages/product-microsite-page/product-microsite-page";
 
-//
-// Trumps
-//
-// Last but not least the trumps layer, where hacks, debugging and utilities
-// can be stored. This place should be used when selectors need to be as high
-// as possible. It is intended as the last resort.
-
-@import "trumps/hacks";
-@import "trumps/styleguide";
+@import "03-styleguide/hacks";
+@import "03-styleguide/styleguide";
