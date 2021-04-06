@@ -144,10 +144,12 @@
 //
 // ORGANISMS
 //
-@import "../components/03-organisms/article-intro/article-intro";
+
 @import "../components/03-organisms/form/form";
 @import "../components/03-organisms/footer/footer";
+
 // Header
+@import "../components/03-organisms/header/article-intro/article-intro";
 @import "../components/03-organisms/header/claim-header/claim-header";
 @import "../components/03-organisms/header/image-header/image-header";
 @import "../components/03-organisms/header/landing-page-header/landing-page-header";
