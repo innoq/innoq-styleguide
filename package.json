@@ -23,8 +23,7 @@
     "modularscale-sass": "^3.0.10"
   },
   "devDependencies": {
-    "complate-fractal": "^0.13.0",
-    "document-register-element": "^1.14.5",
+    "complate-fractal": "^0.14.0",
     "eslint": "^7.6.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-config-standard-jsx": "^10.0.0",
@@ -32,7 +31,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.23.0",
-    "eslint-plugin-standard": "^5.0.0",
     "faucet-pipeline-js": "^2.1.6",
     "faucet-pipeline-sass": "^1.4.0",
     "faucet-pipeline-static": "^1.2.0",
