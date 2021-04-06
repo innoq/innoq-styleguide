@@ -286,10 +286,6 @@
     <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$heading-line-height-sm</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-title-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xl</span>;
-
-    &amp;--separated {
-      <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-xxl</span>;
-    }
   }
 
   &amp;__subtitle {
@@ -318,44 +314,6 @@
   }
 }
 
-<span class="hljs-comment">//Variations</span>
-<span class="hljs-selector-class">.standard-header--inverted</span> {
-  <span class="hljs-selector-class">.standard-header__title</span> {
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-inverted-title-color</span>;
-  }
-
-  <span class="hljs-selector-class">.standard-header__type</span> {
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-inverted-type-color</span>;
-  }
-
-  <span class="hljs-selector-class">.standard-header__subtitle</span> {
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-inverted-subtitle-color</span>;
-  }
-}
-
-<span class="hljs-selector-class">.podcast-header--avatar--overlay</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$standard-header-podcast-overlay-color</span>;
-  <span class="hljs-attribute">background-repeat</span>: no-repeat;
-  <span class="hljs-attribute">background-position</span>: top right, top left;
-  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">0%</span>;
-  <span class="hljs-attribute">background</span>-blend-mode: multiply;
-
-  <span class="hljs-selector-class">.standard-header__subtitle</span> {
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-podcast-subtitle-color</span>;
-  }
-
-  <span class="hljs-selector-class">.standard-header__title</span>,
-  <span class="hljs-selector-class">.standard-header__subtitle</span> {
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-xl</span>;
-  }
-
-  <span class="hljs-selector-class">.standard-header__intro__label</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$standard-header-podcast-intro-label-bg-color</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-podcast-intro-label-color</span>;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xs</span>;
-  }
-}
-
 <span class="hljs-selector-class">.standard-header__intro</span> {
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">position</span>: relative;
@@ -364,10 +322,10 @@
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-lg</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$standard-header-intro-bg</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-sm</span>;
-  <span class="hljs-attribute">box-sizing</span>: content-box;
+  <span class="hljs-comment">// box-sizing: content-box;</span>
 
   <span class="hljs-selector-class">.content-separator</span> {
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
   }
 }
 
@@ -390,11 +348,52 @@
 
   <span class="hljs-attribute">display</span>: block;
   <span class="hljs-attribute">position</span>: relative;
-  <span class="hljs-attribute">top</span>: -<span class="hljs-number">2rem</span>; <span class="hljs-comment">// FIXME</span>
+  <span class="hljs-attribute">top</span>: -<span class="hljs-number">2rem</span>; <span class="hljs-comment">// magic number</span>
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$standard-header-intro-label-bg</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xxs</span> <span class="hljs-variable">$spacer-xs</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-intro-label-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xs</span>;
+}
+
+<span class="hljs-comment">//Variations</span>
+
+<span class="hljs-comment">//Inverted</span>
+<span class="hljs-selector-class">.standard-header--inverted</span> {
+  <span class="hljs-selector-class">.standard-header__title</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-inverted-title-color</span>;
+  }
+
+  <span class="hljs-selector-class">.standard-header__type</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-inverted-type-color</span>;
+  }
+
+  <span class="hljs-selector-class">.standard-header__subtitle</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-inverted-subtitle-color</span>;
+  }
+}
+
+<span class="hljs-comment">// Podcast</span>
+<span class="hljs-selector-class">.podcast-header--avatar--overlay</span> {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$standard-header-podcast-overlay-color</span>;
+  <span class="hljs-attribute">background-repeat</span>: no-repeat;
+  <span class="hljs-attribute">background-position</span>: top right, top left;
+  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">0%</span>;
+  <span class="hljs-attribute">background</span>-blend-mode: multiply;
+
+  <span class="hljs-selector-class">.standard-header__subtitle</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-podcast-subtitle-color</span>;
+  }
+
+  <span class="hljs-selector-class">.standard-header__title</span>,
+  <span class="hljs-selector-class">.standard-header__subtitle</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-xl</span>;
+  }
+
+  <span class="hljs-selector-class">.standard-header__intro__label</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$standard-header-podcast-intro-label-bg-color</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-podcast-intro-label-color</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xs</span>;
+  }
 }
 
 <span class="hljs-comment">//Breakpoints</span>
@@ -437,7 +436,7 @@
   }
 
   <span class="hljs-selector-class">.standard-header__intro__label</span> {
-    <span class="hljs-attribute">top</span>: -<span class="hljs-number">4.1rem</span>; <span class="hljs-comment">// FIXME</span>
+    <span class="hljs-attribute">top</span>: -<span class="hljs-number">4.1rem</span>; <span class="hljs-comment">// magic number</span>
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xs</span> <span class="hljs-variable">$spacer-sm</span>;
   }
 
@@ -1614,32 +1613,6 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="article-intro.html" data-role="tree-link" data-pjax data-handle="article-intro">
-                <span>Article Intro</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="footer.html" data-role="tree-link" data-pjax data-handle="footer">
                 <span>Footer</span>
                 
@@ -1700,6 +1673,32 @@
                 
                 
                 
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="article-intro.html" data-role="tree-link" data-pjax data-handle="article-intro">
+                <span>Article Intro</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
     
         
         
@@ -4910,8 +4909,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-01T13:36:29.640Z">
-                                4/1/2021
+                            <time datetime="2021-04-06T15:29:25.084Z">
+                                4/6/2021
                             </time>
                         
                     </dd>
