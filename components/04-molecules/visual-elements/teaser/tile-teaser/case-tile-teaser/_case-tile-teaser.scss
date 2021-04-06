@@ -10,7 +10,7 @@ $case-tile-teaser-sm-height: ms(32);
   display: flex;
   flex-direction: column;
   background-size: cover;
-  padding: $spacer-xl $spacer-sm;
+  padding: $spacer-lg;
   color: $case-tile-teaser-text-color;
 }
 
@@ -95,6 +95,10 @@ $case-tile-teaser-sm-height: ms(32);
 
 // Hack for tease in masonry grid
 @media screen and (min-width: $grid-breakpoint-lg) {
+  .case-tile-teaser {
+    padding: $spacer-xl;
+  }
+
   .span-5 {
     .case-tile-teaser__content {
       max-width: ms(37);
