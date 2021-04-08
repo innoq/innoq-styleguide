@@ -1,246 +1,232 @@
 import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-teaser/podcast-tile-teaser/config";
 
-<main role="main">
-    <nav-bar class="navbar">
-        <div class="navbar__inner">
-            <a href="#main" class="navbtn navbtn--skip">Zum Inhalt springen</a>
+<nav-bar class="navbar">
+    <div class="navbar__inner">
+        <a href="#main" class="navbtn navbtn--skip">Zum Inhalt springen</a>
 
-            <div class="navbar__brand">
-                <a href="#" class="navbar__brand-link">
-                    <img alt="INNOQ" class="logo navbar__logo"
-                        src={context.app.uri('assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg')} />
-                </a>
-            </div>
-
-            <input tabindex="-1" type="checkbox" id="navbar-toggle--menu"
-                class="sr-only navbar__toggle-state navbar__toggle-state--menu-toggler" />
-            <input tabindex="-1" type="checkbox" id="navbar-toggle--search"
-                class="sr-only navbar__toggle-state navbar__toggle-state--search-toggler" />
-
-            <div class="navbar__meta">
-                <a href="#" class="navbtn navbtn--meta">Newsletter</a>
-                <a href="#" class="navbtn navbtn--meta">Kontakt</a>
-                <a href="#" class="navbtn navbtn--meta navbtn--locale navbtn--active" title="Deutsch">de</a> |
-                <a href="#" class="navbtn navbtn--meta navbtn--locale" title="English">en</a>
-            </div>
-
-            <div class="navbar__togglers">
-                <label for="navbar-toggle--menu" aria-label="Navigation ein- oder ausblenden">
-                    <span class="navbtn navbtn--menu">Menü</span>
-                </label>
-                <a href="#" class="navbtn navbtn--search" aria-label="Suche ein- oder ausblenden">
-                    <i class="icon icon-search"></i>
-                </a>
-            </div>
-
-            <nav class="navbar__primary-nav primary-nav">
-                <ul class="primary-nav__list">
-                    <li class="primary-nav__item">
-                        <a href="#" class="navbtn navbtn--primary navbtn--active">Leistungen</a>
-                    </li>
-
-                    <li class="primary-nav__item">
-                        <div class="dropdown">
-                            <a href="#" class="navbtn navbtn--primary"
-                                data-for="dropdown__toggle--projekte">Projekte</a>
-                            <input type="checkbox" role="button" aria-haspopup="true" id="dropdown__toggle--projekte"
-                                class="sr-only dropdown__checkbox" />
-                            <label class="dropdown__toggle dropdown__toggle--navbar" for="dropdown__toggle--projekte">
-                                <i class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"></i>
-                                <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
-                                <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
-                            </label>
-                            <div class="dropdown__list-wrapper dropdown__list-wrapper--navbar" role="menu"
-                                title="Projekte" data-origin="left">
-                                <ul class="dropdown__list">
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#"
-                                            class="dropdown__link dropdown__link--navbar navbtn">Softwarearchitektur und
-                                            -entwicklung</a>
-                                    </li>
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Strategie- und
-                                            Technologieberatung</a>
-                                    </li>
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Entwicklung
-                                            digitaler Geschäftsmodelle</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="primary-nav__item">
-                        <div class="dropdown">
-                            <a href="#" class="navbtn navbtn--primary" data-for="dropdown__toggle--kultur">Kultur</a>
-                            <input type="checkbox" role="button" aria-haspopup="true" id="dropdown__toggle--kultur"
-                                class="sr-only dropdown__checkbox" />
-                            <label class="dropdown__toggle dropdown__toggle--navbar" for="dropdown__toggle--kultur">
-                                <i class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"></i>
-                                <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
-                                <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
-                            </label>
-                            <div class="dropdown__list-wrapper dropdown__list-wrapper--navbar" role="menu"
-                                title="Kultur" data-origin="right">
-                                <ul class="dropdown__list">
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Strategie- und
-                                            Technologieberatung</a>
-                                    </li>
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Entwicklung
-                                            digitaler Geschäftsmodelle</a>
-                                    </li>
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#"
-                                            class="dropdown__link dropdown__link--navbar navbtn">Softwarearchitektur und
-                                            -entwicklung</a>
-                                    </li>
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Digitale
-                                            Plattformen und Infrastrukturen</a>
-                                    </li>
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#"
-                                            class="dropdown__link dropdown__link--navbar navbtn">Wissenstransfer,
-                                            Coaching und Trainings</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li class="primary-nav__item">
-                        <a href="#" class="navbtn navbtn--primary">Magazin</a>
-                    </li>
-
-                    <li class="primary-nav__item">
-                        <a href="#" class="navbtn navbtn--primary">Termine</a>
-                    </li>
-                </ul>
-                <button class="navbtn navbtn--drill-up">
-                    <span class="icon-svg icon-arrow-medium-left icon--brand-primary"></span> Hauptmenü
-                </button>
-            </nav>
+        <div class="navbar__brand">
+            <a href="#" class="navbar__brand-link">
+                <img alt="INNOQ" class="logo navbar__logo"
+                    src={context.app.uri('assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg')} />
+            </a>
         </div>
-    </nav-bar>
 
-    <header class="landing-page-header">
-        <video class="bg-video" playsinline autoplay muted loop wf-ignore
-            poster={context.app.uri("assets/bg-images/edition-02/edition02-human-02.jpg")}>
-            <source src={context.app.uri("assets/bg-videos/neuroevolutionary-trails.mp4")} type="video/mp4" />
-        </video>
-        <div class="landing-page-header__body">
-            <div>
-                <h1 class="landing-page-header__title bg-image-edition-16-gradient">Wir geben Technologie einen Sinn. <br />
-                    Und ihren Ideen eine Zukunft.</h1>
-            </div>
-            <div class="landing-page-header__text">
-                Wir beraten ehrlich, denken innovativ und entwickeln leidenschaftlich gern.
-                Das Ergebnis sind erfolgreiche Softwarelösungen, Infrastrukturen und Geschäftsmodelle.
-            </div>
+        <input tabindex="-1" type="checkbox" id="navbar-toggle--menu"
+            class="sr-only navbar__toggle-state navbar__toggle-state--menu-toggler" />
+        <input tabindex="-1" type="checkbox" id="navbar-toggle--search"
+            class="sr-only navbar__toggle-state navbar__toggle-state--search-toggler" />
+
+        <div class="navbar__meta">
+            <a href="#" class="navbtn navbtn--meta">Newsletter</a>
+            <a href="#" class="navbtn navbtn--meta">Kontakt</a>
+            <a href="#" class="navbtn navbtn--meta navbtn--locale navbtn--active" title="Deutsch">de</a> |
+            <a href="#" class="navbtn navbtn--meta navbtn--locale" title="English">en</a>
         </div>
-    </header>
 
-    <section>
-        <div class="page-layout-xl--default">
-            <h2 class="teaser-section-heading">Unser Fokus</h2>
-            <div class="service-intro-grid">
-                <div class="service-intro">
-                    <h2 class="service-intro__header"><a href="#">Strategie- und Technologieberatung</a></h2>
-                    <div class="service-intro__text">
-                        Nichts interessiert uns mehr als neue Technologie. Doch bei Strategie
-                        und Technologieberatung geht es uns nicht um das neueste, sondern um das,
-                        was am besten zu Ihnen und Ihren Aufgabenstellungen passt. Dank unserer
-                        branchenübergreifenden Erfahrung können wir Ihnen dazu die richtigen
-                        Fragen stellen und die richtigen Antworten gleich dazu liefern. Dabei
-                        profitieren Sie von unserem Wissensvorsprung. Damit Ihre Entscheidung
-                        zukunftsfähig ist.
-                    </div>
-                    <a href="#" class="service-intro__link">
-                        <span class="icon-svg icon-arrow-long-right icon--brand-primary"></span>
-                    </a>
-                </div>
+        <div class="navbar__togglers">
+            <label for="navbar-toggle--menu" aria-label="Navigation ein- oder ausblenden">
+                <span class="navbtn navbtn--menu">Menü</span>
+            </label>
+            <a href="#" class="navbtn navbtn--search" aria-label="Suche ein- oder ausblenden">
+                <i class="icon icon-search"></i>
+            </a>
+        </div>
 
-                <div class="service-intro">
-                    <h2 class="service-intro__header"><a href="#">Entwicklung digitaler Geschäftsmodelle</a></h2>
-                    <div class="service-intro__text">
-                        Ihre Fachexpertise und unser Entwicklung-Knowhow sind eine
-                        erfolgsversprechende Kombination. Im Software-as-a-Service-Modell
-                        (SaaS) transformieren wir Ihr neues oder bestehendes Geschäftsmodell
-                        in einen innovativen, digitalen Service für Ihre Kunden. Das gilt
-                        selbstverständlich für den gesamten Lebenszyklus – fachlich,
-                        technisch und kommerziell.
-                    </div>
-                    <a href="#" class="service-intro__link">
-                        <span class="icon-svg icon-arrow-long-right icon--brand-primary"></span>
-                    </a>
-                </div>
+        <nav class="navbar__primary-nav primary-nav">
+            <ul class="primary-nav__list">
+                <li class="primary-nav__item">
+                    <a href="#" class="navbtn navbtn--primary navbtn--active">Leistungen</a>
+                </li>
 
-                <div class="service-intro">
-                    <h2 class="service-intro__header"><a href="#">Softwarearchitektur und -entwicklung</a></h2>
-                    <div class="service-intro__text">
-                        Unsere langjährige Erfahrung als Softwarearchitekten und -entwickler
-                        lehrt uns vor allem eines: DIE Lösung gibt es nicht. Deshalb nehmen
-                        wir Ihre Software- und Systemarchitektur genau unter die Lupe und
-                        analysieren Ihre Unternehmensprozesse im Detail. Und deshalb arbeiten
-                        wir auch unabhängig von Herstellern und Produkten. Das Ergebnis ist
-                        so vielfältig, wie unsere Kunden. Doch ob Modernisierungskonzept oder
-                        neu entwickelte Individualsoftware, eines ist immer gleich:
-                        Der Nutzer steht im Mittelpunkt.
+                <li class="primary-nav__item">
+                    <div class="dropdown">
+                        <a href="#" class="navbtn navbtn--primary"
+                            data-for="dropdown__toggle--projekte">Projekte</a>
+                        <input type="checkbox" role="button" aria-haspopup="true" id="dropdown__toggle--projekte"
+                            class="sr-only dropdown__checkbox" />
+                        <label class="dropdown__toggle dropdown__toggle--navbar" for="dropdown__toggle--projekte">
+                            <i class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"></i>
+                            <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
+                            <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
+                        </label>
+                        <div class="dropdown__list-wrapper dropdown__list-wrapper--navbar" role="menu"
+                            title="Projekte" data-origin="left">
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#"
+                                        class="dropdown__link dropdown__link--navbar navbtn">Softwarearchitektur und
+                                        -entwicklung</a>
+                                </li>
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Strategie- und
+                                        Technologieberatung</a>
+                                </li>
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Entwicklung
+                                        digitaler Geschäftsmodelle</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <a href="#" class="service-intro__link">
-                        <span class="icon-svg icon-arrow-long-right icon--brand-primary"></span>
-                    </a>
-                </div>
+                </li>
 
-                <div class="service-intro">
-                    <h2 class="service-intro__header"><a href="#">Digitale Plattformen und Infrastrukturen</a></h2>
-                    <div class="service-intro__text">
-                        Noch in Arbeit.
+                <li class="primary-nav__item">
+                    <div class="dropdown">
+                        <a href="#" class="navbtn navbtn--primary" data-for="dropdown__toggle--kultur">Kultur</a>
+                        <input type="checkbox" role="button" aria-haspopup="true" id="dropdown__toggle--kultur"
+                            class="sr-only dropdown__checkbox" />
+                        <label class="dropdown__toggle dropdown__toggle--navbar" for="dropdown__toggle--kultur">
+                            <i class="icon icon-chevron-2-down dropdown__icon dropdown__icon--navbar"></i>
+                            <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
+                            <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
+                        </label>
+                        <div class="dropdown__list-wrapper dropdown__list-wrapper--navbar" role="menu"
+                            title="Kultur" data-origin="right">
+                            <ul class="dropdown__list">
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Strategie- und
+                                        Technologieberatung</a>
+                                </li>
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Entwicklung
+                                        digitaler Geschäftsmodelle</a>
+                                </li>
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#"
+                                        class="dropdown__link dropdown__link--navbar navbtn">Softwarearchitektur und
+                                        -entwicklung</a>
+                                </li>
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Digitale
+                                        Plattformen und Infrastrukturen</a>
+                                </li>
+                                <li class="dropdown__item dropdown__item--navbar">
+                                    <a href="#"
+                                        class="dropdown__link dropdown__link--navbar navbtn">Wissenstransfer,
+                                        Coaching und Trainings</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <a href="#" class="service-intro__link">
-                        <span class="icon-svg icon-arrow-long-right icon--brand-primary"></span>
-                    </a>
-                </div>
+                </li>
 
-                <div class="service-intro">
-                    <h2 class="service-intro__header"><a href="#">Wissenstransfer, Coaching und Trainings</a></h2>
-                    <div class="service-intro__text">
-                        Unsere öffentlichen Trainings, Inhouse-Schulungen und Coaching
-                        gestalten wir so, wie wir sie als Teilnehmer gerne selbst erleben:
-                        Die Schulungen sind interaktiv und unsere Trainer sind
-                        praktizierende Softwareentwickler und -architekten. Sie wenden
-                        täglich an, was sie lehren und sind immer auf dem neuesten
-                        technischen Stand. Und sie teilen gerne ihr Knowhow aus der Praxis.
-                    </div>
-                    <a href="#" class="service-intro__link">
-                        <span class="icon-svg icon-arrow-long-right icon--brand-primary"></span>
-                    </a>
+                <li class="primary-nav__item">
+                    <a href="#" class="navbtn navbtn--primary">Magazin</a>
+                </li>
+
+                <li class="primary-nav__item">
+                    <a href="#" class="navbtn navbtn--primary">Termine</a>
+                </li>
+            </ul>
+            <button class="navbtn navbtn--drill-up">
+                <span class="icon-svg icon-arrow-medium-left icon--brand-primary"></span> Hauptmenü
+            </button>
+        </nav>
+    </div>
+</nav-bar>
+
+<header class="landing-page-header">
+    <video class="bg-video" playsinline autoplay muted loop wf-ignore
+        poster={context.app.uri("assets/bg-images/edition-02/edition02-human-02.jpg")}>
+        <source src={context.app.uri("assets/bg-videos/neuroevolutionary-trails.mp4")} type="video/mp4" />
+    </video>
+    <div class="landing-page-header__body">
+        <div>
+            <h1 class="landing-page-header__title bg-image-edition-16-gradient">Wir geben Technologie einen Sinn. <br />
+                Und ihren Ideen eine Zukunft.</h1>
+        </div>
+        <div class="landing-page-header__text">
+            Wir beraten ehrlich, denken innovativ und entwickeln leidenschaftlich gern.
+            Das Ergebnis sind erfolgreiche Softwarelösungen, Infrastrukturen und Geschäftsmodelle.
+        </div>
+    </div>
+</header>
+
+<main class="main-layout landing-page" role="main">
+    <section class="container-xl">
+        <h2 class="teaser-section-heading">Unser Fokus</h2>
+        <div class="service-intro-grid">
+            <a href="#" class="service-intro">
+                <h2 class="service-intro__header"><span>Strategie- und Technologieberatung</span></h2>
+                <div class="service-intro__text">
+                    Nichts interessiert uns mehr als neue Technologie. Doch bei Strategie
+                    und Technologieberatung geht es uns nicht um das neueste, sondern um das,
+                    was am besten zu Ihnen und Ihren Aufgabenstellungen passt. Dank unserer
+                    branchenübergreifenden Erfahrung können wir Ihnen dazu die richtigen
+                    Fragen stellen und die richtigen Antworten gleich dazu liefern. Dabei
+                    profitieren Sie von unserem Wissensvorsprung. Damit Ihre Entscheidung
+                    zukunftsfähig ist.
                 </div>
-            </div>
+                <span class="icon-svg icon-arrow-long-right icon--brand-primary"></span>
+            </a>
+
+            <a href="#" class="service-intro">
+                <h2 class="service-intro__header"><span>Entwicklung digitaler Geschäftsmodelle</span></h2>
+                <div class="service-intro__text">
+                    Ihre Fachexpertise und unser Entwicklung-Knowhow sind eine
+                    erfolgsversprechende Kombination. Im Software-as-a-Service-Modell
+                    (SaaS) transformieren wir Ihr neues oder bestehendes Geschäftsmodell
+                    in einen innovativen, digitalen Service für Ihre Kunden. Das gilt
+                    selbstverständlich für den gesamten Lebenszyklus – fachlich,
+                    technisch und kommerziell.
+                </div>
+                <span class="icon-svg icon-arrow-long-right icon--brand-primary"></span>
+            </a>
+
+            <a href="#" class="service-intro">
+                <h2 class="service-intro__header"><span>Softwarearchitektur und -entwicklung</span></h2>
+                <div class="service-intro__text">
+                    Unsere langjährige Erfahrung als Softwarearchitekten und -entwickler
+                    lehrt uns vor allem eines: DIE Lösung gibt es nicht. Deshalb nehmen
+                    wir Ihre Software- und Systemarchitektur genau unter die Lupe und
+                    analysieren Ihre Unternehmensprozesse im Detail. Und deshalb arbeiten
+                    wir auch unabhängig von Herstellern und Produkten. Das Ergebnis ist
+                    so vielfältig, wie unsere Kunden. Doch ob Modernisierungskonzept oder
+                    neu entwickelte Individualsoftware, eines ist immer gleich:
+                    Der Nutzer steht im Mittelpunkt.
+                </div>
+                <span class="icon-svg icon-arrow-long-right icon--brand-primary"></span>
+            </a>
+
+            <a href="#" class="service-intro">
+                <h2 class="service-intro__header"><span>Digitale Plattformen und Infrastrukturen</span></h2>
+                <div class="service-intro__text">
+                    Noch in Arbeit.
+                </div>
+                <span class="icon-svg icon-arrow-long-right icon--brand-primary"></span>
+            </a>
+
+            <a href="#" class="service-intro">
+                <h2 class="service-intro__header"><span>Wissenstransfer, Coaching und Trainings</span></h2>
+                <div class="service-intro__text">
+                    Unsere öffentlichen Trainings, Inhouse-Schulungen und Coaching
+                    gestalten wir so, wie wir sie als Teilnehmer gerne selbst erleben:
+                    Die Schulungen sind interaktiv und unsere Trainer sind
+                    praktizierende Softwareentwickler und -architekten. Sie wenden
+                    täglich an, was sie lehren und sind immer auf dem neuesten
+                    technischen Stand. Und sie teilen gerne ihr Knowhow aus der Praxis.
+                </div>
+                <span class="icon-svg icon-arrow-long-right icon--brand-primary"></span>
+            </a>
         </div>
     </section>
 
     <section class="stripe stripe--gray">
-        <div class="page-layout-xl--default">
-            <div class="blocks">
-                <a href="#" class="topic-teaser bg-image-edition-05">
-                    <div class="topic-teaser__body">
-                        <div class="topic-teaser__caption">Schwerpunktthema</div>
-                        <h1 class="topic-teaser__header">Microservices – der aktuelle Stand</h1>
-                        <div class="topic-teaser__text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit doloremque culpa minima vero
-                            quod, optio itaque nisi deserunt, debitis ad laudantium libero, quia nemo!
-                        </div>
-                        <div class="topic-teaser__cta">Zum Schwerpunktthema
-                            <span class="icon-svg icon-arrow-long-right icon--brand-primary"></span>
-                        </div>
+        <div class=" container-xl container-xl-vertical-whitespace">
+            <a href="#" class="topic-teaser bg-image-edition-05">
+                <div class="topic-teaser__body">
+                    <div class="topic-teaser__caption">Schwerpunktthema</div>
+                    <h1 class="topic-teaser__header">Microservices – der aktuelle Stand</h1>
+                    <div class="topic-teaser__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit doloremque culpa minima vero
+                        quod, optio itaque nisi deserunt, debitis ad laudantium libero, quia nemo!
                     </div>
-                </a>
-            </div>
-            <div class="blocks">
+                    <div class="topic-teaser__cta">Zum Schwerpunktthema
+                        <span class="icon-svg icon-arrow-long-right icon--brand-primary"></span>
+                    </div>
+                </div>
+            </a>
+            <div class="tile-grid">
                 <a href="#" class="content-teaser content-teaser--inverted">
                     <div class="content-teaser__body">
                         <div class="content-teaser__caption">Artikel</div>
@@ -308,7 +294,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                 </a>
             </div>
 
-            <div class="blocks">
+            <div class="tile-grid">
                 <a href="#" class="list-teaser-event tile">
                     <div class="event-date-section">
                         <div class="label talk">Vortrag</div>
@@ -423,26 +409,25 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
             </div>
         </div>
     </section>
-    <div class="blocks">
-        <div class="case-teaser bg-image-edition-06">
-            <div class="case-teaser__wrapper">
-                <div class="case-teaser__body">
-                    <div class="case-teaser__caption">ARTIST COLLABORATION</div>
-                    <div>
-                        <div class="case-teaser__header">
-                            <h1 class="punch-in bg-image-edition-06">INNOQ Digital Art</h1>
-                        </div>
+
+    <div class="case-teaser bg-image-edition-06">
+        <div class="case-teaser__wrapper">
+            <div class="case-teaser__body">
+                <div class="case-teaser__caption">ARTIST COLLABORATION</div>
+                <div>
+                    <div class="case-teaser__header">
+                        <h1 class="punch-in bg-image-edition-06">INNOQ Digital Art</h1>
                     </div>
-                    <div class="case-teaser__text">
-                        Die Kollaborationsreihe „INNOQ Digital Art“ hat zum Ziel, die Zusammenarbeit mit ausgewählten
-                        Medienkünstlern zu fördern. Gemeinsam werden Fragen zu technologischem Fortschritt und dessen
-                        gesellschaftlichen Auswirkungen aus verschiedenen Perspektiven betrachtet. Dabei steht die
-                        gemeinsame Entwicklung von Kunstwerken und der intensive Austausch zwischen INNOQ-Mitarbeitern
-                        und den Künstlern im Fokus.
-                    </div>
-                    <div class="case-teaser__footer">
-                        <a class="link-teaser" href="#">Mehr erfahren</a>
-                    </div>
+                </div>
+                <div class="case-teaser__text">
+                    Die Kollaborationsreihe „INNOQ Digital Art“ hat zum Ziel, die Zusammenarbeit mit ausgewählten
+                    Medienkünstlern zu fördern. Gemeinsam werden Fragen zu technologischem Fortschritt und dessen
+                    gesellschaftlichen Auswirkungen aus verschiedenen Perspektiven betrachtet. Dabei steht die
+                    gemeinsame Entwicklung von Kunstwerken und der intensive Austausch zwischen INNOQ-Mitarbeitern
+                    und den Künstlern im Fokus.
+                </div>
+                <div class="case-teaser__footer">
+                    <a class="link-teaser" href="#">Mehr erfahren</a>
                 </div>
             </div>
         </div>

@@ -1,16 +1,29 @@
 .container-xl,
 %container-xl {
   margin: 0 auto;
-  padding: $spacer-xl $spacer-xs;
+  padding: 0 $spacer-xs;
   max-width: $default-page-layout-content-width-xl;
 
-  @media screen and (min-width: $grid-breakpoint-lg) {
-    padding: $spacer-xxl $spacer-base;
+  & > * {
+    margin-bottom: 0; //FIXME Remove when margin-bottom es removed from copmponents
+  }
+
+  & > * + * {
+    margin-top: $spacer-base;
   }
 }
 
-// Demo Container
-.container-demo {
-  background: $brand-primary;
-  min-height: 20rem;
+.container-xl-vertical-whitespace,
+%container-xl-vertical-whitespace {
+  padding: $spacer-xl $spacer-xs;
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .container-xl {
+    padding: 0 $spacer-base;
+  }
+
+  .container-xl-vertical-whitespace {
+    padding: $spacer-xxl $spacer-base;
+  }
 }

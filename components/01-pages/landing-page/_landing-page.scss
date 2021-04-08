@@ -1,0 +1,9 @@
+.landing-page {
+  > :last-child {
+    margin-top: 0;
+  }
+
+  .service-intro-grid {
+    margin-top: $spacer-xl;
+  }
+}
