@@ -1,7 +1,3 @@
-$case-teaser-bg-width: 1444px; // Arbitrary value
-$case-teaser-bg-height: 1000px; // Arbitrary value
-$case-teaser-height: ms(38);
-
 .case-teaser {
   @extend %list-teaser;
 
@@ -14,7 +10,7 @@ $case-teaser-height: ms(38);
   background-size: cover;
   width: 100%;
   max-width: 100%;
-  min-height: $case-teaser-height;
+  min-height: ms(38); //magic number
 
   &--right-aligned {
     justify-content: flex-end;
@@ -90,7 +86,7 @@ $case-teaser-height: ms(38);
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .case-teaser__wrapper {
-    padding: $spacer-base;
+    padding: $spacer-lg;
   }
 
   .case-teaser__header {
@@ -102,8 +98,6 @@ $case-teaser-height: ms(38);
 
 @media screen and (min-width: $grid-breakpoint-md-lg) {
   .case-teaser__wrapper {
-    padding: $spacer-sm;
-    width: $default-page-layout-width-xl;
     max-width: $default-page-layout-content-width-xl;
   }
 
@@ -119,6 +113,10 @@ $case-teaser-height: ms(38);
 }
 
 @media screen and (min-width: $grid-breakpoint-lg) {
+  .case-teaser {
+    min-height: ms(40); //magic number
+  }
+
   .case-teaser__body {
     flex-basis: 50%;
   }

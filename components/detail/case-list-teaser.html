@@ -352,11 +352,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-variable">$case-teaser-bg-width</span>: <span class="hljs-number">1444px</span>; <span class="hljs-comment">// Arbitrary value</span>
-<span class="hljs-variable">$case-teaser-bg-height</span>: <span class="hljs-number">1000px</span>; <span class="hljs-comment">// Arbitrary value</span>
-<span class="hljs-variable">$case-teaser-height</span>: ms(<span class="hljs-number">38</span>);
-
-<span class="hljs-selector-class">.case-teaser</span> {
+                                <pre><span class="hljs-selector-class">.case-teaser</span> {
   <span class="hljs-keyword">@extend</span> %list-teaser;
 
   <span class="hljs-attribute">display</span>: flex;
@@ -368,7 +364,7 @@
   <span class="hljs-attribute">background-size</span>: cover;
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
   <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
-  <span class="hljs-attribute">min-height</span>: <span class="hljs-variable">$case-teaser-height</span>;
+  <span class="hljs-attribute">min-height</span>: ms(<span class="hljs-number">38</span>); <span class="hljs-comment">//magic number</span>
 
   &amp;--<span class="hljs-attribute">right</span>-aligned {
     <span class="hljs-attribute">justify-content</span>: flex-end;
@@ -444,7 +440,7 @@
 
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
   <span class="hljs-selector-class">.case-teaser__wrapper</span> {
-    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-base</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-lg</span>;
   }
 
   <span class="hljs-selector-class">.case-teaser__header</span> {
@@ -456,8 +452,6 @@
 
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md-lg</span>) {
   <span class="hljs-selector-class">.case-teaser__wrapper</span> {
-    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-sm</span>;
-    <span class="hljs-attribute">width</span>: <span class="hljs-variable">$default-page-layout-width-xl</span>;
     <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$default-page-layout-content-width-xl</span>;
   }
 
@@ -473,6 +467,10 @@
 }
 
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg</span>) {
+  <span class="hljs-selector-class">.case-teaser</span> {
+    <span class="hljs-attribute">min-height</span>: ms(<span class="hljs-number">40</span>); <span class="hljs-comment">//magic number</span>
+  }
+
   <span class="hljs-selector-class">.case-teaser__body</span> {
     <span class="hljs-attribute">flex-basis</span>: <span class="hljs-number">50%</span>;
   }
@@ -493,7 +491,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.2 KB</span>
+                    <span class="Meta-value">2.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -1476,7 +1474,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1503,6 +1501,32 @@
 
 
 <span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="tile-layout.html" data-role="tree-link" data-pjax data-handle="tile-layout">
+                <span>Tile Layout</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4887,8 +4911,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-06T15:29:25.084Z">
-                                4/6/2021
+                            <time datetime="2021-04-08T16:37:33.208Z">
+                                4/8/2021
                             </time>
                         
                     </dd>
@@ -4913,6 +4937,8 @@
                 Back
             </button>
         </div>
+        
+    
         
     
         

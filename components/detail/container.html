@@ -243,18 +243,31 @@
                                 <pre><span class="hljs-selector-class">.container-xl</span>,
 %container-xl {
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xl</span> <span class="hljs-variable">$spacer-xs</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-xs</span>;
   <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$default-page-layout-content-width-xl</span>;
 
-  <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg</span>) {
-    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xxl</span> <span class="hljs-variable">$spacer-base</span>;
+  &amp; &gt; * {
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">//FIXME Remove when margin-bottom es removed from copmponents</span>
+  }
+
+  &amp; &gt; * + * {
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
   }
 }
 
-<span class="hljs-comment">// Demo Container</span>
-<span class="hljs-selector-class">.container-demo</span> {
-  <span class="hljs-attribute">background</span>: <span class="hljs-variable">$brand-primary</span>;
-  <span class="hljs-attribute">min-height</span>: <span class="hljs-number">20rem</span>;
+<span class="hljs-selector-class">.container-xl-vertical-whitespace</span>,
+%container-xl-vertical-whitespace {
+  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xl</span> <span class="hljs-variable">$spacer-xs</span>;
+}
+
+<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg</span>) {
+  <span class="hljs-selector-class">.container-xl</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-base</span>;
+  }
+
+  <span class="hljs-selector-class">.container-xl-vertical-whitespace</span> {
+    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xxl</span> <span class="hljs-variable">$spacer-base</span>;
+  }
 }
 </pre>
                             </code>
@@ -272,7 +285,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">326 Bytes</span>
+                    <span class="Meta-value">573 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -1255,7 +1268,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -1282,6 +1295,32 @@
 
 
 <span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="tile-layout.html" data-role="tree-link" data-pjax data-handle="tile-layout">
+                <span>Tile Layout</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4666,8 +4705,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-06T15:29:25.084Z">
-                                4/6/2021
+                            <time datetime="2021-04-08T16:37:33.208Z">
+                                4/8/2021
                             </time>
                         
                     </dd>
@@ -4692,6 +4731,8 @@
                 Back
             </button>
         </div>
+        
+    
         
     
         
