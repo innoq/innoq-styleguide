@@ -293,10 +293,36 @@ class Navbar extends HTMLElement {
   }
 }
 
+// following advice from https://inclusive-components.design/cards
+class ClickableArea extends HTMLElement {
+  connectedCallback () {
+    if (this.link) {
+      this.addEventListener('mousedown', this.handleMousedown.bind(this));
+      this.addEventListener('mouseup', this.handleMouseup.bind(this));
+      this.style.cursor = 'pointer';
+    }
+  }
+
+  handleMousedown ({ timeStamp }) {
+    this.down = timeStamp;
+  }
+
+  handleMouseup ({ timeStamp }) {
+    if (timeStamp - this.down < 200) {
+      this.link.click();
+    }
+  }
+
+  get link () {
+    return this.querySelector('a')
+  }
+}
+
 customElements.define('info-box', InfoBox);
 customElements.define('check-to-toggle', CheckToToggle);
 customElements.define('multi-toggler', MultiToggler);
 customElements.define('nav-bar', Navbar);
 customElements.define('wall-of-consent', WallOfConsent);
+customElements.define('clickable-area', ClickableArea);
 
 }());

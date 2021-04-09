@@ -2590,6 +2590,10 @@ hr {
   height: 10px;
 }
 
+clickable-area {
+  display: block;
+}
+
 .author-bio {
   position: relative;
   margin-bottom: 2.0736rem;
