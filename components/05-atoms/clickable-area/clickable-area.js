@@ -22,4 +22,3 @@ export default class ClickableArea extends HTMLElement {
     return this.querySelector('a')
   }
 }
-
