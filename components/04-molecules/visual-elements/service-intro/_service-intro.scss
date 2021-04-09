@@ -2,14 +2,13 @@
 
 .service-intro-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   grid-gap: $spacer-lg;
 }
 
 .service-intro {
   @extend %link-unstyled;
 
-  width: 75%;
+  width: 90%;
   justify-self: center;
 }
 
@@ -45,7 +44,11 @@
   font-size: $font-size-base;
 }
 
-@media screen and (min-width: $grid-breakpoint-md) {
+@media screen and (min-width: $grid-breakpoint-md-lg) {
+  .service-intro-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .service-intro {
     border-right: 1px solid $brand-gray-25;
     padding-right: $spacer-base;
@@ -69,6 +72,10 @@
 }
 
 @media screen and (min-width: $grid-breakpoint-xl) {
+  .service-intro-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .service-intro {
     &:nth-child(2n) {
       border-right: 1px solid $brand-gray-25;
