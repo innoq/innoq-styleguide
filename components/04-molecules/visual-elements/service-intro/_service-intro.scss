@@ -22,12 +22,17 @@
   color: $service-intro-text-color;
   font-size: $font-size-lg;
 
-  span {
+  a,
+  a:not([class]) {
     box-shadow: $spacer-xxs 0 0 $brand-primary, -$spacer-xxs 0 0 $brand-primary;
     background-color: $brand-primary;
     padding: ms(-16);
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+
+    &:hover {
+      background-color: $brand-primary;
+    }
   }
 }
 
