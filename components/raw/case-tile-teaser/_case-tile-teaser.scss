@@ -10,7 +10,7 @@ $case-tile-teaser-sm-height: ms(32);
   display: flex;
   flex-direction: column;
   background-size: cover;
-  padding: $spacer-lg;
+  padding: $spacer-md;
   color: $case-tile-teaser-text-color;
 }
 
@@ -87,6 +87,13 @@ $case-tile-teaser-sm-height: ms(32);
 //
 // Breakpoints
 //
+
+@media screen and (min-width: $grid-breakpoint-sm) {
+  .case-tile-teaser {
+    padding: $spacer-lg;
+  }
+}
+
 @media screen and (min-width: $grid-breakpoint-md) {
   .case-tile-teaser__content {
     padding: $spacer-lg $spacer-md;

@@ -193,7 +193,7 @@
                     ad laudantium libero, quia nemo!
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;topic-teaser__cta&quot;</span>&gt;</span>
-                    Zum Schwerpunktthema<span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-arrow-long-right icon--brand-primary&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Zum Schwerpunktthema<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-arrow-long-right icon--brand-primary&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -279,7 +279,8 @@
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;topic-teaser__text&quot;</span>&gt;</span>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit doloremque culpa minima vero quod, optio itaque nisi deserunt, debitis ad laudantium libero, quia nemo!
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;topic-teaser__cta&quot;</span>&gt;</span>Zum Schwerpunktthema
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;topic-teaser__cta&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span>&gt;</span>Zum Schwerpunktthema<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-arrow-long-right icon--brand-primary&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -392,6 +393,7 @@
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">flex-direction</span>: column;
   <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">justify-content</span>: center;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-base</span>;
   <span class="hljs-attribute">background-repeat</span>: no-repeat;
   <span class="hljs-attribute">background-position</span>: top left;
@@ -414,6 +416,9 @@
 }
 
 <span class="hljs-selector-class">.topic-teaser__header</span> {
+  <span class="hljs-keyword">@extend</span> %link-unstyled;
+  <span class="hljs-keyword">@extend</span> %h2;
+
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-md</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$topic-teaser-body-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xl</span>;
@@ -429,16 +434,15 @@
 <span class="hljs-selector-class">.topic-teaser__cta</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: column;
+
   <span class="hljs-selector-class">.icon-svg</span> {
-    <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$spacer-xs</span>;
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-md</span>;
   }
 }
 
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
-  <span class="hljs-selector-class">.topic-teaser</span> {
-    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xl</span> <span class="hljs-variable">$spacer-xl</span> <span class="hljs-variable">$spacer-xxl</span>;
-  }
-
   <span class="hljs-selector-class">.topic-teaser__header</span> {
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-base</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xxxl</span>;
@@ -446,6 +450,18 @@
 
   <span class="hljs-selector-class">.topic-teaser__text</span> {
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-md</span>;
+  }
+
+  <span class="hljs-selector-class">.topic-teaser__cta</span> {
+    <span class="hljs-keyword">@extend</span> %heading-font-bold;
+
+    <span class="hljs-attribute">flex-direction</span>: row;
+    <span class="hljs-attribute">justify-content</span>: center;
+
+    <span class="hljs-selector-class">.icon-svg</span> {
+      <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$spacer-xs</span>;
+    }
   }
 }
 
@@ -470,7 +486,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.3 KB</span>
+                    <span class="Meta-value">1.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -4916,7 +4932,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-09T09:36:21.696Z">
+                            <time datetime="2021-04-09T16:47:53.314Z">
                                 4/9/2021
                             </time>
                         
