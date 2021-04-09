@@ -3743,13 +3743,18 @@ wall-of-consent {
   color: #004153;
   font-size: 1.728rem;
 }
-.service-intro__header span {
+.service-intro__header a,
+.service-intro__header a:not([class]) {
   -webkit-box-shadow: 0.3348979767rem 0 0 #ff9c66, -0.3348979767rem 0 0 #ff9c66;
           box-shadow: 0.3348979767rem 0 0 #ff9c66, -0.3348979767rem 0 0 #ff9c66;
   background-color: #ff9c66;
   padding: 0.2325680394rem;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
+}
+.service-intro__header a:hover,
+.service-intro__header a:not([class]):hover {
+  background-color: #ff9c66;
 }
 
 .service-intro__text {
