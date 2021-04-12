@@ -2,7 +2,7 @@
 
 .service-intro-grid {
   display: grid;
-  grid-gap: $spacer-lg;
+  grid-row-gap: $spacer-xl;
 }
 
 .service-intro {
@@ -52,7 +52,7 @@
 
   .service-intro {
     border-right: 1px solid $brand-gray-25;
-    padding-right: $spacer-base;
+    padding: 0 $spacer-lg;
     width: 100%;
     justify-self: flex-end;
 
@@ -68,7 +68,7 @@
   }
 
   .service-intro__text {
-    margin-bottom: $spacer-base;
+    margin-bottom: $spacer-md;
     font-size: $font-size-sm;
   }
 }
