@@ -47,12 +47,14 @@
 @media screen and (min-width: $grid-breakpoint-md-lg) {
   .service-intro-grid {
     grid-template-columns: repeat(2, 1fr);
+    padding: $spacer-sm;
   }
 
   .service-intro {
     border-right: 1px solid $brand-gray-25;
     padding-right: $spacer-base;
     width: 100%;
+    justify-self: flex-end;
 
     &:nth-child(2n) {
       border-right: 0;
