@@ -46,8 +46,8 @@
 
 @media screen and (min-width: $grid-breakpoint-md-lg) {
   .service-intro-grid {
-    grid-template-columns: repeat(2, 1fr);
     padding: $spacer-sm;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .service-intro {
