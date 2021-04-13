@@ -74,13 +74,13 @@
 // Flex utility classes
 
 .flex {
-  display: flex;
+  display: flex !important;
 }
 
 .flex-direction-column {
-  flex-direction: column;
+  flex-direction: column !important;
 }
 
 .flex-align-center {
-  align-items: center;
+  align-items: center !important;
 }
