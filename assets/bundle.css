@@ -792,22 +792,22 @@ dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 .flex-direction-column {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
 }
 
 .flex-align-center {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
 }
 
 .sr-only {
@@ -3768,6 +3768,7 @@ wall-of-consent {
 
 @media screen and (min-width: 60rem) {
   .service-intro-grid {
+    padding: 1rem;
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -3775,6 +3776,7 @@ wall-of-consent {
     border-right: 1px solid #d8d8d8;
     padding-right: 2.0736rem;
     width: 100%;
+    justify-self: flex-end;
   }
   .service-intro:nth-child(2n) {
     border-right: 0;
