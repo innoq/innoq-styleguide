@@ -3731,7 +3731,7 @@ wall-of-consent {
 }
 .service-intro-grid {
   display: grid;
-  grid-gap: 2.985984rem;
+  grid-row-gap: 3.919104rem;
 }
 
 .service-intro {
@@ -3774,7 +3774,7 @@ wall-of-consent {
 
   .service-intro {
     border-right: 1px solid #d8d8d8;
-    padding-right: 2.0736rem;
+    padding: 0 2.985984rem;
     width: 100%;
     justify-self: flex-end;
   }
@@ -3789,7 +3789,7 @@ wall-of-consent {
   }
 
   .service-intro__text {
-    margin-bottom: 2.0736rem;
+    margin-bottom: 1.44rem;
     font-size: 1.2rem;
   }
 }
