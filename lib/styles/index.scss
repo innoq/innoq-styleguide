@@ -1,128 +1,75 @@
-// This Framework is constructed by the principles of ITCSS.
-// More information about it can be read here:
-// https://medium.com/@pistenprinz/css-at-trivago-part-1-structure-and-itcss-52f63ed557ca
+@import "01-base/typography";
+@import "01-base/breakpoints";
+@import "01-base/colors";
+@import "01-base/fontfaces";
+@import "01-base/fonts";
+@import "01-base/spacings";
+@import "01-base/theme-apripetrol";
+
+@import "01-base/base";
+
+@import "02-util/animations";
+@import "02-util/bg-images";
+@import "02-util/forms";
+@import "02-util/icons";
+@import "02-util/text";
+@import "02-util/teaser";
+@import "02-util/header";
+@import "02-util/helperclasses";
+@import "02-util/visibility";
 
 //
-// Settings
+// ATOMS
 //
-// The settings-layer contains all our global Design System variables, so it
-// defines colors, spacings, font-sizes, breakpoints settings and many more.
-// Important: This layer does not produce any code.
 
-@import "settings/breakpoints";
-@import "settings/colors";
-@import "settings/theme-apripetrol";
-@import "settings/icons";
-@import "settings/typography";
-@import "settings/spacings";
+// Form atoms
+@import "../components/05-atoms/form-elements/button/button";
+@import "../components/05-atoms/form-elements/alert/alert";
+@import "../components/05-atoms/form-elements/button-group/button-group";
+@import "../components/05-atoms/form-elements/checkbox/checkbox";
+@import "../components/05-atoms/form-elements/form-control/form-control";
+@import "../components/05-atoms/form-elements/form-group/form-group";
+@import "../components/05-atoms/form-elements/form-label/form-label";
+@import "../components/05-atoms/form-elements/form-text/form-text";
+@import "../components/05-atoms/form-elements/fieldset/fieldset";
+@import "../components/05-atoms/form-elements/legend/legend";
+@import "../components/05-atoms/form-elements/radio/radio";
 
-//
-// Tools
-//
-// The tools layer defines all the mixins and functions we utilise in our
-// SCSS base. Important: This layer does not produce any code.
+// Media atoms
+@import "../components/05-atoms/media/avatar/avatar";
+@import "../components/05-atoms/media/embed-responsive/embed-responsive";
+@import "../components/05-atoms/media/figure/figure";
+@import "../components/05-atoms/media/icon/icon";
+@import "../components/05-atoms/media/image/image";
 
-@import "tools/bg-images";
-@import "tools/fonts";
-@import "tools/forms";
-@import "tools/text";
-@import "tools/author";
-@import "tools/images";
-@import "tools/visibility";
-@import "tools/teaser";
-@import "tools/header";
-@import "tools/helperclasses";
+// Toggler atoms
+@import "../components/05-atoms/togglers/collapse-toggler/collapse-toggler";
 
-//
-// Generic
-//
-// The third layer Generic contains amongst other things a normalize or
-// reset.
+// Inline text atoms
+@import "../components/05-atoms/text/inline/link/link";
+@import "../components/05-atoms/text/inline/accentuation/accentuation";
 
-@import "generic/animations";
-@import "generic/fontfaces";
+// Block text atoms
+@import "../components/05-atoms/text/block/code/code";
+@import "../components/05-atoms/text/block/date/date";
+@import "../components/05-atoms/text/block/duration/duration";
+@import "../components/05-atoms/text/block/edition/edition";
+@import "../components/05-atoms/text/block/footnote/footnote";
+@import "../components/05-atoms/text/block/heading/heading";
+@import "../components/05-atoms/text/block/paragraph/paragraph";
+@import "../components/05-atoms/text/block/quote/pull-quote";
+@import "../components/05-atoms/text/block/quote/block-quote";
+@import "../components/05-atoms/text/block/label/label";
+@import "../components/05-atoms/text/block/list/list";
+@import "../components/05-atoms/text/block/tag-list/tag-list";
+@import "../components/05-atoms/text/block/table/table";
 
-//
-// Elements
-//
-// The Elements layer contains styles for global element styles, e.g. all
-// headlines h1-h5 on this page should have a certain font-family.
+// Visual elements atoms
+@import "../components/05-atoms/visual-elements/animation/waiting-dots/waiting-dots";
+@import "../components/05-atoms/visual-elements/horizontal-line/horizontal-line";
+@import "../components/05-atoms/visual-elements/zigzag/zigzag";
 
-@import "elements/base";
-
-//
-// Objects
-//
-// The fifth layer — the objects layer — starts to become more specific and
-// provides more or less unstyled patterns as reusable objects like wrappers
-// and containers. An example of such a pattern is the well known media
-// object (an image with headline and paragraph next to it).
-
-@import "objects/block";
-@import "objects/breakout";
-@import "objects/media";
-@import "objects/page-layout-default";
-@import "objects/page-layout-grid";
-@import "objects/page-layout-podcast";
-@import "objects/stripe";
-
-//
-// Components
-//
-// The sixth layer — the components — itself is the first layer which is
-// using the BEM naming convention. All components are very encapsulated and of
-// course we try to limit any dependencies between components. So here we have
-// e.g. one component which has all the CSS needed for our search result list
-// item which we call item element. All components are classified into the
-// the categories of Atomic Design. So they are either atoms or molecules
-// (composed atoms).
-
-//
-// PAGES
-//
-@import "../components/01-pages/aggregator-page/aggregator-page";
-@import "../components/01-pages/article-pages/article-page-default/article-page-default";
-@import "../components/01-pages/case-study-pages/case-study-overview/case-study-overview";
-@import "../components/01-pages/case-study-pages/case-study-page/case-study-page";
-@import "../components/01-pages/artist-collabo-page/artist-collabo-page";
-@import "../components/01-pages/culture-page/culture-page";
-@import "../components/01-pages/error-pages/error-page";
-@import "../components/01-pages/landing-page/landing-page";
-@import "../components/01-pages/magazine-page/magazine-page";
-@import "../components/01-pages/podcast-pages/podcast-overview-page/podcast-overview-page";
-@import "../components/01-pages/podcast-pages/innoq-podcast/innoq-podcast-overview-page/innoq-podcast-overview-page";
-@import "../components/01-pages/podcast-pages/innoq-podcast/innoq-podcast-detail-page/innoq-podcast-detail-page";
-@import "../components/01-pages/podcast-pages/security-podcast/security-podcast-overview-page/security-podcast-overview-page";
-@import "../components/01-pages/podcast-pages/security-podcast/security-podcast-detail-page/security-podcast-detail-page";
-@import "../components/01-pages/service-pages/service-detail-page/service-detail-page";
-@import "../components/01-pages/service-pages/services-overview-page/services-overview-page";
-@import "../components/01-pages/staff-page/staff-page";
-@import "../components/01-pages/talk-page/talk-page";
-@import "../components/01-pages/topic-page/topic-page";
-@import "../components/01-pages/training-pages/booking-page/booking-page";
-@import "../components/01-pages/training-pages/training-detail-page/training-detail-page";
-@import "../components/01-pages/training-pages/trainings-overview-page/trainings-overview-page";
-@import "../components/01-pages/product-microsite-page/product-microsite-page";
-
-//
-// ORGANISMS
-//
-@import "../components/03-organisms/article-intro/article-intro";
-@import "../components/03-organisms/form/form";
-@import "../components/03-organisms/footer/footer";
-// Header
-@import "../components/03-organisms/header/claim-header/claim-header";
-@import "../components/03-organisms/header/image-header/image-header";
-@import "../components/03-organisms/header/landing-page-header/landing-page-header";
-@import "../components/03-organisms/header/staff-header/staff-header";
-@import "../components/03-organisms/header/standard-header/standard-header";
-@import "../components/03-organisms/header/text-header/text-header";
-@import "../components/03-organisms/header/topic-header/topic-header";
-@import "../components/03-organisms/header/video-header/video-header";
-
-@import "../components/03-organisms/navbar/navbar";
-@import "../components/03-organisms/newsletter-optin/newsletter-optin";
-@import "../components/03-organisms/search-result-list/search-result-list";
+@import "../components/05-atoms/clickable-area/clickable-area";
 
 //
 // MOLECULES
@@ -197,62 +144,66 @@
 @import "../components/04-molecules/visual-elements/toolbar/toolbar";
 
 //
-// ATOMS
+// ORGANISMS
 //
 
-// Form atoms
-@import "../components/05-atoms/form-elements/button/button";
-@import "../components/05-atoms/form-elements/alert/alert";
-@import "../components/05-atoms/form-elements/button-group/button-group";
-@import "../components/05-atoms/form-elements/checkbox/checkbox";
-@import "../components/05-atoms/form-elements/form-control/form-control";
-@import "../components/05-atoms/form-elements/form-group/form-group";
-@import "../components/05-atoms/form-elements/form-label/form-label";
-@import "../components/05-atoms/form-elements/form-text/form-text";
-@import "../components/05-atoms/form-elements/fieldset/fieldset";
-@import "../components/05-atoms/form-elements/legend/legend";
-@import "../components/05-atoms/form-elements/radio/radio";
+@import "../components/03-organisms/form/form";
+@import "../components/03-organisms/footer/footer";
 
-// Media atoms
-@import "../components/05-atoms/media/avatar/avatar";
-@import "../components/05-atoms/media/embed-responsive/embed-responsive";
-@import "../components/05-atoms/media/figure/figure";
-@import "../components/05-atoms/media/icon/icon";
-@import "../components/05-atoms/media/image/image";
+// Header
+@import "../components/03-organisms/header/article-intro/article-intro";
+@import "../components/03-organisms/header/claim-header/claim-header";
+@import "../components/03-organisms/header/image-header/image-header";
+@import "../components/03-organisms/header/landing-page-header/landing-page-header";
+@import "../components/03-organisms/header/staff-header/staff-header";
+@import "../components/03-organisms/header/standard-header/standard-header";
+@import "../components/03-organisms/header/text-header/text-header";
+@import "../components/03-organisms/header/topic-header/topic-header";
+@import "../components/03-organisms/header/video-header/video-header";
 
-// Toggler atoms
-@import "../components/05-atoms/togglers/collapse-toggler/collapse-toggler";
+@import "../components/03-organisms/navbar/navbar";
+@import "../components/03-organisms/newsletter-optin/newsletter-optin";
+@import "../components/03-organisms/search-result-list/search-result-list";
 
-// Inline text atoms
-@import "../components/05-atoms/text/inline/link/link";
-@import "../components/05-atoms/text/inline/accentuation/accentuation";
+// LAYOUTS
+@import "../components/02-layouts/component-layouts/container/container";
+@import "../components/02-layouts/component-layouts/masonry-layout/masonry-layout";
+@import "../components/02-layouts/component-layouts/tile-layout/tile-layout";
+@import "../components/02-layouts/component-layouts/block";
+@import "../components/02-layouts/component-layouts/breakout";
+@import "../components/02-layouts/component-layouts/stripe/stripe";
 
-// Block text atoms
-@import "../components/05-atoms/text/block/code/code";
-@import "../components/05-atoms/text/block/date/date";
-@import "../components/05-atoms/text/block/duration/duration";
-@import "../components/05-atoms/text/block/edition/edition";
-@import "../components/05-atoms/text/block/footnote/footnote";
-@import "../components/05-atoms/text/block/heading/heading";
-@import "../components/05-atoms/text/block/paragraph/paragraph";
-@import "../components/05-atoms/text/block/quote/pull-quote";
-@import "../components/05-atoms/text/block/quote/block-quote";
-@import "../components/05-atoms/text/block/label/label";
-@import "../components/05-atoms/text/block/list/list";
-@import "../components/05-atoms/text/block/tag-list/tag-list";
-@import "../components/05-atoms/text/block/table/table";
-
-// Visual elements atoms
-@import "../components/05-atoms/visual-elements/animation/waiting-dots/waiting-dots";
-@import "../components/05-atoms/visual-elements/horizontal-line/horizontal-line";
-@import "../components/05-atoms/visual-elements/zigzag/zigzag";
+@import "../components/02-layouts/page-layouts/main-layout/main-layout";
+@import "../components/02-layouts/page-layouts/page-layout-default";
+@import "../components/02-layouts/page-layouts/page-layout-grid";
+@import "../components/02-layouts/page-layouts/page-layout-podcast";
 
 //
-// Trumps
+// PAGES
 //
-// Last but not least the trumps layer, where hacks, debugging and utilities
-// can be stored. This place should be used when selectors need to be as high
-// as possible. It is intended as the last resort.
+@import "../components/01-pages/aggregator-page/aggregator-page";
+@import "../components/01-pages/article-pages/article-page-default/article-page-default";
+@import "../components/01-pages/case-study-pages/case-study-overview/case-study-overview";
+@import "../components/01-pages/case-study-pages/case-study-page/case-study-page";
+@import "../components/01-pages/artist-collabo-page/artist-collabo-page";
+@import "../components/01-pages/culture-page/culture-page";
+@import "../components/01-pages/error-pages/error-page";
+@import "../components/01-pages/landing-page/landing-page";
+@import "../components/01-pages/magazine-page/magazine-page";
+@import "../components/01-pages/podcast-pages/podcast-overview-page/podcast-overview-page";
+@import "../components/01-pages/podcast-pages/innoq-podcast/innoq-podcast-overview-page/innoq-podcast-overview-page";
+@import "../components/01-pages/podcast-pages/innoq-podcast/innoq-podcast-detail-page/innoq-podcast-detail-page";
+@import "../components/01-pages/podcast-pages/security-podcast/security-podcast-overview-page/security-podcast-overview-page";
+@import "../components/01-pages/podcast-pages/security-podcast/security-podcast-detail-page/security-podcast-detail-page";
+@import "../components/01-pages/service-pages/service-detail-page/service-detail-page";
+@import "../components/01-pages/service-pages/services-overview-page/services-overview-page";
+@import "../components/01-pages/staff-page/staff-page";
+@import "../components/01-pages/talk-page/talk-page";
+@import "../components/01-pages/topic-page/topic-page";
+@import "../components/01-pages/training-pages/booking-page/booking-page";
+@import "../components/01-pages/training-pages/training-detail-page/training-detail-page";
+@import "../components/01-pages/training-pages/trainings-overview-page/trainings-overview-page";
+@import "../components/01-pages/product-microsite-page/product-microsite-page";
 
-@import "trumps/hacks";
-@import "trumps/styleguide";
+@import "03-styleguide/hacks";
+@import "03-styleguide/styleguide";

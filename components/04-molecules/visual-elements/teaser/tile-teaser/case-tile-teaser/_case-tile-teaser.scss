@@ -10,7 +10,7 @@ $case-tile-teaser-sm-height: ms(32);
   display: flex;
   flex-direction: column;
   background-size: cover;
-  padding: $spacer-sm $spacer-xs;
+  padding: $spacer-md;
   color: $case-tile-teaser-text-color;
 }
 
@@ -20,7 +20,15 @@ $case-tile-teaser-sm-height: ms(32);
   flex-grow: 1;
   justify-content: space-between;
   background-color: $case-tile-teaser-body-bg-color;
-  padding: $spacer-md;
+  padding: $spacer-md $spacer-xs;
+
+  h2 {
+    margin-bottom: 0; // FIXME Remove all generic margin-bottoms
+  }
+
+  * + * {
+    margin-top: $spacer-base;
+  }
 }
 
 .case-tile-teaser__body {
@@ -30,12 +38,10 @@ $case-tile-teaser-sm-height: ms(32);
 .case-tile-teaser__caption {
   @extend %teaser-caption;
 
-  margin-bottom: $spacer-xs;
   color: $case-tile-teaser-text-color;
 }
 
 .case-tile-teaser__headline {
-  margin-bottom: $spacer-xs;
   color: $case-tile-teaser-text-color;
 }
 
@@ -46,7 +52,6 @@ $case-tile-teaser-sm-height: ms(32);
 }
 
 .case-tile-teaser__logo {
-  margin: $spacer-lg 0;
   max-width: ms(22);
 }
 
@@ -82,12 +87,28 @@ $case-tile-teaser-sm-height: ms(32);
 //
 // Breakpoints
 //
-@media screen and (min-width: $grid-breakpoint-md) {
+
+@media screen and (min-width: $grid-breakpoint-sm) {
   .case-tile-teaser {
-    padding: $spacer-xl $spacer-lg;
+    padding: $spacer-lg;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .case-tile-teaser__content {
+    padding: $spacer-lg $spacer-md;
+  }
+}
+
+// Hack for tease in masonry grid
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .case-tile-teaser {
+    padding: $spacer-xl;
   }
 
-  .case-tile-teaser__content {
-    padding: $spacer-lg;
+  .span-5 {
+    .case-tile-teaser__content {
+      max-width: ms(37);
+    }
   }
 }

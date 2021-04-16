@@ -1,15 +1,16 @@
-$case-teaser-bg-width: 1444px; // Arbitrary value
-$case-teaser-bg-height: 1000px; // Arbitrary value
-$case-teaser-height: ms(38);
-
 .case-teaser {
-  @extend %page-header;
   @extend %list-teaser;
 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   width: 100%;
   max-width: 100%;
-  min-height: $case-teaser-height;
+  min-height: ms(38); //magic number
 
   &--right-aligned {
     justify-content: flex-end;
@@ -24,15 +25,19 @@ $case-teaser-height: ms(38);
   display: flex;
   justify-content: flex-start;
   padding: $spacer-sm;
+  width: 100%;
 }
 
 .case-teaser__body {
   display: flex;
   flex-basis: 100%;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   background-color: $case-teaser-body-bg;
-  padding: $spacer-base;
+  padding: $spacer-base $spacer-sm;
+  min-height: ms(35); //magic number
+  text-align: center;
   color: $case-teaser-body-color;
 }
 
@@ -74,18 +79,24 @@ $case-teaser-height: ms(38);
 
 @media screen and (max-width: $grid-breakpoint-sm) {
   .case-teaser {
-    margin-bottom: $spacer-xxl;
+    margin-bottom: ms(25);
   }
 
   .case-teaser__body {
     position: relative;
-    top: $spacer-xxl;
+    top: ms(25);
   }
 }
 
-@media screen and (min-width: $grid-breakpoint-md) {
+@media screen and (min-width: $grid-breakpoint-sm) {
   .case-teaser__wrapper {
+    padding: $spacer-lg;
+  }
+
+  .case-teaser__body {
+    align-items: flex-start;
     padding: $spacer-base;
+    text-align: left;
   }
 
   .case-teaser__header {
@@ -95,10 +106,8 @@ $case-teaser-height: ms(38);
   }
 }
 
-@media screen and (min-width: $grid-breakpoint-md-lg) {
+@media screen and (min-width: $grid-breakpoint-md) {
   .case-teaser__wrapper {
-    padding: $spacer-sm;
-    width: $default-page-layout-width-xl;
     max-width: $default-page-layout-content-width-xl;
   }
 
@@ -111,9 +120,11 @@ $case-teaser-height: ms(38);
   .case-teaser--simple {
     background-position: top left;
   }
-}
 
-@media screen and (min-width: $grid-breakpoint-lg) {
+  .case-teaser {
+    min-height: ms(40); //magic number
+  }
+
   .case-teaser__body {
     flex-basis: 50%;
   }

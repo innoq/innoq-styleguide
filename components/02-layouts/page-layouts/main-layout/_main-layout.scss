@@ -1,0 +1,27 @@
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > * {
+    margin-bottom: 0; //FIXME Remove when margin-bottom es removed from copmponents
+  }
+
+  > * + * {
+    margin-top: $spacer-base;
+  }
+
+  > :first-child {
+    margin-top: $spacer-lg;
+  }
+
+  @media screen and (min-width: $grid-breakpoint-md) {
+    > * + * {
+      margin-top: $spacer-lg;
+    }
+
+    > :first-child {
+      margin-top: $spacer-xl;
+    }
+  }
+}

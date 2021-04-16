@@ -9,6 +9,10 @@ $conclusion-border-size: ms(5);
   border-bottom: $conclusion-border-size solid $conclusion-border-color;
   background: $conclusion-background-color;
   padding: $spacer-lg $spacer-base;
+
+  code {
+    background-color: $conclusion-background-color;
+  }
 }
 
 .conclusion-headline {

@@ -9,7 +9,6 @@ $zzdegree: 135deg;
   display: block;
   position: relative;
   z-index: 1;
-  margin: 0;
   background: $zzbgc;
   height: $zzheight;
 
@@ -19,12 +18,13 @@ $zzdegree: 135deg;
     position: absolute;
     right: 0;
     left: 0;
-    content: '';
+    content: "";
   }
 
   &::before {
     top: $zzthickness;
-    background: linear-gradient(-$zzdegree, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight, linear-gradient($zzdegree, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight;
+    background: linear-gradient(-$zzdegree, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight,
+      linear-gradient($zzdegree, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight;
     background-repeat: repeat-x;
     background-position: top left;
     background-size: $zzheight $zzheight;
@@ -33,7 +33,8 @@ $zzdegree: 135deg;
 
   &::after {
     top: 100%;
-    background: linear-gradient(-$zzdegree, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight, linear-gradient($zzdegree, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight;
+    background: linear-gradient(-$zzdegree, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight,
+      linear-gradient($zzdegree, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight;
     background-repeat: repeat-x;
     background-position: top left;
     background-size: $zzheight $zzheight;

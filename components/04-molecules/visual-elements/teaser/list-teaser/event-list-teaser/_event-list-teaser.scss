@@ -1,5 +1,4 @@
 $event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
-// todo
 
 .list-teaser-event {
   @extend %list-teaser;
@@ -9,6 +8,10 @@ $event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
   align-items: center;
   margin-top: $event-date-section-height + $spacer-base;
   background-color: $list-teaser-background-color;
+
+  .event-date-section {
+    margin-top: -1.8rem; //Magic Number
+  }
 
   .list-teaser-event__footer {
     @extend %list-teaser-footer;
@@ -95,6 +98,8 @@ $event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
     margin-top: 0;
 
     .event-date-section {
+      margin-top: 0;
+
       .label {
         display: none;
       }

@@ -1,17 +1,20 @@
 // sass-lint:disable no-vendor-prefixes,
 
-.service-intro {
-  display: flex;
-  flex-direction: column;
-  width: 100%; // FF fix: take full width of grid-area
+.service-intro-grid {
+  display: grid;
+  grid-row-gap: $spacer-xl;
+}
 
-  & + & {
-    margin-top: $spacer-lg;
-  }
+.service-intro {
+  @extend %link-unstyled;
+
+  width: 90%;
+  justify-self: center;
 }
 
 .service-intro__header {
-  @extend %h1;
+  @extend %heading-font-heavy;
+  @extend %manual-hyphenation;
 
   margin-bottom: $spacer-md;
   line-height: 1.38; //magic number
@@ -35,7 +38,7 @@
 .service-intro__text {
   @extend %heading-font-bold;
 
-  margin-bottom: $spacer-md;
+  margin-bottom: $spacer-sm;
   line-height: $paragraph-line-height;
   color: $service-intro-text-color;
   font-size: $font-size-base;
@@ -43,20 +46,15 @@
 
 @media screen and (min-width: $grid-breakpoint-md-lg) {
   .service-intro-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-row-gap: $spacer-lg;
-    grid-column-gap: $spacer-lg;
+    padding: $spacer-sm;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .service-intro {
     border-right: 1px solid $brand-gray-25;
-    padding: $spacer-sm $spacer-base $spacer-base 0;
-    grid-column: span 2;
-
-    & + & {
-      margin-top: 0;
-    }
+    padding: 0 $spacer-lg;
+    width: 100%;
+    justify-self: flex-end;
 
     &:nth-child(2n) {
       border-right: 0;
@@ -70,14 +68,14 @@
   }
 
   .service-intro__text {
-    margin-bottom: $spacer-base;
+    margin-bottom: $spacer-md;
     font-size: $font-size-sm;
   }
 }
 
 @media screen and (min-width: $grid-breakpoint-xl) {
   .service-intro-grid {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .service-intro {

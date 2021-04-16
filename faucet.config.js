@@ -30,10 +30,6 @@ const config = {
     {
       source: './lib/scripts/index.js',
       target: './public/assets/bundle.js'
-    },
-    {
-      source: './node_modules/document-register-element/build/document-register-element.js',
-      target: './public/assets/document-register-element.js'
     }
   ]
 }

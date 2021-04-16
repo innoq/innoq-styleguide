@@ -1,0 +1,26 @@
+.container-xl,
+%container-xl {
+  margin: 0 auto;
+  padding: 0 $spacer-xs;
+  width: 100%;
+  max-width: $default-page-layout-content-width-xl;
+
+  & > * + * {
+    margin-top: $spacer-base;
+  }
+}
+
+.container-xl-vertical-whitespace,
+%container-xl-vertical-whitespace {
+  padding: $spacer-xl $spacer-xs;
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .container-xl {
+    padding: 0 $spacer-base;
+  }
+
+  .container-xl-vertical-whitespace {
+    padding: $spacer-xxl $spacer-base;
+  }
+}

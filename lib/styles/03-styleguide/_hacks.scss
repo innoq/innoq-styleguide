@@ -36,3 +36,10 @@
     background-color: $brand-blue;
   }
 }
+
+// Demo Class
+.grid-demo,
+.container-demo {
+  background: $brand-primary;
+  height: 20rem;
+}

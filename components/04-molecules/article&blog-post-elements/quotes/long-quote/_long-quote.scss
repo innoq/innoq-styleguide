@@ -45,7 +45,6 @@ long-quote > blockquote,
 .longquote__zigzag {
   @extend %zigzag;
 
-  display: block;
   margin: 0 auto $spacer-base;
   width: 80%;
 }
