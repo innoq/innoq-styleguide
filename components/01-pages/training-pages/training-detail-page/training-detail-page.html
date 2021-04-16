@@ -1,0 +1,189 @@
+import { safe, htmlEncode } from "complate-stream";
+
+<main role="main">
+    <article class="page-layout--grid">
+        <header class="center article-intro">
+            <h1>Design Patterns – Software pragmatisch und effizient gestalten</h1>
+            <h2>Das ideale Training für Ihr Unternehmen</h2>
+            <p class="lead">
+                Nur selten werden Entwurf und Realisierung einer Software ausschließlich aus deren Anforderungen abgeleitet. Stattdessen setzen Entwickler auf bewährten Erfahrungen auf, die sie in anderen Software-Projekten mit vergleichbaren Anforderungen gewonnen haben. Ein pragmatischer Ansatz, der sicherstellt, dass eine Software-Architektur sowohl tragfähig und evolvierbar ist, als auch effizient von agilen Teams umgesetzt werden kann.
+            </p>
+        </header>
+
+        <section class="center">
+            <p>
+                Design Patterns dokumentieren solch bewährte Erfahrungen. Sie beschreiben für eine Vielzahl immer wiederkehrender Problemstellungen, wie existierende und sich im Einsatz befindende Systeme strukturiert und realisiert sind, um diese Probleme zu meistern. Durch die gezielte Nutzung von Design Patterns können Entwickler daher bei der Erstellung ihrer eigenen Software auf den Erfahrungen der gesamten Entwickler-Community aufsetzen – und auf diese Weise viele Probleme in deren Entwurf und der Realisierung einfach vermeiden.
+            </p>
+            <p>
+                Erfolgreiche Systeme enthalten daher sehr viele Design Patterns – gleich ob dies moderne Microservice und IoT Anwendungen sind, klassische Real-Time Embedded Systeme oder auch Altsysteme, die trotz aller technischen Fortschritte eine langlebige Architektur aufweisen. Der erfolgreiche Einsatz von Design Patterns in der Software-Entwicklung verlangt jedoch mehr als nur die Kenntnis einzelner Patterns. Notwendig ist vielmehr eine durchgängige Methodik zu deren Auswahl, Integration in einen bestehenden Entwurf oder Entwicklungsstand, und ihre adäquate Implementierung. Zusätzlich sind solide Kenntnisse über die Design Patterns notwendig, die den Plattformen und Paradigmen zu Grunde liegen, mit denen ein Software-System gestaltet ist.
+            </p>
+
+            <h3>Inhalte des Trainings</h3>
+
+            <ul>
+                <li>Einführung in Patterns: Motivation, Definition, Struktur, Eigenschaften</li>
+                <li>Methodik zur Software-Entwicklung mit Patterns</li>
+                <li>Fallstudie: Command und Request Handling für lose gekoppelte Dienste</li>
+                <li>Übungen in Kleingruppen anhand ausgewählter Themenstellungen der Teilnehmer</li>
+            </ul>
+
+            <h3>Warum Sie dieses Training nicht verpassen sollten</h3>
+
+            <check-list>
+                <ul class="checklist">
+                    <li>Nach dem Training wissen Sie, was Design Patterns und deren konzeptionelle Grundlagen sind.</li>
+                    <li>Sie kennen die Möglichkeiten und Grenzen des systematischen Einsatzes von Design Patterns bei der Software-Entwicklung und haben einen Überblick über wichtige Patterns für ihre projektspezifischen Anwendungsgebiete.</li>
+                    <li>Sie sind in der Lage, Design Patterns tragfähig und effizient bei der Entwicklung ihrer Software-Systeme einzusetzen.</li>
+                    <li>Sie lernen anhand einer Fallstudie, wie Sie Patterns konkret anwenden können.</li>
+                </ul>
+            </check-list>
+
+            <h3>Methodik</h3>
+
+            <p>
+                Die Vermittlung der Lerninhalte erfolgt interaktiv in einer Mischung aus Vortrag, Fallstudien, sowie Diskussion und Übungen mit den Teilnehmern an den eigenen Projekten. Die Teilnehmer sammeln so Erfahrungen im systematischen Umgang mit Design Patterns und bekommen konkrete Anregungen, wie sie Design Patterns zielführend in ihrer täglichen Arbeit einsetzen können und welche Herausforderungen dabei entstehen.
+            </p>
+
+            <figure>
+                <img class="content__image__big" src="https://source.unsplash.com/X9fdmlGEo4Y/1600x900" alt="Bild Groß" />
+                <figcaption>
+                    Workshopsituation: Hier könnte man einen Bildpool erstellen. Über die Jahre hat man ja einige Schulungen gehalten.
+                </figcaption>
+            </figure>
+
+            <h3>Zielgruppen</h3>
+            <ul>
+                <li>Software-Architekten</li>
+                <li>Software-Entwickler mit Entwurfsverantwortung</li>
+                <li>Technische Projektleiter</li>
+            </ul>
+        </section>
+    </article>
+
+    <aside class="page-layout--grid">
+        <section class="center">
+            <div id="author-bio" class="author-bio author-bio--long" itemscope="" itemtype="http://schema.org/Person">
+                <div class="author-bio__image avatar avatar--base">
+                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Alexander Hesingfeld" />
+                </div>
+                <div class="author-bio__head">
+                    <div class="author-bio__name" itemprop="name">
+                        <a class="author-bio__link" href="#">Heribert Innoq</a>
+                    </div>
+                    <div class="author-bio__info" itemprop="jobTitle" >Senior Consultant</div>
+                    <div class="author-bio__social">
+                        <a class="author-bio__social-profile" href="#" title="Twitter">
+                            <span class="icon-svg icon-svg--small icon-twitter icon--brand-secondary"></span>
+                        </a>
+                        <a class="author-bio__social-profile" href="#" title="GitHub">
+                            <span class="icon-svg icon-svg--small icon-github icon--brand-secondary"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="author-bio__text">
+                    Heribert Innoq ist Senior Consultant bei innoQ. Als Berater, Entwickler und Architekt unterstützt er Kunden vor allem mit seinen langjährigen Kenntnissen von Java- und JVM-basierten Systemen. Meist beschäftigt er sich hier mit dem Design, der Evaluierung und Implementierung von Architekturen für moderne Webanwendungen und Microservices in Softwaremodernisierungsprojekten. Sein aktueller Fokus gilt den Themen Team-Organisation und Softwareevolution.
+                </div>
+            </div>
+        </section>
+    </aside>
+
+    <h2 class="teaser-section-heading">Termine und Anmeldung</h2>
+    <aside class="stripe stripe--gray">
+        <section class="page-layout--grid">
+            <div class="center">
+                <a href="#" class="list-teaser-event">
+                    <div class="event-date-section">
+                        <div class="event-date-wrapper">
+                            <time class="event-date" datetime="2017-06-23">
+                                <span class="event-day-month">
+                                    <span class="event-day">23</span>
+                                    <span class="event-month">Jun</span>
+                                </span>
+                            </time>
+                            <hr class="event-date-separator" />
+                            <time class="event-date" datetime="2017-06-24">
+                                <span class="event-day-month">
+                                    <span class="event-day">24</span>
+                                    <span class="event-month">Jun</span>
+                                </span>
+                                <span class="event-year">2017</span>
+                            </time>
+                        </div>
+                    </div>
+                    <div class="list-teaser__content">
+                        <div class="list-teaser__body">
+                            <div class="label talk">Training</div>
+                            <h2 class="list-teaser-event__headline">Design Patterns – Software pragmatisch und effizient gestalten</h2>
+                            <p><em>Berlin, Courtyard by Mariott</em></p>
+                            <p class="display">
+                                <span><strong>Trainer:</strong> Heribert Innoq</span>
+                                <br />
+                                <span><strong>Preis:</strong> EUR 1799,00 zzgl. 19% MwSt.</span>
+                            </p>
+                        </div>
+                        <div class="list-teaser-event__footer">
+                            <button class="btn btn--condensed btn--cta" data-label="Jetzt Buchen">Jetzt Buchen</button>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#" class="list-teaser-event">
+                    <div class="event-date-section">
+                        <div class="label talk">Training</div>
+                        <div class="event-date-wrapper">
+                            <time class="event-date" datetime="2017-06-23">
+                                <span class="event-day-month">
+                                    <span class="event-day">10</span>
+                                    <span class="event-month">Jun</span>
+                                </span>
+                            </time>
+                            <hr class="event-date-separator" />
+                            <time class="event-date" datetime="2017-06-24">
+                                <span class="event-day-month">
+                                    <span class="event-day">12</span>
+                                    <span class="event-month">Jun</span>
+                                </span>
+                                <span class="event-year">2017</span>
+                            </time>
+                        </div>
+                    </div>
+                    <div class="list-teaser__content">
+                        <div class="list-teaser__body">
+                            <div class="label talk">Training</div>
+                            <h2 class="list-teaser-event__headline">Design Patterns – Software pragmatisch und effizient gestalten</h2>
+                            <p><em>München, Holiday Inn Unterhaching</em></p>
+                                <p class="display">
+                                <span><strong>Trainer:</strong> Heribert Innoq</span>
+                                <br />
+                                <span><strong>Preis:</strong> EUR 1799,00 zzgl. 19% MwSt.</span>
+                            </p>
+                        </div>
+                        <div class="list-teaser-event__footer">
+                            <button class="btn btn--condensed btn--cta" data-label="Jetzt Buchen">Jetzt Buchen</button>
+                        </div>
+                    </div>
+                </a>
+
+                <p class="text-center">
+                    <a class="btn btn--sm btn--light" href="#">Übersicht weiterer Termine</a>
+                </p>
+            </div>
+        </section>
+        <section class="breakout">
+            <div class="case-teaser case-teaser--simple case-teaser--left-aligned bg-image-trainings-06">
+                <div class="case-teaser__wrapper">
+                    <div class="case-teaser__body">
+                        <div class="case-teaser__caption">Individuelle Schulungen</div>
+                        <div class="case-teaser__header">
+                            <h1>Auf Ihr Bedürfnis angepasst</h1>
+                        </div>
+                        <div class="case-teaser__text lead">Ich erhalte Informationen dazu, das ich die Schulungsinhalte individualisieren kann, den Umfang individualisieren kann, etc. Ich erhalte Informationen dazu, das ich die Schulungsinhalte individualisieren kann, den Umfang individualisieren
+                            kann, etc. Ich erhalte Informationen dazu, das ich die Schulungsinhalte individualisieren kann, den Umfang individualisieren kann, etc.</div>
+                        <div><a class="btn btn--sm btn--cta" data-label="Schulung anfragen" href="#">Schulung anfragen</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </aside>
+</main>

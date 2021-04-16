@@ -1,0 +1,45 @@
+// sass-lint:disable no-important
+
+// hyphenation
+
+.no-hyphenation {
+  hyphens: none !important;
+}
+
+.demo {
+  > * {
+    margin: $spacer-md;
+  }
+
+  &--inverted {
+    background-color: $brand-secondary;
+  }
+
+  &--accented {
+    background-color: $brand-interaction;
+  }
+
+  &--centered {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--black {
+    background-color: $brand-gray;
+  }
+
+  &--edition-01-red {
+    background-color: $brand-red;
+  }
+
+  &--edition-01-blue {
+    background-color: $brand-blue;
+  }
+}
+
+// Demo Class
+.grid-demo,
+.container-demo {
+  background: $brand-primary;
+  height: 20rem;
+}

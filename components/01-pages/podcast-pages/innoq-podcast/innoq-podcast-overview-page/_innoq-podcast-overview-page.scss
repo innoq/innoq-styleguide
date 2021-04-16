@@ -1,0 +1,20 @@
+.podcast-overview-page {
+  .topic-header {
+    margin-bottom: $spacer-lg;
+  }
+
+  .toolbar__link {
+    .icon-svg {
+      background: $brand-secondary;
+    }
+
+    &:hover,
+    &:focus {
+      color: $brand-white;
+
+      .icon-svg {
+        background: $brand-white;
+      }
+    }
+  }
+}

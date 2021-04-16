@@ -1,0 +1,132 @@
+$event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
+
+.list-teaser-event {
+  @extend %list-teaser;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $event-date-section-height + $spacer-base;
+  background-color: $list-teaser-background-color;
+
+  .event-date-section {
+    margin-top: -1.8rem; //Magic Number
+  }
+
+  .list-teaser-event__footer {
+    @extend %list-teaser-footer;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .link-teaser {
+      margin-bottom: $spacer-sm;
+    }
+  }
+
+  .list-teaser-event__footer,
+  .list-teaser__footer {
+    .author-bio {
+      flex-basis: 100%;
+      margin-bottom: 0;
+      color: $list-teaser-event-subheadline-color;
+    }
+  }
+}
+
+.list-teaser__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.list-teaser-event__headline {
+  @extend %h3;
+
+  margin-bottom: $spacer-xs;
+  color: $list-teaser-event-headline-color;
+  font-size: $font-size-md;
+}
+
+.list-teaser-event__headline--secondary {
+  @extend %h5;
+
+  margin-bottom: $spacer-sm;
+  color: $list-teaser-event-subheadline-color;
+}
+
+.list-teaser-event__subheadline {
+  @extend %body-font-italic;
+
+  margin-bottom: $spacer-xs;
+  color: $list-teaser-event-subheadline-color;
+  font-size: $font-size-sm;
+
+  .icon-svg {
+    margin-left: $spacer-xxs;
+  }
+}
+
+//
+// Media Queries
+//
+@media screen and (max-width: $grid-breakpoint-md) {
+  .list-teaser-event {
+    .label {
+      margin-bottom: 0;
+      text-align: center;
+
+      &.training,
+      &.talk {
+        border-left: 0;
+      }
+    }
+
+    .list-teaser__content {
+      align-self: flex-start; // Prevent content to be centered vertically
+    }
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .list-teaser-event {
+    flex-direction: row;
+    align-items: stretch;
+    margin-top: 0;
+
+    .event-date-section {
+      margin-top: 0;
+
+      .label {
+        display: none;
+      }
+    }
+
+    .list-teaser-event__footer {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  .list-teaser-event__headline {
+    font-size: $font-size-lg;
+  }
+
+  .list-teaser-event__subheadline {
+    font-size: $font-size-md;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .list-teaser-event {
+    .list-teaser-event__footer,
+    .list-teaser__footer {
+      .author-bio {
+        flex-basis: auto;
+      }
+    }
+  }
+}

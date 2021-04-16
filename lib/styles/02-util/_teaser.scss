@@ -1,0 +1,22 @@
+$list-teaser-height: ms(32);
+
+%list-teaser {
+  @extend %block-link;
+  @extend %hover-glow;
+
+  margin-bottom: $spacer-base;
+  min-height: $list-teaser-height;
+}
+
+%list-teaser-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding: $spacer-sm $spacer-md;
+
+  > * {
+    margin: 0;
+  }
+}

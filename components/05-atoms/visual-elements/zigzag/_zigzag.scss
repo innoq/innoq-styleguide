@@ -1,0 +1,43 @@
+$zzheight: 10px;
+$zzhalfheight: ($zzheight / 2);
+$zzthickness: 130%; // increase to make the line thicker
+$zzoffset: 4px;
+$zzdegree: 135deg;
+
+.zigzag,
+%zigzag {
+  display: block;
+  position: relative;
+  z-index: 1;
+  background: $zzbgc;
+  height: $zzheight;
+
+  &::after,
+  &::before {
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    content: "";
+  }
+
+  &::before {
+    top: $zzthickness;
+    background: linear-gradient(-$zzdegree, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight,
+      linear-gradient($zzdegree, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight;
+    background-repeat: repeat-x;
+    background-position: top left;
+    background-size: $zzheight $zzheight;
+    height: ($zzheight - $zzoffset);
+  }
+
+  &::after {
+    top: 100%;
+    background: linear-gradient(-$zzdegree, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight,
+      linear-gradient($zzdegree, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight;
+    background-repeat: repeat-x;
+    background-position: top left;
+    background-size: $zzheight $zzheight;
+    height: $zzheight;
+  }
+}

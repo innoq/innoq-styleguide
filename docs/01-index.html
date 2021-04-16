@@ -15,14 +15,13 @@ at <a href="https://www.innoq.com">innoq.com</a>.</p>
 components are organized into</p>
 
 <ul>
-    <li><code>01-atoms</code></li>
-    <li><code>02-molecules</code></li>
+    <li><code>01-pages</code></li>
+    <li><code>02-layouts</code></li>
     <li><code>03-organisms</code></li>
-    <li><code>04-pages</code></li>
+    <li><code>04-molecules</code></li>
+    <li><code>05-atoms</code></li>
 </ul>
 
-<p>For structuring our CSS folders and files, we use
-<a href="https://itcss.io/">ITCSS</a>.</p>
 
 <p>We also use <a href="http://getbem.com/introduction/">BEM syntax</a>
 for naming of our CSS classes.</p>
@@ -67,19 +66,16 @@ sake of it.
 <h3>JavaScript components</h3>
 
 <p>
-  Some of our frontend components are enhanced with JavaScript.
-  They are written in ESNext and are based on
-  <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements">JavaScript Custom Elements</a>
-  Please note that we don’t bundle any polyfill for <code>customElements</code>
-  in our npm releases, use <a href="https://github.com/WebReflection/document-register-element">document-register-element</a>
-  if needed.
+    Some of our frontend components are enhanced with JavaScript.
+    They are written in ESNext and are based on
+    <a href="https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements">JavaScript Custom Elements</a>
 </p>
 
 <p>After installation, you can import and register them:</p>
 
 <pre>
-   import InfoBox from 'innoq-styleguide/dist/js/components/info-box'
-   customElements.define('info-box', InfoBox)
+    import InfoBox from 'innoq-styleguide/dist/js/components/info-box'
+    customElements.define('info-box', InfoBox)
 </pre>
 
 <h3>Bootstrap Theme</h3>

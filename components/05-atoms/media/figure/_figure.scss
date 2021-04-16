@@ -1,0 +1,23 @@
+figure {
+  margin: 0 0 $spacer-md;
+
+  & img,
+  & video {
+    width: 100%;
+  }
+}
+
+figcaption {
+  @extend %heading-font-regular;
+
+  text-align: center;
+  line-height: $paragraph-line-height-sm;
+  font-size: $font-size-xxs;
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  figcaption {
+    line-height: $paragraph-line-height-sm;
+    font-size: $font-size-base;
+  }
+}

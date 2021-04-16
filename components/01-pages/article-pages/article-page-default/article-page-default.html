@@ -1,0 +1,455 @@
+import { safe, htmlEncode } from "complate-stream";
+import { cssBackground } from './components/03-organisms/header/standard-header/config'
+
+<header class="standard-header" style={cssBackground}>
+    <h3 class="standard-header__type">Content Type</h3>
+    <h1 class="standard-header__title">Titel</h1>
+    <h2 class="standard-header__subtitle">Subtitle</h2>
+    <div class="standard-header__intro">
+        <time class="standard-header__intro__label">
+            01.01.2018
+        </time>
+        <div class="standard-header__intro__text">
+            Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
+            ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket
+            prosciutto buffalo drumstick strip steak capicola short loin.
+            Frankfurter fatback turkey pork chop prosciutto pork ground round tongue
+            chuck doner. Pig venison pork chop shoulder corned beef capicola
+            meatball.
+        </div>
+        <div class="content-separator content-seperator--inverted">
+            <time class="content-separator__duration duration" datetime="P8M">8 Min. Lesedauer</time>
+        </div>
+    </div>
+</header>
+<main role="main">
+    <article class="page-layout--grid">
+        <section class="center article-intro">
+            <ul class="list-unstyled">
+                <li class="author-bio author-bio--short" itemscope itemtype="http://schema.org/Person">
+                    <div class="author-bio__image avatar avatar--small">
+                        <a class="avatar__link" href="#author-bio">
+                            <img class="avatar__image" itemprop="photo" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq" />
+                        </a>
+                    </div>
+                    <div>
+                        <div class="author-bio__name" itemprop="name">
+                            <a class="author-bio__link" itemprop="url" href="#">Heribert Innoq</a>
+                        </div>
+                        <div class="author-bio__info" itemprop="jobTitle" >Senior Consultant</div>
+                    </div>
+                </li>
+                <li class="author-bio author-bio--short" itemscope itemtype="http://schema.org/Person">
+                    <div class="author-bio__image avatar avatar--small">
+                        <a class="avatar__link" href="#author-bio">
+                            <img class="avatar__image" itemprop="photo" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq" />
+                        </a>
+                    </div>
+                    <div>
+                        <div class="author-bio__name" itemprop="name">
+                            <a class="author-bio__link" itemprop="url" href="#">Heribert Innoq</a>
+                        </div>
+                        <div class="author-bio__info" itemprop="jobTitle" >Principal Consultant</div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <aside class="left toc">
+            <h3 class="toc__heading">Inhalt</h3>
+            <ol class="toc__list">
+                <li><a class="toc__anchor" href="#dilemma">Das Dilemma: Innovation vs. Chaos</a></li>
+                <li><a class="toc__anchor" href="#idee">Die Idee hinter Innovation Tokens</a></li>
+                <li><a class="toc__anchor" href="#unbekannt">An die unbekannten Unbekannten denken und besonders darauf achten</a></li>
+                <li><a class="toc__anchor" href="#ballast">Kognitiven Ballast vermeiden</a></li>
+                <li><a class="toc__anchor" href="#fokus">Fokus auf die Wertschöpfung legen</a></li>
+                <li><a class="toc__anchor" href="#fazit">Fazit</a></li>
+            </ol>
+        </aside>
+
+        <section class="center">
+            <h3 id="dilemma">Das Dilemma: Innovation vs. Chaos</h3>
+
+            <p>Eine neue Technologie ins Unternehmen oder Projekt einzubringen, verursacht Kosten. Aber sind wir uns wirklich im Klaren darüber, über welche Kosten wir hier sprechen? Wenn wir ein Team von erfahrenen Java-Entwicklern haben, wird der Vorschlag, neue Anforderungen an unsere Anwendung mit Python umzusetzen, vermutlich Stirnrunzeln hervorrufen. Denn uns wird relativ schnell bewusst, dass die Anwendung dadurch komplexer werden würde. Wir würden uns fragen, ob das Team dies handhaben kann und ob unser Betrieb dem gewachsen ist.</p>
+
+            <p>Lautet der Vorschlag aber beispielsweise, die Daten unserer Anwendung in verschiedene NoSQL-Datenbanken aufzuteilen, die auf die jeweiligen Datenstrukturen und ihre Anwendungsfälle optimiert sind, bekommen wir stattdessen oft ganz andere Aussagen zu hören. Nämlich: Gute Idee, wir nutzen das beste Tool für den jeweiligen Job. Zu leicht vergessen wir, uns vorab schon die vielleicht unangenehme Frage zu stellen: Kann mein Team, ja, unsere Organisation, ein System mit diesen Technologien überhaupt betreiben?</p>
+
+            <pre><code>{safe(htmlEncode(context.code))}</code></pre>
+
+            <p>Heutzutage sind Unternehmen ständig gefordert einen Spagat auszubalancieren. Auf der einen Seite bringt zu viel Innovation in Form von neuen Technologien und Prozess- oder Organisationsveränderungen Unruhe und Unsicherheit ins Unternehmen. Auf der anderen Seite müssen Unternehmen innovativ sein, um am Markt gegen den Mitbewerber zu bestehen und gleichzeitig gute Mitarbeiter anzulocken. Aber es wäre natürlich auch unvernünftig, Innovation in Form von neuer Technologie generell auszuschließen. Bei einigen großen oder mittelständischen Firmen durften wir derartige Bemühungen beobachten, die teilweise einen großen Anteil daran hatten, dass diese Unternehmen von ihren Mitbewerbern überholt wurden. Die Frage ist also: Wie viel Innovation und Neuerungen sollen wir zulassen? Was ist das richtige Maß? Um diese Frage zu beantworten, soll uns die Idee der Innovation Tokens helfen.</p>
+
+            <h3 id="idee">Die Idee hinter Innovation Tokens</h3>
+
+            <p>Die Idee von Innovation Tokens besteht darin, dass ein Team für die Umsetzung einer bestimmten Anforderung nur eine begrenzte Anzahl an Tokens zur Verfügung hat. Die genaue Anzahl hängt von den Fähigkeiten und der Einsatzbereitschaft des Teams und der Organisation ab. Die Anzahl der Tokens hängt aber nicht vom Umfang der Anforderung ab. Wenn die Anforderung groß ist, war es in unseren Projekten bisher nie effektiv, diese mit noch mehr Technologie zu erschlagen. Dies führte eher zum gegenteiligen Effekt. Des Weiteren haben wir auch noch kein Team erlebt, das mehr als fünf Tokens in einer Phase eingesetzt hat. In der Regel sollten Teams mit drei Innovation Tokens pro Projekt auskommen.</p>
+
+            {/* start pull quote component @see atoms/text/block/pull-quote */}
+            <blockquote class="pullquote">
+                An dieser Stelle kommt oft die Frage auf: Verspiele ich nicht eine Chance, wenn ich Innovation so stark begrenze?
+            </blockquote>
+            {/* end pull quote */}
+
+            <p>Nein, denn wir wollen die Anzahl der gleichzeitig eingeführten Neuerungen auf diejenigen begrenzen, von denen wir uns den größten Mehrwert für unsere Produkte oder unseren Business Value-Versprechen. Wir können drei wesentliche Punkte festhalten, die die Notwendigkeit unterstreichen, die Anzahl gleichzeitig neu eingeführter Technologien zu begrenzen:</p>
+
+            <ul>
+                <li>Die unbekannten Unbekannten reduzieren</li>
+                <li>Den kognitiven Ballast reduzieren</li>
+                <li>Unsere Zeit auf die Wertschöpfung verwenden, anstatt auf „Nebenkriegsschauplätze“</li>
+            </ul>
+
+            <ol>
+                <li>Welches unserer Probleme wird diese Technologie lösen?</li>
+                <li>Welche Veränderungen erfordert diese Technologie gegenüber dem Status quo?</li>
+                <li>Wie könnten wir diese Probleme lösen, wenn wir die Technologie nicht einsetzen können?</li>
+            </ol>
+
+            <h3 id="unbekannt">An die unbekannten Unbekannten denken</h3>
+
+            <p>Wenn wir neue Software schreiben, gibt es immer Dinge, die wir im Vorfeld noch nicht wissen. Wir wissen aber, dass wir uns um diese Dinge kümmern sollten. Wir sollten z. B. wissen, wie sich die Datenbank verhält, wenn ihre Systemressourcen ausgelastet sind und ob unsere Anwendung in dem Fall auf bestimmte Fehlerszenarien reagieren können muss. Bei neuen Technologien gibt es aber leider auch einige Dinge, von denen wir gar nichts wissen. Da wir nicht wissen, dass diese existieren, wissen wir auch nicht, ob und wann sie für uns überhaupt relevant werden oder ob wir uns darum kümmern müssen. Ein Beispiel hierfür wäre, dass in unserem Messaging-System in bestimmten <a href="https://aphyr.com/posts/315-jepsen-rabbitmq">Situationen Nachrichten verloren gehen</a>. Die Anzahl dieser unbekannten Unbekannten (Unknown Unknowns) wollen wir dringend auf ein Minimum reduzieren, denn sie können im schlimmsten Fall zu Datenverlust, Produktionsausfall oder Scheitern des Projekts führen.</p>
+
+            <check-list>
+                <ul class="checklist">
+                    <li>Die unbekannten Unbekannten reduzieren</li>
+                    <li>Den kognitiven Ballast reduzieren</li>
+                    <li>Unsere Zeit auf die Wertschöpfung verwenden, anstatt auf „Nebenkriegsschauplätze“</li>
+                </ul>
+            </check-list>
+
+            <h3 id="ballast">Kognitiven Ballast vermeiden</h3>
+
+            <p>Auch kognitiven Ballast sollten wir vermeiden. Als kognitiven Ballast bezeichnen wir Aufgaben, die wir bei der Einführung neuer Technologien implizit mit aufgebürdet bekommen. Es gibt schon Unit-Tests für die Anwendung, aber wie schreiben wir Unit-Tests für diese neue Technologie? Wir haben Monitoring für unser System, aber wie muss es angepasst werden, wenn wir die neue Technologie einführen? Was muss ein Entwickler wissen, um überhaupt anfangen zu können die neue Technologie zu nutzen? Wie verändern sich dadurch die Folgeprozesse?</p>
+
+            <figure>
+                <img class="content__image__big" src="http://via.placeholder.com/675x369" alt="Bild Groß" />
+                <figcaption>
+                    All diese Themen sind kognitiver Ballast, der mitgetragen werden muss und nicht oder nur indirekt zum Erreichen des Ziels beiträgt.
+                </figcaption>
+            </figure>
+
+            <p>All diese Themen sind kognitiver Ballast, der mitgetragen werden muss und nicht oder nur indirekt zum Erreichen des Ziels beiträgt. Jede Firma, jedes Team kann nur eine bestimmte Menge kognitiven Ballast tragen, bevor vielleicht wichtige Punkte runterfallen und vergessen werden. Wie groß diese Menge in einem Team gerade ist, lässt sich schwer messen. Was aber klar ist: Dass ein Thema runtergefallen ist, bemerken wir meist erst dadurch, dass es uns schmerzhaft auf die Füße fällt.</p>
+
+            <h3 id="fokus">Fokus auf die Wertschöpfung legen</h3>
+
+            <p>Wertschöpfung findet statt, wenn unsere Änderung oder das neue Feature in unserem Produktionssystem genutzt wird. Dementsprechend sollte es unser Anliegen sein, die Projektziele an dieser Wertschöpfung und den fachlichen Zielen zu orientieren, damit das Projektteam diese in technische Detailentscheidungen immer einbezieht – wie der Einführung neuer Technologien. Wenn bei der Definition der Projektziele die fachlichen Ziele nicht transparent sind und nicht klar ist, wie der Mehrwert am Ende gemessen wird, kann dies dazu führen, dass unbewusst Entscheidungen getroffen werden, die gegen unsere fachlichen Ziele laufen.</p>
+
+            {/* start superquote molecule @see molecules/super-quote */}
+            <blockquote class="superquote">
+                <span class="superquote__zigzag"></span>
+                <p>Wertschöpfung findet statt, wenn unsere Änderung oder das neue Feature in unserem Produktionssystem genutzt wird.</p>
+                <div itemscope itemtype="http://schema.org/Person">
+                    <cite class="superquote__author" itemprop="name">Heribert Innoq</cite>
+                    <span class="superquote__role" itemprop="jobTitle">Senior Consultant</span>
+                </div>
+            </blockquote>
+            {/* end super-quote component */}
+
+            <p>Der Endkunde zahlt nicht mehr Geld für unsere Produkte, nur weil unsere Protokollevents per TCP in eine zentrale ElasticSearch-Datenbank geschrieben werden, anstatt in eine Datei auf der Festplatte. Wie hilft das dem Kunden? Wo trägt diese Änderung zur Wertschöpfung bei? Wird das System dadurch stabiler? Sinken die Wartungskosten? Können potenzielle Fehlerszenarien früher entdeckt und behoben werden, bevor der Kunde davon betroffen ist? Die Aufgabe des Entwicklungsteams ist es, mit ihrer Arbeit zur Wertschöpfung ihres Unternehmens beizutragen. Und unter <code> puts "Hello World"</code> diesem Gesichtspunkt sollten wir auch unsere Innovation Tokens einsetzen.</p>
+
+            <wall-of-consent>
+                <template>
+                    <blockquote class="twitter-tweet" data-conversation="none" data-lang="en" data-dnt="true"><p lang="en" dir="ltr">Doge spelled backwards is Egod</p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1368058884837928970?ref_src=twsrc%5Etfw">March 6, 2021</a></blockquote>
+                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </template>
+                <p class="standalone" data-hide-if-consent>An dieser Stelle befindet sich ein Tweet. Um ihn zu sehen, musst Du dem Laden von Fremdinhalten zustimmen.</p>
+                <div class="custom-form-control checkbox">
+                    <input id="custom-checkbox-1" type="checkbox" class="form-control__input" />
+                    <label for="custom-checkbox-1" class="form-label">Tweets erlauben (<a href="https://www.innoq.com/datenschutz/">Datenschutzhinweise</a>)</label>
+                </div>
+            </wall-of-consent>
+
+            <p>Bei der Definition der Ziele sollte unser Fokus auf den so genannten Differentiatoren liegen, also das zu verbessern, was uns von unseren Mitbewerbern abhebt. Dort wollen wir die Mehrheit unserer Zeit verbringen, nicht im <a href="https://leanpub.com/37things">so genannten Parity-Sektor</a>, in dem für uns und unsere Mitbewerber Gleichheit besteht. Vor diesem Hintergrund kann beispielsweise das beste Werkzeug für eine Aufgabe auch ein Altbekanntes sein. Dies ist der Fall, wenn wir die Aufgabe damit effektiv erledigen können und das Werkzeug außerdem so gut kennen, dass sich die entstehenden Mehrkosten sehr gut abschätzen lassen.</p>
+
+            <h3>So werden die Tokens eingesetzt</h3>
+
+            <p>Nehmen wir an, wir sind in einem Team mit JavaScript-Entwicklern und sollen eine neue Webanwendung schreiben. Das Team hat bisher gute Ergebnisse mit dem JavaScript-Web-Framework Express.js erzielt, das im Node.js-Ökosystem weit verbreitet ist. Nun möchten die Kollegen aber auf das Framework hapi wechseln, weil es einige Expertenfeatures mitbringt. Hierfür müsste das Team ein Innovation Token ausgeben, da es sich um einen invasiven Austausch handelt, durch den die Vorgehensweise bei der Entwicklung verändert wird und weite Teile der Anwendung umgebaut werden müssen. In Konzeption, Test und Betrieb sollten die Veränderungen nicht oder nur marginal zu spüren sein.</p>
+
+            {/* start blockquote atom @see atoms/text/block/block-quote */}
+            <blockquote class="blockquote">
+                "Wichtig ist hierbei, dass die Einführung dieser neuen Technologie eine Mehrheitsentscheidung des Teams ist und dass diese Entwurfsentscheidung sowie die Gründe und Alternativen dieser Entscheidung schriftlich festgehalten werden(<a href="http://www.arc42.de/template/struktur.html">arc42 Kapitel 9</a> ). Auf diese Weise ist nicht nur für Außenstehende, beispielsweise andere Teams oder Auditoren, sondern auch für das Team selbst nach ein paar Monaten noch klar ersichtlich, warum die Entscheidung so getroffen wurde. So kann das Team zu einem späteren Zeitpunkt die Kriterien ansehen und gegebenenfalls feststellen, dass sich die Rahmenbedingungen geändert haben und die Entscheidung zu Gunsten einer Alternative revidiert werden sollte."
+            </blockquote>
+            {/* end blockquote component */}
+
+            <p>In dem Moment, in dem eine Entwurfsentscheidung über die Teamgrenzen hinaus geht, also beispielsweise auch Auswirkungen auf den Betrieb der Anwendung hat, muss das Team hierfür zwei Innovation Tokens ausgeben. Dies wäre bei der Einführung einer neuen Datenbanktechnologie der Fall, die noch nicht im Unternehmen vorhanden ist. Der Grund hierfür ist, dass dies nicht nur Aufwände und Risiken in unserem Team erzeugt, sondern eben auch in mindestens einem anderen Team. Unser Operationsteam muss sich bei der Einführung beispielsweise von Cassandra mit Themen wie Clusterbetrieb, Datensicherung und -wiederherstellung, dem Monitoring und dem Verhalten der Datenbank bei <a href="https://en.m.wikipedia.org/wiki/Network_partition">Network Partitions beschäftigen</a>, damit das Entwicklungsteam die Datenbank überhaupt benutzen kann.</p>
+
+            <info-box>
+                <div class="infobox__teaser">
+                    <div class="infobox__teaser__left">
+                        <h6 class="infobox__teaser__heading">Weitere Informationen</h6>
+                        <i class="icon icon-info"></i>
+                    </div>
+                    <div class="infobox__teaser__right">
+                        <i class="icon infobox__teaser__chevron"></i>
+                    </div>
+                </div>
+
+                <aside class="infobox__content">
+                    <div class="infobox__content__box">
+                        <p class="infobox__content__text">
+                            Bei der Definition der Ziele sollte unser Fokus auf den so genannten Differentiatoren liegen, also das zu verbessern, was uns von unseren Mitbewerbern abhebt. Dort wollen wir die Mehrheit unserer Zeit verbringen, nicht im <a href="https://leanpub.com/37things">so genannten Parity-Sektor</a>, in dem für uns und unsere Mitbewerber Gleichheit besteht. Vor diesem Hintergrund kann beispielsweise das beste Werkzeug für eine Aufgabe auch ein Altbekanntes sein. Dies ist der Fall, wenn wir die Aufgabe damit effektiv erledigen können und das Werkzeug außerdem so gut kennen, dass sich die entstehenden Mehrkosten sehr gut abschätzen lassen.
+                        </p>
+                    </div>
+                </aside>
+            </info-box>
+
+            <h3>Ein konkretes Beispielprojekt</h3>
+
+            <p>Letztlich steht und fällt die Idee der Innovation Tokens mit der Akzeptanz bei den Teammitgliedern. Was, wenn die Teams die Gründe für diese Einschränkung nicht verstehen? Oder schlimmer noch, sie vermuten als Ursache die vermeintliche Inkompetenz eines anderen Teams mit den neuen Technologien umzugehen und beschuldigen das andere Team, sie auszubremsen, anstatt dieses Team bei der Aufgabe zu unterstützen. Da ich allerdings ein großer Freund von kleinen Experimenten bin und davon, Dinge auszuprobieren, anstatt sie tot zu diskutieren, haben wir das Konzept in einem kleinen Projekt angewendet.</p>
+
+            <p>Der Auftrag des Projekts war es, eine Webanwendung als Microservice zu erstellen <a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a>. Im Entwicklungsteam herrschten von Anfang an sehr unterschiedliche Vorstellungen davon, welche Technologien benötigt würden. Nahezu jedes Teammitglied schlug andere Technologien vor und die meisten beharrten darauf, dass diese unbedingt notwendig seien. Wir merkten schnell, dass wir so nicht weiterkamen. Wir mussten ein gemeinsames Verständnis dafür erarbeiten, welche Technologie uns an welcher Stelle wie stark helfen konnte, wie viel Aufwand die Einführung bedeutete und welche Alternativen es gab. Deshalb sollte zunächst jeder seine eigenen Vorschläge dem Team schriftlich vorstellen und dabei folgende Fragen beantworten:</p>
+
+            <figure>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Merkmal</th>
+                            <th>Untermerkmal</th>
+                            <th>Szenario</th>
+                            <th>Priorität</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Zuverlässigkeit</td>
+                            <td>Robustheit</td>
+                            <td>Beim Upload eines korrumpierten jpg-Fotos gibt das System einen aussagekräftigen Hinweis ohne Absturz.</td>
+                            <td>B</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Robustheit</td>
+                            <td>Beim Upload eines korrumpierten jpg-Fotos gibt das System einen aussagekräftigen Hinweis ohne Absturz.</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Zuverlässigkeit</td>
+                            <td>Datenintegerität</td>
+                            <td>Beim Upload eines korrumpierten jpg-Fotos gibt das System einen aussagekräftigen Hinweis ohne Absturz.</td>
+                            <td>A</td>
+                        </tr>
+                        <tr>
+                            <td>Performance</td>
+                            <td>Benutzeranzahl</td>
+                            <td>Beim Upload eines korrumpierten jpg-Fotos gibt das System einen aussagekräftigen Hinweis ohne Absturz.</td>
+                            <td>B</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <figcaption>
+                    Dies ist eine Tabelle mit wichtigem Inhalt
+                </figcaption>
+            </figure>
+            <p>Interessant war insbesondere bei den Antworten zu Frage 1, dass hier Probleme genannt wurden, die vorher nie diskutiert worden waren. Dies war ein Gewinn für das Projekt, denn es führte zu Schritt 0: Probleme und Herausforderungen explizit machen. Dieses Ergebnis half den anderen Teammitgliedern, die Beweggründe des Vorschlagenden zu verstehen und einschätzen zu können. Anschließend konnten wir im Team Technologievorschläge zusammenfassen und über die beste Alternative abstimmen. Allerdings konnten wir die Liste immer noch nicht auf die gewünschte Anzahl von nur drei Technologien verkürzen.</p>
+
+            <p>Um dieses Ziel letztlich doch zu erreichen, schlug unser Projektleiter eine geheime Abstimmung vor. Jeder von uns wählte die aus seiner Sicht wichtigsten drei Technologien aus und schickte seine Auswahl an unseren Projektleiter. Dieser addierte die Stimmen und stellte uns das Ergebnis in einem Folgetermin vor. So reduzierten wir eine Liste von 28 Technologien auf sechs, wobei zwei Technologien ganz vorne lagen. Da wir uns hier nicht auf eine dritte Technologie einigen konnten, beschlossen wir, zunächst mit den zwei neuen sowie den vorhandenen Technologien zu starten. Die Entscheidung für die dritte Technologie wollten wir erst später treffen, wenn wir an einen Punkt kommen sollten, an dem wir unsere Herausforderungen nicht mehr lösen könnten. Dieser Fall trat in diesem Projekt jedoch nie ein.</p>
+
+            <p>Rückblickend können wir sagen, dass wir die Probleme vermutlich auch über Umwege ganz ohne neue Technologien hätten lösen können. Hier wären dann aber die nicht zu unterschätzenden Faktoren Motivation, Teamgefühl und vor allem die Weiterbildung zu kurz gekommen. Dies kann sich unserer Erfahrung nach mittelfristig negativ auf die Produktivität auswirken, wodurch dann wirklich Wettbewerbsnachteile entstehen können.</p>
+        </section>
+        <section class="center footnote-section">
+            <div class="footnote-section__headline__container">
+                <h3 class="footnote-section__headline">Quellenangaben</h3>
+            </div>
+
+            <div class="footnotes">
+                <ol class="footnotes__list">
+                    <li id="fn:1">
+                        <p>
+                            Lorem gibson courier long-chain hydrocarbons realism bomb otaku SIN tiger-team macroform node dermatrodes tower Chiba City pre-table DIY chrome Mole IX camera People of Importance.
+                            Lorem gibson temperfoam sunglasses assault systema tower order-flow screen macroform node tanto sprawl icebreaker drone sentient Mole IX Mycotoxin Dex.
+                            <a href="#fnref:1" title="return to article" >&nbsp;↩</a>
+                        </p>
+                    </li>
+                    <li id="fn:2">
+                        <p>
+                            Lorem gibson modem hotdog market corrupted Metro Holografix sprawl EMP.
+                        </p>
+                        <p>
+                            Lorem gibson Kowloon man House of the Blue Lights Turing Registry wristwatch geodesic nodality new yen House of the Blue Lights memory refrigerator advert free-market.
+                            <a href="#fnref:2" title="return to article" >&nbsp;↩</a>
+                        </p>
+                    </li>
+                    <li id="fn:3">
+                        <p>
+                            Eberhard Wolff: Microservices: Grundlagen flexibler Softwarearchitekturen, dpunkt.verlag, 2015, ISBN 978–3864903137
+                            <a href="#fnref:3" title="return to article" >&nbsp;↩</a>
+                        </p>
+                    </li>
+                    <li id="fn:4">
+                        <p><a href="http://www.vasulka.org/archive/Institutions1/EATnews.pdf">http://www.vasulka.org/archive/Institutions1/EATnews.pdf</a> <a href="#fnref:1" title="return to body" class="reversefootnote">&nbsp;↩</a></p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </article>
+
+    <section class="breakout conclusion">
+        <div class="breakout__content">
+            <h1 class="conclusion-headline">Fazit</h1>
+            <h3 class="conclusion-subheadline">Kurz auf den Punkt gebracht</h3>
+            <p class="conclusion-text">
+                Innovation Tokens sind ein einfach verständlicher <a href="https://de.wikipedia.org/wiki/Ansatz">Ansatz</a>, um das richtige Maß an neuen Technologien in Softwareentwicklungsprojekten zu finden. Projektverantwortliche und Teams bekommen hierbei ein Hilfsmittel an die Hand, das eine Selbstkontrolle und Fokussierung auf das Notwendige ermöglicht, anstatt einem Team überladene Genehmigungsprozesse oder lähmende Regularien aufzubürden. Kurz: Bei richtiger Anwendung fördern sie den gesunden Menschenverstand und die Besinnung auf die Wertschöpfungsziele.
+            </p>
+            <p class="conclusion-text"><strong>Kurz:</strong> Bei richtiger Anwendung fördern sie den gesunden Menschenverstand und die Besinnung auf die Wertschöpfungsziele.</p>
+        </div>
+    </section>
+
+    <section class="breakout tag-section">
+        <h3 class="tag-section__headline">TAGS</h3>
+        <div class="tag-section__container">
+            <ul class="tag-list">
+                <li class="tag-list__item"><a class="tag-list__link" href="/de/timeline/?tag=microservices">Microservices</a></li>
+                <li class="tag-list__item"><a class="tag-list__link" href="/de/timeline/?tag=business+technology">Business Technology</a></li>
+                <li class="tag-list__item"><a class="tag-list__link" href="/de/timeline/?tag=architecture">Architecture</a></li>
+                <li class="tag-list__item"><a class="tag-list__link" href="/de/timeline/?tag=organization">Organization</a></li>
+                <li class="tag-list__item"><a class="tag-list__link" href="/de/timeline/?tag=innovation">Innovation</a></li>
+                <li class="tag-list__item"><a class="tag-list__link" href="/de/timeline/?tag=project+management">Project Management</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <aside class="page-layout--grid">
+        <section class="center">
+            <div class="blocks">
+                <div id="author-bio" class="author-bio author-bio--long" itemscope="" itemtype="http://schema.org/Person">
+                    <div class="author-bio__image avatar avatar--base">
+                      <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Alexander Hesingfeld" />
+                    </div>
+                    <div class="author-bio__head">
+                        <div class="author-bio__name" itemprop="name">
+                            <a class="author-bio__link" href="#">Heribert Innoq</a>
+                        </div>
+                        <div class="author-bio__info" itemprop="jobTitle" >Senior Consultant</div>
+                        <div class="author-bio__social">
+                            <a class="author-bio__social-profile" href="#" title="Twitter">
+                                <span class="icon-svg icon-svg--small icon-twitter icon--brand-secondary"></span>
+                            </a>
+                            <a class="author-bio__social-profile" href="#" title="GitHub">
+                                <span class="icon-svg icon-svg--small icon-github icon--brand-secondary"></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="author-bio__text">
+                        Heribert Innoq ist Senior Consultant bei innoQ. Als Berater, Entwickler und Architekt unterstützt er Kunden vor allem mit seinen langjährigen Kenntnissen von Java- und JVM-basierten Systemen. Meist beschäftigt er sich hier mit dem Design, der Evaluierung und Implementierung von Architekturen für moderne Webanwendungen und Microservices in Softwaremodernisierungsprojekten. Sein aktueller Fokus gilt den Themen Team-Organisation und Softwareevolution.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="center share-section">
+            <span class="icon-svg icon-arrow-long-down icon--brand-secondary"></span>
+            <h3 class="share-section__heading">Share on</h3>
+            <ul class="share-section__list">
+                <li>
+                    <a class="share-section__link" target="_blank" href="">
+                        <span class="icon-svg icon-facebook icon--brand-secondary"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="share-section__link" target="_blank" href="">
+                        <span class="icon-svg icon-twitter icon--brand-secondary"></span>
+                    </a>
+                </li>
+                <li>
+                    <a class="share-section__link" href="">
+                        <span class="icon-svg icon-email icon--brand-secondary"></span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+
+        <section class="center reference">
+            <a href="#" class="reference__link">
+                <img class="reference__image" src={context.app.uri("assets/logos/business_technology.svg")} alt="Business technology" />
+            </a>
+            <p class="reference__description">
+                Dieser Artikel ist ursprünglich in Ausgabe 04/2016 der Zeitschrift Business Technology erschienen. Die Veröffentlichung auf innoq.com erfolgt mit freundlicher Genehmigung des S&amp;S Media-Verlags.
+            </p>
+        </section>
+
+    </aside>
+
+    <section class="page-layout--grid">
+        <div class="center">
+            <div id="disqus_thread">DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS </div>
+        </div>
+    </section>
+
+    <div class="dark-background">
+        <div class="page-layout-xl--default">
+            <footer class="footer">
+                <h2 class="footer__heading">Get in touch</h2>
+                <div class="footer__form">
+                    <p class="footer__paragraph"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong></p>
+                    <p class="footer__paragraph">Sed do eiusmod <a href="#" class="footer__link">tempor</a> incididunt ut labore et dolore magna.</p>
+                    <form class="form--inverted">
+                        <div class="form-group">
+                            <label class="form-label" for="first_name">Name</label>
+                            <input type="text" id="name" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="last_name">Email</label>
+                            <input type="email" id="email" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label" for="bio">Your message</label>
+                            <textarea id="bio" class="form-control" rows="8"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--small btn--inverted">Submit</button>
+                    </form>
+                </div>
+                <h2 class="footer__heading">Offices</h2>
+                <div class="footer__aside footer__aside--top-left">
+                    <h3 class="footer__subheading">INNOQ Deutschland GmbH</h3>
+                    <address class="footer__address" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">Krischerstr. 100</span><br/>
+                        <span itemprop="postalCode">40789</span> <span itemprop="addressLocality">Monheim am Rhein</span><br/>
+                        Tel <span itemprop="telephone">(+49) 2173 3366 0</span><br/>
+                        <a href="https://goo.gl/maps/w3Yp3KicooD2" class="footer__directions-link">Directions</a>
+                    </address>
+                    <address class="footer__address" itemscope itemtype="http://schema.org/PostalAddress">
+                      <span itemprop="streetAddress">Ohlauer Str. 43</span><br/>
+                      <span itemprop="postalCode">10999</span> <span itemprop="addressLocality">Berlin</span><br/>
+                      <a href="https://goo.gl/maps/JkQ8JUq5GpM2" class="footer__directions-link">Directions</a>
+                    </address>
+                    <address class="footer__address" itemscope itemtype="http://schema.org/PostalAddress">
+                      <span itemprop="streetAddress">Ludwigstr. 180 E</span><br/>
+                      <span itemprop="postalCode">63067</span> <span itemprop="addressLocality">Offenbach</span><br/>
+                      <a href="https://goo.gl/maps/ej3YSyw5mUz" class="footer__directions-link">Directions</a>
+                    </address>
+                    <address class="footer__address" itemscope itemtype="http://schema.org/PostalAddress">
+                      <span itemprop="streetAddress">Kreuzstr. 16</span><br/>
+                      <span itemprop="postalCode">80331</span> <span itemprop="addressLocality">München</span><br/>
+                      <a href="https://goo.gl/maps/q3oHmZwHahJ2" class="footer__directions-link">Directions</a>
+                    </address>
+                </div>
+                <div class="footer__aside footer__aside--top-right">
+                    <h3 class="footer__subheading">INNOQ Schweiz GmbH</h3>
+                    <address class="footer__address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="streetAddress">Gewerbestr. 11</span><br/>
+                        <span itemprop="postalCode">6330</span> <span itemprop="addressLocality">Cham</span><br/>
+                        Tel <span itemprop="telephone">(+41) 41 743 01 11</span><br/>
+                        <a href="https://goo.gl/maps/N9qbZPPjr9R2" class="footer__directions-link">Directions</a>
+                    </address>
+                    <address class="footer__address" itemscope itemtype="http://schema.org/PostalAddress">
+                      <span itemprop="streetAddress">Albulastr. 55</span><br/>
+                      <span itemprop="postalCode">8048</span> <span itemprop="addressLocality">Zürich</span><br/>
+                      <a href="https://goo.gl/maps/s3CffwfWG362" class="footer__directions-link">Directions</a>
+                    </address>
+                </div>
+                <div class="footer__aside footer__aside--bottom-left">
+                    <h2 class="footer__heading">Links</h2>
+                    <ul class="footer__list">
+                        <li class="footer__list__item"><a href="#" class="footer__list__link">Newsletter</a></li>
+                        <li class="footer__list__item"><a href="#" class="footer__list__link">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer__aside footer__aside--bottom-left-secondary">
+                    <h2 class="footer__heading">Expertise</h2>
+                    <ul class="footer__list">
+                        <li class="footer__list__item"><a href="#" class="footer__list__link">Strategie- und Technologieberatung</a></li>
+                        <li class="footer__list__item"><a href="#" class="footer__list__link">Entwicklung digitaler Geschäftsmodelle</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+</main>

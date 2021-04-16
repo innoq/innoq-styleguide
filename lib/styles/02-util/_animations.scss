@@ -1,0 +1,37 @@
+// times
+$transition-time-standard: 0.175s;
+$transition-time-fast: 0.1s;
+
+// easing functions
+$transition-easing-standard: ease-in-out;
+
+// some transitions
+$standard-transition: all $transition-time-standard $transition-easing-standard;
+$fast-transition: all $transition-time-fast $transition-easing-standard;
+$transform-transition: 0.2s transform $transition-easing-standard;
+
+// transition functions
+@function custom-transition($time, $easing, $trans...) {
+  $out: ();
+  @each $tran in $trans {
+    $out: append($out, #{$tran} $time $easing, comma);
+  }
+  @return $out;
+}
+
+@function timed-transition($time, $trans...) {
+  @return custom-transition($transition-time-standard, $transition-easing-standard, $trans...);
+}
+
+@function standard-transition($trans...) {
+  @return timed-transition($transition-time-standard, $trans...);
+}
+
+%hover-glow {
+  transition: 0.2s box-shadow $transition-easing-standard;
+
+  &:hover,
+  &:focus {
+    box-shadow: $box-shadow-glow;
+  }
+}

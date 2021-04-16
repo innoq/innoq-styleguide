@@ -1,0 +1,120 @@
+$big-content-teaser-height-sm: ms(35);
+$big-content-teaser-height-md: ms(38);
+
+.big-content-teaser {
+  @extend %block-link;
+  @extend %hover-glow;
+
+  display: flex;
+  justify-content: center;
+  // IE11 Hack
+  // sass-lint:disable no-vendor-prefixes
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    max-width: 100%;
+    height: 100%;
+  }
+  min-height: $big-content-teaser-height-sm;
+}
+
+.big-content-teaser__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: $spacer-lg $spacer-base;
+  // IE11 Hack
+  // sass-lint:disable no-vendor-prefixes
+  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.big-content-teaser__headline {
+  @extend %heading-font-heavy;
+
+  color: $big-content-teaser-headline-color;
+  font-size: $font-size-lg;
+}
+
+.big-content-teaser__text {
+  @extend %heading-font-regular;
+
+  color: $big-content-teaser-text-color;
+  font-size: $font-size-xs;
+  hyphens: auto;
+}
+
+.big-content-teaser__footer {
+  margin-bottom: 0;
+
+  > * {
+    margin: 0;
+  }
+
+  .link-teaser {
+    display: inline;
+  }
+}
+
+// Variations
+.big-content-teaser--inverted {
+  background-color: $big-content-teaser-bg-color-secondary;
+  color: $big-content-teaser-text-color;
+
+  .big-content-teaser__headline--inverted,
+  .big-content-teaser__text {
+    color: $big-content-teaser-headline-inverted-color;
+  }
+}
+
+.big-content-teaser--colored {
+  background-color: $big-content-teaser-bg-color-primary;
+}
+
+.big-content-teaser--image {
+  .big-content-teaser__content {
+    margin: $spacer-sm;
+    background-color: $big-content-teaser-bg-color;
+    padding: $spacer-sm;
+  }
+
+  .big-content-teaser__headline {
+    color: $big-content-teaser-image-headline-color;
+  }
+}
+
+// Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+  .big-content-teaser {
+    min-height: $big-content-teaser-height-md;
+  }
+
+  .big-content-teaser__content {
+    padding: $spacer-xl $spacer-lg;
+  }
+
+  .big-content-teaser__headline {
+    font-size: $font-size-xl;
+  }
+
+  .big-content-teaser__text {
+    font-size: $font-size-sm;
+  }
+
+  .big-content-teaser--image {
+    .big-content-teaser__content {
+      margin: $spacer-base;
+      padding: $spacer-base;
+    }
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .big-content-teaser__text {
+    hyphens: none;
+  }
+
+  .big-content-teaser__headline {
+    font-size: $font-size-xxxl;
+  }
+}

@@ -1,0 +1,16 @@
+.stripe {
+  width: 100%;
+  overflow: hidden;
+}
+
+.stripe--primary {
+  background-color: $brand-primary;
+}
+
+.stripe--secondary {
+  background-color: $brand-secondary;
+}
+
+.stripe--gray {
+  background-color: $brand-gray-10;
+}
