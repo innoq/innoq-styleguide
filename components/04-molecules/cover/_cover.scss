@@ -1,0 +1,84 @@
+.cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1600px;
+  height: 900px;
+  overflow: hidden;
+
+  .cover__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    overflow: hidden;
+
+    > * + * {
+      margin-top: $spacer-md;
+    }
+
+    .cover__title,
+    .cover__subtitle,
+    .cover__type {
+      margin-bottom: 0;
+      color: $brand-white;
+    }
+  }
+
+  .cover__type {
+    @extend %heading-font-bold;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: $standard-header-type-color;
+    font-size: $font-size-base;
+  }
+
+  .cover__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacer-xxs $spacer-xl;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+  }
+
+  .cover__footer--primary {
+    background-color: $brand-primary;
+  }
+
+  .cover__footer--secondary {
+    background-color: $brand-secondary;
+  }
+
+  .cover__footer--white {
+    background-color: $brand-white;
+  }
+
+  .cover__footer--single {
+    justify-content: flex-end;
+  }
+
+  .cover__logo--left {
+    height: 80px;
+  }
+
+  .cover__logo--right {
+    height: 50px;
+  }
+
+  .cover__people {
+    @extend %list-unstyled;
+
+    margin-bottom: 0;
+
+    & .author-bio {
+      margin-bottom: 0;
+    }
+  }
+}
