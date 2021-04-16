@@ -96,7 +96,7 @@
   font-style: normal;
 }
 
-.resource-list-item__author > li > a:focus, .resource-list-item__author > li > a:hover, .primary-nav__list, .navbtn--menu, .navbtn--primary, .topic-header__type, .standard-header__intro__label, .standard-header__type, .footer__directions-link, .toolbar__link, .image-divider-right-content-textbox__text, .topic-teaser__cta, .podcast-author, .service-intro__text, .paginator__item, .eyecatcher--social__text, .eyecatcher--event__text, .search-form__input, .share-section__link, .superquote__author,
+.resource-list-item__author > li > a:focus, .resource-list-item__author > li > a:hover, .primary-nav__list, .navbtn--menu, .navbtn--primary, .topic-header__type, .standard-header__intro__label, .standard-header__type, .footer__directions-link, .toolbar__link, .image-divider-right-content-textbox__text, .topic-teaser__cta, .podcast-author, .service-intro__text, .paginator__item, .eyecatcher--social__text, .eyecatcher--event__text, .search-form__input, .cover .cover__type, .share-section__link, .superquote__author,
 .longquote__author, .infobox__teaser__heading, .author-bio__name, .table thead,
 .table tfoot, .tag-list__link, .bold-list, ol:not([class]) > li::before, .checklist, .label-big.badge, .label-big.badge--inverted, .label-big.hint, .label.training, .label.talk, pull-quote > blockquote, pull-quote > blockquote > p,
 .pullquote,
@@ -582,7 +582,7 @@ h6 > a:focus:not([class]),
   color: inherit;
 }
 
-.resource-list-item__author > li, .resource-list, .search-result-list, .primary-nav__list, .footer__list, .toolbar, .client-projects, .social-media-bar, .paginator__list, .card__tags, .dropdown__list, .toc__list, .share-section__list, .tag-list, .list-unstyled, .tuple-list, .footnotes__list, ul:not([class]),
+.resource-list-item__author > li, .resource-list, .search-result-list, .primary-nav__list, .footer__list, .toolbar, .client-projects, .social-media-bar, .paginator__list, .card__tags, .dropdown__list, .cover .cover__people, .toc__list, .share-section__list, .tag-list, .list-unstyled, .tuple-list, .footnotes__list, ul:not([class]),
 .bold-list, .checklist {
   margin-top: 0;
   padding: 0;
@@ -3248,6 +3248,98 @@ super-quote > blockquote > p,
 wall-of-consent {
   display: block;
   margin-bottom: 1rem;
+}
+
+.cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 1600px;
+  height: 900px;
+  overflow: hidden;
+}
+.cover .cover__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 800px;
+  overflow: hidden;
+}
+.cover .cover__body > * + * {
+  margin-top: 1.44rem;
+}
+.cover .cover__body .cover__title,
+.cover .cover__body .cover__subtitle,
+.cover .cover__body .cover__type {
+  margin-bottom: 0;
+  color: #fff;
+}
+.cover .cover__type {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1rem;
+}
+.cover .cover__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.3348979767rem 3.919104rem;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+.cover .cover__footer--primary {
+  background-color: #ff9c66;
+}
+.cover .cover__footer--secondary {
+  background-color: #004153;
+}
+.cover .cover__footer--white {
+  background-color: #fff;
+}
+.cover .cover__footer--single {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.cover .cover__logo--left {
+  height: 80px;
+}
+.cover .cover__logo--right {
+  height: 50px;
+}
+.cover .cover__people {
+  margin-bottom: 0;
+}
+.cover .cover__people .author-bio {
+  margin-bottom: 0;
 }
 
 .dropdown__toggle {
