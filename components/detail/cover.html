@@ -243,7 +243,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cover__subtitle&quot;</span>&gt;</span>Ich bin ein Untertitel<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cover__footer cover__footer--white&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;photo&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cover__logo--right&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg&quot;</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;photo&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cover__logo--right&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;photo&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cover__logo--left&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg&quot;</span> /&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;photo&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cover__logo--right&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
@@ -323,7 +323,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cover__subtitle&quot;</span>&gt;</span>Ich bin ein Untertitel<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cover__footer cover__footer--white&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;photo&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cover__logo--right&quot;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;photo&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cover__logo--left&quot;</span>
             <span class="hljs-attr">src</span>=<span class="hljs-string">{context.app.uri(</span>&quot;<span class="hljs-attr">assets</span>/<span class="hljs-attr">logos</span>/<span class="hljs-attr">edition-02</span>/<span class="hljs-attr">svg</span>/<span class="hljs-attr">innoq-logo--petrolapricot.svg</span>&quot;)} /&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">itemprop</span>=<span class="hljs-string">&quot;photo&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;cover__logo--right&quot;</span>
             <span class="hljs-attr">src</span>=<span class="hljs-string">{context.app.uri(</span>&quot;<span class="hljs-attr">assets</span>/<span class="hljs-attr">logos</span>/<span class="hljs-attr">edition-02</span>/<span class="hljs-attr">svg</span>/<span class="hljs-attr">innoq-logo--petrolapricot.svg</span>&quot;)} /&gt;</span>
@@ -395,6 +395,8 @@
     <span class="hljs-selector-class">.cover__subtitle</span>,
     <span class="hljs-selector-class">.cover__type</span> {
       <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$default-page-layout-content-width-md</span>;
+      <span class="hljs-attribute">text-align</span>: center;
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$brand-white</span>;
     }
   }
@@ -402,7 +404,6 @@
   <span class="hljs-selector-class">.cover__type</span> {
     <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
-    <span class="hljs-attribute">text-align</span>: center;
     <span class="hljs-attribute">text-transform</span>: uppercase;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-type-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
@@ -468,7 +469,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.4 KB</span>
+                    <span class="Meta-value">1.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -4940,7 +4941,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-16T16:46:38.155Z">
+                            <time datetime="2021-04-16T17:50:30.511Z">
                                 4/16/2021
                             </time>
                         

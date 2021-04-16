@@ -3292,10 +3292,11 @@ wall-of-consent {
 .cover .cover__body .cover__subtitle,
 .cover .cover__body .cover__type {
   margin-bottom: 0;
+  max-width: 50rem;
+  text-align: center;
   color: #fff;
 }
 .cover .cover__type {
-  text-align: center;
   text-transform: uppercase;
   color: #fff;
   font-size: 1rem;
