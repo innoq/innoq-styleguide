@@ -21,12 +21,14 @@ p {
     @extend %heading-font-regular;
 
     margin-bottom: 0;
-    line-height: $paragraph-line-height;
-    font-size: $font-size-base;
   }
 
   &.display {
     text-transform: uppercase;
+  }
+
+  &.small {
+    font-size: $font-size-xxs;
   }
 }
 
