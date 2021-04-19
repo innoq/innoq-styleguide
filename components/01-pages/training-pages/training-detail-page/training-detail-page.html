@@ -1,47 +1,98 @@
 import { safe, htmlEncode } from "complate-stream";
+import { cssBackground } from './components/03-organisms/header/standard-header/config'
 
+<header class="standard-header" style={cssBackground}>
+    <h3 class="standard-header__type">Schulung</h3>
+    <h1 class="standard-header__title">Titel</h1>
+    <h2 class="standard-header__subtitle">Subtitle</h2>
+    <div class="standard-header__intro">
+        <div class="standard-header__intro__text">
+            Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
+            ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket
+            prosciutto buffalo drumstick strip steak capicola short loin.
+            Frankfurter fatback turkey pork chop prosciutto pork ground round tongue
+            chuck doner. Pig venison pork chop shoulder corned beef capicola
+            meatball.
+        </div>
+    </div>
+</header>
 <main role="main">
     <article class="page-layout--grid">
-        <header class="center article-intro">
-            <h1>Design Patterns – Software pragmatisch und effizient gestalten</h1>
-            <h2>Das ideale Training für Ihr Unternehmen</h2>
-            <p class="lead">
-                Nur selten werden Entwurf und Realisierung einer Software ausschließlich aus deren Anforderungen abgeleitet. Stattdessen setzen Entwickler auf bewährten Erfahrungen auf, die sie in anderen Software-Projekten mit vergleichbaren Anforderungen gewonnen haben. Ein pragmatischer Ansatz, der sicherstellt, dass eine Software-Architektur sowohl tragfähig und evolvierbar ist, als auch effizient von agilen Teams umgesetzt werden kann.
-            </p>
-        </header>
-
         <section class="center">
+            <ul class="list-unstyled">
+                <li class="author-bio author-bio--short" itemscope itemtype="http://schema.org/Person">
+                    <div class="author-bio__image avatar avatar--small">
+                        <a class="avatar__link" href="#author-bio">
+                            <img class="avatar__image" itemprop="photo" src={context.app.uri("assets/example-content/heribert.jpg")}
+                                alt="Portrait von Heribert Innoq" />
+                        </a>
+                    </div>
+                    <div>
+                        <div class="author-bio__name" itemprop="name">
+                            <a class="author-bio__link" itemprop="url" href="#">Heribert Innoq</a>
+                        </div>
+                        <div class="author-bio__info" itemprop="jobTitle">Senior Consultant</div>
+                    </div>
+                </li>
+                <li class="author-bio author-bio--short" itemscope itemtype="http://schema.org/Person">
+                    <div class="author-bio__image avatar avatar--small">
+                        <a class="avatar__link" href="#author-bio">
+                            <img class="avatar__image" itemprop="photo" src={context.app.uri("assets/example-content/heribert.jpg")}
+                                alt="Portrait von Heribert Innoq" />
+                        </a>
+                    </div>
+                    <div>
+                        <div class="author-bio__name" itemprop="name">
+                            <a class="author-bio__link" itemprop="url" href="#">Heribert Innoq</a>
+                        </div>
+                        <div class="author-bio__info" itemprop="jobTitle">Principal Consultant</div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="cta-section">
+                <a class="btn btn--cta btn--small" href="#" data-label="ONLINE: 20.Mai 2021">ONLINE: 20.Mai 2021</a>
+                <p class="display small"> 1 weiterer Termin verfügbar</p>
+            </div>
+
             <p>
-                Design Patterns dokumentieren solch bewährte Erfahrungen. Sie beschreiben für eine Vielzahl immer wiederkehrender Problemstellungen, wie existierende und sich im Einsatz befindende Systeme strukturiert und realisiert sind, um diese Probleme zu meistern. Durch die gezielte Nutzung von Design Patterns können Entwickler daher bei der Erstellung ihrer eigenen Software auf den Erfahrungen der gesamten Entwickler-Community aufsetzen – und auf diese Weise viele Probleme in deren Entwurf und der Realisierung einfach vermeiden.
-            </p>
-            <p>
-                Erfolgreiche Systeme enthalten daher sehr viele Design Patterns – gleich ob dies moderne Microservice und IoT Anwendungen sind, klassische Real-Time Embedded Systeme oder auch Altsysteme, die trotz aller technischen Fortschritte eine langlebige Architektur aufweisen. Der erfolgreiche Einsatz von Design Patterns in der Software-Entwicklung verlangt jedoch mehr als nur die Kenntnis einzelner Patterns. Notwendig ist vielmehr eine durchgängige Methodik zu deren Auswahl, Integration in einen bestehenden Entwurf oder Entwicklungsstand, und ihre adäquate Implementierung. Zusätzlich sind solide Kenntnisse über die Design Patterns notwendig, die den Plattformen und Paradigmen zu Grunde liegen, mit denen ein Software-System gestaltet ist.
+                Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
+                ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket
+                prosciutto buffalo drumstick strip steak capicola short loin.
+                Frankfurter fatback turkey pork chop prosciutto pork ground round tongue
+                chuck doner. Pig venison pork chop shoulder corned beef capicola
+                meatball.
             </p>
 
             <h3>Inhalte des Trainings</h3>
 
             <ul>
-                <li>Einführung in Patterns: Motivation, Definition, Struktur, Eigenschaften</li>
-                <li>Methodik zur Software-Entwicklung mit Patterns</li>
-                <li>Fallstudie: Command und Request Handling für lose gekoppelte Dienste</li>
-                <li>Übungen in Kleingruppen anhand ausgewählter Themenstellungen der Teilnehmer</li>
+                <li>Pastrami t-bone pork</li>
+                <li>Pastrami t-bone pork</li>
+                <li>Pastrami t-bone pork</li>
+                <li>Pastrami t-bone pork</li>
             </ul>
 
             <h3>Warum Sie dieses Training nicht verpassen sollten</h3>
 
             <check-list>
                 <ul class="checklist">
-                    <li>Nach dem Training wissen Sie, was Design Patterns und deren konzeptionelle Grundlagen sind.</li>
-                    <li>Sie kennen die Möglichkeiten und Grenzen des systematischen Einsatzes von Design Patterns bei der Software-Entwicklung und haben einen Überblick über wichtige Patterns für ihre projektspezifischen Anwendungsgebiete.</li>
-                    <li>Sie sind in der Lage, Design Patterns tragfähig und effizient bei der Entwicklung ihrer Software-Systeme einzusetzen.</li>
-                    <li>Sie lernen anhand einer Fallstudie, wie Sie Patterns konkret anwenden können.</li>
+                    <li>Pastrami t-bone pork</li>
+                    <li>Pastrami t-bone pork</li>
+                    <li>Pastrami t-bone pork</li>
+                    <li>Pastrami t-bone pork</li>
                 </ul>
             </check-list>
 
             <h3>Methodik</h3>
 
             <p>
-                Die Vermittlung der Lerninhalte erfolgt interaktiv in einer Mischung aus Vortrag, Fallstudien, sowie Diskussion und Übungen mit den Teilnehmern an den eigenen Projekten. Die Teilnehmer sammeln so Erfahrungen im systematischen Umgang mit Design Patterns und bekommen konkrete Anregungen, wie sie Design Patterns zielführend in ihrer täglichen Arbeit einsetzen können und welche Herausforderungen dabei entstehen.
+                Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
+                ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket
+                prosciutto buffalo drumstick strip steak capicola short loin.
+                Frankfurter fatback turkey pork chop prosciutto pork ground round tongue
+                chuck doner. Pig venison pork chop shoulder corned beef capicola
+                meatball.
             </p>
 
             <figure>
@@ -53,9 +104,9 @@ import { safe, htmlEncode } from "complate-stream";
 
             <h3>Zielgruppen</h3>
             <ul>
-                <li>Software-Architekten</li>
-                <li>Software-Entwickler mit Entwurfsverantwortung</li>
-                <li>Technische Projektleiter</li>
+                <li>Pastrami t-bone pork</li>
+                <li>Pastrami t-bone pork</li>
+                <li>Pastrami t-bone pork</li>
             </ul>
         </section>
     </article>
@@ -87,10 +138,11 @@ import { safe, htmlEncode } from "complate-stream";
         </section>
     </aside>
 
-    <h2 class="teaser-section-heading">Termine und Anmeldung</h2>
     <aside class="stripe stripe--gray">
         <section class="page-layout--grid">
             <div class="center">
+                <h2 class="teaser-section-heading">Termine und Anmeldung</h2>
+
                 <a href="#" class="list-teaser-event">
                     <div class="event-date-section">
                         <div class="event-date-wrapper">
@@ -118,7 +170,7 @@ import { safe, htmlEncode } from "complate-stream";
                             <p class="display">
                                 <span><strong>Trainer:</strong> Heribert Innoq</span>
                                 <br />
-                                <span><strong>Preis:</strong> EUR 1799,00 zzgl. 19% MwSt.</span>
+                                <span><strong>Preis:</strong> EUR xxx zzgl. 19% MwSt.</span>
                             </p>
                         </div>
                         <div class="list-teaser-event__footer">
@@ -155,7 +207,7 @@ import { safe, htmlEncode } from "complate-stream";
                                 <p class="display">
                                 <span><strong>Trainer:</strong> Heribert Innoq</span>
                                 <br />
-                                <span><strong>Preis:</strong> EUR 1799,00 zzgl. 19% MwSt.</span>
+                                <span><strong>Preis:</strong> EUR xxx zzgl. 19% MwSt.</span>
                             </p>
                         </div>
                         <div class="list-teaser-event__footer">
@@ -167,6 +219,12 @@ import { safe, htmlEncode } from "complate-stream";
                 <p class="text-center">
                     <a class="btn btn--sm btn--light" href="#">Übersicht weiterer Termine</a>
                 </p>
+
+                <div class="cta-section cta-section--dark-bg">
+                    <h2 class="">Kein passender Termin dabei?</h2>
+                    <p class="standalone">Gerne bieten wir Ihnen einen gesonderten Termin an!</p>
+                    <a class="btn btn--cta btn--cta--inverted" data-label="Termin anfragen" href="#">Termin anfragen</a>
+                </div>
             </div>
         </section>
         <section class="breakout">
@@ -175,7 +233,7 @@ import { safe, htmlEncode } from "complate-stream";
                     <div class="case-teaser__body">
                         <div class="case-teaser__caption">Individuelle Schulungen</div>
                         <div class="case-teaser__header">
-                            <h1>Auf Ihr Bedürfnis angepasst</h1>
+                            <h2>Auf Ihr Bedürfnis angepasst</h2>
                         </div>
                         <div class="case-teaser__text lead">Ich erhalte Informationen dazu, das ich die Schulungsinhalte individualisieren kann, den Umfang individualisieren kann, etc. Ich erhalte Informationen dazu, das ich die Schulungsinhalte individualisieren kann, den Umfang individualisieren
                             kann, etc. Ich erhalte Informationen dazu, das ich die Schulungsinhalte individualisieren kann, den Umfang individualisieren kann, etc.</div>

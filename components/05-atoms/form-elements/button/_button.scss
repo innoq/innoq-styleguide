@@ -41,6 +41,14 @@ $default-btn-margin: $spacer-sm;
         width: 100%;
       }
     }
+
+    &--inverted {
+      &:hover,
+      &:focus {
+        border-color: $button-inverted-border-color;
+        color: $button-cta-hover-color;
+      }
+    }
   }
 
   &--light {
