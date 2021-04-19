@@ -1,7 +1,7 @@
-$avatar-size-xs: ms(10);             //~40px
-$avatar-size-sm: ms(14);             //~55px
-$avatar-size-md: ms(18);             //~80px
-$avatar-size-base: ms(22);           //~120px
+$avatar-size-xs: ms(10); //~40px
+$avatar-size-sm: ms(14); //~55px
+$avatar-size-md: ms(18); //~80px
+$avatar-size-base: ms(22); //~120px
 
 .avatar {
   display: inline-block;
@@ -32,6 +32,7 @@ $avatar-size-base: ms(22);           //~120px
 
 .avatar__link {
   @extend %link-unstyled;
+
   transform: translateZ(100);
 }
 

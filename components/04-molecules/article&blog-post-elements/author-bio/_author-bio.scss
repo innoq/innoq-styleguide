@@ -3,6 +3,8 @@ $author-bio-image-offset: ms(22) / 2;
 $author-text-margin: 0.18rem;
 
 .author-bio {
+  @extend %link-unstyled;
+
   position: relative;
   margin-bottom: $spacer-base;
 
@@ -36,6 +38,8 @@ $author-text-margin: 0.18rem;
 }
 
 .author-bio__head {
+  @extend %link-unstyled;
+
   margin-bottom: $spacer-base;
   text-align: center;
 }
@@ -48,12 +52,6 @@ $author-text-margin: 0.18rem;
   font-size: $font-size-base;
 }
 
-.author-bio__link {
-  @extend %link-unstyled;
-
-  white-space: normal;
-}
-
 .author-bio__info {
   @extend %body-font-italic;
 
@@ -62,10 +60,7 @@ $author-text-margin: 0.18rem;
   .author-bio__name + & {
     margin-top: $author-text-margin;
   }
-}
 
-.author-bio__info,
-.author-bio__link {
   .author-bio--condensed & {
     line-height: normal;
   }
@@ -104,6 +99,7 @@ $author-text-margin: 0.18rem;
 }
 
 .author-bio__image {
+  display: flex;
   margin-right: $spacer-md;
 
   .author-bio--condensed & {
