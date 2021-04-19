@@ -408,39 +408,6 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
     </section>
 
     <aside class="page-layout--grid">
-        <section class="center">
-            <div class="blocks">
-                <div id="author-bio" class="author-bio author-bio--long" itemscope itemtype="http://schema.org/Person">
-                    <a rel="author" class ="avatar__link author-bio__head" itemprop="url" href="#">
-                        <div class="author-bio__image avatar avatar--base">
-                            <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
-                        </div>
-                        <address class="author">
-                            <span rel="author" class="author-bio__name" itemprop="givenName">Heribert Innoq</span>
-                            <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
-                        </address>
-                    </a>
-
-                    <address class="author-bio__social">
-                        <a rel="author" class="author-bio__social-profile" href="#" title="Twitter">
-                            <span class="icon-svg icon-svg--small icon-twitter icon--brand-secondary"></span>
-                        </a>
-                        <a rel= "author" class="author-bio__social-profile" href="#" title="GitHub">
-                            <span class="icon-svg icon-svg--small icon-github icon--brand-secondary"></span>
-                        </a>
-                    </address>
-                    <div class="author-bio__text">
-                        <p>Heribert Innoq ist Senior Consultant bei INNOQ.
-                            Als Berater, Entwickler und Architekt unterstützt er Kunden vor allem mit seinen langjährigen Kenntnissen von Java- und JVM-basierten Systemen.
-                            Meist beschäftigt er sich hier mit dem Design, der Evaluierung und Implementierung von Architekturen für moderne Webanwendungen und Microservices
-                            in Softwaremodernisierungsprojekten. Sein aktueller Fokus gilt den Themen Team-Organisation und Softwareevolution.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
         <section class="center share-section">
             <span class="icon-svg icon-arrow-long-down icon--brand-secondary"></span>
             <h3 class="share-section__heading">Share on</h3>
@@ -462,32 +429,11 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
                 </li>
             </ul>
         </section>
-
-
-        <section class="center reference">
-            <a href="#" class="reference__link">
-                <img class="reference__image" src={context.app.uri("assets/logos/business_technology.svg")}
-                    alt="Business technology" />
-            </a>
-            <p class="reference__description">
-                Dieser Artikel ist ursprünglich in Ausgabe 04/2016 der Zeitschrift Business Technology erschienen. Die
-                Veröffentlichung auf innoq.com erfolgt mit freundlicher Genehmigung des S&amp;S Media-Verlags.
-            </p>
-        </section>
-
     </aside>
-
-    <section class="page-layout--grid">
-        <div class="center">
-            <div id="disqus_thread">DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS
-                DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS DISQUS </div>
-        </div>
-    </section>
 
     <div class="dark-background">
         <div class="page-layout-xl--default">
             <footer class="footer">FOOTER</footer>
         </div>
     </div>
-
 </main>
