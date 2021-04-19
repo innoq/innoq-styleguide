@@ -187,7 +187,9 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;demo demo--inverted&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--small btn--inverted&quot;</span>&gt;</span>Small Button (TBD)<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--medium btn--inverted&quot;</span>&gt;</span>Medium Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--large btn--inverted&quot;</span>&gt;</span>Large Button (TBD)<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--light btn--inverted&quot;</span>&gt;</span>Light Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--small btn--inverted&quot;</span>&gt;</span>Small Button (TBD)<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--medium btn--inverted&quot;</span>&gt;</span>Medium Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--large btn--inverted&quot;</span>&gt;</span>Large Button (TBD)<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--light btn--inverted&quot;</span>&gt;</span>Light Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--cta btn--cta--inverted&quot;</span> <span class="hljs-attr">data-label</span>=<span class="hljs-string">&quot;Call To Action Button&quot;</span>&gt;</span>
+        Call To Action Button
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
         
     </code>
@@ -208,6 +210,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--medium btn--inverted&quot;</span>&gt;</span>Medium Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--large btn--inverted&quot;</span>&gt;</span>Large Button (TBD)<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--light btn--inverted&quot;</span>&gt;</span>Light Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--cta btn--cta--inverted&quot;</span> <span class="hljs-attr">data-label</span>=<span class="hljs-string">&quot;Call To Action Button&quot;</span>&gt;</span>Call To Action Button<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
     </code>
 </div>
@@ -291,6 +294,14 @@
         <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
       }
     }
+
+    &amp;--inverted {
+      &amp;<span class="hljs-selector-pseudo">:hover</span>,
+      &amp;<span class="hljs-selector-pseudo">:focus</span> {
+        <span class="hljs-attribute">border-color</span>: <span class="hljs-variable">$button-inverted-border-color</span>;
+        <span class="hljs-attribute">color</span>: <span class="hljs-variable">$button-cta-hover-color</span>;
+      }
+    }
   }
 
   &amp;--light {
@@ -346,7 +357,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.6 KB</span>
+                    <span class="Meta-value">1.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -1997,6 +2008,32 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="cta-section.html" data-role="tree-link" data-pjax data-handle="cta-section">
+                <span>Cta Section</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -4819,7 +4856,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-19T11:32:42.298Z">
+                            <time datetime="2021-04-19T13:49:42.758Z">
                                 4/19/2021
                             </time>
                         
@@ -5099,6 +5136,8 @@
 </div>
 
             </div>
+        
+    
         
     
         

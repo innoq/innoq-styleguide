@@ -876,6 +876,10 @@ dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
 .btn--cta:hover::after, .btn--cta:focus::after {
   width: 100%;
 }
+.btn--cta--inverted:hover, .btn--cta--inverted:focus {
+  border-color: #fff;
+  color: #fff;
+}
 .btn--light {
   border-width: 0 0 3px;
   background-color: transparent;
@@ -2083,11 +2087,12 @@ p.lead {
 }
 p.display, p.standalone {
   margin-bottom: 0;
-  line-height: 1.52;
-  font-size: 1rem;
 }
 p.display {
   text-transform: uppercase;
+}
+p.small {
+  font-size: 0.8333333333rem;
 }
 
 @media screen and (min-width: 48rem) {
@@ -2852,6 +2857,26 @@ clickable-area {
     margin: 0;
   }
 }
+.cta-section {
+  margin: 2.985984rem 0;
+  text-align: center;
+}
+.cta-section > * {
+  margin-bottom: 0;
+}
+.cta-section > * + * {
+  margin-top: 1.44rem;
+}
+
+.cta-section--dark-bg {
+  background-color: #004153;
+  padding: 2.985984rem;
+}
+.cta-section--dark-bg > h2,
+.cta-section--dark-bg p {
+  color: #fff;
+}
+
 .footnote-section__headline__container {
   width: 100%;
 }

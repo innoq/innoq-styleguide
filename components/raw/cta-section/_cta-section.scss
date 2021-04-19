@@ -1,0 +1,22 @@
+.cta-section {
+  margin: $spacer-lg 0;
+  text-align: center;
+
+  > * {
+    margin-bottom: 0;
+  }
+
+  > * + * {
+    margin-top: $spacer-md;
+  }
+}
+
+.cta-section--dark-bg {
+  background-color: $brand-secondary;
+  padding: $spacer-lg;
+
+  > h2,
+  p {
+    color: $brand-white;
+  }
+}
