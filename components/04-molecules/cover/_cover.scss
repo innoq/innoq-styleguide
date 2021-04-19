@@ -14,7 +14,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 800px;
+    height: 790px;
     overflow: hidden;
 
     > * + * {
@@ -45,7 +45,7 @@
     justify-content: space-between;
     padding: $spacer-xxs $spacer-xl;
     width: 100%;
-    height: 100px;
+    height: 110px;
     overflow: hidden;
   }
 
@@ -75,8 +75,10 @@
 
   .cover__people {
     @extend %list-unstyled;
+    display: flex;
 
     margin-bottom: 0;
+    height: 100px;
 
     & .author-bio {
       margin-bottom: 0;
