@@ -45,78 +45,78 @@ context:
 <!-- INNOQ Petrol colors -->
 <h2>INNOQ Petrol</h2>
 <div class="swatches">
-  {{#each petrols}}
-    <div class="swatch swatch-{{this}}">
-      <div class="swatch-color"></div>
-      <div class="swatch-text"></div>
-    </div>
-  {{/each}}
+    {{#each petrols}}
+        <div class="swatch swatch-{{this}}">
+        <div class="swatch-color"></div>
+        <div class="swatch-text"></div>
+        </div>
+    {{/each}}
 </div>
 
 <!-- INNOQ Apricot colors -->
 <h2>INNOQ Apricot</h2>
 <div class="swatches">
-  {{#each apricots}}
-    <div class="swatch swatch-{{this}}">
-      <div class="swatch-color"></div>
-      <div class="swatch-text"></div>
-    </div>
-  {{/each}}
+    {{#each apricots}}
+        <div class="swatch swatch-{{this}}">
+        <div class="swatch-color"></div>
+        <div class="swatch-text"></div>
+        </div>
+    {{/each}}
 </div>
 
 <!-- INNOQ Blue colors -->
 <h2>INNOQ Blue</h2>
 <div class="swatches">
-  {{#each blues}}
-    <div class="swatch swatch-{{this}}">
-      <div class="swatch-color"></div>
-      <div class="swatch-text"></div>
-    </div>
-  {{/each}}
+    {{#each blues}}
+        <div class="swatch swatch-{{this}}">
+        <div class="swatch-color"></div>
+        <div class="swatch-text"></div>
+        </div>
+    {{/each}}
 </div>
 
 <!-- INNOQ Red colors -->
 <h2>INNOQ Red</h2>
 <div class="swatches">
-  {{#each reds}}
-    <div class="swatch swatch-{{this}}">
-      <div class="swatch-color"></div>
-      <div class="swatch-text"></div>
-    </div>
-  {{/each}}
+    {{#each reds}}
+        <div class="swatch swatch-{{this}}">
+        <div class="swatch-color"></div>
+        <div class="swatch-text"></div>
+        </div>
+    {{/each}}
 </div>
 
 <!-- INNOQ Green colors -->
 <h2>INNOQ Green</h2>
 <div class="swatches">
-  {{#each greens}}
-    <div class="swatch swatch-{{this}}">
-      <div class="swatch-color"></div>
-      <div class="swatch-text"></div>
-    </div>
-  {{/each}}
+    {{#each greens}}
+        <div class="swatch swatch-{{this}}">
+        <div class="swatch-color"></div>
+        <div class="swatch-text"></div>
+        </div>
+    {{/each}}
 </div>
 
 <!-- INNOQ Yellow colors -->
 <h2>INNOQ Yellow</h2>
 <div class="swatches">
-  {{#each yellows}}
-    <div class="swatch swatch-{{this}}">
-      <div class="swatch-color"></div>
-      <div class="swatch-text"></div>
-    </div>
-  {{/each}}
+    {{#each yellows}}
+        <div class="swatch swatch-{{this}}">
+        <div class="swatch-color"></div>
+        <div class="swatch-text"></div>
+        </div>
+    {{/each}}
 </div>
 
 <!-- INNOQ Gray colors -->
 <h2>INNOQ Grays</h2>
 <div class="swatches">
-  {{#each grays}}
-    <div class="swatch swatch-{{this}}">
-      <div class="swatch-color"></div>
-      <div class="swatch-text"></div>
-    </div>
-  {{/each}}
+    {{#each grays}}
+        <div class="swatch swatch-{{this}}">
+        <div class="swatch-color"></div>
+        <div class="swatch-text"></div>
+        </div>
+    {{/each}}
 </div>
 
 <hr>
@@ -125,28 +125,28 @@ context:
 <!-- INNOQ Blue colors -->
 <h3>INNOQ Blue</h3>
 <div class="swatches">
-  {{#each blues}}
-    <div class="swatch swatch-{{this}}">
-      <div class="swatch-color"></div>
-      <div class="swatch-text"></div>
-    </div>
-  {{/each}}
+    {{#each blues}}
+        <div class="swatch swatch-{{this}}">
+        <div class="swatch-color"></div>
+        <div class="swatch-text"></div>
+        </div>
+    {{/each}}
 </div>
 
 <!-- INNOQ Red colors -->
 <h3>INNOQ Red</h3>
 <div class="swatches">
-  {{#each reds}}
-    <div class="swatch swatch-{{this}}">
-      <div class="swatch-color"></div>
-      <div class="swatch-text"></div>
-    </div>
-  {{/each}}
+    {{#each reds}}
+        <div class="swatch swatch-{{this}}">
+        <div class="swatch-color"></div>
+        <div class="swatch-text"></div>
+        </div>
+    {{/each}}
 </div>
 
 <script>
-  document.querySelectorAll('.swatch-text').forEach(swatch => {
-    let hex = window.getComputedStyle(swatch, ':after').getPropertyValue('content');
-    swatch.textContent = hex.replace(/["]/g, '');
-  });
+    document.querySelectorAll('.swatch-text').forEach(swatch => {
+        let hex = window.getComputedStyle(swatch, ':after').getPropertyValue('content');
+        swatch.textContent = hex.replace(/["]/g, '');
+    });
 </script>

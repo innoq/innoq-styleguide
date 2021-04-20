@@ -277,12 +277,6 @@
   background-image: asset-url("bg-images/edition-02/edition02-human-01.jpg");
 }
 
-.bg-image-edition-16-gradient,
-%bg-image-edition-16-gradient {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/edition-02/edition02-human-01.jpg");
-}
-
 .bg-image-edition-17,
 %bg-image-edition-17 {
   background-image: asset-url("bg-images/edition-02/edition02-human-02.jpg");
