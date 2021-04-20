@@ -393,11 +393,6 @@ main {
   background-image: url("/assets/bg-images/edition-02/edition02-human-01.jpg");
 }
 
-.bg-image-edition-16-gradient {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25))), url("/assets/bg-images/edition-02/edition02-human-01.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/assets/bg-images/edition-02/edition02-human-01.jpg");
-}
-
 .bg-image-edition-17 {
   background-image: url("/assets/bg-images/edition-02/edition02-human-02.jpg");
 }
@@ -493,7 +488,8 @@ h1 {
 .author-bio__text,
 .author-bio__text > p,
 .author-bio__social-profile,
-.author-bio__link,
+.author-bio__head,
+.author-bio,
 h1 > a:not([class]),
 h2 > a:not([class]),
 h3 > a:not([class]),
@@ -529,7 +525,8 @@ h6 > a:not([class]),
 .author-bio__text:hover,
 .author-bio__text > p:hover,
 .author-bio__social-profile:hover,
-.author-bio__link:hover,
+.author-bio__head:hover,
+.author-bio:hover,
 h1 > a:hover:not([class]),
 h2 > a:hover:not([class]),
 h3 > a:hover:not([class]),
@@ -560,7 +557,8 @@ h6 > a:hover:not([class]),
 .author-bio__text:focus,
 .author-bio__text > p:focus,
 .author-bio__social-profile:focus,
-.author-bio__link:focus,
+.author-bio__head:focus,
+.author-bio:focus,
 h1 > a:focus:not([class]),
 h2 > a:focus:not([class]),
 h3 > a:focus:not([class]),
@@ -825,6 +823,25 @@ dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
 
 .is-hidden {
   display: none;
+}
+
+.bg-image-demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+.bg-image-demo h3 {
+  color: #fff;
 }
 
 .btn {
@@ -2651,12 +2668,9 @@ clickable-area {
 }
 
 .author-bio__name {
+  display: block;
   text-transform: uppercase;
   font-size: 1rem;
-}
-
-.author-bio__link {
-  white-space: normal;
 }
 
 .author-bio__info {
@@ -2665,9 +2679,7 @@ clickable-area {
 .author-bio__name + .author-bio__info {
   margin-top: 0.18rem;
 }
-
-.author-bio--condensed .author-bio__info,
-.author-bio--condensed .author-bio__link {
+.author-bio--condensed .author-bio__info {
   line-height: normal;
 }
 
@@ -2704,6 +2716,9 @@ clickable-area {
 }
 
 .author-bio__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 1.44rem;
 }
 .author-bio--condensed .author-bio__image {
@@ -2713,6 +2728,7 @@ clickable-area {
   position: absolute;
   top: -3.7150418534rem;
   left: calc(50% - 3.7150418534rem);
+  margin-right: 0;
 }
 
 @media screen and (min-width: 48rem) {
@@ -3307,7 +3323,7 @@ wall-of-consent {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 800px;
+  height: 790px;
   overflow: hidden;
 }
 .cover .cover__body > * + * {
@@ -3338,7 +3354,7 @@ wall-of-consent {
           justify-content: space-between;
   padding: 0.3348979767rem 3.919104rem;
   width: 100%;
-  height: 100px;
+  height: 110px;
   overflow: hidden;
 }
 .cover .cover__footer--primary {
@@ -3362,7 +3378,11 @@ wall-of-consent {
   height: 50px;
 }
 .cover .cover__people {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 0;
+  height: 100px;
 }
 .cover .cover__people .author-bio {
   margin-bottom: 0;
@@ -7026,8 +7046,8 @@ wall-of-consent {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.3))), url("/assets/bg-images/edition-02/edition02-data-05.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url("/assets/bg-images/edition-02/edition02-data-05.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6))), url("/assets/bg-images/edition-02/edition02-data-05.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6) rgba(0, 0, 0, 0.3)), url("/assets/bg-images/edition-02/edition02-data-05.jpg");
   background-size: cover;
   padding: 2.985984rem;
   overflow: hidden;

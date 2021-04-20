@@ -1,0 +1,13 @@
+.bg-image-demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+
+  h3 {
+    color: $brand-white;
+  }
+}

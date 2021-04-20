@@ -54,55 +54,59 @@
       <article class="page-layout--grid">
         <section class="center">
           <ul class="list-unstyled">
-            <li
-              class="author-bio author-bio--short"
-              itemscope
-              itemtype="http://schema.org/Person"
-            >
-              <div class="author-bio__image avatar avatar--small">
-                <a class="avatar__link" href="#author-bio"
-                  ><img
-                    class="avatar__image"
+            <li>
+              <a
+                rel="author"
+                class="author-bio author-bio--short"
+                href="#author-bio"
+                itemscope
+                itemtype="http://schema.org/Person"
+                ><div class="author-bio__image avatar avatar--small">
+                  <img
                     itemprop="photo"
+                    class="avatar__image"
                     src="../../assets/example-content/heribert.jpg"
                     alt="Portrait von Heribert Innoq"
-                /></a>
-              </div>
-              <div>
-                <div class="author-bio__name" itemprop="name">
-                  <a class="author-bio__link" itemprop="url" href="#"
-                    >Heribert Innoq</a
+                  />
+                </div>
+                <address class="author author-bio__text">
+                  <span
+                    rel="author"
+                    class="author-bio__name"
+                    itemprop="givenName"
+                    >Heribert Innoq</span
+                  ><span class="author-bio__info" itemprop="jobTitle"
+                    >Senior Consultant</span
                   >
-                </div>
-                <div class="author-bio__info" itemprop="jobTitle">
-                  Senior Consultant
-                </div>
-              </div>
+                </address></a
+              >
             </li>
-            <li
-              class="author-bio author-bio--short"
-              itemscope
-              itemtype="http://schema.org/Person"
-            >
-              <div class="author-bio__image avatar avatar--small">
-                <a class="avatar__link" href="#author-bio"
-                  ><img
-                    class="avatar__image"
+            <li>
+              <a
+                rel="author"
+                class="author-bio author-bio--short"
+                href="#author-bio"
+                itemscope
+                itemtype="http://schema.org/Person"
+                ><div class="author-bio__image avatar avatar--small">
+                  <img
                     itemprop="photo"
+                    class="avatar__image"
                     src="../../assets/example-content/heribert.jpg"
                     alt="Portrait von Heribert Innoq"
-                /></a>
-              </div>
-              <div>
-                <div class="author-bio__name" itemprop="name">
-                  <a class="author-bio__link" itemprop="url" href="#"
-                    >Heribert Innoq</a
+                  />
+                </div>
+                <address class="author author-bio__text">
+                  <span
+                    rel="author"
+                    class="author-bio__name"
+                    itemprop="givenName"
+                    >Heribert Innoq</span
+                  ><span class="author-bio__info" itemprop="jobTitle"
+                    >Senior Consultant</span
                   >
-                </div>
-                <div class="author-bio__info" itemprop="jobTitle">
-                  Principal Consultant
-                </div>
-              </div>
+                </address></a
+              >
             </li>
           </ul>
         </section>
@@ -704,45 +708,59 @@ end
             <div
               id="author-bio"
               class="author-bio author-bio--long"
-              itemscope=""
+              itemscope
               itemtype="http://schema.org/Person"
             >
-              <div class="author-bio__image avatar avatar--base">
-                <img
-                  itemprop="photo"
-                  class="avatar__image"
-                  src="../../assets/example-content/heribert.jpg"
-                  alt="Portrait von Alexander Hesingfeld"
-                />
-              </div>
-              <div class="author-bio__head">
-                <div class="author-bio__name" itemprop="name">
-                  <a class="author-bio__link" href="#">Heribert Innoq</a>
+              <a rel="author" class="author-bio__head" itemprop="url" href="#"
+                ><div class="author-bio__image avatar avatar--base">
+                  <img
+                    itemprop="photo"
+                    class="avatar__image"
+                    src="../../assets/example-content/heribert.jpg"
+                    alt="Portrait von Heribert Innoq"
+                  />
                 </div>
-                <div class="author-bio__info" itemprop="jobTitle">
-                  Senior Consultant
-                </div>
-                <div class="author-bio__social">
-                  <a class="author-bio__social-profile" href="#" title="Twitter"
-                    ><span
-                      class="icon-svg icon-svg--small icon-twitter icon--brand-secondary"
-                    ></span></a
-                  ><a class="author-bio__social-profile" href="#" title="GitHub"
-                    ><span
-                      class="icon-svg icon-svg--small icon-github icon--brand-secondary"
-                    ></span
-                  ></a>
-                </div>
-              </div>
+                <address class="author">
+                  <span
+                    rel="author"
+                    class="author-bio__name"
+                    itemprop="givenName"
+                    >Heribert Innoq</span
+                  ><span class="author-bio__info" itemprop="jobTitle"
+                    >Senior Consultant</span
+                  >
+                </address></a
+              >
+              <address class="author-bio__social">
+                <a
+                  rel="author"
+                  class="author-bio__social-profile"
+                  href="#"
+                  title="Twitter"
+                  ><span
+                    class="icon-svg icon-svg--small icon-twitter icon--brand-secondary"
+                  ></span></a
+                ><a
+                  rel="author"
+                  class="author-bio__social-profile"
+                  href="#"
+                  title="GitHub"
+                  ><span
+                    class="icon-svg icon-svg--small icon-github icon--brand-secondary"
+                  ></span
+                ></a>
+              </address>
               <div class="author-bio__text">
-                Heribert Innoq ist Senior Consultant bei innoQ. Als Berater,
-                Entwickler und Architekt unterstützt er Kunden vor allem mit
-                seinen langjährigen Kenntnissen von Java- und JVM-basierten
-                Systemen. Meist beschäftigt er sich hier mit dem Design, der
-                Evaluierung und Implementierung von Architekturen für moderne
-                Webanwendungen und Microservices in
-                Softwaremodernisierungsprojekten. Sein aktueller Fokus gilt den
-                Themen Team-Organisation und Softwareevolution.
+                <p>
+                  Heribert Innoq ist Senior Consultant bei INNOQ. Als Berater,
+                  Entwickler und Architekt unterstützt er Kunden vor allem mit
+                  seinen langjährigen Kenntnissen von Java- und JVM-basierten
+                  Systemen. Meist beschäftigt er sich hier mit dem Design, der
+                  Evaluierung und Implementierung von Architekturen für moderne
+                  Webanwendungen und Microservices in
+                  Softwaremodernisierungsprojekten. Sein aktueller Fokus gilt
+                  den Themen Team-Organisation und Softwareevolution.
+                </p>
               </div>
             </div>
           </div>
