@@ -7525,10 +7525,6 @@ main > .page-layout--grid:first-child {
   width: max-content;
 }
 
-.podcast-overview-page--security .topic-header {
-  background-color: #646465;
-  background-blend-mode: multiply;
-}
 .podcast-overview-page--security .topic-header .topic-header__body {
   background-color: #fff;
   color: #242424;
