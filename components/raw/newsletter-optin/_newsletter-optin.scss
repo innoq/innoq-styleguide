@@ -3,12 +3,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient($gradient-from $gradient-to),
-    asset-url("bg-images/edition-02/edition02-data-05.jpg");
+  background-color: $brand-gray-75;
+  background-image: asset-url("bg-images/edition-02/edition02-data-05.jpg");
   background-size: cover;
   padding: $spacer-lg;
   overflow: hidden;
   color: $newsletter-optin-color;
+  background-blend-mode: multiply;
 
   .form-label {
     color: $newsletter-optin-color;
