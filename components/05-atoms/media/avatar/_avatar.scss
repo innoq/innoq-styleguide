@@ -8,8 +8,8 @@ $avatar-size-base: ms(22); //~120px
 }
 
 .avatar__image {
-  border-radius: 100%;
   background-color: $avatar-default-bg-color; // Show default background on
+  border-radius: 100%;
   // FIXME: filter: grayscale(100%);
   // Filter sorgt dafür, dass icon überdeckt wird. z-index und translatez helfen nicht.
 

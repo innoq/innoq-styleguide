@@ -9,8 +9,8 @@
   @extend %heading-font-heavy;
 
   margin-bottom: 0;
-  text-align: center;
   font-size: $font-size-lg;
+  text-align: center;
 
   &--01 {
     color: $brand-red;
@@ -24,8 +24,8 @@
 .image-list-teaser__subtitle {
   @extend %body-font-italic;
 
-  text-align: center;
   font-size: $font-size-base;
+  text-align: center;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

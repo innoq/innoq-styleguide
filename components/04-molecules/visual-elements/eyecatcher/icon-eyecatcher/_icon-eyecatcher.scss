@@ -6,11 +6,11 @@
 
   &__cell {
     display: flex;
+    max-width: 12.5rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-bottom: $spacer-lg;
-    max-width: 12.5rem;
     text-align: center;
 
     .icon-svg {

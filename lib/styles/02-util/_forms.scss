@@ -1,36 +1,43 @@
 // Custom form control icons
-// sass-lint:disable quotes
 @function checkbox-icon($color) {
-  @return str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{$color}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"), "#", "%23");
+  @return str-replace(
+    url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#{$color}' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E"),
+    "#",
+    "%23"
+  );
 }
 
 @function radio-icon($color) {
-  @return str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='#{$color}'/%3E%3C/svg%3E"), "#", "%23");
+  @return str-replace(
+    url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='3' fill='#{$color}'/%3E%3C/svg%3E"),
+    "#",
+    "%23"
+  );
 }
 
 @mixin control-icon($size, $top-offset) {
   &::after,
   &::before {
-    display: block;
     position: absolute;
     top: $top-offset;
     left: 0;
-    transition: $fast-transition;
+    display: block;
     width: $size;
     height: $size;
-    content: '';
+    content: "";
+    transition: $fast-transition;
   }
 }
 
 %base-button {
-  display: inline-block;
   position: relative;
+  display: inline-block;
   border: 0;
   background: none;
   cursor: pointer;
   text-decoration: none;
-  white-space: nowrap;
   user-select: none;
+  white-space: nowrap;
 
   &:focus {
     outline: none;

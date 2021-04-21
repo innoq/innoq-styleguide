@@ -7,3 +7,4 @@ public/**/*
 .vscode
 *.sublime-workspace
 .npmrc
+.stylelintcache

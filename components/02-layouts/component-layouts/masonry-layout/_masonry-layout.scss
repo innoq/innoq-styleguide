@@ -13,8 +13,8 @@
 
 @media screen and (min-width: $grid-breakpoint-md-lg) {
   .masonry-grid {
-    grid-template-columns: repeat(8, minmax(6rem, 1fr));
     grid-gap: $spacer-md;
+    grid-template-columns: repeat(8, minmax(6rem, 1fr));
   }
 
   .span-4 {

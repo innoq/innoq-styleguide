@@ -30,55 +30,53 @@
 // see: http://clagnut.com/blog/2395
 
 %improved-hyphenation-headlines {
-  // sass-lint:disable-block no-vendor-prefixes no-misspelled-properties
-  hyphens: auto;
-  hyphenate-limit-lines: 1;
-  hyphenate-limit-last: always;
+  -webkit-hyphenate-limit-after: 4;
 
   // legacy properties
   -webkit-hyphenate-limit-before: 4;
-  -webkit-hyphenate-limit-after: 4;
 
   // current proposal
   -moz-hyphenate-limit-chars: 9 4 4;
   -webkit-hyphenate-limit-chars: 9 4 4;
   -ms-hyphenate-limit-chars: 9 4 4;
   hyphenate-limit-chars: 9 4 4;
+  hyphenate-limit-last: always;
+  hyphenate-limit-lines: 1;
+  hyphens: auto;
 
   // hyphenate-limit-zone: 8%
 }
 
 %improved-hyphenation-text {
-  // sass-lint:disable-block no-vendor-prefixes no-misspelled-properties
-  hyphens: auto;
-  hyphenate-limit-lines: 2;
-  hyphenate-limit-last: always;
+  -webkit-hyphenate-limit-after: 4;
 
   // legacy properties
   -webkit-hyphenate-limit-before: 4;
-  -webkit-hyphenate-limit-after: 4;
 
   // current proposal
   -moz-hyphenate-limit-chars: 6 4 4;
   -webkit-hyphenate-limit-chars: 6 4 4;
   -ms-hyphenate-limit-chars: 6 4 4;
   hyphenate-limit-chars: 6 4 4;
+  hyphenate-limit-last: always;
+  hyphenate-limit-lines: 2;
+  hyphens: auto;
 
   // hyphenate-limit-zone: 8%
 }
 
 %manual-hyphenation {
+  hyphens: manual;
   overflow-wrap: break-word;
   word-wrap: normal;
-  hyphens: manual;
 }
 
 // Links
 .link-unstyled,
 %link-unstyled {
   border-bottom: 0;
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 
   &:hover,
   &:focus {
@@ -88,22 +86,22 @@
 
 %block-link {
   display: block;
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 // Lists
 %list-unstyled {
-  margin-top: 0;
   padding: 0;
+  margin-top: 0;
   list-style: none;
   list-style-type: none;
 }
 
 // Should only be used, when placeholder is overridden by normalize.
 @mixin list-unstyled {
-  margin-top: 0;
   padding: 0;
+  margin-top: 0;
   list-style: none;
 }
 
@@ -111,8 +109,8 @@
   @extend %list-unstyled;
 
   margin-bottom: $spacer-md;
-  line-height: $paragraph-line-height;
   font-size: $font-size-base;
+  line-height: $paragraph-line-height;
 
   li {
     position: relative;
@@ -120,8 +118,8 @@
   }
 
   @media screen and (min-width: $grid-breakpoint-md) {
-    line-height: $paragraph-line-height;
     font-size: $font-size-sm;
+    line-height: $paragraph-line-height;
   }
 }
 
@@ -132,9 +130,9 @@
     @extend %heading-font-bold;
 
     margin-bottom: $spacer-xs;
-    line-height: $paragraph-line-height;
     color: $definition-list-dt-color;
     font-size: $font-size-base;
+    line-height: $paragraph-line-height;
   }
 
   dd {
@@ -142,8 +140,8 @@
 
     margin-bottom: $spacer-xs;
     margin-left: $spacer-md;
-    line-height: $paragraph-line-height;
     font-size: $font-size-base;
+    line-height: $paragraph-line-height;
   }
 }
 
@@ -170,8 +168,8 @@
 %teaser-caption {
   @extend %heading-font-bold;
 
-  text-transform: uppercase;
   font-size: $font-size-xs;
+  text-transform: uppercase;
 }
 
 %teaser-text {
@@ -192,14 +190,14 @@
 
   &::after {
     position: absolute;
+    z-index: -1;
     top: 0;
     left: 0;
-    transition: standard-transition(width);
-    z-index: -1;
-    background-color: $fill-color;
     width: 0%;
     height: 100%;
+    background-color: $fill-color;
     content: "";
+    transition: standard-transition(width);
   }
 
   &:hover,
@@ -227,15 +225,15 @@
 //
 
 // @supports: put -webkit- at the end or sass will kill it, kills -moz- anyway
-// sass-lint:disable no-vendor-prefixes
+
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .punch-in,
   %punch-in {
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-background-clip: text;
     background-clip: text;
     background-position: center;
     color: transparent;
-    // sass-lint:disable-block no-vendor-prefixes
-    -webkit-background-clip: text;
   }
 }
 

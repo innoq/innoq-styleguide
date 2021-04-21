@@ -1,12 +1,12 @@
 .share-section {
+  width: 50%;
   margin: 0 auto;
   margin-bottom: $spacer-xl;
-  width: 50%;
   text-align: center;
 
   .icon-arrow-long-down {
-    transition: $transform-transition;
     margin-bottom: $spacer-sm;
+    transition: $transform-transition;
   }
 
   &:hover {
@@ -23,6 +23,7 @@
 
 .share-section__list {
   @extend %list-unstyled;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

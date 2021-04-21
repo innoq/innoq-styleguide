@@ -4,11 +4,11 @@
 
 // This layout is setup as two nested grids that consits of three columns each.
 .page-layout--grid {
+  max-width: $grid-page-layout-main-column-width;
+  padding: $spacer-sm;
   // If the browser does not support grid, we use a simple layout:
   // One column centered in the middle of the page.
   margin: $grid-page-layout-margin auto;
-  padding: $spacer-sm;
-  max-width: $grid-page-layout-main-column-width;
 }
 
 main > .page-layout--grid {
@@ -31,8 +31,8 @@ main > .page-layout--grid {
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .page-layout--grid {
-    padding: 0;
     width: $grid-page-layout-content-width-md;
+    padding: 0;
   }
 }
 
@@ -46,15 +46,15 @@ main > .page-layout--grid {
   @media screen and (min-width: $grid-breakpoint-xl) {
     .page-layout--grid {
       display: grid;
-      margin-right: 0;
-      margin-left: 0;
-      padding: 0;
       width: 100%;
       max-width: none;
+      padding: 0;
+      margin-right: 0;
+      margin-left: 0;
+      grid-column-gap: $grid-page-layout-column-gap;
+      grid-template-areas: ". left center right .";
       grid-template-columns: 1fr $grid-page-layout-leftright-width $grid-page-layout-content-width-xl $grid-page-layout-leftright-width 1fr;
       grid-template-rows: auto;
-      grid-template-areas: ". left center right .";
-      grid-column-gap: $grid-page-layout-column-gap;
 
       > * {
         grid-row: auto;

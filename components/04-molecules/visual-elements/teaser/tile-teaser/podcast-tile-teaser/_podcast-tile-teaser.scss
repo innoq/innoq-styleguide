@@ -4,21 +4,22 @@ $podcast-teaser-height-md: ms(35);
 .podcast-teaser {
   @extend %block-link;
   @extend %hover-glow;
+
   display: flex;
+  overflow: hidden;
+  min-height: $podcast-teaser-height-sm;
   flex-direction: column;
   justify-content: space-between;
-  min-height: $podcast-teaser-height-sm;
-  overflow: hidden;
 }
 
 .podcast-teaser__body {
-  margin-bottom: 0;
   padding: $spacer-sm $spacer-md;
+  margin-bottom: 0;
 }
 
 .podcast-teaser__footer {
-  margin-bottom: 0;
   padding: $spacer-sm $spacer-md;
+  margin-bottom: 0;
 
   > * {
     margin: 0;
@@ -45,8 +46,8 @@ $podcast-teaser-height-md: ms(35);
 .podcast-author {
   @extend %heading-font-bold;
 
-  text-transform: uppercase;
   font-size: $font-size-base;
+  text-transform: uppercase;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -71,12 +72,12 @@ $podcast-teaser-height-md: ms(35);
 }
 
 .podcast-teaser--avatar--overlay {
+  background-blend-mode: multiply;
   background-color: $podcast-teaser-overlay-color-secondary;
-  background-repeat: no-repeat;
   background-position: top right;
+  background-repeat: no-repeat;
   background-size: auto 100%;
   color: $podcast-teaser-default-color-secondary;
-  background-blend-mode: multiply;
 
   .podcast-teaser__headline,
   .podcast-teaser__subheadline {
@@ -95,12 +96,12 @@ $podcast-teaser-height-md: ms(35);
 }
 
 .podcast-teaser--avatar--overlay--big {
+  background-blend-mode: multiply;
   background-color: $podcast-teaser-overlay-color-secondary;
-  background-repeat: no-repeat;
   background-position: top right, top left;
+  background-repeat: no-repeat;
   background-size: 0%;
   color: $podcast-teaser-default-color-secondary;
-  background-blend-mode: multiply;
 
   .podcast-teaser__headline,
   .podcast-teaser__subheadline {
@@ -126,7 +127,6 @@ $podcast-teaser-height-md: ms(35);
     display: flex;
     justify-content: space-evenly;
     // IE11 Hack
-    // sass-lint:disable no-vendor-prefixes
     @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
       justify-content: space-around;
     }
@@ -135,8 +135,8 @@ $podcast-teaser-height-md: ms(35);
 
 .podcast-teaser--avatar {
   background-color: $podcast-teaser-light-bg;
-  background-repeat: no-repeat;
   background-position: top right;
+  background-repeat: no-repeat;
   background-size: auto 100%;
   color: $podcast-teaser-default-color;
 

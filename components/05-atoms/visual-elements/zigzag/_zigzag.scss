@@ -6,38 +6,38 @@ $zzdegree: 135deg;
 
 .zigzag,
 %zigzag {
-  display: block;
   position: relative;
   z-index: 1;
-  background: $zzbgc;
+  display: block;
   height: $zzheight;
+  background: $zzbgc;
 
   &::after,
   &::before {
-    display: block;
     position: absolute;
     right: 0;
     left: 0;
+    display: block;
     content: "";
   }
 
   &::before {
     top: $zzthickness;
+    height: ($zzheight - $zzoffset);
     background: linear-gradient(-$zzdegree, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight,
       linear-gradient($zzdegree, $zzlinecolor $zzhalfheight, transparent 0) 0 $zzhalfheight;
-    background-repeat: repeat-x;
     background-position: top left;
+    background-repeat: repeat-x;
     background-size: $zzheight $zzheight;
-    height: ($zzheight - $zzoffset);
   }
 
   &::after {
     top: 100%;
+    height: $zzheight;
     background: linear-gradient(-$zzdegree, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight,
       linear-gradient($zzdegree, $zzbgc $zzhalfheight, transparent 0) 0 $zzhalfheight;
-    background-repeat: repeat-x;
     background-position: top left;
+    background-repeat: repeat-x;
     background-size: $zzheight $zzheight;
-    height: $zzheight;
   }
 }

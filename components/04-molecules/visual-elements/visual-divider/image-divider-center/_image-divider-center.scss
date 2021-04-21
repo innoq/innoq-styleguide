@@ -3,32 +3,32 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
 .image-divider-center {
   @extend %page-header;
 
-  margin-bottom: $divider-center-textbox-offset;
-  padding-top: $spacer-lg;
   min-height: 50vh;
+  padding-top: $spacer-lg;
+  margin-bottom: $divider-center-textbox-offset;
 
   &__title {
     @extend %punch-in;
 
-    margin-bottom: $spacer-md;
     padding: 0 $spacer-md;
-    text-align: center;
+    margin-bottom: $spacer-md;
     font-size: $font-size-xxl;
+    text-align: center;
   }
 }
 
 .image-divider-center__textbox {
-  display: flex;
   position: relative;
   top: $divider-center-textbox-offset;
+  display: flex;
+  max-width: 630px;
+  box-sizing: content-box;
   flex-direction: column;
   align-items: center;
+  padding: $spacer-md;
   margin-top: $spacer-md;
   background-color: $image-divider-center-bg-color;
-  padding: $spacer-md;
-  max-width: 630px;
   text-align: center;
-  box-sizing: content-box;
 }
 
 .image-divider-center__textbox__text {
@@ -37,7 +37,6 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
   color: $image-divider-center-color;
   font-size: $font-size-sm;
   // IE11 Hack
-  // sass-lint:disable no-vendor-prefixes
   @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
     max-width: 100%;
   }
@@ -55,8 +54,8 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
 
   .image-divider-center__textbox {
     top: $divider-center-textbox-offset;
-    padding: $spacer-lg;
     width: 630px;
+    padding: $spacer-lg;
   }
 
   .image-divider-center__textbox__text {

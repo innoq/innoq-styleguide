@@ -2,22 +2,22 @@
 //
 pull-quote > blockquote,
 .pullquote {
-  margin: 0 0 $spacer-md;
+  padding: $spacer-sm;
   border: 1px solid $pull-quote-border-color;
   border-width: 1px 0;
-  padding: $spacer-sm;
+  margin: 0 0 $spacer-md;
 
   &,
-  & > p {
+  > p {
     @extend %heading-font-bold;
 
-    text-align: center;
-    line-height: $paragraph-line-height;
     color: $pull-quote-color;
     font-size: $font-size-sm;
+    line-height: $paragraph-line-height;
+    text-align: center;
   }
 
-  & > p {
+  > p {
     margin-bottom: 0;
   }
 }
@@ -25,7 +25,7 @@ pull-quote > blockquote,
 @media screen and (min-width: $grid-breakpoint-md) {
   pull-quote > blockquote,
   .pullquote {
-    margin: 0 auto $spacer-md;
     width: 80%;
+    margin: 0 auto $spacer-md;
   }
 }

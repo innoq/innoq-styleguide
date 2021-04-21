@@ -4,8 +4,8 @@ $list-teaser-height: ms(32);
   @extend %block-link;
   @extend %hover-glow;
 
-  margin-bottom: $spacer-base;
   min-height: $list-teaser-height;
+  margin-bottom: $spacer-base;
 }
 
 %list-teaser-footer {
@@ -13,8 +13,8 @@ $list-teaser-height: ms(32);
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 0;
   padding: $spacer-sm $spacer-md;
+  margin-bottom: 0;
 
   > * {
     margin: 0;

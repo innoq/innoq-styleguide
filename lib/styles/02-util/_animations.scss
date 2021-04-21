@@ -13,6 +13,7 @@ $transform-transition: 0.2s transform $transition-easing-standard;
 // transition functions
 @function custom-transition($time, $easing, $trans...) {
   $out: ();
+
   @each $tran in $trans {
     $out: append($out, #{$tran} $time $easing, comma);
   }

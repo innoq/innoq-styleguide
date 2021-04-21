@@ -1,18 +1,18 @@
 // This layout is used for podcast teaser
 
 .teaser-page-layout {
+  width: 95%;
+  max-width: $grid-page-layout-width;
   margin-right: auto;
   margin-bottom: $spacer-md;
   margin-left: auto;
-  width: 95%;
-  max-width: $grid-page-layout-width;
 }
 
 .podcast-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: $spacer-sm;
   grid-auto-rows: 1fr;
+  grid-gap: $spacer-sm;
+  grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

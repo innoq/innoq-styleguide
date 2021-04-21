@@ -43,33 +43,33 @@
   @extend %heading-font-heavy;
 
   margin-bottom: 0;
-  text-transform: uppercase;
   color: $date-section-month-color;
   font-size: $font-size-xs;
+  text-transform: uppercase;
 }
 
 .event-year {
   @extend %heading-font-regular;
 
-  margin-left: $spacer-xs;
-  border-left: 1px solid $date-section-year-color;
   padding-left: $spacer-xxs;
+  border-left: 1px solid $date-section-year-color;
+  margin-left: $spacer-xs;
   color: $date-section-year-color;
   font-size: $font-size-xs;
 }
 
 .event-date-separator {
-  border: 0;
-  background-color: $date-section-year-color;
   width: $spacer-base;
   height: 2px;
+  border: 0;
+  background-color: $date-section-year-color;
 }
 
 // Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   .event-date-section {
-    margin-top: 0;
     width: 80px;
+    margin-top: 0;
   }
 
   .event-date-wrapper {
@@ -90,15 +90,15 @@
   }
 
   .event-year {
-    margin-left: 0;
+    padding-left: 0;
     border-top: 1px solid $date-section-year-color;
     border-left: 0;
-    padding-left: 0;
+    margin-left: 0;
     font-size: $font-size-xs;
   }
 
   .event-date-separator {
-    transform: rotate(90deg);
     margin: $spacer-sm 0;
+    transform: rotate(90deg);
   }
 }

@@ -1,8 +1,7 @@
-// sass-lint:disable no-important
-
 // hyphenation
 
 .no-hyphenation {
+  /* stylelint-disable-next-line declaration-no-important */
   hyphens: none !important;
 }
 
@@ -40,6 +39,6 @@
 // Demo Class
 .grid-demo,
 .container-demo {
-  background: $brand-primary;
   height: 20rem;
+  background: $brand-primary;
 }

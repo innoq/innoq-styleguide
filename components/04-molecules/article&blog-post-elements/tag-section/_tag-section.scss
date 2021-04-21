@@ -1,28 +1,28 @@
 .tag-section {
-  margin-bottom: $spacer-lg;
-  background-color: $meta-tags-background-color;
   padding-top: $spacer-base;
   padding-bottom: $spacer-lg;
+  margin-bottom: $spacer-lg;
+  background-color: $meta-tags-background-color;
 }
 
 .tag-section__container {
-  margin: 0 auto;
   width: 90%;
+  margin: 0 auto;
 }
 
 .tag-section__headline {
   @extend %heading-font-heavy;
 
-  text-align: center;
   color: $meta-tags-headline-text-color;
   font-size: $font-size-base;
+  text-align: center;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .tag-section {
-    margin-bottom: $spacer-xl; // xxl -> xl related to fix for author bio margin
     padding-top: $spacer-lg;
     padding-bottom: $spacer-xl;
+    margin-bottom: $spacer-xl; // xxl -> xl related to fix for author bio margin
   }
 
   .tag-section__headline {

@@ -15,15 +15,13 @@
   @extend %heading-font-bold;
 
   display: inline-block;
-  transition: 0.2s background-color ease-in-out;
-  background: $tag-background-color;
   padding: $spacer-xs $spacer-sm;
-
-  text-transform: lowercase;
-  text-decoration: none;
-
+  background: $tag-background-color;
   color: $tag-text-color;
   font-size: $font-size-base;
+  text-decoration: none;
+  text-transform: lowercase;
+  transition: 0.2s background-color ease-in-out;
 
   &:hover {
     background-color: $tag-background-color-hover;

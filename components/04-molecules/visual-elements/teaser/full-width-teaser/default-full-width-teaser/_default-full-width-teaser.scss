@@ -5,10 +5,10 @@ $full-width-teaser-height: ms(38);
 .default-full-width-teaser {
   @extend %page-header;
 
-  justify-content: center;
   width: 100%;
   max-width: 100%;
   min-height: $full-width-teaser-height;
+  justify-content: center;
 
   &--right-aligned {
     justify-content: flex-end;
@@ -30,8 +30,8 @@ $full-width-teaser-height: ms(38);
   flex-basis: 100%;
   flex-direction: column;
   justify-content: space-between;
-  background-color: $full-width-teaser-body-bg;
   padding: $spacer-base;
+  background-color: $full-width-teaser-body-bg;
   color: $full-width-teaser-body-color;
 }
 
@@ -39,9 +39,9 @@ $full-width-teaser-height: ms(38);
   @extend %teaser-text;
 
   margin-bottom: $spacer-base;
-  line-height: $paragraph-line-height;
   font-size: $font-size-xs;
   hyphens: auto;
+  line-height: $paragraph-line-height;
 }
 
 .default-full-width-teaser__header {
@@ -58,8 +58,9 @@ $full-width-teaser-height: ms(38);
 
 .default-full-width-teaser__caption {
   @extend %teaser-caption;
-  margin-bottom: $spacer-xxs;
+
   height: $spacer-md;
+  margin-bottom: $spacer-xxs;
 }
 
 //
@@ -85,9 +86,9 @@ $full-width-teaser-height: ms(38);
 
 @media screen and (min-width: $grid-breakpoint-md-lg) {
   .default-full-width-teaser__wrapper {
-    padding: $spacer-sm;
     width: $default-page-layout-width-xl;
     max-width: $default-page-layout-content-width-xl;
+    padding: $spacer-sm;
   }
 
   .default-full-width-teaser__text {

@@ -1,6 +1,6 @@
 .search-hero {
-  background-color: $search-field-background;
   overflow: hidden;
+  background-color: $search-field-background;
 }
 
 .search-form {
@@ -15,14 +15,14 @@
   @extend %heading-font-bold;
 
   display: block;
-  outline: none;
-  border: 0;
-  background-color: $search-field-background;
   width: 100%;
-  line-height: 1.5em; // don't cut off descenders Chrome/FF
-  color: $search-field-color;
-  caret-color: $search-field-caret-color;
+  border: 0;
   appearance: none;
+  background-color: $search-field-background;
+  caret-color: $search-field-caret-color;
+  color: $search-field-color;
+  line-height: 1.5em; // don't cut off descenders Chrome/FF
+  outline: none;
 }
 
 .search-form__btn {

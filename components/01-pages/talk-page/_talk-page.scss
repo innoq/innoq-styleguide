@@ -26,11 +26,11 @@
   margin-bottom: $spacer-md;
 
   .label {
-    margin: 0;
     border-left: 0;
+    margin: 0;
     text-align: center;
-    }
   }
+}
 
 .talk-title {
   @extend %h1;
@@ -39,8 +39,9 @@
 }
 
 .talk-description {
-  & > * {
+  > * {
     @extend %body-font-italic;
+
     font-size: $font-size-md;
   }
 }
@@ -71,7 +72,6 @@
     }
   }
 }
-
 
 @media screen and (min-width: $grid-breakpoint-xl) {
   .talk-date {

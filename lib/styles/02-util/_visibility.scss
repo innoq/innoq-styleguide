@@ -1,14 +1,14 @@
 .sr-only,
 %sr-only {
   position: absolute;
-  border: 0;
-  padding: 0;
+  overflow: hidden;
   width: 1px;
   height: 1px;
-  overflow: hidden;
-  white-space: nowrap;
-  clip-path: inset(50%);
+  padding: 0;
+  border: 0;
   clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .is-hidden,

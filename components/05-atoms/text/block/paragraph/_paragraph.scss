@@ -2,8 +2,8 @@ p {
   @extend %body-font-regular;
 
   margin-bottom: $spacer-md;
-  line-height: $paragraph-line-height;
   font-size: $font-size-base;
+  line-height: $paragraph-line-height;
 
   &:not([class]) {
     @extend %improved-hyphenation-text;
@@ -12,8 +12,8 @@ p {
   &.lead {
     @extend %body-font-italic;
 
-    line-height: $paragraph-line-height;
     font-size: $font-size-sm;
+    line-height: $paragraph-line-height;
   }
 
   &.display,
