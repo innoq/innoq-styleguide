@@ -1,20 +1,21 @@
 .form-control,
 .custom-form-control {
   @extend %heading-font-regular;
+
   display: block;
-  transition: standard-transition(background-color);
-  padding: $spacer-xs;
   width: 100%;
-  line-height: $paragraph-line-height;
+  padding: $spacer-xs;
   font-size: $font-size-base;
+  line-height: $paragraph-line-height;
+  transition: standard-transition(background-color);
 }
 
 .form-control {
-  outline: none;
   border: 2px solid $form-control-border-color;
+  appearance: none;
   border-radius: 0;
   caret-color: $form-control-caret-color;
-  appearance: none;
+  outline: none;
 
   &:focus {
     background-color: $form-control-focus-bg;
@@ -32,8 +33,8 @@
 
 .custom-form-control {
   position: relative;
-  transition: standard-transition(background-color, color, border-color);
   min-height: ($paragraph-line-height * 1rem);
+  transition: standard-transition(background-color, color, border-color);
 
   &.form-control--invalid,
   .form-group--invalid & {
@@ -49,11 +50,10 @@
     }
   }
 
-
   // Hide the real input inside
   > .form-control__input {
     position: absolute;
-    opacity: 0;
     z-index: -1; // Put the input behind the label so it doesn't overlay text
+    opacity: 0;
   }
 }

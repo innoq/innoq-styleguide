@@ -1,5 +1,5 @@
 $checkbox-size: $spacer-md; // ~24px
-$checkbox-offset: .475rem;    // ~16px
+$checkbox-offset: 0.475rem; // ~16px
 $checkbox-indent: $checkbox-offset + $checkbox-size;
 
 .checkbox {
@@ -9,7 +9,6 @@ $checkbox-indent: $checkbox-offset + $checkbox-size;
 
   // Set styles for all form states
   > .form-control__input {
-
     &:checked ~ .form-label::before {
       background-color: $checkbox-bg-active;
     }
@@ -34,23 +33,24 @@ $checkbox-indent: $checkbox-offset + $checkbox-size;
 
   .form-label {
     @include control-icon($checkbox-size, $checkbox-offset);
+
     margin-bottom: 0;
     text-align: left;
 
     // Background (color)
     &::before {
-      margin-right: $checkbox-offset;
       border: 2px solid $checkbox-border;
-      border-radius: 2px;
+      margin-right: $checkbox-offset;
       background-color: $checkbox-bg;
+      border-radius: 2px;
       pointer-events: none;
       user-select: none;
     }
 
     // Foreground (icon)
     &::after {
-      background-repeat: no-repeat;
       background-position: center center;
+      background-repeat: no-repeat;
       background-size: 50% 50%;
     }
   }

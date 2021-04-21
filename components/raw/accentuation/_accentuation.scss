@@ -2,8 +2,8 @@ code {
   @extend %monospace-font-regular;
 
   display: inline-block;
-  background-color: $code-background-color;
   padding: 2px $spacer-xxs;
+  background-color: $code-background-color;
   font-size: $font-size-xs;
 }
 

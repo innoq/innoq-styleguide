@@ -273,6 +273,7 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-selector-class">.paginator</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-regular;
+
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">flex-wrap</span>: wrap;
   <span class="hljs-attribute">justify-content</span>: center;
@@ -283,6 +284,7 @@
 
 <span class="hljs-selector-class">.paginator__list</span> {
   <span class="hljs-keyword">@extend</span> %list-unstyled;
+
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
 }
@@ -290,26 +292,21 @@
 <span class="hljs-selector-class">.paginator__item</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-bold;
   <span class="hljs-keyword">@extend</span> %link-unstyled;
+
   <span class="hljs-attribute">position</span>: relative;
-  <span class="hljs-comment">// display: inline-block;</span>
 }
 
 <span class="hljs-selector-class">.paginator__item--active</span> {
-  <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> put this in a placeholder selector</span>
   &amp;<span class="hljs-selector-pseudo">::after</span> {
-    <span class="hljs-attribute">display</span>: block;
     <span class="hljs-attribute">position</span>: absolute;
     <span class="hljs-attribute">bottom</span>: -<span class="hljs-number">0.15em</span>;
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$paginator-active-color</span>;
+    <span class="hljs-attribute">display</span>: block;
     <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">3px</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$paginator-active-color</span>;
     <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
   }
 }
-
-<span class="hljs-comment">// .paginator__item + .paginator__item {</span>
-<span class="hljs-comment">//   margin-left: $spacer-xs;</span>
-<span class="hljs-comment">// }</span>
 
 <span class="hljs-selector-class">.paginator__link</span>,
 <span class="hljs-selector-class">.paginator__dots</span> {
@@ -318,6 +315,7 @@
 
 <span class="hljs-selector-class">.paginator__link</span> {
   <span class="hljs-keyword">@extend</span> %link-unstyled;
+
   <span class="hljs-attribute">display</span>: inline-block;
   <span class="hljs-attribute">transition</span>: standard-transition(color);
 
@@ -328,13 +326,13 @@
 }
 
 <span class="hljs-selector-class">.paginator__prevs</span> {
-  &amp; &gt; *<span class="hljs-selector-pseudo">:first</span>-child {
+  &gt; *<span class="hljs-selector-pseudo">:first</span>-child {
     <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0</span>;
   }
 }
 
 <span class="hljs-selector-class">.paginator__nexts</span> {
-  &amp; &gt; *<span class="hljs-selector-pseudo">:last-child</span> {
+  &gt; *<span class="hljs-selector-pseudo">:last-child</span> {
     <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">0</span>;
   }
 }
@@ -347,9 +345,9 @@
   }
 
   <span class="hljs-selector-class">.paginator__list</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
     <span class="hljs-attribute">justify-content</span>: space-between;
     <span class="hljs-attribute">order</span>: -<span class="hljs-number">1</span>;
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
   }
 
   <span class="hljs-selector-class">.paginator__prevs</span> {
@@ -382,7 +380,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.6 KB</span>
+                    <span class="Meta-value">1.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -4803,7 +4801,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4926,7 +4924,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-21T09:09:15.471Z">
+                            <time datetime="2021-04-21T20:31:30.773Z">
                                 4/21/2021
                             </time>
                         
@@ -5993,7 +5991,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6019,7 +6017,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6045,7 +6043,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6071,7 +6069,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6088,8 +6086,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="bg-images--podcats.html" data-role="tree-link" data-pjax data-handle="bg-images">
-                <span>Podcats</span>
+            <a class="Tree-entityLink" href="bg-images--podcasts.html" data-role="tree-link" data-pjax data-handle="bg-images">
+                <span>Podcasts</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -6097,7 +6095,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6123,7 +6121,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6149,7 +6147,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6175,7 +6173,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

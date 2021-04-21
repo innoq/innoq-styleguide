@@ -9,11 +9,11 @@ $default-btn-margin: $spacer-sm;
   @extend %heading-font-bold;
   @include hover-fill($brand-interaction, $button-color, $button-color);
 
-  margin-bottom: $default-btn-margin;
-  border: 3px solid $button-border-color;
-  border-radius: 0;
-  background-color: $button-background;
   padding: $spacer-md $spacer-base;
+  border: 3px solid $button-border-color;
+  margin-bottom: $default-btn-margin;
+  background-color: $button-background;
+  border-radius: 0;
   font-size: $font-size-sm;
 
   &--cta {
@@ -52,9 +52,9 @@ $default-btn-margin: $spacer-sm;
   }
 
   &--light {
+    padding: $spacer-xs 0;
     border-width: 0 0 3px;
     background-color: transparent;
-    padding: $spacer-xs 0;
   }
 
   &--small {
@@ -74,17 +74,18 @@ $default-btn-margin: $spacer-sm;
 
   &--inverted {
     @include hover-fill($brand-interaction, $button-inverted-hover-color, $button-inverted-hover-color);
+
     border-color: $button-inverted-border-color;
     color: $button-inverted-color;
   }
 
   &--icon {
+    padding: $spacer-xxs;
     border: 0;
     background-color: transparent;
-    padding: $spacer-xxs;
   }
 
-  & + .btn {
+  + .btn {
     margin-left: $default-btn-margin;
   }
 }

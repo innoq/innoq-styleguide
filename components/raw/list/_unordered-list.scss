@@ -17,17 +17,17 @@ ul:not([class]),
   @extend %unsorted-list;
   @extend %body-font-regular;
 
-  & > li {
+  > li {
     padding-left: $list-indent;
 
     &::before {
       position: absolute;
       top: 0.4rem; //magic number
       left: 0;
-      border-radius: 50%;
-      background: $bullet-list-color-primary;
       width: $bullet-size;
       height: $bullet-size;
+      background: $bullet-list-color-primary;
+      border-radius: 50%;
       content: "";
 
       @media screen and (min-width: $grid-breakpoint-md) {
@@ -41,6 +41,7 @@ ul:not([class]),
     // to blend into the outer list.
     margin-top: $spacer-xs;
 
+    /* stylelint-disable-next-line selector-max-compound-selectors */
     &,
     li > ul > li {
       margin-bottom: 0;
@@ -58,7 +59,7 @@ ul:not([class]),
 .bold-list {
   @extend %heading-font-bold;
 
-  & > li {
+  > li {
     &::before {
       top: 0.59rem; //magic number
 

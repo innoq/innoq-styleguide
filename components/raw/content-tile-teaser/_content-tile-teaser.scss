@@ -6,11 +6,11 @@ $content-teaser-height-md: ms(36);
   @extend %hover-glow;
 
   display: flex;
+  width: 100%;
+  min-height: $content-teaser-height-sm;
   flex-direction: column;
   justify-content: space-between;
   padding: $spacer-sm;
-  width: 100%;
-  min-height: $content-teaser-height-sm;
 }
 
 .content-teaser__body {
@@ -31,6 +31,7 @@ $content-teaser-height-md: ms(36);
 
 .content-teaser__caption {
   @extend %teaser-caption;
+
   margin-bottom: $spacer-xs;
 }
 

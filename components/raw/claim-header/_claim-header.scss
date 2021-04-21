@@ -1,20 +1,20 @@
 .claim-header {
   display: flex;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
   background-color: $claim-header-bg-color;
-  min-height: 100vh;
 
   &__body {
-    padding: 0 $spacer-sm;
     max-width: $default-page-layout-content-width-md;
+    padding: 0 $spacer-sm;
     text-align: center;
   }
 
   &__type {
-    text-transform: uppercase;
     color: $claim-header-type-color;
     font-size: $font-size-base;
+    text-transform: uppercase;
   }
 
   &__title {
@@ -24,11 +24,11 @@
   }
 
   &__divider {
-    margin-top: $spacer-base;
-    border: 0;
-    background-color: $claim-header-divider-color;
     width: ms(25);
     height: 4px;
+    border: 0;
+    margin-top: $spacer-base;
+    background-color: $claim-header-divider-color;
   }
 }
 

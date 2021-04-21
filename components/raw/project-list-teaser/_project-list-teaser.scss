@@ -20,9 +20,9 @@
   @extend %h1;
 
   display: inline-block;
+  padding: 0 $spacer-sm $spacer-xs;
   margin: 0;
   background-color: $project-index-text-color;
-  padding: 0 $spacer-sm $spacer-xs;
   color: $project-index-text-inverted-color;
 }
 
@@ -53,11 +53,11 @@
 
 .client-projects__project {
   display: grid;
+  padding: $spacer-sm 0;
   border-top: 1px solid $project-index-text-color;
   border-bottom: 1px solid $project-index-text-color;
-  padding: $spacer-sm 0;
-  grid-template-columns: 1fr;
   grid-auto-rows: auto;
+  grid-template-columns: 1fr;
 
   &:last-child {
     border-bottom-width: 2px;
@@ -70,10 +70,10 @@
 
 .client-projects__project-title {
   margin-bottom: $spacer-sm;
-  text-transform: none;
   color: $project-index-title-color;
   font-size: $font-size-sm;
   hyphens: auto;
+  text-transform: none;
 }
 
 .client-projects__intro-text {
@@ -112,8 +112,8 @@
     }
 
     .client-projects__project {
-      grid-template-columns: 1fr 50% 1fr;
       grid-column-gap: $spacer-md;
+      grid-template-columns: 1fr 50% 1fr;
     }
 
     .client-projects__intro {
@@ -123,8 +123,8 @@
     .client-projects__show-more-btn,
     .client-projects__goto-btn {
       align-self: end;
-      justify-self: end;
       grid-column: 3 / span 1;
+      justify-self: end;
     }
 
     .client-projects__text {

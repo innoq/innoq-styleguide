@@ -5,17 +5,17 @@ $topic-teaser-height: ms(36);
   @extend %hover-glow;
 
   display: flex;
+  min-height: $topic-teaser-height;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: $spacer-base;
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: cover;
   padding: $spacer-md;
-  min-height: $topic-teaser-height;
-  text-align: center;
+  margin-bottom: $spacer-base;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: $topic-teaser-body-color;
+  text-align: center;
 }
 
 .topic-teaser__body {
@@ -41,8 +41,8 @@ $topic-teaser-height: ms(36);
 .topic-teaser__caption {
   @extend %teaser-caption;
 
-  margin-bottom: $spacer-lg;
   height: $spacer-md;
+  margin-bottom: $spacer-lg;
 }
 
 .topic-teaser__cta {

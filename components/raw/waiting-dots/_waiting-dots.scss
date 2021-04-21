@@ -1,21 +1,21 @@
 .loader {
   position: relative;
-  margin: 100px auto;
   width: 80px;
+  margin: 100px auto;
 }
 
 .duo {
   position: absolute;
-  background: none;
   width: 50px;
   height: 20px;
+  background: none;
 }
 
 .duo,
 .dot {
   animation-duration: 0.8s;
-  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .duo1 {
@@ -23,16 +23,16 @@
   animation-name: spin;
 
   .dot-a {
-    animation-name: onOff;
     animation-direction: reverse;
+    animation-name: onOff;
     opacity: 0;
   }
 }
 
 .duo2 {
   left: 30px;
-  animation-name: spin;
   animation-direction: reverse;
+  animation-name: spin;
 
   .dot-b {
     animation-name: onOff;
@@ -41,10 +41,10 @@
 
 .dot {
   position: absolute;
-  border-radius: 10px;
-  background: $dot-color;
   width: 20px;
   height: 20px;
+  background: $dot-color;
+  border-radius: 10px;
 }
 
 .dot-a {

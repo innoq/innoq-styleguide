@@ -182,8 +182,8 @@
     <code class="Code Code--lang-html hljs">
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header standard-header--inverted&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-      url(../../assets/bg-images/edition-02/edition02-human-02.jpg);
+    background-image: url(../../assets/bg-images/general/visual-trainings-01.jpg);
+    background-color: var(--overlay-standard-color);
   &quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__type&quot;</span>&gt;</span>Content Type<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__title&quot;</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
@@ -276,37 +276,38 @@
   <span class="hljs-attribute">align-items</span>: center;
   <span class="hljs-attribute">justify-content</span>: flex-end;
   <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$spacer-xl</span>;
+  <span class="hljs-attribute">background</span>-blend-mode: multiply;
 
   &amp;__title {
     <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-sm</span>;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-md</span>;
     <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$default-page-layout-content-width-md</span>;
-    <span class="hljs-attribute">text-align</span>: center;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$heading-line-height-sm</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-md</span>;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-sm</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-title-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xl</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$heading-line-height-sm</span>;
+    <span class="hljs-attribute">text-align</span>: center;
   }
 
   &amp;__subtitle {
     <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
     <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$default-page-layout-content-width-md</span>;
-    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-subtitle-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
+    <span class="hljs-attribute">text-align</span>: center;
   }
 
   &amp;__type {
     <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
     <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-md</span>;
     <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$default-page-layout-content-width-md</span>;
-    <span class="hljs-attribute">text-align</span>: center;
-    <span class="hljs-attribute">text-transform</span>: uppercase;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-md</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-type-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">text-transform</span>: uppercase;
 
     &amp;--underlined {
       <span class="hljs-attribute">border-bottom</span>: <span class="hljs-variable">$standard-header-type-underline-color</span> solid <span class="hljs-number">3px</span>;
@@ -314,13 +315,13 @@
   }
 
   &amp;__intro {
-    <span class="hljs-attribute">display</span>: flex;
     <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">display</span>: flex;
     <span class="hljs-attribute">flex-direction</span>: column;
     <span class="hljs-attribute">align-items</span>: center;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-sm</span>;
     <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-lg</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$standard-header-intro-bg</span>;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-sm</span>;
 
     <span class="hljs-selector-class">.content-separator</span> {
       <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
@@ -328,27 +329,27 @@
   }
 
   &amp;__intro-headline {
-    <span class="hljs-attribute">text-align</span>: center;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-intro-text-color</span>;
+    <span class="hljs-attribute">text-align</span>: center;
   }
 
   &amp;__intro__text {
     <span class="hljs-keyword">@extend</span> %body-font-italic;
 
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-sm</span>;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-intro-text-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
   }
 
   &amp;__intro__label {
     <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
-    <span class="hljs-attribute">display</span>: block;
     <span class="hljs-attribute">position</span>: relative;
     <span class="hljs-attribute">top</span>: -<span class="hljs-number">2rem</span>; <span class="hljs-comment">// magic number</span>
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$standard-header-intro-label-bg</span>;
+    <span class="hljs-attribute">display</span>: block;
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xxs</span> <span class="hljs-variable">$spacer-xs</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$standard-header-intro-label-bg</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-intro-label-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xs</span>;
   }
@@ -373,11 +374,11 @@
 
 <span class="hljs-comment">// Podcast</span>
 <span class="hljs-selector-class">.podcast-header--avatar--overlay</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$standard-header-podcast-overlay-color</span>;
-  <span class="hljs-attribute">background-repeat</span>: no-repeat;
-  <span class="hljs-attribute">background-position</span>: top right, top left;
-  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">0%</span>;
   <span class="hljs-attribute">background</span>-blend-mode: multiply;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$standard-header-podcast-overlay-color</span>;
+  <span class="hljs-attribute">background-position</span>: top right, top left;
+  <span class="hljs-attribute">background-repeat</span>: no-repeat;
+  <span class="hljs-attribute">background-size</span>: <span class="hljs-number">0%</span>;
 
   <span class="hljs-selector-class">.standard-header__subtitle</span> {
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$standard-header-podcast-subtitle-color</span>;
@@ -424,10 +425,10 @@
   }
 
   <span class="hljs-selector-class">.standard-header__intro</span> {
-    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-xl</span>;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-lg</span>;
     <span class="hljs-attribute">width</span>: <span class="hljs-variable">$grid-page-layout-content-width-md</span>;
     <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$grid-page-layout-content-width-xl</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-lg</span>;
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-xl</span>;
   }
 
   <span class="hljs-selector-class">.standard-header__intro__text</span> {
@@ -475,7 +476,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">4.2 KB</span>
+                    <span class="Meta-value">4.3 KB</span>
                 </li>
             </ul>
         </div>
@@ -490,12 +491,9 @@
                             <code class="Code Code--lang-JSX FileBrowser-code hljs">
                                 <pre><span class="hljs-keyword">import</span> { context } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;../../../env&#x27;</span>
 
-<span class="hljs-keyword">const</span> urlBackground = context.uri(<span class="hljs-string">&#x27;assets/bg-images/edition-02/edition02-human-02.jpg&#x27;</span>)
-<span class="hljs-keyword">const</span> urlRight = context.uri(<span class="hljs-string">&#x27;assets/example-content/heribert-rechts.png&#x27;</span>)
-<span class="hljs-keyword">const</span> urlLeft = context.uri(<span class="hljs-string">&#x27;assets/example-content/heribert-links.png&#x27;</span>)
+<span class="hljs-keyword">const</span> urlBackground = context.uri(<span class="hljs-string">&#x27;assets/bg-images/general/visual-trainings-01.jpg&#x27;</span>)
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> cssBackground = <span class="hljs-string">`background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url(<span class="hljs-subst">${urlBackground}</span>);`</span>
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> cssBoth = <span class="hljs-string">`background-image: url(<span class="hljs-subst">${urlRight}</span>), url(<span class="hljs-subst">${urlLeft}</span>);`</span>
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> cssBackground = <span class="hljs-string">`background-image: url(<span class="hljs-subst">${urlBackground}</span>); background-color: var(--overlay-standard-color);`</span>
 </pre>
                             </code>
                             
@@ -512,7 +510,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">484 Bytes</span>
+                    <span class="Meta-value">248 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -4935,7 +4933,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -5058,7 +5056,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-21T09:09:15.471Z">
+                            <time datetime="2021-04-21T20:31:30.773Z">
                                 4/21/2021
                             </time>
                         
@@ -6125,7 +6123,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6151,7 +6149,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6177,7 +6175,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6203,7 +6201,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6220,8 +6218,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="bg-images--podcats.html" data-role="tree-link" data-pjax data-handle="bg-images">
-                <span>Podcats</span>
+            <a class="Tree-entityLink" href="bg-images--podcasts.html" data-role="tree-link" data-pjax data-handle="bg-images">
+                <span>Podcasts</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -6229,7 +6227,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6255,7 +6253,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6281,7 +6279,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6307,7 +6305,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

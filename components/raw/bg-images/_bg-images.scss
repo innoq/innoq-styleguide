@@ -1,11 +1,11 @@
 .bg-image-demo {
   display: flex;
+  height: 70vh;
   align-items: center;
   justify-content: center;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 70vh;
 
   h3 {
     color: $brand-white;

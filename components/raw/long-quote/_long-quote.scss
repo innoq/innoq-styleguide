@@ -1,23 +1,22 @@
-// sass-lint:disable no-vendor-prefixes
-
 long-quote > blockquote,
 %longquote,
 .longquote {
-  margin-bottom: $spacer-md;
   padding: 2px 0;
+  margin-bottom: $spacer-md;
   text-align: center;
 
   > p {
     @extend %heading-font-heavy;
+
     display: inline;
-    box-shadow: $spacer-xxs 0 0 $brand-primary, -$spacer-xxs 0 0 $brand-primary;
-    background-color: $quote-bg-color;
     padding: $spacer-xxs;
+    background-color: $quote-bg-color;
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    box-shadow: $spacer-xxs 0 0 $brand-primary, -$spacer-xxs 0 0 $brand-primary;
     color: $quote-color;
     font-size: $font-size-sm;
-
-    box-decoration-break: clone;
-    -webkit-box-decoration-break: clone;
 
     &:lang(de) {
       &::before {
@@ -45,8 +44,8 @@ long-quote > blockquote,
 .longquote__zigzag {
   @extend %zigzag;
 
-  margin: 0 auto $spacer-base;
   width: 80%;
+  margin: 0 auto $spacer-base;
 }
 
 %longquote__author,
@@ -55,8 +54,8 @@ long-quote > blockquote,
 
   display: block;
   margin-top: $spacer-xs;
-  text-transform: uppercase;
   font-size: $font-size-base;
+  text-transform: uppercase;
 }
 
 %longquote__role,

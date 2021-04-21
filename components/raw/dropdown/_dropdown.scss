@@ -9,12 +9,13 @@
 }
 
 .dropdown__list-wrapper {
-  display: none;
   position: absolute;
+  display: none;
 }
 
 .dropdown__list {
   @extend %list-unstyled;
+
   margin-bottom: 0;
 }
 
@@ -24,10 +25,9 @@
 }
 
 .dropdown__checkbox:focus + .dropdown__toggle {
-  outline: none;
   color: $dropdown-link-hover-color;
+  outline: none;
 }
-
 
 .dropdown__checkbox:checked + .dropdown__toggle > .dropdown__toggle__expanded-text {
   display: inline;

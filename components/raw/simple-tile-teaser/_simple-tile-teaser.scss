@@ -6,13 +6,13 @@
   padding-bottom: $spacer-base;
 
   &__body {
+    min-height: 20vh;
     flex-basis: 100%;
     flex-grow: 1;
     align-content: center;
+    padding: $spacer-sm $spacer-sm $spacer-md;
     margin-bottom: $spacer-sm;
     background-color: $simple-teaser-bg;
-    padding: $spacer-sm $spacer-sm $spacer-md;
-    min-height: 20vh;
     text-align: center;
   }
 
@@ -22,6 +22,7 @@
 
   &__link {
     @extend %link-unstyled;
+
     transition: standard-transition(color);
 
     &,

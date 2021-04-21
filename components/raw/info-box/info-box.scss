@@ -18,6 +18,7 @@ info-box {
 
     &[open="true"] {
       .infobox__teaser__chevron {
+        /* stylelint-disable-next-line max-nesting-depth */
         &::before {
           content: $icon-chevron-up;
         }
@@ -53,7 +54,6 @@ info-box {
 
   display: inline-block;
   margin: 0;
-
   font-size: $font-size-xs;
 }
 
@@ -77,16 +77,17 @@ info-box {
 }
 
 .infobox__content {
-  transition: height 1s;
-  background-color: $infobox-content-background-color;
   overflow: hidden;
+  background-color: $infobox-content-background-color;
+  transition: height 1s;
 }
 
 .infobox__content__box {
   padding: $spacer-sm $spacer-sm $spacer-md;
 
-  & p {
+  p {
     @extend %heading-font-regular;
+
     font-size: $font-size-base;
   }
 }

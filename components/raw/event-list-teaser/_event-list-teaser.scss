@@ -37,10 +37,10 @@ $event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
 
 .list-teaser__content {
   display: flex;
+  width: 100%;
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  width: 100%;
 }
 
 .list-teaser-event__headline {

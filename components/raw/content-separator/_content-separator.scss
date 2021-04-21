@@ -8,10 +8,10 @@ $border-position: $font-size-base / 2;
 // Component definition
 .content-separator {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
   white-space: nowrap;
 }
 
@@ -20,20 +20,20 @@ $border-position: $font-size-base / 2;
 .content-separator__date,
 .content-separator__duration {
   display: inline-block;
-  background-color: $box-shadow-color-light;
   padding-right: $spacer-xs;
   padding-left: $spacer-xs;
-  line-height: 1;
+  background-color: $box-shadow-color-light;
   color: $content-seperator-text-color;
+  line-height: 1;
 }
 
 .content-separator__separator {
-  transform: rotate(90deg);
-  margin: $spacer-sm 0;
-  border: 0;
-  background-color: $content-seperator-text-color;
   width: $spacer-sm;
   height: 2px;
+  border: 0;
+  margin: $spacer-sm 0;
+  background-color: $content-seperator-text-color;
+  transform: rotate(90deg);
 }
 
 // Inverted Version
@@ -52,6 +52,8 @@ $border-position: $font-size-base / 2;
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   .content-separator {
+    height: 1px;
+    min-height: $font-size-base;
     flex-direction: row;
     align-content: center;
     // The border in the middle of the component is realized with
@@ -61,8 +63,6 @@ $border-position: $font-size-base / 2;
     // resulting in a single line.
     box-shadow: $box-shadow-color-light 0 $border-position 0 0 inset,
       $box-shadow-color-dark 0 calc(#{$border-position} + 1px) 0 0 inset;
-    height: 1px;
-    min-height: $font-size-base;
   }
 
   .content-seperator--inverted {
@@ -76,7 +76,7 @@ $border-position: $font-size-base / 2;
   }
 
   .content-separator__separator {
-    transform: rotate(180deg);
     margin: 0;
+    transform: rotate(180deg);
   }
 }

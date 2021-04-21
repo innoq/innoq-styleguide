@@ -11,21 +11,21 @@ $edition-font-size: $font-size-base;
 }
 
 .edition-separator {
-  transform: rotate(90deg);
-  margin-bottom: $spacer-lg;
-  border: 0;
-  background-color: $brand-gray;
   width: $spacer-xl;
   height: 1px;
+  border: 0;
+  margin-bottom: $spacer-lg;
+  background-color: $brand-gray;
+  transform: rotate(90deg);
 }
 
 .edition {
   @extend %heading-font-bold;
 
   margin-bottom: $spacer-xs;
-  text-transform: uppercase;
   color: $brand-gray;
   font-size: $font-size-md;
+  text-transform: uppercase;
 }
 
 .edition-date {
@@ -46,12 +46,12 @@ $edition-font-size: $font-size-base;
 }
 
 .edition-date-separator {
-  transform: rotate(90deg);
-  margin: $spacer-sm 0;
-  border: 0;
-  background-color: $brand-red;
   min-width: $spacer-base;
   height: 5px;
+  border: 0;
+  margin: $spacer-sm 0;
+  background-color: $brand-red;
+  transform: rotate(90deg);
 
   &--edition-2 {
     background-color: $brand-apricot;
@@ -69,8 +69,8 @@ $edition-font-size: $font-size-base;
   }
 
   .edition-separator {
-    margin-bottom: $spacer-xl;
     width: ms(20);
+    margin-bottom: $spacer-xl;
   }
 
   .edition-date {
@@ -79,8 +79,8 @@ $edition-font-size: $font-size-base;
   }
 
   .edition-date-separator {
-    transform: rotate(0deg);
-    margin: 0 $spacer-xxs;
     height: 8px;
+    margin: 0 $spacer-xxs;
+    transform: rotate(0deg);
   }
 }

@@ -6,10 +6,10 @@
 }
 
 .list-teaser__body {
-  margin-bottom: 0;
   padding: $spacer-sm $spacer-md;
+  margin-bottom: 0;
 
-  & .label {
+  .label {
     &.talk,
     &.slides,
     &.training {
@@ -44,8 +44,8 @@
   @extend %heading-font-regular;
 
   margin-bottom: $spacer-xs;
-  line-height: $paragraph-line-height-sm;
   font-size: $font-size-sm;
+  line-height: $paragraph-line-height-sm;
 
   .icon-svg {
     margin-left: $spacer-xxs;
@@ -61,7 +61,7 @@
   }
 
   .list-teaser__body {
-    & .label {
+    .label {
       &.talk,
       &.slides,
       &.training {

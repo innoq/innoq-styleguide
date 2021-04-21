@@ -1,6 +1,6 @@
 .download-section-feature__image {
-  margin-bottom: $spacer-md;
   width: 100%;
+  margin-bottom: $spacer-md;
 }
 
 .download-section-feature__title {
@@ -20,18 +20,18 @@
 
 .resource-list-item {
   display: flex;
+  width: 100%;
   flex-direction: column;
   margin-bottom: $spacer-lg;
-  width: 100%;
 }
 
 .resource-list-item-wrapper {
   display: flex;
+  height: 100%;
   flex-direction: column;
   justify-content: space-between;
-  background-color: $brand-secondary;
   padding: $spacer-md $spacer-sm;
-  height: 100%;
+  background-color: $brand-secondary;
   color: $brand-text-light;
 }
 
@@ -41,22 +41,23 @@
 
 .resource-list-item__image {
   z-index: 2;
+  width: 50%;
+  border: 3px solid $brand-white;
   margin: 0 auto $spacer-sm;
   margin-bottom: -$spacer-xxl;
-  border: 3px solid $brand-white;
-  width: 50%;
 }
 
 .resource-list-item__author {
   @extend %heading-font-regular;
 
-  margin-bottom: $spacer-lg;
   padding-left: 0;
+  margin-bottom: $spacer-lg;
   color: $brand-primary;
   font-size: $font-size-base;
 
   > li {
     @extend %list-unstyled;
+
     margin-bottom: $spacer-xxs;
 
     > a {
@@ -65,6 +66,7 @@
       &:focus,
       &:hover {
         @extend %heading-font-bold;
+
         background-color: $brand-text-light;
       }
     }
@@ -93,7 +95,7 @@
 }
 
 //Breakpoints
-@media screen and (min-width: $grid-breakpoint-md)  {
+@media screen and (min-width: $grid-breakpoint-md) {
   .resource-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -102,10 +104,10 @@
   }
 
   .resource-list-item {
+    min-width: ms(32);
+    max-width: 30%;
     flex-grow: 1;
     margin-right: $spacer-xs;
     margin-left: $spacer-xs;
-    min-width: ms(32);
-    max-width: 30%;
   }
 }

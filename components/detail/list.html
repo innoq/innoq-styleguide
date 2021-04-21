@@ -482,8 +482,6 @@
       <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color</span>;
       <span class="hljs-attribute">content</span>: <span class="hljs-variable">$icon-check</span>;
-
-      <span class="hljs-comment">// sass-lint:disable no-vendor-prefixes</span>
       -webkit-text-stroke-<span class="hljs-attribute">width</span>: <span class="hljs-number">2px</span>;
     }
   }
@@ -504,7 +502,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">406 Bytes</span>
+                    <span class="Meta-value">359 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -609,19 +607,19 @@
   <span class="hljs-keyword">@include</span> list-unstyled;
 
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-md</span>;
-  <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
   <span class="hljs-attribute">counter-reset</span>: number;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
 
   <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
   }
 
-  &amp; &gt; <span class="hljs-selector-tag">li</span> {
+  &gt; <span class="hljs-selector-tag">li</span> {
     <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
     <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$number-space</span>;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
 
     &amp;<span class="hljs-selector-pseudo">::before</span> {
       <span class="hljs-keyword">@extend</span> %heading-font-bold;
@@ -630,17 +628,17 @@
       <span class="hljs-attribute">top</span>: -<span class="hljs-number">0.2rem</span>;
       <span class="hljs-attribute">left</span>: -<span class="hljs-number">0.5rem</span>;
       <span class="hljs-attribute">width</span>: <span class="hljs-variable">$number-space</span>;
-      <span class="hljs-attribute">text-align</span>: right;
-      <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color-secondary</span>;
-      <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
       <span class="hljs-attribute">content</span>: counter(number);
       <span class="hljs-attribute">counter-increment</span>: number;
+      <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
+      <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
+      <span class="hljs-attribute">text-align</span>: right;
 
       <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
         <span class="hljs-attribute">top</span>: -<span class="hljs-number">0.23rem</span>;
-        <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
         <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
+        <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
       }
     }
   }
@@ -649,14 +647,15 @@
     <span class="hljs-comment">// Nested lists need diffrent vertical spacings</span>
     <span class="hljs-comment">// to blend into the outer list.</span>
     <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-xs</span>;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
 
     <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
-      <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
       <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
+      <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
     }
 
+    <span class="hljs-comment">/* stylelint-disable-next-line selector-max-compound-selectors */</span>
     &amp;,
     <span class="hljs-selector-tag">li</span> &gt; <span class="hljs-selector-tag">ul</span> &gt; <span class="hljs-selector-tag">li</span> {
       <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
@@ -679,7 +678,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.8 KB</span>
+                    <span class="Meta-value">1.9 KB</span>
                 </li>
             </ul>
         </div>
@@ -719,9 +718,9 @@
   <span class="hljs-selector-class">.tuple-list__entry</span> {
     <span class="hljs-attribute">display</span>: grid;
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xxs</span>;
+    grid-template-areas: <span class="hljs-string">&quot;label value&quot;</span>;
     grid-template-<span class="hljs-attribute">columns</span>: <span class="hljs-variable">$tuple-list-label-width</span> auto;
     grid-template-rows: auto;
-    grid-template-areas: <span class="hljs-string">&quot;label value&quot;</span>;
   }
 
   <span class="hljs-selector-class">.tuple-list__label</span> {
@@ -780,17 +779,17 @@
   <span class="hljs-keyword">@extend</span> %unsorted-list;
   <span class="hljs-keyword">@extend</span> %body-font-regular;
 
-  &amp; &gt; <span class="hljs-selector-tag">li</span> {
+  &gt; <span class="hljs-selector-tag">li</span> {
     <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$list-indent</span>;
 
     &amp;<span class="hljs-selector-pseudo">::before</span> {
       <span class="hljs-attribute">position</span>: absolute;
       <span class="hljs-attribute">top</span>: <span class="hljs-number">0.4rem</span>; <span class="hljs-comment">//magic number</span>
       <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-      <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
-      <span class="hljs-attribute">background</span>: <span class="hljs-variable">$bullet-list-color-primary</span>;
       <span class="hljs-attribute">width</span>: <span class="hljs-variable">$bullet-size</span>;
       <span class="hljs-attribute">height</span>: <span class="hljs-variable">$bullet-size</span>;
+      <span class="hljs-attribute">background</span>: <span class="hljs-variable">$bullet-list-color-primary</span>;
+      <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
       <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
 
       <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
@@ -804,6 +803,7 @@
     <span class="hljs-comment">// to blend into the outer list.</span>
     <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-xs</span>;
 
+    <span class="hljs-comment">/* stylelint-disable-next-line selector-max-compound-selectors */</span>
     &amp;,
     <span class="hljs-selector-tag">li</span> &gt; <span class="hljs-selector-tag">ul</span> &gt; <span class="hljs-selector-tag">li</span> {
       <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
@@ -821,7 +821,7 @@
 <span class="hljs-selector-class">.bold-list</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
-  &amp; &gt; <span class="hljs-selector-tag">li</span> {
+  &gt; <span class="hljs-selector-tag">li</span> {
     &amp;<span class="hljs-selector-pseudo">::before</span> {
       <span class="hljs-attribute">top</span>: <span class="hljs-number">0.59rem</span>; <span class="hljs-comment">//magic number</span>
 
@@ -847,7 +847,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.5 KB</span>
+                    <span class="Meta-value">1.6 KB</span>
                 </li>
             </ul>
         </div>
@@ -5270,7 +5270,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -5393,7 +5393,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-21T09:09:15.471Z">
+                            <time datetime="2021-04-21T20:31:30.773Z">
                                 4/21/2021
                             </time>
                         
@@ -6460,7 +6460,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6486,7 +6486,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6512,7 +6512,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6538,7 +6538,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6555,8 +6555,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="bg-images--podcats.html" data-role="tree-link" data-pjax data-handle="bg-images">
-                <span>Podcats</span>
+            <a class="Tree-entityLink" href="bg-images--podcasts.html" data-role="tree-link" data-pjax data-handle="bg-images">
+                <span>Podcasts</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -6564,7 +6564,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6590,7 +6590,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6616,7 +6616,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6642,7 +6642,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

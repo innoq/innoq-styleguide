@@ -2,9 +2,9 @@
   background-color: $text-header-bg-color;
 
   &__body {
-    margin: $spacer-lg auto;
-    padding: $spacer-sm;
     max-width: $default-page-layout-content-width-md;
+    padding: $spacer-sm;
+    margin: $spacer-lg auto;
     text-align: center;
   }
 
@@ -18,17 +18,17 @@
     @extend %body-font-italic;
 
     margin-bottom: $spacer-base;
-    line-height: $paragraph-line-height;
     color: $text-header-color;
     font-size: $font-size-sm;
+    line-height: $paragraph-line-height;
   }
 
   &__divider {
-    margin-top: $spacer-base;
-    border: 0;
-    background-color: $text-header-color;
     width: ms(25);
     height: 4px;
+    border: 0;
+    margin-top: $spacer-base;
+    background-color: $text-header-color;
   }
 }
 

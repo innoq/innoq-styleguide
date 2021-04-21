@@ -1,8 +1,8 @@
 .table {
-  margin-bottom: $spacer-xs;
-  border-bottom: 3px solid $table-border-color;
   width: 100%;
   max-width: 100%;
+  border-bottom: 3px solid $table-border-color;
+  margin-bottom: $spacer-xs;
   border-collapse: collapse;
   text-align: left;
 
@@ -42,9 +42,8 @@
     @extend %heading-font-regular;
 
     padding: $spacer-xs;
-    vertical-align: top;
-
     font-size: $font-size-xs;
+    vertical-align: top;
   }
 }
 
@@ -55,13 +54,13 @@
 }
 
 // Responsive tables code taken from BS4
-// sass-lint:disable no-vendor-prefixes
+
 @media screen and (max-width: $grid-breakpoint-sm) {
   .table {
     display: block;
     width: 100%;
-    overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
+    overflow-x: auto;
   }
 }

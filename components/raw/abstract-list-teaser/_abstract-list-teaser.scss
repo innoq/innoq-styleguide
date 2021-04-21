@@ -1,6 +1,4 @@
 // List Teaser with Abstract
-// sass-lint:disable nesting-depth
-
 .list-teaser-abstract {
   @extend %list-teaser;
 
@@ -63,11 +61,11 @@
   &::first-letter {
     @extend %body-font-regular;
 
-    float: left;
     padding-top: 10px;
     padding-right: 12px;
-    line-height: 0.9;
+    float: left;
     font-size: ms(14);
+    line-height: 0.9;
   }
 
   .icon-svg {
@@ -88,10 +86,10 @@
     font-size: $font-size-sm;
 
     &::first-letter {
-      float: left;
       padding-top: 10px;
       padding-right: 12px;
       padding-left: 3px;
+      float: left;
       font-size: ms(16);
     }
   }

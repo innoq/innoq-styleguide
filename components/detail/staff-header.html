@@ -307,6 +307,7 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-variable">$staff-intro-offset</span>: -(ms(<span class="hljs-number">22</span>));
+<span class="hljs-comment">/* stylelint-disable-next-line color-no-hex */</span>
 <span class="hljs-variable">$staff-header-bg-gray</span>: <span class="hljs-number">#f6f6f6</span>;
 
 <span class="hljs-selector-class">.staff-header</span> {
@@ -331,8 +332,8 @@
 }
 
 <span class="hljs-selector-class">.staff-header-quote</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$staff-header-quote-bg-color</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-lg</span> <span class="hljs-variable">$spacer-md</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$staff-header-quote-bg-color</span>;
 }
 
 <span class="hljs-selector-class">.staff-header-quote--text</span> {
@@ -343,15 +344,15 @@
 <span class="hljs-selector-class">.staff-header-quote--author</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-regular;
 
-  <span class="hljs-attribute">text-transform</span>: uppercase;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$staff-header-quote-author-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
+  <span class="hljs-attribute">text-transform</span>: uppercase;
 }
 
 <span class="hljs-selector-class">.staff-intro</span> {
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$staff-header-intro-bg-color</span>;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-md</span>;
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-md</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$staff-header-intro-bg-color</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$staff-header-intro-text-color</span>;
 }
 
@@ -359,9 +360,9 @@
   <span class="hljs-keyword">@extend</span> %heading-font-heavy;
 
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
-  <span class="hljs-attribute">text-transform</span>: uppercase;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$staff-header-intro-text-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xl</span>;
+  <span class="hljs-attribute">text-transform</span>: uppercase;
 }
 
 <span class="hljs-selector-class">.staff-intro--job-title</span> {
@@ -375,10 +376,10 @@
 <span class="hljs-selector-class">.staff-intro--text</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-regular;
 
-  <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$staff-header-intro-text-border</span>;
   <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$spacer-base</span>;
-  <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
+  <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$staff-header-intro-text-border</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
 }
 
 <span class="hljs-selector-class">.staff-intro--social</span> {
@@ -397,16 +398,16 @@
 <span class="hljs-comment">//Breakpoints</span>
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
   <span class="hljs-selector-class">.staff-header-image</span> {
-    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
     <span class="hljs-attribute">max-width</span>: <span class="hljs-number">70%</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
   }
 }
 
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg</span>) {
   <span class="hljs-selector-class">.staff-header-content</span> {
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$default-page-layout-content-width-xl</span>;
     <span class="hljs-attribute">flex-direction</span>: row;
     <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
-    <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$default-page-layout-content-width-xl</span>;
   }
 
   <span class="hljs-selector-class">.staff-header-quote</span> {
@@ -428,11 +429,11 @@
   <span class="hljs-selector-class">.staff-intro</span> {
     <span class="hljs-attribute">position</span>: relative;
     <span class="hljs-attribute">top</span>: <span class="hljs-variable">$staff-intro-offset</span>;
-    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-variable">$staff-intro-offset</span>;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-lg</span> <span class="hljs-variable">$spacer-xl</span> <span class="hljs-number">0</span>;
     <span class="hljs-attribute">width</span>: <span class="hljs-variable">$grid-page-layout-content-width</span>;
     <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$grid-page-layout-content-width-xl</span>;
     <span class="hljs-attribute">box-sizing</span>: content-box;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-lg</span> <span class="hljs-variable">$spacer-xl</span> <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-variable">$staff-intro-offset</span>;
   }
 
   <span class="hljs-selector-class">.staff-intro--job-title</span> {
@@ -464,7 +465,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.9 KB</span>
+                    <span class="Meta-value">3 KB</span>
                 </li>
             </ul>
         </div>
@@ -4885,7 +4886,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -5008,7 +5009,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-21T09:09:15.471Z">
+                            <time datetime="2021-04-21T20:31:30.773Z">
                                 4/21/2021
                             </time>
                         
@@ -6075,7 +6076,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6101,7 +6102,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6127,7 +6128,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6153,7 +6154,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6170,8 +6171,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="bg-images--podcats.html" data-role="tree-link" data-pjax data-handle="bg-images">
-                <span>Podcats</span>
+            <a class="Tree-entityLink" href="bg-images--podcasts.html" data-role="tree-link" data-pjax data-handle="bg-images">
+                <span>Podcasts</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -6179,7 +6180,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6205,7 +6206,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6231,7 +6232,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6257,7 +6258,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

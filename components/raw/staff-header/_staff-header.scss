@@ -1,4 +1,5 @@
 $staff-intro-offset: -(ms(22));
+/* stylelint-disable-next-line color-no-hex */
 $staff-header-bg-gray: #f6f6f6;
 
 .staff-header {
@@ -23,8 +24,8 @@ $staff-header-bg-gray: #f6f6f6;
 }
 
 .staff-header-quote {
-  background-color: $staff-header-quote-bg-color;
   padding: $spacer-lg $spacer-md;
+  background-color: $staff-header-quote-bg-color;
 }
 
 .staff-header-quote--text {
@@ -35,15 +36,15 @@ $staff-header-bg-gray: #f6f6f6;
 .staff-header-quote--author {
   @extend %heading-font-regular;
 
-  text-transform: uppercase;
   color: $staff-header-quote-author-color;
   font-size: $font-size-base;
+  text-transform: uppercase;
 }
 
 .staff-intro {
-  background-color: $staff-header-intro-bg-color;
-  padding: $spacer-md;
   width: 100%;
+  padding: $spacer-md;
+  background-color: $staff-header-intro-bg-color;
   color: $staff-header-intro-text-color;
 }
 
@@ -51,9 +52,9 @@ $staff-header-bg-gray: #f6f6f6;
   @extend %heading-font-heavy;
 
   margin-bottom: $spacer-xs;
-  text-transform: uppercase;
   color: $staff-header-intro-text-color;
   font-size: $font-size-xl;
+  text-transform: uppercase;
 }
 
 .staff-intro--job-title {
@@ -67,10 +68,10 @@ $staff-header-bg-gray: #f6f6f6;
 .staff-intro--text {
   @extend %heading-font-regular;
 
-  border-bottom: 1px solid $staff-header-intro-text-border;
   padding-bottom: $spacer-base;
-  line-height: $paragraph-line-height;
+  border-bottom: 1px solid $staff-header-intro-text-border;
   font-size: $font-size-sm;
+  line-height: $paragraph-line-height;
 }
 
 .staff-intro--social {
@@ -89,16 +90,16 @@ $staff-header-bg-gray: #f6f6f6;
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   .staff-header-image {
-    margin: 0 auto;
     max-width: 70%;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: $grid-breakpoint-lg) {
   .staff-header-content {
+    max-width: $default-page-layout-content-width-xl;
     flex-direction: row;
     margin: 0 auto;
-    max-width: $default-page-layout-content-width-xl;
   }
 
   .staff-header-quote {
@@ -120,11 +121,11 @@ $staff-header-bg-gray: #f6f6f6;
   .staff-intro {
     position: relative;
     top: $staff-intro-offset;
-    margin: 0 auto $staff-intro-offset;
-    padding: $spacer-lg $spacer-xl 0;
     width: $grid-page-layout-content-width;
     max-width: $grid-page-layout-content-width-xl;
     box-sizing: content-box;
+    padding: $spacer-lg $spacer-xl 0;
+    margin: 0 auto $staff-intro-offset;
   }
 
   .staff-intro--job-title {

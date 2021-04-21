@@ -272,18 +272,19 @@
 <span class="hljs-selector-class">.topic-header</span> {
   <span class="hljs-keyword">@extend</span> %page-header;
 
-  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$topic-header-outer-padding</span> <span class="hljs-variable">$topic-header-outer-padding-small</span>;
   <span class="hljs-attribute">min-height</span>: <span class="hljs-variable">$fullscreen-like-height</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$topic-header-outer-padding</span> <span class="hljs-variable">$topic-header-outer-padding-small</span>;
+  <span class="hljs-attribute">background</span>-blend-mode: multiply;
 
   &amp;__body {
     <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$default-page-layout-content-width-md</span>;
     <span class="hljs-attribute">flex-direction</span>: column;
     <span class="hljs-attribute">align-items</span>: center;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$topic-header-inner-padding-small</span>;
     <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$topic-header-intro-bg-color</span>;
     <span class="hljs-attribute">background-size</span>: cover;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$topic-header-inner-padding-small</span>;
-    <span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$default-page-layout-content-width-md</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$topic-header-intro-text-color</span>;
   }
 
@@ -294,21 +295,21 @@
   &amp;__title {
     <span class="hljs-keyword">@extend</span> %punch-in;
 
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
     <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$spacer-base</span>;
-    <span class="hljs-attribute">text-align</span>: center;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$heading-line-height-sm</span>;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xxl</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$heading-line-height-sm</span>;
+    <span class="hljs-attribute">text-align</span>: center;
   }
 
   &amp;__type {
     <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
-    <span class="hljs-attribute">text-align</span>: center;
-    <span class="hljs-attribute">text-transform</span>: uppercase;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$topic-header-intro-text-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
+    <span class="hljs-attribute">text-align</span>: center;
+    <span class="hljs-attribute">text-transform</span>: uppercase;
   }
 
   &amp;__tag {
@@ -318,13 +319,13 @@
   &amp;__text {
     <span class="hljs-keyword">@extend</span> %body-font-italic;
 
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-base</span>;
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>; <span class="hljs-comment">// This fixes IE11 Flexbox rendering issues.</span>
     <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$topic-header-inner-padding-small</span>;
     <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$topic-header-inner-padding-small</span>;
-    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>; <span class="hljs-comment">// This fixes IE11 Flexbox rendering issues.</span>
-    <span class="hljs-attribute">text-align</span>: center;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-base</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
+    <span class="hljs-attribute">text-align</span>: center;
   }
 }
 
@@ -355,7 +356,6 @@
 }
 
 <span class="hljs-comment">// This fixes IE11 Flexbox rendering issues.</span>
-<span class="hljs-comment">// sass-lint:disable no-vendor-prefixes</span>
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">-ms-high-contrast</span>: active), screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">-ms-high-contrast</span>: none) {
   <span class="hljs-selector-class">.topic-header__body</span> {
     <span class="hljs-attribute">max-width</span>: <span class="hljs-number">100%</span>;
@@ -4798,7 +4798,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4921,7 +4921,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-21T09:09:15.471Z">
+                            <time datetime="2021-04-21T20:31:30.773Z">
                                 4/21/2021
                             </time>
                         
@@ -5988,7 +5988,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6014,7 +6014,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6040,7 +6040,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6066,7 +6066,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6083,8 +6083,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="bg-images--podcats.html" data-role="tree-link" data-pjax data-handle="bg-images">
-                <span>Podcats</span>
+            <a class="Tree-entityLink" href="bg-images--podcasts.html" data-role="tree-link" data-pjax data-handle="bg-images">
+                <span>Podcasts</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -6092,7 +6092,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6118,7 +6118,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6144,7 +6144,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6170,7 +6170,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

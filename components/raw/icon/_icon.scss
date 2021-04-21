@@ -1,134 +1,132 @@
-// sass-lint:disable no-vendor-prefixes, pseudo-element, empty-line-between-blocks
-
 // icon font
 %icon,
 .icon {
   position: relative;
   top: 2px;
-  text-transform: none;
-  line-height: 1;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: "icons";
   font-size: 0.8em;
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  speak: none;
-  -webkit-text-stroke-width: 1px;
-
   // Better Font Rendering
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  -webkit-text-stroke-width: 1px;
+  text-transform: none;
 }
 
 .icon-search {
-  &:before {
+  &::before {
     content: $icon-search;
   }
 }
 
 .icon-arrow-down {
-  &:before {
+  &::before {
     content: $icon-arrow-down;
   }
 }
 
 .icon-chevron-down {
-  &:before {
+  &::before {
     content: $icon-chevron-down;
   }
 }
 
 .icon-chevron-up {
-  &:before {
+  &::before {
     content: $icon-chevron-up;
   }
 }
 
 .icon-chevron-right {
-  &:before {
+  &::before {
     content: $icon-chevron-right;
   }
 }
 
 .icon-chevron-left {
-  &:before {
+  &::before {
     content: $icon-chevron-left;
   }
 }
 .icon-return {
-  &:before {
+  &::before {
     content: $icon-return;
   }
 }
 
 .icon-check {
-  &:before {
+  &::before {
     content: $icon-check;
   }
 }
 
 .icon-close {
-  &:before {
+  &::before {
     content: $icon-close;
   }
 }
 
 .icon-download {
-  &:before {
+  &::before {
     content: $icon-download;
   }
 }
 
 .icon-bubble-conversation-4 {
-  &:before {
+  &::before {
     content: $icon-bubble-conversation-4;
   }
 }
 
 .icon-info {
-  &:before {
+  &::before {
     content: $icon-info;
   }
 }
 
 .icon-phone {
-  &:before {
+  &::before {
     content: $icon-phone;
   }
 }
 
 .icon-location {
-  &:before {
+  &::before {
     content: $icon-location;
   }
 }
 
 .icon-chevron-2-down {
-  &:before {
+  &::before {
     content: $icon-chevron-2-down;
   }
 }
 
 .icon-chevron-2-left {
-  &:before {
+  &::before {
     content: $icon-chevron-2-left;
   }
 }
 
 .icon-chevron-2-right {
-  &:before {
+  &::before {
     content: $icon-chevron-2-right;
   }
 }
 
 .icon-chevron-2-up {
-  &:before {
+  &::before {
     content: $icon-chevron-2-up;
   }
 }
 
 .icon-location-filled {
-  &:before {
+  &::before {
     content: $icon-location-filled;
   }
 }
@@ -137,12 +135,12 @@
 // TODO: Clean up svg icon classes after removing icon font
 .icon-svg {
   display: inline-flex;
-  align-self: center;
-  background: $brand-gray;
   width: $spacer-md;
   height: $spacer-md;
-  mask-size: contain;
+  align-self: center;
+  background: $brand-gray;
   mask-repeat: no-repeat;
+  mask-size: contain;
 }
 
 //Sizes

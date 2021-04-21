@@ -16,8 +16,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $image-divider-bg-color;
   padding: $spacer-md;
+  background-color: $image-divider-bg-color;
 }
 
 .image-divider-right-content-textbox__text {
@@ -31,8 +31,8 @@
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   .image-divider-right-image {
-    margin: 0 auto;
     max-width: 70%;
+    margin: 0 auto;
   }
 
   .image-divider-right-textbox {
@@ -42,15 +42,15 @@
 
 @media screen and (min-width: $grid-breakpoint-lg) {
   .image-divider-right-content {
+    max-width: $default-page-layout-content-width-xl;
     flex-direction: row;
     margin: 0 auto;
-    max-width: $default-page-layout-content-width-xl;
   }
 
   .image-divider-right-textbox {
+    width: 100%;
     flex-grow: 1;
     padding: 0 $spacer-xxl;
-    width: 100%;
   }
 
   .image-divider-right-image {

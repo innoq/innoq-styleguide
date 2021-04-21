@@ -1,15 +1,15 @@
 .newsletter-optin {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: $spacer-lg;
+  background-blend-mode: multiply;
   background-color: $brand-gray-75;
   background-image: asset-url("bg-images/edition-02/edition02-data-05.jpg");
   background-size: cover;
-  padding: $spacer-lg;
-  overflow: hidden;
   color: $newsletter-optin-color;
-  background-blend-mode: multiply;
 
   .form-label {
     color: $newsletter-optin-color;
@@ -20,16 +20,16 @@
   @extend %h1;
 
   margin-bottom: $spacer-sm;
-  text-align: center;
   color: $newsletter-optin-color;
+  text-align: center;
 }
 
 .newsletter-optin__subtitle {
   @extend %h5;
 
   margin-bottom: $spacer-lg;
-  text-align: center;
   color: $newsletter-optin-color;
+  text-align: center;
 }
 
 .newsletter-optin__form {

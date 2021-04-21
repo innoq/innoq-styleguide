@@ -313,26 +313,25 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-comment">// sass-lint:disable no-vendor-prefixes</span>
-
-long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selector-tag">blockquote</span>,
+                                <pre>long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selector-tag">blockquote</span>,
 %longquote,
 <span class="hljs-selector-class">.longquote</span> {
-  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-md</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">2px</span> <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-md</span>;
   <span class="hljs-attribute">text-align</span>: center;
 
   &gt; <span class="hljs-selector-tag">p</span> {
     <span class="hljs-keyword">@extend</span> %heading-font-heavy;
+
     <span class="hljs-attribute">display</span>: inline;
-    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$spacer-xxs</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-variable">$brand-primary</span>, -<span class="hljs-variable">$spacer-xxs</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-variable">$brand-primary</span>;
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$quote-bg-color</span>;
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xxs</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$quote-bg-color</span>;
+    <span class="hljs-comment">/* stylelint-disable-next-line property-no-vendor-prefix */</span>
+    -webkit-<span class="hljs-attribute">box-decoration-break</span>: clone;
+    <span class="hljs-attribute">box-decoration-break</span>: clone;
+    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$spacer-xxs</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-variable">$brand-primary</span>, -<span class="hljs-variable">$spacer-xxs</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-variable">$brand-primary</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$quote-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
-
-    <span class="hljs-attribute">box-decoration-break</span>: clone;
-    -webkit-<span class="hljs-attribute">box-decoration-break</span>: clone;
 
     &amp;<span class="hljs-selector-pseudo">:lang</span>(de) {
       &amp;<span class="hljs-selector-pseudo">::before</span> {
@@ -360,8 +359,8 @@ long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selecto
 <span class="hljs-selector-class">.longquote__zigzag</span> {
   <span class="hljs-keyword">@extend</span> %zigzag;
 
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-variable">$spacer-base</span>;
   <span class="hljs-attribute">width</span>: <span class="hljs-number">80%</span>;
+  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-variable">$spacer-base</span>;
 }
 
 %longquote__author,
@@ -370,8 +369,8 @@ long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selecto
 
   <span class="hljs-attribute">display</span>: block;
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-xs</span>;
-  <span class="hljs-attribute">text-transform</span>: uppercase;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
+  <span class="hljs-attribute">text-transform</span>: uppercase;
 }
 
 %longquote__role,
@@ -4832,7 +4831,7 @@ long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selecto
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -4955,7 +4954,7 @@ long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selecto
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-21T09:09:15.471Z">
+                            <time datetime="2021-04-21T20:31:30.773Z">
                                 4/21/2021
                             </time>
                         
@@ -6022,7 +6021,7 @@ long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selecto
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6048,7 +6047,7 @@ long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selecto
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6074,7 +6073,7 @@ long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selecto
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6100,7 +6099,7 @@ long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selecto
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6117,8 +6116,8 @@ long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selecto
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="bg-images--podcats.html" data-role="tree-link" data-pjax data-handle="bg-images">
-                <span>Podcats</span>
+            <a class="Tree-entityLink" href="bg-images--podcasts.html" data-role="tree-link" data-pjax data-handle="bg-images">
+                <span>Podcasts</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -6126,7 +6125,7 @@ long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selecto
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6152,7 +6151,7 @@ long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selecto
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6178,7 +6177,7 @@ long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selecto
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6204,7 +6203,7 @@ long-<span class="hljs-selector-tag">quote</span> &gt; <span class="hljs-selecto
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

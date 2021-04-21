@@ -465,8 +465,8 @@
   <span class="hljs-keyword">@extend</span> %link-unstyled;
   <span class="hljs-keyword">@extend</span> %heading-font-regular;
 
-  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$footnote-link-color</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
 }
 
 <span class="hljs-selector-class">.footnotes__list</span> {
@@ -476,12 +476,11 @@
 
   <span class="hljs-selector-tag">li</span>,
   <span class="hljs-selector-tag">li</span> &gt; <span class="hljs-selector-tag">p</span> {
-
     <span class="hljs-keyword">@extend</span> %heading-font-regular;
 
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-sm</span>;
-    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xxs</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
   }
 
   <span class="hljs-selector-tag">li</span> {
@@ -499,29 +498,29 @@
       <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
       <span class="hljs-attribute">position</span>: absolute;
-      <span class="hljs-attribute">left</span>: -.<span class="hljs-number">5rem</span>;
+      <span class="hljs-attribute">left</span>: -<span class="hljs-number">0.5rem</span>;
       <span class="hljs-attribute">width</span>: <span class="hljs-variable">$spacer-sm</span>;
-      <span class="hljs-attribute">text-align</span>: right;
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$footnote-index-color</span>;
       <span class="hljs-attribute">content</span>: counter(number);
       <span class="hljs-attribute">counter-increment</span>: number;
-      }
+      <span class="hljs-attribute">text-align</span>: right;
     }
+  }
 }
 
 <span class="hljs-selector-class">.tooltip</span> {
-  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-number">1px</span> <span class="hljs-variable">$tooltip-shadow-color</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$tooltip-background-color</span>;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-lg</span> <span class="hljs-variable">$spacer-md</span>;
   <span class="hljs-attribute">max-width</span>: <span class="hljs-number">90%</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-lg</span> <span class="hljs-variable">$spacer-md</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$tooltip-background-color</span>;
+  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-number">1px</span> <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-number">1px</span> <span class="hljs-variable">$tooltip-shadow-color</span>;
 
-  &amp; <span class="hljs-selector-tag">p</span> {
+  <span class="hljs-selector-tag">p</span> {
     <span class="hljs-keyword">@extend</span> %heading-font-regular;
+
     <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xxs</span>;
   }
 }
-
 
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
   <span class="hljs-selector-class">.footnotes__list</span> {
@@ -534,7 +533,7 @@
   <span class="hljs-selector-class">.tooltip</span> {
     <span class="hljs-attribute">max-width</span>: <span class="hljs-number">40%</span>;
 
-    &amp; <span class="hljs-selector-tag">p</span> {
+    <span class="hljs-selector-tag">p</span> {
       <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
     }
   }
@@ -4978,7 +4977,7 @@ Es fehlt noch das JS für die korrekte Anzeige der Tooltip-Boxen.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -5101,7 +5100,7 @@ Es fehlt noch das JS für die korrekte Anzeige der Tooltip-Boxen.</p>
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-21T09:09:15.471Z">
+                            <time datetime="2021-04-21T20:31:30.773Z">
                                 4/21/2021
                             </time>
                         
@@ -6168,7 +6167,7 @@ Es fehlt noch das JS für die korrekte Anzeige der Tooltip-Boxen.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6194,7 +6193,7 @@ Es fehlt noch das JS für die korrekte Anzeige der Tooltip-Boxen.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6220,7 +6219,7 @@ Es fehlt noch das JS für die korrekte Anzeige der Tooltip-Boxen.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6246,7 +6245,7 @@ Es fehlt noch das JS für die korrekte Anzeige der Tooltip-Boxen.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6263,8 +6262,8 @@ Es fehlt noch das JS für die korrekte Anzeige der Tooltip-Boxen.</p>
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="bg-images--podcats.html" data-role="tree-link" data-pjax data-handle="bg-images">
-                <span>Podcats</span>
+            <a class="Tree-entityLink" href="bg-images--podcasts.html" data-role="tree-link" data-pjax data-handle="bg-images">
+                <span>Podcasts</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -6272,7 +6271,7 @@ Es fehlt noch das JS für die korrekte Anzeige der Tooltip-Boxen.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6298,7 +6297,7 @@ Es fehlt noch das JS für die korrekte Anzeige der Tooltip-Boxen.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6324,7 +6323,7 @@ Es fehlt noch das JS für die korrekte Anzeige der Tooltip-Boxen.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6350,7 +6349,7 @@ Es fehlt noch das JS für die korrekte Anzeige der Tooltip-Boxen.</p>
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>

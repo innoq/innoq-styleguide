@@ -519,8 +519,8 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-selector-class">.download-section-feature__image</span> {
-  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-md</span>;
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-md</span>;
 }
 
 <span class="hljs-selector-class">.download-section-feature__title</span> {
@@ -540,18 +540,18 @@
 
 <span class="hljs-selector-class">.resource-list-item</span> {
   <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
   <span class="hljs-attribute">flex-direction</span>: column;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-lg</span>;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
 }
 
 <span class="hljs-selector-class">.resource-list-item-wrapper</span> {
   <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
   <span class="hljs-attribute">flex-direction</span>: column;
   <span class="hljs-attribute">justify-content</span>: space-between;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$brand-secondary</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-md</span> <span class="hljs-variable">$spacer-sm</span>;
-  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$brand-secondary</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$brand-text-light</span>;
 }
 
@@ -561,22 +561,23 @@
 
 <span class="hljs-selector-class">.resource-list-item__image</span> {
   <span class="hljs-attribute">z-index</span>: <span class="hljs-number">2</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">3px</span> solid <span class="hljs-variable">$brand-white</span>;
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto <span class="hljs-variable">$spacer-sm</span>;
   <span class="hljs-attribute">margin-bottom</span>: -<span class="hljs-variable">$spacer-xxl</span>;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">3px</span> solid <span class="hljs-variable">$brand-white</span>;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">50%</span>;
 }
 
 <span class="hljs-selector-class">.resource-list-item__author</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-regular;
 
-  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-lg</span>;
   <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-lg</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$brand-primary</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
 
   &gt; <span class="hljs-selector-tag">li</span> {
     <span class="hljs-keyword">@extend</span> %list-unstyled;
+
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xxs</span>;
 
     &gt; <span class="hljs-selector-tag">a</span> {
@@ -585,6 +586,7 @@
       &amp;<span class="hljs-selector-pseudo">:focus</span>,
       &amp;<span class="hljs-selector-pseudo">:hover</span> {
         <span class="hljs-keyword">@extend</span> %heading-font-bold;
+
         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$brand-text-light</span>;
       }
     }
@@ -613,7 +615,7 @@
 }
 
 <span class="hljs-comment">//Breakpoints</span>
-<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>)  {
+<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
   <span class="hljs-selector-class">.resource-list</span> {
     <span class="hljs-attribute">flex-direction</span>: row;
     <span class="hljs-attribute">flex-wrap</span>: wrap;
@@ -622,11 +624,11 @@
   }
 
   <span class="hljs-selector-class">.resource-list-item</span> {
+    <span class="hljs-attribute">min-width</span>: ms(<span class="hljs-number">32</span>);
+    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">30%</span>;
     <span class="hljs-attribute">flex-grow</span>: <span class="hljs-number">1</span>;
     <span class="hljs-attribute">margin-right</span>: <span class="hljs-variable">$spacer-xs</span>;
     <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$spacer-xs</span>;
-    <span class="hljs-attribute">min-width</span>: ms(<span class="hljs-number">32</span>);
-    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">30%</span>;
   }
 }
 </pre>
@@ -5066,7 +5068,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -5189,7 +5191,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-04-21T09:09:15.471Z">
+                            <time datetime="2021-04-21T20:31:30.773Z">
                                 4/21/2021
                             </time>
                         
@@ -6256,7 +6258,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6282,7 +6284,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6308,7 +6310,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6334,7 +6336,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6351,8 +6353,8 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="bg-images--podcats.html" data-role="tree-link" data-pjax data-handle="bg-images">
-                <span>Podcats</span>
+            <a class="Tree-entityLink" href="bg-images--podcasts.html" data-role="tree-link" data-pjax data-handle="bg-images">
+                <span>Podcasts</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -6360,7 +6362,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6386,7 +6388,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6412,7 +6414,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6438,7 +6440,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
