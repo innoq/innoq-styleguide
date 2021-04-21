@@ -135,5 +135,5 @@ $outline-color: rgb(59, 153, 252);
 //Overlay Colors for Headers and Teasers
 
 :root {
-  --overlay-standard-color: #979798;
+  --overlay-standard-color: #{$brand-gray-50};
 }
