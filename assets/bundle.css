@@ -5879,6 +5879,16 @@ wall-of-consent {
   background-size: contain;
 }
 
+.cover__avatar-overlay--security {
+  background-color: #fff019;
+}
+.cover__avatar-overlay--security .cover__title,
+.cover__avatar-overlay--security .cover__subtitle,
+.cover__avatar-overlay--security .cover__type,
+.cover__avatar-overlay--security .cover__author {
+  color: #242424;
+}
+
 .cover__body {
   display: -webkit-box;
   display: -ms-flexbox;
