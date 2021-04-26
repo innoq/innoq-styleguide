@@ -1294,15 +1294,19 @@ dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
 }
 .avatar--xs .avatar__image {
   width: 2.48832rem;
-  height: auto;
+  height: 2.48832rem;
 }
 .avatar--sm .avatar__image, .avatar--small .avatar__image {
   width: 3.5831808rem;
-  height: auto;
+  height: 3.5831808rem;
+}
+.avatar--md .avatar__image {
+  width: 5.159780352rem;
+  height: 5.159780352rem;
 }
 .avatar--base .avatar__image {
   width: 7.4300837069rem;
-  height: auto;
+  height: 7.4300837069rem;
 }
 
 .avatar__link {
@@ -1310,11 +1314,6 @@ dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
           transform: translateZ(100);
 }
 
-@media screen and (min-width: 48rem) {
-  .avatar--sm .avatar__image, .avatar--small .avatar__image {
-    width: 5.159780352rem;
-  }
-}
 .embed-responsive {
   position: relative;
   display: block;
