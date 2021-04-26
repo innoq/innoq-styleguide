@@ -18,6 +18,17 @@
   background-size: contain;
 }
 
+.cover__avatar-overlay--security {
+  background-color: $podcast-teaser-overlay-color-sec;
+
+  .cover__title,
+  .cover__subtitle,
+  .cover__type,
+  .cover__author {
+    color: $brand-gray;
+  }
+}
+
 .cover__body {
   display: flex;
   overflow: hidden;
