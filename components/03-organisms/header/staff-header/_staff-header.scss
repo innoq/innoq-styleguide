@@ -3,12 +3,9 @@ $staff-intro-offset: -(ms(22));
 $staff-header-bg-gray: #f6f6f6;
 
 .staff-header {
-  background-image: linear-gradient(
-    to right,
-    $staff-header-bg-color,
-    $staff-header-bg-color 50%,
-    $staff-header-bg-gray 50%
-  );
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
 }
 
 .staff-header-content {
@@ -89,6 +86,10 @@ $staff-header-bg-gray: #f6f6f6;
 
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
+  .staff-header {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .staff-header-image {
     max-width: 70%;
     margin: 0 auto;
@@ -120,12 +121,9 @@ $staff-header-bg-gray: #f6f6f6;
 
   .staff-intro {
     position: relative;
-    top: $staff-intro-offset;
     width: $grid-page-layout-content-width;
     max-width: $grid-page-layout-content-width-xl;
     box-sizing: content-box;
-    padding: $spacer-lg $spacer-xl 0;
-    margin: 0 auto $staff-intro-offset;
   }
 
   .staff-intro--job-title {
@@ -134,7 +132,6 @@ $staff-header-bg-gray: #f6f6f6;
 
   .staff-intro--text {
     padding-bottom: $spacer-lg;
-    font-size: $font-size-lg;
   }
 
   .staff-intro--social {
