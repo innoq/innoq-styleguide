@@ -13,12 +13,14 @@ $background: $bullet-list-color-primary;
 // class attribute, to prevent reverting styles for all non-default lists.
 //
 
+//TODO: spacings, reference variables, reduce
+
 .unordered-list li {
   @extend %body-font-regular;
   @extend %unsorted-list;
   list-style-type: disc;
   position: relative;
-  top:0.4rem;
+  //top:0.4rem;
 
 }
 .unordered-list >li::marker{
@@ -29,7 +31,6 @@ $background: $bullet-list-color-primary;
 .unordered-list >li li::marker {
   color: #004153;
   font-size: 1.9rem;
-
 }
 
 // ---- Bold Bullet Lists ----------------------------------------------------------
@@ -38,9 +39,12 @@ $background: $bullet-list-color-primary;
   @extend %heading-font-bold;
 
   > li {
-    &::before {
-      top: 0.59rem; //magic number
-      list-style-type: none;
+    padding-bottom: 0.9rem;
+
+    &::marker {
+      //top: 0.59rem; //magic number
+      color: #ff9c66;
+      font-size: 1.9rem;
 
       @media screen and (min-width: $grid-breakpoint-md) {
         top: 0.73rem; //magic number
