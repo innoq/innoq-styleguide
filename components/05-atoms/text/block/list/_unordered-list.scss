@@ -13,88 +13,34 @@ $background: $bullet-list-color-primary;
 // class attribute, to prevent reverting styles for all non-default lists.
 //
 
-/*ul:not([class]),
-.bold-list {
-  @extend %unsorted-list;
+.unordered-list li {
   @extend %body-font-regular;
-
-
-  & > li {
-    padding-left: $list-indent;
-
-
-  &::marker {
-
-      position: absolute;
-      top: 0.4rem; //magic number
-      left: 0;
-      border-radius: 50%;
-      background: $bullet-list-color-primary;
-      width: $bullet-size;
-      height: $bullet-size;
-      content: "";
-
-      @media screen and (min-width: $grid-breakpoint-md) {
-        top: 0.5rem; //magic number
-      }
-    }
-  }
-
-  ul {
-    // Nested lists need diffrent vertical spacings
-    // to blend into the outer list.
-    margin-top: $spacer-xs;
-
-    &,
-    li > ul > li {
-      margin-bottom: 0;
-    }
-
-    // Change bullet appeareance in nested contexts
-    li::marker {
-      background: $bullet-list-color-secondary;
-    }
-  }
-}*/
-
-//allgmein für die UL
-ul:not([class]) {
   @extend %unsorted-list;
-  @extend %body-font-regular;
-}
-
-//einrückung je listenelement, 3 tiefenebenen mit den variablen oben definiert
-ul:not([class]) > li {
-  padding-left: $list-indent;
+  list-style-type: disc;
+  position: relative;
+  top:0.4rem;
 
 }
-
-ul:not([class]) > li::marker {
-  position: absolute;
-  top: 0.4rem; //magic number
-  left: 0;
-  border-radius: 50%;
-  color: $bullet-list-color-primary;
-  width: $bullet-size;
-  height: $bullet-size;
-  content: $icon-search;
-
+.unordered-list >li::marker{
+  color: #ff9c66;
+  font-size: 1.9rem;
 }
 
-li::marker {
-  color: red;
+.unordered-list >li li::marker {
+  color: #004153;
+  font-size: 1.9rem;
 
 }
-
 
 // ---- Bold Bullet Lists ----------------------------------------------------------
 //
 .bold-list {
   @extend %heading-font-bold;
 
-  & > li {
-    &::marker {
+  > li {
+    &::before {
       top: 0.59rem; //magic number
+      list-style-type: none;
 
       @media screen and (min-width: $grid-breakpoint-md) {
         top: 0.73rem; //magic number
