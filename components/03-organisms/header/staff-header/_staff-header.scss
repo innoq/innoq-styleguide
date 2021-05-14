@@ -3,16 +3,8 @@ $staff-intro-offset: -(ms(22));
 $staff-header-bg-gray: #f6f6f6;
 
 .staff-header {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-}
-
-.staff-header-content {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: $staff-header-content-bg-color;
+  flex-flow: row wrap;
 }
 
 .staff-header-image {
@@ -20,76 +12,56 @@ $staff-header-bg-gray: #f6f6f6;
   height: auto;
 }
 
-.staff-header-quote {
-  padding: $spacer-lg $spacer-md;
-  background-color: $staff-header-quote-bg-color;
-}
+.staff-header-label {
+  z-index: 10;
+  flex-grow: 1;
+  padding: $spacer-md $spacer-md $spacer-xs;
+  margin: -$spacer-md $spacer-md $spacer-md;
+  background-color: $brand-primary;
 
-.staff-header-quote--text {
-  color: $staff-header-quote-color;
-  font-size: $font-size-xl;
-}
 
-.staff-header-quote--author {
-  @extend %heading-font-regular;
-
-  color: $staff-header-quote-author-color;
-  font-size: $font-size-base;
-  text-transform: uppercase;
-}
-
-.staff-intro {
-  width: 100%;
-  padding: $spacer-md;
-  background-color: $staff-header-intro-bg-color;
-  color: $staff-header-intro-text-color;
-}
-
-.staff-intro--name {
-  @extend %heading-font-heavy;
-
-  margin-bottom: $spacer-xs;
-  color: $staff-header-intro-text-color;
-  font-size: $font-size-xl;
-  text-transform: uppercase;
-}
-
-.staff-intro--job-title {
-  @extend %body-font-italic;
-
-  margin-bottom: $spacer-xs;
-  color: $staff-header-intro-text-color;
-  font-size: $font-size-lg;
-}
-
-.staff-intro--text {
-  @extend %heading-font-regular;
-
-  padding-bottom: $spacer-base;
-  border-bottom: 1px solid $staff-header-intro-text-border;
-  font-size: $font-size-sm;
-  line-height: $paragraph-line-height;
-}
-
-.staff-intro--social {
-  padding: $spacer-md 0;
-
-  .icon {
-    font-size: ms(7);
+  &__name {
+    margin-bottom: $spacer-xs;
+    text-transform: uppercase;
   }
 
-  .icon-svg:hover,
-  .icon-svg:focus {
-    background: $staff-header-icon-hover-color;
+  &__job-title {
+    @extend %heading-font-regular;
+
+    margin-bottom: $spacer-xs;
+    font-size: $font-size-lg;
+  }
+}
+
+.staff-header-bio {
+  padding: $spacer-xxl $spacer-md $spacer-md;
+  margin: -$spacer-xxl 0 0;
+  background-color: $brand-secondary;
+
+  &__text {
+    @extend %heading-font-regular;
+
+    color: $brand-white;
+    font-size: $font-size-sm;
+    line-height: $paragraph-line-height;
+  }
+
+  &__social {
+    padding: $spacer-md 0;
+
+    .icon {
+      font-size: ms(7);
+    }
+
+    .icon-svg:hover,
+    .icon-svg:focus {
+      background: $brand-primary;
+    }
   }
 }
 
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
-  .staff-header {
-    grid-template-columns: 1fr 1fr;
-  }
-
   .staff-header-image {
     max-width: 70%;
     margin: 0 auto;
@@ -97,15 +69,29 @@ $staff-header-bg-gray: #f6f6f6;
 }
 
 @media screen and (min-width: $grid-breakpoint-lg) {
+  .staff-header {
+    justify-content: center;
+  }
+
   .staff-header-content {
     max-width: $default-page-layout-content-width-xl;
     flex-direction: row;
     margin: 0 auto;
   }
 
-  .staff-header-quote {
+  .staff-header-bio {
+    z-index: 100;
+    width: $grid-page-layout-content-width;
+    max-width: $grid-page-layout-content-width-xl;
+    box-sizing: content-box;
+    padding-top: $spacer-md;
+    margin: 0;
+  }
+
+  .staff-header-label {
     flex-grow: 1;
     padding: $spacer-xxl $spacer-md 0;
+    margin: 0;
   }
 
   .staff-header-image {
@@ -113,28 +99,6 @@ $staff-header-bg-gray: #f6f6f6;
     max-width: $default-page-layout-content-width-xl / 2;
     min-height: $default-page-layout-content-width-xl / 2;
     max-height: $default-page-layout-content-width-xl / 2;
-  }
-
-  .staff-header-quote--text {
-    font-size: $font-size-xxxl;
-  }
-
-  .staff-intro {
-    position: relative;
-    width: $grid-page-layout-content-width;
-    max-width: $grid-page-layout-content-width-xl;
-    box-sizing: content-box;
-  }
-
-  .staff-intro--job-title {
-    margin-bottom: $spacer-sm;
-  }
-
-  .staff-intro--text {
-    padding-bottom: $spacer-lg;
-  }
-
-  .staff-intro--social {
-    padding: $spacer-base 0;
+    flex-grow: 1;
   }
 }

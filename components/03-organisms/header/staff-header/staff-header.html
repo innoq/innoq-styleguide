@@ -1,37 +1,36 @@
 
     <header class="staff-header">
-        <div class="staff-header-content">
-            <img class="staff-header-image" itemprop="photo" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq" />
-        </div>
-        <div class="staff-intro">
-            <h2 class="staff-intro--name" itemprop="name">Heribert Inooq</h2>
-            <h3 class="staff-intro--job-title" itemprop="jobTitle">Senior Consultant</h3>
-            <div class="staff-intro--text">
+        <img class="staff-header-image" itemprop="photo" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq" />
+        <section class="staff-header-label">
+            <h2 class="staff-header-label__name" itemprop="name">Heribert Innoq</h2>
+            <h3 class="staff-header-label__job-title" itemprop="jobTitle">Senior Consultant</h3>
+        </section>
+        <section class="staff-header-bio">
+            <div class="staff-header-bio__text">
                 Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
                 ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket
                 prosciutto buffalo drumstick strip steak capicola short loin.
                 Frankfurter fatback turkey pork chop prosciutto pork ground round tongue
                 chuck doner.
             </div>
-            <section class="staff-intro--social">
+            <div class="staff-header-bio__social">
                 <ul class="share-section__list">
                     <li>
                         <a class="share-section__link" target="_blank" href="">
-                            <span class="icon-svg icon-twitter icon--brand-secondary"></span>
+                            <span class="icon-svg icon-twitter icon--brand-white"></span>
                         </a>
                     </li>
                     <li>
                         <a class="share-section__link" target="_blank" href="">
-                            <span class="icon-svg icon-github icon--brand-secondary"></span>
+                            <span class="icon-svg icon-github icon--brand-white"></span>
                         </a>
                     </li>
                     <li>
                         <a class="share-section__link" href="">
-                            <span class="icon-svg icon-email icon--brand-secondary"></span>
+                            <span class="icon-svg icon-email icon--brand-white"></span>
                         </a>
                     </li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
     </header>
-
