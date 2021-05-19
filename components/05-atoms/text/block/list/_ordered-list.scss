@@ -9,7 +9,7 @@
 //
 
 $number-space: $spacer-md;
-$list-indent: 0.7rem;
+$list-indent: 1.2rem;
 
 
 ol:not([class]) {
@@ -65,7 +65,7 @@ ol:not([class]) {
       line-height: $paragraph-line-height;
       font-size: $font-size-sm;
     }
-
+    padding-left: 1.4rem;
     &,
     li > ul > li {
       margin-bottom: 0;

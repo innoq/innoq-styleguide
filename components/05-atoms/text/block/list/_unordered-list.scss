@@ -3,6 +3,8 @@ $bullet-offset: $spacer-sm; // ~16px
 $list-indent: $bullet-offset + $bullet-size;
 $background: $bullet-list-color-primary;*/
 $bullet-size: 1.9rem;
+$padding-top: 0.5rem;
+
 
 
 .list-unstyled {
@@ -26,10 +28,25 @@ $bullet-size: 1.9rem;
     @extend %unsorted-list;
 
     list-style-type: disc;
-    padding-bottom: 0;
+
+    & ul{
+      padding-top: $padding-top;
+      padding-left:1.2rem;
+
+      & li {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
+      & ul li {
+        padding-top: $padding-top;
+        padding-bottom: 0;
+      }
+    }
   }
 
   & >li {
+    margin-bottom: 0.3rem;
 
     &::marker{
       color: $bullet-list-color;
@@ -40,20 +57,14 @@ $bullet-size: 1.9rem;
       font-size: $bullet-size;
     }
   }
-
-  & ul li {
-
-    & ul li {
-    padding-bottom: 0;
-    padding-top: 1rem;
-    }
-  }
 }
 
 // ---- Bold Bullet Lists ----------------------------------------------------------
 //
 .bold-list {
   @extend %heading-font-bold;
+
+  padding-left: 1.5rem;
 
   > li {
     padding-bottom: 0.9rem;
