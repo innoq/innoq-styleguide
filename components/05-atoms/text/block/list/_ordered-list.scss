@@ -9,6 +9,8 @@
 //
 
 $number-space: $spacer-md;
+$list-indent: 0.7rem;
+
 
 ol:not([class]) {
   @extend %body-font-regular;
@@ -17,7 +19,7 @@ ol:not([class]) {
   margin-bottom: $spacer-md;
   line-height: $paragraph-line-height;
   font-size: $font-size-base;
-  counter-reset: number;
+  padding-left: $list-indent;
 
   @media screen and (min-width: $grid-breakpoint-md) {
     line-height: $paragraph-line-height;
@@ -28,6 +30,7 @@ ol:not([class]) {
     position: relative;
     margin-bottom: $spacer-xs;
     padding-left: $number-space;
+    counter-increment: number;
 
     &::marker {
       @extend %heading-font-bold;
@@ -41,7 +44,7 @@ ol:not([class]) {
       color: $bullet-list-color-secondary;
       font-size: $font-size-base;
       content: counter(number);
-      counter-increment: number;
+
 
       @media screen and (min-width: $grid-breakpoint-md) {
         top: -0.23rem;
@@ -66,6 +69,21 @@ ol:not([class]) {
     &,
     li > ul > li {
       margin-bottom: 0;
+
+    }
+
+    li {
+      list-style-type:disc;
+
+      &::marker{
+        font-size: 1.9rem;
+        color:  $bullet-list-color;
+      }
+
     }
   }
+
 }
+
+
+
