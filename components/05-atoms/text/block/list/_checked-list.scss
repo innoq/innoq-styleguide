@@ -1,23 +1,25 @@
-$list-indent: $spacer-xs + $spacer-sm;
+//$list-indent: $spacer-xs + $spacer-sm;
+$list-indent: 0.7rem;
 
 .checklist {
   @extend %unsorted-list;
   @extend %heading-font-bold;
+  padding-left: 1rem;
 
   li {
     padding-left: $list-indent;
+    list-style-type: $icon-check;
 
     &::marker {
       @extend %icon;
 
-      position: absolute;
-      top: 0.45em;
-      left: 0;
+      font-size: 0.9rem;
+      font-weight: bold;
       color: $bullet-list-color;
-      content: $icon-check;
 
       // sass-lint:disable no-vendor-prefixes
       -webkit-text-stroke-width: 2px;
     }
+
   }
 }
