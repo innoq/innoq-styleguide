@@ -2,6 +2,8 @@
 $bullet-offset: $spacer-sm; // ~16px
 $list-indent: $bullet-offset + $bullet-size;
 $background: $bullet-list-color-primary;*/
+$bullet-size: 1.9rem;
+
 
 .list-unstyled {
   @extend %list-unstyled;
@@ -15,27 +17,38 @@ $background: $bullet-list-color-primary;*/
 
 //TODO: spacings, reference variables, reduce
 
-.unordered-list li {
-  @extend %body-font-regular;
-  @extend %unsorted-list;
-  list-style-type: disc;
-  padding-bottom: 0;
-}
-.unordered-list >li::marker{
-  color: $bullet-list-color;
-  font-size: 1.9rem;
-}
 
-.unordered-list >li li::marker {
-  color: $bullet-list-color-secondary;
-  font-size: 1.9rem;
-}
 
-.unordered-list ul li, .unordered-list ul li ul li{
-  padding-bottom: 0;
-  padding-top: 1rem;
-}
+.unordered-list {
 
+  & li {
+    @extend %body-font-regular;
+    @extend %unsorted-list;
+
+    list-style-type: disc;
+    padding-bottom: 0;
+  }
+
+  & >li {
+
+    &::marker{
+      color: $bullet-list-color;
+      font-size: $bullet-size;
+    }
+    & li::marker{
+      color: $bullet-list-color-secondary;
+      font-size: $bullet-size;
+    }
+  }
+
+  & ul li {
+
+    & ul li {
+    padding-bottom: 0;
+    padding-top: 1rem;
+    }
+  }
+}
 
 // ---- Bold Bullet Lists ----------------------------------------------------------
 //
@@ -48,7 +61,7 @@ $background: $bullet-list-color-primary;*/
     &::marker {
       //top: 0.59rem; //magic number
       color: $bullet-list-color;
-      font-size: 1.9rem;
+      font-size: $bullet-size;
 
       @media screen and (min-width: $grid-breakpoint-md) {
         top: 0.73rem; //magic number
