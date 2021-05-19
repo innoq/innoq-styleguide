@@ -16,18 +16,35 @@ $anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing th
 
 .toc__list {
   @extend %list-unstyled;
+  padding-left: 0.7rem;
 
   > li {
     @extend %body-font-italic;
     padding-top: $spacer-xxs;
     padding-bottom: $spacer-xxs;
-    padding-left: $spacer-md;
+    //padding-left: $spacer-md;
 
     font-size: $font-size-base;
   }
 
   > li + li {
     border-top: 1px solid $toc-border-color;
+  }
+
+  li {
+      list-style-type: $icon-arrow-down;
+      padding-left: 0.7rem;
+
+
+      &::marker {
+        @extend %icon; // inline-block
+
+        position: absolute;
+        left: -$spacer-md;
+        width: $spacer-base;
+        color: $brand-interaction;
+        font-weight: bolder;
+      }
   }
 }
 
@@ -40,15 +57,7 @@ $anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing th
   z-index: 1;
   padding: 0;
 
-  &::marker {
-    @extend %icon; // inline-block
 
-    position: absolute;
-    left: -$spacer-md;
-    width: $spacer-base;
-    color: $brand-interaction;
-    content: $icon-arrow-down;
-  }
 }
 
 @media screen and (min-width: $grid-breakpoint-xl) {
