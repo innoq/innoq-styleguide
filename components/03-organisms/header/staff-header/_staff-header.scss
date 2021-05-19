@@ -1,7 +1,3 @@
-$staff-intro-offset: -(ms(22));
-/* stylelint-disable-next-line color-no-hex */
-$staff-header-bg-gray: #f6f6f6;
-
 .staff-header {
   display: flex;
   flex-flow: row wrap;
@@ -17,8 +13,7 @@ $staff-header-bg-gray: #f6f6f6;
   flex-grow: 1;
   padding: $spacer-md $spacer-md $spacer-xs;
   margin: -$spacer-md $spacer-md $spacer-md;
-  background-color: $brand-primary;
-
+  background-color: $staff-header-label-bg-color;
 
   &__name {
     margin-bottom: $spacer-xs;
@@ -36,12 +31,12 @@ $staff-header-bg-gray: #f6f6f6;
 .staff-header-bio {
   padding: $spacer-xxl $spacer-md $spacer-md;
   margin: -$spacer-xxl 0 0;
-  background-color: $brand-secondary;
+  background-color: $staff-header-bio-bg-color;
 
   &__text {
     @extend %heading-font-regular;
 
-    color: $brand-white;
+    color: $staff-header-bio-color;
     font-size: $font-size-sm;
     line-height: $paragraph-line-height;
   }
@@ -55,7 +50,7 @@ $staff-header-bg-gray: #f6f6f6;
 
     .icon-svg:hover,
     .icon-svg:focus {
-      background: $brand-primary;
+      background: $staff-header-icon-hover-color;
     }
   }
 }
@@ -89,7 +84,6 @@ $staff-header-bg-gray: #f6f6f6;
   }
 
   .staff-header-image {
-    background-color: $brand-primary;
     min-width: $default-page-layout-content-width-xl / 2;
     max-width: $default-page-layout-content-width-xl / 2;
     min-height: $default-page-layout-content-width-xl / 2;
