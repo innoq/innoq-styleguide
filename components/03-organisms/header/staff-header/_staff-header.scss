@@ -73,12 +73,6 @@ $staff-header-bg-gray: #f6f6f6;
     justify-content: center;
   }
 
-  .staff-header-content {
-    max-width: $default-page-layout-content-width-xl;
-    flex-direction: row;
-    margin: 0 auto;
-  }
-
   .staff-header-bio {
     z-index: 100;
     width: $grid-page-layout-content-width;
@@ -89,16 +83,16 @@ $staff-header-bg-gray: #f6f6f6;
   }
 
   .staff-header-label {
-    flex-grow: 1;
+    order: -1;
     padding: $spacer-xxl $spacer-md 0;
     margin: 0;
   }
 
   .staff-header-image {
+    background-color: $brand-primary;
     min-width: $default-page-layout-content-width-xl / 2;
     max-width: $default-page-layout-content-width-xl / 2;
     min-height: $default-page-layout-content-width-xl / 2;
     max-height: $default-page-layout-content-width-xl / 2;
-    flex-grow: 1;
   }
 }
