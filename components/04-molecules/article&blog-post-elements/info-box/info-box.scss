@@ -91,3 +91,51 @@ info-box {
     font-size: $font-size-base;
   }
 }
+
+//CSS für die Neue Box
+.box {
+  display: block;
+  margin-bottom: $spacer-base
+}
+
+
+//when details state=closed
+summary {
+  @extend %heading-font-bold;
+
+  font-size: $font-size-xs;
+  color: $infobox-teaser-text-color-closed;
+  background-color: $infobox-teaser-background-color-closed;
+  border-bottom: 3px solid $infobox-teaser-border-color;
+  padding-left: 1.44rem;
+}
+
+details[open] summary {
+  color: $infobox-teaser-text-color-open;
+  background-color: $infobox-teaser-background-color-open;
+
+
+}
+
+//funktioniert mit Chrome, aber nicht mit firefox
+summary::-webkit-details-marker {
+  display: none;
+}
+
+//für firefox
+summary::marker {
+  content: "";
+}
+
+.details-content{
+  background-color: $infobox-content-background-color;
+  transition: height 1s;
+}
+
+.details-content p {
+  @extend %heading-font-regular;
+
+  font-size: $font-size-base;
+}
+
+
