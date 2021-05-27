@@ -29,7 +29,7 @@
 }
 
 .staff-header-bio {
-  padding: $spacer-xl * 2 $spacer-md;
+  padding: $spacer-xl * 2 $spacer-md $spacer-md;
   margin: -$spacer-xxl 0 0;
   background-color: $staff-header-bio-bg-color;
 
@@ -43,7 +43,7 @@
   }
 
   &__social {
-    padding: $spacer-lg 0;
+    padding-top: $spacer-lg;
     border-top: 1px solid $staff-header-bio-color;
 
 
@@ -84,7 +84,7 @@
   }
 
   .staff-header-bio {
-    padding-top: $spacer-md;
+    padding: $spacer-lg $spacer-lg $spacer-md;
     margin: 0;
     grid-column: 2 / 4;
   }
