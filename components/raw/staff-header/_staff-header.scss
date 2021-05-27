@@ -1,21 +1,6 @@
-$staff-intro-offset: -(ms(22));
-/* stylelint-disable-next-line color-no-hex */
-$staff-header-bg-gray: #f6f6f6;
-
 .staff-header {
-  background-image: linear-gradient(
-    to right,
-    $staff-header-bg-color,
-    $staff-header-bg-color 50%,
-    $staff-header-bg-gray 50%
-  );
-}
-
-.staff-header-content {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: $staff-header-content-bg-color;
+  flex-flow: row wrap;
 }
 
 .staff-header-image {
@@ -23,67 +8,53 @@ $staff-header-bg-gray: #f6f6f6;
   height: auto;
 }
 
-.staff-header-quote {
-  padding: $spacer-lg $spacer-md;
-  background-color: $staff-header-quote-bg-color;
-}
+.staff-header-info {
+  z-index: 10;
+  flex-grow: 1;
+  padding: $spacer-md $spacer-md $spacer-xs;
+  margin: -$spacer-md $spacer-md $spacer-md;
+  background-color: $staff-header-info-bg-color;
 
-.staff-header-quote--text {
-  color: $staff-header-quote-color;
-  font-size: $font-size-xl;
-}
-
-.staff-header-quote--author {
-  @extend %heading-font-regular;
-
-  color: $staff-header-quote-author-color;
-  font-size: $font-size-base;
-  text-transform: uppercase;
-}
-
-.staff-intro {
-  width: 100%;
-  padding: $spacer-md;
-  background-color: $staff-header-intro-bg-color;
-  color: $staff-header-intro-text-color;
-}
-
-.staff-intro--name {
-  @extend %heading-font-heavy;
-
-  margin-bottom: $spacer-xs;
-  color: $staff-header-intro-text-color;
-  font-size: $font-size-xl;
-  text-transform: uppercase;
-}
-
-.staff-intro--job-title {
-  @extend %body-font-italic;
-
-  margin-bottom: $spacer-xs;
-  color: $staff-header-intro-text-color;
-  font-size: $font-size-lg;
-}
-
-.staff-intro--text {
-  @extend %heading-font-regular;
-
-  padding-bottom: $spacer-base;
-  border-bottom: 1px solid $staff-header-intro-text-border;
-  font-size: $font-size-sm;
-  line-height: $paragraph-line-height;
-}
-
-.staff-intro--social {
-  padding: $spacer-md 0;
-
-  .icon {
-    font-size: ms(7);
+  &__name {
+    margin-bottom: $spacer-xs;
+    text-transform: uppercase;
   }
 
-  .icon-svg:hover,
-  .icon-svg:focus {
-    background: $staff-header-icon-hover-color;
+  &__job-title {
+    @extend %heading-font-regular;
+
+    margin-bottom: $spacer-xs;
+    font-size: $font-size-lg;
+  }
+}
+
+.staff-header-bio {
+  padding: $spacer-xl * 2 $spacer-md $spacer-md;
+  margin: -$spacer-xxl 0 0;
+  background-color: $staff-header-bio-bg-color;
+
+  &__text {
+    @extend %heading-font-regular;
+
+    padding-bottom: $spacer-md;
+    color: $staff-header-bio-color;
+    font-size: $font-size-sm;
+    line-height: $paragraph-line-height;
+  }
+
+  &__social {
+    padding-top: $spacer-lg;
+    border-top: 1px solid $staff-header-bio-color;
+
+
+    .icon {
+      font-size: ms(7);
+    }
+
+    .icon-svg:hover,
+    .icon-svg:focus {
+      background: $staff-header-icon-hover-color;
+    }
   }
 }
 
@@ -96,48 +67,38 @@ $staff-header-bg-gray: #f6f6f6;
 }
 
 @media screen and (min-width: $grid-breakpoint-lg) {
-  .staff-header-content {
-    max-width: $default-page-layout-content-width-xl;
-    flex-direction: row;
-    margin: 0 auto;
+  .staff-header {
+    display: grid;
+    grid-template-columns: auto $default-page-layout-content-width-xl / 3  $default-page-layout-content-width-xl / 3  auto;
+    grid-template-rows: auto;
   }
 
-  .staff-header-quote {
-    flex-grow: 1;
+  .staff-header-left {
+    background-color: $staff-header-bg-color;
+    grid-column: 1 / 2;
+  }
+
+  .staff-header-right {
+    background-color: $staff-header-bg-color;
+    grid-column: 4 / 5
+  }
+
+  .staff-header-bio {
+    padding: $spacer-lg $spacer-lg $spacer-md;
+    margin: 0;
+    grid-column: 2 / 4;
+  }
+
+  .staff-header-info {
     padding: $spacer-xxl $spacer-md 0;
+    margin: 0;
+    grid-column: 2 / 3;
+    grid-row-start: 1;
   }
 
   .staff-header-image {
-    min-width: $default-page-layout-content-width-xl / 2;
-    max-width: $default-page-layout-content-width-xl / 2;
-    min-height: $default-page-layout-content-width-xl / 2;
-    max-height: $default-page-layout-content-width-xl / 2;
-  }
-
-  .staff-header-quote--text {
-    font-size: $font-size-xxxl;
-  }
-
-  .staff-intro {
-    position: relative;
-    top: $staff-intro-offset;
-    width: $grid-page-layout-content-width;
-    max-width: $grid-page-layout-content-width-xl;
-    box-sizing: content-box;
-    padding: $spacer-lg $spacer-xl 0;
-    margin: 0 auto $staff-intro-offset;
-  }
-
-  .staff-intro--job-title {
-    margin-bottom: $spacer-sm;
-  }
-
-  .staff-intro--text {
-    padding-bottom: $spacer-lg;
-    font-size: $font-size-lg;
-  }
-
-  .staff-intro--social {
-    padding: $spacer-base 0;
+    min-width: $default-page-layout-content-width-xl / 3;
+    min-height: $default-page-layout-content-width-xl / 3;
+    grid-column: 3 / 4;
   }
 }
