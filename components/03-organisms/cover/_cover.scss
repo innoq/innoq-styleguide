@@ -12,10 +12,17 @@
 }
 
 .cover__avatar-overlay {
-  background-color: $podcast-teaser-overlay-color-secondary;
+  background-color: $podcast-teaser-overlay-color;
   background-position: top right, top left;
   background-repeat: no-repeat;
   background-size: contain;
+
+  .cover__title,
+  .cover__subtitle,
+  .cover__type,
+  .cover__author {
+    color: $podcast-teaser-default-color;
+  }
 }
 
 .cover__avatar-overlay--security {
