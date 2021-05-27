@@ -5873,10 +5873,16 @@ wall-of-consent {
 }
 
 .cover__avatar-overlay {
-  background-color: #40707e;
+  background-color: #ff9c66;
   background-position: top right, top left;
   background-repeat: no-repeat;
   background-size: contain;
+}
+.cover__avatar-overlay .cover__title,
+.cover__avatar-overlay .cover__subtitle,
+.cover__avatar-overlay .cover__type,
+.cover__avatar-overlay .cover__author {
+  color: #004153;
 }
 
 .cover__avatar-overlay--security {
