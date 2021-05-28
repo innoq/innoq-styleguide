@@ -33,7 +33,7 @@
   margin: -$spacer-xxl 0 0;
   background-color: $staff-header-bio-bg-color;
 
-  &__text {
+  &__text p {
     @extend %heading-font-regular;
 
     padding-bottom: $spacer-md;
