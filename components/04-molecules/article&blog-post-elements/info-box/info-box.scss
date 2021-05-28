@@ -92,50 +92,89 @@ info-box {
   }
 }
 
-//CSS für die Neue Box
+/*CSS für die Neue Box*/
 .box {
   display: block;
   margin-bottom: $spacer-base
 }
 
-
-//when details state=closed
-summary {
+//if details state is closed
+.teaser-heading {
   @extend %heading-font-bold;
 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   font-size: $font-size-xs;
   color: $infobox-teaser-text-color-closed;
   background-color: $infobox-teaser-background-color-closed;
   border-bottom: 3px solid $infobox-teaser-border-color;
-  padding-left: 1.44rem;
+  cursor: pointer;
+
+  & .teaser {
+    display: inline-flex;
+    align-items: center;
+
+    .icon {
+      padding-left: 10px;
+      font-size: $info-box-icon-font-size;
+    }
+  }
+
+  .teaser-right {
+    padding: $spacer-sm $spacer-md $spacer-sm 0;
+  }
+  .teaser-left {
+    padding: $spacer-sm 0 $spacer-sm $spacer-md;
+  }
 }
 
-details[open] summary {
-  color: $infobox-teaser-text-color-open;
-  background-color: $infobox-teaser-background-color-open;
 
 
-}
+//if details state is open
+details{
 
-//funktioniert mit Chrome, aber nicht mit firefox
-summary::-webkit-details-marker {
-  display: none;
-}
+  &[open] {
+    & summary {
+      color: $infobox-teaser-text-color-open;
+      background-color: $infobox-teaser-background-color-open;
 
-//für firefox
-summary::marker {
-  content: "";
-}
+      & .infobox__teaser__chevron::before {
+          content: $icon-chevron-up;
+        }
+      }
 
-.details-content{
-  background-color: $infobox-content-background-color;
-  transition: height 1s;
-}
+      .details-content{
+        background-color: $infobox-content-background-color;
+        padding: $spacer-sm $spacer-sm $spacer-md;
+        transition: height 5s;
+        overflow: auto;
 
-.details-content p {
-  @extend %heading-font-regular;
 
-  font-size: $font-size-base;
-}
+        & p{
+          @extend %heading-font-regular;
+
+          font-size: $font-size-base;
+
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
