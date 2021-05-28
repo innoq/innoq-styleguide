@@ -90,7 +90,7 @@ blockquote:not([class]) > p,
   font-weight: bold;
 }
 
-.resource-list-item__caption, .resource-list-item__author, .dropdown__list-wrapper--navbar, .navbtn, .navbar, .topic-header__tag, .staff-header-bio__text, .staff-header-info__job-title, .footer__paragraph,
+.resource-list-item__caption, .resource-list-item__author, .dropdown__list-wrapper--navbar, .navbtn, .navbar, .topic-header__tag, .staff-header-bio__text p, .staff-header-info__job-title, .footer__paragraph,
 .footer__address, .footer, .content-teaser__text, .big-content-teaser__text, .list-teaser__subheadline, .list-teaser-abstract__text, .dialog-banner__body, .paginator, .search-result__date,
 .search-result__type, .reference__description, .infobox__content__box p, .conclusion-text,
 .conclusion-text > *, .author-bio__text,
@@ -6368,7 +6368,7 @@ wall-of-consent {
   margin: -7.4300837069rem 0 0;
   background-color: #004153;
 }
-.staff-header-bio__text {
+.staff-header-bio__text p {
   padding-bottom: 1.44rem;
   color: #fff;
   font-size: 1.2rem;
