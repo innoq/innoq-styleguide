@@ -6346,12 +6346,10 @@ wall-of-consent {
 }
 
 .staff-header-info {
-  z-index: 10;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 1.44rem 1.44rem 0.5787037037rem;
-  margin: -1.44rem 1.44rem 1.44rem;
   background-color: #ff9c66;
 }
 .staff-header-info__name {
@@ -6364,8 +6362,8 @@ wall-of-consent {
 }
 
 .staff-header-bio {
-  padding: 7.838208rem 1.44rem 1.44rem;
-  margin: -7.4300837069rem 0 0;
+  z-index: -1;
+  padding: 2.985984rem 1.44rem 1.44rem;
   background-color: #004153;
 }
 .staff-header-bio__text p {
@@ -6390,6 +6388,15 @@ wall-of-consent {
   .staff-header-image {
     max-width: 70%;
     margin: 0 auto;
+  }
+
+  .staff-header-info {
+    min-height: 7.4300837069rem;
+    margin: -1.44rem 1.44rem 1.44rem;
+  }
+
+  .staff-header-bio {
+    margin: -7.4300837069rem 0 0;
   }
 }
 @media screen and (min-width: 75rem) {
