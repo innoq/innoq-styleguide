@@ -29,7 +29,7 @@
     "eslint-config-standard-jsx": "^10.0.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-react": "^7.23.0",
     "faucet-pipeline-js": "^2.1.6",
     "faucet-pipeline-sass": "^1.4.0",
