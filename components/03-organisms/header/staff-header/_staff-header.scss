@@ -9,10 +9,8 @@
 }
 
 .staff-header-info {
-  z-index: 10;
   flex-grow: 1;
   padding: $spacer-md $spacer-md $spacer-xs;
-  margin: -$spacer-md $spacer-md $spacer-md;
   background-color: $staff-header-info-bg-color;
 
   &__name {
@@ -29,8 +27,8 @@
 }
 
 .staff-header-bio {
-  padding: $spacer-xl * 2 $spacer-md $spacer-md;
-  margin: -$spacer-xxl 0 0;
+  z-index: -1;
+  padding: $spacer-lg $spacer-md $spacer-md;
   background-color: $staff-header-bio-bg-color;
 
   &__text p {
@@ -62,6 +60,15 @@
   .staff-header-image {
     max-width: 70%;
     margin: 0 auto;
+  }
+
+  .staff-header-info {
+    min-height: $spacer-xxl;
+    margin: -$spacer-md $spacer-md $spacer-md;
+  }
+
+  .staff-header-bio {
+    margin: -$spacer-xxl 0 0;
   }
 }
 
