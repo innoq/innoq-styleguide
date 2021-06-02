@@ -5,6 +5,7 @@
 
 .staff-header-image {
   width: 100%;
+  // Fix for bug in mobile Safari
   height: 100%;
 }
 
@@ -105,7 +106,9 @@
 
   .staff-header-image {
     min-width: $default-page-layout-content-width-xl / 3;
-    min-height: $default-page-layout-content-width-xl / 3;
+    // Fix for bug in mobile Safari
+    height: auto;
+    min-height: auto;
     grid-column: 3 / 4;
   }
 }
