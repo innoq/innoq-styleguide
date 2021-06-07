@@ -195,10 +195,10 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;staff-header-bio__text&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
                 Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
-                ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket
-                prosciutto buffalo drumstick strip steak capicola short loin.
-                Frankfurter fatback turkey pork chop prosciutto pork ground round tongue
-                chuck doner.
+                ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket Dies
+                ist <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>ein Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> prosciutto buffalo drumstick strip steak
+                capicola short loin. Frankfurter fatback turkey pork chop prosciutto
+                pork ground round tongue chuck doner.
             <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;staff-header-bio__social&quot;</span>&gt;</span>
@@ -235,8 +235,7 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;staff-header-bio__text&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
             Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
-            ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket
-            prosciutto buffalo drumstick strip steak capicola short loin.
+            ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket Dies ist <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#!&quot;</span>&gt;</span>ein Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span> prosciutto buffalo drumstick strip steak capicola short loin.
             Frankfurter fatback turkey pork chop prosciutto pork ground round tongue
             chuck doner.
             <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
@@ -331,7 +330,6 @@
 }
 
 <span class="hljs-selector-class">.staff-header-bio</span> {
-  <span class="hljs-attribute">z-index</span>: -<span class="hljs-number">1</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-lg</span> <span class="hljs-variable">$spacer-md</span> <span class="hljs-variable">$spacer-md</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$staff-header-bio-bg-color</span>;
 
@@ -342,6 +340,16 @@
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$staff-header-bio-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
     <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
+
+    <span class="hljs-selector-tag">a</span> {
+      <span class="hljs-keyword">@extend</span> %link-unstyled;
+
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$staff-header-bio-link-color</span>;
+
+      &amp;<span class="hljs-selector-pseudo">:hover</span> {
+        <span class="hljs-keyword">@extend</span> %heading-font-bold;
+      }
+    }
   }
 
   &amp;__social {
@@ -364,16 +372,6 @@
   <span class="hljs-selector-class">.staff-header-image</span> {
     <span class="hljs-attribute">max-width</span>: <span class="hljs-number">70%</span>;
     <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
-  }
-
-  <span class="hljs-selector-class">.staff-header-info</span> {
-    <span class="hljs-attribute">min-height</span>: <span class="hljs-variable">$spacer-xxl</span>;
-    <span class="hljs-attribute">margin</span>: -<span class="hljs-variable">$spacer-md</span> <span class="hljs-variable">$spacer-md</span> <span class="hljs-variable">$spacer-md</span>;
-  }
-
-  <span class="hljs-selector-class">.staff-header-bio</span> {
-    <span class="hljs-attribute">padding-top</span>: <span class="hljs-variable">$spacer-xxl</span>;
-    <span class="hljs-attribute">margin</span>: -<span class="hljs-variable">$spacer-xxl</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
   }
 }
 
@@ -431,7 +429,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.3 KB</span>
+                    <span class="Meta-value">2.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -5249,8 +5247,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-06-02T13:03:25.314Z">
-                                6/2/2021
+                            <time datetime="2021-06-07T14:25:21.240Z">
+                                6/7/2021
                             </time>
                         
                     </dd>
