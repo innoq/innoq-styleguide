@@ -28,7 +28,6 @@
 }
 
 .staff-header-bio {
-  z-index: -1;
   padding: $spacer-lg $spacer-md $spacer-md;
   background-color: $staff-header-bio-bg-color;
 
@@ -39,6 +38,16 @@
     color: $staff-header-bio-color;
     font-size: $font-size-sm;
     line-height: $paragraph-line-height;
+
+    a {
+      @extend %link-unstyled;
+
+      color: $staff-header-bio-link-color;
+
+      &:hover {
+        @extend %heading-font-bold;
+      }
+    }
   }
 
   &__social {
@@ -61,16 +70,6 @@
   .staff-header-image {
     max-width: 70%;
     margin: 0 auto;
-  }
-
-  .staff-header-info {
-    min-height: $spacer-xxl;
-    margin: -$spacer-md $spacer-md $spacer-md;
-  }
-
-  .staff-header-bio {
-    padding-top: $spacer-xxl;
-    margin: -$spacer-xxl 0 0;
   }
 }
 
