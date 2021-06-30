@@ -35,9 +35,6 @@ ol:not([class]) {
     &::marker {
       @extend %heading-font-bold;
 
-      position: absolute;
-      top: -0.2rem;
-      left: -0.5rem;
       width: $number-space;
       text-align: right;
       line-height: $paragraph-line-height;
@@ -82,8 +79,6 @@ ol:not([class]) {
 
     }
   }
-
 }
-
 
 

@@ -17,9 +17,6 @@ $padding-top: 0.5rem;
 // class attribute, to prevent reverting styles for all non-default lists.
 //
 
-//TODO: spacings, reference variables, reduce
-
-
 
 ul:not(class) {
 
@@ -70,13 +67,8 @@ ul:not(class) {
     padding-bottom: 0.9rem;
 
     &::marker {
-      //top: 0.59rem; //magic number
       color: $bullet-list-color;
       font-size: $bullet-size;
-
-      @media screen and (min-width: $grid-breakpoint-md) {
-        top: 0.73rem; //magic number
-      }
     }
   }
 }
