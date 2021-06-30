@@ -6,6 +6,7 @@ $list-indent: 0.7rem;
   padding-left: 1rem;
 
   li {
+    @extend %heading-font-bold;
     padding-left: $list-indent;
     list-style-type: $icon-check;
 

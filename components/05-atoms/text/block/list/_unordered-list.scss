@@ -59,16 +59,15 @@ ul:not(class) {
 // ---- Bold Bullet Lists ----------------------------------------------------------
 //
 .bold-list {
-  @extend %heading-font-bold;
-
   padding-left: 1.5rem;
 
-  > li {
-    padding-bottom: 0.9rem;
+  & > li {
+    @extend %heading-font-bold;
 
     &::marker {
       color: $bullet-list-color;
       font-size: $bullet-size;
+
     }
   }
 }
