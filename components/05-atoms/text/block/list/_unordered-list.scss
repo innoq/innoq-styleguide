@@ -21,7 +21,7 @@ $padding-top: 0.5rem;
 
 
 
-.unordered-list {
+ul:not(class) {
 
   & li {
     @extend %body-font-regular;
