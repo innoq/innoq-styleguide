@@ -10,6 +10,7 @@ rules:
   no-descending-specificity: null
   selector-no-qualifying-type: null
   scss/percent-placeholder-pattern: null
+  no-empty-source: null
   max-nesting-depth:
     -  3
   selector-type-no-unknown:
