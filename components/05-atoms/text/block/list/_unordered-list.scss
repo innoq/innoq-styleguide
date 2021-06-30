@@ -2,8 +2,8 @@
 $bullet-offset: $spacer-sm; // ~16px
 $list-indent: $bullet-offset + $bullet-size;
 $background: $bullet-list-color-primary;*/
-$bullet-size: 1.9rem;
-$padding-top: 0.5rem;
+$bullet-size: 2.3rem;
+$padding-top: 0rem;
 
 
 
@@ -27,12 +27,12 @@ ul:not(class) {
     list-style-type: disc;
 
     & ul{
-      padding-top: $padding-top;
       padding-left:1.2rem;
 
       & li {
         padding-top: 0;
         padding-bottom: 0;
+        margin: 0;
       }
 
       & ul li {
