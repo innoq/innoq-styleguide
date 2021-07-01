@@ -29,14 +29,13 @@ ol:not([class]) {
   & > li {
     position: relative;
     margin-bottom: $spacer-xs;
-    padding-left: $number-space;
+    padding-left: 0.5rem;
+    //padding-left: $number-space;
     counter-increment: number;
 
     &::marker {
       @extend %heading-font-bold;
 
-      width: $number-space;
-      text-align: right;
       line-height: $paragraph-line-height;
       color: $bullet-list-color-secondary;
       font-size: $font-size-base;
