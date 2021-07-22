@@ -3,44 +3,45 @@
 
   position: relative;
   justify-content: flex-end;
-  margin-bottom: $spacer-md;
   padding: $spacer-lg $spacer-sm;
+  margin-bottom: $spacer-md;
 
   &__body {
     display: flex;
+    max-width: $grid-page-layout-content-width-xl;
+    box-sizing: content-box;
     flex-direction: column;
     justify-content: center;
-    margin: 0 auto;
-    border-bottom: 8px solid $landing-page-header-border-color;
-    background-color: $landing-page-header-intro-bg-color;
     padding: $spacer-base;
-    max-width: $grid-page-layout-content-width-xl;
+    border-bottom: 8px solid $landing-page-header-border-color;
+    margin: 0 auto;
+    background-color: $landing-page-header-intro-bg-color;
     color: $landing-page-header-intro-text-color;
-    box-sizing: content-box;
   }
 
   &__title {
     @extend %punch-in;
-    margin-bottom: $spacer-xs;
+
     padding-bottom: $spacer-base;
-    text-align: center;
+    margin-bottom: $spacer-xs;
     font-size: $font-size-xl;
+    text-align: center;
   }
 
   &__text {
     @extend %body-font-italic;
 
     margin-bottom: $spacer-base;
-    text-align: center;
-    line-height: $paragraph-line-height;
     font-size: $font-size-sm;
+    line-height: $paragraph-line-height;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .landing-page-header {
-    margin-bottom: $spacer-xl;
     padding: $spacer-lg;
+    margin-bottom: $spacer-xl;
   }
 
   .landing-page-header__body {

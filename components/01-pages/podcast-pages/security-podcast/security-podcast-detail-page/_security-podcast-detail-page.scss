@@ -1,5 +1,4 @@
 .podcast-detail-page--security {
-
   a:not([class]):hover {
     background-color: $brand-yellow;
   }
@@ -61,10 +60,11 @@
   }
 
   ul {
-    & > li::before {
+    > li::before {
       background: $brand-yellow;
     }
 
+    /* stylelint-disable-next-line selector-max-compound-selectors */
     ul > li::before {
       border: 3px solid $brand-yellow;
       background: $brand-white;

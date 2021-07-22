@@ -3,90 +3,65 @@ $info-box-icon-font-size: ms(3);
 info-box {
   display: block;
   margin-bottom: $spacer-base;
-
-  &.enhanced {
-    .infobox__teaser {
-      cursor: pointer;
-      user-select: none;
-    }
-
-    .infobox__teaser__chevron {
-      &::before {
-        content: $icon-chevron-down;
-      }
-    }
-
-    &[open="true"] {
-      .infobox__teaser__chevron {
-        &::before {
-          content: $icon-chevron-up;
-        }
-      }
-    }
-  }
-
-  &[open="false"] {
-    .infobox__teaser,
-    .infobox__teaser__heading {
-      background-color: $infobox-teaser-background-color-closed;
-      color: $infobox-teaser-text-color-closed;
-    }
-  }
-}
-
-.infobox__teaser,
-.infobox__teaser__heading {
-  background-color: $infobox-teaser-background-color-open;
-  color: $infobox-teaser-text-color-open;
 }
 
 .infobox__teaser {
+  @extend %heading-font-bold;
+
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   border-bottom: 3px solid $infobox-teaser-border-color;
-}
-
-.infobox__teaser__heading {
-  @extend %heading-font-bold;
-
-  display: inline-block;
-  margin: 0;
-
+  background-color: $infobox-teaser-background-color-closed;
+  color: $infobox-teaser-text-color-closed;
+  cursor: pointer;
   font-size: $font-size-xs;
-}
-
-.infobox__teaser__left,
-.infobox__teaser__right {
-  display: flex;
-  align-items: center;
 
   .icon {
     padding-left: 10px;
     font-size: $info-box-icon-font-size;
   }
+
+  .infobox__teaser__heading {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .infobox__teaser__right {
+    padding: $spacer-sm $spacer-md $spacer-sm 0;
+  }
+  .infobox__teaser__left {
+    padding: $spacer-sm 0 $spacer-sm $spacer-md;
+  }
 }
 
-.infobox__teaser__left {
-  padding: $spacer-sm 0 $spacer-sm $spacer-md;
+.infobox__teaser__chevron {
+  &::before {
+    content: $icon-chevron-down;
+  }
 }
 
-.infobox__teaser__right {
-  padding: $spacer-sm $spacer-md $spacer-sm 0;
-}
+details {
+  &[open] {
+    summary {
+      background-color: $infobox-teaser-background-color-open;
+      color: $infobox-teaser-text-color-open;
 
-.infobox__content {
-  transition: height 1s;
-  background-color: $infobox-content-background-color;
-  overflow: hidden;
-}
+      .infobox__teaser__chevron::before {
+        content: $icon-chevron-up;
+      }
+    }
 
-.infobox__content__box {
-  padding: $spacer-sm $spacer-sm $spacer-md;
+    .infobox__content {
+      padding: $spacer-sm $spacer-sm $spacer-md;
+      background-color: $infobox-content-background-color;
 
-  & p {
-    @extend %heading-font-regular;
-    font-size: $font-size-base;
+      p {
+        @extend %heading-font-regular;
+
+        font-size: $font-size-base;
+      }
+    }
   }
 }

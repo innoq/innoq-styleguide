@@ -1,10 +1,11 @@
 .alert {
   @extend %heading-font-regular;
+
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin-bottom: $spacer-sm;
   padding: $spacer-xs;
+  margin-bottom: $spacer-sm;
   color: $alert-color;
   font-size: $font-size-base;
 
@@ -24,12 +25,13 @@
 
 .alert-btn {
   @extend %base-button;
+
   color: inherit;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .alert {
-    margin-bottom: $spacer-md;
     padding: $spacer-sm;
+    margin-bottom: $spacer-md;
   }
 }

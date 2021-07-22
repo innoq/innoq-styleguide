@@ -1,111 +1,107 @@
-// sass-lint:disable no-url-domains, no-url-protocols
-$cdn: 'https://assets.innoq.com';
+$cdn: "https://assets.innoq.com";
 
 @font-face {
-  $cachebuster: '7d0a3995eec718ff34fa844413298153';
+  $cachebuster: "7d0a3995eec718ff34fa844413298153";
 
+  font-display: swap;
   font-family: FreightTextPro;
-  font-weight: bold;
   font-style: normal;
-  font-display: swap;
-  src: url('#{$cdn}/fonts/350ED6_0_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('#{$cdn}/fonts/350ED6_0_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('#{$cdn}/fonts/350ED6_0_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
-}
-
-@font-face {
-  $cachebuster: '7d0a3995eec718ff34fa844413298153';
-
-  font-family: FreightTextPro;
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-  src: url('#{$cdn}/fonts/350ED6_1_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('#{$cdn}/fonts/350ED6_1_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('#{$cdn}/fonts/350ED6_1_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
-}
-
-@font-face {
-  $cachebuster: '7d0a3995eec718ff34fa844413298153';
-
-  font-family: FreightTextPro;
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-  src: url('#{$cdn}/fonts/350ED6_2_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('#{$cdn}/fonts/350ED6_2_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('#{$cdn}/fonts/350ED6_2_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
-
-}
-
-@font-face {
-  $cachebuster: '7d0a3995eec718ff34fa844413298153';
-
-  font-family: FreightTextPro;
   font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-  src: url('#{$cdn}/fonts/350ED6_3_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('#{$cdn}/fonts/350ED6_3_unhinted_0.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('#{$cdn}/fonts/350ED6_3_unhinted_0.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  src: url("#{$cdn}/fonts/350ED6_0_unhinted_0.woff2?cachebuster=#{$cachebuster}") format("woff2"),
+    url("#{$cdn}/fonts/350ED6_0_unhinted_0.woff?cachebuster=#{$cachebuster}") format("woff"),
+    url("#{$cdn}/fonts/350ED6_0_unhinted_0.ttf?cachebuster=#{$cachebuster}") format("truetype");
 }
 
 @font-face {
-  $cachebuster: 'ebbf66fc8344ca6f16c5d660323ab3b4';
+  $cachebuster: "7d0a3995eec718ff34fa844413298153";
 
+  font-display: swap;
+  font-family: FreightTextPro;
+  font-style: italic;
+  font-weight: normal;
+  src: url("#{$cdn}/fonts/350ED6_1_unhinted_0.woff2?cachebuster=#{$cachebuster}") format("woff2"),
+    url("#{$cdn}/fonts/350ED6_1_unhinted_0.woff?cachebuster=#{$cachebuster}") format("woff"),
+    url("#{$cdn}/fonts/350ED6_1_unhinted_0.ttf?cachebuster=#{$cachebuster}") format("truetype");
+}
+
+@font-face {
+  $cachebuster: "7d0a3995eec718ff34fa844413298153";
+
+  font-display: swap;
+  font-family: FreightTextPro;
+  font-style: normal;
+  font-weight: normal;
+  src: url("#{$cdn}/fonts/350ED6_2_unhinted_0.woff2?cachebuster=#{$cachebuster}") format("woff2"),
+    url("#{$cdn}/fonts/350ED6_2_unhinted_0.woff?cachebuster=#{$cachebuster}") format("woff"),
+    url("#{$cdn}/fonts/350ED6_2_unhinted_0.ttf?cachebuster=#{$cachebuster}") format("truetype");
+}
+
+@font-face {
+  $cachebuster: "7d0a3995eec718ff34fa844413298153";
+
+  font-display: swap;
+  font-family: FreightTextPro;
+  font-style: italic;
+  font-weight: bold;
+  src: url("#{$cdn}/fonts/350ED6_3_unhinted_0.woff2?cachebuster=#{$cachebuster}") format("woff2"),
+    url("#{$cdn}/fonts/350ED6_3_unhinted_0.woff?cachebuster=#{$cachebuster}") format("woff"),
+    url("#{$cdn}/fonts/350ED6_3_unhinted_0.ttf?cachebuster=#{$cachebuster}") format("truetype");
+}
+
+@font-face {
+  $cachebuster: "ebbf66fc8344ca6f16c5d660323ab3b4";
+
+  font-display: swap;
   font-family: FFMarkWebProBook;
-  font-display: swap;
-  src: url('#{$cdn}/fonts/MarkPro-Book.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('#{$cdn}/fonts/MarkPro-Book.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('#{$cdn}/fonts/MarkPro-Book.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  src: url("#{$cdn}/fonts/MarkPro-Book.woff2?cachebuster=#{$cachebuster}") format("woff2"),
+    url("#{$cdn}/fonts/MarkPro-Book.woff?cachebuster=#{$cachebuster}") format("woff"),
+    url("#{$cdn}/fonts/MarkPro-Book.ttf?cachebuster=#{$cachebuster}") format("truetype");
 }
 
 @font-face {
-  $cachebuster: 'ebbf66fc8344ca6f16c5d660323ab3b4';
+  $cachebuster: "ebbf66fc8344ca6f16c5d660323ab3b4";
 
+  font-display: swap;
   font-family: FFMarkWebProBold;
-  font-display: swap;
-  src: url('#{$cdn}/fonts/MarkPro-Bold.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('#{$cdn}/fonts/MarkPro-Bold.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('#{$cdn}/fonts/MarkPro-Bold.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  src: url("#{$cdn}/fonts/MarkPro-Bold.woff2?cachebuster=#{$cachebuster}") format("woff2"),
+    url("#{$cdn}/fonts/MarkPro-Bold.woff?cachebuster=#{$cachebuster}") format("woff"),
+    url("#{$cdn}/fonts/MarkPro-Bold.ttf?cachebuster=#{$cachebuster}") format("truetype");
 }
 
 @font-face {
-  $cachebuster: 'ebbf66fc8344ca6f16c5d660323ab3b4';
+  $cachebuster: "ebbf66fc8344ca6f16c5d660323ab3b4";
 
-  font-family: FFMarkWebProHeavy;
   font-display: swap;
-  src: url('#{$cdn}/fonts/MarkPro-Heavy.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('#{$cdn}/fonts/MarkPro-Heavy.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('#{$cdn}/fonts/MarkPro-Heavy.ttf?cachebuster=#{$cachebuster}') format('truetype');
+  font-family: FFMarkWebProHeavy;
+  src: url("#{$cdn}/fonts/MarkPro-Heavy.woff2?cachebuster=#{$cachebuster}") format("woff2"),
+    url("#{$cdn}/fonts/MarkPro-Heavy.woff?cachebuster=#{$cachebuster}") format("woff"),
+    url("#{$cdn}/fonts/MarkPro-Heavy.ttf?cachebuster=#{$cachebuster}") format("truetype");
 }
 
 // Hack
 
 @font-face {
-  $cachebuster: '7d0a3995eec718ff34fa844413298153';
+  $cachebuster: "7d0a3995eec718ff34fa844413298153";
 
-  font-family: HackRegular;
   font-display: swap;
-  src: url('#{$cdn}/fonts/hack-regular.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('#{$cdn}/fonts/hack-regular.woff?cachebuster=#{$cachebuster}') format('woff');
+  font-family: HackRegular;
+  src: url("#{$cdn}/fonts/hack-regular.woff2?cachebuster=#{$cachebuster}") format("woff2"),
+    url("#{$cdn}/fonts/hack-regular.woff?cachebuster=#{$cachebuster}") format("woff");
 }
-
 
 // Icons
 
 // Fontface definitions for all icons
 //
-// sass-lint:disable property-sort-order
 @font-face {
-  $cachebuster: '7d0a3995eec718ff34fa8444132981c6';
+  $cachebuster: "7d0a3995eec718ff34fa8444132981c6";
 
-  font-family: 'icons';
   font-display: swap;
-  src: url('#{$cdn}/fonts/icomoon.woff2?cachebuster=#{$cachebuster}') format('woff2'),
-  url('#{$cdn}/fonts/icomoon.woff?cachebuster=#{$cachebuster}') format('woff'),
-  url('#{$cdn}/fonts/icomoon.ttf?cachebuster=#{$cachebuster}') format('truetype'),
-  url('#{$cdn}/fonts/icomoon.svg?cachebuster=#{$cachebuster}#icons') format('svg');
+  font-family: "icons";
   font-style: normal;
   font-weight: normal;
+  src: url("#{$cdn}/fonts/icomoon.woff2?cachebuster=#{$cachebuster}") format("woff2"),
+    url("#{$cdn}/fonts/icomoon.woff?cachebuster=#{$cachebuster}") format("woff"),
+    url("#{$cdn}/fonts/icomoon.ttf?cachebuster=#{$cachebuster}") format("truetype"),
+    url("#{$cdn}/fonts/icomoon.svg?cachebuster=#{$cachebuster}#icons") format("svg");
 }

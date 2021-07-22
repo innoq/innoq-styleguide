@@ -1,10 +1,10 @@
 .date-location-section {
   @extend %definition-list-simple;
 
-  margin-bottom: $spacer-sm;
+  padding-top: $spacer-sm;
   border-top: 1px solid $date-location-section-border-color;
   border-bottom: 1px solid $date-location-section-border-color;
-  padding-top: $spacer-sm;
+  margin-bottom: $spacer-sm;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

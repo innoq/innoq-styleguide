@@ -2,6 +2,7 @@
 // Theme colors
 //
 $brand-primary: $brand-apricot;
+$brand-primary-75: $brand-apricot-75;
 $brand-secondary: $brand-petrol;
 $brand-secondary-75: $brand-petrol-75;
 $brand-interaction: $brand-apricot;
@@ -303,8 +304,8 @@ $list-teaser-product-background-color: $brand-white;
 $list-teaser-product-background-color-cta: $brand-secondary;
 $list-teaser-product-color-cta: $brand-primary;
 
-$list-teaser-training-bg-color-primary: $brand-primary;
-$list-teaser-training-bg-color-secondary: $brand-secondary;
+$list-teaser-training-bg-color-primary: $brand-primary-75;
+$list-teaser-training-bg-color-secondary: $brand-secondary-75;
 $list-teaser-training-text-color-primary: $brand-white;
 $list-teaser-training-text-color-secondary: $brand-white;
 
@@ -370,14 +371,15 @@ $standard-header-podcast-intro-label-bg-color: $brand-white;
 $standard-header-podcast-intro-label-color: $brand-secondary;
 
 $staff-header-quote-color: $brand-primary;
+$staff-header-info-bg-color: $brand-primary;
+$staff-header-bio-bg-color: $brand-secondary;
+$staff-header-bio-color: $brand-white;
+$staff-header-bio-link-color: $brand-primary;
 $staff-header-quote-author-color: $brand-primary;
 $staff-header-quote-bg-color: $brand-secondary;
-$staff-header-bg-color: $brand-secondary;
+$staff-header-bg-color: $brand-primary;
 $staff-header-content-bg-color: $brand-gray-10;
-$staff-header-intro-text-border: $brand-secondary;
-$staff-header-intro-text-color: $brand-secondary;
-$staff-header-intro-bg-color: $brand-primary;
-$staff-header-icon-hover-color: $brand-white;
+$staff-header-icon-hover-color: $brand-primary;
 
 $landing-page-header-border-color: $brand-primary;
 $landing-page-header-intro-text-color: $brand-secondary;

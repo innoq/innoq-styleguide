@@ -1,8 +1,8 @@
 .footer {
   @extend %heading-font-regular;
 
-  background-color: $footer-body-bg;
   padding: $spacer-lg 0;
+  background-color: $footer-body-bg;
   color: $footer-color;
 }
 
@@ -27,8 +27,8 @@
 }
 
 .footer__address {
-  line-height: $paragraph-line-height;
   font-size: $font-size-base;
+  line-height: $paragraph-line-height;
 }
 
 .footer__directions-link {
@@ -36,10 +36,9 @@
 
   display: block;
   margin: $spacer-xs 0 $spacer-lg;
-  text-transform: uppercase;
-
   color: $footer-color;
   font-size: $font-size-xxs;
+  text-transform: uppercase;
 
   &::before {
     @extend %icon;
@@ -74,6 +73,7 @@
 .footer__directions-link,
 .footer__list__link {
   @extend %link-unstyled;
+
   transition: standard-transition(color);
 
   &:hover,
@@ -93,9 +93,9 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .footer {
     display: grid;
+    grid-column-gap: $spacer-lg;
     grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: auto auto auto;
-    grid-column-gap: $spacer-lg;
   }
 
   .footer__flex {

@@ -1,10 +1,10 @@
 .eyecatcher {
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: $spacer-md;
-  overflow: hidden;
   text-align: center;
 
   &--event {

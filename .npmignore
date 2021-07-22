@@ -1,8 +1,6 @@
 .dockerignore
 .eslint*
 .release-it.json
-.sass-lint*
-.travis.yml
 *.zip
 /components
 /docs
@@ -17,3 +15,4 @@ Dockerfile
 faucet.config.js
 fractal.js
 yarn.lock
+.stylelint*

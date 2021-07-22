@@ -18,8 +18,8 @@ $triplet-divider-height-md: 4 * $spacer-xxl;
 
 .triplet-divider__right {
   background-color: $triplet-divider-bg-color-secondary;
-  text-align: right;
   color: $triplet-divider-color-primary;
+  text-align: right;
 }
 
 .triplet-divider__right,
@@ -34,11 +34,11 @@ $triplet-divider-height-md: 4 * $spacer-xxl;
 .triplet-divider__left,
 .triplet-divider__center {
   display: flex;
+  min-height: $triplet-divider-height-sm;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: $spacer-base;
-  min-height: $triplet-divider-height-sm;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

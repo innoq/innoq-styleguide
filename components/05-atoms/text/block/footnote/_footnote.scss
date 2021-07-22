@@ -2,8 +2,8 @@
   @extend %link-unstyled;
   @extend %heading-font-regular;
 
-  line-height: 1;
   color: $footnote-link-color;
+  line-height: 1;
 }
 
 .footnotes__list {
@@ -13,12 +13,11 @@
 
   li,
   li > p {
-
     @extend %heading-font-regular;
 
     margin-bottom: $spacer-sm;
-    line-height: $paragraph-line-height;
     font-size: $font-size-xxs;
+    line-height: $paragraph-line-height;
   }
 
   li {
@@ -36,29 +35,29 @@
       @extend %heading-font-bold;
 
       position: absolute;
-      left: -.5rem;
+      left: -0.5rem;
       width: $spacer-sm;
-      text-align: right;
       color: $footnote-index-color;
       content: counter(number);
       counter-increment: number;
-      }
+      text-align: right;
     }
+  }
 }
 
 .tooltip {
-  box-shadow: 1px 0 20px 1px $tooltip-shadow-color;
-  background-color: $tooltip-background-color;
-  padding: $spacer-lg $spacer-md;
   max-width: 90%;
+  padding: $spacer-lg $spacer-md;
+  background-color: $tooltip-background-color;
+  box-shadow: 1px 0 20px 1px $tooltip-shadow-color;
 
-  & p {
+  p {
     @extend %heading-font-regular;
+
     margin: 0;
     font-size: $font-size-xxs;
   }
 }
-
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .footnotes__list {
@@ -71,7 +70,7 @@
   .tooltip {
     max-width: 40%;
 
-    & p {
+    p {
       font-size: $font-size-base;
     }
   }

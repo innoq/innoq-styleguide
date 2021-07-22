@@ -7,18 +7,18 @@
   flex-direction: row;
   justify-content: left;
   margin-bottom: $spacer-sm;
-  text-transform: uppercase;
   color: $footnote-section-headline-color;
   font-size: $font-size-sm;
+  text-transform: uppercase;
 
   &::after {
     position: relative;
     top: 0.65em;
+    max-width: 80px;
+    height: 3px;
     flex-grow: 1;
     margin-left: 10px;
     background-color: $footnote-section-headline-color;
-    max-width: 80px;
-    height: 3px;
     content: "\a0";
   }
 }

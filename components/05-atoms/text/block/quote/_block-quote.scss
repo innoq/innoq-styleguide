@@ -10,21 +10,22 @@ blockquote:not([class]),
   margin: 0 0 $spacer-md;
 
   &,
-  & > p {
+  > p {
     @extend %body-font-italic;
-    line-height: $paragraph-line-height;
+
     font-size: $font-size-sm;
+    line-height: $paragraph-line-height;
   }
 
   @media screen and (min-width: $grid-breakpoint-md) {
     &::before {
-      display: block;
       position: absolute;
       top: 0;
       bottom: 0;
       left: -$spacer-lg;
-      background-color: $quote-color;
+      display: block;
       width: 10px;
+      background-color: $quote-color;
       content: "";
     }
   }

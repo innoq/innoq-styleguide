@@ -20,8 +20,8 @@ $case-tile-teaser-sm-height: ms(32);
 
   display: flex;
   flex-direction: column;
-  background-size: cover;
   padding: $spacer-sm;
+  background-size: cover;
 }
 
 .static-tile-teaser__content {
@@ -29,8 +29,8 @@ $case-tile-teaser-sm-height: ms(32);
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-  background-color: $case-tile-teaser-body-bg-color;
   padding: $spacer-md;
+  background-color: $case-tile-teaser-body-bg-color;
 }
 
 .static-tile-teaser__body {
@@ -39,6 +39,7 @@ $case-tile-teaser-sm-height: ms(32);
 
 .static-tile-teaser__caption {
   @extend %teaser-caption;
+
   margin: 0;
 }
 
@@ -58,9 +59,9 @@ $case-tile-teaser-sm-height: ms(32);
 // case-tile-teaser--sm
 //
 .static-tile-teaser--sm {
-  margin-bottom: $spacer-xxl;
-  padding: $spacer-md;
   min-height: $case-tile-teaser-sm-height;
+  padding: $spacer-md;
+  margin-bottom: $spacer-xxl;
 }
 
 .static-tile-teaser__content--sm {

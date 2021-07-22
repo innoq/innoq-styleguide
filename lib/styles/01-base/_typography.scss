@@ -3,12 +3,12 @@
 //
 // Font stacks
 //
-$font-family-serif: FreightTextPro, Georgia, Times, "Times New Roman", serif;
-$font-family-sans-serif: FFMarkWebProBook, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-sans-serif-bold: FFMarkWebProBold, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-sans-serif-heavy: FFMarkWebProHeavy, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-icons: FFMarkWebProHeavy, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-family-monospace: HackRegular, "Monaco", "Courier New", monospace;
+$font-family-serif: "FreightTextPro", "Georgia", "Times", "Times New Roman", serif;
+$font-family-sans-serif: "FFMarkWebProBook", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-family-sans-serif-bold: "FFMarkWebProBold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-family-sans-serif-heavy: "FFMarkWebProHeavy", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-family-icons: "FFMarkWebProHeavy", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$font-family-monospace: "HackRegular", "Monaco", "Courier New", monospace;
 
 //
 // Base values
@@ -32,8 +32,6 @@ $base-unit: "rem";
 
 // The default font family.
 $base-font-family: $font-family-serif;
-
-// REFACTORING
 
 $font-size-xxs: ms(-2); // 10px
 $font-size-xs: ms(-1); // 14px

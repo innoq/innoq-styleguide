@@ -1,6 +1,6 @@
 .search-result {
-  text-decoration: none;
   color: $search-result-color;
+  text-decoration: none;
 
   &:hover,
   &:focus {
@@ -24,8 +24,8 @@
 .search-result__title {
   @extend %h3;
 
-  transition: standard-transition(color);
   margin-bottom: 0;
+  transition: standard-transition(color);
 
   // Fix Google CSE markup and the resulting style
   b {
@@ -35,9 +35,10 @@
 
 .search-result__subtitle {
   @extend %h4;
-  transition: standard-transition(color);
+
   margin-top: $spacer-xxs;
   margin-bottom: 0;
+  transition: standard-transition(color);
 
   // Fix Google CSE markup and the resulting style
   b {

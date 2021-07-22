@@ -1,7 +1,7 @@
 .video-cards {
   display: grid;
-  grid-template-columns: 1fr;
   grid-gap: $spacer-md;
+  grid-template-columns: 1fr;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -18,13 +18,13 @@
 
 .video-card {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   align-self: auto;
   justify-content: space-between;
-  background-color: $brand-white;
   padding: $spacer-md;
-  width: 100%;
+  background-color: $brand-white;
 
   &__head {
     display: flex;
@@ -33,8 +33,8 @@
   }
 
   &__title {
-    text-align: center;
     color: $brand-interaction;
+    text-align: center;
   }
 
   &__label {

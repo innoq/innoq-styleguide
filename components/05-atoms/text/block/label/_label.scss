@@ -8,8 +8,8 @@
 
     border-left: 6px solid $talk-label-text-color;
     background-color: $talk-label-background-color;
-    text-transform: uppercase;
     color: $talk-label-text-color;
+    text-transform: uppercase;
   }
 
   &.training {
@@ -17,8 +17,8 @@
 
     border-left: 6px solid $training-label-text-color;
     background-color: $training-label-background-color;
-    text-transform: uppercase;
     color: $training-label-text-color;
+    text-transform: uppercase;
   }
 
   &.slides {
@@ -38,8 +38,8 @@
     @extend %heading-font-bold;
 
     border: 4px solid $training-label-text-color;
-    text-transform: uppercase;
     color: $training-label-text-color;
+    text-transform: uppercase;
   }
 
   &.badge,
@@ -47,8 +47,8 @@
     @extend %heading-font-bold;
 
     background-color: $badge-background-color;
-    text-transform: uppercase;
     color: $badge-text-color;
+    text-transform: uppercase;
   }
 
   &.badge--inverted {

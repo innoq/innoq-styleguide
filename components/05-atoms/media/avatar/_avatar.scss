@@ -1,48 +1,40 @@
-$avatar-size-xs: ms(10);             //~40px
-$avatar-size-sm: ms(14);             //~55px
-$avatar-size-md: ms(18);             //~80px
-$avatar-size-base: ms(22);           //~120px
+$avatar-size-xs: ms(10); //~40px
+$avatar-size-sm: ms(14); //~55px
+$avatar-size-md: ms(18); //~80px
+$avatar-size-base: ms(22); //~120px
 
 .avatar {
   display: inline-block;
 }
 
 .avatar__image {
-  border-radius: 100%;
   background-color: $avatar-default-bg-color; // Show default background on
-  // FIXME: filter: grayscale(100%);
-  // Filter sorgt dafür, dass icon überdeckt wird. z-index und translatez helfen nicht.
+  border-radius: 100%;
 
   .avatar--xs & {
     width: $avatar-size-xs;
-    height: auto;
+    height: $avatar-size-xs;
   }
 
   .avatar--sm &,
   .avatar--small & {
     width: $avatar-size-sm;
-    height: auto;
+    height: $avatar-size-sm;
+  }
+
+  .avatar--md & {
+    width: $avatar-size-md;
+    height: $avatar-size-md;
   }
 
   .avatar--base & {
     width: $avatar-size-base;
-    height: auto;
+    height: $avatar-size-base;
   }
 }
 
 .avatar__link {
   @extend %link-unstyled;
-  transform: translateZ(100);
-}
 
-//
-// Breakpoints
-//
-@media screen and (min-width: $grid-breakpoint-md) {
-  .avatar__image {
-    .avatar--sm &,
-    .avatar--small & {
-      width: $avatar-size-md;
-    }
-  }
+  transform: translateZ(100);
 }

@@ -1,7 +1,7 @@
 //
 // Brand Colors
 //
-
+/* stylelint-disable color-no-hex */
 // INNOQ Blue
 $brand-blue: #24244c;
 $brand-blue-75: #5b5b79;
@@ -132,8 +132,8 @@ $box-shadow-glow: 0 0 0 5px $brand-apricot-transparent;
 // Accessibility
 $outline-color: rgb(59, 153, 252);
 
-//
-// Gradients
-//
+//Overlay Colors for Headers and Teasers
 
-$gradient-stencil: rgba(0, 0, 0, 0.25);
+:root {
+  --overlay-standard-color: #{$brand-gray-50};
+}

@@ -2,12 +2,12 @@ pre > code {
   @extend %monospace-font-regular;
 
   display: block;
+  overflow: auto;
+  padding: $spacer-xs;
   margin-bottom: $spacer-md;
   background-color: $code-background-color;
-  padding: $spacer-xs;
-  overflow: auto;
-  line-height: $paragraph-line-height;
   font-size: $font-size-xs;
+  line-height: $paragraph-line-height;
 }
 
 pre {
@@ -15,6 +15,7 @@ pre {
 }
 
 figure > div > pre {
+  /* stylelint-disable-next-line selector-max-compound-selectors */
   code {
     margin-bottom: $spacer-xxs;
   }

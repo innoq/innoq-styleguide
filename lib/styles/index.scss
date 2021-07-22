@@ -19,6 +19,11 @@
 @import "02-util/visibility";
 
 //
+// SUBATOMS
+//
+@import "../components/06-subatoms/bg-images/bg-images";
+
+//
 // ATOMS
 //
 
@@ -79,6 +84,7 @@
 @import "../components/04-molecules/article&blog-post-elements/author-bio/author-bio";
 @import "../components/04-molecules/article&blog-post-elements/conclusion/conclusion";
 @import "../components/04-molecules/article&blog-post-elements/content-separator/content-separator";
+@import "../components/04-molecules/article&blog-post-elements/cta-section/cta-section";
 @import "../components/04-molecules/article&blog-post-elements/footnote-section/footnote-section";
 @import "../components/04-molecules/article&blog-post-elements/info-box/info-box";
 @import "../components/04-molecules/article&blog-post-elements/quotes/long-quote/long-quote";
@@ -99,18 +105,14 @@
 // Visual elements
 @import "../components/04-molecules/visual-elements/card/card";
 @import "../components/04-molecules/visual-elements/date-location-section/date-location-section";
+@import "../components/04-molecules/visual-elements/download-section-feature/download-section-feature";
 @import "../components/04-molecules/visual-elements/eyecatcher/eyecatcher-banner/eyecatcher-banner";
 @import "../components/04-molecules/visual-elements/eyecatcher/icon-eyecatcher/icon-eyecatcher";
 @import "../components/04-molecules/visual-elements/video-card/video-card";
-
-// Paginator
 @import "../components/04-molecules/visual-elements/paginator/paginator";
-
-// Service Intro
+@import "../components/04-molecules/visual-elements/resource-list/resource-list";
 @import "../components/04-molecules/visual-elements/service-intro/service-intro";
 @import "../components/04-molecules/visual-elements/dialog-banner/dialog-banner";
-
-// Social Media Bar
 @import "../components/04-molecules/visual-elements/social-media-bar/social-media-bar";
 
 // Teaser Molecules
@@ -147,6 +149,7 @@
 // ORGANISMS
 //
 
+@import "../components/03-organisms/cover/cover";
 @import "../components/03-organisms/form/form";
 @import "../components/03-organisms/footer/footer";
 

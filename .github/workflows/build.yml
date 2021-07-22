@@ -5,11 +5,11 @@ name: Build and Release
 
 on:
   push:
-    branches: [master]
+    branches: [main]
     tags:
       - v* # Our tags are prefixed with 'v'
   pull_request:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build:

@@ -7,19 +7,19 @@ $podcast-teaser-height-md: ms(35);
   @extend %hover-glow;
 
   display: flex;
+  min-height: $podcast-teaser-height-sm;
   flex-direction: column;
   justify-content: space-between;
-  min-height: $podcast-teaser-height-sm;
 }
 
 .list-teaser-podcast__body {
-  margin-bottom: 0;
   padding: $spacer-sm $spacer-md;
+  margin-bottom: 0;
 }
 
 .list-teaser-podcast__footer {
-  margin-bottom: 0;
   padding: $spacer-sm $spacer-md;
+  margin-bottom: 0;
 
   > * {
     margin: 0;
@@ -60,8 +60,8 @@ $podcast-teaser-height-md: ms(35);
 .podcast-author {
   @extend %heading-font-bold;
 
-  text-transform: uppercase;
   font-size: $font-size-base;
+  text-transform: uppercase;
 
   &--security {
     color: $podcast-teaser-default-bg-sec;
@@ -75,12 +75,12 @@ $podcast-teaser-height-md: ms(35);
 }
 
 .list-teaser-podcast--avatar--overlay--big {
+  background-blend-mode: multiply;
   background-color: $podcast-teaser-overlay-color;
-  background-repeat: no-repeat;
   background-position: top right, top left;
+  background-repeat: no-repeat;
   background-size: 0%;
   color: $podcast-teaser-default-color;
-  background-blend-mode: multiply;
 
   &--security {
     background-color: $podcast-teaser-overlay-color-sec;
@@ -95,7 +95,6 @@ $podcast-teaser-height-md: ms(35);
     display: flex;
     justify-content: space-evenly;
     // IE11 Hack
-    // sass-lint:disable no-vendor-prefixes
     @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
       justify-content: space-around;
     }

@@ -1,17 +1,17 @@
 $anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing things around
 
 .toc {
-  margin-bottom: $spacer-lg;
   max-width: 100%;
+  margin-bottom: $spacer-lg;
 }
 
 .toc__heading {
   @extend %heading-font-heavy;
 
   margin-bottom: $spacer-sm;
-  text-transform: uppercase;
   color: $toc-heading-color;
   font-size: $font-size-sm;
+  text-transform: uppercase;
 }
 
 .toc__list {
@@ -20,10 +20,9 @@ $anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing th
 
   > li {
     @extend %body-font-italic;
+
     padding-top: $spacer-xxs;
     padding-bottom: $spacer-xxs;
-    //padding-left: $spacer-md;
-
     font-size: $font-size-base;
   }
 
@@ -52,9 +51,9 @@ $anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing th
   @extend %link-unstyled;
   @include hover-fill($link-hover-color-light, $toc-anchor-hover-text-color, $toc-anchor-text-color);
 
-  display: inline-block;
   position: relative;
   z-index: 1;
+  display: inline-block;
   padding: 0;
 
 

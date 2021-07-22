@@ -1,6 +1,6 @@
 .dark-background {
-  background-color: $footer-body-bg;
   overflow: hidden;
+  background-color: $footer-body-bg;
 }
 
 .bg-primary {
@@ -74,13 +74,16 @@
 // Flex utility classes
 
 .flex {
-  display: flex !important; // sass-lint:disable-line no-important
+  /* stylelint-disable-next-line declaration-no-important */
+  display: flex !important;
 }
 
 .flex-direction-column {
-  flex-direction: column !important; // sass-lint:disable-line no-important
+  /* stylelint-disable-next-line declaration-no-important */
+  flex-direction: column !important;
 }
 
 .flex-align-center {
-  align-items: center !important; // sass-lint:disable-line no-important
+  /* stylelint-disable-next-line declaration-no-important */
+  align-items: center !important;
 }

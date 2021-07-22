@@ -6,12 +6,13 @@
 }
 
 .reference__image {
-  margin: 0 auto $spacer-sm;
   max-width: 50%;
+  margin: 0 auto $spacer-sm;
 }
 
 .reference__link {
   @extend %block-link;
+
   text-align: center;
 }
 
@@ -20,8 +21,8 @@
 
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
   font-size: $font-size-base;
+  text-align: center;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -30,7 +31,7 @@
   }
 
   .reference__image {
-    margin: 0 auto $spacer-base;
     max-width: 40%;
+    margin: 0 auto $spacer-base;
   }
 }

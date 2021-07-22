@@ -1,28 +1,25 @@
-$gradient-from: rgba(0, 0, 0, 0.4);
-$gradient-to: rgba(0, 0, 0, 0.1);
-
 .image-header {
   display: flex;
-  flex-direction: column;
-  background-color: $image-header-bg-color;
-  padding: $spacer-md;
   min-height: $fullscreen-real-mobile-height;
+  flex-direction: column;
+  padding: $spacer-md;
+  background-color: $image-header-bg-color;
 
   &__body {
     display: flex;
+    width: 100%;
     flex-grow: 1;
     align-items: flex-end;
     justify-content: center;
     margin: 0 auto;
-    background-repeat: no-repeat;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
   }
 
   &__content {
-    background-color: $image-header-content-bg-color;
     padding: $spacer-base $spacer-xl;
+    background-color: $image-header-content-bg-color;
     text-align: center;
   }
 

@@ -5,10 +5,10 @@ $conclusion-border-size: ms(5);
 //
 
 .conclusion {
+  padding: $spacer-lg $spacer-base;
   border-top: $conclusion-border-size solid $conclusion-border-color;
   border-bottom: $conclusion-border-size solid $conclusion-border-color;
   background: $conclusion-background-color;
-  padding: $spacer-lg $spacer-base;
 
   code {
     background-color: $conclusion-background-color;
@@ -27,7 +27,7 @@ $conclusion-border-size: ms(5);
 
 .conclusion-text {
   &,
-  & > * {
+  > * {
     @extend %heading-font-regular;
 
     color: $conclusion-text-color;

@@ -8,6 +8,7 @@ $navbar-secondary-font-size: ms(-2);
 //
 .navbar {
   @extend %heading-font-regular;
+
   position: relative;
   z-index: 1;
   background-color: $navbar-body-bg;
@@ -20,6 +21,8 @@ $navbar-secondary-font-size: ms(-2);
 
 .navbar__inner {
   display: flex;
+  width: 100%;
+  max-width: $grid-page-layout-width;
   flex-direction: row;
   flex-grow: 1;
   flex-wrap: wrap;
@@ -27,8 +30,6 @@ $navbar-secondary-font-size: ms(-2);
   justify-content: flex-end;
   margin: 0 auto;
   background-color: $navbar-body-bg;
-  width: 100%;
-  max-width: $grid-page-layout-width;
 }
 
 //
@@ -36,15 +37,16 @@ $navbar-secondary-font-size: ms(-2);
 //
 .navbtn {
   @extend %heading-font-regular;
-  display: inline-block;
+
   position: relative;
-  transition: $navbar-navbtn-transition;
+  display: inline-block;
   border: 0;
   background-color: transparent;
+  color: $navbar-link-color;
   cursor: pointer;
   text-decoration: none;
+  transition: $navbar-navbtn-transition;
   white-space: nowrap;
-  color: $navbar-link-color;
 }
 
 .navbtn--skip {
@@ -64,13 +66,13 @@ $navbar-secondary-font-size: ms(-2);
 }
 
 .navbtn--drill-up {
-  display: none;
   position: absolute;
   top: 0;
   right: 0;
-  background-color: $navbar-lightened-bg;
-  padding: $spacer-xs $navbar-padding;
+  display: none;
   width: 100%;
+  padding: $spacer-xs $navbar-padding;
+  background-color: $navbar-lightened-bg;
   text-align: right;
 }
 
@@ -91,12 +93,12 @@ $navbar-secondary-font-size: ms(-2);
 }
 
 .navbtn--active::after {
-  display: block;
   position: absolute;
   top: 1.3em;
-  background-color: $navbar-link-active-color;
+  display: block;
   width: 100%;
   height: 3px;
+  background-color: $navbar-link-active-color;
   content: "";
 }
 
@@ -115,17 +117,17 @@ $navbar-secondary-font-size: ms(-2);
 
 .navbtn:hover,
 .navbtn:focus {
-  transition: $navbar-navbtn-transition;
   color: $navbar-link-hover-color;
+  transition: $navbar-navbtn-transition;
 }
 
 //
 // navbar__brand // and related things
 //
 .navbar__brand {
+  height: $navbar-brandbar-height-small;
   flex-grow: 1;
   padding: $navbar-padding 0 $navbar-padding $navbar-padding;
-  height: $navbar-brandbar-height-small;
 }
 
 .navbar__brand-link {
@@ -142,16 +144,16 @@ $navbar-secondary-font-size: ms(-2);
 //
 .navbar__meta {
   display: none;
+  width: 100%;
+  height: $navbar-bottombar-height-small;
   align-items: center;
   justify-content: center;
   order: 4;
-  background-color: $navbar-lightened-bg;
   padding: $spacer-sm;
   padding-right: 0;
-  width: 100%;
-  height: $navbar-bottombar-height-small;
-  text-transform: uppercase;
+  background-color: $navbar-lightened-bg;
   font-size: $navbar-secondary-font-size * 0.9;
+  text-transform: uppercase;
 }
 
 //
@@ -159,10 +161,10 @@ $navbar-secondary-font-size: ms(-2);
 //
 .navbar__togglers {
   display: flex;
+  height: $navbar-brandbar-height-small;
   align-items: center;
   order: 2;
   padding: $navbar-padding;
-  height: $navbar-brandbar-height-small;
 }
 
 //
@@ -180,22 +182,23 @@ $navbar-secondary-font-size: ms(-2);
 // primary-nav // main navigation row
 //
 .primary-nav {
-  display: none;
   position: relative;
+  display: none;
+  width: 100%;
   order: 3;
   margin-bottom: 0;
   background-color: $navbar-lightened-bg;
-  width: 100%;
 }
 
 .primary-nav__list {
   @extend %heading-font-bold;
   @extend %list-unstyled;
+
   position: relative;
-  margin: 0;
-  padding: $navbar-padding * 2 $navbar-padding $spacer-sm;
   width: 100%;
   height: calc(90vh - #{$navbar-bottombar-height-small} - #{$navbar-brandbar-height});
+  padding: $navbar-padding * 2 $navbar-padding $spacer-sm;
+  margin: 0;
   font-size: $navbar-primary-font-size;
 }
 
@@ -215,14 +218,14 @@ $navbar-secondary-font-size: ms(-2);
 
 .dropdown__checkbox:focus ~ .dropdown__toggle--navbar {
   .dropdown__icon--navbar {
-    outline: auto 5px $outline-color;
     color: $navbar-link-hover-color;
+    outline: auto 5px $outline-color;
   }
 }
 
 .dropdown__icon--navbar {
-  transition: standard-transition(color);
   color: $navbar-link-color;
+  transition: standard-transition(color);
 
   &:hover,
   &:focus {
@@ -232,21 +235,18 @@ $navbar-secondary-font-size: ms(-2);
 
 .dropdown__list-wrapper--navbar {
   @extend %heading-font-regular;
+
   position: relative;
   top: 0;
   left: 0;
-  background-color: $navbar-lightened-bg;
-  padding: 0 $spacer-md $spacer-md;
   width: 100%;
+  padding: 0 $spacer-md $spacer-md;
+  background-color: $navbar-lightened-bg;
   font-size: $navbar-primary-font-size;
 
   &:hover {
     display: block;
   }
-
-  // &:focus {
-  //   display: block;
-  // }
 }
 
 .dropdown__item--navbar {

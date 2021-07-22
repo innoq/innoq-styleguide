@@ -1,11 +1,11 @@
 .container-xl,
 %container-xl {
-  margin: 0 auto;
-  padding: 0 $spacer-xs;
   width: 100%;
   max-width: $default-page-layout-content-width-xl;
+  padding: 0 $spacer-xs;
+  margin: 0 auto;
 
-  & > * + * {
+  > * + * {
     margin-top: $spacer-base;
   }
 }

@@ -8,6 +8,7 @@
 
 .card__tags {
   @extend %list-unstyled;
+
   position: absolute;
   top: 0;
   left: 0;
@@ -16,11 +17,12 @@
 
 .card__tag {
   @extend %teaser-caption;
-  background-color: $card-tag-bg-color;
+
   padding: $spacer-xxs;
+  background-color: $card-tag-bg-color;
   color: $card-tag-text-color;
 
-  & + .card__tag {
+  + .card__tag {
     margin-top: $spacer-xs;
   }
 }
@@ -30,13 +32,9 @@
   vertical-align: bottom;
 }
 
-// .card__body {
-//   border-bottom: 1px solid $brand-gray-25;
-// }
-
 .card__body {
-  background-color: $card-bg-color;
   padding: $spacer-sm;
+  background-color: $card-bg-color;
 
   .upcase-heading {
     color: $card-headline-color;
@@ -52,8 +50,8 @@
 }
 
 .card__footer {
-  background-color: $card-headline-color;
   padding: $spacer-sm;
+  background-color: $card-headline-color;
 
   .upcase-heading {
     color: $card-bg-color;
@@ -76,12 +74,13 @@
   @extend %teaser-caption;
 
   margin-bottom: $spacer-xxs;
-  line-height: $paragraph-line-height;
   color: $card-subheadline-color;
+  line-height: $paragraph-line-height;
 }
 
 .card__headline {
   @extend %h3;
+
   color: $card-headline-color;
 }
 
@@ -101,8 +100,8 @@
 
   .card__body,
   .card__footer {
-    transform: translateY(-$spacer-xxl);
     margin: 0 $spacer-base;
+    transform: translateY(-$spacer-xxl);
   }
 
   .card__image {

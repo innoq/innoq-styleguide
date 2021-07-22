@@ -3,39 +3,43 @@ $author-bio-image-offset: ms(22) / 2;
 $author-text-margin: 0.18rem;
 
 .author-bio {
+  @extend %link-unstyled;
+
   position: relative;
   margin-bottom: $spacer-base;
 
   &.author-bio--condensed {
     display: inline-flex;
+    width: 100%;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;
   }
 
   &.author-bio--short {
     display: inline-flex;
+    width: 100%;
     flex-wrap: nowrap;
     align-items: center;
     justify-content: flex-start;
-    width: 100%;
 
-    & + .author-bio--short {
+    + .author-bio--short {
       margin-top: $spacer-sm;
     }
   }
 
   &.author-bio--long {
+    padding: $spacer-base;
+    padding-top: $author-bio-image-offset + $spacer-sm;
     margin-top: $author-bio-image-offset;
     margin-bottom: $spacer-xl;
     background-color: $author-bio-background-color;
-    padding: $spacer-base;
-    padding-top: $author-bio-image-offset + $spacer-sm;
   }
 }
 
 .author-bio__head {
+  @extend %link-unstyled;
+
   margin-bottom: $spacer-base;
   text-align: center;
 }
@@ -43,14 +47,9 @@ $author-text-margin: 0.18rem;
 .author-bio__name {
   @extend %heading-font-bold;
 
-  text-transform: uppercase;
+  display: block;
   font-size: $font-size-base;
-}
-
-.author-bio__link {
-  @extend %link-unstyled;
-
-  white-space: normal;
+  text-transform: uppercase;
 }
 
 .author-bio__info {
@@ -61,10 +60,7 @@ $author-text-margin: 0.18rem;
   .author-bio__name + & {
     margin-top: $author-text-margin;
   }
-}
 
-.author-bio__info,
-.author-bio__link {
   .author-bio--condensed & {
     line-height: normal;
   }
@@ -74,9 +70,9 @@ $author-text-margin: 0.18rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: $spacer-sm auto;
-  border-top: 1px solid $author-bio-social-border-color;
   padding-top: $spacer-sm;
+  border-top: 1px solid $author-bio-social-border-color;
+  margin: $spacer-sm auto;
 }
 
 .author-bio__social-profile {
@@ -97,12 +93,13 @@ $author-text-margin: 0.18rem;
   @extend %heading-font-regular;
   @extend %link-unstyled;
 
-  line-height: $paragraph-line-height;
   font-size: $font-size-base;
   hyphens: none;
+  line-height: $paragraph-line-height;
 }
 
 .author-bio__image {
+  display: flex;
   margin-right: $spacer-md;
 
   .author-bio--condensed & {
@@ -113,6 +110,7 @@ $author-text-margin: 0.18rem;
     position: absolute;
     top: -$author-bio-image-offset;
     left: calc(50% - #{$author-bio-image-offset});
+    margin-right: 0;
   }
 }
 
@@ -133,7 +131,7 @@ $author-text-margin: 0.18rem;
     &.author-bio--short {
       width: 49%;
 
-      & + .author-bio--short {
+      + .author-bio--short {
         margin-top: 0;
       }
     }

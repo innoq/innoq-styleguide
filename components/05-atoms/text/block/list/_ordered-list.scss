@@ -13,7 +13,7 @@ $list-indent: 2.5rem;
 
 ol:not([class]) {
   @extend %unsorted-list;
-
+  
   padding-left: $list-indent;
 
   & > li {
@@ -21,13 +21,14 @@ ol:not([class]) {
     padding-left: 0.5rem;
     counter-increment: number;
 
+
     &::marker {
       @extend %heading-font-bold;
 
       line-height: $paragraph-line-height;
       color: $bullet-list-color-secondary;
-      font-size: $font-size-base;
       content: counter(number);
+      font-size: $font-size-base;
 
       @media screen and (min-width: $grid-breakpoint-md) {
         font-size: $font-size-sm;

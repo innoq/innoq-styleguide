@@ -1,23 +1,21 @@
 .podcast-overview-page--security {
   .topic-header {
-    background-color: $brand-gray-75;
-    background-blend-mode: multiply;
-
     .topic-header__body {
       background-color: $brand-white;
       color: $brand-gray;
     }
 
     .toolbar__link {
-      transition: standard-transition(background-color);
       padding: $spacer-xs;
       color: $brand-gray;
+      transition: standard-transition(background-color);
 
       &:hover,
       &:focus {
         background-color: $brand-yellow;
       }
 
+      /* stylelint-disable-next-line selector-max-compound-selectors */
       .icon-svg {
         background: $brand-gray;
       }

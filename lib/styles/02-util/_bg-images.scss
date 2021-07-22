@@ -1,319 +1,391 @@
 // Art
 .bg-image-art-01,
 %bg-image-art-01 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-art-01.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-art-01.jpg");
 }
 
 //Culture
 .bg-image-culture-01,
 %bg-image-culture-01 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-culture-01.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-culture-01.jpg");
 }
 
 .bg-image-culture-02,
 %bg-image-culture-02 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-culture-02.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-culture-02.jpg");
 }
 
 .bg-image-culture-03,
 %bg-image-culture-03 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-culture-03.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-culture-03.jpg");
 }
 
 .bg-image-culture-04,
 %bg-image-culture-04 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-culture-04.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-culture-04.jpg");
 }
 
 .bg-image-culture-05,
 %bg-image-culture-05 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-culture-05.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-culture-05.jpg");
 }
 
 // Staff
 .bg-image-staff-01,
 %bg-image-staff-01 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-staff-01.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-staff-01.jpg");
 }
 
 //Podcast
 .bg-image-podcast-01,
 %bg-image-podcast-01 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-podcast.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-podcast.jpg");
 }
 
 //Trainings
 .bg-image-trainings-01,
 %bg-image-trainings-01 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-trainings-01.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-trainings-01.jpg");
 }
 
 .bg-image-trainings-02,
 %bg-image-trainings-02 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-trainings-02.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-trainings-02.jpg");
 }
 
 .bg-image-trainings-03,
 %bg-image-trainings-03 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-trainings-03.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-trainings-03.jpg");
 }
 
 .bg-image-trainings-04,
 %bg-image-trainings-04 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-trainings-04.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-trainings-04.jpg");
 }
 
 .bg-image-trainings-05,
 %bg-image-trainings-05 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-trainings-05.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-trainings-05.jpg");
 }
 
 .bg-image-trainings-06,
 %bg-image-trainings-06 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-trainings-06.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-trainings-06.jpg");
 }
 
 .bg-image-trainings-07,
 %bg-image-trainings-07 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-trainings-07.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-trainings-07.jpg");
 }
 
 //Workshops
 .bg-image-workshop-01,
 %bg-image-workshop-02 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-01.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-01.jpg");
 }
 
 .bg-image-workshop-02,
 %bg-image-workshop-02 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-02.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-02.jpg");
 }
 
 .bg-image-workshop-03,
 %bg-image-workshop-03 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-03.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-03.jpg");
 }
 
 .bg-image-workshop-04,
 %bg-image-workshop-04 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-04.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-04.jpg");
 }
 
 .bg-image-workshop-05,
 %bg-image-workshop-05 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-05.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-05.jpg");
 }
 
 .bg-image-workshop-06,
 %bg-image-workshop-06 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-06.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-06.jpg");
 }
 
 .bg-image-workshop-07,
 %bg-image-workshop-07 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-07.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-07.jpg");
 }
 
 .bg-image-workshop-08,
 %bg-image-workshop-08 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-08.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-08.jpg");
 }
 
 .bg-image-workshop-09,
 %bg-image-workshop-09 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-09.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-09.jpg");
 }
 
 .bg-image-workshop-10,
 %bg-image-workshop-10 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-10.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-10.jpg");
 }
 
 .bg-image-workshop-11,
 %bg-image-workshop-11 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-11.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-11.jpg");
 }
 
 .bg-image-workshop-12,
 %bg-image-workshop-12 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-12.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-12.jpg");
 }
 
 .bg-image-workshop-13,
 %bg-image-workshop-13 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-13.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-13.jpg");
 }
 
 .bg-image-workshop-14,
 %bg-image-workshop-14 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-14.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-14.jpg");
 }
 
 .bg-image-workshop-15,
 %bg-image-workshop-15 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-15.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-15.jpg");
 }
 
 .bg-image-workshop-16,
 %bg-image-workshop-16 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-16.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-16.jpg");
 }
 
 .bg-image-workshop-17,
 %bg-image-workshop-17 {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/general/visual-workshop-17.jpg");
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
+  background-image: asset-url("bg-images/general/visual-workshop-17.jpg");
 }
 
 // Edition Images Just change the image URLs for upcoming editions
 .bg-image-edition-01,
 %bg-image-edition-01 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
   background-image: asset-url("bg-images/edition-02/edition02-canyon-01.jpg");
 }
 
 .bg-image-edition-02,
 %bg-image-edition-02 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
   background-image: asset-url("bg-images/edition-02/edition02-canyon-02.jpg");
 }
 
 .bg-image-edition-03,
 %bg-image-edition-03 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
   background-image: asset-url("bg-images/edition-02/edition02-canyon-03.jpg");
 }
 
 .bg-image-edition-04,
 %bg-image-edition-04 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
   background-image: asset-url("bg-images/edition-02/edition02-canyon-04.jpg");
 }
 
 .bg-image-edition-05,
 %bg-image-edition-05 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
   background-image: asset-url("bg-images/edition-02/edition02-canyon-05.jpg");
 }
 
 .bg-image-edition-06,
 %bg-image-edition-06 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
   background-image: asset-url("bg-images/edition-02/edition02-cloth-01.jpg");
 }
 
 .bg-image-edition-07,
 %bg-image-edition-07 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
   background-image: asset-url("bg-images/edition-02/edition02-cloth-02.jpg");
 }
 
 .bg-image-edition-08,
 %bg-image-edition-08 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
   background-image: asset-url("bg-images/edition-02/edition02-cloth-03.jpg");
 }
 
 .bg-image-edition-09,
 %bg-image-edition-09 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-25;
   background-image: asset-url("bg-images/edition-02/edition02-cloth-04.jpg");
 }
 
 .bg-image-edition-10,
 %bg-image-edition-10 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-75;
   background-image: asset-url("bg-images/edition-02/edition02-data-01.jpg");
 }
 
 .bg-image-edition-11,
 %bg-image-edition-11 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-75;
   background-image: asset-url("bg-images/edition-02/edition02-data-02.jpg");
 }
 
 .bg-image-edition-12,
 %bg-image-edition-12 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-75;
   background-image: asset-url("bg-images/edition-02/edition02-data-03.jpg");
 }
 
 .bg-image-edition-13,
 %bg-image-edition-13 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-75;
   background-image: asset-url("bg-images/edition-02/edition02-data-04.jpg");
 }
 
 .bg-image-edition-14,
 %bg-image-edition-14 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-75;
   background-image: asset-url("bg-images/edition-02/edition02-data-05.jpg");
 }
 
 .bg-image-edition-15,
 %bg-image-edition-15 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-50;
   background-image: asset-url("bg-images/edition-02/edition02-data-06.jpg");
 }
 
 .bg-image-edition-16,
 %bg-image-edition-16 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-50;
   background-image: asset-url("bg-images/edition-02/edition02-human-01.jpg");
-}
-
-.bg-image-edition-16-gradient,
-%bg-image-edition-16-gradient {
-  background-image: linear-gradient($gradient-stencil, $gradient-stencil),
-    asset-url("bg-images/edition-02/edition02-human-01.jpg");
 }
 
 .bg-image-edition-17,
 %bg-image-edition-17 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-50;
   background-image: asset-url("bg-images/edition-02/edition02-human-02.jpg");
 }
 
 .bg-image-edition-18,
 %bg-image-edition-18 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-50;
   background-image: asset-url("bg-images/edition-02/edition02-human-03.jpg");
 }
 
 .bg-image-edition-19,
 %bg-image-edition-19 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-50;
   background-image: asset-url("bg-images/edition-02/edition02-human-04.jpg");
 }
 
 .bg-image-edition-20,
 %bg-image-edition-20 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-50;
   background-image: asset-url("bg-images/edition-02/edition02-human-05.jpg");
 }
 
 .bg-image-edition-21,
 %bg-image-edition-21 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-50;
   background-image: asset-url("bg-images/edition-02/edition02-human-06.jpg");
 }
 
 .bg-image-edition-22,
 %bg-image-edition-22 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-50;
   background-image: asset-url("bg-images/edition-02/edition02-human-07.jpg");
 }
 
 .bg-image-edition-23,
 %bg-image-edition-23 {
+  background-blend-mode: multiply;
+  background-color: $brand-gray-50;
   background-image: asset-url("bg-images/edition-02/edition02-human-08.jpg");
 }

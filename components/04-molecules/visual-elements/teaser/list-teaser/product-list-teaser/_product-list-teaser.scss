@@ -9,9 +9,9 @@
 }
 
 .product-list-teaser__body {
-  margin-bottom: $spacer-base;
-  border-bottom: 1px solid $list-teaser-product-border-color-muted;
   padding: $spacer-base $spacer-base 0;
+  border-bottom: 1px solid $list-teaser-product-border-color-muted;
+  margin-bottom: $spacer-base;
 }
 
 .product-list-teaser__footer {
@@ -26,18 +26,18 @@
   @extend %block-link;
   @extend %heading-font-heavy;
 
-  background: $list-teaser-product-background-color-cta;
   padding: $spacer-xs;
-  text-align: center;
+  background: $list-teaser-product-background-color-cta;
   color: $list-teaser-product-color-cta;
   font-size: $font-size-xs;
+  text-align: center;
 }
 
 .product-list-teaser__caption {
   @extend %teaser-caption;
 
-  margin-bottom: $spacer-sm;
   height: $spacer-md;
+  margin-bottom: $spacer-sm;
   color: $list-teaser-product-caption-color;
 }
 

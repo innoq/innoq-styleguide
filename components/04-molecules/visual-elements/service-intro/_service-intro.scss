@@ -1,5 +1,3 @@
-// sass-lint:disable no-vendor-prefixes,
-
 .service-intro-grid {
   display: grid;
   grid-row-gap: $spacer-xl;
@@ -17,17 +15,18 @@
   @extend %manual-hyphenation;
 
   margin-bottom: $spacer-md;
-  line-height: 1.38; //magic number
   color: $service-intro-text-color;
   font-size: $font-size-lg;
+  line-height: 1.38; //magic number
 
   a,
   a:not([class]) {
-    box-shadow: $spacer-xxs 0 0 $brand-primary, -$spacer-xxs 0 0 $brand-primary;
-    background-color: $brand-primary;
     padding: ms(-16);
+    background-color: $brand-primary;
+    /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+    box-shadow: $spacer-xxs 0 0 $brand-primary, -$spacer-xxs 0 0 $brand-primary;
 
     &:hover {
       background-color: $brand-primary;
@@ -39,9 +38,9 @@
   @extend %heading-font-bold;
 
   margin-bottom: $spacer-sm;
-  line-height: $paragraph-line-height;
   color: $service-intro-text-color;
   font-size: $font-size-base;
+  line-height: $paragraph-line-height;
 }
 
 @media screen and (min-width: $grid-breakpoint-md-lg) {
@@ -51,9 +50,9 @@
   }
 
   .service-intro {
-    border-right: 1px solid $brand-gray-25;
-    padding: 0 $spacer-lg;
     width: 100%;
+    padding: 0 $spacer-lg;
+    border-right: 1px solid $brand-gray-25;
     justify-self: flex-end;
 
     &:nth-child(2n) {
@@ -63,8 +62,8 @@
 
   .service-intro__header {
     margin-bottom: $spacer-base;
-    line-height: 1.35; //magic number
     font-size: $font-size-xl;
+    line-height: 1.35; //magic number
   }
 
   .service-intro__text {

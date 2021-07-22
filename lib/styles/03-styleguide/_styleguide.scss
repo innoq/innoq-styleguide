@@ -1,8 +1,8 @@
 .swatches {
   display: flex;
+  width: 100%;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
 }
 
 .swatch {
@@ -24,12 +24,13 @@
 
 .swatch-text {
   @extend %monospace-font-regular;
-  background-color: $brand-gray-10;
+
   padding-top: $spacer-xs;
   padding-bottom: $spacer-xs;
+  background-color: $brand-gray-10;
+  color: $brand-text;
   text-align: center;
   text-transform: uppercase;
-  color: $brand-text;
   user-select: all;
 
   &::after {

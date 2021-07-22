@@ -1,6 +1,6 @@
 hr {
-  margin-bottom: $spacer-md; //FIME We need a page layout that manages all horizontal spacingsrg
-  border: 0;
-  background-color: $horizontal-line-color;
   height: 3px;
+  border: 0;
+  margin-bottom: $spacer-md; //FIME We need a page layout that manages all horizontal spacingsrg
+  background-color: $horizontal-line-color;
 }

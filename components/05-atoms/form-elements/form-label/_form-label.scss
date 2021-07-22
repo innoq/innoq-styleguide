@@ -17,7 +17,7 @@
   // Mute labels in next to disabled form-controls
   &.form-label--disabled,
   .form-control__input:disabled ~ & {
-    cursor: not-allowed;
     color: $checkbox-color-disabled;
+    cursor: not-allowed;
   }
 }
