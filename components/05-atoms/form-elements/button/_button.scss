@@ -49,6 +49,17 @@ $default-btn-margin: $spacer-sm;
         color: $button-cta-hover-color;
       }
     }
+
+    &--color-swap {
+      background-color: $brand-secondary;
+      color: $brand-primary;
+      &:hover,
+      &:focus {
+        border-color: $brand-secondary;
+        background-color: $brand-secondary;
+        color: $brand-secondary;
+      }
+    }
   }
 
   &--light {
