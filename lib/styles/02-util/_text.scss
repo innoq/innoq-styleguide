@@ -108,19 +108,20 @@
 }
 
 %unsorted-list {
-  @extend %list-unstyled;
-
-  margin-bottom: $spacer-md;
+  margin-top: 0;
+  padding: 0;
   line-height: $paragraph-line-height;
   font-size: $font-size-base;
 
   li {
-    position: relative;
     margin-bottom: $spacer-xs;
   }
 
+  ul {
+    margin-top: $spacer-xs;
+  }
+
   @media screen and (min-width: $grid-breakpoint-md) {
-    line-height: $paragraph-line-height;
     font-size: $font-size-sm;
   }
 }

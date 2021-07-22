@@ -1,11 +1,4 @@
-/*$bullet-size: $spacer-xs; // ~9px
-$bullet-offset: $spacer-sm; // ~16px
-$list-indent: $bullet-offset + $bullet-size;
-$background: $bullet-list-color-primary;*/
-$bullet-size: 2.3rem;
-$padding-top: 0rem;
-
-
+$bullet-size: 1.9rem;
 
 .list-unstyled {
   @extend %list-unstyled;
@@ -17,41 +10,27 @@ $padding-top: 0rem;
 // class attribute, to prevent reverting styles for all non-default lists.
 //
 
-
 ul:not(class) {
+  @extend %unsorted-list;
+  padding-left: 1.5rem;
 
-  & li {
+  li {
     @extend %body-font-regular;
-    @extend %unsorted-list;
 
     list-style-type: disc;
-
-    & ul{
-      padding-left:1.2rem;
-
-      & li {
-        padding-top: 0;
-        padding-bottom: 0;
-        margin: 0;
-      }
-
-      & ul li {
-        padding-top: $padding-top;
-        padding-bottom: 0;
-      }
-    }
   }
 
-  & >li {
-    margin-bottom: 0.3rem;
-
-    &::marker{
+  > li {
+    &::marker {
       color: $bullet-list-color;
       font-size: $bullet-size;
+      line-height: $paragraph-line-height;
     }
-    & li::marker{
+
+    & li::marker {
       color: $bullet-list-color-secondary;
       font-size: $bullet-size;
+      line-height: $paragraph-line-height;
     }
   }
 }
@@ -59,15 +38,12 @@ ul:not(class) {
 // ---- Bold Bullet Lists ----------------------------------------------------------
 //
 .bold-list {
-  padding-left: 1.5rem;
-
-  & > li {
+  > li {
     @extend %heading-font-bold;
 
     &::marker {
       color: $bullet-list-color;
       font-size: $bullet-size;
-
     }
   }
 }

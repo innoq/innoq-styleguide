@@ -9,28 +9,16 @@
 //
 
 $number-space: $spacer-md;
-$list-indent: 1.2rem;
-
+$list-indent: 2.5rem;
 
 ol:not([class]) {
-  @extend %body-font-regular;
-  @include list-unstyled;
+  @extend %unsorted-list;
 
-  margin-bottom: $spacer-md;
-  line-height: $paragraph-line-height;
-  font-size: $font-size-base;
   padding-left: $list-indent;
 
-  @media screen and (min-width: $grid-breakpoint-md) {
-    line-height: $paragraph-line-height;
-    font-size: $font-size-sm;
-  }
-
   & > li {
-    position: relative;
     margin-bottom: $spacer-xs;
     padding-left: 0.5rem;
-    //padding-left: $number-space;
     counter-increment: number;
 
     &::marker {
@@ -41,43 +29,9 @@ ol:not([class]) {
       font-size: $font-size-base;
       content: counter(number);
 
-
       @media screen and (min-width: $grid-breakpoint-md) {
-        top: -0.23rem;
-        line-height: $paragraph-line-height;
         font-size: $font-size-sm;
       }
     }
   }
-
-  ul {
-    // Nested lists need diffrent vertical spacings
-    // to blend into the outer list.
-    margin-top: $spacer-xs;
-    line-height: $paragraph-line-height;
-    font-size: $font-size-base;
-
-    @media screen and (min-width: $grid-breakpoint-md) {
-      line-height: $paragraph-line-height;
-      font-size: $font-size-sm;
-    }
-    padding-left: 1.4rem;
-    &,
-    li > ul > li {
-      margin-bottom: 0;
-
-    }
-
-    li {
-      list-style-type:disc;
-
-      &::marker{
-        font-size: 1.9rem;
-        color:  $bullet-list-color;
-      }
-
-    }
-  }
 }
-
-
