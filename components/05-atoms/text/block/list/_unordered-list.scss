@@ -1,6 +1,4 @@
-$bullet-size: $spacer-xs; // ~9px
-$bullet-offset: $spacer-sm; // ~16px
-$list-indent: $bullet-offset + $bullet-size;
+$bullet-size: 1.9rem;
 
 .list-unstyled {
   @extend %list-unstyled;
@@ -12,44 +10,28 @@ $list-indent: $bullet-offset + $bullet-size;
 // class attribute, to prevent reverting styles for all non-default lists.
 //
 
-ul:not([class]),
-.bold-list {
+ul:not([class]) {
   @extend %unsorted-list;
-  @extend %body-font-regular;
 
-  > li {
-    padding-left: $list-indent;
+  padding-left: 1.5rem;
 
-    &::before {
-      position: absolute;
-      top: 0.4rem; //magic number
-      left: 0;
-      width: $bullet-size;
-      height: $bullet-size;
-      background: $bullet-list-color-primary;
-      border-radius: 50%;
-      content: "";
+  li {
+    @extend %body-font-regular;
 
-      @media screen and (min-width: $grid-breakpoint-md) {
-        top: 0.5rem; //magic number
-      }
-    }
+    list-style-type: disc;
   }
 
-  ul {
-    // Nested lists need diffrent vertical spacings
-    // to blend into the outer list.
-    margin-top: $spacer-xs;
-
-    /* stylelint-disable-next-line selector-max-compound-selectors */
-    &,
-    li > ul > li {
-      margin-bottom: 0;
+  > li {
+    &::marker {
+      color: $bullet-list-color;
+      font-size: $bullet-size;
+      line-height: $paragraph-line-height;
     }
 
-    // Change bullet appeareance in nested contexts
-    li::before {
-      background: $bullet-list-color-secondary;
+    li::marker {
+      color: $bullet-list-color-secondary;
+      font-size: $bullet-size;
+      line-height: $paragraph-line-height;
     }
   }
 }
@@ -57,15 +39,16 @@ ul:not([class]),
 // ---- Bold Bullet Lists ----------------------------------------------------------
 //
 .bold-list {
-  @extend %heading-font-bold;
+  @extend %unsorted-list;
+
+  padding-left: 1.5rem;
 
   > li {
-    &::before {
-      top: 0.59rem; //magic number
+    @extend %heading-font-bold;
 
-      @media screen and (min-width: $grid-breakpoint-md) {
-        top: 0.73rem; //magic number
-      }
+    &::marker {
+      color: $bullet-list-color;
+      font-size: $bullet-size;
     }
   }
 }

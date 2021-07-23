@@ -24,12 +24,6 @@
   }
 }
 
-.icon-arrow-down {
-  &::before {
-    content: $icon-arrow-down;
-  }
-}
-
 .icon-chevron-down {
   &::before {
     content: $icon-chevron-down;
@@ -198,6 +192,10 @@
   width: 2rem; // magic number
   height: 0.75rem; // magic number
   mask-image: asset-url("icons/arrow-medium-left.svg");
+}
+
+.icon-arrow-short-down {
+  mask-image: asset-url("icons/arrow-short-down.svg");
 }
 
 .icon-arrow-sync {

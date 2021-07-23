@@ -9,64 +9,29 @@
 //
 
 $number-space: $spacer-md;
+$list-indent: 2.5rem;
 
 ol:not([class]) {
-  @extend %body-font-regular;
-  @include list-unstyled;
+  @extend %unsorted-list;
 
-  margin-bottom: $spacer-md;
-  counter-reset: number;
-  font-size: $font-size-base;
-  line-height: $paragraph-line-height;
-
-  @media screen and (min-width: $grid-breakpoint-md) {
-    font-size: $font-size-sm;
-    line-height: $paragraph-line-height;
-  }
+  padding-left: $list-indent;
 
   > li {
-    position: relative;
-    padding-left: $number-space;
+    padding-left: 0.5rem;
     margin-bottom: $spacer-xs;
+    counter-increment: number;
 
-    &::before {
+    &::marker {
       @extend %heading-font-bold;
 
-      position: absolute;
-      top: -0.2rem;
-      left: -0.5rem;
-      width: $number-space;
       color: $bullet-list-color-secondary;
       content: counter(number);
-      counter-increment: number;
       font-size: $font-size-base;
       line-height: $paragraph-line-height;
-      text-align: right;
 
       @media screen and (min-width: $grid-breakpoint-md) {
-        top: -0.23rem;
         font-size: $font-size-sm;
-        line-height: $paragraph-line-height;
       }
-    }
-  }
-
-  ul {
-    // Nested lists need diffrent vertical spacings
-    // to blend into the outer list.
-    margin-top: $spacer-xs;
-    font-size: $font-size-base;
-    line-height: $paragraph-line-height;
-
-    @media screen and (min-width: $grid-breakpoint-md) {
-      font-size: $font-size-sm;
-      line-height: $paragraph-line-height;
-    }
-
-    /* stylelint-disable-next-line selector-max-compound-selectors */
-    &,
-    li > ul > li {
-      margin-bottom: 0;
     }
   }
 }
