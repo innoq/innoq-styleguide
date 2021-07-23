@@ -42,50 +42,15 @@
   }
 }
 
-.icon-chevron-left {
-  &::before {
-    content: $icon-chevron-left;
-  }
-}
-.icon-return {
-  &::before {
-    content: $icon-return;
-  }
-}
-
-.icon-check {
-  &::before {
-    content: $icon-check;
-  }
-}
-
 .icon-close {
   &::before {
     content: $icon-close;
   }
 }
 
-.icon-download {
-  &::before {
-    content: $icon-download;
-  }
-}
-
-.icon-bubble-conversation-4 {
-  &::before {
-    content: $icon-bubble-conversation-4;
-  }
-}
-
 .icon-info {
   &::before {
     content: $icon-info;
-  }
-}
-
-.icon-phone {
-  &::before {
-    content: $icon-phone;
   }
 }
 
@@ -98,24 +63,6 @@
 .icon-chevron-2-down {
   &::before {
     content: $icon-chevron-2-down;
-  }
-}
-
-.icon-chevron-2-left {
-  &::before {
-    content: $icon-chevron-2-left;
-  }
-}
-
-.icon-chevron-2-right {
-  &::before {
-    content: $icon-chevron-2-right;
-  }
-}
-
-.icon-chevron-2-up {
-  &::before {
-    content: $icon-chevron-2-up;
   }
 }
 
