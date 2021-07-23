@@ -10,8 +10,9 @@ $bullet-size: 1.9rem;
 // class attribute, to prevent reverting styles for all non-default lists.
 //
 
-ul:not(class) {
+ul:not([class]) {
   @extend %unsorted-list;
+
   padding-left: 1.5rem;
 
   li {
@@ -27,7 +28,7 @@ ul:not(class) {
       line-height: $paragraph-line-height;
     }
 
-    & li::marker {
+    li::marker {
       color: $bullet-list-color-secondary;
       font-size: $bullet-size;
       line-height: $paragraph-line-height;
@@ -38,6 +39,10 @@ ul:not(class) {
 // ---- Bold Bullet Lists ----------------------------------------------------------
 //
 .bold-list {
+  @extend %unsorted-list;
+
+  padding-left: 1.5rem;
+
   > li {
     @extend %heading-font-bold;
 

@@ -1,5 +1,3 @@
-$anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing things around
-
 .toc {
   max-width: 100%;
   margin-bottom: $spacer-lg;
@@ -16,34 +14,25 @@ $anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing th
 
 .toc__list {
   @extend %list-unstyled;
+
   padding-left: 0.7rem;
 
   > li {
     @extend %body-font-italic;
 
+    display: flex;
     padding-top: $spacer-xxs;
     padding-bottom: $spacer-xxs;
     font-size: $font-size-base;
+
+    &::before {
+      padding-right: 0.5rem;
+      content: asset-url("icons/arrow-short-down.svg");
+    }
   }
 
   > li + li {
     border-top: 1px solid $toc-border-color;
-  }
-
-  li {
-      list-style-type: $icon-arrow-down;
-      padding-left: 0.7rem;
-
-
-      &::marker {
-        @extend %icon; // inline-block
-
-        position: absolute;
-        left: -$spacer-md;
-        width: $spacer-base;
-        color: $brand-interaction;
-        font-weight: bolder;
-      }
   }
 }
 
@@ -55,8 +44,6 @@ $anchor-list-font-size: 1.26rem; // Determined by the hard science of pushing th
   z-index: 1;
   display: inline-block;
   padding: 0;
-
-
 }
 
 @media screen and (min-width: $grid-breakpoint-xl) {

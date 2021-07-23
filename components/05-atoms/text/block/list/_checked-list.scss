@@ -1,8 +1,9 @@
-$list-indent: 0.7rem;
+$list-indent: 0.5rem;
 
 .checklist {
   @extend %unsorted-list;
-  padding-left: 1.5rem;
+
+  padding-left: 1.2rem;
 
   li {
     @extend %heading-font-bold;
@@ -11,6 +12,7 @@ $list-indent: 0.7rem;
     list-style-type: "✓";
 
     &::marker {
+      color: $bullet-list-color;
       font-size: 1.5rem;
     }
   }
