@@ -181,210 +181,210 @@
 .swatch-brand-blue > .swatch-color {
   background-color: #24244c;
 }
-.swatch-brand-blue > .swatch-text::after {
+.swatch-brand-blue > .swatch-text--rgb::after {
   content: "#24244c";
 }
 
 .swatch-brand-blue-75 > .swatch-color {
   background-color: #5b5b79;
 }
-.swatch-brand-blue-75 > .swatch-text::after {
+.swatch-brand-blue-75 > .swatch-text--rgb::after {
   content: "#5b5b79";
 }
 
 .swatch-brand-blue-50 > .swatch-color {
   background-color: #9191a5;
 }
-.swatch-brand-blue-50 > .swatch-text::after {
+.swatch-brand-blue-50 > .swatch-text--rgb::after {
   content: "#9191a5";
 }
 
 .swatch-brand-blue-25 > .swatch-color {
   background-color: #c8c8d2;
 }
-.swatch-brand-blue-25 > .swatch-text::after {
+.swatch-brand-blue-25 > .swatch-text--rgb::after {
   content: "#c8c8d2";
 }
 
 .swatch-brand-red > .swatch-color {
   background-color: #ff4d67;
 }
-.swatch-brand-red > .swatch-text::after {
+.swatch-brand-red > .swatch-text--rgb::after {
   content: "#ff4d67";
 }
 
 .swatch-brand-red-75 > .swatch-color {
   background-color: #fc6e86;
 }
-.swatch-brand-red-75 > .swatch-text::after {
+.swatch-brand-red-75 > .swatch-text--rgb::after {
   content: "#fc6e86";
 }
 
 .swatch-brand-red-50 > .swatch-color {
   background-color: #fd9eae;
 }
-.swatch-brand-red-50 > .swatch-text::after {
+.swatch-brand-red-50 > .swatch-text--rgb::after {
   content: "#fd9eae";
 }
 
 .swatch-brand-red-25 > .swatch-color {
   background-color: #feced6;
 }
-.swatch-brand-red-25 > .swatch-text::after {
+.swatch-brand-red-25 > .swatch-text--rgb::after {
   content: "#feced6";
 }
 
 .swatch-brand-green > .swatch-color {
   background-color: #55cdaf;
 }
-.swatch-brand-green > .swatch-text::after {
+.swatch-brand-green > .swatch-text--rgb::after {
   content: "#55cdaf";
 }
 
 .swatch-brand-green-75 > .swatch-color {
   background-color: #68ddc3;
 }
-.swatch-brand-green-75 > .swatch-text::after {
+.swatch-brand-green-75 > .swatch-text--rgb::after {
   content: "#68ddc3";
 }
 
 .swatch-brand-green-50 > .swatch-color {
   background-color: #9ae8d7;
 }
-.swatch-brand-green-50 > .swatch-text::after {
+.swatch-brand-green-50 > .swatch-text--rgb::after {
   content: "#9ae8d7";
 }
 
 .swatch-brand-green-25 > .swatch-color {
   background-color: #ccf3eb;
 }
-.swatch-brand-green-25 > .swatch-text::after {
+.swatch-brand-green-25 > .swatch-text--rgb::after {
   content: "#ccf3eb";
 }
 
 .swatch-brand-yellow > .swatch-color {
   background-color: #fff019;
 }
-.swatch-brand-yellow > .swatch-text::after {
+.swatch-brand-yellow > .swatch-text--rgb::after {
   content: "#fff019";
 }
 
 .swatch-brand-yellow-75 > .swatch-color {
   background-color: #fff87a;
 }
-.swatch-brand-yellow-75 > .swatch-text::after {
+.swatch-brand-yellow-75 > .swatch-text--rgb::after {
   content: "#fff87a";
 }
 
 .swatch-brand-yellow-50 > .swatch-color {
   background-color: #fffb9f;
 }
-.swatch-brand-yellow-50 > .swatch-text::after {
+.swatch-brand-yellow-50 > .swatch-text--rgb::after {
   content: "#fffb9f";
 }
 
 .swatch-brand-yellow-25 > .swatch-color {
   background-color: #fffdbe;
 }
-.swatch-brand-yellow-25 > .swatch-text::after {
+.swatch-brand-yellow-25 > .swatch-text--rgb::after {
   content: "#fffdbe";
 }
 
 .swatch-brand-petrol > .swatch-color {
   background-color: #004153;
 }
-.swatch-brand-petrol > .swatch-text::after {
+.swatch-brand-petrol > .swatch-text--rgb::after {
   content: "#004153";
 }
 
 .swatch-brand-petrol-75 > .swatch-color {
   background-color: #40707e;
 }
-.swatch-brand-petrol-75 > .swatch-text::after {
+.swatch-brand-petrol-75 > .swatch-text--rgb::after {
   content: "#40707e";
 }
 
 .swatch-brand-petrol-50 > .swatch-color {
   background-color: #80a0a9;
 }
-.swatch-brand-petrol-50 > .swatch-text::after {
+.swatch-brand-petrol-50 > .swatch-text--rgb::after {
   content: "#80a0a9";
 }
 
 .swatch-brand-petrol-25 > .swatch-color {
   background-color: #bfcfd4;
 }
-.swatch-brand-petrol-25 > .swatch-text::after {
+.swatch-brand-petrol-25 > .swatch-text--rgb::after {
   content: "#bfcfd4";
 }
 
 .swatch-brand-apricot > .swatch-color {
   background-color: #ff9c66;
 }
-.swatch-brand-apricot > .swatch-text::after {
+.swatch-brand-apricot > .swatch-text--rgb::after {
   content: "#ff9c66";
 }
 
 .swatch-brand-apricot-75 > .swatch-color {
   background-color: #ffb58c;
 }
-.swatch-brand-apricot-75 > .swatch-text::after {
+.swatch-brand-apricot-75 > .swatch-text--rgb::after {
   content: "#ffb58c";
 }
 
 .swatch-brand-apricot-50 > .swatch-color {
   background-color: #ffcdb2;
 }
-.swatch-brand-apricot-50 > .swatch-text::after {
+.swatch-brand-apricot-50 > .swatch-text--rgb::after {
   content: "#ffcdb2";
 }
 
 .swatch-brand-apricot-25 > .swatch-color {
   background-color: #ffe6d9;
 }
-.swatch-brand-apricot-25 > .swatch-text::after {
+.swatch-brand-apricot-25 > .swatch-text--rgb::after {
   content: "#ffe6d9";
 }
 
 .swatch-brand-gray > .swatch-color {
   background-color: #242424;
 }
-.swatch-brand-gray > .swatch-text::after {
+.swatch-brand-gray > .swatch-text--rgb::after {
   content: "#242424";
 }
 
 .swatch-brand-gray-75 > .swatch-color {
   background-color: #646465;
 }
-.swatch-brand-gray-75 > .swatch-text::after {
+.swatch-brand-gray-75 > .swatch-text--rgb::after {
   content: "#646465";
 }
 
 .swatch-brand-gray-50 > .swatch-color {
   background-color: #979798;
 }
-.swatch-brand-gray-50 > .swatch-text::after {
+.swatch-brand-gray-50 > .swatch-text--rgb::after {
   content: "#979798";
 }
 
 .swatch-brand-gray-25 > .swatch-color {
   background-color: #d8d8d8;
 }
-.swatch-brand-gray-25 > .swatch-text::after {
+.swatch-brand-gray-25 > .swatch-text--rgb::after {
   content: "#d8d8d8";
 }
 
 .swatch-brand-gray-20 > .swatch-color {
   background-color: #f4f4f4;
 }
-.swatch-brand-gray-20 > .swatch-text::after {
+.swatch-brand-gray-20 > .swatch-text--rgb::after {
   content: "#f4f4f4";
 }
 
 .swatch-brand-gray-10 > .swatch-color {
   background-color: #f7f7f7;
 }
-.swatch-brand-gray-10 > .swatch-text::after {
+.swatch-brand-gray-10 > .swatch-text--rgb::after {
   content: "#f7f7f7";
 }
 

@@ -1,21 +1,19 @@
-$list-indent: $spacer-xs + $spacer-sm;
+$list-indent: 0.5rem;
 
 .checklist {
   @extend %unsorted-list;
-  @extend %heading-font-bold;
+
+  padding-left: 1.2rem;
 
   li {
+    @extend %heading-font-bold;
+
     padding-left: $list-indent;
+    list-style-type: "✓";
 
-    &::before {
-      @extend %icon;
-
-      position: absolute;
-      top: 0.45em;
-      left: 0;
+    &::marker {
       color: $bullet-list-color;
-      content: $icon-check;
-      -webkit-text-stroke-width: 2px;
+      font-size: 1.5rem;
     }
   }
 }
