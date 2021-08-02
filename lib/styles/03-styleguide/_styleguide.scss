@@ -45,7 +45,7 @@
         background-color: $hex;
       }
 
-      > .swatch-text {
+      > .swatch-text--rgb {
         &::after {
           content: "" + $hex;
         }
