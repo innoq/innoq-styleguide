@@ -39,16 +39,16 @@
 
 %heading-font-bold,
 .heading-font-bold {
-  font-family: $font-family-sans-serif-bold;
+  font-family: $font-family-sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 %heading-font-heavy,
 .heading-font-heavy {
-  font-family: $font-family-sans-serif-heavy;
+  font-family: $font-family-sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 800;
 }
 
 %monospace-font-regular,

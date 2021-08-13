@@ -72,8 +72,8 @@ $navbar-primary-font-size: ms(3);
       top: -$spacer-xs;
       border-bottom: 5px solid $navbar-link-hover-color;
       content: attr(title);
-      font-family: $font-family-sans-serif-bold;
       font-size: $navbar-primary-font-size-big;
+      font-weight: bold;
     }
   }
 

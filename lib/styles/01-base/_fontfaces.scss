@@ -52,7 +52,9 @@ $cdn: "https://assets.innoq.com";
   $cachebuster: "ebbf66fc8344ca6f16c5d660323ab3b4";
 
   font-display: swap;
-  font-family: FFMarkWebProBook;
+  font-family: FFMarkWebPro;
+  font-style: normal;
+  font-weight: normal;
   src: url("#{$cdn}/fonts/MarkPro-Book.woff2?cachebuster=#{$cachebuster}") format("woff2"),
     url("#{$cdn}/fonts/MarkPro-Book.woff?cachebuster=#{$cachebuster}") format("woff"),
     url("#{$cdn}/fonts/MarkPro-Book.ttf?cachebuster=#{$cachebuster}") format("truetype");
@@ -62,7 +64,9 @@ $cdn: "https://assets.innoq.com";
   $cachebuster: "ebbf66fc8344ca6f16c5d660323ab3b4";
 
   font-display: swap;
-  font-family: FFMarkWebProBold;
+  font-family: FFMarkWebPro;
+  font-style: normal;
+  font-weight: bold;
   src: url("#{$cdn}/fonts/MarkPro-Bold.woff2?cachebuster=#{$cachebuster}") format("woff2"),
     url("#{$cdn}/fonts/MarkPro-Bold.woff?cachebuster=#{$cachebuster}") format("woff"),
     url("#{$cdn}/fonts/MarkPro-Bold.ttf?cachebuster=#{$cachebuster}") format("truetype");
@@ -72,7 +76,9 @@ $cdn: "https://assets.innoq.com";
   $cachebuster: "ebbf66fc8344ca6f16c5d660323ab3b4";
 
   font-display: swap;
-  font-family: FFMarkWebProHeavy;
+  font-family: FFMarkWebPro;
+  font-style: normal;
+  font-weight: 800;
   src: url("#{$cdn}/fonts/MarkPro-Heavy.woff2?cachebuster=#{$cachebuster}") format("woff2"),
     url("#{$cdn}/fonts/MarkPro-Heavy.woff?cachebuster=#{$cachebuster}") format("woff"),
     url("#{$cdn}/fonts/MarkPro-Heavy.ttf?cachebuster=#{$cachebuster}") format("truetype");
