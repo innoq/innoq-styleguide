@@ -28,21 +28,21 @@
 }
 
 .heading-font-regular {
-  font-family: "FFMarkWebProBook", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
 }
 
 .heading-font-bold {
-  font-family: "FFMarkWebProBold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 .heading-font-heavy {
-  font-family: "FFMarkWebProHeavy", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 800;
 }
 
 .swatch-text,
@@ -82,17 +82,23 @@
 }
 @font-face {
   font-display: swap;
-  font-family: FFMarkWebProBook;
+  font-family: FFMarkWebPro;
+  font-style: normal;
+  font-weight: normal;
   src: url("https://assets.innoq.com/fonts/MarkPro-Book.woff2?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("woff2"), url("https://assets.innoq.com/fonts/MarkPro-Book.woff?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("woff"), url("https://assets.innoq.com/fonts/MarkPro-Book.ttf?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("truetype");
 }
 @font-face {
   font-display: swap;
-  font-family: FFMarkWebProBold;
+  font-family: FFMarkWebPro;
+  font-style: normal;
+  font-weight: bold;
   src: url("https://assets.innoq.com/fonts/MarkPro-Bold.woff2?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("woff2"), url("https://assets.innoq.com/fonts/MarkPro-Bold.woff?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("woff"), url("https://assets.innoq.com/fonts/MarkPro-Bold.ttf?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("truetype");
 }
 @font-face {
   font-display: swap;
-  font-family: FFMarkWebProHeavy;
+  font-family: FFMarkWebPro;
+  font-style: normal;
+  font-weight: 800;
   src: url("https://assets.innoq.com/fonts/MarkPro-Heavy.woff2?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("woff2"), url("https://assets.innoq.com/fonts/MarkPro-Heavy.woff?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("woff"), url("https://assets.innoq.com/fonts/MarkPro-Heavy.ttf?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("truetype");
 }
 @font-face {
