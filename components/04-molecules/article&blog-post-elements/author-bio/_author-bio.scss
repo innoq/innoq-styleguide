@@ -1,6 +1,7 @@
 $author-bio-image-offset: ms(22) / 2;
 // tiny space between name and info
 $author-text-margin: 0.18rem;
+$author-name-xl: $font-size-base*1.55 ; //~20px
 
 .author-bio {
   @extend %link-unstyled;
@@ -35,6 +36,46 @@ $author-text-margin: 0.18rem;
     margin-bottom: $spacer-xl;
     background-color: $author-bio-background-color;
   }
+
+  //CONTACT PERSON/ BEWERBUNGSBUDDIES
+  &.author-bio--large {
+    /* .avatar--xl{
+      background-color: $brand-primary;
+      border-radius: 100%;
+    } */
+
+    .avatar__image {
+      background-color: $brand-primary;
+      resize: 50%;
+    }
+
+    .author-bio__name {
+      padding-bottom: 1%;
+      font-size: $author-name-xl;
+    }
+
+    .author-bio__text {
+      padding-top: 10%;
+      text-align: center;
+
+    > p:last-child {
+        @extend %heading-font-regular;
+
+        padding-top: 7%;
+      }
+
+    > p:first-child, .author-bio__info {
+      @extend %body-font-italic;
+
+      font-size: $font-size-base*1.45;
+      }
+
+      .author-bio__info {
+        margin: 0;
+      }
+    }
+  }
+
 }
 
 .author-bio__head {
