@@ -2431,6 +2431,7 @@ ul:not([class]) > li li::marker {
   background-color: #004153;
   color: #ff9c66;
   font-size: 1rem;
+  line-height: 1.2;
 }
 .table thead th,
 .table tfoot th {
@@ -2446,6 +2447,7 @@ ul:not([class]) > li li::marker {
 .table td {
   padding: 0.5787037037rem;
   font-size: 0.9114583333rem;
+  line-height: 1.52;
   vertical-align: top;
 }
 
