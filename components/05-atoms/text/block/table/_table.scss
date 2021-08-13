@@ -21,6 +21,7 @@
     background-color: $table-header-background-color;
     color: $table-header-text-color;
     font-size: $font-size-base;
+    line-height: $heading-line-height;
 
     th {
       padding: $spacer-sm $spacer-xs;
@@ -43,6 +44,7 @@
 
     padding: $spacer-xs;
     font-size: $font-size-xs;
+    line-height: $paragraph-line-height;
     vertical-align: top;
   }
 }
