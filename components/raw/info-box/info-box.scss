@@ -30,9 +30,11 @@ info-box {
 
   .infobox__teaser__right {
     padding: $spacer-sm $spacer-md $spacer-sm 0;
+    // display: inline-flex;
   }
   .infobox__teaser__left {
     padding: $spacer-sm 0 $spacer-sm $spacer-md;
+    // display: inline-flex;
   }
 }
 
@@ -43,8 +45,12 @@ info-box {
 }
 
 details {
+  ::-webkit-details-marker {
+    display: none; // hides marker in Safari
+  }
+
   &[open] {
-    summary {
+    .infobox__teaser {
       background-color: $infobox-teaser-background-color-open;
       color: $infobox-teaser-text-color-open;
 
@@ -64,4 +70,8 @@ details {
       }
     }
   }
+}
+
+summary {
+  display: block; // hides marker in all browser but Safari
 }

@@ -2996,11 +2996,14 @@ info-box {
   content: "d";
 }
 
-details[open] summary {
+details ::-webkit-details-marker {
+  display: none;
+}
+details[open] .infobox__teaser {
   background-color: #004153;
   color: #f7f7f7;
 }
-details[open] summary .infobox__teaser__chevron::before {
+details[open] .infobox__teaser .infobox__teaser__chevron::before {
   content: "e";
 }
 details[open] .infobox__content {
@@ -3009,6 +3012,10 @@ details[open] .infobox__content {
 }
 details[open] .infobox__content p {
   font-size: 1rem;
+}
+
+summary {
+  display: block;
 }
 
 long-quote > blockquote,
