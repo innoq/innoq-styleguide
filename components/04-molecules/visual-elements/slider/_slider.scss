@@ -42,7 +42,7 @@
 
   display: inline-block;
   padding: $spacer-xxs;
-  background: $slider-page-number-background-color;
+  background: rgba(247, 247, 247, 0.7);
   font-size: $font-size-xxs;
 }
 
@@ -86,7 +86,7 @@
   display: none;
 }
 
-.instructions--touch--active .slider__instructions p {
+.instructions--touch--active .instructions__text {
   display: none;
 }
 
