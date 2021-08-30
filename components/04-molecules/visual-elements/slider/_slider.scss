@@ -5,11 +5,11 @@
 }
 
 .slider__all {
+  @extend %list-unstyled;
+
   position: relative;
   display: flex;
-  padding: 0;
   margin: 0;
-  list-style-type: none;
 }
 
 .slider__slide {
