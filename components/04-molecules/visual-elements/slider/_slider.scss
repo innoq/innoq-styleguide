@@ -43,7 +43,7 @@
   display: inline-block;
   padding: $spacer-xxs;
   background: $slider-page-number-background-color;
-  font-size: ms(-2);
+  font-size: $font-size-xxs;
 }
 
 .instructions--hover,
@@ -53,7 +53,7 @@
   @extend %heading-font-regular;
 
   display: none;
-  font-size: ms(0);
+  font-size: $font-size-base;
 }
 
 .slider__instructions {
@@ -66,7 +66,11 @@
   display: block;
 }
 
-.slider:hover+.slider__instructions .instructions--hover+.instructions--focus {
+.slider:hover+.slider__instructions {
+  display: none;
+}
+
+.instructions--hover+.instructions--focus {
   display: none;
 }
 
@@ -74,7 +78,11 @@
   display: block;
 }
 
-.slider:hover:focus+.slider__instructions .instructions--hover--and--focus~* {
+.slider:hover:focus+.slider__instructions {
+  display: none;
+}
+
+.instructions--hover--and--focus~* {
   display: none;
 }
 
