@@ -1,0 +1,42 @@
+
+<div class="slider" role="region" aria-label="Folien" tabindex="0" aria-describedby="slider-instructions">
+    <ul class="slider__all">
+        <li class="slider__slide">
+            <figure class="slider__page">
+                <img src={context.app.uri("assets/example-content/they-had-feathers.jpeg")} alt='Folie 1' id= 'Folie_1'/>
+                <figcaption class="page__number__box">
+                    <div class="page__number">
+                        1/3
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="slider__slide">
+            <figure class="slider__page">
+                <img src={context.app.uri("assets/example-content/feathered-dinosaur.jpeg")} alt='Folie 2' id= 'Folie_2'/>
+                <figcaption class="page__number__box">
+                    <div class="page__number">
+                        2/3
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+        <li class="slider__slide">
+            <figure class="slider__page">
+                <img src={context.app.uri("assets/example-content/spectacularly-preserved-dinosaur-with-feathers.jpeg")} alt='Folie 3' id= 'Folie_3'/>
+                <figcaption class="page__number__box">
+                    <div class="page__number">
+                        3/3
+                    </div>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+</div>
+<div class="slider__instructions">
+    <p class="instructions--touch">Nach links wischen, um ggf. weitere Folien zu sehen</p>
+    <p class="instructions--hover--and--focus">Scrollen oder die Pfeiltasten nutzen, um ggf. weitere Folien zu sehen</p>
+    <p class="instructions--hover">Scrollen, um ggf. weitere Folien zu sehen</p>
+    <p class="instructions--focus">Die Pfeiltasten nutzen, um ggf. weitere Folien zu sehen</p>
+</div>
+{/* This slider relies heavily on https://inclusive-components.design/a-content-slider/, accessed last: 06/15/2021, 16:45. Thanks to Heydon Pickering! */}
