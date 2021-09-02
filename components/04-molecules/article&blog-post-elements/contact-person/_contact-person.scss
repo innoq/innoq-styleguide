@@ -6,12 +6,9 @@
   .subheading {
     @extend %heading-font-regular;
 
-    margin: 0;
     padding-bottom: $spacer-xs;
+    margin: 0;
     font-size: $font-size-md;
-
-
-
   }
 
   .author-bio--large {
