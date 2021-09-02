@@ -38,10 +38,10 @@ $author-text-margin: 0.18rem;
 
   //CONTACT PERSON/ BEWERBUNGSBUDDIES
   &.author-bio--large {
-    /*display: flex;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;*/
+    align-items: center;
+    //justify-content: center;
 
 
     .avatar__image {
@@ -69,11 +69,6 @@ $author-text-margin: 0.18rem;
 
         margin-bottom: $spacer-md;
         font-size:$font-size-md;
-      }
-      .author-bio--large--aligned {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
       }
     }
   }//end of author-bio--large
