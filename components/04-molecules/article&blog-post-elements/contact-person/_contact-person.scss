@@ -3,12 +3,12 @@
   flex-direction: column;
   align-items: center;
 
-  &--layout {
+  &__wrapper {
     display: flex;
     padding: $spacer-sm $spacer-md;
   }
 
-  .subheading {
+  &__subheading {
     @extend %heading-font-regular;
 
     padding-bottom: $spacer-xs;
