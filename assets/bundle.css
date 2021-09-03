@@ -73,7 +73,7 @@
 }
 
 .talk-description > *, .topic-header__text, .text-header__text, .standard-header__intro__text, .landing-page-header__text, .wall-note__text, .image-divider-center__textbox__text, .simple-teaser__link h6, .podcast-teaser__subheadline, .product-list-teaser__text, .list-teaser-podcast__subheadline, .image-list-teaser__subtitle, .list-teaser-event__subheadline, .card__text, .toc__list > li, .superquote__role,
-.longquote__role, .author-bio__info, blockquote:not([class]),
+.longquote__role, .author-bio__info, .author-bio.author-bio--large .author-bio__text .author-bio__info, blockquote:not([class]),
 blockquote:not([class]) > p,
 .blockquote,
 .blockquote > p, p.lead, .duration, .static-tile-teaser__text, .case-tile-teaser__text, .topic-teaser__text, .client-projects__intro-text,
@@ -97,9 +97,9 @@ blockquote:not([class]) > p,
 
 .dropdown__list-wrapper--navbar, .navbtn, .navbar, .topic-header__tag, .staff-header-bio__text p, .staff-header-info__job-title, .footer__paragraph,
 .footer__address, .footer, .content-teaser__text, .big-content-teaser__text, .list-teaser__subheadline, .list-teaser-abstract__text, .dialog-banner__body, .resource-list-item__caption, .resource-list-item__author, .paginator, .search-result__date,
-.search-result__type, .reference__description, details[open] .infobox__content p, .conclusion-text,
+.search-result__type, .contact-person__subheading, .reference__description, details[open] .infobox__content p, .conclusion-text,
 .conclusion-text > *, .author-bio__text,
-.author-bio__text > p, .table td, .table caption, .tuple-list__value, .label.slides, p.display, p.standalone, .tooltip p, .footnotes__list li,
+.author-bio__text > p, .author-bio.author-bio--large .author-bio__expertise, .table td, .table caption, .tuple-list__value, .label.slides, p.display, p.standalone, .tooltip p, .footnotes__list li,
 .footnotes__list li > p, .footnote, .event-year, figcaption, .form-text, .form-label, .form-control,
 .custom-form-control, .alert, .client-projects__text, .case-teaser__text, .default-full-width-teaser__text, .date-location-section dd, .simple-definition-list dd,
 .heading-font-regular {
@@ -1310,6 +1310,10 @@ h6 > a:focus:not([class]),
 .avatar--md .avatar__image {
   width: 5.159780352rem;
   height: 5.159780352rem;
+}
+.avatar--xl .avatar__image {
+  width: 14.042858206rem;
+  height: 14.042858206rem;
 }
 .avatar--base .avatar__image {
   width: 7.4300837069rem;
@@ -2678,6 +2682,40 @@ clickable-area {
   margin-bottom: 3.919104rem;
   background-color: #f7f7f7;
 }
+.author-bio.author-bio--large {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.author-bio.author-bio--large .avatar--xl {
+  margin: 0;
+}
+.author-bio.author-bio--large .avatar__image {
+  margin-bottom: 2.0736rem;
+  background-color: #ff9c66;
+  resize: 1rem;
+}
+.author-bio.author-bio--large .author-bio__name {
+  padding-bottom: 0.5787037037rem;
+  font-size: 1.44rem;
+}
+.author-bio.author-bio--large .author-bio__expertise {
+  font-size: 1.44rem;
+}
+.author-bio.author-bio--large .author-bio__text {
+  text-align: center;
+}
+.author-bio.author-bio--large .author-bio__text .author-bio__info {
+  margin-bottom: 1.44rem;
+  font-size: 1.44rem;
+}
 
 .author-bio__head {
   margin-bottom: 2.0736rem;
@@ -3292,6 +3330,35 @@ super-quote > blockquote > p,
 wall-of-consent {
   display: block;
   margin-bottom: 1rem;
+}
+
+.contact-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact-person__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 1.44rem;
+}
+.contact-person__subheading {
+  padding-bottom: 0.5787037037rem;
+  margin: 0;
+  font-size: 1.44rem;
+}
+.contact-person .author-bio--large {
+  margin-right: 2.985984rem;
+  margin-left: 2.985984rem;
+  color: #004153;
 }
 
 .dropdown__toggle {
