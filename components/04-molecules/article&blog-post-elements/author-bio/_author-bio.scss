@@ -36,7 +36,6 @@ $author-text-margin: 0.18rem;
     background-color: $author-bio-background-color;
   }
 
-  //CONTACT PERSON/ BEWERBUNGSBUDDIES
   &.author-bio--large {
     display: flex;
     flex-direction: column;
@@ -73,7 +72,7 @@ $author-text-margin: 0.18rem;
         font-size:$font-size-md;
       }
     }
-  }//end of author-bio--large
+  }
 }
 
 .author-bio__head {
