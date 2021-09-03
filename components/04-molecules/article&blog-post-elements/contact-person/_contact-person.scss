@@ -3,6 +3,11 @@
   flex-direction: column;
   align-items: center;
 
+  &--layout {
+    display: flex;
+    padding: $spacer-sm $spacer-md;
+  }
+
   .subheading {
     @extend %heading-font-regular;
 
@@ -14,6 +19,7 @@
   .author-bio--large {
     margin-right: $spacer-lg;
     margin-left: $spacer-lg;
+    color: $brand-secondary;
   }
 }
 
