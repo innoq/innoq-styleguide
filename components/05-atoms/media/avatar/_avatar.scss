@@ -2,6 +2,7 @@ $avatar-size-xs: ms(10); //~40px
 $avatar-size-sm: ms(14); //~55px
 $avatar-size-md: ms(18); //~80px
 $avatar-size-base: ms(22); //~120px
+$avatar-size-xl: ms(29); //r = ~227 px
 
 .avatar {
   display: inline-block;
@@ -25,6 +26,11 @@ $avatar-size-base: ms(22); //~120px
   .avatar--md & {
     width: $avatar-size-md;
     height: $avatar-size-md;
+  }
+
+  .avatar--xl & {
+    width: $avatar-size-xl;
+    height: $avatar-size-xl;
   }
 
   .avatar--base & {

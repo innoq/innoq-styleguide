@@ -1,0 +1,24 @@
+.contact-person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    padding: $spacer-sm $spacer-md;
+  }
+
+  &__subheading {
+    @extend %heading-font-regular;
+
+    padding-bottom: $spacer-xs;
+    margin: 0;
+    font-size: $font-size-md;
+  }
+
+  .author-bio--large {
+    margin-right: $spacer-lg;
+    margin-left: $spacer-lg;
+    color: $brand-secondary;
+  }
+}
