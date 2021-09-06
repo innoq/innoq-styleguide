@@ -31,10 +31,10 @@
 
 .page__number__box {
   position: absolute;
-  top: 2%;
+  top: 4%;
   width: 10%;
-  margin-right: 45%;
-  margin-left: 45%;
+  margin-right: 3%;
+  margin-left: 90%;
 }
 
 .page__number {
@@ -66,11 +66,7 @@
   display: block;
 }
 
-.slider:hover+.slider__instructions {
-  display: none;
-}
-
-.instructions--hover+.instructions--focus {
+.slider:hover+.slider__instructions .instructions--hover+.instructions--focus {
   display: none;
 }
 
@@ -78,15 +74,11 @@
   display: block;
 }
 
-.slider:hover:focus+.slider__instructions {
+.slider:hover:focus+.slider__instructions .instructions--hover--and--focus~* {
   display: none;
 }
 
-.instructions--hover--and--focus~* {
-  display: none;
-}
-
-.instructions--touch--active .instructions__text {
+.instructions--touch--active .slider__instructions p {
   display: none;
 }
 
