@@ -35,6 +35,44 @@ $author-text-margin: 0.18rem;
     margin-bottom: $spacer-xl;
     background-color: $author-bio-background-color;
   }
+
+  &.author-bio--large {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .avatar--xl {
+      margin: 0;
+    }
+
+    .avatar__image {
+      margin-bottom: $spacer-base;
+      background-color: $brand-primary;
+      resize: $spacer-sm;
+    }
+
+    .author-bio__name {
+      padding-bottom:$spacer-xs;
+      font-size: $font-size-md;
+    }
+
+    .author-bio__expertise {
+      @extend %heading-font-regular;
+
+      font-size: $font-size-md;
+    }
+
+    .author-bio__text {
+      text-align: center;
+
+      .author-bio__info {
+        @extend %body-font-italic;
+
+        margin-bottom: $spacer-md;
+        font-size:$font-size-md;
+      }
+    }
+  }
 }
 
 .author-bio__head {
