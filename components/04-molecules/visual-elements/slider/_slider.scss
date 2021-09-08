@@ -66,19 +66,19 @@
   display: block;
 }
 
-.slider:hover+.slider__instructions .instructions--hover+.instructions--focus {
-  display: none;
-}
-
 .slider:hover:focus+.slider__instructions .instructions--hover--and--focus {
   display: block;
 }
 
-.slider:hover:focus+.slider__instructions .instructions--hover--and--focus~* {
+.slider:hover:focus+.slider__instructions .instructions--hover {
   display: none;
 }
 
-.instructions--touch--active .slider__instructions p {
+.slider:hover:focus+.slider__instructions .instructions--focus {
+  display: none;
+}
+
+.instructions--touch--active .slider__instructions .instructions--hover--and--focus {
   display: none;
 }
 
