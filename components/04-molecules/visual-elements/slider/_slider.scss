@@ -78,8 +78,9 @@
   display: none;
 }
 
+/* stylelint-disable-next-line */
 .instructions--touch--active .slider__instructions .instructions--hover--and--focus {
-  display: none;
+  display: none !important;
 }
 
 .instructions--touch--active .slider__instructions .instructions--touch {
