@@ -65,7 +65,8 @@
   font-weight: normal;
   src: url("https://assets.innoq.com/fonts/icomoon.woff2?cachebuster=7d0a3995eec718ff34fa8444132981c6") format("woff2"), url("https://assets.innoq.com/fonts/icomoon.woff?cachebuster=7d0a3995eec718ff34fa8444132981c6") format("woff"), url("https://assets.innoq.com/fonts/icomoon.ttf?cachebuster=7d0a3995eec718ff34fa8444132981c6") format("truetype"), url("https://assets.innoq.com/fonts/icomoon.svg?cachebuster=7d0a3995eec718ff34fa8444132981c6#icons") format("svg");
 }
-.list-teaser-abstract__text::first-letter, ul:not([class]) li, p, dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd,
+.list-teaser-abstract__text::first-letter, ul:not([class]) > li,
+.bold-list > li, ol:not([class]), p, dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd,
 .body-font-regular {
   font-family: "FreightTextPro", "Georgia", "Times", "Times New Roman", serif;
   font-style: normal;
@@ -110,7 +111,7 @@ blockquote:not([class]) > p,
 
 .primary-nav__list, .navbtn--menu, .navbtn--primary, .topic-header__type, .standard-header__intro__label, .standard-header__type, .staff-header-bio__text p a:hover, .footer__directions-link, .cover__author, .cover__type, .toolbar__link, .image-divider-right-content-textbox__text, .topic-teaser__cta, .podcast-author, .service-intro__text, .resource-list-item__author > li > a:focus, .resource-list-item__author > li > a:hover, .paginator__item, .eyecatcher--social__text, .eyecatcher--event__text, .search-form__input, .share-section__link, .superquote__author,
 .longquote__author, .infobox__teaser, .author-bio__name, .table thead,
-.table tfoot, .tag-list__link, .bold-list > li, ol:not([class]) > li::marker, .checklist li, .label-big.badge, .label-big.badge--inverted, .label-big.hint, .label.training, .label.talk, pull-quote > blockquote,
+.table tfoot, .tag-list__link, .bold-list > li, ol:not([class]) > li::before, .checklist li, .label-big.badge, .label-big.badge--inverted, .label-big.hint, .label.training, .label.talk, pull-quote > blockquote,
 pull-quote > blockquote > p,
 .pullquote,
 .pullquote > p, .newsletter-optin__subtitle, .list-teaser-event__headline--secondary, .section-heading--tertiary, .upcase-heading,
@@ -539,20 +540,29 @@ main {
   list-style-type: none;
 }
 
-.bold-list, ul:not([class]), ol:not([class]), .checklist {
+ul:not([class]),
+.bold-list, ol:not([class]), .checklist {
   padding: 0;
   margin-top: 0;
   font-size: 1rem;
   line-height: 1.52;
+  list-style-position: outside;
 }
-.bold-list li, ul:not([class]) li, ol:not([class]) li, .checklist li {
+ul:not([class]) li,
+.bold-list li, ol:not([class]) li, .checklist li {
   margin-bottom: 0.5787037037rem;
 }
-.bold-list ul, ul:not([class]) ul, ol:not([class]) ul, .checklist ul {
+ul:not([class]) ul,
+.bold-list ul, ol:not([class]) ul, .checklist ul,
+ul:not([class]) ol,
+.bold-list ol,
+ol:not([class]) ol,
+.checklist ol {
   margin-top: 0.5787037037rem;
 }
 @media screen and (min-width: 48rem) {
-  .bold-list, ul:not([class]), ol:not([class]), .checklist {
+  ul:not([class]),
+.bold-list, ol:not([class]), .checklist {
     font-size: 1.2rem;
     line-height: 1.52;
   }
@@ -2306,23 +2316,33 @@ blockquote:not([class]) > p,
 }
 
 ol:not([class]) {
-  padding-left: 2.5rem;
+  list-style: none;
+  list-style-type: none;
 }
 ol:not([class]) > li {
-  padding-left: 0.5rem;
   margin-bottom: 0.5787037037rem;
   counter-increment: number;
 }
-ol:not([class]) > li::marker {
+ol:not([class]) > li::before {
+  padding-right: 0.3348979767rem;
   color: #004153;
   content: counter(number);
   font-size: 1rem;
   line-height: 1.52;
 }
 @media screen and (min-width: 48rem) {
-  ol:not([class]) > li::marker {
+  ol:not([class]) > li::before {
     font-size: 1.2rem;
   }
+}
+ol:not([class]) > li ul {
+  margin-left: 2.0736rem;
+}
+ol:not([class]) > li ol {
+  margin-left: 1.44rem;
+}
+ol:not([class]) ol {
+  counter-reset: number;
 }
 
 .tuple-list__label {
@@ -2355,29 +2375,34 @@ ol:not([class]) > li::marker {
     grid-area: value;
   }
 }
-ul:not([class]) {
-  padding-left: 1.5rem;
-}
-ul:not([class]) li {
-  list-style-type: disc;
-}
-ul:not([class]) > li::marker {
-  color: #ff9c66;
-  font-size: 1.9rem;
-  line-height: 1.52;
-}
-ul:not([class]) > li li::marker {
-  color: #004153;
-  font-size: 1.9rem;
-  line-height: 1.52;
-}
-
+ul:not([class]),
 .bold-list {
-  padding-left: 1.5rem;
+  margin-left: 0.5787037037rem;
 }
+ul:not([class]) > li,
+.bold-list > li {
+  padding-left: 0.3348979767rem;
+  list-style-type: "●";
+}
+ul:not([class]) > li::marker,
 .bold-list > li::marker {
   color: #ff9c66;
-  font-size: 1.9rem;
+}
+ul:not([class]) > li li::marker,
+.bold-list > li li::marker {
+  color: #004153;
+}
+ul:not([class]) > li ul,
+.bold-list > li ul {
+  margin-left: 1rem;
+}
+ul:not([class]) > li ol,
+.bold-list > li ol {
+  margin-left: 0.3348979767rem;
+}
+
+.bold-list > li {
+  list-style-type: "•";
 }
 
 .tag-list {
