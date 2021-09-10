@@ -18,12 +18,14 @@
   margin-top: 0;
   font-size: $font-size-base;
   line-height: $paragraph-line-height;
+  list-style-position: outside;
 
   li {
     margin-bottom: $spacer-xs;
   }
 
-  ul {
+  ul,
+  ol {
     margin-top: $spacer-xs;
   }
 

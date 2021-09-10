@@ -8,22 +8,21 @@
 // class attribute, to prevent reverting styles for all non-default lists.
 //
 
-$number-space: $spacer-md;
-$list-indent: 2.5rem;
-
 ol:not([class]) {
   @extend %unsorted-list;
+  @extend %body-font-regular;
 
-  padding-left: $list-indent;
+  list-style: none;
+  list-style-type: none;
 
   > li {
-    padding-left: 0.5rem;
     margin-bottom: $spacer-xs;
     counter-increment: number;
 
-    &::marker {
+    &::before {
       @extend %heading-font-bold;
 
+      padding-right: $spacer-xxs;
       color: $bullet-list-color-secondary;
       content: counter(number);
       font-size: $font-size-base;
@@ -33,5 +32,17 @@ ol:not([class]) {
         font-size: $font-size-sm;
       }
     }
+
+    ul {
+      margin-left: $spacer-base;
+    }
+
+    ol {
+      margin-left: $spacer-md;
+    }
+  }
+
+  ol {
+    counter-reset: number;
   }
 }
