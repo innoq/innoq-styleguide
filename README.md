@@ -2,7 +2,11 @@
 
 [![Build Status](https://github.com/innoq/innoq-styleguide/workflows/Build%20and%20Release/badge.svg)](https://github.com/innoq/innoq-styleguide/actions)
 
-## Without Docker
+## Before you start
+We use git-lfs. So please install https://git-lfs.github.com/ before you clone this repo.
+
+## How to install
+### Without Docker
 
 Install:
 
@@ -16,7 +20,7 @@ Export a static site to `./dist/site`
 
     yarn run site
 
-## With Docker & Docker-Compose
+### With Docker & Docker-Compose
 
     docker-compose up
 
