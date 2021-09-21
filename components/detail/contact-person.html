@@ -183,12 +183,10 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-person&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;section-heading--primary&quot;</span>&gt;</span>Noch Fragen?<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;section-heading--tertiary contact-person__subheading&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-person__subheading&quot;</span>&gt;</span>
         Du möchtest dich bewerben, hast aber noch Fragen?
     <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;section-heading--tertiary contact-person__subheading&quot;</span>&gt;</span>
-        Sprich mit uns!
-    <span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-person__subheading&quot;</span>&gt;</span>Sprich mit uns!<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-person__wrapper&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;author&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;author-bio author-bio--large&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#mailto:contact-person@innoq.com&quot;</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">&quot;http://schema.org/Person&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;author-bio__image avatar avatar--xl&quot;</span>&gt;</span>
@@ -228,8 +226,8 @@
     <code class="Code Code--lang-html hljs">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-person&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;section-heading--primary&quot;</span>&gt;</span>Noch Fragen?<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;section-heading--tertiary contact-person__subheading&quot;</span>&gt;</span>Du möchtest dich bewerben, hast aber noch Fragen?<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;section-heading--tertiary contact-person__subheading&quot;</span>&gt;</span>Sprich mit uns!<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-person__subheading&quot;</span>&gt;</span>Du möchtest dich bewerben, hast aber noch Fragen?<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h4</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-person__subheading&quot;</span>&gt;</span>Sprich mit uns!<span class="hljs-tag">&lt;/<span class="hljs-name">h4</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;contact-person__wrapper&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;author&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;author-bio author-bio--large&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#mailto:contact-person@innoq.com&quot;</span> <span class="hljs-attr">itemscope</span> <span class="hljs-attr">itemtype</span>=<span class="hljs-string">&quot;http://schema.org/Person&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;author-bio__image avatar avatar--xl&quot;</span>&gt;</span>
@@ -301,15 +299,17 @@
 
   &amp;__wrapper {
     <span class="hljs-attribute">display</span>: flex;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-sm</span> <span class="hljs-variable">$spacer-md</span>;
+    <span class="hljs-attribute">flex-wrap</span>: wrap;
+    <span class="hljs-attribute">justify-content</span>: center;
   }
 
   &amp;__subheading {
     <span class="hljs-keyword">@extend</span> %heading-font-regular;
 
-    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
-    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-md</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-md</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$heading-line-height</span>;
+    <span class="hljs-attribute">text-align</span>: center;
   }
 
   <span class="hljs-selector-class">.author-bio--large</span> {
@@ -334,7 +334,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">413 Bytes</span>
+                    <span class="Meta-value">474 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -5256,8 +5256,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-09-10T14:05:34.262Z">
-                                9/10/2021
+                            <time datetime="2021-09-21T12:58:32.876Z">
+                                9/21/2021
                             </time>
                         
                     </dd>

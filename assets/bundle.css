@@ -3373,12 +3373,17 @@ wall-of-consent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem 1.44rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .contact-person__subheading {
-  padding-bottom: 0.5787037037rem;
-  margin: 0;
+  margin-bottom: 1.44rem;
   font-size: 1.44rem;
+  line-height: 1.2;
+  text-align: center;
 }
 .contact-person .author-bio--large {
   margin-right: 2.985984rem;

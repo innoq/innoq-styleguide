@@ -5,15 +5,17 @@
 
   &__wrapper {
     display: flex;
-    padding: $spacer-sm $spacer-md;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   &__subheading {
     @extend %heading-font-regular;
 
-    padding-bottom: $spacer-xs;
-    margin: 0;
+    margin-bottom: $spacer-md;
     font-size: $font-size-md;
+    line-height: $heading-line-height;
+    text-align: center;
   }
 
   .author-bio--large {
