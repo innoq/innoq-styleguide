@@ -25,6 +25,10 @@ $list-teaser-training-height: ms(32);
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .list-teaser__footer {
+    padding-bottom: $spacer-sm;
+  }
 }
 
 .list-teaser-training__caption {

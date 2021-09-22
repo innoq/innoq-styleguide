@@ -1,6 +1,9 @@
 .list-teaser {
   @extend %list-teaser;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-top: 3px solid $list-teaser-border-color;
   background-color: $list-teaser-background-color;
 }
@@ -20,11 +23,6 @@
 
 .list-teaser__footer {
   @extend %list-teaser-footer;
-
-  .author-bio {
-    margin-bottom: 0;
-    color: $list-teaser-headline-color;
-  }
 }
 
 .list-teaser__caption {

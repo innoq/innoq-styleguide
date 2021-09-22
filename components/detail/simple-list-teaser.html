@@ -344,6 +344,9 @@
                                 <pre><span class="hljs-selector-class">.list-teaser</span> {
   <span class="hljs-keyword">@extend</span> %list-teaser;
 
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">flex-direction</span>: column;
+  <span class="hljs-attribute">justify-content</span>: space-between;
   <span class="hljs-attribute">border-top</span>: <span class="hljs-number">3px</span> solid <span class="hljs-variable">$list-teaser-border-color</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$list-teaser-background-color</span>;
 }
@@ -363,11 +366,6 @@
 
 <span class="hljs-selector-class">.list-teaser__footer</span> {
   <span class="hljs-keyword">@extend</span> %list-teaser-footer;
-
-  <span class="hljs-selector-class">.author-bio</span> {
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$list-teaser-headline-color</span>;
-  }
 }
 
 <span class="hljs-selector-class">.list-teaser__caption</span> {
@@ -5378,7 +5376,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-09-22T12:28:08.284Z">
+                            <time datetime="2021-09-22T13:24:05.672Z">
                                 9/22/2021
                             </time>
                         
