@@ -67,6 +67,7 @@ details {
         @extend %heading-font-regular;
 
         font-size: $font-size-base;
+        line-height: $paragraph-line-height;
       }
     }
   }
