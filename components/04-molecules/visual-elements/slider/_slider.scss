@@ -62,12 +62,8 @@
 }
 
 .slider:focus+.slider__instructions .instructions--focus,
-.slider+.slider__instructions .instructions--hover {
+.slider:hover+.slider__instructions .instructions--hover {
   display: block;
-}
-
-.slider:focus +.slider__instructions .instructions--hover {
-  display: none;
 }
 
 .slider:hover:focus+.slider__instructions .instructions--hover-and-focus {
