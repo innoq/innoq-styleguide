@@ -48,7 +48,7 @@
 
 .instructions--hover,
 .instructions--focus,
-.instructions--hover--and--focus,
+.instructions--hover-and-focus,
 .instructions--touch {
   @extend %heading-font-regular;
 
@@ -62,11 +62,15 @@
 }
 
 .slider:focus+.slider__instructions .instructions--focus,
-.slider:hover+.slider__instructions .instructions--hover {
+.slider+.slider__instructions .instructions--hover {
   display: block;
 }
 
-.slider:hover:focus+.slider__instructions .instructions--hover--and--focus {
+.slider:focus +.slider__instructions .instructions--hover {
+  display: none;
+}
+
+.slider:hover:focus+.slider__instructions .instructions--hover-and-focus {
   display: block;
 }
 
@@ -78,11 +82,11 @@
   display: none;
 }
 
-.instructions--touch--active .slider__instructions .instructions--hover--and--focus {
+.instructions--touch-active .slider__instructions .instructions--hover-and-focus {
   /* stylelint-disable-next-line */
   display: none !important;
 }
 
-.instructions--touch--active .slider__instructions .instructions--touch {
+.instructions--touch-active .slider__instructions .instructions--touch {
   display: block;
 }
