@@ -18,7 +18,6 @@ $event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
 
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
 
     .link-teaser {
       margin-bottom: $spacer-sm;
@@ -29,7 +28,6 @@ $event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
   .list-teaser__footer {
     .author-bio {
       flex-basis: 100%;
-      margin-bottom: 0;
       color: $list-teaser-event-subheadline-color;
     }
   }

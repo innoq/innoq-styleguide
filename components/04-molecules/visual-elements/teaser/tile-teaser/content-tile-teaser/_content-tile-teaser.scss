@@ -57,6 +57,10 @@ $content-teaser-height-md: ms(36);
   .content-teaser__header {
     color: $content-teaser-accent-color;
   }
+
+  .author-bio {
+    color: $content-teaser-inverted-color;
+  }
 }
 
 .content-teaser--colored {
