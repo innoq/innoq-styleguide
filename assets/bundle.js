@@ -282,10 +282,20 @@ class ClickableArea extends HTMLElement {
   }
 }
 
+class TouchDetection extends HTMLElement {
+  connectedCallback () {
+    window.addEventListener('touchstart', function touched () {
+      document.body.classList.add('instructions--touch-active');
+      window.removeEventListener('touchstart', touched, false);
+    }, false);
+  }
+}
+
 customElements.define('check-to-toggle', CheckToToggle);
 customElements.define('multi-toggler', MultiToggler);
 customElements.define('nav-bar', Navbar);
 customElements.define('wall-of-consent', WallOfConsent);
 customElements.define('clickable-area', ClickableArea);
+customElements.define('touch-detection', TouchDetection);
 
 }());

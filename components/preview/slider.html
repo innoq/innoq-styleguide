@@ -1,0 +1,100 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../../assets/normalize.css" />
+    <link media="all" rel="stylesheet" href="../../assets/bundle.css" />
+    <link
+      rel="preload"
+      href="https://hello.myfonts.net/count/350ed6"
+      as="style"
+    />
+    <style>
+      body {
+        padding: 1rem;
+      }
+    </style>
+    <title>Preview Layout</title>
+  </head>
+  <body class="application">
+    <touch-detection
+      ><div
+        class="slider"
+        role="region"
+        aria-label="Folien"
+        tabindex="0"
+        aria-describedby="slider-instructions"
+      >
+        <ul class="slider__all">
+          <li class="slider__slide">
+            <figure class="slider__page">
+              <img
+                src="../../assets/example-content/beispiel-praesentation-1.jpg"
+                alt="Folie 1"
+                id="Folie_1"
+              />
+              <figcaption class="page__number__box">
+                <div class="page__number">1/4</div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="slider__slide">
+            <figure class="slider__page">
+              <img
+                src="../../assets/example-content/beispiel-praesentation-2.jpg"
+                alt="Folie 2"
+                id="Folie_2"
+              />
+              <figcaption class="page__number__box">
+                <div class="page__number">2/4</div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="slider__slide">
+            <figure class="slider__page">
+              <img
+                src="../../assets/example-content/beispiel-praesentation-3.jpg"
+                alt="Folie 3"
+                id="Folie_3"
+              />
+              <figcaption class="page__number__box">
+                <div class="page__number">3/4</div>
+              </figcaption>
+            </figure>
+          </li>
+          <li class="slider__slide">
+            <figure class="slider__page">
+              <img
+                src="../../assets/example-content/beispiel-praesentation-4.jpg"
+                alt="Folie 4"
+                id="Folie_4"
+              />
+              <figcaption class="page__number__box">
+                <div class="page__number">4/4</div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </div>
+      <div class="slider__instructions">
+        <p class="instructions--touch">
+          Nach links wischen, um ggf. weitere Folien zu sehen
+        </p>
+        <p class="instructions--hover-and-focus">
+          Scrollen oder die Pfeiltasten nutzen, um ggf. weitere Folien zu sehen
+        </p>
+        <p class="instructions--hover">
+          Scrollen, um ggf. weitere Folien zu sehen
+        </p>
+        <p class="instructions--focus">
+          Die Pfeiltasten nutzen, um ggf. weitere Folien zu sehen
+        </p>
+      </div></touch-detection
+    >
+  </body>
+  <script src="../../assets/bundle.js"></script>
+</html>
+

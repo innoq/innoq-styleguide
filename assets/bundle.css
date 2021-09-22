@@ -97,7 +97,10 @@ blockquote:not([class]) > p,
 }
 
 .dropdown__list-wrapper--navbar, .navbtn, .navbar, .topic-header__tag, .staff-header-bio__text p, .staff-header-info__job-title, .footer__paragraph,
-.footer__address, .footer, .content-teaser__text, .big-content-teaser__text, .list-teaser__subheadline, .list-teaser-abstract__text, .dialog-banner__body, .resource-list-item__caption, .resource-list-item__author, .paginator, .search-result__date,
+.footer__address, .footer, .content-teaser__text, .big-content-teaser__text, .list-teaser__subheadline, .list-teaser-abstract__text, .instructions--hover,
+.instructions--focus,
+.instructions--hover-and-focus,
+.instructions--touch, .page__number, .dialog-banner__body, .resource-list-item__caption, .resource-list-item__author, .paginator, .search-result__date,
 .search-result__type, .contact-person__subheading, .reference__description, details[open] .infobox__content p, .conclusion-text,
 .conclusion-text > *, .author-bio__text,
 .author-bio__text > p, .author-bio.author-bio--large .author-bio__expertise, .table td, .table caption, .tuple-list__value, .label.slides, p.display, p.standalone, .tooltip p, .footnotes__list li,
@@ -533,7 +536,7 @@ main {
   text-decoration: none;
 }
 
-.search-result-list, .primary-nav__list, .footer__list, .cover__people, .toolbar, .client-projects, .social-media-bar, .resource-list-item__author > li, .resource-list, .paginator__list, .card__tags, .dropdown__list, .toc__list, .share-section__list, .tag-list, .list-unstyled, .tuple-list, .footnotes__list {
+.search-result-list, .primary-nav__list, .footer__list, .cover__people, .toolbar, .client-projects, .slider__all, .social-media-bar, .resource-list-item__author > li, .resource-list, .paginator__list, .card__tags, .dropdown__list, .toc__list, .share-section__list, .tag-list, .list-unstyled, .tuple-list, .footnotes__list {
   padding: 0;
   margin-top: 0;
   list-style: none;
@@ -4086,6 +4089,98 @@ wall-of-consent {
 .social-media-bar__item .icon-svg:hover,
 .social-media-bar__item .icon-svg:focus {
   background: #fff;
+}
+
+.slider {
+  display: block;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+}
+
+.slider__all {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+
+.slider__slide {
+  display: block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  scroll-snap-align: center;
+}
+
+.slider__page {
+  border-width: 1px;
+  border-color: #d8d8d8;
+  border-right-style: solid;
+  margin-bottom: 0;
+}
+
+.slider:focus {
+  outline: 4px solid #40707e;
+}
+
+.page__number__box {
+  position: absolute;
+  top: 4%;
+  width: 10%;
+  margin-right: 3%;
+  margin-left: 90%;
+}
+
+.page__number {
+  display: inline-block;
+  padding: 0.3348979767rem;
+  background: rgba(247, 247, 247, 0.7);
+  font-size: 0.8333333333rem;
+}
+
+.instructions--hover,
+.instructions--focus,
+.instructions--hover-and-focus,
+.instructions--touch {
+  display: none;
+  font-size: 1rem;
+}
+
+.slider__instructions {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.slider:focus + .slider__instructions .instructions--focus,
+.slider + .slider__instructions .instructions--hover {
+  display: block;
+}
+
+.slider:focus + .slider__instructions .instructions--hover {
+  display: none;
+}
+
+.slider:hover:focus + .slider__instructions .instructions--hover-and-focus {
+  display: block;
+}
+
+.slider:hover:focus + .slider__instructions .instructions--hover {
+  display: none;
+}
+
+.slider:hover:focus + .slider__instructions .instructions--focus {
+  display: none;
+}
+
+.instructions--touch-active .slider__instructions .instructions--hover-and-focus {
+  /* stylelint-disable-next-line */
+  display: none !important;
+}
+
+.instructions--touch-active .slider__instructions .instructions--touch {
+  display: block;
 }
 
 .default-full-width-teaser {
