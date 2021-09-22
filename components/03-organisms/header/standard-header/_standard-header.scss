@@ -16,7 +16,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
     margin-bottom: $spacer-sm;
     color: $standard-header-title-color;
     font-size: $font-size-xl;
-    line-height: $heading-line-height-sm;
+    line-height: $heading-line-height;
     text-align: center;
   }
 
@@ -26,6 +26,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
     margin-bottom: $spacer-xs;
     color: $standard-header-subtitle-color;
     font-size: $font-size-sm;
+    line-height: $heading-line-height;
     text-align: center;
   }
 
@@ -152,7 +153,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   }
 
   .standard-header__subtitle {
-    font-size: $font-size-lg;
+    font-size: $font-size-md;
   }
 
   .standard-header__intro {
@@ -183,6 +184,14 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
 @media screen and (min-width: $grid-breakpoint-lg) {
   .standard-header__intro {
     width: $grid-page-layout-content-width-lg;
+  }
+
+  .standard-header__title {
+    font-size: $font-size-xxxxl;
+  }
+
+  .standard-header__subtitle {
+    font-size: $font-size-lg;
   }
 }
 
