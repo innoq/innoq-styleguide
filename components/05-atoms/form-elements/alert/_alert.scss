@@ -15,7 +15,7 @@
 
   &--warn {
     background-color: $brand-warn;
-    color: darken($brand-warn, 51%); // Use accessible dark yellow
+    color: $brand-text;
   }
 
   &--error {

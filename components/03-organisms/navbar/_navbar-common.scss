@@ -78,11 +78,20 @@ $navbar-secondary-font-size: ms(-2);
 .navbtn--search,
 .navbtn--menu {
   top: -0.1em;
-  font-size: ms(3);
 }
 
 .navbtn--search {
   padding: 0 0 0 $spacer-md;
+
+  .icon-search {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .icon:hover,
+  .icon:focus {
+    background: $brand-primary;
+  }
 }
 
 .navbtn--menu {
@@ -209,29 +218,6 @@ $navbar-secondary-font-size: ms(-2);
 //
 // dropdown // in navbar context
 //
-.dropdown__checkbox:checked ~ .dropdown__toggle--navbar {
-  .dropdown__icon--navbar {
-    color: $navbar-link-hover-color;
-  }
-}
-
-.dropdown__checkbox:focus ~ .dropdown__toggle--navbar {
-  .dropdown__icon--navbar {
-    color: $navbar-link-hover-color;
-    outline: auto 5px $outline-color;
-  }
-}
-
-.dropdown__icon--navbar {
-  color: $navbar-link-color;
-  transition: standard-transition(color);
-
-  &:hover,
-  &:focus {
-    color: $navbar-link-hover-color;
-  }
-}
-
 .dropdown__list-wrapper--navbar {
   @extend %heading-font-regular;
 

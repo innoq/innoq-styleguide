@@ -42,8 +42,8 @@
     .social-media-bar__link {
       transition: standard-transition(color);
 
-      .icon-svg:hover,
-      .icon-svg:focus {
+      .icon:hover,
+      .icon:focus {
         background: $eyecatcher-text-color;
       }
     }

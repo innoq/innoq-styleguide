@@ -1,11 +1,17 @@
-// .dropdown {
-// display: inline-block;
-// position: relative; // positioning must happen through parent container
-// }
-
 .dropdown__toggle {
   display: inline-block;
   cursor: pointer;
+
+  .icon-chevron-down-filled {
+    width: $spacer-xs;
+    height: $spacer-xs;
+    transition: standard-transition(background);
+
+    &:hover,
+    &:focus {
+      background: $sharing-interaction-color;
+    }
+  }
 }
 
 .dropdown__list-wrapper {

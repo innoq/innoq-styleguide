@@ -41,13 +41,12 @@
   text-transform: uppercase;
 
   &::before {
-    @extend %icon;
-
-    position: relative;
-    top: -1px;
+    display: inline-block;
+    width: $font-size-xxs;
+    height: $font-size-xxs;
     margin-right: $spacer-xxs;
     color: $footer-heading-color;
-    content: $icon-location-filled;
+    content: asset-url("icons/pin.svg");
   }
 }
 

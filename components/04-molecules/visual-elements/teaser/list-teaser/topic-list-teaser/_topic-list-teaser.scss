@@ -55,7 +55,7 @@ a.topic-teaser {
   display: flex;
   flex-direction: column;
 
-  .icon-svg {
+  .icon {
     margin-top: $spacer-md;
   }
 }
@@ -76,7 +76,7 @@ a.topic-teaser {
     flex-direction: row;
     justify-content: center;
 
-    .icon-svg {
+    .icon {
       margin-top: 0;
       margin-left: $spacer-xs;
     }

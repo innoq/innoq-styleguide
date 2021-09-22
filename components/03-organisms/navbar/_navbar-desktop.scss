@@ -4,10 +4,6 @@
     height: auto;
   }
 
-  // .navbar__inner {
-  //   flex: 1;
-  // }
-
   .navbtn--menu {
     display: none;
   }
@@ -18,11 +14,6 @@
     &:hover ~ .dropdown__list-wrapper--navbar {
       display: block;
     }
-
-    // let user toggle dropdown via checkbox-toggle
-    // &:focus ~ .dropdown__list-wrapper--navbar {
-    //   display: block;
-    // }
   }
 
   .navbar__brand {
