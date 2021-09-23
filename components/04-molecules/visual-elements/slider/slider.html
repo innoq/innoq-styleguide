@@ -25,9 +25,9 @@
                 <figure class="slider__page">
                     <img src={context.app.uri("assets/example-content/beispiel-praesentation-3.jpg")} alt="Folie 3" id="Folie_3"/>
                     <figcaption class="page__number__box">
-                        <div class="page__number">
-                            3/4
-                        </div>
+                        <svg class="page__number">
+                            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">3/4</text>
+                        </svg>
                     </figcaption>
                 </figure>
             </li>
@@ -43,7 +43,7 @@
             </li>
         </ul>
     </div>
-    <div class="slider__instructions" id="slider-instructions">
+    <div class="slider__instructions">
         <p class="instructions--touch">Nach links wischen, um ggf. weitere Folien zu sehen</p>
         <p class="instructions--hover-and-focus">Scrollen oder die Pfeiltasten nutzen, um ggf. weitere Folien zu sehen</p>
         <p class="instructions--hover">Scrollen, um ggf. weitere Folien zu sehen</p>
