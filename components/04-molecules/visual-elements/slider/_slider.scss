@@ -31,10 +31,8 @@
 }
 
 .page__number__box {
-  position: absolute;
-  top: 3%;
-  width: 4%;
-  margin-left: 94%;
+  margin-top: $spacer-sm;
+  margin-right: auto;
 }
 
 .page__number {
