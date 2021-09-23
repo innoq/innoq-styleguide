@@ -30,11 +30,8 @@
 }
 
 .page__number__box {
-  position: absolute;
-  top: 4%;
-  width: 10%;
-  margin-right: 3%;
-  margin-left: 90%;
+  margin-top: $spacer-sm;
+  margin-right: auto;
 }
 
 .page__number {
