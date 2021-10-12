@@ -3074,6 +3074,7 @@ details[open] .infobox__content {
 }
 details[open] .infobox__content p {
   font-size: 1rem;
+  line-height: 1.52;
 }
 
 summary {
@@ -6239,6 +6240,7 @@ wall-of-consent {
 }
 .form--inverted .form-control {
   border-color: #fff;
+  caret-color: #004153;
 }
 .form--inverted .form-control:hover, .form--inverted .form-control:focus {
   background-color: #fff;
