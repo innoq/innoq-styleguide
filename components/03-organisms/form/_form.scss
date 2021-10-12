@@ -5,6 +5,7 @@
 
   .form-control {
     border-color: $form-control-inverted-border-color;
+    caret-color: $form-control-inverted-caret-color; 
 
     &:hover,
     &:focus {
