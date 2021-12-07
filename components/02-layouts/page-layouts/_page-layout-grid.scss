@@ -54,6 +54,7 @@ main > .page-layout--grid {
       grid-column-gap: $grid-page-layout-column-gap;
       grid-template-areas: ". left center right .";
       grid-template-columns: 1fr $grid-page-layout-leftright-width $grid-page-layout-content-width-xl $grid-page-layout-leftright-width 1fr;
+      /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
       grid-template-rows: auto;
 
       > * {

@@ -7,8 +7,7 @@
 
 .swatch {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column wrap;
   margin-bottom: $spacer-md;
 
   &:first-child {

@@ -4,6 +4,7 @@
 
 .breakout {
   grid-column-end: -1;
+  /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
   grid-column-start: 1;
 }
 

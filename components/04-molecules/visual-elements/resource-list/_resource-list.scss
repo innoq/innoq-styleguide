@@ -84,8 +84,7 @@
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   .resource-list {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     align-items: stretch;
     justify-content: center;
   }

@@ -2,8 +2,7 @@
   @extend %list-unstyled;
 
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
 }

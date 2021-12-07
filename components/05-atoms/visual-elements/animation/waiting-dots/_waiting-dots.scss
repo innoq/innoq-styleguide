@@ -24,7 +24,7 @@
 
   .dot-a {
     animation-direction: reverse;
-    animation-name: onOff;
+    animation-name: on-off;
     opacity: 0;
   }
 }
@@ -35,7 +35,7 @@
   animation-name: spin;
 
   .dot-b {
-    animation-name: onOff;
+    animation-name: on-off;
   }
 }
 
@@ -69,7 +69,7 @@
   }
 }
 
-@keyframes onOff {
+@keyframes on-off {
   0% {
     opacity: 0;
   }

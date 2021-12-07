@@ -19,6 +19,8 @@ rules:
       - custom-elements
   declaration-no-important: true
   color-no-hex: true
+  color-function-notation: null
+  alpha-value-notation: null
 overrides:
   - files: ["**/*.scss"]
     customSyntax: "postcss-scss"
