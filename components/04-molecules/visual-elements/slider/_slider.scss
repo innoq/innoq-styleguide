@@ -19,10 +19,11 @@
 }
 
 .slider__page {
-  border-width: 1px;
+  border-width: 0.5px;
+  border-style: solid;
   border-color: $brand-muted;
-  border-right-style: solid;
   margin-bottom: 0;
+  line-height: 0;
 }
 
 .slider:focus {
@@ -31,17 +32,15 @@
 
 .page__number__box {
   position: absolute;
-  top: 4%;
-  width: 10%;
-  margin-right: 3%;
-  margin-left: 90%;
+  top: 3%;
+  width: 4%;
+  margin-left: 94%;
 }
 
 .page__number {
   @extend %heading-font-regular;
 
   display: inline-block;
-  padding: $spacer-xxs;
   background: rgba(247, 247, 247, 0.7);
   font-size: $font-size-xxs;
 }
@@ -61,8 +60,8 @@
   text-align: center;
 }
 
-.slider:focus+.slider__instructions .instructions--focus,
-.slider:hover+.slider__instructions .instructions--hover {
+.slider:focus:not(:hover)+.slider__instructions .instructions--focus,
+.slider:hover:not(:focus)+.slider__instructions .instructions--hover {
   display: block;
 }
 
@@ -70,15 +69,7 @@
   display: block;
 }
 
-.slider:hover:focus+.slider__instructions .instructions--hover {
-  display: none;
-}
-
-.slider:hover:focus+.slider__instructions .instructions--focus {
-  display: none;
-}
-
-.instructions--touch-active .slider__instructions .instructions--hover-and-focus {
+.instructions--touch-active .instructions__no-touch {
   /* stylelint-disable-next-line */
   display: none !important;
 }
