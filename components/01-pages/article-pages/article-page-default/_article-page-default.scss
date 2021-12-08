@@ -1,1 +1,9 @@
-//TODO
+html {
+scroll-behavior: smooth;
+}
+
+.--sticky {
+  position: sticky;
+  top:0;
+  align-self: start;
+}
