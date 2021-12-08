@@ -7,3 +7,9 @@ scroll-behavior: smooth;
   top:0;
   align-self: start;
 }
+
+@media screen and (max-width: $grid-breakpoint-xl) {
+  .page-layout--grid, .--sticky {
+    position: relative;
+  }
+}
