@@ -15,6 +15,21 @@
   padding: $spacer-xl $spacer-xs;
 }
 
+.container-md,
+%container-md {
+  width: 100%;
+  max-width: $default-page-layout-content-width-md;
+  padding: 0 $spacer-xs;
+  margin: 0 auto;
+
+  > * + * {
+    margin-top: $spacer-base;
+  }
+}
+
+
+//Breakpoints
+
 @media screen and (min-width: $grid-breakpoint-lg) {
   .container-xl {
     padding: 0 $spacer-base;
