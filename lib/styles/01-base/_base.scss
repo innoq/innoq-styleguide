@@ -21,3 +21,8 @@ body {
 main {
   min-height: 50vh;
 }
+
+// Workaround for Chrome hyphens bug
+html {
+  -webkit-hyphenate-character: '-';
+}
