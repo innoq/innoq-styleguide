@@ -21,8 +21,8 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "modularscale-sass": "^3.0.10",
-    "postcss": "^8.4.4",
-    "postcss-scss": "^4.0.2"
+    "postcss": "^8.4.5",
+    "postcss-scss": "^4.0.3"
   },
   "devDependencies": {
     "complate-fractal": "^0.15.0",
@@ -32,7 +32,7 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
-    "eslint-plugin-react": "^7.23.0",
+    "eslint-plugin-react": "^7.28.0",
     "faucet-pipeline-js": "^2.1.6",
     "faucet-pipeline-sass": "^1.4.0",
     "faucet-pipeline-static": "^1.2.0",
