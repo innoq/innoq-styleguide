@@ -1,7 +1,4 @@
-import { safe, htmlEncode } from "complate-stream";
-import { cssBackground } from './components/03-organisms/header/standard-header/config'
-
-<header class="standard-header" style={cssBackground}>
+<header class="standard-header" style="background-image: url({{ path '/assets/bg-images/general/visual-trainings-01.jpg' }}); background-color: var(--overlay-standard-color);">
     <h1 class="standard-header__title">Hey ho, let's go</h1>
     <h2 class="standard-header__subtitle">...</h2>
     <div class="standard-header__intro">
@@ -46,24 +43,6 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
                 Anwendung dadurch komplexer werden würde. Wir würden uns fragen, ob das Team dies handhaben kann und ob
                 unser Betrieb dem gewachsen ist.</p>
 
-            <p>Lautet der Vorschlag aber beispielsweise, die Daten unserer Anwendung in verschiedene NoSQL-Datenbanken
-                aufzuteilen, die auf die jeweiligen Datenstrukturen und ihre Anwendungsfälle optimiert sind, bekommen
-                wir stattdessen oft ganz andere Aussagen zu hören. Nämlich: Gute Idee, wir nutzen das beste Tool für den
-                jeweiligen Job. Zu leicht vergessen wir, uns vorab schon die vielleicht unangenehme Frage zu stellen:
-                Kann mein Team, ja, unsere Organisation, ein System mit diesen Technologien überhaupt betreiben?</p>
-
-            <pre><code>{safe(htmlEncode(context.code))}</code></pre>
-
-            <p>Heutzutage sind Unternehmen ständig gefordert einen Spagat auszubalancieren. Auf der einen Seite bringt
-                zu viel Innovation in Form von neuen Technologien und Prozess- oder Organisationsveränderungen Unruhe
-                und Unsicherheit ins Unternehmen. Auf der anderen Seite müssen Unternehmen innovativ sein, um am Markt
-                gegen den Mitbewerber zu bestehen und gleichzeitig gute Mitarbeiter anzulocken. Aber es wäre natürlich
-                auch unvernünftig, Innovation in Form von neuer Technologie generell auszuschließen. Bei einigen großen
-                oder mittelständischen Firmen durften wir derartige Bemühungen beobachten, die teilweise einen großen
-                Anteil daran hatten, dass diese Unternehmen von ihren Mitbewerbern überholt wurden. Die Frage ist also:
-                Wie viel Innovation und Neuerungen sollen wir zulassen? Was ist das richtige Maß? Um diese Frage zu
-                beantworten, soll uns die Idee der Innovation Tokens helfen.</p>
-
             <h3 id="idee">Die Idee hinter Innovation Tokens</h3>
 
             <p>Die Idee von Innovation Tokens besteht darin, dass ein Team für die Umsetzung einer bestimmten
@@ -74,51 +53,15 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
                 Effekt. Des Weiteren haben wir auch noch kein Team erlebt, das mehr als fünf Tokens in einer Phase
                 eingesetzt hat. In der Regel sollten Teams mit drei Innovation Tokens pro Projekt auskommen.</p>
 
-            {/* start pull quote component @see atoms/text/block/pull-quote */}
             <blockquote class="pullquote">
                 An dieser Stelle kommt oft die Frage auf: Verspiele ich nicht eine Chance, wenn ich Innovation so stark
                 begrenze?
             </blockquote>
-            {/* end pull quote */}
 
             <p>Nein, denn wir wollen die Anzahl der gleichzeitig eingeführten Neuerungen auf diejenigen begrenzen, von
                 denen wir uns den größten Mehrwert für unsere Produkte oder unseren Business Value-Versprechen. Wir
                 können drei wesentliche Punkte festhalten, die die Notwendigkeit unterstreichen, die Anzahl gleichzeitig
                 neu eingeführter Technologien zu begrenzen:</p>
-
-            <ul>
-                <li>Die unbekannten Unbekannten reduzieren</li>
-                <li>Den kognitiven Ballast reduzieren</li>
-                <li>Unsere Zeit auf die Wertschöpfung verwenden, anstatt auf „Nebenkriegsschauplätze“</li>
-            </ul>
-
-            <ol>
-                <li>Welches unserer Probleme wird diese Technologie lösen?</li>
-                <li>Welche Veränderungen erfordert diese Technologie gegenüber dem Status quo?</li>
-                <li>Wie könnten wir diese Probleme lösen, wenn wir die Technologie nicht einsetzen können?</li>
-            </ol>
-
-            <h3 id="unbekannt">An die unbekannten Unbekannten denken</h3>
-
-            <p>Wenn wir neue Software schreiben, gibt es immer Dinge, die wir im Vorfeld noch nicht wissen. Wir wissen
-                aber, dass wir uns um diese Dinge kümmern sollten. Wir sollten z. B. wissen, wie sich die Datenbank
-                verhält, wenn ihre Systemressourcen ausgelastet sind und ob unsere Anwendung in dem Fall auf bestimmte
-                Fehlerszenarien reagieren können muss. Bei neuen Technologien gibt es aber leider auch einige Dinge, von
-                denen wir gar nichts wissen. Da wir nicht wissen, dass diese existieren, wissen wir auch nicht, ob und
-                wann sie für uns überhaupt relevant werden oder ob wir uns darum kümmern müssen. Ein Beispiel hierfür
-                wäre, dass in unserem Messaging-System in bestimmten <a
-                    href="https://aphyr.com/posts/315-jepsen-rabbitmq">Situationen Nachrichten verloren gehen</a>. Die
-                Anzahl dieser unbekannten Unbekannten (Unknown Unknowns) wollen wir dringend auf ein Minimum reduzieren,
-                denn sie können im schlimmsten Fall zu Datenverlust, Produktionsausfall oder Scheitern des Projekts
-                führen.</p>
-
-            <check-list>
-                <ul class="checklist">
-                    <li>Die unbekannten Unbekannten reduzieren</li>
-                    <li>Den kognitiven Ballast reduzieren</li>
-                    <li>Unsere Zeit auf die Wertschöpfung verwenden, anstatt auf „Nebenkriegsschauplätze“</li>
-                </ul>
-            </check-list>
 
             <h3 id="ballast">Kognitiven Ballast vermeiden</h3>
 
@@ -153,7 +96,6 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
                 dies dazu führen, dass unbewusst Entscheidungen getroffen werden, die gegen unsere fachlichen Ziele
                 laufen.</p>
 
-            {/* start superquote molecule @see molecules/super-quote */}
             <blockquote class="superquote">
                 <span class="superquote__zigzag"></span>
                 <p>Wertschöpfung findet statt, wenn unsere Änderung oder das neue Feature in unserem Produktionssystem
@@ -163,7 +105,6 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
                     <span class="superquote__role" itemprop="jobTitle">Senior Consultant</span>
                 </div>
             </blockquote>
-            {/* end super-quote component */}
 
             <p>Der Endkunde zahlt nicht mehr Geld für unsere Produkte, nur weil unsere Protokollevents per TCP in eine
                 zentrale ElasticSearch-Datenbank geschrieben werden, anstatt in eine Datei auf der Festplatte. Wie hilft
@@ -191,7 +132,6 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
                 wird und weite Teile der Anwendung umgebaut werden müssen. In Konzeption, Test und Betrieb sollten die
                 Veränderungen nicht oder nur marginal zu spüren sein.</p>
 
-            {/* start blockquote atom @see atoms/text/block/block-quote */}
             <blockquote class="blockquote">
                 "Wichtig ist hierbei, dass die Einführung dieser neuen Technologie eine Mehrheitsentscheidung des Teams
                 ist und dass diese Entwurfsentscheidung sowie die Gründe und Alternativen dieser Entscheidung
@@ -202,7 +142,6 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
                 feststellen, dass sich die Rahmenbedingungen geändert haben und die Entscheidung zu Gunsten einer
                 Alternative revidiert werden sollte."
             </blockquote>
-            {/* end blockquote component */}
 
             <p>In dem Moment, in dem eine Entwurfsentscheidung über die Teamgrenzen hinaus geht, also beispielsweise
                 auch Auswirkungen auf den Betrieb der Anwendung hat, muss das Team hierfür zwei Innovation Tokens

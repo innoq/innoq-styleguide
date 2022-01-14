@@ -30,7 +30,8 @@ fractal.set('project.title', 'INNOQ Styleguide')
 const componentsDir = path.join(__dirname, 'components')
 fractal.components.set('ext', '.html')
 fractal.components.set('path', componentsDir)
-fractal.components.set('ext', '.html')
+
+fractal.components.set('default.preview', '@preview')
 
 /*
  * Tell Fractal where to look for documentation pages and use HTML as default.

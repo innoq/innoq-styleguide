@@ -1,5 +1,3 @@
-import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-teaser/podcast-tile-teaser/config";
-
 <nav-bar class="navbar">
     <div class="navbar__inner">
         <a href="#main" class="navbtn navbtn--skip">Zum Inhalt springen</a>
@@ -7,7 +5,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
         <div class="navbar__brand">
             <a href="#" class="navbar__brand-link">
                 <img alt="INNOQ" class="logo navbar__logo"
-                    src={context.app.uri('assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg')} />
+                    src="{{ path '/assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg' }}" />
             </a>
         </div>
 
@@ -127,8 +125,8 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
 
 <header class="landing-page-header">
     <video class="bg-video" playsinline autoplay muted loop wf-ignore
-        poster={context.app.uri("assets/bg-images/edition-02/edition02-human-02.jpg")}>
-        <source src={context.app.uri("assets/bg-videos/neuroevolutionary-trails.mp4")} type="video/mp4" />
+        poster="{{ path '/assets/bg-images/edition-02/edition02-human-02.jpg'}}">
+        <source src=" {{ path '/assets/bg-videos/neuroevolutionary-trails.mp4'}}" type="video/mp4" />
     </video>
     <div class="landing-page-header__body">
         <div>
@@ -249,7 +247,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                                 </h2>
                             </div>
                             <img class="case-teaser__logo"
-                                src={context.app.uri('assets/logos/edition-02/svg/innoq-logo--apricotpetrol.svg')} />
+                                src="{{ path '/assets/logos/edition-02/svg/innoq-logo--apricotpetrol.svg' }}" />
                             <div class="case-teaser__footer">
                                 <span class="link-teaser">mehr erfahren</span>
                             </div>
@@ -271,7 +269,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                         <div class="author-bio author-bio--condensed" itemscope itemtype="http://schema.org/Person">
                             <div class="author-bio__image avatar avatar--xs">
                                 <img class="avatar__image" itemprop="photo"
-                                    src={context.app.uri("assets/example-content/heribert.jpg")}
+                                    src="{{ path '/assets/example-content/heribert.jpg' }}"
                                     alt="Portrait von Alexander Hesingfeld" />
                             </div>
                             <address class="author-bio__text">
@@ -282,7 +280,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                     </div>
                 </a>
 
-                <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay" style={cssRight}>
+                <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay" style="background-image: url({{ path '/assets/example-content/heribert-rechts.png' }})">
                     <div class="podcast-teaser__body">
                         <div class="podcast-teaser__caption">Podcast</div>
                         <h2 class="podcast-teaser__headline">Podcast Headline</h2>
@@ -310,7 +308,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                         <div class="author-bio author-bio--condensed" itemscope itemtype="http://schema.org/Person">
                             <div class="author-bio__image avatar avatar--xs">
                                 <img class="avatar__image" itemprop="photo"
-                                    src={context.app.uri("assets/example-content/heribert.jpg")}
+                                    src="{{ path '/assets/example-content/heribert.jpg' }}"
                                     alt="Portrait von Alexander Hesingfeld" />
                             </div>
                             <address class="author-bio__text">
@@ -347,7 +345,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                         <div class="list-teaser__footer">
                             <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                                 <div class="author-bio__image avatar avatar--small">
-                                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+                                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                                 </div>
                                 <address class="author-bio__text">
                                     <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -356,7 +354,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                             </div>
                             <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                                 <div class="author-bio__image avatar avatar--small">
-                                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+                                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                                 </div>
                                 <address class="author-bio__text">
                                     <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -399,7 +397,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                         <div class="list-teaser__footer">
                             <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                                 <div class="author-bio__image avatar avatar--small">
-                                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+                                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                                 </div>
                                 <address class="author-bio__text">
                                     <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -408,7 +406,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                             </div>
                             <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                                 <div class="author-bio__image avatar avatar--small">
-                                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+                                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                                 </div>
                                 <address class="author-bio__text">
                                     <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -442,7 +440,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                         <div class="list-teaser__footer">
                             <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                                 <div class="author-bio__image avatar avatar--small">
-                                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+                                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                                 </div>
                                 <address class="author-bio__text">
                                     <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -451,7 +449,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                             </div>
                             <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                                 <div class="author-bio__image avatar avatar--small">
-                                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+                                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                                 </div>
                                 <address class="author-bio__text">
                                     <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -494,7 +492,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                         <div class="list-teaser__footer">
                             <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                                 <div class="author-bio__image avatar avatar--small">
-                                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+                                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                                 </div>
                                 <address class="author-bio__text">
                                     <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -503,7 +501,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                             </div>
                             <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                                 <div class="author-bio__image avatar avatar--small">
-                                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+                                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                                 </div>
                                 <address class="author-bio__text">
                                     <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>

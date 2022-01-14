@@ -1,5 +1,3 @@
-import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-teaser/podcast-tile-teaser/config";
-
 <main role="main">
     <div class="page-layout-xl--default">
         <h2 class="teaser-section-heading">Magazin</h2>
@@ -33,7 +31,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                     <div class="content-teaser__footer">
                         <div class="author-bio author-bio--condensed" itemscope itemtype="http://schema.org/Person">
                             <div class="author-bio__image avatar avatar--xs">
-                                <img class="avatar__image" itemprop="photo" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Heribert Innoq" />
+                                <img class="avatar__image" itemprop="photo" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Heribert Innoq" />
                             </div>
                             <address class="author-bio__text">
                                 <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -54,7 +52,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                     <div class="content-teaser__footer">
                         <div class="author-bio author-bio--condensed" itemscope itemtype="http://schema.org/Person">
                             <div class="author-bio__image avatar avatar--xs">
-                                <img class="avatar__image" itemprop="photo" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq" />
+                                <img class="avatar__image" itemprop="photo" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq" />
                             </div>
                             <address class="author-bio__text">
                                 <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -75,7 +73,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                     <div class="content-teaser__footer">
                         <div class="author-bio author-bio--condensed" itemscope itemtype="http://schema.org/Person">
                             <div class="author-bio__image avatar avatar--xs">
-                                <img class="avatar__image" itemprop="photo" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq" />
+                                <img class="avatar__image" itemprop="photo" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq" />
                             </div>
                             <address class="author-bio__text">
                                 <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -90,7 +88,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
             </div>
             <h2 class="teaser-section-heading">Podcast</h2>
             <div class="blocks">
-                <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay" style={cssRight}>
+                <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay" style="background-image: url({{ path '/assets/example-content/heribert-rechts.png' }})">
                     <div class="podcast-teaser__body">
                         <div class="podcast-teaser__caption">Podcast</div>
                         <h2 class="podcast-teaser__headline">Podcast Headline</h2>
@@ -105,7 +103,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                         </div>
                     </div>
                 </a>
-                <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay" style={cssRight}>
+                <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay" style="background-image: url({{ path '/assets/example-content/heribert-rechts.png' }})">
                     <div class="podcast-teaser__body">
                         <div class="podcast-teaser__caption">Podcast</div>
                         <h2 class="podcast-teaser__headline">Podcast Headline</h2>
@@ -120,7 +118,7 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
                         </div>
                     </div>
                 </a>
-                <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay" style={cssRight}>
+                <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay" style="background-image: url({{ path '/assets/example-content/heribert-rechts.png' }})">
                     <div class="podcast-teaser__body">
                         <div class="podcast-teaser__caption">Podcast</div>
                         <h2 class="podcast-teaser__headline">Podcast Headline</h2>
@@ -179,13 +177,17 @@ import { cssRight } from "./components/04-molecules/visual-elements/teaser/tile-
             <div class="case-teaser__wrapper">
                 <div class="case-teaser__body">
                     <div class="case-teaser__caption">ARTIST COLLABORATION</div>
-                        <div>
-                            <div class="case-teaser__header">
-                                <h1 class="punch-in bg-image-edition02-06">INNOQ Digital Art</h1>
-                            </div>
+                    <div>
+                        <div class="case-teaser__header">
+                            <h1 class="punch-in bg-image-edition-06">INNOQ Digital Art</h1>
                         </div>
+                    </div>
                     <div class="case-teaser__text">
-                        Die Kollaborationsreihe „INNOQ Digital Art“ hat zum Ziel, die Zusammenarbeit mit ausgewählten Medienkünstlern zu fördern. Gemeinsam werden Fragen zu technologischem Fortschritt und dessen gesellschaftlichen Auswirkungen aus verschiedenen Perspektiven betrachtet. Dabei steht die gemeinsame Entwicklung von Kunstwerken und der intensive Austausch zwischen INNOQ-Mitarbeitern und den Künstlern im Fokus.
+                        Die Kollaborationsreihe „INNOQ Digital Art“ hat zum Ziel, die Zusammenarbeit mit ausgewählten
+                        Medienkünstlern zu fördern. Gemeinsam werden Fragen zu technologischem Fortschritt und dessen
+                        gesellschaftlichen Auswirkungen aus verschiedenen Perspektiven betrachtet. Dabei steht die
+                        gemeinsame Entwicklung von Kunstwerken und der intensive Austausch zwischen INNOQ-Mitarbeitern
+                        und den Künstlern im Fokus.
                     </div>
                     <div class="case-teaser__footer">
                         <a class="link-teaser" href="#">Mehr erfahren</a>
