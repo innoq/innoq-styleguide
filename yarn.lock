@@ -71,7 +71,7 @@
     mixwith "^0.1.1"
     readable-stream "^3.6.0"
 
-"@frctl/fractal@^1.5.1":
+"@frctl/fractal@^1.5.11":
   version "1.5.11"
   resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.5.11.tgz#3928c9d6e4aa36d76436a311b2ea4cee329fec8d"
   integrity sha512-HdCoIaqD1iRqLAF8CzvRkI2Tb98is8dKnMtzMk7juuMWCL25L3LQcmWhDJcVkRdN7vH+S3PgjKZw2jC8TjZ4QA==
