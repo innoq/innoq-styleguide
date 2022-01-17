@@ -1,10 +1,8 @@
-import { cssRight, cssBoth } from "./components/04-molecules/visual-elements/teaser/tile-teaser/podcast-tile-teaser/config";
-
 <main role="main">
     <header class="image-header image-header--no-padding">
-        <div class="image-header__body image-header-bg-podcast-01">
+        <div class="image-header__body bg-image-podcast-01">
             <div class="image-header__content">
-                <h1 class="image-header__title image-header-bg-culture-01-text-box ">Unsere Podcasts</h1>
+                <h1 class="image-header__title bg-image-podcast-01">Unsere Podcasts</h1>
                 <span class="icon-svg icon-arrow-long-down icon--brand-secondary"></span>
             </div>
         </div>
@@ -39,7 +37,7 @@ import { cssRight, cssBoth } from "./components/04-molecules/visual-elements/tea
                     </div>
                 </div>
             </a>
-            <a href="#" class="podcast-teaser podcast-teaser--avatar flex-grow" style={cssRight}>
+            <a href="#" class="podcast-teaser podcast-teaser--avatar flex-grow" style="background-image: url({{ path '/assets/example-content/heribert-rechts.png' }})">
                 <div class="podcast-teaser__body">
                     <div class="podcast-teaser__caption">Podcast</div>
                     <h2 class="podcast-teaser__headline">faucet-pipeline</h2>
@@ -54,7 +52,7 @@ import { cssRight, cssBoth } from "./components/04-molecules/visual-elements/tea
                     </div>
                 </div>
             </a>
-            <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay flex-grow" style={cssRight}>
+            <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay flex-grow" style="background-image: url({{ path '/assets/example-content/heribert-rechts.png' }})">
                 <div class="podcast-teaser__body">
                     <div class="podcast-teaser__caption">Podcast</div>
                     <h2 class="podcast-teaser__headline">MLOps</h2>
@@ -84,7 +82,7 @@ import { cssRight, cssBoth } from "./components/04-molecules/visual-elements/tea
             </div>
         </a>
         <div class="podcast-overview-samples">
-            <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay podcast-teaser--avatar--overlay--security flex-grow" style={cssRight}>
+            <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay podcast-teaser--avatar--overlay--security flex-grow" style="background-image: url({{ path '/assets/example-content/heribert-rechts.png' }})">
                 <div class="podcast-teaser__body">
                     <div class="podcast-teaser__caption podcast-teaser__caption--security">Security Podcast</div>
                     <h2 class="podcast-teaser__headline podcast-teaser__headline--security">CAs und Let’s Encrypt</h2>

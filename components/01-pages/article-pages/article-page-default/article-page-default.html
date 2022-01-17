@@ -1,7 +1,4 @@
-import { safe, htmlEncode } from "complate-stream";
-import { cssBackground } from './components/03-organisms/header/standard-header/config'
-
-<header class="standard-header" style={cssBackground}>
+<header class="standard-header" style="background-image: url({{ path '/assets/bg-images/general/visual-trainings-01.jpg' }}); background-color: var(--overlay-standard-color);">
     <h3 class="standard-header__type">Content Type</h3>
     <h1 class="standard-header__title">Titel</h1>
     <h2 class="standard-header__subtitle">Subtitle</h2>
@@ -27,7 +24,7 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
         <section class="center">
             <a rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                 <div class="author-bio__image avatar avatar--small">
-                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                 </div>
                 <address class="author-bio__text">
                     <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -36,7 +33,7 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
             </a>
             <a rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                 <div class="author-bio__image avatar avatar--small">
-                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")}
+                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"
                         alt="Portrait von Heribert Innoq" />
                 </div>
                 <address class="author-bio__text">
@@ -46,7 +43,7 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
             </a>
             <a rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                 <div class="author-bio__image avatar avatar--small">
-                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")}
+                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"
                         alt="Portrait von Heribert Innoq" />
                 </div>
                 <address class="author-bio__text">
@@ -75,7 +72,7 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
 
             <p>Lautet der Vorschlag aber beispielsweise, die Daten unserer Anwendung in verschiedene NoSQL-Datenbanken aufzuteilen, die auf die jeweiligen Datenstrukturen und ihre Anwendungsfälle optimiert sind, bekommen wir stattdessen oft ganz andere Aussagen zu hören. Nämlich: Gute Idee, wir nutzen das beste Tool für den jeweiligen Job. Zu leicht vergessen wir, uns vorab schon die vielleicht unangenehme Frage zu stellen: Kann mein Team, ja, unsere Organisation, ein System mit diesen Technologien überhaupt betreiben?</p>
 
-            <pre><code>{safe(htmlEncode(context.code))}</code></pre>
+            <pre><code>{{ code }}</code></pre>
 
             <p>Heutzutage sind Unternehmen ständig gefordert einen Spagat auszubalancieren. Auf der einen Seite bringt zu viel Innovation in Form von neuen Technologien und Prozess- oder Organisationsveränderungen Unruhe und Unsicherheit ins Unternehmen. Auf der anderen Seite müssen Unternehmen innovativ sein, um am Markt gegen den Mitbewerber zu bestehen und gleichzeitig gute Mitarbeiter anzulocken. Aber es wäre natürlich auch unvernünftig, Innovation in Form von neuer Technologie generell auszuschließen. Bei einigen großen oder mittelständischen Firmen durften wir derartige Bemühungen beobachten, die teilweise einen großen Anteil daran hatten, dass diese Unternehmen von ihren Mitbewerbern überholt wurden. Die Frage ist also: Wie viel Innovation und Neuerungen sollen wir zulassen? Was ist das richtige Maß? Um diese Frage zu beantworten, soll uns die Idee der Innovation Tokens helfen.</p>
 
@@ -83,11 +80,9 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
 
             <p>Die Idee von Innovation Tokens besteht darin, dass ein Team für die Umsetzung einer bestimmten Anforderung nur eine begrenzte Anzahl an Tokens zur Verfügung hat. Die genaue Anzahl hängt von den Fähigkeiten und der Einsatzbereitschaft des Teams und der Organisation ab. Die Anzahl der Tokens hängt aber nicht vom Umfang der Anforderung ab. Wenn die Anforderung groß ist, war es in unseren Projekten bisher nie effektiv, diese mit noch mehr Technologie zu erschlagen. Dies führte eher zum gegenteiligen Effekt. Des Weiteren haben wir auch noch kein Team erlebt, das mehr als fünf Tokens in einer Phase eingesetzt hat. In der Regel sollten Teams mit drei Innovation Tokens pro Projekt auskommen.</p>
 
-            {/* start pull quote component @see atoms/text/block/pull-quote */}
             <blockquote class="pullquote">
                 An dieser Stelle kommt oft die Frage auf: Verspiele ich nicht eine Chance, wenn ich Innovation so stark begrenze?
             </blockquote>
-            {/* end pull quote */}
 
             <p>Nein, denn wir wollen die Anzahl der gleichzeitig eingeführten Neuerungen auf diejenigen begrenzen, von denen wir uns den größten Mehrwert für unsere Produkte oder unseren Business Value-Versprechen. Wir können drei wesentliche Punkte festhalten, die die Notwendigkeit unterstreichen, die Anzahl gleichzeitig neu eingeführter Technologien zu begrenzen:</p>
 
@@ -132,7 +127,6 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
 
             <p>Wertschöpfung findet statt, wenn unsere Änderung oder das neue Feature in unserem Produktionssystem genutzt wird. Dementsprechend sollte es unser Anliegen sein, die Projektziele an dieser Wertschöpfung und den fachlichen Zielen zu orientieren, damit das Projektteam diese in technische Detailentscheidungen immer einbezieht – wie der Einführung neuer Technologien. Wenn bei der Definition der Projektziele die fachlichen Ziele nicht transparent sind und nicht klar ist, wie der Mehrwert am Ende gemessen wird, kann dies dazu führen, dass unbewusst Entscheidungen getroffen werden, die gegen unsere fachlichen Ziele laufen.</p>
 
-            {/* start superquote molecule @see molecules/super-quote */}
             <blockquote class="superquote">
                 <span class="superquote__zigzag"></span>
                 <p>Wertschöpfung findet statt, wenn unsere Änderung oder das neue Feature in unserem Produktionssystem genutzt wird.</p>
@@ -141,7 +135,6 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
                     <span class="superquote__role" itemprop="jobTitle">Senior Consultant</span>
                 </div>
             </blockquote>
-            {/* end super-quote component */}
 
             <p>Der Endkunde zahlt nicht mehr Geld für unsere Produkte, nur weil unsere Protokollevents per TCP in eine zentrale ElasticSearch-Datenbank geschrieben werden, anstatt in eine Datei auf der Festplatte. Wie hilft das dem Kunden? Wo trägt diese Änderung zur Wertschöpfung bei? Wird das System dadurch stabiler? Sinken die Wartungskosten? Können potenzielle Fehlerszenarien früher entdeckt und behoben werden, bevor der Kunde davon betroffen ist? Die Aufgabe des Entwicklungsteams ist es, mit ihrer Arbeit zur Wertschöpfung ihres Unternehmens beizutragen. Und unter <code> puts "Hello World"</code> diesem Gesichtspunkt sollten wir auch unsere Innovation Tokens einsetzen.</p>
 
@@ -163,11 +156,9 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
 
             <p>Nehmen wir an, wir sind in einem Team mit JavaScript-Entwicklern und sollen eine neue Webanwendung schreiben. Das Team hat bisher gute Ergebnisse mit dem JavaScript-Web-Framework Express.js erzielt, das im Node.js-Ökosystem weit verbreitet ist. Nun möchten die Kollegen aber auf das Framework hapi wechseln, weil es einige Expertenfeatures mitbringt. Hierfür müsste das Team ein Innovation Token ausgeben, da es sich um einen invasiven Austausch handelt, durch den die Vorgehensweise bei der Entwicklung verändert wird und weite Teile der Anwendung umgebaut werden müssen. In Konzeption, Test und Betrieb sollten die Veränderungen nicht oder nur marginal zu spüren sein.</p>
 
-            {/* start blockquote atom @see atoms/text/block/block-quote */}
             <blockquote class="blockquote">
                 "Wichtig ist hierbei, dass die Einführung dieser neuen Technologie eine Mehrheitsentscheidung des Teams ist und dass diese Entwurfsentscheidung sowie die Gründe und Alternativen dieser Entscheidung schriftlich festgehalten werden(<a href="http://www.arc42.de/template/struktur.html">arc42 Kapitel 9</a> ). Auf diese Weise ist nicht nur für Außenstehende, beispielsweise andere Teams oder Auditoren, sondern auch für das Team selbst nach ein paar Monaten noch klar ersichtlich, warum die Entscheidung so getroffen wurde. So kann das Team zu einem späteren Zeitpunkt die Kriterien ansehen und gegebenenfalls feststellen, dass sich die Rahmenbedingungen geändert haben und die Entscheidung zu Gunsten einer Alternative revidiert werden sollte."
             </blockquote>
-            {/* end blockquote component */}
 
             <p>In dem Moment, in dem eine Entwurfsentscheidung über die Teamgrenzen hinaus geht, also beispielsweise auch Auswirkungen auf den Betrieb der Anwendung hat, muss das Team hierfür zwei Innovation Tokens ausgeben. Dies wäre bei der Einführung einer neuen Datenbanktechnologie der Fall, die noch nicht im Unternehmen vorhanden ist. Der Grund hierfür ist, dass dies nicht nur Aufwände und Risiken in unserem Team erzeugt, sondern eben auch in mindestens einem anderen Team. Unser Operationsteam muss sich bei der Einführung beispielsweise von Cassandra mit Themen wie Clusterbetrieb, Datensicherung und -wiederherstellung, dem Monitoring und dem Verhalten der Datenbank bei <a href="https://en.m.wikipedia.org/wiki/Network_partition">Network Partitions beschäftigen</a>, damit das Entwicklungsteam die Datenbank überhaupt benutzen kann.</p>
 
@@ -314,7 +305,7 @@ import { cssBackground } from './components/03-organisms/header/standard-header/
                 <div id="author-bio" class="author-bio author-bio--long" itemscope itemtype="http://schema.org/Person">
                     <a rel="author" class ="author-bio__head" itemprop="url" href="#">
                         <div class="author-bio__image avatar avatar--base">
-                            <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+                            <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                         </div>
                         <address class="author">
                             <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>

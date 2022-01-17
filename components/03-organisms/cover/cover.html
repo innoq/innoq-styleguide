@@ -1,5 +1,4 @@
-import { cssBoth } from "./components/03-organisms/header/standard-header/config";
-<div class="cover cover__avatar-overlay" style={cssBoth}>
+<div class="cover cover__avatar-overlay" style="background-image: url({{ path '/assets/example-content/heribert-rechts.png' }}), url({{ path '/assets/example-content/heribert-links.png' }}) ">
     <div class="cover__body">
         <h3 class="cover__type">Podcast</h3>
         <h1 class="cover__title">Podcast wirklich langer langer laaaaanger Titel</h1>
@@ -15,11 +14,11 @@ import { cssBoth } from "./components/03-organisms/header/standard-header/config
     </div>
     <div class="cover__footer cover__footer--white cover__footer--single">
         <img itemprop="photo" class="cover__logo--right"
-            src={context.app.uri("assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg")} />
+            src="{{ path '/assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg'}}" />
     </div>
 </div>
 
-<div class="cover cover__avatar-overlay cover__avatar-overlay--security" style={cssBoth}>
+<div class="cover cover__avatar-overlay cover__avatar-overlay--security" style="background-image: url({{ path '/assets/example-content/heribert-rechts.png' }}), url({{ path '/assets/example-content/heribert-links.png' }}) ">
     <div class="cover__body">
         <h3 class="cover__type">Podcast</h3>
         <h1 class="cover__title">Podcast Titel</h1>
@@ -35,7 +34,7 @@ import { cssBoth } from "./components/03-organisms/header/standard-header/config
     </div>
     <div class="cover__footer cover__footer--white cover__footer--single">
         <img itemprop="photo" class="cover__logo--right"
-            src={context.app.uri("assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg")} />
+            src="{{ path '/assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg'}}" />
     </div>
 </div>
 
@@ -48,7 +47,7 @@ import { cssBoth } from "./components/03-organisms/header/standard-header/config
         <ul class="cover__people">
             <li rel="author" class="author-bio author-bio--short" itemscope itemtype="http://schema.org/Person">
                 <div class="author-bio__image avatar avatar--small">
-                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")}
+                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"
                         alt="Portrait von Heribert Innoq" />
                 </div>
                 <address class="author-bio__text">
@@ -58,7 +57,7 @@ import { cssBoth } from "./components/03-organisms/header/standard-header/config
             </li>
             <li rel="author" class="author-bio author-bio--short" itemscope itemtype="http://schema.org/Person">
                 <div class="author-bio__image avatar avatar--small">
-                    <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")}
+                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"
                         alt="Portrait von Heribert Innoq" />
                 </div>
                 <address class="author-bio__text">
@@ -68,7 +67,7 @@ import { cssBoth } from "./components/03-organisms/header/standard-header/config
             </li>
         </ul>
         <img itemprop="photo" class="cover__logo--right"
-            src={context.app.uri("assets/logos/edition-02/svg/innoq-logo--whitepetrol.svg")} />
+            src="{{ path '/assets/logos/edition-02/svg/innoq-logo--whitepetrol.svg'}}" />
     </div>
 </div>
 
@@ -80,7 +79,7 @@ import { cssBoth } from "./components/03-organisms/header/standard-header/config
     </div>
     <div class="cover__footer cover__footer--white cover__footer--single">
         <img itemprop="photo" class="cover__logo--right"
-            src={context.app.uri("assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg")} />
+            src="{{ path '/assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg'}}" />
     </div>
 </div>
 
@@ -91,7 +90,7 @@ import { cssBoth } from "./components/03-organisms/header/standard-header/config
     </div>
     <div class="cover__footer cover__footer--secondary cover__footer--single">
         <img itemprop="photo" class="cover__logo--right"
-            src={context.app.uri("assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg")} />
+            src="{{ path '/assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg'}}" />
     </div>
 </div>
 
@@ -102,9 +101,9 @@ import { cssBoth } from "./components/03-organisms/header/standard-header/config
     </div>
     <div class="cover__footer cover__footer--white">
         <img itemprop="photo" class="cover__logo--left"
-            src={context.app.uri("assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg")} />
+            src="{{ path '/assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg'}}" />
         <img itemprop="photo" class="cover__logo--right"
-            src={context.app.uri("assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg")} />
+            src="{{ path '/assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg'}}" />
     </div>
 </div>
 
@@ -115,9 +114,9 @@ import { cssBoth } from "./components/03-organisms/header/standard-header/config
     </div>
     <div class="cover__footer cover__footer--white">
         <img itemprop="photo" class="cover__logo--left"
-            src={context.app.uri("assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg")} />
+            src="{{ path '/assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg'}}" />
         <img itemprop="photo" class="cover__logo--right"
-            src={context.app.uri("assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg")} />
+            src="{{ path '/assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg'}}" />
     </div>
 </div>
 

@@ -2,7 +2,7 @@ import { cssBoth } from "./components/04-molecules/visual-elements/teaser/list-t
 <main role="main" class="staff-page">
     <header class="staff-header">
         <div class="staff-header-left"></div>
-        <img class="staff-header-image" itemprop="photo" src={context.app.uri("assets/example-content/heribert.jpg")}
+        <img class="staff-header-image" itemprop="photo" src="{{ path '/assets/example-content/heribert.jpg' }}"
             alt="Portrait von Heribert Innoq" />
         <address class="staff-header-info">
             <h2 class="staff-header-info__name" itemprop="fullName">Heribert Innoq</h2>
@@ -68,7 +68,7 @@ import { cssBoth } from "./components/04-molecules/visual-elements/teaser/list-t
                     <div class="list-teaser__footer">
                         <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                             <div class="author-bio__image avatar avatar--small">
-                                <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+                                <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                             </div>
                             <address class="author-bio__text">
                                 <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -102,7 +102,7 @@ import { cssBoth } from "./components/04-molecules/visual-elements/teaser/list-t
                     <div class="list-teaser__footer">
                         <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                             <div class="author-bio__image avatar avatar--small">
-                                <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+                                <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                             </div>
                             <address class="author-bio__text">
                                 <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -199,7 +199,7 @@ import { cssBoth } from "./components/04-molecules/visual-elements/teaser/list-t
                 <div class="list-teaser__footer">
                     <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
                         <div class="author-bio__image avatar avatar--small">
-                            <img itemprop="photo" class="avatar__image" src={context.app.uri("assets/example-content/heribert.jpg")} alt="Portrait von Heribert Innoq"/>
+                            <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                         </div>
                         <address class="author-bio__text">
                             <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
@@ -208,7 +208,7 @@ import { cssBoth } from "./components/04-molecules/visual-elements/teaser/list-t
                     </div>
                 </div>
             </a>
-            <a href="#" class="list-teaser-podcast list-teaser-podcast--avatar--overlay--big" style={cssBoth}>
+            <a href="#" class="list-teaser-podcast list-teaser-podcast--avatar--overlay--big" style="background-image: url({{ path '/assets/example-content/heribert-rechts.png' }}), url({{ path '/assets/example-content/heribert-links.png' }}) ">
                 <div class="list-teaser-podcast__body">
                     <div class="list-teaser-podcast__caption">Podcast</div>
                     <h2 class="list-teaser-podcast__headline">Podcast Headline</h2>
