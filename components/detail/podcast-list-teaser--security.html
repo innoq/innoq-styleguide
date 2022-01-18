@@ -181,29 +181,13 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-b97c1d8f8f5061f25b572ed9d34af4c7-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-    list-teaser-podcast
-    list-teaser-podcast--avatar--overlay--big
-    list-teaser-podcast--avatar--overlay--big--security
-  &quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;
-    background-image: url(../../assets/example-content/heribert-rechts.png),
-      url(../../assets/example-content/heribert-links.png);
-  &quot;</span>&gt;</span>
+        <pre>import { cssBoth } from &quot;./components/04-molecules/visual-elements/teaser/list-teaser/podcast-list-teaser/config&quot;;
+
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-teaser-podcast list-teaser-podcast--avatar--overlay--big list-teaser-podcast--avatar--overlay--big--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(../../assets/example-content/heribert-rechts.png), url(../../assets/example-content/heribert-links.png) &quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-teaser-podcast__body&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-        list-teaser-podcast__caption list-teaser-podcast__caption--security
-      &quot;</span>&gt;</span>
-            Security-Podcast
-        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-        list-teaser-podcast__headline list-teaser-podcast__headline--security
-      &quot;</span>&gt;</span>
-            Podcast Headline
-        <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-        list-teaser-podcast__subheadline
-        list-teaser-podcast__subheadline--security
-      &quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-teaser-podcast__caption list-teaser-podcast__caption--security&quot;</span>&gt;</span>Security-Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-teaser-podcast__headline list-teaser-podcast__headline--security&quot;</span>&gt;</span>Podcast Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-teaser-podcast__subheadline list-teaser-podcast__subheadline--security&quot;</span>&gt;</span>
             Podcast Subheadline
         <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-arrow-long-right icon--brand-black&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -226,7 +210,7 @@
     <code class="Code Code--lang-html hljs">
         <pre>import { cssBoth } from &quot;./components/04-molecules/visual-elements/teaser/list-teaser/podcast-list-teaser/config&quot;;
 
-<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-teaser-podcast list-teaser-podcast--avatar--overlay--big list-teaser-podcast--avatar--overlay--big--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{cssBoth}</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-teaser-podcast list-teaser-podcast--avatar--overlay--big list-teaser-podcast--avatar--overlay--big--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url({{ path &#x27;/assets/example-content/heribert-rechts.png&#x27; }}), url({{ path &#x27;/assets/example-content/heribert-links.png&#x27; }}) &quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-teaser-podcast__body&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-teaser-podcast__caption list-teaser-podcast__caption--security&quot;</span>&gt;</span>Security-Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;list-teaser-podcast__headline list-teaser-podcast__headline--security&quot;</span>&gt;</span>Podcast Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -270,8 +254,6 @@
             <select class="FileBrowser-select" id="filebrowser-select">
                 
                 <option value="file-aefdd5462299088678caec547aa331d8">_podcast-list-teaser.scss</option>
-                
-                <option value="file-c9a961e59305ccb2dcc3bf8ee436a287">config.jsx</option>
                 
             </select>
         </div>
@@ -411,42 +393,6 @@
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
                     <span class="Meta-value">2.2 KB</span>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="FileBrowser-item" id="file-c9a961e59305ccb2dcc3bf8ee436a287" data-role="resource-preview">
-            <ul class="Meta">
-                <li class="Meta-item">
-                    <strong class="Meta-key">Content:</strong>
-                    <span class="Meta-value">
-                        <div class="FileBrowser-itemPreview">
-                            
-                            <code class="Code Code--lang-JSX FileBrowser-code hljs">
-                                <pre><span class="hljs-keyword">import</span> { context } <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;../../../../../env&#x27;</span>
-
-<span class="hljs-keyword">const</span> urlRight = context.uri(<span class="hljs-string">&#x27;assets/example-content/heribert-rechts.png&#x27;</span>)
-<span class="hljs-keyword">const</span> urlLeft = context.uri(<span class="hljs-string">&#x27;assets/example-content/heribert-links.png&#x27;</span>)
-
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> cssRight = <span class="hljs-string">`background-image: url(<span class="hljs-subst">${urlRight}</span>);`</span>
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> cssBoth = <span class="hljs-string">`background-image: url(<span class="hljs-subst">${urlRight}</span>), url(<span class="hljs-subst">${urlLeft}</span>);`</span>
-</pre>
-                            </code>
-                            
-                        </div>
-                    </span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">URL:</strong>
-                    <span class="Meta-value"><a data-no-pjax href="../raw/podcast-list-teaser/config.jsx"><span>/components/raw/podcast-list-teaser/config.jsx</span></a></span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">components/04-molecules/visual-elements/teaser/list-teaser/podcast-list-teaser/config.jsx</span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">335 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -5396,8 +5342,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-11-17T10:12:09.402Z">
-                                11/17/2021
+                            <time datetime="2022-01-18T13:47:40.175Z">
+                                1/18/2022
                             </time>
                         
                     </dd>
@@ -6320,6 +6266,8 @@
 </div>
 
             </div>
+        
+    
         
     
         

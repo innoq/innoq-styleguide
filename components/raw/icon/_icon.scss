@@ -4,7 +4,7 @@
   position: relative;
   top: 2px;
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: "icons";
+  font-family: icons;
   font-size: 0.8em;
   // Better Font Rendering
   -webkit-font-smoothing: antialiased;
@@ -13,7 +13,6 @@
   font-variant: normal;
   font-weight: normal;
   line-height: 1;
-  speak: none;
   -webkit-text-stroke-width: 1px;
   text-transform: none;
 }

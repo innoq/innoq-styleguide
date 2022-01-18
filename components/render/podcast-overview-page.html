@@ -1,261 +1,142 @@
 
 
 <main role="main">
-  <header class="image-header image-header--no-padding">
-    <div class="image-header__body image-header-bg-podcast-01">
-      <div class="image-header__content">
-        <h1 class="image-header__title image-header-bg-culture-01-text-box">
-          Unsere Podcasts
-        </h1>
-        <span
-          class="icon-svg icon-arrow-long-down icon--brand-secondary"
-        ></span>
-      </div>
+    <header class="image-header image-header--no-padding">
+        <div class="image-header__body bg-image-podcast-01">
+            <div class="image-header__content">
+                <h1 class="image-header__title bg-image-podcast-01">Unsere Podcasts</h1>
+                <span class="icon-svg icon-arrow-long-down icon--brand-secondary"></span>
+            </div>
+        </div>
+    </header>
+    <div class="podcast-overview-grid">
+        <a href="#" class="podcast-overview-teaser static-tile-teaser static-tile-teaser-bg-color">
+            <div class="static-tile-teaser__content">
+                <div class="static-tile-teaser__body">
+                    <h2 class="static-tile-teaser__headline">Der INNOQ Podcast</h2>
+                    <p class="static-tile-teaser__text">
+                        In dieser Serie diskutieren wir interessante Themen aus Software-Entwicklung und -Architektur – immer mit dem Fokus auf Praxistauglichkeit.
+                    </p>
+                </div>
+                <div class="static-tile-teaser__goto">
+                    <span class="link-teaser">Alle Episoden</span>
+                </div>
+            </div>
+        </a>
+        <div class="podcast-overview-samples">
+            <a href="#" class="podcast-teaser podcast-teaser--default flex-grow">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Podcast</div>
+                    <h2 class="podcast-teaser__headline">PIM-Systeme</h2>
+                    <h3 class="podcast-teaser__subheadline">
+                        Oder: die Datenkomplexität eines T-Shirts
+                    </h3>
+                    <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="podcast-teaser podcast-teaser--avatar flex-grow" style="background-image: url(../../assets/example-content/heribert-rechts.png)">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Podcast</div>
+                    <h2 class="podcast-teaser__headline">faucet-pipeline</h2>
+                    <h3 class="podcast-teaser__subheadline">
+                        JavaScript, CSS, Bilder und Fonts bereit zum Ausliefern
+                    </h3>
+                    <span class="icon-svg icon-arrow-long-right icon--brand-blue"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay flex-grow" style="background-image: url(../../assets/example-content/heribert-rechts.png)">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Podcast</div>
+                    <h2 class="podcast-teaser__headline">MLOps</h2>
+                    <h3 class="podcast-teaser__subheadline">
+                        Entwurf, Entwicklung, Betrieb
+                    </h3>
+                    <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                </div>
+            </a>
+        </div>
+        <a href="#" class="podcast-overview-teaser static-tile-teaser static-tile-teaser-bg-color--security">
+            <div class="static-tile-teaser__content">
+                <div class="static-tile-teaser__body">
+                    <h2 class="static-tile-teaser__headline podcast-overview-teaser__headline--security">Der Security Podcast</h2>
+                    <p class="static-tile-teaser__text podcast-overview-teaser__text--security">
+                        In dieser Serie sprechen wir über die Grundlagen von IT-Security. Ein praktischer Einstieg für alle, die an Software arbeiten.
+                    </p>
+                </div>
+                <div class="static-tile-teaser__goto">
+                    <span class="link-teaser link-teaser--security">Alle Episoden</span>
+                </div>
+            </div>
+        </a>
+        <div class="podcast-overview-samples">
+            <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay podcast-teaser--avatar--overlay--security flex-grow" style="background-image: url(../../assets/example-content/heribert-rechts.png)">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption podcast-teaser__caption--security">Security Podcast</div>
+                    <h2 class="podcast-teaser__headline podcast-teaser__headline--security">CAs und Let’s Encrypt</h2>
+                    <h3 class="podcast-teaser__subheadline podcast-teaser__subheadline--security">
+                        Wer zertifiziert hier eigentlich wen?
+                    </h3>
+                    <span class="icon-svg icon-arrow-long-right icon--brand-black"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="podcast-teaser podcast-teaser--avatar podcast-teaser--avatar--security flex-grow">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Security-Podcast</div>
+                    <h2 class="podcast-teaser__headline podcast-teaser__headline--security">TLS</h2>
+                    <h3 class="podcast-teaser__subheadline podcast-teaser__subheadline--security">
+                        Der sichere Weg von A nach B
+                    </h3>
+                    <span class="icon-svg icon-arrow-long-right icon--brand-black"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="podcast-teaser podcast-teaser--default podcast-teaser--default--security flex-grow">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Security-Podcast</div>
+                    <h2 class="podcast-teaser__headline podcast-teaser__headline--security">Zertifikate</h2>
+                    <h3 class="podcast-teaser__subheadline podcast-teaser__subheadline--security">
+                        Ich bräuchte dann noch eine digitale Unterschrift von Ihnen
+                    </h3>
+                    <span class="icon-svg icon-arrow-long-right icon--brand-yellow"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
-  </header>
-  <div class="podcast-overview-grid">
-    <a
-      href="#"
-      class="
-        podcast-overview-teaser
-        static-tile-teaser static-tile-teaser-bg-color
-      "
-      ><div class="static-tile-teaser__content">
-        <div class="static-tile-teaser__body">
-          <h2 class="static-tile-teaser__headline">Der INNOQ Podcast</h2>
-          <p class="static-tile-teaser__text">
-            In dieser Serie diskutieren wir interessante Themen aus
-            Software-Entwicklung und -Architektur – immer mit dem Fokus auf
-            Praxistauglichkeit.
-          </p>
-        </div>
-        <div class="static-tile-teaser__goto">
-          <span class="link-teaser">Alle Episoden</span>
-        </div>
-      </div></a
-    >
-    <div class="podcast-overview-samples">
-      <a href="#" class="podcast-teaser podcast-teaser--default flex-grow"
-        ><div class="podcast-teaser__body">
-          <div class="podcast-teaser__caption">Podcast</div>
-          <h2 class="podcast-teaser__headline">PIM-Systeme</h2>
-          <h3 class="podcast-teaser__subheadline">
-            Oder: die Datenkomplexität eines T-Shirts
-          </h3>
-          <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
-        </div>
-        <div class="podcast-teaser__footer">
-          <div
-            class="podcast-author"
-            itemscope
-            itemtype="http://schema.org/Person"
-          >
-            Heribert Innoq
-          </div>
-        </div></a
-      ><a
-        href="#"
-        class="podcast-teaser podcast-teaser--avatar flex-grow"
-        style="
-          background-image: url(../../assets/example-content/heribert-rechts.png);
-        "
-        ><div class="podcast-teaser__body">
-          <div class="podcast-teaser__caption">Podcast</div>
-          <h2 class="podcast-teaser__headline">faucet-pipeline</h2>
-          <h3 class="podcast-teaser__subheadline">
-            JavaScript, CSS, Bilder und Fonts bereit zum Ausliefern
-          </h3>
-          <span class="icon-svg icon-arrow-long-right icon--brand-blue"></span>
-        </div>
-        <div class="podcast-teaser__footer">
-          <div
-            class="podcast-author"
-            itemscope
-            itemtype="http://schema.org/Person"
-          >
-            Heribert Innoq
-          </div>
-        </div></a
-      ><a
-        href="#"
-        class="podcast-teaser podcast-teaser--avatar--overlay flex-grow"
-        style="
-          background-image: url(../../assets/example-content/heribert-rechts.png);
-        "
-        ><div class="podcast-teaser__body">
-          <div class="podcast-teaser__caption">Podcast</div>
-          <h2 class="podcast-teaser__headline">MLOps</h2>
-          <h3 class="podcast-teaser__subheadline">
-            Entwurf, Entwicklung, Betrieb
-          </h3>
-          <span class="icon-svg icon-arrow-long-right icon--brand-white"></span>
-        </div>
-        <div class="podcast-teaser__footer">
-          <div
-            class="podcast-author"
-            itemscope
-            itemtype="http://schema.org/Person"
-          >
-            Heribert Innoq
-          </div>
-        </div></a
-      >
-    </div>
-    <a
-      href="#"
-      class="
-        podcast-overview-teaser
-        static-tile-teaser
-        static-tile-teaser-bg-color--security
-      "
-      ><div class="static-tile-teaser__content">
-        <div class="static-tile-teaser__body">
-          <h2
-            class="
-              static-tile-teaser__headline
-              podcast-overview-teaser__headline--security
-            "
-          >
-            Der Security Podcast
-          </h2>
-          <p
-            class="
-              static-tile-teaser__text
-              podcast-overview-teaser__text--security
-            "
-          >
-            In dieser Serie sprechen wir über die Grundlagen von IT-Security.
-            Ein praktischer Einstieg für alle, die an Software arbeiten.
-          </p>
-        </div>
-        <div class="static-tile-teaser__goto">
-          <span class="link-teaser link-teaser--security">Alle Episoden</span>
-        </div>
-      </div></a
-    >
-    <div class="podcast-overview-samples">
-      <a
-        href="#"
-        class="
-          podcast-teaser
-          podcast-teaser--avatar--overlay
-          podcast-teaser--avatar--overlay--security
-          flex-grow
-        "
-        style="
-          background-image: url(../../assets/example-content/heribert-rechts.png);
-        "
-        ><div class="podcast-teaser__body">
-          <div
-            class="podcast-teaser__caption podcast-teaser__caption--security"
-          >
-            Security Podcast
-          </div>
-          <h2
-            class="podcast-teaser__headline podcast-teaser__headline--security"
-          >
-            CAs und Let’s Encrypt
-          </h2>
-          <h3
-            class="
-              podcast-teaser__subheadline podcast-teaser__subheadline--security
-            "
-          >
-            Wer zertifiziert hier eigentlich wen?
-          </h3>
-          <span class="icon-svg icon-arrow-long-right icon--brand-black"></span>
-        </div>
-        <div class="podcast-teaser__footer">
-          <div
-            class="podcast-author"
-            itemscope
-            itemtype="http://schema.org/Person"
-          >
-            Heribert Innoq
-          </div>
-        </div></a
-      ><a
-        href="#"
-        class="
-          podcast-teaser podcast-teaser--avatar podcast-teaser--avatar--security
-          flex-grow
-        "
-        ><div class="podcast-teaser__body">
-          <div class="podcast-teaser__caption">Security-Podcast</div>
-          <h2
-            class="podcast-teaser__headline podcast-teaser__headline--security"
-          >
-            TLS
-          </h2>
-          <h3
-            class="
-              podcast-teaser__subheadline podcast-teaser__subheadline--security
-            "
-          >
-            Der sichere Weg von A nach B
-          </h3>
-          <span class="icon-svg icon-arrow-long-right icon--brand-black"></span>
-        </div>
-        <div class="podcast-teaser__footer">
-          <div
-            class="podcast-author"
-            itemscope
-            itemtype="http://schema.org/Person"
-          >
-            Heribert Innoq
-          </div>
-          <div
-            class="podcast-author"
-            itemscope
-            itemtype="http://schema.org/Person"
-          >
-            Heribert Innoq
-          </div>
-        </div></a
-      ><a
-        href="#"
-        class="
-          podcast-teaser
-          podcast-teaser--default
-          podcast-teaser--default--security
-          flex-grow
-        "
-        ><div class="podcast-teaser__body">
-          <div class="podcast-teaser__caption">Security-Podcast</div>
-          <h2
-            class="podcast-teaser__headline podcast-teaser__headline--security"
-          >
-            Zertifikate
-          </h2>
-          <h3
-            class="
-              podcast-teaser__subheadline podcast-teaser__subheadline--security
-            "
-          >
-            Ich bräuchte dann noch eine digitale Unterschrift von Ihnen
-          </h3>
-          <span
-            class="icon-svg icon-arrow-long-right icon--brand-yellow"
-          ></span>
-        </div>
-        <div class="podcast-teaser__footer">
-          <div
-            class="podcast-author"
-            itemscope
-            itemtype="http://schema.org/Person"
-          >
-            Heribert Innoq
-          </div>
-          <div
-            class="podcast-author"
-            itemscope
-            itemtype="http://schema.org/Person"
-          >
-            Heribert Innoq
-          </div>
-        </div></a
-      >
-    </div>
-  </div>
 </main>
 

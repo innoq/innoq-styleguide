@@ -1,134 +1,86 @@
 
 
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="../../assets/normalize.css" />
-    <link media="all" rel="stylesheet" href="../../assets/bundle.css" />
-    <link
-      rel="preload"
-      href="https://hello.myfonts.net/count/350ed6"
-      as="style"
-    />
-    <style>
-      body {
-        padding: 1rem;
-      }
-    </style>
-    <title>Preview Layout</title>
-  </head>
-  <body class="application">
-    <div class="newsletter-optin">
-      <div class="page-layout-md--default">
+    <head>
+        <meta charset='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='stylesheet' type='text/css' href='../../assets/normalize.css' />
+        <link media='all' rel='stylesheet' href='../../assets/bundle.css' />
+        <style>
+            body {
+            padding: 1rem;
+            }
+        </style>
+        <title>Preview Layout</title>
+    </head>
+    <body class="application">
+        <div class="newsletter-optin">
+    <div class="page-layout-md--default">
         <div class="newsletter-optin__title">Unsere Newsletter</div>
-        <div class="newsletter-optin__subtitle">
-          Nie mehr spannende Artikel, Veranstaltungstipps und Podcasts zu
-          Architektur, Entwicklung und Technologietrends verpassen!
-        </div>
-        <remote-form
-          ><form class="newsletter-optin__form" action="#" method="post">
-            <div class="form-group">
-              <check-to-toggle
-                class="custom-form-control checkbox"
-                target="#newsletter-checkbox-innoq"
-                ><input
-                  id="custom-checkbox-1"
-                  type="checkbox"
-                  class="form-control__input check-to-toggle__checkbox"
-                /><label for="custom-checkbox-1" class="form-label"
-                  ><span class="form-label--emphasized"
-                    >Der INNOQ Newsletter</span
-                  ><br />Spannende Artikel, Veranstaltungstipps und Podcasts zu
-                  Architektur, Entwicklung und Technologietrends. Erscheint 1
-                  mal pro Monat.<span
-                    id="newsletter-checkbox-innoq"
-                    class="is-hidden"
-                    ><br /><br />Hiermit willige ich in die Erhebung und
-                    Verarbeitung der vorstehenden Daten für den Empfang des
-                    monatlichen Newsletters der innoQ Schweiz GmbH per E-Mail
-                    ein. Die
-                    <a
-                      href="https://www.innoq.com/datenschutz/#innoqnewsletter"
-                      class="link-teaser inverted-interaction-color"
-                      >Datenschutzhinweise</a
-                    >
-                    nach EU DSGVO habe ich zur Kenntnis genommen und bestätige
-                    dies mit Absendung des Formulars.</span
-                  ></label
-                ></check-to-toggle
-              >
-            </div>
-            <div class="form-group">
-              <check-to-toggle
-                class="custom-form-control checkbox"
-                target="#newsletter-checkbox-rauchzeichen"
-                ><input
-                  id="custom-checkbox-2"
-                  type="checkbox"
-                  class="form-control__input check-to-toggle__checkbox"
-                /><label for="custom-checkbox-2" class="form-label"
-                  ><span class="form-label--emphasized"
-                    >Das Digitale Rauchzeichen</span
-                  ><br />Success Stories aus Digitalisierung und Modernisierung
-                  von INNOQ Schweiz. Erscheint max. 4 mal pro Jahr.<span
-                    id="newsletter-checkbox-rauchzeichen"
-                    class="is-hidden"
-                    ><br /><br />Hiermit willige ich in die Erhebung und
-                    Verarbeitung der vorstehenden Daten für den Empfang des
-                    Newsletters der innoQ Schweiz GmbH per E-Mail ein. Die
-                    <a
-                      href="https://www.innoq.com/datenschutz/#newsletter:dasdigitalerauchzeichen"
-                      class="link-teaser inverted-interaction-color"
-                      >Datenschutzhinweise</a
-                    >
-                    nach EU DSGVO habe ich zur Kenntnis genommen und bestätige
-                    dies mit Absendung des Formulars.</span
-                  ></label
-                ></check-to-toggle
-              >
-            </div>
-            <div class="form-group">
-              <label
-                class="form-label form-label--emphasized"
-                for="newsletter_email"
-                >Email</label
-              ><input
-                type="email"
-                name="newsletter_email"
-                class="form-control"
-                id="newsletter_email"
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="newsletter_firstname"
-                ><span class="form-label--emphasized">Vorname</span>
-                <small>optional</small></label
-              ><input
-                type="text"
-                id="newsletter_firstname"
-                class="form-control"
-              />
-            </div>
-            <div class="form-group">
-              <label class="form-label" for="newsletter_lastname"
-                ><span class="form-label--emphasized">Nachname</span>
-                <small>optional</small></label
-              ><input
-                type="text"
-                id="newsletter_lastname"
-                class="form-control"
-              />
-            </div>
-            <button class="btn btn--cta btn--small" data-label="Anmelden">
-              Anmelden
-            </button>
-          </form></remote-form
-        >
-      </div>
+        <div class="newsletter-optin__subtitle">Nie mehr spannende Artikel, Veranstaltungstipps und Podcasts zu
+            Architektur, Entwicklung und Technologietrends verpassen!</div>
+        <remote-form>
+            <form class="newsletter-optin__form" action="#" method="post">
+                <div class="form-group">
+                    <check-to-toggle class="custom-form-control checkbox" target="#newsletter-checkbox-innoq">
+                        <input id="custom-checkbox-1" type="checkbox"
+                            class="form-control__input  check-to-toggle__checkbox" />
+                        <label for="custom-checkbox-1" class="form-label">
+                            <span class="form-label--emphasized">Der INNOQ Newsletter</span><br />Spannende Artikel,
+                            Veranstaltungstipps und Podcasts zu Architektur, Entwicklung und Technologietrends.
+                            Erscheint 1 mal pro Monat.
+                            <span id="newsletter-checkbox-innoq" class="is-hidden">
+                                <br /><br />Hiermit willige ich in die Erhebung und Verarbeitung der vorstehenden Daten
+                                für den Empfang des monatlichen Newsletters
+                                der innoQ Schweiz GmbH per E-Mail ein. Die <a
+                                    href="https://www.innoq.com/datenschutz/#innoqnewsletter"
+                                    class="link-teaser inverted-interaction-color">Datenschutzhinweise</a> nach EU DSGVO
+                                habe ich zur Kenntnis genommen und bestätige dies mit Absendung des Formulars.
+                            </span>
+                        </label>
+                    </check-to-toggle>
+                </div>
+                <div class="form-group">
+                    <check-to-toggle class="custom-form-control checkbox" target="#newsletter-checkbox-rauchzeichen">
+                        <input id="custom-checkbox-2" type="checkbox"
+                            class="form-control__input check-to-toggle__checkbox" />
+                        <label for="custom-checkbox-2" class="form-label">
+                            <span class="form-label--emphasized">Das Digitale Rauchzeichen</span><br />Success Stories
+                            aus Digitalisierung und Modernisierung von INNOQ Schweiz. Erscheint max. 4 mal pro Jahr.
+                            <span id="newsletter-checkbox-rauchzeichen" class="is-hidden">
+                                <br /><br />Hiermit willige ich in die Erhebung und Verarbeitung der vorstehenden Daten
+                                für den Empfang des Newsletters
+                                der innoQ Schweiz GmbH per E-Mail ein. Die <a
+                                    href="https://www.innoq.com/datenschutz/#newsletter:dasdigitalerauchzeichen"
+                                    class="link-teaser inverted-interaction-color">Datenschutzhinweise</a> nach EU DSGVO
+                                habe ich zur Kenntnis genommen und bestätige dies mit Absendung des Formulars.
+                            </span>
+                        </label>
+                    </check-to-toggle>
+                </div>
+                <div class="form-group">
+                    <label class="form-label form-label--emphasized" for="newsletter_email">Email</label>
+                    <input type="email" name="newsletter_email" class="form-control" id="newsletter_email" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="newsletter_firstname">
+                        <span class=" form-label--emphasized">Vorname</span> <small>optional</small>
+                    </label>
+                    <input type="text" id="newsletter_firstname" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="newsletter_lastname">
+                        <span class=" form-label--emphasized">Nachname</span> <small>optional</small>
+                    </label>
+                    <input type="text" id="newsletter_lastname" class="form-control" />
+                </div>
+                <button class="btn btn--cta btn--small" data-label="Anmelden">Anmelden</button>
+            </form>
+        </remote-form>
     </div>
-  </body>
-  <script src="../../assets/bundle.js"></script>
+</div>
+
+        <script src="../../assets/bundle.js"></script>
+    </body>
 </html>
 

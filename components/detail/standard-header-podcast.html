@@ -177,21 +177,21 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-6fb94225d0be1c0abd08f31442a24a7e-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header podcast-header--avatar--overlay&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;
-    background-image: url(../../assets/example-content/heribert-rechts.png),
-      url(../../assets/example-content/heribert-links.png);
-  &quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header podcast-header--avatar--overlay&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(../../assets/example-content/heribert-rechts.png), url(../../assets/example-content/heribert-links.png) &quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__type&quot;</span>&gt;</span>Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__title&quot;</span>&gt;</span>Podcast Titel<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__subtitle&quot;</span>&gt;</span>Ein Untertitel<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__intro&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__intro__label&quot;</span>&gt;</span>01.01.2018<span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">time</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__intro__label&quot;</span>&gt;</span>
+            01.01.2018
+        <span class="hljs-tag">&lt;/<span class="hljs-name">time</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__intro__text&quot;</span>&gt;</span>
             Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
             ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket
-            prosciutto buffalo drumstick strip steak capicola short loin. Frankfurter
-            fatback turkey pork chop prosciutto pork ground round tongue chuck doner.
-            Pig venison pork chop shoulder corned beef capicola meatball.
+            prosciutto buffalo drumstick strip steak capicola short loin.
+            Frankfurter fatback turkey pork chop prosciutto pork ground round tongue
+            chuck doner. Pig venison pork chop shoulder corned beef capicola
+            meatball.
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span></pre>
@@ -202,9 +202,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-6fb94225d0be1c0abd08f31442a24a7e-panel-view">
     <code class="Code Code--lang-html hljs">
-        <pre>import { cssBoth } from &quot;./components/03-organisms/header/standard-header/config&quot;;
-
-<span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header podcast-header--avatar--overlay&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{cssBoth}</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header podcast-header--avatar--overlay&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url({{ path &#x27;/assets/example-content/heribert-rechts.png&#x27; }}), url({{ path &#x27;/assets/example-content/heribert-links.png&#x27; }}) &quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__type&quot;</span>&gt;</span>Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__title&quot;</span>&gt;</span>Podcast Titel<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;standard-header__subtitle&quot;</span>&gt;</span>Ein Untertitel<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -5180,8 +5178,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-11-17T10:12:09.402Z">
-                                11/17/2021
+                            <time datetime="2022-01-18T13:47:40.175Z">
+                                1/18/2022
                             </time>
                         
                     </dd>
@@ -6104,6 +6102,8 @@
 </div>
 
             </div>
+        
+    
         
     
         

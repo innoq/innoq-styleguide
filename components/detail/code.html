@@ -183,16 +183,17 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>pick(:love) do |something|
     n.times do
-        result = play(something)
+        result <span class="hljs-symbol">&amp;#x3D;</span> play(something)
         result.publish
     end
 end
 <span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+
 <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>pick(:love) do |something|
     n.times do
-        result = play(something)
+        result <span class="hljs-symbol">&amp;#x3D;</span> play(something)
         result.publish
     end
 end
@@ -207,13 +208,11 @@ end
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-501535ad3389c8e5d138edc196d86a22-panel-view">
     <code class="Code Code--lang-html hljs">
-        <pre>import { safe, htmlEncode } from &quot;complate-stream&quot;;
-
-<span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>{safe(htmlEncode(context.code))}<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>{{ code }}<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">figure</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>{safe(htmlEncode(context.code))}<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">pre</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">code</span>&gt;</span>{{ code }}<span class="hljs-tag">&lt;/<span class="hljs-name">code</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">pre</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">figcaption</span>&gt;</span>Code mit Figaption<span class="hljs-tag">&lt;/<span class="hljs-name">figcaption</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">figure</span>&gt;</span></pre>
@@ -5244,8 +5243,8 @@ pre {
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-11-17T10:12:09.402Z">
-                                11/17/2021
+                            <time datetime="2022-01-18T13:47:40.175Z">
+                                1/18/2022
                             </time>
                         
                     </dd>
@@ -6168,6 +6167,8 @@ pre {
 </div>
 
             </div>
+        
+    
         
     
         

@@ -298,4 +298,4 @@ customElements.define('wall-of-consent', WallOfConsent);
 customElements.define('clickable-area', ClickableArea);
 customElements.define('touch-detection', TouchDetection);
 
-}());
+})();

@@ -1,45 +1,41 @@
 
 
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="../../assets/normalize.css" />
-    <link media="all" rel="stylesheet" href="../../assets/bundle.css" />
-    <link
-      rel="preload"
-      href="https://hello.myfonts.net/count/350ed6"
-      as="style"
-    />
-    <style>
-      body {
-        padding: 1rem;
-      }
-    </style>
-    <title>Preview Layout</title>
-  </head>
-  <body class="application">
-    <pre><code>pick(:love) do |something|
-    n.times do
-        result = play(something)
-        result.publish
-    end
-end
-</code></pre>
-    <figure>
-      <div>
+    <head>
+        <meta charset='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='stylesheet' type='text/css' href='../../assets/normalize.css' />
+        <link media='all' rel='stylesheet' href='../../assets/bundle.css' />
+        <style>
+            body {
+            padding: 1rem;
+            }
+        </style>
+        <title>Preview Layout</title>
+    </head>
+    <body class="application">
         <pre><code>pick(:love) do |something|
     n.times do
-        result = play(something)
+        result &#x3D; play(something)
         result.publish
     end
 end
 </code></pre>
-      </div>
-      <figcaption>Code mit Figaption</figcaption>
-    </figure>
-  </body>
-  <script src="../../assets/bundle.js"></script>
+
+<figure>
+    <div>
+    <pre><code>pick(:love) do |something|
+    n.times do
+        result &#x3D; play(something)
+        result.publish
+    end
+end
+</code></pre>
+    </div>
+    <figcaption>Code mit Figaption</figcaption>
+</figure>
+
+        <script src="../../assets/bundle.js"></script>
+    </body>
 </html>
 

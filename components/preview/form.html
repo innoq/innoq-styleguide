@@ -1,103 +1,70 @@
 
 
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="../../assets/normalize.css" />
-    <link media="all" rel="stylesheet" href="../../assets/bundle.css" />
-    <link
-      rel="preload"
-      href="https://hello.myfonts.net/count/350ed6"
-      as="style"
-    />
-    <style>
-      body {
-        padding: 1rem;
-      }
-    </style>
-    <title>Preview Layout</title>
-  </head>
-  <body class="application">
-    <form>
-      <fieldset class="fieldset">
+    <head>
+        <meta charset='utf-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <link rel='stylesheet' type='text/css' href='../../assets/normalize.css' />
+        <link media='all' rel='stylesheet' href='../../assets/bundle.css' />
+        <style>
+            body {
+            padding: 1rem;
+            }
+        </style>
+        <title>Preview Layout</title>
+    </head>
+    <body class="application">
+        <form>
+    <fieldset class="fieldset">
         <legend class="legend">Details</legend>
         <div class="form-group">
-          <label class="form-label form-label--emphasized" for="title"
-            >Title</label
-          ><select class="form-control" id="title">
-            <option value="">Please choose</option>
-            <option value="dr">Dr.</option>
-            <option value="prof-dr">Prof. Dr.</option>
-          </select>
+            <label class="form-label form-label--emphasized" for="title">Title</label>
+            <select class="form-control" id="title">
+                <option value="">Please choose</option>
+                <option value="dr">Dr.</option>
+                <option value="prof-dr">Prof. Dr.</option>
+            </select>
         </div>
         <div class="form-group">
-          <label class="form-label form-label--emphasized" for="first_name"
-            >First name</label
-          ><input
-            type="text"
-            id="first_name"
-            class="form-control"
-            placeholder="e.g. Arnulf Beckenbauer"
-          /><small class="form-text">Enter something meaningful</small>
+            <label class="form-label form-label--emphasized" for="first_name">First name</label>
+            <input type="text" id="first_name" class="form-control" placeholder="e.g. Arnulf Beckenbauer" />
+            <small class="form-text">Enter something meaningful</small>
         </div>
         <div class="form-group form-group--invalid">
-          <label class="form-label form-label--emphasized" for="last_name"
-            >Last name</label
-          ><input type="text" id="last_name" class="form-control" /><small
-            class="form-text"
-            >Last name is mandatory</small
-          >
+            <label class="form-label form-label--emphasized" for="last_name">Last name</label>
+            <input type="text" id="last_name" class="form-control" />
+            <small class="form-text">Last name is mandatory</small>
         </div>
         <div class="form-group">
-          <label class="form-label form-label--emphasized" for="bio"
-            >Biography</label
-          ><textarea id="bio" class="form-control" rows="8"></textarea>
+            <label class="form-label form-label--emphasized" for="bio">Biography</label>
+            <textarea id="bio" class="form-control" rows="8" />
         </div>
         <div class="form-group">
-          <div class="form-label form-label--emphasized">Sex</div>
-          <div class="custom-form-control radio">
-            <input
-              type="radio"
-              id="customRadio1"
-              checked="checked"
-              name="customRadio"
-              class="form-control__input"
-            /><label class="form-label" for="customRadio1">Female</label>
-          </div>
-          <div class="custom-form-control radio">
-            <input
-              type="radio"
-              id="customRadio2"
-              name="customRadio"
-              class="form-control__input"
-            /><label class="form-label" for="customRadio2">Male</label>
-          </div>
-          <div class="custom-form-control radio">
-            <input
-              type="radio"
-              id="customRadio3"
-              name="customRadio"
-              class="form-control__input"
-            /><label class="form-label" for="customRadio3">Dunno</label>
-          </div>
+            <div class="form-label form-label--emphasized">Sex</div>
+            <div class="custom-form-control radio">
+                <input type="radio" id="customRadio1" checked="checked" name="customRadio" class="form-control__input" />
+                <label class="form-label" for="customRadio1">Female</label>
+            </div>
+            <div class="custom-form-control radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="form-control__input" />
+                <label class="form-label" for="customRadio2">Male</label>
+            </div>
+            <div class="custom-form-control radio">
+                <input type="radio" id="customRadio3" name="customRadio" class="form-control__input" />
+                <label class="form-label" for="customRadio3">Dunno</label>
+            </div>
         </div>
         <div class="form-group">
-          <div class="custom-form-control checkbox">
-            <input
-              id="custom-checkbox-1"
-              type="checkbox"
-              class="form-control__input"
-            /><label for="custom-checkbox-1" class="form-label"
-              >I'm a gold member</label
-            >
-          </div>
+            <div class="custom-form-control checkbox">
+                <input id="custom-checkbox-1" type="checkbox" class="form-control__input" />
+                <label for="custom-checkbox-1" class="form-label">I'm a gold member</label>
+            </div>
         </div>
-      </fieldset>
-      <input type="submit" value="Submit" class="btn btn--cta btn--small" />
-    </form>
-  </body>
-  <script src="../../assets/bundle.js"></script>
+    </fieldset>
+    <input type="submit" value="Submit" class="btn btn--cta btn--small" />
+</form>
+
+        <script src="../../assets/bundle.js"></script>
+    </body>
 </html>
 

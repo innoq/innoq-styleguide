@@ -108,7 +108,7 @@
 }
 @font-face {
   font-display: swap;
-  font-family: "icons";
+  font-family: icons;
   font-style: normal;
   font-weight: normal;
   src: url("https://assets.innoq.com/fonts/icomoon.woff2?cachebuster=7d0a3995eec718ff34fa8444132981c6") format("woff2"), url("https://assets.innoq.com/fonts/icomoon.woff?cachebuster=7d0a3995eec718ff34fa8444132981c6") format("woff"), url("https://assets.innoq.com/fonts/icomoon.ttf?cachebuster=7d0a3995eec718ff34fa8444132981c6") format("truetype"), url("https://assets.innoq.com/fonts/icomoon.svg?cachebuster=7d0a3995eec718ff34fa8444132981c6#icons") format("svg");
@@ -153,10 +153,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
   margin-bottom: 1.44rem;
 }
 .swatch:first-child {

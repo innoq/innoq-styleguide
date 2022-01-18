@@ -27,6 +27,7 @@ $tuple-list-label-width: 8rem;
     margin-bottom: $spacer-xxs;
     grid-template-areas: "label value";
     grid-template-columns: $tuple-list-label-width auto;
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
     grid-template-rows: auto;
   }
 

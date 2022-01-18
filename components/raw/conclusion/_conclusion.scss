@@ -48,6 +48,23 @@ $conclusion-border-size: ms(5);
       color: $conclusion-link-hover-color;
     }
   }
+
+  ul {
+    margin-left: $spacer-sm;
+
+    /* stylelint-disable-next-line selector-max-compound-selectors */
+    > li,
+    > li p {
+      @extend %heading-font-regular;
+
+      padding-left: $spacer-xs;
+
+    /* stylelint-disable-next-line selector-max-compound-selectors */
+      li::marker {
+        color: $bullet-list-color;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

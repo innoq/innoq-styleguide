@@ -181,13 +181,12 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-70e84441b6c98ebfd93b1395f86015fc-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;main&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-overview-page podcast-overview-page--security&quot;</span>&gt;</span>
+        <pre>import { cssRight, cssBoth } from &quot;./components/04-molecules/visual-elements/teaser/tile-teaser/podcast-tile-teaser/config&quot;;
+<span class="hljs-tag">&lt;<span class="hljs-name">main</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;main&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-overview-page podcast-overview-page--security&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">header</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;topic-header bg-image-edition-12&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;topic-header__body&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;topic-header__title bg-image-edition-12&quot;</span>&gt;</span>
-                    Der Security Podcast
-                <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;topic-header__title bg-image-edition-12&quot;</span>&gt;</span>Der Security Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;topic-header__text&quot;</span>&gt;</span>
                 Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
@@ -199,41 +198,47 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__item&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__link&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-feedback icon--brand-gray&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Feedback<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__link&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-feedback icon--brand-gray&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        Feedback
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__item&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__link&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-apple-itunes icon--brand-gray&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Apple<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__link&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-apple-itunes icon--brand-gray&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        Apple
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__item&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__link&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-spotify icon--brand-gray&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Spotify<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__link&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-spotify icon--brand-gray&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        Spotify
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__item&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__link&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-rss icon--brand-gray&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>RSS<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__link&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-rss icon--brand-gray&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        RSS
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">li</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__item&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__link&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-text icon--brand-gray&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>Transkript<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toolbar__link&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-text icon--brand-gray&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                        Transkript
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-arrow-long-down icon--brand-gray&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">header</span>&gt;</span>
+
     <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;teaser-page-layout&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-grid&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-          podcast-teaser
-          podcast-teaser--avatar--overlay
-          podcast-teaser--avatar--overlay--security
-        &quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;
-          background-image: url(../../assets/example-content/heribert-rechts.png);
-        &quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--avatar--overlay podcast-teaser--avatar--overlay--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(../../assets/example-content/heribert-rechts.png)&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__body&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__caption&quot;</span>&gt;</span>Security-Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>
-                        Podcast Headline
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-              podcast-teaser__subheadline podcast-teaser__subheadline--security
-            &quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>Podcast Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__subheadline podcast-teaser__subheadline--security&quot;</span>&gt;</span>
                         Podcast Subheadline
                     <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-arrow-long-right icon--brand-black&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -243,19 +248,13 @@
                         Heribert Innoq
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-          podcast-teaser
-          podcast-teaser--default
-          podcast-teaser--default--security
-        &quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--default podcast-teaser--default--security&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__body&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__caption&quot;</span>&gt;</span>Security-Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>
-                        Podcast Headline
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-              podcast-teaser__subheadline podcast-teaser__subheadline--security
-            &quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>Podcast Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__subheadline podcast-teaser__subheadline--security&quot;</span>&gt;</span>
                         Podcast Subheadline
                     <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-arrow-long-right icon--brand-yellow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -268,19 +267,13 @@
                         Heribert Innoq
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-          podcast-teaser podcast-teaser--avatar podcast-teaser--avatar--security
-        &quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;
-          background-image: url(../../assets/example-content/heribert-rechts.png);
-        &quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--avatar podcast-teaser--avatar--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(../../assets/example-content/heribert-rechts.png)&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__body&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__caption&quot;</span>&gt;</span>Security-Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>
-                        Podcast Headline
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-              podcast-teaser__subheadline podcast-teaser__subheadline--security
-            &quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>Podcast Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__subheadline podcast-teaser__subheadline--security&quot;</span>&gt;</span>
                         Podcast Subheadline
                     <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-arrow-long-right icon--brand-black&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -290,19 +283,13 @@
                         Heribert Innoq
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-          podcast-teaser
-          podcast-teaser--default
-          podcast-teaser--default--security
-        &quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--default podcast-teaser--default--security&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__body&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__caption&quot;</span>&gt;</span>Security-Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>
-                        Podcast Headline
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-              podcast-teaser__subheadline podcast-teaser__subheadline--security
-            &quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>Podcast Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__subheadline podcast-teaser__subheadline--security&quot;</span>&gt;</span>
                         Podcast Subheadline
                     <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-arrow-long-right icon--brand-yellow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -312,22 +299,13 @@
                         Heribert Innoq
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-          podcast-teaser
-          podcast-teaser--avatar--overlay--big
-          podcast-teaser--avatar--overlay--big--security
-        &quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;
-          background-image: url(../../assets/example-content/heribert-rechts.png),
-            url(../../assets/example-content/heribert-links.png);
-        &quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--avatar--overlay--big podcast-teaser--avatar--overlay--big--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(../../assets/example-content/heribert-rechts.png), url(../../assets/example-content/heribert-links.png) &quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__body&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__caption&quot;</span>&gt;</span>Security-Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>
-                        Podcast Headline
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-              podcast-teaser__subheadline podcast-teaser__subheadline--security
-            &quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>Podcast Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__subheadline podcast-teaser__subheadline--security&quot;</span>&gt;</span>
                         Podcast Subheadline
                     <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-arrow-long-right icon--brand-black&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -340,21 +318,13 @@
                         Heribert Innoq
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-          podcast-teaser
-          podcast-teaser--avatar--overlay
-          podcast-teaser--avatar--overlay--security
-        &quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;
-          background-image: url(../../assets/example-content/heribert-rechts.png);
-        &quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--avatar--overlay podcast-teaser--avatar--overlay--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url(../../assets/example-content/heribert-rechts.png)&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__body&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__caption&quot;</span>&gt;</span>Security-Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>
-                        Podcast Headline
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-              podcast-teaser__subheadline podcast-teaser__subheadline--security
-            &quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>Podcast Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__subheadline podcast-teaser__subheadline--security&quot;</span>&gt;</span>
                         Podcast Subheadline
                     <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-arrow-long-right icon--brand-black&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -367,19 +337,13 @@
                         Heribert Innoq
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-          podcast-teaser
-          podcast-teaser--default
-          podcast-teaser--default--security
-        &quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--default podcast-teaser--default--security&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__body&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__caption&quot;</span>&gt;</span>Security-Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>
-                        Podcast Headline
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;
-              podcast-teaser__subheadline podcast-teaser__subheadline--security
-            &quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>Podcast Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__subheadline podcast-teaser__subheadline--security&quot;</span>&gt;</span>
                         Podcast Subheadline
                     <span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon-svg icon-arrow-long-right icon--brand-yellow&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
@@ -453,7 +417,7 @@
 
     <span class="hljs-tag">&lt;<span class="hljs-name">article</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;teaser-page-layout&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-grid&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--avatar--overlay podcast-teaser--avatar--overlay--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{cssRight}</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--avatar--overlay podcast-teaser--avatar--overlay--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url({{ path &#x27;/assets/example-content/heribert-rechts.png&#x27; }})&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__body&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__caption&quot;</span>&gt;</span>Security-Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>Podcast Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -488,7 +452,7 @@
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--avatar podcast-teaser--avatar--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{cssRight}</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--avatar podcast-teaser--avatar--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url({{ path &#x27;/assets/example-content/heribert-rechts.png&#x27; }})&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__body&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__caption&quot;</span>&gt;</span>Security-Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>Podcast Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -520,7 +484,7 @@
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--avatar--overlay--big podcast-teaser--avatar--overlay--big--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{cssBoth}</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--avatar--overlay--big podcast-teaser--avatar--overlay--big--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url({{ path &#x27;/assets/example-content/heribert-rechts.png&#x27; }}), url({{ path &#x27;/assets/example-content/heribert-links.png&#x27; }}) &quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__body&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__caption&quot;</span>&gt;</span>Security-Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>Podcast Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -539,7 +503,7 @@
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 
-            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--avatar--overlay podcast-teaser--avatar--overlay--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">{cssRight}</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser podcast-teaser--avatar--overlay podcast-teaser--avatar--overlay--security&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;background-image: url({{ path &#x27;/assets/example-content/heribert-rechts.png&#x27; }})&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__body&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__caption&quot;</span>&gt;</span>Security-Podcast<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;podcast-teaser__headline podcast-teaser__headline--security&quot;</span>&gt;</span>Podcast Headline<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
@@ -5605,8 +5569,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-11-17T10:12:09.402Z">
-                                11/17/2021
+                            <time datetime="2022-01-18T13:47:40.175Z">
+                                1/18/2022
                             </time>
                         
                     </dd>
@@ -6529,6 +6493,8 @@
 </div>
 
             </div>
+        
+    
         
     
         

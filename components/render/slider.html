@@ -1,75 +1,58 @@
 
 
-<touch-detection
-  ><div
-    class="slider"
-    role="region"
-    aria-label="Folien"
-    tabindex="0"
-    aria-describedby="slider-instructions"
-  >
-    <ul class="slider__all">
-      <li class="slider__slide">
-        <figure class="slider__page">
-          <img
-            src="../../assets/example-content/beispiel-praesentation-1.jpg"
-            alt="Folie 1"
-            id="Folie_1"
-          />
-          <figcaption class="page__number__box">
-            <div class="page__number">1/4</div>
-          </figcaption>
-        </figure>
-      </li>
-      <li class="slider__slide">
-        <figure class="slider__page">
-          <img
-            src="../../assets/example-content/beispiel-praesentation-2.jpg"
-            alt="Folie 2"
-            id="Folie_2"
-          />
-          <figcaption class="page__number__box">
-            <div class="page__number">2/4</div>
-          </figcaption>
-        </figure>
-      </li>
-      <li class="slider__slide">
-        <figure class="slider__page">
-          <img
-            src="../../assets/example-content/beispiel-praesentation-3.jpg"
-            alt="Folie 3"
-            id="Folie_3"
-          />
-          <figcaption class="page__number__box">
-            <div class="page__number">3/4</div>
-          </figcaption>
-        </figure>
-      </li>
-      <li class="slider__slide">
-        <figure class="slider__page">
-          <img
-            src="../../assets/example-content/beispiel-praesentation-4.jpg"
-            alt="Folie 4"
-            id="Folie_4"
-          />
-          <figcaption class="page__number__box">
-            <div class="page__number">4/4</div>
-          </figcaption>
-        </figure>
-      </li>
-    </ul>
-  </div>
-  <div class="slider__instructions">
-    <p class="instructions--touch">
-      Nach links wischen, um ggf. weitere Folien zu sehen
-    </p>
-    <p class="instructions--hover-and-focus">
-      Scrollen oder die Pfeiltasten nutzen, um ggf. weitere Folien zu sehen
-    </p>
-    <p class="instructions--hover">Scrollen, um ggf. weitere Folien zu sehen</p>
-    <p class="instructions--focus">
-      Die Pfeiltasten nutzen, um ggf. weitere Folien zu sehen
-    </p>
-  </div></touch-detection
->
+<touch-detection>
+    <div class="slider" role="region" aria-label="Folien" tabindex="0" aria-describedby="slider-instructions">
+        <ul class="slider__all">
+            <li class="slider__slide">
+                <figure class="slider__page">
+                    <img src="../../assets/example-content/beispiel-praesentation-1.jpg" alt="Folie 1" id="Folie_1"/>
+                    <figcaption class="page__number__box">
+                        <svg class="page__number" viewBox="0 0 45 30" version="1.1" baseProfile="full" xmlns="https://www.w3.org/2000/svg">
+                            <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">1/4</text>
+                        </svg>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="slider__slide">
+                <figure class="slider__page">
+                    <img src="../../assets/example-content/beispiel-praesentation-2.jpg" alt="Folie 2" id="Folie_2"/>
+                    <figcaption class="page__number__box">
+                        <svg class="page__number" viewBox="0 0 45 30" version="1.1" baseProfile="full" xmlns="https://www.w3.org/2000/svg">
+                            <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">2/4</text>
+                        </svg>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="slider__slide">
+                <figure class="slider__page">
+                    <img src="../../assets/example-content/beispiel-praesentation-3.jpg" alt="Folie 3" id="Folie_3"/>
+                    <figcaption class="page__number__box">
+                        <svg class="page__number" viewBox="0 0 45 30" version="1.1" baseProfile="full" xmlns="https://www.w3.org/2000/svg">
+                            <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">3/4</text>
+                        </svg>
+                    </figcaption>
+                </figure>
+            </li>
+            <li class="slider__slide">
+                <figure class="slider__page">
+                    <img src="../../assets/example-content/beispiel-praesentation-4.jpg" alt="Folie 4" id="Folie_4"/>
+                    <figcaption class="page__number__box">
+                        <svg class="page__number" viewBox="0 0 45 30" version="1.1" baseProfile="full" xmlns="https://www.w3.org/2000/svg">
+                            <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle">4/4</text>
+                        </svg>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+    </div>
+    <div class="slider__instructions">
+        <p class="instructions--touch">Nach links wischen, um ggf. weitere Folien zu sehen</p>
+        <div class="instructions__no-touch">
+            <p class="instructions--hover-and-focus">Scrollen oder die Pfeiltasten nutzen, um ggf. weitere Folien zu sehen</p>
+            <p class="instructions--hover">Scrollen, um ggf. weitere Folien zu sehen</p>
+            <p class="instructions--focus">Die Pfeiltasten nutzen, um ggf. weitere Folien zu sehen</p>
+        </div>
+    </div>
+</touch-detection>
+{/* This slider relies heavily on https://inclusive-components.design/a-content-slider/, accessed last: 06/15/2021, 16:45. Thanks to Heydon Pickering! */}
 
