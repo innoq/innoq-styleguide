@@ -3,17 +3,17 @@ $triplet-divider-height-md: 4 * $spacer-xxl;
 
 .triplet-divider {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .triplet-divider__center {
-  flex-grow: 2;
   text-align: center;
 }
 
 .triplet-divider__left {
   background-color: $triplet-divider-bg-color-primary;
   color: $triplet-divider-color-secondary;
+  text-align: left;
 }
 
 .triplet-divider__right {
@@ -26,7 +26,6 @@ $triplet-divider-height-md: 4 * $spacer-xxl;
 .triplet-divider__left {
   @extend %heading-font-heavy;
 
-  flex-grow: 1;
   font-size: $font-size-xl;
 }
 
@@ -42,8 +41,26 @@ $triplet-divider-height-md: 4 * $spacer-xxl;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
+  .triplet-divider {
+    display: grid;
+    grid-template-areas: "divider-left divider-right"
+    "divider-center divider-center";
+    grid-template-columns: 50% 50%;
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+    grid-template-rows: auto;
+  }
+
   .triplet-divider__right {
+    grid-area: divider-right;
     text-align: left;
+  }
+
+  .triplet-divider__left {
+    grid-area: divider-left;
+  }
+
+  .triplet-divider__center {
+    grid-area: divider-center;
   }
 
   .triplet-divider__right,
