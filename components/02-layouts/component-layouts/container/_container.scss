@@ -10,8 +10,8 @@
   }
 }
 
-.container-xl-vertical-whitespace,
-%container-xl-vertical-whitespace {
+.container-vertical-spacing,
+%container-vertical-spacing {
   padding: $spacer-xl $spacer-xs;
 }
 
@@ -35,7 +35,7 @@
     padding: 0 $spacer-base;
   }
 
-  .container-xl-vertical-whitespace {
+  .container-vertical-spacing {
     padding: $spacer-xxl $spacer-base;
   }
 }
