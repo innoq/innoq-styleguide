@@ -272,17 +272,17 @@
 
 <span class="hljs-selector-class">.triplet-divider</span> {
   <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">flex-wrap</span>: wrap;
+  <span class="hljs-attribute">flex-direction</span>: column;
 }
 
 <span class="hljs-selector-class">.triplet-divider__center</span> {
-  <span class="hljs-attribute">flex-grow</span>: <span class="hljs-number">2</span>;
   <span class="hljs-attribute">text-align</span>: center;
 }
 
 <span class="hljs-selector-class">.triplet-divider__left</span> {
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$triplet-divider-bg-color-primary</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$triplet-divider-color-secondary</span>;
+  <span class="hljs-attribute">text-align</span>: left;
 }
 
 <span class="hljs-selector-class">.triplet-divider__right</span> {
@@ -295,7 +295,6 @@
 <span class="hljs-selector-class">.triplet-divider__left</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-heavy;
 
-  <span class="hljs-attribute">flex-grow</span>: <span class="hljs-number">1</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xl</span>;
 }
 
@@ -311,8 +310,26 @@
 }
 
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
+  <span class="hljs-selector-class">.triplet-divider</span> {
+    <span class="hljs-attribute">display</span>: grid;
+    grid-template-areas: <span class="hljs-string">&quot;divider-left divider-right&quot;</span>
+    <span class="hljs-string">&quot;divider-center divider-center&quot;</span>;
+    grid-template-<span class="hljs-attribute">columns</span>: <span class="hljs-number">50%</span> <span class="hljs-number">50%</span>;
+    <span class="hljs-comment">/* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */</span>
+    grid-template-rows: auto;
+  }
+
   <span class="hljs-selector-class">.triplet-divider__right</span> {
+    grid-area: divider-right;
     <span class="hljs-attribute">text-align</span>: left;
+  }
+
+  <span class="hljs-selector-class">.triplet-divider__left</span> {
+    grid-area: divider-left;
+  }
+
+  <span class="hljs-selector-class">.triplet-divider__center</span> {
+    grid-area: divider-center;
   }
 
   <span class="hljs-selector-class">.triplet-divider__right</span>,
@@ -337,7 +354,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.1 KB</span>
+                    <span class="Meta-value">1.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -5285,8 +5302,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-01-18T13:47:40.175Z">
-                                1/18/2022
+                            <time datetime="2022-01-19T11:07:39.710Z">
+                                1/19/2022
                             </time>
                         
                     </dd>
