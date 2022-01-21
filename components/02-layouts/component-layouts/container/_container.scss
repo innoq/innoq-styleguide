@@ -12,7 +12,8 @@
 
 .container-vertical-spacing,
 %container-vertical-spacing {
-  padding: $spacer-xl $spacer-xs;
+  padding-top: $spacer-xl;
+  padding-bottom: $spacer-xl;
 }
 
 .container-md,
@@ -36,6 +37,7 @@
   }
 
   .container-vertical-spacing {
-    padding: $spacer-xxl $spacer-base;
+    padding-top: $spacer-xxl;
+    padding-bottom: $spacer-xxl;
   }
 }
