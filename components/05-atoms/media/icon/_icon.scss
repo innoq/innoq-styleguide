@@ -148,6 +148,36 @@
   mask-image: asset-url("icons/arrow-sync.svg");
 }
 
+.icon-arrow-drawn-upright {
+  width: 9.375rem; // magic number
+  height: 4rem; // magic number
+  mask-image: asset-url("icons/arrow-drawn-upright.svg");
+}
+
+.icon-arrow-drawn-downright {
+  width: 12.5rem; // magic number
+  height: 7.125rem; // magic number
+  mask-image: asset-url("icons/arrow-drawn-downright.svg");
+}
+
+.icon-arrow-drawn-downleft {
+  width: 8.8125rem; // magic number
+  height: 5.25rem; // magic number
+  mask-image: asset-url("icons/arrow-drawn-downleft.svg");
+}
+
+.icon-arrow-drawn-downleft--alternative {
+  width: 9.375rem; // magic number
+  height: 6.375rem; // magic number
+  mask-image: asset-url("icons/arrow-drawn-downleft-alternative.svg");
+}
+
+.icon-arrow-drawn-downright--alternative {
+  width: 7.1875rem; // magic number
+  height: 5.625rem; // magic number
+  mask-image: asset-url("icons/arrow-drawn-downright-alternative.svg");
+}
+
 // Interface Icons
 .icon-bookshelf {
   mask-image: asset-url("icons/bookshelf.svg");
@@ -261,24 +291,3 @@
 .icon-youtube {
   mask-image: asset-url("icons/youtube.svg");
 }
-
-// Arrows Textbox Sequence
-// .icon-arrow-textboxsequence-1 {
-//   mask-image: asset-url("icons/arrow-textbox-sequence-1.svg");
-// }
-
-// .icon-arrow-textboxsequence-2 {
-//   mask-image: asset-url("icons/arrow-textbox-sequence-2.svg");
-// }
-
-// .icon-arrow-textboxsequence-3 {
-//   mask-image: asset-url("icons/arrow-textbox-sequence-3.svg");
-// }
-
-// .icon-arrow-textboxsequence-4 {
-//   mask-image: asset-url("icons/arrow-textbox-sequence-4.svg");
-// }
-
-// .icon-arrow-textboxsequence-5 {
-//   mask-image: asset-url("icons/arrow-textbox-sequence-5.svg");
-// }
