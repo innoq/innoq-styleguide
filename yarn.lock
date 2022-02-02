@@ -50,10 +50,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@frctl/core@^0.3.3":
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/@frctl/core/-/core-0.3.3.tgz#768f476cd3f2ea6dac9c58883f812905bd7f7d3f"
-  integrity sha512-VCW93BD6CdBVbuvGfZ9oNyAPkWbnmXXBuGKBkfnADdg9fwOXr9EBKgBmuWMaRhg25yw9ANL+/Nk9ABgGCMMNhQ==
+"@frctl/core@^0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@frctl/core/-/core-0.3.4.tgz#88c9727501e9aa0156c65d5c7dcc3a7a6e4cb9ed"
+  integrity sha512-OfIb2ofdm6T29qhnBuf8OLwkLauYdqfEoZijJXvjmiwlK1W4sbuS+SefCYnh/k/vXNa/YkvOQRohOcAO2oH4IA==
   dependencies:
     "@allmarkedup/fang" "^2.0.0"
     anymatch "^3.1.2"
@@ -63,7 +63,7 @@
     fs-extra "^9.1.0"
     globby "^11.0.3"
     highlight.js "^10.7.2"
-    istextorbinary "^5.12.0"
+    istextorbinary "^5.15.0"
     js-yaml "^4.1.0"
     lodash "^4.17.21"
     marked "^2.0.3"
@@ -72,14 +72,14 @@
     readable-stream "^3.6.0"
 
 "@frctl/fractal@^1.5.11":
-  version "1.5.11"
-  resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.5.11.tgz#3928c9d6e4aa36d76436a311b2ea4cee329fec8d"
-  integrity sha512-HdCoIaqD1iRqLAF8CzvRkI2Tb98is8dKnMtzMk7juuMWCL25L3LQcmWhDJcVkRdN7vH+S3PgjKZw2jC8TjZ4QA==
+  version "1.5.13"
+  resolved "https://registry.yarnpkg.com/@frctl/fractal/-/fractal-1.5.13.tgz#e742be1a1bec0dc817b05726661e3952bbfbfa7e"
+  integrity sha512-l03zpqVgH//DS42pVLunXvmcmqGilc8gceUz0BE9hFtQV4uWK0eqaWd661y//Q8nKtYXOKCW0NyRQuKbJ8J2Ew==
   dependencies:
-    "@frctl/core" "^0.3.3"
-    "@frctl/handlebars" "^1.2.13"
-    "@frctl/mandelbrot" "^1.9.4"
-    "@frctl/web" "^0.1.10"
+    "@frctl/core" "^0.3.4"
+    "@frctl/handlebars" "^1.2.14"
+    "@frctl/mandelbrot" "^1.10.1"
+    "@frctl/web" "^0.1.11"
     anymatch "^3.1.2"
     bluebird "^3.7.2"
     chalk "^4.1.1"
@@ -102,31 +102,31 @@
     vinyl "^2.2.1"
     vorpal "^1.12.0"
 
-"@frctl/handlebars@^1.2.13":
-  version "1.2.13"
-  resolved "https://registry.yarnpkg.com/@frctl/handlebars/-/handlebars-1.2.13.tgz#99a93d19c03a413bc3d49e41fd18d5a27e30fa62"
-  integrity sha512-IqUwH5Yp1tS0o601IC/dzMdCaFqZe8yE8vJZYqkWRX9QJf1rnzPngBFpdsPewdLaxMZcQ/R38EMp6xM3XoiClw==
+"@frctl/handlebars@^1.2.14":
+  version "1.2.14"
+  resolved "https://registry.yarnpkg.com/@frctl/handlebars/-/handlebars-1.2.14.tgz#aa2042b40378e46294bc82f18ed8d7bad99230e9"
+  integrity sha512-JeXlS8izXD7n2vbwZ0DL2cT7/LXiLJFUVqHfCPAoISm9QGGbfA1B145pvHATJ4cATih6ZDWXUSOrxlY4OcC9Yw==
   dependencies:
-    "@frctl/core" "^0.3.3"
+    "@frctl/core" "^0.3.4"
     bluebird "^3.7.2"
     handlebars "^4.7.7"
     lodash "^4.17.21"
     promised-handlebars "^2.0.1"
 
-"@frctl/mandelbrot@^1.9.4":
-  version "1.9.4"
-  resolved "https://registry.yarnpkg.com/@frctl/mandelbrot/-/mandelbrot-1.9.4.tgz#25ae9525c919a5902f1082bfd55f5e1df9612274"
-  integrity sha512-Zeu8tohZZo0OLdfawMv/SVGjT+xEc7I+C3wmxenlQlZnhohzm6FZrAO4/MV/YTrvNbysoWMdEbkNLte/h+/PCQ==
+"@frctl/mandelbrot@^1.10.1":
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/@frctl/mandelbrot/-/mandelbrot-1.10.1.tgz#8b507b281a6a991f9c25be883407fce196a9ec6d"
+  integrity sha512-wyYvktvIw7fIW1fQkAbKmGbAHunAyR6xpjegM+DyzF/33M09ARnJRlCLNsMYLmJysAdcqdV/h0UzlDI0rTLPEg==
   dependencies:
     js-beautify "^1.13.13"
     lodash "^4.17.21"
 
-"@frctl/web@^0.1.10":
-  version "0.1.10"
-  resolved "https://registry.yarnpkg.com/@frctl/web/-/web-0.1.10.tgz#49594845932bad7b64d134a2ed9258e106cc8e6d"
-  integrity sha512-3CT4d45CXAw2iHlCdU6fSap1WZlteI8Iwje749wKE78bMBIKz5f17ig+gRzclgE8YadK+U1bjPhU5XstjQUHMw==
+"@frctl/web@^0.1.11":
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/@frctl/web/-/web-0.1.11.tgz#146d3a679da166e51b978a2bbf13e632ae23c22d"
+  integrity sha512-y1nJAbLn3FKKXU3xQJhhQvEG896aMwYLzo33hBByEJbwM18H0ordMVMQPrP30vU4LYkE5I/UL/wTAfR4SKLmbA==
   dependencies:
-    "@frctl/core" "^0.3.3"
+    "@frctl/core" "^0.3.4"
     anymatch "^3.1.2"
     bluebird "^3.7.2"
     browser-sync "^2.26.14"
@@ -3450,7 +3450,7 @@ isobject@^3.0.0, isobject@^3.0.1:
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
   integrity sha1-TkMekrEalzFjaqH5yNHMvP2reN8=
 
-istextorbinary@^5.12.0:
+istextorbinary@^5.15.0:
   version "5.15.0"
   resolved "https://registry.yarnpkg.com/istextorbinary/-/istextorbinary-5.15.0.tgz#6e726d1dbfb8c2c1c0a50b13fb57103259368c8d"
   integrity sha512-4/Fz28VGgSCb5j6kGJqL1iU28WAFMkcx+uUWaa/pzpGqz5bMIoPzW4F6Nbf/7XFx7nSa+qD6HHprDrilB4RNzw==
