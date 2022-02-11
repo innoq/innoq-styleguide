@@ -57,61 +57,61 @@
   font-family: FreightTextPro;
   font-style: normal;
   font-weight: bold;
-  src: url("https://www.innoq.com/assets/fonts/350ED6_0_unhinted_0.woff2?cachebuster=2") format("woff2");
+  src: url("https://www.innoq.com/assets/350ED6_0_unhinted_0.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: FreightTextPro;
   font-style: italic;
   font-weight: normal;
-  src: url("https://www.innoq.com/assets/fonts/350ED6_1_unhinted_0.woff2?cachebuster=2") format("woff2");
+  src: url("https://www.innoq.com/assets/350ED6_1_unhinted_0.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: FreightTextPro;
   font-style: normal;
   font-weight: normal;
-  src: url("https://www.innoq.com/assets/fonts/350ED6_2_unhinted_0.woff2?cachebuster=2") format("woff2");
+  src: url("https://www.innoq.com/assets/350ED6_2_unhinted_0.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: FreightTextPro;
   font-style: italic;
   font-weight: bold;
-  src: url("https://www.innoq.com/assets/fonts/350ED6_3_unhinted_0.woff2?cachebuster=2") format("woff2");
+  src: url("https://www.innoq.com/assets/350ED6_3_unhinted_0.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: FFMarkWebPro;
   font-style: normal;
   font-weight: normal;
-  src: url("https://www.innoq.com/assets/fonts/MarkPro-Book.woff2?cachebuster=2") format("woff2");
+  src: url("https://www.innoq.com/assets/MarkPro-Book.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: FFMarkWebPro;
   font-style: normal;
   font-weight: bold;
-  src: url("https://www.innoq.com/assets/fonts/MarkPro-Bold.woff2?cachebuster=2") format("woff2");
+  src: url("https://www.innoq.com/assets/MarkPro-Bold.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: FFMarkWebPro;
   font-style: normal;
   font-weight: 800;
-  src: url("https://www.innoq.com/assets/fonts/MarkPro-Heavy.woff2?cachebuster=2") format("woff2");
+  src: url("https://www.innoq.com/assets/MarkPro-Heavy.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: HackRegular;
-  src: url("https://www.innoq.com/assets/fonts/hack-regular.woff2?cachebuster=2") format("woff2");
+  src: url("https://www.innoq.com/assets/hack-regular.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: icons;
   font-style: normal;
   font-weight: normal;
-  src: url("https://www.innoq.com/assets/fonts/icomoon.woff2?cachebuster=2") format("woff2"), url("https://www.innoq.com/assets/fonts/icomoon.svg?cachebuster=2#icons") format("svg");
+  src: url("https://www.innoq.com/assets/icomoon.woff2?cachebuster=2") format("woff2"), url("https://www.innoq.com/assets/icomoon.svg?cachebuster=2#icons") format("svg");
 }
 .link-unstyled {
   border-bottom: 0;
