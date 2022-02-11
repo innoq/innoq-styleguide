@@ -57,61 +57,61 @@
   font-family: FreightTextPro;
   font-style: normal;
   font-weight: bold;
-  src: url("https://www.innoq.com/assets/fonts/350ED6_0_unhinted_0.woff2?cachebuster=7d0a3995eec718ff34fa844413298153") format("woff2"), url("https://www.innoq.com/assets/fonts/350ED6_0_unhinted_0.woff?cachebuster=7d0a3995eec718ff34fa844413298153") format("woff"), url("https://www.innoq.com/assets/fonts/350ED6_0_unhinted_0.ttf?cachebuster=7d0a3995eec718ff34fa844413298153") format("truetype");
+  src: url("https://www.innoq.com/assets/fonts/350ED6_0_unhinted_0.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: FreightTextPro;
   font-style: italic;
   font-weight: normal;
-  src: url("https://www.innoq.com/assets/fonts/350ED6_1_unhinted_0.woff2?cachebuster=7d0a3995eec718ff34fa844413298153") format("woff2"), url("https://www.innoq.com/assets/fonts/350ED6_1_unhinted_0.woff?cachebuster=7d0a3995eec718ff34fa844413298153") format("woff"), url("https://www.innoq.com/assets/fonts/350ED6_1_unhinted_0.ttf?cachebuster=7d0a3995eec718ff34fa844413298153") format("truetype");
+  src: url("https://www.innoq.com/assets/fonts/350ED6_1_unhinted_0.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: FreightTextPro;
   font-style: normal;
   font-weight: normal;
-  src: url("https://www.innoq.com/assets/fonts/350ED6_2_unhinted_0.woff2?cachebuster=7d0a3995eec718ff34fa844413298153") format("woff2"), url("https://www.innoq.com/assets/fonts/350ED6_2_unhinted_0.woff?cachebuster=7d0a3995eec718ff34fa844413298153") format("woff"), url("https://www.innoq.com/assets/fonts/350ED6_2_unhinted_0.ttf?cachebuster=7d0a3995eec718ff34fa844413298153") format("truetype");
+  src: url("https://www.innoq.com/assets/fonts/350ED6_2_unhinted_0.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: FreightTextPro;
   font-style: italic;
   font-weight: bold;
-  src: url("https://www.innoq.com/assets/fonts/350ED6_3_unhinted_0.woff2?cachebuster=7d0a3995eec718ff34fa844413298153") format("woff2"), url("https://www.innoq.com/assets/fonts/350ED6_3_unhinted_0.woff?cachebuster=7d0a3995eec718ff34fa844413298153") format("woff"), url("https://www.innoq.com/assets/fonts/350ED6_3_unhinted_0.ttf?cachebuster=7d0a3995eec718ff34fa844413298153") format("truetype");
+  src: url("https://www.innoq.com/assets/fonts/350ED6_3_unhinted_0.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: FFMarkWebPro;
   font-style: normal;
   font-weight: normal;
-  src: url("https://www.innoq.com/assets/fonts/MarkPro-Book.woff2?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("woff2"), url("https://www.innoq.com/assets/fonts/MarkPro-Book.woff?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("woff"), url("https://www.innoq.com/assets/fonts/MarkPro-Book.ttf?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("truetype");
+  src: url("https://www.innoq.com/assets/fonts/MarkPro-Book.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: FFMarkWebPro;
   font-style: normal;
   font-weight: bold;
-  src: url("https://www.innoq.com/assets/fonts/MarkPro-Bold.woff2?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("woff2"), url("https://www.innoq.com/assets/fonts/MarkPro-Bold.woff?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("woff"), url("https://www.innoq.com/assets/fonts/MarkPro-Bold.ttf?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("truetype");
+  src: url("https://www.innoq.com/assets/fonts/MarkPro-Bold.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: FFMarkWebPro;
   font-style: normal;
   font-weight: 800;
-  src: url("https://www.innoq.com/assets/fonts/MarkPro-Heavy.woff2?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("woff2"), url("https://www.innoq.com/assets/fonts/MarkPro-Heavy.woff?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("woff"), url("https://www.innoq.com/assets/fonts/MarkPro-Heavy.ttf?cachebuster=ebbf66fc8344ca6f16c5d660323ab3b4") format("truetype");
+  src: url("https://www.innoq.com/assets/fonts/MarkPro-Heavy.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: HackRegular;
-  src: url("https://www.innoq.com/assets/fonts/hack-regular.woff2?cachebuster=7d0a3995eec718ff34fa844413298153") format("woff2"), url("https://www.innoq.com/assets/fonts/hack-regular.woff?cachebuster=7d0a3995eec718ff34fa844413298153") format("woff");
+  src: url("https://www.innoq.com/assets/fonts/hack-regular.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: icons;
   font-style: normal;
   font-weight: normal;
-  src: url("https://www.innoq.com/assets/fonts/icomoon.woff2?cachebuster=7d0a3995eec718ff34fa8444132981c6") format("woff2"), url("https://www.innoq.com/assets/fonts/icomoon.woff?cachebuster=7d0a3995eec718ff34fa8444132981c6") format("woff"), url("https://www.innoq.com/assets/fonts/icomoon.ttf?cachebuster=7d0a3995eec718ff34fa8444132981c6") format("truetype"), url("https://www.innoq.com/assets/fonts/icomoon.svg?cachebuster=7d0a3995eec718ff34fa8444132981c6#icons") format("svg");
+  src: url("https://www.innoq.com/assets/fonts/icomoon.woff2?cachebuster=2") format("woff2"), url("https://www.innoq.com/assets/fonts/icomoon.svg?cachebuster=2#icons") format("svg");
 }
 .link-unstyled {
   border-bottom: 0;
