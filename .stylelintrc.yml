@@ -21,6 +21,7 @@ rules:
   color-no-hex: true
   color-function-notation: null
   alpha-value-notation: null
+  function-no-unknown: null
 overrides:
   - files: ["**/*.scss"]
     customSyntax: "postcss-scss"
