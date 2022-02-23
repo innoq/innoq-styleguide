@@ -51,4 +51,10 @@
     margin-top: $spacer-xxs;
     margin-right: $spacer-xl;
   }
+
+  .toc--sticky {
+    position: sticky;
+    top:$spacer-xs;
+    align-self: start;
+  }
 }

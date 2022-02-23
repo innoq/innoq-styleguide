@@ -3336,6 +3336,13 @@ super-quote > blockquote > p,
     margin-top: 0.3348979767rem;
     margin-right: 3.919104rem;
   }
+
+  .toc--sticky {
+    position: sticky;
+    top: 0.5787037037rem;
+    -ms-flex-item-align: start;
+        align-self: start;
+  }
 }
 .tag-section {
   padding-top: 2.0736rem;
@@ -7788,6 +7795,10 @@ main > .page-layout--grid:first-child {
     grid-column: span 2;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .artist-collabo-page .standard-header__type {
   font-size: 1.2rem;
 }
