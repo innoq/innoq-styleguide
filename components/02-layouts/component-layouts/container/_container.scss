@@ -1,32 +1,52 @@
+// Centered Containers with a max width
+
 .container-xl,
-%container-xl {
+%container-xl,
+.container-md,
+%container-md  {
   width: 100%;
-  max-width: $default-page-layout-content-width-xl;
   padding: 0 $spacer-xs;
   margin: 0 auto;
+
+  > * {
+    margin-bottom: 0;
+  }
 
   > * + * {
     margin-top: $spacer-base;
   }
 }
 
-.container-vertical-spacing,
-%container-vertical-spacing {
-  padding-top: $spacer-xl;
-  padding-bottom: $spacer-xl;
+.container-xl,
+%container-xl {
+  max-width: $default-page-layout-content-width-xl;
 }
 
 .container-md,
 %container-md {
-  width: 100%;
   max-width: $default-page-layout-content-width-md;
-  padding: 0 $spacer-xs;
-  margin: 0 auto;
-
-  > * + * {
-    margin-top: $spacer-base;
-  }
 }
+
+// Vertical Spacing
+.container-vertical-spacing-xxl,
+%container-vertical-spacing-xxl {
+  padding-top: $spacer-xxl;
+  padding-bottom: $spacer-xxl;
+}
+
+.container-vertical-spacing-xl,
+%container-vertical-spacing-xl {
+  padding-top: $spacer-xl;
+  padding-bottom: $spacer-xl;
+}
+
+.container-vertical-spacing-lg,
+%container-vertical-spacing-lg {
+  padding-top: $spacer-lg;
+  padding-bottom: $spacer-lg;
+}
+
+
 
 
 //Breakpoints
@@ -36,8 +56,18 @@
     padding: 0 $spacer-base;
   }
 
-  .container-vertical-spacing {
+  .container-vertical-spacing-xxl{
+  padding-top: $spacer-xxl;
+  padding-bottom: $spacer-xxl;
+}
+  .container-vertical-spacing-xl {
     padding-top: $spacer-xxl;
     padding-bottom: $spacer-xxl;
   }
+
+  .container-vertical-spacing-lg {
+  padding-top: $spacer-xl;
+  padding-bottom: $spacer-xl;
+}
+
 }
