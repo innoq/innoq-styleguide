@@ -1,0 +1,36 @@
+.work-page {
+  .section-heading--primary,
+  .teaser-section-heading {
+    margin-top: $spacer-xl;
+  }
+
+  .superquote > p {
+    background-color: inherit;
+    box-shadow: none;
+  }
+
+  .big-content-teaser__text {
+    @extend %body-font-regular;
+  }
+
+  .topic-teaser__text {
+    @extend %heading-font-regular;
+  }
+
+  @media screen and (min-width: $grid-breakpoint-md) {
+    .big-content-teaser {
+      min-height: $big-content-teaser-height-sm;
+    }
+  }
+
+  @media screen and (min-width: $grid-breakpoint-lg) {
+    .big-content-teaser__headline {
+      font-size: $font-size-xl;
+    }
+
+    .topic-teaser {
+      min-height: ms(42);
+    }
+  }
+}
+
