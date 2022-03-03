@@ -1,7 +1,3 @@
-// .image-divider-right {
-//   background-color: $brand-text;
-// }
-
 .image-divider-right-content {
   display: flex;
   flex-direction: column;
@@ -17,7 +13,6 @@
   align-items: center;
   justify-content: center;
   padding: $spacer-md;
-  background-color: $image-divider-bg-color;
 }
 
 .image-divider-right-content-textbox__text {

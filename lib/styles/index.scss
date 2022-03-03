@@ -9,7 +9,6 @@
 @import "01-base/base";
 
 @import "02-util/animations";
-@import "02-util/bg-images";
 @import "02-util/forms";
 @import "02-util/icons";
 @import "02-util/list";
@@ -95,8 +94,9 @@
 @import "../components/04-molecules/article&blog-post-elements/table-of-contents/table-of-contents";
 @import "../components/04-molecules/article&blog-post-elements/tag-section/tag-section";
 @import "../components/04-molecules/article&blog-post-elements/wall-of-consent/wall-of-consent";
-@import "../components/04-molecules/article&blog-post-elements/contact-person/contact-person";
 
+// Contact Person
+@import "../components/04-molecules/contact-person/contact-person";
 
 // Dropdown
 @import "../components/04-molecules/dropdown/dropdown";
@@ -195,7 +195,8 @@
 @import "../components/01-pages/case-study-pages/case-study-overview/case-study-overview";
 @import "../components/01-pages/case-study-pages/case-study-page/case-study-page";
 @import "../components/01-pages/artist-collabo-page/artist-collabo-page";
-@import "../components/01-pages/culture-page/culture-page";
+@import "../components/01-pages/culture-pages/culture-page-default/culture-page-default";
+@import "../components/01-pages/culture-pages/work-page/work-page";
 @import "../components/01-pages/error-pages/error-page";
 @import "../components/01-pages/landing-page/landing-page";
 @import "../components/01-pages/magazine-page/magazine-page";
