@@ -5,14 +5,14 @@
   display: inline;
   padding: ms(-16);
   margin-bottom: $spacer-base;
-  color: $service-intro-text-color;
-  font-size: $font-size-lg;
-  line-height: 1.38; //magic number
   background-color: $brand-primary;
   /* stylelint-disable-next-line property-no-vendor-prefix */
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
   box-shadow: $spacer-xxs 0 0 $brand-primary, -$spacer-xxs 0 0 $brand-primary;
+  color: $service-intro-text-color;
+  font-size: $font-size-lg;
+  line-height: 1.38; //magic number
 }
 
 .textbox-sequence__text {
@@ -26,11 +26,10 @@
 
 .textbox-sequence-wrapper {
   display: flex;
+  width: 100%;
   flex-direction: column;
   background-color: $brand-white;
   gap: 2rem;
-  width: 100%;
-  color: #444;
 }
 
 .textbox-sequence-box-a {
@@ -70,16 +69,16 @@
 
 .textbox-sequence-box-f {
   position: relative;
-  margin-top: -40px;
   align-self: start;
+  margin-top: -40px;
   grid-column: 3 / 5;
   grid-row: 8 / 10;
 }
 
 .textbox-sequence-topright {
   position: absolute;
-  right: 0;
   top: -5rem;
+  right: 0;
   visibility: hidden;
 }
 
@@ -92,8 +91,8 @@
 
 .textbox-sequence-bottomleft {
   position: absolute;
-  left: -2rem;
   bottom: -5rem;
+  left: -2rem;
   visibility: hidden;
 }
 
@@ -101,15 +100,13 @@
   .textbox-sequence-wrapper {
     display: grid;
     grid-gap: 2rem;
-    // grid-template-columns: repeat(1fr);
     grid-template-columns: repeat( 6, 1fr);
     grid-template-rows: repeat( auto, 10rem);
   }
 
   .textbox-sequence-bottomleft,
   .textbox-sequence-bottomright,
-  .textbox-sequence-topright
-   {
+  .textbox-sequence-topright {
     visibility: visible;
   }
 }
