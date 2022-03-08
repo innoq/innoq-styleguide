@@ -2,7 +2,7 @@ $topic-teaser-height: ms(36);
 
 .topic-teaser {
   @extend %block-link;
-  @extend %hover-glow;
+
 
   display: flex;
   min-height: $topic-teaser-height;
@@ -16,6 +16,10 @@ $topic-teaser-height: ms(36);
   background-size: cover;
   color: $topic-teaser-body-color;
   text-align: center;
+}
+
+a.topic-teaser {
+  @extend %hover-glow;
 }
 
 .topic-teaser__body {

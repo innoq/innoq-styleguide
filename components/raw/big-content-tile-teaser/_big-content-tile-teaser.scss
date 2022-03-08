@@ -3,7 +3,6 @@ $big-content-teaser-height-md: ms(38);
 
 .big-content-teaser {
   @extend %block-link;
-  @extend %hover-glow;
 
   display: flex;
   min-height: $big-content-teaser-height-sm;
@@ -14,6 +13,10 @@ $big-content-teaser-height-md: ms(38);
     max-width: 100%;
     height: 100%;
   }
+}
+
+a.big-content-teaser {
+  @extend %hover-glow;
 }
 
 .big-content-teaser__content {

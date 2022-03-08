@@ -180,13 +180,13 @@ html {
   -webkit-hyphenate-character: "-";
 }
 
-.podcast-teaser, .content-teaser, .case-tile-teaser, .big-content-teaser, .topic-teaser, .list-teaser-training, .list-teaser, .list-teaser-podcast, .list-teaser-event, .case-teaser, .list-teaser-abstract {
+.podcast-teaser, .content-teaser, .case-tile-teaser, a.big-content-teaser, a.topic-teaser, .list-teaser-training, .list-teaser, .list-teaser-podcast, .list-teaser-event, .case-teaser, .list-teaser-abstract {
   -webkit-transition: 0.2s -webkit-box-shadow ease-in-out;
   transition: 0.2s -webkit-box-shadow ease-in-out;
   transition: 0.2s box-shadow ease-in-out;
   transition: 0.2s box-shadow ease-in-out, 0.2s -webkit-box-shadow ease-in-out;
 }
-.podcast-teaser:hover, .content-teaser:hover, .case-tile-teaser:hover, .big-content-teaser:hover, .topic-teaser:hover, .list-teaser-training:hover, .list-teaser:hover, .list-teaser-podcast:hover, .list-teaser-event:hover, .case-teaser:hover, .list-teaser-abstract:hover, .podcast-teaser:focus, .content-teaser:focus, .case-tile-teaser:focus, .big-content-teaser:focus, .topic-teaser:focus, .list-teaser-training:focus, .list-teaser:focus, .list-teaser-podcast:focus, .list-teaser-event:focus, .case-teaser:focus, .list-teaser-abstract:focus {
+.podcast-teaser:hover, .content-teaser:hover, .case-tile-teaser:hover, a.big-content-teaser:hover, a.topic-teaser:hover, .list-teaser-training:hover, .list-teaser:hover, .list-teaser-podcast:hover, .list-teaser-event:hover, .case-teaser:hover, .list-teaser-abstract:hover, .podcast-teaser:focus, .content-teaser:focus, .case-tile-teaser:focus, a.big-content-teaser:focus, a.topic-teaser:focus, .list-teaser-training:focus, .list-teaser:focus, .list-teaser-podcast:focus, .list-teaser-event:focus, .case-teaser:focus, .list-teaser-abstract:focus {
   -webkit-box-shadow: 0 0 0 5px rgba(255, 156, 102, 0.8);
           box-shadow: 0 0 0 5px rgba(255, 156, 102, 0.8);
 }
@@ -3657,6 +3657,9 @@ wall-of-consent {
   color: #004153;
   font-size: 1.2rem;
   line-height: 1.52;
+}
+.textbox-sequence__text a {
+  color: #004153;
 }
 
 .textbox-sequence__wrapper {
@@ -8080,6 +8083,9 @@ html {
   background-color: inherit;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+.work-page .topic-teaser__text {
+  line-height: 1.52;
 }
 @media screen and (min-width: 48rem) {
   .work-page .big-content-teaser {

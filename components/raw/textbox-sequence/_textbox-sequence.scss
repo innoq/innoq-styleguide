@@ -20,6 +20,10 @@
   color: $service-intro-text-color;
   font-size: $font-size-sm;
   line-height: $paragraph-line-height;
+
+  a {
+    color: $service-intro-text-color;
+  }
 }
 
 .textbox-sequence__wrapper {
