@@ -2,7 +2,6 @@
 // Default Link - used on all class-less link elements
 //
 
-.link-default,
 a:not([class]) {
   border-bottom: 1px solid $link-color;
   color: $link-color;
@@ -36,6 +35,7 @@ a:not([class]) {
   border-bottom: 3px solid $link-teaser-border-color;
   color: $link-teaser-text-color;
   font-size: $font-size-xs;
+  transition: standard-transition(background-color);
 
   &.inverted-text-color {
     border-bottom: 3px solid $link-teaser-inverted-text-border-color;
@@ -45,5 +45,26 @@ a:not([class]) {
   &.inverted-interaction-color {
     border-bottom: 3px solid $link-teaser-inverted-interaction-border-color;
     color: $link-teaser-inverted-interaction-text-color;
+  }
+}
+
+a.link-teaser {
+  &:focus,
+  &:hover {
+    background-color: $link-hover-color-light;
+  }
+}
+
+a.link-teaser.inverted-text-color {
+  &:focus,
+  &:hover {
+    background-color: $link-hover-color-secondary;
+  }
+}
+
+a.link-teaser.inverted-interaction-color {
+  &:focus,
+  &:hover {
+    background-color: $link-hover-color-light;
   }
 }
