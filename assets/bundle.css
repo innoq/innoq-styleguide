@@ -1775,7 +1775,6 @@ img {
   display: inline;
 }
 
-.link-default,
 a:not([class]) {
   border-bottom: 1px solid #242424;
   color: #242424;
@@ -1783,13 +1782,10 @@ a:not([class]) {
   -webkit-transition: background-color 0.175s ease-in-out;
   transition: background-color 0.175s ease-in-out;
 }
-.link-default:focus, .link-default:hover,
-a:not([class]):focus,
-a:not([class]):hover {
+a:not([class]):focus, a:not([class]):hover {
   background-color: rgba(255, 156, 102, 0.8);
   outline: none;
 }
-.link-default[href=mailto],
 a:not([class])[href=mailto] {
   -webkit-hyphens: none;
       -ms-hyphens: none;
@@ -1806,6 +1802,8 @@ a:not([class])[href=mailto] {
   border-bottom: 3px solid #ff9c66;
   color: #004153;
   font-size: 0.9114583333rem;
+  -webkit-transition: background-color 0.175s ease-in-out;
+  transition: background-color 0.175s ease-in-out;
 }
 .link-teaser.inverted-text-color {
   border-bottom: 3px solid #004153;
@@ -1814,6 +1812,18 @@ a:not([class])[href=mailto] {
 .link-teaser.inverted-interaction-color {
   border-bottom: 3px solid #ff9c66;
   color: #fff;
+}
+
+a.link-teaser:focus, a.link-teaser:hover {
+  background-color: rgba(255, 156, 102, 0.8);
+}
+
+a.link-teaser.inverted-text-color:focus, a.link-teaser.inverted-text-color:hover {
+  background-color: #004153;
+}
+
+a.link-teaser.inverted-interaction-color:focus, a.link-teaser.inverted-interaction-color:hover {
+  background-color: rgba(255, 156, 102, 0.8);
 }
 
 code {
