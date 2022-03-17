@@ -30,8 +30,7 @@ You need to prefix all maintenance commands from above like `yarn …` with
 
 ## Deployment
 
-Everything in main gets deployed automatically to
-https://innoq.style/.
+Each new relese gets deployed automatically to https://innoq.style/.
 
 See `.github/workflow/build.yml` for more info.
 
