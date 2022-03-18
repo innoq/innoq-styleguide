@@ -18,7 +18,7 @@
 
   margin: $spacer-xs 0 $spacer-sm 0;
   color: $service-intro-text-color;
-  font-size: $font-size-sm;
+  font-size: $font-size-base;
   line-height: $paragraph-line-height;
 
   a {
@@ -30,6 +30,7 @@
   display: flex;
   width: 100%;
   flex-direction: column;
+  padding: 0 $spacer-sm;
   background-color: $brand-white;
   gap: 2rem;
 }
@@ -43,9 +44,14 @@
 @media screen and (min-width: $grid-breakpoint-md-lg) {
   .textbox-sequence__wrapper {
     display: grid;
+    padding: 0;
     grid-gap: 2rem;
     grid-template-columns: repeat( 6, 1fr);
     grid-template-rows: repeat( auto, 10rem);
+  }
+
+  .textbox-sequence__text {
+    font-size: $font-size-sm;
   }
 
   .textbox-sequence__box--a {

@@ -31,7 +31,7 @@ $conclusion-border-size: ms(5);
     @extend %heading-font-regular;
 
     color: $conclusion-text-color;
-    font-size: $font-size-sm;
+    font-size: $font-size-base;
 
     // Remove the margin of the last paragraph inside a conclusion
     &:last-child {
@@ -70,6 +70,10 @@ $conclusion-border-size: ms(5);
 @media screen and (min-width: $grid-breakpoint-md) {
   .conclusion {
     padding: $spacer-xxl 0;
+  )
+
+  .conclusion-text {
+    font-size: $font-size-sm;
   }
 }
 
