@@ -30,20 +30,20 @@
 // Vertical Spacing
 .container-vertical-spacing-xxl,
 %container-vertical-spacing-xxl {
-  padding-top: $spacer-xxl;
-  padding-bottom: $spacer-xxl;
-}
-
-.container-vertical-spacing-xl,
-%container-vertical-spacing-xl {
   padding-top: $spacer-xl;
   padding-bottom: $spacer-xl;
 }
 
-.container-vertical-spacing-lg,
-%container-vertical-spacing-lg {
+.container-vertical-spacing-xl,
+%container-vertical-spacing-xl {
   padding-top: $spacer-lg;
   padding-bottom: $spacer-lg;
+}
+
+.container-vertical-spacing-lg,
+%container-vertical-spacing-lg {
+  padding-top: $spacer-base;
+  padding-bottom: $spacer-base;
 }
 
 
@@ -62,12 +62,12 @@
   }
 
   .container-vertical-spacing-xl {
-    padding-top: $spacer-xxl;
-    padding-bottom: $spacer-xxl;
+    padding-top: $spacer-xl;
+    padding-bottom: $spacer-xl;
   }
 
   .container-vertical-spacing-lg {
-    padding-top: $spacer-xl;
-    padding-bottom: $spacer-xl;
+    padding-top: $spacer-lg;
+    padding-bottom: $spacer-lg;
   }
 }

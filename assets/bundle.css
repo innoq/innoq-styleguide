@@ -2946,7 +2946,7 @@ clickable-area {
 .conclusion-text,
 .conclusion-text > * {
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .conclusion-text:last-child,
 .conclusion-text > *:last-child {
@@ -2977,6 +2977,10 @@ clickable-area {
 @media screen and (min-width: 48rem) {
   .conclusion {
     padding: 7.4300837069rem 0;
+  }
+
+  .conclusion-text {
+    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: 75rem) {
@@ -3665,7 +3669,7 @@ wall-of-consent {
 .textbox-sequence__text {
   margin: 0.5787037037rem 0 1rem 0;
   color: #004153;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.52;
 }
 .textbox-sequence__text a {
@@ -3681,6 +3685,7 @@ wall-of-consent {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 1rem;
   background-color: #fff;
   gap: 2rem;
 }
@@ -3694,9 +3699,14 @@ wall-of-consent {
 @media screen and (min-width: 60rem) {
   .textbox-sequence__wrapper {
     display: grid;
+    padding: 0;
     grid-gap: 2rem;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(auto, 10rem);
+  }
+
+  .textbox-sequence__text {
+    font-size: 1.2rem;
   }
 
   .textbox-sequence__box--a {
@@ -4659,7 +4669,7 @@ wall-of-consent {
 
 .case-teaser__text {
   margin-bottom: 2.0736rem;
-  font-size: 0.9114583333rem;
+  font-size: 1rem;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
@@ -5398,7 +5408,7 @@ wall-of-consent {
 
 .big-content-teaser__text {
   color: #004153;
-  font-size: 0.9114583333rem;
+  font-size: 1rem;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;
@@ -5610,7 +5620,7 @@ wall-of-consent {
 
 .content-teaser__text {
   margin-bottom: 1.44rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .content-teaser--inverted {
@@ -7733,18 +7743,18 @@ wall-of-consent {
 }
 
 .container-vertical-spacing-xxl {
-  padding-top: 7.4300837069rem;
-  padding-bottom: 7.4300837069rem;
-}
-
-.container-vertical-spacing-xl {
   padding-top: 3.919104rem;
   padding-bottom: 3.919104rem;
 }
 
-.container-vertical-spacing-lg {
+.container-vertical-spacing-xl {
   padding-top: 2.985984rem;
   padding-bottom: 2.985984rem;
+}
+
+.container-vertical-spacing-lg {
+  padding-top: 2.0736rem;
+  padding-bottom: 2.0736rem;
 }
 
 @media screen and (min-width: 75rem) {
@@ -7758,13 +7768,13 @@ wall-of-consent {
   }
 
   .container-vertical-spacing-xl {
-    padding-top: 7.4300837069rem;
-    padding-bottom: 7.4300837069rem;
+    padding-top: 3.919104rem;
+    padding-bottom: 3.919104rem;
   }
 
   .container-vertical-spacing-lg {
-    padding-top: 3.919104rem;
-    padding-bottom: 3.919104rem;
+    padding-top: 2.985984rem;
+    padding-bottom: 2.985984rem;
   }
 }
 .masonry-grid {

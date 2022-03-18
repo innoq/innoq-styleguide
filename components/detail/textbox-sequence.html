@@ -87,7 +87,7 @@
 
 <div class="Status Status--tag">
 
-<label class="Status-label" style="background-color: #FF9233; border-color: #FF9233;">WIP</label>
+<label class="Status-label" style="background-color: #29CC29; border-color: #29CC29;">Ready</label>
 
 </div>
 
@@ -319,7 +319,7 @@
 
   <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$spacer-xs</span> <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-sm</span> <span class="hljs-number">0</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$service-intro-text-color</span>;
-  <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
 
   <span class="hljs-selector-tag">a</span> {
@@ -331,6 +331,7 @@
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
   <span class="hljs-attribute">flex-direction</span>: column;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-sm</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$brand-white</span>;
   gap: <span class="hljs-number">2rem</span>;
 }
@@ -344,9 +345,14 @@
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md-lg</span>) {
   <span class="hljs-selector-class">.textbox-sequence__wrapper</span> {
     <span class="hljs-attribute">display</span>: grid;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
     grid-gap: <span class="hljs-number">2rem</span>;
     grid-template-<span class="hljs-attribute">columns</span>: repeat( <span class="hljs-number">6</span>, <span class="hljs-number">1</span>fr);
     grid-template-rows: repeat( auto, <span class="hljs-number">10rem</span>);
+  }
+
+  <span class="hljs-selector-class">.textbox-sequence__text</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
   }
 
   <span class="hljs-selector-class">.textbox-sequence__box--a</span> {
@@ -429,7 +435,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.3 KB</span>
+                    <span class="Meta-value">2.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -840,7 +846,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3314,7 +3320,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -7211,8 +7217,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-03-10T16:36:14.568Z">
-                                3/10/2022
+                            <time datetime="2022-03-18T16:24:28.174Z">
+                                3/18/2022
                             </time>
                         
                     </dd>

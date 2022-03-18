@@ -332,7 +332,7 @@
     <span class="hljs-keyword">@extend</span> %heading-font-regular;
 
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$conclusion-text-color</span>;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
 
     <span class="hljs-comment">// Remove the margin of the last paragraph inside a conclusion</span>
     &amp;<span class="hljs-selector-pseudo">:last-child</span> {
@@ -371,6 +371,10 @@
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
   <span class="hljs-selector-class">.conclusion</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xxl</span> <span class="hljs-number">0</span>;
+  }
+
+  <span class="hljs-selector-class">.conclusion-text</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
   }
 }
 
@@ -814,7 +818,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -3288,7 +3292,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -7185,8 +7189,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-03-10T16:36:14.568Z">
-                                3/10/2022
+                            <time datetime="2022-03-18T16:24:28.174Z">
+                                3/18/2022
                             </time>
                         
                     </dd>
