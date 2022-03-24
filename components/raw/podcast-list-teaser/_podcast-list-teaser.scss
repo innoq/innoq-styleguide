@@ -7,6 +7,7 @@ $podcast-teaser-height-md: ms(35);
   @extend %hover-glow;
 
   display: flex;
+  width: 100%;
   min-height: $podcast-teaser-height-sm;
   flex-direction: column;
   justify-content: space-between;

@@ -4528,6 +4528,7 @@ wall-of-consent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -4909,6 +4910,7 @@ wall-of-consent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   min-height: 15.4070215746rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
