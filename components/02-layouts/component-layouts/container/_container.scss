@@ -4,7 +4,10 @@
 %container-xl,
 .container-md,
 %container-md  {
+  display: flex;
   width: 100%;
+  flex-direction: column;
+  align-items: center;
   padding: 0 $spacer-xs;
   margin: 0 auto;
 
