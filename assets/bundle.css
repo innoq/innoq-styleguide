@@ -2149,7 +2149,7 @@ figure > div > pre code {
 .talk-title, .newsletter-optin__title, .wall-note__heading, .project-index__title, .section-heading--primary,
 h1 {
   margin-top: 0;
-  margin-bottom: 2.985984rem;
+  margin-bottom: 2.0736rem;
   color: #004153;
   font-size: 2.0736rem;
   line-height: 1.2;
@@ -2158,7 +2158,7 @@ h1 {
 .topic-teaser__header, .list-teaser-podcast__headline, .teaser-section-heading,
 h2 {
   margin-top: 0;
-  margin-bottom: 2.0736rem;
+  margin-bottom: 1rem;
   color: #004153;
   font-size: 1.728rem;
   line-height: 1.2;
@@ -2167,7 +2167,7 @@ h2 {
 .podcast-teaser__headline, .content-teaser__header, .list-teaser__headline, .list-teaser-event__headline, .card__headline, .search-result__title, .section-heading--secondary,
 h3 {
   margin-top: 0;
-  margin-bottom: 1.44rem;
+  margin-bottom: 1rem;
   color: #004153;
   font-size: 1.44rem;
   line-height: 1.2;
@@ -2244,6 +2244,7 @@ h6 {
 @media screen and (min-width: 48rem) {
   .talk-title, .newsletter-optin__title, .wall-note__heading, .project-index__title, .section-heading--primary,
 h1 {
+    margin-bottom: 2.985984rem;
     font-size: 2.985984rem;
   }
 
@@ -2264,6 +2265,10 @@ h4 {
 
   .newsletter-optin__subtitle, .list-teaser-event__headline--secondary, .upcase-heading, .section-heading--tertiary,
 h5 {
+    font-size: 1.2rem;
+  }
+
+  h6 {
     font-size: 1.2rem;
   }
 
@@ -7420,7 +7425,7 @@ wall-of-consent {
 
 .dropdown__checkbox:focus ~ .dropdown__toggle--navbar .dropdown__icon--navbar {
   color: #ff9c66;
-  outline: auto 5px #3b99fc;
+  outline: auto 5px rgb(59, 153, 252);
 }
 
 .dropdown__icon--navbar {
@@ -7928,9 +7933,9 @@ wall-of-consent {
 }
 
 .stripe--gradient {
-  background: #ffe6d9;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(23%, #ffe6d9), color-stop(60%, #ff9c66));
-  background: linear-gradient(360deg, #ffe6d9 23%, #ff9c66 60%);
+  background: rgb(255, 230, 217);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(23%, rgb(255, 230, 217)), color-stop(60%, rgb(255, 156, 102)));
+  background: linear-gradient(360deg, rgb(255, 230, 217) 23%, rgb(255, 156, 102) 60%);
 }
 
 .main-layout {

@@ -9,7 +9,7 @@ h1 {
   @extend %manual-hyphenation;
 
   margin-top: 0;
-  margin-bottom: $spacer-lg;
+  margin-bottom: $spacer-base;
   color: $h1-color;
   font-size: $font-size-xl;
   line-height: $heading-line-height;
@@ -22,7 +22,7 @@ h2 {
   @extend %manual-hyphenation;
 
   margin-top: 0;
-  margin-bottom: $spacer-base;
+  margin-bottom: $spacer-sm;
   color: $h2-color;
   font-size: $font-size-lg;
   line-height: $heading-line-height;
@@ -35,7 +35,7 @@ h3 {
   @extend %manual-hyphenation;
 
   margin-top: 0;
-  margin-bottom: $spacer-md;
+  margin-bottom: $spacer-sm;
   color: $h3-color;
   font-size: $font-size-md;
   line-height: $heading-line-height;
@@ -144,9 +144,11 @@ h6 {
   margin-bottom: $spacer-base;
 }
 
+//Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   %h1,
   h1 {
+    margin-bottom: $spacer-lg;
     font-size: $font-size-xxxl;
   }
 
@@ -171,6 +173,12 @@ h6 {
   // H5
   %h5,
   h5 {
+    font-size: $font-size-sm;
+  }
+
+  // H6
+  %h6,
+  h6 {
     font-size: $font-size-sm;
   }
 
