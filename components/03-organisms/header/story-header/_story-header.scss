@@ -1,0 +1,60 @@
+.story-header {
+  @extend %page-header;
+  
+  &__body {
+    display: flex;
+    max-width: $grid-page-layout-content-width-xl;
+    box-sizing: content-box;
+    flex-direction: column;
+    justify-content: center;
+    padding: $spacer-base;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #FFE6D9 0%, rgba(255, 230, 217, 0) 100%);
+    color: $story-header-text-color;
+  }
+
+  &__type {
+    @extend %heading-font-bold;
+
+    margin-bottom: $spacer-xs;
+    font-size: $font-size-xs;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__author {
+    @extend %body-font-regular;
+
+    margin-bottom: $spacer-lg;
+    font-size: $font-size-xs;
+    text-align: center;
+  }
+
+  &__title {
+    @extend %body-font-italic;
+
+    margin-bottom: $spacer-lg;
+    font-size: $font-size-xl;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+
+  .story-header__body {
+    position: relative;
+    padding: $spacer-xl $spacer-xxl $spacer-xl;
+  }
+
+  .story-header__type {
+    font-size: $font-size-base;
+  }
+
+  .story-header__author {
+    font-size: $font-size-base;
+  }
+
+  .story-header__title {
+    font-size: $font-size-xxl;
+  }
+}
