@@ -1,0 +1,40 @@
+.info-note {
+  max-width: $default-page-layout-content-width-xl / 3;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: $spacer-lg $spacer-base;
+    margin: $spacer-sm;
+  }
+  
+  &__title {
+    @extend %heading-font-bold;
+  
+    margin-bottom: $spacer-base;
+    font-size: $font-size-base;
+    text-align: center;
+    text-transform: uppercase;
+    color: $info-note-title-color;
+  }
+  
+  &__text {
+    @extend %heading-font-regular;
+  
+    font-size: $font-size-xs;
+    text-align: left;
+  }
+  
+  &__highlight {
+    @extend %heading-font-bold;
+    
+  }
+}
+
+
+
+//Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+
+}
