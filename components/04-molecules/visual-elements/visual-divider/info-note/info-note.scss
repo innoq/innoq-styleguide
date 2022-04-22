@@ -13,10 +13,10 @@
     @extend %heading-font-bold;
   
     margin-bottom: $spacer-base;
+    color: $info-note-title-color;
     font-size: $font-size-base;
     text-align: center;
     text-transform: uppercase;
-    color: $info-note-title-color;
   }
   
   &__text {
@@ -30,11 +30,4 @@
     @extend %heading-font-bold;
     
   }
-}
-
-
-
-//Breakpoints
-@media screen and (min-width: $grid-breakpoint-md) {
-
 }

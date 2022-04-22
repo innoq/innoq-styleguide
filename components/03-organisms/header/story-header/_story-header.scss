@@ -9,7 +9,7 @@
     justify-content: center;
     padding: $spacer-base;
     margin: 0 auto;
-    background: linear-gradient(180deg, #FFE6D9 0%, rgba(255, 230, 217, 0) 100%);
+    background: linear-gradient(180deg, $brand-apricot-25 0%, rgba(255, 230, 217, 0) 100%);
     color: $story-header-text-color;
   }
 
@@ -40,7 +40,6 @@
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
-
   .story-header__body {
     position: relative;
     padding: $spacer-xl $spacer-xxl $spacer-xl;
