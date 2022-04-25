@@ -1,8 +1,10 @@
 .info-note {
-  max-width: $default-page-layout-content-width-xl / 3;
+  display: flex;
+  flex-direction: column;
 
   &__content {
     display: flex;
+    min-width: $default-page-layout-content-width-md / 2;
     flex-direction: column;
     justify-content: center;
     padding: $spacer-lg $spacer-base;
@@ -29,5 +31,17 @@
   &__highlight {
     @extend %heading-font-bold;
     
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .info-note {
+    display: flex;
+    flex-direction: row;
+
+    &__content {
+      height: fit-content;
+      margin-right: -125px;
+    }
   }
 }
