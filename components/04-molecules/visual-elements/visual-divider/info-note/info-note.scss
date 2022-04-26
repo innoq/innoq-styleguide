@@ -1,11 +1,11 @@
 .info-note {
+  @extend %box-shadow-primary-25-right-bottom;
+  
   display: flex;
   flex-direction: column;
 
   &__content {
-    display: flex;
-    min-width: $default-page-layout-content-width-md / 2;
-    flex-direction: column;
+    min-width: $default-page-layout-content-width-md / 3;
     justify-content: center;
     padding: $spacer-lg $spacer-base;
     margin: $spacer-sm;
@@ -31,17 +31,5 @@
   &__highlight {
     @extend %heading-font-bold;
     
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-md) {
-  .info-note {
-    display: flex;
-    flex-direction: row;
-
-    &__content {
-      height: fit-content;
-      margin-right: -125px;
-    }
   }
 }
