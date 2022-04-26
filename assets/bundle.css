@@ -6473,10 +6473,12 @@ wall-of-consent {
 }
 
 .cover__logo--left {
+  width: auto;
   height: 80px;
 }
 
 .cover__logo--right {
+  width: auto;
   height: 50px;
 }
 
