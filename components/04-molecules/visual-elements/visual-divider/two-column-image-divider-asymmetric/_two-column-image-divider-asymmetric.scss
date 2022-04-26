@@ -32,7 +32,6 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
     padding: $spacer-lg;
 
     > img { 
-      max-height: none;
       height: $two-column-image-divider-height-md / 1.5;
     }
   }
@@ -41,7 +40,6 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
     padding: $spacer-lg;
 
     > img  {
-      max-height: none;
       height: $two-column-image-divider-height-md;
     }
   }
