@@ -1,4 +1,4 @@
-.story-header {
+.gradient-header {
   @extend %page-header;
   
   &__body {
@@ -10,7 +10,7 @@
     padding: $spacer-base;
     margin: 0 auto;
     background: linear-gradient(180deg, $brand-apricot-25 0%, rgba(255, 230, 217, 0) 100%);
-    color: $story-header-text-color;
+    color: $gradient-header-text-color;
   }
 
   &__type {
@@ -45,20 +45,20 @@
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
-  .story-header__body {
+  .gradient-header__body {
     position: relative;
     padding: $spacer-xl $spacer-xxl $spacer-xl;
   }
 
-  .story-header__type {
+  .gradient-header__type {
     font-size: $font-size-base;
   }
 
-  .story-header__author {
+  .gradient-header__author {
     font-size: $font-size-base;
   }
 
-  .story-header__title {
+  .gradient-header__title {
     font-size: $font-size-xxl;
   }
 }
