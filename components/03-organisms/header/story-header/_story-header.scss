@@ -37,6 +37,11 @@
     font-size: $font-size-xl;
     text-align: center;
   }
+
+  &__img {
+    @extend %box-shadow-primary-25-right-bottom;
+    
+  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

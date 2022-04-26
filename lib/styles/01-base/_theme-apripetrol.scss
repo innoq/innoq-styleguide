@@ -3,6 +3,7 @@
 //
 $brand-primary: $brand-apricot;
 $brand-primary-75: $brand-apricot-75;
+$brand-primary-25: $brand-apricot-25;
 $brand-secondary: $brand-petrol;
 $brand-secondary-75: $brand-petrol-75;
 $brand-interaction: $brand-apricot;
@@ -42,7 +43,7 @@ $button-inverted-hover-color: $brand-secondary;
 $button-inverted-hover-border-color: $brand-secondary;
 
 // Box Shadow
-$box-shadow: $brand-apricot-25;
+$box-shadow-primary-25: $brand-primary-25;
 
 // Checkbox
 $checkbox-bg: $brand-white;

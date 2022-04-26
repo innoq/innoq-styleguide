@@ -14,6 +14,8 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
   margin: 0;
 
   > img {
+    @extend %box-shadow-primary-25-right-bottom;
+
     max-width: 100%;
     height: $two-column-image-divider-height-md / 1.5;
     object-fit: cover;
@@ -28,6 +30,8 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
   margin: 0;
 
   > img {
+    @extend %box-shadow-primary-25-right-bottom;
+
     max-width: 100%;
     height: $two-column-image-divider-height-md;
     object-fit: cover;
@@ -39,6 +43,8 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
     padding: $spacer-lg;
   
     > img {
+      @extend %box-shadow-primary-25-right-bottom;
+
       height: $two-column-image-divider-height-lg / 1.5;
     }
   }
@@ -47,6 +53,8 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
     padding: $spacer-lg;
 
     > img {
+      @extend %box-shadow-primary-25-right-bottom;
+
       height: $two-column-image-divider-height-lg;
     }
   }
