@@ -1,4 +1,5 @@
-.gradient-header {  background: linear-gradient(180deg, $brand-apricot-25 0%, rgba(255, 230, 217, 0) 100%);
+.gradient-header {  
+  background: linear-gradient(180deg, $brand-apricot-25 0%, rgba(255, 230, 217, 0) 100%);
 
   &__body {
     display: flex;
@@ -6,7 +7,7 @@
     box-sizing: content-box;
     flex-direction: column;
     justify-content: center;
-    padding: $spacer-base auto;
+    padding: $spacer-base;
     margin: 0 auto;
     color: $gradient-header-text-color;
   }

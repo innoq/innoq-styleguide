@@ -1,6 +1,6 @@
 .info-note {
   @extend %box-shadow-primary-25-right-bottom;
-  
+
   display: flex;
   flex-direction: column;
 
@@ -10,26 +10,26 @@
     padding: $spacer-lg $spacer-base;
     margin: $spacer-sm;
   }
-  
+
   &__title {
     @extend %heading-font-bold;
-  
+
     margin-bottom: $spacer-base;
     color: $info-note-title-color;
     font-size: $font-size-base;
     text-align: center;
     text-transform: uppercase;
   }
-  
+
   &__text {
     @extend %heading-font-regular;
-  
+
     font-size: $font-size-xs;
     text-align: left;
   }
-  
+
   &__highlight {
     @extend %heading-font-bold;
-    
+
   }
 }
