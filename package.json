@@ -29,7 +29,7 @@
     "document-register-element": "^1.14.5",
     "eslint": "^8.9.0",
     "eslint-config-standard": "^16.0.2",
-    "eslint-config-standard-jsx": "^10.0.0",
+    "eslint-config-standard-jsx": "^11.0.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
