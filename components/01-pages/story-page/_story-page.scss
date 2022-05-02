@@ -1,1 +1,26 @@
+.story-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
+  figure,
+  .two-column-image-divider-asymmetric {
+    max-width: 70rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ul,
+  ol,
+  table,
+  super-quote,
+  long-quote,
+  .zigzag {
+    max-width: 50rem;
+  }
+}

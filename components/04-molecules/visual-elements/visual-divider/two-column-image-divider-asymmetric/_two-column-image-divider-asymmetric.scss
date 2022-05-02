@@ -3,8 +3,6 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
 
 .two-column-image-divider-asymmetric {
   display: flex;
-  width: $default-page-layout-width-xl;
-  max-width: $default-page-layout-content-width-xl;  
   flex-direction: column;
   margin: 0 auto;
 }
@@ -31,10 +29,10 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
   }
 
   .two-column-image-divider-asymmetric__left-image {
-    align-self: center;  
+    align-self: center;
     padding: $spacer-lg;
 
-    > img { 
+    > img {
       height: $two-column-image-divider-height-md / 1.5;
     }
   }
