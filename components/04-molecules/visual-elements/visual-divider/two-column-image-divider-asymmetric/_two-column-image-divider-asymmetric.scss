@@ -3,7 +3,10 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
 
 .two-column-image-divider-asymmetric {
   display: flex;
+  width: $default-page-layout-width-xl;
+  max-width: $default-page-layout-content-width-xl;  
   flex-direction: column;
+  margin: 0 auto;
 }
 
 .two-column-image-divider-asymmetric__left-image,

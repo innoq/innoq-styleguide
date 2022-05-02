@@ -24,12 +24,12 @@
   &__text {
     @extend %heading-font-regular;
 
+    color: $brand-petrol;
     font-size: $font-size-xs;
     text-align: left;
   }
 
   &__highlight {
     @extend %heading-font-bold;
-
   }
 }
