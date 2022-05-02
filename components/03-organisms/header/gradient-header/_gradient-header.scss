@@ -1,5 +1,5 @@
 .gradient-header {  
-  background: linear-gradient(180deg, $brand-apricot-25 0%, rgba(255, 230, 217, 0) 100%);
+  background: linear-gradient(180deg, $gradient-header-background-color 0%, rgba(255, 230, 217, 0) 100%);
 
   &__body {
     display: flex;
@@ -39,13 +39,11 @@
 
   &__img {
     @extend %box-shadow-primary-25-right-bottom;
-
   }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .gradient-header__body {
-    position: relative;
     padding: $spacer-xl $spacer-xxl $spacer-xl;
   }
 
