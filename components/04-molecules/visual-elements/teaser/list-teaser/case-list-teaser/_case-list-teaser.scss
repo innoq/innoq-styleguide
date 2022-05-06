@@ -81,7 +81,8 @@
 
 @media screen and (max-width: $grid-breakpoint-sm) {
   .case-teaser {
-    margin-bottom: ms(25);
+    /* stylelint-disable-next-line */
+    margin-bottom: ms(23) !important;
   }
 
   .case-teaser__body {

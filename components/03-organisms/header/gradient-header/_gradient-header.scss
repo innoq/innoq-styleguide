@@ -1,13 +1,13 @@
-.gradient-header {  
+.gradient-header {
   background: linear-gradient(180deg, $gradient-header-background-color 0%, rgba(255, 230, 217, 0) 100%);
 
   &__body {
     display: flex;
-    max-width: $grid-page-layout-content-width-xl;
-    box-sizing: content-box;
+    max-width: 64rem; //magic number
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: $spacer-base;
+    padding: $spacer-base $spacer-sm;
     margin: 0 auto;
     color: $gradient-header-text-color;
   }
@@ -32,6 +32,7 @@
   &__title {
     @extend %body-font-italic;
 
+    max-width: 60rem;
     margin-bottom: $spacer-lg;
     font-size: $font-size-xl;
     text-align: center;
@@ -43,10 +44,6 @@
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
-  .gradient-header__body {
-    padding: $spacer-xl $spacer-xxl $spacer-xl;
-  }
-
   .gradient-header__type {
     font-size: $font-size-base;
   }

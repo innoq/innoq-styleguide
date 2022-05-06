@@ -1,59 +1,47 @@
 <header class="gradient-header">
     <div class="gradient-header__body">
-        <div>
-            <h3 class="gradient-header__type">INNOQ Story</h3>
-            <h3 class="gradient-header__author">Mika Majoran</h3>
-            <h1 class="gradient-header__title">Das Ziel war im Weg.</h1>
-        </div>
-        <div class="gradient-header__img">
-            <img src="http://via.placeholder.com/800x600" alt="Bild mit Umrandung" />
-        </div>
+        <h3 class="gradient-header__type">INNOQ Story</h3>
+        <h3 class="gradient-header__author">Mika Majoran</h3>
+        <h1 class="gradient-header__title">{{headline}}</h1>
+        <img
+            class="gradient-header__img"
+            src="{{ path '/assets/bg-images/edition-02/edition02-canyon-01.jpg'}}"
+            alt="Bild mit Umrandung"
+        />
     </div>
 </header>
 
 <main role="main" class="story-page">
-    <section class="page-layout-md--default">
-        <super-quote>
-            <blockquote class="superquote" itemscope itemtype="http://schema.org/Person">
-                <span class="superquote__zigzag"></span>
-                <p>
-                    Mein beruflicher Werdegang gleicht einer Serpentine – erst bei INNOQ habe ich verstanden, dass das
-                    ein Vorteil sein kann.
-                </p>
-                <cite class="superquote__author" itemprop="name">Mika Majoran</cite>
-                <span class="superquote__role" itemprop="jobTitle">Senior Consultant</span>
-            </blockquote>
-        </super-quote>
-    </section>
-    <section class="page-layout--grid">
-        <div class="center">
-            <p>{{text}}</p>
-            <p>{{text}}</p>
+    <super-quote>
+        <blockquote class="superquote" itemscope itemtype="http://schema.org/Person">
+            <span class="superquote__zigzag"></span>
+            <p>
+                Mein beruflicher Werdegang gleicht einer Serpentine – erst bei INNOQ habe ich verstanden, dass das ein
+                Vorteil sein kann.
+            </p>
+            <cite class="superquote__author" itemprop="name">Mika Majoran</cite>
+            <span class="superquote__role" itemprop="jobTitle">Senior Consultant</span>
+        </blockquote>
+    </super-quote>
+
+    <info-note class="info-note">
+        <div class="info-note__content">
+            <h3 class="info-note__title">Mika Majoran</h3>
+            <p class="info-note__text"><span class="info-note__highlight">Bei INNOQ seit</span> 2018.</p>
+            <p class="info-note__text">
+                <span class="info-note__highlight">Tätig als</span> Product Owner in der Produktentwicklung.
+            </p>
+            <p class="info-note__text">
+                Bei INNOQ seit 2018. Mika wohnt mit seiner Lebensgefährtin und Hündin Luna in der Nähe von Hamburg. Er
+                arbeitet vor allem von Zuhause, gelegentlich auch im Hamburger Büro.
+            </p>
         </div>
-        <div class="info-note right">
-            <div class="info-note__content">
-                <h3 class="info-note__title">Mika Majoran</h3>
-                <p class="info-note__text"><span class="info-note__highlight">Bei INNOQ seit</span> 2018.</p>
-                <p class="info-note__text">
-                    <span class="info-note__highlight">Tätig als</span> Product Owner in der Produktentwicklung.
-                </p>
-                <p class="info-note__text">
-                    Bei INNOQ seit 2018. Mika wohnt mit seiner Lebensgefährtin und Hündin Luna in der Nähe von Hamburg.
-                    Er arbeitet vor allem von Zuhause, gelegentlich auch im Hamburger Büro.
-                </p>
-            </div>
-        </div>
-    </section>
-    <figure>
-        <img
-            class="content__image__big box-shadow-primary-25-right-bottom"
-            src="{{ path '/assets/bg-images/edition-02/edition02-canyon-01.jpg'}}"
-            alt="Bild Groß"
-        />
-    </figure>
+    </info-note>
 
     <p>{{text}}</p>
     <p>{{text}}</p>
+    <p>{{text}}</p>
+
     <super-quote>
         <blockquote class="superquote" itemscope itemtype="http://schema.org/Person">
             <span class="superquote__zigzag"></span>
@@ -62,77 +50,89 @@
             <span class="superquote__role" itemprop="jobTitle">Senior Consultant</span>
         </blockquote>
     </super-quote>
+
+    <figure>
+        <img src="{{ path '/assets/bg-images/edition-02/edition02-canyon-01.jpg'}}" alt="Bild Groß" />
+    </figure>
+
     <p>{{text}}</p>
 
     <section class="two-column-image-divider-asymmetric">
-        <figure class="two-column-image-divider-asymmetric__left-image">
+        <figure class="two-column-image-divider-asymmetric__left-image two-column-image-divider-asymmetric__left-image--hoch">
+            <img src="http://via.placeholder.com/600x800" alt="Bild mit Umrandung" />
+        </figure>
+        <figure class="two-column-image-divider-asymmetric__left-image two-column-image-divider-asymmetric__right-image--hoch">
+            <img src="http://via.placeholder.com/600x800" alt="Bild mit Umrandung" />
+        </figure>
+    </section>
+
+    <h3>{{headline}}</h3>
+    <p>{{text}}</p>
+
+    <section class="two-column-image-divider-asymmetric">
+        <figure class="two-column-image-divider-asymmetric__left-image two-column-image-divider-asymmetric__left-image--quer">
             <img src="http://via.placeholder.com/800x600" alt="Bild mit Umrandung" />
         </figure>
-        <figure class="two-column-image-divider-asymmetric__right-image">
+        <figure class="two-column-image-divider-asymmetric__left-image two-column-image-divider-asymmetric__right-image--quer">
             <img src="http://via.placeholder.com/800x600" alt="Bild mit Umrandung" />
         </figure>
     </section>
 
-    <h3>Ich bin eine Headline</h3>
-    <p>{{text}}</p>
     <p>{{text}}</p>
 
     <figure>
-        <img
-            class="content__image__big box-shadow-primary-25-right-bottom"
-            src="{{ path '/assets/bg-images/edition-02/edition02-canyon-01.jpg'}}"
-            alt="Bild Groß"
-        />
+        <img src="{{ path '/assets/bg-images/edition-02/edition02-canyon-01.jpg'}}" alt="Bild Groß" />
     </figure>
 
-    <h3>Ich bin eine Headline</h3>
+    <h3>{{headline}}</h3>
     <p>{{text}}</p>
     <p>{{text}}</p>
+
     <span class="zigzag"></span>
-
-    <section class="stripe stripe--gray">
-        <div class="container-xl container-vertical-spacing-xl">
-            <h2 class="teaser-section-heading">INNOQ Stories</h2>
-
-            <a href="#" class="case-teaser bg-image-edition-12">
-                <div class="case-teaser__wrapper">
-                    <div class="case-teaser__body">
-                        <div class="case-teaser__caption">INNOQ Story</div>
-                        <div class="case-teaser__header">
-                            <h2 class="punch-in bg-image-edition-12">INNOQ Story headline</h2>
-                        </div>
-                        <div class="case-teaser__text">
-                            lorem ipsum dolor sit amet, consectetur adipisicing elit. velit doloremque culpa minima vero
-                            quod, optio itaque nisi deserunt, debitis ad laudantium libero, quia nemo!
-                        </div>
-                        <div class="case-teaser__footer">
-                            <span class="link-teaser">mehr erfahren</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <a href="#" class="case-teaser bg-image-edition-12">
-                <div class="case-teaser__wrapper">
-                    <div class="case-teaser__body">
-                        <div class="case-teaser__caption">INNOQ Story</div>
-                        <div class="case-teaser__header">
-                            <h2 class="punch-in bg-image-edition-12">INNOQ Story headline</h2>
-                        </div>
-                        <div class="case-teaser__text">
-                            lorem ipsum dolor sit amet, consectetur adipisicing elit. velit doloremque culpa minima vero
-                            quod, optio itaque nisi deserunt, debitis ad laudantium libero, quia nemo!
-                        </div>
-                        <div class="case-teaser__footer">
-                            <span class="link-teaser">mehr erfahren</span>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
-            <div class="container-md text-align-center">
-                <a class="link-teaser" href="#">Mehr INNOQ Stories lesen</a>
-            </div>
-        </div>
-    </section>
 </main>
+
+<section class="stripe stripe--gray">
+    <div class="container-xl container-vertical-spacing-xl">
+        <h2 class="teaser-section-heading">INNOQ Stories</h2>
+
+        <a href="#" class="case-teaser bg-image-edition-12">
+            <div class="case-teaser__wrapper">
+                <div class="case-teaser__body">
+                    <div class="case-teaser__caption">INNOQ Story</div>
+                    <div class="case-teaser__header">
+                        <h2 class="punch-in bg-image-edition-12">INNOQ Story headline</h2>
+                    </div>
+                    <div class="case-teaser__text">
+                        lorem ipsum dolor sit amet, consectetur adipisicing elit. velit doloremque culpa minima vero
+                        quod, optio itaque nisi deserunt, debitis ad laudantium libero, quia nemo!
+                    </div>
+                    <div class="case-teaser__footer">
+                        <span class="link-teaser">mehr erfahren</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" class="case-teaser bg-image-edition-12">
+            <div class="case-teaser__wrapper">
+                <div class="case-teaser__body">
+                    <div class="case-teaser__caption">INNOQ Story</div>
+                    <div class="case-teaser__header">
+                        <h2 class="punch-in bg-image-edition-12">INNOQ Story headline</h2>
+                    </div>
+                    <div class="case-teaser__text">
+                        lorem ipsum dolor sit amet, consectetur adipisicing elit. velit doloremque culpa minima vero
+                        quod, optio itaque nisi deserunt, debitis ad laudantium libero, quia nemo!
+                    </div>
+                    <div class="case-teaser__footer">
+                        <span class="link-teaser">mehr erfahren</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+
+        <div class="container-md text-align-center">
+            <a class="link-teaser" href="#">Mehr INNOQ Stories lesen</a>
+        </div>
+    </div>
+</section>
