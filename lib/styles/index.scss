@@ -22,6 +22,7 @@
 // SUBATOMS
 //
 @import "../components/06-subatoms/bg-images/bg-images";
+@import "../components/06-subatoms/box-shadow/box-shadow";
 
 //
 // ATOMS
@@ -87,6 +88,7 @@
 @import "../components/04-molecules/article&blog-post-elements/cta-section/cta-section";
 @import "../components/04-molecules/article&blog-post-elements/footnote-section/footnote-section";
 @import "../components/04-molecules/article&blog-post-elements/info-box/info-box";
+@import "../components/04-molecules/article&blog-post-elements/info-note/info-note";
 @import "../components/04-molecules/article&blog-post-elements/quotes/long-quote/long-quote";
 @import "../components/04-molecules/article&blog-post-elements/reference/reference";
 @import "../components/04-molecules/article&blog-post-elements/share-section/share-section";
@@ -146,6 +148,7 @@
 @import "../components/04-molecules/visual-elements/visual-divider/wall-note/wall-note";
 @import "../components/04-molecules/visual-elements/visual-divider/triplet-divider/triplet-divider";
 @import "../components/04-molecules/visual-elements/visual-divider/two-column-image-divider/two-column-image-divider";
+@import "../components/04-molecules/visual-elements/visual-divider/two-column-image-divider-asymmetric/two-column-image-divider-asymmetric";
 @import "../components/04-molecules/visual-elements/visual-divider/icon-divider/icon-divider";
 
 // Toolbar
@@ -162,6 +165,7 @@
 // Header
 @import "../components/03-organisms/header/article-intro/article-intro";
 @import "../components/03-organisms/header/claim-header/claim-header";
+@import "../components/03-organisms/header/gradient-header/gradient-header";
 @import "../components/03-organisms/header/image-header/image-header";
 @import "../components/03-organisms/header/landing-page-header/landing-page-header";
 @import "../components/03-organisms/header/staff-header/staff-header";
@@ -208,6 +212,7 @@
 @import "../components/01-pages/service-pages/service-detail-page/service-detail-page";
 @import "../components/01-pages/service-pages/services-overview-page/services-overview-page";
 @import "../components/01-pages/staff-page/staff-page";
+@import "../components/01-pages/story-page/story-page";
 @import "../components/01-pages/talk-page/talk-page";
 @import "../components/01-pages/topic-page/topic-page";
 @import "../components/01-pages/training-pages/booking-page/booking-page";
