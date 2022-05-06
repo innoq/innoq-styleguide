@@ -1,0 +1,35 @@
+.info-note {
+  @extend %box-shadow-primary-25-right-bottom;
+
+  max-width: $grid-page-layout-main-column-width/2; //25rem
+
+  &__content {
+    padding: $spacer-sm $spacer-sm $spacer-base $spacer-md;
+  }
+
+  &__title {
+    @extend %heading-font-bold;
+
+    margin-bottom: $spacer-base;
+    color: $info-note-title-color;
+    font-size: $font-size-base;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @extend %heading-font-regular;
+
+    color: $info-note-text-color;;
+    font-size: $font-size-xs;
+    text-align: left;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &__highlight {
+    @extend %heading-font-bold;
+  }
+}
