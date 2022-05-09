@@ -1,8 +1,18 @@
 .story-page {
   @extend %article-layout;
 
+  align-items: center;
+
   .zigzag {
     width: 40%;
     margin: $spacer-xl auto 0 auto;
+  }
+
+  img {
+    @extend %box-shadow-primary-25-right-bottom;
+  }
+
+  figure {
+    @extend %container-vertical-spacing-lg;
   }
 }
