@@ -688,6 +688,18 @@ h6 > a:focus:not([class]),
   background-image: url("/assets/bg-images/general/visual-culture-11.jpg");
 }
 
+.bg-image-culture-12 {
+  background-blend-mode: multiply;
+  background-color: #d8d8d8;
+  background-image: url("/assets/bg-images/general/visual-culture-12.jpg");
+}
+
+.bg-image-culture-13 {
+  background-blend-mode: multiply;
+  background-color: #80a0a9;
+  background-image: url("/assets/bg-images/general/visual-culture-13.jpg");
+}
+
 .bg-image-staff-01 {
   background-blend-mode: multiply;
   background-color: #d8d8d8;
