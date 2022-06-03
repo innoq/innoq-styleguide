@@ -1,36 +1,33 @@
-const EVENT_NAME = 'embeds-consent'
-const STORAGE = 'consent-to-embeds'
-
 export default class WallOfConsent extends HTMLElement {
   connectedCallback () {
     this.content = document.createElement('div')
 
-    if (localStorage.getItem(STORAGE) === '1') {
+    if (localStorage.getItem(this.localStorageName) === '1') {
       this.revealContent()
     }
 
     this.checkbox.addEventListener('change', this.onToggle.bind(this))
     this.toggleContent = this.toggleContent.bind(this)
-    document.body.addEventListener(EVENT_NAME, this.toggleContent)
+    document.body.addEventListener(this.eventName, this.toggleContent)
   }
 
   disconnectedCallback () {
-    document.body.removeEventListener(EVENT_NAME, this.toggleContent)
+    document.body.removeEventListener(this.eventName, this.toggleContent)
   }
 
   onToggle (event) {
     if (event.target.checked) {
-      localStorage.setItem(STORAGE, '1')
+      localStorage.setItem(this.localStorageName, '1')
     } else {
-      localStorage.removeItem(STORAGE)
+      localStorage.removeItem(this.localStorageName)
     }
 
-    const ev = new Event(EVENT_NAME)
+    const ev = new Event(this.eventName)
     document.body.dispatchEvent(ev)
   }
 
   toggleContent () {
-    if (localStorage.getItem(STORAGE) === '1') {
+    if (localStorage.getItem(this.localStorageName) === '1') {
       this.revealContent()
     } else {
       this.removeContent()
@@ -61,5 +58,13 @@ export default class WallOfConsent extends HTMLElement {
 
   get checkbox () {
     return this.querySelector('input[type=checkbox]')
+  }
+
+  get eventName () {
+    return `embeds-consent-from-${this.getAttribute('type')}`
+  }
+
+  get localStorageName () {
+    return `consent-to-embeds-from-${this.getAttribute('type')}`
   }
 }
