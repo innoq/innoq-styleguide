@@ -3521,6 +3521,7 @@ super-quote > blockquote > p,
 }
 wall-of-consent {
   display: block;
+  width: 100%;
   margin-bottom: 1rem;
 }
 
