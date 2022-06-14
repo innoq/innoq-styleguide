@@ -1,79 +1,4 @@
-// icon font
-%icon,
 .icon {
-  position: relative;
-  top: 2px;
-  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
-  font-family: icons;
-  font-size: 0.8em;
-  // Better Font Rendering
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-text-stroke-width: 1px;
-  text-transform: none;
-}
-
-.icon-search {
-  &::before {
-    content: $icon-search;
-  }
-}
-
-.icon-chevron-down {
-  &::before {
-    content: $icon-chevron-down;
-  }
-}
-
-.icon-chevron-up {
-  &::before {
-    content: $icon-chevron-up;
-  }
-}
-
-.icon-chevron-right {
-  &::before {
-    content: $icon-chevron-right;
-  }
-}
-
-.icon-close {
-  &::before {
-    content: $icon-close;
-  }
-}
-
-.icon-info {
-  &::before {
-    content: $icon-info;
-  }
-}
-
-.icon-location {
-  &::before {
-    content: $icon-location;
-  }
-}
-
-.icon-chevron-2-down {
-  &::before {
-    content: $icon-chevron-2-down;
-  }
-}
-
-.icon-location-filled {
-  &::before {
-    content: $icon-location-filled;
-  }
-}
-
-// SVG icons
-// TODO: Clean up svg icon classes after removing icon font
-.icon-svg {
   display: inline-flex;
   width: $spacer-md;
   height: $spacer-md;
@@ -84,7 +9,7 @@
 }
 
 //Sizes
-.icon-svg--small {
+.icon--small {
   width: $spacer-sm;
   height: $spacer-sm;
 }
@@ -178,6 +103,18 @@
   mask-image: asset-url("icons/arrow-drawn-downright-alternative.svg");
 }
 
+.icon-chevron-down {
+  mask-image: asset-url("icons/chevron-down.svg");
+}
+
+.icon-chevron-up {
+  mask-image: asset-url("icons/chevron-up.svg");
+}
+
+.icon-chevron-down-filled {
+  mask-image: asset-url("icons/chevron-down-filled.svg");
+}
+
 // Interface Icons
 .icon-bookshelf {
   mask-image: asset-url("icons/bookshelf.svg");
@@ -185,6 +122,10 @@
 
 .icon-certificate {
   mask-image: asset-url("icons/certificate.svg");
+}
+
+.icon-close {
+  mask-image: asset-url("icons/close.svg");
 }
 
 .icon-email {
@@ -207,6 +148,10 @@
   mask-image: asset-url("icons/group-idea.svg");
 }
 
+.icon-info {
+  mask-image: asset-url("icons/info-bubble.svg");
+}
+
 .icon-interactive {
   mask-image: asset-url("icons/interactive.svg");
 }
@@ -215,8 +160,16 @@
   mask-image: asset-url("icons/learning.svg");
 }
 
+.icon-location {
+  mask-image: asset-url("icons/pin.svg");
+}
+
 .icon-rooms {
   mask-image: asset-url("icons/rooms.svg");
+}
+
+.icon-search {
+  mask-image: asset-url("icons/search.svg");
 }
 
 .icon-support {

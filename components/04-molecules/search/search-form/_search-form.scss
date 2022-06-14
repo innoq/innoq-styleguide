@@ -28,7 +28,11 @@
 .search-form__btn {
   border: 0;
   background-color: transparent;
-  color: $search-field-color;
+
+  .icon-search {
+    width: 1rem;
+    height: 1rem;
+  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -36,7 +40,10 @@
     font-size: $font-size-xl;
   }
 
-  .search-form__input {
-    padding: $spacer-sm;
+  .search-form__btn {
+    .icon-search {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 }

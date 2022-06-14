@@ -56,14 +56,6 @@ $navbar-primary-font-size: ms(3);
     left: 50%;
     width: 50%;
     padding-top: 3 * $navbar-padding;
-
-    // &[data-origin='right'],
-    // &[data-origin='left'] {
-    //   position: absolute;
-    //   left: 50%;
-    //   padding-top: 3 * $navbar-padding;
-    //   width: 50%;
-    // }
   }
 
   .dropdown__list-wrapper--navbar {
@@ -77,10 +69,8 @@ $navbar-primary-font-size: ms(3);
     }
   }
 
-  .dropdown__icon--navbar {
-    &.dropdown__icon--enhanced::before {
-      content: $icon-chevron-right;
-    }
+  .icon-chevron-down-filled {
+    transform: rotate(-90deg);
   }
 
   .dropdown__toggle--navbar {

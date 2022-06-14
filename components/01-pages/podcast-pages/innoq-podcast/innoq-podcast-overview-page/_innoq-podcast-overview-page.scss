@@ -4,7 +4,7 @@
   }
 
   .toolbar__link {
-    .icon-svg {
+    .icon {
       background: $brand-secondary;
     }
 
@@ -12,7 +12,7 @@
     &:focus {
       color: $brand-white;
 
-      .icon-svg {
+      .icon {
         background: $brand-white;
       }
     }

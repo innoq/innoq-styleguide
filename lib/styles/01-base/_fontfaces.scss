@@ -64,16 +64,3 @@ $cachebuster: "2"; // Please increment if you changed one (or more) of the font 
   font-family: HackRegular;
   src: url("#{$cdn}/hack-regular.woff2?cachebuster=#{$cachebuster}") format("woff2");
 }
-
-// Icons
-
-// Fontface definitions for all icons
-//
-@font-face {
-  font-display: swap;
-  font-family: icons;
-  font-style: normal;
-  font-weight: normal;
-  src: url("#{$cdn}/icomoon.woff2?cachebuster=#{$cachebuster}") format("woff2"),
-    url("#{$cdn}/icomoon.svg?cachebuster=#{$cachebuster}#icons") format("svg");
-}

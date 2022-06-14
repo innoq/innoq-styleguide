@@ -114,8 +114,8 @@ $author-text-margin: 0.18rem;
 .author-bio__social-profile {
   @extend %link-unstyled;
 
-  .icon-svg:hover,
-  .icon-svg:focus {
+  .icon:hover,
+  .icon:focus {
     background: $author-bio-link-background-color;
   }
 

@@ -21,7 +21,7 @@
   color: $toolbar-link-color;
   transition: standard-transition(color);
 
-  .icon-svg {
+  .icon {
     margin-right: $spacer-xxs;
     transition: standard-transition(background);
   }
@@ -30,7 +30,7 @@
   &:focus {
     color: $toolbar-link-hover-color;
 
-    .icon-svg {
+    .icon {
       background: $toolbar-link-hover-color;
     }
   }
