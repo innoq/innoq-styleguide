@@ -54,12 +54,8 @@
     padding-top: $spacer-lg;
     border-top: 1px solid $staff-header-bio-color;
 
-    .icon {
-      font-size: ms(7);
-    }
-
-    .icon-svg:hover,
-    .icon-svg:focus {
+    .icon:hover,
+    .icon:focus {
       background: $staff-header-icon-hover-color;
     }
   }

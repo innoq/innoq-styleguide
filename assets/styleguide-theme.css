@@ -106,13 +106,6 @@
   font-family: HackRegular;
   src: url("https://www.innoq.com/assets/hack-regular.woff2?cachebuster=2") format("woff2");
 }
-@font-face {
-  font-display: swap;
-  font-family: icons;
-  font-style: normal;
-  font-weight: normal;
-  src: url("https://www.innoq.com/assets/icomoon.woff2?cachebuster=2") format("woff2"), url("https://www.innoq.com/assets/icomoon.svg?cachebuster=2#icons") format("svg");
-}
 .link-unstyled {
   border-bottom: 0;
   color: inherit;

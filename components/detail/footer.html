@@ -478,13 +478,12 @@
   <span class="hljs-attribute">text-transform</span>: uppercase;
 
   &amp;<span class="hljs-selector-pseudo">::before</span> {
-    <span class="hljs-keyword">@extend</span> %icon;
-
-    <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">top</span>: -<span class="hljs-number">1px</span>;
+    <span class="hljs-attribute">display</span>: inline-block;
+    <span class="hljs-attribute">width</span>: <span class="hljs-variable">$font-size-xxs</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-variable">$font-size-xxs</span>;
     <span class="hljs-attribute">margin-right</span>: <span class="hljs-variable">$spacer-xxs</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$footer-heading-color</span>;
-    <span class="hljs-attribute">content</span>: <span class="hljs-variable">$icon-location-filled</span>;
+    <span class="hljs-attribute">content</span>: asset-url(<span class="hljs-string">&quot;icons/pin.svg&quot;</span>);
   }
 }
 
@@ -7537,8 +7536,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-10T13:53:45.284Z">
-                                6/10/2022
+                            <time datetime="2022-06-15T12:24:16.543Z">
+                                6/15/2022
                             </time>
                         
                     </dd>

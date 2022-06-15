@@ -185,7 +185,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Corresponding Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;toggle-unique-name&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only dropdown__checkbox&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;toggle-unique-name&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown__toggle&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-2-down dropdown__icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down-filled icon--brand-secondary&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only dropdown__toggle__expanded-text&quot;</span>&gt;</span>Untermenü einklappen<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only dropdown__toggle__collapsed-text&quot;</span>&gt;</span>Untermenü ausklappen<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
@@ -210,7 +210,7 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Corresponding Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;button&quot;</span> <span class="hljs-attr">aria-haspopup</span>=<span class="hljs-string">&quot;true&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;toggle-unique-name&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only dropdown__checkbox&quot;</span> /&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;toggle-unique-name&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;dropdown__toggle&quot;</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-2-down dropdown__icon&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down-filled icon--brand-secondary&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only dropdown__toggle__expanded-text&quot;</span>&gt;</span>Untermenü einklappen<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;sr-only dropdown__toggle__collapsed-text&quot;</span>&gt;</span>Untermenü ausklappen<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
@@ -263,14 +263,20 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-comment">// .dropdown {</span>
-<span class="hljs-comment">// display: inline-block;</span>
-<span class="hljs-comment">// position: relative; // positioning must happen through parent container</span>
-<span class="hljs-comment">// }</span>
-
-<span class="hljs-selector-class">.dropdown__toggle</span> {
+                                <pre><span class="hljs-selector-class">.dropdown__toggle</span> {
   <span class="hljs-attribute">display</span>: inline-block;
   <span class="hljs-attribute">cursor</span>: pointer;
+
+  <span class="hljs-selector-class">.icon-chevron-down-filled</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-variable">$spacer-xs</span>;
+    <span class="hljs-attribute">height</span>: <span class="hljs-variable">$spacer-xs</span>;
+    <span class="hljs-attribute">transition</span>: standard-transition(background);
+
+    &amp;<span class="hljs-selector-pseudo">:hover</span>,
+    &amp;<span class="hljs-selector-pseudo">:focus</span> {
+      <span class="hljs-attribute">background</span>: <span class="hljs-variable">$sharing-interaction-color</span>;
+    }
+  }
 }
 
 <span class="hljs-selector-class">.dropdown__list-wrapper</span> {
@@ -7282,8 +7288,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-10T13:53:45.284Z">
-                                6/10/2022
+                            <time datetime="2022-06-15T12:24:16.543Z">
+                                6/15/2022
                             </time>
                         
                     </dd>

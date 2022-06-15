@@ -187,10 +187,10 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__teaser&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__teaser__left&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__teaser__heading&quot;</span>&gt;</span>Ich bin eine Infobox<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-info&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-info&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__teaser__right&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon infobox__teaser__chevron&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down icon--small&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
@@ -230,10 +230,10 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__teaser&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__teaser__left&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__teaser__heading&quot;</span>&gt;</span>Ich bin eine Infobox<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-info&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-info&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;infobox__teaser__right&quot;</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon infobox__teaser__chevron&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down icon--small&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
@@ -319,14 +319,10 @@ info-box {
   <span class="hljs-attribute">cursor</span>: pointer;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xs</span>;
 
-  <span class="hljs-selector-class">.icon</span> {
-    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">10px</span>;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$info-box-icon-font-size</span>;
-  }
-
   <span class="hljs-selector-class">.infobox__teaser__heading</span> {
     <span class="hljs-attribute">display</span>: inline-flex;
     <span class="hljs-attribute">align-items</span>: center;
+    <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-xs</span>;
   }
 
   <span class="hljs-selector-class">.infobox__teaser__right</span> {
@@ -336,11 +332,13 @@ info-box {
   <span class="hljs-selector-class">.infobox__teaser__left</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-sm</span> <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-sm</span> <span class="hljs-variable">$spacer-md</span>;
   }
-}
 
-<span class="hljs-selector-class">.infobox__teaser__chevron</span> {
-  &amp;<span class="hljs-selector-pseudo">::before</span> {
-    <span class="hljs-attribute">content</span>: <span class="hljs-variable">$icon-chevron-down</span>;
+  <span class="hljs-selector-class">.icon-chevron-down</span> {
+    <span class="hljs-attribute">background</span>: <span class="hljs-variable">$infobox-teaser-text-color-closed</span>;
+  }
+
+  <span class="hljs-selector-class">.icon-info</span> {
+    <span class="hljs-attribute">background</span>: <span class="hljs-variable">$infobox-teaser-text-color-closed</span>;
   }
 }
 
@@ -354,8 +352,13 @@ info-box {
       <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$infobox-teaser-background-color-open</span>;
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$infobox-teaser-text-color-open</span>;
 
-      <span class="hljs-selector-class">.infobox__teaser__chevron</span><span class="hljs-selector-pseudo">::before</span> {
-        <span class="hljs-attribute">content</span>: <span class="hljs-variable">$icon-chevron-up</span>;
+      <span class="hljs-selector-class">.icon-chevron-down</span> {
+        <span class="hljs-attribute">background</span>: <span class="hljs-variable">$infobox-teaser-text-color-open</span>;
+        <span class="hljs-attribute">transform</span>: rotate(<span class="hljs-number">180deg</span>);
+      }
+
+      <span class="hljs-selector-class">.icon-info</span> {
+        <span class="hljs-attribute">background</span>: <span class="hljs-variable">$infobox-teaser-text-color-open</span>;
       }
     }
 
@@ -392,7 +395,7 @@ info-box {
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.5 KB</span>
+                    <span class="Meta-value">1.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -7344,8 +7347,8 @@ info-box {
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-10T13:53:45.284Z">
-                                6/10/2022
+                            <time datetime="2022-06-15T12:24:16.543Z">
+                                6/15/2022
                             </time>
                         
                     </dd>
