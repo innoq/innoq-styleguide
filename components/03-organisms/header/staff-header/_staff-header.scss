@@ -72,7 +72,7 @@
 @media screen and (min-width: $grid-breakpoint-lg) {
   .staff-header {
     display: grid;
-    grid-template-columns: auto $default-page-layout-content-width-xl / 3 $default-page-layout-content-width-xl / 3 auto;
+    grid-template-columns: auto calc($default-page-layout-content-width-xl / 3) calc($default-page-layout-content-width-xl / 3) auto;
     grid-template-rows: auto;
   }
 
@@ -100,7 +100,7 @@
   }
 
   .staff-header-image {
-    min-width: $default-page-layout-content-width-xl / 3;
+    min-width: calc($default-page-layout-content-width-xl / 3);
     // Fix for bug in mobile Safari
     height: auto;
     min-height: auto;

@@ -49,8 +49,8 @@
   }
 
   .image-divider-right-image {
-    max-width: $default-page-layout-content-width-xl / 2;
-    max-height: $default-page-layout-content-width-xl / 2;
+    max-width: calc($default-page-layout-content-width-xl / 2);
+    max-height: calc($default-page-layout-content-width-xl / 2);
   }
 
   .image-divider-right-content-textbox__text {

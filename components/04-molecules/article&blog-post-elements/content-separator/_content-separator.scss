@@ -3,7 +3,7 @@
 //
 
 // Component specific variables
-$border-position: $font-size-base / 2;
+$border-position: calc($font-size-base / 2);
 
 // Component definition
 .content-separator {

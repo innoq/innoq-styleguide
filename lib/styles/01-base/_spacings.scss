@@ -42,7 +42,7 @@ $grid-page-layout-content-width-lg: 60%;
 $grid-page-layout-content-width-xl: 50rem; // 800px;
 
 // Layout-width without content and column gaps devided by 2 (left and right)
-$grid-page-layout-leftright-width: (($grid-page-layout-width - $grid-page-layout-content-width-xl) / 2) -
+$grid-page-layout-leftright-width: calc($grid-page-layout-width - $grid-page-layout-content-width-xl / 2) -
   (3 * $grid-page-layout-column-gap);
 
 // Navbar
