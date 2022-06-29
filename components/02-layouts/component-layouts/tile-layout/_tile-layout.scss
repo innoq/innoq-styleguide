@@ -1,10 +1,12 @@
 .tile-grid-sm {
   display: grid;
+  width: 100%;
   grid-gap: $spacer-sm;
 }
 
 .tile-grid-md {
   display: grid;
+  width: 100%;
   grid-gap: $spacer-sm;
 }
 
