@@ -1,7 +1,7 @@
 .info-note {
   @extend %box-shadow-primary-25-right-bottom;
 
-  max-width: $grid-page-layout-main-column-width/2; //25rem
+  max-width: calc($grid-page-layout-main-column-width/2); //25rem
 
   &__content {
     padding: $spacer-sm $spacer-sm $spacer-base $spacer-md;

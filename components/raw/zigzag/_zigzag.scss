@@ -1,5 +1,5 @@
 $zzheight: 10px;
-$zzhalfheight: ($zzheight / 2);
+$zzhalfheight: calc($zzheight / 2);
 $zzthickness: 130%; // increase to make the line thicker
 $zzoffset: 4px;
 $zzdegree: 135deg;

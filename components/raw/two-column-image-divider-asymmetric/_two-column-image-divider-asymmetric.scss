@@ -28,7 +28,7 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
   }
 
   .two-column-image-divider-asymmetric__left-image--hoch {
-    height: $two-column-image-divider-height-lg / 1.3;
+    height: calc($two-column-image-divider-height-lg / 1.3);
   }
 
   .two-column-image-divider-asymmetric__right-image--hoch {
@@ -36,7 +36,7 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
   }
 
   .two-column-image-divider-asymmetric__left-image--quer {
-    height: $two-column-image-divider-height-md / 1.2;
+    height: calc($two-column-image-divider-height-md / 1.2);
   }
 
   .two-column-image-divider-asymmetric__right-image--quer {

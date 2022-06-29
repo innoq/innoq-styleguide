@@ -377,7 +377,7 @@
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg</span>) {
   <span class="hljs-selector-class">.staff-header</span> {
     <span class="hljs-attribute">display</span>: grid;
-    grid-template-<span class="hljs-attribute">columns</span>: auto <span class="hljs-variable">$default-page-layout-content-width-xl</span> / <span class="hljs-number">3</span> <span class="hljs-variable">$default-page-layout-content-width-xl</span> / <span class="hljs-number">3</span> auto;
+    grid-template-<span class="hljs-attribute">columns</span>: auto calc(<span class="hljs-variable">$default-page-layout-content-width-xl</span> / <span class="hljs-number">3</span>) calc(<span class="hljs-variable">$default-page-layout-content-width-xl</span> / <span class="hljs-number">3</span>) auto;
     grid-template-rows: auto;
   }
 
@@ -405,7 +405,7 @@
   }
 
   <span class="hljs-selector-class">.staff-header-image</span> {
-    <span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$default-page-layout-content-width-xl</span> / <span class="hljs-number">3</span>;
+    <span class="hljs-attribute">min-width</span>: calc(<span class="hljs-variable">$default-page-layout-content-width-xl</span> / <span class="hljs-number">3</span>);
     <span class="hljs-comment">// Fix for bug in mobile Safari</span>
     <span class="hljs-attribute">height</span>: auto;
     <span class="hljs-attribute">min-height</span>: auto;
@@ -428,7 +428,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.1 KB</span>
+                    <span class="Meta-value">2.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -7380,8 +7380,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-15T12:24:16.543Z">
-                                6/15/2022
+                            <time datetime="2022-06-29T16:21:21.364Z">
+                                6/29/2022
                             </time>
                         
                     </dd>

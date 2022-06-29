@@ -8,11 +8,6 @@ $big-content-teaser-height-md: ms(38);
   min-height: $big-content-teaser-height-sm;
   justify-content: center;
   background-blend-mode: multiply;
-  // IE11 Hack
-  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-    max-width: 100%;
-    height: 100%;
-  }
 }
 
 a.big-content-teaser {
@@ -24,11 +19,6 @@ a.big-content-teaser {
   flex-direction: column;
   justify-content: space-between;
   padding: $spacer-lg $spacer-base;
-  // IE11 Hack
-  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-    width: 100%;
-    height: 100%;
-  }
 }
 
 .big-content-teaser__headline {

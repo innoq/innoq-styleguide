@@ -2801,8 +2801,8 @@ clickable-area {
 }
 .author-bio.author-bio--long {
   padding: 2.0736rem;
-  padding-top: 4.7150418534rem;
-  margin-top: 3.7150418534rem;
+  padding-top: 3.7216rem;
+  margin-top: 2.7216rem;
   margin-bottom: 3.919104rem;
   background-color: #f7f7f7;
 }
@@ -2905,14 +2905,14 @@ clickable-area {
 }
 .author-bio--long .author-bio__image {
   position: absolute;
-  top: -3.7150418534rem;
-  left: calc(50% - 3.7150418534rem);
+  top: -2.7216rem;
+  left: calc(50% - 2.7216rem);
   margin-right: 0;
 }
 
 @media screen and (min-width: 48rem) {
   .author-bio.author-bio--long {
-    margin-top: 5.1550418534rem;
+    margin-top: 4.1616rem;
   }
 }
 @media screen and (min-width: 90.25rem) {
@@ -2920,7 +2920,7 @@ clickable-area {
     width: 49%;
   }
   .author-bio.author-bio--long {
-    margin-top: 5.1550418534rem;
+    margin-top: 4.1616rem;
   }
 }
 .conclusion {
@@ -5418,12 +5418,6 @@ wall-of-consent {
           justify-content: center;
   background-blend-mode: multiply;
 }
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-  .big-content-teaser {
-    max-width: 100%;
-    height: 100%;
-  }
-}
 
 .big-content-teaser__content {
   display: -webkit-box;
@@ -5437,12 +5431,6 @@ wall-of-consent {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 2.985984rem 2.0736rem;
-}
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-  .big-content-teaser__content {
-    width: 100%;
-    height: 100%;
-  }
 }
 
 .big-content-teaser__headline {
@@ -7958,11 +7946,13 @@ wall-of-consent {
 }
 .tile-grid-sm {
   display: grid;
+  width: 100%;
   grid-gap: 1rem;
 }
 
 .tile-grid-md {
   display: grid;
+  width: 100%;
   grid-gap: 1rem;
 }
 
@@ -8179,7 +8169,7 @@ main > .page-layout--grid:first-child {
       margin-left: 0;
       grid-column-gap: 1rem;
       grid-template-areas: ". left center right .";
-      grid-template-columns: 1fr 17.125rem 50rem 17.125rem 1fr;
+      grid-template-columns: 1fr 62.25rem 50rem 62.25rem 1fr;
       /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
       grid-template-rows: auto;
     }
