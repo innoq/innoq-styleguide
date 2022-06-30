@@ -1,0 +1,22 @@
+status: ready
+context:
+  code: |
+    pick(:love) do |something|
+        n.times do
+            result = play(something)
+            result.publish
+        end
+    end
+  text:
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+    sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et.
+    magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+  text_short:
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+    sit amet, consetetur sadipscing elitr.
+  headline: Ich bin eine Headline
+  listitem: Ich bin ein kleines Listitem
+  quote:
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+    sit amet, consetetur sadipscing elitr.

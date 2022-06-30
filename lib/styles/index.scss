@@ -185,6 +185,7 @@
 @import "../components/02-layouts/component-layouts/breakout";
 @import "../components/02-layouts/component-layouts/stripe/stripe";
 
+@import "../components/02-layouts/page-layouts/article-layout/article-layout";
 @import "../components/02-layouts/page-layouts/main-layout/main-layout";
 @import "../components/02-layouts/page-layouts/page-layout-default";
 @import "../components/02-layouts/page-layouts/page-layout-grid";
@@ -194,7 +195,7 @@
 // PAGES
 //
 @import "../components/01-pages/aggregator-page/aggregator-page";
-@import "../components/01-pages/article-pages/article-page-default/article-page-default";
+@import "../components/01-pages/article-page-default/article-page-default";
 @import "../components/01-pages/case-study-pages/case-study-overview/case-study-overview";
 @import "../components/01-pages/case-study-pages/case-study-page/case-study-page";
 @import "../components/01-pages/artist-collabo-page/artist-collabo-page";

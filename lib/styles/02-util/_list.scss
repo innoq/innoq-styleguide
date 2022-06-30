@@ -1,7 +1,6 @@
 // Lists
 %list-unstyled {
   padding: 0;
-  margin-top: 0;
   list-style: none;
   list-style-type: none;
 }
@@ -9,13 +8,11 @@
 // Should only be used, when placeholder is overridden by normalize.
 @mixin list-unstyled {
   padding: 0;
-  margin-top: 0;
   list-style: none;
 }
 
 %unsorted-list {
   padding: 0;
-  margin-top: 0;
   font-size: $font-size-base;
   line-height: $paragraph-line-height;
   list-style-position: outside;
