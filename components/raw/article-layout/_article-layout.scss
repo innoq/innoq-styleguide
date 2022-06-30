@@ -51,9 +51,11 @@
       pre,
       code,
       wall-of-consent,
+      hr,
       .author-bio,
       .author-section,
       .footnote-section,
+      .footnotes,
       >.breakout__content,
       .zigzag {
         grid-column: 5 / 6;
@@ -62,7 +64,8 @@
 
       // Centered elements that are a bit wider than the textwurst
       figure,
-      .two-column-image-divider-asymmetric {
+      .two-column-image-divider-asymmetric,
+      .case-teaser {
         grid-column: 3/ 8;
       }
 
