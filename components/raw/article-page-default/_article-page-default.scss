@@ -1,3 +1,3 @@
-html {
-scroll-behavior: smooth;
+.article-page-default {
+  @extend %article-layout;
 }

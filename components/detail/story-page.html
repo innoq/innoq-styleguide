@@ -503,77 +503,21 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-selector-class">.story-page</span> {
-  <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">flex-direction</span>: column;
+  <span class="hljs-keyword">@extend</span> %article-layout;
+
   <span class="hljs-attribute">align-items</span>: center;
-  <span class="hljs-attribute">justify-content</span>: center;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-sm</span> <span class="hljs-variable">$spacer-base</span> <span class="hljs-variable">$spacer-sm</span>;
-
-  &gt; * {
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
-  }
-
-  &gt; * + * {
-    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
-  }
-
-  super-<span class="hljs-selector-tag">quote</span>,
-  long-<span class="hljs-selector-tag">quote</span> {
-    <span class="hljs-keyword">@extend</span> %container-vertical-spacing-lg;
-
-    <span class="hljs-attribute">max-width</span>: <span class="hljs-number">45rem</span>;
-    justify-self: center;
-  }
-
-  <span class="hljs-selector-tag">figure</span> {
-    <span class="hljs-keyword">@extend</span> %container-vertical-spacing-lg;
-
-    <span class="hljs-selector-tag">img</span> {
-      <span class="hljs-keyword">@extend</span> %box-shadow-primary-<span class="hljs-number">25</span>-right-bottom;
-    }
-  }
 
   <span class="hljs-selector-class">.zigzag</span> {
     <span class="hljs-attribute">width</span>: <span class="hljs-number">40%</span>;
     <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$spacer-xl</span> auto <span class="hljs-number">0</span> auto;
   }
-}
 
-<span class="hljs-keyword">@supports</span> (<span class="hljs-attribute">display</span>: <span class="hljs-attribute">grid</span>) {
-  <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-xl</span>) {
-    <span class="hljs-selector-class">.story-page</span> {
-      <span class="hljs-attribute">display</span>: grid;
-      <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$spacer-xxl</span>;
-      grid-template-<span class="hljs-attribute">columns</span>: <span class="hljs-number">1</span>fr <span class="hljs-number">11rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">2rem</span> <span class="hljs-number">50rem</span> <span class="hljs-number">2rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">11rem</span> <span class="hljs-number">1</span>fr; <span class="hljs-comment">//magic numbers</span>
-      grid-template-rows: auto;
+  <span class="hljs-selector-tag">img</span> {
+    <span class="hljs-keyword">@extend</span> %box-shadow-primary-<span class="hljs-number">25</span>-right-bottom;
+  }
 
-      <span class="hljs-selector-tag">h1</span>,
-      <span class="hljs-selector-tag">h2</span>,
-      <span class="hljs-selector-tag">h3</span>,
-      <span class="hljs-selector-tag">h4</span>,
-      <span class="hljs-selector-tag">h5</span>,
-      <span class="hljs-selector-tag">h6</span>,
-      <span class="hljs-selector-tag">p</span>,
-      <span class="hljs-selector-tag">ul</span>,
-      <span class="hljs-selector-tag">ol</span>,
-      <span class="hljs-selector-tag">table</span>,
-      super-<span class="hljs-selector-tag">quote</span>,
-      long-<span class="hljs-selector-tag">quote</span>,
-      <span class="hljs-selector-class">.zigzag</span> {
-        grid-column: <span class="hljs-number">5</span> / <span class="hljs-number">6</span>;
-      }
-
-      <span class="hljs-selector-class">.info-note</span> {
-        <span class="hljs-attribute">align-self</span>: start;
-        grid-column: <span class="hljs-number">7</span> / <span class="hljs-number">9</span>;
-        grid-row: <span class="hljs-number">2</span>/ <span class="hljs-number">100</span>;
-      }
-
-      <span class="hljs-selector-tag">figure</span>,
-      <span class="hljs-selector-class">.two-column-image-divider-asymmetric</span> {
-        grid-column: <span class="hljs-number">3</span>/ <span class="hljs-number">8</span>;
-      }
-    }
+  <span class="hljs-selector-tag">figure</span> {
+    <span class="hljs-keyword">@extend</span> %container-vertical-spacing-lg;
   }
 }
 </pre>
@@ -592,7 +536,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.3 KB</span>
+                    <span class="Meta-value">258 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -759,20 +703,6 @@
     
         
         
-            
-            
-            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-article-pages">
-                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-article-pages-items">
-                    Article Pages
-                </button>
-                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-article-pages-items">
-                
-                
-                
-                
-    
-        
-        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
@@ -803,12 +733,6 @@
 
             </a>
         </li>
-        
-    
-
-                </ul>
-            </li>
-            
         
     
         
@@ -1976,6 +1900,40 @@
                 
                 
                 
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./article-layout.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="article-layout"
+                data-handle="article-layout"
+            >
+                <span>Article Layout</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
     
         
         
@@ -7544,8 +7502,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-06-29T16:21:21.364Z">
-                                6/29/2022
+                            <time datetime="2022-06-30T14:04:53.298Z">
+                                6/30/2022
                             </time>
                         
                     </dd>

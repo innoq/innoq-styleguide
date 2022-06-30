@@ -1,0 +1,85 @@
+%article-layout {
+  display: flex;
+  flex-direction: column;
+  padding: 0 $spacer-md $spacer-base $spacer-sm;
+
+  > * {
+    margin-bottom: 0;
+  }
+
+  > * + * {
+    margin-top: $spacer-base;
+  }
+
+  blockquote,
+  super-quote,
+  long-quote {
+    @extend %container-vertical-spacing-lg;
+
+    max-width: 45rem;
+    align-self: center;
+  }
+
+  @media screen and (min-width: $grid-breakpoint-md){
+    padding-right: $spacer-md;
+    padding-left: $spacer-md;
+  }
+
+  @supports (display: grid) {
+    @media screen and (min-width: $grid-breakpoint-xl) {
+      display: grid;
+      padding-bottom: $spacer-xxl;
+      grid-template-columns: 1fr 11rem 5rem 2rem 50rem 2rem 5rem 11rem 1fr; //magic numbers
+      grid-template-rows: auto;
+
+      // Centered textwurst items
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      ul,
+      ol,
+      check-list,
+      table,
+      blockquote,
+      super-quote,
+      long-quote,
+      info-box,
+      pre,
+      code,
+      wall-of-consent,
+      .author-bio,
+      .author-section,
+      .footnote-section,
+      >.breakout__content,
+      .zigzag {
+        grid-column: 5 / 6;
+      }
+
+
+      // Centered elements that are a bit wider than the textwurst
+      figure,
+      .two-column-image-divider-asymmetric {
+        grid-column: 3/ 8;
+      }
+
+      // Left aligned elements
+      .toc {
+        align-self: start;
+        grid-column: 2 / 4;
+        grid-row: 2 / 100;
+      }
+
+      // Right aligned elements
+      .info-note {
+        align-self: start;
+        grid-column: 7 / 9;
+        grid-row: 2/ 100;
+      }
+    }
+  }
+}
+
