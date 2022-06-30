@@ -17,11 +17,10 @@
             </div>
         </div>
     </header>
-    <article class="page-layout--grid">
-        <section class="center">
-            <script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="https://innoq.podigee.io/74-new-episode/embed?context=external&token=QiMQwGUlJ2PGRN84ZSThpw"></script>
-        </section>
-        <section class="center">
+    <article class="page-layout-md--default">
+
+        <script class="podigee-podcast-player" src="https://cdn.podigee.com/podcast-player/javascripts/podigee-podcast-player.js" data-configuration="https://innoq.podigee.io/74-new-episode/embed?context=external&token=QiMQwGUlJ2PGRN84ZSThpw"></script>
+
             <ul class="toolbar">
                 <li class="toolbar__item">
                     <a href="#" class="toolbar__link">
@@ -55,8 +54,8 @@
                 </li>
             </ul>
             <a href="#" class="btn btn--cta" data-label="Weitere Episoden anhören" >Weitere Episoden anhören</a>
-        </section>
-        <section class="center">
+
+
             <h3>Shownotes & Links</h3>
             <ul>
                 <li>
@@ -83,10 +82,9 @@
                     Unordered List item
                 </li>
             </ul>
-        </section>
     </article>
 
-    <section class="breakout tag-section">
+    <section class="tag-section">
         <h3 class="tag-section__headline">TAGS</h3>
         <div class="tag-section__container">
             <ul class="tag-list">
@@ -100,8 +98,8 @@
         </div>
     </section>
 
-    <aside class="page-layout--grid">
-        <section class="center share-section">
+    <aside class="page-layout-md--default">
+        <section class="share-section">
             <span class="icon icon-arrow-long-down icon--brand-secondary"></span>
             <h3 class="share-section__heading">Share on</h3>
             <ul class="share-section__list">
@@ -122,36 +120,35 @@
                 </li>
             </ul>
         </section>
-        <section class="center">
-            <div class="blocks">
-                <div id="author-bio" class="author-bio author-bio--long" itemscope itemtype="http://schema.org/Person">
-                    <a rel="author" class ="author-bio__head" itemprop="url" href="#">
-                        <div class="author-bio__image avatar avatar--base">
-                            <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
-                        </div>
-                        <address class="author">
-                            <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
-                            <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
-                        </address>
-                    </a>
-
-                    <address class="author-bio__social">
-                        <a rel="author" class="author-bio__social-profile" href="#" title="Twitter">
-                            <span class="icon icon--small icon-twitter icon--brand-secondary"></span>
-                        </a>
-                        <a rel= "author" class="author-bio__social-profile" href="#" title="GitHub">
-                            <span class="icon icon--small icon-github icon--brand-secondary"></span>
-                        </a>
-                    </address>
-                    <div class="author-bio__text">
-                        <p>Heribert Innoq ist Senior Consultant bei INNOQ.
-                            Als Berater, Entwickler und Architekt unterstützt er Kunden vor allem mit seinen langjährigen Kenntnissen von Java- und JVM-basierten Systemen.
-                            Meist beschäftigt er sich hier mit dem Design, der Evaluierung und Implementierung von Architekturen für moderne Webanwendungen und Microservices
-                            in Softwaremodernisierungsprojekten. Sein aktueller Fokus gilt den Themen Team-Organisation und Softwareevolution.
-                        </p>
+        <section class="blocks">
+            <div id="author-bio" class="author-bio author-bio--long" itemscope itemtype="http://schema.org/Person">
+                <a rel="author" class ="author-bio__head" itemprop="url" href="#">
+                    <div class="author-bio__image avatar avatar--base">
+                        <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
                     </div>
+                    <address class="author">
+                        <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
+                        <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
+                    </address>
+                </a>
+
+                <address class="author-bio__social">
+                    <a rel="author" class="author-bio__social-profile" href="#" title="Twitter">
+                        <span class="icon icon--small icon-twitter icon--brand-secondary"></span>
+                    </a>
+                    <a rel= "author" class="author-bio__social-profile" href="#" title="GitHub">
+                        <span class="icon icon--small icon-github icon--brand-secondary"></span>
+                    </a>
+                </address>
+                <div class="author-bio__text">
+                    <p>Heribert Innoq ist Senior Consultant bei INNOQ.
+                        Als Berater, Entwickler und Architekt unterstützt er Kunden vor allem mit seinen langjährigen Kenntnissen von Java- und JVM-basierten Systemen.
+                        Meist beschäftigt er sich hier mit dem Design, der Evaluierung und Implementierung von Architekturen für moderne Webanwendungen und Microservices
+                        in Softwaremodernisierungsprojekten. Sein aktueller Fokus gilt den Themen Team-Organisation und Softwareevolution.
+                    </p>
                 </div>
             </div>
+        </section>
         </section>
     </aside>
 </main>

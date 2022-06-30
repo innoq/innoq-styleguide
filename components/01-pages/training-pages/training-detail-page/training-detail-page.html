@@ -14,8 +14,8 @@
     </div>
 </header>
 <main role="main">
-    <article class="page-layout--grid">
-        <section class="center">
+    <article class="page-layout-md--default">
+        <section>
             <ul class="list-unstyled">
                 <li>
                     <a rel="author" class="author-bio author-bio--short" href="#author-bio"
@@ -106,43 +106,40 @@
                 <li>Pastrami t-bone pork</li>
             </ul>
         </section>
+
+        <div id="author-bio" class="author-bio author-bio--long" itemscope itemtype="http://schema.org/Person">
+            <a rel="author" class ="author-bio__head" itemprop="url" href="#">
+                <div class="author-bio__image avatar avatar--base">
+                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
+                </div>
+                <address class="author">
+                    <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
+                    <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
+                </address>
+            </a>
+
+            <address class="author-bio__social">
+                <a rel="author" class="author-bio__social-profile" href="#" title="Twitter">
+                    <span class="icon icon--small icon-twitter icon--brand-secondary"></span>
+                </a>
+                <a rel= "author" class="author-bio__social-profile" href="#" title="GitHub">
+                    <span class="icon icon--small icon-github icon--brand-secondary"></span>
+                </a>
+            </address>
+            <div class="author-bio__text">
+                <p>Heribert Innoq ist Senior Consultant bei INNOQ.
+                    Als Berater, Entwickler und Architekt unterstützt er Kunden vor allem mit seinen langjährigen Kenntnissen von Java- und JVM-basierten Systemen.
+                    Meist beschäftigt er sich hier mit dem Design, der Evaluierung und Implementierung von Architekturen für moderne Webanwendungen und Microservices
+                    in Softwaremodernisierungsprojekten. Sein aktueller Fokus gilt den Themen Team-Organisation und Softwareevolution.
+                </p>
+            </div>
+        </div>
+
     </article>
 
-    <aside class="page-layout--grid">
-        <section class="center">
-            <div id="author-bio" class="author-bio author-bio--long" itemscope itemtype="http://schema.org/Person">
-                <a rel="author" class ="author-bio__head" itemprop="url" href="#">
-                    <div class="author-bio__image avatar avatar--base">
-                        <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
-                    </div>
-                    <address class="author">
-                        <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
-                        <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
-                    </address>
-                </a>
-
-                <address class="author-bio__social">
-                    <a rel="author" class="author-bio__social-profile" href="#" title="Twitter">
-                        <span class="icon icon--small icon-twitter icon--brand-secondary"></span>
-                    </a>
-                    <a rel= "author" class="author-bio__social-profile" href="#" title="GitHub">
-                        <span class="icon icon--small icon-github icon--brand-secondary"></span>
-                    </a>
-                </address>
-                <div class="author-bio__text">
-                    <p>Heribert Innoq ist Senior Consultant bei INNOQ.
-                        Als Berater, Entwickler und Architekt unterstützt er Kunden vor allem mit seinen langjährigen Kenntnissen von Java- und JVM-basierten Systemen.
-                        Meist beschäftigt er sich hier mit dem Design, der Evaluierung und Implementierung von Architekturen für moderne Webanwendungen und Microservices
-                        in Softwaremodernisierungsprojekten. Sein aktueller Fokus gilt den Themen Team-Organisation und Softwareevolution.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </aside>
 
     <aside class="stripe stripe--gray">
-        <section class="page-layout--grid">
-            <div class="center">
+        <section class="container-md container-vertical-spacing-xl">
                 <h2 class="teaser-section-heading">Termine und Anmeldung</h2>
 
                 <a href="#" class="list-teaser-event">
@@ -243,7 +240,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
     </aside>
 </main>
