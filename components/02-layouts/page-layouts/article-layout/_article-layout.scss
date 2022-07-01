@@ -20,6 +20,18 @@
     align-self: center;
   }
 
+  //Wrapper for contant that should not stretch
+  .centered-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > * {
+      margin-bottom: 0;
+    }
+  }
+
+  // Breakpoints
   @media screen and (min-width: $grid-breakpoint-md){
     padding-right: $spacer-md;
     padding-left: $spacer-md;
@@ -56,12 +68,10 @@
       .author-section,
       .footnote-section,
       .footnotes,
-      >.breakout__content,
+      .centered-content,
       .zigzag {
         grid-column: 5 / 6;
       }
-
-
       // Centered elements that are a bit wider than the textwurst
       figure,
       .two-column-image-divider-asymmetric,
