@@ -8366,6 +8366,10 @@ main > .page-layout-md--default:first-child {
     min-height: 46.0051199094rem;
   }
 }
+.work-page .list-teaser-podcast,
+.work-page .list-teaser-abstract {
+  margin-bottom: 0;
+}
 
 .landing-page .service-intro-grid {
   margin-top: 3.919104rem;
