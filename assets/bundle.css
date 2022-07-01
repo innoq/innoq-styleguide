@@ -745,6 +745,24 @@ h6 > a:focus:not([class]),
   background-image: url("/assets/bg-images/general/visual-trainings-07.jpg");
 }
 
+.bg-image-trainings-08 {
+  background-blend-mode: multiply;
+  background-color: #d8d8d8;
+  background-image: url("/assets/bg-images/general/visual-trainings-08.jpg");
+}
+
+.bg-image-trainings-09 {
+  background-blend-mode: multiply;
+  background-color: #d8d8d8;
+  background-image: url("/assets/bg-images/general/visual-trainings-09.jpg");
+}
+
+.bg-image-trainings-10 {
+  background-blend-mode: multiply;
+  background-color: #d8d8d8;
+  background-image: url("/assets/bg-images/general/visual-trainings-10.jpg");
+}
+
 .bg-image-workshop-01 {
   background-blend-mode: multiply;
   background-color: #d8d8d8;
