@@ -10,6 +10,7 @@ figure {
 figcaption {
   @extend %heading-font-regular;
 
+  margin-top: $spacer-xs;
   font-size: $font-size-xxs;
   line-height: $paragraph-line-height-sm;
   text-align: center;
