@@ -5,14 +5,15 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
+
+  figure {
+    margin-bottom: 0;
+  }
 }
 
 .two-column-image-divider-asymmetric__left-image,
 .two-column-image-divider-asymmetric__right-image {
   > img {
-    @extend %box-shadow-primary-25-right-bottom;
-
-    // width: auto;
     max-height: 100%;
     object-fit: cover;
   }

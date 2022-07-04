@@ -1,1 +1,14 @@
-// TODO
+.training-detail-page {
+    @extend %article-layout;
+
+    align-items: center;
+
+    img,
+    > img {
+      @extend %box-shadow-primary-25-right-bottom;
+    }
+
+    figure {
+      @extend %container-vertical-spacing-lg;
+    }
+}

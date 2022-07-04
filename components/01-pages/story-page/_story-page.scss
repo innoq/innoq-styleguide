@@ -8,9 +8,11 @@
     margin: $spacer-xl auto 0 auto;
   }
 
-  img {
+  img,
+  > img {
     @extend %box-shadow-primary-25-right-bottom;
   }
+
 
   figure {
     @extend %container-vertical-spacing-lg;
