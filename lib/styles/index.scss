@@ -50,24 +50,17 @@
 // Toggler atoms
 @import "../components/05-atoms/togglers/collapse-toggler/collapse-toggler";
 
-// Inline text atoms
-@import "../components/05-atoms/text/inline/link/link";
-@import "../components/05-atoms/text/inline/accentuation/accentuation";
 
-// Block text atoms
-@import "../components/05-atoms/text/block/code/code";
-@import "../components/05-atoms/text/block/date/date";
-@import "../components/05-atoms/text/block/duration/duration";
-@import "../components/05-atoms/text/block/edition/edition";
-@import "../components/05-atoms/text/block/footnote/footnote";
-@import "../components/05-atoms/text/block/heading/heading";
-@import "../components/05-atoms/text/block/paragraph/paragraph";
-@import "../components/05-atoms/text/block/quote/pull-quote";
-@import "../components/05-atoms/text/block/quote/block-quote";
-@import "../components/05-atoms/text/block/label/label";
-@import "../components/05-atoms/text/block/list/list";
-@import "../components/05-atoms/text/block/tag-list/tag-list";
-@import "../components/05-atoms/text/block/table/table";
+@import "../components/05-atoms/text/accentuation/accentuation";
+@import "../components/05-atoms/text/code/code";
+@import "../components/05-atoms/text/date/date";
+@import "../components/05-atoms/text/footnote/footnote";
+@import "../components/05-atoms/text/heading/heading";
+@import "../components/05-atoms/text/link/link";
+@import "../components/05-atoms/text/paragraph/paragraph";
+@import "../components/05-atoms/text/quote/pull-quote";
+@import "../components/05-atoms/text/quote/block-quote";
+
 
 // Visual elements atoms
 @import "../components/05-atoms/visual-elements/animation/waiting-dots/waiting-dots";
@@ -75,6 +68,12 @@
 @import "../components/05-atoms/visual-elements/zigzag/zigzag";
 
 @import "../components/05-atoms/clickable-area/clickable-area";
+@import "../components/05-atoms/duration/duration";
+@import "../components/05-atoms/edition/edition";
+@import "../components/05-atoms/label/label";
+@import "../components/05-atoms/list/list";
+@import "../components/05-atoms/table/table";
+@import "../components/05-atoms/tag-list/tag-list";
 
 //
 // MOLECULES

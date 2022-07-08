@@ -5,7 +5,6 @@ $list-teaser-height: ms(32);
   @extend %hover-glow;
 
   min-height: $list-teaser-height;
-  margin-bottom: $spacer-base;
 }
 
 %list-teaser-footer {

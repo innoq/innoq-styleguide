@@ -4,7 +4,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 0;
 }
 
 .tag-list__item {
@@ -25,11 +24,5 @@
   &:hover {
     background-color: $tag-background-color-hover;
     color: $tag-text-color-hover;
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-md) {
-  .tag-list__item {
-    margin: $spacer-xxs;
   }
 }

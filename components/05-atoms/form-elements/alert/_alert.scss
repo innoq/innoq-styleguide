@@ -5,7 +5,6 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: $spacer-xs;
-  margin-bottom: $spacer-sm;
   color: $alert-color;
   font-size: $font-size-base;
 
@@ -32,6 +31,5 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .alert {
     padding: $spacer-sm;
-    margin-bottom: $spacer-md;
   }
 }

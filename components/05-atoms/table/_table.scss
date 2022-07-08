@@ -2,7 +2,6 @@
   width: 100%;
   max-width: 100%;
   border-bottom: 3px solid $table-border-color;
-  margin-bottom: $spacer-xs;
   border-collapse: collapse;
   text-align: left;
 
@@ -49,14 +48,7 @@
   }
 }
 
-@media screen and (min-width: $grid-breakpoint-md) {
-  .table {
-    margin-bottom: $spacer-sm;
-  }
-}
-
 // Responsive tables code taken from BS4
-
 @media screen and (max-width: $grid-breakpoint-sm) {
   .table {
     display: block;
