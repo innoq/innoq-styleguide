@@ -17,7 +17,8 @@
     text-transform: uppercase;
   }
 
-  &__text {
+  &__text,
+  &__text * {
     @extend %heading-font-regular;
 
     color: $info-note-text-color;;

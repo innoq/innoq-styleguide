@@ -94,7 +94,7 @@ blockquote:not([class]) > p,
 .instructions--focus,
 .instructions--hover-and-focus,
 .instructions--touch, .page__number, .dialog-banner__body, .resource-list-item__caption, .resource-list-item__author, .paginator, .textbox-sequence__text, .search-result__date,
-.search-result__type, .contact-person__subheading, .reference__description, .info-note__text, details[open] .infobox__content p, .conclusion-text ul > li,
+.search-result__type, .contact-person__subheading, .reference__description, .info-note__text, .info-note__text *, details[open] .infobox__content p, .conclusion-text ul > li,
 .conclusion-text ul > li p, .conclusion-text,
 .conclusion-text > *, .author-bio__text,
 .author-bio__text > p, .author-bio.author-bio--large .author-bio__expertise, .table td, .table caption, .tuple-list__value, .label.slides, p.display, p.standalone, .tooltip p, .footnotes__list li,
@@ -3228,7 +3228,7 @@ summary {
   text-align: center;
   text-transform: uppercase;
 }
-.info-note__text {
+.info-note__text, .info-note__text * {
   color: #004153;
   font-size: 0.9114583333rem;
   text-align: left;
