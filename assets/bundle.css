@@ -2544,7 +2544,6 @@ ul:not([class]) > li ol,
   color: #ff9c66;
   font-size: 1rem;
   text-decoration: none;
-  text-transform: lowercase;
   -webkit-transition: 0.2s background-color ease-in-out;
   transition: 0.2s background-color ease-in-out;
 }
