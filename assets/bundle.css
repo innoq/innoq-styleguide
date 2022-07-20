@@ -8371,6 +8371,10 @@ main > .page-layout-md--default:first-child {
     grid-column: span 2;
   }
 }
+.article-page-default > * {
+  margin-top: 1.44rem;
+}
+
 .artist-collabo-page .standard-header__type {
   font-size: 1.2rem;
 }
