@@ -1,7 +1,7 @@
 %article-layout {
   display: flex;
   flex-direction: column;
-  padding: 0 $spacer-md $spacer-base $spacer-sm;
+  padding: 0 $spacer-sm $spacer-base $spacer-sm;
 
   > * {
     margin-bottom: 0;
@@ -33,12 +33,12 @@
 
   // Breakpoints
   @media screen and (min-width: $grid-breakpoint-md){
-    padding-right: $spacer-md;
-    padding-left: $spacer-md;
+    padding-right: $spacer-xxl;
+    padding-left: $spacer-xxl;
   }
 
   @supports (display: grid) {
-    @media screen and (min-width: $grid-breakpoint-xl) {
+    @media screen and (min-width: $grid-breakpoint-lg) {
       display: grid;
       padding-bottom: $spacer-xxl;
       grid-template-columns: 1fr 11rem 5rem 2rem 50rem 2rem 5rem 11rem 1fr; //magic numbers
