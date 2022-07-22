@@ -8142,7 +8142,7 @@ wall-of-consent {
   }
 }
 @supports (display: grid) {
-  @media screen and (min-width: 75rem) {
+  @media screen and (min-width: 82rem) {
     .training-detail-page, .story-page, .case-study-page, .article-page-default {
       display: grid;
       padding-bottom: 7.4300837069rem;
