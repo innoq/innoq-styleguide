@@ -3,6 +3,10 @@
   flex-direction: column;
   padding: 0 $spacer-sm $spacer-base $spacer-sm;
 
+  > * {
+    margin-bottom: 0; // TODO: Remove this after cleanup
+  }
+
   > * + * {
     margin-top: $spacer-base;
   }
@@ -36,7 +40,9 @@
   @supports (display: grid) {
     @media screen and (min-width: $grid-breakpoint-lg-xl) {
       display: grid;
+      padding-right: $spacer-sm;
       padding-bottom: $spacer-xxl;
+      padding-left: $spacer-sm;
       grid-template-columns: 1fr 11rem 5rem 2rem 50rem 2rem 5rem 11rem 1fr; //magic numbers
       grid-template-rows: auto;
 

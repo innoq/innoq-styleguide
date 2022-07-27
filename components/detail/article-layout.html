@@ -234,6 +234,10 @@
   <span class="hljs-attribute">flex-direction</span>: column;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-sm</span> <span class="hljs-variable">$spacer-base</span> <span class="hljs-variable">$spacer-sm</span>;
 
+  &gt; * {
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> Remove this after cleanup</span>
+  }
+
   &gt; * + * {
     <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
   }
@@ -267,7 +271,9 @@
   <span class="hljs-keyword">@supports</span> (<span class="hljs-attribute">display</span>: <span class="hljs-attribute">grid</span>) {
     <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg-xl</span>) {
       <span class="hljs-attribute">display</span>: grid;
+      <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-sm</span>;
       <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$spacer-xxl</span>;
+      <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer-sm</span>;
       grid-template-<span class="hljs-attribute">columns</span>: <span class="hljs-number">1</span>fr <span class="hljs-number">11rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">2rem</span> <span class="hljs-number">50rem</span> <span class="hljs-number">2rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">11rem</span> <span class="hljs-number">1</span>fr; <span class="hljs-comment">//magic numbers</span>
       grid-template-rows: auto;
 
@@ -341,7 +347,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.8 KB</span>
+                    <span class="Meta-value">2 KB</span>
                 </li>
             </ul>
         </div>
@@ -7253,7 +7259,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-07-27T13:46:38.118Z">
+                            <time datetime="2022-07-27T14:40:42.422Z">
                                 7/27/2022
                             </time>
                         

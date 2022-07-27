@@ -8059,6 +8059,9 @@ wall-of-consent {
           flex-direction: column;
   padding: 0 1rem 2.0736rem 1rem;
 }
+.training-detail-page > *, .story-page > *, .case-study-page > *, .article-page-default > * {
+  margin-bottom: 0;
+}
 .training-detail-page > * + *, .story-page > * + *, .case-study-page > * + *, .article-page-default > * + * {
   margin-top: 2.0736rem;
 }
@@ -8099,7 +8102,9 @@ wall-of-consent {
   @media screen and (min-width: 82rem) {
     .training-detail-page, .story-page, .case-study-page, .article-page-default {
       display: grid;
+      padding-right: 1rem;
       padding-bottom: 7.4300837069rem;
+      padding-left: 1rem;
       grid-template-columns: 1fr 11rem 5rem 2rem 50rem 2rem 5rem 11rem 1fr;
       grid-template-rows: auto;
     }
