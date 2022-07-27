@@ -38,6 +38,10 @@
   }
 }
 
+.landing-page-header.bg-image-edition-01 {
+  background-color: transparent;
+}
+
 @media screen and (min-width: $grid-breakpoint-md) {
   .landing-page-header {
     padding: $spacer-lg;
