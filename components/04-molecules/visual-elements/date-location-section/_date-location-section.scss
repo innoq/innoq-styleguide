@@ -4,11 +4,4 @@
   padding-top: $spacer-sm;
   border-top: 1px solid $date-location-section-border-color;
   border-bottom: 1px solid $date-location-section-border-color;
-  margin-bottom: $spacer-sm;
-}
-
-@media screen and (min-width: $grid-breakpoint-md) {
-  .date-location-section {
-    margin-bottom: $spacer-xl;
-  }
 }

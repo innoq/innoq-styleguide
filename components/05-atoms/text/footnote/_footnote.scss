@@ -11,13 +11,20 @@
 
   counter-reset: number;
 
+  > * + * {
+    margin-top: $spacer-md;
+  }
+
   li,
   li > p {
     @extend %heading-font-regular;
 
-    margin-bottom: $spacer-sm;
     font-size: $font-size-xxs;
     line-height: $paragraph-line-height;
+
+    > * + * {
+      margin-top: $spacer-sm;
+    }
   }
 
   li {

@@ -6,6 +6,10 @@
 .page-layout-md--default,
 .page-layout-md--no-margin {
   padding: $spacer-sm;
+
+  > * + * {
+    margin-top: $spacer-base;
+  }
 }
 
 //

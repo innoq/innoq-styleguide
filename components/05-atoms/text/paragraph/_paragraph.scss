@@ -1,7 +1,7 @@
 p {
   @extend %body-font-regular;
 
-  margin-bottom: $spacer-md;
+  margin-bottom: 0;
   font-size: $font-size-base;
   line-height: $paragraph-line-height;
 
@@ -19,8 +19,6 @@ p {
   &.display,
   &.standalone {
     @extend %heading-font-regular;
-
-    margin-bottom: 0;
   }
 
   &.display {

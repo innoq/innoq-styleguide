@@ -16,10 +16,6 @@ pull-quote > blockquote,
     line-height: $paragraph-line-height;
     text-align: center;
   }
-
-  > p {
-    margin-bottom: 0;
-  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
