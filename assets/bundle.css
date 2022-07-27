@@ -6292,8 +6292,8 @@ wall-of-consent {
   margin: 0 auto;
 }
 
-.two-column-image-divider-asymmetric__left-image > img,
-.two-column-image-divider-asymmetric__right-image > img {
+.two-column-image-divider-asymmetric__left-image,
+.two-column-image-divider-asymmetric__right-image {
   max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
