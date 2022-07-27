@@ -385,6 +385,33 @@
   content: "#f7f7f7";
 }
 
+.demo > * {
+  margin: 1.44rem;
+}
+.demo--inverted {
+  background-color: #004153;
+}
+.demo--accented {
+  background-color: #ff9c66;
+}
+.demo--centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.demo--black {
+  background-color: #242424;
+}
+.demo--edition-01-red {
+  background-color: #ff4d67;
+}
+.demo--edition-01-blue {
+  background-color: #24244c;
+}
+
 .Header {
   background-color: #004153;
 }

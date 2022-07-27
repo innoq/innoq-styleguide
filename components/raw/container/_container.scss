@@ -11,10 +11,6 @@
   padding: 0 $spacer-xs;
   margin: 0 auto;
 
-  > * {
-    margin-bottom: 0;
-  }
-
   > * + * {
     margin-top: $spacer-base;
   }

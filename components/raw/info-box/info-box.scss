@@ -2,7 +2,6 @@ $info-box-icon-font-size: ms(3);
 
 info-box {
   display: block;
-  margin-bottom: $spacer-base;
 }
 
 .infobox__teaser {
@@ -25,10 +24,12 @@ info-box {
   }
 
   .infobox__teaser__right {
+    display: flex;
     padding: $spacer-sm $spacer-md $spacer-sm 0;
   }
 
   .infobox__teaser__left {
+    display: flex;
     padding: $spacer-sm 0 $spacer-sm $spacer-md;
   }
 

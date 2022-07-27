@@ -56,7 +56,6 @@
 .list-teaser-abstract__text {
   @extend %heading-font-regular;
 
-  margin-bottom: 0;
   font-size: $font-size-base;
 
   &::first-letter {
