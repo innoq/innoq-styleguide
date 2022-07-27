@@ -24,10 +24,12 @@ info-box {
   }
 
   .infobox__teaser__right {
+    display: flex;
     padding: $spacer-sm $spacer-md $spacer-sm 0;
   }
 
   .infobox__teaser__left {
+    display: flex;
     padding: $spacer-sm 0 $spacer-sm $spacer-md;
   }
 
