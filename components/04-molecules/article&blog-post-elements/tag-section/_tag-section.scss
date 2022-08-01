@@ -1,34 +1,23 @@
 .tag-section {
-  padding-top: $spacer-base;
-  padding-bottom: $spacer-lg;
-  background-color: $meta-tags-background-color;
-}
+  @extend %container-md;
+  @extend %container-vertical-spacing-xl;
 
-.tag-section__container {
-  width: 90%;
-  margin: 0 auto;
+  .tag-list {
+    margin-top: $spacer-sm;
+  }
 }
 
 .tag-section__headline {
   @extend %heading-font-heavy;
 
+  margin-bottom: 0; //FIME
   color: $meta-tags-headline-text-color;
   font-size: $font-size-base;
   text-align: center;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
-  .tag-section {
-    padding-top: $spacer-lg;
-    padding-bottom: $spacer-xl;
-    margin-bottom: $spacer-xl; // xxl -> xl related to fix for author bio margin
-  }
-
   .tag-section__headline {
     font-size: $font-size-sm;
-  }
-
-  .tag-section__container {
-    width: 60%;
   }
 }
