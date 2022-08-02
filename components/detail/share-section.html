@@ -181,7 +181,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-a4557d20be723e47a8aa0d40aab5cf29-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;center share-section&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;share-section&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-arrow-long-down icon--brand-secondary&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;share-section__heading&quot;</span>&gt;</span>Share on<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;share-section__list&quot;</span>&gt;</span>
@@ -209,7 +209,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-a4557d20be723e47a8aa0d40aab5cf29-panel-view">
     <code class="Code Code--lang-html hljs">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;center share-section&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;share-section&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-arrow-long-down icon--brand-secondary&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;share-section__heading&quot;</span>&gt;</span>Share on<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;share-section__list&quot;</span>&gt;</span>
@@ -270,12 +270,16 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-selector-class">.share-section</span> {
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">50%</span>;
+  <span class="hljs-keyword">@extend</span> %container-vertical-spacing-xl;
+
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> auto;
   <span class="hljs-attribute">text-align</span>: center;
 
+  &gt; * + * {
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-sm</span>;
+  }
+
   <span class="hljs-selector-class">.icon-arrow-long-down</span> {
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-sm</span>;
     <span class="hljs-attribute">transition</span>: <span class="hljs-variable">$transform-transition</span>;
   }
 
@@ -287,6 +291,7 @@
 }
 
 <span class="hljs-selector-class">.share-section__heading</span> {
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">//FIXME</span>
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$sharing-headline-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-lg</span>;
 }
@@ -295,8 +300,9 @@
   <span class="hljs-keyword">@extend</span> %list-unstyled;
 
   <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">flex-wrap</span>: wrap;
+  <span class="hljs-attribute">flex-wrap</span>:nowrap;
   <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
 }
 
 <span class="hljs-selector-class">.share-section__link</span> {
@@ -330,7 +336,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">735 Bytes</span>
+                    <span class="Meta-value">827 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -7242,8 +7248,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-07-27T16:06:09.866Z">
-                                7/27/2022
+                            <time datetime="2022-08-02T12:51:19.102Z">
+                                8/2/2022
                             </time>
                         
                     </dd>

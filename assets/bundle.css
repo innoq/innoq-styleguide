@@ -2739,6 +2739,7 @@ ul:not([class]) > li ol,
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 0;
 }
 
 .tag-list__item {
@@ -3339,12 +3340,13 @@ super-quote > blockquote > p:lang(en)::after,
   }
 }
 .share-section {
-  width: 50%;
   margin: 0 auto;
   text-align: center;
 }
+.share-section > * + * {
+  margin-top: 1rem;
+}
 .share-section .icon-arrow-long-down {
-  margin-bottom: 1rem;
   -webkit-transition: 0.2s -webkit-transform ease-in-out;
   transition: 0.2s -webkit-transform ease-in-out;
   transition: 0.2s transform ease-in-out;
@@ -3356,6 +3358,7 @@ super-quote > blockquote > p:lang(en)::after,
 }
 
 .share-section__heading {
+  margin-bottom: 0;
   color: #004153;
   font-size: 1.728rem;
 }
@@ -3364,11 +3367,12 @@ super-quote > blockquote > p:lang(en)::after,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 0;
 }
 
 .share-section__link {
@@ -3462,36 +3466,20 @@ super-quote > blockquote > p,
         align-self: start;
   }
 }
-.tag-section {
-  padding-top: 2.0736rem;
-  padding-bottom: 2.985984rem;
-  background-color: #f7f7f7;
-}
-
-.tag-section__container {
-  width: 90%;
-  margin: 0 auto;
+.tag-section .tag-list {
+  margin-top: 1rem;
 }
 
 .tag-section__headline {
+  margin-bottom: 0;
   color: #004153;
   font-size: 1rem;
   text-align: center;
 }
 
 @media screen and (min-width: 48rem) {
-  .tag-section {
-    padding-top: 2.985984rem;
-    padding-bottom: 3.919104rem;
-    margin-bottom: 3.919104rem;
-  }
-
   .tag-section__headline {
     font-size: 1.2rem;
-  }
-
-  .tag-section__container {
-    width: 60%;
   }
 }
 wall-of-consent {
@@ -7827,7 +7815,8 @@ wall-of-consent {
 }
 
 .container-xl,
-.container-md {
+.container-md,
+.tag-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7843,7 +7832,8 @@ wall-of-consent {
   margin: 0 auto;
 }
 .container-xl > * + *,
-.container-md > * + * {
+.container-md > * + *,
+.tag-section > * + * {
   margin-top: 2.0736rem;
 }
 
@@ -7851,7 +7841,8 @@ wall-of-consent {
   max-width: 90.25rem;
 }
 
-.container-md {
+.container-md,
+.tag-section {
   max-width: 50rem;
 }
 
@@ -7860,7 +7851,9 @@ wall-of-consent {
   padding-bottom: 3.919104rem;
 }
 
-.container-vertical-spacing-xl {
+.container-vertical-spacing-xl,
+.share-section,
+.tag-section {
   padding-top: 2.985984rem;
   padding-bottom: 2.985984rem;
 }

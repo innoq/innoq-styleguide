@@ -1,10 +1,14 @@
 .share-section {
-  width: 50%;
+  @extend %container-vertical-spacing-xl;
+
   margin: 0 auto;
   text-align: center;
 
+  > * + * {
+    margin-top: $spacer-sm;
+  }
+
   .icon-arrow-long-down {
-    margin-bottom: $spacer-sm;
     transition: $transform-transition;
   }
 
@@ -16,6 +20,7 @@
 }
 
 .share-section__heading {
+  margin-bottom: 0; //FIXME
   color: $sharing-headline-color;
   font-size: $font-size-lg;
 }
@@ -24,8 +29,9 @@
   @extend %list-unstyled;
 
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:nowrap;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .share-section__link {
