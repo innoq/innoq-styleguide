@@ -50,8 +50,21 @@
 }
 
 .card__footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
   padding: $spacer-sm;
   background-color: $card-headline-color;
+
+  > * {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  > * + * {
+    margin-top: 0;
+    margin-left: $spacer-md;
+  }
 
   .upcase-heading {
     color: $card-bg-color;

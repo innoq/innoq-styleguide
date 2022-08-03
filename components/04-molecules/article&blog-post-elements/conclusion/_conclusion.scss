@@ -15,12 +15,18 @@ $conclusion-border-size: ms(5);
   }
 }
 
+.conclusion-wrapper {
+  @extend %container-md;
+}
+
 .conclusion-headline {
+  align-self: flex-start;
   color: $conclusion-headline-color;
   font-size: $font-size-xxxl;
 }
 
 .conclusion-subheadline {
+  align-self: flex-start;
   color: $conclusion-subheadline-color;
   font-size: $font-size-lg;
 }
@@ -32,11 +38,6 @@ $conclusion-border-size: ms(5);
 
     color: $conclusion-text-color;
     font-size: $font-size-base;
-
-    // Remove the margin of the last paragraph inside a conclusion
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 
   a:not([class]) {

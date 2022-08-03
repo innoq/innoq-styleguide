@@ -180,8 +180,6 @@
 @import "../components/02-layouts/component-layouts/container/container";
 @import "../components/02-layouts/component-layouts/masonry-layout/masonry-layout";
 @import "../components/02-layouts/component-layouts/tile-layout/tile-layout";
-@import "../components/02-layouts/component-layouts/block";
-@import "../components/02-layouts/component-layouts/breakout";
 @import "../components/02-layouts/component-layouts/stripe/stripe";
 
 @import "../components/02-layouts/page-layouts/article-layout/article-layout";
@@ -210,7 +208,8 @@
 @import "../components/01-pages/service-pages/service-detail-page/service-detail-page";
 @import "../components/01-pages/service-pages/services-overview-page/services-overview-page";
 @import "../components/01-pages/staff-page/staff-page";
-@import "../components/01-pages/story-page/story-page";
+@import "../components/01-pages/story-pages/story-detail-page/story-detail-page";
+@import "../components/01-pages/story-pages/story-overview-page/story-overview-page";
 @import "../components/01-pages/talk-page/talk-page";
 @import "../components/01-pages/topic-page/topic-page";
 @import "../components/01-pages/training-pages/booking-page/booking-page";
