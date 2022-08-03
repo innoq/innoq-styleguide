@@ -181,8 +181,8 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-bc467360863f96aec0c5d339fea0ccd8-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breakout conclusion&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breakout__content&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;conclusion&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;conclusion-wrapper&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;conclusion-headline&quot;</span>&gt;</span>Fazit<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;conclusion-subheadline&quot;</span>&gt;</span>Kurz auf den Punkt gebracht<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;conclusion-text&quot;</span>&gt;</span>
@@ -224,8 +224,8 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-bc467360863f96aec0c5d339fea0ccd8-panel-view">
     <code class="Code Code--lang-html hljs">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breakout conclusion&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;breakout__content&quot;</span>&gt;</span>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">section</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;conclusion&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;conclusion-wrapper&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h2</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;conclusion-headline&quot;</span>&gt;</span>Fazit<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;conclusion-subheadline&quot;</span>&gt;</span>Kurz auf den Punkt gebracht<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;conclusion-text&quot;</span>&gt;</span>
@@ -316,12 +316,18 @@
   }
 }
 
+<span class="hljs-selector-class">.conclusion-wrapper</span> {
+  <span class="hljs-keyword">@extend</span> %container-md;
+}
+
 <span class="hljs-selector-class">.conclusion-headline</span> {
+  <span class="hljs-attribute">align-self</span>: flex-start;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$conclusion-headline-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xxxl</span>;
 }
 
 <span class="hljs-selector-class">.conclusion-subheadline</span> {
+  <span class="hljs-attribute">align-self</span>: flex-start;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$conclusion-subheadline-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-lg</span>;
 }
@@ -333,11 +339,6 @@
 
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$conclusion-text-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
-
-    <span class="hljs-comment">// Remove the margin of the last paragraph inside a conclusion</span>
-    &amp;<span class="hljs-selector-pseudo">:last-child</span> {
-      <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
-    }
   }
 
   <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:not</span>([class]) {
@@ -7319,8 +7320,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-08-02T12:51:19.102Z">
-                                8/2/2022
+                            <time datetime="2022-08-03T12:43:37.614Z">
+                                8/3/2022
                             </time>
                         
                     </dd>
