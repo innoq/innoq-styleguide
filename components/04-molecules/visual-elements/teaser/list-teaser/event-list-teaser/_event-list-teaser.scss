@@ -4,6 +4,7 @@ $event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
   @extend %list-teaser;
 
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   margin-top: $event-date-section-height + $spacer-base;

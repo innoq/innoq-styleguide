@@ -95,7 +95,7 @@ h6 {
 .teaser-section-heading {
   @extend %h2;
 
-  margin: 0 auto $spacer-base;
+  margin-bottom: 0;
   font-size: $font-size-lg;
   text-align: center;
   text-transform: uppercase;
@@ -183,7 +183,6 @@ h6 {
   }
 
   .teaser-section-heading {
-    margin-bottom: $spacer-lg;
     font-size: $font-size-xl;
   }
 }
