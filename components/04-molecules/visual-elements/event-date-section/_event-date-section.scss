@@ -1,0 +1,107 @@
+//Event Date for Teasers
+.event-date-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: $date-section-background-color;
+
+    .label {
+    border-left: 0;
+    margin: 0;
+    text-align: center;
+  }
+}
+
+.event-date-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.event-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: $spacer-xxs $spacer-sm;
+}
+
+.event-day-month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-day {
+  @extend %heading-font-heavy;
+
+  color: $date-section-day-color;
+  font-size: $font-size-lg;
+}
+
+.event-month {
+  @extend %heading-font-heavy;
+
+  margin-bottom: 0;
+  color: $date-section-month-color;
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+}
+
+.event-year {
+  @extend %heading-font-regular;
+
+  padding-left: $spacer-xxs;
+  border-left: 1px solid $date-section-year-color;
+  margin-left: $spacer-xs;
+  color: $date-section-year-color;
+  font-size: $font-size-xs;
+}
+
+.event-date-separator {
+  width: $spacer-base;
+  height: 2px;
+  border: 0;
+  margin: 0;
+  background-color: $date-section-year-color;
+}
+
+// Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+  .event-date-section {
+    width: 80px;
+    margin-top: 0;
+  }
+
+  .event-date-wrapper {
+    flex-direction: column;
+  }
+
+  .event-date {
+    flex-direction: column;
+  }
+
+  .event-day {
+    font-size: $font-size-xl;
+  }
+
+  .event-month {
+    margin-bottom: $spacer-xxs;
+    font-size: $font-size-base;
+  }
+
+  .event-year {
+    padding-top: $spacer-xxs;
+    padding-left: 0;
+    border-top: 1px solid $date-section-year-color;
+    border-left: 0;
+    margin-left: 0;
+    font-size: $font-size-xs;
+  }
+
+  .event-date-separator {
+    margin: $spacer-sm 0;
+    transform: rotate(90deg);
+  }
+}

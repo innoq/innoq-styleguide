@@ -7,8 +7,12 @@
 .page-layout-md--no-margin {
   padding: $spacer-sm;
 
+  > * {
+    margin-bottom: 0; //FIXME
+  }
+
   > * + * {
-    margin-top: $spacer-base;
+    margin-top: $spacer-md;
   }
 }
 

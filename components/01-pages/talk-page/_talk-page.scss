@@ -1,40 +1,11 @@
 .talk-page {
-  .tag-section {
-    margin-bottom: $spacer-sm;
-  }
-
-  .teaser-section-heading {
-    margin-bottom: $spacer-xxl;
-  }
-
-  .author-bio {
-    &.author-bio--long {
-      margin-bottom: $spacer-sm;
-    }
-  }
-
-  .talk-link {
-    text-align: center;
-  }
-}
-
-.talk-date {
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  margin-bottom: $spacer-md;
+  flex-direction: column;
+  margin-top: $spacer-xl;
 
-  .label {
-    border-left: 0;
-    margin: 0;
-    text-align: center;
+  .event-date-section {
+    align-self: center;
   }
-}
-
-.talk-title {
-  @extend %h1;
-
-  margin-bottom: $spacer-md;
 }
 
 .talk-description {
@@ -43,40 +14,8 @@
 
     font-size: $font-size-md;
   }
-}
 
-// Breakpoints
-@media screen and (min-width: $grid-breakpoint-md) {
-  .talk-page {
-    .tag-section {
-      margin-bottom: $spacer-md;
-    }
-
-    .teaser-section-heading {
-      margin-bottom: $spacer-md;
-    }
-
-    .author-bio {
-      &.author-bio--long {
-        margin-bottom: $spacer-base;
-      }
-    }
-  }
-
-  .talk-date {
-    margin-bottom: $spacer-lg;
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-xl) {
-  .talk-date {
-    align-items: flex-end;
-    margin-right: $spacer-md;
-    margin-bottom: 0;
-
-    .event-date-section,
-    .label {
-      width: 96px;
-    }
+  > * + * {
+    margin-top: $spacer-md;
   }
 }
