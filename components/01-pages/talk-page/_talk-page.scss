@@ -7,15 +7,3 @@
     align-self: center;
   }
 }
-
-.talk-description {
-  > * {
-    @extend %body-font-italic;
-
-    font-size: $font-size-md;
-  }
-
-  > * + * {
-    margin-top: $spacer-md;
-  }
-}
