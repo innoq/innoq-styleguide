@@ -93,12 +93,12 @@ blockquote:not([class]) > p,
 .footer__address, .footer, .content-teaser__text, .big-content-teaser__text, .list-teaser__subheadline, .list-teaser-abstract__text, .instructions--hover,
 .instructions--focus,
 .instructions--hover-and-focus,
-.instructions--touch, .page__number, .dialog-banner__body, .resource-list-item__caption, .resource-list-item__author, .paginator, .textbox-sequence__text, .search-result__date,
+.instructions--touch, .page__number, .dialog-banner__body, .resource-list-item__caption, .resource-list-item__author, .paginator, .event-year, .textbox-sequence__text, .search-result__date,
 .search-result__type, .contact-person__subheading, .reference__description, .info-note__text, .info-note__text *, details[open] .infobox__content p, .conclusion-text ul > li,
 .conclusion-text ul > li p, .conclusion-text,
 .conclusion-text > *, .author-bio__text,
 .author-bio__text > p, .author-bio.author-bio--large .author-bio__expertise, .table td, .table caption, .tuple-list__value, .label.slides, p.display, p.standalone, .tooltip p, .footnotes__list li,
-.footnotes__list li > p, .footnote, .event-year, figcaption, .form-text, .form-label, .form-control,
+.footnotes__list li > p, .footnote, figcaption, .form-text, .form-label, .form-control,
 .custom-form-control, .alert, .client-projects__text, .case-teaser__text, .default-full-width-teaser__text, .date-location-section dd, .simple-definition-list dd,
 .heading-font-regular {
   font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
@@ -121,14 +121,14 @@ h4, .footnotes__list li::before, .date, .form-label--emphasized, .btn, .wall-not
 }
 
 .triplet-divider__right,
-.triplet-divider__left, .big-content-teaser__headline, .product-list-teaser__cta, .image-list-teaser__title, .service-intro__header, .textbox-sequence__header, .tag-section__headline, .toc__heading, long-quote > blockquote > p,
+.triplet-divider__left, .big-content-teaser__headline, .product-list-teaser__cta, .image-list-teaser__title, .service-intro__header, .event-month, .event-day, .textbox-sequence__header, .tag-section__headline, .toc__heading, long-quote > blockquote > p,
 super-quote > blockquote > p,
 .superquote > p,
 .longquote > p, .edition-date, .link-teaser,
 h6, .podcast-teaser__headline, .content-teaser__header, .list-teaser__headline, .list-teaser-event__headline, .card__headline, .search-result__title, .section-heading--secondary,
 h3, .topic-teaser__header, .list-teaser-podcast__headline, .teaser-section-heading,
-h2, .talk-title, .newsletter-optin__title, .wall-note__heading, .project-index__title, .section-heading--primary,
-h1, .event-month, .event-day, .collapse-toggler, .legend,
+h2, .newsletter-optin__title, .wall-note__heading, .project-index__title, .section-heading--primary,
+h1, .collapse-toggler, .legend,
 .heading-font-heavy {
   font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-style: normal;
@@ -281,7 +281,7 @@ h6, .newsletter-optin__subtitle, .list-teaser-event__headline--secondary, .secti
 h5, .search-result__subtitle,
 h4, .podcast-teaser__headline, .content-teaser__header, .list-teaser__headline, .list-teaser-event__headline, .card__headline, .search-result__title, .section-heading--secondary,
 h3, .topic-teaser__header, .list-teaser-podcast__headline, .teaser-section-heading,
-h2, .talk-title, .newsletter-optin__title, .wall-note__heading, .project-index__title, .section-heading--primary,
+h2, .newsletter-optin__title, .wall-note__heading, .project-index__title, .section-heading--primary,
 h1 {
   -webkit-hyphens: manual;
       -ms-hyphens: manual;
@@ -1816,134 +1816,6 @@ figure > div > pre code {
   font-size: 1rem;
 }
 
-.event-date-section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #004153;
-}
-
-.event-date-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.event-date {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.3348979767rem 1rem;
-}
-
-.event-day-month {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.event-day {
-  color: #ff9c66;
-  font-size: 1.728rem;
-}
-
-.event-month {
-  margin-bottom: 0;
-  color: #fff;
-  font-size: 0.9114583333rem;
-  text-transform: uppercase;
-}
-
-.event-year {
-  padding-left: 0.3348979767rem;
-  border-left: 1px solid #fff;
-  margin-left: 0.5787037037rem;
-  color: #fff;
-  font-size: 0.9114583333rem;
-}
-
-.event-date-separator {
-  width: 2.0736rem;
-  height: 2px;
-  border: 0;
-  margin: 0;
-  background-color: #fff;
-}
-
-@media screen and (min-width: 48rem) {
-  .event-date-section {
-    width: 80px;
-    margin-top: 0;
-  }
-
-  .event-date-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .event-date {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
-  .event-day {
-    font-size: 2.0736rem;
-  }
-
-  .event-month {
-    margin-bottom: 0.3348979767rem;
-    font-size: 1rem;
-  }
-
-  .event-year {
-    padding-top: 0.3348979767rem;
-    padding-left: 0;
-    border-top: 1px solid #fff;
-    border-left: 0;
-    margin-left: 0;
-    font-size: 0.9114583333rem;
-  }
-
-  .event-date-separator {
-    margin: 1rem 0;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
-}
 .footnote {
   color: #ff9c66;
   line-height: 1;
@@ -2008,7 +1880,7 @@ figure > div > pre code {
     font-size: 1rem;
   }
 }
-.talk-title, .newsletter-optin__title, .wall-note__heading, .project-index__title, .section-heading--primary,
+.newsletter-optin__title, .wall-note__heading, .project-index__title, .section-heading--primary,
 h1 {
   margin-top: 0;
   margin-bottom: 2.0736rem;
@@ -2104,7 +1976,7 @@ h6 {
 }
 
 @media screen and (min-width: 48rem) {
-  .talk-title, .newsletter-optin__title, .wall-note__heading, .project-index__title, .section-heading--primary,
+  .newsletter-optin__title, .wall-note__heading, .project-index__title, .section-heading--primary,
 h1 {
     margin-bottom: 2.985984rem;
     font-size: 2.985984rem;
@@ -3930,6 +3802,142 @@ wall-of-consent {
   margin-bottom: 1rem;
 }
 
+.event-date-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #004153;
+}
+.event-date-section .label {
+  border-left: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.event-date-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.event-date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.3348979767rem 1rem;
+}
+
+.event-day-month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.event-day {
+  color: #ff9c66;
+  font-size: 1.728rem;
+}
+
+.event-month {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 0.9114583333rem;
+  text-transform: uppercase;
+}
+
+.event-year {
+  padding-left: 0.3348979767rem;
+  border-left: 1px solid #fff;
+  margin-left: 0.5787037037rem;
+  color: #fff;
+  font-size: 0.9114583333rem;
+}
+
+.event-date-separator {
+  width: 2.0736rem;
+  height: 2px;
+  border: 0;
+  margin: 0;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 48rem) {
+  .event-date-section {
+    width: 80px;
+    margin-top: 0;
+  }
+
+  .event-date-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .event-date {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .event-day {
+    font-size: 2.0736rem;
+  }
+
+  .event-month {
+    margin-bottom: 0.3348979767rem;
+    font-size: 1rem;
+  }
+
+  .event-year {
+    padding-top: 0.3348979767rem;
+    padding-left: 0;
+    border-top: 1px solid #fff;
+    border-left: 0;
+    margin-left: 0;
+    font-size: 0.9114583333rem;
+  }
+
+  .event-date-separator {
+    margin: 1rem 0;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+}
 .eyecatcher {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8216,10 +8224,15 @@ wall-of-consent {
 .page-layout-md--no-margin {
   padding: 1rem;
 }
+.page-layout-xl--default > *,
+.page-layout-md--default > *,
+.page-layout-md--no-margin > * {
+  margin-bottom: 0;
+}
 .page-layout-xl--default > * + *,
 .page-layout-md--default > * + *,
 .page-layout-md--no-margin > * + * {
-  margin-top: 2.0736rem;
+  margin-top: 1.44rem;
 }
 
 @media screen and (min-width: 48rem) {
@@ -8528,74 +8541,28 @@ main > .page-layout-md--default:first-child {
   width: 40%;
   margin: 3.919104rem auto 0 auto;
 }
-.talk-page .tag-section {
-  margin-bottom: 1rem;
-}
-.talk-page .teaser-section-heading {
-  margin-bottom: 7.4300837069rem;
-}
-.talk-page .author-bio.author-bio--long {
-  margin-bottom: 1rem;
-}
-.talk-page .talk-link {
-  text-align: center;
-}
-
-.talk-date {
+.talk-page {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1.44rem;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 3.919104rem;
 }
-.talk-date .label {
-  border-left: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.talk-title {
-  margin-bottom: 1.44rem;
+.talk-page .event-date-section {
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .talk-description > * {
   font-size: 1.44rem;
 }
-
-@media screen and (min-width: 48rem) {
-  .talk-page .tag-section {
-    margin-bottom: 1.44rem;
-  }
-  .talk-page .teaser-section-heading {
-    margin-bottom: 1.44rem;
-  }
-  .talk-page .author-bio.author-bio--long {
-    margin-bottom: 2.0736rem;
-  }
-
-  .talk-date {
-    margin-bottom: 2.985984rem;
-  }
+.talk-description > * + * {
+  margin-top: 1.44rem;
 }
-@media screen and (min-width: 90.25rem) {
-  .talk-date {
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-    margin-right: 1.44rem;
-    margin-bottom: 0;
-  }
-  .talk-date .event-date-section,
-.talk-date .label {
-    width: 96px;
-  }
-}
+
 .training-detail-page {
   -webkit-box-align: center;
       -ms-flex-align: center;
