@@ -66,7 +66,7 @@
   font-weight: normal;
 }
 
-.talk-description > *, .topic-header__text, .text-header__text, .standard-header__intro__text, .landing-page-header__text, .gradient-header__title, .wall-note__text, .image-divider-center__textbox__text, .simple-teaser__link h6, .podcast-teaser__subheadline, .product-list-teaser__text, .list-teaser-podcast__subheadline, .image-list-teaser__subtitle, .list-teaser-event__subheadline, .card__text, .toc__list > li, .superquote__role,
+.topic-header__text, .text-header__text, .standard-header__intro__text, .landing-page-header__text, .gradient-header__title, .wall-note__text, .image-divider-center__textbox__text, .simple-teaser__link h6, .podcast-teaser__subheadline, .product-list-teaser__text, .list-teaser-podcast__subheadline, .image-list-teaser__subtitle, .list-teaser-event__subheadline, .card__text, .toc__list > li, .superquote__role,
 .longquote__role, .author-bio__info, .author-bio.author-bio--large .author-bio__text .author-bio__info, .duration, blockquote:not([class]),
 blockquote:not([class]) > p,
 .blockquote,
@@ -95,8 +95,7 @@ blockquote:not([class]) > p,
 .instructions--hover-and-focus,
 .instructions--touch, .page__number, .dialog-banner__body, .resource-list-item__caption, .resource-list-item__author, .paginator, .event-year, .textbox-sequence__text, .search-result__date,
 .search-result__type, .contact-person__subheading, .reference__description, .info-note__text, .info-note__text *, details[open] .infobox__content p, .conclusion-text ul > li,
-.conclusion-text ul > li p, .conclusion-text,
-.conclusion-text > *, .author-bio__text,
+.conclusion-text ul > li p, .conclusion-text > *, .author-bio__text,
 .author-bio__text > p, .author-bio.author-bio--large .author-bio__expertise, .table td, .table caption, .tuple-list__value, .label.slides, p.display, p.standalone, .tooltip p, .footnotes__list li,
 .footnotes__list li > p, .footnote, figcaption, .form-text, .form-label, .form-control,
 .custom-form-control, .alert, .client-projects__text, .case-teaser__text, .default-full-width-teaser__text, .date-location-section dd, .simple-definition-list dd,
@@ -1934,7 +1933,7 @@ h6 {
 }
 
 .teaser-section-heading {
-  margin: 0 auto 2.0736rem;
+  margin-bottom: 0;
   font-size: 1.728rem;
   text-align: center;
   text-transform: uppercase;
@@ -2007,7 +2006,6 @@ h5 {
   }
 
   .teaser-section-heading {
-    margin-bottom: 2.985984rem;
     font-size: 2.0736rem;
   }
 }
@@ -2797,8 +2795,13 @@ ul:not([class]) > li ol,
   border-bottom: 1.575rem solid #ff9c66;
   background: #004153;
 }
-.conclusion code {
-  background-color: #004153;
+
+.conclusion-wrapper .btn {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.conclusion-wrapper > * {
+  margin-bottom: 0;
 }
 
 .conclusion-headline {
@@ -2815,7 +2818,9 @@ ul:not([class]) > li ol,
   font-size: 1.728rem;
 }
 
-.conclusion-text,
+.conclusion-text > * + * {
+  margin-top: 1.44rem;
+}
 .conclusion-text > * {
   color: #fff;
   font-size: 1rem;
@@ -2840,6 +2845,9 @@ ul:not([class]) > li ol,
 .conclusion-text ul > li li::marker,
 .conclusion-text ul > li p li::marker {
   color: #ff9c66;
+}
+.conclusion-text code {
+  background-color: #004153;
 }
 
 @media screen and (min-width: 48rem) {
@@ -4798,6 +4806,7 @@ wall-of-consent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -5174,6 +5183,7 @@ wall-of-consent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -7893,17 +7903,17 @@ wall-of-consent {
 .container-vertical-spacing-lg,
 .training-detail-page figure,
 .story-page figure,
+.case-study-page blockquote,
+.case-study-page super-quote,
+.case-study-page long-quote,
 .training-detail-page blockquote,
 .story-page blockquote,
-.case-study-page blockquote,
 .article-page-default blockquote,
 .training-detail-page super-quote,
 .story-page super-quote,
-.case-study-page super-quote,
 .article-page-default super-quote,
 .training-detail-page long-quote,
 .story-page long-quote,
-.case-study-page long-quote,
 .article-page-default long-quote {
   padding-top: 2.0736rem;
   padding-bottom: 2.0736rem;
@@ -7999,7 +8009,7 @@ wall-of-consent {
   background: linear-gradient(360deg, rgb(255, 230, 217) 23%, rgb(255, 156, 102) 60%);
 }
 
-.training-detail-page, .story-page, .case-study-page, .article-page-default {
+.training-detail-page, .story-page, .article-page-default {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8009,26 +8019,24 @@ wall-of-consent {
           flex-direction: column;
   padding: 0 1rem 2.0736rem 1rem;
 }
-.training-detail-page > *, .story-page > *, .case-study-page > *, .article-page-default > * {
+.training-detail-page > *, .story-page > *, .article-page-default > * {
   margin-bottom: 0;
 }
-.training-detail-page > * + *, .story-page > * + *, .case-study-page > * + *, .article-page-default > * + * {
+.training-detail-page > * + *, .story-page > * + *, .article-page-default > * + * {
   margin-top: 2.0736rem;
 }
-.training-detail-page blockquote, .story-page blockquote, .case-study-page blockquote, .article-page-default blockquote,
+.training-detail-page blockquote, .story-page blockquote, .article-page-default blockquote,
 .training-detail-page super-quote,
 .story-page super-quote,
-.case-study-page super-quote,
 .article-page-default super-quote,
 .training-detail-page long-quote,
 .story-page long-quote,
-.case-study-page long-quote,
 .article-page-default long-quote {
   max-width: 45rem;
   -ms-flex-item-align: center;
       align-self: center;
 }
-.training-detail-page .centered-content, .story-page .centered-content, .case-study-page .centered-content, .article-page-default .centered-content {
+.training-detail-page .centered-content, .story-page .centered-content, .article-page-default .centered-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8039,18 +8047,18 @@ wall-of-consent {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.training-detail-page .centered-content > *, .story-page .centered-content > *, .case-study-page .centered-content > *, .article-page-default .centered-content > * {
+.training-detail-page .centered-content > *, .story-page .centered-content > *, .article-page-default .centered-content > * {
   margin-bottom: 0;
 }
 @media screen and (min-width: 48rem) {
-  .training-detail-page, .story-page, .case-study-page, .article-page-default {
+  .training-detail-page, .story-page, .article-page-default {
     padding-right: 7.4300837069rem;
     padding-left: 7.4300837069rem;
   }
 }
 @supports (display: grid) {
   @media screen and (min-width: 82rem) {
-    .training-detail-page, .story-page, .case-study-page, .article-page-default {
+    .training-detail-page, .story-page, .article-page-default {
       display: grid;
       padding-right: 1rem;
       padding-bottom: 7.4300837069rem;
@@ -8058,133 +8066,195 @@ wall-of-consent {
       grid-template-columns: 1fr 11rem 5rem 2rem 50rem 2rem 5rem 11rem 1fr;
       grid-template-rows: auto;
     }
-    .training-detail-page h1, .story-page h1, .case-study-page h1, .article-page-default h1,
+    .training-detail-page h1, .story-page h1, .article-page-default h1,
 .training-detail-page h2,
 .story-page h2,
-.case-study-page h2,
 .article-page-default h2,
 .training-detail-page h3,
 .story-page h3,
-.case-study-page h3,
 .article-page-default h3,
 .training-detail-page h4,
 .story-page h4,
-.case-study-page h4,
 .article-page-default h4,
 .training-detail-page h5,
 .story-page h5,
-.case-study-page h5,
 .article-page-default h5,
 .training-detail-page h6,
 .story-page h6,
-.case-study-page h6,
 .article-page-default h6,
 .training-detail-page p,
 .story-page p,
-.case-study-page p,
 .article-page-default p,
 .training-detail-page ul,
 .story-page ul,
-.case-study-page ul,
 .article-page-default ul,
 .training-detail-page ol,
 .story-page ol,
-.case-study-page ol,
 .article-page-default ol,
 .training-detail-page check-list,
 .story-page check-list,
-.case-study-page check-list,
 .article-page-default check-list,
 .training-detail-page bold-list,
 .story-page bold-list,
-.case-study-page bold-list,
 .article-page-default bold-list,
 .training-detail-page table,
 .story-page table,
-.case-study-page table,
 .article-page-default table,
 .training-detail-page blockquote,
 .story-page blockquote,
-.case-study-page blockquote,
 .article-page-default blockquote,
 .training-detail-page super-quote,
 .story-page super-quote,
-.case-study-page super-quote,
 .article-page-default super-quote,
 .training-detail-page long-quote,
 .story-page long-quote,
-.case-study-page long-quote,
 .article-page-default long-quote,
 .training-detail-page pull-quote,
 .story-page pull-quote,
-.case-study-page pull-quote,
 .article-page-default pull-quote,
 .training-detail-page info-box,
 .story-page info-box,
-.case-study-page info-box,
 .article-page-default info-box,
 .training-detail-page pre,
 .story-page pre,
-.case-study-page pre,
 .article-page-default pre,
 .training-detail-page code,
 .story-page code,
-.case-study-page code,
 .article-page-default code,
 .training-detail-page wall-of-consent,
 .story-page wall-of-consent,
-.case-study-page wall-of-consent,
 .article-page-default wall-of-consent,
 .training-detail-page hr,
 .story-page hr,
-.case-study-page hr,
 .article-page-default hr,
 .training-detail-page .author-bio,
 .story-page .author-bio,
-.case-study-page .author-bio,
 .article-page-default .author-bio,
 .training-detail-page .author-section,
 .story-page .author-section,
-.case-study-page .author-section,
 .article-page-default .author-section,
 .training-detail-page .footnote-section,
 .story-page .footnote-section,
-.case-study-page .footnote-section,
 .article-page-default .footnote-section,
 .training-detail-page .footnotes,
 .story-page .footnotes,
-.case-study-page .footnotes,
 .article-page-default .footnotes,
 .training-detail-page .centered-content,
 .story-page .centered-content,
-.case-study-page .centered-content,
 .article-page-default .centered-content,
 .training-detail-page .zigzag,
 .story-page .zigzag,
-.case-study-page .zigzag,
 .article-page-default .zigzag {
       grid-column: 5/6;
     }
-    .training-detail-page figure, .story-page figure, .case-study-page figure, .article-page-default figure,
+    .training-detail-page figure, .story-page figure, .article-page-default figure,
 .training-detail-page .two-column-image-divider-asymmetric,
 .story-page .two-column-image-divider-asymmetric,
-.case-study-page .two-column-image-divider-asymmetric,
 .article-page-default .two-column-image-divider-asymmetric,
 .training-detail-page .case-teaser,
 .story-page .case-teaser,
-.case-study-page .case-teaser,
 .article-page-default .case-teaser {
       grid-column: 3/8;
     }
-    .training-detail-page .toc, .story-page .toc, .case-study-page .toc, .article-page-default .toc {
+    .training-detail-page .toc, .story-page .toc, .article-page-default .toc {
       align-self: start;
       grid-column: 2/4;
       grid-row: 2/100;
     }
-    .training-detail-page .info-note, .story-page .info-note, .case-study-page .info-note, .article-page-default .info-note {
+    .training-detail-page .info-note, .story-page .info-note, .article-page-default .info-note {
       align-self: start;
       grid-column: 7/9;
       grid-row: 2/100;
+    }
+  }
+}
+
+.case-study-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 1rem 2.0736rem 1rem;
+}
+.case-study-page > * {
+  margin-bottom: 0;
+}
+.case-study-page > * + * {
+  margin-top: 1.44rem;
+}
+.case-study-page blockquote,
+.case-study-page super-quote,
+.case-study-page long-quote {
+  max-width: 45rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.case-study-page .centered-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.case-study-page .centered-content > * {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 48rem) {
+  .case-study-page {
+    padding-right: 7.4300837069rem;
+    padding-left: 7.4300837069rem;
+  }
+}
+@supports (display: grid) {
+  @media screen and (min-width: 82rem) {
+    .case-study-page {
+      display: grid;
+      padding-right: 1rem;
+      padding-bottom: 2.0736rem;
+      padding-left: 1rem;
+      grid-template-columns: 1fr 7rem 50rem 7rem 1fr;
+      grid-template-rows: auto;
+    }
+    .case-study-page h1,
+.case-study-page h2,
+.case-study-page h3,
+.case-study-page h4,
+.case-study-page h5,
+.case-study-page h6,
+.case-study-page p,
+.case-study-page ul,
+.case-study-page ol,
+.case-study-page check-list,
+.case-study-page bold-list,
+.case-study-page table,
+.case-study-page blockquote,
+.case-study-page super-quote,
+.case-study-page long-quote,
+.case-study-page pull-quote,
+.case-study-page info-box,
+.case-study-page pre,
+.case-study-page code,
+.case-study-page wall-of-consent,
+.case-study-page hr,
+.case-study-page .author-bio,
+.case-study-page .author-section,
+.case-study-page .footnote-section,
+.case-study-page .footnotes,
+.case-study-page .centered-content,
+.case-study-page .zigzag {
+      grid-column: 3/4;
+    }
+    .case-study-page figure,
+.case-study-page .two-column-image-divider-asymmetric,
+.case-study-page .case-teaser {
+      grid-column: 2/5;
     }
   }
 }
@@ -8292,6 +8362,28 @@ main > .page-layout-md--default:first-child {
 }
 .article-page-default > * {
   margin-top: 1.44rem;
+}
+
+.case-study-page .customerlogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.985984rem;
+  margin-bottom: 2.985984rem;
+}
+@media screen and (min-width: 82rem) {
+  .case-study-page .customerlogo {
+    grid-column: 3/4;
+  }
+}
+.case-study-page .customerlogo img {
+  max-width: 40%;
 }
 
 .artist-collabo-page .standard-header__type {
@@ -8554,13 +8646,6 @@ main > .page-layout-md--default:first-child {
 .talk-page .event-date-section {
   -ms-flex-item-align: center;
       align-self: center;
-}
-
-.talk-description > * {
-  font-size: 1.44rem;
-}
-.talk-description > * + * {
-  margin-top: 1.44rem;
 }
 
 .training-detail-page {

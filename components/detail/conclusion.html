@@ -215,6 +215,7 @@
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--large btn--inverted&quot;</span> <span class="hljs-attr">data-label</span>=<span class="hljs-string">&quot;Sprechen Sie mit uns&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Sprechen Sie mit uns<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></pre>
         
@@ -258,6 +259,7 @@
                 <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--large btn--inverted&quot;</span> <span class="hljs-attr">data-label</span>=<span class="hljs-string">&quot;Sprechen Sie mit uns&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Sprechen Sie mit uns<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">section</span>&gt;</span></pre>
     </code>
@@ -310,14 +312,18 @@
   <span class="hljs-attribute">border-top</span>: <span class="hljs-variable">$conclusion-border-size</span> solid <span class="hljs-variable">$conclusion-border-color</span>;
   <span class="hljs-attribute">border-bottom</span>: <span class="hljs-variable">$conclusion-border-size</span> solid <span class="hljs-variable">$conclusion-border-color</span>;
   <span class="hljs-attribute">background</span>: <span class="hljs-variable">$conclusion-background-color</span>;
-
-  <span class="hljs-selector-tag">code</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$conclusion-background-color</span>;
-  }
 }
 
 <span class="hljs-selector-class">.conclusion-wrapper</span> {
   <span class="hljs-keyword">@extend</span> %container-md;
+
+  <span class="hljs-selector-class">.btn</span> {
+    <span class="hljs-attribute">align-self</span>: flex-start;
+  }
+
+  &gt; * {
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">//FIXME</span>
+  }
 }
 
 <span class="hljs-selector-class">.conclusion-headline</span> {
@@ -333,7 +339,10 @@
 }
 
 <span class="hljs-selector-class">.conclusion-text</span> {
-  &amp;,
+  &gt; * + * {
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-md</span>;
+  }
+
   &gt; * {
     <span class="hljs-keyword">@extend</span> %heading-font-regular;
 
@@ -366,6 +375,10 @@
         <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color</span>;
       }
     }
+  }
+
+  <span class="hljs-selector-tag">code</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$conclusion-background-color</span>;
   }
 }
 
@@ -408,7 +421,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.8 KB</span>
+                    <span class="Meta-value">1.9 KB</span>
                 </li>
             </ul>
         </div>
@@ -1788,6 +1801,40 @@
                 data-handle="article-layout"
             >
                 <span>Article Layout</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./article-layout-simple.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="article-layout-simple"
+                data-handle="article-layout-simple"
+            >
+                <span>Article Layout Simple</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -7354,8 +7401,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-08-09T15:10:43.072Z">
-                                8/9/2022
+                            <time datetime="2022-08-10T10:49:06.486Z">
+                                8/10/2022
                             </time>
                         
                     </dd>
