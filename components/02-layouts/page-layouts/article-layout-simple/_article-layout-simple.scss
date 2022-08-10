@@ -41,7 +41,6 @@
     @media screen and (min-width: $grid-breakpoint-lg-xl) {
       display: grid;
       padding-right: $spacer-sm;
-      padding-bottom: $spacer-base;
       padding-left: $spacer-sm;
       grid-template-columns: 1fr 7rem 50rem 7rem 1fr; //magic numbers
       grid-template-rows: auto;

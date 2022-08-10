@@ -2,6 +2,7 @@
   @extend %article-layout;
 
   align-items: center;
+  margin-bottom: $spacer-lg;
 
   .zigzag {
     width: 40%;
