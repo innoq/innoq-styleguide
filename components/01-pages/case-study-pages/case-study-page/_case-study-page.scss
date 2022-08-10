@@ -1,7 +1,19 @@
 .case-study-page {
-  @extend %article-layout;
+  @extend %article-layout-simple;
 
-  > * + * {
-    margin-top: $spacer-md;
+  .customerlogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: $spacer-lg;
+    margin-bottom: $spacer-lg;
+
+    @media screen and (min-width: $grid-breakpoint-lg-xl) {
+      grid-column: 3 / 4;
+    }
+
+    img {
+      max-width: 40%;
+    }
   }
 }

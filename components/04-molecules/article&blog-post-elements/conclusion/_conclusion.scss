@@ -9,14 +9,18 @@ $conclusion-border-size: ms(5);
   border-top: $conclusion-border-size solid $conclusion-border-color;
   border-bottom: $conclusion-border-size solid $conclusion-border-color;
   background: $conclusion-background-color;
-
-  code {
-    background-color: $conclusion-background-color;
-  }
 }
 
 .conclusion-wrapper {
   @extend %container-md;
+
+  .btn {
+    align-self: flex-start;
+  }
+
+  > * {
+    margin-bottom: 0; //FIXME
+  }
 }
 
 .conclusion-headline {
@@ -32,7 +36,10 @@ $conclusion-border-size: ms(5);
 }
 
 .conclusion-text {
-  &,
+  > * + * {
+    margin-top: $spacer-md;
+  }
+
   > * {
     @extend %heading-font-regular;
 
@@ -65,6 +72,10 @@ $conclusion-border-size: ms(5);
         color: $bullet-list-color;
       }
     }
+  }
+
+  code {
+    background-color: $conclusion-background-color;
   }
 }
 

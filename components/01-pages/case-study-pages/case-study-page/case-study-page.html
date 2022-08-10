@@ -15,74 +15,20 @@
 </header>
 <main role="main">
     <article class="case-study-page">
-        <section class="author-section">
-            <a rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
-                <div class="author-bio__image avatar avatar--small">
-                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
-                </div>
-                <address class="author-bio__text">
-                    <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
-                    <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
-                </address>
-            </a>
-            <a rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
-                <div class="author-bio__image avatar avatar--small">
-                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"
-                        alt="Portrait von Heribert Innoq" />
-                </div>
-                <address class="author-bio__text">
-                    <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
-                    <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
-                </address>
-            </a>
-            <a rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
-                <div class="author-bio__image avatar avatar--small">
-                    <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"
-                        alt="Portrait von Heribert Innoq" />
-                </div>
-                <address class="author-bio__text">
-                    <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
-                    <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
-                </address>
-            </a>
-        </section>
 
-        <aside class="toc">
-            <h3 class="toc__heading">Inhalt</h3>
-            <ol class="toc__list">
-                <li><a class="toc__anchor" href="#">{{listitem}}</a></li>
-                <li><a class="toc__anchor" href="#">{{listitem}}</a></li>
-                <li><a class="toc__anchor" href="#">{{listitem}}</a></li>
-                <li><a class="toc__anchor" href="#">{{listitem}}</a></li>
-                <li><a class="toc__anchor" href="#">{{listitem}}</a></li>
-                <li><a class="toc__anchor" href="#">{{listitem}}</a></li>
-            </ol>
-        </aside>
+        <div class="customerlogo">
+            <img src="{{ path '/assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg'}}" alt="Bild Groß" />
+        </div>
 
+        <p>
+            <a href="#">Der Text auch in Englisch</a>
+        </p>
 
         <h3>{{headline}}</h3>
 
         <p>{{text}}</p>
 
-        <pre><code>{{ code }}</code></pre>
-
-        <p>{{text}}</p>
-
         <blockquote class="pullquote">{{quote}}</blockquote>
-
-        <p>{{text}}</p>
-
-        <ul>
-            <li>{{listitem}}</li>
-            <li>{{listitem}}</li>
-            <li>{{listitem}}</li>
-        </ul>
-
-        <ol>
-            <li>{{listitem}}</li>
-            <li>{{listitem}}</li>
-            <li>{{listitem}}</li>
-        </ol>
 
         <p>{{text}}</p>
 
@@ -95,42 +41,11 @@
         <p>{{text}}</p>
 
         <figure>
-            <img src="http://via.placeholder.com/675x369" alt="Bild Groß" />
+            <img src="{{ path '/assets/bg-images/edition-02/edition02-canyon-01.jpg'}}" alt="Bild Groß" />
             <figcaption>
                 {{quote}}
             </figcaption>
         </figure>
-
-        <p>{{text}}</p>
-
-        <blockquote class="superquote">
-            <span class="superquote__zigzag"></span>
-            <p>{{quote}}</p>
-            <div itemscope itemtype="http://schema.org/Person">
-                <cite class="superquote__author" itemprop="name">Heribert Innoq</cite>
-                <span class="superquote__role" itemprop="jobTitle">Senior Consultant</span>
-            </div>
-        </blockquote>
-
-        <p>{{text}}</p>
-
-        <wall-of-consent>
-            <template>
-                <blockquote class="twitter-tweet" data-conversation="none" data-lang="en" data-dnt="true"><p lang="en" dir="ltr">Doge spelled backwards is Egod</p>&mdash; Elon Musk (@elonmusk) <a href="https://twitter.com/elonmusk/status/1368058884837928970?ref_src=twsrc%5Etfw">March 6, 2021</a></blockquote>
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </template>
-            <p class="standalone" data-hide-if-consent>An dieser Stelle befindet sich ein Tweet. Um ihn zu sehen, musst Du dem Laden von Fremdinhalten zustimmen.</p>
-            <div class="custom-form-control checkbox">
-                <input id="custom-checkbox-1" type="checkbox" class="form-control__input" />
-                <label for="custom-checkbox-1" class="form-label">Tweets erlauben (<a href="https://www.innoq.com/datenschutz/">Datenschutzhinweise</a>)</label>
-            </div>
-        </wall-of-consent>
-
-        <p>{{text}}</p>
-
-        <blockquote class="blockquote">
-            {{quote}}<a href="http://www.arc42.de/template/struktur.html">{{quote}}</a> {{quote}}
-        </blockquote>
 
         <p>{{text}}</p>
 
@@ -153,91 +68,21 @@
         </info-box>
 
         <p>{{text}}</p>
-
-        <p>Footnote Inline<a href="#fn:1" id="fnref:1" title="see footnote" class="footnote">[1]</a>.{{text}}</p>
-
-        <figure>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Titel 1</th>
-                        <th>Titel 2</th>
-                        <th>Titel 3</th>
-                        <th>Titel 4</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Text</td>
-                        <td>Text</td>
-                        <td>{{text_short}}</td>
-                        <td>Text</td>
-                    </tr>
-                    <tr>
-                        <td>Text</td>
-                        <td>Text</td>
-                        <td>{{text_short}}</td>
-                        <td>Text</td>
-                    </tr>
-                    <tr>
-                        <td>Text</td>
-                        <td>Text</td>
-                        <td>{{text_short}}</td>
-                        <td>Text</td>
-                    </tr>
-                    <tr>
-                        <td>Text</td>
-                        <td>Text</td>
-                        <td>{{text_short}}</td>
-                        <td>Text</td>
-                    </tr>
-                </tbody>
-            </table>
-            <figcaption>
-                Dies ist eine Tabelle mit wichtigem Inhalt
-            </figcaption>
-        </figure>
-        <section class="footnote-section">
-            <div class="footnote-section__headline__container">
-                <h3 class="footnote-section__headline">Quellenangaben</h3>
-            </div>
-
-            <div class="footnotes">
-                <ol class="footnotes__list">
-                    <li id="fn:1">
-                        <p>
-                            {{text}}
-                            <a href="#fnref:1" title="return to article" >&nbsp;↩</a>
-                        </p>
-                    </li>
-                    <li id="fn:2">
-                        <p>{{text}}</p>
-                        <p>{{text}}
-                            <a href="#fnref:2" title="return to article" >&nbsp;↩</a>
-                        </p>
-                    </li>
-                    <li id="fn:3">
-                        <p>
-                            {{text}}
-                            <a href="#fnref:3" title="return to article" >&nbsp;↩</a>
-                        </p>
-                    </li>
-                    <li id="fn:4">
-                        <p><a href="#">Linktext</a> <a href="#fnref:1" title="return to body" class="reversefootnote">&nbsp;↩</a></p>
-                    </li>
-                </ol>
-            </div>
-        </section>
     </article>
 
     <section class="conclusion">
         <div class="conclusion-wrapper">
             <h1 class="conclusion-headline">Fazit</h1>
             <h3 class="conclusion-subheadline">{{headline}}</h3>
-            <p class="conclusion-text">
-                {{text_short}} <a href="https://de.wikipedia.org/wiki/Ansatz">Link</a> {{text_short}}
-            </p>
-            <p class="conclusion-text"><strong>Kurz:</strong> {{text_short}}</p>
+            <div class="conclusion-text">
+                <p>
+                    {{text_short}} <a href="https://de.wikipedia.org/wiki/Ansatz">Link</a> {{text_short}}
+                </p>
+                <p><strong>Kurz:</strong> {{text_short}}</p>
+            </div>
+
+
+            <a class="btn btn--large btn--inverted" data-label="Sprechen Sie mit uns" href="#">Sprechen Sie mit uns</a>
         </div>
     </section>
 
