@@ -4814,7 +4814,8 @@ wall-of-consent {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 3.6548542867rem;
+  /* stylelint-disable-next-line declaration-no-important */
+  margin-top: 3.6548542867rem !important;
   background-color: #fff;
 }
 .list-teaser-event .event-date-section {
@@ -6011,7 +6012,8 @@ wall-of-consent {
 .image-divider-center {
   min-height: 50vh;
   padding-top: 2.985984rem;
-  margin-bottom: 14.8601674138rem;
+  /* stylelint-disable-next-line declaration-no-important */
+  margin-bottom: 14.8601674138rem !important;
 }
 .image-divider-center__title {
   padding: 0 1.44rem;
@@ -8061,7 +8063,6 @@ wall-of-consent {
     .training-detail-page, .story-page, .article-page-default {
       display: grid;
       padding-right: 1rem;
-      padding-bottom: 7.4300837069rem;
       padding-left: 1rem;
       grid-template-columns: 1fr 11rem 5rem 2rem 50rem 2rem 5rem 11rem 1fr;
       grid-template-rows: auto;
@@ -8217,7 +8218,6 @@ wall-of-consent {
     .case-study-page {
       display: grid;
       padding-right: 1rem;
-      padding-bottom: 2.0736rem;
       padding-left: 1rem;
       grid-template-columns: 1fr 7rem 50rem 7rem 1fr;
       grid-template-rows: auto;
@@ -8628,6 +8628,7 @@ main > .page-layout-md--default:first-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 2.985984rem;
 }
 .story-page .zigzag {
   width: 40%;
