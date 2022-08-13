@@ -4899,7 +4899,8 @@ wall-of-consent {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    margin-top: 0;
+    /* stylelint-disable-next-line declaration-no-important */
+    margin-top: 1.44rem !important;
   }
   .list-teaser-event .event-date-section {
     margin-top: 0;
