@@ -31,6 +31,13 @@
     }
   }
 
+  .centered-content-75 {
+    display: flex;
+    width: 75%;
+    align-self: center;
+    justify-self: center;
+  }
+
   // Breakpoints
   @media screen and (min-width: $grid-breakpoint-md){
     padding-right: $spacer-xxl;
@@ -72,6 +79,7 @@
       .footnote-section,
       .footnotes,
       .centered-content,
+      .centered-content-75,
       .zigzag {
         grid-column: 3 / 4;
       }
