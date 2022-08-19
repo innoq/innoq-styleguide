@@ -27,8 +27,15 @@
     justify-content: center;
 
     > * {
-      margin-bottom: 0;
+      margin-bottom: 0; //FIXME
     }
+  }
+
+  .centered-content-75 {
+    display: flex;
+    width: 75%;
+    align-self: center;
+    justify-self: center;
   }
 
   // Breakpoints
@@ -72,7 +79,8 @@
       .footnote-section,
       .footnotes,
       .centered-content,
-      .zigzag {
+      .zigzag,
+      .centered-content-75 {
         grid-column: 5 / 6;
       }
       // Centered elements that are a bit wider than the textwurst

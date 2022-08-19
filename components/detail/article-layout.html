@@ -258,8 +258,15 @@
     <span class="hljs-attribute">justify-content</span>: center;
 
     &gt; * {
-      <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">//FIXME</span>
     }
+  }
+
+  <span class="hljs-selector-class">.centered-content-75</span> {
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">75%</span>;
+    <span class="hljs-attribute">align-self</span>: center;
+    justify-self: center;
   }
 
   <span class="hljs-comment">// Breakpoints</span>
@@ -303,7 +310,8 @@
       <span class="hljs-selector-class">.footnote-section</span>,
       <span class="hljs-selector-class">.footnotes</span>,
       <span class="hljs-selector-class">.centered-content</span>,
-      <span class="hljs-selector-class">.zigzag</span> {
+      <span class="hljs-selector-class">.zigzag</span>,
+      <span class="hljs-selector-class">.centered-content-75</span> {
         grid-column: <span class="hljs-number">5</span> / <span class="hljs-number">6</span>;
       }
       <span class="hljs-comment">// Centered elements that are a bit wider than the textwurst</span>
@@ -346,7 +354,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.9 KB</span>
+                    <span class="Meta-value">2.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -7346,7 +7354,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-08-19T14:23:58.202Z">
+                            <time datetime="2022-08-19T15:10:15.558Z">
                                 8/19/2022
                             </time>
                         
