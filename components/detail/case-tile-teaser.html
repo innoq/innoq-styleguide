@@ -405,9 +405,6 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-variable">$case-tile-teaser-sm-height</span>: ms(<span class="hljs-number">32</span>);
 
-<span class="hljs-comment">//</span>
-<span class="hljs-comment">// case tile teaser</span>
-<span class="hljs-comment">//</span>
 <span class="hljs-selector-class">.case-tile-teaser</span> {
   <span class="hljs-keyword">@extend</span> %block-link;
   <span class="hljs-keyword">@extend</span> %hover-glow;
@@ -427,6 +424,7 @@
   <span class="hljs-attribute">justify-content</span>: space-between;
   <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-md</span> <span class="hljs-variable">$spacer-xs</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$case-tile-teaser-body-bg-color</span>;
+  <span class="hljs-attribute">text-align</span>: center;
 
   <span class="hljs-selector-tag">h2</span> {
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">// FIXME Remove all generic margin-bottoms</span>
@@ -435,10 +433,6 @@
   * + * {
     <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
   }
-}
-
-<span class="hljs-selector-class">.case-tile-teaser__body</span> {
-  <span class="hljs-attribute">text-align</span>: center;
 }
 
 <span class="hljs-selector-class">.case-tile-teaser__caption</span> {
@@ -461,10 +455,6 @@
   <span class="hljs-attribute">max-width</span>: ms(<span class="hljs-number">22</span>);
 }
 
-<span class="hljs-selector-class">.case-tile-teaser__goto</span> {
-  <span class="hljs-attribute">text-align</span>: center;
-}
-
 <span class="hljs-comment">//</span>
 <span class="hljs-comment">// case-tile-teaser--sm</span>
 <span class="hljs-comment">//</span>
@@ -476,7 +466,7 @@
 
 <span class="hljs-selector-class">.case-tile-teaser__content--sm</span> {
   <span class="hljs-attribute">position</span>: relative;
-  <span class="hljs-attribute">top</span>: <span class="hljs-variable">$spacer-xxl</span>;
+  <span class="hljs-attribute">bottom</span>: -(ms(<span class="hljs-number">25</span>));
   <span class="hljs-attribute">justify-content</span>: space-between;
   <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-sm</span>;
 }
@@ -534,7 +524,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2 KB</span>
+                    <span class="Meta-value">1.9 KB</span>
                 </li>
             </ul>
         </div>
@@ -1487,19 +1477,67 @@
     
         
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-story-pages">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-story-pages-items">
+                    Story Pages
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-story-pages-items">
+                
+                
+                
+                
+    
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./story-page.html"
+                href="./story-detail-page.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="story-page"
-                data-handle="story-page"
+                data-test="story-detail-page"
+                data-handle="story-detail-page"
             >
-                <span>Story Page</span>
+                <span>Story Detail Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./story-overview-page.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="story-overview-page"
+                data-handle="story-overview-page"
+            >
+                <span>Story Overview Page</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -1517,6 +1555,12 @@
 
             </a>
         </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
         
@@ -7480,7 +7524,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-08-19T12:32:29.252Z">
+                            <time datetime="2022-08-19T14:23:58.202Z">
                                 8/19/2022
                             </time>
                         

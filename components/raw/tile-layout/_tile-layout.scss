@@ -1,21 +1,29 @@
-.tile-grid-sm {
+.tile-grid-sm,
+.tile-grid-md,
+.tile-grid-alternating-1-4 {
   display: grid;
   width: 100%;
   grid-gap: $spacer-sm;
+}
+
+.tile-grid-alternating-1-4 {
+  grid-gap: $spacer-xxl $spacer-sm;
+}
+
+.tile-grid-sm {
+  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
 }
 
 .tile-grid-md {
-  display: grid;
-  width: 100%;
-  grid-gap: $spacer-sm;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
-@media screen and (min-width: $grid-breakpoint-sm) {
-  .tile-grid-sm {
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
-  }
+@media screen and (min-width: $grid-breakpoint-md-lg) {
+  .tile-grid-alternating-1-4 {
+    grid-template-columns: repeat(2, minmax(6rem, 1fr));
 
-  .tile-grid-md {
-    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    :nth-child(5n+1) {
+      grid-column: span 2;
+    }
   }
 }

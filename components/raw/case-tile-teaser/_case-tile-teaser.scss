@@ -1,8 +1,5 @@
 $case-tile-teaser-sm-height: ms(32);
 
-//
-// case tile teaser
-//
 .case-tile-teaser {
   @extend %block-link;
   @extend %hover-glow;
@@ -22,6 +19,7 @@ $case-tile-teaser-sm-height: ms(32);
   justify-content: space-between;
   padding: $spacer-md $spacer-xs;
   background-color: $case-tile-teaser-body-bg-color;
+  text-align: center;
 
   h2 {
     margin-bottom: 0; // FIXME Remove all generic margin-bottoms
@@ -30,10 +28,6 @@ $case-tile-teaser-sm-height: ms(32);
   * + * {
     margin-top: $spacer-base;
   }
-}
-
-.case-tile-teaser__body {
-  text-align: center;
 }
 
 .case-tile-teaser__caption {
@@ -56,10 +50,6 @@ $case-tile-teaser-sm-height: ms(32);
   max-width: ms(22);
 }
 
-.case-tile-teaser__goto {
-  text-align: center;
-}
-
 //
 // case-tile-teaser--sm
 //
@@ -71,7 +61,7 @@ $case-tile-teaser-sm-height: ms(32);
 
 .case-tile-teaser__content--sm {
   position: relative;
-  top: $spacer-xxl;
+  bottom: -(ms(25));
   justify-content: space-between;
   padding: $spacer-sm;
 }
