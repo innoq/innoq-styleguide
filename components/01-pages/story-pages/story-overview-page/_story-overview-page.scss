@@ -1,0 +1,7 @@
+.story-overview-page {
+  background: linear-gradient(180deg, $gradient-header-background-color 0%, $brand-gray-10 100%);
+
+  .superquote__zigzag {
+    @include zigzag($gradient-header-background-color);
+  }
+}
