@@ -12,10 +12,6 @@ $list-teaser-height: ms(32);
   flex-wrap: wrap;
   align-items: flex-end;
   justify-content: space-between;
-  padding: $spacer-sm $spacer-md 0 $spacer-md;
-  margin-bottom: 0;
-
-  > * {
-    margin: 0;
-  }
+  padding: $spacer-sm $spacer-md;
+  gap: $spacer-sm;
 }

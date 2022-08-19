@@ -13,20 +13,11 @@ $content-teaser-height-md: ms(36);
   padding: $spacer-sm;
 }
 
-.content-teaser__body {
-  margin-bottom: 0;
-}
-
 .content-teaser__footer {
-  margin-bottom: 0;
-
-  > * {
-    margin-bottom: $spacer-xs;
-  }
-
-  :last-child {
-    margin-bottom: 0;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: $spacer-xs;
 }
 
 .content-teaser__caption {
