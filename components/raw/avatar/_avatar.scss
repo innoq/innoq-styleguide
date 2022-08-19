@@ -17,8 +17,7 @@ $avatar-size-xl: ms(29); //r = ~227 px
     height: $avatar-size-xs;
   }
 
-  .avatar--sm &,
-  .avatar--small & {
+  .avatar--sm & {
     width: $avatar-size-sm;
     height: $avatar-size-sm;
   }

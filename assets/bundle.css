@@ -95,8 +95,7 @@ blockquote:not([class]) > p,
 .instructions--hover-and-focus,
 .instructions--touch, .page__number, .dialog-banner__body, .resource-list-item__caption, .resource-list-item__author, .paginator, .event-year, .textbox-sequence__text, .search-result__date,
 .search-result__type, .contact-person__subheading, .reference__description, .info-note__text, .info-note__text *, details[open] .infobox__content p, .conclusion-text ul > li,
-.conclusion-text ul > li p, .conclusion-text > *, .author-bio__text,
-.author-bio__text > p, .author-bio.author-bio--large .author-bio__expertise, .table td, .table caption, .tuple-list__value, .label.slides, p.display, p.standalone, .tooltip p, .footnotes__list li,
+.conclusion-text ul > li p, .conclusion-text > *, .author-bio__text, .author-bio.author-bio--large .author-bio__expertise, .table td, .table caption, .tuple-list__value, .label.slides, p.display, p.standalone, .tooltip p, .footnotes__list li,
 .footnotes__list li > p, .footnote, figcaption, .form-text, .form-label, .form-control,
 .custom-form-control, .alert, .client-projects__text, .case-teaser__text, .default-full-width-teaser__text, .date-location-section dd, .simple-definition-list dd,
 .heading-font-regular {
@@ -307,7 +306,6 @@ h1 {
 .toc__anchor,
 .share-section__link,
 .author-bio__text,
-.author-bio__text > p,
 .author-bio__social-profile,
 .author-bio__head,
 .author-bio,
@@ -345,7 +343,6 @@ h6 > a:not([class]),
 .toc__anchor:hover,
 .share-section__link:hover,
 .author-bio__text:hover,
-.author-bio__text > p:hover,
 .author-bio__social-profile:hover,
 .author-bio__head:hover,
 .author-bio:hover,
@@ -378,7 +375,6 @@ h6 > a:hover:not([class]),
 .toc__anchor:focus,
 .share-section__link:focus,
 .author-bio__text:focus,
-.author-bio__text > p:focus,
 .author-bio__social-profile:focus,
 .author-bio__head:focus,
 .author-bio:focus,
@@ -457,11 +453,8 @@ h6 > a:focus:not([class]),
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem 1.44rem 0 1.44rem;
-  margin-bottom: 0;
-}
-.list-teaser__footer > *, .list-teaser-event .list-teaser-event__footer > * {
-  margin: 0;
+  padding: 1rem 1.44rem;
+  gap: 1rem;
 }
 
 .topic-header, .standard-header, .landing-page-header, .image-divider-center, .default-full-width-teaser {
@@ -1386,7 +1379,7 @@ h6 > a:focus:not([class]),
   width: 2.48832rem;
   height: 2.48832rem;
 }
-.avatar--sm .avatar__image, .avatar--small .avatar__image {
+.avatar--sm .avatar__image {
   width: 3.5831808rem;
   height: 3.5831808rem;
 }
@@ -2633,28 +2626,12 @@ ul:not([class]) > li ol,
 
 .author-bio {
   position: relative;
-  margin-bottom: 2.0736rem;
   color: #004153;
-}
-.author-bio.author-bio--condensed {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  width: 100%;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
 }
 .author-bio.author-bio--short {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 100%;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   -webkit-box-align: center;
@@ -2663,13 +2640,11 @@ ul:not([class]) > li ol,
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 1rem;
 }
 .author-bio.author-bio--long {
   padding: 2.0736rem;
   padding-top: 4.5831808rem;
   margin-top: 3.5831808rem;
-  margin-bottom: 3.919104rem;
   background-color: #f7f7f7;
 }
 .author-bio.author-bio--large {
@@ -2708,7 +2683,6 @@ ul:not([class]) > li ol,
 }
 
 .author-bio__head {
-  margin-bottom: 2.0736rem;
   text-align: center;
 }
 
@@ -2720,12 +2694,6 @@ ul:not([class]) > li ol,
 
 .author-bio__info {
   font-size: 1rem;
-}
-.author-bio__name + .author-bio__info {
-  margin-top: 0.18rem;
-}
-.author-bio--condensed .author-bio__info {
-  line-height: normal;
 }
 
 .author-bio__social {
@@ -2751,8 +2719,7 @@ ul:not([class]) > li ol,
   margin-left: 1rem;
 }
 
-.author-bio__text,
-.author-bio__text > p {
+.author-bio__text {
   font-size: 1rem;
   -webkit-hyphens: none;
       -ms-hyphens: none;
@@ -2764,10 +2731,6 @@ ul:not([class]) > li ol,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 1.44rem;
-}
-.author-bio--condensed .author-bio__image {
-  margin-right: 1rem;
 }
 .author-bio--long .author-bio__image {
   position: absolute;
@@ -2775,18 +2738,28 @@ ul:not([class]) > li ol,
   left: calc(50% - 3.5831808rem);
   margin-right: 0;
 }
-
-@media screen and (min-width: 48rem) {
-  .author-bio.author-bio--long {
-    margin-top: 5.0231808rem;
-  }
+.author-bio__image.avatar--xs, .author-bio__image.avatar--sm {
+  margin-right: 1rem;
 }
+.author-bio__image.avatar--md {
+  margin-right: 1.44rem;
+}
+
+.author-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+
 @media screen and (min-width: 90.25rem) {
   .author-bio.author-bio--short {
     width: 49%;
-  }
-  .author-bio.author-bio--long {
-    margin-top: 5.0231808rem;
   }
 }
 .conclusion {
@@ -5199,7 +5172,6 @@ wall-of-consent {
 
 .list-teaser__body {
   padding: 1rem 1.44rem;
-  margin-bottom: 0;
 }
 .list-teaser__body .label.talk, .list-teaser__body .label.slides, .list-teaser__body .label.training {
   display: none;
@@ -5648,18 +5620,16 @@ wall-of-consent {
   padding: 1rem;
 }
 
-.content-teaser__body {
-  margin-bottom: 0;
-}
-
 .content-teaser__footer {
-  margin-bottom: 0;
-}
-.content-teaser__footer > * {
-  margin-bottom: 0.5787037037rem;
-}
-.content-teaser__footer :last-child {
-  margin-bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.5787037037rem;
 }
 
 .content-teaser__caption {
