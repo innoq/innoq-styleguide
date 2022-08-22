@@ -15,7 +15,7 @@
 }
 
 .tile-grid-md {
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
 }
 
 @media screen and (min-width: $grid-breakpoint-md-lg) {
