@@ -56,7 +56,7 @@ $case-tile-teaser-sm-height: ms(32);
 //
 .case-tile-teaser--sm {
   min-height: $case-tile-teaser-sm-height;
-  padding: $spacer-md;
+  padding: $spacer-lg;
   margin-bottom: $spacer-xxl;
 }
 
@@ -92,7 +92,7 @@ $case-tile-teaser-sm-height: ms(32);
   }
 }
 
-// Hack for tease in masonry grid
+// Hack for teaser in masonry grid
 @media screen and (min-width: $grid-breakpoint-lg) {
   .case-tile-teaser {
     padding: $spacer-xl;
