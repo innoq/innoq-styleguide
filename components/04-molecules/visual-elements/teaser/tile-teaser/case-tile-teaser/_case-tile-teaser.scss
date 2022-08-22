@@ -44,6 +44,7 @@ $case-tile-teaser-sm-height: ms(32);
   @extend %teaser-text-italic;
 
   color: $case-tile-teaser-text-color;
+  line-height: $paragraph-line-height;
 }
 
 .case-tile-teaser__logo {
