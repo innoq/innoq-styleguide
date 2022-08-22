@@ -5557,7 +5557,7 @@ wall-of-consent {
 
 .case-tile-teaser--sm {
   min-height: 18.4884258895rem;
-  padding: 1.44rem;
+  padding: 2.985984rem;
   margin-bottom: 7.4300837069rem;
 }
 
@@ -7948,7 +7948,7 @@ wall-of-consent {
 }
 
 .tile-grid-md {
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
 }
 
 @media screen and (min-width: 60rem) {
