@@ -37,9 +37,3 @@ $avatar-size-xl: ms(29); //r = ~227 px
     height: $avatar-size-base;
   }
 }
-
-.avatar__link {
-  @extend %link-unstyled;
-
-  transform: translateZ(100);
-}

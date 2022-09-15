@@ -25,36 +25,30 @@ $author-bio-image-offset: ms(14);
     flex-direction: column;
     align-items: center;
 
-    .avatar--xl {
-      margin: 0;
+    .avatar__image {
+      background-color: $brand-primary;
     }
 
-    .avatar__image {
-      margin-bottom: $spacer-base;
-      background-color: $brand-primary;
-      resize: $spacer-sm;
+    .author-bio__text {
+      margin-top: $spacer-base;
+      text-align: center;
     }
 
     .author-bio__name {
-      padding-bottom: $spacer-xs;
+      font-size: $font-size-md;
+    }
+
+    .author-bio__info {
+      @extend %body-font-italic;
+
       font-size: $font-size-md;
     }
 
     .author-bio__expertise {
       @extend %heading-font-regular;
 
+      margin-top: $spacer-md;
       font-size: $font-size-md;
-    }
-
-    .author-bio__text {
-      text-align: center;
-
-      .author-bio__info {
-        @extend %body-font-italic;
-
-        margin-bottom: $spacer-md;
-        font-size: $font-size-md;
-      }
     }
   }
 }
