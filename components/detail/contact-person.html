@@ -326,14 +326,9 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-selector-class">.contact-person</span> {
-  <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">flex-direction</span>: column;
-  <span class="hljs-attribute">align-items</span>: center;
-  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-keyword">@extend</span> %container-xl;
 
   <span class="hljs-selector-class">.author-bio--large</span> {
-    <span class="hljs-attribute">margin-right</span>: <span class="hljs-variable">$spacer-lg</span>;
-    <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$spacer-lg</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$brand-secondary</span>;
   }
 }
@@ -350,9 +345,11 @@
 }
 
 <span class="hljs-selector-class">.contact-person__wrapper</span> {
-  <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">flex-wrap</span>: wrap;
-  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">display</span>: grid;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  grid-gap: <span class="hljs-variable">$spacer-base</span>;
+  grid-template-<span class="hljs-attribute">columns</span>: repeat(auto-fit, minmax(min(<span class="hljs-number">18rem</span>, <span class="hljs-number">100%</span>), <span class="hljs-number">1</span>fr));
+
 }
 
 <span class="hljs-selector-class">.contact-person__subheading</span> {
@@ -379,7 +376,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">703 Bytes</span>
+                    <span class="Meta-value">646 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -7379,8 +7376,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-07T13:56:21.884Z">
-                                9/7/2022
+                            <time datetime="2022-09-15T17:04:53.319Z">
+                                9/15/2022
                             </time>
                         
                     </dd>

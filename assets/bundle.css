@@ -67,7 +67,7 @@
 }
 
 .topic-header__text, .text-header__text, .standard-header__intro__text, .landing-page-header__text, .gradient-header__title, .wall-note__text, .image-divider-center__textbox__text, .simple-teaser__link h6, .podcast-teaser__subheadline, .product-list-teaser__text, .list-teaser-podcast__subheadline, .image-list-teaser__subtitle, .list-teaser-event__subheadline, .card__text, .toc__list > li, .superquote__role,
-.longquote__role, .author-bio__info, .author-bio.author-bio--large .author-bio__text .author-bio__info, .duration, blockquote:not([class]),
+.longquote__role, .author-bio__info, .author-bio.author-bio--large .author-bio__info, .duration, blockquote:not([class]),
 blockquote:not([class]) > p,
 .blockquote,
 .blockquote > p, p.lead, .static-tile-teaser__text, .case-tile-teaser__text, .topic-teaser__text, .client-projects__intro-text,
@@ -319,8 +319,7 @@ h5 > a:not([class]),
 h6 > a:not([class]),
 .footnotes__list li a,
 .footnote,
-.collapse-toggler,
-.avatar__link {
+.collapse-toggler {
   border-bottom: 0;
   color: inherit;
   text-decoration: none;
@@ -357,7 +356,6 @@ h6 > a:hover:not([class]),
 .footnotes__list li a:hover,
 .footnote:hover,
 .collapse-toggler:hover,
-.avatar__link:hover,
 .navbar__brand-link:focus,
 .staff-header-bio__text p a:focus,
 .footer__link:focus,
@@ -388,8 +386,7 @@ h5 > a:focus:not([class]),
 h6 > a:focus:not([class]),
 .footnotes__list li a:focus,
 .footnote:focus,
-.collapse-toggler:focus,
-.avatar__link:focus {
+.collapse-toggler:focus {
   background-color: initial;
 }
 
@@ -1394,11 +1391,6 @@ h6 > a:focus:not([class]),
 .avatar--base .avatar__image {
   width: 7.4300837069rem;
   height: 7.4300837069rem;
-}
-
-.avatar__link {
-  -webkit-transform: translateZ(100);
-          transform: translateZ(100);
 }
 
 .embed-responsive {
@@ -2659,26 +2651,21 @@ ul:not([class]) > li ol,
       -ms-flex-align: center;
           align-items: center;
 }
-.author-bio.author-bio--large .avatar--xl {
-  margin: 0;
-}
 .author-bio.author-bio--large .avatar__image {
-  margin-bottom: 2.0736rem;
   background-color: #ff9c66;
-  resize: 1rem;
+}
+.author-bio.author-bio--large .author-bio__text {
+  margin-top: 2.0736rem;
+  text-align: center;
 }
 .author-bio.author-bio--large .author-bio__name {
-  padding-bottom: 0.5787037037rem;
+  font-size: 1.44rem;
+}
+.author-bio.author-bio--large .author-bio__info {
   font-size: 1.44rem;
 }
 .author-bio.author-bio--large .author-bio__expertise {
-  font-size: 1.44rem;
-}
-.author-bio.author-bio--large .author-bio__text {
-  text-align: center;
-}
-.author-bio.author-bio--large .author-bio__text .author-bio__info {
-  margin-bottom: 1.44rem;
+  margin-top: 1.44rem;
   font-size: 1.44rem;
 }
 
@@ -3340,24 +3327,7 @@ wall-of-consent {
   width: 100%;
 }
 
-.contact-person {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
 .contact-person .author-bio--large {
-  margin-right: 2.985984rem;
-  margin-left: 2.985984rem;
   color: #004153;
 }
 
@@ -3372,14 +3342,10 @@ wall-of-consent {
 }
 
 .contact-person__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: grid;
+  width: 100%;
+  grid-gap: 2.0736rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
 }
 
 .contact-person__subheading {
@@ -7821,6 +7787,7 @@ wall-of-consent {
 }
 
 .container-xl,
+.contact-person,
 .container-md,
 .conclusion-wrapper,
 .tag-section {
@@ -7839,13 +7806,15 @@ wall-of-consent {
   margin: 0 auto;
 }
 .container-xl > * + *,
+.contact-person > * + *,
 .container-md > * + *,
 .conclusion-wrapper > * + *,
 .tag-section > * + * {
   margin-top: 2.0736rem;
 }
 
-.container-xl {
+.container-xl,
+.contact-person {
   max-width: 90.25rem;
 }
 
