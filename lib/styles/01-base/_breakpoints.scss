@@ -3,14 +3,15 @@
 // Defining the minimum dimensions at which the layout will change,
 // adapting to different screen sizes, for use in media queries.
 
-$grid-breakpoint-xs: 0 !default;
-$grid-breakpoint-xs-sm: 25rem !default; // 400px
-$grid-breakpoint-sm: 36rem !default; // 576px
-$grid-breakpoint-md: 48rem !default; // 768px
-$grid-breakpoint-md-lg: 60rem !default; // 960px
-$grid-breakpoint-lg: 75rem !default; // 1200px
-$grid-breakpoint-lg-xl: 82rem !default; // 1312px
-$grid-breakpoint-xl: 90.25rem !default; // 1444px
+  /* stylelint-disable declaration-no-important */
+$grid-breakpoint-xs: 0 !important;
+$grid-breakpoint-xs-sm: 25rem !important; // 400px
+$grid-breakpoint-sm: 36rem !important; // 576px
+$grid-breakpoint-md: 48rem !important; // 768px
+$grid-breakpoint-md-lg: 60rem !important; // 960px
+$grid-breakpoint-lg: 75rem !important; // 1200px
+$grid-breakpoint-lg-xl: 82rem !important; // 1312px
+$grid-breakpoint-xl: 90.25rem !important; // 1444px
 
 // px unit to accurately define min-width against max-width
 $nav-breakpoint-px: 788px;
