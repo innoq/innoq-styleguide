@@ -24,10 +24,12 @@ ul:not([class]),
 
     &::marker {
       color: $bullet-list-color;
+      font-size: $font-size-xs;
     }
 
     li::marker {
       color: $bullet-list-color-secondary;
+      font-size: $font-size-xs;
     }
 
     ul {
@@ -49,5 +51,10 @@ ul:not([class]),
     @extend %heading-font-bold;
 
     list-style-type: "•";
+
+    &::marker {
+      color: $bullet-list-color;
+      font-size: $font-size-md;
+    }
   }
 }
