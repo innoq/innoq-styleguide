@@ -29,42 +29,6 @@
 //
 // see: http://clagnut.com/blog/2395
 
-%improved-hyphenation-headlines {
-  -webkit-hyphenate-limit-after: 4;
-
-  // legacy properties
-  -webkit-hyphenate-limit-before: 4;
-
-  // current proposal
-  -moz-hyphenate-limit-chars: 9 4 4;
-  -webkit-hyphenate-limit-chars: 9 4 4;
-  -ms-hyphenate-limit-chars: 9 4 4;
-  hyphenate-limit-chars: 9 4 4;
-  hyphenate-limit-last: always;
-  hyphenate-limit-lines: 1;
-  hyphens: auto;
-
-  // hyphenate-limit-zone: 8%
-}
-
-%improved-hyphenation-text {
-  -webkit-hyphenate-limit-after: 4;
-
-  // legacy properties
-  -webkit-hyphenate-limit-before: 4;
-
-  // current proposal
-  -moz-hyphenate-limit-chars: 6 4 4;
-  -webkit-hyphenate-limit-chars: 6 4 4;
-  -ms-hyphenate-limit-chars: 6 4 4;
-  hyphenate-limit-chars: 6 4 4;
-  hyphenate-limit-last: always;
-  hyphenate-limit-lines: 2;
-  hyphens: auto;
-
-  // hyphenate-limit-zone: 8%
-}
-
 %manual-hyphenation {
   hyphens: manual;
   overflow-wrap: break-word;
