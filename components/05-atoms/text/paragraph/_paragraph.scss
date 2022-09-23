@@ -3,7 +3,10 @@ p {
 
   margin-bottom: 0;
   font-size: $font-size-base;
+  hyphens: auto;
   line-height: $paragraph-line-height;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
   // hyphenate-limit-chars: 6 4 4;
   // hyphenate-limit-last: always;
   // hyphenate-limit-lines: 2;

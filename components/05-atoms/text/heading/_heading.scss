@@ -87,6 +87,10 @@ h6 {
   // TODO turn on when it's supported
   // see: http://clagnut.com/blog/2395
 
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
   > a:not([class]) {
     @extend %link-unstyled;
   }

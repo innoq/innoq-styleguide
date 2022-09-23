@@ -25,7 +25,4 @@ main {
 // Workaround for Chrome hyphens bug
 html {
   -webkit-hyphenate-character: '-';
-  hyphens: auto;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
 }
