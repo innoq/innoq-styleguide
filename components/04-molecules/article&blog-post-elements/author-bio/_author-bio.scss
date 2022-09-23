@@ -36,10 +36,6 @@ $author-bio-image-offset: ms(14);
   @extend %link-unstyled;
 
   text-align: center;
-
-  :hover {
-    background-color: $author-bio-background-color;
-  }
 }
 
 .author-bio__name {
