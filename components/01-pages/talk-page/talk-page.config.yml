@@ -1,3 +1,7 @@
 status: ready
 context:
   listitem: Ich bin ein kleines Listitem
+  text_short:
+    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+    sit amet, consetetur sadipscing elitr.
+  headline: Ich bin eine Headline
