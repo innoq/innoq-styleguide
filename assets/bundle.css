@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* stylelint-disable declaration-no-important */
 /* stylelint-disable color-no-hex */
 :root {
   --overlay-standard-color: #979798;
@@ -2655,9 +2656,6 @@ ul:not([class]) > li ol,
 
 .author-bio__head {
   text-align: center;
-}
-.author-bio__head :hover {
-  background-color: #f7f7f7;
 }
 
 .author-bio__name {
