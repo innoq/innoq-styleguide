@@ -47,7 +47,6 @@
 
   margin-bottom: $spacer-base;
   font-size: $font-size-base;
-  hyphens: auto;
   line-height: $paragraph-line-height;
 }
 
@@ -116,7 +115,6 @@
 
   .case-teaser__text {
     font-size: $font-size-sm;
-    hyphens: none;
   }
 
   // Variation without stencil Headlines

@@ -262,27 +262,7 @@ dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
   margin-bottom: 0;
 }
 
-p:not([class]) {
-  -webkit-hyphenate-limit-after: 4;
-  -webkit-hyphenate-limit-before: 4;
-  -moz-hyphenate-limit-chars: 6 4 4;
-  -webkit-hyphenate-limit-chars: 6 4 4;
-  -ms-hyphenate-limit-chars: 6 4 4;
-  hyphenate-limit-chars: 6 4 4;
-  hyphenate-limit-last: always;
-  hyphenate-limit-lines: 2;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
-}
-
-.service-intro__header, .textbox-sequence__header,
-h6, .newsletter-optin__subtitle, .list-teaser-event__headline--secondary, .section-heading--tertiary, .upcase-heading,
-h5, .search-result__subtitle,
-h4, .podcast-teaser__headline, .content-teaser__header, .list-teaser__headline, .list-teaser-event__headline, .card__headline, .search-result__title, .section-heading--secondary,
-h3, .topic-teaser__header, .list-teaser-podcast__headline, .teaser-section-heading,
-h2, .newsletter-optin__title, .wall-note__heading, .project-index__title, .section-heading--primary,
-h1 {
+.service-intro__header, .textbox-sequence__header {
   -webkit-hyphens: manual;
       -ms-hyphens: manual;
           hyphens: manual;
@@ -676,6 +656,12 @@ h6 > a:focus:not([class]),
   background-blend-mode: multiply;
   background-color: #80a0a9;
   background-image: url("/assets/bg-images/general/visual-culture-13.webp");
+}
+
+.bg-image-culture-14 {
+  background-blend-mode: multiply;
+  background-color: #80a0a9;
+  background-image: url("/assets/bg-images/general/visual-culture-14.webp");
 }
 
 .bg-image-staff-01 {
@@ -1919,6 +1905,18 @@ h6 {
   line-height: 1.2;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
 .teaser-section-heading {
   margin-bottom: 0;
   font-size: 1.728rem;
@@ -1932,7 +1930,7 @@ h6 {
   text-transform: uppercase;
 }
 
-@supports ((width: -webkit-max-content) or (width: -moz-max-content) or (width: max-content)) {
+@supports ((width: -moz-max-content) or (width: max-content)) {
   .teaser-section-heading {
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -2050,7 +2048,12 @@ a.link-teaser.inverted-interaction-color:focus, a.link-teaser.inverted-interacti
 p {
   margin-bottom: 0;
   font-size: 1rem;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
   line-height: 1.52;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 p.lead {
   font-size: 1.2rem;
@@ -3737,9 +3740,6 @@ wall-of-consent {
   margin-bottom: 0.3348979767rem;
   color: #fff;
   font-size: 1.2rem;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
 }
 
 @media screen and (min-width: 48rem) {
@@ -4486,9 +4486,6 @@ wall-of-consent {
 .default-full-width-teaser__text {
   margin-bottom: 2.0736rem;
   font-size: 0.9114583333rem;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
   line-height: 1.52;
 }
 
@@ -4531,9 +4528,6 @@ wall-of-consent {
 
   .default-full-width-teaser__text {
     font-size: 1.2rem;
-    -webkit-hyphens: none;
-        -ms-hyphens: none;
-            hyphens: none;
   }
 
   .default-full-width-teaser--simple {
@@ -4690,9 +4684,6 @@ wall-of-consent {
 .case-teaser__text {
   margin-bottom: 2.0736rem;
   font-size: 1rem;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
   line-height: 1.52;
 }
 
@@ -4751,9 +4742,6 @@ wall-of-consent {
 
   .case-teaser__text {
     font-size: 1.2rem;
-    -webkit-hyphens: none;
-        -ms-hyphens: none;
-            hyphens: none;
   }
 
   .case-teaser--simple {
@@ -5067,9 +5055,6 @@ wall-of-consent {
   margin: 2.985984rem 0 1rem;
   color: #ff9c66;
   font-size: 1.2rem;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
 }
 
 .client-projects__project {
@@ -5092,9 +5077,6 @@ wall-of-consent {
   margin-bottom: 1rem;
   color: #004153;
   font-size: 1.2rem;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
   text-transform: none;
 }
 
@@ -5423,9 +5405,6 @@ wall-of-consent {
 .big-content-teaser__text {
   color: #004153;
   font-size: 1rem;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
 }
 
 .big-content-teaser__footer {
@@ -5483,12 +5462,6 @@ wall-of-consent {
   }
 }
 @media screen and (min-width: 75rem) {
-  .big-content-teaser__text {
-    -webkit-hyphens: none;
-        -ms-hyphens: none;
-            hyphens: none;
-  }
-
   .big-content-teaser__headline {
     font-size: 2.985984rem;
   }
@@ -6320,8 +6293,8 @@ wall-of-consent {
   }
 }
 .icon-divider {
-  margin-top: 2.0736rem;
-  margin-bottom: 2.0736rem;
+  padding-top: 2.0736rem;
+  padding-bottom: 2.0736rem;
   text-align: center;
 }
 
@@ -6680,13 +6653,6 @@ wall-of-consent {
     margin-bottom: 2.985984rem;
   }
 }
-.article-intro {
-  margin-bottom: 2.985984rem;
-}
-.article-intro .content-separator {
-  margin-top: 2.0736rem;
-}
-
 .claim-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8682,13 +8648,6 @@ main > .page-layout-md--default:first-child {
 .product-microsite-page > .stripe--gray {
   padding-top: 4.1472rem;
   padding-bottom: 4.1472rem;
-}
-
-.no-hyphenation {
-  /* stylelint-disable-next-line declaration-no-important */
-  -webkit-hyphens: none !important;
-      -ms-hyphens: none !important;
-          hyphens: none !important;
 }
 
 .demo > * {

@@ -3,11 +3,15 @@ p {
 
   margin-bottom: 0;
   font-size: $font-size-base;
+  hyphens: auto;
   line-height: $paragraph-line-height;
-
-  &:not([class]) {
-    @extend %improved-hyphenation-text;
-  }
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  // hyphenate-limit-chars: 6 4 4;
+  // hyphenate-limit-last: always;
+  // hyphenate-limit-lines: 2;
+  // TODO turn on when it's supported
+  // see: http://clagnut.com/blog/2395
 
   &.lead {
     @extend %body-font-italic;

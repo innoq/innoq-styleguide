@@ -285,7 +285,6 @@
 %<span class="hljs-selector-tag">h1</span>,
 <span class="hljs-selector-tag">h1</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-heavy;
-  <span class="hljs-keyword">@extend</span> %manual-hyphenation;
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-base</span>;
@@ -298,7 +297,6 @@
 %<span class="hljs-selector-tag">h2</span>,
 <span class="hljs-selector-tag">h2</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-heavy;
-  <span class="hljs-keyword">@extend</span> %manual-hyphenation;
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-sm</span>;
@@ -311,7 +309,6 @@
 %<span class="hljs-selector-tag">h3</span>,
 <span class="hljs-selector-tag">h3</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-heavy;
-  <span class="hljs-keyword">@extend</span> %manual-hyphenation;
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-sm</span>;
@@ -324,7 +321,6 @@
 %<span class="hljs-selector-tag">h4</span>,
 <span class="hljs-selector-tag">h4</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-bold;
-  <span class="hljs-keyword">@extend</span> %manual-hyphenation;
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-sm</span>;
@@ -337,7 +333,6 @@
 %<span class="hljs-selector-tag">h5</span>,
 <span class="hljs-selector-tag">h5</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-bold;
-  <span class="hljs-keyword">@extend</span> %manual-hyphenation;
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
@@ -350,7 +345,6 @@
 %<span class="hljs-selector-tag">h6</span>,
 <span class="hljs-selector-tag">h6</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-heavy;
-  <span class="hljs-keyword">@extend</span> %manual-hyphenation;
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
@@ -366,6 +360,16 @@
 <span class="hljs-selector-tag">h4</span>,
 <span class="hljs-selector-tag">h5</span>,
 <span class="hljs-selector-tag">h6</span> {
+  <span class="hljs-comment">// hyphenate-limit-chars: 9 4 4;</span>
+  <span class="hljs-comment">// hyphenate-limit-last: always;</span>
+  <span class="hljs-comment">// hyphenate-limit-lines: 1;</span>
+  <span class="hljs-comment">// TODO turn on when it&#x27;s supported</span>
+  <span class="hljs-comment">// see: http://clagnut.com/blog/2395</span>
+
+  <span class="hljs-attribute">hyphens</span>: auto;
+  <span class="hljs-attribute">overflow-wrap</span>: break-word;
+  <span class="hljs-attribute">word-wrap</span>: break-word;
+
   &gt; <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:not</span>([class]) {
     <span class="hljs-keyword">@extend</span> %link-unstyled;
   }
@@ -2145,40 +2149,6 @@
                 
                 
                 
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./article-intro.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="article-intro"
-                data-handle="article-intro"
-            >
-                <span>Article Intro</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
     
         
         
@@ -7483,8 +7453,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-23T08:31:09.094Z">
-                                9/23/2022
+                            <time datetime="2022-09-27T14:36:06.449Z">
+                                9/27/2022
                             </time>
                         
                     </dd>

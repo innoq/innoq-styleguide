@@ -33,7 +33,6 @@ a.big-content-teaser {
 
   color: $big-content-teaser-text-color;
   font-size: $font-size-base;
-  hyphens: auto;
 }
 
 .big-content-teaser__footer {
@@ -102,10 +101,6 @@ a.big-content-teaser {
 }
 
 @media screen and (min-width: $grid-breakpoint-lg) {
-  .big-content-teaser__text {
-    hyphens: none;
-  }
-
   .big-content-teaser__headline {
     font-size: $font-size-xxxl;
   }
