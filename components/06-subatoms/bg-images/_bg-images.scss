@@ -98,6 +98,13 @@
   background-image: asset-url("bg-images/general/visual-culture-13.webp");
 }
 
+.bg-image-culture-14,
+%bg-image-culture-14 {
+  background-blend-mode: multiply;
+  background-color: $brand-petrol-50;
+  background-image: asset-url("bg-images/general/visual-culture-14.webp");
+}
+
 // Staff
 .bg-image-staff-01,
 %bg-image-staff-01 {
