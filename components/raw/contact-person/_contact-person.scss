@@ -1,5 +1,6 @@
 .contact-person {
   @extend %container-xl;
+  @extend %container-vertical-spacing-xl;
 
   .author-bio--large {
     color: $brand-secondary;

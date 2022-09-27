@@ -7825,7 +7825,8 @@ wall-of-consent {
 
 .container-vertical-spacing-xl,
 .share-section,
-.tag-section {
+.tag-section,
+.contact-person {
   padding-top: 2.985984rem;
   padding-bottom: 2.985984rem;
 }
