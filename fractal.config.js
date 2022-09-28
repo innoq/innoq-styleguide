@@ -9,8 +9,8 @@ const path = require('path')
 /*
  * Require Fractal modules
  */
-const fractal = module.exports = require('@frctl/fractal').create()
-const fractalTheme = require('@frctl/mandelbrot')({
+const fractal = module.exports = require('fractal-fork').fractal.create()
+const fractalTheme = require('fractal-fork').mandelbrot({
   skin: 'black',
   styles: [
     'default',

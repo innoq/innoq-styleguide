@@ -9,12 +9,12 @@
   },
   "scripts": {
     "start": "npm-run-all --parallel server-watch compile-watch",
-    "server": "fractal start",
+    "server": "fractal-fork start",
     "server-watch": "nodemon -I -w components -w docs -e 'html' -x 'npm run server'",
     "compile": "faucet",
     "compile-watch": "npm run compile -- --watch",
     "test": "eslint --cache --ext .js . && stylelint --cache 'lib/**/*.scss' 'components/**/*.scss'",
-    "site": "yarn run compile && fractal build",
+    "site": "yarn run compile && fractal-fork build",
     "dist": "./scripts/dist",
     "release": "release-it"
   },
@@ -25,7 +25,7 @@
     "postcss-scss": "^4.0.3"
   },
   "devDependencies": {
-    "@frctl/fractal": "^1.5.11",
+    "fractal-fork": "^0.0.7",
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.22.0",
