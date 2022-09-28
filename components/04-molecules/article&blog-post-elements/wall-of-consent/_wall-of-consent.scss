@@ -1,4 +1,9 @@
 wall-of-consent {
   display: block;
   width: 100%;
+  padding: $spacer-sm;
+}
+
+wall-of-consent:not(.revealed) {
+  background-color: $brand-apricot-25;
 }

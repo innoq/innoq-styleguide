@@ -1,5 +1,5 @@
 export default class WallOfConsent extends HTMLElement {
-  connectedCallback () {
+  connectedCallback() {
     this.content = document.createElement('div')
 
     if (localStorage.getItem(this.localStorageName) === '1') {
@@ -11,11 +11,11 @@ export default class WallOfConsent extends HTMLElement {
     document.body.addEventListener(this.eventName, this.toggleContent)
   }
 
-  disconnectedCallback () {
+  disconnectedCallback() {
     document.body.removeEventListener(this.eventName, this.toggleContent)
   }
 
-  onToggle (event) {
+  onToggle(event) {
     if (event.target.checked) {
       localStorage.setItem(this.localStorageName, '1')
     } else {
@@ -26,7 +26,7 @@ export default class WallOfConsent extends HTMLElement {
     document.body.dispatchEvent(ev)
   }
 
-  toggleContent () {
+  toggleContent() {
     if (localStorage.getItem(this.localStorageName) === '1') {
       this.revealContent()
     } else {
@@ -34,7 +34,7 @@ export default class WallOfConsent extends HTMLElement {
     }
   }
 
-  revealContent () {
+  revealContent() {
     const template = this.querySelector('template')
     const templateContent = template.content
 
@@ -42,29 +42,31 @@ export default class WallOfConsent extends HTMLElement {
     this.prepend(this.content)
     this.toggleInitialElements(true)
     this.checkbox.checked = true
+    this.classList.add("revealed")
   }
 
-  removeContent () {
+  removeContent() {
     this.content.innerHTML = ''
     this.toggleInitialElements(false)
     this.checkbox.checked = false
+    this.classList.remove("revealed")
   }
 
-  toggleInitialElements (hidden) {
+  toggleInitialElements(hidden) {
     this.querySelectorAll('[data-hide-if-consent]').forEach((node) => {
       node.hidden = hidden
     })
   }
 
-  get checkbox () {
+  get checkbox() {
     return this.querySelector('input[type=checkbox]')
   }
 
-  get eventName () {
+  get eventName() {
     return `embeds-consent-from-${this.getAttribute('type')}`
   }
 
-  get localStorageName () {
+  get localStorageName() {
     return `consent-to-embeds-from-${this.getAttribute('type')}`
   }
 }
