@@ -1,4 +1,6 @@
 .artist-collabo-page {
+  background-color: $brand-gray-10;
+
   .standard-header__type {
     font-size: $font-size-sm;
   }
@@ -15,17 +17,13 @@
     color: $brand-gray;
   }
 
+  .artist-list-teaser {
+    margin-top: $spacer-xl;
+  }
+
   @media screen and (min-width: $grid-breakpoint-md) {
     .standard-header {
       margin-bottom: ms(20);
-    }
-
-    .artist-collabo-artwork {
-      font-size: $font-size-xxxl;
-    }
-
-    .artist-collabo-artist {
-      font-size: $font-size-base;
     }
   }
 }

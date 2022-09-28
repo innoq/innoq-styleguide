@@ -326,6 +326,11 @@
                                 <pre>wall-of-consent {
   <span class="hljs-attribute">display</span>: block;
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-sm</span>;
+}
+
+wall-of-consent<span class="hljs-selector-pseudo">:not</span>(.revealed) {
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$brand-apricot-25</span>;
 }
 </pre>
                             </code>
@@ -343,7 +348,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">53 Bytes</span>
+                    <span class="Meta-value">151 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -357,7 +362,7 @@
                             
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
                                 <pre><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WallOfConsent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">HTMLElement</span> </span>{
-  connectedCallback () {
+  <span class="hljs-function"><span class="hljs-title">connectedCallback</span>(<span class="hljs-params"></span>)</span> {
     <span class="hljs-built_in">this</span>.content = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&#x27;div&#x27;</span>)
 
     <span class="hljs-keyword">if</span> (<span class="hljs-built_in">localStorage</span>.getItem(<span class="hljs-built_in">this</span>.localStorageName) === <span class="hljs-string">&#x27;1&#x27;</span>) {
@@ -369,11 +374,11 @@
     <span class="hljs-built_in">document</span>.body.addEventListener(<span class="hljs-built_in">this</span>.eventName, <span class="hljs-built_in">this</span>.toggleContent)
   }
 
-  disconnectedCallback () {
+  <span class="hljs-function"><span class="hljs-title">disconnectedCallback</span>(<span class="hljs-params"></span>)</span> {
     <span class="hljs-built_in">document</span>.body.removeEventListener(<span class="hljs-built_in">this</span>.eventName, <span class="hljs-built_in">this</span>.toggleContent)
   }
 
-  onToggle (event) {
+  <span class="hljs-function"><span class="hljs-title">onToggle</span>(<span class="hljs-params">event</span>)</span> {
     <span class="hljs-keyword">if</span> (event.target.checked) {
       <span class="hljs-built_in">localStorage</span>.setItem(<span class="hljs-built_in">this</span>.localStorageName, <span class="hljs-string">&#x27;1&#x27;</span>)
     } <span class="hljs-keyword">else</span> {
@@ -384,7 +389,7 @@
     <span class="hljs-built_in">document</span>.body.dispatchEvent(ev)
   }
 
-  toggleContent () {
+  <span class="hljs-function"><span class="hljs-title">toggleContent</span>(<span class="hljs-params"></span>)</span> {
     <span class="hljs-keyword">if</span> (<span class="hljs-built_in">localStorage</span>.getItem(<span class="hljs-built_in">this</span>.localStorageName) === <span class="hljs-string">&#x27;1&#x27;</span>) {
       <span class="hljs-built_in">this</span>.revealContent()
     } <span class="hljs-keyword">else</span> {
@@ -392,7 +397,7 @@
     }
   }
 
-  revealContent () {
+  <span class="hljs-function"><span class="hljs-title">revealContent</span>(<span class="hljs-params"></span>)</span> {
     <span class="hljs-keyword">const</span> template = <span class="hljs-built_in">this</span>.querySelector(<span class="hljs-string">&#x27;template&#x27;</span>)
     <span class="hljs-keyword">const</span> templateContent = template.content
 
@@ -400,29 +405,31 @@
     <span class="hljs-built_in">this</span>.prepend(<span class="hljs-built_in">this</span>.content)
     <span class="hljs-built_in">this</span>.toggleInitialElements(<span class="hljs-literal">true</span>)
     <span class="hljs-built_in">this</span>.checkbox.checked = <span class="hljs-literal">true</span>
+    <span class="hljs-built_in">this</span>.classList.add(<span class="hljs-string">&quot;revealed&quot;</span>)
   }
 
-  removeContent () {
+  <span class="hljs-function"><span class="hljs-title">removeContent</span>(<span class="hljs-params"></span>)</span> {
     <span class="hljs-built_in">this</span>.content.innerHTML = <span class="hljs-string">&#x27;&#x27;</span>
     <span class="hljs-built_in">this</span>.toggleInitialElements(<span class="hljs-literal">false</span>)
     <span class="hljs-built_in">this</span>.checkbox.checked = <span class="hljs-literal">false</span>
+    <span class="hljs-built_in">this</span>.classList.remove(<span class="hljs-string">&quot;revealed&quot;</span>)
   }
 
-  toggleInitialElements (hidden) {
+  <span class="hljs-function"><span class="hljs-title">toggleInitialElements</span>(<span class="hljs-params">hidden</span>)</span> {
     <span class="hljs-built_in">this</span>.querySelectorAll(<span class="hljs-string">&#x27;[data-hide-if-consent]&#x27;</span>).forEach(<span class="hljs-function">(<span class="hljs-params">node</span>) =&gt;</span> {
       node.hidden = hidden
     })
   }
 
-  get checkbox () {
+  <span class="hljs-keyword">get</span> <span class="hljs-title">checkbox</span>() {
     <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.querySelector(<span class="hljs-string">&#x27;input[type=checkbox]&#x27;</span>)
   }
 
-  get eventName () {
+  <span class="hljs-keyword">get</span> <span class="hljs-title">eventName</span>() {
     <span class="hljs-keyword">return</span> <span class="hljs-string">`embeds-consent-from-<span class="hljs-subst">${<span class="hljs-built_in">this</span>.getAttribute(<span class="hljs-string">&#x27;type&#x27;</span>)}</span>`</span>
   }
 
-  get localStorageName () {
+  <span class="hljs-keyword">get</span> <span class="hljs-title">localStorageName</span>() {
     <span class="hljs-keyword">return</span> <span class="hljs-string">`consent-to-embeds-from-<span class="hljs-subst">${<span class="hljs-built_in">this</span>.getAttribute(<span class="hljs-string">&#x27;type&#x27;</span>)}</span>`</span>
   }
 }
@@ -442,7 +449,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.8 KB</span>
+                    <span class="Meta-value">1.9 KB</span>
                 </li>
             </ul>
         </div>
@@ -4074,6 +4081,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./artist-list-teaser.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="artist-list-teaser"
+                data-handle="artist-list-teaser"
+            >
+                <span>Artist List Teaser</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./case-list-teaser.html"
                 data-role="tree-link"
                 
@@ -4116,40 +4157,6 @@
                 data-handle="event-list-teaser"
             >
                 <span>Event List Teaser</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./image-list-teaser.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="image-list-teaser"
-                data-handle="image-list-teaser"
-            >
-                <span>Image List Teaser</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -5152,40 +5159,6 @@
                 data-handle="duration"
             >
                 <span>Duration</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
-    
-        
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a
-                class="Tree-entityLink"
-                href="./edition.html"
-                data-role="tree-link"
-                
-                data-pjax
-                data-test="edition"
-                data-handle="edition"
-            >
-                <span>Edition</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -7408,8 +7381,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-27T15:34:12.053Z">
-                                9/27/2022
+                            <time datetime="2022-09-28T15:55:59.896Z">
+                                9/28/2022
                             </time>
                         
                     </dd>
