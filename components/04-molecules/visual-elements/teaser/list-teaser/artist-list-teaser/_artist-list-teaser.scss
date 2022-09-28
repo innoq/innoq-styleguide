@@ -1,0 +1,124 @@
+.artist-list-teaser {
+  @extend %link-unstyled;
+
+  display: block;
+  padding-top: $spacer-base;
+}
+
+$edition-font-size: $font-size-base;
+
+//Edition Label for Artist Collabo
+.artist-list-teaser__edition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.artist-list-teaser__edition__separator {
+  min-width: $spacer-xl;
+  height: 2px;
+  border: 0;
+  background-color: $brand-gray;
+  transform: rotate(90deg);
+}
+
+.artist-list-teaser__edition__type {
+  @extend %heading-font-bold;
+
+  margin-top: $spacer-base;
+  color: $brand-gray;
+  font-size: $font-size-md;
+  text-transform: uppercase;
+}
+
+.artist-list-teaser__edition__date {
+  @extend %heading-font-heavy;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: $spacer-xs;
+  font-size: $font-size-xxl;
+
+  &--edition-1 {
+    color: $brand-blue;
+  }
+
+  &--edition-2 {
+    color: $brand-petrol;
+  }
+}
+
+.artist-list-teaser__edition__date__separator {
+  min-width: $spacer-base;
+  height: 5px;
+  border: 0;
+  margin: $spacer-sm 0;
+  background-color: $brand-red;
+  transform: rotate(90deg);
+
+  &--edition-1 {
+    background-color: $brand-red;
+  }
+
+  &--edition-2 {
+    background-color: $brand-apricot;
+  }
+}
+
+.artist-list-teaser__title {
+  @extend %heading-font-heavy;
+
+  margin-top: $spacer-sm;
+  margin-bottom: 0;
+  font-size: $font-size-lg;
+  text-align: center;
+
+  &--edition-1 {
+    color: $brand-red;
+  }
+
+  &--edition-2 {
+    color: $brand-apricot;
+  }
+}
+
+.artist-list-teaser__subtitle {
+  @extend %body-font-italic;
+
+  font-size: $font-size-base;
+  text-align: center;
+}
+
+.artist-list-teaser__image {
+  margin-top: $spacer-sm;
+}
+
+// Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+  .artist-list-teaser__edition__-separator {
+    width: ms(20);
+    margin-bottom: $spacer-xl;
+  }
+
+  .artist-list-teaser__edition__date {
+    flex-direction: row;
+    font-size: $font-size-xxxxl;
+  }
+
+  .artist-list-teaser__edition__date__separator {
+    height: 8px;
+    margin: 0 $spacer-xxs;
+    transform: rotate(0deg);
+  }
+
+  .artist-list-teaser__title {
+    font-size: $font-size-xxl;
+  }
+
+  .artist-list-teaser__subtitle {
+    font-size: $font-size-sm;
+  }
+}
