@@ -7,7 +7,8 @@
 blockquote:not([class]),
 .blockquote {
   position: relative;
-  margin: 0 0 $spacer-md;
+  margin-right: 0;
+  margin-left: 0;
 
   &,
   > p {
@@ -22,7 +23,7 @@ blockquote:not([class]),
       position: absolute;
       top: 0;
       bottom: 0;
-      left: -$spacer-lg;
+      left: -$spacer-base;
       display: block;
       width: 10px;
       background-color: $quote-color;
