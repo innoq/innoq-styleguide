@@ -1,5 +1,3 @@
-$bullet-size: 1.9rem;
-
 .list-unstyled {
   @extend %list-unstyled;
 }
@@ -12,7 +10,7 @@ $bullet-size: 1.9rem;
 
 ul:not([class]),
 .bold-list {
-  @extend %unsorted-list;
+  @extend %base-list-styling;
 
   margin-left: $spacer-xs;
 
@@ -24,12 +22,12 @@ ul:not([class]),
 
     &::marker {
       color: $bullet-list-color;
-      font-size: $font-size-xs;
+      font-size: $font-size-sm;
     }
 
     li::marker {
       color: $bullet-list-color-secondary;
-      font-size: $font-size-xs;
+      font-size: $font-size-sm;
     }
 
     ul {
@@ -45,7 +43,7 @@ ul:not([class]),
 // ---- Bold Bullet Lists ----------------------------------------------------------
 //
 .bold-list {
-  @extend %unsorted-list;
+  @extend %base-list-styling;
 
   > li {
     @extend %heading-font-bold;
@@ -54,7 +52,7 @@ ul:not([class]),
 
     &::marker {
       color: $bullet-list-color;
-      font-size: $font-size-md;
+      font-size: $font-size-lg;
     }
   }
 }

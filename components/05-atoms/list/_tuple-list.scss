@@ -2,29 +2,38 @@ $tuple-list-label-width: 8rem;
 
 .tuple-list {
   @extend %list-unstyled;
+
+  > * + * {
+    margin-top: $spacer-sm;
+  }
 }
 
 .tuple-list__label {
-  @extend %teaser-caption;
+  @extend %heading-font-bold;
 
   display: block;
   color: $tupel-list-label-color;
-}
-
-.tuple-list__entry {
-  margin-bottom: $spacer-sm;
+  font-size: $font-size-xs;
+  text-transform: uppercase;
 }
 
 .tuple-list__value {
   @extend %heading-font-regular;
 
   display: block;
+  font-size: $font-size-xs;
+  line-height: $paragraph-line-height;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
+  .tuple-list {
+    > * + * {
+      margin-top: $spacer-xxs
+    }
+  }
+
   .tuple-list__entry {
     display: grid;
-    margin-bottom: $spacer-xxs;
     grid-template-areas: "label value";
     grid-template-columns: $tuple-list-label-width auto;
     /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */

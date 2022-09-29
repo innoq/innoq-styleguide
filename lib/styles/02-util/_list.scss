@@ -11,62 +11,14 @@
   list-style: none;
 }
 
-%unsorted-list {
+%base-list-styling {
   padding: 0;
   font-size: $font-size-base;
   line-height: $paragraph-line-height;
   list-style-position: outside;
 
-  li {
-    margin-bottom: $spacer-xs;
-  }
-
-  ul,
-  ol {
-    margin-top: $spacer-xs;
-  }
-
   @media screen and (min-width: $grid-breakpoint-md) {
     font-size: $font-size-sm;
     line-height: $paragraph-line-height;
-  }
-}
-
-%definition-list {
-  dt {
-    @extend %heading-font-bold;
-
-    margin-bottom: $spacer-xs;
-    color: $definition-list-dt-color;
-    font-size: $font-size-base;
-    line-height: $paragraph-line-height;
-  }
-
-  dd {
-    @extend %body-font-regular;
-
-    margin-bottom: $spacer-xs;
-    margin-left: $spacer-md;
-    font-size: $font-size-base;
-    line-height: $paragraph-line-height;
-  }
-}
-
-%definition-list-simple {
-  @extend %definition-list;
-
-  dd {
-    @extend %heading-font-regular;
-
-    text-transform: uppercase;
-  }
-
-  dd,
-  dt {
-    margin-left: 0;
-  }
-
-  dt {
-    margin-bottom: 0;
   }
 }

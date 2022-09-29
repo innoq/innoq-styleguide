@@ -3,10 +3,46 @@
 // adapted from: /components/detail/talk-page
 // see lib/styles/tools/text
 
-dl:not([class]) {
+dl:not([class]),
+dl {
   @extend %definition-list;
+
+  > * + * {
+    margin-top: $spacer-xs;
+  }
 }
 
 .simple-definition-list {
   @extend %definition-list-simple;
+}
+
+%definition-list {
+  dt {
+    @extend %heading-font-bold;
+
+    color: $definition-list-dt-color;
+    font-size: $font-size-base;
+    line-height: $paragraph-line-height;
+  }
+
+  dd {
+    @extend %body-font-regular;
+
+    margin-left: $spacer-md;
+    font-size: $font-size-base;
+    line-height: $paragraph-line-height;
+  }
+}
+
+%definition-list-simple {
+  dd {
+    @extend %heading-font-regular;
+
+    text-transform: uppercase;
+  }
+
+  dd,
+  dt {
+    margin-left: 0;
+  }
 }
