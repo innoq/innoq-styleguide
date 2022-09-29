@@ -16,6 +16,7 @@
   font-size: $font-size-base;
   line-height: $paragraph-line-height;
   list-style-position: outside;
+  align-self: flex-start;
 
   @media screen and (min-width: $grid-breakpoint-md) {
     font-size: $font-size-sm;
