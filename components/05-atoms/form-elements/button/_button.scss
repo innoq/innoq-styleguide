@@ -11,9 +11,9 @@ $default-btn-margin: $spacer-sm;
 
   padding: $spacer-md $spacer-base;
   border: 3px solid $button-border-color;
+  border-radius: 0;
   margin-bottom: $default-btn-margin;
   background-color: $button-background;
-  border-radius: 0;
   font-size: $font-size-sm;
 
   &--cta {

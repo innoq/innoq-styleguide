@@ -39,9 +39,9 @@ $radio-indent: $radio-offset + $radio-size;
     // Background (color)
     &::before {
       border: 2px solid $radio-border;
+      border-radius: 50%;
       margin-right: $radio-offset;
       background-color: $radio-bg;
-      border-radius: 50%;
       pointer-events: none;
       user-select: none;
     }
