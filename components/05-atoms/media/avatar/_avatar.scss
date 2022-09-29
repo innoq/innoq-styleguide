@@ -2,7 +2,8 @@ $avatar-size-xs: ms(10); //~40px
 $avatar-size-sm: ms(14); //~55px
 $avatar-size-md: ms(18); //~80px
 $avatar-size-base: ms(22); //~120px
-$avatar-size-xl: ms(29); //r = ~227 px
+$avatar-size-xl: ms(29); //r = ~227px
+$avatar-size-xxl: ms(36); //r = ~425px
 
 .avatar {
   display: inline-block;
@@ -31,6 +32,11 @@ $avatar-size-xl: ms(29); //r = ~227 px
   .avatar--xl & {
     width: $avatar-size-xl;
     height: $avatar-size-xl;
+  }
+
+  .avatar--xxl & {
+    width: $avatar-size-xxl;
+    height: $avatar-size-xxl;
   }
 
   .avatar--base & {
