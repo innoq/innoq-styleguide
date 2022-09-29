@@ -1009,9 +1009,9 @@ h6 > a:focus:not([class]),
   color: #004153;
   padding: 1.44rem 2.0736rem;
   border: 3px solid #004153;
+  border-radius: 0;
   margin-bottom: 1rem;
   background-color: transparent;
-  border-radius: 0;
   font-size: 1.2rem;
 }
 .btn::after {
@@ -1176,9 +1176,9 @@ h6 > a:focus:not([class]),
 }
 .checkbox .form-label::before {
   border: 2px solid #004153;
+  border-radius: 2px;
   margin-right: 0.475rem;
   background-color: #fff;
-  border-radius: 2px;
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1204,10 +1204,10 @@ h6 > a:focus:not([class]),
 
 .form-control {
   border: 2px solid #004153;
+  border-radius: 0;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  border-radius: 0;
   caret-color: #fff;
   outline: none;
 }
@@ -1337,9 +1337,9 @@ h6 > a:focus:not([class]),
 }
 .radio .form-label::before {
   border: 2px solid #004153;
+  border-radius: 50%;
   margin-right: 0.475rem;
   background-color: #fff;
-  border-radius: 50%;
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -1357,8 +1357,8 @@ h6 > a:focus:not([class]),
 }
 
 .avatar__image {
-  background-color: #f7f7f7;
   border-radius: 100%;
+  background-color: #f7f7f7;
 }
 .avatar--xs .avatar__image {
   width: 2.48832rem;
@@ -2101,7 +2101,8 @@ pull-quote > blockquote > p,
 blockquote:not([class]),
 .blockquote {
   position: relative;
-  margin: 0 0 1.44rem;
+  margin-right: 0;
+  margin-left: 0;
 }
 blockquote:not([class]),
 blockquote:not([class]) > p,
@@ -2116,7 +2117,7 @@ blockquote:not([class]) > p,
     position: absolute;
     top: 0;
     bottom: 0;
-    left: -2.985984rem;
+    left: -2.0736rem;
     display: block;
     width: 10px;
     background-color: #004153;
@@ -2174,8 +2175,8 @@ blockquote:not([class]) > p,
   position: absolute;
   width: 20px;
   height: 20px;
-  background: #004153;
   border-radius: 10px;
+  background: #004153;
 }
 
 .dot-a {
@@ -7818,12 +7819,8 @@ wall-of-consent:not(.revealed) {
 .container-vertical-spacing-lg,
 .training-detail-page figure,
 .story-detail-page figure,
-.case-study-page blockquote,
 .case-study-page super-quote,
 .case-study-page long-quote,
-.training-detail-page blockquote,
-.story-detail-page blockquote,
-.article-page-default blockquote,
 .training-detail-page super-quote,
 .story-detail-page super-quote,
 .article-page-default super-quote,
@@ -7946,10 +7943,7 @@ wall-of-consent:not(.revealed) {
 .training-detail-page > * + *, .story-detail-page > * + *, .article-page-default > * + * {
   margin-top: 2.0736rem;
 }
-.training-detail-page blockquote, .story-detail-page blockquote, .article-page-default blockquote,
-.training-detail-page super-quote,
-.story-detail-page super-quote,
-.article-page-default super-quote,
+.training-detail-page super-quote, .story-detail-page super-quote, .article-page-default super-quote,
 .training-detail-page long-quote,
 .story-detail-page long-quote,
 .article-page-default long-quote {
@@ -8117,7 +8111,6 @@ wall-of-consent:not(.revealed) {
 .case-study-page > * + * {
   margin-top: 1.44rem;
 }
-.case-study-page blockquote,
 .case-study-page super-quote,
 .case-study-page long-quote {
   max-width: 45rem;

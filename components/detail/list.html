@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.0.7" type="text/css">
 
 
 <title>List | INNOQ Styleguide</title>
@@ -519,9 +519,9 @@
     <code class="Code Code--lang-json hljs">
         
             
-            <pre>{
-  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;Listen&quot;</span>
-}</pre>
+            <pre><span class="hljs-punctuation">{</span>
+  <span class="hljs-attr">&quot;text&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Listen&quot;</span>
+<span class="hljs-punctuation">}</span></pre>
             
         
     </code>
@@ -711,7 +711,7 @@
 
       <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-xxs</span>;
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color-secondary</span>;
-      <span class="hljs-attribute">content</span>: counter(number);
+      <span class="hljs-attribute">content</span>: <span class="hljs-built_in">counter</span>(number);
       <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
       <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
 
@@ -789,18 +789,18 @@
   <span class="hljs-selector-class">.tuple-list__entry</span> {
     <span class="hljs-attribute">display</span>: grid;
     <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xxs</span>;
-    grid-template-areas: <span class="hljs-string">&quot;label value&quot;</span>;
-    grid-template-<span class="hljs-attribute">columns</span>: <span class="hljs-variable">$tuple-list-label-width</span> auto;
+    <span class="hljs-attribute">grid-template-areas</span>: <span class="hljs-string">&quot;label value&quot;</span>;
+    <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-variable">$tuple-list-label-width</span> auto;
     <span class="hljs-comment">/* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */</span>
-    grid-template-rows: auto;
+    <span class="hljs-attribute">grid-template-rows</span>: auto;
   }
 
   <span class="hljs-selector-class">.tuple-list__label</span> {
-    grid-area: label;
+    <span class="hljs-attribute">grid-area</span>: label;
   }
 
   <span class="hljs-selector-class">.tuple-list__value</span> {
-    grid-area: value;
+    <span class="hljs-attribute">grid-area</span>: value;
   }
 }
 </pre>
@@ -7842,8 +7842,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-28T15:55:59.896Z">
-                                9/28/2022
+                            <time datetime="2022-09-29T08:29:27.761Z">
+                                9/29/2022
                             </time>
                         
                     </dd>
@@ -7867,7 +7867,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.2"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.0.7"></script>
 
 
 

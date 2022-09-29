@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.0.7" type="text/css">
 
 
 <title>Modi Toggler | INNOQ Styleguide</title>
@@ -233,34 +233,34 @@
  * todo:
  *    - separate selectable elements and classNames
  */</span>
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ModiToggler</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">HTMLElement</span> </span>{
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ModiToggler</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">HTMLElement</span> {
   connectedCallback () {
-    <span class="hljs-built_in">this</span>.toggleModifier = <span class="hljs-built_in">this</span>.getAttribute(<span class="hljs-string">&#x27;data-toggle-modifier&#x27;</span>)
-    <span class="hljs-built_in">this</span>.toggleTargets = <span class="hljs-built_in">this</span>.makeToggleTargets(<span class="hljs-built_in">this</span>.getAttribute(<span class="hljs-string">&#x27;data-target&#x27;</span>), <span class="hljs-built_in">this</span>.toggleModifier)
-    <span class="hljs-built_in">this</span>.onclick = <span class="hljs-built_in">this</span>.toggle.bind(<span class="hljs-built_in">this</span>)
-    <span class="hljs-built_in">this</span>.classList.add(<span class="hljs-string">&#x27;enhanced&#x27;</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">toggleModifier</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">&#x27;data-toggle-modifier&#x27;</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">toggleTargets</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">makeToggleTargets</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">&#x27;data-target&#x27;</span>), <span class="hljs-variable language_">this</span>.<span class="hljs-property">toggleModifier</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">onclick</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">toggle</span>.<span class="hljs-title function_">bind</span>(<span class="hljs-variable language_">this</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">&#x27;enhanced&#x27;</span>)
   }
 
   toggle () {
-    <span class="hljs-built_in">this</span>.targets.forEach(<span class="hljs-function"><span class="hljs-params">target</span> =&gt;</span> target.element.classList.toggle(target.toggleClass))
-    <span class="hljs-built_in">this</span>.toggleSelf()
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">targets</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">target</span> =&gt;</span> target.<span class="hljs-property">element</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">toggle</span>(target.<span class="hljs-property">toggleClass</span>))
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggleSelf</span>()
   }
 
   toggleSelf () {
-    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.getAttribute(<span class="hljs-string">&#x27;toggled&#x27;</span>) !== <span class="hljs-literal">null</span>) {
-      <span class="hljs-built_in">this</span>.removeAttribute(<span class="hljs-string">&#x27;toggled&#x27;</span>)
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">&#x27;toggled&#x27;</span>) !== <span class="hljs-literal">null</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">removeAttribute</span>(<span class="hljs-string">&#x27;toggled&#x27;</span>)
     } <span class="hljs-keyword">else</span> {
-      <span class="hljs-built_in">this</span>.setAttribute(<span class="hljs-string">&#x27;toggled&#x27;</span>)
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">&#x27;toggled&#x27;</span>)
     }
   }
 
   makeToggleTargets (targetString, toggleModifier) {
-    <span class="hljs-keyword">return</span> targetString.split(<span class="hljs-string">&#x27;,&#x27;</span>)
-      .map(<span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> s.trim())
-      .reduce(<span class="hljs-function">(<span class="hljs-params">acc, selector</span>) =&gt;</span> {
-        <span class="hljs-keyword">if</span> (<span class="hljs-regexp">/-?[_a-zA-Z]+[_a-zA-Z0-9-]*/</span>.test(selector)) { <span class="hljs-comment">// test if valid single class</span>
-          acc.push({
-            <span class="hljs-attr">element</span>: <span class="hljs-built_in">document</span>.querySelector(selector),
+    <span class="hljs-keyword">return</span> targetString.<span class="hljs-title function_">split</span>(<span class="hljs-string">&#x27;,&#x27;</span>)
+      .<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> s.<span class="hljs-title function_">trim</span>())
+      .<span class="hljs-title function_">reduce</span>(<span class="hljs-function">(<span class="hljs-params">acc, selector</span>) =&gt;</span> {
+        <span class="hljs-keyword">if</span> (<span class="hljs-regexp">/-?[_a-zA-Z]+[_a-zA-Z0-9-]*/</span>.<span class="hljs-title function_">test</span>(selector)) { <span class="hljs-comment">// test if valid single class</span>
+          acc.<span class="hljs-title function_">push</span>({
+            <span class="hljs-attr">element</span>: <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(selector),
             <span class="hljs-attr">toggleClass</span>: selector + <span class="hljs-string">&#x27;--&#x27;</span> + toggleModifier
           })
         }
@@ -7217,8 +7217,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-28T15:55:59.896Z">
-                                9/28/2022
+                            <time datetime="2022-09-29T08:29:27.761Z">
+                                9/29/2022
                             </time>
                         
                     </dd>
@@ -7242,7 +7242,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.2"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.0.7"></script>
 
 
 

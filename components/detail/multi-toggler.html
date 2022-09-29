@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.0.7" type="text/css">
 
 
 <title>Multi Toggler | INNOQ Styleguide</title>
@@ -239,51 +239,51 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
-                                <pre><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MultiToggler</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">HTMLElement</span> </span>{
+                                <pre><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MultiToggler</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">HTMLElement</span> {
   connectedCallback () {
-    <span class="hljs-keyword">const</span> targetSelector = <span class="hljs-built_in">this</span>.getAttribute(<span class="hljs-string">&#x27;data-target&#x27;</span>)
-    <span class="hljs-keyword">const</span> hasNextElementSiblingTarget = <span class="hljs-built_in">this</span>.hasAttribute(<span class="hljs-string">&#x27;data-target-next&#x27;</span>)
-    <span class="hljs-built_in">this</span>.toggleClass = <span class="hljs-built_in">this</span>.getAttribute(<span class="hljs-string">&#x27;data-toggle-class&#x27;</span>)
-    <span class="hljs-keyword">const</span> initClass = <span class="hljs-built_in">this</span>.getAttribute(<span class="hljs-string">&#x27;data-init-class&#x27;</span>)
-    <span class="hljs-keyword">const</span> toggleOnInit = <span class="hljs-built_in">this</span>.hasAttribute(<span class="hljs-string">&#x27;data-toggle-on-init&#x27;</span>)
-    <span class="hljs-built_in">this</span>.toggleSelfClass = <span class="hljs-built_in">this</span>.getAttribute(<span class="hljs-string">&#x27;data-toggle-self-class&#x27;</span>)
-    <span class="hljs-keyword">const</span> initSelfClass = <span class="hljs-built_in">this</span>.getAttribute(<span class="hljs-string">&#x27;data-init-self-class&#x27;</span>)
+    <span class="hljs-keyword">const</span> targetSelector = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">&#x27;data-target&#x27;</span>)
+    <span class="hljs-keyword">const</span> hasNextElementSiblingTarget = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">hasAttribute</span>(<span class="hljs-string">&#x27;data-target-next&#x27;</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">toggleClass</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">&#x27;data-toggle-class&#x27;</span>)
+    <span class="hljs-keyword">const</span> initClass = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">&#x27;data-init-class&#x27;</span>)
+    <span class="hljs-keyword">const</span> toggleOnInit = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">hasAttribute</span>(<span class="hljs-string">&#x27;data-toggle-on-init&#x27;</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">toggleSelfClass</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">&#x27;data-toggle-self-class&#x27;</span>)
+    <span class="hljs-keyword">const</span> initSelfClass = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">&#x27;data-init-self-class&#x27;</span>)
 
-    <span class="hljs-built_in">this</span>.targetElements = []
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">targetElements</span> = []
     <span class="hljs-keyword">if</span> (targetSelector) {
-      <span class="hljs-built_in">this</span>.targetElements.push(<span class="hljs-built_in">Array</span>.from(<span class="hljs-built_in">document</span>.querySelectorAll(targetSelector)))
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">targetElements</span>.<span class="hljs-title function_">push</span>(<span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(targetSelector)))
     }
     <span class="hljs-keyword">if</span> (hasNextElementSiblingTarget) {
-      <span class="hljs-built_in">this</span>.targetElements.push(<span class="hljs-built_in">this</span>.nextElementSibling)
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">targetElements</span>.<span class="hljs-title function_">push</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">nextElementSibling</span>)
     }
     <span class="hljs-keyword">if</span> (toggleOnInit) {
-      <span class="hljs-built_in">this</span>.toggle()
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggle</span>()
     }
     <span class="hljs-keyword">if</span> (initClass) {
-      <span class="hljs-built_in">this</span>.toggleTargets(initClass)
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggleTargets</span>(initClass)
     }
     <span class="hljs-keyword">if</span> (initSelfClass) {
-      <span class="hljs-built_in">this</span>.classList.add(initSelfClass)
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(initSelfClass)
     }
-    <span class="hljs-built_in">this</span>.onclick = <span class="hljs-built_in">this</span>.toggle.bind(<span class="hljs-built_in">this</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">onclick</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">toggle</span>.<span class="hljs-title function_">bind</span>(<span class="hljs-variable language_">this</span>)
   }
 
   toggle () {
-    <span class="hljs-built_in">this</span>.toggleTargets(<span class="hljs-built_in">this</span>.toggleClass)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggleTargets</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">toggleClass</span>)
   }
 
   toggleTargets (className) {
-    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.targetElements[<span class="hljs-number">0</span>]) {
-      <span class="hljs-built_in">this</span>.targetElements.forEach(
-        <span class="hljs-function"><span class="hljs-params">target</span> =&gt;</span> target.classList.toggle(className)
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">targetElements</span>[<span class="hljs-number">0</span>]) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">targetElements</span>.<span class="hljs-title function_">forEach</span>(
+        <span class="hljs-function"><span class="hljs-params">target</span> =&gt;</span> target.<span class="hljs-property">classList</span>.<span class="hljs-title function_">toggle</span>(className)
       )
-      <span class="hljs-built_in">this</span>.toggleSelf()
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggleSelf</span>()
     }
   }
 
   toggleSelf () {
-    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.toggleSelfClass) {
-      <span class="hljs-built_in">this</span>.classList.toggle(<span class="hljs-built_in">this</span>.toggleSelfClass)
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">toggleSelfClass</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">toggle</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">toggleSelfClass</span>)
     }
   }
 }
@@ -7255,8 +7255,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-28T15:55:59.896Z">
-                                9/28/2022
+                            <time datetime="2022-09-29T08:29:27.761Z">
+                                9/29/2022
                             </time>
                         
                     </dd>
@@ -7280,7 +7280,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.2"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.0.7"></script>
 
 
 

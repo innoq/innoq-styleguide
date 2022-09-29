@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.0.7" type="text/css">
 
 
 <title>Button | INNOQ Styleguide</title>
@@ -268,12 +268,12 @@
 
   <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-md</span> <span class="hljs-variable">$spacer-base</span>;
   <span class="hljs-attribute">border</span>: <span class="hljs-number">3px</span> solid <span class="hljs-variable">$button-border-color</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$default-btn-margin</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$button-background</span>;
-  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
 
-  &amp;--cta {
+  &amp;<span class="hljs-attr">--cta</span> {
     <span class="hljs-attribute">border-color</span>: <span class="hljs-variable">$button-cta-border-color</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$button-cta-background</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$button-cta-color</span>;
@@ -281,7 +281,7 @@
     &amp;<span class="hljs-selector-pseudo">::before</span> {
       <span class="hljs-attribute">position</span>: absolute;
       <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
-      <span class="hljs-attribute">content</span>: attr(data-label);
+      <span class="hljs-attribute">content</span>: <span class="hljs-built_in">attr</span>(data-label);
     }
 
     &amp;<span class="hljs-selector-pseudo">::after</span> {
@@ -299,7 +299,7 @@
       }
     }
 
-    &amp;--inverted {
+    &amp;<span class="hljs-attr">--inverted</span> {
       &amp;<span class="hljs-selector-pseudo">:hover</span>,
       &amp;<span class="hljs-selector-pseudo">:focus</span> {
         <span class="hljs-attribute">border-color</span>: <span class="hljs-variable">$button-inverted-border-color</span>;
@@ -308,35 +308,35 @@
     }
   }
 
-  &amp;--light {
+  &amp;<span class="hljs-attr">--light</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xs</span> <span class="hljs-number">0</span>;
     <span class="hljs-attribute">border-width</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">3px</span>;
     <span class="hljs-attribute">background-color</span>: transparent;
   }
 
-  &amp;--small {
+  &amp;<span class="hljs-attr">--small</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-sm</span> <span class="hljs-variable">$spacer-md</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
   }
 
-  &amp;--condensed {
+  &amp;<span class="hljs-attr">--condensed</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xs</span> <span class="hljs-variable">$spacer-sm</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
   }
 
-  &amp;--large {
+  &amp;<span class="hljs-attr">--large</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-md</span> <span class="hljs-variable">$spacer-lg</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-md</span>;
   }
 
-  &amp;--inverted {
+  &amp;<span class="hljs-attr">--inverted</span> {
     <span class="hljs-keyword">@include</span> hover-fill(<span class="hljs-variable">$brand-interaction</span>, <span class="hljs-variable">$button-inverted-hover-color</span>, <span class="hljs-variable">$button-inverted-hover-color</span>);
 
     <span class="hljs-attribute">border-color</span>: <span class="hljs-variable">$button-inverted-border-color</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$button-inverted-color</span>;
   }
 
-  &amp;--<span class="hljs-attribute">icon</span> {
+  &amp;<span class="hljs-attr">--icon</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xxs</span>;
     <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">background-color</span>: transparent;
@@ -7295,8 +7295,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-28T15:55:59.896Z">
-                                9/28/2022
+                            <time datetime="2022-09-29T08:29:27.761Z">
+                                9/29/2022
                             </time>
                         
                     </dd>
@@ -7320,7 +7320,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.2"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.0.7"></script>
 
 
 

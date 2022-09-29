@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.0.7" type="text/css">
 
 
 <title>Wall Of Consent | INNOQ Styleguide</title>
@@ -361,76 +361,76 @@ wall-of-consent<span class="hljs-selector-pseudo">:not</span>(.revealed) {
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
-                                <pre><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WallOfConsent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">HTMLElement</span> </span>{
-  <span class="hljs-function"><span class="hljs-title">connectedCallback</span>(<span class="hljs-params"></span>)</span> {
-    <span class="hljs-built_in">this</span>.content = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&#x27;div&#x27;</span>)
+                                <pre><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WallOfConsent</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">HTMLElement</span> {
+  <span class="hljs-title function_">connectedCallback</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;div&#x27;</span>)
 
-    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">localStorage</span>.getItem(<span class="hljs-built_in">this</span>.localStorageName) === <span class="hljs-string">&#x27;1&#x27;</span>) {
-      <span class="hljs-built_in">this</span>.revealContent()
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">localStorage</span>.<span class="hljs-title function_">getItem</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">localStorageName</span>) === <span class="hljs-string">&#x27;1&#x27;</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">revealContent</span>()
     }
 
-    <span class="hljs-built_in">this</span>.checkbox.addEventListener(<span class="hljs-string">&#x27;change&#x27;</span>, <span class="hljs-built_in">this</span>.onToggle.bind(<span class="hljs-built_in">this</span>))
-    <span class="hljs-built_in">this</span>.toggleContent = <span class="hljs-built_in">this</span>.toggleContent.bind(<span class="hljs-built_in">this</span>)
-    <span class="hljs-built_in">document</span>.body.addEventListener(<span class="hljs-built_in">this</span>.eventName, <span class="hljs-built_in">this</span>.toggleContent)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">checkbox</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;change&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">onToggle</span>.<span class="hljs-title function_">bind</span>(<span class="hljs-variable language_">this</span>))
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">toggleContent</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">toggleContent</span>.<span class="hljs-title function_">bind</span>(<span class="hljs-variable language_">this</span>)
+    <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">eventName</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">toggleContent</span>)
   }
 
-  <span class="hljs-function"><span class="hljs-title">disconnectedCallback</span>(<span class="hljs-params"></span>)</span> {
-    <span class="hljs-built_in">document</span>.body.removeEventListener(<span class="hljs-built_in">this</span>.eventName, <span class="hljs-built_in">this</span>.toggleContent)
+  <span class="hljs-title function_">disconnectedCallback</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">eventName</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">toggleContent</span>)
   }
 
-  <span class="hljs-function"><span class="hljs-title">onToggle</span>(<span class="hljs-params">event</span>)</span> {
-    <span class="hljs-keyword">if</span> (event.target.checked) {
-      <span class="hljs-built_in">localStorage</span>.setItem(<span class="hljs-built_in">this</span>.localStorageName, <span class="hljs-string">&#x27;1&#x27;</span>)
+  <span class="hljs-title function_">onToggle</span>(<span class="hljs-params">event</span>) {
+    <span class="hljs-keyword">if</span> (event.<span class="hljs-property">target</span>.<span class="hljs-property">checked</span>) {
+      <span class="hljs-variable language_">localStorage</span>.<span class="hljs-title function_">setItem</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">localStorageName</span>, <span class="hljs-string">&#x27;1&#x27;</span>)
     } <span class="hljs-keyword">else</span> {
-      <span class="hljs-built_in">localStorage</span>.removeItem(<span class="hljs-built_in">this</span>.localStorageName)
+      <span class="hljs-variable language_">localStorage</span>.<span class="hljs-title function_">removeItem</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">localStorageName</span>)
     }
 
-    <span class="hljs-keyword">const</span> ev = <span class="hljs-keyword">new</span> Event(<span class="hljs-built_in">this</span>.eventName)
-    <span class="hljs-built_in">document</span>.body.dispatchEvent(ev)
+    <span class="hljs-keyword">const</span> ev = <span class="hljs-keyword">new</span> <span class="hljs-title class_">Event</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">eventName</span>)
+    <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-title function_">dispatchEvent</span>(ev)
   }
 
-  <span class="hljs-function"><span class="hljs-title">toggleContent</span>(<span class="hljs-params"></span>)</span> {
-    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">localStorage</span>.getItem(<span class="hljs-built_in">this</span>.localStorageName) === <span class="hljs-string">&#x27;1&#x27;</span>) {
-      <span class="hljs-built_in">this</span>.revealContent()
+  <span class="hljs-title function_">toggleContent</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">localStorage</span>.<span class="hljs-title function_">getItem</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">localStorageName</span>) === <span class="hljs-string">&#x27;1&#x27;</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">revealContent</span>()
     } <span class="hljs-keyword">else</span> {
-      <span class="hljs-built_in">this</span>.removeContent()
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">removeContent</span>()
     }
   }
 
-  <span class="hljs-function"><span class="hljs-title">revealContent</span>(<span class="hljs-params"></span>)</span> {
-    <span class="hljs-keyword">const</span> template = <span class="hljs-built_in">this</span>.querySelector(<span class="hljs-string">&#x27;template&#x27;</span>)
-    <span class="hljs-keyword">const</span> templateContent = template.content
+  <span class="hljs-title function_">revealContent</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> template = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;template&#x27;</span>)
+    <span class="hljs-keyword">const</span> templateContent = template.<span class="hljs-property">content</span>
 
-    <span class="hljs-built_in">this</span>.content.replaceChildren(templateContent.cloneNode(<span class="hljs-literal">true</span>))
-    <span class="hljs-built_in">this</span>.prepend(<span class="hljs-built_in">this</span>.content)
-    <span class="hljs-built_in">this</span>.toggleInitialElements(<span class="hljs-literal">true</span>)
-    <span class="hljs-built_in">this</span>.checkbox.checked = <span class="hljs-literal">true</span>
-    <span class="hljs-built_in">this</span>.classList.add(<span class="hljs-string">&quot;revealed&quot;</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span>.<span class="hljs-title function_">replaceChildren</span>(templateContent.<span class="hljs-title function_">cloneNode</span>(<span class="hljs-literal">true</span>))
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">prepend</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggleInitialElements</span>(<span class="hljs-literal">true</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">checkbox</span>.<span class="hljs-property">checked</span> = <span class="hljs-literal">true</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">&quot;revealed&quot;</span>)
   }
 
-  <span class="hljs-function"><span class="hljs-title">removeContent</span>(<span class="hljs-params"></span>)</span> {
-    <span class="hljs-built_in">this</span>.content.innerHTML = <span class="hljs-string">&#x27;&#x27;</span>
-    <span class="hljs-built_in">this</span>.toggleInitialElements(<span class="hljs-literal">false</span>)
-    <span class="hljs-built_in">this</span>.checkbox.checked = <span class="hljs-literal">false</span>
-    <span class="hljs-built_in">this</span>.classList.remove(<span class="hljs-string">&quot;revealed&quot;</span>)
+  <span class="hljs-title function_">removeContent</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">content</span>.<span class="hljs-property">innerHTML</span> = <span class="hljs-string">&#x27;&#x27;</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggleInitialElements</span>(<span class="hljs-literal">false</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">checkbox</span>.<span class="hljs-property">checked</span> = <span class="hljs-literal">false</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">&quot;revealed&quot;</span>)
   }
 
-  <span class="hljs-function"><span class="hljs-title">toggleInitialElements</span>(<span class="hljs-params">hidden</span>)</span> {
-    <span class="hljs-built_in">this</span>.querySelectorAll(<span class="hljs-string">&#x27;[data-hide-if-consent]&#x27;</span>).forEach(<span class="hljs-function">(<span class="hljs-params">node</span>) =&gt;</span> {
-      node.hidden = hidden
+  <span class="hljs-title function_">toggleInitialElements</span>(<span class="hljs-params">hidden</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">&#x27;[data-hide-if-consent]&#x27;</span>).<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">node</span>) =&gt;</span> {
+      node.<span class="hljs-property">hidden</span> = hidden
     })
   }
 
-  <span class="hljs-keyword">get</span> <span class="hljs-title">checkbox</span>() {
-    <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.querySelector(<span class="hljs-string">&#x27;input[type=checkbox]&#x27;</span>)
+  <span class="hljs-keyword">get</span> <span class="hljs-title function_">checkbox</span>() {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;input[type=checkbox]&#x27;</span>)
   }
 
-  <span class="hljs-keyword">get</span> <span class="hljs-title">eventName</span>() {
-    <span class="hljs-keyword">return</span> <span class="hljs-string">`embeds-consent-from-<span class="hljs-subst">${<span class="hljs-built_in">this</span>.getAttribute(<span class="hljs-string">&#x27;type&#x27;</span>)}</span>`</span>
+  <span class="hljs-keyword">get</span> <span class="hljs-title function_">eventName</span>() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">`embeds-consent-from-<span class="hljs-subst">${<span class="hljs-variable language_">this</span>.getAttribute(<span class="hljs-string">&#x27;type&#x27;</span>)}</span>`</span>
   }
 
-  <span class="hljs-keyword">get</span> <span class="hljs-title">localStorageName</span>() {
-    <span class="hljs-keyword">return</span> <span class="hljs-string">`consent-to-embeds-from-<span class="hljs-subst">${<span class="hljs-built_in">this</span>.getAttribute(<span class="hljs-string">&#x27;type&#x27;</span>)}</span>`</span>
+  <span class="hljs-keyword">get</span> <span class="hljs-title function_">localStorageName</span>() {
+    <span class="hljs-keyword">return</span> <span class="hljs-string">`consent-to-embeds-from-<span class="hljs-subst">${<span class="hljs-variable language_">this</span>.getAttribute(<span class="hljs-string">&#x27;type&#x27;</span>)}</span>`</span>
   }
 }
 </pre>
@@ -7381,8 +7381,8 @@ wall-of-consent<span class="hljs-selector-pseudo">:not</span>(.revealed) {
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-28T15:55:59.896Z">
-                                9/28/2022
+                            <time datetime="2022-09-29T08:29:27.761Z">
+                                9/29/2022
                             </time>
                         
                     </dd>
@@ -7406,7 +7406,7 @@ wall-of-consent<span class="hljs-selector-pseudo">:not</span>(.revealed) {
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.2"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.0.7"></script>
 
 
 

@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.0.7" type="text/css">
 
 
 <title>Article Layout Simple | INNOQ Styleguide</title>
@@ -242,7 +242,6 @@
     <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-md</span>;
   }
 
-  <span class="hljs-selector-tag">blockquote</span>,
   super-<span class="hljs-selector-tag">quote</span>,
   long-<span class="hljs-selector-tag">quote</span> {
     <span class="hljs-keyword">@extend</span> %container-vertical-spacing-lg;
@@ -280,8 +279,8 @@
       <span class="hljs-attribute">display</span>: grid;
       <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-sm</span>;
       <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer-sm</span>;
-      grid-template-<span class="hljs-attribute">columns</span>: <span class="hljs-number">1</span>fr <span class="hljs-number">7rem</span> <span class="hljs-number">50rem</span> <span class="hljs-number">7rem</span> <span class="hljs-number">1</span>fr; <span class="hljs-comment">//magic numbers</span>
-      grid-template-rows: auto;
+      <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">1</span>fr <span class="hljs-number">7rem</span> <span class="hljs-number">50rem</span> <span class="hljs-number">7rem</span> <span class="hljs-number">1</span>fr; <span class="hljs-comment">//magic numbers</span>
+      <span class="hljs-attribute">grid-template-rows</span>: auto;
 
       <span class="hljs-comment">// Centered textwurst items</span>
       <span class="hljs-selector-tag">h1</span>,
@@ -312,13 +311,13 @@
       <span class="hljs-selector-class">.centered-content</span>,
       <span class="hljs-selector-class">.centered-content-75</span>,
       <span class="hljs-selector-class">.zigzag</span> {
-        grid-column: <span class="hljs-number">3</span> / <span class="hljs-number">4</span>;
+        <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">3</span> / <span class="hljs-number">4</span>;
       }
       <span class="hljs-comment">// Centered elements that are a bit wider than the textwurst</span>
       <span class="hljs-selector-tag">figure</span>,
       <span class="hljs-selector-class">.two-column-image-divider-asymmetric</span>,
       <span class="hljs-selector-class">.case-teaser</span> {
-        grid-column: <span class="hljs-number">2</span> / <span class="hljs-number">5</span>;
+        <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">2</span> / <span class="hljs-number">5</span>;
       }
     }
   }
@@ -7272,8 +7271,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-28T15:55:59.896Z">
-                                9/28/2022
+                            <time datetime="2022-09-29T08:29:27.761Z">
+                                9/29/2022
                             </time>
                         
                     </dd>
@@ -7297,7 +7296,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.2"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.0.7"></script>
 
 
 

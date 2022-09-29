@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.0.7" type="text/css">
 
 
 <title>Tile Layout | INNOQ Styleguide</title>
@@ -290,27 +290,27 @@
 <span class="hljs-selector-class">.tile-grid-alternating-1-4</span> {
   <span class="hljs-attribute">display</span>: grid;
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-  grid-gap: <span class="hljs-variable">$spacer-sm</span>;
+  <span class="hljs-attribute">grid-gap</span>: <span class="hljs-variable">$spacer-sm</span>;
 }
 
 <span class="hljs-selector-class">.tile-grid-alternating-1-4</span> {
-  grid-gap: <span class="hljs-variable">$spacer-xxl</span> <span class="hljs-variable">$spacer-sm</span>;
+  <span class="hljs-attribute">grid-gap</span>: <span class="hljs-variable">$spacer-xxl</span> <span class="hljs-variable">$spacer-sm</span>;
 }
 
 <span class="hljs-selector-class">.tile-grid-sm</span> {
-  grid-template-<span class="hljs-attribute">columns</span>: repeat(auto-fit, minmax(<span class="hljs-number">23rem</span>, <span class="hljs-number">1</span>fr));
+  <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-built_in">repeat</span>(auto-fit, <span class="hljs-built_in">minmax</span>(<span class="hljs-number">23rem</span>, <span class="hljs-number">1</span>fr));
 }
 
 <span class="hljs-selector-class">.tile-grid-md</span> {
-  grid-template-<span class="hljs-attribute">columns</span>: repeat(auto-fit, minmax(min(<span class="hljs-number">30rem</span>, <span class="hljs-number">100%</span>), <span class="hljs-number">1</span>fr));
+  <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-built_in">repeat</span>(auto-fit, <span class="hljs-built_in">minmax</span>(<span class="hljs-built_in">min</span>(<span class="hljs-number">30rem</span>, <span class="hljs-number">100%</span>), <span class="hljs-number">1</span>fr));
 }
 
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md-lg</span>) {
   <span class="hljs-selector-class">.tile-grid-alternating-1-4</span> {
-    grid-template-<span class="hljs-attribute">columns</span>: repeat(<span class="hljs-number">2</span>, minmax(<span class="hljs-number">6rem</span>, <span class="hljs-number">1</span>fr));
+    <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-built_in">repeat</span>(<span class="hljs-number">2</span>, <span class="hljs-built_in">minmax</span>(<span class="hljs-number">6rem</span>, <span class="hljs-number">1</span>fr));
 
     <span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">5</span>n+<span class="hljs-number">1</span>) {
-      grid-column: span <span class="hljs-number">2</span>;
+      <span class="hljs-attribute">grid-column</span>: span <span class="hljs-number">2</span>;
     }
   }
 }
@@ -7262,8 +7262,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-28T15:55:59.896Z">
-                                9/28/2022
+                            <time datetime="2022-09-29T08:29:27.761Z">
+                                9/29/2022
                             </time>
                         
                     </dd>
@@ -7287,7 +7287,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.2"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.0.7"></script>
 
 
 

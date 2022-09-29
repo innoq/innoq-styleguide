@@ -40,9 +40,9 @@ $checkbox-indent: $checkbox-offset + $checkbox-size;
     // Background (color)
     &::before {
       border: 2px solid $checkbox-border;
+      border-radius: 2px;
       margin-right: $checkbox-offset;
       background-color: $checkbox-bg;
-      border-radius: 2px;
       pointer-events: none;
       user-select: none;
     }

@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.0.7" type="text/css">
 
 
 <title>Slider | INNOQ Styleguide</title>
@@ -342,7 +342,7 @@
                                 <pre><span class="hljs-selector-class">.slider</span> {
   <span class="hljs-attribute">display</span>: block;
   <span class="hljs-attribute">overflow-x</span>: scroll;
-  scroll-snap-type: x mandatory;
+  <span class="hljs-attribute">scroll-snap-type</span>: x mandatory;
 }
 
 <span class="hljs-selector-class">.slider__all</span> {
@@ -356,7 +356,7 @@
 <span class="hljs-selector-class">.slider__slide</span> {
   <span class="hljs-attribute">display</span>: block;
   <span class="hljs-attribute">flex</span>: <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">100%</span>;
-  scroll-snap-align: center;
+  <span class="hljs-attribute">scroll-snap-align</span>: center;
 }
 
 <span class="hljs-selector-class">.slider__page</span> {
@@ -382,7 +382,7 @@
   <span class="hljs-keyword">@extend</span> %heading-font-regular;
 
   <span class="hljs-attribute">display</span>: inline-block;
-  <span class="hljs-attribute">background</span>: rgba(<span class="hljs-number">247</span>, <span class="hljs-number">247</span>, <span class="hljs-number">247</span>, <span class="hljs-number">0.7</span>);
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">rgba</span>(<span class="hljs-number">247</span>, <span class="hljs-number">247</span>, <span class="hljs-number">247</span>, <span class="hljs-number">0.7</span>);
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xxs</span>;
 }
 
@@ -447,11 +447,11 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
-                                <pre><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TouchDetection</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">HTMLElement</span> </span>{
+                                <pre><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TouchDetection</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">HTMLElement</span> {
   connectedCallback () {
-    <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&#x27;touchstart&#x27;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">touched</span> (<span class="hljs-params"></span>) </span>{
-      <span class="hljs-built_in">document</span>.body.classList.add(<span class="hljs-string">&#x27;instructions--touch-active&#x27;</span>)
-      <span class="hljs-built_in">window</span>.removeEventListener(<span class="hljs-string">&#x27;touchstart&#x27;</span>, touched, <span class="hljs-literal">false</span>)
+    <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;touchstart&#x27;</span>, <span class="hljs-keyword">function</span> <span class="hljs-title function_">touched</span> () {
+      <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">&#x27;instructions--touch-active&#x27;</span>)
+      <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">&#x27;touchstart&#x27;</span>, touched, <span class="hljs-literal">false</span>)
     }, <span class="hljs-literal">false</span>)
   }
 }
@@ -7403,8 +7403,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-28T15:55:59.896Z">
-                                9/28/2022
+                            <time datetime="2022-09-29T08:29:27.761Z">
+                                9/29/2022
                             </time>
                         
                     </dd>
@@ -7428,7 +7428,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.2"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.0.7"></script>
 
 
 

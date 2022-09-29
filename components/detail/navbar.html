@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.0.7" type="text/css">
 
 
 <title>Navbar | INNOQ Styleguide</title>
@@ -461,8 +461,8 @@
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-variable">$navbar-navbtn-transition</span>: color <span class="hljs-number">0.175s</span> ease;
 <span class="hljs-variable">$navbar-drill-transition</span>: left <span class="hljs-number">0.5s</span> ease;
-<span class="hljs-variable">$navbar-primary-font-size</span>: ms(<span class="hljs-number">3</span>);
-<span class="hljs-variable">$navbar-secondary-font-size</span>: ms(-<span class="hljs-number">2</span>);
+<span class="hljs-variable">$navbar-primary-font-size</span>: <span class="hljs-built_in">ms</span>(<span class="hljs-number">3</span>);
+<span class="hljs-variable">$navbar-secondary-font-size</span>: <span class="hljs-built_in">ms</span>(-<span class="hljs-number">2</span>);
 
 <span class="hljs-comment">//</span>
 <span class="hljs-comment">// navbar</span>
@@ -475,7 +475,7 @@
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$navbar-body-bg</span>;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$navbar-link-color</span>;
 
-  &amp;--transparent {
+  &amp;<span class="hljs-attr">--transparent</span> {
     <span class="hljs-attribute">background-color</span>: transparent;
   }
 }
@@ -665,7 +665,7 @@
 
   <span class="hljs-attribute">position</span>: relative;
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-  <span class="hljs-attribute">height</span>: calc(<span class="hljs-number">90vh</span> - #{<span class="hljs-variable">$navbar-bottombar-height-small</span>} - #{<span class="hljs-variable">$navbar-brandbar-height</span>});
+  <span class="hljs-attribute">height</span>: <span class="hljs-built_in">calc</span>(<span class="hljs-number">90vh</span> - #{<span class="hljs-variable">$navbar-bottombar-height-small</span>} - #{<span class="hljs-variable">$navbar-brandbar-height</span>});
   <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$navbar-padding</span> * <span class="hljs-number">2</span> <span class="hljs-variable">$navbar-padding</span> <span class="hljs-variable">$spacer-sm</span>;
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$navbar-primary-font-size</span>;
@@ -889,8 +889,8 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-variable">$navbar-primary-font-size-big</span>: ms(<span class="hljs-number">7</span>);
-<span class="hljs-variable">$navbar-primary-font-size</span>: ms(<span class="hljs-number">3</span>);
+                                <pre><span class="hljs-variable">$navbar-primary-font-size-big</span>: <span class="hljs-built_in">ms</span>(<span class="hljs-number">7</span>);
+<span class="hljs-variable">$navbar-primary-font-size</span>: <span class="hljs-built_in">ms</span>(<span class="hljs-number">3</span>);
 
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$nav-breakpoint-px-below</span>) {
   <span class="hljs-selector-class">.navbtn--menu</span> {
@@ -954,14 +954,14 @@
       <span class="hljs-attribute">position</span>: relative;
       <span class="hljs-attribute">top</span>: -<span class="hljs-variable">$spacer-xs</span>;
       <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">5px</span> solid <span class="hljs-variable">$navbar-link-hover-color</span>;
-      <span class="hljs-attribute">content</span>: attr(title);
+      <span class="hljs-attribute">content</span>: <span class="hljs-built_in">attr</span>(title);
       <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$navbar-primary-font-size-big</span>;
       <span class="hljs-attribute">font-weight</span>: bold;
     }
   }
 
   <span class="hljs-selector-class">.icon-chevron-down-filled</span> {
-    <span class="hljs-attribute">transform</span>: rotate(-<span class="hljs-number">90deg</span>);
+    <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(-<span class="hljs-number">90deg</span>);
   }
 
   <span class="hljs-selector-class">.dropdown__toggle--navbar</span> {
@@ -1037,42 +1037,42 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
-                                <pre><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DropdownToggle</span> </span>{
-  <span class="hljs-function"><span class="hljs-title">constructor</span>(<span class="hljs-params">label, name</span>)</span> {
-    <span class="hljs-built_in">this</span>.label = label
-    <span class="hljs-built_in">this</span>.name = name
-    <span class="hljs-built_in">this</span>.checkbox = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;#&#x27;</span> + name)
-    <span class="hljs-built_in">this</span>.relatedLink = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;a[data-for=&#x27;</span> + name + <span class="hljs-string">&#x27;]&#x27;</span>)
+                                <pre><span class="hljs-keyword">class</span> <span class="hljs-title class_">DropdownToggle</span> {
+  <span class="hljs-title function_">constructor</span>(<span class="hljs-params">label, name</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">label</span> = label
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">name</span> = name
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">checkbox</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;#&#x27;</span> + name)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">relatedLink</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;a[data-for=&#x27;</span> + name + <span class="hljs-string">&#x27;]&#x27;</span>)
   }
 
-  <span class="hljs-function"><span class="hljs-title">toggle</span>(<span class="hljs-params"></span>)</span> {
-    <span class="hljs-built_in">this</span>.checkbox.checked = !<span class="hljs-built_in">this</span>.checkbox.checked
+  <span class="hljs-title function_">toggle</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">checkbox</span>.<span class="hljs-property">checked</span> = !<span class="hljs-variable language_">this</span>.<span class="hljs-property">checkbox</span>.<span class="hljs-property">checked</span>
   }
 
-  <span class="hljs-keyword">set</span> <span class="hljs-title">checked</span>(<span class="hljs-params">v</span>) {
-    <span class="hljs-built_in">this</span>.checkbox.checked = <span class="hljs-built_in">Boolean</span>(v)
+  <span class="hljs-keyword">set</span> <span class="hljs-title function_">checked</span>(<span class="hljs-params">v</span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">checkbox</span>.<span class="hljs-property">checked</span> = <span class="hljs-title class_">Boolean</span>(v)
   }
 
-  <span class="hljs-keyword">get</span> <span class="hljs-title">checked</span>() {
-    <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.checkbox.checked
+  <span class="hljs-keyword">get</span> <span class="hljs-title function_">checked</span>() {
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">checkbox</span>.<span class="hljs-property">checked</span>
   }
 }
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Navbar</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">HTMLElement</span> </span>{
-  <span class="hljs-function"><span class="hljs-title">connectedCallback</span>(<span class="hljs-params"></span>)</span> {
-    <span class="hljs-keyword">if</span> (!<span class="hljs-built_in">this</span>.isInitialized) {
-      <span class="hljs-built_in">this</span>.init()
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Navbar</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">HTMLElement</span> {
+  <span class="hljs-title function_">connectedCallback</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">if</span> (!<span class="hljs-variable language_">this</span>.<span class="hljs-property">isInitialized</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">init</span>()
     }
   }
 
-  <span class="hljs-function"><span class="hljs-title">init</span>(<span class="hljs-params"></span>)</span> {
-    <span class="hljs-built_in">this</span>.primaryList = <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.primary-nav__list&#x27;</span>)
-    <span class="hljs-built_in">this</span>.dropdownToggles = <span class="hljs-built_in">Array</span>.from(<span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.dropdown__toggle--navbar&#x27;</span>))
-      .map(<span class="hljs-function"><span class="hljs-params">el</span> =&gt;</span> <span class="hljs-keyword">new</span> DropdownToggle(el, el.getAttribute(<span class="hljs-string">&#x27;for&#x27;</span>)))
-    <span class="hljs-built_in">this</span>.dropdownPrimaryLinks = <span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.dropdown .navbtn--primary&#x27;</span>)
+  <span class="hljs-title function_">init</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.primary-nav__list&#x27;</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownToggles</span> = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">&#x27;.dropdown__toggle--navbar&#x27;</span>))
+      .<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">el</span> =&gt;</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">DropdownToggle</span>(el, el.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">&#x27;for&#x27;</span>)))
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownPrimaryLinks</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">&#x27;.dropdown .navbtn--primary&#x27;</span>)
 
     <span class="hljs-comment">// add --enhanced modifier</span>
-    <span class="hljs-built_in">this</span>.enhance([
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">enhance</span>([
       <span class="hljs-string">&#x27;.primary-nav&#x27;</span>,
       <span class="hljs-string">&#x27;.primary-nav__list&#x27;</span>,
       <span class="hljs-string">&#x27;.primary-nav__item&#x27;</span>,
@@ -1082,75 +1082,75 @@
 
     <span class="hljs-comment">// enhance drill down ux</span>
     <span class="hljs-comment">// (copy dropdown heading link into dropdown list if not present)</span>
-    <span class="hljs-built_in">this</span>.dropdownPrimaryLinks.forEach(<span class="hljs-function"><span class="hljs-params">link</span> =&gt;</span> {
-      <span class="hljs-keyword">const</span> targetDropdownList = link.parentNode.querySelector(<span class="hljs-string">&#x27;.dropdown__list&#x27;</span>)
-      <span class="hljs-keyword">if</span> (!targetDropdownList.querySelector(<span class="hljs-string">&#x27;.dropdown__item--clone&#x27;</span>)) {
-        <span class="hljs-keyword">const</span> anchorClone = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&#x27;a&#x27;</span>)
-        anchorClone.classList.add(<span class="hljs-string">&#x27;dropdown__link&#x27;</span>, <span class="hljs-string">&#x27;dropdown__link--navbar&#x27;</span>, <span class="hljs-string">&#x27;navbtn&#x27;</span>)
-        anchorClone.setAttribute(<span class="hljs-string">&#x27;href&#x27;</span>, link.getAttribute(<span class="hljs-string">&#x27;href&#x27;</span>))
-        anchorClone.textContent = link.textContent
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownPrimaryLinks</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">link</span> =&gt;</span> {
+      <span class="hljs-keyword">const</span> targetDropdownList = link.<span class="hljs-property">parentNode</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.dropdown__list&#x27;</span>)
+      <span class="hljs-keyword">if</span> (!targetDropdownList.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.dropdown__item--clone&#x27;</span>)) {
+        <span class="hljs-keyword">const</span> anchorClone = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;a&#x27;</span>)
+        anchorClone.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">&#x27;dropdown__link&#x27;</span>, <span class="hljs-string">&#x27;dropdown__link--navbar&#x27;</span>, <span class="hljs-string">&#x27;navbtn&#x27;</span>)
+        anchorClone.<span class="hljs-title function_">setAttribute</span>(<span class="hljs-string">&#x27;href&#x27;</span>, link.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">&#x27;href&#x27;</span>))
+        anchorClone.<span class="hljs-property">textContent</span> = link.<span class="hljs-property">textContent</span>
 
-        <span class="hljs-keyword">const</span> newListItem = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&#x27;li&#x27;</span>)
-        newListItem.classList.add(<span class="hljs-string">&#x27;dropdown__item&#x27;</span>, <span class="hljs-string">&#x27;dropdown__item--navbar&#x27;</span>, <span class="hljs-string">&#x27;dropdown__item--clone&#x27;</span>)
-        newListItem.appendChild(anchorClone)
+        <span class="hljs-keyword">const</span> newListItem = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;li&#x27;</span>)
+        newListItem.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">&#x27;dropdown__item&#x27;</span>, <span class="hljs-string">&#x27;dropdown__item--navbar&#x27;</span>, <span class="hljs-string">&#x27;dropdown__item--clone&#x27;</span>)
+        newListItem.<span class="hljs-title function_">appendChild</span>(anchorClone)
 
-        targetDropdownList.insertBefore(newListItem, targetDropdownList.firstChild)
+        targetDropdownList.<span class="hljs-title function_">insertBefore</span>(newListItem, targetDropdownList.<span class="hljs-property">firstChild</span>)
       }
     })
 
     <span class="hljs-comment">// apply several event listeners</span>
-    <span class="hljs-built_in">this</span>.dropdownToggles.forEach(<span class="hljs-function">(<span class="hljs-params">ddt, i, all</span>) =&gt;</span> {
-      ddt.label.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
-        <span class="hljs-built_in">this</span>.uncheckDropdownToggles(all, ddt)
-        <span class="hljs-built_in">this</span>.primaryList.classList.add(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownToggles</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">ddt, i, all</span>) =&gt;</span> {
+      ddt.<span class="hljs-property">label</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">uncheckDropdownToggles</span>(all, ddt)
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
       })
-      ddt.relatedLink.addEventListener(<span class="hljs-string">&#x27;mouseenter&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
-        <span class="hljs-built_in">this</span>.uncheckDropdownToggles(all, ddt)
-        <span class="hljs-built_in">this</span>.primaryList.classList.remove(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
+      ddt.<span class="hljs-property">relatedLink</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;mouseenter&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">uncheckDropdownToggles</span>(all, ddt)
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
       })
-      ddt.relatedLink.addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> {
-        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.isMobile) {
-          e.preventDefault()
-          ddt.checked = <span class="hljs-literal">true</span>
-          <span class="hljs-built_in">this</span>.uncheckDropdownToggles(all, ddt)
-          <span class="hljs-built_in">this</span>.primaryList.classList.add(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
+      ddt.<span class="hljs-property">relatedLink</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> {
+        <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">isMobile</span>) {
+          e.<span class="hljs-title function_">preventDefault</span>()
+          ddt.<span class="hljs-property">checked</span> = <span class="hljs-literal">true</span>
+          <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">uncheckDropdownToggles</span>(all, ddt)
+          <span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
         }
       })
     })
 
-    <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;.navbtn--drill-up&#x27;</span>)
-      .addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
-        <span class="hljs-built_in">this</span>.uncheckDropdownToggles(<span class="hljs-built_in">this</span>.dropdownToggles)
-        <span class="hljs-built_in">this</span>.primaryList.classList.remove(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
+    <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.navbtn--drill-up&#x27;</span>)
+      .<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
+        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">uncheckDropdownToggles</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownToggles</span>)
+        <span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
       })
 
-    <span class="hljs-built_in">document</span>.querySelector(<span class="hljs-string">&#x27;body&#x27;</span>).addEventListener(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> {
-      <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.primaryList.contains(e.target)) <span class="hljs-keyword">return</span>
-      <span class="hljs-built_in">this</span>.uncheckDropdownToggles(<span class="hljs-built_in">this</span>.dropdownToggles)
-      <span class="hljs-built_in">this</span>.primaryList.classList.remove(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
+    <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;body&#x27;</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> {
+      <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span>.<span class="hljs-title function_">contains</span>(e.<span class="hljs-property">target</span>)) <span class="hljs-keyword">return</span>
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">uncheckDropdownToggles</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownToggles</span>)
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
     })
 
-    <span class="hljs-built_in">this</span>.isInitialized = <span class="hljs-literal">true</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">isInitialized</span> = <span class="hljs-literal">true</span>
   }
 
-  <span class="hljs-function"><span class="hljs-title">enhance</span>(<span class="hljs-params">selectors</span>)</span> {
-    selectors.forEach(<span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> {
-      s = s.startsWith(<span class="hljs-string">&#x27;.&#x27;</span>) ? s.slice(<span class="hljs-number">1</span>) : s
-      <span class="hljs-built_in">Array</span>.from(<span class="hljs-built_in">document</span>.querySelectorAll(<span class="hljs-string">&#x27;.&#x27;</span> + s))
-        .forEach(<span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> e.classList.add(s + <span class="hljs-string">&#x27;--enhanced&#x27;</span>))
+  <span class="hljs-title function_">enhance</span>(<span class="hljs-params">selectors</span>) {
+    selectors.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> {
+      s = s.<span class="hljs-title function_">startsWith</span>(<span class="hljs-string">&#x27;.&#x27;</span>) ? s.<span class="hljs-title function_">slice</span>(<span class="hljs-number">1</span>) : s
+      <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">&#x27;.&#x27;</span> + s))
+        .<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> e.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(s + <span class="hljs-string">&#x27;--enhanced&#x27;</span>))
     })
   }
 
-  <span class="hljs-function"><span class="hljs-title">uncheckDropdownToggles</span>(<span class="hljs-params">toggles, except</span>)</span> {
-    toggles.forEach(<span class="hljs-function"><span class="hljs-params">t</span> =&gt;</span> {
+  <span class="hljs-title function_">uncheckDropdownToggles</span>(<span class="hljs-params">toggles, except</span>) {
+    toggles.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">t</span> =&gt;</span> {
       <span class="hljs-keyword">if</span> (except !== t) {
-        t.checked = <span class="hljs-literal">false</span>
+        t.<span class="hljs-property">checked</span> = <span class="hljs-literal">false</span>
       }
     })
   }
 
-  <span class="hljs-keyword">get</span> <span class="hljs-title">isMobile</span>() {
-    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.primaryList.getBoundingClientRect().width &gt; <span class="hljs-built_in">window</span>.innerWidth) {
+  <span class="hljs-keyword">get</span> <span class="hljs-title function_">isMobile</span>() {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span>.<span class="hljs-title function_">getBoundingClientRect</span>().<span class="hljs-property">width</span> &gt; <span class="hljs-variable language_">window</span>.<span class="hljs-property">innerWidth</span>) {
       <span class="hljs-keyword">return</span> <span class="hljs-literal">true</span>
     } <span class="hljs-keyword">else</span> {
       <span class="hljs-keyword">return</span> <span class="hljs-literal">false</span>
@@ -8132,8 +8132,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-28T15:55:59.896Z">
-                                9/28/2022
+                            <time datetime="2022-09-29T08:29:27.761Z">
+                                9/29/2022
                             </time>
                         
                     </dd>
@@ -8157,7 +8157,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.2"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.0.7"></script>
 
 
 

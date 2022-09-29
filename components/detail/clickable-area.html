@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.0.7" type="text/css">
 
 
 <title>Clickable Area | INNOQ Styleguide</title>
@@ -242,27 +242,27 @@
                             
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
                                 <pre><span class="hljs-comment">// following advice from https://inclusive-components.design/cards</span>
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClickableArea</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">HTMLElement</span> </span>{
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ClickableArea</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">HTMLElement</span> {
   connectedCallback () {
-    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">this</span>.link) {
-      <span class="hljs-built_in">this</span>.addEventListener(<span class="hljs-string">&#x27;mousedown&#x27;</span>, <span class="hljs-built_in">this</span>.handleMousedown.bind(<span class="hljs-built_in">this</span>))
-      <span class="hljs-built_in">this</span>.addEventListener(<span class="hljs-string">&#x27;mouseup&#x27;</span>, <span class="hljs-built_in">this</span>.handleMouseup.bind(<span class="hljs-built_in">this</span>))
-      <span class="hljs-built_in">this</span>.style.cursor = <span class="hljs-string">&#x27;pointer&#x27;</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">link</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;mousedown&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">handleMousedown</span>.<span class="hljs-title function_">bind</span>(<span class="hljs-variable language_">this</span>))
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;mouseup&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">handleMouseup</span>.<span class="hljs-title function_">bind</span>(<span class="hljs-variable language_">this</span>))
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">style</span>.<span class="hljs-property">cursor</span> = <span class="hljs-string">&#x27;pointer&#x27;</span>
     }
   }
 
   handleMousedown ({ timeStamp }) {
-    <span class="hljs-built_in">this</span>.down = timeStamp
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">down</span> = timeStamp
   }
 
   handleMouseup ({ timeStamp }) {
-    <span class="hljs-keyword">if</span> (timeStamp - <span class="hljs-built_in">this</span>.down &lt; <span class="hljs-number">200</span>) {
-      <span class="hljs-built_in">this</span>.link.click()
+    <span class="hljs-keyword">if</span> (timeStamp - <span class="hljs-variable language_">this</span>.<span class="hljs-property">down</span> &lt; <span class="hljs-number">200</span>) {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">link</span>.<span class="hljs-title function_">click</span>()
     }
   }
 
   get link () {
-    <span class="hljs-keyword">return</span> <span class="hljs-built_in">this</span>.querySelector(<span class="hljs-string">&#x27;a&#x27;</span>)
+    <span class="hljs-keyword">return</span> <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;a&#x27;</span>)
   }
 }
 </pre>
@@ -7245,8 +7245,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-28T15:55:59.896Z">
-                                9/28/2022
+                            <time datetime="2022-09-29T08:29:27.761Z">
+                                9/29/2022
                             </time>
                         
                     </dd>
@@ -7270,7 +7270,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.2"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.0.7"></script>
 
 
 

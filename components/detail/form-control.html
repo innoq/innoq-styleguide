@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.0.7" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=1.10.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.0.7" type="text/css">
 
 
 <title>Form Control | INNOQ Styleguide</title>
@@ -254,14 +254,14 @@
   <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xs</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
-  <span class="hljs-attribute">transition</span>: standard-transition(background-color);
+  <span class="hljs-attribute">transition</span>: <span class="hljs-built_in">standard-transition</span>(background-color);
 }
 
 <span class="hljs-selector-class">.form-control</span> {
   <span class="hljs-attribute">border</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$form-control-border-color</span>;
-  appearance: none;
   <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">0</span>;
-  caret-<span class="hljs-attribute">color</span>: <span class="hljs-variable">$form-control-caret-color</span>;
+  appearance: none;
+  <span class="hljs-attribute">caret-color</span>: <span class="hljs-variable">$form-control-caret-color</span>;
   <span class="hljs-attribute">outline</span>: none;
 
   &amp;<span class="hljs-selector-pseudo">:focus</span> {
@@ -273,7 +273,7 @@
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$form-control-placeholder-color</span>;
   }
 
-  &amp;--invalid {
+  &amp;<span class="hljs-attr">--invalid</span> {
     <span class="hljs-attribute">border-color</span>: <span class="hljs-variable">$form-control-invalid-border-color</span>;
   }
 }
@@ -281,7 +281,7 @@
 <span class="hljs-selector-class">.custom-form-control</span> {
   <span class="hljs-attribute">position</span>: relative;
   <span class="hljs-attribute">min-height</span>: (<span class="hljs-variable">$paragraph-line-height</span> * <span class="hljs-number">1rem</span>);
-  <span class="hljs-attribute">transition</span>: standard-transition(background-color, color, border-color);
+  <span class="hljs-attribute">transition</span>: <span class="hljs-built_in">standard-transition</span>(background-color, color, border-color);
 
   &amp;<span class="hljs-selector-class">.form-control--invalid</span>,
   <span class="hljs-selector-class">.form-group--invalid</span> &amp; {
@@ -7267,8 +7267,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-28T15:55:59.896Z">
-                                9/28/2022
+                            <time datetime="2022-09-29T08:29:27.761Z">
+                                9/29/2022
                             </time>
                         
                     </dd>
@@ -7292,7 +7292,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=1.10.2"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.0.7"></script>
 
 
 
