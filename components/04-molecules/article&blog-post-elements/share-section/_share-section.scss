@@ -20,7 +20,6 @@
 }
 
 .share-section__heading {
-  margin-bottom: 0; //FIXME
   color: $sharing-headline-color;
   font-size: $font-size-lg;
 }
@@ -31,7 +30,6 @@
   display: flex;
   flex-wrap:nowrap;
   justify-content: center;
-  margin-bottom: 0;
 }
 
 .share-section__link {

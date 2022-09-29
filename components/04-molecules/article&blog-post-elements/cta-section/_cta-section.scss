@@ -2,10 +2,6 @@
   margin: $spacer-lg 0;
   text-align: center;
 
-  > * {
-    margin-bottom: 0; //Fixme
-  }
-
   > * + * {
     margin-top: $spacer-md;
   }

@@ -3,16 +3,13 @@
   flex-direction: column;
   padding: 0 $spacer-sm $spacer-base $spacer-sm;
 
-  > * {
-    margin-bottom: 0; // TODO: Remove this after cleanup
-  }
-
   > * + * {
     margin-top: $spacer-base;
   }
 
   super-quote,
-  long-quote {
+  long-quote,
+  pull-quote {
     @extend %container-vertical-spacing-lg;
 
     max-width: 45rem;
@@ -24,10 +21,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    > * {
-      margin-bottom: 0; //FIXME
-    }
   }
 
   .centered-content-75 {

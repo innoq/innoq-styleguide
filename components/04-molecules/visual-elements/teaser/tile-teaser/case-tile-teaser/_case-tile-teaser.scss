@@ -21,10 +21,6 @@ $case-tile-teaser-sm-height: ms(32);
   background-color: $case-tile-teaser-body-bg-color;
   text-align: center;
 
-  h2 {
-    margin-bottom: 0; // FIXME Remove all generic margin-bottoms
-  }
-
   * + * {
     margin-top: $spacer-base;
   }

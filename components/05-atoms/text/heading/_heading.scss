@@ -8,7 +8,7 @@ h1 {
   @extend %heading-font-heavy;
 
   margin-top: 0;
-  margin-bottom: $spacer-base;
+  margin-bottom: 0;
   color: $h1-color;
   font-size: $font-size-xl;
   line-height: $heading-line-height;
@@ -20,7 +20,6 @@ h2 {
   @extend %heading-font-heavy;
 
   margin-top: 0;
-  margin-bottom: $spacer-sm;
   color: $h2-color;
   font-size: $font-size-lg;
   line-height: $heading-line-height;
@@ -32,7 +31,6 @@ h3 {
   @extend %heading-font-heavy;
 
   margin-top: 0;
-  margin-bottom: $spacer-sm;
   color: $h3-color;
   font-size: $font-size-md;
   line-height: $heading-line-height;
@@ -44,7 +42,6 @@ h4 {
   @extend %heading-font-bold;
 
   margin-top: 0;
-  margin-bottom: $spacer-sm;
   color: $h4-color;
   font-size: $font-size-sm;
   line-height: $heading-line-height;
@@ -56,7 +53,6 @@ h5 {
   @extend %heading-font-bold;
 
   margin-top: 0;
-  margin-bottom: $spacer-xs;
   color: $h5-color;
   font-size: $font-size-base;
   line-height: $paragraph-line-height;
@@ -68,7 +64,6 @@ h6 {
   @extend %heading-font-heavy;
 
   margin-top: 0;
-  margin-bottom: $spacer-xs;
   color: $h6-color;
   font-size: $font-size-base;
   line-height: $paragraph-line-height;
@@ -99,8 +94,28 @@ h6 {
 .teaser-section-heading {
   @extend %h2;
 
-  margin-bottom: 0;
-  font-size: $font-size-lg;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+
+  // Prevent older Browsers from screwing up with max-content widths
+  @supports (width: max-content) {
+    width: max-content;
+    border-bottom: 4px solid $teaser-section-heading-border-color;
+  }
+}
+
+.section-heading--primary {
+  @extend %h1;
+
+  color: $h2-color;
+  text-align: center;
+}
+
+.section-heading--secondary {
+  @extend %h2;
+
+  margin: 0 auto;
   text-align: center;
   text-transform: uppercase;
 }
@@ -112,47 +127,10 @@ h6 {
   font-size: $font-size-xxl;
   text-transform: uppercase;
 }
-
-// Prevent older Browsers from screwing up with max-content widths
-@supports (width: max-content) {
-  .teaser-section-heading {
-    width: max-content;
-    border-bottom: 4px solid $teaser-section-heading-border-color;
-  }
-
-  .teaser-section-heading__full-width {
-    width: 100%;
-    border: 0;
-  }
-}
-
-.section-heading--primary {
-  @extend %h1;
-
-  margin-bottom: $spacer-base;
-  color: $h2-color;
-  text-align: center;
-}
-
-.section-heading--secondary {
-  @extend %h3;
-
-  padding-top: $spacer-sm;
-  border-top: 8px solid $section-heading-border-color;
-  margin-bottom: $spacer-sm;
-}
-
-.section-heading--tertiary {
-  @extend %h5;
-
-  margin-bottom: $spacer-base;
-}
-
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   %h1,
   h1 {
-    margin-bottom: $spacer-lg;
     font-size: $font-size-xxxl;
   }
 
@@ -184,9 +162,5 @@ h6 {
   %h6,
   h6 {
     font-size: $font-size-sm;
-  }
-
-  .teaser-section-heading {
-    font-size: $font-size-xl;
   }
 }

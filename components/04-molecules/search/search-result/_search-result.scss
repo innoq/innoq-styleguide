@@ -24,7 +24,6 @@
 .search-result__title {
   @extend %h3;
 
-  margin-bottom: 0;
   transition: standard-transition(color);
 
   // Fix Google CSE markup and the resulting style
@@ -37,7 +36,6 @@
   @extend %h4;
 
   margin-top: $spacer-xxs;
-  margin-bottom: 0;
   transition: standard-transition(color);
 
   // Fix Google CSE markup and the resulting style

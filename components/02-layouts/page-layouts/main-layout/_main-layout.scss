@@ -3,10 +3,6 @@
   flex-direction: column;
   align-items: center;
 
-  > * {
-    margin-bottom: 0; //FIXME Remove when margin-bottom is removed from copmponents
-  }
-
   > * + * {
     margin-top: $spacer-base;
   }

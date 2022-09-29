@@ -3,10 +3,6 @@
   flex-direction: column;
   padding: 0 $spacer-sm $spacer-base $spacer-sm;
 
-  > * {
-    margin-bottom: 0; //FIXME
-  }
-
   > * + * {
     margin-top: $spacer-md;
   }
@@ -24,10 +20,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    > * {
-      margin-bottom: 0; //FIXME
-    }
   }
 
   .centered-content-75 {

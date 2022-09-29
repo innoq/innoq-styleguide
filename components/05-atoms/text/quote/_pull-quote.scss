@@ -5,7 +5,6 @@ pull-quote > blockquote,
   padding: $spacer-sm;
   border: 1px solid $pull-quote-border-color;
   border-width: 1px 0;
-  margin: 0 0 $spacer-md;
 
   &,
   > p {
@@ -22,6 +21,5 @@ pull-quote > blockquote,
   pull-quote > blockquote,
   .pullquote {
     width: 80%;
-    margin: 0 auto $spacer-md;
   }
 }
