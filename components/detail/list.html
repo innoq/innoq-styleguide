@@ -216,10 +216,8 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>industrial grade voodoo god papier-mache tanto free-market tower futurity jeans nodality singularity alcohol industrial
-                grade tank-traps engine vehicle tattoo. nano- claymore mine fluidity BASE jump boat otaku uplink tower sentient pistol
-                cartel advert vehicle bridge voodoo god Legba. realism film artisanal neural tower plastic ablative claymore mine media
-                garage pre- math- man neon decay media.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>ndustrial grade voodoo god papier-mache tanto free-market tower futurity jeans nodality singularity alcohol industrial grade tank-traps engine vehicle tattoo.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>ndustrial grade voodoo god papier-mache tanto free-market tower futurity jeans nodality singularity alcohol industrial grade tank-traps engine vehicle tattoo.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 
@@ -384,10 +382,8 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>industrial grade voodoo god papier-mache tanto free-market tower futurity jeans nodality singularity alcohol industrial
-            grade tank-traps engine vehicle tattoo. nano- claymore mine fluidity BASE jump boat otaku uplink tower sentient pistol
-            cartel advert vehicle bridge voodoo god Legba. realism film artisanal neural tower plastic ablative claymore mine media
-            garage pre- math- man neon decay media.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{text}}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{text}}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
 
@@ -520,7 +516,7 @@
         
             
             <pre><span class="hljs-punctuation">{</span>
-  <span class="hljs-attr">&quot;text&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Listen&quot;</span>
+  <span class="hljs-attr">&quot;text&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;ndustrial grade voodoo god papier-mache tanto free-market tower futurity jeans nodality singularity alcohol industrial grade tank-traps engine vehicle tattoo.&quot;</span>
 <span class="hljs-punctuation">}</span></pre>
             
         
@@ -562,17 +558,15 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-variable">$list-indent</span>: <span class="hljs-number">0.5rem</span>;
+                                <pre><span class="hljs-selector-class">.checklist</span> {
+  <span class="hljs-keyword">@extend</span> %base-list-styling;
 
-<span class="hljs-selector-class">.checklist</span> {
-  <span class="hljs-keyword">@extend</span> %unsorted-list;
-
-  <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">1.2rem</span>;
+  <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">1.2rem</span>; <span class="hljs-comment">//magic number</span>
 
   <span class="hljs-selector-tag">li</span> {
     <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
-    <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$list-indent</span>;
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer-xxs</span>;
     <span class="hljs-attribute">list-style-type</span>: <span class="hljs-string">&quot;✓&quot;</span>;
 
     &amp;<span class="hljs-selector-pseudo">::marker</span> {
@@ -597,7 +591,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">275 Bytes</span>
+                    <span class="Meta-value">269 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -615,12 +609,48 @@
 <span class="hljs-comment">// adapted from: /components/detail/talk-page</span>
 <span class="hljs-comment">// see lib/styles/tools/text</span>
 
-<span class="hljs-selector-tag">dl</span><span class="hljs-selector-pseudo">:not</span>([class]) {
+<span class="hljs-selector-tag">dl</span><span class="hljs-selector-pseudo">:not</span>([class]),
+<span class="hljs-selector-tag">dl</span> {
   <span class="hljs-keyword">@extend</span> %definition-list;
+
+  &gt; * + * {
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-xs</span>;
+  }
 }
 
 <span class="hljs-selector-class">.simple-definition-list</span> {
   <span class="hljs-keyword">@extend</span> %definition-list-simple;
+}
+
+%definition-list {
+  <span class="hljs-selector-tag">dt</span> {
+    <span class="hljs-keyword">@extend</span> %heading-font-bold;
+
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$definition-list-dt-color</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
+  }
+
+  <span class="hljs-selector-tag">dd</span> {
+    <span class="hljs-keyword">@extend</span> %body-font-regular;
+
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$spacer-md</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
+  }
+}
+
+%definition-list-simple {
+  <span class="hljs-selector-tag">dd</span> {
+    <span class="hljs-keyword">@extend</span> %heading-font-regular;
+
+    <span class="hljs-attribute">text-transform</span>: uppercase;
+  }
+
+  <span class="hljs-selector-tag">dd</span>,
+  <span class="hljs-selector-tag">dt</span> {
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0</span>;
+  }
 }
 </pre>
                             </code>
@@ -638,7 +668,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">272 Bytes</span>
+                    <span class="Meta-value">790 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -696,14 +726,13 @@
 <span class="hljs-comment">//</span>
 
 <span class="hljs-selector-tag">ol</span><span class="hljs-selector-pseudo">:not</span>([class]) {
-  <span class="hljs-keyword">@extend</span> %unsorted-list;
+  <span class="hljs-keyword">@extend</span> %base-list-styling;
   <span class="hljs-keyword">@extend</span> %body-font-regular;
+  <span class="hljs-keyword">@extend</span> %list-unstyled;
 
-  <span class="hljs-attribute">list-style</span>: none;
-  <span class="hljs-attribute">list-style-type</span>: none;
+  <span class="hljs-attribute">counter-reset</span>: number;
 
   &gt; <span class="hljs-selector-tag">li</span> {
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
     <span class="hljs-attribute">counter-increment</span>: number;
 
     &amp;<span class="hljs-selector-pseudo">::before</span> {
@@ -728,10 +757,6 @@
       <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$spacer-md</span>;
     }
   }
-
-  <span class="hljs-selector-tag">ol</span> {
-    <span class="hljs-attribute">counter-reset</span>: number;
-  }
 }
 </pre>
                             </code>
@@ -749,7 +774,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.1 KB</span>
+                    <span class="Meta-value">1 KB</span>
                 </li>
             </ul>
         </div>
@@ -766,29 +791,38 @@
 
 <span class="hljs-selector-class">.tuple-list</span> {
   <span class="hljs-keyword">@extend</span> %list-unstyled;
+
+  &gt; * + * {
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-sm</span>;
+  }
 }
 
 <span class="hljs-selector-class">.tuple-list__label</span> {
-  <span class="hljs-keyword">@extend</span> %teaser-caption;
+  <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
   <span class="hljs-attribute">display</span>: block;
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$tupel-list-label-color</span>;
-}
-
-<span class="hljs-selector-class">.tuple-list__entry</span> {
-  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-sm</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xs</span>;
+  <span class="hljs-attribute">text-transform</span>: uppercase;
 }
 
 <span class="hljs-selector-class">.tuple-list__value</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-regular;
 
   <span class="hljs-attribute">display</span>: block;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xs</span>;
+  <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
 }
 
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
+  <span class="hljs-selector-class">.tuple-list</span> {
+    &gt; * + * {
+      <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-xxs</span>
+    }
+  }
+
   <span class="hljs-selector-class">.tuple-list__entry</span> {
     <span class="hljs-attribute">display</span>: grid;
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xxs</span>;
     <span class="hljs-attribute">grid-template-areas</span>: <span class="hljs-string">&quot;label value&quot;</span>;
     <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-variable">$tuple-list-label-width</span> auto;
     <span class="hljs-comment">/* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */</span>
@@ -819,7 +853,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">757 Bytes</span>
+                    <span class="Meta-value">915 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -832,9 +866,7 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-variable">$bullet-size</span>: <span class="hljs-number">1.9rem</span>;
-
-<span class="hljs-selector-class">.list-unstyled</span> {
+                                <pre><span class="hljs-selector-class">.list-unstyled</span> {
   <span class="hljs-keyword">@extend</span> %list-unstyled;
 }
 
@@ -846,7 +878,7 @@
 
 <span class="hljs-selector-tag">ul</span><span class="hljs-selector-pseudo">:not</span>([class]),
 <span class="hljs-selector-class">.bold-list</span> {
-  <span class="hljs-keyword">@extend</span> %unsorted-list;
+  <span class="hljs-keyword">@extend</span> %base-list-styling;
 
   <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$spacer-xs</span>;
 
@@ -858,12 +890,12 @@
 
     &amp;<span class="hljs-selector-pseudo">::marker</span> {
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color</span>;
-      <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xs</span>;
+      <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
     }
 
     <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color-secondary</span>;
-      <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xs</span>;
+      <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
     }
 
     <span class="hljs-selector-tag">ul</span> {
@@ -879,7 +911,7 @@
 <span class="hljs-comment">// ---- Bold Bullet Lists ----------------------------------------------------------</span>
 <span class="hljs-comment">//</span>
 <span class="hljs-selector-class">.bold-list</span> {
-  <span class="hljs-keyword">@extend</span> %unsorted-list;
+  <span class="hljs-keyword">@extend</span> %base-list-styling;
 
   &gt; <span class="hljs-selector-tag">li</span> {
     <span class="hljs-keyword">@extend</span> %heading-font-bold;
@@ -888,7 +920,7 @@
 
     &amp;<span class="hljs-selector-pseudo">::marker</span> {
       <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color</span>;
-      <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-md</span>;
+      <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-lg</span>;
     }
   }
 }
@@ -908,7 +940,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.1 KB</span>
+                    <span class="Meta-value">1 KB</span>
                 </li>
             </ul>
         </div>
@@ -7842,7 +7874,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-29T08:29:27.761Z">
+                            <time datetime="2022-09-29T14:04:55.112Z">
                                 9/29/2022
                             </time>
                         

@@ -9,14 +9,13 @@
 //
 
 ol:not([class]) {
-  @extend %unsorted-list;
+  @extend %base-list-styling;
   @extend %body-font-regular;
+  @extend %list-unstyled;
 
-  list-style: none;
-  list-style-type: none;
+  counter-reset: number;
 
   > li {
-    margin-bottom: $spacer-xs;
     counter-increment: number;
 
     &::before {
@@ -40,9 +39,5 @@ ol:not([class]) {
     ol {
       margin-left: $spacer-md;
     }
-  }
-
-  ol {
-    counter-reset: number;
   }
 }

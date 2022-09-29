@@ -60,7 +60,8 @@
   src: url("https://www.innoq.com/assets/hack-regular.woff2?cachebuster=2") format("woff2");
 }
 .work-page .big-content-teaser__text, .gradient-header__author, .list-teaser-abstract__text::first-letter, ul:not([class]) > li,
-.bold-list > li, ol:not([class]), p, dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd,
+.bold-list > li, ol:not([class]), dl:not([class]) dd,
+dl dd, p,
 .body-font-regular {
   font-family: "FreightTextPro", "Georgia", "Times", "Times New Roman", serif;
   font-style: normal;
@@ -97,9 +98,9 @@ blockquote:not([class]) > p,
 .instructions--touch, .page__number, .dialog-banner__body, .resource-list-item__caption, .resource-list-item__author, .paginator, .event-year, .textbox-sequence__text, .search-result__date,
 .search-result__type, .contact-person__subheading, .reference__description, .info-note__text, .info-note__text *, .infobox__content p,
 .infobox__content ul > li, .conclusion-text ul > li,
-.conclusion-text ul > li p, .conclusion-text > *, .author-bio--large .author-bio__expertise, .author-bio__text > *, .table td, .table caption, .tuple-list__value, .label.slides, p.display, p.standalone, .tooltip p, .footnotes__list li,
+.conclusion-text ul > li p, .conclusion-text > *, .author-bio--large .author-bio__expertise, .author-bio__text > *, .table td, .table caption, .tuple-list__value, .date-location-section dd, .simple-definition-list dd, .label.slides, p.display, p.standalone, .tooltip p, .footnotes__list li,
 .footnotes__list li > p, .footnote, figcaption, .form-text, .form-label, .form-control,
-.custom-form-control, .alert, .client-projects__text, .case-teaser__text, .default-full-width-teaser__text, .date-location-section dd, .simple-definition-list dd,
+.custom-form-control, .alert, .client-projects__text, .case-teaser__text, .default-full-width-teaser__text,
 .heading-font-regular {
   font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-style: normal;
@@ -108,12 +109,13 @@ blockquote:not([class]) > p,
 
 .primary-nav__list, .navbtn--menu, .navbtn--primary, .topic-header__type, .standard-header__intro__label, .standard-header__type, .staff-header-bio__text p a:hover, .gradient-header__type, .footer__directions-link, .cover__author, .cover__type, .toolbar__link, .image-divider-right-content-textbox__text, .topic-teaser__cta, .podcast-author, .artist-list-teaser__edition__type, .service-intro__text, .resource-list-item__author > li > a:focus, .resource-list-item__author > li > a:hover, .paginator__item, .eyecatcher--social__text, .eyecatcher--event__text, .search-form__input, .share-section__link, .superquote__author,
 .longquote__author, .info-note__highlight, .info-note__title, .infobox__teaser, .author-bio__name, .tag-list__link, .table thead,
-.table tfoot, .bold-list > li, ol:not([class]) > li::before, .checklist li, .label-big.badge, .label-big.badge--inverted, .label-big.hint, .label.training, .label.talk, pull-quote > blockquote,
+.table tfoot, .bold-list > li, .tuple-list__label, ol:not([class]) > li::before, dl:not([class]) dt,
+dl dt, .checklist li, .label-big.badge, .label-big.badge--inverted, .label-big.hint, .label.training, .label.talk, pull-quote > blockquote,
 pull-quote > blockquote > p,
 .pullquote,
 .pullquote > p, .link--muted, .newsletter-optin__subtitle, .list-teaser-event__headline--secondary, .section-heading--tertiary, .upcase-heading,
 h5, .search-result__subtitle,
-h4, .footnotes__list li::before, .date, .form-label--emphasized, .btn, .wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .card__subheadline, .card__tag, .tuple-list__label, dl:not([class]) dt, .date-location-section dt, .simple-definition-list dt,
+h4, .footnotes__list li::before, .date, .form-label--emphasized, .btn, .wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .card__subheadline, .card__tag,
 .heading-font-bold {
   font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-style: normal;
@@ -144,6 +146,7 @@ h1, .collapse-toggler, .legend,
 
 * {
   margin-top: 0;
+  margin-bottom: 0;
 }
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
@@ -204,7 +207,7 @@ html {
   text-decoration: none;
 }
 
-.search-result-list, .primary-nav__list, .footer__list, .cover__people, .toolbar, .client-projects, .slider__all, .social-media-bar, .resource-list-item__author > li, .resource-list, .paginator__list, .card__tags, .dropdown__list, .toc__list, .share-section__list, .tag-list, .list-unstyled, .tuple-list, .footnotes__list {
+.search-result-list, .primary-nav__list, .footer__list, .cover__people, .toolbar, .client-projects, .slider__all, .social-media-bar, .resource-list-item__author > li, .resource-list, .paginator__list, .card__tags, .dropdown__list, .toc__list, .share-section__list, .tag-list, .list-unstyled, .tuple-list, ol:not([class]), .footnotes__list {
   padding: 0;
   list-style: none;
   list-style-type: none;
@@ -212,22 +215,12 @@ html {
 
 ul:not([class]),
 .bold-list, ol:not([class]), .checklist {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   padding: 0;
   font-size: 1rem;
   line-height: 1.52;
   list-style-position: outside;
-}
-ul:not([class]) li,
-.bold-list li, ol:not([class]) li, .checklist li {
-  margin-bottom: 0.5787037037rem;
-}
-ul:not([class]) ul,
-.bold-list ul, ol:not([class]) ul, .checklist ul,
-ul:not([class]) ol,
-.bold-list ol,
-ol:not([class]) ol,
-.checklist ol {
-  margin-top: 0.5787037037rem;
 }
 @media screen and (min-width: 48rem) {
   ul:not([class]),
@@ -235,31 +228,6 @@ ol:not([class]) ol,
     font-size: 1.2rem;
     line-height: 1.52;
   }
-}
-
-dl:not([class]) dt, .date-location-section dt, .simple-definition-list dt {
-  margin-bottom: 0.5787037037rem;
-  color: #004153;
-  font-size: 1rem;
-  line-height: 1.52;
-}
-dl:not([class]) dd, .date-location-section dd, .simple-definition-list dd {
-  margin-bottom: 0.5787037037rem;
-  margin-left: 1.44rem;
-  font-size: 1rem;
-  line-height: 1.52;
-}
-
-.date-location-section dd, .simple-definition-list dd {
-  text-transform: uppercase;
-}
-.date-location-section dd, .simple-definition-list dd,
-.date-location-section dt,
-.simple-definition-list dt {
-  margin-left: 0;
-}
-.date-location-section dt, .simple-definition-list dt {
-  margin-bottom: 0;
 }
 
 .service-intro__header, .textbox-sequence__header {
@@ -378,7 +346,7 @@ h6 > a:focus:not([class]),
   text-decoration: none;
 }
 
-.wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .card__subheadline, .card__tag, .tuple-list__label {
+.wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .card__subheadline, .card__tag {
   font-size: 0.9114583333rem;
   text-transform: uppercase;
 }
@@ -392,7 +360,7 @@ h6 > a:focus:not([class]),
 }
 
 @media screen and (min-width: 48rem) {
-  .wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .card__subheadline, .card__tag, .tuple-list__label {
+  .wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .card__subheadline, .card__tag {
     font-size: 1rem;
   }
 }
@@ -2347,10 +2315,10 @@ clickable-area {
   }
 }
 .checklist {
-  padding-left: 1.2rem;
+  margin-left: 1.2rem;
 }
 .checklist li {
-  padding-left: 0.5rem;
+  padding-left: 0.3348979767rem;
   list-style-type: "✓";
 }
 .checklist li::marker {
@@ -2358,12 +2326,37 @@ clickable-area {
   font-size: 1.5rem;
 }
 
+dl:not([class]) > * + *,
+dl > * + * {
+  margin-top: 0.5787037037rem;
+}
+
+dl:not([class]) dt,
+dl dt {
+  color: #004153;
+  font-size: 1rem;
+  line-height: 1.52;
+}
+dl:not([class]) dd,
+dl dd {
+  margin-left: 1.44rem;
+  font-size: 1rem;
+  line-height: 1.52;
+}
+
+.date-location-section dd, .simple-definition-list dd {
+  text-transform: uppercase;
+}
+.date-location-section dd, .simple-definition-list dd,
+.date-location-section dt,
+.simple-definition-list dt {
+  margin-left: 0;
+}
+
 ol:not([class]) {
-  list-style: none;
-  list-style-type: none;
+  counter-reset: number;
 }
 ol:not([class]) > li {
-  margin-bottom: 0.5787037037rem;
   counter-increment: number;
 }
 ol:not([class]) > li::before {
@@ -2384,27 +2377,31 @@ ol:not([class]) > li ul {
 ol:not([class]) > li ol {
   margin-left: 1.44rem;
 }
-ol:not([class]) ol {
-  counter-reset: number;
+
+.tuple-list > * + * {
+  margin-top: 1rem;
 }
 
 .tuple-list__label {
   display: block;
   color: #004153;
-}
-
-.tuple-list__entry {
-  margin-bottom: 1rem;
+  font-size: 0.9114583333rem;
+  text-transform: uppercase;
 }
 
 .tuple-list__value {
   display: block;
+  font-size: 0.9114583333rem;
+  line-height: 1.52;
 }
 
 @media screen and (min-width: 48rem) {
+  .tuple-list > * + * {
+    margin-top: 0.3348979767rem;
+  }
+
   .tuple-list__entry {
     display: grid;
-    margin-bottom: 0.3348979767rem;
     grid-template-areas: "label value";
     grid-template-columns: 8rem auto;
     /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
@@ -2431,12 +2428,12 @@ ul:not([class]) > li,
 ul:not([class]) > li::marker,
 .bold-list > li::marker {
   color: #ff9c66;
-  font-size: 0.9114583333rem;
+  font-size: 1.2rem;
 }
 ul:not([class]) > li li::marker,
 .bold-list > li li::marker {
   color: #004153;
-  font-size: 0.9114583333rem;
+  font-size: 1.2rem;
 }
 ul:not([class]) > li ul,
 .bold-list > li ul {
@@ -2452,7 +2449,7 @@ ul:not([class]) > li ol,
 }
 .bold-list > li::marker {
   color: #ff9c66;
-  font-size: 1.44rem;
+  font-size: 1.728rem;
 }
 
 .table {

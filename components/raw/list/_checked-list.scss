@@ -1,14 +1,12 @@
-$list-indent: 0.5rem;
-
 .checklist {
-  @extend %unsorted-list;
+  @extend %base-list-styling;
 
-  padding-left: 1.2rem;
+  margin-left: 1.2rem; //magic number
 
   li {
     @extend %heading-font-bold;
 
-    padding-left: $list-indent;
+    padding-left: $spacer-xxs;
     list-style-type: "✓";
 
     &::marker {
