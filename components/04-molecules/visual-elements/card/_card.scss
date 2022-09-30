@@ -74,24 +74,24 @@
   > * + * {
     margin-top: $spacer-md;
   }
-}
 
-.upcase-heading {
-  @extend %h5;
+  .upcase-heading {
+    @extend %h5;
 
-  color: $card-bg-color;
-  text-transform: uppercase;
-}
-
-.standalone {
-  color: $card-subheadline-color;
-}
-
-.checklist {
-  color: $card-subheadline-color;
-
-  li::marker {
     color: $card-bg-color;
+    text-transform: uppercase;
+  }
+
+  .standalone {
+    color: $card-subheadline-color;
+  }
+
+  .checklist {
+    color: $card-subheadline-color;
+
+    li::marker {
+      color: $card-bg-color;
+    }
   }
 }
 
