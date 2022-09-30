@@ -15,6 +15,10 @@ ol:not([class]) {
 
   counter-reset: number;
 
+  > * + *{
+    margin-top: $spacer-xxs;
+  }
+
   > li {
     counter-increment: number;
 
