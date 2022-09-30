@@ -234,16 +234,13 @@
   <span class="hljs-attribute">flex-direction</span>: column;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-sm</span> <span class="hljs-variable">$spacer-base</span> <span class="hljs-variable">$spacer-sm</span>;
 
-  &gt; * {
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">// <span class="hljs-doctag">TODO:</span> Remove this after cleanup</span>
-  }
-
   &gt; * + * {
     <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
   }
 
   super-<span class="hljs-selector-tag">quote</span>,
-  long-<span class="hljs-selector-tag">quote</span> {
+  long-<span class="hljs-selector-tag">quote</span>,
+  pull-<span class="hljs-selector-tag">quote</span> {
     <span class="hljs-keyword">@extend</span> %container-vertical-spacing-lg;
 
     <span class="hljs-attribute">max-width</span>: <span class="hljs-number">45rem</span>;
@@ -255,10 +252,6 @@
     <span class="hljs-attribute">display</span>: flex;
     <span class="hljs-attribute">align-items</span>: center;
     <span class="hljs-attribute">justify-content</span>: center;
-
-    &gt; * {
-      <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">//FIXME</span>
-    }
   }
 
   <span class="hljs-selector-class">.centered-content-75</span> {
@@ -353,7 +346,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.1 KB</span>
+                    <span class="Meta-value">2 KB</span>
                 </li>
             </ul>
         </div>
@@ -7285,8 +7278,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-29T14:04:55.112Z">
-                                9/29/2022
+                            <time datetime="2022-09-30T06:43:45.800Z">
+                                9/30/2022
                             </time>
                         
                     </dd>

@@ -17,10 +17,6 @@ $conclusion-border-size: ms(5);
   .btn {
     align-self: flex-start;
   }
-
-  > * {
-    margin-bottom: 0; //FIXME
-  }
 }
 
 .conclusion-headline {
@@ -44,7 +40,6 @@ $conclusion-border-size: ms(5);
     @extend %heading-font-regular;
 
     color: $conclusion-text-color;
-    font-size: $font-size-base;
   }
 
   a:not([class]) {
@@ -60,12 +55,14 @@ $conclusion-border-size: ms(5);
   ul {
     margin-left: $spacer-sm;
 
+    > li {
+      padding-left: $spacer-xs;
+    }
+
     /* stylelint-disable-next-line selector-max-compound-selectors */
     > li,
     > li p {
       @extend %heading-font-regular;
-
-      padding-left: $spacer-xs;
 
     /* stylelint-disable-next-line selector-max-compound-selectors */
       li::marker {
@@ -82,10 +79,6 @@ $conclusion-border-size: ms(5);
 @media screen and (min-width: $grid-breakpoint-md) {
   .conclusion {
     padding: $spacer-xxl 0;
-  }
-
-  .conclusion-text {
-    font-size: $font-size-sm;
   }
 }
 

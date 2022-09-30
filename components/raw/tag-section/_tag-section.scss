@@ -10,7 +10,6 @@
 .tag-section__headline {
   @extend %heading-font-heavy;
 
-  margin-bottom: 0; //FIME
   color: $meta-tags-headline-text-color;
   font-size: $font-size-base;
   text-align: center;

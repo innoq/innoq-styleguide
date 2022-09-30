@@ -320,10 +320,6 @@
   <span class="hljs-selector-class">.btn</span> {
     <span class="hljs-attribute">align-self</span>: flex-start;
   }
-
-  &gt; * {
-    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>; <span class="hljs-comment">//FIXME</span>
-  }
 }
 
 <span class="hljs-selector-class">.conclusion-headline</span> {
@@ -347,7 +343,6 @@
     <span class="hljs-keyword">@extend</span> %heading-font-regular;
 
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$conclusion-text-color</span>;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
   }
 
   <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:not</span>([class]) {
@@ -363,12 +358,14 @@
   <span class="hljs-selector-tag">ul</span> {
     <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$spacer-sm</span>;
 
+    &gt; <span class="hljs-selector-tag">li</span> {
+      <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer-xs</span>;
+    }
+
     <span class="hljs-comment">/* stylelint-disable-next-line selector-max-compound-selectors */</span>
     &gt; <span class="hljs-selector-tag">li</span>,
     &gt; <span class="hljs-selector-tag">li</span> <span class="hljs-selector-tag">p</span> {
       <span class="hljs-keyword">@extend</span> %heading-font-regular;
-
-      <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer-xs</span>;
 
     <span class="hljs-comment">/* stylelint-disable-next-line selector-max-compound-selectors */</span>
       <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
@@ -385,10 +382,6 @@
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
   <span class="hljs-selector-class">.conclusion</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xxl</span> <span class="hljs-number">0</span>;
-  }
-
-  <span class="hljs-selector-class">.conclusion-text</span> {
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
   }
 }
 
@@ -421,7 +414,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.9 KB</span>
+                    <span class="Meta-value">1.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -7353,8 +7346,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-09-29T14:04:55.112Z">
-                                9/29/2022
+                            <time datetime="2022-09-30T06:43:45.800Z">
+                                9/30/2022
                             </time>
                         
                     </dd>
