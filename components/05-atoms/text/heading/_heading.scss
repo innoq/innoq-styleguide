@@ -120,13 +120,6 @@ h6 {
   text-transform: uppercase;
 }
 
-.upcase-heading {
-  @extend %h5;
-
-  margin: 0 auto $spacer-md;
-  font-size: $font-size-xxl;
-  text-transform: uppercase;
-}
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   %h1,
