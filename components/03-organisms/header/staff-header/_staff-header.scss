@@ -1,113 +1,42 @@
-.staff-header {
+.staff-page__header {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.staff-header-image {
-  width: 100%;
-  // Fix for bug in mobile Safari
-  height: 100%;
+.staff-header__profile {
+  display: flex;
+  flex-direction: column;
 }
 
-.staff-header-info {
-  flex-grow: 1;
-  padding: $spacer-md $spacer-md $spacer-xs;
-  background-color: $staff-header-info-bg-color;
-
-  &__name {
-    margin-bottom: $spacer-xs;
-    text-transform: uppercase;
-  }
-
-  &__job-title {
-    @extend %heading-font-regular;
-
-    margin-bottom: $spacer-xs;
-    font-size: $font-size-lg;
-  }
+.staff-header__role {
+  @extend %heading-font-regular;
 }
 
-.staff-header-bio {
-  padding: $spacer-lg $spacer-md $spacer-md;
-  background-color: $staff-header-bio-bg-color;
+.staff-header__link {
+  @extend %heading-font-heavy;
+  @extend %link-unstyled;
 
-  &__text p {
-    @extend %heading-font-regular;
+  font-size: $font-size-xs;
+}
 
-    padding-bottom: $spacer-md;
-    color: $staff-header-bio-color;
-    font-size: $font-size-sm;
-    line-height: $paragraph-line-height;
+.staff-header__text {
+  padding-bottom: $spacer-lg;
+  border-bottom: $staff-header-text-underline-color solid 2px;
+  margin: $spacer-lg 0;
+}
 
-    a {
-      @extend %link-unstyled;
-
-      color: $staff-header-bio-link-color;
-
-      &:hover {
-        @extend %heading-font-bold;
-      }
-    }
-  }
-
-  &__social {
-    padding-top: $spacer-lg;
-    border-top: 1px solid $staff-header-bio-color;
-
-    .icon {
-      font-size: ms(7);
-    }
-
-    .icon-svg:hover,
-    .icon-svg:focus {
-      background: $staff-header-icon-hover-color;
-    }
+.social-media-bar__item { 
+  .icon-svg:hover,
+  .icon-svg:focus {
+    background: $brand-primary;
   }
 }
 
-//Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
-  .staff-header-image {
-    max-width: 70%;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-lg) {
-  .staff-header {
-    display: grid;
-    grid-template-columns: auto $default-page-layout-content-width-xl / 3 $default-page-layout-content-width-xl / 3 auto;
-    grid-template-rows: auto;
-  }
-
-  .staff-header-left {
-    background-color: $staff-header-bg-color;
-    grid-column: 1 / 2;
-  }
-
-  .staff-header-right {
-    background-color: $staff-header-bg-color;
-    grid-column: 4 / 5;
-  }
-
-  .staff-header-bio {
-    padding: $spacer-lg $spacer-lg $spacer-md;
-    margin: 0;
-    grid-column: 2 / 4;
-  }
-
-  .staff-header-info {
-    padding: $spacer-xxl $spacer-md 0;
-    margin: 0;
-    grid-column: 2 / 3;
-    grid-row-start: 1;
-  }
-
-  .staff-header-image {
-    min-width: $default-page-layout-content-width-xl / 3;
-    // Fix for bug in mobile Safari
-    height: auto;
-    min-height: auto;
-    grid-column: 3 / 4;
+  .staff-header__profile {
+    flex-direction: row;
+    align-items: center;
   }
 }
