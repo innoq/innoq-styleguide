@@ -21,13 +21,17 @@
   font-size: $font-size-xs;
 }
 
+.staff-header__title {
+  margin: $spacer-sm 0;
+}
+
 .staff-header__text {
   padding-bottom: $spacer-lg;
   border-bottom: $staff-header-text-underline-color solid 2px;
-  margin: $spacer-lg 0;
+  margin: $spacer-lg $spacer-sm;
 }
 
-.social-media-bar__item { 
+.staff-page__header .social-media-bar__item { 
   .icon-svg:hover,
   .icon-svg:focus {
     background: $brand-primary;
@@ -36,7 +40,14 @@
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .staff-header__profile {
+    width: 100%;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
+
+  .staff-header__title {
+    margin: $spacer-sm;
+  }
+  
 }
