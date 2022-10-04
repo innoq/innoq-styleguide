@@ -156,4 +156,12 @@ h6 {
   h6 {
     font-size: $font-size-sm;
   }
+
+  .teaser-section-heading {
+    font-size: $font-size-xl;
+  }
+
+  .inverted-section-heading {
+    color: $brand-white;
+  }
 }
