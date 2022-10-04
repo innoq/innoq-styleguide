@@ -11,6 +11,11 @@
   background-color: $brand-secondary;
 }
 
+
+.stripe--secondary-transparent {
+  background-color: rgba($brand-secondary, 0.5);
+}
+
 .stripe--gray {
   background-color: $brand-gray-10;
 }
