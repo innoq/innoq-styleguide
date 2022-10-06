@@ -105,6 +105,12 @@
   background-image: asset-url("bg-images/general/visual-culture-14.webp");
 }
 
+.bg-image-culture-15,
+%bg-image-culture-15 {
+  background-blend-mode: multiply;
+  background-image: asset-url("bg-images/general/visual-culture-15.webp");
+}
+
 // Staff
 .bg-image-staff-01,
 %bg-image-staff-01 {
@@ -190,6 +196,11 @@
   background-blend-mode: multiply;
   background-color: $brand-gray-25;
   background-image: asset-url("bg-images/general/visual-trainings-10.webp");
+}
+
+.bg-image-trainings-11,
+%bg-image-trainings-11 {
+  background-image: asset-url("bg-images/general/visual-trainings-11.webp");
 }
 
 // Workshops

@@ -23,6 +23,9 @@
     @extend %punch-in;
   }
 
+  &--no-border {
+    border: 0;
+  }
 }
 
 //
