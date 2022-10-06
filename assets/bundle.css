@@ -632,6 +632,11 @@ h6 > a:focus:not([class]),
   background-image: url("/assets/bg-images/general/visual-culture-14.webp");
 }
 
+.bg-image-culture-15 {
+  background-blend-mode: multiply;
+  background-image: url("/assets/bg-images/general/visual-culture-15.webp");
+}
+
 .bg-image-staff-01 {
   background-blend-mode: multiply;
   background-color: #d8d8d8;
@@ -702,6 +707,10 @@ h6 > a:focus:not([class]),
   background-blend-mode: multiply;
   background-color: #d8d8d8;
   background-image: url("/assets/bg-images/general/visual-trainings-10.webp");
+}
+
+.bg-image-trainings-11 {
+  background-image: url("/assets/bg-images/general/visual-trainings-11.webp");
 }
 
 .bg-image-workshop-01 {
@@ -6730,6 +6739,10 @@ wall-of-consent:not(.revealed) {
 .image-header__content > * + * {
   margin-top: 1.44rem;
 }
+.image-header--no-border {
+  border: 0;
+}
+
 @media screen and (min-width: 36rem) {
   .image-header {
     -webkit-box-align: center;
@@ -8298,10 +8311,6 @@ main > .page-layout-md--default:first-child {
 .magazine-page--link {
   margin-bottom: 3.919104rem;
   text-align: center;
-}
-
-.image-header--no-padding {
-  padding: 0;
 }
 
 .podcast-overview-samples {
