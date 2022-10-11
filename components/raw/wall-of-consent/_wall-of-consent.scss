@@ -7,3 +7,9 @@ wall-of-consent {
 wall-of-consent:not(.revealed) {
   background-color: $brand-apricot-25;
 }
+
+.wall-of-consent__text {
+  @extend %heading-font-regular;
+
+  font-size: $font-size-base;
+}

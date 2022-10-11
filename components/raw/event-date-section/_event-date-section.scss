@@ -70,7 +70,7 @@
 // Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   .event-date-section {
-    width: 80px;
+    min-width: ms(20);
     margin-top: 0;
   }
 

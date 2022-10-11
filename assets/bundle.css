@@ -96,7 +96,7 @@ blockquote:not([class]) > p,
 .instructions--focus,
 .instructions--hover-and-focus,
 .instructions--touch, .page__number, .dialog-banner__body, .resource-list-item__caption, .resource-list-item__author, .paginator, .event-year, .textbox-sequence__text, .search-result__date,
-.search-result__type, .contact-person__subheading, .reference__description, .info-note__text, .info-note__text *, .infobox__content p,
+.search-result__type, .contact-person__subheading, .wall-of-consent__text, .reference__description, .info-note__text, .info-note__text *, .infobox__content p,
 .infobox__content ul > li, .conclusion-text ul > li,
 .conclusion-text ul > li p, .conclusion-text > *, .author-bio--large .author-bio__expertise, .author-bio__text > *, .table td, .table caption, .tuple-list__value, .date-location-section dd, .simple-definition-list dd, .label.slides, p.display, p.standalone, .tooltip p, .footnotes__list li,
 .footnotes__list li > p, .footnote, figcaption, .form-text, .form-label, .form-control,
@@ -3238,6 +3238,10 @@ wall-of-consent:not(.revealed) {
   background-color: #ffe6d9;
 }
 
+.wall-of-consent__text {
+  font-size: 1rem;
+}
+
 .contact-person .author-bio--large {
   color: #004153;
 }
@@ -3749,7 +3753,7 @@ wall-of-consent:not(.revealed) {
 
 @media screen and (min-width: 48rem) {
   .event-date-section {
-    width: 80px;
+    min-width: 6.1917364224rem;
     margin-top: 0;
   }
 
