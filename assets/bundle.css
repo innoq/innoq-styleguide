@@ -5302,41 +5302,39 @@ wall-of-consent:not(.revealed) {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 2.0736rem;
   background-color: #fff;
 }
 
 .product-list-teaser__body {
-  padding: 2.0736rem 2.0736rem 0;
+  padding: 2.0736rem;
   border-bottom: 1px solid #d8d8d8;
-  margin-bottom: 2.0736rem;
+}
+.product-list-teaser__body > * + * {
+  margin-top: 1rem;
 }
 
 .product-list-teaser__footer {
-  padding: 0 2.0736rem 2.0736rem;
-}
-
-.product-list-teaser__cta {
-  padding: 0.5787037037rem;
-  background: #004153;
-  color: #ff9c66;
-  font-size: 0.9114583333rem;
-  text-align: center;
+  padding: 2.0736rem;
 }
 
 .product-list-teaser__caption {
-  height: 1.44rem;
-  margin-bottom: 1rem;
   color: #004153;
 }
 
 .product-list-teaser__headline {
-  margin-bottom: 1rem;
   color: #ff9c66;
 }
 
 .product-list-teaser__text {
   font-size: 1.2rem;
+}
+
+.product-list-teaser__cta {
+  padding: 1rem;
+  background: #004153;
+  color: #ff9c66;
+  font-size: 0.9114583333rem;
+  text-align: center;
 }
 
 @media screen and (min-width: 48rem) {
@@ -6080,6 +6078,9 @@ wall-of-consent:not(.revealed) {
   margin: 1rem;
   background-color: #fff;
 }
+.wall-note__content > * + * {
+  margin-top: 1rem;
+}
 
 .wall-note__heading {
   font-size: 2.48832rem;
@@ -6729,7 +6730,7 @@ wall-of-consent:not(.revealed) {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 30px solid #ff9c66;
+  border: 10px solid #ff9c66;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -6747,19 +6748,17 @@ wall-of-consent:not(.revealed) {
   border: 0;
 }
 
-@media screen and (min-width: 36rem) {
-  .image-header {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .image-header__content {
-    width: auto;
-  }
-}
 @media screen and (min-width: 48rem) {
   .image-header {
     min-height: calc(100vh - 8.088rem);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 30px solid #ff9c66;
+  }
+  .image-header__content {
+    width: auto;
+    margin: 1rem;
   }
 }
 .landing-page-header {
@@ -8559,6 +8558,12 @@ main > .page-layout-md--default:first-child {
 }
 .product-microsite-page .tile-grid-md {
   gap: 2.985984rem;
+}
+.product-microsite-page .section-heading--secondary {
+  margin-top: 3.919104rem;
+}
+.product-microsite-page .triplet-divider {
+  margin-top: 2.0736rem;
 }
 
 .demo > * {

@@ -3,7 +3,7 @@
   min-height: $fullscreen-real-mobile-height;
   align-items: flex-end;
   justify-content: center;
-  border: 30px solid $image-header-bg-color;
+  border: 10px solid $image-header-bg-color;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,19 +31,15 @@
 //
 // Media Queries
 //
-
-@media screen and (min-width: $grid-breakpoint-sm) {
-  .image-header {
-    align-items: center;
-
-    &__content {
-      width: auto;
-    }
-  }
-}
-
 @media screen and (min-width: $grid-breakpoint-md) {
   .image-header {
     min-height: $fullscreen-real-desktop-height;
+    align-items: center;
+    border: 30px solid $image-header-bg-color;
+
+    &__content {
+      width: auto;
+      margin: $spacer-sm;
+    }
   }
 }

@@ -18,6 +18,10 @@ $big-content-teaser-height-md: ms(40);
   padding: $spacer-lg $spacer-base;
   margin: $spacer-sm;
   background-color: $wall-note-content-bg-color;
+
+  > * + * {
+    margin-top: $spacer-sm;
+  }
 }
 
 .wall-note__heading {

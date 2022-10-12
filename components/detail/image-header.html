@@ -278,7 +278,7 @@
   <span class="hljs-attribute">min-height</span>: <span class="hljs-variable">$fullscreen-real-mobile-height</span>;
   <span class="hljs-attribute">align-items</span>: flex-end;
   <span class="hljs-attribute">justify-content</span>: center;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">30px</span> solid <span class="hljs-variable">$image-header-bg-color</span>;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">10px</span> solid <span class="hljs-variable">$image-header-bg-color</span>;
   <span class="hljs-attribute">background-position</span>: center;
   <span class="hljs-attribute">background-repeat</span>: no-repeat;
   <span class="hljs-attribute">background-size</span>: cover;
@@ -306,20 +306,16 @@
 <span class="hljs-comment">//</span>
 <span class="hljs-comment">// Media Queries</span>
 <span class="hljs-comment">//</span>
-
-<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-sm</span>) {
-  <span class="hljs-selector-class">.image-header</span> {
-    <span class="hljs-attribute">align-items</span>: center;
-
-    &amp;__content {
-      <span class="hljs-attribute">width</span>: auto;
-    }
-  }
-}
-
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
   <span class="hljs-selector-class">.image-header</span> {
     <span class="hljs-attribute">min-height</span>: <span class="hljs-variable">$fullscreen-real-desktop-height</span>;
+    <span class="hljs-attribute">align-items</span>: center;
+    <span class="hljs-attribute">border</span>: <span class="hljs-number">30px</span> solid <span class="hljs-variable">$image-header-bg-color</span>;
+
+    &amp;__content {
+      <span class="hljs-attribute">width</span>: auto;
+      <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$spacer-sm</span>;
+    }
   }
 }
 </pre>
@@ -338,7 +334,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">856 Bytes</span>
+                    <span class="Meta-value">850 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -1155,7 +1151,7 @@
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -7270,8 +7266,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-10-11T12:51:12.857Z">
-                                10/11/2022
+                            <time datetime="2022-10-12T16:06:30.157Z">
+                                10/12/2022
                             </time>
                         
                     </dd>
