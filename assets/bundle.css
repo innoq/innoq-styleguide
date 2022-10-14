@@ -3647,6 +3647,8 @@ wall-of-consent:not(.revealed) {
   }
 
   .card__content__footer__link {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     justify-self: baseline;
   }
 }
