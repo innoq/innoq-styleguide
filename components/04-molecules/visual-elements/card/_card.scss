@@ -1,4 +1,6 @@
 .card {
+  @extend %link-unstyled;
+
   display: flex;
   flex-direction: column;
 }
@@ -75,7 +77,7 @@
     margin-top: $spacer-md;
   }
 
-  .upcase-heading {
+  .card__content__footer__heading {
     @extend %h5;
 
     color: $card-bg-color;
@@ -92,6 +94,10 @@
     li::marker {
       color: $card-bg-color;
     }
+  }
+
+  .card__content__footer__link {
+    display: inline-block;
   }
 }
 
@@ -116,6 +122,10 @@
 
   .card__content__body,
   .card__content__footer {
-    height: 18rem; //magic number
+    height: 22rem; //magic number
+  }
+
+  .card__content__footer__link {
+    justify-self: baseline;
   }
 }
