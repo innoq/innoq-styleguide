@@ -4456,7 +4456,8 @@ wall-of-consent:not(.revealed) {
 .list-teaser-abstract.primary .list-teaser-abstract__text::first-letter {
   color: #004153;
 }
-.list-teaser-abstract.primary .author-bio__text {
+.list-teaser-abstract.primary .author-bio__name,
+.list-teaser-abstract.primary .author-bio__info {
   color: #004153;
 }
 .list-teaser-abstract.secondary {
@@ -4468,7 +4469,8 @@ wall-of-consent:not(.revealed) {
 .list-teaser-abstract.secondary .list-teaser-abstract__text::first-letter {
   color: #ff9c66;
 }
-.list-teaser-abstract.secondary .author-bio__text {
+.list-teaser-abstract.secondary .author-bio__name,
+.list-teaser-abstract.secondary .author-bio__info {
   color: #ff9c66;
 }
 

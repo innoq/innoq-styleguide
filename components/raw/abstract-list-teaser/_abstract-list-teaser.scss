@@ -18,7 +18,8 @@
       }
     }
 
-    .author-bio__text {
+    .author-bio__name,
+    .author-bio__info {
       color: $list-teaser-abstract-primary-author-name-color;
     }
   }
@@ -34,7 +35,8 @@
       }
     }
 
-    .author-bio__text {
+    .author-bio__name,
+    .author-bio__info {
       color: $list-teaser-abstract-secondary-author-name-color;
     }
   }
