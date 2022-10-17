@@ -3,8 +3,7 @@
 //
 
 .page-layout-xl--default,
-.page-layout-md--default,
-.page-layout-md--no-margin {
+.page-layout-md--default {
   padding: $spacer-sm;
 
   > * + * {
@@ -23,12 +22,7 @@
     max-width: $default-page-layout-content-width-xl;
   }
 
-  .page-layout-md--no-margin {
-    margin: 0 auto;
-  }
-
   // Content Page width, content max-width is 800px
-  .page-layout-md--no-margin,
   .page-layout-md--default {
     width: $default-page-layout-width-md;
     max-width: $default-page-layout-content-width-md;
