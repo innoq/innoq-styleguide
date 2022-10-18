@@ -6518,6 +6518,9 @@ wall-of-consent:not(.revealed) {
   display: grid;
   width: 100%;
   max-width: 90.25rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   padding: 0 1rem;
   margin: 0 auto;
   color: #fff;

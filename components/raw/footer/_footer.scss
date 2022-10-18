@@ -4,6 +4,7 @@
   display: grid;
   width: 100%;
   max-width: $default-page-layout-content-width-xl;
+  align-items: start;
   padding: 0 $spacer-sm;
   margin: 0 auto;
   color: $footer-color;
