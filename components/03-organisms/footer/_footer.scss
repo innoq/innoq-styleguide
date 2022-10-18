@@ -3,6 +3,7 @@
 
   display: grid;
   width: 100%;
+  max-width: $default-page-layout-content-width-xl;
   padding: 0 $spacer-sm;
   margin: 0 auto;
   color: $footer-color;
@@ -102,7 +103,8 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .footer {
     display: grid;
-    grid-column-gap: $spacer-lg;
+    padding: 0 $spacer-base;
+    gap: $spacer-xl $spacer-lg;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
