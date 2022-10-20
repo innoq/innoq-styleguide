@@ -1,6 +1,8 @@
 .tile-grid-sm,
 .tile-grid-md,
 .tile-grid-alternating-1-4 {
+  @extend %list-unstyled;
+
   display: grid;
   width: 100%;
   grid-gap: $spacer-sm;
@@ -11,7 +13,7 @@
 }
 
 .tile-grid-sm {
-  grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(23rem, 100%), 1fr));
 }
 
 .tile-grid-md {

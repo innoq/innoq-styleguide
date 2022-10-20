@@ -2,7 +2,7 @@
 
 .teaser-page-layout {
   width: 95%;
-  max-width: $grid-page-layout-width;
+  max-width: $default-page-layout-content-width-xl;
   margin-right: auto;
   margin-bottom: $spacer-md;
   margin-left: auto;
@@ -10,6 +10,7 @@
 
 .podcast-grid {
   display: grid;
+  width: 100%;
   grid-auto-rows: 1fr;
   grid-gap: $spacer-sm;
   grid-template-columns: 1fr;

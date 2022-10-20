@@ -1,38 +1,39 @@
-<header class="gradient-header">
-    <div class="gradient-header__body">
-        <div class="staff-page__header">
-            <div class="staff-header__profile">
-                <div class="staff-header__title">
-                    <h3>Dr. Vorname Nachname</h3>
-                    <p class="staff-header__role">Fellow</p>
-                    <p class="staff-header__link"><a class="link-teaser" href="#">Trainerprofil</a> bei Socreatory</p>
-                </div>
-                <div class="avatar avatar--xxl">
-                    <a class="avatar__link" href="#author-bio">
-                        <img class="avatar__image" itemprop="photo" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq" />
-                    </a>
-                </div>
+<header class="staff-header">
+    <div class="staff-header__body">
+        <div class="staff-header__profile" itemscope itemtype="http://schema.org/Person">
+            <div class="staff-header__profile__person">
+                <h1 class="staff-header__profile__person__name" itemprop="fullName">Dr. Heribert Innoq</h1>
+                <p class="staff-header__profile__person__role"itemprop="jobTitle">Fellow</p>
+                <p class="staff-header__profile__person__link" itemprop="url"><a class="link-teaser" href="#">Trainerprofil</a> bei Socreatory</p>
             </div>
-            <p class="staff-header__text">Lars ist Senior Consultant bei INNOQ in München und ist interessiert
-                an Programmiersprachen (insbesondere funktionale), Webentwicklung und theoretischer Informatik.
-                Lars schreibt Artikel und spricht auf Konferenzen über eine Vielzahl von Themen.</p>
-            <ul class="social-media-bar">
-                <li class="social-media-bar__item">
-                    <a href="#" class="social-media-bar__link" title="Twitter">
-                        <span class="icon-svg icon-twitter icon--brand-secondary"></span>
-                    </a>
-                </li>
-                <li class="social-media-bar__item">
-                    <a href="#" class="social-media-bar__link" title="Youtube">
-                        <span class="icon-svg icon-youtube icon--brand-secondary"></span>
-                    </a>
-                </li>
-                <li class="social-media-bar__item">
-                    <a href="#" class="social-media-bar__link" title="Linkedin">
-                        <span class="icon-svg icon-linkedin icon--brand-secondary"></span>
-                    </a>
-                </li>
-            </ul>
+            <div class="avatar avatar--xxl">
+                <img class="avatar__image" itemprop="photo" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq" />
+            </div>
         </div>
+        <p class="staff-header__text">Heribert ist Senior Consultant bei INNOQ in München und ist interessiert
+            an Programmiersprachen (insbesondere funktionale), Webentwicklung und theoretischer Informatik.
+            Lars schreibt Artikel und spricht auf Konferenzen über eine Vielzahl von Themen.</p>
+        <ul class="social-media-bar">
+            <li class="social-media-bar__item">
+                <a href="#" class="social-media-bar__link" title="Twitter">
+                    <span class="icon icon-twitter icon--brand-secondary"></span>
+                </a>
+            </li>
+            <li class="social-media-bar__item">
+                <a href="#" class="social-media-bar__link" title="Youtube">
+                    <span class="icon icon-youtube icon--brand-secondary"></span>
+                </a>
+            </li>
+            <li class="social-media-bar__item">
+                <a href="#" class="social-media-bar__link" title="Linkedin">
+                    <span class="icon icon-linkedin icon--brand-secondary"></span>
+                </a>
+            </li>
+            <li class="social-media-bar__item">
+                <a href="#" class="social-media-bar__link" title="Xing">
+                    <span class="icon icon-xing icon--brand-secondary"></span>
+                </a>
+            </li>
+        </ul>
     </div>
 </header>

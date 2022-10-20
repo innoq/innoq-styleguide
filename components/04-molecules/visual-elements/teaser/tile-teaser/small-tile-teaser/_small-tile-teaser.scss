@@ -1,0 +1,39 @@
+.small-tile-teaser {
+  @extend %block-link;
+  @extend %hover-glow;
+  @extend %box-shadow-primary-25-right-bottom;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: $spacer-md $spacer-sm;
+  background-color: $small-tile-teaser-bg-color;
+  color: $small-tile-teaser-text-color;
+
+  .icon {
+    display: block;
+    align-self: flex-start;
+    margin-top: $spacer-md;
+  }
+}
+
+.small-tile-teaser__type {
+  @extend %heading-font-bold;
+
+  color: $brand-primary;
+  font-size: $font-size-xs;
+  text-transform: uppercase;
+}
+
+.small-tile-teaser__title {
+  margin-top: $spacer-xs;
+  color: $small-tile-teaser-text-color;
+}
+
+.small-tile-teaser__subtitle {
+  @extend %heading-font-regular;
+
+  margin-top: $spacer-xs;
+  color: $small-tile-teaser-text-color;
+  font-size: $font-size-base;
+}

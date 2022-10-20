@@ -22,6 +22,7 @@
 //
 @import "../components/06-subatoms/bg-images/bg-images";
 @import "../components/06-subatoms/box-shadow/box-shadow";
+@import "../components/06-subatoms/gradients/gradients";
 
 //
 // ATOMS
@@ -118,7 +119,6 @@
 @import "../components/04-molecules/visual-elements/resource-list/resource-list";
 @import "../components/04-molecules/visual-elements/service-intro/service-intro";
 @import "../components/04-molecules/visual-elements/dialog-banner/dialog-banner";
-@import "../components/04-molecules/visual-elements/shortlist/shortlist";
 @import "../components/04-molecules/visual-elements/social-media-bar/social-media-bar";
 @import "../components/04-molecules/visual-elements/slider/slider";
 
@@ -135,13 +135,16 @@
 @import "../components/04-molecules/visual-elements/teaser/list-teaser/topic-list-teaser/topic-list-teaser";
 @import "../components/04-molecules/visual-elements/teaser/list-teaser/training-list-teaser/training-list-teaser";
 @import "../components/04-molecules/visual-elements/teaser/list-teaser/product-list-teaser/product-list-teaser";
+
 @import "../components/04-molecules/visual-elements/teaser/tile-teaser/big-content-tile-teaser/big-content-tile-teaser";
 @import "../components/04-molecules/visual-elements/teaser/tile-teaser/case-tile-teaser/case-tile-teaser";
 @import "../components/04-molecules/visual-elements/teaser/tile-teaser/content-tile-teaser/content-tile-teaser";
 @import "../components/04-molecules/visual-elements/teaser/tile-teaser/event-tile-teaser/event-tile-teaser";
 @import "../components/04-molecules/visual-elements/teaser/tile-teaser/podcast-tile-teaser/podcast-tile-teaser";
 @import "../components/04-molecules/visual-elements/teaser/tile-teaser/simple-tile-teaser/simple-tile-teaser";
+@import "../components/04-molecules/visual-elements/teaser/tile-teaser/small-tile-teaser/small-tile-teaser";
 @import "../components/04-molecules/visual-elements/teaser/tile-teaser/static-tile-teaser/static-tile-teaser";
+
 @import "../components/04-molecules/visual-elements/visual-divider/image-divider-center/image-divider-center";
 @import "../components/04-molecules/visual-elements/visual-divider/image-divider-right/image-divider-right";
 @import "../components/04-molecules/visual-elements/visual-divider/wall-note/wall-note";

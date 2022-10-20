@@ -28,18 +28,18 @@ $avatar-size-xxl: ms(34); //r = ~354px
     height: $avatar-size-md;
   }
 
+  .avatar--base & {
+    width: $avatar-size-base;
+    height: $avatar-size-base;
+  }
+
   .avatar--xl & {
     width: $avatar-size-xl;
     height: $avatar-size-xl;
   }
 
   .avatar--xxl & {
-    width: $avatar-size-xxl;
-    height: $avatar-size-xxl;
-  }
-
-  .avatar--base & {
-    width: $avatar-size-base;
-    height: $avatar-size-base;
+    max-width: $avatar-size-xxl;
+    max-height: $avatar-size-xxl;
   }
 }

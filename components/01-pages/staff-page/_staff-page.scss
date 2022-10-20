@@ -1,9 +1,5 @@
-.staff-page .strip {
-  margin-top: $spacer-lg;
-}
-
-.staff-page--link {
-  margin-top: $spacer-md;
-  margin-bottom: $spacer-lg;
-  text-align: center;
+.staff-page {
+  .tile-grid-md {
+    gap: $spacer-md;
+  }
 }

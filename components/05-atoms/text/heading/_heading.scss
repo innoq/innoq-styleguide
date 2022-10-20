@@ -120,6 +120,10 @@ h6 {
   text-transform: uppercase;
 }
 
+.section-heading--inverted {
+  color: $brand-white;
+}
+
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   %h1,
@@ -159,9 +163,5 @@ h6 {
 
   .teaser-section-heading {
     font-size: $font-size-xl;
-  }
-
-  .inverted-section-heading {
-    color: $brand-white;
   }
 }
