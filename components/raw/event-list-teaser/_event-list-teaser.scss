@@ -96,7 +96,7 @@ $event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
     flex-direction: row;
     align-items: stretch;
       /* stylelint-disable-next-line declaration-no-important */
-    margin-top: $spacer-md !important; //FIXME
+    margin-top: 0 !important;
 
     .event-date-section {
       margin-top: 0;

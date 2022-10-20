@@ -2,233 +2,367 @@
 
 <main role="main" class="staff-page">
     <header class="staff-header">
-        <div class="staff-header-left"></div>
-        <img class="staff-header-image" itemprop="photo" src="../../assets/example-content/heribert.jpg"
-            alt="Portrait von Heribert Innoq" />
-        <address class="staff-header-info">
-            <h2 class="staff-header-info__name" itemprop="fullName">Heribert Innoq</h2>
-            <h3 class="staff-header-info__job-title" itemprop="jobTitle">Senior Consultant</h3>
-        </address>
-        <div class="staff-header-right"></div>
-        <section class="staff-header-bio">
-            <div class="staff-header-bio__text">
-                <p>
-                    Filet mignon sausage tongue, hamburger porchetta fatback kielbasa flank
-                    ribeye. Pastrami t-bone pork chop sirloin ham swine cupim brisket Dies ist <a href="#!">ein Link</a> prosciutto
-                    buffalo drumstick strip steak capicola short loin.
-                    Frankfurter fatback turkey pork chop prosciutto pork ground round tongue
-                    chuck doner.
-                </p>
+        <div class="staff-header__body">
+            <div class="staff-header__profile" itemscope itemtype="http://schema.org/Person">
+                <div class="staff-header__profile__person">
+                    <h1 class="staff-header__profile__person__name" itemprop="fullName">Dr. Heribert Innoq</h1>
+                    <p class="staff-header__profile__person__role"itemprop="jobTitle">Fellow</p>
+                    <p class="staff-header__profile__person__link" itemprop="url"><a class="link-teaser" href="#">Trainerprofil</a> bei Socreatory</p>
+                </div>
+                <div class="avatar avatar--xxl">
+                    <img class="avatar__image" itemprop="photo" src="../../assets/example-content/heribert.jpg"  alt="Portrait von Heribert Innoq" />
+                </div>
             </div>
-            <div class="staff-header-bio__social">
-                <ul class="share-section__list">
-                    <li>
-                        <a class="share-section__link" target="_blank" href="" title="Twitter">
-                            <span class="icon icon-twitter icon--brand-white"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="share-section__link" target="_blank" href="" title="Github">
-                            <span class="icon icon-github icon--brand-white"></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="share-section__link" href="">
-                            <span class="icon icon-email icon--brand-white" title="Email"></span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
+            <p class="staff-header__text">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et. magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <ul class="social-media-bar">
+                <li class="social-media-bar__item">
+                    <a href="#" class="social-media-bar__link" title="Twitter">
+                        <span class="icon icon-twitter icon--brand-secondary"></span>
+                    </a>
+                </li>
+                <li class="social-media-bar__item">
+                    <a href="#" class="social-media-bar__link" title="Youtube">
+                        <span class="icon icon-youtube icon--brand-secondary"></span>
+                    </a>
+                </li>
+                <li class="social-media-bar__item">
+                    <a href="#" class="social-media-bar__link" title="Linkedin">
+                        <span class="icon icon-linkedin icon--brand-secondary"></span>
+                    </a>
+                </li>
+                <li class="social-media-bar__item">
+                    <a href="#" class="social-media-bar__link" title="Xing">
+                        <span class="icon icon-xing icon--brand-secondary"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </header>
 
+    <div class="container-xl container-vertical-spacing-lg">
+        <h2 class="section-heading--secondary ">Shortlist</h2>
+        <ul class="tile-grid-sm">
+            <li>
+                <a href="#" class="small-tile-teaser">
+                    <div>
+                        <p class="small-tile-teaser__type">Blogpost</p>
+                        <h4 class="small-tile-teaser__title">Ich bin eine Headline</h4>
+                        <h5 class="small-tile-teaser__subtitle">ich bin eine subheadline</h5>
+                    </div>
+                    <span class="icon icon-arrow-long-right icon--brand-primary"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="small-tile-teaser">
+                    <div>
+                        <p class="small-tile-teaser__type">Blogpost</p>
+                        <h4 class="small-tile-teaser__title">Ich bin eine Headline</h4>
+                        <h5 class="small-tile-teaser__subtitle">ich bin eine subheadline</h5>
+                    </div>
+                    <span class="icon icon-arrow-long-right icon--brand-primary"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="small-tile-teaser">
+                    <div>
+                        <p class="small-tile-teaser__type">Blogpost</p>
+                        <h4 class="small-tile-teaser__title">Ich bin eine Headline</h4>
+                        <h5 class="small-tile-teaser__subtitle">ich bin eine subheadline</h5>
+                    </div>
+                    <span class="icon icon-arrow-long-right icon--brand-primary"></span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="small-tile-teaser">
+                    <div>
+                        <p class="small-tile-teaser__type">Blogpost</p>
+                        <h4 class="small-tile-teaser__title">Ich bin eine Headline</h4>
+                        <h5 class="small-tile-teaser__subtitle">ich bin eine subheadline</h5>
+                    </div>
+                    <span class="icon icon-arrow-long-right icon--brand-primary"></span>
+                </a>
+            </li>
+        </ul>
+        <a class="link-teaser" href="#">Mehr erfahren</a>
+    </div>
+
     <section class="stripe stripe--gray">
-        <div class="page-layout-md--default">
-            <h2 class="section-heading--primary ">Vorträge</h2>
-            <a href="#" class="list-teaser-event">
-                <div class="event-date-section">
-                    <div class="label talk">Vortrag</div>
-                    <time class="event-date" datetime="2017-06-23">
-                        <span class="event-day-month">
-                            <span class='event-day'>23</span>
-                            <span class='event-month'>Jun</span>
-                        </span>
-                        <span class='event-year'>2017</span>
-                    </time>
-                </div>
-                <div class="list-teaser__content">
-                    <div class="list-teaser__body">
+        <div class="container-xl container-vertical-spacing-lg">
+            <h2 class="section-heading--secondary">Vorträge</h2>
+            <div class="tile-grid-md">
+                <a href="#" class="list-teaser-event">
+                    <div class="event-date-section">
                         <div class="label talk">Vortrag</div>
-                        <div class="label slides">Folien verfügbar</div>
-                        <h2 class="list-teaser-event__headline">Vortrag Titel</h2>
-                        <h3 class="list-teaser-event__subheadline">
-                            Vortragsort / 10-12 Uhr
-                            <span class="icon icon-arrow-long-right icon--brand-primary"></span>
-                        </h3>
-                    </div>
-                    <div class="list-teaser__footer">
-                        <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
-                            <div class="author-bio__image avatar avatar--sm">
-                                <img itemprop="photo" class="avatar__image" src="../../assets/example-content/heribert.jpg"  alt="Portrait von Heribert Innoq"/>
-                            </div>
-                            <address>
-                                <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
-                                <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
-                            </address>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="list-teaser-event">
-                <div class="event-date-section">
-                    <div class="label talk">Vortrag</div>
-                    <time class="event-date" datetime="2017-06-23">
-                        <span class="event-day-month">
-                            <span class='event-day'>23</span>
-                            <span class='event-month'>Jun</span>
-                        </span>
-                        <span class='event-year'>2017</span>
-                    </time>
-                </div>
-                <div class="list-teaser__content">
-                    <div class="list-teaser__body">
-                        <div class="label talk">Vortrag</div>
-                        <div class="label slides">Folien verfügbar</div>
-                        <h2 class="list-teaser-event__headline">Vortrag Titel</h2>
-                        <h3 class="list-teaser-event__subheadline">
-                            Vortragsort / 10-12 Uhr
-                            <span class="icon icon-arrow-long-right icon--brand-primary"></span>
-                        </h3>
-                    </div>
-                    <div class="list-teaser__footer">
-                        <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
-                            <div class="author-bio__image avatar avatar--sm">
-                                <img itemprop="photo" class="avatar__image" src="../../assets/example-content/heribert.jpg"  alt="Portrait von Heribert Innoq"/>
-                            </div>
-                            <address>
-                                <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
-                                <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
-                            </address>
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <div class="staff-page--link"><a class="link-teaser" href="#">Alles Vorträge ansehen</a></div>
-
-            <h2 class="section-heading--primary ">Trainings</h2>
-            <a href="#" class="list-teaser-event">
-                <div class="event-date-section">
-                    <div class="label talk">Training</div>
-                    <div class="event-date-wrapper">
                         <time class="event-date" datetime="2017-06-23">
                             <span class="event-day-month">
                                 <span class='event-day'>23</span>
                                 <span class='event-month'>Jun</span>
                             </span>
-                        </time>
-                        <hr class="event-date-separator" />
-                        <time class="event-date" datetime="2017-06-24">
-                            <span class="event-day-month">
-                                <span class='event-day'>24</span>
-                                <span class='event-month'>Jun</span>
-                            </span>
                             <span class='event-year'>2017</span>
                         </time>
                     </div>
-                </div>
-                <div class="list-teaser__content">
-                    <div class="list-teaser__body">
-                        <div class="label training">Training</div>
-                        <h2 class="list-teaser-event__headline">Training Titel</h2>
-                        <h3 class="list-teaser-event__subheadline">
-                            Trainingsort
-                            <span class="icon icon-arrow-long-right icon--brand-primary"></span>
-                        </h3>
+                    <div class="list-teaser__content">
+                        <div class="list-teaser__body">
+                            <div class="label talk">Vortrag</div>
+                            <div class="label slides">Folien verfügbar</div>
+                            <h2 class="list-teaser-event__headline">Ich bin eine Headline</h2>
+                            <h3 class="list-teaser-event__subheadline">
+                                Vortragsort / 10-12 Uhr
+                                <span class="icon icon-arrow-long-right icon--brand-primary"></span>
+                            </h3>
+                        </div>
+                        <div class="list-teaser__footer">
+                            <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
+                                <div class="author-bio__image avatar avatar--sm">
+                                    <img itemprop="photo" class="avatar__image" src="../../assets/example-content/heribert.jpg"  alt="Portrait von Heribert Innoq"/>
+                                </div>
+                                <address>
+                                    <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
+                                    <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
+                                </address>
+                            </div>
+                            <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
+                                <div class="author-bio__image avatar avatar--sm">
+                                    <img itemprop="photo" class="avatar__image" src="../../assets/example-content/heribert.jpg"
+                                        alt="Portrait von Heribert Innoq" />
+                                </div>
+                                <address>
+                                    <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
+                                    <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
+                                </address>
+                            </div>
+                        </div>
                     </div>
-                    <div class="list-teaser-event__footer">
-                        <div class="link-teaser">Mehr erfahren</div>
-                    </div>
-                </div>
-            </a>
-            <a href="#" class="list-teaser-event">
-                <div class="event-date-section">
-                    <div class="label talk">Training</div>
-                    <div class="event-date-wrapper">
+                </a>
+                <a href="#" class="list-teaser-event">
+                    <div class="event-date-section">
+                        <div class="label talk">Vortrag</div>
                         <time class="event-date" datetime="2017-06-23">
                             <span class="event-day-month">
                                 <span class='event-day'>23</span>
                                 <span class='event-month'>Jun</span>
                             </span>
+                            <span class='event-year'>2017</span>
                         </time>
-                        <hr class="event-date-separator" />
-                        <time class="event-date" datetime="2017-06-24">
+                    </div>
+                    <div class="list-teaser__content">
+                        <div class="list-teaser__body">
+                            <div class="label talk">Vortrag</div>
+                            <div class="label slides">Folien verfügbar</div>
+                            <h2 class="list-teaser-event__headline">Ich bin eine Headline</h2>
+                            <h3 class="list-teaser-event__subheadline">
+                                Vortragsort / 10-12 Uhr
+                                <span class="icon icon-arrow-long-right icon--brand-primary"></span>
+                            </h3>
+                        </div>
+                        <div class="list-teaser__footer">
+                            <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
+                                <div class="author-bio__image avatar avatar--sm">
+                                    <img itemprop="photo" class="avatar__image" src="../../assets/example-content/heribert.jpg"  alt="Portrait von Heribert Innoq"/>
+                                </div>
+                                <address>
+                                    <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
+                                    <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
+                                </address>
+                            </div>
+                            <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
+                                <div class="author-bio__image avatar avatar--sm">
+                                    <img itemprop="photo" class="avatar__image" src="../../assets/example-content/heribert.jpg"
+                                        alt="Portrait von Heribert Innoq" />
+                                </div>
+                                <address>
+                                    <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
+                                    <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
+                                </address>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="list-teaser-event">
+                    <div class="event-date-section">
+                        <div class="label talk">Vortrag</div>
+                        <time class="event-date" datetime="2017-06-23">
                             <span class="event-day-month">
-                                <span class='event-day'>24</span>
+                                <span class='event-day'>23</span>
                                 <span class='event-month'>Jun</span>
                             </span>
                             <span class='event-year'>2017</span>
                         </time>
                     </div>
-                </div>
-                <div class="list-teaser__content">
-                    <div class="list-teaser__body">
-                        <div class="label training">Training</div>
-                        <h2 class="list-teaser-event__headline">Training Titel</h2>
-                        <h3 class="list-teaser-event__subheadline">
-                            Trainingsort
-                            <span class="icon icon-arrow-long-right icon--brand-primary"></span>
-                        </h3>
-                    </div>
-                    <div class="list-teaser-event__footer">
-                        <div class="link-teaser">Mehr erfahren</div>
-                    </div>
-                </div>
-            </a>
-            <div class="staff-page--link"><a class="link-teaser" href="#">Alle Trainings ansehen</a></div>
-
-            <h2 class="section-heading--primary">Weitere Inhalte</h2>
-            <a href="#" class="list-teaser-abstract primary">
-                <div class="list-teaser__body">
-                    <div class="list-teaser-abstract__caption">Artikel</div>
-                    <h2 class="list-teaser-abstract__headline">Artikel Headline</h2>
-                    <p class="list-teaser-abstract__text">
-                        Lorem gibson dermatrodes boy nodality neural office sprawl futurity Lado-Acheson count zero interrupt Night City tanto papier-mache kanji corporation meta-lights neurosurgery.
-                        Lorem gibson Chiba neon neon motion Mycotoxin Metro Holografix boat RAM AI disposable lights saturation point stimulate boat systemic vehicle.
-                        <span class="icon icon-arrow-long-right icon--brand-white"></span>
-                    </p>
-                </div>
-                <div class="list-teaser__footer">
-                    <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
-                        <div class="author-bio__image avatar avatar--sm">
-                            <img itemprop="photo" class="avatar__image" src="../../assets/example-content/heribert.jpg"  alt="Portrait von Heribert Innoq"/>
+                    <div class="list-teaser__content">
+                        <div class="list-teaser__body">
+                            <div class="label talk">Vortrag</div>
+                            <div class="label slides">Folien verfügbar</div>
+                            <h2 class="list-teaser-event__headline">Ich bin eine Headline</h2>
+                            <h3 class="list-teaser-event__subheadline">
+                                Vortragsort / 10-12 Uhr
+                                <span class="icon icon-arrow-long-right icon--brand-primary"></span>
+                            </h3>
                         </div>
-                        <address>
-                            <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
-                            <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
-                        </address>
+                        <div class="list-teaser__footer">
+                            <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
+                                <div class="author-bio__image avatar avatar--sm">
+                                    <img itemprop="photo" class="avatar__image" src="../../assets/example-content/heribert.jpg"  alt="Portrait von Heribert Innoq"/>
+                                </div>
+                                <address>
+                                    <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
+                                    <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
+                                </address>
+                            </div>
+                            <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
+                                <div class="author-bio__image avatar avatar--sm">
+                                    <img itemprop="photo" class="avatar__image" src="../../assets/example-content/heribert.jpg"
+                                        alt="Portrait von Heribert Innoq" />
+                                </div>
+                                <address>
+                                    <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
+                                    <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
+                                </address>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </a>
-            <a href="#" class="list-teaser-podcast list-teaser-podcast--avatar--overlay--big" style="background-image: url(../../assets/example-content/heribert-rechts.png), url(../../assets/example-content/heribert-links.png) ">
-                <div class="list-teaser-podcast__body">
-                    <div class="list-teaser-podcast__caption">Podcast</div>
-                    <h2 class="list-teaser-podcast__headline">Podcast Headline</h2>
-                    <h3 class="list-teaser-podcast__subheadline">
-                        Podcast Subheadline
-                    </h3>
-                    <span class="icon icon-arrow-long-right icon--brand-white"></span>
-                </div>
-                <div class="list-teaser-podcast__footer">
-                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
-                        Heribert Innoq
-                    </div>
-                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
-                        Heribert Innoq
-                    </div>
-                </div>
-            </a>
-            <div class="staff-page--link"><a class="link-teaser" href="#">Weitere Inhalte ansehen</a></div>
+                </a>
+            </div>
+            <a class="link-teaser" href="#">Mehr erfahren</a>
         </div>
     </section>
+
+    <div class="container-xl container-vertical-spacing-lg">
+        <h2 class="section-heading--primary">Podcasts</h2>
+        <div class="podcast-grid">
+            <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay" style="background-image: url(../../assets/example-content/heribert-rechts.png)">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Podcast</div>
+                    <h2 class="podcast-teaser__headline">Ich bin eine Headline</h2>
+                    <h3 class="podcast-teaser__subheadline">ich bin eine subheadline</h3>
+                    <span class="icon icon-arrow-long-right icon--brand-white"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="podcast-teaser podcast-teaser--default">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Podcast</div>
+                    <h2 class="podcast-teaser__headline">Ich bin eine Headline</h2>
+                    <h3 class="podcast-teaser__subheadline">ich bin eine subheadline</h3>
+                    <span class="icon icon-arrow-long-right icon--brand-white"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="podcast-teaser podcast-teaser--avatar" style="background-image: url(../../assets/example-content/heribert-rechts.png)">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Podcast</div>
+                    <h2 class="podcast-teaser__headline">Ich bin eine Headline</h2>
+                    <h3 class="podcast-teaser__subheadline">ich bin eine subheadline</h3>
+                    <span class="icon icon-arrow-long-right icon--brand-primary"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="podcast-teaser podcast-teaser--default">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Podcast</div>
+                    <h2 class="podcast-teaser__headline">Ich bin eine Headline</h2>
+                    <h3 class="podcast-teaser__subheadline">ich bin eine subheadline</h3>
+                    <span class="icon icon-arrow-long-right icon--brand-white"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                </div>
+            </a>
+
+            <a href="#" class="podcast-teaser podcast-teaser--avatar--overlay--big" style="background-image: url(../../assets/example-content/heribert-rechts.png), url(../../assets/example-content/heribert-links.png) ">
+                <div class="podcast-teaser__body">
+                    <div class="podcast-teaser__caption">Podcast</div>
+                    <h2 class="podcast-teaser__headline">Ich bin eine Headline</h2>
+                    <h3 class="podcast-teaser__subheadline">ich bin eine subheadline</h3>
+                    <span class="icon icon-arrow-long-right icon--brand-white"></span>
+                </div>
+                <div class="podcast-teaser__footer">
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                    <div class="podcast-author" itemscope itemtype="http://schema.org/Person" >
+                        Heribert Innoq
+                    </div>
+                </div>
+            </a>
+        </div>
+        <a class="link-teaser" href="#">Mehr erfahren</a>
+    </div>
+
+    <section class="stripe stripe--bg-image bg-image-edition-11">
+        <div class="container-xl container-vertical-spacing-xl">
+            <h2 class="section-heading--secondary section-heading--inverted">Artikel</h2>
+            <div class="tile-grid-md">
+                <a href="#" class="list-teaser">
+                    <div class="list-teaser__body">
+                        <div class="list-teaser__caption">Artikel</div>
+                        <h2 class="list-teaser__headline">Ich bin eine Headline</h2>
+                        <h3 class="list-teaser__subheadline">
+                            ich bin eine subheadline
+                            <span class="icon icon-arrow-long-right icon--brand-primary"></span>
+                        </h3>
+                    </div>
+                    <div class="list-teaser__footer">
+                        <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
+                            <div class="author-bio__image avatar avatar--sm">
+                                <img itemprop="photo" class="avatar__image" src="../../assets/example-content/heribert.jpg"  alt="Portrait von Heribert Innoq"/>
+                            </div>
+                            <address>
+                                <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
+                                <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
+                            </address>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" class="list-teaser">
+                    <div class="list-teaser__body">
+                        <div class="list-teaser__caption">Artikel</div>
+                        <h2 class="list-teaser__headline">Ich bin eine Headline</h2>
+                        <h3 class="list-teaser__subheadline">
+                            ich bin eine subheadline
+                            <span class="icon icon-arrow-long-right icon--brand-primary"></span>
+                        </h3>
+                    </div>
+                    <div class="list-teaser__footer">
+                        <div rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
+                            <div class="author-bio__image avatar avatar--sm">
+                                <img itemprop="photo" class="avatar__image" src="../../assets/example-content/heribert.jpg"  alt="Portrait von Heribert Innoq"/>
+                            </div>
+                            <address>
+                                <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
+                                <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
+                            </address>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <a class="link-teaser inverted-interaction-color" href="#">Mehr erfahren</a>
+        </div>
+    </section>
+
+    <div class="container-md container-vertical-spacing-lg">
+        <h2 class="section-heading--secondary">Was ich noch sagen wollte</h2>
+        <p>Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et. magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>
 </main>
 

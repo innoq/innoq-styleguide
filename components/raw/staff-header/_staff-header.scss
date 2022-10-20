@@ -1,59 +1,17 @@
 .staff-header {
-  display: flex;
-  flex-flow: row wrap;
+  background: $gradient-2;
 }
 
-.staff-header-image {
-  width: 100%;
-  // Fix for bug in mobile Safari
-  height: 100%;
-}
+.staff-header__body {
+  display: grid;
+  max-width: $default-page-layout-content-width-md;
+  padding: $spacer-base $spacer-sm;
+  margin: 0 auto;
+  color: $staff-header-text-color;
+  gap: $spacer-base;
+  place-items: center;
 
-.staff-header-info {
-  flex-grow: 1;
-  padding: $spacer-md $spacer-md $spacer-xs;
-  background-color: $staff-header-info-bg-color;
-
-  &__name {
-    margin-bottom: $spacer-xs;
-    text-transform: uppercase;
-  }
-
-  &__job-title {
-    @extend %heading-font-regular;
-
-    margin-bottom: $spacer-xs;
-    font-size: $font-size-lg;
-  }
-}
-
-.staff-header-bio {
-  padding: $spacer-lg $spacer-md $spacer-md;
-  background-color: $staff-header-bio-bg-color;
-
-  &__text p {
-    @extend %heading-font-regular;
-
-    padding-bottom: $spacer-md;
-    color: $staff-header-bio-color;
-    font-size: $font-size-sm;
-    line-height: $paragraph-line-height;
-
-    a {
-      @extend %link-unstyled;
-
-      color: $staff-header-bio-link-color;
-
-      &:hover {
-        @extend %heading-font-bold;
-      }
-    }
-  }
-
-  &__social {
-    padding-top: $spacer-lg;
-    border-top: 1px solid $staff-header-bio-color;
-
+  .social-media-bar__item {
     .icon:hover,
     .icon:focus {
       background: $staff-header-icon-hover-color;
@@ -61,49 +19,47 @@
   }
 }
 
-//Breakpoints
-@media screen and (min-width: $grid-breakpoint-md) {
-  .staff-header-image {
-    max-width: 70%;
-    margin: 0 auto;
+.staff-header__profile {
+  display: grid;
+  width: 100%;
+  gap: $spacer-base;
+  hyphens: none;
+  place-items: center;
+}
+
+.staff-header__profile__name {
+  > * + * {
+    margin-top: $spacer-xs;
   }
 }
 
-@media screen and (min-width: $grid-breakpoint-lg) {
-  .staff-header {
-    display: grid;
-    grid-template-columns: auto calc($default-page-layout-content-width-xl / 3) calc($default-page-layout-content-width-xl / 3) auto;
+.staff-header__profile__person__name {
+  @extend %h3;
+}
+
+.staff-header__profile__person__role {
+  @extend %heading-font-regular;
+}
+
+.staff-header__profile__person__link {
+  @extend %heading-font-heavy;
+  @extend %link-unstyled;
+
+  font-size: $font-size-xs;
+}
+
+.staff-header__text {
+  @extend %heading-font-regular;
+
+  padding-bottom: $spacer-md;
+  border-bottom: $staff-header-text-color solid 2px;
+}
+
+@media screen and (min-width: $grid-breakpoint-sm) {
+  .staff-header__profile {
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-  }
-
-  .staff-header-left {
-    background-color: $staff-header-bg-color;
-    grid-column: 1 / 2;
-  }
-
-  .staff-header-right {
-    background-color: $staff-header-bg-color;
-    grid-column: 4 / 5;
-  }
-
-  .staff-header-bio {
-    padding: $spacer-lg $spacer-lg $spacer-md;
-    margin: 0;
-    grid-column: 2 / 4;
-  }
-
-  .staff-header-info {
-    padding: $spacer-xxl $spacer-md 0;
-    margin: 0;
-    grid-column: 2 / 3;
-    grid-row-start: 1;
-  }
-
-  .staff-header-image {
-    min-width: calc($default-page-layout-content-width-xl / 3);
-    // Fix for bug in mobile Safari
-    height: auto;
-    min-height: auto;
-    grid-column: 3 / 4;
+    text-align: left;
   }
 }

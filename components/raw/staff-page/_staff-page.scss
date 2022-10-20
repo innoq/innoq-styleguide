@@ -1,4 +1,6 @@
-.staff-page--link {
-  margin-bottom: $spacer-lg;
-  text-align: center;
+.staff-page {
+  .tile-grid-md,
+  .tile-grid-sm {
+    gap: $spacer-md;
+  }
 }
