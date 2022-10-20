@@ -11,15 +11,21 @@
   background-color: $brand-secondary;
 }
 
+.stripe--bg-image {
+  background-color: rgba($brand-secondary, 0.5);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .stripe--gray {
   background-color: $brand-gray-10;
 }
 
 .stripe--gradient {
-  background: rgb(255,230,217);
-  background: linear-gradient(360deg, rgba(255,230,217,1) 23%, rgba(255,156,102,1) 60%);
+  background: $gradient;
 }
 
 .stripe--gradient-2 {
-  background: linear-gradient(180deg, $brand-primary-25 15%, $brand-gray-10 100%);
+  background: $gradient-2;
 }

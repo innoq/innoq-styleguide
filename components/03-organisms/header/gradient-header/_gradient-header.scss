@@ -1,5 +1,5 @@
 .gradient-header {
-  background: linear-gradient(180deg, $gradient-header-background-color 0%, rgba(255, 230, 217, 0) 100%);
+  background: $gradient-2;
 
   &__body {
     display: flex;

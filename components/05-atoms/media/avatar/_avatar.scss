@@ -2,7 +2,8 @@ $avatar-size-xs: ms(10); //~40px
 $avatar-size-sm: ms(14); //~55px
 $avatar-size-md: ms(18); //~80px
 $avatar-size-base: ms(22); //~120px
-$avatar-size-xl: ms(29); //r = ~227 px
+$avatar-size-xl: ms(29); //r = ~227px
+$avatar-size-xxl: ms(34); //r = ~354px
 
 .avatar {
   display: inline-block;
@@ -27,13 +28,18 @@ $avatar-size-xl: ms(29); //r = ~227 px
     height: $avatar-size-md;
   }
 
+  .avatar--base & {
+    width: $avatar-size-base;
+    height: $avatar-size-base;
+  }
+
   .avatar--xl & {
     width: $avatar-size-xl;
     height: $avatar-size-xl;
   }
 
-  .avatar--base & {
-    width: $avatar-size-base;
-    height: $avatar-size-base;
+  .avatar--xxl & {
+    max-width: $avatar-size-xxl;
+    max-height: $avatar-size-xxl;
   }
 }
