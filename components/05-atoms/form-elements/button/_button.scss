@@ -1,9 +1,6 @@
 //
 // Button
 //
-
-$default-btn-margin: $spacer-sm;
-
 .btn {
   @extend %base-button;
   @extend %heading-font-bold;
@@ -12,7 +9,6 @@ $default-btn-margin: $spacer-sm;
   padding: $spacer-md $spacer-base;
   border: 3px solid $button-border-color;
   border-radius: 0;
-  margin-bottom: $default-btn-margin;
   background-color: $button-background;
   font-size: $font-size-sm;
 
@@ -79,13 +75,7 @@ $default-btn-margin: $spacer-sm;
     color: $button-inverted-color;
   }
 
-  &--icon {
-    padding: $spacer-xxs;
-    border: 0;
-    background-color: transparent;
-  }
-
   + .btn {
-    margin-left: $default-btn-margin;
+    margin-left: $spacer-sm;
   }
 }

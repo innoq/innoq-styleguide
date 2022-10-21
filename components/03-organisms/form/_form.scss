@@ -1,11 +1,19 @@
+form,
+.fieldset {
+  > * + * {
+    margin-top: $spacer-md;
+  }
+}
+
 .form--inverted {
-  .form-label {
+  .form-label,
+  .form-text {
     color: $form-label-inverted-color;
   }
 
   .form-control {
     border-color: $form-control-inverted-border-color;
-    caret-color: $form-control-inverted-caret-color; 
+    caret-color: $form-control-inverted-caret-color;
 
     &:hover,
     &:focus {
