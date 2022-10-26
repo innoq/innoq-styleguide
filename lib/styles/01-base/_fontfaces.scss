@@ -1,12 +1,12 @@
-$cdn: "https://www.innoq.com/assets";
-$cachebuster: "2"; // Please increment if you changed one (or more) of the font files
+$cdn: 'https://www.innoq.com/assets';
+$cachebuster: '2'; // Please increment if you changed one (or more) of the font files
 
 @font-face {
   font-display: swap;
   font-family: FreightTextPro;
   font-style: normal;
   font-weight: bold;
-  src: url("#{$cdn}/350ED6_0_unhinted_0.woff2?cachebuster=#{$cachebuster}") format("woff2");
+  src: url('#{$cdn}/350ED6_0_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 @font-face {
@@ -14,7 +14,7 @@ $cachebuster: "2"; // Please increment if you changed one (or more) of the font 
   font-family: FreightTextPro;
   font-style: italic;
   font-weight: normal;
-  src: url("#{$cdn}/350ED6_1_unhinted_0.woff2?cachebuster=#{$cachebuster}") format("woff2");
+  src: url('#{$cdn}/350ED6_1_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 @font-face {
@@ -22,7 +22,7 @@ $cachebuster: "2"; // Please increment if you changed one (or more) of the font 
   font-family: FreightTextPro;
   font-style: normal;
   font-weight: normal;
-  src: url("#{$cdn}/350ED6_2_unhinted_0.woff2?cachebuster=#{$cachebuster}") format("woff2");
+  src: url('#{$cdn}/350ED6_2_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 @font-face {
@@ -30,7 +30,7 @@ $cachebuster: "2"; // Please increment if you changed one (or more) of the font 
   font-family: FreightTextPro;
   font-style: italic;
   font-weight: bold;
-  src: url("#{$cdn}/350ED6_3_unhinted_0.woff2?cachebuster=#{$cachebuster}") format("woff2");
+  src: url('#{$cdn}/350ED6_3_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 @font-face {
@@ -38,7 +38,7 @@ $cachebuster: "2"; // Please increment if you changed one (or more) of the font 
   font-family: FFMarkWebPro;
   font-style: normal;
   font-weight: normal;
-  src: url("#{$cdn}/MarkPro-Book.woff2?cachebuster=#{$cachebuster}") format("woff2");
+  src: url('#{$cdn}/MarkPro-Book.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 @font-face {
@@ -46,7 +46,7 @@ $cachebuster: "2"; // Please increment if you changed one (or more) of the font 
   font-family: FFMarkWebPro;
   font-style: normal;
   font-weight: bold;
-  src: url("#{$cdn}/MarkPro-Bold.woff2?cachebuster=#{$cachebuster}") format("woff2");
+  src: url('#{$cdn}/MarkPro-Bold.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 @font-face {
@@ -54,7 +54,7 @@ $cachebuster: "2"; // Please increment if you changed one (or more) of the font 
   font-family: FFMarkWebPro;
   font-style: normal;
   font-weight: 800;
-  src: url("#{$cdn}/MarkPro-Heavy.woff2?cachebuster=#{$cachebuster}") format("woff2");
+  src: url('#{$cdn}/MarkPro-Heavy.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 // Hack
@@ -62,5 +62,5 @@ $cachebuster: "2"; // Please increment if you changed one (or more) of the font 
 @font-face {
   font-display: swap;
   font-family: HackRegular;
-  src: url("#{$cdn}/hack-regular.woff2?cachebuster=#{$cachebuster}") format("woff2");
+  src: url('#{$cdn}/hack-regular.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }

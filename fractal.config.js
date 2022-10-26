@@ -2,22 +2,18 @@
 'use strict'
 
 /*
-* Require the path module
-*/
+ * Require the path module
+ */
 const path = require('path')
 
 /*
  * Require Fractal modules
  */
-const fractal = module.exports = require('fractal-fork').fractal.create()
+const fractal = (module.exports = require('fractal-fork').fractal.create())
 const fractalTheme = require('fractal-fork').mandelbrot({
   skin: 'black',
-  styles: [
-    'default',
-    '/assets/styleguide-theme.css'
-  ],
-  favicon: '/assets/favicons/edition-02/favicon-apricot/favicon.svg'
-
+  styles: ['default', '/assets/styleguide-theme.css'],
+  favicon: '/assets/favicons/edition-02/favicon-apricot/favicon.svg',
 })
 fractalTheme.addLoadPath(path.join(__dirname, '/theme-overrides'))
 

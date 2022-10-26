@@ -1,0 +1,8 @@
+/.yarn
+/dist
+/public
+
+# Ignore all HTML, YAML and Markdown files
+*.html
+*.yml
+*.md

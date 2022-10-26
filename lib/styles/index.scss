@@ -1,224 +1,222 @@
-@import "01-base/typography";
-@import "01-base/breakpoints";
-@import "01-base/colors";
-@import "01-base/fontfaces";
-@import "01-base/fonts";
-@import "01-base/spacings";
-@import "01-base/theme-apripetrol";
+@import '01-base/typography';
+@import '01-base/breakpoints';
+@import '01-base/colors';
+@import '01-base/fontfaces';
+@import '01-base/fonts';
+@import '01-base/spacings';
+@import '01-base/theme-apripetrol';
 
-@import "01-base/base";
+@import '01-base/base';
 
-@import "02-util/animations";
-@import "02-util/forms";
-@import "02-util/list";
-@import "02-util/text";
-@import "02-util/teaser";
-@import "02-util/header";
-@import "02-util/helperclasses";
-@import "02-util/visibility";
+@import '02-util/animations';
+@import '02-util/forms';
+@import '02-util/list';
+@import '02-util/text';
+@import '02-util/teaser';
+@import '02-util/header';
+@import '02-util/helperclasses';
+@import '02-util/visibility';
 
 //
 // SUBATOMS
 //
-@import "../components/06-subatoms/bg-images/bg-images";
-@import "../components/06-subatoms/box-shadow/box-shadow";
-@import "../components/06-subatoms/gradients/gradients";
+@import '../components/06-subatoms/bg-images/bg-images';
+@import '../components/06-subatoms/box-shadow/box-shadow';
+@import '../components/06-subatoms/gradients/gradients';
 
 //
 // ATOMS
 //
 
 // Form atoms
-@import "../components/05-atoms/form-elements/button/button";
-@import "../components/05-atoms/form-elements/alert/alert";
-@import "../components/05-atoms/form-elements/checkbox/checkbox";
-@import "../components/05-atoms/form-elements/form-control/form-control";
-@import "../components/05-atoms/form-elements/form-group/form-group";
-@import "../components/05-atoms/form-elements/form-label/form-label";
-@import "../components/05-atoms/form-elements/form-text/form-text";
-@import "../components/05-atoms/form-elements/fieldset/fieldset";
-@import "../components/05-atoms/form-elements/legend/legend";
-@import "../components/05-atoms/form-elements/radio/radio";
+@import '../components/05-atoms/form-elements/button/button';
+@import '../components/05-atoms/form-elements/alert/alert';
+@import '../components/05-atoms/form-elements/checkbox/checkbox';
+@import '../components/05-atoms/form-elements/form-control/form-control';
+@import '../components/05-atoms/form-elements/form-group/form-group';
+@import '../components/05-atoms/form-elements/form-label/form-label';
+@import '../components/05-atoms/form-elements/form-text/form-text';
+@import '../components/05-atoms/form-elements/fieldset/fieldset';
+@import '../components/05-atoms/form-elements/legend/legend';
+@import '../components/05-atoms/form-elements/radio/radio';
 
 // Media atoms
-@import "../components/05-atoms/media/avatar/avatar";
-@import "../components/05-atoms/media/embed-responsive/embed-responsive";
-@import "../components/05-atoms/media/figure/figure";
-@import "../components/05-atoms/media/icon/icon";
-@import "../components/05-atoms/media/image/image";
+@import '../components/05-atoms/media/avatar/avatar';
+@import '../components/05-atoms/media/embed-responsive/embed-responsive';
+@import '../components/05-atoms/media/figure/figure';
+@import '../components/05-atoms/media/icon/icon';
+@import '../components/05-atoms/media/image/image';
 
 // Toggler atoms
-@import "../components/05-atoms/togglers/collapse-toggler/collapse-toggler";
+@import '../components/05-atoms/togglers/collapse-toggler/collapse-toggler';
 
-
-@import "../components/05-atoms/text/accentuation/accentuation";
-@import "../components/05-atoms/text/code/code";
-@import "../components/05-atoms/text/date/date";
-@import "../components/05-atoms/text/footnote/footnote";
-@import "../components/05-atoms/text/heading/heading";
-@import "../components/05-atoms/text/link/link";
-@import "../components/05-atoms/text/paragraph/paragraph";
-@import "../components/05-atoms/text/quote/pull-quote";
-@import "../components/05-atoms/text/quote/block-quote";
-
+@import '../components/05-atoms/text/accentuation/accentuation';
+@import '../components/05-atoms/text/code/code';
+@import '../components/05-atoms/text/date/date';
+@import '../components/05-atoms/text/footnote/footnote';
+@import '../components/05-atoms/text/heading/heading';
+@import '../components/05-atoms/text/link/link';
+@import '../components/05-atoms/text/paragraph/paragraph';
+@import '../components/05-atoms/text/quote/pull-quote';
+@import '../components/05-atoms/text/quote/block-quote';
 
 // Visual elements atoms
-@import "../components/05-atoms/visual-elements/animation/waiting-dots/waiting-dots";
-@import "../components/05-atoms/visual-elements/horizontal-line/horizontal-line";
-@import "../components/05-atoms/visual-elements/zigzag/zigzag";
+@import '../components/05-atoms/visual-elements/animation/waiting-dots/waiting-dots';
+@import '../components/05-atoms/visual-elements/horizontal-line/horizontal-line';
+@import '../components/05-atoms/visual-elements/zigzag/zigzag';
 
-@import "../components/05-atoms/clickable-area/clickable-area";
-@import "../components/05-atoms/duration/duration";
-@import "../components/05-atoms/label/label";
-@import "../components/05-atoms/list/list";
-@import "../components/05-atoms/table/table";
-@import "../components/05-atoms/tag-list/tag-list";
+@import '../components/05-atoms/clickable-area/clickable-area';
+@import '../components/05-atoms/duration/duration';
+@import '../components/05-atoms/label/label';
+@import '../components/05-atoms/list/list';
+@import '../components/05-atoms/table/table';
+@import '../components/05-atoms/tag-list/tag-list';
 
 //
 // MOLECULES
 //
 
 // Article and blog post molecules
-@import "../components/04-molecules/article&blog-post-elements/author-bio/author-bio";
-@import "../components/04-molecules/article&blog-post-elements/conclusion/conclusion";
-@import "../components/04-molecules/article&blog-post-elements/content-separator/content-separator";
-@import "../components/04-molecules/article&blog-post-elements/cta-section/cta-section";
-@import "../components/04-molecules/article&blog-post-elements/footnote-section/footnote-section";
-@import "../components/04-molecules/article&blog-post-elements/info-box/info-box";
-@import "../components/04-molecules/article&blog-post-elements/info-note/info-note";
-@import "../components/04-molecules/article&blog-post-elements/quotes/long-quote/long-quote";
-@import "../components/04-molecules/article&blog-post-elements/reference/reference";
-@import "../components/04-molecules/article&blog-post-elements/share-section/share-section";
-@import "../components/04-molecules/article&blog-post-elements/quotes/super-quote/super-quote";
-@import "../components/04-molecules/article&blog-post-elements/table-of-contents/table-of-contents";
-@import "../components/04-molecules/article&blog-post-elements/tag-section/tag-section";
-@import "../components/04-molecules/article&blog-post-elements/wall-of-consent/wall-of-consent";
+@import '../components/04-molecules/article&blog-post-elements/author-bio/author-bio';
+@import '../components/04-molecules/article&blog-post-elements/conclusion/conclusion';
+@import '../components/04-molecules/article&blog-post-elements/content-separator/content-separator';
+@import '../components/04-molecules/article&blog-post-elements/cta-section/cta-section';
+@import '../components/04-molecules/article&blog-post-elements/footnote-section/footnote-section';
+@import '../components/04-molecules/article&blog-post-elements/info-box/info-box';
+@import '../components/04-molecules/article&blog-post-elements/info-note/info-note';
+@import '../components/04-molecules/article&blog-post-elements/quotes/long-quote/long-quote';
+@import '../components/04-molecules/article&blog-post-elements/reference/reference';
+@import '../components/04-molecules/article&blog-post-elements/share-section/share-section';
+@import '../components/04-molecules/article&blog-post-elements/quotes/super-quote/super-quote';
+@import '../components/04-molecules/article&blog-post-elements/table-of-contents/table-of-contents';
+@import '../components/04-molecules/article&blog-post-elements/tag-section/tag-section';
+@import '../components/04-molecules/article&blog-post-elements/wall-of-consent/wall-of-consent';
 
 // Contact Person
-@import "../components/04-molecules/contact-person/contact-person";
+@import '../components/04-molecules/contact-person/contact-person';
 
 // Dropdown
-@import "../components/04-molecules/dropdown/dropdown";
+@import '../components/04-molecules/dropdown/dropdown';
 
 // Search
-@import "../components/04-molecules/search/search-form/search-form";
-@import "../components/04-molecules/search/search-result/search-result";
+@import '../components/04-molecules/search/search-form/search-form';
+@import '../components/04-molecules/search/search-result/search-result';
 
-@import "../components/04-molecules/textbox-sequence/textbox-sequence";
+@import '../components/04-molecules/textbox-sequence/textbox-sequence';
 
 // Visual elements
-@import "../components/04-molecules/visual-elements/card/card";
-@import "../components/04-molecules/visual-elements/date-location-section/date-location-section";
-@import "../components/04-molecules/visual-elements/download-section-feature/download-section-feature";
-@import "../components/04-molecules/visual-elements/event-date-section/event-date-section";
-@import "../components/04-molecules/visual-elements/eyecatcher/eyecatcher-banner/eyecatcher-banner";
-@import "../components/04-molecules/visual-elements/eyecatcher/icon-eyecatcher/icon-eyecatcher";
-@import "../components/04-molecules/visual-elements/video-card/video-card";
-@import "../components/04-molecules/visual-elements/paginator/paginator";
-@import "../components/04-molecules/visual-elements/resource-list/resource-list";
-@import "../components/04-molecules/visual-elements/service-intro/service-intro";
-@import "../components/04-molecules/visual-elements/dialog-banner/dialog-banner";
-@import "../components/04-molecules/visual-elements/social-media-bar/social-media-bar";
-@import "../components/04-molecules/visual-elements/slider/slider";
+@import '../components/04-molecules/visual-elements/card/card';
+@import '../components/04-molecules/visual-elements/date-location-section/date-location-section';
+@import '../components/04-molecules/visual-elements/download-section-feature/download-section-feature';
+@import '../components/04-molecules/visual-elements/event-date-section/event-date-section';
+@import '../components/04-molecules/visual-elements/eyecatcher/eyecatcher-banner/eyecatcher-banner';
+@import '../components/04-molecules/visual-elements/eyecatcher/icon-eyecatcher/icon-eyecatcher';
+@import '../components/04-molecules/visual-elements/video-card/video-card';
+@import '../components/04-molecules/visual-elements/paginator/paginator';
+@import '../components/04-molecules/visual-elements/resource-list/resource-list';
+@import '../components/04-molecules/visual-elements/service-intro/service-intro';
+@import '../components/04-molecules/visual-elements/dialog-banner/dialog-banner';
+@import '../components/04-molecules/visual-elements/social-media-bar/social-media-bar';
+@import '../components/04-molecules/visual-elements/slider/slider';
 
 // Teaser Molecules
-@import "../components/04-molecules/visual-elements/teaser/full-width-teaser/default-full-width-teaser/default-full-width-teaser";
+@import '../components/04-molecules/visual-elements/teaser/full-width-teaser/default-full-width-teaser/default-full-width-teaser';
 
-@import "../components/04-molecules/visual-elements/teaser/list-teaser/abstract-list-teaser/abstract-list-teaser";
-@import "../components/04-molecules/visual-elements/teaser/list-teaser/artist-list-teaser/artist-list-teaser";
-@import "../components/04-molecules/visual-elements/teaser/list-teaser/case-list-teaser/case-list-teaser";
-@import "../components/04-molecules/visual-elements/teaser/list-teaser/event-list-teaser/event-list-teaser";
-@import "../components/04-molecules/visual-elements/teaser/list-teaser/podcast-list-teaser/podcast-list-teaser";
-@import "../components/04-molecules/visual-elements/teaser/list-teaser/project-list-teaser/project-list-teaser";
-@import "../components/04-molecules/visual-elements/teaser/list-teaser/simple-list-teaser/simple-list-teaser";
-@import "../components/04-molecules/visual-elements/teaser/list-teaser/topic-list-teaser/topic-list-teaser";
-@import "../components/04-molecules/visual-elements/teaser/list-teaser/training-list-teaser/training-list-teaser";
-@import "../components/04-molecules/visual-elements/teaser/list-teaser/product-list-teaser/product-list-teaser";
+@import '../components/04-molecules/visual-elements/teaser/list-teaser/abstract-list-teaser/abstract-list-teaser';
+@import '../components/04-molecules/visual-elements/teaser/list-teaser/artist-list-teaser/artist-list-teaser';
+@import '../components/04-molecules/visual-elements/teaser/list-teaser/case-list-teaser/case-list-teaser';
+@import '../components/04-molecules/visual-elements/teaser/list-teaser/event-list-teaser/event-list-teaser';
+@import '../components/04-molecules/visual-elements/teaser/list-teaser/podcast-list-teaser/podcast-list-teaser';
+@import '../components/04-molecules/visual-elements/teaser/list-teaser/project-list-teaser/project-list-teaser';
+@import '../components/04-molecules/visual-elements/teaser/list-teaser/simple-list-teaser/simple-list-teaser';
+@import '../components/04-molecules/visual-elements/teaser/list-teaser/topic-list-teaser/topic-list-teaser';
+@import '../components/04-molecules/visual-elements/teaser/list-teaser/training-list-teaser/training-list-teaser';
+@import '../components/04-molecules/visual-elements/teaser/list-teaser/product-list-teaser/product-list-teaser';
 
-@import "../components/04-molecules/visual-elements/teaser/tile-teaser/big-content-tile-teaser/big-content-tile-teaser";
-@import "../components/04-molecules/visual-elements/teaser/tile-teaser/case-tile-teaser/case-tile-teaser";
-@import "../components/04-molecules/visual-elements/teaser/tile-teaser/content-tile-teaser/content-tile-teaser";
-@import "../components/04-molecules/visual-elements/teaser/tile-teaser/event-tile-teaser/event-tile-teaser";
-@import "../components/04-molecules/visual-elements/teaser/tile-teaser/podcast-tile-teaser/podcast-tile-teaser";
-@import "../components/04-molecules/visual-elements/teaser/tile-teaser/simple-tile-teaser/simple-tile-teaser";
-@import "../components/04-molecules/visual-elements/teaser/tile-teaser/small-tile-teaser/small-tile-teaser";
-@import "../components/04-molecules/visual-elements/teaser/tile-teaser/static-tile-teaser/static-tile-teaser";
+@import '../components/04-molecules/visual-elements/teaser/tile-teaser/big-content-tile-teaser/big-content-tile-teaser';
+@import '../components/04-molecules/visual-elements/teaser/tile-teaser/case-tile-teaser/case-tile-teaser';
+@import '../components/04-molecules/visual-elements/teaser/tile-teaser/content-tile-teaser/content-tile-teaser';
+@import '../components/04-molecules/visual-elements/teaser/tile-teaser/event-tile-teaser/event-tile-teaser';
+@import '../components/04-molecules/visual-elements/teaser/tile-teaser/podcast-tile-teaser/podcast-tile-teaser';
+@import '../components/04-molecules/visual-elements/teaser/tile-teaser/simple-tile-teaser/simple-tile-teaser';
+@import '../components/04-molecules/visual-elements/teaser/tile-teaser/small-tile-teaser/small-tile-teaser';
+@import '../components/04-molecules/visual-elements/teaser/tile-teaser/static-tile-teaser/static-tile-teaser';
 
-@import "../components/04-molecules/visual-elements/visual-divider/image-divider-center/image-divider-center";
-@import "../components/04-molecules/visual-elements/visual-divider/image-divider-right/image-divider-right";
-@import "../components/04-molecules/visual-elements/visual-divider/wall-note/wall-note";
-@import "../components/04-molecules/visual-elements/visual-divider/triplet-divider/triplet-divider";
-@import "../components/04-molecules/visual-elements/visual-divider/two-column-image-divider/two-column-image-divider";
-@import "../components/04-molecules/visual-elements/visual-divider/two-column-image-divider-asymmetric/two-column-image-divider-asymmetric";
-@import "../components/04-molecules/visual-elements/visual-divider/icon-divider/icon-divider";
+@import '../components/04-molecules/visual-elements/visual-divider/image-divider-center/image-divider-center';
+@import '../components/04-molecules/visual-elements/visual-divider/image-divider-right/image-divider-right';
+@import '../components/04-molecules/visual-elements/visual-divider/wall-note/wall-note';
+@import '../components/04-molecules/visual-elements/visual-divider/triplet-divider/triplet-divider';
+@import '../components/04-molecules/visual-elements/visual-divider/two-column-image-divider/two-column-image-divider';
+@import '../components/04-molecules/visual-elements/visual-divider/two-column-image-divider-asymmetric/two-column-image-divider-asymmetric';
+@import '../components/04-molecules/visual-elements/visual-divider/icon-divider/icon-divider';
 
 // Toolbar
-@import "../components/04-molecules/visual-elements/toolbar/toolbar";
+@import '../components/04-molecules/visual-elements/toolbar/toolbar';
 
 //
 // ORGANISMS
 //
 
-@import "../components/03-organisms/cover/cover";
-@import "../components/03-organisms/form/form";
-@import "../components/03-organisms/footer/footer";
+@import '../components/03-organisms/cover/cover';
+@import '../components/03-organisms/form/form';
+@import '../components/03-organisms/footer/footer';
 
 // Header
-@import "../components/03-organisms/header/claim-header/claim-header";
-@import "../components/03-organisms/header/gradient-header/gradient-header";
-@import "../components/03-organisms/header/image-header/image-header";
-@import "../components/03-organisms/header/landing-page-header/landing-page-header";
-@import "../components/03-organisms/header/staff-header/staff-header";
-@import "../components/03-organisms/header/standard-header/standard-header";
-@import "../components/03-organisms/header/text-header/text-header";
-@import "../components/03-organisms/header/topic-header/topic-header";
-@import "../components/03-organisms/header/video-header/video-header";
+@import '../components/03-organisms/header/claim-header/claim-header';
+@import '../components/03-organisms/header/gradient-header/gradient-header';
+@import '../components/03-organisms/header/image-header/image-header';
+@import '../components/03-organisms/header/landing-page-header/landing-page-header';
+@import '../components/03-organisms/header/staff-header/staff-header';
+@import '../components/03-organisms/header/standard-header/standard-header';
+@import '../components/03-organisms/header/text-header/text-header';
+@import '../components/03-organisms/header/topic-header/topic-header';
+@import '../components/03-organisms/header/video-header/video-header';
 
-@import "../components/03-organisms/navbar/navbar";
-@import "../components/03-organisms/newsletter-optin/newsletter-optin";
-@import "../components/03-organisms/search-result-list/search-result-list";
+@import '../components/03-organisms/navbar/navbar';
+@import '../components/03-organisms/newsletter-optin/newsletter-optin';
+@import '../components/03-organisms/search-result-list/search-result-list';
 
 // LAYOUTS
-@import "../components/02-layouts/component-layouts/container/container";
-@import "../components/02-layouts/component-layouts/masonry-layout/masonry-layout";
-@import "../components/02-layouts/component-layouts/tile-layout/tile-layout";
-@import "../components/02-layouts/component-layouts/stripe/stripe";
+@import '../components/02-layouts/component-layouts/container/container';
+@import '../components/02-layouts/component-layouts/masonry-layout/masonry-layout';
+@import '../components/02-layouts/component-layouts/tile-layout/tile-layout';
+@import '../components/02-layouts/component-layouts/stripe/stripe';
 
-@import "../components/02-layouts/page-layouts/article-layout/article-layout";
-@import "../components/02-layouts/page-layouts/article-layout-simple/article-layout-simple";
-@import "../components/02-layouts/page-layouts/main-layout/main-layout";
-@import "../components/02-layouts/page-layouts/page-layout-default";
-@import "../components/02-layouts/page-layouts/page-layout-podcast";
+@import '../components/02-layouts/page-layouts/article-layout/article-layout';
+@import '../components/02-layouts/page-layouts/article-layout-simple/article-layout-simple';
+@import '../components/02-layouts/page-layouts/main-layout/main-layout';
+@import '../components/02-layouts/page-layouts/page-layout-default';
+@import '../components/02-layouts/page-layouts/page-layout-podcast';
 
 //
 // PAGES
 //
-@import "../components/01-pages/aggregator-page/aggregator-page";
-@import "../components/01-pages/article-page-default/article-page-default";
-@import "../components/01-pages/case-study-pages/case-study-overview/case-study-overview";
-@import "../components/01-pages/case-study-pages/case-study-page/case-study-page";
-@import "../components/01-pages/artist-collabo-page/artist-collabo-page";
-@import "../components/01-pages/culture-pages/culture-page-default/culture-page-default";
-@import "../components/01-pages/culture-pages/work-page/work-page";
-@import "../components/01-pages/error-pages/error-page";
-@import "../components/01-pages/landing-page/landing-page";
-@import "../components/01-pages/magazine-page/magazine-page";
-@import "../components/01-pages/podcast-pages/podcast-overview-page/podcast-overview-page";
-@import "../components/01-pages/podcast-pages/innoq-podcast/innoq-podcast-overview-page/innoq-podcast-overview-page";
-@import "../components/01-pages/podcast-pages/innoq-podcast/innoq-podcast-detail-page/innoq-podcast-detail-page";
-@import "../components/01-pages/podcast-pages/security-podcast/security-podcast-overview-page/security-podcast-overview-page";
-@import "../components/01-pages/podcast-pages/security-podcast/security-podcast-detail-page/security-podcast-detail-page";
-@import "../components/01-pages/service-pages/service-detail-page/service-detail-page";
-@import "../components/01-pages/service-pages/services-overview-page/services-overview-page";
-@import "../components/01-pages/staff-page/staff-page";
-@import "../components/01-pages/story-pages/story-detail-page/story-detail-page";
-@import "../components/01-pages/story-pages/story-overview-page/story-overview-page";
-@import "../components/01-pages/talk-page/talk-page";
-@import "../components/01-pages/topic-page/topic-page";
-@import "../components/01-pages/training-pages/booking-page/booking-page";
-@import "../components/01-pages/training-pages/training-detail-page/training-detail-page";
-@import "../components/01-pages/training-pages/trainings-overview-page/trainings-overview-page";
-@import "../components/01-pages/product-microsite-page/product-microsite-page";
+@import '../components/01-pages/aggregator-page/aggregator-page';
+@import '../components/01-pages/article-page-default/article-page-default';
+@import '../components/01-pages/case-study-pages/case-study-overview/case-study-overview';
+@import '../components/01-pages/case-study-pages/case-study-page/case-study-page';
+@import '../components/01-pages/artist-collabo-page/artist-collabo-page';
+@import '../components/01-pages/culture-pages/culture-page-default/culture-page-default';
+@import '../components/01-pages/culture-pages/work-page/work-page';
+@import '../components/01-pages/error-pages/error-page';
+@import '../components/01-pages/landing-page/landing-page';
+@import '../components/01-pages/magazine-page/magazine-page';
+@import '../components/01-pages/podcast-pages/podcast-overview-page/podcast-overview-page';
+@import '../components/01-pages/podcast-pages/innoq-podcast/innoq-podcast-overview-page/innoq-podcast-overview-page';
+@import '../components/01-pages/podcast-pages/innoq-podcast/innoq-podcast-detail-page/innoq-podcast-detail-page';
+@import '../components/01-pages/podcast-pages/security-podcast/security-podcast-overview-page/security-podcast-overview-page';
+@import '../components/01-pages/podcast-pages/security-podcast/security-podcast-detail-page/security-podcast-detail-page';
+@import '../components/01-pages/service-pages/service-detail-page/service-detail-page';
+@import '../components/01-pages/service-pages/services-overview-page/services-overview-page';
+@import '../components/01-pages/staff-page/staff-page';
+@import '../components/01-pages/story-pages/story-detail-page/story-detail-page';
+@import '../components/01-pages/story-pages/story-overview-page/story-overview-page';
+@import '../components/01-pages/talk-page/talk-page';
+@import '../components/01-pages/topic-page/topic-page';
+@import '../components/01-pages/training-pages/booking-page/booking-page';
+@import '../components/01-pages/training-pages/training-detail-page/training-detail-page';
+@import '../components/01-pages/training-pages/trainings-overview-page/trainings-overview-page';
+@import '../components/01-pages/product-microsite-page/product-microsite-page';
 
-@import "03-styleguide/hacks";
-@import "03-styleguide/styleguide";
+@import '03-styleguide/hacks';
+@import '03-styleguide/styleguide';

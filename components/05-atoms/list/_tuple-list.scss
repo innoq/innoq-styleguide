@@ -28,13 +28,13 @@ $tuple-list-label-width: 8rem;
 @media screen and (min-width: $grid-breakpoint-md) {
   .tuple-list {
     > * + * {
-      margin-top: $spacer-xxs
+      margin-top: $spacer-xxs;
     }
   }
 
   .tuple-list__entry {
     display: grid;
-    grid-template-areas: "label value";
+    grid-template-areas: 'label value';
     grid-template-columns: $tuple-list-label-width auto;
     /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
     grid-template-rows: auto;

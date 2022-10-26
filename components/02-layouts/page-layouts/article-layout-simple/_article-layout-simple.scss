@@ -30,7 +30,7 @@
   }
 
   // Breakpoints
-  @media screen and (min-width: $grid-breakpoint-md){
+  @media screen and (min-width: $grid-breakpoint-md) {
     padding-right: $spacer-xxl;
     padding-left: $spacer-xxl;
   }
@@ -83,4 +83,3 @@
     }
   }
 }
-

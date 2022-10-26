@@ -3,7 +3,6 @@ $topic-teaser-height: ms(36);
 .topic-teaser {
   @extend %block-link;
 
-
   display: flex;
   min-height: $topic-teaser-height;
   flex-direction: column;

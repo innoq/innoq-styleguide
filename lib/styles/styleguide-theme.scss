@@ -1,20 +1,20 @@
 // This file is used to generate overrides for Fractals Mandelbrot theme
 
-@import "01-base/breakpoints";
-@import "01-base/colors";
-@import "01-base/theme-apripetrol";
-@import "01-base/typography";
-@import "01-base/spacings";
-@import "01-base/fonts";
-@import "01-base/fontfaces";
+@import '01-base/breakpoints';
+@import '01-base/colors';
+@import '01-base/theme-apripetrol';
+@import '01-base/typography';
+@import '01-base/spacings';
+@import '01-base/fonts';
+@import '01-base/fontfaces';
 
-@import "02-util/text";
+@import '02-util/text';
 
 //
 // Styleguide Overrides
 //
 
-@import "03-styleguide/styleguide";
+@import '03-styleguide/styleguide';
 
 .Header {
   background-color: $brand-secondary;

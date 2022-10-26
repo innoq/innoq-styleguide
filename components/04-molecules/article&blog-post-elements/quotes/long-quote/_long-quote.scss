@@ -19,21 +19,21 @@ long-quote > blockquote,
 
     &:lang(de) {
       &::before {
-        content: "„";
+        content: '„';
       }
 
       &::after {
-        content: "“";
+        content: '“';
       }
     }
 
     &:lang(en) {
       &::before {
-        content: "“";
+        content: '“';
       }
 
       &::after {
-        content: "”";
+        content: '”';
       }
     }
   }

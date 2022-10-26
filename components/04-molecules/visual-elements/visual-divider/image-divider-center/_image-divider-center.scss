@@ -5,7 +5,7 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
 
   min-height: 50vh;
   padding-top: $spacer-lg;
-   /* stylelint-disable-next-line declaration-no-important */
+  /* stylelint-disable-next-line declaration-no-important */
   margin-bottom: $divider-center-textbox-offset !important; //FIXME
   &__title {
     @extend %punch-in;

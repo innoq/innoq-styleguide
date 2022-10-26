@@ -26,7 +26,7 @@
 
     &::before {
       padding-right: 0.5rem;
-      content: asset-url("icons/arrow-short-down.svg");
+      content: asset-url('icons/arrow-short-down.svg');
     }
   }
 
@@ -53,7 +53,7 @@
 
   .toc--sticky {
     position: sticky;
-    top:$spacer-xs;
+    top: $spacer-xs;
     align-self: start;
   }
 }

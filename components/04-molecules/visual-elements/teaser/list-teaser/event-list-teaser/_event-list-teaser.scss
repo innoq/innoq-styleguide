@@ -95,7 +95,7 @@ $event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
   .list-teaser-event {
     flex-direction: row;
     align-items: stretch;
-      /* stylelint-disable-next-line declaration-no-important */
+    /* stylelint-disable-next-line declaration-no-important */
     margin-top: 0 !important;
 
     .event-date-section {

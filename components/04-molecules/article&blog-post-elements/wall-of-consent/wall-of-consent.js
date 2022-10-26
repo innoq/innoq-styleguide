@@ -42,14 +42,14 @@ export default class WallOfConsent extends HTMLElement {
     this.prepend(this.content)
     this.toggleInitialElements(true)
     this.checkbox.checked = true
-    this.classList.add("revealed")
+    this.classList.add('revealed')
   }
 
   removeContent() {
     this.content.innerHTML = ''
     this.toggleInitialElements(false)
     this.checkbox.checked = false
-    this.classList.remove("revealed")
+    this.classList.remove('revealed')
   }
 
   toggleInitialElements(hidden) {

@@ -11,8 +11,7 @@ rules:
   selector-no-qualifying-type: null
   scss/percent-placeholder-pattern: null
   no-empty-source: null
-  max-nesting-depth:
-    - 3
+  max-nesting-depth: 3
   selector-type-no-unknown:
     - true
     - ignore:

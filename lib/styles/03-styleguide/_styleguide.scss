@@ -46,7 +46,7 @@
 
       > .swatch-text--rgb {
         &::after {
-          content: "" + $hex;
+          content: '' + $hex;
         }
       }
     }

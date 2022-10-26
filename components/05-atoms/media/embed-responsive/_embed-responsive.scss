@@ -29,13 +29,13 @@
 
 .embed-responsive--21by9 {
   &::before {
-    padding-top: percentage(calc(9/21));
+    padding-top: percentage(calc(9 / 21));
   }
 }
 
 .embed-responsive--16by9 {
   &::before {
-    padding-top: percentage(calc(9/16));
+    padding-top: percentage(calc(9 / 16));
   }
 }
 

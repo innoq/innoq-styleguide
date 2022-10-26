@@ -28,8 +28,9 @@ export default class Navbar extends HTMLElement {
 
   init() {
     this.primaryList = document.querySelector('.primary-nav__list')
-    this.dropdownToggles = Array.from(document.querySelectorAll('.dropdown__toggle--navbar'))
-      .map(el => new DropdownToggle(el, el.getAttribute('for')))
+    this.dropdownToggles = Array.from(document.querySelectorAll('.dropdown__toggle--navbar')).map(
+      (el) => new DropdownToggle(el, el.getAttribute('for'))
+    )
     this.dropdownPrimaryLinks = document.querySelectorAll('.dropdown .navbtn--primary')
 
     // add --enhanced modifier
@@ -38,12 +39,12 @@ export default class Navbar extends HTMLElement {
       '.primary-nav__list',
       '.primary-nav__item',
       '.dropdown__list-wrapper',
-      '.dropdown__toggle'
+      '.dropdown__toggle',
     ])
 
     // enhance drill down ux
     // (copy dropdown heading link into dropdown list if not present)
-    this.dropdownPrimaryLinks.forEach(link => {
+    this.dropdownPrimaryLinks.forEach((link) => {
       const targetDropdownList = link.parentNode.querySelector('.dropdown__list')
       if (!targetDropdownList.querySelector('.dropdown__item--clone')) {
         const anchorClone = document.createElement('a')
@@ -69,7 +70,7 @@ export default class Navbar extends HTMLElement {
         this.uncheckDropdownToggles(all, ddt)
         this.primaryList.classList.remove('primary-nav__list--level2')
       })
-      ddt.relatedLink.addEventListener('click', e => {
+      ddt.relatedLink.addEventListener('click', (e) => {
         if (this.isMobile) {
           e.preventDefault()
           ddt.checked = true
@@ -79,13 +80,12 @@ export default class Navbar extends HTMLElement {
       })
     })
 
-    document.querySelector('.navbtn--drill-up')
-      .addEventListener('click', () => {
-        this.uncheckDropdownToggles(this.dropdownToggles)
-        this.primaryList.classList.remove('primary-nav__list--level2')
-      })
+    document.querySelector('.navbtn--drill-up').addEventListener('click', () => {
+      this.uncheckDropdownToggles(this.dropdownToggles)
+      this.primaryList.classList.remove('primary-nav__list--level2')
+    })
 
-    document.querySelector('body').addEventListener('click', e => {
+    document.querySelector('body').addEventListener('click', (e) => {
       if (this.primaryList.contains(e.target)) return
       this.uncheckDropdownToggles(this.dropdownToggles)
       this.primaryList.classList.remove('primary-nav__list--level2')
@@ -95,15 +95,14 @@ export default class Navbar extends HTMLElement {
   }
 
   enhance(selectors) {
-    selectors.forEach(s => {
+    selectors.forEach((s) => {
       s = s.startsWith('.') ? s.slice(1) : s
-      Array.from(document.querySelectorAll('.' + s))
-        .forEach(e => e.classList.add(s + '--enhanced'))
+      Array.from(document.querySelectorAll('.' + s)).forEach((e) => e.classList.add(s + '--enhanced'))
     })
   }
 
   uncheckDropdownToggles(toggles, except) {
-    toggles.forEach(t => {
+    toggles.forEach((t) => {
       if (except !== t) {
         t.checked = false
       }

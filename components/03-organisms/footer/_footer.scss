@@ -11,10 +11,10 @@
   gap: $spacer-base;
 }
 
-.footer__form ,
+.footer__form,
 .footer__offices__section,
 .footer__list__section {
-  display:grid;
+  display: grid;
   gap: $spacer-xs;
 }
 
@@ -26,10 +26,9 @@
 .footer__offices__section__list {
   @extend %list-unstyled;
 
-  display:grid;
+  display: grid;
   gap: $spacer-base;
 }
-
 
 .footer__paragraph,
 .footer__address {
@@ -63,7 +62,7 @@
     height: $font-size-xxs;
     margin-right: $spacer-xxs;
     color: $footer-heading-color;
-    content: asset-url("icons/pin.svg");
+    content: asset-url('icons/pin.svg');
   }
 }
 
@@ -111,10 +110,10 @@
   }
 
   .footer__form {
-    grid-row: 1 / 2 ;
+    grid-row: 1 / 2;
   }
 
-  .footer__offices{
+  .footer__offices {
     grid-row: 1;
   }
 

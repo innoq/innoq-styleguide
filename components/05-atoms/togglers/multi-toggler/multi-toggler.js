@@ -1,5 +1,5 @@
 export default class MultiToggler extends HTMLElement {
-  connectedCallback () {
+  connectedCallback() {
     const targetSelector = this.getAttribute('data-target')
     const hasNextElementSiblingTarget = this.hasAttribute('data-target-next')
     this.toggleClass = this.getAttribute('data-toggle-class')
@@ -27,20 +27,18 @@ export default class MultiToggler extends HTMLElement {
     this.onclick = this.toggle.bind(this)
   }
 
-  toggle () {
+  toggle() {
     this.toggleTargets(this.toggleClass)
   }
 
-  toggleTargets (className) {
+  toggleTargets(className) {
     if (this.targetElements[0]) {
-      this.targetElements.forEach(
-        target => target.classList.toggle(className)
-      )
+      this.targetElements.forEach((target) => target.classList.toggle(className))
       this.toggleSelf()
     }
   }
 
-  toggleSelf () {
+  toggleSelf() {
     if (this.toggleSelfClass) {
       this.classList.toggle(this.toggleSelfClass)
     }

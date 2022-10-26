@@ -1,18 +1,18 @@
 export default class CheckToToggle extends HTMLElement {
-  connectedCallback () {
+  connectedCallback() {
     this.checkbox.onclick = this.toggle.bind(this)
   }
 
-  get checkbox () {
+  get checkbox() {
     return this.querySelector('input[type="checkbox"]')
   }
 
-  get target () {
+  get target() {
     const selector = this.getAttribute('target')
     return document.querySelector(selector)
   }
 
-  toggle () {
+  toggle() {
     this.target.classList.toggle('is-hidden')
   }
 }
