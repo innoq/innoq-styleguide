@@ -1,11 +1,5 @@
 .form-group {
-  margin-bottom: $spacer-sm;
-
-  .form-label + .form-control,
-  .form-label > .form-control,
-  .form-control + .form-text,
-  .form-check__label + .form-text,
-  .form-label + .form-check {
+  > * + * {
     margin-top: $spacer-xxs;
   }
 
