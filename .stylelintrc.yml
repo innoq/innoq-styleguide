@@ -12,16 +12,17 @@ rules:
   scss/percent-placeholder-pattern: null
   no-empty-source: null
   max-nesting-depth:
-    -  3
+    - 3
   selector-type-no-unknown:
     - true
     - ignore:
-      - custom-elements
+        - custom-elements
   declaration-no-important: true
   color-no-hex: true
   color-function-notation: null
   alpha-value-notation: null
   function-no-unknown: null
+  import-notation: null
 overrides:
   - files: ["**/*.scss"]
     customSyntax: "postcss-scss"
