@@ -91,7 +91,7 @@ blockquote:not([class]) > p,
   font-weight: bold;
 }
 
-.work-page .topic-teaser__text, .dropdown__list-wrapper--navbar, .navbtn, .navbar, .topic-header__tag, .staff-header__text, .staff-header__profile__person__role, .footer__paragraph,
+.work-page .topic-teaser__text, .dropdown__list-wrapper--navbar, .navbtn, .navbar, .topic-header__tag, .staff-header__text, .staff-header__profile__person__role, .footer__list__item, .footer__paragraph,
 .footer__address, .small-tile-teaser__subtitle, .content-teaser__text, .big-content-teaser__text, .list-teaser__subheadline, .list-teaser-abstract__text, .instructions--hover,
 .instructions--focus,
 .instructions--hover-and-focus,

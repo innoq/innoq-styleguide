@@ -100,6 +100,10 @@
   }
 }
 
+.footer__list__item {
+  @extend %heading-font-regular;
+}
+
 @media screen and (min-width: $grid-breakpoint-md) {
   .footer {
     display: grid;
