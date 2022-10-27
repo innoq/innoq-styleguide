@@ -1,4 +1,6 @@
 .demo {
+  display: flex;
+
   > * {
     margin: $spacer-md;
   }
