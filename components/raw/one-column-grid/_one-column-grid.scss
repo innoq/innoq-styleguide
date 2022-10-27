@@ -1,0 +1,5 @@
+.one-column-grid {
+  display: grid;
+  gap: $spacer-md;
+  grid-column: 1fr;
+}

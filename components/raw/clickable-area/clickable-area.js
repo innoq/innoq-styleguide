@@ -1,6 +1,6 @@
 // following advice from https://inclusive-components.design/cards
 export default class ClickableArea extends HTMLElement {
-  connectedCallback () {
+  connectedCallback() {
     if (this.link) {
       this.addEventListener('mousedown', this.handleMousedown.bind(this))
       this.addEventListener('mouseup', this.handleMouseup.bind(this))
@@ -8,17 +8,17 @@ export default class ClickableArea extends HTMLElement {
     }
   }
 
-  handleMousedown ({ timeStamp }) {
+  handleMousedown({ timeStamp }) {
     this.down = timeStamp
   }
 
-  handleMouseup ({ timeStamp }) {
+  handleMouseup({ timeStamp }) {
     if (timeStamp - this.down < 200) {
       this.link.click()
     }
   }
 
-  get link () {
+  get link() {
     return this.querySelector('a')
   }
 }

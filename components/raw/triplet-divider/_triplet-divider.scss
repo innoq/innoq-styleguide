@@ -43,8 +43,9 @@ $triplet-divider-height-md: 4 * $spacer-xxl;
 @media screen and (min-width: $grid-breakpoint-md) {
   .triplet-divider {
     display: grid;
-    grid-template-areas: "divider-left divider-right"
-    "divider-center divider-center";
+    grid-template-areas:
+      'divider-left divider-right'
+      'divider-center divider-center';
     grid-template-columns: 50% 50%;
     /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
     grid-template-rows: auto;

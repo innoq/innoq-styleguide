@@ -64,12 +64,12 @@ touch-detection {
   text-align: center;
 }
 
-.slider:focus:not(:hover)+.slider__instructions .instructions--focus,
-.slider:hover:not(:focus)+.slider__instructions .instructions--hover {
+.slider:focus:not(:hover) + .slider__instructions .instructions--focus,
+.slider:hover:not(:focus) + .slider__instructions .instructions--hover {
   display: block;
 }
 
-.slider:hover:focus+.slider__instructions .instructions--hover-and-focus {
+.slider:hover:focus + .slider__instructions .instructions--hover-and-focus {
   display: block;
 }
 

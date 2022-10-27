@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.0.7" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.0.8" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.0.7" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.0.8" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.0.7" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.0.8" type="text/css">
 
 
 <title>Navbar | INNOQ Styleguide</title>
@@ -568,7 +568,7 @@
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
   <span class="hljs-attribute">height</span>: <span class="hljs-number">3px</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$navbar-link-active-color</span>;
-  <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
 }
 
 <span class="hljs-selector-class">.navbtn--meta</span> {
@@ -902,7 +902,7 @@
       <span class="hljs-attribute">width</span>: <span class="hljs-number">1px</span>;
       <span class="hljs-attribute">height</span>: <span class="hljs-number">1.5em</span>;
       <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$navbar-link-color</span>;
-      <span class="hljs-attribute">content</span>: <span class="hljs-string">&quot;&quot;</span>;
+      <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
     }
   }
 
@@ -1005,9 +1005,9 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-keyword">@import</span> <span class="hljs-string">&quot;./navbar-common&quot;</span>;
-<span class="hljs-keyword">@import</span> <span class="hljs-string">&quot;./navbar-mobile&quot;</span>;
-<span class="hljs-keyword">@import</span> <span class="hljs-string">&quot;./navbar-desktop&quot;</span>;
+                                <pre><span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;./navbar-common&#x27;</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;./navbar-mobile&#x27;</span>;
+<span class="hljs-keyword">@import</span> <span class="hljs-string">&#x27;./navbar-desktop&#x27;</span>;
 </pre>
                             </code>
                             
@@ -1067,8 +1067,9 @@
 
   <span class="hljs-title function_">init</span>(<span class="hljs-params"></span>) {
     <span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.primary-nav__list&#x27;</span>)
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownToggles</span> = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">&#x27;.dropdown__toggle--navbar&#x27;</span>))
-      .<span class="hljs-title function_">map</span>(<span class="hljs-function"><span class="hljs-params">el</span> =&gt;</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">DropdownToggle</span>(el, el.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">&#x27;for&#x27;</span>)))
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownToggles</span> = <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">&#x27;.dropdown__toggle--navbar&#x27;</span>)).<span class="hljs-title function_">map</span>(
+      <span class="hljs-function">(<span class="hljs-params">el</span>) =&gt;</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">DropdownToggle</span>(el, el.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">&#x27;for&#x27;</span>))
+    )
     <span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownPrimaryLinks</span> = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">&#x27;.dropdown .navbtn--primary&#x27;</span>)
 
     <span class="hljs-comment">// add --enhanced modifier</span>
@@ -1077,12 +1078,12 @@
       <span class="hljs-string">&#x27;.primary-nav__list&#x27;</span>,
       <span class="hljs-string">&#x27;.primary-nav__item&#x27;</span>,
       <span class="hljs-string">&#x27;.dropdown__list-wrapper&#x27;</span>,
-      <span class="hljs-string">&#x27;.dropdown__toggle&#x27;</span>
+      <span class="hljs-string">&#x27;.dropdown__toggle&#x27;</span>,
     ])
 
     <span class="hljs-comment">// enhance drill down ux</span>
     <span class="hljs-comment">// (copy dropdown heading link into dropdown list if not present)</span>
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownPrimaryLinks</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">link</span> =&gt;</span> {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownPrimaryLinks</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">link</span>) =&gt;</span> {
       <span class="hljs-keyword">const</span> targetDropdownList = link.<span class="hljs-property">parentNode</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.dropdown__list&#x27;</span>)
       <span class="hljs-keyword">if</span> (!targetDropdownList.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.dropdown__item--clone&#x27;</span>)) {
         <span class="hljs-keyword">const</span> anchorClone = <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">createElement</span>(<span class="hljs-string">&#x27;a&#x27;</span>)
@@ -1108,7 +1109,7 @@
         <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">uncheckDropdownToggles</span>(all, ddt)
         <span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
       })
-      ddt.<span class="hljs-property">relatedLink</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> {
+      ddt.<span class="hljs-property">relatedLink</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
         <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">isMobile</span>) {
           e.<span class="hljs-title function_">preventDefault</span>()
           ddt.<span class="hljs-property">checked</span> = <span class="hljs-literal">true</span>
@@ -1118,13 +1119,12 @@
       })
     })
 
-    <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.navbtn--drill-up&#x27;</span>)
-      .<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
-        <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">uncheckDropdownToggles</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownToggles</span>)
-        <span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
-      })
+    <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.navbtn--drill-up&#x27;</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">() =&gt;</span> {
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">uncheckDropdownToggles</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownToggles</span>)
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
+    })
 
-    <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;body&#x27;</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> {
+    <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;body&#x27;</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> {
       <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span>.<span class="hljs-title function_">contains</span>(e.<span class="hljs-property">target</span>)) <span class="hljs-keyword">return</span>
       <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">uncheckDropdownToggles</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">dropdownToggles</span>)
       <span class="hljs-variable language_">this</span>.<span class="hljs-property">primaryList</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">&#x27;primary-nav__list--level2&#x27;</span>)
@@ -1134,15 +1134,14 @@
   }
 
   <span class="hljs-title function_">enhance</span>(<span class="hljs-params">selectors</span>) {
-    selectors.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">s</span> =&gt;</span> {
+    selectors.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">s</span>) =&gt;</span> {
       s = s.<span class="hljs-title function_">startsWith</span>(<span class="hljs-string">&#x27;.&#x27;</span>) ? s.<span class="hljs-title function_">slice</span>(<span class="hljs-number">1</span>) : s
-      <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">&#x27;.&#x27;</span> + s))
-        .<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">e</span> =&gt;</span> e.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(s + <span class="hljs-string">&#x27;--enhanced&#x27;</span>))
+      <span class="hljs-title class_">Array</span>.<span class="hljs-title function_">from</span>(<span class="hljs-variable language_">document</span>.<span class="hljs-title function_">querySelectorAll</span>(<span class="hljs-string">&#x27;.&#x27;</span> + s)).<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">e</span>) =&gt;</span> e.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(s + <span class="hljs-string">&#x27;--enhanced&#x27;</span>))
     })
   }
 
   <span class="hljs-title function_">uncheckDropdownToggles</span>(<span class="hljs-params">toggles, except</span>) {
-    toggles.<span class="hljs-title function_">forEach</span>(<span class="hljs-function"><span class="hljs-params">t</span> =&gt;</span> {
+    toggles.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">t</span>) =&gt;</span> {
       <span class="hljs-keyword">if</span> (except !== t) {
         t.<span class="hljs-property">checked</span> = <span class="hljs-literal">false</span>
       }
@@ -2512,6 +2511,40 @@
                 data-handle="masonry-layout"
             >
                 <span>Masonry Layout</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./one-column-grid.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="one-column-grid"
+                data-handle="one-column-grid"
+            >
+                <span>One Column Grid</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -8166,8 +8199,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2022-10-26T10:07:01.313Z">
-                                10/26/2022
+                            <time datetime="2022-10-27T10:15:49.487Z">
+                                10/27/2022
                             </time>
                         
                     </dd>
@@ -8191,7 +8224,7 @@
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.0.7"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.0.8"></script>
 
 
 

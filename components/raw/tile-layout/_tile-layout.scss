@@ -24,7 +24,7 @@
   .tile-grid-alternating-1-4 {
     grid-template-columns: repeat(2, minmax(6rem, 1fr));
 
-    :nth-child(5n+1) {
+    :nth-child(5n + 1) {
       grid-column: span 2;
     }
   }

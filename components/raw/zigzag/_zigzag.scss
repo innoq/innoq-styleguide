@@ -17,7 +17,7 @@ $zzdegree: 135deg;
     right: 0;
     left: 0;
     display: block;
-    content: "";
+    content: '';
   }
 
   &::before {
@@ -43,5 +43,5 @@ $zzdegree: 135deg;
 
 .zigzag,
 %zigzag {
-  @include zigzag($zzbgc)
+  @include zigzag($zzbgc);
 }

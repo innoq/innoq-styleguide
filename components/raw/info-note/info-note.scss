@@ -21,7 +21,7 @@
   &__text * {
     @extend %heading-font-regular;
 
-    color: $info-note-text-color;;
+    color: $info-note-text-color;
     font-size: $font-size-xs;
     text-align: left;
   }

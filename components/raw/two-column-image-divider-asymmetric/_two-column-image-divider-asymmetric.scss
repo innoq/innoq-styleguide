@@ -9,9 +9,9 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
 
 .two-column-image-divider-asymmetric__left-image,
 .two-column-image-divider-asymmetric__right-image {
-    max-height: 100%;
-    object-fit: cover;
-  }
+  max-height: 100%;
+  object-fit: cover;
+}
 
 @media screen and (min-width: $grid-breakpoint-xl) {
   .two-column-image-divider-asymmetric {

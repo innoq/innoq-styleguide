@@ -3,7 +3,7 @@
 .container-xl,
 %container-xl,
 .container-md,
-%container-md  {
+%container-md {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -44,9 +44,6 @@
   padding-top: $spacer-base;
   padding-bottom: $spacer-base;
 }
-
-
-
 
 //Breakpoints
 

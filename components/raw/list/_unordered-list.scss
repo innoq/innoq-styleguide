@@ -14,7 +14,7 @@ ul:not([class]),
 
   margin-left: $spacer-xs;
 
-  > * + *{
+  > * + * {
     margin-top: $spacer-xxs;
   }
 
@@ -22,7 +22,7 @@ ul:not([class]),
     @extend %body-font-regular;
 
     padding-left: $spacer-xxs;
-    list-style-type: "●";
+    list-style-type: '●';
 
     &::marker {
       color: $bullet-list-color;
@@ -52,7 +52,7 @@ ul:not([class]),
   > li {
     @extend %heading-font-bold;
 
-    list-style-type: "•";
+    list-style-type: '•';
 
     &::marker {
       color: $bullet-list-color;

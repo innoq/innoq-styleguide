@@ -4793,8 +4793,7 @@ touch-detection {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* stylelint-disable-next-line declaration-no-important */
-  margin-top: 3.6548542867rem !important;
+  margin-top: 1.5812542867rem;
   background-color: #fff;
 }
 .list-teaser-event .event-date-section {
@@ -4878,8 +4877,7 @@ touch-detection {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    /* stylelint-disable-next-line declaration-no-important */
-    margin-top: 0 !important;
+    margin-top: 0;
   }
   .list-teaser-event .event-date-section {
     margin-top: 0;
@@ -7843,6 +7841,12 @@ form > * + *,
     grid-column: span 5;
   }
 }
+.one-column-grid {
+  display: grid;
+  gap: 1.44rem;
+  grid-column: 1fr;
+}
+
 .tile-grid-sm,
 .tile-grid-md,
 .tile-grid-alternating-1-4 {
@@ -8584,6 +8588,11 @@ main > .page-layout-md--default:first-child {
   margin-top: 2.0736rem;
 }
 
+.demo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .demo > * {
   margin: 1.44rem;
 }

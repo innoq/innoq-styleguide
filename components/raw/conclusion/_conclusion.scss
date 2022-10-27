@@ -64,7 +64,7 @@ $conclusion-border-size: ms(5);
     > li p {
       @extend %heading-font-regular;
 
-    /* stylelint-disable-next-line selector-max-compound-selectors */
+      /* stylelint-disable-next-line selector-max-compound-selectors */
       li::marker {
         color: $bullet-list-color;
       }

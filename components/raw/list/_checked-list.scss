@@ -7,7 +7,7 @@
     @extend %heading-font-bold;
 
     padding-left: $spacer-xxs;
-    list-style-type: "✓";
+    list-style-type: '✓';
 
     &::marker {
       color: $bullet-list-color;

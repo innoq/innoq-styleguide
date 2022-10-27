@@ -2,26 +2,26 @@
 'use strict';
 
 class CheckToToggle extends HTMLElement {
-  connectedCallback () {
+  connectedCallback() {
     this.checkbox.onclick = this.toggle.bind(this);
   }
 
-  get checkbox () {
+  get checkbox() {
     return this.querySelector('input[type="checkbox"]')
   }
 
-  get target () {
+  get target() {
     const selector = this.getAttribute('target');
     return document.querySelector(selector)
   }
 
-  toggle () {
+  toggle() {
     this.target.classList.toggle('is-hidden');
   }
 }
 
 class MultiToggler extends HTMLElement {
-  connectedCallback () {
+  connectedCallback() {
     const targetSelector = this.getAttribute('data-target');
     const hasNextElementSiblingTarget = this.hasAttribute('data-target-next');
     this.toggleClass = this.getAttribute('data-toggle-class');
@@ -49,20 +49,18 @@ class MultiToggler extends HTMLElement {
     this.onclick = this.toggle.bind(this);
   }
 
-  toggle () {
+  toggle() {
     this.toggleTargets(this.toggleClass);
   }
 
-  toggleTargets (className) {
+  toggleTargets(className) {
     if (this.targetElements[0]) {
-      this.targetElements.forEach(
-        target => target.classList.toggle(className)
-      );
+      this.targetElements.forEach((target) => target.classList.toggle(className));
       this.toggleSelf();
     }
   }
 
-  toggleSelf () {
+  toggleSelf() {
     if (this.toggleSelfClass) {
       this.classList.toggle(this.toggleSelfClass);
     }
@@ -113,14 +111,14 @@ class WallOfConsent extends HTMLElement {
     this.prepend(this.content);
     this.toggleInitialElements(true);
     this.checkbox.checked = true;
-    this.classList.add("revealed");
+    this.classList.add('revealed');
   }
 
   removeContent() {
     this.content.innerHTML = '';
     this.toggleInitialElements(false);
     this.checkbox.checked = false;
-    this.classList.remove("revealed");
+    this.classList.remove('revealed');
   }
 
   toggleInitialElements(hidden) {
@@ -172,8 +170,9 @@ class Navbar extends HTMLElement {
 
   init() {
     this.primaryList = document.querySelector('.primary-nav__list');
-    this.dropdownToggles = Array.from(document.querySelectorAll('.dropdown__toggle--navbar'))
-      .map(el => new DropdownToggle(el, el.getAttribute('for')));
+    this.dropdownToggles = Array.from(document.querySelectorAll('.dropdown__toggle--navbar')).map(
+      (el) => new DropdownToggle(el, el.getAttribute('for'))
+    );
     this.dropdownPrimaryLinks = document.querySelectorAll('.dropdown .navbtn--primary');
 
     // add --enhanced modifier
@@ -182,12 +181,12 @@ class Navbar extends HTMLElement {
       '.primary-nav__list',
       '.primary-nav__item',
       '.dropdown__list-wrapper',
-      '.dropdown__toggle'
+      '.dropdown__toggle',
     ]);
 
     // enhance drill down ux
     // (copy dropdown heading link into dropdown list if not present)
-    this.dropdownPrimaryLinks.forEach(link => {
+    this.dropdownPrimaryLinks.forEach((link) => {
       const targetDropdownList = link.parentNode.querySelector('.dropdown__list');
       if (!targetDropdownList.querySelector('.dropdown__item--clone')) {
         const anchorClone = document.createElement('a');
@@ -213,7 +212,7 @@ class Navbar extends HTMLElement {
         this.uncheckDropdownToggles(all, ddt);
         this.primaryList.classList.remove('primary-nav__list--level2');
       });
-      ddt.relatedLink.addEventListener('click', e => {
+      ddt.relatedLink.addEventListener('click', (e) => {
         if (this.isMobile) {
           e.preventDefault();
           ddt.checked = true;
@@ -223,13 +222,12 @@ class Navbar extends HTMLElement {
       });
     });
 
-    document.querySelector('.navbtn--drill-up')
-      .addEventListener('click', () => {
-        this.uncheckDropdownToggles(this.dropdownToggles);
-        this.primaryList.classList.remove('primary-nav__list--level2');
-      });
+    document.querySelector('.navbtn--drill-up').addEventListener('click', () => {
+      this.uncheckDropdownToggles(this.dropdownToggles);
+      this.primaryList.classList.remove('primary-nav__list--level2');
+    });
 
-    document.querySelector('body').addEventListener('click', e => {
+    document.querySelector('body').addEventListener('click', (e) => {
       if (this.primaryList.contains(e.target)) return
       this.uncheckDropdownToggles(this.dropdownToggles);
       this.primaryList.classList.remove('primary-nav__list--level2');
@@ -239,15 +237,14 @@ class Navbar extends HTMLElement {
   }
 
   enhance(selectors) {
-    selectors.forEach(s => {
+    selectors.forEach((s) => {
       s = s.startsWith('.') ? s.slice(1) : s;
-      Array.from(document.querySelectorAll('.' + s))
-        .forEach(e => e.classList.add(s + '--enhanced'));
+      Array.from(document.querySelectorAll('.' + s)).forEach((e) => e.classList.add(s + '--enhanced'));
     });
   }
 
   uncheckDropdownToggles(toggles, except) {
-    toggles.forEach(t => {
+    toggles.forEach((t) => {
       if (except !== t) {
         t.checked = false;
       }
@@ -265,7 +262,7 @@ class Navbar extends HTMLElement {
 
 // following advice from https://inclusive-components.design/cards
 class ClickableArea extends HTMLElement {
-  connectedCallback () {
+  connectedCallback() {
     if (this.link) {
       this.addEventListener('mousedown', this.handleMousedown.bind(this));
       this.addEventListener('mouseup', this.handleMouseup.bind(this));
@@ -273,27 +270,31 @@ class ClickableArea extends HTMLElement {
     }
   }
 
-  handleMousedown ({ timeStamp }) {
+  handleMousedown({ timeStamp }) {
     this.down = timeStamp;
   }
 
-  handleMouseup ({ timeStamp }) {
+  handleMouseup({ timeStamp }) {
     if (timeStamp - this.down < 200) {
       this.link.click();
     }
   }
 
-  get link () {
+  get link() {
     return this.querySelector('a')
   }
 }
 
 class TouchDetection extends HTMLElement {
-  connectedCallback () {
-    window.addEventListener('touchstart', function touched () {
-      document.body.classList.add('instructions--touch-active');
-      window.removeEventListener('touchstart', touched, false);
-    }, false);
+  connectedCallback() {
+    window.addEventListener(
+      'touchstart',
+      function touched() {
+        document.body.classList.add('instructions--touch-active');
+        window.removeEventListener('touchstart', touched, false);
+      },
+      false
+    );
   }
 }
 

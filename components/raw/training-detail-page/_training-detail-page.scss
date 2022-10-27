@@ -1,14 +1,14 @@
 .training-detail-page {
-    @extend %article-layout;
+  @extend %article-layout;
 
-    align-items: center;
+  align-items: center;
 
-    img,
-    > img {
-      @extend %box-shadow-primary-25-right-bottom;
-    }
+  img,
+  > img {
+    @extend %box-shadow-primary-25-right-bottom;
+  }
 
-    figure {
-      @extend %container-vertical-spacing-lg;
-    }
+  figure {
+    @extend %container-vertical-spacing-lg;
+  }
 }
