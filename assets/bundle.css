@@ -6799,7 +6799,8 @@ form > * + *,
   margin-top: 1.44rem;
 }
 .image-header--no-border {
-  border: 0;
+  /* stylelint-disable-next-line declaration-no-important */
+  border-style: none !important;
 }
 
 @media screen and (min-width: 48rem) {
