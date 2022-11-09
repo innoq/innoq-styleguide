@@ -1677,6 +1677,11 @@ figcaption {
           mask-image: url("/assets/icons/linkedin.svg");
 }
 
+.icon-mastodon {
+  -webkit-mask-image: url("/assets/icons/mastodon.svg");
+          mask-image: url("/assets/icons/mastodon.svg");
+}
+
 .icon-rss {
   -webkit-mask-image: url("/assets/icons/rss-boxed.svg");
           mask-image: url("/assets/icons/rss-boxed.svg");
