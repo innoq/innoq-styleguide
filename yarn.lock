@@ -444,7 +444,7 @@ ansi-styles@^6.1.0:
   resolved "https://registry.npmjs.org/ansi-styles/-/ansi-styles-6.2.1.tgz"
   integrity sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==
 
-anymatch@^3.1.2, anymatch@~3.1.2:
+anymatch@^3.1.3, anymatch@~3.1.2:
   version "3.1.3"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-3.1.3.tgz#790c58b19ba1720a84205b57c618d5ad8524973e"
   integrity sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==
@@ -2092,29 +2092,29 @@ forwarded@0.2.0:
   resolved "https://registry.npmjs.org/forwarded/-/forwarded-0.2.0.tgz"
   integrity sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==
 
-fractal-fork@^0.0.8:
-  version "0.0.8"
-  resolved "https://registry.npmjs.org/fractal-fork/-/fractal-fork-0.0.8.tgz"
-  integrity sha512-Ig9QuhsacPo7N1MT1+z1e0B+phbfiAoc1a4id8l85K0DuugcZVBmaYMYF2ByEuKuoXz1z9MyBFtK1t0oifuqWQ==
+fractal-fork@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/fractal-fork/-/fractal-fork-0.0.9.tgz#c820913d2b8476c64a29cd3e3e84d89bc3bb5c6e"
+  integrity sha512-XdVLYKDluzX4bJQtKOdw0Pv51uYLqsTaaaJhG3v6cwX+gS40221GlrKjFokQnBEq9oiCxLKDLR6zBiQrcdXFog==
   dependencies:
     "@allmarkedup/fang" "^2.0.0"
-    anymatch "^3.1.2"
+    anymatch "^3.1.3"
     bluebird "^3.7.2"
     browser-sync "^2.27.10"
     chokidar "^3.5.3"
     cli-table3 "^0.6.3"
     co "^4.6.0"
     express "^4.18.2"
-    fs-extra "^10.1.0"
+    fs-extra "^11.1.0"
     globby "^13.1.2"
     gray-matter "^4.0.3"
     handlebars "^4.7.7"
-    highlight.js "^11.6.0"
+    highlight.js "^11.7.0"
     js-beautify "^1.14.7"
     js-yaml "^4.1.0"
     liftoff "^4.0.0"
     lodash "^4.17.21"
-    marked "^4.1.1"
+    marked "^4.2.3"
     mime "^3.0.0"
     minimist "^1.2.7"
     mixwith "^0.1.1"
@@ -2146,10 +2146,10 @@ fs-extra@3.0.1:
     jsonfile "^3.0.0"
     universalify "^0.1.0"
 
-fs-extra@^10.1.0:
-  version "10.1.0"
-  resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-10.1.0.tgz"
-  integrity sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
+fs-extra@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-11.1.0.tgz#5784b102104433bb0e090f48bfc4a30742c357ed"
+  integrity sha512-0rcTq621PD5jM/e0a3EJoGC/1TC5ZBCERW82LQuwfGnCa1V8w7dpYH1yNu+SLb6E5dkeCBzKEyLGlFrnr+dUyw==
   dependencies:
     graceful-fs "^4.2.0"
     jsonfile "^6.0.1"
@@ -2496,9 +2496,9 @@ has@^1.0.3:
   dependencies:
     function-bind "^1.1.1"
 
-highlight.js@^11.6.0:
+highlight.js@^11.7.0:
   version "11.7.0"
-  resolved "https://registry.npmjs.org/highlight.js/-/highlight.js-11.7.0.tgz"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-11.7.0.tgz#3ff0165bc843f8c9bce1fd89e2fda9143d24b11e"
   integrity sha512-1rRqesRFhMO/PRF+G86evnyJkCgaZFOI+Z6kdj15TA18funfoqJXvgPCLSf0SWq3SRfg1j3HlDs8o4s3EGq1oQ==
 
 homedir-polyfill@^1.0.1:
@@ -3336,9 +3336,9 @@ map-obj@^4.0.0:
   resolved "https://registry.npmjs.org/map-obj/-/map-obj-4.3.0.tgz"
   integrity sha512-hdN1wVrZbb29eBGiGjJbeP8JbKjq1urkHJ/LIP/NY48MZ1QVXUsQBV1G1zvYFHn1XE06cwjBsOI2K3Ulnj1YXQ==
 
-marked@^4.1.1:
+marked@^4.2.3:
   version "4.2.5"
-  resolved "https://registry.npmjs.org/marked/-/marked-4.2.5.tgz"
+  resolved "https://registry.yarnpkg.com/marked/-/marked-4.2.5.tgz#979813dfc1252cc123a79b71b095759a32f42a5d"
   integrity sha512-jPueVhumq7idETHkb203WDD4fMA3yV9emQ5vLwop58lu8bTclMghBWcYAavlDqIEMaisADinV1TooIFCfqOsYQ==
 
 mathml-tag-names@^2.1.3:
