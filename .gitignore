@@ -8,3 +8,4 @@ public/**/*
 *.sublime-workspace
 .npmrc
 .stylelintcache
+/.idea
