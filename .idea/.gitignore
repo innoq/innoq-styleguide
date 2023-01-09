@@ -6,3 +6,7 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+/innoq-styleguide.iml
+/modules.xml
+/runConfigurations/start.xml
+/vcs.xml
