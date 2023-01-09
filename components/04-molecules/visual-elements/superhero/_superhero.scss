@@ -4,13 +4,15 @@
 
   &__lead {
     @extend %heading-font-bold;
+
+    margin-bottom: $spacer-md;
     font-size: $font-size-sm;
     text-transform: uppercase;
-    margin-bottom: $spacer-md;
   }
 
   &__title {
     @extend %heading-font-heavy;
+
     font-size: $font-size-xl;
     line-height: $heading-line-height;
   }
