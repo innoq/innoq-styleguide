@@ -1,0 +1,43 @@
+.superhero {
+  color: $h1-color;
+  text-align: center;
+
+  &__lead {
+    @extend %heading-font-bold;
+
+    margin-bottom: $spacer-md;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    @extend %heading-font-heavy;
+
+    font-size: $font-size-xl;
+    line-height: $heading-line-height;
+  }
+
+  &__highlight {
+    color: $brand-apricot;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .superhero__lead {
+    font-size: $font-size-md;
+  }
+
+  .superhero__title {
+    font-size: $font-size-2xl;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .superhero__lead {
+    font-size: $font-size-lg;
+  }
+
+  .superhero__title {
+    font-size: $font-size-3xl;
+  }
+}
