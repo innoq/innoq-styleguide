@@ -14,7 +14,7 @@
     "compile": "faucet",
     "compile-watch": "npm run compile -- --watch",
     "test": "eslint --cache --ext .js . && stylelint --cache 'lib/**/*.scss' 'components/**/*.scss' && prettier --check .",
-    "site": "yarn run compile && fractal-fork build",
+    "site": "npm run compile && fractal-fork build",
     "dist": "./scripts/dist",
     "release": "release-it"
   },
