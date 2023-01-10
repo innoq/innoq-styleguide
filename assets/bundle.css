@@ -1,44 +1,4 @@
 @charset "UTF-8";
-.font-size-xxs {
-  font-size: 0.8333333333rem;
-}
-
-.font-size-xs {
-  font-size: 0.9114583333rem;
-}
-
-.font-size-base {
-  font-size: 1rem;
-}
-
-.font-size-sm {
-  font-size: 1.2rem;
-}
-
-.font-size-md {
-  font-size: 1.44rem;
-}
-
-.font-size-lg {
-  font-size: 1.728rem;
-}
-
-.font-size-xl {
-  font-size: 2.0736rem;
-}
-
-.font-size-xxl {
-  font-size: 2.48832rem;
-}
-
-.font-size-2xl {
-  font-size: 2.985984rem;
-}
-
-.font-size-3xl {
-  font-size: 4.29981696rem;
-}
-
 /* stylelint-disable declaration-no-important */
 /* stylelint-disable color-no-hex */
 :root {
@@ -302,6 +262,7 @@ ul:not([class]),
 .author-bio--short,
 .author-bio__social-profile,
 .author-bio__head,
+.kununu-link,
 .link-teaser,
 .link--muted,
 h1 > a:not([class]),
@@ -339,6 +300,7 @@ h6 > a:not([class]),
 .author-bio--short:hover,
 .author-bio__social-profile:hover,
 .author-bio__head:hover,
+.kununu-link:hover,
 .link-teaser:hover,
 .link--muted:hover,
 h1 > a:hover:not([class]),
@@ -371,6 +333,7 @@ h6 > a:hover:not([class]),
 .author-bio--short:focus,
 .author-bio__social-profile:focus,
 .author-bio__head:focus,
+.kununu-link:focus,
 .link-teaser:focus,
 .link--muted:focus,
 h1 > a:focus:not([class]),
@@ -2243,6 +2206,12 @@ hr {
   height: 3px;
   border: 0;
   background-color: #ff9c66;
+}
+
+.kununu-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .zigzag,

@@ -4,46 +4,6 @@
   --overlay-standard-color: #979798;
 }
 
-.font-size-xxs {
-  font-size: 0.8333333333rem;
-}
-
-.font-size-xs {
-  font-size: 0.9114583333rem;
-}
-
-.font-size-base {
-  font-size: 1rem;
-}
-
-.font-size-sm {
-  font-size: 1.2rem;
-}
-
-.font-size-md {
-  font-size: 1.44rem;
-}
-
-.font-size-lg {
-  font-size: 1.728rem;
-}
-
-.font-size-xl {
-  font-size: 2.0736rem;
-}
-
-.font-size-xxl {
-  font-size: 2.48832rem;
-}
-
-.font-size-2xl {
-  font-size: 2.985984rem;
-}
-
-.font-size-3xl {
-  font-size: 4.29981696rem;
-}
-
 .body-font-regular {
   font-family: "FreightTextPro", "Georgia", "Times", "Times New Roman", serif;
   font-style: normal;
