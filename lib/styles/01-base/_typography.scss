@@ -32,45 +32,15 @@ $base-unit: 'rem';
 $base-font-family: $font-family-serif;
 
 $font-size-xxs: ms(-2); // 10px
-.font-size-xxs {
-  font-size: $font-size-xxs;
-}
 $font-size-xs: ms(-1); // 14px
-.font-size-xs {
-  font-size: $font-size-xs;
-}
 $font-size-base: ms(0); // 16px
-.font-size-base {
-  font-size: $font-size-base;
-}
 $font-size-sm: ms(2); // 19px
-.font-size-sm {
-  font-size: $font-size-sm;
-}
 $font-size-md: ms(4); // 14px
-.font-size-md {
-  font-size: $font-size-md;
-}
 $font-size-lg: ms(6); // 24px
-.font-size-lg {
-  font-size: $font-size-lg;
-}
 $font-size-xl: ms(8); // 32px
-.font-size-xl {
-  font-size: $font-size-xl;
-}
 $font-size-xxl: ms(10); // 39px
-.font-size-xxl {
-  font-size: $font-size-xxl;
-}
 $font-size-2xl: ms(12); // 47px
-.font-size-2xl {
-  font-size: $font-size-2xl;
-}
 $font-size-3xl: ms(16); // 68px
-.font-size-3xl {
-  font-size: $font-size-3xl;
-}
 
 $paragraph-line-height: 1.52;
 $paragraph-line-height-sm: 1.3;
