@@ -14,5 +14,4 @@ docker-compose.yml
 Dockerfile
 faucet.config.js
 fractal.js
-yarn.lock
 .stylelint*
