@@ -10,21 +10,21 @@ We use git-lfs. So please install https://git-lfs.github.com/ before you clone t
 
 Install:
 
-    yarn install
+    npm install
 
 This starts a local development server complete with asset pipeline:
 
-    yarn start
+    npm start
 
 Export a static site to `./dist/site`
 
-    yarn run site
+    npm run site
 
 ### With Docker & Docker-Compose
 
     docker-compose up
 
-You need to prefix all maintenance commands from above like `yarn …` with
+You need to prefix all maintenance commands from above like `npm …` with
 
     docker-compose run --rm web …
 
@@ -36,7 +36,7 @@ See `.github/workflow/build.yml` for more info.
 
 ## Generate assets locally
 
-    yarn run compile
+    npm run compile
 
 After that, you'll find all the relevant assets in `./dist/`.
 
@@ -62,12 +62,12 @@ GitHub Actions deals with npm publishing.
 
 ### Patch level version (auto increment)
 
-    $ yarn release
+    $ npm release
 
 ### Minor
 
-    $ yarn release minor
+    $ npm release minor
 
 ### Major
 
-    $ yarn release major
+    $ npm release major

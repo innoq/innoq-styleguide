@@ -17,7 +17,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [19.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -36,11 +36,11 @@ jobs:
             ~/cache
             !~/cache/exclude
             **/node_modules
-          key: yarn-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
-      - name: yarn install
+          key: npm-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+      - name: npm install
         if: steps.npm_cache.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile
-      - run: yarn test
+        run: npm install-clean
+      - run: npm run test
 
   deploy_site:
     if: ${{ contains(github.ref, 'refs/tags') }}
@@ -48,7 +48,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [19.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -67,10 +67,10 @@ jobs:
             ~/cache
             !~/cache/exclude
             **/node_modules
-          key: yarn-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
-      - name: yarn install
+          key: npm-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+      - name: npm install
         if: steps.npm_cache.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile
+        run: npm install-clean
       - run: ./scripts/dist
         env:
           SKIP_RELEASE_BUNLDE: true
@@ -89,7 +89,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [19.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -108,13 +108,13 @@ jobs:
             ~/cache
             !~/cache/exclude
             **/node_modules
-          key: yarn-${{ matrix.node-version }}-${{ hashFiles('**/yarn.lock') }}
-      - name: yarn install
+          key: npm-${{ matrix.node-version }}-${{ hashFiles('**/package-lock.json') }}
+      - name: npm install
         if: steps.npm_cache.outputs.cache-hit != 'true'
-        run: yarn install --frozen-lockfile
+        run: npm install --frozen-lockfile
       - run: ./scripts/dist
       - name: Publish to Node Packages
-        run: yarn publish
+        run: npm publish
         env:
           NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       - name: Get current tag name
