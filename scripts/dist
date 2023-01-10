@@ -12,7 +12,7 @@ js_components_target = "dist/js/components"
 release_filename = "innoq-styleguide-#{tag}.zip"
 zip_blacklist = "-x #{File.read(".npmignore").gsub(/\n/, ' ')}"
 
-exit 1 unless system("yarn run site")
+exit 1 unless system("npm run site")
 
 cp_r "dist/site/assets", "dist/"
 
