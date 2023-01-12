@@ -2,4 +2,7 @@
   @extend %link-unstyled;
 
   display: flex;
+  max-width: 20rem;
+  justify-content: center;
+  margin: 0 auto;
 }
