@@ -52,34 +52,3 @@
     }
   }
 }
-
-.demo {
-  > * {
-    margin: $spacer-md;
-  }
-
-  &--inverted {
-    background-color: $brand-secondary;
-  }
-
-  &--accented {
-    background-color: $brand-interaction;
-  }
-
-  &--centered {
-    display: flex;
-    justify-content: center;
-  }
-
-  &--black {
-    background-color: $brand-gray;
-  }
-
-  &--edition-01-red {
-    background-color: $brand-red;
-  }
-
-  &--edition-01-blue {
-    background-color: $brand-blue;
-  }
-}
