@@ -1,6 +1,33 @@
 (function () {
 'use strict';
 
+function _iterableToArrayLimit(arr, i) {
+  var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"];
+  if (null != _i) {
+    var _s,
+      _e,
+      _x,
+      _r,
+      _arr = [],
+      _n = !0,
+      _d = !1;
+    try {
+      if (_x = (_i = _i.call(arr)).next, 0 === i) {
+        if (Object(_i) !== _i) return;
+        _n = !1;
+      } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0);
+    } catch (err) {
+      _d = !0, _e = err;
+    } finally {
+      try {
+        if (!_n && null != _i.return && (_r = _i.return(), Object(_r) !== _r)) return;
+      } finally {
+        if (_d) throw _e;
+      }
+    }
+    return _arr;
+  }
+}
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
@@ -21,7 +48,7 @@ function _defineProperties(target, props) {
     descriptor.enumerable = descriptor.enumerable || false;
     descriptor.configurable = true;
     if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
+    Object.defineProperty(target, _toPropertyKey(descriptor.key), descriptor);
   }
 }
 function _createClass(Constructor, protoProps, staticProps) {
@@ -37,30 +64,6 @@ function _slicedToArray(arr, i) {
 }
 function _arrayWithHoles(arr) {
   if (Array.isArray(arr)) return arr;
-}
-function _iterableToArrayLimit(arr, i) {
-  var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
-  if (_i == null) return;
-  var _arr = [];
-  var _n = true;
-  var _d = false;
-  var _s, _e;
-  try {
-    for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) {
-      _arr.push(_s.value);
-      if (i && _arr.length === i) break;
-    }
-  } catch (err) {
-    _d = true;
-    _e = err;
-  } finally {
-    try {
-      if (!_n && _i["return"] != null) _i["return"]();
-    } finally {
-      if (_d) throw _e;
-    }
-  }
-  return _arr;
 }
 function _unsupportedIterableToArray(o, minLen) {
   if (!o) return;
@@ -78,9 +81,23 @@ function _arrayLikeToArray(arr, len) {
 function _nonIterableRest() {
   throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
 }
+function _toPrimitive(input, hint) {
+  if (typeof input !== "object" || input === null) return input;
+  var prim = input[Symbol.toPrimitive];
+  if (prim !== undefined) {
+    var res = prim.call(input, hint || "default");
+    if (typeof res !== "object") return res;
+    throw new TypeError("@@toPrimitive must return a primitive value.");
+  }
+  return (hint === "string" ? String : Number)(input);
+}
+function _toPropertyKey(arg) {
+  var key = _toPrimitive(arg, "string");
+  return typeof key === "symbol" ? key : String(key);
+}
 
 /*!
- * jQuery JavaScript Library v3.6.1
+ * jQuery JavaScript Library v3.6.3
  * https://jquery.com/
  *
  * Includes Sizzle.js
@@ -90,7 +107,7 @@ function _nonIterableRest() {
  * Released under the MIT license
  * https://jquery.org/license
  *
- * Date: 2022-08-26T17:52Z
+ * Date: 2022-12-20T21:28Z
  */
 (function (global, factory) {
 
@@ -189,7 +206,7 @@ function _nonIterableRest() {
   // Defining this global in .eslintrc.json would create a danger of using the global
   // unguarded in another place, it seems safer to define global only for this module
 
-  var version = "3.6.1",
+  var version = "3.6.3",
     // Define a local copy of jQuery
     jQuery = function jQuery(selector, context) {
       // The jQuery object is actually just the init constructor 'enhanced'
@@ -505,14 +522,14 @@ function _nonIterableRest() {
   }
   var Sizzle =
   /*!
-   * Sizzle CSS Selector Engine v2.3.6
+   * Sizzle CSS Selector Engine v2.3.9
    * https://sizzlejs.com/
    *
    * Copyright JS Foundation and other contributors
    * Released under the MIT license
    * https://js.foundation/
    *
-   * Date: 2021-02-16
+   * Date: 2022-12-19
    */
   function (window) {
     var i,
@@ -794,6 +811,23 @@ function _nonIterableRest() {
               newSelector = groups.join(",");
             }
             try {
+              // `qSA` may not throw for unrecognized parts using forgiving parsing:
+              // https://drafts.csswg.org/selectors/#forgiving-selector
+              // like the `:has()` pseudo-class:
+              // https://drafts.csswg.org/selectors/#relational
+              // `CSS.supports` is still expected to return `false` then:
+              // https://drafts.csswg.org/css-conditional-4/#typedef-supports-selector-fn
+              // https://drafts.csswg.org/css-conditional-4/#dfn-support-selector
+              if (support.cssSupportsSelector &&
+              // eslint-disable-next-line no-undef
+              !CSS.supports("selector(:is(" + newSelector + "))")) {
+                // Support: IE 11+
+                // Throw to get to the same code path as an error directly in qSA.
+                // Note: once we only support browser supporting
+                // `CSS.supports('selector(...)')`, we can most likely drop
+                // the `try-catch`. IE doesn't implement the API.
+                throw new Error();
+              }
               push.apply(results, newContext.querySelectorAll(newSelector));
               return results;
             } catch (qsaError) {
@@ -1070,6 +1104,29 @@ function _nonIterableRest() {
         return typeof el.querySelectorAll !== "undefined" && !el.querySelectorAll(":scope fieldset div").length;
       });
 
+      // Support: Chrome 105+, Firefox 104+, Safari 15.4+
+      // Make sure forgiving mode is not used in `CSS.supports( "selector(...)" )`.
+      //
+      // `:is()` uses a forgiving selector list as an argument and is widely
+      // implemented, so it's a good one to test against.
+      support.cssSupportsSelector = assert(function () {
+        /* eslint-disable no-undef */
+
+        return CSS.supports("selector(*)") &&
+        // Support: Firefox 78-81 only
+        // In old Firefox, `:is()` didn't use forgiving parsing. In that case,
+        // fail this test as there's no selector to test against that.
+        // `CSS.supports` uses unforgiving parsing
+        document.querySelectorAll(":is(:jqfake)") &&
+        // `*` is needed as Safari & newer Chrome implemented something in between
+        // for `:has()` - it throws in `qSA` if it only contains an unsupported
+        // argument but multiple ones, one of which is supported, are fine.
+        // We want to play safe in case `:is()` gets the same treatment.
+        !CSS.supports("selector(:is(*,:jqfake))");
+
+        /* eslint-enable */
+      });
+
       /* Attributes
       ---------------------------------------------------------------------- */
 
@@ -1313,6 +1370,15 @@ function _nonIterableRest() {
           rbuggyMatches.push("!=", pseudos);
         });
       }
+      if (!support.cssSupportsSelector) {
+        // Support: Chrome 105+, Safari 15.4+
+        // `:has()` uses a forgiving selector list as an argument so our regular
+        // `try-catch` mechanism fails to catch `:has()` with arguments not supported
+        // natively like `:has(:contains("Foo"))`. Where supported & spec-compliant,
+        // we now use `CSS.supports("selector(:is(SELECTOR_TO_BE_TESTED))")`, but
+        // outside that we mark `:has` as buggy.
+        rbuggyQSA.push(":has");
+      }
       rbuggyQSA = rbuggyQSA.length && new RegExp(rbuggyQSA.join("|"));
       rbuggyMatches = rbuggyMatches.length && new RegExp(rbuggyMatches.join("|"));
 
@@ -1324,7 +1390,13 @@ function _nonIterableRest() {
       // Purposefully self-exclusive
       // As in, an element does not contain itself
       contains = hasCompare || rnative.test(docElem.contains) ? function (a, b) {
-        var adown = a.nodeType === 9 ? a.documentElement : a,
+        // Support: IE <9 only
+        // IE doesn't have `contains` on `document` so we need to check for
+        // `documentElement` presence.
+        // We need to fall back to `a` when `documentElement` is missing
+        // as `ownerDocument` of elements within `<template/>` may have
+        // a null one - a default behavior of all modern browsers.
+        var adown = a.nodeType === 9 && a.documentElement || a,
           bup = b && b.parentNode;
         return a === bup || !!(bup && bup.nodeType === 1 && (adown.contains ? adown.contains(bup) : a.compareDocumentPosition && a.compareDocumentPosition(bup) & 16));
       } : function (a, b) {
@@ -1944,7 +2016,7 @@ function _nonIterableRest() {
         "text": function text(elem) {
           var attr;
           return elem.nodeName.toLowerCase() === "input" && elem.type === "text" && (
-          // Support: IE<8
+          // Support: IE <10 only
           // New HTML5 attribute values (e.g., "search") appear with elem.type === "text"
           (attr = elem.getAttribute("type")) == null || attr.toLowerCase() === "text");
         },
@@ -3175,8 +3247,8 @@ function _nonIterableRest() {
             return _promise.then(null, fn);
           },
           // Keep pipe for back-compat
-          pipe: function /* fnDone, fnFail, fnProgress */
-          pipe() {
+          pipe: function pipe( /* fnDone, fnFail, fnProgress */
+          ) {
             var fns = arguments;
             return jQuery.Deferred(function (newDefer) {
               jQuery.each(tuples, function (_i, tuple) {
@@ -5616,16 +5688,34 @@ function _nonIterableRest() {
     //   .css('filter') (IE 9 only, trac-12537)
     //   .css('--customProperty) (gh-3144)
     if (computed) {
+      // Support: IE <=9 - 11+
+      // IE only supports `"float"` in `getPropertyValue`; in computed styles
+      // it's only available as `"cssFloat"`. We no longer modify properties
+      // sent to `.css()` apart from camelCasing, so we need to check both.
+      // Normally, this would create difference in behavior: if
+      // `getPropertyValue` returns an empty string, the value returned
+      // by `.css()` would be `undefined`. This is usually the case for
+      // disconnected elements. However, in IE even disconnected elements
+      // with no styles return `"none"` for `getPropertyValue( "float" )`
       ret = computed.getPropertyValue(name) || computed[name];
-
-      // trim whitespace for custom property (issue gh-4926)
-      if (isCustomProp) {
-        // rtrim treats U+000D CARRIAGE RETURN and U+000C FORM FEED
+      if (isCustomProp && ret) {
+        // Support: Firefox 105+, Chrome <=105+
+        // Spec requires trimming whitespace for custom properties (gh-4926).
+        // Firefox only trims leading whitespace. Chrome just collapses
+        // both leading & trailing whitespace to a single space.
+        //
+        // Fall back to `undefined` if empty string returned.
+        // This collapses a missing definition with property defined
+        // and set to an empty string but there's no standard API
+        // allowing us to differentiate them without a performance penalty
+        // and returning `undefined` aligns with older jQuery.
+        //
+        // rtrimCSS treats U+000D CARRIAGE RETURN and U+000C FORM FEED
         // as whitespace while CSS does not, but this is not a problem
         // because CSS preprocessing replaces them with U+000A LINE FEED
         // (which *is* CSS whitespace)
         // https://www.w3.org/TR/css-syntax-3/#input-preprocessing
-        ret = ret.replace(rtrimCSS, "$1");
+        ret = ret.replace(rtrimCSS, "$1") || undefined;
       }
       if (ret === "" && !isAttached(elem)) {
         ret = jQuery.style(elem, name);
@@ -9711,13 +9801,11 @@ function _nonIterableRest() {
       });
     } else if (_typeof(data) === 'object') {
       var key;
-      for (key in data) {
-        form.append($('<input>', {
-          type: 'hidden',
-          name: key,
-          value: data[key]
-        }));
-      }
+      for (key in data) form.append($('<input>', {
+        type: 'hidden',
+        name: key,
+        value: data[key]
+      }));
     }
     $(document.body).append(form);
     form.submit();
@@ -9984,9 +10072,7 @@ function _nonIterableRest() {
   //
   // Returns nothing.
   function trimCacheStack(stack, length) {
-    while (stack.length > length) {
-      delete cacheMapping[stack.shift()];
-    }
+    while (stack.length > length) delete cacheMapping[stack.shift()];
   }
 
   // Public: Find version identifier for the initial page load.
