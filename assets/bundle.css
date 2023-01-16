@@ -4757,9 +4757,6 @@ touch-detection {
     padding: 2.985984rem;
   }
   .case-list-teaser__body {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
     text-align: left;
   }
   .case-list-teaser__title {
