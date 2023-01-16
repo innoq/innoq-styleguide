@@ -115,6 +115,11 @@
     max-width: 50%;
   }
 
+  .case-list-teaser__body {
+    align-items: flex-start;
+    text-align: left;
+  }
+
   .case-list-teaser__text {
     font-size: $font-size-sm;
   }
