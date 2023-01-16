@@ -7704,7 +7704,8 @@ form > * + *,
 .container-vertical-spacing-xl,
 .share-section,
 .tag-section,
-.contact-person {
+.contact-person,
+.footer {
   padding-top: 2.985984rem;
   padding-bottom: 2.985984rem;
 }
@@ -7722,8 +7723,7 @@ form > * + *,
 .article-page-default long-quote,
 .training-detail-page pull-quote,
 .story-detail-page pull-quote,
-.article-page-default pull-quote,
-.footer {
+.article-page-default pull-quote {
   padding-top: 2.0736rem;
   padding-bottom: 2.0736rem;
 }
