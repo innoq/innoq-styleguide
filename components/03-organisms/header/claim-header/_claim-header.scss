@@ -18,7 +18,7 @@
   }
 
   &__title {
-    margin-bottom: $spacer-md;
+    margin-top: $spacer-md;
     color: $claim-header-title-color;
     font-size: $font-size-xl;
   }
@@ -31,11 +31,14 @@
     margin-bottom: $spacer-base;
     background-color: $claim-header-divider-color;
   }
+
+  .icon {
+    margin-top: $spacer-md;
+  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .claim-header__title {
-    margin-bottom: $spacer-base;
     font-size: $font-size-2xl;
   }
 }
