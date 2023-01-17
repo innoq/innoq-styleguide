@@ -1,0 +1,533 @@
+$navbar-primary-font-size-big: ms(7);
+$navbar-primary-font-size: ms(3);
+$navbar-secondary-font-size: ms(-2);
+$navbar-focus-outline-width: 2px;
+$navbar-btn-transition: color 0.175s ease;
+$navbar-toggle-width: calc((#{$navbar-focus-outline-width} * 2) + (#{$navbar-padding} * 3));
+$navbar-toggle-transition-speed: $transition-time-standard * 3;
+$navbar-dropdown-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+$navbar-dropdown-z-index: 1;
+$navbar-dropdown-z-index-expanding: 2;
+$navbar-dropdown-z-index-hover: 3;
+
+%navigation-action {
+  display: inline-block;
+  margin: var(--forced-colors-action-margin);
+  color: $navbar-link-color;
+  cursor: pointer;
+  transition: $navbar-btn-transition;
+
+  &:hover,
+  &:focus {
+    color: $navbar-link-hover-color;
+    transition: $navbar-btn-transition;
+
+    .icon {
+      background-color: $navbar-link-hover-color;
+    }
+  }
+
+  &:focus {
+    border-color: $navbar-link-hover-color;
+    outline: $navbar-focus-outline-width solid $navbar-lightened-bg;
+  }
+
+  &:focus-visible {
+    border-color: $navbar-link-hover-color;
+    outline: $navbar-focus-outline-width solid $navbar-lightened-bg;
+  }
+
+  // Remove outline styles when the user is not navigating with the keyboard
+  &:focus:not(:focus-visible) {
+    border-color: transparent;
+    outline: none;
+  }
+}
+
+%navigation-link {
+  @extend %navigation-action;
+
+  border: var(--forced-colors-link-border-width, #{$navbar-focus-outline-width}) solid transparent;
+  text-decoration: var(--forced-colors-link-decoration, none);
+}
+
+%navigation-button {
+  @extend %navigation-action;
+
+  border: $navbar-focus-outline-width solid transparent;
+  background-color: transparent;
+}
+
+.skip-link {
+  @extend %heading-font-regular;
+  @extend %navigation-link;
+
+  display: block;
+  padding: $navbar-padding;
+  margin-bottom: $navbar-focus-outline-width;
+  background-color: $navbar-lightened-bg;
+
+  &:not(:focus) {
+    @extend %sr-only;
+  }
+}
+
+.main-navigation {
+  --navbar-background-color: #{$navbar-body-bg};
+
+  @extend %heading-font-regular;
+
+  display: grid;
+  background-color: var(--navbar-background-color);
+  grid-template-areas:
+    'brand menu search'
+    'nav nav nav'
+    'meta meta meta';
+  grid-template-columns: 1fr auto auto;
+
+  // A helper for providing alternative text for images and icons to assistive
+  // technologies. This is similar to the `.sr-only` helper, but the
+  // `.link-alt` helper will additionally be shown to users using a
+  // `forced-colors` mode where icons/images are also difficult to discern
+  .link-alt {
+    @extend %sr-only;
+  }
+
+  // Use CSS properties to tweak the navbar theme based on CSS media features
+  @media (prefers-reduced-motion: no-preference) {
+    --grid-row-transition: grid-template-rows #{$navbar-toggle-transition-speed} #{$transition-easing-standard};
+    --visibility-transition: visibility #{$navbar-toggle-transition-speed} #{$transition-easing-standard};
+  }
+
+  @media (forced-colors: active) {
+    --forced-colors-link-border-width: 0;
+    --forced-colors-action-margin: #{$navbar-focus-outline-width};
+    --forced-colors-link-decoration: underline;
+    --forced-colors-navbar-toggler-width: 10rem;
+
+    .link-alt {
+      all: revert;
+      text-align: left;
+    }
+  }
+
+  @media (pointer: fine) {
+    --pointer-fine-navbar-meta-font-size: #{$navbar-secondary-font-size * 0.9};
+    --pointer-fine-navbar-meta-spacer: #{$spacer-xs * 0.5};
+  }
+
+  &--transparent {
+    --navbar-background-color: transparent;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  a:hover,
+  a:focus {
+    background-color: transparent; // Override style from a:not([class])
+  }
+
+  // Removing `list-style` attributes causes the list to no longer appear as a
+  // list in the accessibility tree. As a workaround, this only removes the
+  // list styling once the ARIA `role="list"` has been set to reinstate the
+  // list semantics for the list.
+  // See: https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
+  ul[role='list'],
+  ol[role='list'] {
+    list-style: none;
+    list-style-type: none;
+  }
+
+  .brand-link {
+    @extend %navigation-link;
+
+    display: flex;
+    flex-direction: column;
+    padding: $navbar-padding;
+    grid-area: brand;
+
+    .brand-logo {
+      width: $navbar-logo-height-small * 3.94;
+      height: $navbar-logo-height-small;
+    }
+  }
+
+  .search-link {
+    @extend %navigation-link;
+
+    display: flex;
+    align-items: center;
+    padding: $navbar-padding;
+    grid-area: search;
+
+    .icon {
+      width: $navbar-padding;
+      height: $navbar-padding;
+    }
+  }
+
+  menu-toggle {
+    align-items: center;
+    grid-area: menu;
+
+    &:not([hidden]) {
+      display: flex;
+    }
+
+    button {
+      @extend %navigation-button;
+
+      padding: $navbar-padding;
+      font-size: $navbar-primary-font-size;
+      font-weight: bold;
+    }
+
+    &::after {
+      width: 0;
+      height: $navbar-padding;
+      border: 1px solid $navbar-link-color;
+      content: '';
+    }
+  }
+
+  .navigation-links {
+    background-color: $navbar-lightened-bg;
+    font-size: $navbar-primary-font-size;
+    grid-area: nav;
+
+    > :first-child {
+      margin-top: $navbar-padding * 2;
+    }
+
+    > :last-child {
+      margin-bottom: $navbar-padding * 2;
+    }
+
+    a {
+      @extend %navigation-link;
+    }
+
+    summary,
+    button {
+      @extend %navigation-button;
+    }
+
+    a,
+    summary,
+    button {
+      display: flex;
+      align-items: center;
+      padding: ($navbar-padding * 0.5) $navbar-padding;
+      background-color: transparent;
+    }
+
+    /* stylelint-disable-next-line selector-max-compound-selectors */
+    > li > a,
+    summary,
+    button {
+      font-size: $navbar-primary-font-size-big;
+      font-weight: bold;
+    }
+
+    // Use CSS rules to enforce the accessibility of the current link within the
+    // navbar. If it is visually correct, it will also be semantically correct.
+    // See: https://adrianroselli.com/2021/06/using-css-to-enforce-accessibility.html
+    a[aria-current='page'] {
+      text-decoration: underline;
+      text-decoration-color: $navbar-link-active-color;
+      text-decoration-thickness: 3px;
+      text-underline-offset: $spacer-xs;
+    }
+  }
+
+  .navigation-meta {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 $navbar-padding;
+    background-color: var(--navbar-background-color);
+    color: $navbar-link-color;
+    font-size: var(--pointer-fine-navbar-meta-font-size, inherit);
+    grid-area: meta;
+    text-transform: uppercase;
+
+    > * {
+      margin: $navbar-padding 0;
+    }
+
+    a {
+      @extend %navigation-link;
+
+      padding: var(--pointer-fine-navbar-meta-spacer, #{$spacer-xs});
+
+      // Styles to indicate that the language is the current language selected
+      // for the site.
+      &[aria-current='true'] {
+        text-decoration: underline;
+        text-decoration-color: $navbar-link-active-color;
+        text-decoration-thickness: 2px;
+        text-underline-offset: $spacer-xxs;
+      }
+    }
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child)::after {
+        content: '|';
+      }
+    }
+  }
+
+  // CSS Styles for expanding/collapsing the navbar on mobile devices
+  // This animates the changing height for browsers which support animation
+  // of the `grid-row-transition` property.
+  //
+  // See: https://nemzes.net/posts/animating-height-auto/
+  // Browser Support: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows#browser_compatibility
+  &[data-expanded] {
+    grid-template-rows: var(--main-navigation-grid-template-rows);
+    transition: var(--grid-row-transition);
+
+    .navigation-links,
+    .navigation-meta {
+      overflow: hidden;
+      min-height: 0;
+      transition: var(--visibility-transition);
+      visibility: var(--main-navigation-menu-visibility);
+    }
+  }
+
+  &[data-expanded='true'] {
+    --main-navigation-grid-template-rows: min-content 1fr min-content;
+    --main-navigation-menu-visibility: visibility;
+  }
+
+  &[data-expanded='false'] {
+    --main-navigation-grid-template-rows: min-content 0fr 0fr;
+    --main-navigation-menu-visibility: hidden;
+  }
+
+  sub-menu {
+    display: flex;
+    flex-direction: column;
+
+    .icon {
+      width: $spacer-xs;
+      height: $spacer-xs;
+      margin-left: auto;
+      transform: rotate(-90deg);
+      transition: standard-transition(all);
+
+      &:hover,
+      &:focus {
+        background: $sharing-interaction-color;
+      }
+    }
+
+    details[open],
+    [aria-expanded='true'] {
+      /* stylelint-disable-next-line selector-max-compound-selectors */
+      .icon {
+        transform: rotate(0);
+      }
+    }
+
+    // CSS Styles for expanding/collapsing the submenu
+    // This animates the changing height for browsers which support animation
+    // of the `grid-template-rows` property.
+    // In order for this to work properly, we need to animate the
+    // `grid-template-rows` of the outer container and the `visibility` of the
+    // inner container.
+    //
+    // When we absolutely position the menu on larger viewports, the animation
+    // no longer works when we use the `sub-menu` as the outer container.
+    // For this reason, we add a `div` element surrounding the `ul` with
+    // JavaScript to enable us to have a container on which to place the
+    // necessary transition.
+    //
+    // See: https://nemzes.net/posts/animating-height-auto/
+    // Browser Support: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows#browser_compatibility
+    div {
+      display: grid;
+      overflow: hidden;
+      grid-template-rows: var(--submenu-grid-template-rows);
+      transition: var(--grid-row-transition);
+    }
+
+    ul {
+      min-height: 0;
+      margin-bottom: $spacer-xs;
+      transition: var(--visibility-transition);
+      visibility: var(--submenu-visibility);
+    }
+
+    /* stylelint-disable-next-line selector-max-compound-selectors */
+    [aria-expanded='false'] + div {
+      --submenu-grid-template-rows: 0fr;
+      --submenu-visibility: hidden;
+    }
+
+    /* stylelint-disable-next-line selector-max-compound-selectors */
+    [aria-expanded='true'] + div {
+      --submenu-grid-template-rows: 1fr;
+      --submenu-visibility: visible;
+    }
+  }
+
+  //
+  // Breakpoints for larger devices
+  //
+
+  @media (min-width: $grid-breakpoint-xs-sm) {
+    .navigation-meta {
+      justify-content: center;
+      gap: $spacer-sm;
+    }
+  }
+
+  @media (min-width: $nav-breakpoint-px) {
+    --navbar-toggler-width: var(--forced-colors-navbar-toggler-width, #{$navbar-toggle-width});
+
+    grid-template-areas:
+      '. . brand meta search'
+      'nav nav nav nav nav';
+    grid-template-columns: var(--navbar-toggler-width) 1fr 1fr 1fr var(--navbar-toggler-width);
+
+    .brand-link {
+      align-items: center;
+    }
+
+    menu-toggle:not([hidden]) {
+      display: none;
+    }
+
+    .navigation-links {
+      display: flex;
+      justify-content: center;
+      padding: 0 ($navbar-padding * 0.5);
+      background-color: var(--navbar-background-color);
+
+      a {
+        white-space: nowrap;
+      }
+
+      /* stylelint-disable-next-line selector-max-compound-selectors */
+      > li > a,
+      summary,
+      button {
+        padding: $navbar-padding ($navbar-padding * 0.5);
+        font-size: $navbar-primary-font-size;
+      }
+
+      > :first-child {
+        margin-top: 0;
+      }
+
+      > :last-child {
+        --submenu-position-right: 0;
+
+        margin-bottom: 0;
+      }
+    }
+
+    .navigation-meta {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0;
+    }
+
+    &[data-expanded] {
+      .navigation-links,
+      .navigation-meta {
+        overflow: visible;
+        min-height: auto;
+        visibility: visible;
+      }
+    }
+
+    sub-menu {
+      position: relative;
+      display: grid;
+      grid-template-areas:
+        'button .'
+        'menu menu';
+
+      > button {
+        grid-area: button;
+      }
+
+      > div {
+        grid-area: menu;
+      }
+
+      .icon {
+        margin-left: $spacer-xs;
+        transform: rotate(0deg);
+      }
+
+      details[open],
+      ul {
+        margin-bottom: 0;
+      }
+
+      li:first-child {
+        margin-top: $navbar-padding * 0.5;
+      }
+
+      li:last-child {
+        margin-bottom: $navbar-padding * 0.5;
+      }
+
+      /* stylelint-disable-next-line selector-max-compound-selectors */
+      details > ul,
+      > div {
+        position: absolute;
+        z-index: $navbar-dropdown-z-index;
+        right: var(--submenu-position-right);
+        background-color: $navbar-lightened-bg;
+        box-shadow: $navbar-dropdown-shadow;
+      }
+
+      /* stylelint-disable-next-line selector-max-compound-selectors */
+      [aria-expanded='true'] + div {
+        z-index: $navbar-dropdown-z-index-expanding;
+      }
+
+      &:hover {
+        z-index: $navbar-dropdown-z-index-hover;
+
+        /* stylelint-disable-next-line max-nesting-depth */
+        > div {
+          --submenu-visibility: visible;
+          --submenu-grid-template-rows: 1fr;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $grid-page-layout-width) {
+    $logo-width: 10rem; // Magic Number
+    $side-column-width: calc((#{$grid-page-layout-width} - #{$logo-width} - var(--navbar-toggler-width) * 2) * 0.5);
+
+    grid-template-areas:
+      '. . . brand meta search .'
+      '. . nav nav nav . .';
+    grid-template-columns:
+      1fr var(--navbar-toggler-width) $side-column-width $logo-width $side-column-width var(--navbar-toggler-width)
+      1fr;
+
+    .navigation-links {
+      gap: $navbar-padding;
+    }
+  }
+}

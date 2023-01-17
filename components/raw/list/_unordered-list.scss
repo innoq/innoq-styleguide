@@ -8,7 +8,7 @@
 // class attribute, to prevent reverting styles for all non-default lists.
 //
 
-ul:not([class]),
+ul:not([class], [role='list']),
 .bold-list {
   @extend %base-list-styling;
 
