@@ -72,15 +72,18 @@
       .footnotes,
       .centered-content,
       .zigzag,
-      .centered-content-75 {
-        grid-column: 5 / 6;
-      }
-      // Centered elements that are a bit wider than the textwurst
+      .centered-content-75,
       figure,
       .two-column-image-divider-asymmetric,
       .case-list-teaser {
-        grid-column: 3/ 8;
+        grid-column: 5 / 6;
       }
+      // // Centered elements that are a bit wider than the textwurst
+      // figure,
+      // .two-column-image-divider-asymmetric,
+      // .case-list-teaser {
+      //   grid-column: 3/ 8;
+      // }
 
       // Left aligned elements
       .toc {
