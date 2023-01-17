@@ -31,13 +31,9 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
 .image-divider-center__textbox__text {
   @extend %body-font-italic;
 
+  margin-top: $spacer-md;
   color: $image-divider-center-color;
   font-size: $font-size-sm;
-  margin-top: $spacer-md;
-  // IE11 Hack
-  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-    max-width: 100%;
-  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -52,7 +48,7 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
   }
 
   .image-divider-center__textbox__text {
-    font-size: $font-size-lg;
     margin-top: $spacer-lg;
+    font-size: $font-size-lg;
   }
 }
