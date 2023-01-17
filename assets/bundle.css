@@ -7965,17 +7965,17 @@ form > * + *,
     .article-page-default .zigzag,
     .training-detail-page .centered-content-75,
     .story-detail-page .centered-content-75,
-    .article-page-default .centered-content-75 {
-      grid-column: 5/6;
-    }
-    .training-detail-page figure, .story-detail-page figure, .article-page-default figure,
+    .article-page-default .centered-content-75,
+    .training-detail-page figure,
+    .story-detail-page figure,
+    .article-page-default figure,
     .training-detail-page .two-column-image-divider-asymmetric,
     .story-detail-page .two-column-image-divider-asymmetric,
     .article-page-default .two-column-image-divider-asymmetric,
     .training-detail-page .case-list-teaser,
     .story-detail-page .case-list-teaser,
     .article-page-default .case-list-teaser {
-      grid-column: 3/8;
+      grid-column: 5/6;
     }
     .training-detail-page .toc, .story-detail-page .toc, .article-page-default .toc {
       align-self: start;
@@ -8427,6 +8427,11 @@ form > * + *,
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 2.985984rem;
+}
+.story-detail-page figure,
+.story-detail-page .two-column-image-divider-asymmetric,
+.story-detail-page .case-list-teaser {
+  grid-column: 3/8;
 }
 .story-detail-page .zigzag {
   width: 40%;

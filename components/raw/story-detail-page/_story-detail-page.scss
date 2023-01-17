@@ -4,6 +4,13 @@
   align-items: center;
   margin-bottom: $spacer-lg;
 
+  // Centered elements that are a bit wider than the textwurst
+  figure,
+  .two-column-image-divider-asymmetric,
+  .case-list-teaser {
+    grid-column: 3/ 8;
+  }
+
   .zigzag {
     width: 40%;
     margin: $spacer-xl auto 0 auto;
