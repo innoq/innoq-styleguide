@@ -38,6 +38,7 @@ $full-width-teaser-height: ms(38);
 .default-full-width-teaser__text {
   @extend %teaser-text;
 
+  margin-top: $spacer-base;
   margin-bottom: $spacer-base;
   font-size: $font-size-xs;
   line-height: $paragraph-line-height;

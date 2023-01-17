@@ -4391,6 +4391,7 @@ touch-detection {
 }
 
 .default-full-width-teaser__text {
+  margin-top: 2.0736rem;
   margin-bottom: 2.0736rem;
   font-size: 0.9114583333rem;
   line-height: 1.52;
@@ -5391,15 +5392,13 @@ touch-detection {
 }
 
 .big-content-teaser__text {
+  margin-top: 1.44rem;
   color: #004153;
   font-size: 1rem;
 }
 
 .big-content-teaser__footer {
-  margin-bottom: 0;
-}
-.big-content-teaser__footer > * {
-  margin: 0;
+  margin-top: 1.44rem;
 }
 .big-content-teaser__footer .link-teaser {
   display: inline;
@@ -5960,14 +5959,13 @@ touch-detection {
   }
 }
 .image-divider-center {
-  min-height: 50vh;
-  padding-top: 2.985984rem;
+  width: 100%;
+  min-height: 6.1917364224rem;
   /* stylelint-disable-next-line declaration-no-important */
   margin-bottom: 14.8601674138rem !important;
 }
 .image-divider-center__title {
   padding: 0 1.44rem;
-  margin-bottom: 1.44rem;
   font-size: 2.48832rem;
   text-align: center;
 }
@@ -5979,8 +5977,6 @@ touch-detection {
   display: -ms-flexbox;
   display: flex;
   max-width: 630px;
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -5989,27 +5985,18 @@ touch-detection {
       -ms-flex-align: center;
           align-items: center;
   padding: 1.44rem;
-  margin-top: 1.44rem;
   background-color: #fff;
   text-align: center;
 }
 
 .image-divider-center__textbox__text {
+  margin-top: 1.44rem;
   color: #004153;
   font-size: 1.2rem;
 }
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-  .image-divider-center__textbox__text {
-    max-width: 100%;
-  }
-}
 
 @media screen and (min-width: 48rem) {
-  .image-divider-center {
-    margin-bottom: 14.8601674138rem;
-  }
   .image-divider-center__title {
-    margin-bottom: 2.985984rem;
     font-size: 4.29981696rem;
   }
   .image-divider-center__textbox {
@@ -6018,6 +6005,7 @@ touch-detection {
     padding: 2.985984rem;
   }
   .image-divider-center__textbox__text {
+    margin-top: 2.985984rem;
     font-size: 1.728rem;
   }
 }
@@ -6678,7 +6666,7 @@ form > * + *,
   text-transform: uppercase;
 }
 .claim-header__title {
-  margin-bottom: 1.44rem;
+  margin-top: 1.44rem;
   color: #004153;
   font-size: 2.0736rem;
 }
@@ -6690,10 +6678,12 @@ form > * + *,
   margin-bottom: 2.0736rem;
   background-color: #004153;
 }
+.claim-header .icon {
+  margin-top: 1.44rem;
+}
 
 @media screen and (min-width: 48rem) {
   .claim-header__title {
-    margin-bottom: 2.0736rem;
     font-size: 2.985984rem;
   }
 }

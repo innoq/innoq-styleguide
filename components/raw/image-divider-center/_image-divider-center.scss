@@ -3,15 +3,14 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
 .image-divider-center {
   @extend %page-header;
 
-  min-height: 50vh;
-  padding-top: $spacer-lg;
+  width: 100%;
+  min-height: ms(20);
   /* stylelint-disable-next-line declaration-no-important */
   margin-bottom: $divider-center-textbox-offset !important; //FIXME
   &__title {
     @extend %punch-in;
 
     padding: 0 $spacer-md;
-    margin-bottom: $spacer-md;
     font-size: $font-size-xxl;
     text-align: center;
   }
@@ -22,11 +21,9 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
   top: $divider-center-textbox-offset;
   display: flex;
   max-width: 630px;
-  box-sizing: content-box;
   flex-direction: column;
   align-items: center;
   padding: $spacer-md;
-  margin-top: $spacer-md;
   background-color: $image-divider-center-bg-color;
   text-align: center;
 }
@@ -34,21 +31,13 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
 .image-divider-center__textbox__text {
   @extend %body-font-italic;
 
+  margin-top: $spacer-md;
   color: $image-divider-center-color;
   font-size: $font-size-sm;
-  // IE11 Hack
-  @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-    max-width: 100%;
-  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
-  .image-divider-center {
-    margin-bottom: $divider-center-textbox-offset;
-  }
-
   .image-divider-center__title {
-    margin-bottom: $spacer-lg;
     font-size: $font-size-3xl;
   }
 
@@ -59,6 +48,7 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
   }
 
   .image-divider-center__textbox__text {
+    margin-top: $spacer-lg;
     font-size: $font-size-lg;
   }
 }
