@@ -8169,6 +8169,7 @@ nav-bar .navbar--transparent {
 }
 .one-column-grid {
   display: grid;
+  width: 100%;
   gap: 1.44rem;
   grid-column: 1fr;
 }
