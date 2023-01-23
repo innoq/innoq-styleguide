@@ -111,6 +111,12 @@
   background-image: asset-url('bg-images/general/visual-culture-15.webp');
 }
 
+.bg-image-culture-16,
+%bg-image-culture-16 {
+  background-blend-mode: multiply;
+  background-image: asset-url('bg-images/general/visual-culture-16.webp');
+}
+
 // Staff
 .bg-image-staff-01,
 %bg-image-staff-01 {

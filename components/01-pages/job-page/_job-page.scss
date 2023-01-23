@@ -1,0 +1,21 @@
+.job-page {
+  @extend %article-layout-simple;
+
+  .topic-teaser {
+    background-position: center;
+  }
+
+  .case-tile-teaser--sm {
+    margin-bottom: ms(28);
+  }
+
+  .case-tile-teaser__content--sm {
+    bottom: -(ms(30));
+  }
+
+  @media screen and (min-width: $grid-breakpoint-md) {
+    .topic-teaser {
+      min-height: ms(40);
+    }
+  }
+}
