@@ -52,7 +52,7 @@ $case-tile-teaser-sm-height: ms(32);
 //
 .case-tile-teaser--sm {
   min-height: $case-tile-teaser-sm-height;
-  padding: $spacer-lg;
+  padding: $spacer-lg $spacer-xs;
   margin-bottom: $spacer-xxl;
 }
 
@@ -85,6 +85,10 @@ $case-tile-teaser-sm-height: ms(32);
 @media screen and (min-width: $grid-breakpoint-md) {
   .case-tile-teaser__content {
     padding: $spacer-lg $spacer-md;
+  }
+
+  .case-tile-teaser--sm {
+    padding: $spacer-lg;
   }
 }
 

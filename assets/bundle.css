@@ -646,6 +646,11 @@ h6 > a:focus:not([class]),
   background-image: url("/assets/bg-images/general/visual-culture-15.webp");
 }
 
+.bg-image-culture-16 {
+  background-blend-mode: multiply;
+  background-image: url("/assets/bg-images/general/visual-culture-16.webp");
+}
+
 .bg-image-staff-01 {
   background-blend-mode: multiply;
   background-color: #d8d8d8;
@@ -5506,7 +5511,7 @@ touch-detection {
 
 .case-tile-teaser--sm {
   min-height: 18.4884258895rem;
-  padding: 2.985984rem;
+  padding: 2.985984rem 0.5787037037rem;
   margin-bottom: 7.4300837069rem;
 }
 
@@ -5536,6 +5541,9 @@ touch-detection {
 @media screen and (min-width: 48rem) {
   .case-tile-teaser__content {
     padding: 2.985984rem 1.44rem;
+  }
+  .case-tile-teaser--sm {
+    padding: 2.985984rem;
   }
 }
 @media screen and (min-width: 75rem) {
@@ -8113,8 +8121,12 @@ nav-bar .navbar--transparent {
 .container-vertical-spacing-lg,
 .training-detail-page figure,
 .story-detail-page figure,
+.job-page super-quote,
 .case-study-page super-quote,
+.job-page long-quote,
 .case-study-page long-quote,
+.article-layout-simple super-quote,
+.article-layout-simple long-quote,
 .training-detail-page super-quote,
 .story-detail-page super-quote,
 .article-page-default super-quote,
@@ -8401,7 +8413,8 @@ nav-bar .navbar--transparent {
   }
 }
 
-.case-study-page {
+.job-page, .case-study-page,
+.article-layout-simple {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8411,16 +8424,21 @@ nav-bar .navbar--transparent {
           flex-direction: column;
   padding: 0 1rem 2.0736rem 1rem;
 }
-.case-study-page > * + * {
+.job-page > * + *, .case-study-page > * + *,
+.article-layout-simple > * + * {
   margin-top: 1.44rem;
 }
-.case-study-page super-quote,
-.case-study-page long-quote {
+.job-page super-quote, .case-study-page super-quote,
+.job-page long-quote,
+.case-study-page long-quote,
+.article-layout-simple super-quote,
+.article-layout-simple long-quote {
   max-width: 45rem;
   -ms-flex-item-align: center;
       align-self: center;
 }
-.case-study-page .centered-content {
+.job-page .centered-content, .case-study-page .centered-content,
+.article-layout-simple .centered-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8431,7 +8449,8 @@ nav-bar .navbar--transparent {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.case-study-page .centered-content-75 {
+.job-page .centered-content-75, .case-study-page .centered-content-75,
+.article-layout-simple .centered-content-75 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8441,53 +8460,118 @@ nav-bar .navbar--transparent {
   justify-self: center;
 }
 @media screen and (min-width: 48rem) {
-  .case-study-page {
+  .job-page, .case-study-page,
+  .article-layout-simple {
     padding-right: 7.4300837069rem;
     padding-left: 7.4300837069rem;
   }
 }
 @supports (display: grid) {
   @media screen and (min-width: 82rem) {
-    .case-study-page {
+    .job-page, .case-study-page,
+    .article-layout-simple {
       display: grid;
       padding-right: 1rem;
       padding-left: 1rem;
       grid-template-columns: 1fr 7rem 50rem 7rem 1fr;
       grid-template-rows: auto;
     }
-    .case-study-page h1,
+    .job-page h1, .case-study-page h1,
+    .job-page h2,
     .case-study-page h2,
+    .job-page h3,
     .case-study-page h3,
+    .job-page h4,
     .case-study-page h4,
+    .job-page h5,
     .case-study-page h5,
+    .job-page h6,
     .case-study-page h6,
+    .job-page p,
     .case-study-page p,
+    .job-page ul,
     .case-study-page ul,
+    .job-page ol,
     .case-study-page ol,
+    .job-page check-list,
     .case-study-page check-list,
+    .job-page bold-list,
     .case-study-page bold-list,
+    .job-page table,
     .case-study-page table,
+    .job-page blockquote,
     .case-study-page blockquote,
+    .job-page super-quote,
     .case-study-page super-quote,
+    .job-page long-quote,
     .case-study-page long-quote,
+    .job-page pull-quote,
     .case-study-page pull-quote,
+    .job-page info-box,
     .case-study-page info-box,
+    .job-page pre,
     .case-study-page pre,
+    .job-page code,
     .case-study-page code,
+    .job-page wall-of-consent,
     .case-study-page wall-of-consent,
+    .job-page hr,
     .case-study-page hr,
+    .job-page .author-bio,
     .case-study-page .author-bio,
+    .job-page .author-section,
     .case-study-page .author-section,
+    .job-page .footnote-section,
     .case-study-page .footnote-section,
+    .job-page .footnotes,
     .case-study-page .footnotes,
+    .job-page .centered-content,
     .case-study-page .centered-content,
+    .job-page .centered-content-75,
     .case-study-page .centered-content-75,
-    .case-study-page .zigzag {
+    .job-page .zigzag,
+    .case-study-page .zigzag,
+    .article-layout-simple h1,
+    .article-layout-simple h2,
+    .article-layout-simple h3,
+    .article-layout-simple h4,
+    .article-layout-simple h5,
+    .article-layout-simple h6,
+    .article-layout-simple p,
+    .article-layout-simple ul,
+    .article-layout-simple ol,
+    .article-layout-simple check-list,
+    .article-layout-simple bold-list,
+    .article-layout-simple table,
+    .article-layout-simple blockquote,
+    .article-layout-simple super-quote,
+    .article-layout-simple long-quote,
+    .article-layout-simple pull-quote,
+    .article-layout-simple info-box,
+    .article-layout-simple pre,
+    .article-layout-simple code,
+    .article-layout-simple wall-of-consent,
+    .article-layout-simple hr,
+    .article-layout-simple .author-bio,
+    .article-layout-simple .author-section,
+    .article-layout-simple .footnote-section,
+    .article-layout-simple .footnotes,
+    .article-layout-simple .centered-content,
+    .article-layout-simple .centered-content-75,
+    .article-layout-simple .zigzag {
       grid-column: 3/4;
     }
-    .case-study-page figure,
+    .job-page figure, .case-study-page figure,
+    .job-page .two-column-image-divider-asymmetric,
     .case-study-page .two-column-image-divider-asymmetric,
-    .case-study-page .case-list-teaser {
+    .job-page .case-list-teaser,
+    .case-study-page .case-list-teaser,
+    .job-page .topic-teaser,
+    .case-study-page .topic-teaser,
+    .article-layout-simple figure,
+    .article-layout-simple .two-column-image-divider-asymmetric,
+    .article-layout-simple .case-list-teaser,
+    .article-layout-simple .topic-teaser {
       grid-column: 2/5;
     }
   }
@@ -8649,6 +8733,21 @@ nav-bar .navbar--transparent {
   }
   .work-page .topic-teaser {
     min-height: 46.0051199094rem;
+  }
+}
+
+.job-page .topic-teaser {
+  background-position: center;
+}
+.job-page .case-tile-teaser--sm {
+  margin-bottom: 12.8391846455rem;
+}
+.job-page .case-tile-teaser__content--sm {
+  bottom: -15.4070215746rem;
+}
+@media screen and (min-width: 48rem) {
+  .job-page .topic-teaser {
+    min-height: 38.3375999245rem;
   }
 }
 
