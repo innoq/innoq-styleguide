@@ -2214,10 +2214,15 @@ hr {
   display: -ms-flexbox;
   display: flex;
   max-width: 20rem;
+  height: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  cursor: pointer;
+}
+.kununu-link img {
+  width: 50%;
 }
 
 .zigzag,
