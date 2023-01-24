@@ -3,6 +3,12 @@
 
   display: flex;
   max-width: 20rem;
+  height: auto;
   justify-content: center;
   margin: 0 auto;
+  cursor: pointer;
+
+  img {
+    width: 50%;
+  }
 }
