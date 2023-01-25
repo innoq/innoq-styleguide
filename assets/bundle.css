@@ -2991,6 +2991,10 @@ summary {
 .info-note p:last-child {
   margin-bottom: 0;
 }
+long-quote {
+  display: block;
+}
+
 long-quote > blockquote,
 super-quote > blockquote,
 .superquote,
@@ -3662,17 +3666,12 @@ wall-of-consent:not(.revealed) {
   border-bottom: 1px solid #d8d8d8;
 }
 
+.download-section-feature > * + * {
+  margin-top: 1.44rem;
+}
+
 .download-section-feature__image {
   width: 100%;
-  margin-bottom: 1.44rem;
-}
-
-.download-section-feature__title {
-  margin-bottom: 1rem;
-}
-
-.download-section-feature__caption {
-  margin-bottom: 1rem;
 }
 
 .event-date-section {
