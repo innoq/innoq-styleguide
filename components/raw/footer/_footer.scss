@@ -66,8 +66,7 @@
   }
 }
 
-.footer__link,
-.footer a {
+.footer__link {
   border-bottom: 2px solid $footer-color;
   color: $footer-color;
   hyphens: none;
@@ -79,7 +78,6 @@
 }
 
 .footer__link,
-.footer a,
 .footer__directions-link,
 .footer__list__link {
   @extend %link-unstyled;
@@ -88,7 +86,6 @@
 
   &:hover,
   &:focus {
-    background-color: transparent;
     color: $footer-link-hover-color;
   }
 }
