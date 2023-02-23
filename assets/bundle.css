@@ -244,6 +244,7 @@ ul:not([class], [role=list]),
 nav-bar .navbar__brand-link,
 .staff-header__profile__person__link,
 .footer__link,
+.footer a,
 .footer__directions-link,
 .footer__list__link,
 .toolbar__link,
@@ -282,6 +283,7 @@ h6 > a:not([class]),
 nav-bar .navbar__brand-link:hover,
 .staff-header__profile__person__link:hover,
 .footer__link:hover,
+.footer a:hover,
 .footer__directions-link:hover,
 .footer__list__link:hover,
 .toolbar__link:hover,
@@ -315,6 +317,7 @@ h6 > a:hover:not([class]),
 nav-bar .navbar__brand-link:focus,
 .staff-header__profile__person__link:focus,
 .footer__link:focus,
+.footer a:focus,
 .footer__directions-link:focus,
 .footer__list__link:focus,
 .toolbar__link:focus,
@@ -6605,28 +6608,35 @@ form > * + *,
   content: url("/assets/icons/pin.svg");
 }
 
-.footer__link {
+.footer__link,
+.footer a {
   border-bottom: 2px solid #fff;
   color: #fff;
   -webkit-hyphens: none;
       -ms-hyphens: none;
           hyphens: none;
 }
-.footer__link:hover, .footer__link:focus {
+.footer__link:hover, .footer__link:focus,
+.footer a:hover,
+.footer a:focus {
   border-bottom: 2px solid #ff9c66;
 }
 
 .footer__link,
+.footer a,
 .footer__directions-link,
 .footer__list__link {
   -webkit-transition: color 0.175s ease-in-out;
   transition: color 0.175s ease-in-out;
 }
 .footer__link:hover, .footer__link:focus,
+.footer a:hover,
+.footer a:focus,
 .footer__directions-link:hover,
 .footer__directions-link:focus,
 .footer__list__link:hover,
 .footer__list__link:focus {
+  background-color: transparent;
   color: #ff9c66;
 }
 
