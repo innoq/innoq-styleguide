@@ -1,0 +1,43 @@
+<div class="cta-section-long" itemscope itemtype="http://schema.org/Person">
+    <a rel="author" class="cta-section-long__head" itemprop="url" href="#">
+        <div class="cta-section-long__image avatar avatar--xl">
+            <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"
+                alt="Portrait von Heribert Innoq" />
+        </div>
+        <div>
+            <span rel="author" class="cta-section-long__name" itemprop="fullName">Heribert Innoq</span>
+            <span class="cta-section-long__info" itemprop="jobTitle">Senior Consultant</span>
+        </div>
+    </a>
+    <div class="cta-section-long-body">
+        <h3 class="cta-section-long__headline">Termin bei Heribert buchen</h3>
+        <button class="btn btn--cta btn--cta--inverted btn--small" data-label="Termin vereinbaren">Termin vereinbarewn</button>
+        <h3 class="cta-section-long__headline m-t-lg">Kontakt aufnehmen </h3>
+        <form class="form" novalidate="novalidate" accept-charset="UTF-8" method="post" style="width: 100%;">
+            <div class="form-group">
+                <label class="form-label" for="contact_message_company">Firma</label>
+                <input required="required" class="form-control" type="text" name="contact_message[name]"
+                    id="contact_message_company">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="contact_message_name">Name</label>
+                <input required="required" class="form-control" type="text" name="contact_message[name]"
+                    id="contact_message_name">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="contact_message_email">E-Mail</label>
+                <input required="required" class="form-control" type="email" name="contact_message[email]"
+                    id="contact_message_email">
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="contact_message_content">Bemerkungen</label>
+                <textarea required="required" class="form-control" rows="5" name="contact_message[content]"
+                    id="contact_message_content"
+                    placeholder="Nennen Sie uns gerne Ihre Anforderungen, wie etwa Anzahl der Teilnehmer:innen, Ausrichtungsort und Terminwünsche."></textarea>
+            </div>
+            <button name="button" type="submit" class="btn btn--cta btn--cta--inverted btn--small"
+                data-label="Training anfragen">Training
+                anfragen</button>
+        </form>
+    </div>
+</div>
