@@ -107,7 +107,7 @@ blockquote:not([class]) > p,
   font-weight: normal;
 }
 
-nav-bar .primary-nav__list, nav-bar .navbtn--menu, nav-bar .navbtn--primary, .topic-header__type, .standard-header__intro__label, .standard-header__type, .gradient-header__type, .footer__directions-link, .cover__author, .cover__type, .toolbar__link, .image-divider-right-content-textbox__text, .small-tile-teaser__type, .topic-teaser__cta, .podcast-author, .artist-list-teaser__edition__type, .superhero__lead, .service-intro__text, .resource-list-item__author > li > a:focus, .resource-list-item__author > li > a:hover, .paginator__item, .eyecatcher--social__text, .eyecatcher--event__text, .card__header__tag, .search-form__input, .cta-section-long__name, .share-section__link, .superquote__author,
+nav-bar .primary-nav__list, nav-bar .navbtn--menu, nav-bar .navbtn--primary, .topic-header__type, .standard-header__intro__label, .standard-header__type, .gradient-header__type, .footer__directions-link, .cover__author, .cover__type, .toolbar__link, .image-divider-right-content-textbox__text, .small-tile-teaser__type, .topic-teaser__cta, .podcast-author, .artist-list-teaser__edition__type, .superhero__lead, .service-intro__text, .resource-list-item__author > li > a:focus, .resource-list-item__author > li > a:hover, .paginator__item, .eyecatcher--social__text, .eyecatcher--event__text, .card__header__tag, .search-form__input, .filter-select, .filter-label, .cta-section-long__name, .share-section__link, .superquote__author,
 .longquote__author, .info-note__highlight, .info-note__title, .infobox__teaser, .author-bio__name, .tag-list__link, .table thead,
 .table tfoot, .bold-list > li, .tuple-list__label, ol:not([class]) > li::before, dl:not([class]) dt,
 dl dt, .checklist li, .label-big.badge, .label-big.badge--inverted, .label-big.hint, .label.training, .label.talk, pull-quote > blockquote,
@@ -1066,6 +1066,10 @@ h6 > a:focus:not([class]),
 }
 .btn--small {
   padding: 1rem 1.44rem;
+  font-size: 1rem;
+}
+.btn--xsmall {
+  padding: 0.5787037037rem 1rem;
   font-size: 1rem;
 }
 .btn--condensed {
@@ -3406,6 +3410,43 @@ wall-of-consent:not(.revealed) {
 
 .dropdown__checkbox:checked ~ .dropdown__list-wrapper {
   display: block;
+}
+
+.filter-label {
+  display: block;
+  width: 100%;
+  color: #004153;
+  font-size: 1rem;
+}
+
+.filter-select {
+  display: inline-block;
+  width: 100%;
+  padding: 0.5787037037rem;
+  border: 4px solid #fff;
+  margin-top: 0.5787037037rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #ffe6d9;
+  background-image: url("/assets/icons/chevron-down.svg");
+  background-position: right 0.75rem center;
+  background-repeat: no-repeat;
+  background-size: 14px 10px;
+  color: #004153;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+auto-submit-form {
+  display: block;
+  width: 100%;
+  max-width: 20rem;
+}
+
+auto-submit-form.enhanced [type=submit] {
+  display: none;
 }
 
 .search-hero {

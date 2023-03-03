@@ -368,6 +368,14 @@ class TouchDetection extends HTMLElement {
   }
 }
 
+class AutoSubmitForm extends HTMLElement {
+  connectedCallback() {
+    let form = this.querySelector('form');
+    form.addEventListener('change', form.submit);
+    this.classList.add('enhanced');
+  }
+}
+
 customElements.define('check-to-toggle', CheckToToggle);
 customElements.define('multi-toggler', MultiToggler);
 customElements.define('nav-bar', Navbar);
@@ -376,3 +384,4 @@ customElements.define('menu-toggle', MenuToggle);
 customElements.define('wall-of-consent', WallOfConsent);
 customElements.define('clickable-area', ClickableArea);
 customElements.define('touch-detection', TouchDetection);
+customElements.define('auto-submit-form', AutoSubmitForm);

@@ -58,6 +58,11 @@
     font-size: $font-size-base;
   }
 
+  &--xsmall {
+    padding: $spacer-xs $spacer-sm;
+    font-size: $font-size-base;
+  }
+
   &--condensed {
     padding: $spacer-xs $spacer-sm;
     font-size: $font-size-base;
