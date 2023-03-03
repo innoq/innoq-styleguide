@@ -2566,7 +2566,7 @@ ul:not([class], [role=list]) > li ol,
 .author-bio--long .author-bio__image {
   position: absolute;
   top: -3.5831808rem;
-  left: calc(50% - 3.5831808rem);
+  left: calc(50% - 7.4300837069rem/ 2);
   margin-right: 0;
 }
 
@@ -3317,7 +3317,7 @@ wall-of-consent:not(.revealed) {
 .cta-section-long .cta-section-long__image {
   position: absolute;
   top: -7.4300837069rem;
-  left: calc(50% - 7.4300837069rem);
+  left: calc(50% - 14.042858206rem/ 2);
   margin-right: 0;
 }
 
