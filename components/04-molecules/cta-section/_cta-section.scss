@@ -32,7 +32,7 @@ $cta-section-image-offset: ms(22);
   .cta-section-long__image {
     position: absolute;
     top: -$cta-section-image-offset;
-    left: calc(50% - #{$cta-section-image-offset});
+    left: calc(50% - #{$avatar-size-xl}/ 2);
     margin-right: 0;
   }
 }

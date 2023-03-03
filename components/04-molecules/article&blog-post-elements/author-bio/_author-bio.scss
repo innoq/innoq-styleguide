@@ -14,7 +14,7 @@ $author-bio-image-offset: ms(14);
   .author-bio__image {
     position: absolute;
     top: -$author-bio-image-offset;
-    left: calc(50% - #{$author-bio-image-offset});
+    left: calc(50% - #{$avatar-size-base}/ 2);
     margin-right: 0;
   }
 }
