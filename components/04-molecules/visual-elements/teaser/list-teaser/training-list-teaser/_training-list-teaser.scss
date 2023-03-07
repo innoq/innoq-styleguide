@@ -31,6 +31,10 @@ $list-teaser-training-height: ms(32);
   }
 }
 
+a.list-teaser-training {
+  @extend %hover-glow;
+}
+
 .list-teaser-training__caption {
   @extend %teaser-caption;
 

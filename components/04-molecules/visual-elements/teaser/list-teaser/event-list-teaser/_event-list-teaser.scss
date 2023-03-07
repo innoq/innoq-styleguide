@@ -34,6 +34,10 @@ $event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
   }
 }
 
+a.list-teaser-event {
+  @extend %hover-glow;
+}
+
 .list-teaser__content {
   display: flex;
   width: 100%;

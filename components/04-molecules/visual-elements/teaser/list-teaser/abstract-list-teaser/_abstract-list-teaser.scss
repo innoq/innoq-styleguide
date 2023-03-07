@@ -42,6 +42,10 @@
   }
 }
 
+a.list-teaser-abstract {
+  @extend %hover-glow;
+}
+
 .list-teaser-abstract__caption {
   @extend %teaser-caption;
 

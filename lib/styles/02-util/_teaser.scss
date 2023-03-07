@@ -2,7 +2,6 @@ $list-teaser-height: ms(32);
 
 %list-teaser {
   @extend %block-link;
-  @extend %hover-glow;
 
   min-height: $list-teaser-height;
 }
