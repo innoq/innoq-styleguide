@@ -21,7 +21,13 @@ $case-tile-teaser-sm-height: ms(32);
   background-color: $case-tile-teaser-body-bg-color;
   text-align: center;
 
-  * + * {
+  > * + * {
+    margin-top: $spacer-base;
+  }
+}
+
+.case-tile-teaser__body {
+  > * + * {
     margin-top: $spacer-base;
   }
 }
@@ -45,6 +51,13 @@ $case-tile-teaser-sm-height: ms(32);
 
 .case-tile-teaser__logo {
   max-width: ms(22);
+}
+
+.case-tile-teaser__goto {
+  // display: flex;
+  // flex-direction: row;
+  // align-items: center;
+  // justify-content: space-between;
 }
 
 //

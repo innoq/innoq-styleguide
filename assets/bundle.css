@@ -5596,7 +5596,11 @@ touch-detection {
   background-color: #fff;
   text-align: center;
 }
-.case-tile-teaser__content * + * {
+.case-tile-teaser__content > * + * {
+  margin-top: 2.0736rem;
+}
+
+.case-tile-teaser__body > * + * {
   margin-top: 2.0736rem;
 }
 
