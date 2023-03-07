@@ -9,6 +9,10 @@
   background-color: $list-teaser-background-color;
 }
 
+a.list-teaser {
+  @extend %hover-glow;
+}
+
 .list-teaser__body {
   padding: $spacer-sm $spacer-md;
 

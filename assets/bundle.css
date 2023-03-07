@@ -176,13 +176,13 @@ html {
   -webkit-hyphenate-character: "-";
 }
 
-.small-tile-teaser, .podcast-teaser, .content-teaser, .case-tile-teaser, a.big-content-teaser, a.topic-teaser, .list-teaser-training, .list-teaser, .list-teaser-podcast, .list-teaser-event, .case-list-teaser, .list-teaser-abstract {
+.small-tile-teaser, .podcast-teaser, .content-teaser, .case-tile-teaser, a.big-content-teaser, a.list-teaser-training, a.topic-teaser, a.list-teaser, .list-teaser-podcast, a.list-teaser-event, a.case-list-teaser, a.list-teaser-abstract {
   -webkit-transition: 0.2s -webkit-box-shadow ease-in-out;
   transition: 0.2s -webkit-box-shadow ease-in-out;
   transition: 0.2s box-shadow ease-in-out;
   transition: 0.2s box-shadow ease-in-out, 0.2s -webkit-box-shadow ease-in-out;
 }
-.small-tile-teaser:hover, .podcast-teaser:hover, .content-teaser:hover, .case-tile-teaser:hover, a.big-content-teaser:hover, a.topic-teaser:hover, .list-teaser-training:hover, .list-teaser:hover, .list-teaser-podcast:hover, .list-teaser-event:hover, .case-list-teaser:hover, .list-teaser-abstract:hover, .small-tile-teaser:focus, .podcast-teaser:focus, .content-teaser:focus, .case-tile-teaser:focus, a.big-content-teaser:focus, a.topic-teaser:focus, .list-teaser-training:focus, .list-teaser:focus, .list-teaser-podcast:focus, .list-teaser-event:focus, .case-list-teaser:focus, .list-teaser-abstract:focus {
+.small-tile-teaser:hover, .podcast-teaser:hover, .content-teaser:hover, .case-tile-teaser:hover, a.big-content-teaser:hover, a.list-teaser-training:hover, a.topic-teaser:hover, a.list-teaser:hover, .list-teaser-podcast:hover, a.list-teaser-event:hover, a.case-list-teaser:hover, a.list-teaser-abstract:hover, .small-tile-teaser:focus, .podcast-teaser:focus, .content-teaser:focus, .case-tile-teaser:focus, a.big-content-teaser:focus, a.list-teaser-training:focus, a.topic-teaser:focus, a.list-teaser:focus, .list-teaser-podcast:focus, a.list-teaser-event:focus, a.case-list-teaser:focus, a.list-teaser-abstract:focus {
   -webkit-box-shadow: 0 0 0 5px rgba(255, 156, 102, 0.8);
           box-shadow: 0 0 0 5px rgba(255, 156, 102, 0.8);
 }
