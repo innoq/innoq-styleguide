@@ -54,10 +54,13 @@ $case-tile-teaser-sm-height: ms(32);
 }
 
 .case-tile-teaser__goto {
-  // display: flex;
-  // flex-direction: row;
-  // align-items: center;
-  // justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  > * + * {
+    margin-top: $spacer-xs;
+  }
 }
 
 //
