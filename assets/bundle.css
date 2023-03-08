@@ -5634,7 +5634,7 @@ touch-detection {
           align-items: center;
 }
 .case-tile-teaser__goto > * + * {
-  margin-top: 0.5787037037rem;
+  margin-top: 1rem;
 }
 
 .case-tile-teaser--sm {
