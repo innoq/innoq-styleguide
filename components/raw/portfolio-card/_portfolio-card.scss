@@ -1,0 +1,72 @@
+// List Teaser with Abstract
+.portfolio-card {
+  @extend %list-teaser;
+
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $portfolio-card-bg-color;
+
+  .author-bio__name,
+  .author-bio__info {
+    color: $portfolio-card-author-name-color;
+  }
+}
+
+.portfolio-card__body {
+  padding: $spacer-sm $spacer-md;
+}
+
+.portfolio-card__footer {
+  @extend %list-teaser-footer;
+}
+
+.portfolio-card__caption {
+  @extend %teaser-caption;
+
+  color: $portfolio-card-caption-color;
+}
+
+.portfolio-card__headline {
+  margin-top: $spacer-xxs;
+  color: $portfolio-card-headline-color;
+  font-size: $font-size-lg;
+}
+
+.portfolio-card__text {
+  @extend %heading-font-regular;
+
+  margin-top: $spacer-md;
+  color: $portfolio-card-text-color;
+
+  p,
+  ul:not([class]) > li,
+  ol:not([class]) > li {
+    @extend %heading-font-regular;
+
+    &::marker {
+      @extend %body-font-regular;
+
+      color: $portfolio-card-text-color;
+    }
+
+    /* stylelint-disable-next-line selector-max-compound-selectors */
+    li::marker {
+      @extend %body-font-regular;
+    }
+  }
+
+  > * + * {
+    margin-top: $spacer-sm;
+  }
+}
+
+//
+//Breakpoints
+//
+@media screen and (min-width: $grid-breakpoint-md) {
+  .portfolio-card__headline {
+    font-size: $font-size-xl;
+  }
+}
