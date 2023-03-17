@@ -94,15 +94,10 @@ h6 {
 .teaser-section-heading {
   @extend %h2;
 
-  margin: 0 auto;
+  border-bottom: 4px solid $teaser-section-heading-border-color;
+  hyphens: manual;
   text-align: center;
   text-transform: uppercase;
-
-  // Prevent older Browsers from screwing up with max-content widths
-  @supports (width: max-content) {
-    width: max-content;
-    border-bottom: 4px solid $teaser-section-heading-border-color;
-  }
 }
 
 .section-heading--primary {
