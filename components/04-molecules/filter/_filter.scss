@@ -29,8 +29,7 @@
 
 auto-submit-form {
   display: block;
-  min-width: 20rem;
-  flex-grow: 1;
+  width: 100%;
 }
 
 auto-submit-form.enhanced {
@@ -39,10 +38,16 @@ auto-submit-form.enhanced {
   }
 }
 
-.filter-section {
+.filter-group {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   gap: $spacer-xs;
+}
+
+.filter-group__item {
+  min-width: 15rem;
+  flex-grow: 1;
+  margin-top: 0;
 }
