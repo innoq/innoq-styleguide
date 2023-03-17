@@ -1,116 +1,229 @@
 
 
+<h-include>
+    <div class="eyecatcher eyecatcher--event">
+        <p class="eyecatcher--event__text">
+            INNOQ Technology Lunch: Software Architecture for Agile Enterprises 👉
+            <a href="#" class="eyecatcher--event__link">20. Mai, 12:15 Uhr</a>
+        </p>
+    </div>
+</h-include>
+<a href="#main" class="skip-link">Zum Inhalt springen</a>
 <div style="background: url('https://source.unsplash.com/ThPRaw2qSwk/1444x1000')">
-    <nav-bar class="navbar navbar--transparent">
-        <div class="navbar__inner navbar__inner--transparent">
+    <nav class="main-navigation main-navigation--transparent" aria-label="Webseite Navigation">
+        <a href="#" class="brand-link">
+            <img alt="" class="brand-logo" src="../../assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg" />
+            <span class="link-alt">INNOQ Homepage</span>
+        </a>
+        <a href="#" class="search-link">
+            <span class="icon icon-search icon--brand-white"></span>
+            <span class="link-alt">Suche</span>
+        </a>
+        <!--
+            NOTE: in order to ensure that users of assistive technologies can
+            easily find the content that is being collapsed and expanded, it is
+            important for the content to directly follow the toggle button in the
+            focus order on the page. When this doesn't match the visual design that
+            we are trying to achieve, we can change the visual order of the
+            elements with CSS.
 
-            <a href="#main" class="navbtn navbtn--skip">Zum Inhalt springen</a>
+            See: https://inclusive-components.design/menus-menu-buttons/#ariacontrols
+        -->
+        <menu-toggle hidden>
+            <button>Menü</button>
+        </menu-toggle>
+        <!--
+            NOTE: for each `ul` list in the navbar, we should explicitly set
+            an `aria-label` that correctly describes the contents of the list to
+            provide this information to assistive technologies. Additionally, we
+            set the `role="list"` attribute to ensure that the lists will be
+            announced as lists in Safari/VoiceOver
 
-            <div class="navbar__brand">
-                <a href="#" class="navbar__brand-link">
-                    <img alt="INNOQ Logo" class="logo navbar__logo" src="../../assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg" />
-                </a>
-            </div>
+            See: https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
+            and note in CSS file
+        -->
+        <ul class="navigation-links" role="list" aria-label="Seitennavigation">
+            <li>
+                <sub-menu>
+                    <details>
+                        <summary>
+                            Leistungen
+                            <span class="icon icon-chevron-down-filled icon--brand-white"></span>
+                        </summary>
+                        <ul role="list" aria-label="Leistungen Untermenü">
+                            <li>
+                                <a href="#">Strategie- und Technologieberatung</a>
+                            </li>
+                        </ul>
+                    </details>
+                </sub-menu>
+            </li>
+            <li>
+                <a href="#">Success Stories</a>
+            </li>
+            <li>
+                <sub-menu>
+                    <details>
+                        <summary>
+                            Kultur
+                            <span class="icon icon-chevron-down-filled icon--brand-white"></span>
+                        </summary>
+                        <ul role="list" aria-label="Kultur Untermenü">
+                            <li>
+                                <!--
+                                    NOTE: use `aria-current="page"` for the link within the
+                                    navbar representing the current page. The CSS rules to
+                                    visually highlight this link are hooked to that attribute.
 
-            <input tabindex="-1" type="checkbox" id="navbar-toggle--menu" class="sr-only navbar__toggle-state navbar__toggle-state--menu-toggler" />
-            <input tabindex="-1" type="checkbox" id="navbar-toggle--search" class="sr-only navbar__toggle-state navbar__toggle-state--search-toggler" />
-
-            <div class="navbar__meta">
-                <a href="#" class="navbtn navbtn--meta">Newsletter</a>
-                <a href="#" class="navbtn navbtn--meta">Kontakt</a>
-                <a href="#" class="navbtn navbtn--meta navbtn--locale navbtn--active" title="Zu Deutsch wechseln">de</a> |
-                <a href="#" class="navbtn navbtn--meta navbtn--locale" title="Switch to English">en</a>
-            </div>
-
-            <div class="navbar__togglers">
-                <label for="navbar-toggle--menu" aria-label="Navigation ein- oder ausblenden">
-                    <span class="navbtn navbtn--menu">Menü</span>
-                </label>
-                <a href="#" class="navbtn navbtn--search" aria-label="Suche ein- oder ausblenden">
-                    <span class="icon icon-search icon--brand-white"></span>
-                </a>
-            </div>
-
-            <nav class="navbar__primary-nav primary-nav">
-                <ul class="primary-nav__list">
-                    <li class="primary-nav__item">
-                        <a href="#" class="navbtn navbtn--primary navbtn--active">Leistungen</a>
-                    </li>
-                    <li class="primary-nav__item">
-
-
-                        <div class="dropdown">
-                            <a href="#" class="navbtn navbtn--primary" data-for="dropdown__toggle--projekte">Projekte</a>
-                            <input type="checkbox" role="button" aria-haspopup="true" id="dropdown__toggle--projekte" class="sr-only dropdown__checkbox" />
-                            <label class="dropdown__toggle dropdown__toggle--navbar" for="dropdown__toggle--projekte">
-                                <span class="icon icon-chevron-down-filled icon--brand-white"></span>
-                                <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
-                                <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
-                            </label>
-                            <div class="dropdown__list-wrapper dropdown__list-wrapper--navbar" role="menu" title="Projekte">
-                                <ul class="dropdown__list">
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Softwarearchitektur und -entwicklung</a>
-                                    </li>
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Strategie- und Technologieberatung</a>
-                                    </li>
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Entwicklung digitaler Geschäftsmodelle</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                    </li>
-                    <li class="primary-nav__item">
-
-
-                        <div class="dropdown">
-                            <a href="#" class="navbtn navbtn--primary" data-for="dropdown__toggle--kultur">Kultur</a>
-                            <input type="checkbox" role="button" aria-haspopup="true" id="dropdown__toggle--kultur" class="sr-only dropdown__checkbox" />
-                            <label class="dropdown__toggle dropdown__toggle--navbar" for="dropdown__toggle--kultur">
-                                <span class="icon icon-chevron-down-filled icon--brand-white"></span>
-                                <span class="sr-only dropdown__toggle--expanded-text">ausgeklappt</span>
-                                <span class="sr-only dropdown__toggle--collapsed-text">eingeklappt</span>
-                            </label>
-                            <div class="dropdown__list-wrapper dropdown__list-wrapper--navbar" role="menu" title="Kultur">
-                                <ul class="dropdown__list">
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Strategie- und Technologieberatung</a>
-                                    </li>
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Entwicklung digitaler Geschäftsmodelle</a>
-                                    </li>
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Softwarearchitektur und -entwicklung</a>
-                                    </li>
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Digitale Plattformen und Infrastrukturen</a>
-                                    </li>
-                                    <li class="dropdown__item dropdown__item--navbar">
-                                        <a href="#" class="dropdown__link dropdown__link--navbar navbtn">Wissenstransfer, Coaching und Trainings</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-
-                    </li>
-                    <li class="primary-nav__item">
-                        <a href="#" class="navbtn navbtn--primary">Magazin</a>
-                    </li>
-                    <li class="primary-nav__item">
-                        <a href="#" class="navbtn navbtn--primary">Termine</a>
-                    </li>
-                </ul>
-
-                <button class="navbtn navbtn--drill-up">
-                    <span class="icon icon-arrow-medium-left icon--brand-primary"></span> Hauptmenü
-                </button>
-            </nav>
+                                    See: https://adrianroselli.com/2021/06/using-css-to-enforce-accessibility.html
+                                    and note in CSS file
+                                -->
+                                <a href="#" aria-current="page">Wie wir zusammenarbeiten</a>
+                            </li>
+                            <li>
+                                <a href="#">Was uns wichtig ist</a>
+                            </li>
+                            <li>
+                                <a href="#">Arbeiten bei INNOQ</a>
+                            </li>
+                        </ul>
+                    </details>
+                </sub-menu>
+            </li>
+            <li>
+                <sub-menu>
+                    <details>
+                        <summary>
+                            Magazin
+                            <span class="icon icon-chevron-down-filled icon--brand-white"></span>
+                        </summary>
+                        <ul role="list" aria-label="Magazin Untermenü">
+                            <li>
+                                <a href="#">Blog & Artikel</a>
+                            </li>
+                            <li>
+                                <a href="#">Podcasts</a>
+                            </li>
+                            <li>
+                                <a href="#">Vorträge</a>
+                            </li>
+                            <li>
+                                <a href="#">Primer</a>
+                            </li>
+                        </ul>
+                    </details>
+                </sub-menu>
+            </li>
+            <li>
+                <sub-menu>
+                    <details>
+                        <summary>
+                            Trends
+                            <span class="icon icon-chevron-down-filled icon--brand-white"></span>
+                        </summary>
+                        <ul role="list" aria-label="Trends Untermenü">
+                            <li>
+                                <a href="#">Accessibility</a>
+                            </li>
+                            <li>
+                                <a href="#">Cloud Migration</a>
+                            </li>
+                            <li>
+                                <a href="#">Data Mesh</a>
+                            </li>
+                        </ul>
+                    </details>
+                </sub-menu>
+            </li>
+            <li>
+                <sub-menu>
+                    <details>
+                        <summary>
+                            Schulungen
+                            <span class="icon icon-chevron-down-filled icon--brand-white"></span>
+                        </summary>
+                        <ul role="list" aria-label="Schulungen Untermenü">
+                            <li>
+                                <a href="#">Warum Online-Schulungen?</a>
+                            </li>
+                            <li>
+                                <a href="#">Softwarearchitektur Kickstart</a>
+                            </li>
+                            <li>
+                                <a href="#">Data Mesh</a>
+                            </li>
+                            <li>
+                                <a href="#">iSAQB CPSA-F Foundation Level</a>
+                            </li>
+                            <li>
+                                <a href="#">Accessibility</a>
+                            </li>
+                            <li>
+                                <a href="#">Blockchain</a>
+                            </li>
+                            <li>
+                                <a href="#">Cloud Native Infrastruktur</a>
+                            </li>
+                            <li>
+                                <a href="#">Cloud Migration</a>
+                            </li>
+                            <li>
+                                <a href="#">Domain-driven Design</a>
+                            </li>
+                            <li>
+                                <a href="#">DDD für Machine Learning</a>
+                            </li>
+                            <li>
+                                <a href="#">Flexible Architekturen</a>
+                            </li>
+                            <li>
+                                <a href="#">JavaScript</a>
+                            </li>
+                            <li>
+                                <a href="#">Modernisierung</a>
+                            </li>
+                            <li>
+                                <a href="#">Product Ownership</a>
+                            </li>
+                            <li>
+                                <a href="#">Remote Mob Programming</a>
+                            </li>
+                            <li>
+                                <a href="#">Software Analytics</a>
+                            </li>
+                            <li>
+                                <a href="#">Web-Architekturen</a>
+                            </li>
+                            <li>
+                                <a href="#">Web-Security</a>
+                            </li>
+                        </ul>
+                    </details>
+                </sub-menu>
+            </li>
+        </ul>
+        <div class="navigation-meta">
+            <a href="#">
+                <span lang="ru" aria-label="Ви з України та розробляєте програмнi (software) продукти? Зв’язатися з нами.">💙💛</span>
+            </a>
+            <a href="#">Kontakt</a>
+            <ul role="list" aria-label="Verfügbare Sprachen">
+                <li>
+                    <!--
+                        NOTE: use the `aria-current="true"` attribute to specify the language
+                        which is currently selected. As with `aria-current="page"`, setting
+                        this attribute correctly is necessary to obtain the visual CSS styles.
+                    -->
+                    <a lang="de" href="#" title="Zu Deutsch wechseln" aria-label="Zu Deutsch wechseln" aria-current="true">de</a>
+                </li>
+                <li>
+                    <a lang="de_CH" href="#" title="Zu Schweizerdeutsch wechseln" aria-label="Zu Schweizerdeutsch wechseln">ch</a>
+                </li>
+                <li>
+                    <a lang="en" href="#" title="Switch to English" aria-label="Switch to English">en</a>
+                </li>
+            </ul>
         </div>
-    </nav-bar>
+    </nav>
 </div>
 
