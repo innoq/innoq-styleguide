@@ -3377,17 +3377,14 @@ ul:not([class], [role=list]) > li ol,
 
 auto-submit-form {
   display: block;
-  min-width: 20rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  width: 100%;
 }
 
 auto-submit-form.enhanced [type=submit] {
   display: none;
 }
 
-.filter-section {
+.filter-group {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3398,6 +3395,14 @@ auto-submit-form.enhanced [type=submit] {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 0.5787037037rem;
+}
+
+.filter-group__item {
+  min-width: 15rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: 0;
 }
 
 .footnote-section__headline__container {
