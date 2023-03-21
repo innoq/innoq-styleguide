@@ -11,12 +11,12 @@ info-box {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+  padding: $spacer-sm $spacer-md;
   border-bottom: 3px solid $infobox-teaser-border-color;
   background-color: $infobox-teaser-background-color-closed;
   color: $infobox-teaser-text-color-closed;
   cursor: pointer;
   font-size: $font-size-xs;
-  padding: $spacer-sm $spacer-md;
 }
 
 .infobox__teaser__heading {
@@ -56,6 +56,7 @@ info-box {
     font-size: $font-size-base;
     line-height: $paragraph-line-height;
   }
+
   li::marker {
     @extend %body-font-regular;
   }
