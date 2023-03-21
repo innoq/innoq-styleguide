@@ -63,7 +63,7 @@
 .portfolio-card__text ul:not([class]) > li li::marker,
 .portfolio-card__text ol:not([class]) > li li::marker, .portfolio-card__text p::marker,
 .portfolio-card__text ul:not([class]) > li::marker,
-.portfolio-card__text ol:not([class]) > li::marker, ul:not([class], [role=list]) > li,
+.portfolio-card__text ol:not([class]) > li::marker, .infobox__content li::marker, ul:not([class], [role=list]) > li,
 .bold-list > li, ol:not([class]), dl:not([class]) dd,
 dl dd, p,
 .body-font-regular {
@@ -3459,6 +3459,7 @@ info-box {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 1rem 1.44rem;
   border-bottom: 3px solid #ff9c66;
   background-color: #f7f7f7;
   color: #004153;
@@ -3473,21 +3474,19 @@ info-box {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 0.5787037037rem;
+  padding-right: 1rem;
 }
 
 .infobox__teaser__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem 1.44rem 1rem 0;
 }
 
 .infobox__teaser__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem 0 1rem 1.44rem;
 }
 
 .icon-chevron-down {
@@ -3499,7 +3498,7 @@ info-box {
 }
 
 .infobox__content {
-  padding: 1rem 1rem 1.44rem;
+  padding: 1rem 1.44rem;
   background-color: #f7f7f7;
 }
 .infobox__content > * + * {
@@ -3510,7 +3509,6 @@ info-box {
   font-size: 1rem;
   line-height: 1.52;
 }
-
 details ::-webkit-details-marker {
   display: none;
 }
