@@ -5,20 +5,6 @@ $author-bio-image-offset: ms(14);
   color: $author-bio-text-color;
 }
 
-.author-bio--long {
-  padding: $spacer-base;
-  padding-top: $author-bio-image-offset + $spacer-sm;
-  margin-top: $author-bio-image-offset;
-  background-color: $author-bio-background-color;
-
-  .author-bio__image {
-    position: absolute;
-    top: -$author-bio-image-offset;
-    left: calc(50% - #{$avatar-size-base}/ 2);
-    margin-right: 0;
-  }
-}
-
 .author-bio__image {
   display: flex;
 
@@ -93,10 +79,25 @@ $author-bio-image-offset: ms(14);
 }
 
 // Variations
+.author-bio--long {
+  padding: $spacer-base;
+  padding-top: $author-bio-image-offset + $spacer-sm;
+  margin-top: $author-bio-image-offset;
+  background-color: $author-bio-background-color;
+
+  .author-bio__image {
+    position: absolute;
+    top: -$author-bio-image-offset;
+    left: calc(50% - #{$avatar-size-base}/ 2);
+    margin-right: 0;
+  }
+}
+
 .author-bio--short {
   @extend %link-unstyled;
 
   display: inline-flex;
+  flex-grow: 1;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: flex-start;
@@ -141,16 +142,4 @@ $author-bio-image-offset: ms(14);
   flex-wrap: wrap;
   justify-content: space-between;
   gap: $spacer-sm;
-}
-
-//
-// Breakpoints
-//
-
-@media screen and (min-width: $grid-breakpoint-xl) {
-  .author-bio {
-    &.author-bio--short {
-      width: 49%;
-    }
-  }
 }
