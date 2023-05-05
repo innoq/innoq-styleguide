@@ -11,9 +11,9 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
 
   &__title {
     position: relative;
-    max-width: $default-page-layout-content-width-md;
+    max-width: $default-page-layout-content-width-xl;
     padding: 0 $spacer-md;
-    margin-bottom: $spacer-sm;
+    margin-top: $spacer-md;
     color: $standard-header-title-color;
     font-size: $font-size-xl;
     line-height: $heading-line-height;
@@ -23,7 +23,8 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   &__subtitle {
     position: relative;
     max-width: $default-page-layout-content-width-md;
-    margin-bottom: $spacer-xs;
+    padding: 0 $spacer-md;
+    margin-top: $spacer-sm;
     color: $standard-header-subtitle-color;
     font-size: $font-size-sm;
     line-height: $heading-line-height;
@@ -35,7 +36,6 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
 
     position: relative;
     max-width: $default-page-layout-content-width-md;
-    margin-bottom: $spacer-md;
     color: $standard-header-type-color;
     font-size: $font-size-base;
     text-align: center;
@@ -68,7 +68,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   &__intro__text {
     @extend %body-font-italic;
 
-    margin-bottom: $spacer-sm;
+    margin-top: $spacer-xs;
     color: $standard-header-intro-text-color;
     font-size: $font-size-sm;
     line-height: $paragraph-line-height;
@@ -157,8 +157,8 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
   }
 
   .standard-header__intro {
-    width: $grid-page-layout-content-width-md;
-    max-width: $grid-page-layout-content-width-xl;
+    min-width: $default-page-layout-content-width-md;
+    max-width: $default-page-layout-content-width-xl;
     padding: $spacer-lg;
     margin-top: $spacer-xl;
   }
@@ -182,21 +182,11 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
 }
 
 @media screen and (min-width: $grid-breakpoint-lg) {
-  .standard-header__intro {
-    width: $grid-page-layout-content-width-lg;
-  }
-
   .standard-header__title {
     font-size: $font-size-3xl;
   }
 
   .standard-header__subtitle {
     font-size: $font-size-lg;
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-xl) {
-  .standard-header__intro {
-    width: $grid-page-layout-content-width-xl;
   }
 }
