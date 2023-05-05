@@ -8080,7 +8080,6 @@ form > * + *,
 .training-detail-page pull-quote,
 .story-detail-page pull-quote,
 .article-page-default pull-quote {
-  max-width: 45rem;
   -ms-flex-item-align: center;
       align-self: center;
 }
