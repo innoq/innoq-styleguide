@@ -86,7 +86,6 @@ $full-width-teaser-height: ms(38);
 
 @media screen and (min-width: $grid-breakpoint-md-lg) {
   .default-full-width-teaser__wrapper {
-    width: $default-page-layout-width-xl;
     max-width: $default-page-layout-content-width-xl;
     padding: $spacer-sm;
   }

@@ -4422,7 +4422,6 @@ touch-detection {
 }
 @media screen and (min-width: 60rem) {
   .default-full-width-teaser__wrapper {
-    width: 95%;
     max-width: 90.25rem;
     padding: 1rem;
   }
@@ -7132,9 +7131,9 @@ form > * + *,
 }
 .standard-header__title {
   position: relative;
-  max-width: 50rem;
+  max-width: 90.25rem;
   padding: 0 1.44rem;
-  margin-bottom: 1rem;
+  margin-top: 1.44rem;
   color: #fff;
   font-size: 2.0736rem;
   line-height: 1.2;
@@ -7143,7 +7142,8 @@ form > * + *,
 .standard-header__subtitle {
   position: relative;
   max-width: 50rem;
-  margin-bottom: 0.5787037037rem;
+  padding: 0 1.44rem;
+  margin-top: 1rem;
   color: #fff;
   font-size: 1.2rem;
   line-height: 1.2;
@@ -7152,7 +7152,6 @@ form > * + *,
 .standard-header__type {
   position: relative;
   max-width: 50rem;
-  margin-bottom: 1.44rem;
   color: #fff;
   font-size: 1rem;
   text-align: center;
@@ -7185,7 +7184,7 @@ form > * + *,
   text-align: center;
 }
 .standard-header__intro__text {
-  margin-bottom: 1rem;
+  margin-top: 0.5787037037rem;
   color: #fff;
   font-size: 1.2rem;
   line-height: 1.52;
@@ -7252,8 +7251,8 @@ form > * + *,
     font-size: 1.44rem;
   }
   .standard-header__intro {
-    width: 80%;
-    max-width: 50rem;
+    min-width: 50rem;
+    max-width: 90.25rem;
     padding: 2.985984rem;
     margin-top: 3.919104rem;
   }
@@ -7272,19 +7271,11 @@ form > * + *,
   }
 }
 @media screen and (min-width: 75rem) {
-  .standard-header__intro {
-    width: 60%;
-  }
   .standard-header__title {
     font-size: 4.29981696rem;
   }
   .standard-header__subtitle {
     font-size: 1.728rem;
-  }
-}
-@media screen and (min-width: 90.25rem) {
-  .standard-header__intro {
-    width: 50rem;
   }
 }
 .text-header {
@@ -8436,11 +8427,9 @@ form > * + *,
 
 @media screen and (min-width: 48rem) {
   .page-layout-xl--default {
-    width: 95%;
     max-width: 90.25rem;
   }
   .page-layout-md--default {
-    width: 95%;
     max-width: 50rem;
   }
   .page-layout-xl--default,

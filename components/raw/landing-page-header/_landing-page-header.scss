@@ -8,7 +8,7 @@
 
   &__body {
     display: flex;
-    max-width: $grid-page-layout-content-width-xl;
+    max-width: $default-page-layout-content-width-md;
     box-sizing: content-box;
     flex-direction: column;
     justify-content: center;

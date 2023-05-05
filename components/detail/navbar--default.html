@@ -1196,9 +1196,11 @@
     }
   }
 
-  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-page-layout-width</span>) {
+  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$default-page-layout-content-width-xl</span>) {
     <span class="hljs-variable">$logo-width</span>: <span class="hljs-number">10rem</span>; <span class="hljs-comment">// Magic Number</span>
-    <span class="hljs-variable">$side-column-width</span>: <span class="hljs-built_in">calc</span>((#{<span class="hljs-variable">$grid-page-layout-width</span>} - #{<span class="hljs-variable">$logo-width</span>} - <span class="hljs-selector-tag">var</span>(--navbar-toggler-width) * <span class="hljs-number">2</span>) * <span class="hljs-number">0.5</span>);
+    <span class="hljs-variable">$side-column-width</span>: <span class="hljs-built_in">calc</span>(
+      (#{<span class="hljs-variable">$default-page-layout-content-width-xl</span>} - #{<span class="hljs-variable">$logo-width</span>} - <span class="hljs-selector-tag">var</span>(--navbar-toggler-width) * <span class="hljs-number">2</span>) * <span class="hljs-number">0.5</span>
+    );
 
     <span class="hljs-attribute">grid-template-areas</span>:
       <span class="hljs-string">&#x27;. . . brand meta search .&#x27;</span>
@@ -8732,8 +8734,8 @@ the animations if the user has specified no preference for
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-03-21T15:06:01.625Z">
-                                3/21/2023
+                            <time datetime="2023-05-05T16:22:45.288Z">
+                                5/5/2023
                             </time>
                         
                     </dd>

@@ -515,9 +515,11 @@ $navbar-dropdown-z-index-hover: 3;
     }
   }
 
-  @media (min-width: $grid-page-layout-width) {
+  @media (min-width: $default-page-layout-content-width-xl) {
     $logo-width: 10rem; // Magic Number
-    $side-column-width: calc((#{$grid-page-layout-width} - #{$logo-width} - var(--navbar-toggler-width) * 2) * 0.5);
+    $side-column-width: calc(
+      (#{$default-page-layout-content-width-xl} - #{$logo-width} - var(--navbar-toggler-width) * 2) * 0.5
+    );
 
     grid-template-areas:
       '. . . brand meta search .'
