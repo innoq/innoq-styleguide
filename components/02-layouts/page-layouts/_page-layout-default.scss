@@ -18,13 +18,11 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   // Landing Page width, content max-width is 1440px
   .page-layout-xl--default {
-    width: $default-page-layout-width-xl;
     max-width: $default-page-layout-content-width-xl;
   }
 
   // Content Page width, content max-width is 800px
   .page-layout-md--default {
-    width: $default-page-layout-width-md;
     max-width: $default-page-layout-content-width-md;
   }
 
