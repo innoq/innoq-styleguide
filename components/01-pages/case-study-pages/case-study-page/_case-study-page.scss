@@ -1,5 +1,5 @@
 .case-study-page {
-  @extend %article-layout-simple;
+  @extend %article-layout;
 
   .customerlogo {
     display: flex;
@@ -9,7 +9,7 @@
     margin-bottom: $spacer-lg;
 
     @media screen and (min-width: $grid-breakpoint-lg-xl) {
-      grid-column: 3 / 4;
+      grid-column: 5 / 6;
     }
 
     img {
