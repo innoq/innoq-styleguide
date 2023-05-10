@@ -40,7 +40,6 @@ auto-submit-form.enhanced {
 
 .filter-group {
   display: flex;
-  width: 100%;
   flex-wrap: wrap;
   justify-content: center;
   gap: $spacer-xs;
@@ -48,6 +47,7 @@ auto-submit-form.enhanced {
 
 .filter-group__item {
   min-width: 15rem;
+  max-width: 50%;
   flex-grow: 1;
   margin-top: 0;
 }

@@ -3386,7 +3386,6 @@ auto-submit-form.enhanced [type=submit] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -3397,6 +3396,7 @@ auto-submit-form.enhanced [type=submit] {
 
 .filter-group__item {
   min-width: 15rem;
+  max-width: 50%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -7934,19 +7934,20 @@ form > * + *,
 .training-detail-page figure,
 .story-detail-page figure,
 .job-page super-quote,
-.case-study-page super-quote,
 .job-page long-quote,
-.case-study-page long-quote,
 .article-layout-simple super-quote,
 .article-layout-simple long-quote,
 .training-detail-page super-quote,
 .story-detail-page super-quote,
+.case-study-page super-quote,
 .article-page-default super-quote,
 .training-detail-page long-quote,
 .story-detail-page long-quote,
+.case-study-page long-quote,
 .article-page-default long-quote,
 .training-detail-page pull-quote,
 .story-detail-page pull-quote,
+.case-study-page pull-quote,
 .article-page-default pull-quote {
   padding-top: 2.0736rem;
   padding-bottom: 2.0736rem;
@@ -8060,7 +8061,7 @@ form > * + *,
   background: linear-gradient(180deg, #ffe6d9 0%, #f7f7f7 100%);
 }
 
-.training-detail-page, .story-detail-page, .article-page-default {
+.training-detail-page, .story-detail-page, .case-study-page, .article-page-default {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8070,20 +8071,22 @@ form > * + *,
           flex-direction: column;
   padding: 0 1rem 2.0736rem 1rem;
 }
-.training-detail-page > * + *, .story-detail-page > * + *, .article-page-default > * + * {
+.training-detail-page > * + *, .story-detail-page > * + *, .case-study-page > * + *, .article-page-default > * + * {
   margin-top: 2.0736rem;
 }
-.training-detail-page super-quote, .story-detail-page super-quote, .article-page-default super-quote,
+.training-detail-page super-quote, .story-detail-page super-quote, .case-study-page super-quote, .article-page-default super-quote,
 .training-detail-page long-quote,
 .story-detail-page long-quote,
+.case-study-page long-quote,
 .article-page-default long-quote,
 .training-detail-page pull-quote,
 .story-detail-page pull-quote,
+.case-study-page pull-quote,
 .article-page-default pull-quote {
   -ms-flex-item-align: center;
       align-self: center;
 }
-.training-detail-page .centered-content, .story-detail-page .centered-content, .article-page-default .centered-content {
+.training-detail-page .centered-content, .story-detail-page .centered-content, .case-study-page .centered-content, .article-page-default .centered-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8094,7 +8097,7 @@ form > * + *,
       -ms-flex-pack: center;
           justify-content: center;
 }
-.training-detail-page .centered-content-75, .story-detail-page .centered-content-75, .article-page-default .centered-content-75 {
+.training-detail-page .centered-content-75, .story-detail-page .centered-content-75, .case-study-page .centered-content-75, .article-page-default .centered-content-75 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8104,119 +8107,149 @@ form > * + *,
   justify-self: center;
 }
 @media screen and (min-width: 48rem) {
-  .training-detail-page, .story-detail-page, .article-page-default {
+  .training-detail-page, .story-detail-page, .case-study-page, .article-page-default {
     padding-right: 7.4300837069rem;
     padding-left: 7.4300837069rem;
   }
 }
 @supports (display: grid) {
   @media screen and (min-width: 82rem) {
-    .training-detail-page, .story-detail-page, .article-page-default {
+    .training-detail-page, .story-detail-page, .case-study-page, .article-page-default {
       display: grid;
       padding-right: 1rem;
       padding-left: 1rem;
       grid-template-columns: 1fr 11rem 5rem 2rem 50rem 2rem 5rem 11rem 1fr;
       grid-template-rows: auto;
     }
-    .training-detail-page h1, .story-detail-page h1, .article-page-default h1,
+    .training-detail-page h1, .story-detail-page h1, .case-study-page h1, .article-page-default h1,
     .training-detail-page h2,
     .story-detail-page h2,
+    .case-study-page h2,
     .article-page-default h2,
     .training-detail-page h3,
     .story-detail-page h3,
+    .case-study-page h3,
     .article-page-default h3,
     .training-detail-page h4,
     .story-detail-page h4,
+    .case-study-page h4,
     .article-page-default h4,
     .training-detail-page h5,
     .story-detail-page h5,
+    .case-study-page h5,
     .article-page-default h5,
     .training-detail-page h6,
     .story-detail-page h6,
+    .case-study-page h6,
     .article-page-default h6,
     .training-detail-page p,
     .story-detail-page p,
+    .case-study-page p,
     .article-page-default p,
     .training-detail-page ul,
     .story-detail-page ul,
+    .case-study-page ul,
     .article-page-default ul,
     .training-detail-page ol,
     .story-detail-page ol,
+    .case-study-page ol,
     .article-page-default ol,
     .training-detail-page check-list,
     .story-detail-page check-list,
+    .case-study-page check-list,
     .article-page-default check-list,
     .training-detail-page bold-list,
     .story-detail-page bold-list,
+    .case-study-page bold-list,
     .article-page-default bold-list,
     .training-detail-page table,
     .story-detail-page table,
+    .case-study-page table,
     .article-page-default table,
     .training-detail-page blockquote,
     .story-detail-page blockquote,
+    .case-study-page blockquote,
     .article-page-default blockquote,
     .training-detail-page super-quote,
     .story-detail-page super-quote,
+    .case-study-page super-quote,
     .article-page-default super-quote,
     .training-detail-page long-quote,
     .story-detail-page long-quote,
+    .case-study-page long-quote,
     .article-page-default long-quote,
     .training-detail-page pull-quote,
     .story-detail-page pull-quote,
+    .case-study-page pull-quote,
     .article-page-default pull-quote,
     .training-detail-page info-box,
     .story-detail-page info-box,
+    .case-study-page info-box,
     .article-page-default info-box,
     .training-detail-page pre,
     .story-detail-page pre,
+    .case-study-page pre,
     .article-page-default pre,
     .training-detail-page code,
     .story-detail-page code,
+    .case-study-page code,
     .article-page-default code,
     .training-detail-page wall-of-consent,
     .story-detail-page wall-of-consent,
+    .case-study-page wall-of-consent,
     .article-page-default wall-of-consent,
     .training-detail-page hr,
     .story-detail-page hr,
+    .case-study-page hr,
     .article-page-default hr,
     .training-detail-page .author-bio,
     .story-detail-page .author-bio,
+    .case-study-page .author-bio,
     .article-page-default .author-bio,
     .training-detail-page .author-section,
     .story-detail-page .author-section,
+    .case-study-page .author-section,
     .article-page-default .author-section,
     .training-detail-page .footnote-section,
     .story-detail-page .footnote-section,
+    .case-study-page .footnote-section,
     .article-page-default .footnote-section,
     .training-detail-page .footnotes,
     .story-detail-page .footnotes,
+    .case-study-page .footnotes,
     .article-page-default .footnotes,
     .training-detail-page .centered-content,
     .story-detail-page .centered-content,
+    .case-study-page .centered-content,
     .article-page-default .centered-content,
     .training-detail-page .zigzag,
     .story-detail-page .zigzag,
+    .case-study-page .zigzag,
     .article-page-default .zigzag,
     .training-detail-page .centered-content-75,
     .story-detail-page .centered-content-75,
+    .case-study-page .centered-content-75,
     .article-page-default .centered-content-75,
     .training-detail-page figure,
     .story-detail-page figure,
+    .case-study-page figure,
     .article-page-default figure,
     .training-detail-page .two-column-image-divider-asymmetric,
     .story-detail-page .two-column-image-divider-asymmetric,
+    .case-study-page .two-column-image-divider-asymmetric,
     .article-page-default .two-column-image-divider-asymmetric,
     .training-detail-page .case-list-teaser,
     .story-detail-page .case-list-teaser,
+    .case-study-page .case-list-teaser,
     .article-page-default .case-list-teaser {
       grid-column: 5/6;
     }
-    .training-detail-page .toc, .story-detail-page .toc, .article-page-default .toc {
+    .training-detail-page .toc, .story-detail-page .toc, .case-study-page .toc, .article-page-default .toc {
       align-self: start;
       grid-column: 2/4;
       grid-row: 2/100;
     }
-    .training-detail-page .info-note, .story-detail-page .info-note, .article-page-default .info-note {
+    .training-detail-page .info-note, .story-detail-page .info-note, .case-study-page .info-note, .article-page-default .info-note {
       align-self: start;
       grid-column: 7/9;
       grid-row: 2/100;
@@ -8224,7 +8257,7 @@ form > * + *,
   }
 }
 
-.job-page, .case-study-page,
+.job-page,
 .article-layout-simple {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8235,20 +8268,19 @@ form > * + *,
           flex-direction: column;
   padding: 0 1rem 2.0736rem 1rem;
 }
-.job-page > * + *, .case-study-page > * + *,
+.job-page > * + *,
 .article-layout-simple > * + * {
   margin-top: 1.44rem;
 }
-.job-page super-quote, .case-study-page super-quote,
+.job-page super-quote,
 .job-page long-quote,
-.case-study-page long-quote,
 .article-layout-simple super-quote,
 .article-layout-simple long-quote {
   max-width: 45rem;
   -ms-flex-item-align: center;
       align-self: center;
 }
-.job-page .centered-content, .case-study-page .centered-content,
+.job-page .centered-content,
 .article-layout-simple .centered-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8260,7 +8292,7 @@ form > * + *,
       -ms-flex-pack: center;
           justify-content: center;
 }
-.job-page .centered-content-75, .case-study-page .centered-content-75,
+.job-page .centered-content-75,
 .article-layout-simple .centered-content-75 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8271,7 +8303,7 @@ form > * + *,
   justify-self: center;
 }
 @media screen and (min-width: 48rem) {
-  .job-page, .case-study-page,
+  .job-page,
   .article-layout-simple {
     padding-right: 7.4300837069rem;
     padding-left: 7.4300837069rem;
@@ -8279,7 +8311,7 @@ form > * + *,
 }
 @supports (display: grid) {
   @media screen and (min-width: 82rem) {
-    .job-page, .case-study-page,
+    .job-page,
     .article-layout-simple {
       display: grid;
       padding-right: 1rem;
@@ -8287,61 +8319,34 @@ form > * + *,
       grid-template-columns: 1fr 7rem 50rem 7rem 1fr;
       grid-template-rows: auto;
     }
-    .job-page h1, .case-study-page h1,
+    .job-page h1,
     .job-page h2,
-    .case-study-page h2,
     .job-page h3,
-    .case-study-page h3,
     .job-page h4,
-    .case-study-page h4,
     .job-page h5,
-    .case-study-page h5,
     .job-page h6,
-    .case-study-page h6,
     .job-page p,
-    .case-study-page p,
     .job-page ul,
-    .case-study-page ul,
     .job-page ol,
-    .case-study-page ol,
     .job-page check-list,
-    .case-study-page check-list,
     .job-page bold-list,
-    .case-study-page bold-list,
     .job-page table,
-    .case-study-page table,
     .job-page blockquote,
-    .case-study-page blockquote,
     .job-page super-quote,
-    .case-study-page super-quote,
     .job-page long-quote,
-    .case-study-page long-quote,
     .job-page pull-quote,
-    .case-study-page pull-quote,
     .job-page info-box,
-    .case-study-page info-box,
     .job-page pre,
-    .case-study-page pre,
     .job-page code,
-    .case-study-page code,
     .job-page wall-of-consent,
-    .case-study-page wall-of-consent,
     .job-page hr,
-    .case-study-page hr,
     .job-page .author-bio,
-    .case-study-page .author-bio,
     .job-page .author-section,
-    .case-study-page .author-section,
     .job-page .footnote-section,
-    .case-study-page .footnote-section,
     .job-page .footnotes,
-    .case-study-page .footnotes,
     .job-page .centered-content,
-    .case-study-page .centered-content,
     .job-page .centered-content-75,
-    .case-study-page .centered-content-75,
     .job-page .zigzag,
-    .case-study-page .zigzag,
     .article-layout-simple h1,
     .article-layout-simple h2,
     .article-layout-simple h3,
@@ -8372,13 +8377,10 @@ form > * + *,
     .article-layout-simple .zigzag {
       grid-column: 3/4;
     }
-    .job-page figure, .case-study-page figure,
+    .job-page figure,
     .job-page .two-column-image-divider-asymmetric,
-    .case-study-page .two-column-image-divider-asymmetric,
     .job-page .case-list-teaser,
-    .case-study-page .case-list-teaser,
     .job-page .topic-teaser,
-    .case-study-page .topic-teaser,
     .article-layout-simple figure,
     .article-layout-simple .two-column-image-divider-asymmetric,
     .article-layout-simple .case-list-teaser,
@@ -8488,7 +8490,7 @@ form > * + *,
 }
 @media screen and (min-width: 82rem) {
   .case-study-page .customerlogo {
-    grid-column: 3/4;
+    grid-column: 5/6;
   }
 }
 .case-study-page .customerlogo img {

@@ -183,14 +183,16 @@
         
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;demo demo--accented&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">auto-submit-form</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;filter-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;filter&quot;</span>&gt;</span>Tag wählen:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;filter&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;filter&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;filter-select&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;all&quot;</span>&gt;</span>All<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;category1&quot;</span>&gt;</span>Category 1<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;category2&quot;</span>&gt;</span>Category 2<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;category3&quot;</span>&gt;</span>Category 3<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;filter-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;filter-group__item&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;filter-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;filter&quot;</span>&gt;</span>Tag wählen:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;filter&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;filter&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;filter-select&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;all&quot;</span>&gt;</span>All<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;category1&quot;</span>&gt;</span>Category 1<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;category2&quot;</span>&gt;</span>Category 2<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;category3&quot;</span>&gt;</span>Category 3<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--xsmall&quot;</span>&gt;</span>Filtern<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">auto-submit-form</span>&gt;</span>
@@ -236,14 +238,16 @@
     <code class="Code Code--lang-html hljs">
         <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;demo demo--accented&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">auto-submit-form</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-name">form</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;filter-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;filter&quot;</span>&gt;</span>Tag wählen:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;filter&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;filter&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;filter-select&quot;</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;all&quot;</span>&gt;</span>All<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;category1&quot;</span>&gt;</span>Category 1<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;category2&quot;</span>&gt;</span>Category 2<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;category3&quot;</span>&gt;</span>Category 3<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;filter-group&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;filter-group__item&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;filter-label&quot;</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;filter&quot;</span>&gt;</span>Tag wählen:<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">select</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;filter&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;filter&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;filter-select&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;all&quot;</span>&gt;</span>All<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;category1&quot;</span>&gt;</span>Category 1<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;category2&quot;</span>&gt;</span>Category 2<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">option</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;category3&quot;</span>&gt;</span>Category 3<span class="hljs-tag">&lt;/<span class="hljs-name">option</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">select</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn--xsmall&quot;</span>&gt;</span>Filtern<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">auto-submit-form</span>&gt;</span>
@@ -363,7 +367,6 @@ auto-submit-<span class="hljs-selector-tag">form</span><span class="hljs-selecto
 
 <span class="hljs-selector-class">.filter-group</span> {
   <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
   <span class="hljs-attribute">flex-wrap</span>: wrap;
   <span class="hljs-attribute">justify-content</span>: center;
   <span class="hljs-attribute">gap</span>: <span class="hljs-variable">$spacer-xs</span>;
@@ -371,6 +374,7 @@ auto-submit-<span class="hljs-selector-tag">form</span><span class="hljs-selecto
 
 <span class="hljs-selector-class">.filter-group__item</span> {
   <span class="hljs-attribute">min-width</span>: <span class="hljs-number">15rem</span>;
+  <span class="hljs-attribute">max-width</span>: <span class="hljs-number">50%</span>;
   <span class="hljs-attribute">flex-grow</span>: <span class="hljs-number">1</span>;
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
 }
@@ -390,7 +394,7 @@ auto-submit-<span class="hljs-selector-tag">form</span><span class="hljs-selecto
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">983 Bytes</span>
+                    <span class="Meta-value">986 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -1609,7 +1613,7 @@ auto-submit-<span class="hljs-selector-tag">form</span><span class="hljs-selecto
 <div class="Status-dots">
 
 
-<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -7664,8 +7668,8 @@ auto-submit-<span class="hljs-selector-tag">form</span><span class="hljs-selecto
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-05-05T17:08:07.899Z">
-                                5/5/2023
+                            <time datetime="2023-05-10T15:01:56.437Z">
+                                5/10/2023
                             </time>
                         
                     </dd>
