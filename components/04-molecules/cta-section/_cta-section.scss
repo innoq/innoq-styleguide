@@ -25,7 +25,7 @@ $cta-section-image-offset: ms(22);
   position: relative;
   width: 100%;
   padding: $cta-section-image-offset + $spacer-sm $spacer-base $spacer-base $spacer-base;
-  margin-top: $cta-section-image-offset !important;
+  margin-top: $cta-section-image-offset;
   background-color: $brand-primary-50;
   color: $cta-section-long-text-color;
 
