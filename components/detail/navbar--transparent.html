@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.1.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.1.1" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.1.0" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.1.1" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.1.0" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.1.1" type="text/css">
 
 
 <title>Navbar: Transparent | INNOQ Styleguide</title>
@@ -1432,7 +1432,7 @@
     <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-63ceda8eddf9f8c6211b8802a75058ac-panel-notes">
     <div class="Prose Prose--condensed">
         
-        <h2 id="navbar-v2">Navbar V2</h2>
+        <h2>Navbar V2</h2>
 <p>This version of the INNOQ navbar has been built from the ground up with
 accessibility in mind. The HTML structure for the navigation bar was tested
 with a screenreader before the actual implementation with HTML, CSS and
@@ -1444,7 +1444,7 @@ Many thanks to Andreas Maier for his support with the testing.</p>
 functionality and improves the component without removing necessary
 functionality. The following sections describe the design decisions that were
 made in each layer.</p>
-<h3 id="html-providing-the-base-functionality">HTML: Providing the base functionality</h3>
+<h3>HTML: Providing the base functionality</h3>
 <p>The navigation consists of an unordered list (<code>&lt;ul&gt;</code>) of elements containing
 either a link (<code>&lt;a&gt;</code>) to a page or a <code>&lt;details&gt;</code> disclosure widget containing
 an unordered list of links representing the submenu for that specific topic.
@@ -1465,7 +1465,7 @@ of options. The content of the topic page was virtually identical to the list
 of links provided by the submenu. In accessibility testing, this construct was
 found to be confusing because both the link and the toggle button appear as
 interactive elements in the accessibility tree (with almost identical
-functionality). This finding was in alignment with other user feedback – when
+functionality). This finding was in alignment with other user feedback -- when
 clicking on a link in the navbar, users expected a submenu dropdown to open and
 were surprised when they instead navigated to a completely different page. For
 these reasons, the link to the topic page was completely removed from the
@@ -1493,7 +1493,7 @@ improve the accessibility of the component. These include:</p>
 <ul>
 <li>Each unordered list of links has an <code>aria-label</code> attribute to let assistive
 technologies know what the list contains (e.g. the list of links for the
-submenu “Services” will be labelled <code>Services submenu</code>).</li>
+submenu &quot;Services&quot; will be labelled <code>Services submenu</code>).</li>
 <li>The link to the current page in the navigation is marked with an
 <code>aria-current=&quot;page&quot;</code> attribute.</li>
 <li>The link to the current language that is selected for the site is marked with
@@ -1504,7 +1504,7 @@ list is still exposed as a list to assistive technologies even when we remove
 the list styling and change the <code>display</code> property.
 See: <a href="https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html">https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html</a></li>
 </ul>
-<h3 id="css-adding-the-design">CSS: Adding the design</h3>
+<h3>CSS: Adding the design</h3>
 <p>The CSS layer adds the INNOQ corporate design on top of the HTML bones of the
 navbar. The navbar was developed using a mobile-first approach to ensure that
 it works for any given viewport and device.</p>
@@ -1522,7 +1522,7 @@ focus style.</p>
 mode. Our focus style uses a combination of the <code>border</code> and <code>outline</code> property
 in order to draw a two-colored ring around an interactive element. In order to
 reduce layout shift, all interactive elements have a transparent <code>border</code> by
-default, but we remove it when <code>forced-colors</code> are active so that it doesn’t
+default, but we remove it when <code>forced-colors</code> are active so that it doesn&#39;t
 show up everywhere. We also add a small margin around the interactive elements
 to ensure that the focus ring is correctly shown. We also determined that the
 search icon and INNOQ logo are not consistently shown when a <code>forced-colors</code>
@@ -1530,7 +1530,7 @@ mode is activated, because we no longer control the color of the background of
 the navbar. For this reason, we display the <code>&lt;span&gt;</code> labels for these images
 when <code>forced-colors</code> mode is activated, even though these are visually hidden
 for other user agents.</p>
-<h3 id="javascript-adding-enhancements">JavaScript: Adding enhancements</h3>
+<h3>JavaScript: Adding enhancements</h3>
 <p>The navbar includes two JavaScript components for enhancing the navbar.</p>
 <p>By default, on smaller viewports the main navigation topics will always be
 visible and vertically stacked. When JavaScript is activated, the
@@ -1539,11 +1539,11 @@ expand and collapse the navbar. The non-JavaScript version does take up some
 vertical real estate, but because the desired layout differs quite a bit from
 what a <code>&lt;details&gt;</code> element offers and because the main navigation only
 includes six main navigation items, the extra JavaScript that would have been
-required to progressively enhance the <code>&lt;details&gt;</code> element wasn’t deemed to be
+required to progressively enhance the <code>&lt;details&gt;</code> element wasn&#39;t deemed to be
 worth it.</p>
 <p>The <code>&lt;sub-menu&gt;</code> component wraps around the <code>&lt;details&gt;</code> element containing the
 submenu and progressively enhances it to replace the <code>&lt;details&gt;</code> element with
-the more “conventional” toggle button which then expands and collapses the
+the more &quot;conventional&quot; toggle button which then expands and collapses the
 menu. This enhancement is primarily because we then have more control over the
 HTML DOM and can expand the menu on larger viewports when hovering over the
 toggle button which is a behavior that users will expect. It also makes it
@@ -8738,8 +8738,8 @@ the animations if the user has specified no preference for
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-05-10T15:01:56.437Z">
-                                5/10/2023
+                            <time datetime="2023-05-12T14:37:04.586Z">
+                                5/12/2023
                             </time>
                         
                     </dd>
@@ -8763,7 +8763,7 @@ the animations if the user has specified no preference for
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.1.0"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.1.1"></script>
 
 
 
