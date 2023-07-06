@@ -75,9 +75,9 @@
     color: $brand-primary;
 
     &:focus,
-      &:hover {
-        background-color: $brand-text-light;
-      }
+    &:hover {
+      background-color: $brand-text-light;
+    }
   }
 }
 
