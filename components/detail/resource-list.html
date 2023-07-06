@@ -207,7 +207,7 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;resource-list-item__body&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;resource-list-item__title&quot;</span>&gt;</span>Lustiger Titel, der etwas länger ist<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;resource-list-item__caption&quot;</span>&gt;</span> Eine Beschreibung des Primers, der sehr interessant und
-                    unterhaltsam ist Eine Beschreibung des Primers, der sehr interessant und unterhaltsam ist<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    unterhaltsam ist. Sogar mit <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>, der sehr interessant und unterhaltsam ist.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;resource-list-item__author&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Autorin Eins<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
@@ -310,7 +310,7 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;resource-list-item__body&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;resource-list-item__title&quot;</span>&gt;</span>Lustiger Titel, der etwas länger ist<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;resource-list-item__caption&quot;</span>&gt;</span> Eine Beschreibung des Primers, der sehr interessant und
-                    unterhaltsam ist Eine Beschreibung des Primers, der sehr interessant und unterhaltsam ist<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    unterhaltsam ist. Sogar mit <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Link<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>, der sehr interessant und unterhaltsam ist.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;resource-list-item__author&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Autorin Eins<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
@@ -492,6 +492,15 @@
 
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-md</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
+
+  &gt; <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$brand-primary</span>;
+
+    &amp;<span class="hljs-selector-pseudo">:focus</span>,
+    &amp;<span class="hljs-selector-pseudo">:hover</span> {
+      <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$brand-text-light</span>;
+    }
+  }
 }
 
 <span class="hljs-selector-class">.resource-list-item__footer</span> {
@@ -535,7 +544,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.7 KB</span>
+                    <span class="Meta-value">1.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -7773,8 +7782,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-05-12T14:37:04.586Z">
-                                5/12/2023
+                            <time datetime="2023-07-06T14:06:37.363Z">
+                                7/6/2023
                             </time>
                         
                     </dd>

@@ -3896,6 +3896,12 @@ super-quote > blockquote > p,
   margin-bottom: 1.44rem;
   font-size: 1rem;
 }
+.resource-list-item__caption > a {
+  color: #ff9c66;
+}
+.resource-list-item__caption > a:focus, .resource-list-item__caption > a:hover {
+  background-color: #fff;
+}
 
 .resource-list-item__footer {
   display: -webkit-box;
