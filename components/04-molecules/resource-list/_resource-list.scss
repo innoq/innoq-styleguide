@@ -70,6 +70,15 @@
 
   margin-bottom: $spacer-md;
   font-size: $font-size-base;
+
+  > a {
+    color: $brand-primary;
+
+    &:focus,
+      &:hover {
+        background-color: $brand-text-light;
+      }
+  }
 }
 
 .resource-list-item__footer {
