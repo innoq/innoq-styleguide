@@ -41,6 +41,7 @@
 @import '../components/05-atoms/form-elements/radio/radio';
 
 // Media atoms
+@import '../components/05-atoms/media/audio-player/audio-player';
 @import '../components/05-atoms/media/avatar/avatar';
 @import '../components/05-atoms/media/embed-responsive/embed-responsive';
 @import '../components/05-atoms/media/figure/figure';
@@ -85,6 +86,7 @@
 @import '../components/04-molecules/content-separator/content-separator';
 @import '../components/04-molecules/cta-section/cta-section';
 @import '../components/04-molecules/date-location-section/date-location-section';
+@import '../components/04-molecules/detail-item/detail-item';
 @import '../components/04-molecules/dropdown/dropdown';
 @import '../components/04-molecules/download-section-feature/download-section-feature';
 @import '../components/04-molecules/dialog-banner/dialog-banner';
@@ -182,6 +184,7 @@
 // PAGES
 //
 @import '../components/01-pages/aggregator-page/aggregator-page';
+@import '../components/01-pages/book-detail-page/book-detail-page';
 @import '../components/01-pages/article-page-default/article-page-default';
 @import '../components/01-pages/case-study-pages/case-study-overview/case-study-overview';
 @import '../components/01-pages/case-study-pages/case-study-page/case-study-page';

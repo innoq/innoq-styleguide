@@ -1,0 +1,130 @@
+.detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-item__image {
+  z-index: 2;
+
+  display: block;
+
+  width: 90%;
+  max-width: 450px;
+  margin: 0 auto $spacer-sm;
+  margin-bottom: -$spacer-xxl;
+
+  border: 3px solid $brand-white;
+}
+
+.detail-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100%;
+  padding: $spacer-md $spacer-sm;
+
+  color: $brand-text-light;
+
+  background-color: $brand-primary;
+}
+
+.detail-item__body {
+  padding: $spacer-xl * 2 $spacer-md $spacer-md;
+}
+
+.detail-item__title {
+  color: $brand-secondary;
+}
+
+.detail-item__caption {
+  > * + * {
+    margin-top: $spacer-md;
+  }
+
+  > * {
+    @extend %heading-font-regular;
+
+    color: $brand-secondary;
+  }
+
+  a:not([class]) {
+    color: $conclusion-link-color;
+    border-bottom: 1px solid $conclusion-link-color;
+
+    &:hover {
+      color: $conclusion-link-hover-color;
+      border-bottom: 1px solid $conclusion-background-color;
+    }
+  }
+
+  ul {
+    margin-left: $spacer-sm;
+
+    > li {
+      padding-left: $spacer-xs;
+    }
+
+    li::marker {
+      color: $brand-secondary;
+    }
+    /* stylelint-disable-next-line selector-max-compound-selectors */
+    > li,
+    > li p {
+      @extend %heading-font-regular;
+
+      /* stylelint-disable-next-line selector-max-compound-selectors */
+      li::marker {
+        color: $brand-secondary;
+      }
+    }
+  }
+
+  code {
+    background-color: $conclusion-background-color;
+  }
+}
+
+.detail-item__author {
+  @extend %heading-font-regular;
+
+  margin-top: $spacer-lg;
+  padding-left: 0;
+  font-size: $font-size-base;
+  color: $brand-secondary;
+
+  > li {
+    @extend %list-unstyled;
+
+    margin-bottom: $spacer-xxs;
+
+    > a {
+      @extend %link-unstyled;
+
+      &:focus,
+      &:hover {
+        @extend %heading-font-bold;
+
+        background-color: $brand-text-light;
+      }
+    }
+  }
+}
+
+.detail-item__footer {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+
+  .link-teaser {
+    margin-left: $spacer-md;
+    color: $brand-text-light;
+    border-bottom: 3px solid $brand-secondary;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .detail-item__title {
+    font-size: $font-size-xxl;
+  }
+}

@@ -1,0 +1,23 @@
+audio-player {
+  @extend %heading-font-regular;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  font-size: $font-size-xxs;
+  line-height: $paragraph-line-height-sm;
+
+  label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $spacer-sm 0;
+  }
+
+  @media screen and (min-width: $grid-breakpoint-md) {
+    font-size: $font-size-base;
+  }
+}

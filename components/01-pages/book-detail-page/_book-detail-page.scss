@@ -1,0 +1,17 @@
+// TODO: CLean this up
+.btn--cta--color-swap {
+  margin-bottom: $spacer-lg;
+  color: $brand-primary;
+  background-color: $brand-secondary;
+
+  &:hover,
+  &:focus {
+    color: $brand-secondary;
+    background-color: $brand-secondary;
+    border-color: $brand-secondary;
+  }
+
+  .btn {
+    margin-left: 0;
+  }
+}

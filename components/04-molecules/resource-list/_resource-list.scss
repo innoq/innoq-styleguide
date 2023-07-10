@@ -70,6 +70,13 @@
   color: $brand-text-light;
 }
 
+.resource-list-item__title a {
+  &:hover,
+  &:focus {
+    color: $brand-primary;
+  }
+}
+
 .resource-list-item__caption {
   @extend %heading-font-regular;
 
