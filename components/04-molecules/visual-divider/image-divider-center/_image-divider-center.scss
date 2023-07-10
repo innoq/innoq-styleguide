@@ -19,21 +19,25 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
 .image-divider-center__textbox {
   position: relative;
   top: $divider-center-textbox-offset;
+
   display: flex;
-  max-width: 630px;
   flex-direction: column;
   align-items: center;
+
+  max-width: 630px;
   padding: $spacer-md;
-  background-color: $image-divider-center-bg-color;
+
   text-align: center;
+
+  background-color: $image-divider-center-bg-color;
 }
 
 .image-divider-center__textbox__text {
   @extend %body-font-italic;
 
   margin-top: $spacer-md;
-  color: $image-divider-center-color;
   font-size: $font-size-sm;
+  color: $image-divider-center-color;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

@@ -10,13 +10,13 @@
 }
 
 body {
-  background-color: $brand-background;
   color: $brand-text;
+  background-color: $brand-background;
 }
 
 ::selection {
-  background-color: $link-hover-color-light;
   color: $brand-text;
+  background-color: $link-hover-color-light;
 }
 
 main {
@@ -25,5 +25,5 @@ main {
 
 // Workaround for Chrome hyphens bug
 html {
-  -webkit-hyphenate-character: '-';
+  hyphenate-character: '-';
 }

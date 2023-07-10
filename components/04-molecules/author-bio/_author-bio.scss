@@ -44,9 +44,11 @@ $author-bio-image-offset: ms(14);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: $spacer-sm;
-  border-top: 1px solid $author-bio-social-border-color;
+
   margin-top: $spacer-sm;
+  padding-top: $spacer-sm;
+
+  border-top: 1px solid $author-bio-social-border-color;
 }
 
 .author-bio__social-profile {
@@ -69,8 +71,8 @@ $author-bio-image-offset: ms(14);
     @extend %heading-font-regular;
 
     font-size: $font-size-base;
-    hyphens: none;
     line-height: $paragraph-line-height;
+    hyphens: none;
 
     a {
       color: $author-bio-text-color;
@@ -80,9 +82,9 @@ $author-bio-image-offset: ms(14);
 
 // Variations
 .author-bio--long {
+  margin-top: $author-bio-image-offset;
   padding: $spacer-base;
   padding-top: $author-bio-image-offset + $spacer-sm;
-  margin-top: $author-bio-image-offset;
   background-color: $author-bio-background-color;
 
   .author-bio__image {
@@ -140,6 +142,6 @@ $author-bio-image-offset: ms(14);
 .author-section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   gap: $spacer-sm;
+  justify-content: space-between;
 }

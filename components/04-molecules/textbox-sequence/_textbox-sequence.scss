@@ -3,23 +3,28 @@
   @extend %manual-hyphenation;
 
   display: inline;
-  padding: ms(-16);
+
   margin-bottom: $spacer-base;
-  background-color: $brand-primary;
-  box-decoration-break: clone;
-  box-shadow: $spacer-xxs 0 0 $brand-primary, -$spacer-xxs 0 0 $brand-primary;
-  color: $service-intro-text-color;
+  padding: ms(-16);
+
   font-size: $font-size-lg;
   line-height: 1.38; //magic number
+  color: $service-intro-text-color;
+
+  background-color: $brand-primary;
+  box-shadow:
+    $spacer-xxs 0 0 $brand-primary,
+    -$spacer-xxs 0 0 $brand-primary;
+  box-decoration-break: clone;
 }
 
 .textbox-sequence__text {
   @extend %heading-font-regular;
 
   margin: $spacer-xs 0 $spacer-sm 0;
-  color: $service-intro-text-color;
   font-size: $font-size-base;
   line-height: $paragraph-line-height;
+  color: $service-intro-text-color;
 
   a {
     color: $service-intro-text-color;
@@ -28,11 +33,13 @@
 
 .textbox-sequence__wrapper {
   display: flex;
-  width: 100%;
   flex-direction: column;
-  padding: 0 $spacer-sm;
-  background-color: $brand-white;
   gap: 2rem;
+
+  width: 100%;
+  padding: 0 $spacer-sm;
+
+  background-color: $brand-white;
 }
 
 .textbox-sequence__icon--bottomleft,
@@ -44,10 +51,11 @@
 @media screen and (min-width: $grid-breakpoint-md-lg) {
   .textbox-sequence__wrapper {
     display: grid;
-    padding: 0;
     grid-gap: 2rem;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(auto, 10rem);
+
+    padding: 0;
   }
 
   .textbox-sequence__text {
@@ -56,45 +64,47 @@
 
   .textbox-sequence__box--a {
     position: relative;
-    align-self: start;
     grid-column: 1 / 3;
     grid-row: 2 / 4;
+    align-self: start;
   }
 
   .textbox-sequence__box--b {
     position: relative;
-    align-self: start;
     grid-column: 3 / 5;
     grid-row: 1 / 3;
+    align-self: start;
   }
 
   .textbox-sequence__box--c {
     position: relative;
-    align-self: start;
     grid-column: 5 / 7;
     grid-row: 2 / 6;
+    align-self: start;
   }
 
   .textbox-sequence__box--d {
     position: relative;
-    align-self: start;
     grid-column: 3 / 5;
     grid-row: 5 / 7;
+    align-self: start;
   }
 
   .textbox-sequence__box--e {
     position: relative;
-    align-self: start;
     grid-column: 1 / 3;
     grid-row: 6 / 8;
+    align-self: start;
   }
 
   .textbox-sequence__box--f {
     position: relative;
-    align-self: start;
-    margin-top: -40px;
+
     grid-column: 3 / 5;
     grid-row: 8 / 10;
+    align-self: start;
+
+    margin-top: -40px;
   }
 
   .textbox-sequence__icon--topright {

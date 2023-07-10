@@ -4,8 +4,8 @@
   @extend %list-unstyled;
 
   display: grid;
-  width: 100%;
   grid-gap: $spacer-sm;
+  width: 100%;
 }
 
 .tile-grid-alternating-1-4 {

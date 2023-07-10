@@ -3,33 +3,34 @@
 
   &__body {
     max-width: $default-page-layout-content-width-md;
-    padding: $spacer-sm;
     margin: $spacer-lg auto;
+    padding: $spacer-sm;
     text-align: center;
   }
 
   &__title {
     margin-bottom: $spacer-base;
-    color: $text-header-color;
     font-size: $font-size-xl;
+    color: $text-header-color;
   }
 
   &__text {
     @extend %body-font-italic;
 
     margin-bottom: $spacer-base;
-    color: $text-header-color;
     font-size: $font-size-sm;
     line-height: $paragraph-line-height;
+    color: $text-header-color;
   }
 
   &__divider {
     width: ms(25);
     height: 4px;
-    border: 0;
     margin-top: $spacer-base;
     margin-bottom: $spacer-base;
+
     background-color: $text-header-color;
+    border: 0;
   }
 }
 

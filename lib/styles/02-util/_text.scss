@@ -1,3 +1,4 @@
+@use 'sass:string';
 //
 // Functions
 //
@@ -11,7 +12,7 @@
 // @param {String} $replace ('') - New value
 // @return {String} - Updated string
 @function str-replace($string, $search, $replace: '') {
-  $index: str-index($string, $search);
+  $index: string.index($string, $search);
 
   @if $index {
     @return str-slice($string, 1, $index - 1) + $replace +
@@ -31,16 +32,16 @@
 
 %manual-hyphenation {
   hyphens: manual;
-  overflow-wrap: break-word;
   word-wrap: normal;
+  overflow-wrap: break-word;
 }
 
 // Links
 .link-unstyled,
 %link-unstyled {
-  border-bottom: 0;
   color: inherit;
   text-decoration: none;
+  border-bottom: 0;
 
   &:hover,
   &:focus {
@@ -79,14 +80,18 @@
   color: $text-color;
 
   &::after {
+    content: '';
+
     position: absolute;
     z-index: -1;
     top: 0;
     left: 0;
+
     width: 0%;
     height: 100%;
+
     background-color: $fill-color;
-    content: '';
+
     transition: standard-transition(width);
   }
 
@@ -119,11 +124,11 @@
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .punch-in,
   %punch-in {
+    color: transparent;
+    background-position: center;
     /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-background-clip: text;
     background-clip: text;
-    background-position: center;
-    color: transparent;
   }
 }
 

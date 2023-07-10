@@ -10,10 +10,11 @@
 
 .podcast-grid {
   display: grid;
-  width: 100%;
   grid-auto-rows: 1fr;
   grid-gap: $spacer-sm;
   grid-template-columns: 1fr;
+
+  width: 100%;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

@@ -25,11 +25,13 @@ ol:not([class]) {
     &::before {
       @extend %heading-font-bold;
 
-      padding-right: $spacer-xxs;
-      color: $bullet-list-color-secondary;
       content: counter(number);
+
+      padding-right: $spacer-xxs;
+
       font-size: $font-size-base;
       line-height: $paragraph-line-height;
+      color: $bullet-list-color-secondary;
 
       @media screen and (min-width: $grid-breakpoint-md) {
         font-size: $font-size-sm;

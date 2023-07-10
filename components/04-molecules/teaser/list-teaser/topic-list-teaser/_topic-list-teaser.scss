@@ -4,16 +4,19 @@ $topic-teaser-height: ms(36);
   @extend %block-link;
 
   display: flex;
-  min-height: $topic-teaser-height;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  min-height: $topic-teaser-height;
   padding: $spacer-md;
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   color: $topic-teaser-body-color;
   text-align: center;
+
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
 }
 
 a.topic-teaser {
@@ -36,8 +39,8 @@ a.topic-teaser {
   @extend %h2;
 
   margin-bottom: $spacer-md;
-  color: $topic-teaser-title-color;
   font-size: $font-size-xl;
+  color: $topic-teaser-title-color;
 }
 
 .topic-teaser__caption {

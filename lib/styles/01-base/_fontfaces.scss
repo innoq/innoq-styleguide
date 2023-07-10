@@ -2,65 +2,65 @@ $cdn: 'https://www.innoq.com/assets';
 $cachebuster: '2'; // Please increment if you changed one (or more) of the font files
 
 @font-face {
-  font-display: swap;
   font-family: FreightTextPro;
-  font-style: normal;
   font-weight: bold;
+  font-style: normal;
+  font-display: swap;
   src: url('#{$cdn}/350ED6_0_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 @font-face {
-  font-display: swap;
   font-family: FreightTextPro;
-  font-style: italic;
   font-weight: normal;
+  font-style: italic;
+  font-display: swap;
   src: url('#{$cdn}/350ED6_1_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 @font-face {
-  font-display: swap;
   font-family: FreightTextPro;
-  font-style: normal;
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
   src: url('#{$cdn}/350ED6_2_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 @font-face {
-  font-display: swap;
   font-family: FreightTextPro;
-  font-style: italic;
   font-weight: bold;
+  font-style: italic;
+  font-display: swap;
   src: url('#{$cdn}/350ED6_3_unhinted_0.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 @font-face {
-  font-display: swap;
   font-family: FFMarkWebPro;
-  font-style: normal;
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
   src: url('#{$cdn}/MarkPro-Book.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 @font-face {
-  font-display: swap;
   font-family: FFMarkWebPro;
-  font-style: normal;
   font-weight: bold;
+  font-style: normal;
+  font-display: swap;
   src: url('#{$cdn}/MarkPro-Bold.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 @font-face {
-  font-display: swap;
   font-family: FFMarkWebPro;
-  font-style: normal;
   font-weight: 800;
+  font-style: normal;
+  font-display: swap;
   src: url('#{$cdn}/MarkPro-Heavy.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
 // Hack
 
 @font-face {
-  font-display: swap;
   font-family: HackRegular;
+  font-display: swap;
   src: url('#{$cdn}/hack-regular.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }

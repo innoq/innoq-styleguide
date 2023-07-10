@@ -1,20 +1,24 @@
 .cover {
-  display: flex;
   overflow: hidden;
-  width: 1600px;
-  height: 800px;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-blend-mode: multiply;
-  background-position: center;
+
+  width: 1600px;
+  height: 800px;
+
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  background-blend-mode: multiply;
 }
 
 .cover__avatar-overlay {
   background-color: $podcast-teaser-overlay-color;
-  background-position: top right, top left;
   background-repeat: no-repeat;
+  background-position:
+    top right,
+    top left;
   background-size: contain;
 
   .cover__title,
@@ -38,12 +42,14 @@
 
 .cover__body {
   position: relative;
-  display: flex;
+
   overflow: hidden;
-  height: 790px;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  height: 790px;
 
   /* stylelint-disable-next-line selector-max-compound-selectors */
   > * + * {
@@ -54,8 +60,8 @@
 .cover__type {
   @extend %heading-font-bold;
 
-  color: $standard-header-type-color;
   font-size: $font-size-base;
+  color: $standard-header-type-color;
   text-transform: uppercase;
 }
 
@@ -79,10 +85,13 @@
 .cover__authors {
   position: absolute;
   bottom: $spacer-md;
+
   display: flex;
+  justify-content: space-evenly;
+
   width: 100%;
   max-width: $default-page-layout-content-width-md;
-  justify-content: space-evenly;
+
   color: $brand-white;
 }
 
@@ -94,12 +103,13 @@
 }
 
 .cover__footer {
-  display: flex;
   overflow: hidden;
-  width: 100%;
-  height: 110px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
+
+  width: 100%;
+  height: 110px;
   padding: $spacer-xxs $spacer-xl;
 }
 

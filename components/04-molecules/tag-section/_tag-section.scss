@@ -10,8 +10,8 @@
 .tag-section__headline {
   @extend %heading-font-heavy;
 
-  color: $meta-tags-headline-text-color;
   font-size: $font-size-base;
+  color: $meta-tags-headline-text-color;
   text-align: center;
 }
 

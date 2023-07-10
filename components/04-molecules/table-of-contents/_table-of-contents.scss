@@ -6,8 +6,8 @@
   @extend %heading-font-heavy;
 
   margin-bottom: $spacer-sm;
-  color: $toc-heading-color;
   font-size: $font-size-sm;
+  color: $toc-heading-color;
   text-transform: uppercase;
 }
 
@@ -25,8 +25,8 @@
     font-size: $font-size-base;
 
     &::before {
-      padding-right: 0.5rem;
       content: asset-url('icons/arrow-short-down.svg');
+      padding-right: 0.5rem;
     }
   }
 
@@ -37,6 +37,7 @@
 
 .toc__anchor {
   @extend %link-unstyled;
+
   @include hover-fill($link-hover-color-light, $toc-anchor-hover-text-color, $toc-anchor-text-color);
 
   position: relative;

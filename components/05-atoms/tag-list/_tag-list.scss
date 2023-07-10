@@ -14,15 +14,19 @@
   @extend %heading-font-bold;
 
   display: inline-block;
+
   padding: $spacer-xs $spacer-sm;
-  background: $tag-background-color;
-  color: $tag-text-color;
+
   font-size: $font-size-base;
+  color: $tag-text-color;
   text-decoration: none;
+
+  background: $tag-background-color;
+
   transition: 0.2s background-color ease-in-out;
 
   &:hover {
-    background-color: $tag-background-color-hover;
     color: $tag-text-color-hover;
+    background-color: $tag-background-color-hover;
   }
 }

@@ -6,10 +6,13 @@ $case-tile-teaser-sm-height: ms(32);
 
   display: flex;
   flex-direction: column;
+
   padding: $spacer-md;
-  background-blend-mode: multiply;
-  background-size: cover;
+
   color: $case-tile-teaser-text-color;
+
+  background-size: cover;
+  background-blend-mode: multiply;
 }
 
 .case-tile-teaser__content {
@@ -17,9 +20,12 @@ $case-tile-teaser-sm-height: ms(32);
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
+
   padding: $spacer-md $spacer-xs;
-  background-color: $case-tile-teaser-body-bg-color;
+
   text-align: center;
+
+  background-color: $case-tile-teaser-body-bg-color;
 
   > * + * {
     margin-top: $spacer-base;
@@ -45,8 +51,8 @@ $case-tile-teaser-sm-height: ms(32);
 .case-tile-teaser__text {
   @extend %teaser-text-italic;
 
-  color: $case-tile-teaser-text-color;
   line-height: $paragraph-line-height;
+  color: $case-tile-teaser-text-color;
 }
 
 .case-tile-teaser__logo {
@@ -68,8 +74,8 @@ $case-tile-teaser-sm-height: ms(32);
 //
 .case-tile-teaser--sm {
   min-height: $case-tile-teaser-sm-height;
-  padding: $spacer-lg $spacer-xs;
   margin-bottom: $spacer-xxl;
+  padding: $spacer-lg $spacer-xs;
 }
 
 .case-tile-teaser__content--sm {

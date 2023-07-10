@@ -1,13 +1,13 @@
 $case-tile-teaser-sm-height: ms(32);
 
 .static-tile-teaser-bg-color {
+  color: $static-tile-teaser-text-color;
   background-color: $podcast-teaser-overlay-color;
   background-position: center;
-  color: $static-tile-teaser-text-color;
 
   &--security {
-    background-color: $podcast-teaser-overlay-color-sec;
     color: $brand-gray;
+    background-color: $podcast-teaser-overlay-color-sec;
 
     .static-tile-teaser__headline {
       color: $brand-gray;
@@ -29,7 +29,9 @@ $case-tile-teaser-sm-height: ms(32);
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
+
   padding: $spacer-md;
+
   background-color: $case-tile-teaser-body-bg-color;
 }
 
@@ -60,8 +62,8 @@ $case-tile-teaser-sm-height: ms(32);
 //
 .static-tile-teaser--sm {
   min-height: $case-tile-teaser-sm-height;
-  padding: $spacer-md;
   margin-bottom: $spacer-xxl;
+  padding: $spacer-md;
 }
 
 .static-tile-teaser__content--sm {

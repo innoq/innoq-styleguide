@@ -2,16 +2,18 @@
   @extend %list-teaser;
 
   display: flex;
-  width: 100%;
-  max-width: 100%;
-  min-height: ms(38); //magic number
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-blend-mode: multiply;
-  background-position: center center;
+
+  width: 100%;
+  max-width: 100%;
+  min-height: ms(38); //magic number
+
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
+  background-blend-mode: multiply;
 
   &--right-aligned {
     justify-content: flex-end;
@@ -29,11 +31,13 @@ a.case-list-teaser {
 
 .case-list-teaser__wrapper {
   display: flex;
-  width: 100%;
-  min-height: ms(35); //magic number
   flex-direction: column;
   justify-content: space-between;
+
+  width: 100%;
+  min-height: ms(35); //magic number
   padding: $spacer-base $spacer-sm;
+
   background-color: $case-list-teaser-body-bg;
 }
 
@@ -41,6 +45,7 @@ a.case-list-teaser {
   display: flex;
   flex-direction: column;
   align-items: center;
+
   color: $case-list-teaser-body-color;
   text-align: center;
 
@@ -109,10 +114,10 @@ a.case-list-teaser {
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .case-list-teaser {
-    max-width: $default-page-layout-content-width-xl;
-    min-height: ms(40); //magic number
     flex-direction: row;
     justify-content: flex-start;
+    max-width: $default-page-layout-content-width-xl;
+    min-height: ms(40); //magic number
   }
 
   .case-list-teaser__wrapper {

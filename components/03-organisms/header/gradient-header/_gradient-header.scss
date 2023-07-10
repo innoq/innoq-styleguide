@@ -3,12 +3,14 @@
 
   &__body {
     display: flex;
-    max-width: 64rem; //magic number
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: $spacer-base $spacer-sm;
+
+    max-width: 64rem; //magic number
     margin: 0 auto;
+    padding: $spacer-base $spacer-sm;
+
     color: $gradient-header-text-color;
   }
 

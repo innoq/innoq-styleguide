@@ -15,11 +15,12 @@ $two-column-image-divider-height-lg: 6 * $spacer-xxl;
 
 @media screen and (min-width: $grid-breakpoint-xl) {
   .two-column-image-divider-asymmetric {
-    width: 100%;
     flex-direction: row;
+    gap: $spacer-xxl;
     align-items: center;
     justify-content: space-between;
-    gap: $spacer-xxl;
+
+    width: 100%;
   }
 
   .two-column-image-divider-asymmetric__left-image--hoch {

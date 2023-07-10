@@ -1,3 +1,5 @@
+@use 'sass:list';
+
 // times
 $transition-time-standard: 0.175s;
 $transition-time-fast: 0.1s;
@@ -15,8 +17,9 @@ $transform-transition: 0.2s transform $transition-easing-standard;
   $out: ();
 
   @each $tran in $trans {
-    $out: append($out, #{$tran} $time $easing, comma);
+    $out: list.append($out, #{$tran} $time $easing, comma);
   }
+
   @return $out;
 }
 

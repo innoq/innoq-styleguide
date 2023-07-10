@@ -2,13 +2,15 @@
   @extend %container-vertical-spacing-xl;
 
   display: grid;
+  gap: $spacer-base;
+  align-items: start;
+
   width: 100%;
   max-width: $default-page-layout-content-width-xl;
-  align-items: start;
-  padding: 0 $spacer-sm;
   margin: 0 auto;
+  padding: 0 $spacer-sm;
+
   color: $footer-color;
-  gap: $spacer-base;
 }
 
 .footer__form,
@@ -43,33 +45,38 @@
 }
 
 .footer__subheading {
-  color: $footer-color;
   font-size: $font-size-sm;
+  color: $footer-color;
 }
 
 .footer__directions-link {
   @extend %heading-font-bold;
 
   display: block;
+
   margin-top: $spacer-xs;
-  color: $footer-color;
+
   font-size: $font-size-xxs;
+  color: $footer-color;
   text-transform: uppercase;
 
   &::before {
+    content: asset-url('icons/pin.svg');
+
     display: inline-block;
+
     width: $font-size-xxs;
     height: $font-size-xxs;
     margin-right: $spacer-xxs;
+
     color: $footer-heading-color;
-    content: asset-url('icons/pin.svg');
   }
 }
 
 .footer__link {
-  border-bottom: 2px solid $footer-color;
-  color: $footer-color;
   hyphens: none;
+  color: $footer-color;
+  border-bottom: 2px solid $footer-color;
 
   &:hover,
   &:focus {
@@ -107,10 +114,11 @@
 @media screen and (min-width: $grid-breakpoint-md) {
   .footer {
     display: grid;
-    padding: 0 $spacer-base;
-    gap: $spacer-xl $spacer-lg;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    gap: $spacer-xl $spacer-lg;
+
+    padding: 0 $spacer-base;
   }
 
   .footer__form {
@@ -122,8 +130,8 @@
   }
 
   .footer__offices__section__list {
-    gap: $spacer-md;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    gap: $spacer-md;
   }
 }

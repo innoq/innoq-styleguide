@@ -9,8 +9,9 @@ $list-teaser-height: ms(32);
 %list-teaser-footer {
   display: flex;
   flex-wrap: wrap;
+  gap: $spacer-sm;
   align-items: flex-end;
   justify-content: space-between;
+
   padding: $spacer-sm $spacer-md;
-  gap: $spacer-sm;
 }

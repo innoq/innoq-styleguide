@@ -1,10 +1,12 @@
 %page-header {
   display: flex;
-  min-height: $fullscreen-like-height;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-position: center;
+
+  min-height: $fullscreen-like-height;
+
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }

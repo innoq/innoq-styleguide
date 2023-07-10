@@ -1,27 +1,28 @@
 extends:
   - stylelint-config-standard
   - stylelint-config-sass-guidelines
-  - stylelint-config-prettier
-  - stylelint-config-idiomatic-order
+  - stylelint-config-clean-order
 rules:
-  order/properties-alphabetical-order: null
-  string-quotes: null
-  selector-class-pattern: null
-  no-descending-specificity: null
-  selector-no-qualifying-type: null
-  scss/percent-placeholder-pattern: null
-  no-empty-source: null
+  alpha-value-notation: null
+  color-no-hex: true
+  color-function-notation: null
+  declaration-no-important: true
+  function-no-unknown: null
+  import-notation: null
   max-nesting-depth: 3
+  media-query-no-invalid: null
+  no-descending-specificity: null
+  no-empty-source: null
+  order/properties-alphabetical-order: null
+  scss/percent-placeholder-pattern: null
+  selector-class-pattern: null
+  selector-no-qualifying-type: null
   selector-type-no-unknown:
     - true
     - ignore:
         - custom-elements
-  declaration-no-important: true
-  color-no-hex: true
-  color-function-notation: null
-  alpha-value-notation: null
-  function-no-unknown: null
-  import-notation: null
+  string-quotes: null
+
 overrides:
   - files: ["**/*.scss"]
     customSyntax: "postcss-scss"

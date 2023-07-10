@@ -2,10 +2,10 @@ p {
   @extend %body-font-regular;
 
   font-size: $font-size-base;
-  hyphens: auto;
   line-height: $paragraph-line-height;
-  overflow-wrap: break-word;
+  hyphens: auto;
   word-wrap: break-word;
+  overflow-wrap: break-word;
   // hyphenate-limit-chars: 6 4 4;
   // hyphenate-limit-last: always;
   // hyphenate-limit-lines: 2;

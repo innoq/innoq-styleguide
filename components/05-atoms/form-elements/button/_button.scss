@@ -4,23 +4,26 @@
 .btn {
   @extend %base-button;
   @extend %heading-font-bold;
+
   @include hover-fill($brand-interaction, $button-color, $button-color);
 
   padding: $spacer-md $spacer-base;
-  border: 3px solid $button-border-color;
-  border-radius: 0;
-  background-color: $button-background;
+
   font-size: $font-size-sm;
 
+  background-color: $button-background;
+  border: 3px solid $button-border-color;
+  border-radius: 0;
+
   &--cta {
-    border-color: $button-cta-border-color;
-    background-color: $button-cta-background;
     color: $button-cta-color;
+    background-color: $button-cta-background;
+    border-color: $button-cta-border-color;
 
     &::before {
+      content: attr(data-label);
       position: absolute;
       z-index: 1;
-      content: attr(data-label);
     }
 
     &::after {
@@ -30,8 +33,8 @@
 
     &:hover,
     &:focus {
-      border-color: $button-cta-hover-border-color;
       color: $button-cta-hover-color;
+      border-color: $button-cta-hover-border-color;
 
       &::after {
         width: 100%;
@@ -41,16 +44,16 @@
     &--inverted {
       &:hover,
       &:focus {
-        border-color: $button-inverted-border-color;
         color: $button-cta-hover-color;
+        border-color: $button-inverted-border-color;
       }
     }
   }
 
   &--light {
     padding: $spacer-xs 0;
-    border-width: 0 0 3px;
     background-color: transparent;
+    border-width: 0 0 3px;
   }
 
   &--small {
@@ -76,8 +79,8 @@
   &--inverted {
     @include hover-fill($brand-interaction, $button-inverted-hover-color, $button-inverted-hover-color);
 
-    border-color: $button-inverted-border-color;
     color: $button-inverted-color;
+    border-color: $button-inverted-border-color;
   }
 
   + .btn {

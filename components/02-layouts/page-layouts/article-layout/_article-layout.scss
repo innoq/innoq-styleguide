@@ -24,9 +24,9 @@
 
   .centered-content-75 {
     display: flex;
-    width: 75%;
     align-self: center;
     justify-self: center;
+    width: 75%;
   }
 
   // Breakpoints
@@ -38,10 +38,11 @@
   @supports (display: grid) {
     @media screen and (min-width: $grid-breakpoint-lg-xl) {
       display: grid;
-      padding-right: $spacer-sm;
-      padding-left: $spacer-sm;
       grid-template-columns: 1fr 11rem 5rem 2rem 50rem 2rem 5rem 11rem 1fr; //magic numbers
       grid-template-rows: auto;
+
+      padding-right: $spacer-sm;
+      padding-left: $spacer-sm;
 
       // Centered textwurst items
       h1,
@@ -80,16 +81,16 @@
 
       // Left aligned elements
       .toc {
-        align-self: start;
         grid-column: 2 / 4;
         grid-row: 2 / 100;
+        align-self: start;
       }
 
       // Right aligned elements
       .info-note {
-        align-self: start;
         grid-column: 7 / 9;
         grid-row: 2/ 100;
+        align-self: start;
       }
     }
   }

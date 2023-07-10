@@ -11,8 +11,9 @@
     @extend %heading-font-bold;
 
     margin-bottom: $spacer-base;
-    color: $info-note-title-color;
+
     font-size: $font-size-base;
+    color: $info-note-title-color;
     text-align: center;
     text-transform: uppercase;
   }
@@ -21,8 +22,8 @@
   &__text * {
     @extend %heading-font-regular;
 
-    color: $info-note-text-color;
     font-size: $font-size-xs;
+    color: $info-note-text-color;
     text-align: left;
   }
 

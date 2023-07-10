@@ -26,10 +26,12 @@
   @extend %heading-font-bold;
 
   padding: $spacer-xxs;
-  background-color: $card-tag-bg-color;
-  color: $card-tag-text-color;
+
   font-size: $font-size-xs;
+  color: $card-tag-text-color;
   text-transform: uppercase;
+
+  background-color: $card-tag-bg-color;
 
   + .card__header__tag {
     margin-top: $spacer-xs;
@@ -50,8 +52,8 @@
 .card__content__body__subheadline {
   @extend %teaser-caption;
 
-  color: $card-subheadline-color;
   line-height: $paragraph-line-height;
+  color: $card-subheadline-color;
 }
 
 .card__content__body__headline {
@@ -65,8 +67,8 @@
   @extend %body-font-italic;
 
   margin-top: $spacer-sm;
-  color: $card-text-color;
   font-size: $font-size-sm;
+  color: $card-text-color;
 }
 
 .card__content__footer {
@@ -105,8 +107,8 @@
 @media screen and (min-width: $grid-breakpoint-sm) {
   .card__content__footer {
     display: grid;
-    gap: $spacer-base;
     grid-template-columns: 1fr 1fr;
+    gap: $spacer-base;
 
     > * + * {
       margin-top: 0;
@@ -116,8 +118,8 @@
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .card__content {
-    margin: 0 $spacer-base (-$spacer-xxl) $spacer-base;
     transform: translateY(-$spacer-xxl);
+    margin: 0 $spacer-base (-$spacer-xxl) $spacer-base;
   }
 
   .card__content__body,

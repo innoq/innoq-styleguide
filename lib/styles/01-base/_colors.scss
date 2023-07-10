@@ -60,13 +60,14 @@ $brand-yellows: (
 
 // INNOQ Petrol
 $brand-petrol: #004153;
+$brand-petrol-95: #005268;
 $brand-petrol-75: #40707e;
 $brand-petrol-50: #80a0a9;
 $brand-petrol-25: #bfcfd4;
 
 $brand-petrols: (
   brand-petrol: $brand-petrol,
-  brand-petrol-75: $brand-petrol-75,
+  brand-petrol-95: $brand-petrol-95; brand-petrol-75: $brand-petrol-75,
   brand-petrol-50: $brand-petrol-50,
   brand-petrol-25: $brand-petrol-25,
 );

@@ -25,13 +25,13 @@ ul:not([class], [role='list']),
     list-style-type: '●';
 
     &::marker {
-      color: $bullet-list-color;
       font-size: $font-size-sm;
+      color: $bullet-list-color;
     }
 
     li::marker {
-      color: $bullet-list-color-secondary;
       font-size: $font-size-sm;
+      color: $bullet-list-color-secondary;
     }
 
     ul {
@@ -55,8 +55,8 @@ ul:not([class], [role='list']),
     list-style-type: '•';
 
     &::marker {
-      color: $bullet-list-color;
       font-size: $font-size-lg;
+      color: $bullet-list-color;
     }
   }
 }

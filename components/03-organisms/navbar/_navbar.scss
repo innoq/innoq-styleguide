@@ -5,16 +5,23 @@ $navbar-focus-outline-width: 2px;
 $navbar-btn-transition: color 0.175s ease;
 $navbar-toggle-width: calc((#{$navbar-focus-outline-width} * 2) + (#{$navbar-padding} * 3));
 $navbar-toggle-transition-speed: $transition-time-standard * 3;
-$navbar-dropdown-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+/* stylelint-disable-next-line scss/dollar-variable-colon-space-after */
+$navbar-dropdown-shadow:
+  0 20px 25px -5px rgb(0 0 0 / 0.1),
+  0 8px 10px -6px rgb(0 0 0 / 0.1);
 $navbar-dropdown-z-index: 1;
 $navbar-dropdown-z-index-expanding: 2;
 $navbar-dropdown-z-index-hover: 3;
 
 %navigation-action {
-  display: inline-block;
-  margin: var(--forced-colors-action-margin);
-  color: $navbar-link-color;
   cursor: pointer;
+
+  display: inline-block;
+
+  margin: var(--forced-colors-action-margin);
+
+  color: $navbar-link-color;
+
   transition: $navbar-btn-transition;
 
   &:hover,
@@ -47,15 +54,15 @@ $navbar-dropdown-z-index-hover: 3;
 %navigation-link {
   @extend %navigation-action;
 
-  border: var(--forced-colors-link-border-width, #{$navbar-focus-outline-width}) solid transparent;
   text-decoration: var(--forced-colors-link-decoration, none);
+  border: var(--forced-colors-link-border-width, #{$navbar-focus-outline-width}) solid transparent;
 }
 
 %navigation-button {
   @extend %navigation-action;
 
-  border: $navbar-focus-outline-width solid transparent;
   background-color: transparent;
+  border: $navbar-focus-outline-width solid transparent;
 }
 
 .skip-link {
@@ -63,8 +70,8 @@ $navbar-dropdown-z-index-hover: 3;
   @extend %navigation-link;
 
   display: block;
-  padding: $navbar-padding;
   margin-bottom: $navbar-focus-outline-width;
+  padding: $navbar-padding;
   background-color: $navbar-lightened-bg;
 
   &:not(:focus) {
@@ -78,12 +85,12 @@ $navbar-dropdown-z-index-hover: 3;
   @extend %heading-font-regular;
 
   display: grid;
-  background-color: var(--navbar-background-color);
   grid-template-areas:
     'brand menu search'
     'nav nav nav'
     'meta meta meta';
   grid-template-columns: 1fr auto auto;
+  background-color: var(--navbar-background-color);
 
   // A helper for providing alternative text for images and icons to assistive
   // technologies. This is similar to the `.sr-only` helper, but the
@@ -91,29 +98,6 @@ $navbar-dropdown-z-index-hover: 3;
   // `forced-colors` mode where icons/images are also difficult to discern
   .link-alt {
     @extend %sr-only;
-  }
-
-  // Use CSS properties to tweak the navbar theme based on CSS media features
-  @media (prefers-reduced-motion: no-preference) {
-    --grid-row-transition: grid-template-rows #{$navbar-toggle-transition-speed} #{$transition-easing-standard};
-    --visibility-transition: visibility #{$navbar-toggle-transition-speed} #{$transition-easing-standard};
-  }
-
-  @media (forced-colors: active) {
-    --forced-colors-link-border-width: 0;
-    --forced-colors-action-margin: #{$navbar-focus-outline-width};
-    --forced-colors-link-decoration: underline;
-    --forced-colors-navbar-toggler-width: 10rem;
-
-    .link-alt {
-      all: revert;
-      text-align: left;
-    }
-  }
-
-  @media (pointer: fine) {
-    --pointer-fine-navbar-meta-font-size: #{$navbar-secondary-font-size * 0.9};
-    --pointer-fine-navbar-meta-spacer: #{$spacer-xs * 0.5};
   }
 
   &--transparent {
@@ -144,9 +128,9 @@ $navbar-dropdown-z-index-hover: 3;
     @extend %navigation-link;
 
     display: flex;
+    grid-area: brand;
     flex-direction: column;
     padding: $navbar-padding;
-    grid-area: brand;
 
     .brand-logo {
       width: $navbar-logo-height-small * 3.94;
@@ -158,9 +142,9 @@ $navbar-dropdown-z-index-hover: 3;
     @extend %navigation-link;
 
     display: flex;
+    grid-area: search;
     align-items: center;
     padding: $navbar-padding;
-    grid-area: search;
 
     .icon {
       width: $navbar-padding;
@@ -169,8 +153,15 @@ $navbar-dropdown-z-index-hover: 3;
   }
 
   menu-toggle {
-    align-items: center;
     grid-area: menu;
+    align-items: center;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: $navbar-padding;
+      border: 1px solid $navbar-link-color;
+    }
 
     &:not([hidden]) {
       display: flex;
@@ -183,19 +174,12 @@ $navbar-dropdown-z-index-hover: 3;
       font-size: $navbar-primary-font-size;
       font-weight: bold;
     }
-
-    &::after {
-      width: 0;
-      height: $navbar-padding;
-      border: 1px solid $navbar-link-color;
-      content: '';
-    }
   }
 
   .navigation-links {
-    background-color: $navbar-lightened-bg;
-    font-size: $navbar-primary-font-size;
     grid-area: nav;
+    font-size: $navbar-primary-font-size;
+    background-color: $navbar-lightened-bg;
 
     > :first-child {
       margin-top: $navbar-padding * 2;
@@ -245,15 +229,19 @@ $navbar-dropdown-z-index-hover: 3;
   .navigation-meta {
     position: sticky;
     bottom: 0;
+
     display: flex;
+    grid-area: meta;
     align-items: center;
     justify-content: space-around;
+
     padding: 0 $navbar-padding;
-    background-color: var(--navbar-background-color);
-    color: $navbar-link-color;
+
     font-size: var(--pointer-fine-navbar-meta-font-size, inherit);
-    grid-area: meta;
+    color: $navbar-link-color;
     text-transform: uppercase;
+
+    background-color: var(--navbar-background-color);
 
     > * {
       margin: $navbar-padding 0;
@@ -302,8 +290,8 @@ $navbar-dropdown-z-index-hover: 3;
     .navigation-meta {
       overflow: hidden;
       min-height: 0;
-      transition: var(--visibility-transition);
       visibility: var(--main-navigation-menu-visibility);
+      transition: var(--visibility-transition);
     }
   }
 
@@ -322,10 +310,12 @@ $navbar-dropdown-z-index-hover: 3;
     flex-direction: column;
 
     .icon {
+      transform: rotate(-90deg);
+
       width: $spacer-xs;
       height: $spacer-xs;
       margin-left: auto;
-      transform: rotate(-90deg);
+
       transition: standard-transition(all);
 
       &:hover,
@@ -358,8 +348,8 @@ $navbar-dropdown-z-index-hover: 3;
     // See: https://nemzes.net/posts/animating-height-auto/
     // Browser Support: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows#browser_compatibility
     div {
-      display: grid;
       overflow: hidden;
+      display: grid;
       grid-template-rows: var(--submenu-grid-template-rows);
       transition: var(--grid-row-transition);
     }
@@ -367,8 +357,8 @@ $navbar-dropdown-z-index-hover: 3;
     ul {
       min-height: 0;
       margin-bottom: $spacer-xs;
-      transition: var(--visibility-transition);
       visibility: var(--submenu-visibility);
+      transition: var(--visibility-transition);
     }
 
     /* stylelint-disable-next-line selector-max-compound-selectors */
@@ -384,14 +374,37 @@ $navbar-dropdown-z-index-hover: 3;
     }
   }
 
+  // Use CSS properties to tweak the navbar theme based on CSS media features
+  @media (prefers-reduced-motion: no-preference) {
+    --grid-row-transition: grid-template-rows #{$navbar-toggle-transition-speed} #{$transition-easing-standard};
+    --visibility-transition: visibility #{$navbar-toggle-transition-speed} #{$transition-easing-standard};
+  }
+
+  @media (forced-colors: active) {
+    --forced-colors-link-border-width: 0;
+    --forced-colors-action-margin: #{$navbar-focus-outline-width};
+    --forced-colors-link-decoration: underline;
+    --forced-colors-navbar-toggler-width: 10rem;
+
+    .link-alt {
+      all: revert;
+      text-align: left;
+    }
+  }
+
+  @media (pointer: fine) {
+    --pointer-fine-navbar-meta-font-size: #{$navbar-secondary-font-size * 0.9};
+    --pointer-fine-navbar-meta-spacer: #{$spacer-xs * 0.5};
+  }
+
   //
   // Breakpoints for larger devices
   //
 
   @media (min-width: $grid-breakpoint-xs-sm) {
     .navigation-meta {
-      justify-content: center;
       gap: $spacer-sm;
+      justify-content: center;
     }
   }
 
@@ -471,8 +484,8 @@ $navbar-dropdown-z-index-hover: 3;
       }
 
       .icon {
-        margin-left: $spacer-xs;
         transform: rotate(0deg);
+        margin-left: $spacer-xs;
       }
 
       details[open],
@@ -494,6 +507,7 @@ $navbar-dropdown-z-index-hover: 3;
         position: absolute;
         z-index: $navbar-dropdown-z-index;
         right: var(--submenu-position-right);
+
         background-color: $navbar-lightened-bg;
         box-shadow: $navbar-dropdown-shadow;
       }

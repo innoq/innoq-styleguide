@@ -2,11 +2,13 @@
   @extend %list-teaser;
 
   display: flex;
-  width: 100%;
   flex-direction: column;
   justify-content: space-between;
-  border-top: 3px solid $list-teaser-border-color;
+
+  width: 100%;
+
   background-color: $list-teaser-background-color;
+  border-top: 3px solid $list-teaser-border-color;
 }
 
 a.list-teaser {

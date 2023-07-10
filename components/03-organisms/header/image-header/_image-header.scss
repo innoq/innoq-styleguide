@@ -1,18 +1,20 @@
 .image-header {
   display: flex;
-  min-height: $fullscreen-real-mobile-height;
   align-items: flex-end;
   justify-content: center;
-  border: 10px solid $image-header-bg-color;
-  background-position: center;
+
+  min-height: $fullscreen-real-mobile-height;
+
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  border: 10px solid $image-header-bg-color;
 
   &__content {
     width: 100%;
     padding: $spacer-base $spacer-xl;
-    background-color: $image-header-content-bg-color;
     text-align: center;
+    background-color: $image-header-content-bg-color;
 
     > * + * {
       margin-top: $spacer-md;
@@ -34,8 +36,8 @@
 //
 @media screen and (min-width: $grid-breakpoint-md) {
   .image-header {
-    min-height: $fullscreen-real-desktop-height;
     align-items: center;
+    min-height: $fullscreen-real-desktop-height;
     border: 30px solid $image-header-bg-color;
 
     &__content {

@@ -5,29 +5,33 @@
 
 .search-form {
   display: flex;
-  align-items: center;
-  border-bottom: 4px solid$search-field-border-color;
-  background-color: $search-field-background;
   grid-area: center;
+  align-items: center;
+
+  background-color: $search-field-background;
+  border-bottom: 4px solid$search-field-border-color;
 }
 
 .search-form__input {
   @extend %heading-font-bold;
 
   display: block;
+
   width: 100%;
-  border: 0;
+
+  line-height: 1.5em; // don't cut off descenders Chrome/FF
+  color: $search-field-color;
+
   appearance: none;
   background-color: $search-field-background;
-  caret-color: $search-field-caret-color;
-  color: $search-field-color;
-  line-height: 1.5em; // don't cut off descenders Chrome/FF
+  border: 0;
   outline: none;
+  caret-color: $search-field-caret-color;
 }
 
 .search-form__btn {
-  border: 0;
   background-color: transparent;
+  border: 0;
 
   .icon-search {
     width: 1rem;

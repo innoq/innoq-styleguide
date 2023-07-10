@@ -12,8 +12,8 @@
   long-quote {
     @extend %container-vertical-spacing-lg;
 
-    max-width: 45rem;
     align-self: center;
+    max-width: 45rem;
   }
 
   //Wrapper for contant that should not stretch
@@ -25,9 +25,9 @@
 
   .centered-content-75 {
     display: flex;
-    width: 75%;
     align-self: center;
     justify-self: center;
+    width: 75%;
   }
 
   // Breakpoints
@@ -39,10 +39,11 @@
   @supports (display: grid) {
     @media screen and (min-width: $grid-breakpoint-lg-xl) {
       display: grid;
-      padding-right: $spacer-sm;
-      padding-left: $spacer-sm;
       grid-template-columns: 1fr 7rem 50rem 7rem 1fr; //magic numbers
       grid-template-rows: auto;
+
+      padding-right: $spacer-sm;
+      padding-left: $spacer-sm;
 
       // Centered textwurst items
       h1,

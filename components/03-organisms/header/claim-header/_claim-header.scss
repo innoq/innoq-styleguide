@@ -1,8 +1,10 @@
 .claim-header {
   display: flex;
-  min-height: 100vh;
   align-items: center;
   justify-content: center;
+
+  min-height: 100vh;
+
   background-color: $claim-header-bg-color;
 
   &__body {
@@ -12,24 +14,25 @@
   }
 
   &__type {
-    color: $claim-header-type-color;
     font-size: $font-size-base;
+    color: $claim-header-type-color;
     text-transform: uppercase;
   }
 
   &__title {
     margin-top: $spacer-md;
-    color: $claim-header-title-color;
     font-size: $font-size-xl;
+    color: $claim-header-title-color;
   }
 
   &__divider {
     width: ms(25);
     height: 4px;
-    border: 0;
     margin-top: $spacer-base;
     margin-bottom: $spacer-base;
+
     background-color: $claim-header-divider-color;
+    border: 0;
   }
 
   .icon {

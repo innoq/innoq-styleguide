@@ -1,9 +1,12 @@
 .icon {
   display: inline-flex;
+  align-self: center;
+
   width: $spacer-md;
   height: $spacer-md;
-  align-self: center;
+
   background: $brand-gray;
+
   mask-repeat: no-repeat;
   mask-size: contain;
 }
@@ -49,6 +52,7 @@
 .icon-arrow-long-down {
   width: 0.75rem; // magic number
   height: 4.5rem; // magic number
+
   mask-image: asset-url('icons/arrow-long-down.svg');
   mask-repeat: no-repeat;
 }
@@ -56,12 +60,14 @@
 .icon-arrow-long-right {
   width: 4.5rem; // magic number
   height: 0.75rem; // magic number
+
   mask-image: asset-url('icons/arrow-long-right.svg');
 }
 
 .icon-arrow-medium-left {
   width: 2rem; // magic number
   height: 0.75rem; // magic number
+
   mask-image: asset-url('icons/arrow-medium-left.svg');
 }
 
@@ -76,30 +82,35 @@
 .icon-arrow-drawn-upright {
   width: 9.375rem; // magic number
   height: 4rem; // magic number
+
   mask-image: asset-url('icons/arrow-drawn-upright.svg');
 }
 
 .icon-arrow-drawn-downright {
   width: 12.5rem; // magic number
   height: 7.125rem; // magic number
+
   mask-image: asset-url('icons/arrow-drawn-downright.svg');
 }
 
 .icon-arrow-drawn-downleft {
   width: 8.8125rem; // magic number
   height: 5.25rem; // magic number
+
   mask-image: asset-url('icons/arrow-drawn-downleft.svg');
 }
 
 .icon-arrow-drawn-downleft-2 {
   width: 9.375rem; // magic number
   height: 6.375rem; // magic number
+
   mask-image: asset-url('icons/arrow-drawn-downleft-alternative.svg');
 }
 
 .icon-arrow-drawn-downright-2 {
   width: 7.1875rem; // magic number
   height: 5.625rem; // magic number
+
   mask-image: asset-url('icons/arrow-drawn-downright-alternative.svg');
 }
 
@@ -187,12 +198,14 @@
 .icon-minus {
   width: 1rem; // magic number
   height: 0.5rem; // magic number
+
   mask-image: asset-url('icons/minus.svg');
 }
 
 .icon-plus {
   width: 1rem; // magic number
   height: 1rem; // magic number
+
   mask-image: asset-url('icons/plus.svg');
 }
 

@@ -41,10 +41,12 @@
   @extend %heading-font-heavy;
 
   padding: $spacer-sm;
-  background: $list-teaser-product-background-color-cta;
-  color: $list-teaser-product-color-cta;
+
   font-size: $font-size-xs;
+  color: $list-teaser-product-color-cta;
   text-align: center;
+
+  background: $list-teaser-product-background-color-cta;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {

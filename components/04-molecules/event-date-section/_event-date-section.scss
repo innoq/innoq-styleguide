@@ -6,9 +6,9 @@
   background-color: $date-section-background-color;
 
   .label {
-    border-left: 0;
     margin: 0;
     text-align: center;
+    border-left: 0;
   }
 }
 
@@ -24,6 +24,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
   padding: $spacer-xxs $spacer-sm;
 }
 
@@ -36,35 +37,38 @@
 .event-day {
   @extend %heading-font-heavy;
 
-  color: $date-section-day-color;
   font-size: $font-size-lg;
+  color: $date-section-day-color;
 }
 
 .event-month {
   @extend %heading-font-heavy;
 
   margin-bottom: 0;
-  color: $date-section-month-color;
   font-size: $font-size-xs;
+  color: $date-section-month-color;
   text-transform: uppercase;
 }
 
 .event-year {
   @extend %heading-font-regular;
 
-  padding-left: $spacer-xxs;
-  border-left: 1px solid $date-section-year-color;
   margin-left: $spacer-xs;
-  color: $date-section-year-color;
+  padding-left: $spacer-xxs;
+
   font-size: $font-size-xs;
+  color: $date-section-year-color;
+
+  border-left: 1px solid $date-section-year-color;
 }
 
 .event-date-separator {
   width: $spacer-base;
   height: 2px;
-  border: 0;
   margin: 0;
+
   background-color: $date-section-year-color;
+  border: 0;
 }
 
 // Breakpoints
@@ -91,16 +95,18 @@
   }
 
   .event-year {
+    margin-left: 0;
     padding-top: $spacer-xxs;
     padding-left: 0;
+
+    font-size: $font-size-xs;
+
     border-top: 1px solid $date-section-year-color;
     border-left: 0;
-    margin-left: 0;
-    font-size: $font-size-xs;
   }
 
   .event-date-separator {
-    margin: $spacer-sm 0;
     transform: rotate(90deg);
+    margin: $spacer-sm 0;
   }
 }

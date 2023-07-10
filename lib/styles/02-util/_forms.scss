@@ -18,26 +18,34 @@
 @mixin control-icon($size, $top-offset) {
   &::after,
   &::before {
+    content: '';
+
     position: absolute;
     top: $top-offset;
     left: 0;
+
     display: block;
+
     width: $size;
     height: $size;
-    content: '';
+
     transition: $fast-transition;
   }
 }
 
 %base-button {
-  position: relative;
-  display: inline-block;
-  border: 0;
-  background: none;
   cursor: pointer;
-  text-decoration: none;
   user-select: none;
+
+  position: relative;
+
+  display: inline-block;
+
+  text-decoration: none;
   white-space: nowrap;
+
+  background: none;
+  border: 0;
 
   &:focus {
     outline: none;

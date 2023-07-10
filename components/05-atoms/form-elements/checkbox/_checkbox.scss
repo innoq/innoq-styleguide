@@ -26,8 +26,8 @@ $checkbox-indent: $checkbox-offset + $checkbox-size;
     }
 
     &:disabled ~ .form-label::before {
-      border-color: $checkbox-border-disabled;
       background-color: $checkbox-bg-disabled;
+      border-color: $checkbox-border-disabled;
     }
   }
 
@@ -39,18 +39,20 @@ $checkbox-indent: $checkbox-offset + $checkbox-size;
 
     // Background (color)
     &::before {
-      border: 2px solid $checkbox-border;
-      border-radius: 2px;
-      margin-right: $checkbox-offset;
-      background-color: $checkbox-bg;
       pointer-events: none;
       user-select: none;
+
+      margin-right: $checkbox-offset;
+
+      background-color: $checkbox-bg;
+      border: 2px solid $checkbox-border;
+      border-radius: 2px;
     }
 
     // Foreground (icon)
     &::after {
-      background-position: center center;
       background-repeat: no-repeat;
+      background-position: center center;
       background-size: 50% 50%;
     }
   }

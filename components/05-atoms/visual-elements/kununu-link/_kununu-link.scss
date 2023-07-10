@@ -1,12 +1,14 @@
 .kununu-link {
   @extend %link-unstyled;
 
+  cursor: pointer;
+
   display: flex;
+  justify-content: center;
+
   max-width: 20rem;
   height: auto;
-  justify-content: center;
   margin: 0 auto;
-  cursor: pointer;
 
   img {
     width: 50%;
