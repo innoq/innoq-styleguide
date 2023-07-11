@@ -3,27 +3,30 @@
   @extend %heading-font-regular;
 
   display: block;
+
   width: 100%;
   padding: $spacer-xs;
+
   font-size: $font-size-base;
   line-height: $paragraph-line-height;
+
   transition: standard-transition(background-color);
 }
 
 .form-control {
+  appearance: none;
   border: 2px solid $form-control-border-color;
   border-radius: 0;
-  appearance: none;
-  caret-color: $form-control-caret-color;
   outline: none;
-
-  &:focus {
-    background-color: $form-control-focus-bg;
-    color: $form-control-focus-color;
-  }
+  caret-color: $form-control-caret-color;
 
   &::placeholder {
     color: $form-control-placeholder-color;
+  }
+
+  &:focus {
+    color: $form-control-focus-color;
+    background-color: $form-control-focus-bg;
   }
 
   &--invalid {

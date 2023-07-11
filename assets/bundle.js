@@ -1,3 +1,64 @@
+// Co-authored-by: FND <fnd@innoq.com>
+class AudioPlayer extends HTMLElement {
+  connectedCallback() {
+    if (this._init) {
+      // ensures initialization is idempotent
+      return
+    }
+
+    this.appendChild(this.template);
+    this.rate = this.slider.value;
+    this._init = true;
+
+    this.addEventListener('change', this.onTune);
+    this.addEventListener('click', this.onSeek);
+  }
+
+  onTune(ev) {
+    const { slider } = this;
+    if (ev.target === slider) {
+      // event delegation
+      this.rate = slider.value;
+    }
+  }
+
+  onSeek(ev) {
+    const btn = ev.target;
+    if (!btn.matches('button[name]')) {
+      // event delegation
+      return
+    }
+
+    let value = parseInt(btn.value, 10);
+    if (btn.name === 'rewind') {
+      value = value * -1;
+    }
+    this._player.currentTime += value;
+  }
+
+  get slider() {
+    return this.querySelector('input[type=range]')
+  }
+
+  // eslint-disable-next-line accessor-pairs
+  set rate(value) {
+    this._player.playbackRate = value;
+    this._rate.textContent = value;
+  }
+
+  get _rate() {
+    return this.querySelector('var')
+  }
+
+  get _player() {
+    return this.querySelector('audio')
+  }
+
+  get template() {
+    return this.querySelector('template').content.cloneNode(true)
+  }
+}
+
 class CheckToToggle extends HTMLElement {
   connectedCallback() {
     this.checkbox.onclick = this.toggle.bind(this);
@@ -237,14 +298,12 @@ class ClickableArea extends HTMLElement {
 
 class TouchDetection extends HTMLElement {
   connectedCallback() {
-    window.addEventListener(
-      'touchstart',
-      function touched() {
-        document.body.classList.add('instructions--touch-active');
-        window.removeEventListener('touchstart', touched, false);
-      },
-      false
-    );
+    function touched() {
+      document.body.classList.add('instructions--touch-active');
+      window.removeEventListener('touchstart', touched, false);
+    }
+
+    window.addEventListener('touchstart', touched, false);
   }
 }
 
@@ -264,3 +323,4 @@ customElements.define('wall-of-consent', WallOfConsent);
 customElements.define('clickable-area', ClickableArea);
 customElements.define('touch-detection', TouchDetection);
 customElements.define('auto-submit-form', AutoSubmitForm);
+customElements.define('audio-player', AudioPlayer);

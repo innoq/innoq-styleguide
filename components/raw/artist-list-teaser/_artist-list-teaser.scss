@@ -13,23 +13,26 @@ $edition-font-size: $font-size-base;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+
   text-align: center;
 }
 
 .artist-list-teaser__edition__separator {
+  transform: rotate(90deg);
+
   min-width: $spacer-xl;
   height: 2px;
-  border: 0;
+
   background-color: $brand-gray;
-  transform: rotate(90deg);
+  border: 0;
 }
 
 .artist-list-teaser__edition__type {
   @extend %heading-font-bold;
 
   margin-top: $spacer-base;
-  color: $brand-gray;
   font-size: $font-size-md;
+  color: $brand-gray;
   text-transform: uppercase;
 }
 
@@ -39,7 +42,9 @@ $edition-font-size: $font-size-base;
   display: flex;
   flex-direction: column;
   align-items: center;
+
   margin-top: $spacer-xs;
+
   font-size: $font-size-xxl;
 
   &--edition-1 {
@@ -52,12 +57,14 @@ $edition-font-size: $font-size-base;
 }
 
 .artist-list-teaser__edition__date__separator {
+  transform: rotate(90deg);
+
   min-width: $spacer-base;
   height: 5px;
-  border: 0;
   margin: $spacer-sm 0;
+
   background-color: $brand-red;
-  transform: rotate(90deg);
+  border: 0;
 
   &--edition-1 {
     background-color: $brand-red;
@@ -108,9 +115,9 @@ $edition-font-size: $font-size-base;
   }
 
   .artist-list-teaser__edition__date__separator {
+    transform: rotate(0deg);
     height: 8px;
     margin: 0 $spacer-xxs;
-    transform: rotate(0deg);
   }
 
   .artist-list-teaser__title {

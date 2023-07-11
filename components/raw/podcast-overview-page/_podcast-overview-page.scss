@@ -10,8 +10,8 @@ $tile-teaser-width: ms(33);
 }
 
 .link-teaser--security {
-  border-bottom: 3px solid $podcast-teaser-overlay-color-sec;
   color: $podcast-teaser-default-bg-sec;
+  border-bottom: 3px solid $podcast-teaser-overlay-color-sec;
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -40,9 +40,9 @@ $tile-teaser-width: ms(33);
 @media screen and (min-width: $grid-breakpoint-lg) {
   .podcast-overview-grid {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     max-width: $default-page-layout-content-width-xl;
     margin: auto;
-    grid-template-columns: 1fr 1fr;
   }
 
   .podcast-overview-samples {

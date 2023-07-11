@@ -8,10 +8,10 @@
 }
 
 .contact-person--inverted {
-  background-blend-mode: multiply;
-  background-position: center center;
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
+  background-blend-mode: multiply;
 
   * {
     color: $brand-white;
@@ -20,9 +20,9 @@
 
 .contact-person__wrapper {
   display: grid;
-  width: 100%;
   grid-gap: $spacer-base;
   grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr));
+  width: 100%;
 }
 
 .contact-person__subheading {

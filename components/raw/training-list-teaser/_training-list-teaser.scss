@@ -4,26 +4,26 @@ $list-teaser-training-height: ms(32);
   @extend %list-teaser;
 
   display: flex;
-  min-height: $list-teaser-training-height;
   flex-direction: column;
   justify-content: space-between;
+  min-height: $list-teaser-training-height;
 
   &.primary {
-    background-blend-mode: multiply;
     background-color: $list-teaser-training-bg-color-primary;
     background-image: asset-url('bg-images/general/visual-trainings-07.webp');
-    background-position: top;
     background-repeat: no-repeat;
+    background-position: top;
     background-size: cover;
+    background-blend-mode: multiply;
   }
 
   &.secondary {
-    background-blend-mode: multiply;
     background-color: $list-teaser-training-bg-color-secondary;
     background-image: asset-url('bg-images/general/visual-trainings-07.webp');
-    background-position: top;
     background-repeat: no-repeat;
+    background-position: top;
     background-size: cover;
+    background-blend-mode: multiply;
   }
 
   .list-teaser__footer {
@@ -44,8 +44,8 @@ a.list-teaser-training {
 
 .list-teaser-training__headline {
   margin-bottom: $spacer-md;
-  color: $list-teaser-training-text-color-primary;
   font-size: $font-size-lg;
+  color: $list-teaser-training-text-color-primary;
 }
 
 //

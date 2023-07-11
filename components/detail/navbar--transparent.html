@@ -690,16 +690,23 @@
 <span class="hljs-variable">$navbar-btn-transition</span>: color <span class="hljs-number">0.175s</span> ease;
 <span class="hljs-variable">$navbar-toggle-width</span>: <span class="hljs-built_in">calc</span>((#{<span class="hljs-variable">$navbar-focus-outline-width</span>} * <span class="hljs-number">2</span>) + (#{$navbar-padding} * <span class="hljs-number">3</span>));
 <span class="hljs-variable">$navbar-toggle-transition-speed</span>: <span class="hljs-variable">$transition-time-standard</span> * <span class="hljs-number">3</span>;
-<span class="hljs-variable">$navbar-dropdown-shadow</span>: <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-number">25px</span> -<span class="hljs-number">5px</span> <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> / <span class="hljs-number">0.1</span>), <span class="hljs-number">0</span> <span class="hljs-number">8px</span> <span class="hljs-number">10px</span> -<span class="hljs-number">6px</span> <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> / <span class="hljs-number">0.1</span>);
+<span class="hljs-comment">/* stylelint-disable-next-line scss/dollar-variable-colon-space-after */</span>
+<span class="hljs-variable">$navbar-dropdown-shadow</span>:
+  <span class="hljs-number">0</span> <span class="hljs-number">20px</span> <span class="hljs-number">25px</span> -<span class="hljs-number">5px</span> <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> / <span class="hljs-number">0.1</span>),
+  <span class="hljs-number">0</span> <span class="hljs-number">8px</span> <span class="hljs-number">10px</span> -<span class="hljs-number">6px</span> <span class="hljs-built_in">rgb</span>(<span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> / <span class="hljs-number">0.1</span>);
 <span class="hljs-variable">$navbar-dropdown-z-index</span>: <span class="hljs-number">1</span>;
 <span class="hljs-variable">$navbar-dropdown-z-index-expanding</span>: <span class="hljs-number">2</span>;
 <span class="hljs-variable">$navbar-dropdown-z-index-hover</span>: <span class="hljs-number">3</span>;
 
 %navigation-action {
-  <span class="hljs-attribute">display</span>: inline-block;
-  <span class="hljs-attribute">margin</span>: <span class="hljs-built_in">var</span>(--forced-colors-action-margin);
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$navbar-link-color</span>;
   <span class="hljs-attribute">cursor</span>: pointer;
+
+  <span class="hljs-attribute">display</span>: inline-block;
+
+  <span class="hljs-attribute">margin</span>: <span class="hljs-built_in">var</span>(--forced-colors-action-margin);
+
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$navbar-link-color</span>;
+
   <span class="hljs-attribute">transition</span>: <span class="hljs-variable">$navbar-btn-transition</span>;
 
   &amp;<span class="hljs-selector-pseudo">:hover</span>,
@@ -732,15 +739,15 @@
 %navigation-link {
   <span class="hljs-keyword">@extend</span> %navigation-action;
 
-  <span class="hljs-attribute">border</span>: <span class="hljs-built_in">var</span>(--forced-colors-link-border-width, #{<span class="hljs-variable">$navbar-focus-outline-width</span>}) solid transparent;
   <span class="hljs-attribute">text-decoration</span>: <span class="hljs-built_in">var</span>(--forced-colors-link-decoration, none);
+  <span class="hljs-attribute">border</span>: <span class="hljs-built_in">var</span>(--forced-colors-link-border-width, #{<span class="hljs-variable">$navbar-focus-outline-width</span>}) solid transparent;
 }
 
 %navigation-<span class="hljs-selector-tag">button</span> {
   <span class="hljs-keyword">@extend</span> %navigation-action;
 
-  <span class="hljs-attribute">border</span>: <span class="hljs-variable">$navbar-focus-outline-width</span> solid transparent;
   <span class="hljs-attribute">background-color</span>: transparent;
+  <span class="hljs-attribute">border</span>: <span class="hljs-variable">$navbar-focus-outline-width</span> solid transparent;
 }
 
 <span class="hljs-selector-class">.skip-link</span> {
@@ -748,8 +755,8 @@
   <span class="hljs-keyword">@extend</span> %navigation-link;
 
   <span class="hljs-attribute">display</span>: block;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$navbar-padding</span>;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$navbar-focus-outline-width</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$navbar-padding</span>;
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$navbar-lightened-bg</span>;
 
   &amp;<span class="hljs-selector-pseudo">:not</span>(:focus) {
@@ -763,12 +770,12 @@
   <span class="hljs-keyword">@extend</span> %heading-font-regular;
 
   <span class="hljs-attribute">display</span>: grid;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--navbar-background-color);
   <span class="hljs-attribute">grid-template-areas</span>:
     <span class="hljs-string">&#x27;brand menu search&#x27;</span>
     <span class="hljs-string">&#x27;nav nav nav&#x27;</span>
     <span class="hljs-string">&#x27;meta meta meta&#x27;</span>;
   <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">1</span>fr auto auto;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--navbar-background-color);
 
   <span class="hljs-comment">// A helper for providing alternative text for images and icons to assistive</span>
   <span class="hljs-comment">// technologies. This is similar to the `.sr-only` helper, but the</span>
@@ -776,29 +783,6 @@
   <span class="hljs-comment">// `forced-colors` mode where icons/images are also difficult to discern</span>
   <span class="hljs-selector-class">.link-alt</span> {
     <span class="hljs-keyword">@extend</span> %sr-only;
-  }
-
-  <span class="hljs-comment">// Use CSS properties to tweak the navbar theme based on CSS media features</span>
-  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">prefers-reduced-motion</span>: no-preference) {
-    <span class="hljs-attr">--grid-row-transition</span>: grid-template-rows #{<span class="hljs-variable">$navbar-toggle-transition-speed</span>} #{<span class="hljs-variable">$transition-easing-standard</span>};
-    <span class="hljs-attr">--visibility-transition</span>: visibility #{<span class="hljs-variable">$navbar-toggle-transition-speed</span>} #{<span class="hljs-variable">$transition-easing-standard</span>};
-  }
-
-  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">forced-colors</span>: active) {
-    <span class="hljs-attr">--forced-colors-link-border-width</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attr">--forced-colors-action-margin</span>: #{<span class="hljs-variable">$navbar-focus-outline-width</span>};
-    <span class="hljs-attr">--forced-colors-link-decoration</span>: underline;
-    <span class="hljs-attr">--forced-colors-navbar-toggler-width</span>: <span class="hljs-number">10rem</span>;
-
-    <span class="hljs-selector-class">.link-alt</span> {
-      <span class="hljs-attribute">all</span>: revert;
-      <span class="hljs-attribute">text-align</span>: left;
-    }
-  }
-
-  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">pointer</span>: fine) {
-    <span class="hljs-attr">--pointer-fine-navbar-meta-font-size</span>: #{<span class="hljs-variable">$navbar-secondary-font-size</span> * <span class="hljs-number">0.9</span>};
-    <span class="hljs-attr">--pointer-fine-navbar-meta-spacer</span>: #{<span class="hljs-variable">$spacer-xs</span> * <span class="hljs-number">0.5</span>};
   }
 
   &amp;<span class="hljs-attr">--transparent</span> {
@@ -829,9 +813,9 @@
     <span class="hljs-keyword">@extend</span> %navigation-link;
 
     <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">grid-area</span>: brand;
     <span class="hljs-attribute">flex-direction</span>: column;
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$navbar-padding</span>;
-    <span class="hljs-attribute">grid-area</span>: brand;
 
     <span class="hljs-selector-class">.brand-logo</span> {
       <span class="hljs-attribute">width</span>: <span class="hljs-variable">$navbar-logo-height-small</span> * <span class="hljs-number">3.94</span>;
@@ -843,9 +827,9 @@
     <span class="hljs-keyword">@extend</span> %navigation-link;
 
     <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">grid-area</span>: search;
     <span class="hljs-attribute">align-items</span>: center;
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$navbar-padding</span>;
-    <span class="hljs-attribute">grid-area</span>: search;
 
     <span class="hljs-selector-class">.icon</span> {
       <span class="hljs-attribute">width</span>: <span class="hljs-variable">$navbar-padding</span>;
@@ -854,8 +838,15 @@
   }
 
   <span class="hljs-selector-tag">menu</span>-toggle {
-    <span class="hljs-attribute">align-items</span>: center;
     <span class="hljs-attribute">grid-area</span>: menu;
+    <span class="hljs-attribute">align-items</span>: center;
+
+    &amp;<span class="hljs-selector-pseudo">::after</span> {
+      <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+      <span class="hljs-attribute">width</span>: <span class="hljs-number">0</span>;
+      <span class="hljs-attribute">height</span>: <span class="hljs-variable">$navbar-padding</span>;
+      <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$navbar-link-color</span>;
+    }
 
     &amp;<span class="hljs-selector-pseudo">:not</span>([hidden]) {
       <span class="hljs-attribute">display</span>: flex;
@@ -868,19 +859,12 @@
       <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$navbar-primary-font-size</span>;
       <span class="hljs-attribute">font-weight</span>: bold;
     }
-
-    &amp;<span class="hljs-selector-pseudo">::after</span> {
-      <span class="hljs-attribute">width</span>: <span class="hljs-number">0</span>;
-      <span class="hljs-attribute">height</span>: <span class="hljs-variable">$navbar-padding</span>;
-      <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$navbar-link-color</span>;
-      <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
-    }
   }
 
   <span class="hljs-selector-class">.navigation-links</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$navbar-lightened-bg</span>;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$navbar-primary-font-size</span>;
     <span class="hljs-attribute">grid-area</span>: nav;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$navbar-primary-font-size</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$navbar-lightened-bg</span>;
 
     &gt; <span class="hljs-selector-pseudo">:first</span>-child {
       <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$navbar-padding</span> * <span class="hljs-number">2</span>;
@@ -930,15 +914,19 @@
   <span class="hljs-selector-class">.navigation-meta</span> {
     <span class="hljs-attribute">position</span>: sticky;
     <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
+
     <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">grid-area</span>: meta;
     <span class="hljs-attribute">align-items</span>: center;
     <span class="hljs-attribute">justify-content</span>: space-around;
+
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$navbar-padding</span>;
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--navbar-background-color);
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$navbar-link-color</span>;
+
     <span class="hljs-attribute">font-size</span>: <span class="hljs-built_in">var</span>(--pointer-fine-navbar-meta-font-size, inherit);
-    <span class="hljs-attribute">grid-area</span>: meta;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$navbar-link-color</span>;
     <span class="hljs-attribute">text-transform</span>: uppercase;
+
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--navbar-background-color);
 
     &gt; * {
       <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$navbar-padding</span> <span class="hljs-number">0</span>;
@@ -987,8 +975,8 @@
     <span class="hljs-selector-class">.navigation-meta</span> {
       <span class="hljs-attribute">overflow</span>: hidden;
       <span class="hljs-attribute">min-height</span>: <span class="hljs-number">0</span>;
-      <span class="hljs-attribute">transition</span>: <span class="hljs-built_in">var</span>(--visibility-transition);
       <span class="hljs-attribute">visibility</span>: <span class="hljs-built_in">var</span>(--main-navigation-menu-visibility);
+      <span class="hljs-attribute">transition</span>: <span class="hljs-built_in">var</span>(--visibility-transition);
     }
   }
 
@@ -1007,10 +995,12 @@
     <span class="hljs-attribute">flex-direction</span>: column;
 
     <span class="hljs-selector-class">.icon</span> {
+      <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(-<span class="hljs-number">90deg</span>);
+
       <span class="hljs-attribute">width</span>: <span class="hljs-variable">$spacer-xs</span>;
       <span class="hljs-attribute">height</span>: <span class="hljs-variable">$spacer-xs</span>;
       <span class="hljs-attribute">margin-left</span>: auto;
-      <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(-<span class="hljs-number">90deg</span>);
+
       <span class="hljs-attribute">transition</span>: <span class="hljs-built_in">standard-transition</span>(all);
 
       &amp;<span class="hljs-selector-pseudo">:hover</span>,
@@ -1043,8 +1033,8 @@
     <span class="hljs-comment">// See: https://nemzes.net/posts/animating-height-auto/</span>
     <span class="hljs-comment">// Browser Support: https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows#browser_compatibility</span>
     <span class="hljs-selector-tag">div</span> {
-      <span class="hljs-attribute">display</span>: grid;
       <span class="hljs-attribute">overflow</span>: hidden;
+      <span class="hljs-attribute">display</span>: grid;
       <span class="hljs-attribute">grid-template-rows</span>: <span class="hljs-built_in">var</span>(--submenu-grid-template-rows);
       <span class="hljs-attribute">transition</span>: <span class="hljs-built_in">var</span>(--grid-row-transition);
     }
@@ -1052,8 +1042,8 @@
     <span class="hljs-selector-tag">ul</span> {
       <span class="hljs-attribute">min-height</span>: <span class="hljs-number">0</span>;
       <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-xs</span>;
-      <span class="hljs-attribute">transition</span>: <span class="hljs-built_in">var</span>(--visibility-transition);
       <span class="hljs-attribute">visibility</span>: <span class="hljs-built_in">var</span>(--submenu-visibility);
+      <span class="hljs-attribute">transition</span>: <span class="hljs-built_in">var</span>(--visibility-transition);
     }
 
     <span class="hljs-comment">/* stylelint-disable-next-line selector-max-compound-selectors */</span>
@@ -1069,14 +1059,37 @@
     }
   }
 
+  <span class="hljs-comment">// Use CSS properties to tweak the navbar theme based on CSS media features</span>
+  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">prefers-reduced-motion</span>: no-preference) {
+    <span class="hljs-attr">--grid-row-transition</span>: grid-template-rows #{<span class="hljs-variable">$navbar-toggle-transition-speed</span>} #{<span class="hljs-variable">$transition-easing-standard</span>};
+    <span class="hljs-attr">--visibility-transition</span>: visibility #{<span class="hljs-variable">$navbar-toggle-transition-speed</span>} #{<span class="hljs-variable">$transition-easing-standard</span>};
+  }
+
+  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">forced-colors</span>: active) {
+    <span class="hljs-attr">--forced-colors-link-border-width</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attr">--forced-colors-action-margin</span>: #{<span class="hljs-variable">$navbar-focus-outline-width</span>};
+    <span class="hljs-attr">--forced-colors-link-decoration</span>: underline;
+    <span class="hljs-attr">--forced-colors-navbar-toggler-width</span>: <span class="hljs-number">10rem</span>;
+
+    <span class="hljs-selector-class">.link-alt</span> {
+      <span class="hljs-attribute">all</span>: revert;
+      <span class="hljs-attribute">text-align</span>: left;
+    }
+  }
+
+  <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">pointer</span>: fine) {
+    <span class="hljs-attr">--pointer-fine-navbar-meta-font-size</span>: #{<span class="hljs-variable">$navbar-secondary-font-size</span> * <span class="hljs-number">0.9</span>};
+    <span class="hljs-attr">--pointer-fine-navbar-meta-spacer</span>: #{<span class="hljs-variable">$spacer-xs</span> * <span class="hljs-number">0.5</span>};
+  }
+
   <span class="hljs-comment">//</span>
   <span class="hljs-comment">// Breakpoints for larger devices</span>
   <span class="hljs-comment">//</span>
 
   <span class="hljs-keyword">@media</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-xs-sm</span>) {
     <span class="hljs-selector-class">.navigation-meta</span> {
-      <span class="hljs-attribute">justify-content</span>: center;
       <span class="hljs-attribute">gap</span>: <span class="hljs-variable">$spacer-sm</span>;
+      <span class="hljs-attribute">justify-content</span>: center;
     }
   }
 
@@ -1156,8 +1169,8 @@
       }
 
       <span class="hljs-selector-class">.icon</span> {
-        <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$spacer-xs</span>;
         <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(<span class="hljs-number">0deg</span>);
+        <span class="hljs-attribute">margin-left</span>: <span class="hljs-variable">$spacer-xs</span>;
       }
 
       <span class="hljs-selector-tag">details</span><span class="hljs-selector-attr">[open]</span>,
@@ -1179,6 +1192,7 @@
         <span class="hljs-attribute">position</span>: absolute;
         <span class="hljs-attribute">z-index</span>: <span class="hljs-variable">$navbar-dropdown-z-index</span>;
         <span class="hljs-attribute">right</span>: <span class="hljs-built_in">var</span>(--submenu-position-right);
+
         <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$navbar-lightened-bg</span>;
         <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$navbar-dropdown-shadow</span>;
       }
@@ -1234,7 +1248,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">13.6 KB</span>
+                    <span class="Meta-value">13.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -1722,6 +1736,40 @@ the animations if the user has specified no preference for
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./book-detail-page.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="book-detail-page"
+                data-handle="book-detail-page"
+            >
+                <span>Book Detail Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -4230,6 +4278,40 @@ the animations if the user has specified no preference for
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./detail-item.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="detail-item"
+                data-handle="detail-item"
+            >
+                <span>Detail Item</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -7200,6 +7282,40 @@ the animations if the user has specified no preference for
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./audio-player.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="audio-player"
+                data-handle="audio-player"
+            >
+                <span>Audio Player</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./avatar.html"
                 data-role="tree-link"
                 
@@ -8738,8 +8854,8 @@ the animations if the user has specified no preference for
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-07-06T14:06:37.363Z">
-                                7/6/2023
+                            <time datetime="2023-07-11T08:48:25.929Z">
+                                7/11/2023
                             </time>
                         
                     </dd>

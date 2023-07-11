@@ -5,21 +5,22 @@ $podcast-teaser-height-md: ms(35);
   @extend %block-link;
   @extend %hover-glow;
 
-  display: flex;
   overflow: hidden;
-  min-height: $podcast-teaser-height-sm;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  min-height: $podcast-teaser-height-sm;
 }
 
 .podcast-teaser__body {
-  padding: $spacer-sm $spacer-md;
   margin-bottom: 0;
+  padding: $spacer-sm $spacer-md;
 }
 
 .podcast-teaser__footer {
-  padding: $spacer-sm $spacer-md;
   margin-bottom: 0;
+  padding: $spacer-sm $spacer-md;
 
   > * {
     margin: 0;
@@ -72,12 +73,13 @@ $podcast-teaser-height-md: ms(35);
 }
 
 .podcast-teaser--avatar--overlay {
-  background-blend-mode: multiply;
-  background-color: $podcast-teaser-overlay-color-secondary;
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
   color: $podcast-teaser-default-color-secondary;
+
+  background-color: $podcast-teaser-overlay-color-secondary;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto 100%;
+  background-blend-mode: multiply;
 
   .podcast-teaser__headline,
   .podcast-teaser__subheadline {
@@ -85,8 +87,8 @@ $podcast-teaser-height-md: ms(35);
   }
 
   &--security {
-    background-color: $podcast-teaser-overlay-color-sec;
     color: $podcast-teaser-default-bg-sec;
+    background-color: $podcast-teaser-overlay-color-sec;
 
     .podcast-teaser__headline,
     .podcast-teaser__subheadline {
@@ -96,12 +98,15 @@ $podcast-teaser-height-md: ms(35);
 }
 
 .podcast-teaser--avatar--overlay--big {
-  background-blend-mode: multiply;
-  background-color: $podcast-teaser-overlay-color-secondary;
-  background-position: top right, top left;
-  background-repeat: no-repeat;
-  background-size: 0%;
   color: $podcast-teaser-default-color-secondary;
+
+  background-color: $podcast-teaser-overlay-color-secondary;
+  background-repeat: no-repeat;
+  background-position:
+    top right,
+    top left;
+  background-size: 0%;
+  background-blend-mode: multiply;
 
   .podcast-teaser__headline,
   .podcast-teaser__subheadline {
@@ -109,8 +114,8 @@ $podcast-teaser-height-md: ms(35);
   }
 
   &--security {
-    background-color: $podcast-teaser-overlay-color-sec;
     color: $podcast-teaser-default-bg-sec;
+    background-color: $podcast-teaser-overlay-color-sec;
 
     .podcast-teaser__headline,
     .podcast-teaser__subheadline {
@@ -134,15 +139,16 @@ $podcast-teaser-height-md: ms(35);
 }
 
 .podcast-teaser--avatar {
-  background-color: $podcast-teaser-light-bg;
-  background-position: top right;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
   color: $podcast-teaser-default-color;
 
+  background-color: $podcast-teaser-light-bg;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: auto 100%;
+
   &--security {
-    background-color: $podcast-teaser-default-color-sec;
     color: $podcast-teaser-default-bg-sec;
+    background-color: $podcast-teaser-default-color-sec;
 
     .podcast-teaser__headline,
     .podcast-teaser__subheadline {
@@ -152,8 +158,8 @@ $podcast-teaser-height-md: ms(35);
 }
 
 .podcast-teaser--default {
-  background-color: $podcast-teaser-default-bg;
   color: $podcast-teaser-default-color;
+  background-color: $podcast-teaser-default-bg;
 
   .podcast-teaser__headline,
   .podcast-teaser__subheadline {
@@ -161,8 +167,8 @@ $podcast-teaser-height-md: ms(35);
   }
 
   &--security {
-    background-color: $podcast-teaser-default-bg-sec;
     color: $podcast-teaser-default-color-sec;
+    background-color: $podcast-teaser-default-bg-sec;
 
     .podcast-teaser__headline,
     .podcast-teaser__subheadline {

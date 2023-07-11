@@ -3,9 +3,11 @@
   @extend %list-teaser;
 
   display: flex;
-  width: 100%;
   flex-direction: column;
   justify-content: space-between;
+
+  width: 100%;
+
   background-color: $portfolio-card-bg-color;
 
   .author-bio__name,
@@ -30,8 +32,8 @@
 
 .portfolio-card__headline {
   margin-top: $spacer-xxs;
-  color: $portfolio-card-headline-color;
   font-size: $font-size-lg;
+  color: $portfolio-card-headline-color;
 }
 
 .portfolio-card__text {

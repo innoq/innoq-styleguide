@@ -304,23 +304,28 @@
   <span class="hljs-keyword">@extend</span> %manual-hyphenation;
 
   <span class="hljs-attribute">display</span>: inline;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-built_in">ms</span>(-<span class="hljs-number">16</span>);
+
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-base</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$brand-primary</span>;
-  <span class="hljs-attribute">box-decoration-break</span>: clone;
-  <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$spacer-xxs</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-variable">$brand-primary</span>, -<span class="hljs-variable">$spacer-xxs</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-variable">$brand-primary</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$service-intro-text-color</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-built_in">ms</span>(-<span class="hljs-number">16</span>);
+
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-lg</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1.38</span>; <span class="hljs-comment">//magic number</span>
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$service-intro-text-color</span>;
+
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$brand-primary</span>;
+  <span class="hljs-attribute">box-shadow</span>:
+    <span class="hljs-variable">$spacer-xxs</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-variable">$brand-primary</span>,
+    -<span class="hljs-variable">$spacer-xxs</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> <span class="hljs-variable">$brand-primary</span>;
+  <span class="hljs-attribute">box-decoration-break</span>: clone;
 }
 
 <span class="hljs-selector-class">.textbox-sequence__text</span> {
   <span class="hljs-keyword">@extend</span> %heading-font-regular;
 
   <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$spacer-xs</span> <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-sm</span> <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$service-intro-text-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$service-intro-text-color</span>;
 
   <span class="hljs-selector-tag">a</span> {
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$service-intro-text-color</span>;
@@ -329,11 +334,13 @@
 
 <span class="hljs-selector-class">.textbox-sequence__wrapper</span> {
   <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
   <span class="hljs-attribute">flex-direction</span>: column;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-sm</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$brand-white</span>;
   <span class="hljs-attribute">gap</span>: <span class="hljs-number">2rem</span>;
+
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-sm</span>;
+
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$brand-white</span>;
 }
 
 <span class="hljs-selector-class">.textbox-sequence__icon--bottomleft</span>,
@@ -345,10 +352,11 @@
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md-lg</span>) {
   <span class="hljs-selector-class">.textbox-sequence__wrapper</span> {
     <span class="hljs-attribute">display</span>: grid;
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">grid-gap</span>: <span class="hljs-number">2rem</span>;
     <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-built_in">repeat</span>(<span class="hljs-number">6</span>, <span class="hljs-number">1</span>fr);
     <span class="hljs-attribute">grid-template-rows</span>: <span class="hljs-built_in">repeat</span>(auto, <span class="hljs-number">10rem</span>);
+
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
   }
 
   <span class="hljs-selector-class">.textbox-sequence__text</span> {
@@ -357,45 +365,47 @@
 
   <span class="hljs-selector-class">.textbox-sequence__box--a</span> {
     <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">align-self</span>: start;
     <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">1</span> / <span class="hljs-number">3</span>;
     <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">2</span> / <span class="hljs-number">4</span>;
+    <span class="hljs-attribute">align-self</span>: start;
   }
 
   <span class="hljs-selector-class">.textbox-sequence__box--b</span> {
     <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">align-self</span>: start;
     <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">3</span> / <span class="hljs-number">5</span>;
     <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">1</span> / <span class="hljs-number">3</span>;
+    <span class="hljs-attribute">align-self</span>: start;
   }
 
   <span class="hljs-selector-class">.textbox-sequence__box--c</span> {
     <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">align-self</span>: start;
     <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">5</span> / <span class="hljs-number">7</span>;
     <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">2</span> / <span class="hljs-number">6</span>;
+    <span class="hljs-attribute">align-self</span>: start;
   }
 
   <span class="hljs-selector-class">.textbox-sequence__box--d</span> {
     <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">align-self</span>: start;
     <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">3</span> / <span class="hljs-number">5</span>;
     <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">5</span> / <span class="hljs-number">7</span>;
+    <span class="hljs-attribute">align-self</span>: start;
   }
 
   <span class="hljs-selector-class">.textbox-sequence__box--e</span> {
     <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">align-self</span>: start;
     <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">1</span> / <span class="hljs-number">3</span>;
     <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">6</span> / <span class="hljs-number">8</span>;
+    <span class="hljs-attribute">align-self</span>: start;
   }
 
   <span class="hljs-selector-class">.textbox-sequence__box--f</span> {
     <span class="hljs-attribute">position</span>: relative;
-    <span class="hljs-attribute">align-self</span>: start;
-    <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">40px</span>;
+
     <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">3</span> / <span class="hljs-number">5</span>;
     <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">8</span> / <span class="hljs-number">10</span>;
+    <span class="hljs-attribute">align-self</span>: start;
+
+    <span class="hljs-attribute">margin-top</span>: -<span class="hljs-number">40px</span>;
   }
 
   <span class="hljs-selector-class">.textbox-sequence__icon--topright</span> {
@@ -657,6 +667,40 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./book-detail-page.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="book-detail-page"
+                data-handle="book-detail-page"
+            >
+                <span>Book Detail Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -3165,6 +3209,40 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./detail-item.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="detail-item"
+                data-handle="detail-item"
+            >
+                <span>Detail Item</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -6135,6 +6213,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./audio-player.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="audio-player"
+                data-handle="audio-player"
+            >
+                <span>Audio Player</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./avatar.html"
                 data-role="tree-link"
                 
@@ -7673,8 +7785,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-07-06T14:06:37.363Z">
-                                7/6/2023
+                            <time datetime="2023-07-11T08:48:25.929Z">
+                                7/11/2023
                             </time>
                         
                     </dd>

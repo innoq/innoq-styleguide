@@ -18,7 +18,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   color: $toolbar-link-color;
+
   transition: standard-transition(color);
 
   .icon {

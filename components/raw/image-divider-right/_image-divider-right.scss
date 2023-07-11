@@ -18,8 +18,8 @@
 .image-divider-right-content-textbox__text {
   @extend %heading-font-bold;
 
-  color: $image-divider-right-color;
   font-size: $font-size-sm;
+  color: $image-divider-right-color;
 }
 
 //Breakpoints
@@ -36,14 +36,14 @@
 
 @media screen and (min-width: $grid-breakpoint-lg) {
   .image-divider-right-content {
-    max-width: $default-page-layout-content-width-xl;
     flex-direction: row;
+    max-width: $default-page-layout-content-width-xl;
     margin: 0 auto;
   }
 
   .image-divider-right-textbox {
-    width: 100%;
     flex-grow: 1;
+    width: 100%;
     padding: 0 $spacer-xxl;
   }
 

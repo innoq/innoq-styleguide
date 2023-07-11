@@ -3,17 +3,21 @@
   flex-wrap: wrap;
   align-items: stretch;
   justify-content: center;
+
   padding-bottom: $spacer-base;
 
   &__body {
-    min-height: 20vh;
     flex-basis: 100%;
     flex-grow: 1;
     align-content: center;
-    padding: $spacer-sm $spacer-sm $spacer-md;
+
+    min-height: 20vh;
     margin-bottom: $spacer-sm;
-    background-color: $simple-teaser-bg;
+    padding: $spacer-sm $spacer-sm $spacer-md;
+
     text-align: center;
+
+    background-color: $simple-teaser-bg;
   }
 
   &__footer {

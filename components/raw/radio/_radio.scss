@@ -26,8 +26,8 @@ $radio-indent: $radio-offset + $radio-size;
     }
 
     &:disabled ~ .form-label::before {
-      border-color: $radio-border-disabled;
       background-color: $radio-bg-disabled;
+      border-color: $radio-border-disabled;
     }
   }
 
@@ -38,18 +38,20 @@ $radio-indent: $radio-offset + $radio-size;
 
     // Background (color)
     &::before {
-      border: 2px solid $radio-border;
-      border-radius: 50%;
-      margin-right: $radio-offset;
-      background-color: $radio-bg;
       pointer-events: none;
       user-select: none;
+
+      margin-right: $radio-offset;
+
+      background-color: $radio-bg;
+      border: 2px solid $radio-border;
+      border-radius: 50%;
     }
 
     // Foreground (icon)
     &::after {
-      background-position: center center;
       background-repeat: no-repeat;
+      background-position: center center;
       background-size: 75% 75%;
     }
   }

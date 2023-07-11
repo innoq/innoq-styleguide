@@ -10,8 +10,8 @@
     list-style-type: '✓';
 
     &::marker {
-      color: $bullet-list-color;
       font-size: 1.5rem;
+      color: $bullet-list-color;
     }
   }
 }

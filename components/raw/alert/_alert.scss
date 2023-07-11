@@ -4,17 +4,19 @@
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+
   padding: $spacer-xs;
-  color: $alert-color;
+
   font-size: $font-size-base;
+  color: $alert-color;
 
   &--info {
     background-color: $brand-info;
   }
 
   &--warn {
-    background-color: $brand-warn;
     color: $brand-text;
+    background-color: $brand-warn;
   }
 
   &--error {

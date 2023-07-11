@@ -8,13 +8,13 @@
   }
 
   .standard-header__intro__label {
-    background-color: $brand-gray;
     color: $brand-yellow;
+    background-color: $brand-gray;
   }
 
   .standard-header__intro {
-    background-color: $brand-white;
     color: $brand-gray;
+    background-color: $brand-white;
   }
 
   h3,
@@ -44,9 +44,9 @@
   }
 
   .btn--cta {
-    border-color: $brand-yellow;
-    background-color: $brand-yellow;
     color: $brand-gray;
+    background-color: $brand-yellow;
+    border-color: $brand-yellow;
 
     &::after {
       background-color: $brand-gray;
@@ -54,8 +54,8 @@
 
     &:hover,
     &:focus {
-      border-color: $brand-gray;
       color: $brand-yellow;
+      border-color: $brand-gray;
     }
   }
 
@@ -66,18 +66,18 @@
 
     /* stylelint-disable-next-line selector-max-compound-selectors */
     ul > li::before {
-      border: 3px solid $brand-yellow;
       background: $brand-white;
+      border: 3px solid $brand-yellow;
     }
   }
 
   .tag-list__link {
-    background-color: $brand-yellow;
     color: $brand-gray;
+    background-color: $brand-yellow;
 
     &:hover {
-      background-color: $brand-gray;
       color: $brand-yellow;
+      background-color: $brand-gray;
     }
   }
 }

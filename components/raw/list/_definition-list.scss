@@ -20,9 +20,9 @@ dl {
   dt {
     @extend %heading-font-bold;
 
-    color: $definition-list-dt-color;
     font-size: $font-size-base;
     line-height: $paragraph-line-height;
+    color: $definition-list-dt-color;
   }
 
   dd {

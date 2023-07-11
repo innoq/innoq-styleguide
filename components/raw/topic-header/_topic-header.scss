@@ -12,14 +12,17 @@ $topic-header-inner-padding-small: $spacer-md;
 
   &__body {
     display: flex;
-    max-width: $default-page-layout-content-width-md;
     flex-direction: column;
     align-items: center;
-    padding: $topic-header-inner-padding-small;
+
+    max-width: $default-page-layout-content-width-md;
     margin: 0 auto;
+    padding: $topic-header-inner-padding-small;
+
+    color: $topic-header-intro-text-color;
+
     background-color: $topic-header-intro-bg-color;
     background-size: cover;
-    color: $topic-header-intro-text-color;
   }
 
   &__punch-in {
@@ -29,8 +32,9 @@ $topic-header-inner-padding-small: $spacer-md;
   &__title {
     @extend %punch-in;
 
-    padding-bottom: $spacer-base;
     margin-bottom: $spacer-xs;
+    padding-bottom: $spacer-base;
+
     font-size: $font-size-xxl;
     line-height: $heading-line-height-sm;
     text-align: center;
@@ -40,8 +44,9 @@ $topic-header-inner-padding-small: $spacer-md;
     @extend %heading-font-bold;
 
     margin-bottom: $spacer-xs;
-    color: $topic-header-intro-text-color;
+
     font-size: $font-size-base;
+    color: $topic-header-intro-text-color;
     text-align: center;
     text-transform: uppercase;
   }
@@ -54,9 +59,10 @@ $topic-header-inner-padding-small: $spacer-md;
     @extend %body-font-italic;
 
     max-width: 100%; // This fixes IE11 Flexbox rendering issues.
+    margin-bottom: $spacer-base;
     padding-right: $topic-header-inner-padding-small;
     padding-left: $topic-header-inner-padding-small;
-    margin-bottom: $spacer-base;
+
     font-size: $font-size-sm;
     line-height: $paragraph-line-height;
     text-align: center;

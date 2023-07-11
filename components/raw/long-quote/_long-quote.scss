@@ -12,14 +12,19 @@ long-quote > blockquote,
     @extend %heading-font-heavy;
 
     display: inline;
+
     padding: $spacer-xxs;
+
+    font-size: $font-size-sm;
+    color: $quote-color;
+
     background-color: $quote-bg-color;
+    box-shadow:
+      $spacer-xxs 0 0 $brand-primary,
+      -$spacer-xxs 0 0 $brand-primary;
     /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
-    box-shadow: $spacer-xxs 0 0 $brand-primary, -$spacer-xxs 0 0 $brand-primary;
-    color: $quote-color;
-    font-size: $font-size-sm;
 
     &:lang(de) {
       &::before {

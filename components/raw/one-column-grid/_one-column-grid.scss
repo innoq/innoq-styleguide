@@ -1,6 +1,6 @@
 .one-column-grid {
   display: grid;
-  width: 100%;
-  gap: $spacer-md;
   grid-column: 1fr;
+  gap: $spacer-md;
+  width: 100%;
 }

@@ -233,18 +233,22 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre><span class="hljs-comment">// Credit: Nicolas Gallagher and SUIT CSS.</span>
+                                <pre><span class="hljs-keyword">@use</span> <span class="hljs-string">&#x27;sass:math&#x27;</span>;
+
+<span class="hljs-comment">// Credit: Nicolas Gallagher and SUIT CSS.</span>
 
 <span class="hljs-selector-class">.embed-responsive</span> {
   <span class="hljs-attribute">position</span>: relative;
-  <span class="hljs-attribute">display</span>: block;
+
   <span class="hljs-attribute">overflow</span>: hidden;
+  <span class="hljs-attribute">display</span>: block;
+
   <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
 
   &amp;<span class="hljs-selector-pseudo">::before</span> {
-    <span class="hljs-attribute">display</span>: block;
     <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+    <span class="hljs-attribute">display</span>: block;
   }
 
   <span class="hljs-selector-class">.embed-responsive-item</span>,
@@ -256,33 +260,35 @@
     <span class="hljs-attribute">top</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">bottom</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
+
     <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
     <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+
     <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
   }
 }
 
 <span class="hljs-selector-class">.embed-responsive--21by9</span> {
   &amp;<span class="hljs-selector-pseudo">::before</span> {
-    <span class="hljs-attribute">padding-top</span>: <span class="hljs-built_in">percentage</span>(<span class="hljs-built_in">calc</span>(<span class="hljs-number">9</span> / <span class="hljs-number">21</span>));
+    <span class="hljs-attribute">padding-top</span>: math.<span class="hljs-built_in">percentage</span>(<span class="hljs-built_in">calc</span>(<span class="hljs-number">9</span> / <span class="hljs-number">21</span>));
   }
 }
 
 <span class="hljs-selector-class">.embed-responsive--16by9</span> {
   &amp;<span class="hljs-selector-pseudo">::before</span> {
-    <span class="hljs-attribute">padding-top</span>: <span class="hljs-built_in">percentage</span>(<span class="hljs-built_in">calc</span>(<span class="hljs-number">9</span> / <span class="hljs-number">16</span>));
+    <span class="hljs-attribute">padding-top</span>: math.<span class="hljs-built_in">percentage</span>(<span class="hljs-built_in">calc</span>(<span class="hljs-number">9</span> / <span class="hljs-number">16</span>));
   }
 }
 
 <span class="hljs-selector-class">.embed-responsive--4by3</span> {
   &amp;<span class="hljs-selector-pseudo">::before</span> {
-    <span class="hljs-attribute">padding-top</span>: <span class="hljs-built_in">percentage</span>(<span class="hljs-built_in">calc</span>(<span class="hljs-number">3</span> / <span class="hljs-number">4</span>));
+    <span class="hljs-attribute">padding-top</span>: math.<span class="hljs-built_in">percentage</span>(<span class="hljs-built_in">calc</span>(<span class="hljs-number">3</span> / <span class="hljs-number">4</span>));
   }
 }
 
 <span class="hljs-selector-class">.embed-responsive--1by1</span> {
   &amp;<span class="hljs-selector-pseudo">::before</span> {
-    <span class="hljs-attribute">padding-top</span>: <span class="hljs-built_in">percentage</span>(<span class="hljs-built_in">calc</span>(<span class="hljs-number">1</span> / <span class="hljs-number">1</span>));
+    <span class="hljs-attribute">padding-top</span>: math.<span class="hljs-built_in">percentage</span>(<span class="hljs-built_in">calc</span>(<span class="hljs-number">1</span> / <span class="hljs-number">1</span>));
   }
 }
 </pre>
@@ -301,7 +307,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">755 Bytes</span>
+                    <span class="Meta-value">798 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -523,6 +529,40 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./book-detail-page.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="book-detail-page"
+                data-handle="book-detail-page"
+            >
+                <span>Book Detail Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -3031,6 +3071,40 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./detail-item.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="detail-item"
+                data-handle="detail-item"
+            >
+                <span>Detail Item</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -6001,6 +6075,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./audio-player.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="audio-player"
+                data-handle="audio-player"
+            >
+                <span>Audio Player</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./avatar.html"
                 data-role="tree-link"
                 
@@ -7539,8 +7647,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-07-06T14:06:37.363Z">
-                                7/6/2023
+                            <time datetime="2023-07-11T08:48:25.929Z">
+                                7/11/2023
                             </time>
                         
                     </dd>

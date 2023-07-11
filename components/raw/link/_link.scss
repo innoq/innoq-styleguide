@@ -3,9 +3,9 @@
 //
 
 a:not([class]) {
-  border-bottom: 1px solid $link-color;
   color: $link-color;
   text-decoration: none;
+  border-bottom: 1px solid $link-color;
   transition: standard-transition(background-color);
 
   &:focus,
@@ -23,8 +23,8 @@ a:not([class]) {
   @extend %heading-font-bold;
   @extend %link-unstyled;
 
-  color: $brand-muted;
   font-size: $font-size-xs;
+  color: $brand-muted;
 }
 
 .link-teaser {
@@ -32,19 +32,22 @@ a:not([class]) {
   @extend %link-unstyled;
 
   padding-bottom: 2px;
-  border-bottom: 3px solid $link-teaser-border-color;
-  color: $link-teaser-text-color;
+
   font-size: $font-size-xs;
+  color: $link-teaser-text-color;
+
+  border-bottom: 3px solid $link-teaser-border-color;
+
   transition: standard-transition(background-color);
 
   &.inverted-text-color {
-    border-bottom: 3px solid $link-teaser-inverted-text-border-color;
     color: $link-teaser-inverted-text-text-color;
+    border-bottom: 3px solid $link-teaser-inverted-text-border-color;
   }
 
   &.inverted-interaction-color {
-    border-bottom: 3px solid $link-teaser-inverted-interaction-border-color;
     color: $link-teaser-inverted-interaction-text-color;
+    border-bottom: 3px solid $link-teaser-inverted-interaction-border-color;
   }
 }
 

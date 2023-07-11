@@ -3,27 +3,30 @@
 
   position: relative;
   justify-content: flex-end;
-  padding: $spacer-lg $spacer-sm;
   margin-bottom: $spacer-md;
+  padding: $spacer-lg $spacer-sm;
 
   &__body {
     display: flex;
-    max-width: $default-page-layout-content-width-md;
-    box-sizing: content-box;
     flex-direction: column;
     justify-content: center;
-    padding: $spacer-base;
-    border-bottom: 8px solid $landing-page-header-border-color;
+
+    box-sizing: content-box;
+    max-width: $default-page-layout-content-width-md;
     margin: 0 auto;
-    background-color: $landing-page-header-intro-bg-color;
+    padding: $spacer-base;
+
     color: $landing-page-header-intro-text-color;
+
+    background-color: $landing-page-header-intro-bg-color;
+    border-bottom: 8px solid $landing-page-header-border-color;
   }
 
   &__title {
     @extend %punch-in;
 
-    padding-bottom: $spacer-base;
     margin-bottom: $spacer-xs;
+    padding-bottom: $spacer-base;
     font-size: $font-size-xl;
     text-align: center;
   }
@@ -44,8 +47,8 @@
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .landing-page-header {
-    padding: $spacer-lg;
     margin-bottom: $spacer-xl;
+    padding: $spacer-lg;
   }
 
   .landing-page-header__body {

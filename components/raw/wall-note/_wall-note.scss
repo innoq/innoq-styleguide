@@ -3,20 +3,24 @@ $big-content-teaser-height-md: ms(40);
 
 .wall-note {
   display: flex;
-  min-height: 100vh;
   align-items: center;
   justify-content: center;
+
+  min-height: 100vh;
+
   background-size: cover;
 }
 
 .wall-note__content {
   display: flex;
-  max-width: $default-page-layout-content-width-md;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: $spacer-lg $spacer-base;
+
+  max-width: $default-page-layout-content-width-md;
   margin: $spacer-sm;
+  padding: $spacer-lg $spacer-base;
+
   background-color: $wall-note-content-bg-color;
 
   > * + * {

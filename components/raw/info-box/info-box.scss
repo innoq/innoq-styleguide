@@ -7,16 +7,20 @@ info-box {
 .infobox__teaser {
   @extend %heading-font-bold;
 
+  cursor: pointer;
+
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
+
   padding: $spacer-sm $spacer-md;
-  border-bottom: 3px solid $infobox-teaser-border-color;
-  background-color: $infobox-teaser-background-color-closed;
-  color: $infobox-teaser-text-color-closed;
-  cursor: pointer;
+
   font-size: $font-size-xs;
+  color: $infobox-teaser-text-color-closed;
+
+  background-color: $infobox-teaser-background-color-closed;
+  border-bottom: 3px solid $infobox-teaser-border-color;
 }
 
 .infobox__teaser__heading {
@@ -69,12 +73,12 @@ details {
 
   &[open] {
     .infobox__teaser {
-      background-color: $infobox-teaser-background-color-open;
       color: $infobox-teaser-text-color-open;
+      background-color: $infobox-teaser-background-color-open;
 
       .icon-chevron-down {
-        background: $infobox-teaser-text-color-open;
         transform: rotate(180deg);
+        background: $infobox-teaser-text-color-open;
       }
 
       .icon-info {

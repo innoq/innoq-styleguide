@@ -14,8 +14,8 @@
 .duo,
 .dot {
   animation-duration: 0.8s;
-  animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .duo1 {
@@ -23,16 +23,16 @@
   animation-name: spin;
 
   .dot-a {
-    animation-direction: reverse;
-    animation-name: on-off;
     opacity: 0;
+    animation-name: on-off;
+    animation-direction: reverse;
   }
 }
 
 .duo2 {
   left: 30px;
-  animation-direction: reverse;
   animation-name: spin;
+  animation-direction: reverse;
 
   .dot-b {
     animation-name: on-off;
@@ -41,10 +41,12 @@
 
 .dot {
   position: absolute;
+
   width: 20px;
   height: 20px;
-  border-radius: 10px;
+
   background: $dot-color;
+  border-radius: 10px;
 }
 
 .dot-a {

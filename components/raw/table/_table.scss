@@ -1,15 +1,18 @@
 .table {
+  border-collapse: collapse;
+
   width: 100%;
   max-width: 100%;
-  border-bottom: 3px solid $table-border-color;
-  border-collapse: collapse;
+
   text-align: left;
+
+  border-bottom: 3px solid $table-border-color;
 
   caption {
     @extend %heading-font-regular;
 
-    margin-top: $spacer-xxs;
     caption-side: bottom;
+    margin-top: $spacer-xxs;
     font-size: $font-size-xs;
   }
 
@@ -17,10 +20,10 @@
   tfoot {
     @extend %heading-font-bold;
 
-    background-color: $table-header-background-color;
-    color: $table-header-text-color;
     font-size: $font-size-base;
     line-height: $heading-line-height;
+    color: $table-header-text-color;
+    background-color: $table-header-background-color;
 
     th {
       padding: $spacer-sm $spacer-xs;
@@ -51,10 +54,12 @@
 // Responsive tables code taken from BS4
 @media screen and (max-width: $grid-breakpoint-sm) {
   .table {
+    overflow-x: auto;
     display: block;
+
     width: 100%;
+
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
-    overflow-x: auto;
   }
 }

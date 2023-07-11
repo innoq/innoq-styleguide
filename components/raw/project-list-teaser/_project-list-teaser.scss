@@ -12,18 +12,21 @@
 }
 
 .project-index__header {
-  border-bottom: 5px solid $project-index-text-color;
   text-align: center;
+  border-bottom: 5px solid $project-index-text-color;
 }
 
 .project-index__title {
   @extend %h1;
 
   display: inline-block;
-  padding: 0 $spacer-sm $spacer-xs;
+
   margin: 0;
-  background-color: $project-index-text-color;
+  padding: 0 $spacer-sm $spacer-xs;
+
   color: $project-index-text-inverted-color;
+
+  background-color: $project-index-text-color;
 }
 
 //
@@ -46,17 +49,19 @@
 
 .client-projects__client-name {
   margin: $spacer-lg 0 $spacer-sm;
-  color: $project-index-highlight-color;
   font-size: $font-size-sm;
+  color: $project-index-highlight-color;
 }
 
 .client-projects__project {
   display: grid;
-  padding: $spacer-sm 0;
-  border-top: 1px solid $project-index-text-color;
-  border-bottom: 1px solid $project-index-text-color;
   grid-auto-rows: auto;
   grid-template-columns: 1fr;
+
+  padding: $spacer-sm 0;
+
+  border-top: 1px solid $project-index-text-color;
+  border-bottom: 1px solid $project-index-text-color;
 
   &:last-child {
     border-bottom-width: 2px;
@@ -69,8 +74,8 @@
 
 .client-projects__project-title {
   margin-bottom: $spacer-sm;
-  color: $project-index-title-color;
   font-size: $font-size-sm;
+  color: $project-index-title-color;
   text-transform: none;
 }
 
@@ -82,8 +87,8 @@
 
 .client-projects__show-more-btn,
 .client-projects__goto-btn {
-  margin: $spacer-sm 0 0;
   justify-self: start;
+  margin: $spacer-sm 0 0;
 }
 
 .client-projects__show-more-btn {
@@ -120,8 +125,8 @@
 
     .client-projects__show-more-btn,
     .client-projects__goto-btn {
-      align-self: end;
       grid-column: 3 / span 1;
+      align-self: end;
       justify-self: end;
     }
 

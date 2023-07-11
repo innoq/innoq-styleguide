@@ -2,8 +2,8 @@
   @extend %link-unstyled;
   @extend %heading-font-regular;
 
-  color: $footnote-link-color;
   line-height: 1;
+  color: $footnote-link-color;
 }
 
 .footnotes__list {
@@ -32,23 +32,26 @@
     position: relative;
     padding-left: $spacer-sm;
 
+    &::before {
+      @extend %heading-font-bold;
+
+      content: counter(number);
+      counter-increment: number;
+
+      position: absolute;
+      left: -0.5rem;
+
+      width: $spacer-sm;
+
+      color: $footnote-index-color;
+      text-align: right;
+    }
+
     a {
       @extend %link-unstyled;
 
       color: $footnote-link-color;
       word-break: break-all;
-    }
-
-    &::before {
-      @extend %heading-font-bold;
-
-      position: absolute;
-      left: -0.5rem;
-      width: $spacer-sm;
-      color: $footnote-index-color;
-      content: counter(number);
-      counter-increment: number;
-      text-align: right;
     }
   }
 }

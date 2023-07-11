@@ -6,9 +6,9 @@ $conclusion-border-size: ms(5);
 
 .conclusion {
   padding: $spacer-lg $spacer-base;
+  background: $conclusion-background-color;
   border-top: $conclusion-border-size solid $conclusion-border-color;
   border-bottom: $conclusion-border-size solid $conclusion-border-color;
-  background: $conclusion-background-color;
 }
 
 .conclusion-wrapper {
@@ -21,14 +21,14 @@ $conclusion-border-size: ms(5);
 
 .conclusion-headline {
   align-self: flex-start;
-  color: $conclusion-headline-color;
   font-size: $font-size-2xl;
+  color: $conclusion-headline-color;
 }
 
 .conclusion-subheadline {
   align-self: flex-start;
-  color: $conclusion-subheadline-color;
   font-size: $font-size-lg;
+  color: $conclusion-subheadline-color;
 }
 
 .conclusion-text {
@@ -43,12 +43,12 @@ $conclusion-border-size: ms(5);
   }
 
   a:not([class]) {
-    border-bottom: 1px solid $conclusion-link-color;
     color: $conclusion-link-color;
+    border-bottom: 1px solid $conclusion-link-color;
 
     &:hover {
-      border-bottom: 1px solid $conclusion-background-color;
       color: $conclusion-link-hover-color;
+      border-bottom: 1px solid $conclusion-background-color;
     }
   }
 

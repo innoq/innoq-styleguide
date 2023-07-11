@@ -553,8 +553,8 @@
     <span class="hljs-attribute">list-style-type</span>: <span class="hljs-string">&#x27;✓&#x27;</span>;
 
     &amp;<span class="hljs-selector-pseudo">::marker</span> {
-      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color</span>;
       <span class="hljs-attribute">font-size</span>: <span class="hljs-number">1.5rem</span>;
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color</span>;
     }
   }
 }
@@ -609,9 +609,9 @@
   <span class="hljs-selector-tag">dt</span> {
     <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$definition-list-dt-color</span>;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
     <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$definition-list-dt-color</span>;
   }
 
   <span class="hljs-selector-tag">dd</span> {
@@ -725,11 +725,13 @@
     &amp;<span class="hljs-selector-pseudo">::before</span> {
       <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
-      <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-xxs</span>;
-      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color-secondary</span>;
       <span class="hljs-attribute">content</span>: <span class="hljs-built_in">counter</span>(number);
+
+      <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-xxs</span>;
+
       <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
       <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color-secondary</span>;
 
       <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
         <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
@@ -788,8 +790,8 @@
   <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
   <span class="hljs-attribute">display</span>: block;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$tupel-list-label-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xs</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$tupel-list-label-color</span>;
   <span class="hljs-attribute">text-transform</span>: uppercase;
 }
 
@@ -880,13 +882,13 @@
     <span class="hljs-attribute">list-style-type</span>: <span class="hljs-string">&#x27;●&#x27;</span>;
 
     &amp;<span class="hljs-selector-pseudo">::marker</span> {
-      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color</span>;
       <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color</span>;
     }
 
     <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">::marker</span> {
-      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color-secondary</span>;
       <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color-secondary</span>;
     }
 
     <span class="hljs-selector-tag">ul</span> {
@@ -910,8 +912,8 @@
     <span class="hljs-attribute">list-style-type</span>: <span class="hljs-string">&#x27;•&#x27;</span>;
 
     &amp;<span class="hljs-selector-pseudo">::marker</span> {
-      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color</span>;
       <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-lg</span>;
+      <span class="hljs-attribute">color</span>: <span class="hljs-variable">$bullet-list-color</span>;
     }
   }
 }
@@ -1155,6 +1157,40 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./book-detail-page.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="book-detail-page"
+                data-handle="book-detail-page"
+            >
+                <span>Book Detail Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -3663,6 +3699,40 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./detail-item.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="detail-item"
+                data-handle="detail-item"
+            >
+                <span>Detail Item</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -6633,6 +6703,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./audio-player.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="audio-player"
+                data-handle="audio-player"
+            >
+                <span>Audio Player</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./avatar.html"
                 data-role="tree-link"
                 
@@ -8171,8 +8275,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-07-06T14:06:37.363Z">
-                                7/6/2023
+                            <time datetime="2023-07-11T08:48:25.929Z">
+                                7/11/2023
                             </time>
                         
                     </dd>

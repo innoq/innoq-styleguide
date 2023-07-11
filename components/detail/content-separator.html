@@ -271,10 +271,12 @@
 <span class="hljs-comment">// Component definition</span>
 <span class="hljs-selector-class">.content-separator</span> {
   <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
   <span class="hljs-attribute">flex-direction</span>: column;
   <span class="hljs-attribute">align-items</span>: center;
   <span class="hljs-attribute">justify-content</span>: center;
+
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+
   <span class="hljs-attribute">white-space</span>: nowrap;
 }
 
@@ -283,28 +285,33 @@
 <span class="hljs-selector-class">.content-separator__date</span>,
 <span class="hljs-selector-class">.content-separator__duration</span> {
   <span class="hljs-attribute">display</span>: inline-block;
+
   <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-xs</span>;
   <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer-xs</span>;
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$box-shadow-color-light</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$content-seperator-text-color</span>;
+
   <span class="hljs-attribute">line-height</span>: <span class="hljs-number">1</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$content-seperator-text-color</span>;
+
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$box-shadow-color-light</span>;
 }
 
 <span class="hljs-selector-class">.content-separator__separator</span> {
+  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(<span class="hljs-number">90deg</span>);
+
   <span class="hljs-attribute">width</span>: <span class="hljs-variable">$spacer-sm</span>;
   <span class="hljs-attribute">height</span>: <span class="hljs-number">2px</span>;
-  <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$spacer-sm</span> <span class="hljs-number">0</span>;
+
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$content-seperator-text-color</span>;
-  <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(<span class="hljs-number">90deg</span>);
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">0</span>;
 }
 
 <span class="hljs-comment">// Inverted Version</span>
 <span class="hljs-selector-class">.content-seperator--inverted</span> {
   <span class="hljs-selector-class">.content-separator__date</span>,
   <span class="hljs-selector-class">.content-separator__duration</span> {
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$content-seperator-text-color</span>;
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$box-shadow-color-light</span>;
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$content-seperator-text-color</span>;
   }
 
   <span class="hljs-selector-class">.content-separator__separator</span> {
@@ -315,16 +322,18 @@
 <span class="hljs-comment">//Breakpoints</span>
 <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
   <span class="hljs-selector-class">.content-separator</span> {
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">1px</span>;
-    <span class="hljs-attribute">min-height</span>: <span class="hljs-variable">$font-size-base</span>;
     <span class="hljs-attribute">flex-direction</span>: row;
     <span class="hljs-attribute">align-content</span>: center;
+
+    <span class="hljs-attribute">height</span>: <span class="hljs-number">1px</span>;
+    <span class="hljs-attribute">min-height</span>: <span class="hljs-variable">$font-size-base</span>;
     <span class="hljs-comment">// The border in the middle of the component is realized with</span>
     <span class="hljs-comment">// a stack of two inset box-shadows the first one is white</span>
     <span class="hljs-comment">// and reaches from the top to the middle of the baseline.</span>
     <span class="hljs-comment">// The second box-shadow is 1px taller than the first one,</span>
     <span class="hljs-comment">// resulting in a single line.</span>
-    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$box-shadow-color-light</span> <span class="hljs-number">0</span> <span class="hljs-variable">$border-position</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> inset,
+    <span class="hljs-attribute">box-shadow</span>:
+      <span class="hljs-variable">$box-shadow-color-light</span> <span class="hljs-number">0</span> <span class="hljs-variable">$border-position</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> inset,
       <span class="hljs-variable">$box-shadow-color-dark</span> <span class="hljs-number">0</span> <span class="hljs-built_in">calc</span>(#{<span class="hljs-variable">$border-position</span>} + <span class="hljs-number">1px</span>) <span class="hljs-number">0</span> <span class="hljs-number">0</span> inset;
   }
 
@@ -334,13 +343,14 @@
     <span class="hljs-comment">// and reaches from the top to the middle of the baseline.</span>
     <span class="hljs-comment">// The second box-shadow is 1px taller than the first one,</span>
     <span class="hljs-comment">// resulting in a single line.</span>
-    <span class="hljs-attribute">box-shadow</span>: <span class="hljs-variable">$box-shadow-color-dark</span> <span class="hljs-number">0</span> <span class="hljs-variable">$border-position</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> inset,
+    <span class="hljs-attribute">box-shadow</span>:
+      <span class="hljs-variable">$box-shadow-color-dark</span> <span class="hljs-number">0</span> <span class="hljs-variable">$border-position</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span> inset,
       <span class="hljs-variable">$box-shadow-color-light</span> <span class="hljs-number">0</span> <span class="hljs-built_in">calc</span>(#{<span class="hljs-variable">$border-position</span>} + <span class="hljs-number">1px</span>) <span class="hljs-number">0</span> <span class="hljs-number">0</span> inset;
   }
 
   <span class="hljs-selector-class">.content-separator__separator</span> {
-    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">rotate</span>(<span class="hljs-number">180deg</span>);
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
   }
 }
 </pre>
@@ -581,6 +591,40 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./book-detail-page.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="book-detail-page"
+                data-handle="book-detail-page"
+            >
+                <span>Book Detail Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -3089,6 +3133,40 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./detail-item.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="detail-item"
+                data-handle="detail-item"
+            >
+                <span>Detail Item</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -6059,6 +6137,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./audio-player.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="audio-player"
+                data-handle="audio-player"
+            >
+                <span>Audio Player</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./avatar.html"
                 data-role="tree-link"
                 
@@ -7597,8 +7709,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-07-06T14:06:37.363Z">
-                                7/6/2023
+                            <time datetime="2023-07-11T08:48:25.929Z">
+                                7/11/2023
                             </time>
                         
                     </dd>

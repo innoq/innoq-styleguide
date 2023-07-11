@@ -1,12 +1,15 @@
 pre > code {
   @extend %monospace-font-regular;
 
-  display: block;
   overflow: auto;
+  display: block;
+
   padding: $spacer-xs;
-  background-color: $code-background-color;
+
   font-size: $font-size-xxs;
   line-height: $paragraph-line-height;
+
+  background-color: $code-background-color;
 }
 
 pre {

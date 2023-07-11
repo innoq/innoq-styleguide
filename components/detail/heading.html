@@ -284,9 +284,10 @@
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$h1-color</span>;
+
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-xl</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$heading-line-height</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$h1-color</span>;
 }
 
 <span class="hljs-comment">// H2</span>
@@ -295,9 +296,9 @@
   <span class="hljs-keyword">@extend</span> %heading-font-heavy;
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$h2-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-lg</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$heading-line-height</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$h2-color</span>;
 }
 
 <span class="hljs-comment">// H3</span>
@@ -306,9 +307,9 @@
   <span class="hljs-keyword">@extend</span> %heading-font-heavy;
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$h3-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-md</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$heading-line-height</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$h3-color</span>;
 }
 
 <span class="hljs-comment">// H4</span>
@@ -317,9 +318,9 @@
   <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$h4-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$heading-line-height</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$h4-color</span>;
 }
 
 <span class="hljs-comment">// H5</span>
@@ -328,9 +329,9 @@
   <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$h5-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$h5-color</span>;
 }
 
 <span class="hljs-comment">// H6</span>
@@ -339,9 +340,9 @@
   <span class="hljs-keyword">@extend</span> %heading-font-heavy;
 
   <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$h6-color</span>;
   <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-base</span>;
   <span class="hljs-attribute">line-height</span>: <span class="hljs-variable">$paragraph-line-height</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$h6-color</span>;
 }
 
 <span class="hljs-comment">// Remove links stylings inside headlines</span>
@@ -358,8 +359,8 @@
   <span class="hljs-comment">// see: http://clagnut.com/blog/2395</span>
 
   <span class="hljs-attribute">hyphens</span>: auto;
-  <span class="hljs-attribute">overflow-wrap</span>: break-word;
   <span class="hljs-attribute">word-wrap</span>: break-word;
+  <span class="hljs-attribute">overflow-wrap</span>: break-word;
 
   &gt; <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:not</span>([class]) {
     <span class="hljs-keyword">@extend</span> %link-unstyled;
@@ -369,10 +370,10 @@
 <span class="hljs-selector-class">.teaser-section-heading</span> {
   <span class="hljs-keyword">@extend</span> %h2;
 
-  <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">4px</span> solid <span class="hljs-variable">$teaser-section-heading-border-color</span>;
   <span class="hljs-attribute">hyphens</span>: manual;
   <span class="hljs-attribute">text-align</span>: center;
   <span class="hljs-attribute">text-transform</span>: uppercase;
+  <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">4px</span> solid <span class="hljs-variable">$teaser-section-heading-border-color</span>;
 }
 
 <span class="hljs-selector-class">.section-heading--primary</span> {
@@ -675,6 +676,40 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./book-detail-page.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="book-detail-page"
+                data-handle="book-detail-page"
+            >
+                <span>Book Detail Page</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -3183,6 +3218,40 @@
 
 
 <span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./detail-item.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="detail-item"
+                data-handle="detail-item"
+            >
+                <span>Detail Item</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
 
 
 </div>
@@ -6153,6 +6222,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./audio-player.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="audio-player"
+                data-handle="audio-player"
+            >
+                <span>Audio Player</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./avatar.html"
                 data-role="tree-link"
                 
@@ -7691,8 +7794,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-07-06T14:06:37.363Z">
-                                7/6/2023
+                            <time datetime="2023-07-11T08:48:25.929Z">
+                                7/11/2023
                             </time>
                         
                     </dd>

@@ -12,8 +12,8 @@ $tuple-list-label-width: 8rem;
   @extend %heading-font-bold;
 
   display: block;
-  color: $tupel-list-label-color;
   font-size: $font-size-xs;
+  color: $tupel-list-label-color;
   text-transform: uppercase;
 }
 

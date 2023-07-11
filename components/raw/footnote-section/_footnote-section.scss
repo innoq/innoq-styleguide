@@ -6,20 +6,26 @@
   display: flex;
   flex-direction: row;
   justify-content: left;
+
   margin-bottom: $spacer-sm;
-  color: $footnote-section-headline-color;
+
   font-size: $font-size-sm;
+  color: $footnote-section-headline-color;
   text-transform: uppercase;
 
   &::after {
+    content: '\a0';
+
     position: relative;
     top: 0.65em;
+
+    flex-grow: 1;
+
     max-width: 80px;
     height: 3px;
-    flex-grow: 1;
     margin-left: 10px;
+
     background-color: $footnote-section-headline-color;
-    content: '\a0';
   }
 }
 

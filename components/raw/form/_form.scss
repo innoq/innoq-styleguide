@@ -17,8 +17,8 @@ form,
 
     &:hover,
     &:focus {
-      background-color: $form-control-inverted-focus-bg;
       color: $form-control-inverted-focus-color;
+      background-color: $form-control-inverted-focus-bg;
     }
   }
 
