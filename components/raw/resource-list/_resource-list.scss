@@ -42,7 +42,7 @@
 .resource-list-item__author {
   @extend %heading-font-regular;
 
-  margin-bottom: $spacer-lg;
+  margin-top: $spacer-md;
   padding-left: 0;
   font-size: $font-size-base;
   color: $brand-primary;
@@ -78,17 +78,46 @@
 }
 
 .resource-list-item__caption {
-  @extend %heading-font-regular;
+  > * + * {
+    margin-top: $spacer-xs;
+  }
 
-  margin-bottom: $spacer-md;
-  font-size: $font-size-base;
+  > * {
+    @extend %heading-font-regular;
 
-  > a {
-    color: $brand-primary;
+    font-size: $font-size-base;
+    color: $brand-white;
+  }
 
-    &:focus,
+  a:not([class]) {
+    color: $conclusion-link-color;
+    border-bottom: 1px solid $conclusion-link-color;
+
     &:hover {
-      background-color: $brand-text-light;
+      color: $conclusion-link-hover-color;
+      border-bottom: 1px solid $conclusion-background-color;
+    }
+  }
+
+  ul {
+    margin-left: $spacer-sm;
+
+    > li {
+      padding-left: $spacer-xs;
+    }
+
+    li::marker {
+      color: $brand-primary;
+    }
+    /* stylelint-disable-next-line selector-max-compound-selectors */
+    > li,
+    > li p {
+      @extend %heading-font-regular;
+
+      /* stylelint-disable-next-line selector-max-compound-selectors */
+      li::marker {
+        color: $brand-primary;
+      }
     }
   }
 }
@@ -96,6 +125,7 @@
 .resource-list-item__footer {
   display: flex;
   justify-content: space-between;
+  margin-top: $spacer-lg;
 
   .link-teaser {
     color: $brand-text-light;

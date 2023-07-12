@@ -100,7 +100,8 @@ blockquote:not([class]) > p,
 .instructions--focus,
 .instructions--hover-and-focus,
 .instructions--touch, .page__number, .search-result__date,
-.search-result__type, .resource-list-item__caption, .resource-list-item__author, .reference__description, .portfolio-card__text p,
+.search-result__type, .resource-list-item__caption ul > li,
+.resource-list-item__caption ul > li p, .resource-list-item__caption > *, .resource-list-item__author, .reference__description, .portfolio-card__text p,
 .portfolio-card__text ul:not([class]) > li,
 .portfolio-card__text ol:not([class]) > li, .portfolio-card__text, .paginator, .info-note__text, .info-note__text *, .infobox__content p,
 .infobox__content ul > li, .event-year, .dialog-banner__body, .detail-item__author, .detail-item__caption ul > li,
@@ -4028,7 +4029,7 @@ super-quote > blockquote > p,
 }
 
 .resource-list-item__author {
-  margin-bottom: 2.985984rem;
+  margin-top: 1.44rem;
   padding-left: 0;
   font-size: 1rem;
   color: #ff9c66;
@@ -4049,15 +4050,38 @@ super-quote > blockquote > p,
   color: #ff9c66;
 }
 
-.resource-list-item__caption {
-  margin-bottom: 1.44rem;
-  font-size: 1rem;
+.resource-list-item__caption > * + * {
+  margin-top: 0.5787037037rem;
 }
-.resource-list-item__caption > a {
+.resource-list-item__caption > * {
+  font-size: 1rem;
+  color: #fff;
+}
+.resource-list-item__caption a:not([class]) {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+.resource-list-item__caption a:not([class]):hover {
+  color: #004153;
+  border-bottom: 1px solid #004153;
+}
+.resource-list-item__caption ul {
+  margin-left: 1rem;
+  /* stylelint-disable-next-line selector-max-compound-selectors */
+}
+.resource-list-item__caption ul > li {
+  padding-left: 0.5787037037rem;
+}
+.resource-list-item__caption ul li::marker {
   color: #ff9c66;
 }
-.resource-list-item__caption > a:focus, .resource-list-item__caption > a:hover {
-  background-color: #fff;
+.resource-list-item__caption ul > li,
+.resource-list-item__caption ul > li p {
+  /* stylelint-disable-next-line selector-max-compound-selectors */
+}
+.resource-list-item__caption ul > li li::marker,
+.resource-list-item__caption ul > li p li::marker {
+  color: #ff9c66;
 }
 
 .resource-list-item__footer {
@@ -4067,6 +4091,7 @@ super-quote > blockquote > p,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 2.985984rem;
 }
 .resource-list-item__footer .link-teaser {
   color: #fff;
