@@ -7376,6 +7376,7 @@ form > * + *,
   font-size: 1.2rem;
   line-height: 1.52;
   color: #fff;
+  text-align: center;
 }
 .standard-header__intro__label {
   position: relative;
