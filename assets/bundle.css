@@ -8254,6 +8254,10 @@ form > * + *,
   background-color: #f7f7f7;
 }
 
+.stripe--black {
+  background-color: #242424;
+}
+
 .stripe--gradient {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(23%, rgb(255, 230, 217)), color-stop(60%, rgb(255, 156, 102)));
   background: linear-gradient(360deg, rgb(255, 230, 217) 23%, rgb(255, 156, 102) 60%);
