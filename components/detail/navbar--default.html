@@ -190,6 +190,231 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">h-include</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#main&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;skip-link&quot;</span>&gt;</span>Zum Inhalt springen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;main-navigation main-navigation--black&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Webseite Navigation&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brand-link&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brand-logo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link-alt&quot;</span>&gt;</span>INNOQ Homepage<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;search-link&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-search icon--brand-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link-alt&quot;</span>&gt;</span>Suche<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--
+        <span class="hljs-doctag">NOTE:</span> in order to ensure that users of assistive technologies can
+        easily find the content that is being collapsed and expanded, it is
+        important for the content to directly follow the toggle button in the
+        focus order on the page. When this doesn&#x27;t match the visual design that
+        we are trying to achieve, we can change the visual order of the
+        elements with CSS.
+
+        See: https://inclusive-components.design/menus-menu-buttons/#ariacontrols
+    --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">menu-toggle</span> <span class="hljs-attr">hidden</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Menü<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">menu-toggle</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--
+        <span class="hljs-doctag">NOTE:</span> for each `ul` list in the navbar, we should explicitly set
+        an `aria-label` that correctly describes the contents of the list to
+        provide this information to assistive technologies. Additionally, we
+        set the `role=&quot;list&quot;` attribute to ensure that the lists will be
+        announced as lists in Safari/VoiceOver
+
+        See: https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
+        and note in CSS file
+    --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-links navigation-links--black&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Seitennavigation&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">sub-menu</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>
+                        Leistungen
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down-filled icon--brand-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Leistungen Untermenü&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Strategie- und Technologieberatung<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">sub-menu</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Success Stories<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">sub-menu</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>
+                        Kultur
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down-filled icon--brand-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Kultur Untermenü&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-comment">&lt;!--
+                                <span class="hljs-doctag">NOTE:</span> use `aria-current=&quot;page&quot;` for the link within the
+                                navbar representing the current page. The CSS rules to
+                                visually highlight this link are hooked to that attribute.
+
+                                See: https://adrianroselli.com/2021/06/using-css-to-enforce-accessibility.html
+                                and note in CSS file
+                            --&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;page&quot;</span>&gt;</span>Wie wir zusammenarbeiten<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Was uns wichtig ist<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Arbeiten bei INNOQ<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">sub-menu</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">sub-menu</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>
+                        Magazin
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down-filled icon--brand-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Magazin Untermenü&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Blog &amp; Artikel<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Podcasts<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Vorträge<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Primer<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">sub-menu</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">sub-menu</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>
+                        Trends
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down-filled icon--brand-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trends Untermenü&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Accessibility<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Cloud Migration<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Data Mesh<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">sub-menu</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">sub-menu</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>
+                        Schulungen
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down-filled icon--brand-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Schulungen Untermenü&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Warum Online-Schulungen?<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Softwarearchitektur Kickstart<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Data Mesh<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>iSAQB CPSA-F Foundation Level<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Accessibility<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Blockchain<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Cloud Native Infrastruktur<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Cloud Migration<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Domain-driven Design<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>DDD für Machine Learning<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Flexible Architekturen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>JavaScript<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Modernisierung<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Product Ownership<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Remote Mob Programming<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Software Analytics<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Web-Architekturen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Web-Security<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">sub-menu</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-meta&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ru&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Ви з України та розробляєте програмнi (software) продукти? Зв’язатися з нами.&quot;</span>&gt;</span>💙💛<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Kontakt<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Verfügbare Sprachen&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-comment">&lt;!--
+                    <span class="hljs-doctag">NOTE:</span> use the `aria-current=&quot;true&quot;` attribute to specify the language
+                    which is currently selected. As with `aria-current=&quot;page&quot;`, setting
+                    this attribute correctly is necessary to obtain the visual CSS styles.
+                --&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;de&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Zu Deutsch wechseln&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Zu Deutsch wechseln&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>de<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;de_CH&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Zu Schweizerdeutsch wechseln&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Zu Schweizerdeutsch wechseln&quot;</span>&gt;</span>ch<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Switch to English&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Switch to English&quot;</span>&gt;</span>en<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h-include</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;eyecatcher eyecatcher--event&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;eyecatcher--event__text&quot;</span>&gt;</span>
+            INNOQ Technology Lunch: Software Architecture for Agile Enterprises 👉
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;eyecatcher--event__link&quot;</span>&gt;</span>20. Mai, 12:15 Uhr<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">h-include</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#main&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;skip-link&quot;</span>&gt;</span>Zum Inhalt springen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;main-navigation&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Webseite Navigation&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brand-link&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brand-logo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg&quot;</span> /&gt;</span>
@@ -421,6 +646,231 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-name">h-include</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#main&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;skip-link&quot;</span>&gt;</span>Zum Inhalt springen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;main-navigation main-navigation--black&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Webseite Navigation&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brand-link&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brand-logo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;{{ path &#x27;/assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg&#x27; }}&quot;</span> /&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link-alt&quot;</span>&gt;</span>INNOQ Homepage<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;search-link&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-search icon--brand-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;link-alt&quot;</span>&gt;</span>Suche<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--
+        <span class="hljs-doctag">NOTE:</span> in order to ensure that users of assistive technologies can
+        easily find the content that is being collapsed and expanded, it is
+        important for the content to directly follow the toggle button in the
+        focus order on the page. When this doesn&#x27;t match the visual design that
+        we are trying to achieve, we can change the visual order of the
+        elements with CSS.
+
+        See: https://inclusive-components.design/menus-menu-buttons/#ariacontrols
+    --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">menu-toggle</span> <span class="hljs-attr">hidden</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span>&gt;</span>Menü<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">menu-toggle</span>&gt;</span>
+    <span class="hljs-comment">&lt;!--
+        <span class="hljs-doctag">NOTE:</span> for each `ul` list in the navbar, we should explicitly set
+        an `aria-label` that correctly describes the contents of the list to
+        provide this information to assistive technologies. Additionally, we
+        set the `role=&quot;list&quot;` attribute to ensure that the lists will be
+        announced as lists in Safari/VoiceOver
+
+        See: https://www.scottohara.me/blog/2019/01/12/lists-and-safari.html
+        and note in CSS file
+    --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-links navigation-links--black&quot;</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Seitennavigation&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">sub-menu</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>
+                        Leistungen
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down-filled icon--brand-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Leistungen Untermenü&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Strategie- und Technologieberatung<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">sub-menu</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Success Stories<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">sub-menu</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>
+                        Kultur
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down-filled icon--brand-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Kultur Untermenü&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-comment">&lt;!--
+                                <span class="hljs-doctag">NOTE:</span> use `aria-current=&quot;page&quot;` for the link within the
+                                navbar representing the current page. The CSS rules to
+                                visually highlight this link are hooked to that attribute.
+
+                                See: https://adrianroselli.com/2021/06/using-css-to-enforce-accessibility.html
+                                and note in CSS file
+                            --&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;page&quot;</span>&gt;</span>Wie wir zusammenarbeiten<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Was uns wichtig ist<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Arbeiten bei INNOQ<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">sub-menu</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">sub-menu</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>
+                        Magazin
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down-filled icon--brand-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Magazin Untermenü&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Blog &amp; Artikel<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Podcasts<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Vorträge<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Primer<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">sub-menu</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">sub-menu</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>
+                        Trends
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down-filled icon--brand-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Trends Untermenü&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Accessibility<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Cloud Migration<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Data Mesh<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">sub-menu</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">sub-menu</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">details</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">summary</span>&gt;</span>
+                        Schulungen
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;icon icon-chevron-down-filled icon--brand-white&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">summary</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Schulungen Untermenü&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Warum Online-Schulungen?<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Softwarearchitektur Kickstart<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Data Mesh<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>iSAQB CPSA-F Foundation Level<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Accessibility<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Blockchain<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Cloud Native Infrastruktur<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Cloud Migration<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Domain-driven Design<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>DDD für Machine Learning<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Flexible Architekturen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>JavaScript<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Modernisierung<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Product Ownership<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Remote Mob Programming<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Software Analytics<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Web-Architekturen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Web-Security<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">details</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">sub-menu</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-meta&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ru&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Ви з України та розробляєте програмнi (software) продукти? Зв’язатися з нами.&quot;</span>&gt;</span>💙💛<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Kontakt<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Verfügbare Sprachen&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-comment">&lt;!--
+                    <span class="hljs-doctag">NOTE:</span> use the `aria-current=&quot;true&quot;` attribute to specify the language
+                    which is currently selected. As with `aria-current=&quot;page&quot;`, setting
+                    this attribute correctly is necessary to obtain the visual CSS styles.
+                --&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;de&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Zu Deutsch wechseln&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Zu Deutsch wechseln&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>de<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;de_CH&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Zu Schweizerdeutsch wechseln&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Zu Schweizerdeutsch wechseln&quot;</span>&gt;</span>ch<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Switch to English&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Switch to English&quot;</span>&gt;</span>en<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">nav</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">h-include</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;eyecatcher eyecatcher--event&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;eyecatcher--event__text&quot;</span>&gt;</span>
+            INNOQ Technology Lunch: Software Architecture for Agile Enterprises 👉
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;eyecatcher--event__link&quot;</span>&gt;</span>20. Mai, 12:15 Uhr<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">h-include</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#main&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;skip-link&quot;</span>&gt;</span>Zum Inhalt springen<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">nav</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;main-navigation&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Webseite Navigation&quot;</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brand-link&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;brand-logo&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;{{ path &#x27;/assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg&#x27; }}&quot;</span> /&gt;</span>
@@ -615,7 +1065,8 @@
     <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;navigation-meta&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ru&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Ви з України та розробляєте програмнi (software) продукти? Зв’язатися з нами.&quot;</span>&gt;</span>💙💛<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;ru&quot;</span>
+                <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Ви з України та розробляєте програмнi (software) продукти? Зв’язатися з нами.&quot;</span>&gt;</span>💙💛<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Kontakt<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">role</span>=<span class="hljs-string">&quot;list&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Verfügbare Sprachen&quot;</span>&gt;</span>
@@ -625,10 +1076,12 @@
                     which is currently selected. As with `aria-current=&quot;page&quot;`, setting
                     this attribute correctly is necessary to obtain the visual CSS styles.
                 --&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;de&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Zu Deutsch wechseln&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Zu Deutsch wechseln&quot;</span> <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>de<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;de&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Zu Deutsch wechseln&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Zu Deutsch wechseln&quot;</span>
+                    <span class="hljs-attr">aria-current</span>=<span class="hljs-string">&quot;true&quot;</span>&gt;</span>de<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;de_CH&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Zu Schweizerdeutsch wechseln&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Zu Schweizerdeutsch wechseln&quot;</span>&gt;</span>ch<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;de_CH&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Zu Schweizerdeutsch wechseln&quot;</span>
+                    <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Zu Schweizerdeutsch wechseln&quot;</span>&gt;</span>ch<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span> <span class="hljs-attr">title</span>=<span class="hljs-string">&quot;Switch to English&quot;</span> <span class="hljs-attr">aria-label</span>=<span class="hljs-string">&quot;Switch to English&quot;</span>&gt;</span>en<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -785,6 +1238,11 @@
     <span class="hljs-attr">--navbar-background-color</span>: transparent;
   }
 
+  &amp;<span class="hljs-attr">--black</span> {
+    <span class="hljs-comment">/* stylelint-disable-next-line */</span>
+    <span class="hljs-attr">--navbar-background-color</span>: <span class="hljs-number">#242424</span>;
+  }
+
   <span class="hljs-selector-tag">ul</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
   }
@@ -861,6 +1319,20 @@
     <span class="hljs-attribute">grid-area</span>: nav;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$navbar-primary-font-size</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$navbar-lightened-bg</span>;
+
+    &amp;<span class="hljs-attr">--black</span> {
+      <span class="hljs-comment">/* stylelint-disable-next-line */</span>
+      <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#242424</span>;
+
+      sub-<span class="hljs-selector-tag">menu</span> {
+        <span class="hljs-comment">/* stylelint-disable-next-line */</span>
+        <span class="hljs-selector-tag">details</span> &gt; <span class="hljs-selector-tag">ul</span>,
+        &gt; <span class="hljs-selector-tag">div</span> {
+          <span class="hljs-comment">/* stylelint-disable-next-line */</span>
+          <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#242424</span>;
+        }
+      }
+    }
 
     &gt; <span class="hljs-selector-pseudo">:first</span>-child {
       <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$navbar-padding</span> * <span class="hljs-number">2</span>;
@@ -1244,7 +1716,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">13.7 KB</span>
+                    <span class="Meta-value">14.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -8850,7 +9322,7 @@ the animations if the user has specified no preference for
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-08-17T11:04:29.778Z">
+                            <time datetime="2023-08-17T12:43:52.919Z">
                                 8/17/2023
                             </time>
                         

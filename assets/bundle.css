@@ -7654,6 +7654,10 @@ form > * + *,
 .main-navigation--transparent {
   --navbar-background-color: transparent;
 }
+.main-navigation--black {
+  /* stylelint-disable-next-line */
+  --navbar-background-color: #242424;
+}
 .main-navigation ul {
   padding: 0;
 }
@@ -7722,6 +7726,18 @@ form > * + *,
   font-size: 1.3125rem;
   background-color: #005268;
   /* stylelint-disable-next-line selector-max-compound-selectors */
+}
+.main-navigation .navigation-links--black {
+  /* stylelint-disable-next-line */
+  background-color: #242424;
+}
+.main-navigation .navigation-links--black sub-menu {
+  /* stylelint-disable-next-line */
+}
+.main-navigation .navigation-links--black sub-menu details > ul,
+.main-navigation .navigation-links--black sub-menu > div {
+  /* stylelint-disable-next-line */
+  background-color: #242424;
 }
 .main-navigation .navigation-links > :first-child {
   margin-top: 2.88rem;

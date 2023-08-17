@@ -789,6 +789,11 @@
     <span class="hljs-attr">--navbar-background-color</span>: transparent;
   }
 
+  &amp;<span class="hljs-attr">--black</span> {
+    <span class="hljs-comment">/* stylelint-disable-next-line */</span>
+    <span class="hljs-attr">--navbar-background-color</span>: <span class="hljs-number">#242424</span>;
+  }
+
   <span class="hljs-selector-tag">ul</span> {
     <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span>;
   }
@@ -865,6 +870,20 @@
     <span class="hljs-attribute">grid-area</span>: nav;
     <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$navbar-primary-font-size</span>;
     <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$navbar-lightened-bg</span>;
+
+    &amp;<span class="hljs-attr">--black</span> {
+      <span class="hljs-comment">/* stylelint-disable-next-line */</span>
+      <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#242424</span>;
+
+      sub-<span class="hljs-selector-tag">menu</span> {
+        <span class="hljs-comment">/* stylelint-disable-next-line */</span>
+        <span class="hljs-selector-tag">details</span> &gt; <span class="hljs-selector-tag">ul</span>,
+        &gt; <span class="hljs-selector-tag">div</span> {
+          <span class="hljs-comment">/* stylelint-disable-next-line */</span>
+          <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#242424</span>;
+        }
+      }
+    }
 
     &gt; <span class="hljs-selector-pseudo">:first</span>-child {
       <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$navbar-padding</span> * <span class="hljs-number">2</span>;
@@ -1248,7 +1267,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">13.7 KB</span>
+                    <span class="Meta-value">14.1 KB</span>
                 </li>
             </ul>
         </div>
@@ -8854,7 +8873,7 @@ the animations if the user has specified no preference for
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2023-08-17T11:04:29.778Z">
+                            <time datetime="2023-08-17T12:43:52.919Z">
                                 8/17/2023
                             </time>
                         

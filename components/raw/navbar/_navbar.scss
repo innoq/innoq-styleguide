@@ -104,6 +104,11 @@ $navbar-dropdown-z-index-hover: 3;
     --navbar-background-color: transparent;
   }
 
+  &--black {
+    /* stylelint-disable-next-line */
+    --navbar-background-color: #242424;
+  }
+
   ul {
     padding: 0;
   }
@@ -180,6 +185,20 @@ $navbar-dropdown-z-index-hover: 3;
     grid-area: nav;
     font-size: $navbar-primary-font-size;
     background-color: $navbar-lightened-bg;
+
+    &--black {
+      /* stylelint-disable-next-line */
+      background-color: #242424;
+
+      sub-menu {
+        /* stylelint-disable-next-line */
+        details > ul,
+        > div {
+          /* stylelint-disable-next-line */
+          background-color: #242424;
+        }
+      }
+    }
 
     > :first-child {
       margin-top: $navbar-padding * 2;
