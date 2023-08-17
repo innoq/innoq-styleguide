@@ -80,9 +80,11 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
     @extend %body-font-italic;
 
     margin-top: $spacer-xs;
+
     font-size: $font-size-sm;
     line-height: $paragraph-line-height;
     color: $standard-header-intro-text-color;
+    text-align: center;
   }
 
   &__intro__label {
