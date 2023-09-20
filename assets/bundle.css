@@ -4941,9 +4941,6 @@ touch-detection {
   .case-list-teaser__body {
     text-align: left;
   }
-  .case-list-teaser__title {
-    font-size: 2.985984rem;
-  }
 }
 @media screen and (min-width: 48rem) {
   .case-list-teaser {
@@ -4958,7 +4955,7 @@ touch-detection {
     min-height: 38.3375999245rem;
   }
   .case-list-teaser__wrapper {
-    max-width: 50%;
+    max-width: 70%;
     padding: 2.0736rem;
   }
   .case-list-teaser__body {
