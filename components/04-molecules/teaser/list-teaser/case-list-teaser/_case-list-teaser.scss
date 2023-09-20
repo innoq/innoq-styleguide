@@ -106,10 +106,6 @@ a.case-list-teaser {
   .case-list-teaser__body {
     text-align: left;
   }
-
-  .case-list-teaser__title {
-    font-size: $font-size-2xl;
-  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md) {
@@ -121,7 +117,7 @@ a.case-list-teaser {
   }
 
   .case-list-teaser__wrapper {
-    max-width: 50%;
+    max-width: 70%;
     padding: $spacer-base;
   }
 
