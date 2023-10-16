@@ -18,12 +18,7 @@
     "dist": "./scripts/dist",
     "release": "release-it"
   },
-  "dependencies": {
-    "classnames": "^2.2.6",
-    "modularscale-sass": "^3.0.10",
-    "postcss": "^8.4.5",
-    "postcss-scss": "^4.0.3"
-  },
+
   "devDependencies": {
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^8.5.0",
@@ -42,6 +37,9 @@
     "stylelint": "^15.0.0",
     "stylelint-config-clean-order": "^5.0.0",
     "stylelint-config-sass-guidelines": "^10.0.0",
-    "stylelint-config-standard": "^34.0.0"
+    "stylelint-config-standard": "^34.0.0",
+    "modularscale-sass": "^3.0.10",
+    "postcss": "^8.4.5",
+    "postcss-scss": "^4.0.3"
   }
 }
