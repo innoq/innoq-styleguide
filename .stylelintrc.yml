@@ -7,6 +7,7 @@ rules:
   color-no-hex: true
   color-function-notation: null
   declaration-no-important: true
+  declaration-block-no-redundant-longhand-properties: null
   function-no-unknown: null
   import-notation: null
   max-nesting-depth: 3
