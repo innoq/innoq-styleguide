@@ -108,13 +108,11 @@
 .bg-image-culture-15,
 %bg-image-culture-15 {
   background-image: asset-url('bg-images/general/visual-culture-15.webp');
-  background-blend-mode: multiply;
 }
 
 .bg-image-culture-16,
 %bg-image-culture-16 {
   background-image: asset-url('bg-images/general/visual-culture-16.webp');
-  background-blend-mode: multiply;
 }
 
 // Staff
@@ -131,6 +129,11 @@
   background-color: $brand-gray-25;
   background-image: asset-url('bg-images/general/visual-podcast.webp');
   background-blend-mode: multiply;
+}
+
+.bg-image-podcast-02,
+%bg-image-podcast-02 {
+  background-image: asset-url('bg-images/general/visual-podcast-ctoneedtoknow.webp');
 }
 
 //Trainings
@@ -330,6 +333,7 @@
 }
 
 // Edition Images Just change the image URLs for upcoming editions
+//Canyon
 .bg-image-edition-01,
 %bg-image-edition-01 {
   background-color: $brand-gray-25;
@@ -365,6 +369,14 @@
   background-blend-mode: multiply;
 }
 
+.bg-image-edition-24,
+%bg-image-edition-24 {
+  background-color: $brand-gray-25;
+  background-image: asset-url('bg-images/edition-02/edition02-canyon-06.webp');
+  background-blend-mode: multiply;
+}
+
+//Cloth
 .bg-image-edition-06,
 %bg-image-edition-06 {
   background-color: $brand-gray-25;
@@ -393,6 +405,7 @@
   background-blend-mode: multiply;
 }
 
+//Date
 .bg-image-edition-10,
 %bg-image-edition-10 {
   background-color: $brand-gray-75;
@@ -442,6 +455,7 @@
   background-blend-mode: multiply;
 }
 
+//human
 .bg-image-edition-17,
 %bg-image-edition-17 {
   background-color: $brand-gray-50;
