@@ -28,7 +28,8 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
-  .podcast-teaser--avatar--overlay--big {
+  .podcast-teaser--avatar--overlay--big,
+  .podcast-teaser--ctoneedtoknow-4 {
     grid-column: span 2;
   }
 }

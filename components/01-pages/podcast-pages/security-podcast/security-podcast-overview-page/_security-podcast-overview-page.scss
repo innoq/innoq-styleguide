@@ -1,23 +1,27 @@
 .podcast-overview-page--security {
+  ::selection {
+    background: $brand-yellow;
+  }
+
   .topic-header {
     .topic-header__body {
       color: $brand-gray;
       background-color: $brand-white;
     }
+  }
 
-    .toolbar__link {
-      padding: $spacer-xs;
-      color: $brand-gray;
-      transition: standard-transition(background-color);
+  .toolbar__link {
+    padding: $spacer-xs;
+    color: $brand-gray;
+    transition: standard-transition(background-color);
 
-      &:hover,
-      &:focus {
-        background-color: $brand-yellow;
-      }
+    &:hover,
+    &:focus {
+      color: $brand-white;
+      background-color: $brand-gray;
 
-      /* stylelint-disable-next-line selector-max-compound-selectors */
       .icon {
-        background: $brand-gray;
+        background: $brand-white;
       }
     }
   }
