@@ -177,6 +177,37 @@ $podcast-teaser-height-md: ms(35);
   }
 }
 
+.podcast-teaser--ctoneedtoknow-1,
+.podcast-teaser--ctoneedtoknow-2,
+.podcast-teaser--ctoneedtoknow-3,
+.podcast-teaser--ctoneedtoknow-4 {
+  color: $brand-white;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  .podcast-teaser__headline,
+  .podcast-teaser__subheadline {
+    color: $brand-white;
+  }
+}
+
+.podcast-teaser--ctoneedtoknow-1 {
+  @extend %bg-image-podcast-cover-01;
+}
+
+.podcast-teaser--ctoneedtoknow-2 {
+  @extend %bg-image-podcast-cover-02;
+}
+
+.podcast-teaser--ctoneedtoknow-3 {
+  @extend %bg-image-podcast-cover-03;
+}
+
+.podcast-teaser--ctoneedtoknow-4 {
+  @extend %bg-image-podcast-cover-04;
+}
+
 //Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   .podcast-teaser--avatar--overlay--big {

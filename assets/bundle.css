@@ -676,6 +676,26 @@ h6 > a:focus:not([class]),
   background-image: url("/assets/bg-images/general/visual-podcast-ctoneedtoknow.webp");
 }
 
+.bg-image-podcast-cover-01,
+.podcast-teaser--ctoneedtoknow-1 {
+  background-image: url("/assets/bg-images/podcast-episodes/ctoneedtoknow-cover-1.webp");
+}
+
+.bg-image-podcast-cover-02,
+.podcast-teaser--ctoneedtoknow-2 {
+  background-image: url("/assets/bg-images/podcast-episodes/ctoneedtoknow-cover-2.webp");
+}
+
+.bg-image-podcast-cover-03,
+.podcast-teaser--ctoneedtoknow-3 {
+  background-image: url("/assets/bg-images/podcast-episodes/ctoneedtoknow-cover-3.webp");
+}
+
+.bg-image-podcast-cover-04,
+.podcast-teaser--ctoneedtoknow-4 {
+  background-image: url("/assets/bg-images/podcast-episodes/ctoneedtoknow-cover-4.webp");
+}
+
 .bg-image-trainings-01 {
   background-color: #d8d8d8;
   background-image: url("/assets/bg-images/general/visual-trainings-01.webp");
@@ -6120,6 +6140,26 @@ touch-detection {
   color: #fff;
 }
 
+.podcast-teaser--ctoneedtoknow-1,
+.podcast-teaser--ctoneedtoknow-2,
+.podcast-teaser--ctoneedtoknow-3,
+.podcast-teaser--ctoneedtoknow-4 {
+  color: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.podcast-teaser--ctoneedtoknow-1 .podcast-teaser__headline,
+.podcast-teaser--ctoneedtoknow-1 .podcast-teaser__subheadline,
+.podcast-teaser--ctoneedtoknow-2 .podcast-teaser__headline,
+.podcast-teaser--ctoneedtoknow-2 .podcast-teaser__subheadline,
+.podcast-teaser--ctoneedtoknow-3 .podcast-teaser__headline,
+.podcast-teaser--ctoneedtoknow-3 .podcast-teaser__subheadline,
+.podcast-teaser--ctoneedtoknow-4 .podcast-teaser__headline,
+.podcast-teaser--ctoneedtoknow-4 .podcast-teaser__subheadline {
+  color: #fff;
+}
+
 @media screen and (min-width: 48rem) {
   .podcast-teaser--avatar--overlay--big {
     background-size: contain;
@@ -8816,7 +8856,8 @@ form > * + *,
   .podcast-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
-  .podcast-teaser--avatar--overlay--big {
+  .podcast-teaser--avatar--overlay--big,
+  .podcast-teaser--ctoneedtoknow-4 {
     grid-column: span 2;
   }
 }
@@ -8934,6 +8975,116 @@ form > * + *,
   text-align: center;
 }
 
+.ctoneedtoknow-podcast-overview-page ::-moz-selection {
+  background: #f4f4f4;
+}
+
+.ctoneedtoknow-podcast-overview-page ::selection {
+  background: #f4f4f4;
+}
+.ctoneedtoknow-podcast-overview-page .topic-header {
+  margin-bottom: 2.985984rem;
+}
+.ctoneedtoknow-podcast-overview-page .topic-header__body {
+  color: #242424;
+  background-color: #fff;
+}
+.ctoneedtoknow-podcast-overview-page .toolbar__link {
+  padding: 0.5787037037rem;
+  color: #242424;
+  -webkit-transition: background-color 0.175s ease-in-out;
+  transition: background-color 0.175s ease-in-out;
+}
+.ctoneedtoknow-podcast-overview-page .toolbar__link:hover, .ctoneedtoknow-podcast-overview-page .toolbar__link:focus {
+  color: #fff;
+  background-color: #242424;
+}
+.ctoneedtoknow-podcast-overview-page .toolbar__link:hover .icon, .ctoneedtoknow-podcast-overview-page .toolbar__link:focus .icon {
+  background: #fff;
+}
+
+.podcast-detail-page--ctoneedtoknow ::-moz-selection {
+  background: #f4f4f4;
+}
+
+.podcast-detail-page--ctoneedtoknow ::selection {
+  background: #f4f4f4;
+}
+.podcast-detail-page--ctoneedtoknow a:not([class]):hover,
+.podcast-detail-page--ctoneedtoknow a:not([class]):focus {
+  background-color: #f4f4f4;
+}
+.podcast-detail-page--ctoneedtoknow .standard-header__intro__label {
+  color: #fff;
+  background-color: #242424;
+}
+.podcast-detail-page--ctoneedtoknow .standard-header__intro {
+  color: #242424;
+  background-color: #fff;
+}
+.podcast-detail-page--ctoneedtoknow h3,
+.podcast-detail-page--ctoneedtoknow .standard-header__title,
+.podcast-detail-page--ctoneedtoknow .standard-header__subtitle,
+.podcast-detail-page--ctoneedtoknow .standard-header__type {
+  color: #fff;
+}
+.podcast-detail-page--ctoneedtoknow .standard-header__intro__text {
+  color: #242424;
+}
+.podcast-detail-page--ctoneedtoknow .standard-header__type--underlined {
+  border-bottom: #fff solid 3px;
+}
+.podcast-detail-page--ctoneedtoknow .toolbar__link:hover, .podcast-detail-page--ctoneedtoknow .toolbar__link:focus,
+.podcast-detail-page--ctoneedtoknow .share-section__link:hover,
+.podcast-detail-page--ctoneedtoknow .share-section__link:focus,
+.podcast-detail-page--ctoneedtoknow .author-bio__social-profile:hover,
+.podcast-detail-page--ctoneedtoknow .author-bio__social-profile:focus {
+  color: #242424;
+}
+.podcast-detail-page--ctoneedtoknow .toolbar__link .icon,
+.podcast-detail-page--ctoneedtoknow .share-section__link .icon,
+.podcast-detail-page--ctoneedtoknow .author-bio__social-profile .icon {
+  background: #242424;
+}
+.podcast-detail-page--ctoneedtoknow .toolbar__link .icon:hover,
+.podcast-detail-page--ctoneedtoknow .toolbar__link .icon:focus,
+.podcast-detail-page--ctoneedtoknow .share-section__link .icon:hover,
+.podcast-detail-page--ctoneedtoknow .share-section__link .icon:focus,
+.podcast-detail-page--ctoneedtoknow .author-bio__social-profile .icon:hover,
+.podcast-detail-page--ctoneedtoknow .author-bio__social-profile .icon:focus {
+  background: #242424;
+}
+.podcast-detail-page--ctoneedtoknow .btn--cta {
+  color: #fff;
+  background-color: #242424;
+  border-color: #242424;
+}
+.podcast-detail-page--ctoneedtoknow .btn--cta::after {
+  background-color: #fff;
+}
+.podcast-detail-page--ctoneedtoknow .btn--cta:hover, .podcast-detail-page--ctoneedtoknow .btn--cta:focus {
+  color: #242424;
+  border-color: #242424;
+}
+.podcast-detail-page--ctoneedtoknow ul > li {
+  /* stylelint-disable-next-line selector-max-compound-selectors */
+}
+.podcast-detail-page--ctoneedtoknow ul > li::marker {
+  color: #242424;
+}
+.podcast-detail-page--ctoneedtoknow ul > li li::marker {
+  color: #242424;
+}
+.podcast-detail-page--ctoneedtoknow .tag-list__link {
+  color: #fff;
+  background-color: #242424;
+  border: 2px solid #242424;
+}
+.podcast-detail-page--ctoneedtoknow .tag-list__link:hover {
+  color: #242424;
+  background-color: #fff;
+}
+
 .podcast-overview-page .topic-header {
   margin-bottom: 2.985984rem;
 }
@@ -8960,25 +9111,40 @@ form > * + *,
   margin: 0 auto 2.985984rem;
 }
 
+.podcast-overview-page--security ::-moz-selection {
+  background: #fff019;
+}
+
+.podcast-overview-page--security ::selection {
+  background: #fff019;
+}
 .podcast-overview-page--security .topic-header .topic-header__body {
   color: #242424;
   background-color: #fff;
 }
-.podcast-overview-page--security .topic-header .toolbar__link {
+.podcast-overview-page--security .toolbar__link {
   padding: 0.5787037037rem;
   color: #242424;
   -webkit-transition: background-color 0.175s ease-in-out;
   transition: background-color 0.175s ease-in-out;
-  /* stylelint-disable-next-line selector-max-compound-selectors */
 }
-.podcast-overview-page--security .topic-header .toolbar__link:hover, .podcast-overview-page--security .topic-header .toolbar__link:focus {
-  background-color: #fff019;
+.podcast-overview-page--security .toolbar__link:hover, .podcast-overview-page--security .toolbar__link:focus {
+  color: #fff;
+  background-color: #242424;
 }
-.podcast-overview-page--security .topic-header .toolbar__link .icon {
-  background: #242424;
+.podcast-overview-page--security .toolbar__link:hover .icon, .podcast-overview-page--security .toolbar__link:focus .icon {
+  background: #fff;
 }
 
-.podcast-detail-page--security a:not([class]):hover {
+.podcast-detail-page--security ::-moz-selection {
+  background: #fff019;
+}
+
+.podcast-detail-page--security ::selection {
+  background: #fff019;
+}
+.podcast-detail-page--security a:not([class]):hover,
+.podcast-detail-page--security a:not([class]):focus {
   background-color: #fff019;
 }
 .podcast-detail-page--security .podcast-header--avatar--overlay {
@@ -9031,15 +9197,14 @@ form > * + *,
   color: #fff019;
   border-color: #242424;
 }
-.podcast-detail-page--security ul {
+.podcast-detail-page--security ul > li {
   /* stylelint-disable-next-line selector-max-compound-selectors */
 }
-.podcast-detail-page--security ul > li::before {
-  background: #fff019;
+.podcast-detail-page--security ul > li::marker {
+  color: #242424;
 }
-.podcast-detail-page--security ul ul > li::before {
-  background: #fff;
-  border: 3px solid #fff019;
+.podcast-detail-page--security ul > li li::marker {
+  color: #fff019;
 }
 .podcast-detail-page--security .tag-list__link {
   color: #242424;

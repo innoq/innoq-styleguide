@@ -1,0 +1,30 @@
+.ctoneedtoknow-podcast-overview-page {
+  ::selection {
+    background: $brand-gray-20;
+  }
+
+  .topic-header {
+    margin-bottom: $spacer-lg;
+  }
+
+  .topic-header__body {
+    color: $brand-gray;
+    background-color: $brand-white;
+  }
+
+  .toolbar__link {
+    padding: $spacer-xs;
+    color: $brand-gray;
+    transition: standard-transition(background-color);
+
+    &:hover,
+    &:focus {
+      color: $brand-white;
+      background-color: $brand-gray;
+
+      .icon {
+        background: $brand-white;
+      }
+    }
+  }
+}

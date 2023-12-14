@@ -1,5 +1,10 @@
 .podcast-detail-page--security {
-  a:not([class]):hover {
+  ::selection {
+    background: $brand-yellow;
+  }
+
+  a:not([class]):hover,
+  a:not([class]):focus {
     background-color: $brand-yellow;
   }
 
@@ -60,14 +65,15 @@
   }
 
   ul {
-    > li::before {
-      background: $brand-yellow;
-    }
+    > li {
+      &::marker {
+        color: $brand-gray;
+      }
 
-    /* stylelint-disable-next-line selector-max-compound-selectors */
-    ul > li::before {
-      background: $brand-white;
-      border: 3px solid $brand-yellow;
+      /* stylelint-disable-next-line selector-max-compound-selectors */
+      li::marker {
+        color: $brand-yellow;
+      }
     }
   }
 
