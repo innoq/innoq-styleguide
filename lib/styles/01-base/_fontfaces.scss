@@ -57,6 +57,14 @@ $cachebuster: '2'; // Please increment if you changed one (or more) of the font 
   src: url('#{$cdn}/MarkPro-Heavy.woff2?cachebuster=#{$cachebuster}') format('woff2');
 }
 
+@font-face {
+  font-family: FFMarkWebPro;
+  font-weight: 1000;
+  font-style: normal;
+  font-display: swap;
+  src: url('#{$cdn}/MarkPro-Ultra.woff2?cachebuster=#{$cachebuster}') format('woff2');
+}
+
 // Hack
 
 @font-face {

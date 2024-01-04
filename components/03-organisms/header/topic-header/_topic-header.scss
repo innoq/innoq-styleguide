@@ -38,6 +38,10 @@ $topic-header-inner-padding-small: $spacer-md;
     font-size: $font-size-xxl;
     line-height: $heading-line-height-sm;
     text-align: center;
+
+    &--ultra {
+      font-weight: 1000;
+    }
   }
 
   &__type {
