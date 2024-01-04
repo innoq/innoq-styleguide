@@ -248,9 +248,8 @@ ul:not([class], [role=list]),
 }
 
 .textbox-sequence__header, .service-intro__header {
-  -webkit-hyphens: manual;
-      -ms-hyphens: manual;
-          hyphens: manual;
+  -ms-hyphens: manual;
+      hyphens: manual;
   word-wrap: normal;
   overflow-wrap: break-word;
 }
@@ -1983,16 +1982,14 @@ h3,
 h4,
 h5,
 h6 {
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 .teaser-section-heading {
-  -webkit-hyphens: manual;
-      -ms-hyphens: manual;
-          hyphens: manual;
+  -ms-hyphens: manual;
+      hyphens: manual;
   text-align: center;
   text-transform: uppercase;
   border-bottom: 4px solid #004153;
@@ -2053,9 +2050,8 @@ a:not([class]):focus, a:not([class]):hover {
   outline: none;
 }
 a:not([class])[href=mailto] {
-  -webkit-hyphens: none;
-      -ms-hyphens: none;
-          hyphens: none;
+  -ms-hyphens: none;
+      hyphens: none;
 }
 
 .link--muted {
@@ -2095,9 +2091,8 @@ a.link-teaser.inverted-interaction-color:focus, a.link-teaser.inverted-interacti
 p {
   font-size: 1rem;
   line-height: 1.52;
-  -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
@@ -2686,9 +2681,8 @@ ul:not([class], [role=list]) > li ol,
 .author-bio__text > * {
   font-size: 1rem;
   line-height: 1.52;
-  -webkit-hyphens: none;
-      -ms-hyphens: none;
-          hyphens: none;
+  -ms-hyphens: none;
+      hyphens: none;
 }
 .author-bio__text > * a {
   color: #004153;
@@ -5195,6 +5189,8 @@ touch-detection {
   font-size: 4.29981696rem;
   line-height: 0.8;
   color: #fff;
+  font-weight: 1000;
+  letter-spacing: normal;
 }
 
 .podcast-channel-teaser__title--classic {
@@ -7175,9 +7171,8 @@ form > * + *,
 }
 
 .footer__link {
-  -webkit-hyphens: none;
-      -ms-hyphens: none;
-          hyphens: none;
+  -ms-hyphens: none;
+      hyphens: none;
   color: #fff;
   border-bottom: 2px solid #fff;
 }
@@ -7464,9 +7459,8 @@ form > * + *,
   gap: 2.0736rem;
   place-items: center;
   width: 100%;
-  -webkit-hyphens: none;
-      -ms-hyphens: none;
-          hyphens: none;
+  -ms-hyphens: none;
+      hyphens: none;
 }
 
 .staff-header__profile__name > * + * {
