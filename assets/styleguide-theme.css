@@ -103,6 +103,13 @@
   src: url("https://www.innoq.com/assets/MarkPro-Heavy.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
+  font-family: FFMarkWebPro;
+  font-weight: 1000;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://www.innoq.com/assets/MarkPro-Ultra.woff2?cachebuster=2") format("woff2");
+}
+@font-face {
   font-family: HackRegular;
   font-display: swap;
   src: url("https://www.innoq.com/assets/hack-regular.woff2?cachebuster=2") format("woff2");

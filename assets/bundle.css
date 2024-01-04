@@ -55,6 +55,13 @@
   src: url("https://www.innoq.com/assets/MarkPro-Heavy.woff2?cachebuster=2") format("woff2");
 }
 @font-face {
+  font-family: FFMarkWebPro;
+  font-weight: 1000;
+  font-style: normal;
+  font-display: swap;
+  src: url("https://www.innoq.com/assets/MarkPro-Ultra.woff2?cachebuster=2") format("woff2");
+}
+@font-face {
   font-family: HackRegular;
   font-display: swap;
   src: url("https://www.innoq.com/assets/hack-regular.woff2?cachebuster=2") format("woff2");
@@ -7719,6 +7726,9 @@ form > * + *,
   font-size: 2.48832rem;
   line-height: 1.07;
   text-align: center;
+}
+.topic-header__title--ultra {
+  font-weight: 1000;
 }
 .topic-header__type {
   margin-bottom: 0.5787037037rem;
