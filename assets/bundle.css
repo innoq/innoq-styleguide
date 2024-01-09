@@ -152,6 +152,13 @@ h1, .collapse-toggler, .legend,
   font-style: normal;
 }
 
+.topic-header__title--ultra, .podcast-channel-teaser__title--ctoneedtoknow,
+.heading-font-ultra {
+  font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+}
+
 .swatch-text, pre > code, code,
 .monospace-font-regular {
   font-family: "HackRegular", "Monaco", "Courier New", monospace;
@@ -5189,7 +5196,6 @@ touch-detection {
   font-size: 4.29981696rem;
   line-height: 0.8;
   color: #fff;
-  font-weight: 1000;
   letter-spacing: normal;
 }
 
@@ -7721,9 +7727,6 @@ form > * + *,
   line-height: 1.07;
   text-align: center;
 }
-.topic-header__title--ultra {
-  font-weight: 1000;
-}
 .topic-header__type {
   margin-bottom: 0.5787037037rem;
   font-size: 1rem;
@@ -9008,15 +9011,18 @@ form > * + *,
 }
 
 .podcast-detail-page--ctoneedtoknow ::-moz-selection {
-  background: #f4f4f4;
+  color: #fff;
+  background: #242424;
 }
 
 .podcast-detail-page--ctoneedtoknow ::selection {
-  background: #f4f4f4;
+  color: #fff;
+  background: #242424;
 }
 .podcast-detail-page--ctoneedtoknow a:not([class]):hover,
 .podcast-detail-page--ctoneedtoknow a:not([class]):focus {
-  background-color: #f4f4f4;
+  color: #fff;
+  background-color: #242424;
 }
 .podcast-detail-page--ctoneedtoknow .standard-header__intro__label {
   color: #fff;
@@ -9026,7 +9032,6 @@ form > * + *,
   color: #242424;
   background-color: #fff;
 }
-.podcast-detail-page--ctoneedtoknow h3,
 .podcast-detail-page--ctoneedtoknow .standard-header__title,
 .podcast-detail-page--ctoneedtoknow .standard-header__subtitle,
 .podcast-detail-page--ctoneedtoknow .standard-header__type {
@@ -9038,16 +9043,29 @@ form > * + *,
 .podcast-detail-page--ctoneedtoknow .standard-header__type--underlined {
   border-bottom: #fff solid 3px;
 }
+.podcast-detail-page--ctoneedtoknow .page-layout-md--default h3,
+.podcast-detail-page--ctoneedtoknow .page-layout-md--default .teaser-section-heading {
+  color: #242424;
+}
+.podcast-detail-page--ctoneedtoknow .toolbar__link,
+.podcast-detail-page--ctoneedtoknow .share-section__link,
+.podcast-detail-page--ctoneedtoknow .author-bio__social-profile,
+.podcast-detail-page--ctoneedtoknow .author-bio {
+  color: #242424;
+}
 .podcast-detail-page--ctoneedtoknow .toolbar__link:hover, .podcast-detail-page--ctoneedtoknow .toolbar__link:focus,
 .podcast-detail-page--ctoneedtoknow .share-section__link:hover,
 .podcast-detail-page--ctoneedtoknow .share-section__link:focus,
 .podcast-detail-page--ctoneedtoknow .author-bio__social-profile:hover,
-.podcast-detail-page--ctoneedtoknow .author-bio__social-profile:focus {
+.podcast-detail-page--ctoneedtoknow .author-bio__social-profile:focus,
+.podcast-detail-page--ctoneedtoknow .author-bio:hover,
+.podcast-detail-page--ctoneedtoknow .author-bio:focus {
   color: #242424;
 }
 .podcast-detail-page--ctoneedtoknow .toolbar__link .icon,
 .podcast-detail-page--ctoneedtoknow .share-section__link .icon,
-.podcast-detail-page--ctoneedtoknow .author-bio__social-profile .icon {
+.podcast-detail-page--ctoneedtoknow .author-bio__social-profile .icon,
+.podcast-detail-page--ctoneedtoknow .author-bio .icon {
   background: #242424;
 }
 .podcast-detail-page--ctoneedtoknow .toolbar__link .icon:hover,
@@ -9055,7 +9073,9 @@ form > * + *,
 .podcast-detail-page--ctoneedtoknow .share-section__link .icon:hover,
 .podcast-detail-page--ctoneedtoknow .share-section__link .icon:focus,
 .podcast-detail-page--ctoneedtoknow .author-bio__social-profile .icon:hover,
-.podcast-detail-page--ctoneedtoknow .author-bio__social-profile .icon:focus {
+.podcast-detail-page--ctoneedtoknow .author-bio__social-profile .icon:focus,
+.podcast-detail-page--ctoneedtoknow .author-bio .icon:hover,
+.podcast-detail-page--ctoneedtoknow .author-bio .icon:focus {
   background: #242424;
 }
 .podcast-detail-page--ctoneedtoknow .btn--cta {
@@ -9077,6 +9097,9 @@ form > * + *,
   color: #242424;
 }
 .podcast-detail-page--ctoneedtoknow ul > li li::marker {
+  color: #242424;
+}
+.podcast-detail-page--ctoneedtoknow .tag-section__headline {
   color: #242424;
 }
 .podcast-detail-page--ctoneedtoknow .tag-list__link {
@@ -9173,12 +9196,15 @@ form > * + *,
 .podcast-detail-page--security .share-section__link:hover,
 .podcast-detail-page--security .share-section__link:focus,
 .podcast-detail-page--security .author-bio__social-profile:hover,
-.podcast-detail-page--security .author-bio__social-profile:focus {
+.podcast-detail-page--security .author-bio__social-profile:focus,
+.podcast-detail-page--security .author-bio:hover,
+.podcast-detail-page--security .author-bio:focus {
   color: #242424;
 }
 .podcast-detail-page--security .toolbar__link .icon,
 .podcast-detail-page--security .share-section__link .icon,
-.podcast-detail-page--security .author-bio__social-profile .icon {
+.podcast-detail-page--security .author-bio__social-profile .icon,
+.podcast-detail-page--security .author-bio .icon {
   background: #242424;
 }
 .podcast-detail-page--security .toolbar__link .icon:hover,
@@ -9186,7 +9212,9 @@ form > * + *,
 .podcast-detail-page--security .share-section__link .icon:hover,
 .podcast-detail-page--security .share-section__link .icon:focus,
 .podcast-detail-page--security .author-bio__social-profile .icon:hover,
-.podcast-detail-page--security .author-bio__social-profile .icon:focus {
+.podcast-detail-page--security .author-bio__social-profile .icon:focus,
+.podcast-detail-page--security .author-bio .icon:hover,
+.podcast-detail-page--security .author-bio .icon:focus {
   background: #242424;
 }
 .podcast-detail-page--security .btn--cta {

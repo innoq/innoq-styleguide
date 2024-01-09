@@ -46,6 +46,12 @@
   font-style: normal;
 }
 
+.heading-font-ultra {
+  font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+}
+
 .swatch-text,
 .monospace-font-regular {
   font-family: "HackRegular", "Monaco", "Courier New", monospace;

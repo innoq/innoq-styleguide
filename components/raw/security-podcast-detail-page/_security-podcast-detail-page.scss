@@ -32,7 +32,8 @@
 
   .toolbar__link,
   .share-section__link,
-  .author-bio__social-profile {
+  .author-bio__social-profile,
+  .author-bio {
     &:hover,
     &:focus {
       color: $brand-gray;
