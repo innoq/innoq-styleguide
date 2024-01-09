@@ -40,7 +40,7 @@ $topic-header-inner-padding-small: $spacer-md;
     text-align: center;
 
     &--ultra {
-      font-weight: 1000;
+      @extend %heading-font-ultra;
     }
   }
 

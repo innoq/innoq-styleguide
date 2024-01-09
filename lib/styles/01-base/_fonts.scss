@@ -51,6 +51,13 @@
   font-style: normal;
 }
 
+%heading-font-ultra,
+.heading-font-ultra {
+  font-family: $font-family-sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+}
+
 %monospace-font-regular,
 .monospace-font-regular {
   font-family: $font-family-monospace;
