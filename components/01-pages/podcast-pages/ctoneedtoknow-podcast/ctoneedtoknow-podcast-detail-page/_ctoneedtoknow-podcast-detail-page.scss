@@ -1,11 +1,13 @@
 .podcast-detail-page--ctoneedtoknow {
   ::selection {
-    background: $brand-gray-20;
+    color: $brand-white;
+    background: $brand-gray;
   }
 
   a:not([class]):hover,
   a:not([class]):focus {
-    background-color: $brand-gray-20;
+    color: $brand-white;
+    background-color: $brand-gray;
   }
 
   .standard-header__intro__label {
@@ -18,7 +20,6 @@
     background-color: $brand-white;
   }
 
-  h3,
   .standard-header__title,
   .standard-header__subtitle,
   .standard-header__type {
@@ -33,9 +34,19 @@
     border-bottom: $brand-white solid 3px;
   }
 
+  .page-layout-md--default {
+    h3,
+    .teaser-section-heading {
+      color: $brand-gray;
+    }
+  }
+
   .toolbar__link,
   .share-section__link,
-  .author-bio__social-profile {
+  .author-bio__social-profile,
+  .author-bio {
+    color: $brand-gray;
+
     &:hover,
     &:focus {
       color: $brand-gray;
@@ -78,6 +89,10 @@
         color: $brand-gray;
       }
     }
+  }
+
+  .tag-section__headline {
+    color: $brand-gray;
   }
 
   .tag-list__link {
