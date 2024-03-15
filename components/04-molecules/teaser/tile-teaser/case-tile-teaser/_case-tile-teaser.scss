@@ -53,6 +53,13 @@ $case-tile-teaser-sm-height: ms(32);
 
   line-height: $paragraph-line-height;
   color: $case-tile-teaser-text-color;
+
+  &--workshop {
+    @extend %teaser-text;
+
+    line-height: $paragraph-line-height;
+    color: $case-tile-teaser-text-color;
+  }
 }
 
 .case-tile-teaser__logo {
