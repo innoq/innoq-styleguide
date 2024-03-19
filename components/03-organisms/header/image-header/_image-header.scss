@@ -41,7 +41,7 @@
     border: 30px solid $image-header-bg-color;
 
     &__content {
-      width: auto;
+      width: $default-page-layout-content-width-md;
       margin: $spacer-sm;
     }
   }

@@ -1,0 +1,7 @@
+.legacy-modernization-page {
+  background: $gradient-2;
+
+  .longquote__zigzag {
+    @include zigzag($gradient-header-background-color);
+  }
+}

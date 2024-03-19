@@ -112,6 +112,10 @@
     top: -5rem;
     right: 0;
     display: block;
+
+    &--text-only {
+      top: -7rem;
+    }
   }
 
   .textbox-sequence__icon--bottomright {
