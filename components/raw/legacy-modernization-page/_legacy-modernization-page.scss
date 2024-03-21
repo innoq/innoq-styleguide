@@ -4,4 +4,10 @@
   .longquote__zigzag {
     @include zigzag($gradient-header-background-color);
   }
+
+  @media screen and (min-width: $grid-breakpoint-lg) {
+    .big-content-teaser__headline {
+      font-size: $font-size-xl;
+    }
+  }
 }

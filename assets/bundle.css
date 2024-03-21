@@ -9258,6 +9258,56 @@ form > * + *,
   background-color: #242424;
 }
 
+.product-microsite-page .tile-grid-md {
+  gap: 2.985984rem;
+}
+.product-microsite-page .section-heading--secondary {
+  margin-top: 3.919104rem;
+}
+.product-microsite-page .triplet-divider {
+  margin-top: 2.0736rem;
+}
+
+.legacy-modernization-page {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffe6d9), to(#f7f7f7));
+  background: linear-gradient(180deg, #ffe6d9 0%, #f7f7f7 100%);
+}
+.legacy-modernization-page .longquote__zigzag {
+  position: relative;
+  z-index: 1;
+  display: block;
+  height: 10px;
+  background: #ffe6d9;
+}
+.legacy-modernization-page .longquote__zigzag::after, .legacy-modernization-page .longquote__zigzag::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  display: block;
+}
+.legacy-modernization-page .longquote__zigzag::before {
+  top: 130%;
+  height: 6px;
+  background: linear-gradient(-135deg, #004153 5px, transparent 0) 0 5px, linear-gradient(135deg, #004153 5px, transparent 0) 0 5px;
+  background-repeat: repeat-x;
+  background-position: top left;
+  background-size: 10px 10px;
+}
+.legacy-modernization-page .longquote__zigzag::after {
+  top: 100%;
+  height: 10px;
+  background: linear-gradient(-135deg, #ffe6d9 5px, transparent 0) 0 5px, linear-gradient(135deg, #ffe6d9 5px, transparent 0) 0 5px;
+  background-repeat: repeat-x;
+  background-position: top left;
+  background-size: 10px 10px;
+}
+@media screen and (min-width: 75rem) {
+  .legacy-modernization-page .big-content-teaser__headline {
+    font-size: 2.0736rem;
+  }
+}
+
 .staff-page .tile-grid-md,
 .staff-page .tile-grid-sm {
   gap: 1.44rem;
@@ -9333,51 +9383,6 @@ form > * + *,
       -ms-flex-align: center;
           align-items: center;
 }
-.product-microsite-page .tile-grid-md {
-  gap: 2.985984rem;
-}
-.product-microsite-page .section-heading--secondary {
-  margin-top: 3.919104rem;
-}
-.product-microsite-page .triplet-divider {
-  margin-top: 2.0736rem;
-}
-
-.legacy-modernization-page {
-  background: -webkit-gradient(linear, left top, left bottom, from(#ffe6d9), to(#f7f7f7));
-  background: linear-gradient(180deg, #ffe6d9 0%, #f7f7f7 100%);
-}
-.legacy-modernization-page .longquote__zigzag {
-  position: relative;
-  z-index: 1;
-  display: block;
-  height: 10px;
-  background: #ffe6d9;
-}
-.legacy-modernization-page .longquote__zigzag::after, .legacy-modernization-page .longquote__zigzag::before {
-  content: "";
-  position: absolute;
-  right: 0;
-  left: 0;
-  display: block;
-}
-.legacy-modernization-page .longquote__zigzag::before {
-  top: 130%;
-  height: 6px;
-  background: linear-gradient(-135deg, #004153 5px, transparent 0) 0 5px, linear-gradient(135deg, #004153 5px, transparent 0) 0 5px;
-  background-repeat: repeat-x;
-  background-position: top left;
-  background-size: 10px 10px;
-}
-.legacy-modernization-page .longquote__zigzag::after {
-  top: 100%;
-  height: 10px;
-  background: linear-gradient(-135deg, #ffe6d9 5px, transparent 0) 0 5px, linear-gradient(135deg, #ffe6d9 5px, transparent 0) 0 5px;
-  background-repeat: repeat-x;
-  background-position: top left;
-  background-size: 10px 10px;
-}
-
 .demo {
   width: 100%;
 }
