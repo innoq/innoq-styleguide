@@ -9308,6 +9308,28 @@ form > * + *,
   }
 }
 
+.faq-section {
+  padding-right: 1.44rem;
+  padding-left: 1.44rem;
+  border-top: 6px solid #ff9c66;
+  border-bottom: 6px solid #ff9c66;
+}
+
+.text-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2.985984rem;
+}
+
+@media screen and (min-width: 60rem) {
+  .text-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    -webkit-column-gap: 2.985984rem;
+       -moz-column-gap: 2.985984rem;
+            column-gap: 2.985984rem;
+  }
+}
 .staff-page .tile-grid-md,
 .staff-page .tile-grid-sm {
   gap: 1.44rem;
