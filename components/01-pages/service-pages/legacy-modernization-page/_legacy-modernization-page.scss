@@ -11,3 +11,24 @@
     }
   }
 }
+
+.faq-section {
+  padding-right: $spacer-md;
+  padding-left: $spacer-md;
+  border-top: 6px solid $brand-primary;
+  border-bottom: 6px solid $brand-primary;
+}
+
+.text-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: $spacer-lg;
+}
+
+@media screen and (min-width: $grid-breakpoint-md-lg) {
+  .text-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: $spacer-lg;
+  }
+}
