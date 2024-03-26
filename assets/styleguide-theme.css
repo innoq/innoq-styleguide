@@ -22,6 +22,12 @@
   font-style: normal;
 }
 
+.body-font-bold {
+  font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
 .body-font-bold-italic {
   font-family: "FreightTextPro", "Georgia", "Times", "Times New Roman", serif;
   font-weight: bold;

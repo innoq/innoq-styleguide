@@ -96,6 +96,13 @@ blockquote:not([class]) > p,
   font-style: normal;
 }
 
+.legacy-modernization-page p,
+.body-font-bold {
+  font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
 .body-font-bold-italic {
   font-family: "FreightTextPro", "Georgia", "Times", "Times New Roman", serif;
   font-weight: bold;
@@ -122,7 +129,7 @@ blockquote:not([class]) > p,
   font-style: normal;
 }
 
-.topic-header__type, .standard-header__intro__label, .standard-header__type, .gradient-header__type, .footer__directions-link, .cover__author, .cover__type, .image-divider-right-content-textbox__text, .toolbar__link, .small-tile-teaser__type, .topic-teaser__cta, .podcast-author, .podcast-channel-teaser__link, .podcast-channel-teaser__caption, .artist-list-teaser__edition__type, .superhero__lead, .service-intro__text, .search-form__input, .share-section__link, .resource-list-item__author > li > a:focus, .resource-list-item__author > li > a:hover, .superquote__author,
+.text-grid__heading, .topic-header__type, .standard-header__intro__label, .standard-header__type, .gradient-header__type, .footer__directions-link, .cover__author, .cover__type, .image-divider-right-content-textbox__text, .toolbar__link, .small-tile-teaser__type, .topic-teaser__cta, .podcast-author, .podcast-channel-teaser__link, .podcast-channel-teaser__caption, .artist-list-teaser__edition__type, .superhero__lead, .service-intro__text, .search-form__input, .share-section__link, .resource-list-item__author > li > a:focus, .resource-list-item__author > li > a:hover, .superquote__author,
 .longquote__author, .paginator__item, .info-note__highlight, .info-note__title, .infobox__teaser, .filter-select, .filter-label, .eyecatcher--social__text, .eyecatcher--event__text, .detail-item__author > li > a:focus, .detail-item__author > li > a:hover, .cta-section-long__name, .card__header__tag, .author-bio__name, .tag-list__link, .table thead,
 .table tfoot, .bold-list > li, .tuple-list__label, ol:not([class]) > li::before, dl:not([class]) dt,
 dl dt, .checklist li, .label-big.badge, .label-big.badge--inverted, .label-big.hint, .label.training, .label.talk, pull-quote > blockquote,
@@ -9311,20 +9318,22 @@ form > * + *,
 .faq-section {
   padding-right: 1.44rem;
   padding-left: 1.44rem;
-  border-top: 6px solid #ff9c66;
-  border-bottom: 6px solid #ff9c66;
 }
 
 .text-grid {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 2.985984rem;
+  row-gap: 1.44rem;
+}
+.text-grid__heading + p {
+  margin-top: 0.3348979767rem;
 }
 
 @media screen and (min-width: 60rem) {
   .text-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    row-gap: 2.985984rem;
     -webkit-column-gap: 2.985984rem;
        -moz-column-gap: 2.985984rem;
             column-gap: 2.985984rem;
