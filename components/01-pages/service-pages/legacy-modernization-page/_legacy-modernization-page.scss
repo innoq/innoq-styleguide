@@ -1,6 +1,10 @@
 .legacy-modernization-page {
   background: $gradient-2;
 
+  p {
+    @extend %body-font-sans;
+  }
+
   .longquote__zigzag {
     @include zigzag($gradient-header-background-color);
   }
@@ -15,20 +19,27 @@
 .faq-section {
   padding-right: $spacer-md;
   padding-left: $spacer-md;
-  border-top: 6px solid $brand-primary;
-  border-bottom: 6px solid $brand-primary;
 }
 
 .text-grid {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: $spacer-lg;
+  row-gap: $spacer-md;
+
+  &__heading {
+    @extend %heading-font-bold;
+
+    & + p {
+      margin-top: $spacer-xxs;
+    }
+  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md-lg) {
   .text-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
+    row-gap: $spacer-lg;
     column-gap: $spacer-lg;
   }
 }

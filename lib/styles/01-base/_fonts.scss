@@ -23,6 +23,13 @@
   font-style: normal;
 }
 
+%body-font-sans,
+.body-font-bold {
+  font-family: $font-family-sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
 %body-font-bold-italic,
 .body-font-bold-italic {
   font-family: $font-family-serif;
