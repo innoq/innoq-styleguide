@@ -27,7 +27,7 @@
 
 @media screen and (min-width: $grid-breakpoint-md-lg) {
   .text-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     column-gap: $spacer-lg;
   }
