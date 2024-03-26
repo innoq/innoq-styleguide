@@ -9323,7 +9323,7 @@ form > * + *,
 
 @media screen and (min-width: 60rem) {
   .text-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     -webkit-column-gap: 2.985984rem;
        -moz-column-gap: 2.985984rem;
