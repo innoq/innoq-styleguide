@@ -29,7 +29,7 @@
   &__heading {
     @extend %heading-font-bold;
 
-    & + p {
+    + p {
       margin-top: $spacer-xxs;
     }
   }
