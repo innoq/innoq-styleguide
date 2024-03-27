@@ -941,6 +941,7 @@
 }
 
 <span class="hljs-selector-class">.faq-section</span> {
+  <span class="hljs-attribute">align-items</span>: flex-start;
   <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-md</span>;
   <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer-md</span>;
 }
@@ -953,18 +954,24 @@
   &amp;__heading {
     <span class="hljs-keyword">@extend</span> %heading-font-bold;
 
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-sm</span>;
+
     + <span class="hljs-selector-tag">p</span> {
       <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-xxs</span>;
     }
   }
 }
 
-<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md-lg</span>) {
+<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
   <span class="hljs-selector-class">.text-grid</span> {
     <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">1</span>fr <span class="hljs-number">1</span>fr;
     <span class="hljs-attribute">grid-template-rows</span>: auto;
     <span class="hljs-attribute">row-gap</span>: <span class="hljs-variable">$spacer-lg</span>;
     <span class="hljs-attribute">column-gap</span>: <span class="hljs-variable">$spacer-lg</span>;
+
+    &amp;__heading {
+      <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-md</span>;
+    }
   }
 }
 </pre>
@@ -983,7 +990,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">774 Bytes</span>
+                    <span class="Meta-value">885 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -8479,8 +8486,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-03-26T13:23:55.326Z">
-                                3/26/2024
+                            <time datetime="2024-03-27T09:42:27.933Z">
+                                3/27/2024
                             </time>
                         
                     </dd>

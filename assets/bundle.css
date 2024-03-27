@@ -9316,6 +9316,9 @@ form > * + *,
 }
 
 .faq-section {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-right: 1.44rem;
   padding-left: 1.44rem;
 }
@@ -9325,11 +9328,14 @@ form > * + *,
   grid-template-columns: 1fr;
   row-gap: 1.44rem;
 }
+.text-grid__heading {
+  font-size: 1.2rem;
+}
 .text-grid__heading + p {
   margin-top: 0.3348979767rem;
 }
 
-@media screen and (min-width: 60rem) {
+@media screen and (min-width: 48rem) {
   .text-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -9337,6 +9343,9 @@ form > * + *,
     -webkit-column-gap: 2.985984rem;
        -moz-column-gap: 2.985984rem;
             column-gap: 2.985984rem;
+  }
+  .text-grid__heading {
+    font-size: 1.44rem;
   }
 }
 .staff-page .tile-grid-md,
