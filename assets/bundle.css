@@ -9327,6 +9327,7 @@ form > * + *,
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 1.44rem;
+  margin-top: 2.0736rem;
 }
 .text-grid__heading {
   font-size: 1.2rem;
