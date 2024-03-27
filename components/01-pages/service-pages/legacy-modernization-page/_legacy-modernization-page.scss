@@ -26,6 +26,7 @@
   display: grid;
   grid-template-columns: 1fr;
   row-gap: $spacer-md;
+  margin-top: $spacer-base;
 
   &__heading {
     @extend %heading-font-bold;
