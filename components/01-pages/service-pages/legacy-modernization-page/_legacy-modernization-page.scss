@@ -39,6 +39,47 @@
   }
 }
 
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  column-gap: $spacer-lg;
+}
+
+.image-card {
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  background-color: $brand-secondary;
+
+  @container (min-width: 450px) and (max-width: 698px) {
+    background-color: $brand-primary;
+  }
+
+  &-img {
+    width: auto;
+  }
+
+  &__quote {
+      color: $brand-white;
+      padding: $spacer-md;
+  }
+
+  &__footer {
+      padding: $spacer-md;
+  }
+
+  &__name {
+    @extend %heading-font-bold;
+    font-size: $font-size-sm;
+    color: $brand-primary;
+  }
+
+  &__job {
+    color: $brand-primary;
+    padding-top: $spacer-sm;
+  }
+}
+
 @media screen and (min-width: $grid-breakpoint-md) {
   .text-grid {
     grid-template-columns: 1fr 1fr;
@@ -49,5 +90,9 @@
     &__heading {
       font-size: $font-size-md;
     }
+  }
+
+  .image-card__name {
+    font-size: $font-size-md;
   }
 }
