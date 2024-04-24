@@ -3,6 +3,15 @@
 
   p {
     @extend %body-font-sans;
+
+    &.text-card__quote {
+      @extend %body-font-italic;
+
+      grid-row: span 2;
+      padding: $spacer-lg $spacer-md;
+      font-size: $font-size-lg;
+      color: $brand-secondary;
+    }
   }
 
   .longquote__zigzag {
@@ -41,22 +50,20 @@
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 238px), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
   column-gap: $spacer-md;
 }
 
-.image-card {
+.text-card {
+  @extend %hover-glow;
+
   display: grid;
   grid-row: span 3;
   grid-template-rows: subgrid;
 
   margin-bottom: $spacer-md;
 
-  background-color: $brand-secondary;
-
-  &-img {
-    object-fit: cover;
-  }
+  background: $gradient-2;
 
   &__quote {
     padding: $spacer-md;
@@ -82,30 +89,6 @@
   }
 }
 
-  @media (450px <= width <= 549px) {
-    .image-card {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-
-      &__footer,
-      &__quote {
-        grid-column: 2 / 3;
-        width: 100%;
-      }
-
-      &-img {
-        grid-column: 1 / 2;
-        grid-row: span 2;
-        width: 100%;
-
-        > img {
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-    }
-  }
-
 @media screen and (min-width: $grid-breakpoint-md) {
   .text-grid {
     grid-template-columns: 1fr 1fr;
@@ -118,7 +101,7 @@
     }
   }
 
-  .image-card__name {
+  .text-card__name {
     font-size: $font-size-md;
   }
 }
