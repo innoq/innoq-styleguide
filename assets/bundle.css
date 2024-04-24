@@ -79,7 +79,7 @@ dl dd, p,
   font-style: normal;
 }
 
-.topic-header__text, .text-header__text, .standard-header__intro__text, .landing-page-header__text, .gradient-header__title, .wall-note__text, .image-divider-center__textbox__text, .simple-teaser__link h6, .podcast-teaser__subheadline, .product-list-teaser__text, .list-teaser-podcast__subheadline, .list-teaser-event__subheadline, .artist-list-teaser__subtitle, .toc__list > li, .superquote__role,
+.legacy-modernization-page p.text-card__quote, .topic-header__text, .text-header__text, .standard-header__intro__text, .landing-page-header__text, .gradient-header__title, .wall-note__text, .image-divider-center__textbox__text, .text-card__quote, .simple-teaser__link h6, .podcast-teaser__subheadline, .product-list-teaser__text, .list-teaser-podcast__subheadline, .list-teaser-event__subheadline, .artist-list-teaser__subtitle, .toc__list > li, .superquote__role,
 .longquote__role, .cta-section-long__info, .card__content__body__text, .author-bio--large .author-bio__info, .author-bio__info, .duration, blockquote:not([class]),
 blockquote:not([class]) > p,
 .blockquote,
@@ -96,7 +96,7 @@ blockquote:not([class]) > p,
   font-style: normal;
 }
 
-.legacy-modernization-page p,
+.legacy-modernization-page p, .text-card__job,
 .body-font-bold {
   font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: normal;
@@ -129,7 +129,7 @@ blockquote:not([class]) > p,
   font-style: normal;
 }
 
-.text-grid__heading, .topic-header__type, .standard-header__intro__label, .standard-header__type, .gradient-header__type, .footer__directions-link, .cover__author, .cover__type, .image-divider-right-content-textbox__text, .toolbar__link, .small-tile-teaser__type, .topic-teaser__cta, .podcast-author, .podcast-channel-teaser__link, .podcast-channel-teaser__caption, .artist-list-teaser__edition__type, .superhero__lead, .service-intro__text, .search-form__input, .share-section__link, .resource-list-item__author > li > a:focus, .resource-list-item__author > li > a:hover, .superquote__author,
+.text-grid__heading, .topic-header__type, .standard-header__intro__label, .standard-header__type, .gradient-header__type, .footer__directions-link, .cover__author, .cover__type, .image-divider-right-content-textbox__text, .text-card__name, .toolbar__link, .small-tile-teaser__type, .topic-teaser__cta, .podcast-author, .podcast-channel-teaser__link, .podcast-channel-teaser__caption, .artist-list-teaser__edition__type, .superhero__lead, .service-intro__text, .search-form__input, .share-section__link, .resource-list-item__author > li > a:focus, .resource-list-item__author > li > a:hover, .superquote__author,
 .longquote__author, .paginator__item, .info-note__highlight, .info-note__title, .infobox__teaser, .filter-select, .filter-label, .eyecatcher--social__text, .eyecatcher--event__text, .detail-item__author > li > a:focus, .detail-item__author > li > a:hover, .cta-section-long__name, .card__header__tag, .author-bio__name, .tag-list__link, .table thead,
 .table tfoot, .bold-list > li, .tuple-list__label, ol:not([class]) > li::before, dl:not([class]) dt,
 dl dt, .checklist li, .label-big.badge, .label-big.badge--inverted, .label-big.hint, .label.training, .label.talk, pull-quote > blockquote,
@@ -205,13 +205,13 @@ html {
   hyphenate-character: "-";
 }
 
-.small-tile-teaser, .podcast-teaser, .content-teaser, .case-tile-teaser, a.big-content-teaser, a.list-teaser-training, a.topic-teaser, a.list-teaser, .list-teaser-podcast, .podcast-channel-teaser, a.list-teaser-event, a.case-list-teaser, a.list-teaser-abstract {
+.text-card, .small-tile-teaser, .podcast-teaser, .content-teaser, .case-tile-teaser, a.big-content-teaser, a.list-teaser-training, a.topic-teaser, a.list-teaser, .list-teaser-podcast, .podcast-channel-teaser, a.list-teaser-event, a.case-list-teaser, a.list-teaser-abstract {
   -webkit-transition: 0.2s -webkit-box-shadow ease-in-out;
   transition: 0.2s -webkit-box-shadow ease-in-out;
   transition: 0.2s box-shadow ease-in-out;
   transition: 0.2s box-shadow ease-in-out, 0.2s -webkit-box-shadow ease-in-out;
 }
-.small-tile-teaser:hover, .podcast-teaser:hover, .content-teaser:hover, .case-tile-teaser:hover, a.big-content-teaser:hover, a.list-teaser-training:hover, a.topic-teaser:hover, a.list-teaser:hover, .list-teaser-podcast:hover, .podcast-channel-teaser:hover, a.list-teaser-event:hover, a.case-list-teaser:hover, a.list-teaser-abstract:hover, .small-tile-teaser:focus, .podcast-teaser:focus, .content-teaser:focus, .case-tile-teaser:focus, a.big-content-teaser:focus, a.list-teaser-training:focus, a.topic-teaser:focus, a.list-teaser:focus, .list-teaser-podcast:focus, .podcast-channel-teaser:focus, a.list-teaser-event:focus, a.case-list-teaser:focus, a.list-teaser-abstract:focus {
+.text-card:hover, .small-tile-teaser:hover, .podcast-teaser:hover, .content-teaser:hover, .case-tile-teaser:hover, a.big-content-teaser:hover, a.list-teaser-training:hover, a.topic-teaser:hover, a.list-teaser:hover, .list-teaser-podcast:hover, .podcast-channel-teaser:hover, a.list-teaser-event:hover, a.case-list-teaser:hover, a.list-teaser-abstract:hover, .text-card:focus, .small-tile-teaser:focus, .podcast-teaser:focus, .content-teaser:focus, .case-tile-teaser:focus, a.big-content-teaser:focus, a.list-teaser-training:focus, a.topic-teaser:focus, a.list-teaser:focus, .list-teaser-podcast:focus, .podcast-channel-teaser:focus, a.list-teaser-event:focus, a.case-list-teaser:focus, a.list-teaser-abstract:focus {
   -webkit-box-shadow: 0 0 0 5px rgba(255, 156, 102, 0.8);
           box-shadow: 0 0 0 5px rgba(255, 156, 102, 0.8);
 }
@@ -6523,6 +6523,57 @@ touch-detection {
     bottom: -5rem;
     left: -2rem;
     display: block;
+  }
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  -webkit-column-gap: 1.44rem;
+     -moz-column-gap: 1.44rem;
+          column-gap: 1.44rem;
+}
+
+.text-card {
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+  margin-bottom: 1.44rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffe6d9), to(#f7f7f7));
+  background: linear-gradient(180deg, #ffe6d9 0%, #f7f7f7 100%);
+}
+.text-card__quote {
+  padding: 2.985984rem 1.44rem 1.44rem;
+  font-size: 1.44rem;
+  color: #004153;
+}
+.text-card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.44rem;
+}
+.text-card__name {
+  font-size: 1.2rem;
+  color: #ff9c66;
+}
+.text-card__job {
+  padding-top: 0.5787037037rem;
+  color: #ff9c66;
+}
+
+@media screen and (min-width: 48rem) {
+  .text-card__name {
+    font-size: 1.44rem;
+  }
+  .text-card__job {
+    padding-top: 1rem;
+  }
+  .text-card__quote {
+    font-size: 1.728rem;
   }
 }
 .video-cards {
