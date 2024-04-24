@@ -84,7 +84,7 @@
   }
 
   &__job {
-    padding-top: $spacer-sm;
+    padding-top: $spacer-xs;
     color: $brand-primary;
   }
 }
@@ -103,5 +103,9 @@
 
   .text-card__name {
     font-size: $font-size-md;
+  }
+
+  .text-card__job {
+    padding-top: $spacer-sm;
   }
 }
