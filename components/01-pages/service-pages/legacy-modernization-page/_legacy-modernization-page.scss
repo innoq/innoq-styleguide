@@ -6,11 +6,6 @@
 
     &.text-card__quote {
       @extend %body-font-italic;
-
-      grid-row: span 2;
-      padding: $spacer-lg $spacer-md;
-      font-size: $font-size-lg;
-      color: $brand-secondary;
     }
   }
 
@@ -48,47 +43,6 @@
   }
 }
 
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
-  column-gap: $spacer-md;
-}
-
-.text-card {
-  @extend %hover-glow;
-
-  display: grid;
-  grid-row: span 3;
-  grid-template-rows: subgrid;
-
-  margin-bottom: $spacer-md;
-
-  background: $gradient-2;
-
-  &__quote {
-    padding: $spacer-md;
-    color: $brand-white;
-  }
-
-  &__footer {
-    display: flex;
-    flex-direction: column;
-    padding: $spacer-md;
-  }
-
-  &__name {
-    @extend %heading-font-bold;
-
-    font-size: $font-size-sm;
-    color: $brand-primary;
-  }
-
-  &__job {
-    padding-top: $spacer-xs;
-    color: $brand-primary;
-  }
-}
-
 @media screen and (min-width: $grid-breakpoint-md) {
   .text-grid {
     grid-template-columns: 1fr 1fr;
@@ -99,13 +53,5 @@
     &__heading {
       font-size: $font-size-md;
     }
-  }
-
-  .text-card__name {
-    font-size: $font-size-md;
-  }
-
-  .text-card__job {
-    padding-top: $spacer-sm;
   }
 }
