@@ -3,6 +3,10 @@
 
   p {
     @extend %body-font-sans;
+
+    &.text-card__quote {
+      @extend %body-font-italic;
+    }
   }
 
   .longquote__zigzag {

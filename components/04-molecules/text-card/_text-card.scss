@@ -1,0 +1,59 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  column-gap: $spacer-md;
+}
+
+.text-card {
+  @extend %hover-glow;
+
+  display: grid;
+  grid-row: span 3;
+  grid-template-rows: subgrid;
+
+  margin-bottom: $spacer-md;
+
+  background: $gradient-2;
+
+  &__quote {
+    @extend %body-font-italic;
+
+    padding: $spacer-lg $spacer-md $spacer-md;
+    font-size: $font-size-md;
+    color: $brand-secondary;
+  }
+
+  &__footer {
+    display: flex;
+    flex-direction: column;
+    padding: $spacer-md;
+  }
+
+  &__name {
+    @extend %heading-font-bold;
+
+    font-size: $font-size-sm;
+    color: $brand-primary;
+  }
+
+  &__job {
+    @extend %body-font-sans;
+
+    padding-top: $spacer-xs;
+    color: $brand-primary;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md) {
+  .text-card__name {
+    font-size: $font-size-md;
+  }
+
+  .text-card__job {
+    padding-top: $spacer-sm;
+  }
+
+  .text-card__quote {
+    font-size: $font-size-lg;
+  }
+}
