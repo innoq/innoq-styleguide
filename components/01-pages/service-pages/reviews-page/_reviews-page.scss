@@ -1,11 +1,16 @@
 .reviews-page {
-    background: $gradient-2;
+  background: $gradient-2;
 
-  p, ul > li {
-    @extend %body-font-sans,;
+  p,
+  ul > li {
+    @extend %body-font-sans;
   }
 
-  h2, h3, h4, h5, h6 {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @extend %heading-font-bold;
   }
 
@@ -83,18 +88,17 @@
     font-size: $font-size-md;
     color: $h3-color;
     list-style: none;
-
   }
 
   summary::after {
-    content: "+";
+    content: '+';
     font-size: 40px;
     font-weight: 400;
     color: $brand-secondary;
   }
 
   details[open] summary::after {
-    content: "–";
+    content: '–';
     font-size: 40px;
     font-weight: 400;
     color: $brand-secondary;
@@ -158,7 +162,4 @@
       margin-left: 0;
     }
   }
-
-
 }
-
