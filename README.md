@@ -62,12 +62,12 @@ GitHub Actions deals with npm publishing.
 
 ### Patch level version (auto increment)
 
-    $ npm release
+    $ npm run release
 
 ### Minor
 
-    $ npm release minor
+    $ npm run release minor
 
 ### Major
 
-    $ npm release major
+    $ npm run release major
