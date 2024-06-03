@@ -1,0 +1,165 @@
+.reviews-page {
+  background: $gradient-2;
+
+  p,
+  ul > li {
+    @extend %body-font-sans;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @extend %heading-font-bold;
+  }
+
+  .longquote__zigzag {
+    @include zigzag($brand-gray-10);
+  }
+}
+
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacer-sm $spacer-md;
+  justify-content: center;
+
+  padding: $spacer-base 0;
+
+  .btn {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.timeline {
+  position: relative;
+  padding-left: 40px;
+  border-left: 2px solid $brand-secondary;
+}
+
+.timeline-event {
+  margin-top: $spacer-base;
+
+  &__icon {
+    position: absolute;
+    left: -10px;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: $brand-primary;
+    border-radius: 50%;
+  }
+
+  .timeline-list {
+    @extend %body-font-sans;
+
+    margin-left: 0;
+    list-style-type: none;
+  }
+}
+
+.accordion {
+  width: 100%;
+  padding: 0 $spacer-md;
+
+  :first-child {
+    border-top: hidden;
+  }
+
+  details {
+    padding: 10px 0;
+    border-top: 1px solid $brand-secondary;
+  }
+
+  summary {
+    @extend %heading-font-bold;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: $spacer-sm 0;
+
+    font-size: $font-size-md;
+    color: $h3-color;
+    list-style: none;
+  }
+
+  summary::after {
+    content: '+';
+    font-size: 40px;
+    font-weight: 400;
+    color: $brand-secondary;
+  }
+
+  details[open] summary::after {
+    content: '–';
+    font-size: 40px;
+    font-weight: 400;
+    color: $brand-secondary;
+  }
+
+  details p {
+    margin: 10px 0 0;
+  }
+}
+
+.color-container {
+  width: 100%;
+  margin-top: $spacer-lg;
+  padding: $spacer-lg;
+
+  color: $brand-white;
+
+  background-color: $brand-secondary;
+}
+
+.icon-card {
+  margin: 0 $spacer-sm;
+}
+
+@media screen and (min-width: $grid-breakpoint-md-lg) {
+  .button-wrapper .btn {
+    width: auto;
+  }
+
+  .icon-card {
+    margin: 0 $spacer-md;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fill, minmax(50px, auto));
+    gap: $spacer-xl;
+
+    margin-top: $spacer-lg;
+
+    border-top: 2px solid $brand-secondary;
+    border-left: hidden;
+  }
+
+  .timeline-event {
+    position: relative;
+
+    &__icon {
+      position: absolute;
+      top: -45px;
+      left: 40%;
+      transform: translateX(-50%);
+    }
+
+    &__content {
+      display: grid;
+      grid-template-rows: subgrid;
+      margin-left: 0;
+    }
+  }
+}

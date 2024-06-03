@@ -1,7 +1,7 @@
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
-  column-gap: $spacer-md;
+  gap: $spacer-lg;
 }
 
 .text-card {
