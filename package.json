@@ -28,17 +28,17 @@
     "faucet-pipeline-sass": "^1.4.0",
     "faucet-pipeline-static": "^2.0.0",
     "fractal-fork": "^0.1.0",
+    "modularscale-sass": "^3.0.10",
     "nodemon": "^3.0.0",
     "normalize.css": "^8.0.1",
     "npm-run-all": "^4.1.5",
-    "prettier": "^3.0.0",
+    "postcss": "^8.4.5",
+    "postcss-scss": "^4.0.3",
+    "prettier": "3.2.5",
     "release-it": "^17.0.0",
     "stylelint": "^15.0.0",
     "stylelint-config-clean-order": "^5.0.0",
     "stylelint-config-sass-guidelines": "^10.0.0",
-    "stylelint-config-standard": "^34.0.0",
-    "modularscale-sass": "^3.0.10",
-    "postcss": "^8.4.5",
-    "postcss-scss": "^4.0.3"
+    "stylelint-config-standard": "^34.0.0"
   }
 }
