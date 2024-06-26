@@ -578,8 +578,7 @@ h6 > a:focus:not([class]),
   padding: 0;
   white-space: nowrap;
   clip: rect(0, 0, 0, 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
+  clip-path: inset(50%);
   border: 0;
 }
 
