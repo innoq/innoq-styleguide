@@ -55,3 +55,47 @@
     }
   }
 }
+
+.demo {
+  width: 100%;
+
+  &--inverted {
+    background-color: $brand-secondary;
+  }
+
+  &--accented {
+    background-color: $brand-interaction;
+  }
+
+  &--centered {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--black {
+    background-color: $brand-gray;
+  }
+
+  &--edition-01-red {
+    background-color: $brand-red;
+  }
+
+  &--edition-01-blue {
+    background-color: $brand-blue;
+  }
+
+  &--ch-logo {
+    height: 131px;
+  }
+
+  > * {
+    margin: $spacer-md;
+  }
+}
+
+// Demo Class
+.grid-demo,
+.container-demo {
+  height: 20rem;
+  background: $brand-primary;
+}

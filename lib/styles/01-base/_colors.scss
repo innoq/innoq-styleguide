@@ -108,6 +108,27 @@ $brand-grays: (
 // INNOQ White
 $brand-white: #fff;
 
+// INNOQ CH Colors
+$brand-ch-red: #c0442d;
+$brand-ch-red-75: #d15a44;
+$brand-ch-red-50: #f77a56;
+$brand-ch-black: #222327;
+$brand-ch-beige: #c2b9a8;
+$brand-ch-gray: #cdccc8;
+$brand-ch-gray-75: #dbddd7;
+$brand-ch-gray-50: #edeeeb;
+
+$brand-ch-colors: (
+  brand-ch-red: $brand-ch-red,
+  brand-ch-red-75: $brand-ch-red-75,
+  brand-ch-red-50: $brand-ch-red-50,
+  brand-ch-black: $brand-ch-black,
+  brand-ch-beige: $brand-ch-beige,
+  brand-ch-gray: $brand-ch-gray,
+  brand-ch-gray-75: $brand-ch-gray-75,
+  brand-ch-gray-50: $brand-ch-gray-50,
+);
+
 // All INNOQ colors
 $brand-colors: (
   $brand-blues,
@@ -116,7 +137,8 @@ $brand-colors: (
   $brand-yellows,
   $brand-petrols,
   $brand-apricots,
-  $brand-grays
+  $brand-grays,
+  $brand-ch-colors,
 );
 
 //
