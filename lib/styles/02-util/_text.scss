@@ -124,7 +124,7 @@
 @supports (background-clip: text) or (-webkit-background-clip: text) {
   .punch-in,
   %punch-in {
-    color: transparent;
+    color: rgba($brand-petrol, 0.3);
     background-position: center;
     /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-background-clip: text;
