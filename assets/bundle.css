@@ -416,7 +416,7 @@ h6 > a:focus:not([class]),
   .image-header__title--punch-in,
   .image-divider-center__title,
   .default-full-width-teaser__punch-in {
-    color: transparent;
+    color: rgba(0, 65, 83, 0.3);
     background-position: center;
     /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-background-clip: text;

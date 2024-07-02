@@ -137,7 +137,7 @@
 
 @supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
   .punch-in {
-    color: transparent;
+    color: rgba(0, 65, 83, 0.3);
     background-position: center;
     /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-background-clip: text;
