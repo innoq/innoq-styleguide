@@ -60,3 +60,18 @@ ul:not([class], [role='list']),
     }
   }
 }
+
+.bulletfree-list {
+  @extend %base-list-styling;
+
+  color: $brand-secondary;
+  list-style-type: none;
+
+  &--inverted {
+    color: $brand-primary;
+  }
+
+  &--center {
+    align-self: center;
+  }
+}

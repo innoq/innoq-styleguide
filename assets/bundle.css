@@ -249,7 +249,7 @@ html {
   list-style-type: none;
 }
 
-ul:not([class], [role=list]),
+.bulletfree-list, ul:not([class], [role=list]),
 .bold-list, ol:not([class]), .checklist {
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -259,7 +259,7 @@ ul:not([class], [role=list]),
   list-style-position: outside;
 }
 @media screen and (min-width: 48rem) {
-  ul:not([class], [role=list]),
+  .bulletfree-list, ul:not([class], [role=list]),
   .bold-list, ol:not([class]), .checklist {
     font-size: 1.2rem;
     line-height: 1.52;
@@ -2559,6 +2559,18 @@ ul:not([class], [role=list]) > li ol,
 .bold-list > li::marker {
   font-size: 1.728rem;
   color: #ff9c66;
+}
+
+.bulletfree-list {
+  color: #004153;
+  list-style-type: none;
+}
+.bulletfree-list--inverted {
+  color: #ff9c66;
+}
+.bulletfree-list--center {
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .table {
