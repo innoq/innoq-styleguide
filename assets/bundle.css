@@ -9643,9 +9643,6 @@ form > * + *,
 .demo {
   width: 100%;
 }
-.demo > * {
-  margin: 1.44rem;
-}
 .demo--inverted {
   background-color: #004153;
 }
@@ -9668,6 +9665,12 @@ form > * + *,
 }
 .demo--edition-01-blue {
   background-color: #24244c;
+}
+.demo--ch-logo {
+  height: 131px;
+}
+.demo > * {
+  margin: 1.44rem;
 }
 
 .grid-demo,
@@ -9938,4 +9941,99 @@ form > * + *,
 }
 .swatch-brand-gray-10 > .swatch-text--rgb::after {
   content: "#f7f7f7";
+}
+
+.swatch-brand-ch-red > .swatch-color {
+  background-color: #c0442d;
+}
+.swatch-brand-ch-red > .swatch-text--rgb::after {
+  content: "#c0442d";
+}
+
+.swatch-brand-ch-red-75 > .swatch-color {
+  background-color: #d15a44;
+}
+.swatch-brand-ch-red-75 > .swatch-text--rgb::after {
+  content: "#d15a44";
+}
+
+.swatch-brand-ch-red-50 > .swatch-color {
+  background-color: #f77a56;
+}
+.swatch-brand-ch-red-50 > .swatch-text--rgb::after {
+  content: "#f77a56";
+}
+
+.swatch-brand-ch-black > .swatch-color {
+  background-color: #222327;
+}
+.swatch-brand-ch-black > .swatch-text--rgb::after {
+  content: "#222327";
+}
+
+.swatch-brand-ch-beige > .swatch-color {
+  background-color: #c2b9a8;
+}
+.swatch-brand-ch-beige > .swatch-text--rgb::after {
+  content: "#c2b9a8";
+}
+
+.swatch-brand-ch-gray > .swatch-color {
+  background-color: #cdccc8;
+}
+.swatch-brand-ch-gray > .swatch-text--rgb::after {
+  content: "#cdccc8";
+}
+
+.swatch-brand-ch-gray-75 > .swatch-color {
+  background-color: #dbddd7;
+}
+.swatch-brand-ch-gray-75 > .swatch-text--rgb::after {
+  content: "#dbddd7";
+}
+
+.swatch-brand-ch-gray-50 > .swatch-color {
+  background-color: #edeeeb;
+}
+.swatch-brand-ch-gray-50 > .swatch-text--rgb::after {
+  content: "#edeeeb";
+}
+
+.demo {
+  width: 100%;
+}
+.demo--inverted {
+  background-color: #004153;
+}
+.demo--accented {
+  background-color: #ff9c66;
+}
+.demo--centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.demo--black {
+  background-color: #242424;
+}
+.demo--edition-01-red {
+  background-color: #ff4d67;
+}
+.demo--edition-01-blue {
+  background-color: #24244c;
+}
+.demo--ch-logo {
+  height: 131px;
+}
+.demo > * {
+  margin: 1.44rem;
+}
+
+.grid-demo,
+.container-demo {
+  height: 20rem;
+  background: #ff9c66;
 }
