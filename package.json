@@ -23,7 +23,7 @@
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-promise": "^7.0.0",
     "faucet-pipeline-js": "^3.0.0",
     "faucet-pipeline-sass": "^1.4.0",
     "faucet-pipeline-static": "^2.0.0",
