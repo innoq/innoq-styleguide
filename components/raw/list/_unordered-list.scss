@@ -74,4 +74,8 @@ ul:not([class], [role='list']),
   &--center {
     align-self: center;
   }
+
+  > li {
+    margin-top: $spacer-xs;
+  }
 }

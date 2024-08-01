@@ -2572,6 +2572,9 @@ ul:not([class], [role=list]) > li ol,
   -ms-flex-item-align: center;
       align-self: center;
 }
+.bulletfree-list > li {
+  margin-top: 0.5787037037rem;
+}
 
 .table {
   border-collapse: collapse;
