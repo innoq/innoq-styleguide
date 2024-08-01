@@ -9451,6 +9451,9 @@ form > * + *,
   background-position: top left;
   background-size: 10px 10px;
 }
+.reviews-page .center-section {
+  text-align: center;
+}
 
 .button-wrapper {
   display: -webkit-box;

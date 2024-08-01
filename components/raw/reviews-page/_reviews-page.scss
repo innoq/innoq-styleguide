@@ -17,6 +17,10 @@
   .longquote__zigzag {
     @include zigzag($brand-gray-10);
   }
+
+  .center-section {
+    text-align: center;
+  }
 }
 
 .button-wrapper {
