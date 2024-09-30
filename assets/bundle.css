@@ -684,6 +684,10 @@ h6 > a:focus:not([class]),
   background-image: url("/assets/bg-images/general/visual-culture-16.webp");
 }
 
+.bg-image-culture-17 {
+  background-image: url("/assets/bg-images/general/visual-culture-17.webp");
+}
+
 .bg-image-staff-01 {
   background-color: #d8d8d8;
   background-image: url("/assets/bg-images/general/visual-staff-01.webp");
@@ -1816,8 +1820,8 @@ figcaption {
 }
 
 .icon-twitter {
-  -webkit-mask-image: url("/assets/icons/twitter.svg");
-          mask-image: url("/assets/icons/twitter.svg");
+  -webkit-mask-image: url("/assets/icons/twitter-x.svg");
+          mask-image: url("/assets/icons/twitter-x.svg");
 }
 
 .icon-xing {
