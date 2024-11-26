@@ -1814,6 +1814,11 @@ figcaption {
           mask-image: url("/assets/icons/rss.svg");
 }
 
+.icon-speakerdeck {
+  -webkit-mask-image: url("/assets/icons/speakerdeck.svg");
+          mask-image: url("/assets/icons/speakerdeck.svg");
+}
+
 .icon-spotify {
   -webkit-mask-image: url("/assets/icons/spotify.svg");
           mask-image: url("/assets/icons/spotify.svg");
