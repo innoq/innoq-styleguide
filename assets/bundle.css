@@ -1779,6 +1779,11 @@ figcaption {
           mask-image: url("/assets/icons/apple-itunes.svg");
 }
 
+.icon-bluesky {
+  -webkit-mask-image: url("/assets/icons/bluesky.svg");
+          mask-image: url("/assets/icons/bluesky.svg");
+}
+
 .icon-facebook {
   -webkit-mask-image: url("/assets/icons/facebook.svg");
           mask-image: url("/assets/icons/facebook.svg");
