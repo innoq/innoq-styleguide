@@ -1,7 +1,7 @@
 .article-page-default {
   @extend %article-layout;
 
-  > * {
-    margin-top: $spacer-md;
-  }
+  //> * {
+  //  margin-top: $spacer-md;
+  //}
 }

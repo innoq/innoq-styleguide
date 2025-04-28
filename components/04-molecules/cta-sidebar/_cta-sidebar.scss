@@ -1,0 +1,43 @@
+.cta-sidebar {
+  //max-width: 15rem%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: $cta-sidebar-heading-color;
+
+  &__heading {
+    @extend %heading-font-heavy;
+
+    margin-bottom: $spacer-sm;
+    font-size: $font-size-sm;
+
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @extend %body-font-italic;
+    font-size: $font-size-base;
+  }
+
+  &__image {
+    margin-top: $spacer-xs;
+    width: 100%;
+    height: auto;
+  }
+
+  &__btn {
+    margin-top: $spacer-xs;
+    text-align: center;
+    width: 100%;
+  }
+
+
+  @media screen and (min-width: $grid-breakpoint-lg-xl) {
+
+    margin-top: $spacer-xxs;
+    margin-right: $spacer-xl;
+
+  }
+
+
+}

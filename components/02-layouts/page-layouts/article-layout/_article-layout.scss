@@ -1,10 +1,36 @@
 %article-layout {
-  display: flex;
-  flex-direction: column;
-  padding: 0 $spacer-sm $spacer-base $spacer-sm;
+  display: grid;
+  grid-template-columns: $spacer-sm [content-start] 1fr [content-center-start] 3fr [content-center-end] 1fr [content-end]; //magic numbers 
+  grid-template-rows: repeat(10, auto);
+  padding-bottom: $spacer-base;
+
+
+  .author-section {
+    grid-column: content-start / content-end;
+  }
+
+  .content {
+    grid-column: content-start / content-end;
+  }
+
+  // Left aligned elements
+  .toc {
+    grid-column: content-start / content-end;
+  }
+
+  .cta-sidebar {
+    grid-column: content-center-start / content-center-end;
+    grid-row: -1;
+  }
 
   > * + * {
-    margin-top: $spacer-base;
+    margin-top: $spacer-md;
+  }
+
+  .content {
+    > * + * {
+      margin-top: $spacer-sm;
+    }
   }
 
   super-quote,
@@ -35,63 +61,53 @@
     padding-left: $spacer-xxl;
   }
 
-  @supports (display: grid) {
-    @media screen and (min-width: $grid-breakpoint-lg-xl) {
-      display: grid;
-      grid-template-columns: 1fr 11rem 5rem 2rem 50rem 2rem 5rem 11rem 1fr; //magic numbers
-      grid-template-rows: auto;
+  @media screen and (min-width: $grid-breakpoint-lg-xl) {
+    grid-template-columns: $spacer-sm 11rem 5rem 2rem [content-start] 25rem 25rem [content-end] 2rem 5rem 11rem $spacer-sm; //magic numbers
+    padding-right: $spacer-sm;
+    padding-left: $spacer-sm;
 
-      padding-right: $spacer-sm;
-      padding-left: $spacer-sm;
+    .author-section {
+      grid-column: 5 / 6;
+      grid-row: 1 / 2;
+    }
 
-      // Centered textwurst items
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      ul,
-      ol,
-      check-list,
-      bold-list,
-      table,
-      blockquote,
-      super-quote,
-      long-quote,
-      pull-quote,
-      info-box,
-      pre,
-      code,
-      wall-of-consent,
-      hr,
-      .author-bio,
-      .author-section,
-      .footnote-section,
-      .footnotes,
-      .centered-content,
-      .zigzag,
-      .centered-content-75,
-      figure,
-      .two-column-image-divider-asymmetric,
-      .case-list-teaser {
-        grid-column: 5 / 6;
-      }
+    .content {
+      grid-area: content;
+      grid-row: 2 / 5;
+    }
 
-      // Left aligned elements
-      .toc {
-        grid-column: 2 / 4;
-        grid-row: 2 / 100;
-        align-self: start;
-      }
+    // Left aligned elements
+    .toc, .cta-sidebar {
+      margin-top: $spacer-md;
+      align-self: start;
+      //display: flex;
+      //flex-direction: column;
+    }
 
-      // Right aligned elements
-      .info-note {
-        grid-column: 7 / 9;
-        grid-row: 2/ 100;
-        align-self: start;
-      }
+    .toc {
+      grid-column: 2 / 4;
+      grid-row: 2 / 3;
+    }
+
+    .cta-sidebar {
+      margin-top: $spacer-base;
+      grid-column: 2 / 4;
+      grid-row: 3 / 4;
+    }
+
+
+    // Right aligned elements
+    .info-note {
+      grid-column: 7 / 9;
+      grid-row: 2/ 100;
+      align-self: start;
+    }
+  }
+
+  @media screen and (max-width: $grid-breakpoint-sm) {
+    .cta-sidebar {
+      margin-top: $spacer-base;
+      grid-column: content-start / content-end;
     }
   }
 }

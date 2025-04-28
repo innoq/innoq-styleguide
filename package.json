@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "npm-run-all --parallel compile-watch server-watch ",
-    "server": "fractal-fork start --port 3001",
+    "server": "fractal-fork start --port 3002",
     "server-watch": "nodemon -I -w components -w docs -e 'html' -x 'npm run server'",
     "compile": "faucet",
     "compile-watch": "npm run compile -- --watch",
