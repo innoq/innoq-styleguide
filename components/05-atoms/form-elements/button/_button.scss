@@ -20,14 +20,8 @@
     background-color: $button-cta-background;
     border-color: $button-cta-border-color;
 
-    &::before {
-      content: attr(data-label);
-      position: absolute;
-      z-index: 1;
-    }
-
     &::after {
-      z-index: 0;
+      z-index: -1;
       background-color: $button-cta-hover-background;
     }
 
