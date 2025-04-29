@@ -230,12 +230,37 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre>%<span class="hljs-selector-tag">article</span>-layout {
-  <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">flex-direction</span>: column;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-sm</span> <span class="hljs-variable">$spacer-base</span> <span class="hljs-variable">$spacer-sm</span>;
+  <span class="hljs-attribute">display</span>: grid;
+  <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-variable">$spacer-sm</span> [content-start] <span class="hljs-number">1</span>fr [content-center-start] <span class="hljs-number">3</span>fr [content-center-end] <span class="hljs-number">1</span>fr [content-end] <span class="hljs-variable">$spacer-sm</span>; <span class="hljs-comment">//magic numbers</span>
+  <span class="hljs-attribute">grid-template-rows</span>: <span class="hljs-built_in">repeat</span>(<span class="hljs-number">10</span>, auto);
+  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$spacer-base</span>;
+
+  <span class="hljs-selector-class">.author-section</span> {
+    <span class="hljs-attribute">grid-column</span>: content-start / content-end;
+  }
+
+  <span class="hljs-selector-class">.content</span> {
+    <span class="hljs-attribute">grid-column</span>: content-start / content-end;
+
+    <span class="hljs-comment">/* stylelint-disable selector-max-compound-selectors */</span>
+    &gt; * + * {
+      <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-sm</span>;
+    }
+    <span class="hljs-comment">/* stylelint-enable selector-max-compound-selectors */</span>
+  }
+
+  <span class="hljs-comment">// Left aligned elements</span>
+  <span class="hljs-selector-class">.toc</span> {
+    <span class="hljs-attribute">grid-column</span>: content-start / content-end;
+  }
+
+  <span class="hljs-selector-class">.cta-sidebar</span> {
+    <span class="hljs-attribute">grid-column</span>: content-center-start / content-center-end;
+    <span class="hljs-attribute">grid-row</span>: -<span class="hljs-number">1</span>;
+  }
 
   &gt; * + * {
-    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-md</span>;
   }
 
   super-<span class="hljs-selector-tag">quote</span>,
@@ -243,7 +268,7 @@
   pull-<span class="hljs-selector-tag">quote</span> {
     <span class="hljs-keyword">@extend</span> %container-vertical-spacing-lg;
 
-    <span class="hljs-attribute">align-self</span>: center;
+    justify-self: center;
   }
 
   <span class="hljs-comment">//Wrapper for contant that should not stretch</span>
@@ -260,69 +285,60 @@
     <span class="hljs-attribute">width</span>: <span class="hljs-number">75%</span>;
   }
 
+  <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">max-width</span>: <span class="hljs-variable">$grid-breakpoint-sm</span>) {
+    <span class="hljs-selector-class">.cta-sidebar</span> {
+      <span class="hljs-attribute">grid-column</span>: content-start / content-end;
+      <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
+    }
+  }
+
   <span class="hljs-comment">// Breakpoints</span>
   <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
     <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-xxl</span>;
     <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer-xxl</span>;
   }
 
-  <span class="hljs-keyword">@supports</span> (<span class="hljs-attribute">display</span>: <span class="hljs-attribute">grid</span>) {
-    <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg-xl</span>) {
-      <span class="hljs-attribute">display</span>: grid;
-      <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">1</span>fr <span class="hljs-number">11rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">2rem</span> <span class="hljs-number">50rem</span> <span class="hljs-number">2rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">11rem</span> <span class="hljs-number">1</span>fr; <span class="hljs-comment">//magic numbers</span>
-      <span class="hljs-attribute">grid-template-rows</span>: auto;
+  <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg-xl</span>) {
+    <span class="hljs-comment">// grid-template-columns: $spacer-sm [content-start] 1fr [content-center-start] 3fr [content-center-end] 1fr [content-end] $spacer-sm; //magic numbers</span>
+    <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">1</span>fr <span class="hljs-number">11rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">2rem</span> [content-start] <span class="hljs-number">10rem</span> [content-center-start] <span class="hljs-number">30rem</span> [content-center-end] <span class="hljs-number">10rem</span> [content-end] <span class="hljs-number">2rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">11rem</span> <span class="hljs-number">1</span>fr;
+    <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-sm</span>;
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer-sm</span>;
 
-      <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-sm</span>;
-      <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer-sm</span>;
+    <span class="hljs-selector-class">.author-section</span> {
+      <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">5</span> / <span class="hljs-number">6</span>;
+      <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">1</span> / <span class="hljs-number">2</span>;
+    }
 
-      <span class="hljs-comment">// Centered textwurst items</span>
-      <span class="hljs-selector-tag">h1</span>,
-      <span class="hljs-selector-tag">h2</span>,
-      <span class="hljs-selector-tag">h3</span>,
-      <span class="hljs-selector-tag">h4</span>,
-      <span class="hljs-selector-tag">h5</span>,
-      <span class="hljs-selector-tag">h6</span>,
-      <span class="hljs-selector-tag">p</span>,
-      <span class="hljs-selector-tag">ul</span>,
-      <span class="hljs-selector-tag">ol</span>,
-      check-list,
-      bold-list,
-      <span class="hljs-selector-tag">table</span>,
-      <span class="hljs-selector-tag">blockquote</span>,
-      super-<span class="hljs-selector-tag">quote</span>,
-      long-<span class="hljs-selector-tag">quote</span>,
-      pull-<span class="hljs-selector-tag">quote</span>,
-      info-box,
-      pre,
-      <span class="hljs-selector-tag">code</span>,
-      wall-of-consent,
-      hr,
-      <span class="hljs-selector-class">.author-bio</span>,
-      <span class="hljs-selector-class">.author-section</span>,
-      <span class="hljs-selector-class">.footnote-section</span>,
-      <span class="hljs-selector-class">.footnotes</span>,
-      <span class="hljs-selector-class">.centered-content</span>,
-      <span class="hljs-selector-class">.zigzag</span>,
-      <span class="hljs-selector-class">.centered-content-75</span>,
-      <span class="hljs-selector-tag">figure</span>,
-      <span class="hljs-selector-class">.two-column-image-divider-asymmetric</span>,
-      <span class="hljs-selector-class">.case-list-teaser</span> {
-        <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">5</span> / <span class="hljs-number">6</span>;
-      }
+    <span class="hljs-selector-class">.content</span> {
+      <span class="hljs-attribute">grid-area</span>: content;
+      <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">2</span> / <span class="hljs-number">5</span>;
+    }
 
-      <span class="hljs-comment">// Left aligned elements</span>
-      <span class="hljs-selector-class">.toc</span> {
-        <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">2</span> / <span class="hljs-number">4</span>;
-        <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">2</span> / <span class="hljs-number">100</span>;
-        <span class="hljs-attribute">align-self</span>: start;
-      }
+    <span class="hljs-comment">// Left aligned elements</span>
+    <span class="hljs-selector-class">.toc</span>,
+    <span class="hljs-selector-class">.cta-sidebar</span> {
+      <span class="hljs-attribute">align-self</span>: start;
+      <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-md</span>;
+      <span class="hljs-comment">//display: flex;</span>
+      <span class="hljs-comment">//flex-direction: column;</span>
+    }
 
-      <span class="hljs-comment">// Right aligned elements</span>
-      <span class="hljs-selector-class">.info-note</span> {
-        <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">7</span> / <span class="hljs-number">9</span>;
-        <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">2</span>/ <span class="hljs-number">100</span>;
-        <span class="hljs-attribute">align-self</span>: start;
-      }
+    <span class="hljs-selector-class">.toc</span> {
+      <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">2</span> / <span class="hljs-number">4</span>;
+      <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">2</span> / <span class="hljs-number">3</span>;
+    }
+
+    <span class="hljs-selector-class">.cta-sidebar</span> {
+      <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">2</span> / <span class="hljs-number">4</span>;
+      <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">3</span> / <span class="hljs-number">4</span>;
+      <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
+    }
+
+    <span class="hljs-comment">// Right aligned elements</span>
+    <span class="hljs-selector-class">.info-note</span> {
+      <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">7</span> / <span class="hljs-number">9</span>;
+      <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">2</span>/ <span class="hljs-number">100</span>;
+      <span class="hljs-attribute">align-self</span>: start;
     }
   }
 }
@@ -342,7 +358,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.9 KB</span>
+                    <span class="Meta-value">2.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -3237,6 +3253,40 @@
                 </ul>
             </li>
             
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./cta-sidebar.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="cta-sidebar"
+                data-handle="cta-sidebar"
+            >
+                <span>Cta Sidebar</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
         
     
         
@@ -7906,8 +7956,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2024-11-28T13:40:19.283Z">
-                                11/28/2024
+                            <time datetime="2025-04-29T15:23:48.237Z">
+                                4/29/2025
                             </time>
                         
                     </dd>

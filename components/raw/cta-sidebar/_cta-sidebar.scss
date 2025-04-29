@@ -1,0 +1,37 @@
+.cta-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: $cta-sidebar-heading-color;
+
+  &__heading {
+    @extend %heading-font-heavy;
+
+    margin-bottom: $spacer-sm;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    @extend %body-font-italic;
+
+    font-size: $font-size-base;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    margin-top: $spacer-xs;
+  }
+
+  &__btn {
+    width: 100%;
+    margin-top: $spacer-xs;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $grid-breakpoint-lg-xl) {
+    margin-top: $spacer-xxs;
+    margin-right: $spacer-xl;
+  }
+}
