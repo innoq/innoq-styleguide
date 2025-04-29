@@ -1,10 +1,35 @@
 %article-layout {
-  display: flex;
-  flex-direction: column;
-  padding: 0 $spacer-sm $spacer-base $spacer-sm;
+  display: grid;
+  grid-template-columns: $spacer-sm [content-start] 1fr [content-center-start] 3fr [content-center-end] 1fr [content-end] $spacer-sm; //magic numbers
+  grid-template-rows: repeat(10, auto);
+  padding-bottom: $spacer-base;
+
+  .author-section {
+    grid-column: content-start / content-end;
+  }
+
+  .content {
+    grid-column: content-start / content-end;
+
+    /* stylelint-disable selector-max-compound-selectors */
+    > * + * {
+      margin-top: $spacer-sm;
+    }
+    /* stylelint-enable selector-max-compound-selectors */
+  }
+
+  // Left aligned elements
+  .toc {
+    grid-column: content-start / content-end;
+  }
+
+  .cta-sidebar {
+    grid-column: content-center-start / content-center-end;
+    grid-row: -1;
+  }
 
   > * + * {
-    margin-top: $spacer-base;
+    margin-top: $spacer-md;
   }
 
   super-quote,
@@ -12,7 +37,7 @@
   pull-quote {
     @extend %container-vertical-spacing-lg;
 
-    align-self: center;
+    justify-self: center;
   }
 
   //Wrapper for contant that should not stretch
@@ -29,69 +54,60 @@
     width: 75%;
   }
 
+  @media screen and (max-width: $grid-breakpoint-sm) {
+    .cta-sidebar {
+      grid-column: content-start / content-end;
+      margin-top: $spacer-base;
+    }
+  }
+
   // Breakpoints
   @media screen and (min-width: $grid-breakpoint-md) {
     padding-right: $spacer-xxl;
     padding-left: $spacer-xxl;
   }
 
-  @supports (display: grid) {
-    @media screen and (min-width: $grid-breakpoint-lg-xl) {
-      display: grid;
-      grid-template-columns: 1fr 11rem 5rem 2rem 50rem 2rem 5rem 11rem 1fr; //magic numbers
-      grid-template-rows: auto;
+  @media screen and (min-width: $grid-breakpoint-lg-xl) {
+    // grid-template-columns: $spacer-sm [content-start] 1fr [content-center-start] 3fr [content-center-end] 1fr [content-end] $spacer-sm; //magic numbers
+    grid-template-columns: 1fr 11rem 5rem 2rem [content-start] 10rem [content-center-start] 30rem [content-center-end] 10rem [content-end] 2rem 5rem 11rem 1fr;
+    padding-right: $spacer-sm;
+    padding-left: $spacer-sm;
 
-      padding-right: $spacer-sm;
-      padding-left: $spacer-sm;
+    .author-section {
+      grid-column: 5 / 6;
+      grid-row: 1 / 2;
+    }
 
-      // Centered textwurst items
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      ul,
-      ol,
-      check-list,
-      bold-list,
-      table,
-      blockquote,
-      super-quote,
-      long-quote,
-      pull-quote,
-      info-box,
-      pre,
-      code,
-      wall-of-consent,
-      hr,
-      .author-bio,
-      .author-section,
-      .footnote-section,
-      .footnotes,
-      .centered-content,
-      .zigzag,
-      .centered-content-75,
-      figure,
-      .two-column-image-divider-asymmetric,
-      .case-list-teaser {
-        grid-column: 5 / 6;
-      }
+    .content {
+      grid-area: content;
+      grid-row: 2 / 5;
+    }
 
-      // Left aligned elements
-      .toc {
-        grid-column: 2 / 4;
-        grid-row: 2 / 100;
-        align-self: start;
-      }
+    // Left aligned elements
+    .toc,
+    .cta-sidebar {
+      align-self: start;
+      margin-top: $spacer-md;
+      //display: flex;
+      //flex-direction: column;
+    }
 
-      // Right aligned elements
-      .info-note {
-        grid-column: 7 / 9;
-        grid-row: 2/ 100;
-        align-self: start;
-      }
+    .toc {
+      grid-column: 2 / 4;
+      grid-row: 2 / 3;
+    }
+
+    .cta-sidebar {
+      grid-column: 2 / 4;
+      grid-row: 3 / 4;
+      margin-top: $spacer-base;
+    }
+
+    // Right aligned elements
+    .info-note {
+      grid-column: 7 / 9;
+      grid-row: 2/ 100;
+      align-self: start;
     }
   }
 }

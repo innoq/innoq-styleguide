@@ -1,25 +1,35 @@
 // ---- Pull quotes ------------------------------------------------------------
 //
-pull-quote > blockquote,
-.pullquote {
-  padding: $spacer-sm;
-  border: 1px solid $pull-quote-border-color;
-  border-width: 1px 0;
 
-  &,
-  > p {
-    @extend %heading-font-bold;
+pull-quote {
+  display: block;
 
-    font-size: $font-size-sm;
-    line-height: $paragraph-line-height;
-    color: $pull-quote-color;
-    text-align: center;
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-md) {
-  pull-quote > blockquote,
+  > blockquote,
   .pullquote {
-    width: 80%;
+    padding: $spacer-sm;
+    border: 1px solid $pull-quote-border-color;
+    border-width: 1px 0;
+
+    &,
+    > p {
+      @extend %heading-font-bold;
+
+      font-size: $font-size-sm;
+      line-height: $paragraph-line-height;
+      color: $pull-quote-color;
+      text-align: center;
+    }
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 }
+
+// @media screen and (min-width: $grid-breakpoint-md) {
+//   pull-quote > blockquote,
+//   .pullquote {
+//     width: 80%;
+//   }
+// }
