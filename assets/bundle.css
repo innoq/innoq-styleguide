@@ -4632,10 +4632,10 @@ touch-detection {
   margin-top: 0.5787037037rem;
 }
 .cta-sidebar__btn {
-  margin-top: 0.5787037037rem;
-  text-align: center;
   -ms-flex-item-align: center;
       align-self: center;
+  margin-top: 0.5787037037rem;
+  text-align: center;
 }
 @media screen and (min-width: 82rem) {
   .cta-sidebar {
@@ -8604,12 +8604,15 @@ form > * + *,
   grid-column: content-start/content-end;
 }
 .training-detail-page .content, .story-detail-page .content, .case-study-page .content, .article-page-default .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   grid-column: content-start/content-end;
-  /* stylelint-disable selector-max-compound-selectors */
-  /* stylelint-enable selector-max-compound-selectors */
-}
-.training-detail-page .content > * + *, .story-detail-page .content > * + *, .case-study-page .content > * + *, .article-page-default .content > * + * {
-  margin-top: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2.0736rem;
 }
 .training-detail-page .toc, .story-detail-page .toc, .case-study-page .toc, .article-page-default .toc {
   grid-column: content-start/content-end;

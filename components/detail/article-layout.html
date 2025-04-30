@@ -240,13 +240,10 @@
   }
 
   <span class="hljs-selector-class">.content</span> {
+    <span class="hljs-attribute">display</span>: flex;
     <span class="hljs-attribute">grid-column</span>: content-start / content-end;
-
-    <span class="hljs-comment">/* stylelint-disable selector-max-compound-selectors */</span>
-    &gt; * + * {
-      <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-sm</span>;
-    }
-    <span class="hljs-comment">/* stylelint-enable selector-max-compound-selectors */</span>
+    <span class="hljs-attribute">flex-direction</span>: column;
+    <span class="hljs-attribute">row-gap</span>: <span class="hljs-variable">$spacer-base</span>;
   }
 
   <span class="hljs-comment">// Left aligned elements</span>
@@ -7956,8 +7953,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-04-29T15:32:38.967Z">
-                                4/29/2025
+                            <time datetime="2025-04-30T09:05:13.832Z">
+                                4/30/2025
                             </time>
                         
                     </dd>
