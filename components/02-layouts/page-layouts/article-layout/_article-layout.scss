@@ -9,13 +9,10 @@
   }
 
   .content {
+    display: flex;
     grid-column: content-start / content-end;
-
-    /* stylelint-disable selector-max-compound-selectors */
-    > * + * {
-      margin-top: $spacer-sm;
-    }
-    /* stylelint-enable selector-max-compound-selectors */
+    flex-direction: column;
+    row-gap: $spacer-base;
   }
 
   // Left aligned elements
