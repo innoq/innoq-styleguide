@@ -23,8 +23,6 @@
   }
 
   &__title {
-    @extend %punch-in;
-
     margin-bottom: $spacer-xs;
     padding-bottom: $spacer-base;
     font-size: $font-size-xl;

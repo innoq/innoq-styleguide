@@ -30,8 +30,6 @@ $topic-header-inner-padding-small: $spacer-md;
   }
 
   &__title {
-    @extend %punch-in;
-
     margin-bottom: $spacer-xs;
     padding-bottom: $spacer-base;
 

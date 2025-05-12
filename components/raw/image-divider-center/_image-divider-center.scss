@@ -8,8 +8,6 @@ $divider-center-textbox-offset: $spacer-xxl * 2;
   /* stylelint-disable-next-line declaration-no-important */
   margin-bottom: $divider-center-textbox-offset !important; //FIXME
   &__title {
-    @extend %punch-in;
-
     padding: 0 $spacer-md;
     font-size: $font-size-xxl;
     text-align: center;

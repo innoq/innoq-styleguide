@@ -409,11 +409,8 @@ h6 > a:focus:not([class]),
 }
 @supports ((-webkit-background-clip: text) or (background-clip: text)) or (-webkit-background-clip: text) {
   .punch-in,
-  .topic-header__title,
   .topic-header__punch-in,
-  .landing-page-header__title,
   .image-header__title--punch-in,
-  .image-divider-center__title,
   .default-full-width-teaser__punch-in {
     color: rgba(0, 65, 83, 0.3);
     background-position: center;
