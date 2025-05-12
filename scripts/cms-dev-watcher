@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+mkdir -p dist/{components,sass,js/components}
+cp -r components dist
+cp -r lib/styles/* dist/sass/
+find components/ -name '*.js' -exec cp {} dist/js/components \;
+cp -r dist/site/assets dist/

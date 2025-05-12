@@ -8,9 +8,11 @@
     "url": "https://github.com/innoq/innoq-styleguide.git"
   },
   "scripts": {
-    "start": "npm-run-all --parallel compile-watch server-watch ",
+    "start": "npm-run-all --parallel compile-watch server-watch",
     "server": "fractal-fork start --port 3001",
     "server-watch": "nodemon -I -w components -w docs -e 'html' -x 'npm run server'",
+    "cms-dev-start": "npm run site && npm-run-all --parallel compile-watch server-watch cms-dev-watcher",
+    "cms-dev-watcher": "nodemon -I --ext js,scss,css -w components -w lib/styles -w lib/scripts -x ./scripts/cms-dev-watcher",
     "compile": "faucet",
     "compile-watch": "npm run compile -- --watch",
     "test": "eslint --cache --ext .js . && stylelint --cache 'lib/**/*.scss' 'components/**/*.scss' && prettier --check .",
