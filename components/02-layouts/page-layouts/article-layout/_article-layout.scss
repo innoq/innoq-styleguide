@@ -3,6 +3,7 @@
   grid-template-columns: $spacer-sm [content-start] 1fr [content-center-start] 3fr [content-center-end] 1fr [content-end] $spacer-sm; //magic numbers
   grid-template-rows: repeat(10, auto);
   padding-bottom: $spacer-base;
+  margin-top: $spacer-base;
 
   .author-section {
     grid-column: content-start / content-end;
@@ -65,7 +66,6 @@
   }
 
   @media screen and (min-width: $grid-breakpoint-lg-xl) {
-    // grid-template-columns: $spacer-sm [content-start] 1fr [content-center-start] 3fr [content-center-end] 1fr [content-end] $spacer-sm; //magic numbers
     grid-template-columns: 1fr 11rem 5rem 2rem [content-start] 10rem [content-center-start] 30rem [content-center-end] 10rem [content-end] 2rem 5rem 11rem 1fr;
     padding-right: $spacer-sm;
     padding-left: $spacer-sm;
