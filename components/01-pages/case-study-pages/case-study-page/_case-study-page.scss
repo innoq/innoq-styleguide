@@ -3,6 +3,7 @@
 
   .customerlogo {
     display: flex;
+    grid-column: content;
     align-items: center;
     justify-content: center;
 
@@ -11,10 +12,6 @@
 
     img {
       max-width: 40%;
-    }
-
-    @media screen and (min-width: $grid-breakpoint-lg-xl) {
-      grid-column: content;
     }
   }
 }
