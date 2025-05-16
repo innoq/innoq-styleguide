@@ -1,8 +1,6 @@
 .info-note {
   @extend %box-shadow-primary-25-right-bottom;
 
-  max-width: calc($default-page-layout-content-width-md/2); //25rem
-
   &__content {
     padding: $spacer-sm $spacer-sm $spacer-base $spacer-md;
   }
