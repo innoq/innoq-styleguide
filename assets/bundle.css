@@ -7747,7 +7747,7 @@ form > * + *,
 }
 @media screen and (min-width: 48rem) {
   .standard-header {
-    margin-bottom: 9.7519848653rem;
+    padding-bottom: 7.4300837069rem;
   }
   .podcast-header--avatar--overlay {
     background-size: contain;
@@ -8596,6 +8596,7 @@ form > * + *,
   grid-template-columns: 1rem [content-start] 1fr [content-center-start] 3fr [content-center-end] 1fr [content-end] 1rem;
   grid-template-rows: repeat(10, auto);
   padding-bottom: 2.0736rem;
+  margin-top: 2.0736rem;
 }
 .training-detail-page .author-section, .story-detail-page .author-section, .case-study-page .author-section, .article-page-default .author-section {
   grid-column: content-start/content-end;
@@ -8950,7 +8951,7 @@ form > * + *,
 }
 @media screen and (min-width: 82rem) {
   .case-study-page .customerlogo {
-    grid-column: 5/6;
+    grid-column: content;
   }
 }
 
