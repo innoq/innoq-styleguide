@@ -1,16 +1,38 @@
 .story-detail-page {
-  @extend %article-layout;
-
+  display: grid;
+  grid-template-columns: $spacer-sm [content-start] 1fr [content-center-start] 3fr [content-center-end] 1fr [content-end] $spacer-sm; //magic numbers
   align-items: center;
+  margin-top: $spacer-base;
   margin-bottom: $spacer-lg;
+  padding-bottom: $spacer-base;
 
-  // Centered elements that are a bit wider than the textwurst
-  figure,
-  .two-column-image-divider-asymmetric,
-  .case-list-teaser {
-    grid-column: 3/ 8;
+  .author-section {
+    grid-column: content-start / content-end;
   }
 
+  .content {
+    display: contents;
+  }
+
+  .content > * {
+    grid-column: content-start / content-end;
+    margin-top: $spacer-base;
+    margin-top: $spacer-md;
+  }
+
+  .info-note {
+    grid-column: content-center;
+  }
+
+  super-quote,
+  long-quote,
+  pull-quote {
+    @extend %container-vertical-spacing-lg;
+
+    justify-self: center;
+  }
+
+  // Centered elements that are a bit wider than the textwurst
   .zigzag {
     width: 40%;
     margin: $spacer-xl auto 0 auto;
@@ -23,5 +45,30 @@
 
   figure {
     @extend %container-vertical-spacing-lg;
+  }
+
+  // Breakpoints
+  @media screen and (min-width: $grid-breakpoint-md) {
+    padding-right: $spacer-xxl;
+    padding-left: $spacer-xxl;
+  }
+
+  @media screen and (min-width: $grid-breakpoint-lg-xl) {
+    grid-template-columns: 1fr 11rem 5rem 2rem [content-start] 10rem [content-center-start] 30rem [content-center-end] 10rem [content-end] 2rem 5rem 11rem 1fr; //magic numbers
+    padding-right: $spacer-sm;
+    padding-left: $spacer-sm;
+
+    // Right aligned elements
+    .info-note {
+      grid-column: 9/11;
+      grid-row: 2/100;
+      align-self: start;
+    }
+
+    figure,
+    .two-column-image-divider-asymmetric,
+    .case-list-teaser {
+      grid-column: 3 / 10;
+    }
   }
 }

@@ -541,18 +541,40 @@
                             
                             <code class="Code Code--lang-SCSS FileBrowser-code hljs">
                                 <pre><span class="hljs-selector-class">.story-detail-page</span> {
-  <span class="hljs-keyword">@extend</span> %article-layout;
-
+  <span class="hljs-attribute">display</span>: grid;
+  <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-variable">$spacer-sm</span> [content-start] <span class="hljs-number">1</span>fr [content-center-start] <span class="hljs-number">3</span>fr [content-center-end] <span class="hljs-number">1</span>fr [content-end] <span class="hljs-variable">$spacer-sm</span>; <span class="hljs-comment">//magic numbers</span>
   <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
   <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-variable">$spacer-lg</span>;
+  <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-variable">$spacer-base</span>;
 
-  <span class="hljs-comment">// Centered elements that are a bit wider than the textwurst</span>
-  <span class="hljs-selector-tag">figure</span>,
-  <span class="hljs-selector-class">.two-column-image-divider-asymmetric</span>,
-  <span class="hljs-selector-class">.case-list-teaser</span> {
-    <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">3</span>/ <span class="hljs-number">8</span>;
+  <span class="hljs-selector-class">.author-section</span> {
+    <span class="hljs-attribute">grid-column</span>: content-start / content-end;
   }
 
+  <span class="hljs-selector-class">.content</span> {
+    <span class="hljs-attribute">display</span>: contents;
+  }
+
+  <span class="hljs-selector-class">.content</span> &gt; * {
+    <span class="hljs-attribute">grid-column</span>: content-start / content-end;
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-md</span>;
+  }
+
+  <span class="hljs-selector-class">.info-note</span> {
+    <span class="hljs-attribute">grid-column</span>: content-center;
+  }
+
+  super-<span class="hljs-selector-tag">quote</span>,
+  long-<span class="hljs-selector-tag">quote</span>,
+  pull-<span class="hljs-selector-tag">quote</span> {
+    <span class="hljs-keyword">@extend</span> %container-vertical-spacing-lg;
+
+    justify-self: center;
+  }
+
+  <span class="hljs-comment">// Centered elements that are a bit wider than the textwurst</span>
   <span class="hljs-selector-class">.zigzag</span> {
     <span class="hljs-attribute">width</span>: <span class="hljs-number">40%</span>;
     <span class="hljs-attribute">margin</span>: <span class="hljs-variable">$spacer-xl</span> auto <span class="hljs-number">0</span> auto;
@@ -565,6 +587,31 @@
 
   <span class="hljs-selector-tag">figure</span> {
     <span class="hljs-keyword">@extend</span> %container-vertical-spacing-lg;
+  }
+
+  <span class="hljs-comment">// Breakpoints</span>
+  <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md</span>) {
+    <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-xxl</span>;
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer-xxl</span>;
+  }
+
+  <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg-xl</span>) {
+    <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">1</span>fr <span class="hljs-number">11rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">2rem</span> [content-start] <span class="hljs-number">10rem</span> [content-center-start] <span class="hljs-number">30rem</span> [content-center-end] <span class="hljs-number">10rem</span> [content-end] <span class="hljs-number">2rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">11rem</span> <span class="hljs-number">1</span>fr; <span class="hljs-comment">//magic numbers</span>
+    <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-sm</span>;
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer-sm</span>;
+
+    <span class="hljs-comment">// Right aligned elements</span>
+    <span class="hljs-selector-class">.info-note</span> {
+      <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">9</span>/<span class="hljs-number">11</span>;
+      <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">2</span>/<span class="hljs-number">100</span>;
+      <span class="hljs-attribute">align-self</span>: start;
+    }
+
+    <span class="hljs-selector-tag">figure</span>,
+    <span class="hljs-selector-class">.two-column-image-divider-asymmetric</span>,
+    <span class="hljs-selector-class">.case-list-teaser</span> {
+      <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">3</span> / <span class="hljs-number">10</span>;
+    }
   }
 }
 </pre>
@@ -583,7 +630,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">466 Bytes</span>
+                    <span class="Meta-value">1.7 KB</span>
                 </li>
             </ul>
         </div>
@@ -8181,7 +8228,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2025-05-16T09:50:54.167Z">
+                            <time datetime="2025-05-16T11:45:16.865Z">
                                 5/16/2025
                             </time>
                         

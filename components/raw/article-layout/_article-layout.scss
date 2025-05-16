@@ -2,8 +2,9 @@
   display: grid;
   grid-template-columns: $spacer-sm [content-start] 1fr [content-center-start] 3fr [content-center-end] 1fr [content-end] $spacer-sm; //magic numbers
   grid-template-rows: repeat(10, auto);
-  padding-bottom: $spacer-base;
+
   margin-top: $spacer-base;
+  padding-bottom: $spacer-base;
 
   .author-section {
     grid-column: content-start / content-end;
