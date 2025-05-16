@@ -14,7 +14,7 @@
     }
 
     @media screen and (min-width: $grid-breakpoint-lg-xl) {
-      grid-column: 5 / 6;
+      grid-column: content;
     }
   }
 }
