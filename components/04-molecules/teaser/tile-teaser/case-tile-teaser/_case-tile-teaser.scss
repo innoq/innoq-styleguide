@@ -13,120 +13,109 @@ $case-tile-teaser-sm-height: ms(32);
 
   background-size: cover;
   background-blend-mode: multiply;
-}
 
-.case-tile-teaser__content {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-  justify-content: space-between;
+  .case-tile-teaser__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: $spacer-base;
+    justify-content: space-between;
 
-  padding: $spacer-md $spacer-xs;
+    padding: $spacer-md $spacer-xs;
 
-  text-align: center;
+    text-align: center;
 
-  background-color: $case-tile-teaser-body-bg-color;
+    background-color: $case-tile-teaser-body-bg-color;
 
-  > * + * {
-    margin-top: $spacer-base;
+    &--sm {
+      position: relative;
+      bottom: -(ms(25));
+      justify-content: space-between;
+      padding: $spacer-sm;
+    }
   }
-}
 
-.case-tile-teaser__body {
-  > * + * {
-    margin-top: $spacer-base;
+  .case-tile-teaser__body {
+    display: flex;
+    flex-direction: column;
+    gap: $spacer-base;
+    align-items: center;
+    justify-content: space-between;
   }
-}
 
-.case-tile-teaser__caption {
-  @extend %teaser-caption;
+  .case-tile-teaser__caption {
+    @extend %teaser-caption;
 
-  color: $case-tile-teaser-text-color;
-}
+    color: $case-tile-teaser-text-color;
+  }
 
-.case-tile-teaser__headline {
-  color: $case-tile-teaser-text-color;
-}
+  .case-tile-teaser__headline {
+    color: $case-tile-teaser-text-color;
 
-.case-tile-teaser__text {
-  @extend %teaser-text-italic;
+    &--sm {
+      font-size: $font-size-sm;
+    }
+  }
 
-  line-height: $paragraph-line-height;
-  color: $case-tile-teaser-text-color;
-
-  &--workshop {
-    @extend %teaser-text;
+  .case-tile-teaser__text {
+    @extend %teaser-text-italic;
 
     line-height: $paragraph-line-height;
     color: $case-tile-teaser-text-color;
+
+    &--workshop {
+      @extend %teaser-text;
+
+      line-height: $paragraph-line-height;
+      color: $case-tile-teaser-text-color;
+    }
+
+    &--sm {
+      margin-bottom: $spacer-xs;
+      font-size: $font-size-base;
+    }
   }
-}
 
-.case-tile-teaser__logo {
-  max-width: ms(22);
-}
-
-.case-tile-teaser__goto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  > * + * {
-    margin-top: $spacer-sm;
+  .case-tile-teaser__logo {
+    max-width: ms(22);
   }
-}
 
-//
-// case-tile-teaser--sm
-//
-.case-tile-teaser--sm {
-  min-height: $case-tile-teaser-sm-height;
-  margin-bottom: $spacer-xxl;
-  padding: $spacer-lg $spacer-xs;
-}
+  .case-tile-teaser__goto {
+    display: flex;
+    flex-direction: column;
+    gap: $spacer-sm;
+    align-items: center;
+  }
 
-.case-tile-teaser__content--sm {
-  position: relative;
-  bottom: -(ms(25));
-  justify-content: space-between;
-  padding: $spacer-sm;
-}
+  &--sm {
+    min-height: $case-tile-teaser-sm-height;
+    margin-bottom: $spacer-xxl;
+    padding: $spacer-lg $spacer-xs;
+  }
 
-.case-tile-teaser__headline--sm {
-  font-size: $font-size-sm;
-}
-
-.case-tile-teaser__text--sm {
-  margin-bottom: $spacer-xs;
-  font-size: $font-size-base;
-}
-
-//
-// Breakpoints
-//
-
-@media screen and (min-width: $grid-breakpoint-sm) {
-  .case-tile-teaser {
+  // Breakpoints
+  @media screen and (min-width: $grid-breakpoint-sm) {
     padding: $spacer-lg;
   }
-}
 
-@media screen and (min-width: $grid-breakpoint-md) {
-  .case-tile-teaser__content {
-    padding: $spacer-lg $spacer-md;
+  @media screen and (min-width: $grid-breakpoint-md) {
+    .case-tile-teaser__content {
+      padding: $spacer-lg $spacer-md;
+    }
+
+    &--sm {
+      padding: $spacer-lg;
+    }
   }
 
-  .case-tile-teaser--sm {
-    padding: $spacer-lg;
-  }
-}
-
-// Hack for teaser in masonry grid
-@media screen and (min-width: $grid-breakpoint-lg) {
-  .case-tile-teaser {
+  // Hack for teaser in masonry grid
+  @media screen and (min-width: $grid-breakpoint-lg) {
     padding: $spacer-xl;
   }
+}
 
+// Masonry grid specific styling
+@media screen and (min-width: $grid-breakpoint-lg) {
   .span-5 {
     .case-tile-teaser__content {
       max-width: ms(37);
