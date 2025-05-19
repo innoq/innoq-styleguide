@@ -25,6 +25,14 @@
     @extend %punch-in;
   }
 
+  &__subtitle {
+    @extend %heading-font-heavy;
+
+    font-size: $font-size-md;
+    line-height: $heading-line-height;
+    color: $brand-secondary;
+  }
+
   &--no-border {
     /* stylelint-disable-next-line declaration-no-important */
     border-style: none !important;

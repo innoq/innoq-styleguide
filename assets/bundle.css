@@ -83,7 +83,7 @@ dl dd, p,
 .longquote__role, .cta-section-long__info, .card__content__body__text, .author-bio--large .author-bio__info, .author-bio__info, .duration, blockquote:not([class]),
 blockquote:not([class]) > p,
 .blockquote,
-.blockquote > p, p.lead, .static-tile-teaser__text, .case-tile-teaser__text, .topic-teaser__text, .client-projects__intro-text,
+.blockquote > p, p.lead, .static-tile-teaser__text, .case-tile-teaser .case-tile-teaser__text, .topic-teaser__text, .client-projects__intro-text,
 .body-font-italic {
   font-family: "FreightTextPro", "Georgia", "Times", "Times New Roman", serif;
   font-weight: normal;
@@ -123,7 +123,7 @@ blockquote:not([class]) > p,
 .detail-item__caption ul > li p, .detail-item__caption > *, .contact-person__subheading, .conclusion-text ul > li,
 .conclusion-text ul > li p, .conclusion-text > *, .author-bio--large .author-bio__expertise, .author-bio__text > *, .table td, .table caption, .tuple-list__value, .date-location-section dd, .simple-definition-list dd, .label.slides, p.display, p.standalone, .tooltip p, .footnotes__list li,
 .footnotes__list li > p, .footnote, figcaption, audio-player, .form-text, .form-label, .form-control,
-.custom-form-control, .alert, .case-tile-teaser__text--workshop, .client-projects__text, .case-list-teaser__text, .default-full-width-teaser__text,
+.custom-form-control, .alert, .case-tile-teaser .case-tile-teaser__text--workshop, .client-projects__text, .case-list-teaser__text, .default-full-width-teaser__text,
 .heading-font-regular {
   font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: normal;
@@ -142,14 +142,14 @@ pull-quote > blockquote > p,
 pull-quote .pullquote,
 pull-quote .pullquote > p, .link--muted, .newsletter-optin__subtitle, .list-teaser-event__headline--secondary, .card__content__footer .card__content__footer__heading,
 h5, .search-result__subtitle,
-h4, .footnotes__list li::before, .date, .form-label--emphasized, .btn, .wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-list-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .portfolio-card__caption, .card__content__body__subheadline,
+h4, .footnotes__list li::before, .date, .form-label--emphasized, .btn, .wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-list-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .portfolio-card__caption, .card__content__body__subheadline,
 .heading-font-bold {
   font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: bold;
   font-style: normal;
 }
 
-.staff-header__profile__person__link, .triplet-divider__right,
+.staff-header__profile__person__link, .image-header__subtitle, .triplet-divider__right,
 .triplet-divider__left, .textbox-sequence__header, .big-content-teaser__headline, .product-list-teaser__cta, .podcast-channel-teaser__title, .artist-list-teaser__title, .artist-list-teaser__edition__date, .cta-sidebar__heading, .tag-section__headline, .toc__heading, .superhero__title, .service-intro__header, long-quote > blockquote > p,
 super-quote > blockquote > p,
 .superquote > p,
@@ -389,21 +389,21 @@ h6 > a:focus:not([class]),
   text-decoration: none;
 }
 
-.wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-list-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .portfolio-card__caption, .card__content__body__subheadline {
+.wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-list-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .portfolio-card__caption, .card__content__body__subheadline {
   font-size: 0.9114583333rem;
   text-transform: uppercase;
 }
 
-.case-tile-teaser__text--workshop, .client-projects__text, .case-list-teaser__text, .default-full-width-teaser__text {
+.case-tile-teaser .case-tile-teaser__text--workshop, .client-projects__text, .case-list-teaser__text, .default-full-width-teaser__text {
   font-size: 1rem;
 }
 
-.static-tile-teaser__text, .case-tile-teaser__text, .topic-teaser__text, .client-projects__intro-text {
+.static-tile-teaser__text, .case-tile-teaser .case-tile-teaser__text, .topic-teaser__text, .client-projects__intro-text {
   font-size: 1.2rem;
 }
 
 @media screen and (min-width: 48rem) {
-  .wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-list-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .portfolio-card__caption, .card__content__body__subheadline {
+  .wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-list-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .portfolio-card__caption, .card__content__body__subheadline {
     font-size: 1rem;
   }
 }
@@ -5886,8 +5886,7 @@ touch-detection {
   background-size: cover;
   background-blend-mode: multiply;
 }
-
-.case-tile-teaser__content {
+.case-tile-teaser .case-tile-teaser__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5898,6 +5897,7 @@ touch-detection {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  gap: 2.0736rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -5905,58 +5905,7 @@ touch-detection {
   text-align: center;
   background-color: #fff;
 }
-.case-tile-teaser__content > * + * {
-  margin-top: 2.0736rem;
-}
-
-.case-tile-teaser__body > * + * {
-  margin-top: 2.0736rem;
-}
-
-.case-tile-teaser__caption {
-  color: #004153;
-}
-
-.case-tile-teaser__headline {
-  color: #004153;
-}
-
-.case-tile-teaser__text {
-  line-height: 1.52;
-  color: #004153;
-}
-.case-tile-teaser__text--workshop {
-  line-height: 1.52;
-  color: #004153;
-}
-
-.case-tile-teaser__logo {
-  max-width: 7.4300837069rem;
-}
-
-.case-tile-teaser__goto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.case-tile-teaser__goto > * + * {
-  margin-top: 1rem;
-}
-
-.case-tile-teaser--sm {
-  min-height: 18.4884258895rem;
-  margin-bottom: 7.4300837069rem;
-  padding: 2.985984rem 0.5787037037rem;
-}
-
-.case-tile-teaser__content--sm {
+.case-tile-teaser .case-tile-teaser__content--sm {
   position: relative;
   bottom: -9.7519848653rem;
   -webkit-box-pack: justify;
@@ -5964,23 +5913,71 @@ touch-detection {
           justify-content: space-between;
   padding: 1rem;
 }
-
-.case-tile-teaser__headline--sm {
+.case-tile-teaser .case-tile-teaser__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.0736rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.case-tile-teaser .case-tile-teaser__caption {
+  color: #004153;
+}
+.case-tile-teaser .case-tile-teaser__headline {
+  color: #004153;
+}
+.case-tile-teaser .case-tile-teaser__headline--sm {
   font-size: 1.2rem;
 }
-
-.case-tile-teaser__text--sm {
+.case-tile-teaser .case-tile-teaser__text {
+  line-height: 1.52;
+  color: #004153;
+}
+.case-tile-teaser .case-tile-teaser__text--workshop {
+  line-height: 1.52;
+  color: #004153;
+}
+.case-tile-teaser .case-tile-teaser__text--sm {
   margin-bottom: 0.5787037037rem;
   font-size: 1rem;
 }
-
+.case-tile-teaser .case-tile-teaser__logo {
+  max-width: 7.4300837069rem;
+}
+.case-tile-teaser .case-tile-teaser__goto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.case-tile-teaser--sm {
+  min-height: 18.4884258895rem;
+  margin-bottom: 7.4300837069rem;
+  padding: 2.985984rem 0.5787037037rem;
+}
 @media screen and (min-width: 36rem) {
   .case-tile-teaser {
     padding: 2.985984rem;
   }
 }
 @media screen and (min-width: 48rem) {
-  .case-tile-teaser__content {
+  .case-tile-teaser .case-tile-teaser__content {
     padding: 2.985984rem 1.44rem;
   }
   .case-tile-teaser--sm {
@@ -5991,6 +5988,9 @@ touch-detection {
   .case-tile-teaser {
     padding: 3.919104rem;
   }
+}
+
+@media screen and (min-width: 75rem) {
   .span-5 .case-tile-teaser__content {
     max-width: 29.119270776rem;
   }
@@ -7474,6 +7474,11 @@ form > * + *,
 }
 .image-header__content > * + * {
   margin-top: 1.44rem;
+}
+.image-header__subtitle {
+  font-size: 1.44rem;
+  line-height: 1.2;
+  color: #004153;
 }
 .image-header--no-border {
   /* stylelint-disable-next-line declaration-no-important */
