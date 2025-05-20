@@ -79,7 +79,7 @@ dl dd, p,
   font-style: normal;
 }
 
-.legacy-modernization-page p.text-card__quote, .topic-header__text, .text-header__text, .standard-header__intro__text, .landing-page-header__text, .gradient-header__title, .wall-note__text, .image-divider-center__textbox__text, .text-card__quote, .simple-teaser__link h6, .podcast-teaser__subheadline, .product-list-teaser__text, .list-teaser-podcast__subheadline, .list-teaser-event__subheadline, .artist-list-teaser__subtitle, .cta-sidebar__text, .toc__list > li, .superquote__role,
+.legacy-modernization-page section p.text-card__quote, .topic-header__text, .text-header__text, .standard-header__intro__text, .landing-page-header__text, .gradient-header__title, .wall-note__text, .image-divider-center__textbox__text, .text-card__quote, .simple-teaser__link h6, .podcast-teaser__subheadline, .product-list-teaser__text, .list-teaser-podcast__subheadline, .list-teaser-event__subheadline, .artist-list-teaser__subtitle, .cta-sidebar__text, .toc__list > li, .superquote__role,
 .longquote__role, .cta-section-long__info, .card__content__body__text, .author-bio--large .author-bio__info, .author-bio__info, .duration, blockquote:not([class]),
 blockquote:not([class]) > p,
 .blockquote,
@@ -97,7 +97,7 @@ blockquote:not([class]) > p,
 }
 
 .timeline-event .timeline-list, .reviews-page p,
-.reviews-page ul > li, .legacy-modernization-page p, .text-card__job,
+.reviews-page ul > li, .legacy-modernization-page section p, .text-card__job,
 .body-font-bold {
   font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: normal;
