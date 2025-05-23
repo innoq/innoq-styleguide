@@ -4528,6 +4528,8 @@ touch-detection {
 
 .toc__list {
   padding-left: 0.7rem;
+  -ms-hyphens: auto;
+      hyphens: auto;
 }
 .toc__list > li {
   display: -webkit-box;
@@ -4619,6 +4621,7 @@ touch-detection {
 }
 .cta-sidebar__text {
   font-size: 1rem;
+  line-height: unset;
 }
 .cta-sidebar__image {
   width: 100%;
@@ -4628,7 +4631,7 @@ touch-detection {
 .cta-sidebar__btn {
   -ms-flex-item-align: center;
       align-self: center;
-  margin-top: 0.5787037037rem;
+  margin-top: 1rem;
   text-align: center;
 }
 @media screen and (min-width: 82rem) {

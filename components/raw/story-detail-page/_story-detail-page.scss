@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: $spacer-sm [content-start] 1fr [content-center-start] 3fr [content-center-end] 1fr [content-end] $spacer-sm; //magic numbers
   align-items: center;
+
   margin-top: $spacer-base;
   margin-bottom: $spacer-lg;
   padding-bottom: $spacer-base;

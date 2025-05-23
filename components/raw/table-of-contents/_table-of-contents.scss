@@ -15,6 +15,7 @@
   @extend %list-unstyled;
 
   padding-left: 0.7rem;
+  hyphens: auto;
 
   > li {
     @extend %body-font-italic;

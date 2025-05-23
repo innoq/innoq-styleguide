@@ -16,6 +16,7 @@
     @extend %body-font-italic;
 
     font-size: $font-size-base;
+    line-height: unset;
   }
 
   &__image {
@@ -26,7 +27,7 @@
 
   &__btn {
     align-self: center;
-    margin-top: $spacer-xs;
+    margin-top: $spacer-sm;
     text-align: center;
   }
 
