@@ -2739,7 +2739,7 @@ ul:not([class], [role=list]) > li ol,
 .author-bio--long .author-bio__image {
   position: absolute;
   top: -3.5831808rem;
-  left: calc(50% - 7.4300837069rem/ 2);
+  left: calc(50% - 7.4300837069rem / 2);
   margin-right: 0;
 }
 
@@ -3122,7 +3122,7 @@ ul:not([class], [role=list]) > li ol,
 .cta-section-long .cta-section-long__image {
   position: absolute;
   top: -7.4300837069rem;
-  left: calc(50% - 14.042858206rem/ 2);
+  left: calc(50% - 14.042858206rem / 2);
   margin-right: 0;
 }
 
@@ -4611,7 +4611,7 @@ touch-detection {
           flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: start;
+          align-items: flex-start;
   color: #004153;
 }
 .cta-sidebar__heading {
@@ -7752,7 +7752,7 @@ form > * + *,
 }
 @media screen and (min-width: 48rem) {
   .standard-header {
-    padding-bottom: 7.4300837069rem;
+    margin-bottom: 9.7519848653rem;
   }
   .podcast-header--avatar--overlay {
     background-size: contain;
@@ -8248,7 +8248,7 @@ form > * + *,
 }
 @media (min-width: 925px) {
   .main-navigation {
-    --navbar-toggler-width: var(--forced-colors-navbar-toggler-width, calc((2px * 2) + (1.44rem * 3)));
+    --navbar-toggler-width: var(--forced-colors-navbar-toggler-width, calc(2px * 2 + 1.44rem * 3));
     grid-template-areas: ". . brand meta search" "nav nav nav nav nav";
     grid-template-columns: var(--navbar-toggler-width) 1fr 1fr 1fr var(--navbar-toggler-width);
   }
