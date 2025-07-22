@@ -160,7 +160,7 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
 
 @media screen and (min-width: $grid-breakpoint-md) {
   .standard-header {
-    padding-bottom: $spacer-xxl;
+    margin-bottom: ms(25); //magic number
   }
 
   .podcast-header--avatar--overlay {
