@@ -1,0 +1,103 @@
+.architecture-strategy-page {
+  background: $gradient-2;
+
+  p,
+  ul > li {
+    @extend %body-font-sans;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @extend %heading-font-bold;
+  }
+
+  .longquote__zigzag {
+    @include zigzag($gradient-header-background-color);
+  }
+
+  .center-section {
+    text-align: center;
+  }
+
+  .big-content-teaser {
+    justify-content: flex-start;
+
+    &__footer {
+      margin-top: $spacer-base;
+    }
+  }
+
+  // Value proposition cards specific styling
+  .text-card {
+    min-height: 200px;
+    padding: $spacer-lg;
+    
+    .text-card__name {
+      margin-bottom: $spacer-sm;
+      font-size: $font-size-md;
+      color: $brand-primary;
+    }
+    
+    p {
+      font-size: $font-size-sm;
+    }
+  }
+
+  // Method/resource cards
+  .case-tile-teaser {
+    &__author {
+      margin-top: $spacer-sm;
+      font-size: $font-size-xs;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $brand-gray-75;
+    }
+  }
+
+  // Text grid for methods
+  .text-grid {
+    margin-top: $spacer-lg;
+
+    &__heading {
+      color: $brand-primary;
+      margin-bottom: $spacer-xs;
+    }
+  }
+
+  // Full width teaser specific
+  .default-full-width-teaser {
+    margin-top: $spacer-xl;
+    margin-bottom: $spacer-xl;
+  }
+}
+
+// Button wrapper from reviews page
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacer-sm $spacer-md;
+  justify-content: center;
+  padding: $spacer-base 0;
+
+  .btn {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md-lg) {
+  .button-wrapper .btn {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .architecture-strategy-page {
+    .big-content-teaser__headline {
+      font-size: $font-size-xl;
+    }
+  }
+}
