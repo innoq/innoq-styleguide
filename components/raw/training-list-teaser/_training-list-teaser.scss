@@ -9,13 +9,13 @@ $list-teaser-training-height: ms(32);
   min-height: $list-teaser-training-height;
 
   &.primary {
-    background-color: $list-teaser-training-bg-color-primary;
+    color: $brand-secondary;
+
     background-image: asset-url('bg-images/general/visual-trainings-12.jpeg');
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
     background-blend-mode: multiply;
-    color: $brand-secondary;
 
     .list-teaser-training__caption {
       color: $brand-secondary;
@@ -29,15 +29,6 @@ $list-teaser-training-height: ms(32);
       color: $brand-secondary;
       border-bottom: 3px solid $brand-secondary;
     }
-  }
-
-  &.secondary {
-    background-color: $list-teaser-training-bg-color-secondary;
-    background-image: asset-url('bg-images/general/visual-trainings-12.jpeg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    background-blend-mode: multiply;
   }
 
   .list-teaser__footer {

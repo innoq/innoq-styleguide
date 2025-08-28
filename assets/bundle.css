@@ -5701,13 +5701,12 @@ touch-detection {
   min-height: 18.4884258895rem;
 }
 .list-teaser-training.primary {
-  background-color: #ffb58c;
+  color: #004153;
   background-image: url("/assets/bg-images/general/visual-trainings-12.jpeg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
   background-blend-mode: multiply;
-  color: #004153;
 }
 .list-teaser-training.primary .list-teaser-training__caption {
   color: #004153;
@@ -5718,14 +5717,6 @@ touch-detection {
 .list-teaser-training.primary .link-teaser {
   color: #004153;
   border-bottom: 3px solid #004153;
-}
-.list-teaser-training.secondary {
-  background-color: #40707e;
-  background-image: url("/assets/bg-images/general/visual-trainings-12.jpeg");
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  background-blend-mode: multiply;
 }
 .list-teaser-training .list-teaser__footer {
   padding-bottom: 1rem;
