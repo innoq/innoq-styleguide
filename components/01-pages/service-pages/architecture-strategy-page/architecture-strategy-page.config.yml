@@ -1,11 +1,36 @@
 title: Architecture Strategy Page
 handle: architecture-strategy-page
-label: Architekturstrategie Seite
+label: Architekturstrategie
+status: ready
 context:
-  headline: "Softwarearchitektur nicht zum Selbstzweck"
-  subheadline: "Architektur als Enabler für Ihr Business"
-  intro_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-  text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-  text_short: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor."
-  workshop_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-  cta: "Mehr erfahren"
+  page_title: "Architekturstrategie"
+  page_subtitle: "Wir betrachten Softwarearchitektur nicht zum Selbstzweck, sondern im Kontext Ihrer Organisation – mit Blick auf Ihre Geschäftsziele."
+  
+  intro_headline: "Architektur als Enabler für Ihr Business"
+  intro_text: "Wir unterstützen Sie dabei, Ihre Software-Architektur strategisch weiterzuentwickeln. Dabei behalten wir Ihre Geschäftsziele im Blick."
+  
+  why_innoq_headline: "Warum INNOQ"
+  why_innoq_text: "Aus mehr als 20 Jahren Projekterfahrung wissen wir: Softwarearchitektur entfaltet ihre Wirkung nur im Zusammenspiel mit Organisation und Business."
+  
+  methods_headline: "Mit diesen Methoden arbeiten wir"
+  methods_text: "Architekturstrategie braucht das richtige Werkzeug zur richtigen Zeit. Wir arbeiten mit einem breiten Spektrum bewährter Methoden."
+  
+  success_stories_headline: "Wie haben wir unsere Kunden unterstützt"
+  success_stories_text: "Softwarearchitektur wirkt nur, wenn Menschen sie verstehen und weiterentwickeln können."
+  
+  workshops_headline: "Workshops für IT und Business"
+  
+  sociotechnical_headline: "Soziotechnische Architekturen als Wettbewerbsvorteil"
+  sociotechnical_text: "In der heutigen Geschäftswelt dient technologischer Fortschritt nicht nur der Effizienzsteigerung, sondern eröffnet auch neue Geschäftsfelder."
+  
+  deepdive_headline: "Tiefer einsteigen"
+  
+  contact_headline: "Interesse an einer Architekturberatung?"
+  contact_subheadline: "Sprechen Sie mit uns."
+  contact_text: "Wir finden gemeinsam heraus, wie wir Sie bei Ihrer Architekturstrategie unterstützen können."
+  
+  cta_primary: "Mehr erfahren"
+  cta_secondary: "Beratung anfragen"
+  cta_review: "Review anfragen"
+  cta_workshop: "Workshop anfragen"
+  cta_case_study: "Zur Case Study"
