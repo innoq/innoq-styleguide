@@ -67,19 +67,47 @@
     }
   }
 
+  // Architektur als Enabler section - unified styling
+  .stripe--gray {
+    .page-layout-md--default + .card-grid {
+      margin-top: $spacer-xl;
+    }
+  }
+
   // Value proposition cards specific styling
   .text-card {
     min-height: 200px;
     padding: $spacer-lg;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
     
     .text-card__name {
       margin-bottom: $spacer-sm;
       font-size: $font-size-md;
       color: $brand-primary;
+      font-weight: 600;
     }
     
     p {
       font-size: $font-size-sm;
+      line-height: 1.5;
+    }
+    
+    // Highlighted card with orange border
+    &--highlighted {
+      border: 3px solid $brand-secondary;
+      box-shadow: 0 4px 12px rgba(255, 138, 80, 0.15);
+      
+      &:hover {
+        box-shadow: 0 6px 16px rgba(255, 138, 80, 0.2);
+      }
     }
   }
 
