@@ -14,6 +14,43 @@
     @extend %heading-font-bold;
   }
 
+  // Enhanced Image Header Styles
+  .image-header {
+    &__content {
+      margin-top: 1.44rem;
+    }
+
+    &__title {
+      @extend %heading-font-heavy;
+      font-size: 2.0736rem;
+      line-height: 1.1;
+    }
+
+    &__subtitle {
+      @extend %heading-font-heavy;
+      font-size: 1.44rem;
+      line-height: 1.2;
+
+      strong {
+        font-weight: 800;
+      }
+    }
+
+    // Arrow icon below subtitle
+    .icon-arrow-long-down {
+      margin-top: 1.44rem;
+      width: 0.75rem;
+      height: 4.5rem;
+      display: inline-flex;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(8px);
+      }
+    }
+  }
+
   .longquote__zigzag {
     @include zigzag($gradient-header-background-color);
   }
