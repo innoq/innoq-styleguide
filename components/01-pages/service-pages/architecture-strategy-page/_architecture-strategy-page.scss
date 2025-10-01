@@ -1,0 +1,168 @@
+.architecture-strategy-page {
+  background: $gradient-2;
+
+  p,
+  ul > li {
+    @extend %body-font-sans;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @extend %heading-font-bold;
+  }
+
+  // Enhanced Image Header Styles
+  .image-header {
+    &__content {
+      margin-top: 1.44rem;
+    }
+
+    &__title {
+      @extend %heading-font-heavy;
+      font-size: 2.0736rem;
+      line-height: 1.1;
+    }
+
+    &__subtitle {
+      @extend %heading-font-heavy;
+      font-size: 1.44rem;
+      line-height: 1.2;
+
+      strong {
+        font-weight: 800;
+      }
+    }
+
+    // Arrow icon below subtitle
+    .icon-arrow-long-down {
+      margin-top: 1.44rem;
+      width: 0.75rem;
+      height: 4.5rem;
+      display: inline-flex;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: translateY(8px);
+      }
+    }
+  }
+
+  .longquote__zigzag {
+    @include zigzag($gradient-header-background-color);
+  }
+
+  .center-section {
+    text-align: center;
+  }
+
+  .big-content-teaser {
+    justify-content: flex-start;
+
+    &__footer {
+      margin-top: $spacer-base;
+    }
+  }
+
+  // Architektur als Enabler section - unified styling
+  .stripe--gray {
+    .page-layout-md--default + .card-grid {
+      margin-top: $spacer-xl;
+    }
+  }
+
+  // Value proposition cards specific styling
+  .text-card {
+    min-height: 200px;
+    padding: $spacer-lg;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    
+    .text-card__name {
+      margin-bottom: $spacer-sm;
+      font-size: $font-size-md;
+      color: $brand-primary;
+      font-weight: 600;
+    }
+    
+    p {
+      font-size: $font-size-sm;
+      line-height: 1.5;
+    }
+    
+    // Highlighted card with orange border
+    &--highlighted {
+      border: 3px solid $brand-secondary;
+      box-shadow: 0 4px 12px rgba(255, 138, 80, 0.15);
+      
+      &:hover {
+        box-shadow: 0 6px 16px rgba(255, 138, 80, 0.2);
+      }
+    }
+  }
+
+  // Method/resource cards
+  .case-tile-teaser {
+    &__author {
+      margin-top: $spacer-sm;
+      font-size: $font-size-xs;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $brand-gray-75;
+    }
+  }
+
+  // Text grid for methods
+  .text-grid {
+    margin-top: $spacer-lg;
+
+    &__heading {
+      color: $brand-primary;
+      margin-bottom: $spacer-xs;
+    }
+  }
+
+  // Full width teaser specific
+  .default-full-width-teaser {
+    margin-top: $spacer-xl;
+    margin-bottom: $spacer-xl;
+  }
+}
+
+// Button wrapper from reviews page
+.button-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacer-sm $spacer-md;
+  justify-content: center;
+  padding: $spacer-base 0;
+
+  .btn {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-md-lg) {
+  .button-wrapper .btn {
+    width: auto;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .architecture-strategy-page {
+    .big-content-teaser__headline {
+      font-size: $font-size-xl;
+    }
+  }
+}
