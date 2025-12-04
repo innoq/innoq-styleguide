@@ -1,0 +1,68 @@
+$highlight-card-border-width: $spacer-sm;
+
+.highlight-card {
+  @extend %page-header;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  min-height: 70vh;
+  padding: $spacer-lg $spacer-md;
+
+  border: $highlight-card-border-width solid $highlight-card-border-color;
+}
+
+.highlight-card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 800px;
+  padding: $spacer-lg $spacer-md;
+
+  text-align: center;
+
+  background-color: $highlight-card-content-bg-color;
+}
+
+.highlight-card__title {
+  @extend %h2;
+
+  color: $highlight-card-title-color;
+}
+
+.highlight-card__text {
+  @extend %body-font-italic;
+
+  margin-top: $spacer-md;
+  font-size: $font-size-sm;
+  color: $highlight-card-text-color;
+}
+
+.highlight-card__link {
+  margin-top: $spacer-lg;
+}
+
+// Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+  .highlight-card {
+    min-height: 80vh;
+    padding: $spacer-xl;
+  }
+
+  .highlight-card__content {
+    padding: $spacer-xl $spacer-lg;
+  }
+
+  .highlight-card__text {
+    font-size: $font-size-md;
+  }
+}
+
+@media screen and (min-width: $grid-breakpoint-lg) {
+  .highlight-card__content {
+    max-width: 900px;
+  }
+}
