@@ -530,15 +530,16 @@
   background-blend-mode: multiply;
 }
 
-.bg-image-edition-24,
-%bg-image-edition-24 {
-  background-image: asset-url('bg-images/edition-02/edition02-concrete-01.webp');
-}
-
 .bg-image-edition-25,
 %bg-image-edition-25 {
   background-image: asset-url('bg-images/edition-02/edition02-scissors-01.webp');
 }
+
+.bg-image-edition-26,
+%bg-image-edition-26 {
+  background-image: asset-url('bg-images/edition-02/edition02-concrete-01.webp');
+}
+
 
 // Demo Classes for bg images
 .bg-image-demo {

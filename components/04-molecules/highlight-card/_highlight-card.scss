@@ -2,12 +2,12 @@ $highlight-card-border-width: $spacer-sm;
 
 .highlight-card {
   @extend %page-header;
-  width: 100%;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
+  width: 100%;
   min-height: 70vh;
   padding: $spacer-lg $spacer-md;
 
