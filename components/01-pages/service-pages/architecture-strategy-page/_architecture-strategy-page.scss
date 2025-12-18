@@ -1,7 +1,10 @@
 .architecture-strategy-page {
   background: $gradient-2;
 
-  p,
+  section p {
+    @extend %body-font-sans;
+  }
+
   ul > li {
     @extend %body-font-sans;
   }
