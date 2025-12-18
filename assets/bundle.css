@@ -96,8 +96,7 @@ blockquote:not([class]) > p,
   font-style: normal;
 }
 
-.architecture-strategy-page p,
-.architecture-strategy-page ul > li, .timeline-event .timeline-list, .reviews-page p,
+.architecture-strategy-page ul > li, .architecture-strategy-page section p, .timeline-event .timeline-list, .reviews-page p,
 .reviews-page ul > li, .legacy-modernization-page section p, .text-card__job,
 .body-font-bold {
   font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
