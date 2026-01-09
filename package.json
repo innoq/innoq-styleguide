@@ -10,6 +10,9 @@
     "type": "git",
     "url": "https://github.com/innoq/innoq-styleguide.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "start": "npm-run-all --parallel compile-watch server-watch",
     "server": "fractal-fork start --port 3001",
