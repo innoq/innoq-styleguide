@@ -1,8 +1,11 @@
 {
-  "name": "innoq-styleguide",
+  "name": "@innoq/innoq-styleguide",
   "version": "16.0.16",
-  "description": "INNOQ’s style guide and component library",
-  "license": "SEE LICENSE IN <LICENSE.md>",
+  "description": "INNOQ's style guide and component library",
+  "main": "lib/scripts/index.js",
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "INNOQ",
+  "homepage": "https://github.com/innoq/innoq-styleguide",
   "repository": {
     "type": "git",
     "url": "https://github.com/innoq/innoq-styleguide.git"
@@ -20,6 +23,9 @@
     "site": "npm run compile && fractal-fork build",
     "dist": "./scripts/dist",
     "release": "release-it"
+  },
+  "engines": {
+    "node": ">=24.0.0"
   },
   "devDependencies": {
     "eslint": "^8.9.0",

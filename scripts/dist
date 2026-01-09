@@ -9,7 +9,7 @@ commit = ENV["GITHUB_SHA"]
 tag = ENV.fetch("GITHUB_REF") { "HEAD" }
 tag = tag.gsub("refs/tags/", "")
 js_components_target = "dist/js/components"
-release_filename = "innoq-styleguide-#{tag}.zip"
+release_filename = "@innoq-innoq-styleguide-#{tag}.zip"
 zip_blacklist = "-x #{File.read(".npmignore").gsub(/\n/, ' ')}"
 
 exit 1 unless system("npm run site")
