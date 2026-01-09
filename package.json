@@ -8,7 +8,7 @@
   "homepage": "https://github.com/innoq/innoq-styleguide",
   "repository": {
     "type": "git",
-    "url": "https://github.com/innoq/innoq-styleguide.git"
+    "url": "git+https://github.com/innoq/innoq-styleguide.git"
   },
   "publishConfig": {
     "access": "public"
