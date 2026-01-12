@@ -1,8 +1,7 @@
 {
   "name": "@innoq/innoq-styleguide",
-  "version": "17.0.1",
+  "version": "17.0.2",
   "description": "INNOQ's style guide and component library",
-  "main": "lib/scripts/index.js",
   "license": "SEE LICENSE IN LICENSE",
   "author": "INNOQ",
   "homepage": "https://github.com/innoq/innoq-styleguide",
