@@ -2,35 +2,44 @@
 require "fileutils"
 include FileUtils
 
-# Delete old dist folder if it exists
-rm_rf "dist"
-
-commit = ENV["GITHUB_SHA"]
-tag = ENV.fetch("GITHUB_REF") { "HEAD" }
-tag = tag.gsub("refs/tags/", "")
-js_components_target = "dist/js/components"
-release_filename = "@innoq-innoq-styleguide-#{tag}.zip"
-zip_blacklist = "-x #{File.read(".npmignore").gsub(/\n/, ' ')}"
-
-exit 1 unless system("npm run site")
-
-cp_r "dist/site/assets", "dist/"
-
-# Copy JavaScript components to dist so they can be imported more conveniently
-mkdir_p js_components_target
-Dir.glob("components/**/*.js").each do |f|
-  cp f, js_components_target
+def generate_fractal_site
+  exit 1 unless system("npm run site")
 end
 
-cp_r "components", "dist/"
-cp_r "lib/styles", "dist/sass"
+def relocate_files
+  cp_r "dist/site/assets", "dist/"
 
-File.write "dist/site/RELEASE.txt", commit
+  # Copy JavaScript components to dist so they can be imported more conveniently
+  js_components_target = "dist/js/components"
+  mkdir_p js_components_target
+  cp Dir.glob("components/**/*.js"), js_components_target
+  cp_r "components", "dist/"
+  cp_r "lib/styles", "dist/sass"
+end
 
-unless ENV["SKIP_RELEASE_BUNLDE"].to_s == "true"
+def release_filename_from_env
+  tag = ENV.fetch("GITHUB_REF") { "HEAD" }
+  tag = tag.gsub("refs/tags/", "")
+  "@innoq-innoq-styleguide-#{tag}.zip"
+end
+
+def zip_for_release
+  release_filename = release_filename_from_env
+  zip_blacklist = "-x #{File.read(".npmignore").gsub(/\n/, ' ')}"
   cd "dist" do
     exit 1 unless system("zip -r #{release_filename} . #{zip_blacklist}")
   end
 
   mv "./dist/#{release_filename}", "./"
 end
+
+#########################################################
+
+# Delete old dist folder if it exists
+rm_rf "dist"
+
+generate_fractal_site
+
+relocate_files
+
+zip_for_release

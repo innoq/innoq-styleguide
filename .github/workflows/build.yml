@@ -75,9 +75,8 @@ jobs:
       - name: npm install
         if: steps.npm_cache.outputs.cache-hit != 'true'
         run: npm install-clean
-      - run: ./scripts/dist
-        env:
-          SKIP_RELEASE_BUNLDE: true
+      - run: npm run site
+      - run: echo ${{ github.sha }} > dist/site/RELEASE.txt
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:

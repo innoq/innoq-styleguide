@@ -9,6 +9,7 @@
 /scripts
 /theme-overrides
 /tools
+/dist/site
 docker-compose.override.yml
 docker-compose.yml
 Dockerfile
