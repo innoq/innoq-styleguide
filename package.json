@@ -1,10 +1,10 @@
 {
   "name": "@innoq/innoq-styleguide",
-  "version": "17.0.2",
+  "version": "17.0.3",
   "description": "INNOQ's style guide and component library",
   "license": "SEE LICENSE IN LICENSE",
   "author": "INNOQ",
-  "homepage": "https://github.com/innoq/innoq-styleguide",
+  "homepage": "https://github.com/innoq/innoq-styleguide#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/innoq/innoq-styleguide.git"
