@@ -124,4 +124,5 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: github.ref_type == 'tag'
         with:
-          files: "@innoq-innoq-styleguide-${{ steps.tag_name.outputs.tag }}.zip"
+          files: "@innoq-innoq-styleguide-*.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}
