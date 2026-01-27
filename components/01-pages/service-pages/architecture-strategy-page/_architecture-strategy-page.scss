@@ -17,6 +17,10 @@
     @extend %heading-font-bold;
   }
 
+  .longquote p {
+    @extend %heading-font-heavy;
+  }
+
   .longquote__zigzag {
     @include zigzag($brand-white);
   }
