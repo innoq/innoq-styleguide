@@ -1,1 +1,12 @@
 status: ready
+variants:
+  - name: default
+    label: Default (White)
+  - name: gray
+    label: Gray Background
+    context:
+      modifier: zigzag--gray
+  - name: primary
+    label: Primary Background
+    context:
+      modifier: zigzag--primary

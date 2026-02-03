@@ -16,6 +16,10 @@ const config = {
   sass: [
     {
       source: './lib/styles/index.scss',
+      target: './public/assets/bundle-without-pages.css',
+    },
+    {
+      source: './lib/styles/index-with-pages.scss',
       target: './public/assets/bundle.css',
     },
     {

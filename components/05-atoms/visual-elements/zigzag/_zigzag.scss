@@ -14,8 +14,8 @@ $zzdegree: 135deg;
 
   background: $bgcolor;
 
-  &::after,
-  &::before {
+  &::before,
+  &::after {
     content: '';
 
     position: absolute;
@@ -55,4 +55,16 @@ $zzdegree: 135deg;
 .zigzag,
 %zigzag {
   @include zigzag($zzbgc);
+}
+
+// Modifier: Gray background
+.zigzag--gray,
+%zigzag--gray {
+  @include zigzag($brand-gray-10);
+}
+
+// Modifier: Primary background
+.zigzag--primary,
+%zigzag--primary {
+  @include zigzag($brand-primary-25);
 }

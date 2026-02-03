@@ -1,0 +1,45 @@
+// Complete bundle including pages
+// For use in Fractal styleguide
+
+@import 'base-imports';
+
+//
+// PAGES
+//
+@import '../components/01-pages/aggregator-page/aggregator-page';
+@import '../components/01-pages/book-detail-page/book-detail-page';
+@import '../components/01-pages/article-page-default/article-page-default';
+@import '../components/01-pages/case-study-pages/case-study-overview/case-study-overview';
+@import '../components/01-pages/case-study-pages/case-study-page/case-study-page';
+@import '../components/01-pages/artist-collabo-page/artist-collabo-page';
+@import '../components/01-pages/culture-pages/culture-page-default/culture-page-default';
+@import '../components/01-pages/culture-pages/work-page/work-page';
+@import '../components/01-pages/error-pages/error-page';
+@import '../components/01-pages/job-page/job-page';
+@import '../components/01-pages/landing-page/landing-page';
+@import '../components/01-pages/magazine-page/magazine-page';
+@import '../components/01-pages/podcast-pages/podcast-channel-page/podcast-channel-page';
+@import '../components/01-pages/podcast-pages/ctoneedtoknow-podcast/ctoneedtoknow-podcast-overview-page/ctoneedtoknow-podcast-overview-page';
+@import '../components/01-pages/podcast-pages/ctoneedtoknow-podcast/ctoneedtoknow-podcast-detail-page/ctoneedtoknow-podcast-detail-page';
+@import '../components/01-pages/podcast-pages/innoq-podcast/innoq-podcast-overview-page/innoq-podcast-overview-page';
+@import '../components/01-pages/podcast-pages/innoq-podcast/innoq-podcast-detail-page/innoq-podcast-detail-page';
+@import '../components/01-pages/podcast-pages/security-podcast/security-podcast-overview-page/security-podcast-overview-page';
+@import '../components/01-pages/podcast-pages/security-podcast/security-podcast-detail-page/security-podcast-detail-page';
+@import '../components/01-pages/service-pages/service-detail-page/service-detail-page';
+@import '../components/01-pages/service-pages/services-overview-page/services-overview-page';
+@import '../components/01-pages/service-pages/product-microsite-page/product-microsite-page';
+@import '../components/01-pages/service-pages/legacy-modernization-page/legacy-modernization-page';
+@import '../components/01-pages/service-pages/reviews-page/reviews-page';
+@import '../components/01-pages/service-pages/architecture-strategy-page/architecture-strategy-page';
+@import '../components/01-pages/staff-page/staff-page';
+@import '../components/01-pages/story-pages/story-detail-page/story-detail-page';
+@import '../components/01-pages/story-pages/story-overview-page/story-overview-page';
+@import '../components/01-pages/talk-pages/talk-page/talk-page';
+@import '../components/01-pages/talk-pages/talk-portfolio-page/talk-portfolio-page';
+@import '../components/01-pages/topic-page/topic-page';
+@import '../components/01-pages/training-pages/booking-page/booking-page';
+@import '../components/01-pages/training-pages/training-detail-page/training-detail-page';
+@import '../components/01-pages/training-pages/trainings-overview-page/trainings-overview-page';
+
+@import '03-styleguide/hacks';
+@import '03-styleguide/styleguide';

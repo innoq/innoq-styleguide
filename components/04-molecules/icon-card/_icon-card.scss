@@ -1,0 +1,9 @@
+.icon-card {
+  margin: 0 $spacer-sm;
+}
+
+@media screen and (min-width: $grid-breakpoint-md-lg) {
+  .icon-card {
+    margin: 0 $spacer-md;
+  }
+}

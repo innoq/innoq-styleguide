@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run compile:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs kill:*)",
+      "Bash(ls:*)",
+      "Bash(find:*)",
+      "Bash(npm test)",
+      "Bash(git add:*)"
+    ]
+  },
+  "enableAllProjectMcpServers": false
+}
