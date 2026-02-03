@@ -1,0 +1,47 @@
+.accordion {
+  width: 100%;
+  padding: 0 $spacer-md;
+
+  :first-child {
+    border-top: hidden;
+  }
+
+  details {
+    padding: 10px 0;
+    border-top: 1px solid $brand-secondary;
+  }
+
+  summary {
+    @extend %heading-font-bold;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: $spacer-sm 0;
+
+    font-size: $font-size-md;
+    color: $h3-color;
+    list-style: none;
+  }
+
+  summary::after {
+    content: '+';
+    font-size: 40px;
+    font-weight: 400;
+    color: $brand-secondary;
+  }
+
+  details[open] summary::after {
+    content: '–';
+    font-size: 40px;
+    font-weight: 400;
+    color: $brand-secondary;
+  }
+
+  details p {
+    margin: 10px 0 0;
+  }
+}

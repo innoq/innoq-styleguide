@@ -1293,161 +1293,12 @@
     <span class="hljs-keyword">@extend</span> %heading-font-bold;
   }
 
-  <span class="hljs-selector-class">.longquote__zigzag</span> {
-    <span class="hljs-keyword">@include</span> zigzag(<span class="hljs-variable">$brand-gray-10</span>);
-  }
-
   <span class="hljs-selector-class">.center-section</span> {
     <span class="hljs-attribute">text-align</span>: center;
   }
 
   <span class="hljs-selector-class">.big-content-teaser</span> {
     <span class="hljs-attribute">justify-content</span>: flex-start;
-  }
-}
-
-<span class="hljs-selector-class">.button-wrapper</span> {
-  <span class="hljs-attribute">display</span>: flex;
-  <span class="hljs-attribute">flex-wrap</span>: wrap;
-  <span class="hljs-attribute">gap</span>: <span class="hljs-variable">$spacer-sm</span> <span class="hljs-variable">$spacer-md</span>;
-  <span class="hljs-attribute">justify-content</span>: center;
-
-  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-base</span> <span class="hljs-number">0</span>;
-
-  <span class="hljs-selector-class">.btn</span> {
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0</span>;
-  }
-}
-
-<span class="hljs-selector-class">.timeline</span> {
-  <span class="hljs-attribute">position</span>: relative;
-  <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">40px</span>;
-  <span class="hljs-attribute">border-left</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$brand-secondary</span>;
-}
-
-<span class="hljs-selector-class">.timeline-event</span> {
-  <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-base</span>;
-
-  &amp;__icon {
-    <span class="hljs-attribute">position</span>: absolute;
-    <span class="hljs-attribute">left</span>: -<span class="hljs-number">10px</span>;
-
-    <span class="hljs-attribute">width</span>: <span class="hljs-number">20px</span>;
-    <span class="hljs-attribute">height</span>: <span class="hljs-number">20px</span>;
-
-    <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$brand-primary</span>;
-    <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">50%</span>;
-  }
-
-  <span class="hljs-selector-class">.timeline-list</span> {
-    <span class="hljs-keyword">@extend</span> %body-font-sans;
-
-    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">list-style-type</span>: none;
-  }
-}
-
-<span class="hljs-selector-class">.accordion</span> {
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-md</span>;
-
-  <span class="hljs-selector-pseudo">:first</span>-child {
-    <span class="hljs-attribute">border-top</span>: hidden;
-  }
-
-  <span class="hljs-selector-tag">details</span> {
-    <span class="hljs-attribute">padding</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0</span>;
-    <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$brand-secondary</span>;
-  }
-
-  <span class="hljs-selector-tag">summary</span> {
-    <span class="hljs-keyword">@extend</span> %heading-font-bold;
-
-    <span class="hljs-attribute">cursor</span>: pointer;
-
-    <span class="hljs-attribute">display</span>: flex;
-    <span class="hljs-attribute">align-items</span>: center;
-    <span class="hljs-attribute">justify-content</span>: space-between;
-
-    <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-sm</span> <span class="hljs-number">0</span>;
-
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$font-size-md</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$h3-color</span>;
-    <span class="hljs-attribute">list-style</span>: none;
-  }
-
-  <span class="hljs-selector-tag">summary</span><span class="hljs-selector-pseudo">::after</span> {
-    <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;+&#x27;</span>;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">40px</span>;
-    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$brand-secondary</span>;
-  }
-
-  <span class="hljs-selector-tag">details</span><span class="hljs-selector-attr">[open]</span> <span class="hljs-selector-tag">summary</span><span class="hljs-selector-pseudo">::after</span> {
-    <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;–&#x27;</span>;
-    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">40px</span>;
-    <span class="hljs-attribute">font-weight</span>: <span class="hljs-number">400</span>;
-    <span class="hljs-attribute">color</span>: <span class="hljs-variable">$brand-secondary</span>;
-  }
-
-  <span class="hljs-selector-tag">details</span> <span class="hljs-selector-tag">p</span> {
-    <span class="hljs-attribute">margin</span>: <span class="hljs-number">10px</span> <span class="hljs-number">0</span> <span class="hljs-number">0</span>;
-  }
-}
-
-<span class="hljs-selector-class">.color-container</span> {
-  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
-  <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-lg</span>;
-  <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-lg</span>;
-
-  <span class="hljs-attribute">color</span>: <span class="hljs-variable">$brand-white</span>;
-
-  <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$brand-secondary</span>;
-}
-
-<span class="hljs-selector-class">.icon-card</span> {
-  <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-sm</span>;
-}
-
-<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-md-lg</span>) {
-  <span class="hljs-selector-class">.button-wrapper</span> <span class="hljs-selector-class">.btn</span> {
-    <span class="hljs-attribute">width</span>: auto;
-  }
-
-  <span class="hljs-selector-class">.icon-card</span> {
-    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-md</span>;
-  }
-}
-
-<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg</span>) {
-  <span class="hljs-selector-class">.timeline</span> {
-    <span class="hljs-attribute">display</span>: grid;
-    <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">1</span>fr <span class="hljs-number">1</span>fr <span class="hljs-number">1</span>fr;
-    <span class="hljs-attribute">grid-template-rows</span>: <span class="hljs-built_in">repeat</span>(auto-fill, <span class="hljs-built_in">minmax</span>(<span class="hljs-number">50px</span>, auto));
-    <span class="hljs-attribute">gap</span>: <span class="hljs-variable">$spacer-xl</span>;
-
-    <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$spacer-lg</span>;
-
-    <span class="hljs-attribute">border-top</span>: <span class="hljs-number">2px</span> solid <span class="hljs-variable">$brand-secondary</span>;
-    <span class="hljs-attribute">border-left</span>: hidden;
-  }
-
-  <span class="hljs-selector-class">.timeline-event</span> {
-    <span class="hljs-attribute">position</span>: relative;
-
-    &amp;__icon {
-      <span class="hljs-attribute">position</span>: absolute;
-      <span class="hljs-attribute">top</span>: -<span class="hljs-number">45px</span>;
-      <span class="hljs-attribute">left</span>: <span class="hljs-number">40%</span>;
-      <span class="hljs-attribute">transform</span>: <span class="hljs-built_in">translateX</span>(-<span class="hljs-number">50%</span>);
-    }
-
-    &amp;__content {
-      <span class="hljs-attribute">display</span>: grid;
-      <span class="hljs-attribute">grid-template-rows</span>: subgrid;
-      <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">0</span>;
-    }
   }
 }
 </pre>
@@ -1466,7 +1317,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.6 KB</span>
+                    <span class="Meta-value">275 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -4019,6 +3870,40 @@
     
         
         
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./accordion.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="accordion"
+                data-handle="accordion"
+            >
+                <span>Accordion</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
             
             
             <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-author-bio">
@@ -4146,6 +4031,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./button-wrapper.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button-wrapper"
+                data-handle="button-wrapper"
+            >
+                <span>Button Wrapper</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./card.html"
                 data-role="tree-link"
                 
@@ -4154,6 +4073,40 @@
                 data-handle="card"
             >
                 <span>Card</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./color-container.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="color-container"
+                data-handle="color-container"
+            >
+                <span>Color Container</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -4814,6 +4767,40 @@
 
 
 <span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./icon-card.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="icon-card"
+                data-handle="icon-card"
+            >
+                <span>Icon Card</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -6352,6 +6339,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./text-grid.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="text-grid"
+                data-handle="text-grid"
+            >
+                <span>Text Grid</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./textbox-sequence.html"
                 data-role="tree-link"
                 
@@ -6360,6 +6381,40 @@
                 data-handle="textbox-sequence"
             >
                 <span>Textbox Sequence</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./timeline.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="timeline"
+                data-handle="timeline"
+            >
+                <span>Timeline</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -8559,19 +8614,33 @@
     
         
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-zigzag">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-zigzag-items">
+                    Zigzag
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-zigzag-items">
+                
+                
+                
+                
+    
+        
+        
         
         
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./zigzag.html"
+                href="./zigzag--default.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="zigzag"
-                data-handle="zigzag"
+                data-test="zigzag--default"
+                data-handle="zigzag--default"
             >
-                <span>Zigzag</span>
+                <span>Default (White)</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -8589,6 +8658,80 @@
 
             </a>
         </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./zigzag--gray.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="zigzag--gray"
+                data-handle="zigzag--gray"
+            >
+                <span>Gray Background</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./zigzag--primary.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="zigzag--primary"
+                data-handle="zigzag--primary"
+            >
+                <span>Primary Background</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
 
@@ -9098,8 +9241,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-01-27T14:24:39.395Z">
-                                1/27/2026
+                            <time datetime="2026-02-03T15:20:10.645Z">
+                                2/3/2026
                             </time>
                         
                     </dd>

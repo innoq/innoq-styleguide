@@ -1,7 +1,3 @@
 .story-overview-page {
   background: $gradient-2;
-
-  .superquote__zigzag {
-    @include zigzag($gradient-header-background-color);
-  }
 }

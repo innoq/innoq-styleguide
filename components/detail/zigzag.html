@@ -181,7 +181,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-ec66bbe7927986839dc10608f8288cb4-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;zigzag&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;zigzag &quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -189,7 +189,7 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-ec66bbe7927986839dc10608f8288cb4-panel-view">
     <code class="Code Code--lang-html hljs">
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;zigzag&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;zigzag {{ modifier }}&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></pre>
     </code>
 </div>
 
@@ -245,8 +245,8 @@
 
   <span class="hljs-attribute">background</span>: <span class="hljs-variable">$bgcolor</span>;
 
-  &amp;<span class="hljs-selector-pseudo">::after</span>,
-  &amp;<span class="hljs-selector-pseudo">::before</span> {
+  &amp;<span class="hljs-selector-pseudo">::before</span>,
+  &amp;<span class="hljs-selector-pseudo">::after</span> {
     <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
 
     <span class="hljs-attribute">position</span>: absolute;
@@ -287,6 +287,18 @@
 %zigzag {
   <span class="hljs-keyword">@include</span> zigzag(<span class="hljs-variable">$zzbgc</span>);
 }
+
+<span class="hljs-comment">// Modifier: Gray background</span>
+<span class="hljs-selector-class">.zigzag--gray</span>,
+%zigzag<span class="hljs-attr">--gray</span> {
+  <span class="hljs-keyword">@include</span> zigzag(<span class="hljs-variable">$brand-gray-10</span>);
+}
+
+<span class="hljs-comment">// Modifier: Primary background</span>
+<span class="hljs-selector-class">.zigzag--primary</span>,
+%zigzag<span class="hljs-attr">--primary</span> {
+  <span class="hljs-keyword">@include</span> zigzag(<span class="hljs-variable">$brand-primary-25</span>);
+}
 </pre>
                             </code>
                             
@@ -303,7 +315,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.2 KB</span>
+                    <span class="Meta-value">1.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -325,6 +337,25 @@
         
         
         
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Variants <em class="Meta-count">(3)</em>:</strong>
+            <span class="Meta-value Meta-value--linkList">
+            
+                <a href="./zigzag--default.html">
+                    <span>Default (White)</span>
+                </a>, 
+            
+                <a href="./zigzag--gray.html">
+                    <span>Gray Background</span>
+                </a>, 
+            
+                <a href="./zigzag--primary.html">
+                    <span>Primary Background</span>
+                </a>
+            
+            </span>
+        </li>
         
         
         <li class="Meta-item">
@@ -2856,6 +2887,40 @@
     
         
         
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./accordion.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="accordion"
+                data-handle="accordion"
+            >
+                <span>Accordion</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
             
             
             <li class="Tree-item Tree-collection Tree-depth-3" data-behaviour="collection" id="tree-components-collection-author-bio">
@@ -2983,6 +3048,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./button-wrapper.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="button-wrapper"
+                data-handle="button-wrapper"
+            >
+                <span>Button Wrapper</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./card.html"
                 data-role="tree-link"
                 
@@ -2991,6 +3090,40 @@
                 data-handle="card"
             >
                 <span>Card</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./color-container.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="color-container"
+                data-handle="color-container"
+            >
+                <span>Color Container</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3651,6 +3784,40 @@
 
 
 <span class="Status-dot" style="border-color: #FF9233;" title="WIP"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./icon-card.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="icon-card"
+                data-handle="icon-card"
+            >
+                <span>Icon Card</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
 
 
 </div>
@@ -5189,6 +5356,40 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
+                href="./text-grid.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="text-grid"
+                data-handle="text-grid"
+            >
+                <span>Text Grid</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
                 href="./textbox-sequence.html"
                 data-role="tree-link"
                 
@@ -5197,6 +5398,40 @@
                 data-handle="textbox-sequence"
             >
                 <span>Textbox Sequence</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./timeline.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="timeline"
+                data-handle="timeline"
+            >
+                <span>Timeline</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -7396,19 +7631,33 @@
     
         
         
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-4" data-behaviour="collection" id="tree-components-collection-zigzag">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-components-collection-zigzag-items">
+                    Zigzag
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-components-collection-zigzag-items">
+                
+                
+                
+                
+    
         
         
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./zigzag.html"
+                href="./zigzag--default.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="zigzag"
-                data-handle="zigzag"
+                data-test="zigzag--default"
+                data-handle="zigzag--default"
             >
-                <span>Zigzag</span>
+                <span>Default (White)</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -7426,6 +7675,80 @@
 
             </a>
         </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./zigzag--gray.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="zigzag--gray"
+                data-handle="zigzag--gray"
+            >
+                <span>Gray Background</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./zigzag--primary.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="zigzag--primary"
+                data-handle="zigzag--primary"
+            >
+                <span>Primary Background</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
         
     
 
@@ -7935,8 +8258,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-01-27T14:24:39.395Z">
-                                1/27/2026
+                            <time datetime="2026-02-03T15:20:10.645Z">
+                                2/3/2026
                             </time>
                         
                     </dd>

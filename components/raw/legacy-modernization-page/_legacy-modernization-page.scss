@@ -9,10 +9,6 @@
     }
   }
 
-  .longquote__zigzag {
-    @include zigzag($gradient-header-background-color);
-  }
-
   @media screen and (min-width: $grid-breakpoint-lg) {
     .big-content-teaser__headline {
       font-size: $font-size-xl;
@@ -24,34 +20,4 @@
   align-items: flex-start;
   padding-right: $spacer-md;
   padding-left: $spacer-md;
-}
-
-.text-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: $spacer-md;
-  margin-top: $spacer-base;
-
-  &__heading {
-    @extend %heading-font-bold;
-
-    font-size: $font-size-sm;
-
-    + p {
-      margin-top: $spacer-xxs;
-    }
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-md) {
-  .text-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    row-gap: $spacer-lg;
-    column-gap: $spacer-lg;
-
-    &__heading {
-      font-size: $font-size-md;
-    }
-  }
 }
