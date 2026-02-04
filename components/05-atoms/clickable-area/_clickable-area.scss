@@ -1,0 +1,28 @@
+//
+// Clickable Area
+//
+// Makes the entire area clickable using CSS-only solution
+// The first link's click area is extended to cover the entire element
+// Additional links maintain their own click areas with higher z-index
+//
+// Based on: https://inclusive-components.design/cards
+//
+
+clickable-area {
+  position: relative;
+  cursor: pointer;
+
+  // Extend the first link's click area to cover the entire element
+  a::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+
+  // Ensure additional links remain clickable above the extended area
+  a:not(:first-of-type) {
+    position: relative;
+    z-index: 2;
+  }
+}
