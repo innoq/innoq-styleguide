@@ -76,11 +76,15 @@ a.link-teaser.inverted-interaction-color {
 // Text Link - underlined link with border-bottom
 //
 .text-link {
-  text-decoration: none;
   hyphens: none;
   color: $brand-secondary;
+  text-decoration: none;
+
   border-bottom: 2px solid $brand-secondary;
-  transition: border-bottom 0.175s, color 0.175s;
+
+  transition:
+    border-bottom 0.175s,
+    color 0.175s;
 
   &:hover,
   &:focus {

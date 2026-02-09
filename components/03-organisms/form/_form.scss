@@ -32,7 +32,9 @@ form,
   .text-link {
     color: $brand-white;
     border-bottom: 2px solid $brand-white;
-    transition: border-bottom 0.175s, color 0.175s;
+    transition:
+      border-bottom 0.175s,
+      color 0.175s;
 
     &:hover,
     &:focus {

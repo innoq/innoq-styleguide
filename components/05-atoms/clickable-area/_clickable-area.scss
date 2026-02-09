@@ -9,16 +9,16 @@
 //
 
 clickable-area {
-  display: block;
-  position: relative;
   cursor: pointer;
+  position: relative;
+  display: block;
 
   // Extend the first link's click area to cover the entire element
   a::after {
     content: '';
     position: absolute;
-    inset: 0;
     z-index: 1;
+    inset: 0;
   }
 
   // Ensure additional links remain clickable above the extended area

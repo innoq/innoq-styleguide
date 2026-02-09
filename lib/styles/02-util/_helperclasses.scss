@@ -134,8 +134,10 @@
 // This prevents overriding component styling
 // Explicitly excludes .longquote p to preserve heavy font
 .typography--sans {
+  /* stylelint-disable selector-not-notation */
   p:not([class]):not(.longquote p),
   section p:not([class]):not(.longquote p) {
+    /* stylelint-enable selector-not-notation */
     @extend %body-font-sans;
   }
 
