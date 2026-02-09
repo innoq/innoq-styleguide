@@ -4,8 +4,10 @@ dist/**/*
 components/index.js
 public/**/*
 .DS_Store
+.claude
 .vscode
 *.sublime-workspace
 .npmrc
 .stylelintcache
 /.idea
+/@innoq-innoq-styleguide-HEAD.zip
