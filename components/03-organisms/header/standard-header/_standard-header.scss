@@ -175,6 +175,13 @@ $standard-header-intro-offset-xxl: $spacer-xxl;
     font-size: $font-size-md;
   }
 
+  // Disable hyphenation on larger screens for better readability
+  .standard-header h1,
+  .standard-header h2 {
+    hyphens: none;
+    overflow-wrap: normal;
+  }
+
   .standard-header__intro {
     min-width: $default-page-layout-content-width-md;
     max-width: $default-page-layout-content-width-xl;

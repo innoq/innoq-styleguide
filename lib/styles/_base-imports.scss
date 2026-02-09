@@ -8,6 +8,13 @@
 
 @import '01-base/base';
 
+//
+// SUBATOMS
+//
+@import '../components/06-subatoms/bg-images/bg-images';
+@import '../components/06-subatoms/box-shadow/box-shadow';
+@import '../components/06-subatoms/gradients/gradients';
+
 @import '02-util/animations';
 @import '02-util/forms';
 @import '02-util/list';
@@ -16,13 +23,6 @@
 @import '02-util/header';
 @import '02-util/helperclasses';
 @import '02-util/visibility';
-
-//
-// SUBATOMS
-//
-@import '../components/06-subatoms/bg-images/bg-images';
-@import '../components/06-subatoms/box-shadow/box-shadow';
-@import '../components/06-subatoms/gradients/gradients';
 
 //
 // ATOMS

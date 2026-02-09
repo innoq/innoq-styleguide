@@ -44,6 +44,13 @@
   }
 }
 
+// Modifier to override quote font style if needed
+.text-card--regular-quote {
+  .text-card__quote {
+    font-style: normal;
+  }
+}
+
 @media screen and (min-width: $grid-breakpoint-md) {
   .text-card__name {
     font-size: $font-size-md;

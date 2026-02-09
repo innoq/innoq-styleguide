@@ -9,6 +9,10 @@
   background-color: $brand-primary;
 }
 
+.bg-gradient-2 {
+  background: $gradient-2;
+}
+
 .m-t-xxs {
   margin-top: $spacer-xxs !important;
 }
@@ -93,4 +97,62 @@
 
 .text-align-center {
   text-align: center;
+}
+
+// Alias for text-align-center
+.center-section {
+  text-align: center;
+}
+
+// FAQ section styling
+.faq-section {
+  align-items: flex-start;
+  padding-right: $spacer-md;
+  padding-left: $spacer-md;
+}
+
+// Gap utility classes for grid/flex layouts
+.gap-sm {
+  gap: $spacer-sm !important;
+}
+
+.gap-md {
+  gap: $spacer-md !important;
+}
+
+.gap-lg {
+  gap: $spacer-lg !important;
+}
+
+// Background utility
+.bg-gray-10 {
+  background-color: $brand-gray-10;
+}
+
+// Typography utilities
+// Only applies to paragraphs and list items WITHOUT classes (pure content elements)
+// This prevents overriding component styling
+// Explicitly excludes .longquote p to preserve heavy font
+.typography--sans {
+  p:not([class]):not(.longquote p),
+  section p:not([class]):not(.longquote p) {
+    @extend %body-font-sans;
+  }
+
+  ul > li:not([class]) {
+    @extend %body-font-sans;
+  }
+}
+
+// Heading utility for service pages
+// Sets h2-h6 to bold (700) instead of the default heavy (800)
+// Components that need to preserve their font-weight should use higher specificity
+.headings--bold {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @extend %heading-font-bold;
+  }
 }

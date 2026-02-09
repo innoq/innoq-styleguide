@@ -71,6 +71,10 @@ a.big-content-teaser {
   }
 }
 
+.big-content-teaser--flex-start {
+  justify-content: flex-start;
+}
+
 // Breakpoints
 @media screen and (min-width: $grid-breakpoint-md) {
   .big-content-teaser {
@@ -94,11 +98,5 @@ a.big-content-teaser {
       margin: $spacer-base;
       padding: $spacer-base;
     }
-  }
-}
-
-@media screen and (min-width: $grid-breakpoint-lg) {
-  .big-content-teaser__headline {
-    font-size: $font-size-2xl;
   }
 }
