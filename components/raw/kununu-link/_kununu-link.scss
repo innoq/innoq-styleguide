@@ -13,4 +13,11 @@
   img {
     width: 50%;
   }
+
+  // On mobile, only show the last image (simplified version)
+  @media screen and (max-width: $grid-breakpoint-md) {
+    img:not(:last-child) {
+      display: none;
+    }
+  }
 }

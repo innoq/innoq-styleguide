@@ -27,4 +27,19 @@ form,
       border-color: $form-control-invalid-border-color;
     }
   }
+
+  // Inverted text-link styling for forms with dark backgrounds
+  .text-link {
+    color: $brand-white;
+    border-bottom: 2px solid $brand-white;
+    transition:
+      border-bottom 0.175s,
+      color 0.175s;
+
+    &:hover,
+    &:focus {
+      color: $brand-interaction;
+      border-bottom: 2px solid $brand-interaction;
+    }
+  }
 }

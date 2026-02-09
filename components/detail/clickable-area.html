@@ -225,15 +225,73 @@
             <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
             <select class="FileBrowser-select" id="filebrowser-select">
                 
-                <option value="file-fb1231e03eea1a436fc3afb23ea6e39a">clickable-area.js</option>
+                <option value="file-a14ded6723925ad310540f02b3bdb3d9">_clickable-area.scss</option>
                 
-                <option value="file-b453ab700fcc8e3bfcd0b9fd502a686a">clickable-area.scss</option>
+                <option value="file-fb1231e03eea1a436fc3afb23ea6e39a">clickable-area.js</option>
                 
             </select>
         </div>
 
         
-        <div class="FileBrowser-item is-active" id="file-fb1231e03eea1a436fc3afb23ea6e39a" data-role="resource-preview">
+        <div class="FileBrowser-item is-active" id="file-a14ded6723925ad310540f02b3bdb3d9" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-SCSS FileBrowser-code hljs">
+                                <pre><span class="hljs-comment">//</span>
+<span class="hljs-comment">// Clickable Area</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Makes the entire area clickable using CSS-only solution</span>
+<span class="hljs-comment">// The first link&#x27;s click area is extended to cover the entire element</span>
+<span class="hljs-comment">// Additional links maintain their own click areas with higher z-index</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// Based on: https://inclusive-components.design/cards</span>
+<span class="hljs-comment">//</span>
+
+clickable-area {
+  <span class="hljs-attribute">cursor</span>: pointer;
+  <span class="hljs-attribute">position</span>: relative;
+  <span class="hljs-attribute">display</span>: block;
+
+  <span class="hljs-comment">// Extend the first link&#x27;s click area to cover the entire element</span>
+  <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">::after</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
+    <span class="hljs-attribute">position</span>: absolute;
+    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
+    inset: <span class="hljs-number">0</span>;
+  }
+
+  <span class="hljs-comment">// Ensure additional links remain clickable above the extended area</span>
+  <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:not</span>(:first-of-type) {
+    <span class="hljs-attribute">position</span>: relative;
+    <span class="hljs-attribute">z-index</span>: <span class="hljs-number">2</span>;
+  }
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/clickable-area/_clickable-area.scss"><span>/components/raw/clickable-area/_clickable-area.scss</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">components/05-atoms/clickable-area/_clickable-area.scss</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">663 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-fb1231e03eea1a436fc3afb23ea6e39a" data-role="resource-preview">
             <ul class="Meta">
                 <li class="Meta-item">
                     <strong class="Meta-key">Content:</strong>
@@ -241,7 +299,14 @@
                         <div class="FileBrowser-itemPreview">
                             
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
-                                <pre><span class="hljs-comment">// following advice from https://inclusive-components.design/cards</span>
+                                <pre><span class="hljs-comment">// DEPRECATED: This JavaScript implementation is no longer needed.</span>
+<span class="hljs-comment">// The clickable-area functionality is now implemented purely with CSS.</span>
+<span class="hljs-comment">// See _clickable-area.scss for the CSS-only solution.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// This file is kept for backwards compatibility but will be removed in a future version.</span>
+<span class="hljs-comment">// You can safely stop registering this custom element.</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">// following advice from https://inclusive-components.design/cards</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ClickableArea</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">HTMLElement</span> {
   <span class="hljs-title function_">connectedCallback</span>(<span class="hljs-params"></span>) {
     <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">link</span>) {
@@ -281,39 +346,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">589 Bytes</span>
-                </li>
-            </ul>
-        </div>
-        
-        <div class="FileBrowser-item" id="file-b453ab700fcc8e3bfcd0b9fd502a686a" data-role="resource-preview">
-            <ul class="Meta">
-                <li class="Meta-item">
-                    <strong class="Meta-key">Content:</strong>
-                    <span class="Meta-value">
-                        <div class="FileBrowser-itemPreview">
-                            
-                            <code class="Code Code--lang-SCSS FileBrowser-code hljs">
-                                <pre>clickable-area {
-  <span class="hljs-attribute">display</span>: block;
-}
-</pre>
-                            </code>
-                            
-                        </div>
-                    </span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">URL:</strong>
-                    <span class="Meta-value"><a data-no-pjax href="../raw/clickable-area/clickable-area.scss"><span>/components/raw/clickable-area/clickable-area.scss</span></a></span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">Filesystem Path:</strong>
-                    <span class="Meta-value">components/05-atoms/clickable-area/clickable-area.scss</span>
-                </li>
-                <li class="Meta-item">
-                    <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">37 Bytes</span>
+                    <span class="Meta-value">935 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -8212,6 +8245,66 @@
             
         
     
+        
+        
+            
+            
+            <li class="Tree-item Tree-collection Tree-depth-2" data-behaviour="collection" id="tree-docs-collection-utilities">
+                <button class="Tree-collectionLabel" data-role="toggle" aria-expanded="true" aria-controls="tree-docs-collection-utilities-items">
+                    Utilities
+                </button>
+                <ul class="Tree-collectionItems" data-role="items" id="tree-docs-collection-utilities-items">
+                
+                
+                
+                
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="../../docs/utilities.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="utilities"
+                data-handle="utilities"
+            >
+                <span>Overview</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="../../docs/utilities/helper-classes.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="helper-classes"
+                data-handle="helper-classes"
+            >
+                <span>Helper Classes</span>
+                
+            </a>
+        </li>
+        
+    
+
+                </ul>
+            </li>
+            
+        
+    
 
     </ul>
 </div>
@@ -8237,8 +8330,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-02-03T15:20:10.645Z">
-                                2/3/2026
+                            <time datetime="2026-02-09T11:34:52.330Z">
+                                2/9/2026
                             </time>
                         
                     </dd>

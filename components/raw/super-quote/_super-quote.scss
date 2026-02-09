@@ -25,6 +25,8 @@ super-quote > blockquote,
 
     > p {
       font-size: $font-size-xl;
+      hyphens: none;
+      overflow-wrap: normal;
     }
   }
 }

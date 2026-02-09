@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.1.2" type="text/css">
 
 
-<title>Logos | INNOQ Styleguide</title>
+<title>Helper Classes | INNOQ Styleguide</title>
 
 </head>
 <body>
@@ -69,7 +69,7 @@
 
     <div class="Document-header">
         
-        <h1 class="Document-title">Logos</h1>
+        <h1 class="Document-title">Helper Classes</h1>
         
 
 
@@ -86,89 +86,140 @@
 
     
     
-    <h2>Edition 02</h2>
+    <h2>Helper Classes</h2>
 
-<div class="demo demo--centered">
-    <img class="logo" src="../../assets/logos/edition-02/svg/innoq-logo--petrolapricot.svg" />
-</div>
-<div class="demo demo--centered demo--inverted">
-    <img class="logo" src="../../assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg" />
-</div>
-<div class="demo demo--centered">
-    <img class="logo" src="../../assets/logos/edition-02/svg/innoq-logo--apricotpetrol.svg" />
-</div>
-<div class="demo demo--centered demo--accented">
-    <img class="logo" src="../../assets/logos/edition-02/svg/innoq-logo--whitepetrol.svg" />
-</div>
-<div class="demo demo--centered demo--inverted">
-    <img class="logo" src="../../assets/logos/edition-02/svg/innoq-logo-square--whitepetrol.svg" />
-</div>
-<div class="demo demo--centered demo--accented">
-    <img class="logo" src="../../assets/logos/edition-02/svg/innoq-logo-square--whiteapricot.svg" />
-</div>
+<p>Defined in <code>lib/styles/02-util/_helperclasses.scss</code> and <code>lib/styles/01-base/_fonts.scss</code>.</p>
 
-<h3 class="m-t-md">Boxed</h3>
-<div class="demo demo--centered">
-    <img class="logo" src="../../assets/logos/edition-02/svg/innoq-logo--apricotwhite-boxed.svg" />
-</div>
+<hr>
 
-<div class="demo demo--centered">
-    <img class="logo" src="../../assets/logos/edition-02/svg/innoq-logo--petrolwhite-boxed.svg"/>
-</div>
+<h3>Backgrounds</h3>
 
+<table>
+    <thead>
+        <tr><th>Class</th><th>Effect</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.bg-gradient-2</code></td><td>Brand gradient background</td></tr>
+        <tr><td><code>.bg-primary</code></td><td>Primary brand color background</td></tr>
+        <tr><td><code>.bg-gray-10</code></td><td>Light gray background</td></tr>
+        <tr><td><code>.dark-background</code></td><td>Dark footer background with overflow hidden</td></tr>
+    </tbody>
+</table>
 
-<h2>Edition 01</h2>
-<div class="demo demo--centered demo--edition-01-blue">
-    <img class="logo" src="../../assets/logos/edition-01/svg/innoq-logo--whitered.svg" />
-</div>
-<div class="demo demo--centered">
-    <img class="logo" src="../../assets/logos/edition-01/svg/innoq-logo--bluered.svg" />
-</div>
-<div class="demo demo--centered demo--edition-01-red">
-    <img class="logo" src="../../assets/logos/edition-01/svg/innoq-logo--whiteblue.svg" />
-</div>
-<div class="demo demo--centered">
-    <img class="logo" src="../../assets/logos/edition-01/svg/innoq-logo--redblue.svg" />
-</div>
+<hr>
 
-<h2>Edition CH</h2>
-<div class="demo demo--centered">
-    <img class="demo--ch-logo" src="../../assets/logos/edition-ch/svg/innoq-logo-schweiz-grau-rot-auf-weiss.svg" />
-</div>
-<div class="demo demo--centered">
-    <img class="demo--ch-logo" src="../../assets/logos/edition-ch/svg/innoq-logo-schweiz-rot-grau-auf-weiss.svg" />
-</div>
+<h3>Typography</h3>
 
-<h3 class="m-t-md">Boxed</h3>
-<div class="demo demo--centered">
-    <img class="demo--ch-logo" src="../../assets/logos/edition-ch/svg/innoq-logo-schweiz-rot.svg" />
-</div>
-<div class="demo demo--centered">
-    <img class="demo--ch-logo" src="../../assets/logos/edition-ch/svg/innoq-logo-schweiz-rot-2.svg" />
-</div>
-<div class="demo demo--centered">
-    <img class="demo--ch-logo" src="../../assets/logos/edition-ch/svg/innoq-logo-schweiz-rot-weiss-auf-grau.svg" />
-</div>
-<div class="demo demo--centered">
-    <img class="demo--ch-logo" src="../../assets/logos/edition-ch/svg/innoq-logo-schweiz-dunkel.svg" />
-</div>
-<div class="demo demo--centered">
-    <img class="demo--ch-logo" src="../../assets/logos/edition-ch/svg/innoq-logo-schweiz-grau-rot-auf-beige.svg" />
-</div>
-<div class="demo demo--centered">
-    <img class="demo--ch-logo" src="../../assets/logos/edition-ch/svg/innoq-logo-schweiz-rot-grau-auf-beige.svg" />
-</div>
+<h4><code>.typography--sans</code></h4>
+<p>
+    Applies sans-serif font to <code>&lt;p&gt;</code> and <code>&lt;li&gt;</code> elements <strong>without class attributes</strong>.
+    Excludes <code>.longquote p</code>. Does not affect component elements with their own classes.
+</p>
+<pre><code>&lt;main class="typography--sans"&gt;
+    &lt;p&gt;Sans-serif&lt;/p&gt;                          &lt;!-- affected --&gt;
+    &lt;p class="highlight-card__text"&gt;...&lt;/p&gt;   &lt;!-- NOT affected --&gt;
+&lt;/main&gt;</code></pre>
 
-<h2>Monochrome</h2>
-<div class="demo demo--centered demo--black">
-    <img class="logo" src="../../assets/logos/monochrome/svg/innoq-logo--white.svg" />
-</div>
-<div class="demo demo--centered">
-    <img class="logo" src="../../assets/logos/monochrome/svg/innoq-logo--black.svg" />
-</div>
-<div class="demo demo--centered">
-    <img class="logo" src="../../assets/logos/monochrome/svg/innoq-logo--monochrome.svg" />
-</div>
+<h4><code>.headings--bold</code></h4>
+<p>Sets h2&ndash;h6 to bold (700) instead of the default heavy (800).</p>
+<pre><code>&lt;main class="headings--bold"&gt;
+    &lt;h2&gt;Bold heading&lt;/h2&gt;
+&lt;/main&gt;</code></pre>
+
+<p>Service pages typically combine both:</p>
+<pre><code>&lt;main class="bg-gradient-2 typography--sans headings--bold"&gt;
+    ...
+&lt;/main&gt;</code></pre>
+
+<hr>
+
+<h3>Font Family &amp; Style</h3>
+
+<p>
+    Low-level classes for setting font family, weight, and style on individual elements.
+    Each is also available as a Sass placeholder (<code>%body-font-sans</code> etc.) for <code>@extend</code>.
+    Defined in <code>lib/styles/01-base/_fonts.scss</code>.
+</p>
+<p>
+    Use these to override component font styling when <code>.typography--sans</code> doesn't apply
+    (because the element has a class).
+</p>
+
+<table>
+    <thead>
+        <tr><th>Class</th><th>Family</th><th>Weight</th><th>Style</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.body-font-regular</code></td><td>Serif</td><td>normal</td><td>normal</td></tr>
+        <tr><td><code>.body-font-italic</code></td><td>Serif</td><td>normal</td><td>italic</td></tr>
+        <tr><td><code>.body-font-bold</code></td><td>Serif</td><td>bold</td><td>normal</td></tr>
+        <tr><td><code>.body-font-bold-italic</code></td><td>Serif</td><td>bold</td><td>italic</td></tr>
+        <tr><td><code>.body-font-sans</code></td><td>Sans-serif</td><td>normal</td><td>normal</td></tr>
+        <tr><td><code>.heading-font-regular</code></td><td>Sans-serif</td><td>normal</td><td>normal</td></tr>
+        <tr><td><code>.heading-font-bold</code></td><td>Sans-serif</td><td>bold</td><td>normal</td></tr>
+        <tr><td><code>.heading-font-heavy</code></td><td>Sans-serif</td><td>800</td><td>normal</td></tr>
+        <tr><td><code>.heading-font-ultra</code></td><td>Sans-serif</td><td>1000</td><td>normal</td></tr>
+        <tr><td><code>.monospace-font-regular</code></td><td>Monospace</td><td>normal</td><td>normal</td></tr>
+    </tbody>
+</table>
+
+<pre><code>&lt;!-- Override component font on a specific element --&gt;
+&lt;p class="highlight-card__text body-font-sans"&gt;Now sans-serif&lt;/p&gt;</code></pre>
+
+<hr>
+
+<h3>Spacing</h3>
+
+<h4>Margin Top</h4>
+<p><code>.m-t-0</code> <code>.m-t-xxs</code> <code>.m-t-xs</code> <code>.m-t-sm</code> <code>.m-t-md</code> <code>.m-t-base</code> <code>.m-t-lg</code> <code>.m-t-xl</code> <code>.m-t-xxl</code></p>
+
+<h4>Margin Bottom</h4>
+<p><code>.m-b-0</code> <code>.m-b-xxs</code> <code>.m-b-xs</code> <code>.m-b-sm</code> <code>.m-b-md</code> <code>.m-b-lg</code> <code>.m-b-xl</code> <code>.m-b-xxl</code></p>
+
+<h4>Gap (for flex/grid)</h4>
+<p><code>.gap-sm</code> <code>.gap-md</code> <code>.gap-lg</code></p>
+
+<hr>
+
+<h3>Flexbox</h3>
+
+<table>
+    <thead>
+        <tr><th>Class</th><th>Effect</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.flex</code></td><td><code>display: flex</code></td></tr>
+        <tr><td><code>.flex-direction-column</code></td><td><code>flex-direction: column</code></td></tr>
+        <tr><td><code>.flex-align-center</code></td><td><code>align-items: center</code></td></tr>
+    </tbody>
+</table>
+
+<hr>
+
+<h3>Text</h3>
+
+<table>
+    <thead>
+        <tr><th>Class</th><th>Effect</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.text-align-center</code></td><td>Centers text</td></tr>
+        <tr><td><code>.center-section</code></td><td>Alias for <code>.text-align-center</code></td></tr>
+    </tbody>
+</table>
+
+<hr>
+
+<h3>Other</h3>
+
+<table>
+    <thead>
+        <tr><th>Class</th><th>Effect</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.faq-section</code></td><td>Adjusted padding and alignment for FAQ sections</td></tr>
+    </tbody>
+</table>
 
     
 
@@ -7948,7 +7999,7 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./colors.html"
+                href="../basics/colors.html"
                 data-role="tree-link"
                 
                 data-pjax
@@ -7965,10 +8016,10 @@
         
         
         
-        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+        <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./logos.html"
+                href="../basics/logos.html"
                 data-role="tree-link"
                 
                 data-pjax
@@ -7988,7 +8039,7 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./favicons.html"
+                href="../basics/favicons.html"
                 data-role="tree-link"
                 
                 data-pjax
@@ -8045,10 +8096,10 @@
         
         
         
-        <li class="Tree-item Tree-entity" data-role="item">
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="../utilities/helper-classes.html"
+                href="./helper-classes.html"
                 data-role="tree-link"
                 
                 data-pjax

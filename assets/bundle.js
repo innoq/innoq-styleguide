@@ -271,31 +271,6 @@ class MenuToggle extends HTMLElement {
   }
 }
 
-// following advice from https://inclusive-components.design/cards
-class ClickableArea extends HTMLElement {
-  connectedCallback() {
-    if (this.link) {
-      this.addEventListener('mousedown', this.handleMousedown.bind(this));
-      this.addEventListener('mouseup', this.handleMouseup.bind(this));
-      this.style.cursor = 'pointer';
-    }
-  }
-
-  handleMousedown({ timeStamp }) {
-    this.down = timeStamp;
-  }
-
-  handleMouseup({ timeStamp }) {
-    if (timeStamp - this.down < 200) {
-      this.link.click();
-    }
-  }
-
-  get link() {
-    return this.querySelector('a')
-  }
-}
-
 class TouchDetection extends HTMLElement {
   connectedCallback() {
     function touched() {
@@ -320,7 +295,8 @@ customElements.define('multi-toggler', MultiToggler);
 customElements.define('sub-menu', Submenu);
 customElements.define('menu-toggle', MenuToggle);
 customElements.define('wall-of-consent', WallOfConsent);
-customElements.define('clickable-area', ClickableArea);
+// DEPRECATED: ClickableArea JavaScript is no longer needed (CSS-only solution in _clickable-area.scss)
+// customElements.define('clickable-area', ClickableArea)
 customElements.define('touch-detection', TouchDetection);
 customElements.define('auto-submit-form', AutoSubmitForm);
 customElements.define('audio-player', AudioPlayer);
