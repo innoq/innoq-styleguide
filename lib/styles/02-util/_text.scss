@@ -49,6 +49,19 @@
   }
 }
 
+%image-link {
+  @extend %hover-glow;
+
+  display: block;
+  background-color: transparent;
+  border-bottom: 0;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+}
+
 %block-link {
   display: block;
   color: inherit;

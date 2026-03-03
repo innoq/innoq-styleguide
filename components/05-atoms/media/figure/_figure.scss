@@ -3,8 +3,30 @@ figure {
 
   img,
   video {
+    display: block;
     width: 100%;
   }
+
+  a:not([class]) {
+    @extend %hover-glow;
+
+    display: block;
+    background-color: transparent;
+    border-bottom: 0;
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+  }
+}
+
+.image-link {
+  @extend %image-link;
+}
+
+a:has(figure) {
+  @extend %hover-glow;
 }
 
 figcaption {
