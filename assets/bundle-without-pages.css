@@ -699,13 +699,13 @@ html {
           box-shadow: 10px 10px 0 #bfcfd4;
 }
 
-.text-card, .small-tile-teaser, .podcast-teaser, .content-teaser, .case-tile-teaser, a.big-content-teaser, a.list-teaser-training, a.topic-teaser, a.list-teaser, .list-teaser-podcast, .podcast-channel-teaser, a.list-teaser-event, a.case-list-teaser, a.list-teaser-abstract {
+.text-card, .small-tile-teaser, .podcast-teaser, .content-teaser, .case-tile-teaser, a.big-content-teaser, a.list-teaser-training, a.topic-teaser, a.list-teaser, .list-teaser-podcast, .podcast-channel-teaser, a.list-teaser-event, a.case-list-teaser, a.list-teaser-abstract, a:has(figure), figure a:not([class]), .image-link {
   -webkit-transition: 0.2s -webkit-box-shadow ease-in-out;
   transition: 0.2s -webkit-box-shadow ease-in-out;
   transition: 0.2s box-shadow ease-in-out;
   transition: 0.2s box-shadow ease-in-out, 0.2s -webkit-box-shadow ease-in-out;
 }
-.text-card:hover, .small-tile-teaser:hover, .podcast-teaser:hover, .content-teaser:hover, .case-tile-teaser:hover, a.big-content-teaser:hover, a.list-teaser-training:hover, a.topic-teaser:hover, a.list-teaser:hover, .list-teaser-podcast:hover, .podcast-channel-teaser:hover, a.list-teaser-event:hover, a.case-list-teaser:hover, a.list-teaser-abstract:hover, .text-card:focus, .small-tile-teaser:focus, .podcast-teaser:focus, .content-teaser:focus, .case-tile-teaser:focus, a.big-content-teaser:focus, a.list-teaser-training:focus, a.topic-teaser:focus, a.list-teaser:focus, .list-teaser-podcast:focus, .podcast-channel-teaser:focus, a.list-teaser-event:focus, a.case-list-teaser:focus, a.list-teaser-abstract:focus {
+.text-card:hover, .small-tile-teaser:hover, .podcast-teaser:hover, .content-teaser:hover, .case-tile-teaser:hover, a.big-content-teaser:hover, a.list-teaser-training:hover, a.topic-teaser:hover, a.list-teaser:hover, .list-teaser-podcast:hover, .podcast-channel-teaser:hover, a.list-teaser-event:hover, a.case-list-teaser:hover, a.list-teaser-abstract:hover, a:hover:has(figure), figure a:hover:not([class]), .image-link:hover, .text-card:focus, .small-tile-teaser:focus, .podcast-teaser:focus, .content-teaser:focus, .case-tile-teaser:focus, a.big-content-teaser:focus, a.list-teaser-training:focus, a.topic-teaser:focus, a.list-teaser:focus, .list-teaser-podcast:focus, .podcast-channel-teaser:focus, a.list-teaser-event:focus, a.case-list-teaser:focus, a.list-teaser-abstract:focus, a:focus:has(figure), figure a:focus:not([class]), .image-link:focus {
   -webkit-box-shadow: 0 0 0 5px rgba(255, 156, 102, 0.8);
           box-shadow: 0 0 0 5px rgba(255, 156, 102, 0.8);
 }
@@ -870,6 +870,15 @@ h6 > a:focus:not([class]),
 .footnote:focus,
 .collapse-toggler:focus {
   background-color: initial;
+}
+
+.image-link {
+  display: block;
+  background-color: transparent;
+  border-bottom: 0;
+}
+.image-link:hover, .image-link:focus {
+  background-color: transparent;
 }
 
 .static-tile-teaser, .small-tile-teaser, .podcast-teaser, .content-teaser, .case-tile-teaser, .big-content-teaser, .product-list-teaser__cta, .product-list-teaser, .topic-teaser, .reference__link, .list-teaser-training, .list-teaser, .list-teaser-podcast, .podcast-channel-teaser, .list-teaser-event, .case-list-teaser, .list-teaser-abstract, .portfolio-card {
@@ -1556,7 +1565,16 @@ figure {
 }
 figure img,
 figure video {
+  display: block;
   width: 100%;
+}
+figure a:not([class]) {
+  display: block;
+  background-color: transparent;
+  border-bottom: 0;
+}
+figure a:not([class]):hover, figure a:not([class]):focus {
+  background-color: transparent;
 }
 
 figcaption {
