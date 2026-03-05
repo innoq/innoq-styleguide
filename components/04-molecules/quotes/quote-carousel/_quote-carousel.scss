@@ -1,12 +1,14 @@
 // Quote Carousel – CSS Scroll Snap based
 .quote-carousel__track {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+
+  overflow-x: auto;
+  display: flex;
   gap: $spacer-lg;
+
+  -webkit-overflow-scrolling: touch;
 
   &::-webkit-scrollbar {
     display: none;
@@ -14,42 +16,48 @@
 }
 
 .quote-carousel__slide {
-  flex: 0 0 100%;
   scroll-snap-align: center;
+  flex: 0 0 100%;
 }
 
 .quote-carousel__nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: $spacer-sm;
+  align-items: center;
+  justify-content: center;
+
   margin-top: $spacer-base;
 }
 
 .quote-carousel__btn {
-  appearance: none;
-  background: none;
-  border: 2px solid $brand-secondary;
-  color: $brand-secondary;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 50%;
-  font-size: 1.25rem;
-  line-height: 1;
   cursor: pointer;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  font-size: 1.25rem;
+  line-height: 1;
+  color: $brand-secondary;
+
+  appearance: none;
+  background: none;
+  border: 2px solid $brand-secondary;
+  border-radius: 50%;
+
   transition: opacity 0.2s;
 
   &:hover:not(:disabled) {
-    background-color: $brand-secondary;
     color: #fff;
+    background-color: $brand-secondary;
   }
 
   &:disabled {
-    opacity: 0.3;
     cursor: default;
+    opacity: 0.3;
   }
 }
 
@@ -59,15 +67,18 @@
 }
 
 .quote-carousel__dot {
-  appearance: none;
-  background: $brand-secondary;
-  opacity: 0.3;
-  border: none;
+  cursor: pointer;
+
   width: 0.625rem;
   height: 0.625rem;
-  border-radius: 50%;
   padding: 0;
-  cursor: pointer;
+
+  appearance: none;
+  opacity: 0.3;
+  background: $brand-secondary;
+  border: none;
+  border-radius: 50%;
+
   transition: opacity 0.2s;
 
   &[aria-selected="true"] {
