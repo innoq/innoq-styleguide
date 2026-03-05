@@ -4301,6 +4301,103 @@ super-quote > blockquote > p:lang(en)::after,
     font-size: 1.728rem;
   }
 }
+.quote-carousel__track {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.985984rem;
+  -webkit-overflow-scrolling: touch;
+}
+.quote-carousel__track::-webkit-scrollbar {
+  display: none;
+}
+
+.quote-carousel__slide {
+  scroll-snap-align: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.quote-carousel__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2.0736rem;
+}
+
+.quote-carousel__btn {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  color: #004153;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border: 2px solid #004153;
+  border-radius: 50%;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.quote-carousel__btn:hover:not(:disabled) {
+  color: #fff;
+  background-color: #004153;
+}
+.quote-carousel__btn:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.quote-carousel__dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.3348979767rem;
+}
+
+.quote-carousel__dot {
+  cursor: pointer;
+  width: 0.625rem;
+  height: 0.625rem;
+  padding: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  opacity: 0.3;
+  background: #004153;
+  border: 0;
+  border-radius: 50%;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+.quote-carousel__dot[aria-selected=true] {
+  opacity: 1;
+}
+
 super-quote > blockquote > p,
 .superquote > p {
   font-size: 1.2rem;

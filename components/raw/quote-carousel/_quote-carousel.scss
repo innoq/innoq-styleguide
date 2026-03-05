@@ -1,0 +1,87 @@
+// Quote Carousel – CSS Scroll Snap based
+.quote-carousel__track {
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+
+  overflow-x: auto;
+  display: flex;
+  gap: $spacer-lg;
+
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.quote-carousel__slide {
+  scroll-snap-align: center;
+  flex: 0 0 100%;
+}
+
+.quote-carousel__nav {
+  display: flex;
+  gap: $spacer-sm;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: $spacer-base;
+}
+
+.quote-carousel__btn {
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  font-size: 1.25rem;
+  line-height: 1;
+  color: $brand-secondary;
+
+  appearance: none;
+  background: none;
+  border: 2px solid $brand-secondary;
+  border-radius: 50%;
+
+  transition: opacity 0.2s;
+
+  &:hover:not(:disabled) {
+    color: $brand-white;
+    background-color: $brand-secondary;
+  }
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.3;
+  }
+}
+
+.quote-carousel__dots {
+  display: flex;
+  gap: $spacer-xxs;
+}
+
+.quote-carousel__dot {
+  cursor: pointer;
+
+  width: 0.625rem;
+  height: 0.625rem;
+  padding: 0;
+
+  appearance: none;
+  opacity: 0.3;
+  background: $brand-secondary;
+  border: 0;
+  border-radius: 50%;
+
+  transition: opacity 0.2s;
+
+  &[aria-selected='true'] {
+    opacity: 1;
+  }
+}
