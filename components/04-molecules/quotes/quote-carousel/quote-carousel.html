@@ -1,0 +1,16 @@
+<quote-carousel aria-roledescription="Karussell" aria-label="Kundenstimmen">
+    <div class="quote-carousel__track" data-carousel-track role="group">
+        {{#each quotes}}
+        <div class="quote-carousel__slide" role="tabpanel" aria-roledescription="Folie" aria-label="Zitat {{@index}} von {{@root.quotes.length}}">
+            <long-quote>
+                <blockquote class="longquote">
+                    <span class="longquote__zigzag"></span>
+                    <p>{{this.text}}</p>
+                    <cite class="longquote__author" itemprop="name">{{this.author}}</cite>
+                    <span class="longquote__role" itemprop="jobTitle">{{this.role}}</span>
+                </blockquote>
+            </long-quote>
+        </div>
+        {{/each}}
+    </div>
+</quote-carousel>

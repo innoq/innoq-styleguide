@@ -1,0 +1,18 @@
+title: Quote Carousel
+status: ready
+context:
+  quotes:
+    - text: "Mit INNOQ haben wir einen innovativen Partner gefunden, der uns mit seiner kompetenten Beratung und professionellen Umsetzung eine wichtige Stütze unseres Geschäfts ist."
+      author: "Heribert Innoq"
+      role: "Senior Consultant"
+    - text: "Die Zusammenarbeit mit INNOQ war von Anfang an durch hohe Professionalität und partnerschaftliches Miteinander geprägt."
+      author: "Maria Beispiel"
+      role: "CTO, Beispiel GmbH"
+    - text: "INNOQ hat uns dabei geholfen, unsere Systemlandschaft nachhaltig zu modernisieren und zukunftssicher aufzustellen."
+      author: "Thomas Muster"
+      role: "Head of IT, Muster AG"
+notes: |
+  CSS Scroll Snap based carousel with progressive JS enhancement.
+  Works as a scrollable container without JavaScript.
+  The `<quote-carousel>` custom element adds prev/next buttons and dot navigation.
+  Uses IntersectionObserver to track the visible slide.
