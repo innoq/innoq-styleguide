@@ -60,7 +60,7 @@ export default class QuoteCarousel extends HTMLElement {
           }
         }
       },
-      { root: this.track, threshold: 0.5 }
+      { root: this.track, threshold: 0.5 },
     )
     this.items.forEach((item) => observer.observe(item))
   }
