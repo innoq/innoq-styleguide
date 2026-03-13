@@ -18,11 +18,11 @@
     }
 </style>
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.1.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/black.css?cachebust=0.1.1" type="text/css">
 
-<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.1.2" type="text/css">
+<link rel="stylesheet" href="../../assets/styleguide-theme.css?cachebust=0.1.1" type="text/css">
 
-<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.1.2" type="text/css">
+<link rel="stylesheet" href="../../themes/mandelbrot/css/highlight.css?cachebust=0.1.1" type="text/css">
 
 
 <title>Navbar: Default | INNOQ Styleguide</title>
@@ -1173,7 +1173,7 @@
     <span class="hljs-attribute">outline</span>: <span class="hljs-variable">$navbar-focus-outline-width</span> solid <span class="hljs-variable">$navbar-lightened-bg</span>;
   }
 
-  &amp;<span class="hljs-selector-pseudo">:focus</span>-visible {
+  &amp;<span class="hljs-selector-pseudo">:focus-visible</span> {
     <span class="hljs-attribute">border-color</span>: <span class="hljs-variable">$navbar-link-hover-color</span>;
     <span class="hljs-attribute">outline</span>: <span class="hljs-variable">$navbar-focus-outline-width</span> solid <span class="hljs-variable">$navbar-lightened-bg</span>;
   }
@@ -1188,7 +1188,7 @@
 %navigation-link {
   <span class="hljs-keyword">@extend</span> %navigation-action;
 
-  <span class="hljs-attribute">text-decoration</span>: <span class="hljs-built_in">var</span>(--forced-colors-link-decoration, none);
+  <span class="hljs-selector-tag">text</span>-decoration: <span class="hljs-built_in">var</span>(--forced-colors-link-decoration, none);
   <span class="hljs-attribute">border</span>: <span class="hljs-built_in">var</span>(--forced-colors-link-border-width, #{<span class="hljs-variable">$navbar-focus-outline-width</span>}) solid transparent;
 }
 
@@ -1334,7 +1334,7 @@
       }
     }
 
-    &gt; <span class="hljs-selector-pseudo">:first</span>-child {
+    &gt; <span class="hljs-selector-pseudo">:first-child</span> {
       <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$navbar-padding</span> * <span class="hljs-number">2</span>;
     }
 
@@ -1372,10 +1372,10 @@
     <span class="hljs-comment">// navbar. If it is visually correct, it will also be semantically correct.</span>
     <span class="hljs-comment">// See: https://adrianroselli.com/2021/06/using-css-to-enforce-accessibility.html</span>
     <span class="hljs-selector-tag">a</span><span class="hljs-selector-attr">[aria-current=<span class="hljs-string">&#x27;page&#x27;</span>]</span> {
-      <span class="hljs-attribute">text-decoration</span>: underline;
-      <span class="hljs-attribute">text-decoration-color</span>: <span class="hljs-variable">$navbar-link-active-color</span>;
-      <span class="hljs-attribute">text-decoration</span>-thickness: <span class="hljs-number">3px</span>;
-      text-underline-offset: <span class="hljs-variable">$spacer-xs</span>;
+      <span class="hljs-selector-tag">text</span>-decoration: underline;
+      <span class="hljs-selector-tag">text</span>-decoration-<span class="hljs-attribute">color</span>: <span class="hljs-variable">$navbar-link-active-color</span>;
+      <span class="hljs-selector-tag">text</span>-decoration-thickness: <span class="hljs-number">3px</span>;
+      <span class="hljs-selector-tag">text</span>-underline-<span class="hljs-attribute">offset</span>: <span class="hljs-variable">$spacer-xs</span>;
     }
   }
 
@@ -1392,7 +1392,7 @@
 
     <span class="hljs-attribute">font-size</span>: <span class="hljs-built_in">var</span>(--pointer-fine-navbar-meta-font-size, inherit);
     <span class="hljs-attribute">color</span>: <span class="hljs-variable">$navbar-link-color</span>;
-    <span class="hljs-attribute">text-transform</span>: uppercase;
+    <span class="hljs-selector-tag">text</span>-<span class="hljs-attribute">transform</span>: uppercase;
 
     <span class="hljs-attribute">background-color</span>: <span class="hljs-built_in">var</span>(--navbar-background-color);
 
@@ -1408,10 +1408,10 @@
       <span class="hljs-comment">// Styles to indicate that the language is the current language selected</span>
       <span class="hljs-comment">// for the site.</span>
       &amp;<span class="hljs-selector-attr">[aria-current=<span class="hljs-string">&#x27;true&#x27;</span>]</span> {
-        <span class="hljs-attribute">text-decoration</span>: underline;
-        <span class="hljs-attribute">text-decoration-color</span>: <span class="hljs-variable">$navbar-link-active-color</span>;
-        <span class="hljs-attribute">text-decoration</span>-thickness: <span class="hljs-number">2px</span>;
-        text-underline-offset: <span class="hljs-variable">$spacer-xxs</span>;
+        <span class="hljs-selector-tag">text</span>-decoration: underline;
+        <span class="hljs-selector-tag">text</span>-decoration-<span class="hljs-attribute">color</span>: <span class="hljs-variable">$navbar-link-active-color</span>;
+        <span class="hljs-selector-tag">text</span>-decoration-thickness: <span class="hljs-number">2px</span>;
+        <span class="hljs-selector-tag">text</span>-underline-<span class="hljs-attribute">offset</span>: <span class="hljs-variable">$spacer-xxs</span>;
       }
     }
 
@@ -1541,7 +1541,7 @@
 
     <span class="hljs-selector-class">.link-alt</span> {
       <span class="hljs-attribute">all</span>: revert;
-      <span class="hljs-attribute">text-align</span>: left;
+      <span class="hljs-selector-tag">text</span>-align: left;
     }
   }
 
@@ -1595,7 +1595,7 @@
         <span class="hljs-attribute">font-size</span>: <span class="hljs-variable">$navbar-primary-font-size</span>;
       }
 
-      &gt; <span class="hljs-selector-pseudo">:first</span>-child {
+      &gt; <span class="hljs-selector-pseudo">:first-child</span> {
         <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
       }
 
@@ -1646,7 +1646,7 @@
         <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
       }
 
-      <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:first</span>-child {
+      <span class="hljs-selector-tag">li</span><span class="hljs-selector-pseudo">:first-child</span> {
         <span class="hljs-attribute">margin-top</span>: <span class="hljs-variable">$navbar-padding</span> * <span class="hljs-number">0.5</span>;
       }
 
@@ -10000,8 +10000,8 @@ the animations if the user has specified no preference for
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-05T15:13:20.103Z">
-                                3/5/2026
+                            <time datetime="2026-03-13T10:39:17.042Z">
+                                3/13/2026
                             </time>
                         
                     </dd>
@@ -10025,7 +10025,7 @@ the animations if the user has specified no preference for
 
 
 
-<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.1.2"></script>
+<script src="../../themes/mandelbrot/js/mandelbrot.js?cachebust=0.1.1"></script>
 
 
 

@@ -40,7 +40,6 @@ class AudioPlayer extends HTMLElement {
     return this.querySelector('input[type=range]')
   }
 
-  // eslint-disable-next-line accessor-pairs
   set rate(value) {
     this._player.playbackRate = value;
     this._rate.textContent = value;
