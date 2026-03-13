@@ -14,6 +14,7 @@ docker-compose.override.yml
 docker-compose.yml
 Dockerfile
 faucet.config.js
+vite.config.mjs
 fractal.js
 .stylelint*
 .idea

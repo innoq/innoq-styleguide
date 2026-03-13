@@ -13,13 +13,16 @@
     "access": "public"
   },
   "scripts": {
-    "start": "npm-run-all --parallel compile-watch server-watch",
-    "server": "fractal-fork start --port 3001",
-    "server-watch": "nodemon -I -w components -w docs -e 'html' -x 'npm run server'",
-    "cms-dev-start": "npm run site && npm-run-all --parallel compile-watch server-watch cms-dev-watcher",
-    "cms-dev-watcher": "nodemon -I --ext js,scss,css -w components -w lib/styles -w lib/scripts -x ./scripts/cms-dev-watcher",
-    "compile": "faucet",
-    "compile-watch": "npm run compile -- --watch",
+    "start": "npm-run-all compile:static --parallel watch:css watch:js server-watch",
+    "server-watch": "nodemon -I -w components -w docs -e 'html' -x 'fractal-fork start --port 3001'",
+    "cms-dev-start": "npm-run-all compile:static --parallel watch:css watch:js server-watch cms-sync-watch",
+    "cms-sync-watch": "nodemon -I -w public/assets -w lib/styles -w components -e 'css,scss,js' -x 'node scripts/cms-sync.mjs'",
+    "compile": "npm-run-all --parallel compile:css compile:js compile:static && node scripts/optimize-images.mjs",
+    "compile:css": "sass --no-source-map --style=compressed --load-path=. --load-path=node_modules --silence-deprecation=import --silence-deprecation=slash-div --silence-deprecation=global-builtin lib/styles/index-with-pages.scss:public/assets/bundle.css lib/styles/index.scss:public/assets/bundle-without-pages.css lib/styles/styleguide-theme.scss:public/assets/styleguide-theme.css",
+    "compile:js": "esbuild lib/scripts/index.js --bundle --format=esm --outfile=public/assets/bundle.js --minify",
+    "compile:static": "cpy . '../../public/assets' --cwd=lib/images",
+    "watch:css": "sass --no-source-map --watch --load-path=. --load-path=node_modules --silence-deprecation=import --silence-deprecation=slash-div --silence-deprecation=global-builtin lib/styles/index-with-pages.scss:public/assets/bundle.css lib/styles/index.scss:public/assets/bundle-without-pages.css lib/styles/styleguide-theme.scss:public/assets/styleguide-theme.css",
+    "watch:js": "esbuild lib/scripts/index.js --bundle --format=esm --outfile=public/assets/bundle.js --watch",
     "test": "eslint --cache --ext .js . && stylelint --cache 'lib/**/*.scss' 'components/**/*.scss' && prettier --check .",
     "lint:fix": "eslint --cache --ext .js . --fix && stylelint --cache --fix 'lib/**/*.scss' 'components/**/*.scss' && prettier --write .",
     "site": "npm run compile && fractal-fork build",
@@ -30,16 +33,17 @@
     "node": ">=24.0.0"
   },
   "devDependencies": {
+    "cpy-cli": "^7.0.0",
+    "cross-env": "^10.1.0",
+    "esbuild": "^0.27.4",
     "eslint": "^8.9.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.0.0",
-    "faucet-pipeline-js": "^3.0.0",
-    "faucet-pipeline-sass": "^1.9.2",
-    "faucet-pipeline-static": "^2.0.0",
     "fractal-fork": "^0.1.0",
     "modularscale-sass": "^3.0.10",
+    "node-gyp": "^12.2.0",
     "nodemon": "^3.1.10",
     "normalize.css": "^8.0.1",
     "npm-run-all": "^4.1.5",
@@ -47,9 +51,12 @@
     "postcss-scss": "^4.0.3",
     "prettier": "^3.6.2",
     "release-it": "^19.0.4",
+    "sass": "^1.98.0",
+    "sharp": "^0.34.5",
     "stylelint": "^15.0.0",
     "stylelint-config-clean-order": "^6.0.0",
     "stylelint-config-sass-guidelines": "^10.0.0",
-    "stylelint-config-standard": "^34.0.0"
+    "stylelint-config-standard": "^34.0.0",
+    "svgo": "^4.0.1"
   }
 }

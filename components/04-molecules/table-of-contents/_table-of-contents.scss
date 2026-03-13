@@ -26,7 +26,7 @@
     font-size: $font-size-base;
 
     &::before {
-      content: asset-url('icons/arrow-short-down.svg');
+      content: url('/assets/icons/arrow-short-down.svg');
       padding-right: 0.5rem;
     }
   }
