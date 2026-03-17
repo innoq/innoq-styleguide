@@ -32,12 +32,9 @@ a:not([class]) {
   @extend %link-unstyled;
 
   padding-bottom: 2px;
-
   font-size: $font-size-xs;
   color: $link-teaser-text-color;
-
   border-bottom: 3px solid $link-teaser-border-color;
-
   transition: standard-transition(background-color);
 
   &.inverted-text-color {
@@ -79,9 +76,7 @@ a.link-teaser.inverted-interaction-color {
   hyphens: none;
   color: $brand-secondary;
   text-decoration: none;
-
   border-bottom: 2px solid $brand-secondary;
-
   transition:
     border-bottom 0.175s,
     color 0.175s;

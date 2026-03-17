@@ -666,6 +666,10 @@ html {
   background-image: url("/assets/bg-images/edition-02/edition02-concrete-01.webp");
 }
 
+.bg-image-edition-27 {
+  background-image: url("/assets/bg-images/edition-02/edition02-ai-01.jpg");
+}
+
 .bg-image-demo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3148,9 +3152,7 @@ ul:not([class], [role=list]) > li ol,
     height: 22rem;
   }
   .card__content__footer__link {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    justify-self: baseline;
+    place-self: flex-end baseline;
   }
 }
 .highlight-card {
@@ -5719,10 +5721,7 @@ touch-detection {
 .podcast-channel-teaser__link::after {
   content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: 0;
 }
 
 .podcast-channel-teaser__link--ctoneedtoknow {
@@ -5967,8 +5966,7 @@ touch-detection {
     .client-projects__show-more-btn,
     .client-projects__goto-btn {
       grid-column: 3/span 1;
-      align-self: end;
-      justify-self: end;
+      place-self: end end;
     }
     .client-projects__text {
       grid-column: 2/span 2;
@@ -7086,10 +7084,7 @@ touch-detection {
   .text-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    row-gap: 2.985984rem;
-    -webkit-column-gap: 2.985984rem;
-       -moz-column-gap: 2.985984rem;
-            column-gap: 2.985984rem;
+    gap: 2.985984rem 2.985984rem;
   }
   .text-grid__heading {
     font-size: 1.44rem;
@@ -9047,6 +9042,24 @@ form > * + *,
   .span-5 {
     grid-column: span 5;
   }
+  .masonry-grid--alternating-asymmetric > *:nth-child(4n+1),
+  .masonry-grid--alternating-asymmetric > *:nth-child(4n+4) {
+    grid-column: span 5;
+  }
+  .masonry-grid--alternating-asymmetric > *:nth-child(4n+2),
+  .masonry-grid--alternating-asymmetric > *:nth-child(4n+3) {
+    grid-column: span 3;
+  }
+  .masonry-grid--mixed > *:nth-child(4n+1),
+  .masonry-grid--mixed > *:nth-child(4n+2) {
+    grid-column: span 4;
+  }
+  .masonry-grid--mixed > *:nth-child(4n+3) {
+    grid-column: span 5;
+  }
+  .masonry-grid--mixed > *:nth-child(4n+4) {
+    grid-column: span 3;
+  }
 }
 .one-column-grid {
   display: grid;
@@ -9180,9 +9193,7 @@ form > * + *,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  justify-self: center;
+  place-self: center center;
   width: 75%;
 }
 @media screen and (max-width: 36rem) {
@@ -9275,9 +9286,7 @@ form > * + *,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  justify-self: center;
+  place-self: center center;
   width: 75%;
 }
 @media screen and (min-width: 48rem) {

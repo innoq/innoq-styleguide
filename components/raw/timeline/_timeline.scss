@@ -10,10 +10,8 @@
   &__icon {
     position: absolute;
     left: -10px;
-
     width: 20px;
     height: 20px;
-
     background-color: $brand-primary;
     border-radius: 50%;
   }
@@ -32,9 +30,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: repeat(auto-fill, minmax(50px, auto));
     gap: $spacer-xl;
-
     margin-top: $spacer-lg;
-
     border-top: 2px solid $brand-secondary;
     border-left: hidden;
   }

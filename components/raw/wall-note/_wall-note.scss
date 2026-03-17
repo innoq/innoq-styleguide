@@ -5,9 +5,7 @@ $big-content-teaser-height-md: ms(40);
   display: flex;
   align-items: center;
   justify-content: center;
-
   min-height: 100vh;
-
   background-size: cover;
 }
 
@@ -16,11 +14,9 @@ $big-content-teaser-height-md: ms(40);
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   max-width: $default-page-layout-content-width-md;
   margin: $spacer-sm;
   padding: $spacer-lg $spacer-base;
-
   background-color: $wall-note-content-bg-color;
 
   > * + * {

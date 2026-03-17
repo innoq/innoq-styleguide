@@ -5,14 +5,11 @@
 
 .detail-item__image {
   z-index: 2;
-
   display: block;
-
   width: 90%;
   max-width: 450px;
   margin: 0 auto $spacer-sm;
   margin-bottom: -$spacer-xxl;
-
   border: 3px solid $brand-white;
 }
 
@@ -20,12 +17,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   height: 100%;
   padding: $spacer-md $spacer-sm;
-
   color: $brand-text-light;
-
   background-color: $brand-primary;
 }
 

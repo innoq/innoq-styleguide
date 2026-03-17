@@ -2,9 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   min-height: 100vh;
-
   background-color: $claim-header-bg-color;
 
   &__body {
@@ -30,7 +28,6 @@
     height: 4px;
     margin-top: $spacer-base;
     margin-bottom: $spacer-base;
-
     background-color: $claim-header-divider-color;
     border: 0;
   }

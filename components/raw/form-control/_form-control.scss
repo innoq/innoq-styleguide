@@ -3,13 +3,10 @@
   @extend %heading-font-regular;
 
   display: block;
-
   width: 100%;
   padding: $spacer-xs;
-
   font-size: $font-size-base;
   line-height: $paragraph-line-height;
-
   transition: standard-transition(background-color);
 }
 

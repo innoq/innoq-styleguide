@@ -6,11 +6,8 @@ $case-tile-teaser-sm-height: ms(32);
 
   display: flex;
   flex-direction: column;
-
   padding: $spacer-md;
-
   color: $case-tile-teaser-text-color;
-
   background-size: cover;
   background-blend-mode: multiply;
 
@@ -20,11 +17,8 @@ $case-tile-teaser-sm-height: ms(32);
     flex-grow: 1;
     gap: $spacer-base;
     justify-content: space-between;
-
     padding: $spacer-md $spacer-xs;
-
     text-align: center;
-
     background-color: $case-tile-teaser-body-bg-color;
 
     &--sm {

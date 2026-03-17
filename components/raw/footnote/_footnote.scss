@@ -37,12 +37,9 @@
 
       content: counter(number);
       counter-increment: number;
-
       position: absolute;
       left: -0.5rem;
-
       width: $spacer-sm;
-
       color: $footnote-index-color;
       text-align: right;
     }

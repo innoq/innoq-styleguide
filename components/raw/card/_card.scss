@@ -26,11 +26,9 @@
   @extend %heading-font-bold;
 
   padding: $spacer-xxs;
-
   font-size: $font-size-xs;
   color: $card-tag-text-color;
   text-transform: uppercase;
-
   background-color: $card-tag-bg-color;
 
   + .card__header__tag {
@@ -128,7 +126,6 @@
   }
 
   .card__content__footer__link {
-    align-self: flex-end;
-    justify-self: baseline;
+    place-self: flex-end baseline;
   }
 }

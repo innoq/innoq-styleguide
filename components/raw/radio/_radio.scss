@@ -40,9 +40,7 @@ $radio-indent: $radio-offset + $radio-size;
     &::before {
       pointer-events: none;
       user-select: none;
-
       margin-right: $radio-offset;
-
       background-color: $radio-bg;
       border: 2px solid $radio-border;
       border-radius: 50%;

@@ -7,13 +7,10 @@ $topic-teaser-height: ms(36);
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   min-height: $topic-teaser-height;
   padding: $spacer-md;
-
   color: $topic-teaser-body-color;
   text-align: center;
-
   background-repeat: no-repeat;
   background-position: top left;
   background-size: cover;

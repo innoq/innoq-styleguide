@@ -7,7 +7,6 @@
   display: flex;
   grid-area: center;
   align-items: center;
-
   background-color: $search-field-background;
   border-bottom: 4px solid$search-field-border-color;
 }
@@ -16,12 +15,9 @@
   @extend %heading-font-bold;
 
   display: block;
-
   width: 100%;
-
   line-height: 1.5em; // don't cut off descenders Chrome/FF
   color: $search-field-color;
-
   appearance: none;
   background-color: $search-field-background;
   border: 0;

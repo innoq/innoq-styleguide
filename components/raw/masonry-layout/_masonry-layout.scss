@@ -23,4 +23,33 @@
   .span-5 {
     grid-column: span 5;
   }
+
+  // 5+3, 3+5, 5+3, 3+5, ...
+  .masonry-grid--alternating-asymmetric {
+    > *:nth-child(4n + 1),
+    > *:nth-child(4n + 4) {
+      grid-column: span 5;
+    }
+
+    > *:nth-child(4n + 2),
+    > *:nth-child(4n + 3) {
+      grid-column: span 3;
+    }
+  }
+
+  // 4+4, 5+3, 4+4, 3+5, ...
+  .masonry-grid--mixed {
+    > *:nth-child(4n + 1),
+    > *:nth-child(4n + 2) {
+      grid-column: span 4;
+    }
+
+    > *:nth-child(4n + 3) {
+      grid-column: span 5;
+    }
+
+    > *:nth-child(4n + 4) {
+      grid-column: span 3;
+    }
+  }
 }

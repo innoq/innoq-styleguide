@@ -4,12 +4,10 @@
   display: grid;
   gap: $spacer-base;
   align-items: start;
-
   width: 100%;
   max-width: $default-page-layout-content-width-xl;
   margin: 0 auto;
   padding: 0 $spacer-sm;
-
   color: $footer-color;
 }
 
@@ -53,22 +51,17 @@
   @extend %heading-font-bold;
 
   display: block;
-
   margin-top: $spacer-xs;
-
   font-size: $font-size-xxs;
   color: $footer-color;
   text-transform: uppercase;
 
   &::before {
     content: asset-url('icons/pin.svg');
-
     display: inline-block;
-
     width: $font-size-xxs;
     height: $font-size-xxs;
     margin-right: $spacer-xxs;
-
     color: $footer-heading-color;
   }
 }
@@ -117,7 +110,6 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: $spacer-xl $spacer-lg;
-
     padding: 0 $spacer-base;
   }
 

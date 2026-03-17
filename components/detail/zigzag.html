@@ -238,29 +238,22 @@
 <span class="hljs-keyword">@mixin</span> zigzag(<span class="hljs-variable">$bgcolor</span>) {
   <span class="hljs-attribute">position</span>: relative;
   <span class="hljs-attribute">z-index</span>: <span class="hljs-number">1</span>;
-
   <span class="hljs-attribute">display</span>: block;
-
   <span class="hljs-attribute">height</span>: <span class="hljs-variable">$zzheight</span>;
-
   <span class="hljs-attribute">background</span>: <span class="hljs-variable">$bgcolor</span>;
 
   &amp;<span class="hljs-selector-pseudo">::before</span>,
   &amp;<span class="hljs-selector-pseudo">::after</span> {
     <span class="hljs-attribute">content</span>: <span class="hljs-string">&#x27;&#x27;</span>;
-
     <span class="hljs-attribute">position</span>: absolute;
     <span class="hljs-attribute">right</span>: <span class="hljs-number">0</span>;
     <span class="hljs-attribute">left</span>: <span class="hljs-number">0</span>;
-
     <span class="hljs-attribute">display</span>: block;
   }
 
   &amp;<span class="hljs-selector-pseudo">::before</span> {
     <span class="hljs-attribute">top</span>: <span class="hljs-variable">$zzthickness</span>;
-
     <span class="hljs-attribute">height</span>: (<span class="hljs-variable">$zzheight</span> - <span class="hljs-variable">$zzoffset</span>);
-
     <span class="hljs-attribute">background</span>:
       <span class="hljs-built_in">linear-gradient</span>(-<span class="hljs-variable">$zzdegree</span>, <span class="hljs-variable">$zzlinecolor</span> <span class="hljs-variable">$zzhalfheight</span>, transparent <span class="hljs-number">0</span>) <span class="hljs-number">0</span> <span class="hljs-variable">$zzhalfheight</span>,
       <span class="hljs-built_in">linear-gradient</span>(<span class="hljs-variable">$zzdegree</span>, <span class="hljs-variable">$zzlinecolor</span> <span class="hljs-variable">$zzhalfheight</span>, transparent <span class="hljs-number">0</span>) <span class="hljs-number">0</span> <span class="hljs-variable">$zzhalfheight</span>;
@@ -271,9 +264,7 @@
 
   &amp;<span class="hljs-selector-pseudo">::after</span> {
     <span class="hljs-attribute">top</span>: <span class="hljs-number">100%</span>;
-
     <span class="hljs-attribute">height</span>: <span class="hljs-variable">$zzheight</span>;
-
     <span class="hljs-attribute">background</span>:
       <span class="hljs-built_in">linear-gradient</span>(-<span class="hljs-variable">$zzdegree</span>, <span class="hljs-variable">$bgcolor</span> <span class="hljs-variable">$zzhalfheight</span>, transparent <span class="hljs-number">0</span>) <span class="hljs-number">0</span> <span class="hljs-variable">$zzhalfheight</span>,
       <span class="hljs-built_in">linear-gradient</span>(<span class="hljs-variable">$zzdegree</span>, <span class="hljs-variable">$bgcolor</span> <span class="hljs-variable">$zzhalfheight</span>, transparent <span class="hljs-number">0</span>) <span class="hljs-number">0</span> <span class="hljs-variable">$zzhalfheight</span>;
@@ -8352,8 +8343,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-13T10:39:17.042Z">
-                                3/13/2026
+                            <time datetime="2026-03-17T09:07:55.844Z">
+                                3/17/2026
                             </time>
                         
                     </dd>

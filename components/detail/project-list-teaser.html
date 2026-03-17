@@ -357,12 +357,9 @@
   <span class="hljs-keyword">@extend</span> %h1;
 
   <span class="hljs-attribute">display</span>: inline-block;
-
   <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
   <span class="hljs-attribute">padding</span>: <span class="hljs-number">0</span> <span class="hljs-variable">$spacer-sm</span> <span class="hljs-variable">$spacer-xs</span>;
-
   <span class="hljs-attribute">color</span>: <span class="hljs-variable">$project-index-text-inverted-color</span>;
-
   <span class="hljs-attribute">background-color</span>: <span class="hljs-variable">$project-index-text-color</span>;
 }
 
@@ -394,9 +391,7 @@
   <span class="hljs-attribute">display</span>: grid;
   <span class="hljs-attribute">grid-auto-rows</span>: auto;
   <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">1</span>fr;
-
   <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-sm</span> <span class="hljs-number">0</span>;
-
   <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$project-index-text-color</span>;
   <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-variable">$project-index-text-color</span>;
 
@@ -463,8 +458,7 @@
     <span class="hljs-selector-class">.client-projects__show-more-btn</span>,
     <span class="hljs-selector-class">.client-projects__goto-btn</span> {
       <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">3</span> / span <span class="hljs-number">1</span>;
-      <span class="hljs-attribute">align-self</span>: end;
-      <span class="hljs-attribute">justify-self</span>: end;
+      <span class="hljs-attribute">place-self</span>: end end;
     }
 
     <span class="hljs-selector-class">.client-projects__text</span> {
@@ -8506,8 +8500,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-13T10:39:17.042Z">
-                                3/13/2026
+                            <time datetime="2026-03-17T09:07:55.844Z">
+                                3/17/2026
                             </time>
                         
                     </dd>

@@ -13,16 +13,13 @@ $edition-font-size: $font-size-base;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
   text-align: center;
 }
 
 .artist-list-teaser__edition__separator {
   transform: rotate(90deg);
-
   min-width: $spacer-xl;
   height: 2px;
-
   background-color: $brand-gray;
   border: 0;
 }
@@ -42,9 +39,7 @@ $edition-font-size: $font-size-base;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin-top: $spacer-xs;
-
   font-size: $font-size-xxl;
 
   &--edition-1 {
@@ -58,11 +53,9 @@ $edition-font-size: $font-size-base;
 
 .artist-list-teaser__edition__date__separator {
   transform: rotate(90deg);
-
   min-width: $spacer-base;
   height: 5px;
   margin: $spacer-sm 0;
-
   background-color: $brand-red;
   border: 0;
 

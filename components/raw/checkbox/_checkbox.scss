@@ -41,9 +41,7 @@ $checkbox-indent: $checkbox-offset + $checkbox-size;
     &::before {
       pointer-events: none;
       user-select: none;
-
       margin-right: $checkbox-offset;
-
       background-color: $checkbox-bg;
       border: 2px solid $checkbox-border;
       border-radius: 2px;

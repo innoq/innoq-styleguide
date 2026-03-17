@@ -6,10 +6,8 @@ $event-date-section-height: ($font-size-xs) + (2 * $spacer-xxs);
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 100%;
   margin-top: $event-date-section-height;
-
   background-color: $list-teaser-background-color;
 
   .event-date-section {
@@ -45,7 +43,6 @@ a.list-teaser-event {
   flex-direction: column;
   flex-grow: 1;
   justify-content: space-between;
-
   width: 100%;
 }
 

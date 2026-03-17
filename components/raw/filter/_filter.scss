@@ -11,17 +11,13 @@
   @extend %heading-font-bold;
 
   cursor: pointer;
-
   display: inline-block;
-
   width: 100%;
   margin-top: $spacer-xs;
   padding: $spacer-xs;
-
   font-size: $font-size-base;
   color: $filter-select-text-color;
   text-align: center;
-
   appearance: none;
   background-color: $filter-select-background-color;
   background-image: asset-url('icons/chevron-down.svg');
