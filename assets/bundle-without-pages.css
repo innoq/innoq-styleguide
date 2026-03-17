@@ -670,6 +670,47 @@ html {
   background-image: url("/assets/bg-images/edition-02/edition02-ai-01.jpg");
 }
 
+.bg-image--multiply {
+  background-color: #d8d8d8;
+  background-blend-mode: multiply;
+}
+
+.bg-image--center {
+  background-position: center center;
+}
+
+.bg-image--top {
+  background-position: center top;
+}
+
+.bg-image--bottom {
+  background-position: center bottom;
+}
+
+.bg-image--left {
+  background-position: left center;
+}
+
+.bg-image--right {
+  background-position: right center;
+}
+
+.bg-image--top-left {
+  background-position: left top;
+}
+
+.bg-image--top-right {
+  background-position: right top;
+}
+
+.bg-image--bottom-left {
+  background-position: left bottom;
+}
+
+.bg-image--bottom-right {
+  background-position: right bottom;
+}
+
 .bg-image-demo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4079,6 +4120,11 @@ summary {
 .icon-card {
   margin: 0 1rem;
 }
+.icon-card img,
+.icon-card svg {
+  width: auto;
+  margin-bottom: 1rem;
+}
 
 @media screen and (min-width: 60rem) {
   .icon-card {
@@ -5155,6 +5201,15 @@ touch-detection {
         flex-basis: 50%;
   }
 }
+.default-full-width-teaser__body--xl {
+  padding: 2.985984rem;
+}
+@media screen and (min-width: 48rem) {
+  .default-full-width-teaser__body--xl {
+    padding: 3.919104rem;
+  }
+}
+
 .artist-list-teaser {
   display: block;
   padding-top: 2.0736rem;
@@ -7084,6 +7139,9 @@ touch-detection {
   }
   .text-grid__heading {
     font-size: 1.44rem;
+  }
+  .text-grid--3 {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 .timeline {
