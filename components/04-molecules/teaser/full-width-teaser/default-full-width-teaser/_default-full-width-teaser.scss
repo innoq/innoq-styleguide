@@ -105,3 +105,11 @@ $full-width-teaser-height: ms(38);
     flex-basis: 50%;
   }
 }
+
+.default-full-width-teaser__body--xl {
+  padding: $spacer-lg;
+
+  @media screen and (min-width: $grid-breakpoint-md) {
+    padding: $spacer-xl;
+  }
+}

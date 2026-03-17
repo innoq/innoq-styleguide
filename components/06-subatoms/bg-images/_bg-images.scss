@@ -545,6 +545,41 @@
   background-image: asset-url('bg-images/edition-02/edition02-ai-01.jpg');
 }
 
+// Blend mode modifier
+.bg-image--multiply {
+  background-color: $brand-gray-25;
+  background-blend-mode: multiply;
+}
+
+// Background position modifiers
+.bg-image--center {
+  background-position: center center;
+}
+.bg-image--top {
+  background-position: center top;
+}
+.bg-image--bottom {
+  background-position: center bottom;
+}
+.bg-image--left {
+  background-position: left center;
+}
+.bg-image--right {
+  background-position: right center;
+}
+.bg-image--top-left {
+  background-position: left top;
+}
+.bg-image--top-right {
+  background-position: right top;
+}
+.bg-image--bottom-left {
+  background-position: left bottom;
+}
+.bg-image--bottom-right {
+  background-position: right bottom;
+}
+
 // Demo Classes for bg images
 .bg-image-demo {
   display: flex;

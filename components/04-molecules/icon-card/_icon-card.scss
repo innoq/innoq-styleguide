@@ -1,5 +1,11 @@
 .icon-card {
   margin: 0 $spacer-sm;
+
+  img,
+  svg {
+    width: auto;
+    margin-bottom: $spacer-sm;
+  }
 }
 
 @media screen and (min-width: $grid-breakpoint-md-lg) {
