@@ -25,8 +25,7 @@
 
   .centered-content-75 {
     display: flex;
-    align-self: center;
-    justify-self: center;
+    place-self: center center;
     width: 75%;
   }
 
@@ -41,7 +40,6 @@
       display: grid;
       grid-template-columns: 1fr 7rem 50rem 7rem 1fr; //magic numbers
       grid-template-rows: auto;
-
       padding-right: $spacer-sm;
       padding-left: $spacer-sm;
 

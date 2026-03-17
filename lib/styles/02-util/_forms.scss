@@ -19,16 +19,12 @@
   &::after,
   &::before {
     content: '';
-
     position: absolute;
     top: $top-offset;
     left: 0;
-
     display: block;
-
     width: $size;
     height: $size;
-
     transition: $fast-transition;
   }
 }
@@ -36,13 +32,9 @@
 %base-button {
   cursor: pointer;
   user-select: none;
-
   position: relative;
-
   display: inline-block;
-
   text-decoration: none;
-
   background: none;
   border: 0;
 

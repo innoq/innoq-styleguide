@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: $spacer-sm [content-start] 1fr [content-center-start] 3fr [content-center-end] 1fr [content-end] $spacer-sm; //magic numbers
   grid-template-rows: repeat(10, auto);
-
   margin-top: $spacer-base;
   padding-bottom: $spacer-base;
 
@@ -48,8 +47,7 @@
 
   .centered-content-75 {
     display: flex;
-    align-self: center;
-    justify-self: center;
+    place-self: center center;
     width: 75%;
   }
 

@@ -10,14 +10,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     box-sizing: content-box;
     max-width: $default-page-layout-content-width-md;
     margin: 0 auto;
     padding: $spacer-base;
-
     color: $landing-page-header-intro-text-color;
-
     background-color: $landing-page-header-intro-bg-color;
     border-bottom: 8px solid $landing-page-header-border-color;
   }

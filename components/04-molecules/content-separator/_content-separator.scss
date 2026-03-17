@@ -11,9 +11,7 @@ $border-position: calc($font-size-base / 2);
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   width: 100%;
-
   white-space: nowrap;
 }
 
@@ -22,23 +20,18 @@ $border-position: calc($font-size-base / 2);
 .content-separator__date,
 .content-separator__duration {
   display: inline-block;
-
   padding-right: $spacer-xs;
   padding-left: $spacer-xs;
-
   line-height: 1;
   color: $content-seperator-text-color;
-
   background-color: $box-shadow-color-light;
 }
 
 .content-separator__separator {
   transform: rotate(90deg);
-
   width: $spacer-sm;
   height: 2px;
   margin: $spacer-sm 0;
-
   background-color: $content-seperator-text-color;
   border: 0;
 }
@@ -61,7 +54,6 @@ $border-position: calc($font-size-base / 2);
   .content-separator {
     flex-direction: row;
     align-content: center;
-
     height: 1px;
     min-height: $font-size-base;
     // The border in the middle of the component is realized with

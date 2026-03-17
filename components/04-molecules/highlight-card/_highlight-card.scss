@@ -6,11 +6,9 @@ $highlight-card-border-width: $spacer-sm;
   display: flex;
   align-items: center;
   justify-content: center;
-
   width: 100%;
   min-height: 70vh;
   padding: $spacer-lg $spacer-md;
-
   border: $highlight-card-border-width solid $highlight-card-border-color;
 }
 
@@ -18,12 +16,9 @@ $highlight-card-border-width: $spacer-sm;
   display: flex;
   flex-direction: column;
   align-items: center;
-
   max-width: 800px;
   padding: $spacer-lg $spacer-md;
-
   text-align: center;
-
   background-color: $highlight-card-content-bg-color;
 }
 

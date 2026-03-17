@@ -6,11 +6,9 @@
   display: grid;
   gap: $spacer-base;
   place-items: center;
-
   max-width: $default-page-layout-content-width-md;
   margin: 0 auto;
   padding: $spacer-base $spacer-sm;
-
   color: $staff-header-text-color;
 
   .social-media-bar__item {
@@ -25,9 +23,7 @@
   display: grid;
   gap: $spacer-base;
   place-items: center;
-
   width: 100%;
-
   hyphens: none;
 }
 

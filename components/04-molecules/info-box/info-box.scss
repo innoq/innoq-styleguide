@@ -8,17 +8,13 @@ info-box {
   @extend %heading-font-bold;
 
   cursor: pointer;
-
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
-
   padding: $spacer-sm $spacer-md;
-
   font-size: $font-size-xs;
   color: $infobox-teaser-text-color-closed;
-
   background-color: $infobox-teaser-background-color-closed;
   border-bottom: 3px solid $infobox-teaser-border-color;
 }

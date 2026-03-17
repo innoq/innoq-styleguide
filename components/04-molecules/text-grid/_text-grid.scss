@@ -19,8 +19,7 @@
   .text-grid {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
-    row-gap: $spacer-lg;
-    column-gap: $spacer-lg;
+    gap: $spacer-lg $spacer-lg;
 
     &__heading {
       font-size: $font-size-md;

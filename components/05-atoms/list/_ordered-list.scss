@@ -26,9 +26,7 @@ ol:not([class]) {
       @extend %heading-font-bold;
 
       content: counter(number);
-
       padding-right: $spacer-xxs;
-
       font-size: $font-size-base;
       line-height: $paragraph-line-height;
       color: $bullet-list-color-secondary;

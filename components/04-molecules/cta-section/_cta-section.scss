@@ -23,13 +23,10 @@ $cta-section-image-offset: ms(22);
   @extend %box-shadow-secondary-25-right-bottom;
 
   position: relative;
-
   width: 100%;
   margin-top: $cta-section-image-offset;
   padding: $cta-section-image-offset + $spacer-sm $spacer-base $spacer-base $spacer-base;
-
   color: $cta-section-long-text-color;
-
   background-color: $brand-primary-50;
 
   .cta-section-long__image {

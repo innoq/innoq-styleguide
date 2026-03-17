@@ -1,23 +1,18 @@
 extends:
   - stylelint-config-standard
-  - stylelint-config-sass-guidelines
-  - stylelint-config-clean-order
 rules:
   alpha-value-notation: null
-  color-no-hex: true
+  declaration-empty-line-before: null
+  at-rule-no-unknown: null
+  media-query-no-invalid: null
   color-function-notation: null
   declaration-no-important: true
-  declaration-block-no-redundant-longhand-properties: null
   function-no-unknown: null
   import-notation: null
-  max-nesting-depth: 3
-  media-query-no-invalid: null
   no-descending-specificity: null
   no-empty-source: null
-  order/properties-alphabetical-order: null
-  scss/percent-placeholder-pattern: null
+  rule-empty-line-before: null
   selector-class-pattern: null
-  selector-no-qualifying-type: null
   selector-type-no-unknown:
     - true
     - ignore:

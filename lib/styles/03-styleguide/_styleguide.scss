@@ -25,14 +25,11 @@
   @extend %monospace-font-regular;
 
   user-select: all;
-
   padding-top: $spacer-xs;
   padding-bottom: $spacer-xs;
-
   color: $brand-text;
   text-align: center;
   text-transform: uppercase;
-
   background-color: $brand-gray-10;
 
   &::after {

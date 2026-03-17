@@ -9,7 +9,6 @@ $podcast-teaser-height-md: ms(35);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   min-height: $podcast-teaser-height-sm;
 }
 
@@ -74,7 +73,6 @@ $podcast-teaser-height-md: ms(35);
 
 .podcast-teaser--avatar--overlay {
   color: $podcast-teaser-default-color-secondary;
-
   background-color: $podcast-teaser-overlay-color-secondary;
   background-repeat: no-repeat;
   background-position: top right;
@@ -99,7 +97,6 @@ $podcast-teaser-height-md: ms(35);
 
 .podcast-teaser--avatar--overlay--big {
   color: $podcast-teaser-default-color-secondary;
-
   background-color: $podcast-teaser-overlay-color-secondary;
   background-repeat: no-repeat;
   background-position:
@@ -140,7 +137,6 @@ $podcast-teaser-height-md: ms(35);
 
 .podcast-teaser--avatar {
   color: $podcast-teaser-default-color;
-
   background-color: $podcast-teaser-light-bg;
   background-repeat: no-repeat;
   background-position: top right;

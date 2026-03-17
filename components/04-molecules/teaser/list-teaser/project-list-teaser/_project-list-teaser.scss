@@ -20,12 +20,9 @@
   @extend %h1;
 
   display: inline-block;
-
   margin: 0;
   padding: 0 $spacer-sm $spacer-xs;
-
   color: $project-index-text-inverted-color;
-
   background-color: $project-index-text-color;
 }
 
@@ -57,9 +54,7 @@
   display: grid;
   grid-auto-rows: auto;
   grid-template-columns: 1fr;
-
   padding: $spacer-sm 0;
-
   border-top: 1px solid $project-index-text-color;
   border-bottom: 1px solid $project-index-text-color;
 
@@ -126,8 +121,7 @@
     .client-projects__show-more-btn,
     .client-projects__goto-btn {
       grid-column: 3 / span 1;
-      align-self: end;
-      justify-self: end;
+      place-self: end end;
     }
 
     .client-projects__text {

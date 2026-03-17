@@ -24,7 +24,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-
   padding: $spacer-xxs $spacer-sm;
 }
 
@@ -55,10 +54,8 @@
 
   margin-left: $spacer-xs;
   padding-left: $spacer-xxs;
-
   font-size: $font-size-xs;
   color: $date-section-year-color;
-
   border-left: 1px solid $date-section-year-color;
 }
 
@@ -66,7 +63,6 @@
   width: $spacer-base;
   height: 2px;
   margin: 0;
-
   background-color: $date-section-year-color;
   border: 0;
 }
@@ -98,9 +94,7 @@
     margin-left: 0;
     padding-top: $spacer-xxs;
     padding-left: 0;
-
     font-size: $font-size-xs;
-
     border-top: 1px solid $date-section-year-color;
     border-left: 0;
   }

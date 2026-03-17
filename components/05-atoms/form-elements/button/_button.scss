@@ -8,9 +8,7 @@
   @include hover-fill($brand-interaction, $button-color, $button-color);
 
   padding: $spacer-md $spacer-base;
-
   font-size: $font-size-sm;
-
   background-color: $button-background;
   border: 3px solid $button-border-color;
   border-radius: 0;

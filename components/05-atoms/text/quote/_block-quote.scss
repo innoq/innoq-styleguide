@@ -21,16 +21,12 @@ blockquote:not([class]),
   @media screen and (min-width: $grid-breakpoint-md) {
     &::before {
       content: '';
-
       position: absolute;
       top: 0;
       bottom: 0;
       left: -$spacer-base;
-
       display: block;
-
       width: 10px;
-
       background-color: $quote-color;
     }
   }

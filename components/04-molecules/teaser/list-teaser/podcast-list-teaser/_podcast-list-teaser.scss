@@ -9,7 +9,6 @@ $podcast-teaser-height-md: ms(35);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
   width: 100%;
   min-height: $podcast-teaser-height-sm;
 }
@@ -78,7 +77,6 @@ $podcast-teaser-height-md: ms(35);
 
 .list-teaser-podcast--avatar--overlay--big {
   color: $podcast-teaser-default-color;
-
   background-color: $podcast-teaser-overlay-color;
   background-repeat: no-repeat;
   background-position:
