@@ -540,6 +540,11 @@
   background-image: asset-url('bg-images/edition-02/edition02-concrete-01.webp');
 }
 
+.bg-image-edition-27,
+%bg-image-edition-27 {
+  background-image: asset-url('bg-images/edition-02/edition02-ai-01.jpg');
+}
+
 // Demo Classes for bg images
 .bg-image-demo {
   display: flex;
