@@ -1,10 +1,14 @@
 export default class TouchDetection extends HTMLElement {
   connectedCallback() {
-    function touched() {
+    if (document.body.classList.contains('instructions--touch-active')) return
+    this._touchHandler = () => {
       document.body.classList.add('instructions--touch-active')
-      window.removeEventListener('touchstart', touched, false)
+      window.removeEventListener('touchstart', this._touchHandler, false)
     }
+    window.addEventListener('touchstart', this._touchHandler, false)
+  }
 
-    window.addEventListener('touchstart', touched, false)
+  disconnectedCallback() {
+    window.removeEventListener('touchstart', this._touchHandler, false)
   }
 }

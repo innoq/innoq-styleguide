@@ -1,7 +1,14 @@
 export default class AutoSubmitForm extends HTMLElement {
   connectedCallback() {
-    let form = this.querySelector('form')
-    form.addEventListener('change', form.submit)
+    const form = this.querySelector('form')
+    if (!form) return
+    form.onchange = () => form.submit()
     this.classList.add('enhanced')
+  }
+
+  disconnectedCallback() {
+    const form = this.querySelector('form')
+    if (form) form.onchange = null
+    this.classList.remove('enhanced')
   }
 }

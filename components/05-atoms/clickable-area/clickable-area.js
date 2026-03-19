@@ -9,10 +9,18 @@
 export default class ClickableArea extends HTMLElement {
   connectedCallback() {
     if (this.link) {
-      this.addEventListener('mousedown', this.handleMousedown.bind(this))
-      this.addEventListener('mouseup', this.handleMouseup.bind(this))
+      this._mousedownHandler = this.handleMousedown.bind(this)
+      this._mouseupHandler = this.handleMouseup.bind(this)
+      this.addEventListener('mousedown', this._mousedownHandler)
+      this.addEventListener('mouseup', this._mouseupHandler)
       this.style.cursor = 'pointer'
     }
+  }
+
+  disconnectedCallback() {
+    this.removeEventListener('mousedown', this._mousedownHandler)
+    this.removeEventListener('mouseup', this._mouseupHandler)
+    this.style.cursor = ''
   }
 
   handleMousedown({ timeStamp }) {

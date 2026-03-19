@@ -27,6 +27,12 @@ export default class MultiToggler extends HTMLElement {
     this.onclick = this.toggle.bind(this)
   }
 
+  disconnectedCallback() {
+    this.onclick = null
+    const initSelfClass = this.getAttribute('data-init-self-class')
+    if (initSelfClass) this.classList.remove(initSelfClass)
+  }
+
   toggle() {
     this.toggleTargets(this.toggleClass)
   }

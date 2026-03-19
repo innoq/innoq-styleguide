@@ -6,13 +6,18 @@ export default class WallOfConsent extends HTMLElement {
       this.revealContent()
     }
 
-    this.checkbox.addEventListener('change', this.onToggle.bind(this))
+    this._onToggle = this.onToggle.bind(this)
+    this.checkbox.addEventListener('change', this._onToggle)
     this.toggleContent = this.toggleContent.bind(this)
     document.body.addEventListener(this.eventName, this.toggleContent)
   }
 
   disconnectedCallback() {
+    this.checkbox?.removeEventListener('change', this._onToggle)
     document.body.removeEventListener(this.eventName, this.toggleContent)
+    this.content?.remove()
+    this.classList.remove('revealed')
+    this.toggleInitialElements(false)
   }
 
   onToggle(event) {
