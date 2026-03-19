@@ -6,8 +6,13 @@ export default class MenuToggle extends HTMLElement {
 
     this.hidden = false
     this.button.type = 'button'
-    this.button.addEventListener('click', () => this.toggle())
+    this.button.onclick = () => this.toggle()
     this.toggle(false)
+  }
+
+  disconnectedCallback() {
+    if (this.button) this.button.onclick = null
+    this.hidden = true
   }
 
   toggle(expanded = !(this.button.getAttribute('aria-expanded') === 'true')) {

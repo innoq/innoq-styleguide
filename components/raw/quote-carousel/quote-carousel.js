@@ -4,9 +4,16 @@ export default class QuoteCarousel extends HTMLElement {
     this.items = [...this.track.children]
     if (this.items.length <= 1) return
 
+    this.querySelector('.quote-carousel__nav')?.remove()
     this.currentIndex = 0
     this.createControls()
     this.observeScroll()
+  }
+
+  disconnectedCallback() {
+    this._observer?.disconnect()
+    this._observer = null
+    this.querySelector('.quote-carousel__nav')?.remove()
   }
 
   createControls() {
@@ -51,7 +58,7 @@ export default class QuoteCarousel extends HTMLElement {
   }
 
   observeScroll() {
-    const observer = new IntersectionObserver(
+    this._observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
@@ -62,7 +69,7 @@ export default class QuoteCarousel extends HTMLElement {
       },
       { root: this.track, threshold: 0.5 },
     )
-    this.items.forEach((item) => observer.observe(item))
+    this.items.forEach((item) => this._observer.observe(item))
   }
 
   go(direction) {

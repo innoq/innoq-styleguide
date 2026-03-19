@@ -408,9 +408,16 @@
     <span class="hljs-variable language_">this</span>.<span class="hljs-property">items</span> = [...<span class="hljs-variable language_">this</span>.<span class="hljs-property">track</span>.<span class="hljs-property">children</span>]
     <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">items</span>.<span class="hljs-property">length</span> &lt;= <span class="hljs-number">1</span>) <span class="hljs-keyword">return</span>
 
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.quote-carousel__nav&#x27;</span>)?.<span class="hljs-title function_">remove</span>()
     <span class="hljs-variable language_">this</span>.<span class="hljs-property">currentIndex</span> = <span class="hljs-number">0</span>
     <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">createControls</span>()
     <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">observeScroll</span>()
+  }
+
+  <span class="hljs-title function_">disconnectedCallback</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">_observer</span>?.<span class="hljs-title function_">disconnect</span>()
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">_observer</span> = <span class="hljs-literal">null</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;.quote-carousel__nav&#x27;</span>)?.<span class="hljs-title function_">remove</span>()
   }
 
   <span class="hljs-title function_">createControls</span>(<span class="hljs-params"></span>) {
@@ -455,7 +462,7 @@
   }
 
   <span class="hljs-title function_">observeScroll</span>(<span class="hljs-params"></span>) {
-    <span class="hljs-keyword">const</span> observer = <span class="hljs-keyword">new</span> <span class="hljs-title class_">IntersectionObserver</span>(
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">_observer</span> = <span class="hljs-keyword">new</span> <span class="hljs-title class_">IntersectionObserver</span>(
       <span class="hljs-function">(<span class="hljs-params">entries</span>) =&gt;</span> {
         <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> entry <span class="hljs-keyword">of</span> entries) {
           <span class="hljs-keyword">if</span> (entry.<span class="hljs-property">isIntersecting</span>) {
@@ -466,7 +473,7 @@
       },
       { <span class="hljs-attr">root</span>: <span class="hljs-variable language_">this</span>.<span class="hljs-property">track</span>, <span class="hljs-attr">threshold</span>: <span class="hljs-number">0.5</span> },
     )
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">items</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">item</span>) =&gt;</span> observer.<span class="hljs-title function_">observe</span>(item))
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">items</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">item</span>) =&gt;</span> <span class="hljs-variable language_">this</span>.<span class="hljs-property">_observer</span>.<span class="hljs-title function_">observe</span>(item))
   }
 
   <span class="hljs-title function_">go</span>(<span class="hljs-params">direction</span>) {
@@ -502,7 +509,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.7 KB</span>
+                    <span class="Meta-value">2.9 KB</span>
                 </li>
             </ul>
         </div>
@@ -8524,8 +8531,8 @@ Uses IntersectionObserver to track the visible slide.</p>
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-17T13:53:46.049Z">
-                                3/17/2026
+                            <time datetime="2026-03-19T11:17:43.439Z">
+                                3/19/2026
                             </time>
                         
                     </dd>

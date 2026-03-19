@@ -1,17 +1,20 @@
 // Co-authored-by: FND <fnd@innoq.com>
 class AudioPlayer extends HTMLElement {
   connectedCallback() {
-    if (this._init) {
-      // ensures initialization is idempotent
-      return
-    }
-
-    this.appendChild(this.template);
+    const fragment = this.template;
+    this._addedNodes = [...fragment.childNodes];
+    this.appendChild(fragment);
     this.rate = this.slider.value;
-    this._init = true;
 
     this.addEventListener('change', this.onTune);
     this.addEventListener('click', this.onSeek);
+  }
+
+  disconnectedCallback() {
+    this.removeEventListener('change', this.onTune);
+    this.removeEventListener('click', this.onSeek);
+    this._addedNodes?.forEach((node) => node.remove());
+    this._addedNodes = null;
   }
 
   onTune(ev) {
@@ -63,6 +66,10 @@ class CheckToToggle extends HTMLElement {
     this.checkbox.onclick = this.toggle.bind(this);
   }
 
+  disconnectedCallback() {
+    if (this.checkbox) this.checkbox.onclick = null;
+  }
+
   get checkbox() {
     return this.querySelector('input[type="checkbox"]')
   }
@@ -106,6 +113,12 @@ class MultiToggler extends HTMLElement {
     this.onclick = this.toggle.bind(this);
   }
 
+  disconnectedCallback() {
+    this.onclick = null;
+    const initSelfClass = this.getAttribute('data-init-self-class');
+    if (initSelfClass) this.classList.remove(initSelfClass);
+  }
+
   toggle() {
     this.toggleTargets(this.toggleClass);
   }
@@ -132,13 +145,18 @@ class WallOfConsent extends HTMLElement {
       this.revealContent();
     }
 
-    this.checkbox.addEventListener('change', this.onToggle.bind(this));
+    this._onToggle = this.onToggle.bind(this);
+    this.checkbox.addEventListener('change', this._onToggle);
     this.toggleContent = this.toggleContent.bind(this);
     document.body.addEventListener(this.eventName, this.toggleContent);
   }
 
   disconnectedCallback() {
+    this.checkbox?.removeEventListener('change', this._onToggle);
     document.body.removeEventListener(this.eventName, this.toggleContent);
+    this.content?.remove();
+    this.classList.remove('revealed');
+    this.toggleInitialElements(false);
   }
 
   onToggle(event) {
@@ -201,23 +219,37 @@ class Submenu extends HTMLElement {
   connectedCallback() {
     let summary = this.querySelector('summary');
     let ul = this.querySelector('ul');
-    if (!summary && !ul) {
+
+    if (!summary || !ul) {
+      if (this.button) this._attachListeners();
       return
     }
 
     // With out method of animating the collapsing/expanding of the menu, it is
     // necessary to wrap the content of the menu in a `<div>`
     this.innerHTML = `<button type="button" aria-expanded="false">${summary.innerHTML}</button><div>${ul.outerHTML}</div>`;
-    this.button.addEventListener('click', () => this.toggle());
+    this._attachListeners();
+    this.toggle(false);
+  }
 
-    this.navigation.addEventListener('submenu-toggle', (ev) => {
+  disconnectedCallback() {
+    this.button?.removeEventListener('click', this._clickHandler);
+    this.navigation?.removeEventListener('submenu-toggle', this._submenuToggleHandler);
+    this._clickHandler = null;
+    this._submenuToggleHandler = null;
+  }
+
+  _attachListeners() {
+    this._clickHandler = () => this.toggle();
+    this.button.addEventListener('click', this._clickHandler);
+    this._submenuToggleHandler = (ev) => {
       if (ev.detail && ev.detail.expanded && ev.target !== this.button) {
         if (this.button.getAttribute('aria-expanded') === 'true') {
           this.toggle(false);
         }
       }
-    });
-    this.toggle(false);
+    };
+    this.navigation.addEventListener('submenu-toggle', this._submenuToggleHandler);
   }
 
   toggle(expanded = !(this.button.getAttribute('aria-expanded') === 'true')) {
@@ -251,8 +283,13 @@ class MenuToggle extends HTMLElement {
 
     this.hidden = false;
     this.button.type = 'button';
-    this.button.addEventListener('click', () => this.toggle());
+    this.button.onclick = () => this.toggle();
     this.toggle(false);
+  }
+
+  disconnectedCallback() {
+    if (this.button) this.button.onclick = null;
+    this.hidden = true;
   }
 
   toggle(expanded = !(this.button.getAttribute('aria-expanded') === 'true')) {
@@ -272,20 +309,31 @@ class MenuToggle extends HTMLElement {
 
 class TouchDetection extends HTMLElement {
   connectedCallback() {
-    function touched() {
+    if (document.body.classList.contains('instructions--touch-active')) return
+    this._touchHandler = () => {
       document.body.classList.add('instructions--touch-active');
-      window.removeEventListener('touchstart', touched, false);
-    }
+      window.removeEventListener('touchstart', this._touchHandler, false);
+    };
+    window.addEventListener('touchstart', this._touchHandler, false);
+  }
 
-    window.addEventListener('touchstart', touched, false);
+  disconnectedCallback() {
+    window.removeEventListener('touchstart', this._touchHandler, false);
   }
 }
 
 class AutoSubmitForm extends HTMLElement {
   connectedCallback() {
-    let form = this.querySelector('form');
-    form.addEventListener('change', form.submit);
+    const form = this.querySelector('form');
+    if (!form) return
+    form.onchange = () => form.submit();
     this.classList.add('enhanced');
+  }
+
+  disconnectedCallback() {
+    const form = this.querySelector('form');
+    if (form) form.onchange = null;
+    this.classList.remove('enhanced');
   }
 }
 
@@ -295,9 +343,16 @@ class QuoteCarousel extends HTMLElement {
     this.items = [...this.track.children];
     if (this.items.length <= 1) return
 
+    this.querySelector('.quote-carousel__nav')?.remove();
     this.currentIndex = 0;
     this.createControls();
     this.observeScroll();
+  }
+
+  disconnectedCallback() {
+    this._observer?.disconnect();
+    this._observer = null;
+    this.querySelector('.quote-carousel__nav')?.remove();
   }
 
   createControls() {
@@ -342,7 +397,7 @@ class QuoteCarousel extends HTMLElement {
   }
 
   observeScroll() {
-    const observer = new IntersectionObserver(
+    this._observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
           if (entry.isIntersecting) {
@@ -353,7 +408,7 @@ class QuoteCarousel extends HTMLElement {
       },
       { root: this.track, threshold: 0.5 },
     );
-    this.items.forEach((item) => observer.observe(item));
+    this.items.forEach((item) => this._observer.observe(item));
   }
 
   go(direction) {

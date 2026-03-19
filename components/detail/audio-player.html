@@ -303,17 +303,20 @@
                                 <pre><span class="hljs-comment">// Co-authored-by: FND &lt;fnd@innoq.com&gt;</span>
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AudioPlayer</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">HTMLElement</span> {
   <span class="hljs-title function_">connectedCallback</span>(<span class="hljs-params"></span>) {
-    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">_init</span>) {
-      <span class="hljs-comment">// ensures initialization is idempotent</span>
-      <span class="hljs-keyword">return</span>
-    }
-
-    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">appendChild</span>(<span class="hljs-variable language_">this</span>.<span class="hljs-property">template</span>)
+    <span class="hljs-keyword">const</span> fragment = <span class="hljs-variable language_">this</span>.<span class="hljs-property">template</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">_addedNodes</span> = [...fragment.<span class="hljs-property">childNodes</span>]
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">appendChild</span>(fragment)
     <span class="hljs-variable language_">this</span>.<span class="hljs-property">rate</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">slider</span>.<span class="hljs-property">value</span>
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">_init</span> = <span class="hljs-literal">true</span>
 
     <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;change&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">onTune</span>)
     <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">onSeek</span>)
+  }
+
+  <span class="hljs-title function_">disconnectedCallback</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">&#x27;change&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">onTune</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">onSeek</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">_addedNodes</span>?.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">node</span>) =&gt;</span> node.<span class="hljs-title function_">remove</span>())
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">_addedNodes</span> = <span class="hljs-literal">null</span>
   }
 
   <span class="hljs-title function_">onTune</span>(<span class="hljs-params">ev</span>) {
@@ -375,7 +378,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.2 KB</span>
+                    <span class="Meta-value">1.4 KB</span>
                 </li>
             </ul>
         </div>
@@ -8393,8 +8396,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-17T13:53:46.049Z">
-                                3/17/2026
+                            <time datetime="2026-03-19T11:17:43.439Z">
+                                3/19/2026
                             </time>
                         
                     </dd>

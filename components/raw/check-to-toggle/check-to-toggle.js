@@ -3,6 +3,10 @@ export default class CheckToToggle extends HTMLElement {
     this.checkbox.onclick = this.toggle.bind(this)
   }
 
+  disconnectedCallback() {
+    if (this.checkbox) this.checkbox.onclick = null
+  }
+
   get checkbox() {
     return this.querySelector('input[type="checkbox"]')
   }

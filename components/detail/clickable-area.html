@@ -310,10 +310,18 @@ clickable-area {
 <span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ClickableArea</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">HTMLElement</span> {
   <span class="hljs-title function_">connectedCallback</span>(<span class="hljs-params"></span>) {
     <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">link</span>) {
-      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;mousedown&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">handleMousedown</span>.<span class="hljs-title function_">bind</span>(<span class="hljs-variable language_">this</span>))
-      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;mouseup&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">handleMouseup</span>.<span class="hljs-title function_">bind</span>(<span class="hljs-variable language_">this</span>))
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">_mousedownHandler</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">handleMousedown</span>.<span class="hljs-title function_">bind</span>(<span class="hljs-variable language_">this</span>)
+      <span class="hljs-variable language_">this</span>.<span class="hljs-property">_mouseupHandler</span> = <span class="hljs-variable language_">this</span>.<span class="hljs-property">handleMouseup</span>.<span class="hljs-title function_">bind</span>(<span class="hljs-variable language_">this</span>)
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;mousedown&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">_mousedownHandler</span>)
+      <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;mouseup&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">_mouseupHandler</span>)
       <span class="hljs-variable language_">this</span>.<span class="hljs-property">style</span>.<span class="hljs-property">cursor</span> = <span class="hljs-string">&#x27;pointer&#x27;</span>
     }
+  }
+
+  <span class="hljs-title function_">disconnectedCallback</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">&#x27;mousedown&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">_mousedownHandler</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">&#x27;mouseup&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">_mouseupHandler</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">style</span>.<span class="hljs-property">cursor</span> = <span class="hljs-string">&#x27;&#x27;</span>
   }
 
   <span class="hljs-title function_">handleMousedown</span>(<span class="hljs-params">{ timeStamp }</span>) {
@@ -346,7 +354,7 @@ clickable-area {
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">935 Bytes</span>
+                    <span class="Meta-value">1.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -8364,8 +8372,8 @@ clickable-area {
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-17T13:53:46.049Z">
-                                3/17/2026
+                            <time datetime="2026-03-19T11:17:43.439Z">
+                                3/19/2026
                             </time>
                         
                     </dd>

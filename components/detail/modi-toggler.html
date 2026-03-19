@@ -241,6 +241,11 @@
     <span class="hljs-variable language_">this</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">&#x27;enhanced&#x27;</span>)
   }
 
+  <span class="hljs-title function_">disconnectedCallback</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">onclick</span> = <span class="hljs-literal">null</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">&#x27;enhanced&#x27;</span>)
+  }
+
   <span class="hljs-title function_">toggle</span>(<span class="hljs-params"></span>) {
     <span class="hljs-variable language_">this</span>.<span class="hljs-property">targets</span>.<span class="hljs-title function_">forEach</span>(<span class="hljs-function">(<span class="hljs-params">target</span>) =&gt;</span> target.<span class="hljs-property">element</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">toggle</span>(target.<span class="hljs-property">toggleClass</span>))
     <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggleSelf</span>()
@@ -286,7 +291,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.1 KB</span>
+                    <span class="Meta-value">1.2 KB</span>
                 </li>
             </ul>
         </div>
@@ -8305,8 +8310,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-17T13:53:46.049Z">
-                                3/17/2026
+                            <time datetime="2026-03-19T11:17:43.439Z">
+                                3/19/2026
                             </time>
                         
                     </dd>

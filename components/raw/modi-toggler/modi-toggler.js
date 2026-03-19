@@ -10,6 +10,11 @@ export default class ModiToggler extends HTMLElement {
     this.classList.add('enhanced')
   }
 
+  disconnectedCallback() {
+    this.onclick = null
+    this.classList.remove('enhanced')
+  }
+
   toggle() {
     this.targets.forEach((target) => target.element.classList.toggle(target.toggleClass))
     this.toggleSelf()

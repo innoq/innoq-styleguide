@@ -455,12 +455,16 @@
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
                                 <pre><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TouchDetection</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">HTMLElement</span> {
   <span class="hljs-title function_">connectedCallback</span>(<span class="hljs-params"></span>) {
-    <span class="hljs-keyword">function</span> <span class="hljs-title function_">touched</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">contains</span>(<span class="hljs-string">&#x27;instructions--touch-active&#x27;</span>)) <span class="hljs-keyword">return</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">_touchHandler</span> = <span class="hljs-function">() =&gt;</span> {
       <span class="hljs-variable language_">document</span>.<span class="hljs-property">body</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">&#x27;instructions--touch-active&#x27;</span>)
-      <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">&#x27;touchstart&#x27;</span>, touched, <span class="hljs-literal">false</span>)
+      <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">&#x27;touchstart&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">_touchHandler</span>, <span class="hljs-literal">false</span>)
     }
+    <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;touchstart&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">_touchHandler</span>, <span class="hljs-literal">false</span>)
+  }
 
-    <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;touchstart&#x27;</span>, touched, <span class="hljs-literal">false</span>)
+  <span class="hljs-title function_">disconnectedCallback</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">window</span>.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">&#x27;touchstart&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">_touchHandler</span>, <span class="hljs-literal">false</span>)
   }
 }
 </pre>
@@ -479,7 +483,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">305 Bytes</span>
+                    <span class="Meta-value">517 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -8497,8 +8501,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-17T13:53:46.049Z">
-                                3/17/2026
+                            <time datetime="2026-03-19T11:17:43.439Z">
+                                3/19/2026
                             </time>
                         
                     </dd>

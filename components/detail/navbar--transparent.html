@@ -1288,8 +1288,13 @@
 
     <span class="hljs-variable language_">this</span>.<span class="hljs-property">hidden</span> = <span class="hljs-literal">false</span>
     <span class="hljs-variable language_">this</span>.<span class="hljs-property">button</span>.<span class="hljs-property">type</span> = <span class="hljs-string">&#x27;button&#x27;</span>
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">button</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggle</span>())
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">button</span>.<span class="hljs-property">onclick</span> = <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggle</span>()
     <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggle</span>(<span class="hljs-literal">false</span>)
+  }
+
+  <span class="hljs-title function_">disconnectedCallback</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">button</span>) <span class="hljs-variable language_">this</span>.<span class="hljs-property">button</span>.<span class="hljs-property">onclick</span> = <span class="hljs-literal">null</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">hidden</span> = <span class="hljs-literal">true</span>
   }
 
   <span class="hljs-title function_">toggle</span>(<span class="hljs-params">expanded = !(<span class="hljs-variable language_">this</span>.button.getAttribute(<span class="hljs-string">&#x27;aria-expanded&#x27;</span>) === <span class="hljs-string">&#x27;true&#x27;</span>)</span>) {
@@ -1322,7 +1327,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">605 Bytes</span>
+                    <span class="Meta-value">691 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -1339,23 +1344,37 @@
   <span class="hljs-title function_">connectedCallback</span>(<span class="hljs-params"></span>) {
     <span class="hljs-keyword">let</span> summary = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;summary&#x27;</span>)
     <span class="hljs-keyword">let</span> ul = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;ul&#x27;</span>)
-    <span class="hljs-keyword">if</span> (!summary &amp;&amp; !ul) {
+
+    <span class="hljs-keyword">if</span> (!summary || !ul) {
+      <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">button</span>) <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">_attachListeners</span>()
       <span class="hljs-keyword">return</span>
     }
 
     <span class="hljs-comment">// With out method of animating the collapsing/expanding of the menu, it is</span>
     <span class="hljs-comment">// necessary to wrap the content of the menu in a `&lt;div&gt;`</span>
     <span class="hljs-variable language_">this</span>.<span class="hljs-property">innerHTML</span> = <span class="hljs-string">`&lt;button type=&quot;button&quot; aria-expanded=&quot;false&quot;&gt;<span class="hljs-subst">${summary.innerHTML}</span>&lt;/button&gt;&lt;div&gt;<span class="hljs-subst">${ul.outerHTML}</span>&lt;/div&gt;`</span>
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">button</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggle</span>())
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">_attachListeners</span>()
+    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggle</span>(<span class="hljs-literal">false</span>)
+  }
 
-    <span class="hljs-variable language_">this</span>.<span class="hljs-property">navigation</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;submenu-toggle&#x27;</span>, <span class="hljs-function">(<span class="hljs-params">ev</span>) =&gt;</span> {
+  <span class="hljs-title function_">disconnectedCallback</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">button</span>?.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">_clickHandler</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">navigation</span>?.<span class="hljs-title function_">removeEventListener</span>(<span class="hljs-string">&#x27;submenu-toggle&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">_submenuToggleHandler</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">_clickHandler</span> = <span class="hljs-literal">null</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">_submenuToggleHandler</span> = <span class="hljs-literal">null</span>
+  }
+
+  <span class="hljs-title function_">_attachListeners</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">_clickHandler</span> = <span class="hljs-function">() =&gt;</span> <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggle</span>()
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">button</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">_clickHandler</span>)
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">_submenuToggleHandler</span> = <span class="hljs-function">(<span class="hljs-params">ev</span>) =&gt;</span> {
       <span class="hljs-keyword">if</span> (ev.<span class="hljs-property">detail</span> &amp;&amp; ev.<span class="hljs-property">detail</span>.<span class="hljs-property">expanded</span> &amp;&amp; ev.<span class="hljs-property">target</span> !== <span class="hljs-variable language_">this</span>.<span class="hljs-property">button</span>) {
         <span class="hljs-keyword">if</span> (<span class="hljs-variable language_">this</span>.<span class="hljs-property">button</span>.<span class="hljs-title function_">getAttribute</span>(<span class="hljs-string">&#x27;aria-expanded&#x27;</span>) === <span class="hljs-string">&#x27;true&#x27;</span>) {
           <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggle</span>(<span class="hljs-literal">false</span>)
         }
       }
-    })
-    <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">toggle</span>(<span class="hljs-literal">false</span>)
+    }
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">navigation</span>.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;submenu-toggle&#x27;</span>, <span class="hljs-variable language_">this</span>.<span class="hljs-property">_submenuToggleHandler</span>)
   }
 
   <span class="hljs-title function_">toggle</span>(<span class="hljs-params">expanded = !(<span class="hljs-variable language_">this</span>.button.getAttribute(<span class="hljs-string">&#x27;aria-expanded&#x27;</span>) === <span class="hljs-string">&#x27;true&#x27;</span>)</span>) {
@@ -1396,7 +1415,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.3 KB</span>
+                    <span class="Meta-value">1.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -9551,8 +9570,8 @@ the animations if the user has specified no preference for
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-17T13:53:46.049Z">
-                                3/17/2026
+                            <time datetime="2026-03-19T11:17:43.439Z">
+                                3/19/2026
                             </time>
                         
                     </dd>

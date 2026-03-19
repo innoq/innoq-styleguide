@@ -1,17 +1,20 @@
 // Co-authored-by: FND <fnd@innoq.com>
 export default class AudioPlayer extends HTMLElement {
   connectedCallback() {
-    if (this._init) {
-      // ensures initialization is idempotent
-      return
-    }
-
-    this.appendChild(this.template)
+    const fragment = this.template
+    this._addedNodes = [...fragment.childNodes]
+    this.appendChild(fragment)
     this.rate = this.slider.value
-    this._init = true
 
     this.addEventListener('change', this.onTune)
     this.addEventListener('click', this.onSeek)
+  }
+
+  disconnectedCallback() {
+    this.removeEventListener('change', this.onTune)
+    this.removeEventListener('click', this.onSeek)
+    this._addedNodes?.forEach((node) => node.remove())
+    this._addedNodes = null
   }
 
   onTune(ev) {

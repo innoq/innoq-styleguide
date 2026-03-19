@@ -409,9 +409,16 @@ auto-submit-<span class="hljs-selector-tag">form</span><span class="hljs-selecto
                             <code class="Code Code--lang-JavaScript FileBrowser-code hljs">
                                 <pre><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">AutoSubmitForm</span> <span class="hljs-keyword">extends</span> <span class="hljs-title class_ inherited__">HTMLElement</span> {
   <span class="hljs-title function_">connectedCallback</span>(<span class="hljs-params"></span>) {
-    <span class="hljs-keyword">let</span> form = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;form&#x27;</span>)
-    form.<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;change&#x27;</span>, form.<span class="hljs-property">submit</span>)
+    <span class="hljs-keyword">const</span> form = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;form&#x27;</span>)
+    <span class="hljs-keyword">if</span> (!form) <span class="hljs-keyword">return</span>
+    form.<span class="hljs-property">onchange</span> = <span class="hljs-function">() =&gt;</span> form.<span class="hljs-title function_">submit</span>()
     <span class="hljs-variable language_">this</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">add</span>(<span class="hljs-string">&#x27;enhanced&#x27;</span>)
+  }
+
+  <span class="hljs-title function_">disconnectedCallback</span>(<span class="hljs-params"></span>) {
+    <span class="hljs-keyword">const</span> form = <span class="hljs-variable language_">this</span>.<span class="hljs-title function_">querySelector</span>(<span class="hljs-string">&#x27;form&#x27;</span>)
+    <span class="hljs-keyword">if</span> (form) form.<span class="hljs-property">onchange</span> = <span class="hljs-literal">null</span>
+    <span class="hljs-variable language_">this</span>.<span class="hljs-property">classList</span>.<span class="hljs-title function_">remove</span>(<span class="hljs-string">&#x27;enhanced&#x27;</span>)
   }
 }
 </pre>
@@ -430,7 +437,7 @@ auto-submit-<span class="hljs-selector-tag">form</span><span class="hljs-selecto
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">214 Bytes</span>
+                    <span class="Meta-value">378 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -8448,8 +8455,8 @@ auto-submit-<span class="hljs-selector-tag">form</span><span class="hljs-selecto
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-03-17T13:53:46.049Z">
-                                3/17/2026
+                            <time datetime="2026-03-19T11:17:43.439Z">
+                                3/19/2026
                             </time>
                         
                     </dd>
