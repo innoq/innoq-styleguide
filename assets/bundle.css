@@ -5350,6 +5350,12 @@ touch-detection {
 .list-teaser-abstract.primary {
   background-color: #ff9c66;
 }
+.list-teaser-abstract.primary .list-teaser-abstract__caption {
+  color: #004153;
+}
+.list-teaser-abstract.primary .list-teaser-abstract__headline {
+  color: #004153;
+}
 .list-teaser-abstract.primary .list-teaser-abstract__text {
   color: #004153;
 }
@@ -5362,6 +5368,12 @@ touch-detection {
 }
 .list-teaser-abstract.secondary {
   background-color: #004153;
+}
+.list-teaser-abstract.secondary .list-teaser-abstract__caption {
+  color: #fff;
+}
+.list-teaser-abstract.secondary .list-teaser-abstract__headline {
+  color: #fff;
 }
 .list-teaser-abstract.secondary .list-teaser-abstract__text {
   color: #ff9c66;

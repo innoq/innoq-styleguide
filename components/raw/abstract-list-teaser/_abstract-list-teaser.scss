@@ -10,6 +10,14 @@
   &.primary {
     background-color: $list-teaser-abstract-primary-bg-color;
 
+    .list-teaser-abstract__caption {
+      color: $list-teaser-abstract-primary-caption-color;
+    }
+
+    .list-teaser-abstract__headline {
+      color: $list-teaser-abstract-primary-headline-color;
+    }
+
     .list-teaser-abstract__text {
       color: $list-teaser-abstract-primary-text-color;
 
@@ -26,6 +34,14 @@
 
   &.secondary {
     background-color: $list-teaser-abstract-secondary-bg-color;
+
+    .list-teaser-abstract__caption {
+      color: $list-teaser-abstract-secondary-caption-color;
+    }
+
+    .list-teaser-abstract__headline {
+      color: $list-teaser-abstract-secondary-headline-color;
+    }
 
     .list-teaser-abstract__text {
       color: $list-teaser-abstract-secondary-text-color;
