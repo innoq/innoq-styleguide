@@ -99,14 +99,113 @@ title: Helper Classes
 
 <h3>Flexbox</h3>
 
+<h4>Display</h4>
 <table>
     <thead>
-        <tr><th>Class</th><th>Effect</th></tr>
+        <tr><th>Class</th><th>CSS</th></tr>
     </thead>
     <tbody>
         <tr><td><code>.flex</code></td><td><code>display: flex</code></td></tr>
+        <tr><td><code>.flex-inline</code></td><td><code>display: inline-flex</code></td></tr>
+    </tbody>
+</table>
+
+<h4>Direction</h4>
+<table>
+    <thead>
+        <tr><th>Class</th><th>CSS</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.flex-direction-row</code></td><td><code>flex-direction: row</code></td></tr>
+        <tr><td><code>.flex-direction-row-reverse</code></td><td><code>flex-direction: row-reverse</code></td></tr>
         <tr><td><code>.flex-direction-column</code></td><td><code>flex-direction: column</code></td></tr>
+        <tr><td><code>.flex-direction-column-reverse</code></td><td><code>flex-direction: column-reverse</code></td></tr>
+    </tbody>
+</table>
+
+<h4>Wrap</h4>
+<table>
+    <thead>
+        <tr><th>Class</th><th>CSS</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.flex-wrap</code></td><td><code>flex-wrap: wrap</code></td></tr>
+        <tr><td><code>.flex-nowrap</code></td><td><code>flex-wrap: nowrap</code></td></tr>
+        <tr><td><code>.flex-wrap-reverse</code></td><td><code>flex-wrap: wrap-reverse</code></td></tr>
+    </tbody>
+</table>
+
+<h4>Justify Content</h4>
+<table>
+    <thead>
+        <tr><th>Class</th><th>CSS</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.flex-justify-start</code></td><td><code>justify-content: flex-start</code></td></tr>
+        <tr><td><code>.flex-justify-end</code></td><td><code>justify-content: flex-end</code></td></tr>
+        <tr><td><code>.flex-justify-center</code></td><td><code>justify-content: center</code></td></tr>
+        <tr><td><code>.flex-justify-between</code></td><td><code>justify-content: space-between</code></td></tr>
+        <tr><td><code>.flex-justify-around</code></td><td><code>justify-content: space-around</code></td></tr>
+        <tr><td><code>.flex-justify-evenly</code></td><td><code>justify-content: space-evenly</code></td></tr>
+    </tbody>
+</table>
+
+<h4>Align Items</h4>
+<table>
+    <thead>
+        <tr><th>Class</th><th>CSS</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.flex-align-start</code></td><td><code>align-items: flex-start</code></td></tr>
+        <tr><td><code>.flex-align-end</code></td><td><code>align-items: flex-end</code></td></tr>
         <tr><td><code>.flex-align-center</code></td><td><code>align-items: center</code></td></tr>
+        <tr><td><code>.flex-align-baseline</code></td><td><code>align-items: baseline</code></td></tr>
+        <tr><td><code>.flex-align-stretch</code></td><td><code>align-items: stretch</code></td></tr>
+    </tbody>
+</table>
+
+<h4>Align Content</h4>
+<p>Controls spacing of wrapped flex lines (only applies when <code>flex-wrap</code> is set and multiple lines exist).</p>
+<table>
+    <thead>
+        <tr><th>Class</th><th>CSS</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.flex-content-start</code></td><td><code>align-content: flex-start</code></td></tr>
+        <tr><td><code>.flex-content-end</code></td><td><code>align-content: flex-end</code></td></tr>
+        <tr><td><code>.flex-content-center</code></td><td><code>align-content: center</code></td></tr>
+        <tr><td><code>.flex-content-between</code></td><td><code>align-content: space-between</code></td></tr>
+        <tr><td><code>.flex-content-around</code></td><td><code>align-content: space-around</code></td></tr>
+        <tr><td><code>.flex-content-stretch</code></td><td><code>align-content: stretch</code></td></tr>
+    </tbody>
+</table>
+
+<h4>Align Self</h4>
+<p>Overrides <code>align-items</code> for individual flex items.</p>
+<table>
+    <thead>
+        <tr><th>Class</th><th>CSS</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.flex-self-auto</code></td><td><code>align-self: auto</code></td></tr>
+        <tr><td><code>.flex-self-start</code></td><td><code>align-self: flex-start</code></td></tr>
+        <tr><td><code>.flex-self-end</code></td><td><code>align-self: flex-end</code></td></tr>
+        <tr><td><code>.flex-self-center</code></td><td><code>align-self: center</code></td></tr>
+        <tr><td><code>.flex-self-baseline</code></td><td><code>align-self: baseline</code></td></tr>
+        <tr><td><code>.flex-self-stretch</code></td><td><code>align-self: stretch</code></td></tr>
+    </tbody>
+</table>
+
+<h4>Grow &amp; Shrink</h4>
+<table>
+    <thead>
+        <tr><th>Class</th><th>CSS</th></tr>
+    </thead>
+    <tbody>
+        <tr><td><code>.flex-grow-0</code></td><td><code>flex-grow: 0</code></td></tr>
+        <tr><td><code>.flex-grow-1</code></td><td><code>flex-grow: 1</code></td></tr>
+        <tr><td><code>.flex-shrink-0</code></td><td><code>flex-shrink: 0</code></td></tr>
+        <tr><td><code>.flex-shrink-1</code></td><td><code>flex-shrink: 1</code></td></tr>
     </tbody>
 </table>
 
