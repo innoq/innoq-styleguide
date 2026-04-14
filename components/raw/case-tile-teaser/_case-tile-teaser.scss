@@ -115,4 +115,12 @@ $case-tile-teaser-sm-height: ms(32);
       max-width: ms(37);
     }
   }
+
+  .masonry-grid--mixed > *:nth-child(4n + 3),
+  .masonry-grid--alternating-asymmetric > *:nth-child(4n + 1),
+  .masonry-grid--alternating-asymmetric > *:nth-child(4n + 4) {
+    .case-tile-teaser__content {
+      max-width: ms(37);
+    }
+  }
 }

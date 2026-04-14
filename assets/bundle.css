@@ -142,7 +142,7 @@ h4, .footnotes__list li::before, .date, .form-label--emphasized, .btn, .headings
 .headings--bold h3,
 .headings--bold h4,
 .headings--bold h5,
-.headings--bold h6, .wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-list-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .portfolio-card__caption, .card__content__body__subheadline,
+.headings--bold h6, .wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-freetext__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-list-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .portfolio-card__caption, .card__content__body__subheadline,
 .heading-font-bold {
   font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: bold;
@@ -748,13 +748,13 @@ html {
           box-shadow: 10px 10px 0 #bfcfd4;
 }
 
-.text-card, .small-tile-teaser, .podcast-teaser, .content-teaser, .case-tile-teaser, a.big-content-teaser, a.list-teaser-training, a.topic-teaser, a.list-teaser, .list-teaser-podcast, .podcast-channel-teaser, a.list-teaser-event, a.case-list-teaser, a.list-teaser-abstract, a:has(figure), figure a:not([class]), .image-link {
+.text-card, .small-tile-teaser, .podcast-teaser, .content-teaser, .case-tile-teaser, a.big-content-teaser, a.list-teaser-freetext, a.list-teaser-training, a.topic-teaser, a.list-teaser, .list-teaser-podcast, .podcast-channel-teaser, a.list-teaser-event, a.case-list-teaser, a.list-teaser-abstract, a:has(figure), figure a:not([class]), .image-link {
   -webkit-transition: 0.2s -webkit-box-shadow ease-in-out;
   transition: 0.2s -webkit-box-shadow ease-in-out;
   transition: 0.2s box-shadow ease-in-out;
   transition: 0.2s box-shadow ease-in-out, 0.2s -webkit-box-shadow ease-in-out;
 }
-.text-card:hover, .small-tile-teaser:hover, .podcast-teaser:hover, .content-teaser:hover, .case-tile-teaser:hover, a.big-content-teaser:hover, a.list-teaser-training:hover, a.topic-teaser:hover, a.list-teaser:hover, .list-teaser-podcast:hover, .podcast-channel-teaser:hover, a.list-teaser-event:hover, a.case-list-teaser:hover, a.list-teaser-abstract:hover, a:hover:has(figure), figure a:hover:not([class]), .image-link:hover, .text-card:focus, .small-tile-teaser:focus, .podcast-teaser:focus, .content-teaser:focus, .case-tile-teaser:focus, a.big-content-teaser:focus, a.list-teaser-training:focus, a.topic-teaser:focus, a.list-teaser:focus, .list-teaser-podcast:focus, .podcast-channel-teaser:focus, a.list-teaser-event:focus, a.case-list-teaser:focus, a.list-teaser-abstract:focus, a:focus:has(figure), figure a:focus:not([class]), .image-link:focus {
+.text-card:hover, .small-tile-teaser:hover, .podcast-teaser:hover, .content-teaser:hover, .case-tile-teaser:hover, a.big-content-teaser:hover, a.list-teaser-freetext:hover, a.list-teaser-training:hover, a.topic-teaser:hover, a.list-teaser:hover, .list-teaser-podcast:hover, .podcast-channel-teaser:hover, a.list-teaser-event:hover, a.case-list-teaser:hover, a.list-teaser-abstract:hover, a:hover:has(figure), figure a:hover:not([class]), .image-link:hover, .text-card:focus, .small-tile-teaser:focus, .podcast-teaser:focus, .content-teaser:focus, .case-tile-teaser:focus, a.big-content-teaser:focus, a.list-teaser-freetext:focus, a.list-teaser-training:focus, a.topic-teaser:focus, a.list-teaser:focus, .list-teaser-podcast:focus, .podcast-channel-teaser:focus, a.list-teaser-event:focus, a.case-list-teaser:focus, a.list-teaser-abstract:focus, a:focus:has(figure), figure a:focus:not([class]), .image-link:focus {
   -webkit-box-shadow: 0 0 0 5px rgba(255, 156, 102, 0.8);
           box-shadow: 0 0 0 5px rgba(255, 156, 102, 0.8);
 }
@@ -930,13 +930,13 @@ h6 > a:focus:not([class]),
   background-color: transparent;
 }
 
-.static-tile-teaser, .small-tile-teaser, .podcast-teaser, .content-teaser, .case-tile-teaser, .big-content-teaser, .product-list-teaser__cta, .product-list-teaser, .topic-teaser, .reference__link, .list-teaser-training, .list-teaser, .list-teaser-podcast, .podcast-channel-teaser, .list-teaser-event, .case-list-teaser, .list-teaser-abstract, .portfolio-card {
+.static-tile-teaser, .small-tile-teaser, .podcast-teaser, .content-teaser, .case-tile-teaser, .big-content-teaser, .product-list-teaser__cta, .product-list-teaser, .topic-teaser, .reference__link, .list-teaser-freetext, .list-teaser-training, .list-teaser, .list-teaser-podcast, .podcast-channel-teaser, .list-teaser-event, .case-list-teaser, .list-teaser-abstract, .portfolio-card {
   display: block;
   color: inherit;
   text-decoration: none;
 }
 
-.wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-list-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .portfolio-card__caption, .card__content__body__subheadline {
+.wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-freetext__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-list-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .portfolio-card__caption, .card__content__body__subheadline {
   font-size: 0.9114583333rem;
   text-transform: uppercase;
 }
@@ -950,7 +950,7 @@ h6 > a:focus:not([class]),
 }
 
 @media screen and (min-width: 48rem) {
-  .wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-list-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .portfolio-card__caption, .card__content__body__subheadline {
+  .wall-note__subheading, .static-tile-teaser__caption, .podcast-teaser__caption, .content-teaser__caption, .case-tile-teaser .case-tile-teaser__caption, .product-list-teaser__caption, .list-teaser-freetext__caption, .list-teaser-training__caption, .topic-teaser__caption, .list-teaser__caption, .list-teaser-podcast__caption, .case-list-teaser__caption, .list-teaser-abstract__caption, .default-full-width-teaser__caption, .portfolio-card__caption, .card__content__body__subheadline {
     font-size: 1rem;
   }
 }
@@ -970,7 +970,7 @@ h6 > a:focus:not([class]),
   text-align: center;
 }
 
-.list-teaser-training, .list-teaser, .list-teaser-podcast, .podcast-channel-teaser, .list-teaser-event, .case-list-teaser, .list-teaser-abstract, .portfolio-card {
+.list-teaser-freetext, .list-teaser-training, .list-teaser, .list-teaser-podcast, .podcast-channel-teaser, .list-teaser-event, .case-list-teaser, .list-teaser-abstract, .portfolio-card {
   min-height: 18.4884258895rem;
 }
 
@@ -6408,6 +6408,54 @@ touch-detection {
     font-size: 2.48832rem;
   }
 }
+.list-teaser-freetext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  padding: 1.44rem;
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (min-width: 48rem) {
+  .list-teaser-freetext {
+    padding: 2.985984rem;
+  }
+}
+.list-teaser-freetext > .icon {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.list-teaser-freetext__caption {
+  color: #fff;
+  margin-bottom: 0.3348979767rem;
+}
+
+.list-teaser-freetext__headline {
+  font-family: "FFMarkWebPro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 800;
+  font-size: 1.728rem;
+  line-height: 1.2;
+  color: #fff;
+  margin: 0;
+}
+@media screen and (min-width: 48rem) {
+  .list-teaser-freetext__headline {
+    font-size: 2.0736rem;
+  }
+}
+
 .product-list-teaser {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6667,6 +6715,11 @@ touch-detection {
 
 @media screen and (min-width: 75rem) {
   .span-5 .case-tile-teaser__content {
+    max-width: 29.119270776rem;
+  }
+  .masonry-grid--mixed > *:nth-child(4n+3) .case-tile-teaser__content,
+  .masonry-grid--alternating-asymmetric > *:nth-child(4n+1) .case-tile-teaser__content,
+  .masonry-grid--alternating-asymmetric > *:nth-child(4n+4) .case-tile-teaser__content {
     max-width: 29.119270776rem;
   }
 }
