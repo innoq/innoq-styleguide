@@ -1,0 +1,46 @@
+// Teaser with full-bleed background image and freely composable white text overlay.
+// Inherits base styles (min-height, block-link) from %list-teaser.
+.list-teaser-freetext {
+  @extend %list-teaser;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  padding: $spacer-md;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: $grid-breakpoint-md) {
+    padding: $spacer-lg;
+  }
+
+  > .icon {
+    align-self: flex-start;
+  }
+}
+
+a.list-teaser-freetext {
+  @extend %hover-glow;
+}
+
+.list-teaser-freetext__caption {
+  @extend %teaser-caption;
+
+  color: $brand-white;
+  margin-bottom: $spacer-xxs;
+}
+
+.list-teaser-freetext__headline {
+  font-family: $font-family-sans-serif;
+  font-weight: 800;
+  font-size: $font-size-lg;
+  line-height: $heading-line-height;
+  color: $brand-white;
+  margin: 0;
+
+  @media screen and (min-width: $grid-breakpoint-md) {
+    font-size: $font-size-xl;
+  }
+}
