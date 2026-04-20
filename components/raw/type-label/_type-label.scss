@@ -1,0 +1,30 @@
+.type-label {
+  display: inline-block;
+  padding: $spacer-xxs;
+  font-size: $font-size-xs;
+
+  &.primary {
+    @extend %heading-font-bold;
+
+    color: $talk-label-text-color;
+    text-transform: uppercase;
+    background-color: $talk-label-background-color;
+    border-left: 6px solid $talk-label-text-color;
+  }
+
+  &.secondary {
+    @extend %heading-font-bold;
+
+    color: $training-label-text-color;
+    text-transform: uppercase;
+    background-color: $training-label-background-color;
+    border-left: 6px solid $training-label-text-color;
+  }
+}
+
+//Breakpoints
+@media screen and (min-width: $grid-breakpoint-md) {
+  .type-label {
+    margin-right: $spacer-xxs;
+  }
+}

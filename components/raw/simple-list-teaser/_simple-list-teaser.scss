@@ -16,12 +16,8 @@ a.list-teaser {
 .list-teaser__body {
   padding: $spacer-sm $spacer-md;
 
-  .label {
-    &.talk,
-    &.slides,
-    &.training {
-      display: none;
-    }
+  .type-label {
+    display: none;
   }
 }
 
@@ -60,16 +56,5 @@ a.list-teaser {
 @media screen and (min-width: $grid-breakpoint-md) {
   .list-teaser__subheadline {
     font-size: $font-size-md;
-  }
-
-  .list-teaser__body {
-    .label {
-      &.talk,
-      &.slides,
-      &.training {
-        display: inline-block;
-        margin-bottom: $spacer-xs;
-      }
-    }
   }
 }

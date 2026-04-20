@@ -3,25 +3,7 @@
   padding: $spacer-xxs;
   font-size: $font-size-xs;
 
-  &.talk {
-    @extend %heading-font-bold;
-
-    color: $talk-label-text-color;
-    text-transform: uppercase;
-    background-color: $talk-label-background-color;
-    border-left: 6px solid $talk-label-text-color;
-  }
-
-  &.training {
-    @extend %heading-font-bold;
-
-    color: $training-label-text-color;
-    text-transform: uppercase;
-    background-color: $training-label-background-color;
-    border-left: 6px solid $training-label-text-color;
-  }
-
-  &.slides {
+  &.green {
     @extend %heading-font-regular;
 
     color: $slides-label-text-color;
