@@ -96,3 +96,9 @@ Always run `npm test` before committing changes. This includes:
 ## Deployment
 
 The project auto-deploys to https://innoq.style/ via GitHub Actions when changes are pushed to main branch.
+
+## Building Pages with the Styleguide
+
+For building HTML pages using this design system, consult `.github/STYLEGUIDE_LLM_REFERENCE.md` — a complete machine-readable reference with every component, variant, HTML markup, and composition pattern.
+
+Use the `/build-page` slash command (Claude Code) to get guided page generation with the correct components and markup.

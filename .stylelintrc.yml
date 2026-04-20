@@ -13,6 +13,11 @@ rules:
   no-empty-source: null
   rule-empty-line-before: null
   selector-class-pattern: null
+  property-no-unknown: null
+  selector-pseudo-element-no-unknown:
+    - true
+    - ignorePseudoElements:
+        - details-content
   selector-type-no-unknown:
     - true
     - ignore:
