@@ -46,6 +46,17 @@ a.list-teaser-event {
   width: 100%;
 }
 
+.list-teaser__labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $spacer-xxs;
+  padding: $spacer-xs $spacer-md 0;
+
+  .type-label {
+    display: none;
+  }
+}
+
 .list-teaser-event__headline {
   @extend %h3;
 
@@ -84,7 +95,7 @@ a.list-teaser-event {
 
       &.training,
       &.talk {
-        border-left: 0;
+        border-left: 0; // override type-label border-left in mobile date-section context
       }
     }
 
@@ -103,8 +114,16 @@ a.list-teaser-event {
     .event-date-section {
       margin-top: 0;
 
-      .label {
+      .type-label {
         display: none;
+      }
+    }
+
+    .list-teaser__labels {
+      padding-top: $spacer-xs;
+
+      .type-label {
+        display: inline-block;
       }
     }
 
