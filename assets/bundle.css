@@ -9822,6 +9822,21 @@ form > * + *,
 .case-study-page .customerlogo img {
   max-width: 40%;
 }
+.case-study-page .info-note {
+  grid-column: content-start/content-end;
+}
+@media screen and (min-width: 36rem) {
+  .case-study-page .info-note {
+    grid-column: content-center-start/content-center-end;
+  }
+}
+@media screen and (min-width: 82rem) {
+  .case-study-page .info-note {
+    grid-column: 9/11;
+    grid-row: 2/100;
+    align-self: start;
+  }
+}
 
 .artist-collabo-page {
   background-color: #f7f7f7;
@@ -10199,7 +10214,12 @@ form > * + *,
   margin-top: 1.44rem;
 }
 .story-detail-page .info-note {
-  grid-column: content-center;
+  grid-column: content-start/content-end;
+}
+@media screen and (min-width: 36rem) {
+  .story-detail-page .info-note {
+    grid-column: content-center;
+  }
 }
 .story-detail-page super-quote,
 .story-detail-page long-quote,

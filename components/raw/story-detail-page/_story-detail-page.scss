@@ -21,7 +21,13 @@
   }
 
   .info-note {
-    grid-column: content-center;
+    grid-column: content-start / content-end;
+  }
+
+  @media screen and (min-width: $grid-breakpoint-sm) {
+    .info-note {
+      grid-column: content-center;
+    }
   }
 
   super-quote,

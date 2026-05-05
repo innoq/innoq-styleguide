@@ -563,7 +563,13 @@
   }
 
   <span class="hljs-selector-class">.info-note</span> {
-    <span class="hljs-attribute">grid-column</span>: content-center;
+    <span class="hljs-attribute">grid-column</span>: content-start / content-end;
+  }
+
+  <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-sm</span>) {
+    <span class="hljs-selector-class">.info-note</span> {
+      <span class="hljs-attribute">grid-column</span>: content-center;
+    }
   }
 
   super-<span class="hljs-selector-tag">quote</span>,
@@ -630,7 +636,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">1.7 KB</span>
+                    <span class="Meta-value">1.8 KB</span>
                 </li>
             </ul>
         </div>
@@ -8716,8 +8722,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-04-20T15:12:38.932Z">
-                                4/20/2026
+                            <time datetime="2026-05-05T13:40:44.757Z">
+                                5/5/2026
                             </time>
                         
                     </dd>

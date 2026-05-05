@@ -215,6 +215,15 @@
             <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
 
+        <span class="hljs-tag">&lt;<span class="hljs-name">info-note</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;info-note&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;info-note__content&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;info-note__title&quot;</span>&gt;</span>Muster AG<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;info-note__text&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Die Muster AG ist ein führendes Unternehmen im Bereich digitale Transformation mit über 5.000 Mitarbeitenden weltweit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">info-note</span>&gt;</span>
+
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content&quot;</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>Der Text auch in Englisch<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
@@ -379,6 +388,15 @@
         <span class="hljs-tag">&lt;<span class="hljs-name">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;toc__anchor&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;#&quot;</span>&gt;</span>{{listitem}}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">ol</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-name">aside</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">info-note</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;info-note&quot;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;info-note__content&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h3</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;info-note__title&quot;</span>&gt;</span>Muster AG<span class="hljs-tag">&lt;/<span class="hljs-name">h3</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;info-note__text&quot;</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Die Muster AG ist ein führendes Unternehmen im Bereich digitale Transformation mit über 5.000 Mitarbeitenden weltweit.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+      <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">info-note</span>&gt;</span>
 
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content&quot;</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>
@@ -571,6 +589,25 @@
       <span class="hljs-attribute">max-width</span>: <span class="hljs-number">40%</span>;
     }
   }
+
+  <span class="hljs-comment">// Info-note: full-width on very small screens, centered on medium, right column on large</span>
+  <span class="hljs-selector-class">.info-note</span> {
+    <span class="hljs-attribute">grid-column</span>: content-start / content-end;
+  }
+
+  <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-sm</span>) {
+    <span class="hljs-selector-class">.info-note</span> {
+      <span class="hljs-attribute">grid-column</span>: content-center-start / content-center-end;
+    }
+  }
+
+  <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg-xl</span>) {
+    <span class="hljs-selector-class">.info-note</span> {
+      <span class="hljs-attribute">grid-column</span>: <span class="hljs-number">9</span> / <span class="hljs-number">11</span>;
+      <span class="hljs-attribute">grid-row</span>: <span class="hljs-number">2</span> / <span class="hljs-number">100</span>;
+      <span class="hljs-attribute">align-self</span>: start;
+    }
+  }
 }
 </pre>
                             </code>
@@ -588,7 +625,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">268 Bytes</span>
+                    <span class="Meta-value">734 Bytes</span>
                 </li>
             </ul>
         </div>
@@ -8674,8 +8711,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-04-20T15:12:38.932Z">
-                                4/20/2026
+                            <time datetime="2026-05-05T13:40:44.757Z">
+                                5/5/2026
                             </time>
                         
                     </dd>
