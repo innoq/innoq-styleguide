@@ -13,4 +13,23 @@
       max-width: 40%;
     }
   }
+
+  // Info-note: full-width on very small screens, centered on medium, right column on large
+  .info-note {
+    grid-column: content-start / content-end;
+  }
+
+  @media screen and (min-width: $grid-breakpoint-sm) {
+    .info-note {
+      grid-column: content-center-start / content-center-end;
+    }
+  }
+
+  @media screen and (min-width: $grid-breakpoint-lg-xl) {
+    .info-note {
+      grid-column: 9 / 11;
+      grid-row: 2 / 100;
+      align-self: start;
+    }
+  }
 }
