@@ -65,7 +65,9 @@
   }
 
   @media screen and (min-width: $grid-breakpoint-lg-xl) {
-    grid-template-columns: 1fr 11rem 5rem 2rem [content-start] 10rem [content-center-start] auto [content-center-end] 10rem [content-end] 2rem 5rem 11rem 1fr;
+    grid-template-columns:
+      1fr 11rem 5rem 2rem [content-start] 10rem [content-center-start] minmax(auto, 30rem)
+      [content-center-end] 10rem [content-end] 2rem 5rem 11rem 1fr;
     padding-right: $spacer-sm;
     padding-left: $spacer-sm;
 

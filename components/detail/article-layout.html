@@ -296,7 +296,9 @@
   }
 
   <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg-xl</span>) {
-    <span class="hljs-attribute">grid-template-columns</span>: <span class="hljs-number">1</span>fr <span class="hljs-number">11rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">2rem</span> [content-start] <span class="hljs-number">10rem</span> [content-center-start] auto [content-center-end] <span class="hljs-number">10rem</span> [content-end] <span class="hljs-number">2rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">11rem</span> <span class="hljs-number">1</span>fr;
+    <span class="hljs-attribute">grid-template-columns</span>:
+      <span class="hljs-number">1</span>fr <span class="hljs-number">11rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">2rem</span> [content-start] <span class="hljs-number">10rem</span> [content-center-start] <span class="hljs-built_in">minmax</span>(auto, <span class="hljs-number">30rem</span>)
+      [content-center-end] <span class="hljs-number">10rem</span> [content-end] <span class="hljs-number">2rem</span> <span class="hljs-number">5rem</span> <span class="hljs-number">11rem</span> <span class="hljs-number">1</span>fr;
     <span class="hljs-attribute">padding-right</span>: <span class="hljs-variable">$spacer-sm</span>;
     <span class="hljs-attribute">padding-left</span>: <span class="hljs-variable">$spacer-sm</span>;
 
@@ -8440,7 +8442,7 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-05-07T13:22:04.554Z">
+                            <time datetime="2026-05-07T13:34:44.624Z">
                                 5/7/2026
                             </time>
                         
