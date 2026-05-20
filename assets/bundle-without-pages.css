@@ -6619,6 +6619,7 @@ touch-detection {
   }
 }
 .case-tile-teaser {
+  container-type: inline-size;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6734,17 +6735,17 @@ touch-detection {
     padding: 3.919104rem;
   }
 }
-
-@media screen and (min-width: 75rem) {
-  .span-5 .case-tile-teaser__content {
-    max-width: 29.119270776rem;
-  }
-  .masonry-grid--mixed > *:nth-child(4n+3) .case-tile-teaser__content,
-  .masonry-grid--alternating-asymmetric > *:nth-child(4n+1) .case-tile-teaser__content,
-  .masonry-grid--alternating-asymmetric > *:nth-child(4n+4) .case-tile-teaser__content {
+@container (min-width: 29.119270776rem) {
+  .case-tile-teaser .case-tile-teaser__content {
     max-width: 29.119270776rem;
   }
 }
+@container (min-width: 50rem) {
+  .case-tile-teaser .case-tile-teaser__content {
+    max-width: 50%;
+  }
+}
+
 .content-teaser {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9371,6 +9372,10 @@ form > * + *,
   }
   .masonry-grid--mixed > *:nth-child(4n+4) {
     grid-column: span 3;
+  }
+  .masonry-grid--mixed > *:nth-child(4n+1):last-child,
+  .masonry-grid--mixed > *:nth-child(4n+3):last-child {
+    grid-column: span 8;
   }
 }
 .one-column-grid {

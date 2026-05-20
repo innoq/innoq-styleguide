@@ -413,6 +413,7 @@
   <span class="hljs-keyword">@extend</span> %block-link;
   <span class="hljs-keyword">@extend</span> %hover-glow;
 
+  <span class="hljs-attribute">container-type</span>: inline-size;
   <span class="hljs-attribute">display</span>: flex;
   <span class="hljs-attribute">flex-direction</span>: column;
   <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-md</span>;
@@ -515,21 +516,17 @@
   <span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg</span>) {
     <span class="hljs-attribute">padding</span>: <span class="hljs-variable">$spacer-xl</span>;
   }
-}
 
-<span class="hljs-comment">// Masonry grid specific styling</span>
-<span class="hljs-keyword">@media</span> screen <span class="hljs-keyword">and</span> (<span class="hljs-attribute">min-width</span>: <span class="hljs-variable">$grid-breakpoint-lg</span>) {
-  <span class="hljs-selector-class">.span-5</span> {
+  <span class="hljs-comment">// Content width adapts to tile width via container queries</span>
+  <span class="hljs-keyword">@container</span> (<span class="hljs-attribute">min-width</span>: #{<span class="hljs-built_in">ms</span>(<span class="hljs-number">37</span>)}) {
     <span class="hljs-selector-class">.case-tile-teaser__content</span> {
       <span class="hljs-attribute">max-width</span>: <span class="hljs-built_in">ms</span>(<span class="hljs-number">37</span>);
     }
   }
 
-  <span class="hljs-selector-class">.masonry-grid--mixed</span> &gt; *<span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">4</span>n + <span class="hljs-number">3</span>),
-  <span class="hljs-selector-class">.masonry-grid--alternating-asymmetric</span> &gt; *<span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">4</span>n + <span class="hljs-number">1</span>),
-  <span class="hljs-selector-class">.masonry-grid--alternating-asymmetric</span> &gt; *<span class="hljs-selector-pseudo">:nth-child</span>(<span class="hljs-number">4</span>n + <span class="hljs-number">4</span>) {
+  <span class="hljs-keyword">@container</span> (<span class="hljs-attribute">min-width</span>: #{<span class="hljs-variable">$default-page-layout-content-width-md</span>}) {
     <span class="hljs-selector-class">.case-tile-teaser__content</span> {
-      <span class="hljs-attribute">max-width</span>: <span class="hljs-built_in">ms</span>(<span class="hljs-number">37</span>);
+      <span class="hljs-attribute">max-width</span>: <span class="hljs-number">50%</span>;
     }
   }
 }
@@ -549,7 +546,7 @@
                 </li>
                 <li class="Meta-item">
                     <strong class="Meta-key">Size:</strong>
-                    <span class="Meta-value">2.6 KB</span>
+                    <span class="Meta-value">2.5 KB</span>
                 </li>
             </ul>
         </div>
@@ -8635,8 +8632,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2026-05-07T13:34:44.624Z">
-                                5/7/2026
+                            <time datetime="2026-05-20T12:49:37.386Z">
+                                5/20/2026
                             </time>
                         
                     </dd>
