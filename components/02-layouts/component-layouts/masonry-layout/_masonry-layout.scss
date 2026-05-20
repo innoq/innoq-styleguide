@@ -1,5 +1,6 @@
 .masonry-grid {
   display: grid;
+  width: 100%;
   grid-gap: $spacer-md;
 
   .case-list-teaser__body {
