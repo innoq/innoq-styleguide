@@ -1,29 +1,18 @@
 {
-  "increment": "patch",
-  "changelogCommand": "git log --pretty=format:\"* %s (%h)\" [REV_RANGE]",
-  "requireCleanWorkingDir": false,
-  "src": {
+  "git": {
+    "requireCleanWorkingDir": false,
     "commit": true,
-    "commitMessage": "v%s",
+    "commitMessage": "v${version}",
     "tag": true,
-    "tagName": "%s",
-    "tagAnnotation": "v%s",
-    "push": true
+    "tagName": "${version}",
+    "tagAnnotation": "v${version}",
+    "push": true,
+    "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}"
   },
   "npm": {
     "publish": false
   },
   "github": {
     "release": false
-  },
-  "prompt": {
-    "src": {
-      "status": false,
-      "commit": true,
-      "tag": true,
-      "push": true,
-      "release": false,
-      "publish": false
-    }
   }
 }
