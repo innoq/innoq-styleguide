@@ -6624,6 +6624,7 @@ touch-detection {
 }
 .case-tile-teaser {
   container-type: inline-size;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9356,6 +9357,7 @@ form > * + *,
 }
 .masonry-grid {
   display: grid;
+  width: 100%;
   grid-gap: 1.44rem;
 }
 .masonry-grid .case-list-teaser__body {

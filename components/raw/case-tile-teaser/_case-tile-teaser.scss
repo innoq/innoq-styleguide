@@ -5,6 +5,7 @@ $case-tile-teaser-sm-height: ms(32);
   @extend %hover-glow;
 
   container-type: inline-size;
+  width: 100%;
   display: flex;
   flex-direction: column;
   padding: $spacer-md;
