@@ -51,5 +51,11 @@
     > *:nth-child(4n + 4) {
       grid-column: span 3;
     }
+
+    // Lone last item (at position 4n+1 or 4n+3) spans full width
+    > *:nth-child(4n + 1):last-child,
+    > *:nth-child(4n + 3):last-child {
+      grid-column: span 8;
+    }
   }
 }

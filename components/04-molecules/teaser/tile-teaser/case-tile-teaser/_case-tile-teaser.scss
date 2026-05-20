@@ -4,6 +4,7 @@ $case-tile-teaser-sm-height: ms(32);
   @extend %block-link;
   @extend %hover-glow;
 
+  container-type: inline-size;
   display: flex;
   flex-direction: column;
   padding: $spacer-md;
@@ -106,21 +107,17 @@ $case-tile-teaser-sm-height: ms(32);
   @media screen and (min-width: $grid-breakpoint-lg) {
     padding: $spacer-xl;
   }
-}
 
-// Masonry grid specific styling
-@media screen and (min-width: $grid-breakpoint-lg) {
-  .span-5 {
+  // Content width adapts to tile width via container queries
+  @container (min-width: #{ms(37)}) {
     .case-tile-teaser__content {
       max-width: ms(37);
     }
   }
 
-  .masonry-grid--mixed > *:nth-child(4n + 3),
-  .masonry-grid--alternating-asymmetric > *:nth-child(4n + 1),
-  .masonry-grid--alternating-asymmetric > *:nth-child(4n + 4) {
+  @container (min-width: #{$default-page-layout-content-width-md}) {
     .case-tile-teaser__content {
-      max-width: ms(37);
+      max-width: 50%;
     }
   }
 }
