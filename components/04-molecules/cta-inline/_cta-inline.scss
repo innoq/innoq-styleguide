@@ -1,0 +1,41 @@
+.cta-inline {
+  display: flex;
+  align-items: center;
+  gap: $spacer-md;
+  background-color: $brand-primary-25;
+  border-left: 4px solid $brand-primary;
+  padding: $spacer-md $spacer-base;
+  margin-top: $spacer-base;
+  margin-bottom: $spacer-base;
+
+  &__body {
+    flex: 1;
+  }
+
+  &__heading {
+    @extend %heading-font-heavy;
+
+    margin-bottom: $spacer-xs;
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    color: $cta-sidebar-heading-color;
+  }
+
+  &__text {
+    @extend %body-font-italic;
+
+    font-size: $font-size-base;
+    margin-bottom: $spacer-sm;
+  }
+
+  &__image {
+    flex-shrink: 0;
+    width: 12rem;
+    align-self: stretch;
+    object-fit: contain;
+
+    @media screen and (max-width: $grid-breakpoint-sm) {
+      display: none;
+    }
+  }
+}

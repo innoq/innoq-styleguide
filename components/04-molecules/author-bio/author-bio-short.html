@@ -1,34 +1,77 @@
 <div class="demo">
-    <a rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
-        <div class="author-bio__image avatar avatar--md">
-            <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
-        </div>
-        <address>
-            <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
-            <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
-        </address>
-    </a>
-
-    <a rel="author" class="author-bio author-bio--short" href="#author-bio" itemscope itemtype="http://schema.org/Person">
-        <div class="author-bio__image avatar avatar--sm">
-            <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}"  alt="Portrait von Heribert Innoq"/>
-        </div>
-        <address>
-            <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
-            <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
-        </address>
-    </a>
+    <h3>Einzeln</h3>
 
     <div class="author-bio author-bio--short" itemscope itemtype="http://schema.org/Person">
-        <div class="author-bio__image avatar avatar--xs">
-            <img class="avatar__image" itemprop="photo" src="{{ path '/assets/example-content/heribert.jpg' }}"
-                alt="Portrait von Alexander Hesingfeld" />
+        <div class="author-bio__image avatar avatar--sm">
+            <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}" alt="Portrait von Heribert Innoq"/>
         </div>
-        <address>
+        <div class="author-bio__meta">
+            <a rel="author" class="author-bio__profile-link" href="#author-bio">
+                <span class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
+            </a>
+            <div class="author-bio__social">
+                <a class="author-bio__social-profile" href="#" title="Twitter" aria-label="Twitter Heribert Innoq" rel="me">
+                    <span class="icon icon--small icon-twitter icon--brand-secondary"></span>
+                </a>
+                <a class="author-bio__social-profile" href="#" title="Bluesky" aria-label="Bluesky Heribert Innoq" rel="me">
+                    <span class="icon icon--small icon-bluesky icon--brand-secondary"></span>
+                </a>
+                <a class="author-bio__social-profile" href="#" title="GitHub" aria-label="GitHub Heribert Innoq" rel="me">
+                    <span class="icon icon--small icon-github icon--brand-secondary"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <h3>Mehrere Autoren (in author-section)</h3>
+
+    <div class="author-section">
+        <div class="author-bio author-bio--short" itemscope itemtype="http://schema.org/Person">
+            <div class="author-bio__image avatar avatar--sm">
+                <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}" alt="Portrait von Heribert Innoq"/>
+            </div>
+            <div class="author-bio__meta">
+                <a rel="author" class="author-bio__profile-link" href="#author-bio">
+                    <span class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
+                </a>
+                <div class="author-bio__social">
+                    <a class="author-bio__social-profile" href="#" title="Twitter" aria-label="Twitter Heribert Innoq" rel="me">
+                        <span class="icon icon--small icon-twitter icon--brand-secondary"></span>
+                    </a>
+                    <a class="author-bio__social-profile" href="#" title="GitHub" aria-label="GitHub Heribert Innoq" rel="me">
+                        <span class="icon icon--small icon-github icon--brand-secondary"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="author-bio author-bio--short" itemscope itemtype="http://schema.org/Person">
+            <div class="author-bio__image avatar avatar--sm">
+                <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}" alt="Portrait von Alexandra Innoq"/>
+            </div>
+            <div class="author-bio__meta">
+                <a rel="author" class="author-bio__profile-link" href="#author-bio">
+                    <span class="author-bio__name" itemprop="fullName">Alexandra Innoq</span>
+                </a>
+                <div class="author-bio__social">
+                    <a class="author-bio__social-profile" href="#" title="Mastodon" aria-label="Mastodon Alexandra Innoq" rel="me">
+                        <span class="icon icon--small icon-mastodon icon--brand-secondary"></span>
+                    </a>
+                    <a class="author-bio__social-profile" href="#" title="LinkedIn" aria-label="LinkedIn Alexandra Innoq" rel="me">
+                        <span class="icon icon--small icon-linkedin icon--brand-secondary"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3>Ohne Social-Links</h3>
+
+    <div class="author-bio author-bio--short" itemscope itemtype="http://schema.org/Person">
+        <div class="author-bio__image avatar avatar--sm">
+            <img itemprop="photo" class="avatar__image" src="{{ path '/assets/example-content/heribert.jpg' }}" alt="Portrait von Heribert Innoq"/>
+        </div>
+        <div class="author-bio__meta">
             <span rel="author" class="author-bio__name" itemprop="fullName">Heribert Innoq</span>
-            <span class="author-bio__info" itemprop="jobTitle">Senior Consultant</span>
-        </address>
+        </div>
     </div>
 </div>
-
-
