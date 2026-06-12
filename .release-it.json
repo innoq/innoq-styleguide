@@ -4,7 +4,7 @@
     "commit": true,
     "commitMessage": "v${version}",
     "tag": true,
-    "tagName": "${version}",
+    "tagName": "v${version}",
     "tagAnnotation": "v${version}",
     "push": true,
     "changelog": "git log --pretty=format:\"* %s (%h)\" ${from}...${to}"
