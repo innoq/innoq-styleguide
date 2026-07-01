@@ -57,7 +57,7 @@
   text-transform: uppercase;
 
   &::before {
-    content: url('/assets/icons/pin.svg');
+    content: url('icons/pin.svg');
     display: inline-block;
     width: $font-size-xxs;
     height: $font-size-xxs;
