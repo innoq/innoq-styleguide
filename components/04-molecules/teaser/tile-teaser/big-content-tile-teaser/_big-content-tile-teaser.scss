@@ -57,6 +57,13 @@ a.big-content-teaser {
 
 .big-content-teaser--colored {
   background-color: $big-content-teaser-bg-color-primary;
+
+  // The global ::selection uses a translucent primary color, which is
+  // invisible on the primary-colored background. Use a high-contrast one.
+  ::selection {
+    color: $brand-white;
+    background-color: $brand-secondary;
+  }
 }
 
 .big-content-teaser--image {

@@ -169,6 +169,16 @@ $badge-background-color-inverted: $brand-secondary;
 $badge-text-color: $brand-secondary;
 $badge-text-color-inverted: $brand-primary;
 
+// label colors (orthogonal .label--* modifiers)
+$label-primary-bg-color: $brand-primary;
+$label-primary-text-color: $brand-secondary;
+$label-secondary-bg-color: $brand-secondary;
+$label-secondary-text-color: $brand-primary;
+$label-green-bg-color: $brand-green;
+$label-green-text-color: $brand-text;
+$label-neutral-bg-color: $brand-gray-25;
+$label-neutral-text-color: $brand-text;
+
 // Author
 $author-bio-background-color: $brand-gray-10;
 $author-bio-social-border-color: $brand-gray-25;
