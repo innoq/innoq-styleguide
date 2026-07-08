@@ -5053,10 +5053,10 @@ super-quote > blockquote > p,
 }
 .service-intro__header a,
 .service-intro__header a:not([class]) {
-  padding: 0.2325680394rem;
+  padding: 0.2325680394rem 0;
   background-color: #ff9c66;
-  -webkit-box-shadow: 0.3348979767rem 0 0 #ff9c66, -0.3348979767rem 0 0 #ff9c66;
-          box-shadow: 0.3348979767rem 0 0 #ff9c66, -0.3348979767rem 0 0 #ff9c66;
+  -webkit-box-shadow: 0.567466016rem 0 0 #ff9c66, -0.567466016rem 0 0 #ff9c66;
+          box-shadow: 0.567466016rem 0 0 #ff9c66, -0.567466016rem 0 0 #ff9c66;
   /* stylelint-disable-next-line property-no-vendor-prefix */
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
