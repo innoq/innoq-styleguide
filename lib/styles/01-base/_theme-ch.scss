@@ -1,8 +1,9 @@
 //
 // Theme colors — Edition CH
 // Semantic mapping derived from https://www.cloud-migration.ch/
-// (salmon red for accents and interaction, night black for text and
-// dark surfaces, porcelain grey and beige for light surfaces)
+// (dark salmon red for accents, light salmon red for interaction and
+// highlight fills, night black for text and dark surfaces, porcelain
+// grey and beige for light surfaces)
 //
 $brand-primary: $brand-ch-red;
 $brand-primary-75: $brand-ch-red-75;
@@ -12,8 +13,8 @@ $brand-secondary: $brand-ch-black;
 $brand-secondary-95: $brand-ch-black-95;
 $brand-secondary-75: $brand-ch-black-75;
 $brand-secondary-25: $brand-ch-black-25;
-$brand-interaction: $brand-ch-red;
-$brand-hover: $brand-ch-red-transparent;
+$brand-interaction: $brand-ch-red-50;
+$brand-hover: $brand-ch-red-50-transparent;
 $brand-text: $brand-ch-black;
 $brand-text-light: $brand-white;
 $brand-background: $brand-ch-gray-75;
@@ -481,6 +482,7 @@ $paginator-active-color: $brand-interaction;
 
 // Service Intro
 $service-intro-text-color: $brand-secondary;
+$service-intro-highlight-color: $brand-interaction;
 
 // image-divider
 $image-divider-center-bg-color: $brand-white;
