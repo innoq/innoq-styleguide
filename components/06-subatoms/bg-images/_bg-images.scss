@@ -545,6 +545,14 @@
   background-image: url('bg-images/edition-02/edition02-ai-01.jpg');
 }
 
+// Edition CH
+// Striped hero fill as used by #hero-overlay on cloud-migration.ch
+.bg-image-edition-ch-01,
+%bg-image-edition-ch-01 {
+  background-color: $brand-ch-gray-75;
+  background-image: url('bg-images/edition-ch/edition-ch-hero-stripes.svg');
+}
+
 // Blend mode modifier
 .bg-image--multiply {
   background-color: $brand-gray-25;

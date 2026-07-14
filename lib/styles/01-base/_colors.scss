@@ -112,8 +112,14 @@ $brand-white: #fff;
 $brand-ch-red: #c0442d;
 $brand-ch-red-75: #d15a44;
 $brand-ch-red-50: #f77a56;
+$brand-ch-red-25: #efd0ca;
+$brand-ch-red-transparent: rgba($brand-ch-red, 0.8);
 $brand-ch-black: #222327;
+$brand-ch-black-95: #2d2e32;
+$brand-ch-black-75: #595a5d;
+$brand-ch-black-25: #c8c8c9;
 $brand-ch-beige: #c2b9a8;
+$brand-ch-beige-50: #e5e4df;
 $brand-ch-gray: #cdccc8;
 $brand-ch-gray-75: #dbddd7;
 $brand-ch-gray-50: #edeeeb;
@@ -122,8 +128,13 @@ $brand-ch-colors: (
   brand-ch-red: $brand-ch-red,
   brand-ch-red-75: $brand-ch-red-75,
   brand-ch-red-50: $brand-ch-red-50,
+  brand-ch-red-25: $brand-ch-red-25,
   brand-ch-black: $brand-ch-black,
+  brand-ch-black-95: $brand-ch-black-95,
+  brand-ch-black-75: $brand-ch-black-75,
+  brand-ch-black-25: $brand-ch-black-25,
   brand-ch-beige: $brand-ch-beige,
+  brand-ch-beige-50: $brand-ch-beige-50,
   brand-ch-gray: $brand-ch-gray,
   brand-ch-gray-75: $brand-ch-gray-75,
   brand-ch-gray-50: $brand-ch-gray-50,

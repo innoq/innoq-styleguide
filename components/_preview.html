@@ -3,16 +3,63 @@
         <meta charset='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='stylesheet' type='text/css' href='{{ path '/assets/normalize.css' }}' />
-        <link media='all' rel='stylesheet' href='{{ path '/assets/bundle.css' }}' />
+        <link media='all' rel='stylesheet' href='{{ path '/assets/bundle.css' }}' id='edition-stylesheet' data-default-href='{{ path '/assets/bundle.css' }}' data-ch-href='{{ path '/assets/bundle-ch.css' }}' />
         <style>
             body {
             padding: 1rem;
             }
+            .edition-switcher {
+            position: fixed;
+            right: 0.5rem;
+            bottom: 0.5rem;
+            z-index: 9999;
+            padding: 0.3rem 0.6rem;
+            font: 12px/1 sans-serif;
+            color: #fff;
+            background: rgba(36, 36, 36, 0.75);
+            border: 0;
+            border-radius: 3px;
+            cursor: pointer;
+            }
         </style>
         <title>Preview Layout</title>
+        <script>
+            // Edition switcher: applies the persisted edition before first paint.
+            // Can also be driven via query param, e.g. ?edition=ch / ?edition=default
+            (function () {
+                var params = new URLSearchParams(window.location.search)
+                if (params.has('edition')) {
+                    window.localStorage.setItem('styleguide-edition', params.get('edition'))
+                }
+                if (window.localStorage.getItem('styleguide-edition') === 'ch') {
+                    var link = document.getElementById('edition-stylesheet')
+                    link.href = link.dataset.chHref
+                }
+            })()
+        </script>
     </head>
     <body class="application">
         {{{ yield }}}
         <script src="{{ path '/assets/bundle.js' }}"></script>
+        <script>
+            (function () {
+                var link = document.getElementById('edition-stylesheet')
+                var current = window.localStorage.getItem('styleguide-edition') === 'ch' ? 'ch' : 'default'
+                var button = document.createElement('button')
+                button.type = 'button'
+                button.className = 'edition-switcher'
+                var render = function () {
+                    button.textContent = current === 'ch' ? 'Edition: CH → default' : 'Edition: default → CH'
+                }
+                button.addEventListener('click', function () {
+                    current = current === 'ch' ? 'default' : 'ch'
+                    window.localStorage.setItem('styleguide-edition', current)
+                    link.href = current === 'ch' ? link.dataset.chHref : link.dataset.defaultHref
+                    render()
+                })
+                render()
+                document.body.appendChild(button)
+            })()
+        </script>
     </body>
 </html>
