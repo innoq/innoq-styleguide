@@ -45,6 +45,12 @@
   padding-bottom: $spacer-base;
 }
 
+.container-vertical-spacing-sm,
+%container-vertical-spacing-sm {
+  padding-top: $spacer-sm;
+  padding-bottom: $spacer-sm;
+}
+
 //Breakpoints
 
 @media screen and (min-width: $grid-breakpoint-lg) {
@@ -65,5 +71,10 @@
   .container-vertical-spacing-lg {
     padding-top: $spacer-lg;
     padding-bottom: $spacer-lg;
+  }
+
+  .container-vertical-spacing-sm {
+    padding-top: $spacer-base;
+    padding-bottom: $spacer-base;
   }
 }

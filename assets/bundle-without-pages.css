@@ -8832,6 +8832,14 @@ form > * + *,
   line-height: 1.52;
   text-align: center;
 }
+.topic-header .btn--cta {
+  color: #ff9c66;
+  background-color: #004153;
+  border-color: #004153;
+}
+.topic-header .btn--cta:hover, .topic-header .btn--cta:focus {
+  color: #004153;
+}
 
 @media screen and (min-width: 48rem) {
   .topic-header {
@@ -9429,6 +9437,11 @@ form > * + *,
   padding-bottom: 2.0736rem;
 }
 
+.container-vertical-spacing-sm {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 @media screen and (min-width: 75rem) {
   .container-xl {
     padding: 0 2.0736rem;
@@ -9444,6 +9457,10 @@ form > * + *,
   .container-vertical-spacing-lg {
     padding-top: 2.985984rem;
     padding-bottom: 2.985984rem;
+  }
+  .container-vertical-spacing-sm {
+    padding-top: 2.0736rem;
+    padding-bottom: 2.0736rem;
   }
 }
 .masonry-grid {

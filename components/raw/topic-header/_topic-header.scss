@@ -63,6 +63,21 @@ $topic-header-inner-padding-small: $spacer-md;
     line-height: $paragraph-line-height;
     text-align: center;
   }
+
+  // The header body sits on the intro background colour, so the default CTA
+  // button (filled with the same colour) would be invisible. Swap it to a
+  // filled button in the intro text colour with intro-coloured label, keeping
+  // the same box as the outline secondary button next to it.
+  .btn--cta {
+    color: $topic-header-intro-bg-color;
+    background-color: $topic-header-intro-text-color;
+    border-color: $topic-header-intro-text-color;
+
+    &:hover,
+    &:focus {
+      color: $topic-header-intro-text-color;
+    }
+  }
 }
 
 //
