@@ -1,0 +1,9 @@
+// Edition-independent settings (tokens, typography, breakpoints).
+// Import these first, then an edition theme (01-base/_theme-*.scss),
+// then base-imports.
+@import '01-base/typography';
+@import '01-base/breakpoints';
+@import '01-base/colors';
+@import '01-base/fontfaces';
+@import '01-base/fonts';
+@import '01-base/spacings';

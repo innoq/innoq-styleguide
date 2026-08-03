@@ -10,4 +10,50 @@
   <a href="{{ path('/') }}" class="Header-title" data-pjax="data-pjax">
     <img src="{{ path('/assets/logos/edition-02/svg/innoq-logo--whiteapricot.svg') }}" class="theme-brand-logo" alt="INNOQ">
   </a>
+  <button type="button" class="Header-editionSwitcher" id="edition-switcher"></button>
+  <style>
+    .Header {
+      display: flex;
+      align-items: center;
+    }
+    .Header-editionSwitcher {
+      margin-left: auto;
+      margin-right: 0.75rem;
+      padding: 0.3rem 0.6rem;
+      font: 12px/1 sans-serif;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    // Edition switcher: toggles the colour edition used in component previews.
+    // Previews apply the persisted value on load (see components/_preview.html);
+    // already-open preview iframes get their stylesheet swapped live.
+    ;(function () {
+      var button = document.getElementById('edition-switcher')
+      var current = window.localStorage.getItem('styleguide-edition') === 'ch' ? 'ch' : 'default'
+      var render = function () {
+        button.textContent = current === 'ch' ? 'Edition: CH' : 'Edition: default'
+      }
+      button.addEventListener('click', function () {
+        current = current === 'ch' ? 'default' : 'ch'
+        window.localStorage.setItem('styleguide-edition', current)
+        document.querySelectorAll('iframe').forEach(function (frame) {
+          try {
+            var link = frame.contentDocument.getElementById('edition-stylesheet')
+            if (link) {
+              link.href = current === 'ch' ? link.dataset.chHref : link.dataset.defaultHref
+            }
+          } catch (e) {
+            /* cross-origin or not yet loaded — ignore */
+          }
+        })
+        render()
+      })
+      render()
+    })()
+  </script>
 </div>
