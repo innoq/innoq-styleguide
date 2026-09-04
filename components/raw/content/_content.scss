@@ -1,0 +1,13 @@
+// Container for rendered body copy (markdown from the CMS: blog posts, case
+// studies, topic pages). The vertical rhythm belongs to the body copy itself,
+// not to the page layout it happens to sit in — page layouts only place
+// `.content`, they do not space it.
+//
+// Layouts that need the children to become grid items of their own (see
+// `.story-detail-page`) override `display` and win on specificity.
+.content,
+%content {
+  display: flex;
+  flex-direction: column;
+  row-gap: $spacer-base;
+}
