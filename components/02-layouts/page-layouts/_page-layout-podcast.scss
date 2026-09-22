@@ -22,13 +22,35 @@
   }
 }
 
+// Ten tiles fill four rows of three: 3 normal, wide + normal, 3 normal, normal + wide.
+.podcast-grid > .podcast-teaser--ctoneedtoknow {
+  &:nth-child(10n + 2),
+  &:nth-child(10n + 6),
+  &:nth-child(10n + 8) {
+    @extend %bg-image-podcast-cover-02;
+  }
+
+  &:nth-child(10n + 3),
+  &:nth-child(10n + 7),
+  &:nth-child(10n + 9) {
+    @extend %bg-image-podcast-cover-03;
+  }
+
+  &:nth-child(10n + 4),
+  &:nth-child(10n) {
+    @extend %bg-image-podcast-cover-04;
+  }
+}
+
 @media screen and (min-width: $grid-breakpoint-lg) {
   .podcast-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .podcast-teaser--avatar--overlay--big,
-  .podcast-teaser--ctoneedtoknow-4 {
+  .podcast-teaser--ctoneedtoknow-4,
+  .podcast-grid > .podcast-teaser--ctoneedtoknow:nth-child(10n + 4),
+  .podcast-grid > .podcast-teaser--ctoneedtoknow:nth-child(10n) {
     grid-column: span 2;
   }
 }
