@@ -329,21 +329,30 @@ html {
 }
 
 .bg-image-podcast-cover-01,
+.podcast-teaser--ctoneedtoknow,
 .podcast-teaser--ctoneedtoknow-1 {
   background-image: url("bg-images/podcast-episodes/ctoneedtoknow-cover-1.webp");
 }
 
 .bg-image-podcast-cover-02,
+.podcast-grid > .podcast-teaser--ctoneedtoknow:nth-child(10n+2),
+.podcast-grid > .podcast-teaser--ctoneedtoknow:nth-child(10n+6),
+.podcast-grid > .podcast-teaser--ctoneedtoknow:nth-child(10n+8),
 .podcast-teaser--ctoneedtoknow-2 {
   background-image: url("bg-images/podcast-episodes/ctoneedtoknow-cover-2.webp");
 }
 
 .bg-image-podcast-cover-03,
+.podcast-grid > .podcast-teaser--ctoneedtoknow:nth-child(10n+3),
+.podcast-grid > .podcast-teaser--ctoneedtoknow:nth-child(10n+7),
+.podcast-grid > .podcast-teaser--ctoneedtoknow:nth-child(10n+9),
 .podcast-teaser--ctoneedtoknow-3 {
   background-image: url("bg-images/podcast-episodes/ctoneedtoknow-cover-3.webp");
 }
 
 .bg-image-podcast-cover-04,
+.podcast-grid > .podcast-teaser--ctoneedtoknow:nth-child(10n+4),
+.podcast-grid > .podcast-teaser--ctoneedtoknow:nth-child(10n),
 .podcast-teaser--ctoneedtoknow-4 {
   background-image: url("bg-images/podcast-episodes/ctoneedtoknow-cover-4.webp");
 }
@@ -7087,6 +7096,7 @@ touch-detection {
   color: #fff;
 }
 
+.podcast-teaser--ctoneedtoknow,
 .podcast-teaser--ctoneedtoknow-1,
 .podcast-teaser--ctoneedtoknow-2,
 .podcast-teaser--ctoneedtoknow-3,
@@ -7096,6 +7106,8 @@ touch-detection {
   background-position: center center;
   background-size: cover;
 }
+.podcast-teaser--ctoneedtoknow .podcast-teaser__headline,
+.podcast-teaser--ctoneedtoknow .podcast-teaser__subheadline,
 .podcast-teaser--ctoneedtoknow-1 .podcast-teaser__headline,
 .podcast-teaser--ctoneedtoknow-1 .podcast-teaser__subheadline,
 .podcast-teaser--ctoneedtoknow-2 .podcast-teaser__headline,
@@ -9765,7 +9777,9 @@ form > * + *,
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .podcast-teaser--avatar--overlay--big,
-  .podcast-teaser--ctoneedtoknow-4 {
+  .podcast-teaser--ctoneedtoknow-4,
+  .podcast-grid > .podcast-teaser--ctoneedtoknow:nth-child(10n+4),
+  .podcast-grid > .podcast-teaser--ctoneedtoknow:nth-child(10n) {
     grid-column: span 2;
   }
 }
