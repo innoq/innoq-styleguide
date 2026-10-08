@@ -3,13 +3,28 @@
         <meta charset='utf-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='stylesheet' type='text/css' href='{{ path '/assets/normalize.css' }}' />
-        <link media='all' rel='stylesheet' href='{{ path '/assets/bundle.css' }}' />
+        <link media='all' rel='stylesheet' href='{{ path '/assets/bundle.css' }}' id='edition-stylesheet' data-default-href='{{ path '/assets/bundle.css' }}' data-ch-href='{{ path '/assets/bundle-ch.css' }}' />
         <style>
             body {
             padding: 1rem;
             }
         </style>
         <title>Preview Layout</title>
+        <script>
+            // Applies the edition chosen via the switcher in the styleguide header
+            // before first paint. Can also be driven via query param,
+            // e.g. ?edition=ch / ?edition=default
+            (function () {
+                var params = new URLSearchParams(window.location.search)
+                if (params.has('edition')) {
+                    window.localStorage.setItem('styleguide-edition', params.get('edition'))
+                }
+                if (window.localStorage.getItem('styleguide-edition') === 'ch') {
+                    var link = document.getElementById('edition-stylesheet')
+                    link.href = link.dataset.chHref
+                }
+            })()
+        </script>
     </head>
     <body class="application">
         {{{ yield }}}

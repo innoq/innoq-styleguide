@@ -28,6 +28,21 @@ You need to prefix all maintenance commands from above like `npm …` with
 
     docker-compose run --rm web …
 
+## Editions (colour themes)
+
+The styleguide supports multiple colour editions. An edition is a theme file in
+`lib/styles/01-base/` that maps the semantic colour variables to a brand palette:
+
+- `_theme-apripetrol.scss` — default edition (apricot/petrol), compiled to
+  `bundle.css` / `bundle-without-pages.css`
+- `_theme-ch.scss` — Edition CH (salmon red/night black, as used on
+  https://www.cloud-migration.ch/), compiled to `bundle-ch.css` /
+  `bundle-ch-without-pages.css`
+
+In the Fractal component preview, use the edition toggle in the bottom-right
+corner (or append `?edition=ch` / `?edition=default` to a preview URL) to
+switch between editions. The choice is persisted in localStorage.
+
 ## Deployment
 
 Each new release gets deployed automatically to https://innoq.style/.

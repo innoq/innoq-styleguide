@@ -478,6 +478,7 @@ $paginator-active-color: $brand-interaction;
 
 // Service Intro
 $service-intro-text-color: $brand-secondary;
+$service-intro-highlight-color: $brand-primary;
 
 // image-divider
 $image-divider-center-bg-color: $brand-white;
@@ -496,3 +497,9 @@ $portfolio-card-text-color: $brand-secondary;
 $portfolio-card-author-name-color: $brand-secondary;
 $portfolio-card-caption-color: $brand-white;
 $portfolio-card-headline-color: $brand-white;
+
+//
+// Gradients (used via components/06-subatoms/gradients)
+//
+$gradient: linear-gradient(360deg, $brand-primary-25 23%, $brand-primary 60%);
+$gradient-2: linear-gradient(180deg, $brand-primary-25 0%, $brand-gray-10 100%);

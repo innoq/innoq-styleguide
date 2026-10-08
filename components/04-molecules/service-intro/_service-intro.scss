@@ -22,16 +22,16 @@
   a,
   a:not([class]) {
     padding: ms(-16) 0;
-    background-color: $brand-primary;
+    background-color: $service-intro-highlight-color;
     box-shadow:
-      ($spacer-xxs + ms(-16)) 0 0 $brand-primary,
-      -($spacer-xxs + ms(-16)) 0 0 $brand-primary;
+      ($spacer-xxs + ms(-16)) 0 0 $service-intro-highlight-color,
+      -($spacer-xxs + ms(-16)) 0 0 $service-intro-highlight-color;
     /* stylelint-disable-next-line property-no-vendor-prefix */
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
 
     &:hover {
-      background-color: $brand-primary;
+      background-color: $service-intro-highlight-color;
     }
   }
 }
